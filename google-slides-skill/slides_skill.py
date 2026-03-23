@@ -12,6 +12,7 @@ Usage:
     python slides_skill.py add-image PRESENTATION_ID --slide-id ID --url URL [--x X] [--y Y] [--w W] [--h H]
     python slides_skill.py replace-text PRESENTATION_ID --find "old" --replace "new"
     python slides_skill.py export PRESENTATION_ID [--format pdf|pptx] [--output FILE]
+    python slides_skill.py copy PRESENTATION_ID --title "Name" [--folder-id ID] [--account EMAIL]
     python slides_skill.py comments PRESENTATION_ID [--account EMAIL]
     python slides_skill.py add-comment PRESENTATION_ID --content "..." [--slide N] [--account EMAIL]
     python slides_skill.py resolve-comment PRESENTATION_ID --comment-id ID [--message MSG]
@@ -309,6 +310,83 @@ def cmd_export(args):
     print(json.dumps({"success": True, "file": output}, indent=2))
 
 
+def cmd_thumbnails(args):
+    """Get thumbnail images for all slides in a presentation."""
+    import base64
+    import urllib.request
+
+    service = get_slides_service(args.account)
+    pres = service.presentations().get(presentationId=args.presentation_id).execute()
+
+    slides = pres.get("slides", [])
+    thumbnails = []
+
+    for i, slide in enumerate(slides):
+        page_id = slide["objectId"]
+        try:
+            thumb = service.presentations().pages().getThumbnail(
+                presentationId=args.presentation_id,
+                pageObjectId=page_id,
+                thumbnailProperties_thumbnailSize="MEDIUM"
+            ).execute()
+
+            thumb_url = thumb.get("contentUrl")
+            width = thumb.get("width", 0)
+            height = thumb.get("height", 0)
+
+            # Download and base64 encode
+            req = urllib.request.Request(thumb_url)
+            with urllib.request.urlopen(req) as response:
+                img_data = response.read()
+                b64 = base64.b64encode(img_data).decode("utf-8")
+                data_uri = f"data:image/png;base64,{b64}"
+
+            thumbnails.append({
+                "slideNumber": i + 1,
+                "pageObjectId": page_id,
+                "base64": data_uri,
+                "width": width,
+                "height": height,
+            })
+        except Exception as e:
+            thumbnails.append({
+                "slideNumber": i + 1,
+                "pageObjectId": page_id,
+                "error": str(e),
+            })
+
+    print(json.dumps({
+        "presentationId": args.presentation_id,
+        "thumbnails": thumbnails,
+        "total": len(thumbnails),
+    }, indent=2))
+
+
+def cmd_copy(args):
+    """Copy/duplicate a presentation. Works on any presentation the user has access to."""
+    drive = get_drive_service(args.account)
+
+    body = {"name": args.title}
+
+    # Optionally place in a specific folder
+    if args.folder_id:
+        body["parents"] = [args.folder_id]
+
+    result = drive.files().copy(
+        fileId=args.presentation_id,
+        body=body,
+        fields="id,name,webViewLink"
+    ).execute()
+
+    print(json.dumps({
+        "success": True,
+        "sourceId": args.presentation_id,
+        "newPresentationId": result.get("id"),
+        "name": result.get("name"),
+        "webViewLink": result.get("webViewLink"),
+    }, indent=2))
+
+
 def cmd_comments(args):
     """List all comments on a presentation."""
     drive = get_drive_service(args.account)
@@ -517,6 +595,20 @@ def main():
     export.add_argument("--output", "-o")
     add_account_arg(export)
     export.set_defaults(func=cmd_export)
+
+    # Copy/duplicate command
+    copy = subs.add_parser("copy")
+    copy.add_argument("presentation_id")
+    copy.add_argument("--title", "-t", required=True, help="Title for the copy")
+    copy.add_argument("--folder-id", help="Optional Drive folder ID to place copy in")
+    add_account_arg(copy)
+    copy.set_defaults(func=cmd_copy)
+
+    # Thumbnail command
+    thumbs = subs.add_parser("thumbnails")
+    thumbs.add_argument("presentation_id")
+    add_account_arg(thumbs)
+    thumbs.set_defaults(func=cmd_thumbnails)
 
     # Comment commands
     comments = subs.add_parser("comments")

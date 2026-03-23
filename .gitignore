@@ -72,3 +72,31 @@ blink-skill/snapshots/
 playwright-skill/browser_state.json
 playwright-skill/sessions/
 playwright-skill/screenshots/
+
+# Suno skill (browser state)
+suno-skill/chromium-profile/
+suno-skill/output/
+
+# FAL music output
+fal-music-skill/output/
+
+# Slack thread sessions
+slack-skill/thread_sessions.json
+
+# FAL video config
+fal-video-skill/config.json
+
+# DreamHost config (sensitive)
+dreamhost-skill/config.json
+
+# GoDaddy config (sensitive)
+godaddy-skill/config.json
+
+# Amazon skill lists (user data)
+amazon-skill/lists/
+
+# Suno skill (playwright browser state)
+suno-skill/pw-profile/
+
+# Suno skill sessions (cookies/auth state)
+suno-skill/sessions/

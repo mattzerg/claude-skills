@@ -25,6 +25,9 @@ python ~/.claude/skills/nano-banana-pro/generate_image.py "your prompt here" [op
 | `--output` | Output directory path | ./generated_images |
 | `--reference` | Reference image(s) for style/editing (up to 14) | None |
 | `--format` | Output format: png, jpeg, webp | png |
+| `--no-text` | Add instruction to exclude text/typography | off |
+| `--cinematic` | Add cinematic film style (ARRI, shallow DoF, grain) | off |
+| `--photorealistic` | Add photorealistic style hints | off |
 
 ## Examples
 
@@ -77,4 +80,4 @@ The script outputs the full path to the generated image.
 - Gemini 3 Pro Image requires paid billing (no free tier)
 - Generated images include SynthID watermarking
 - Reference images enable style transfer and editing capabilities
-- **No text by default**: The script automatically adds "no text/typography" instructions unless your prompt explicitly mentions text, typography, words, or labels. To include text, add words like "with text overlay" or "include typography" to your prompt.
+- **Raw prompts by default**: Prompts are sent unadulterated. Use `--no-text`, `--cinematic`, or `--photorealistic` flags to add style hints.

@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Gamma Skill - Presentation/document generation via Gamma API.
+"""Gamma Skill - Presentation/document generation via Gamma API v1.0.
 
 Generate presentations, documents, webpages, and social content from text.
-Supports themes, templates, and PDF/PPTX export.
+Supports themes, templates, card dimensions, headers/footers, sharing, and PDF/PPTX export.
 
 Usage:
     python gamma_skill.py generate "Your content here" --format presentation
+    python gamma_skill.py generate --file notes.md --dimensions 16x9 --wait
+    python gamma_skill.py from-template GAMMA_ID "Update content" --share user@example.com
     python gamma_skill.py themes
     python gamma_skill.py status GENERATION_ID
+    python gamma_skill.py export GENERATION_ID
 """
 
 import argparse
@@ -24,8 +27,37 @@ CONFIG_FILE = SKILL_DIR / "config.json"
 API_BASE = "https://public-api.gamma.app/v1.0"
 
 # Default preferences
-DEFAULT_IMAGE_MODEL = "gemini-2.5-flash-image"  # Gemini - similar to nano-banana
-PREFERRED_THEMES = ["zerg", "zerg-ai", "epoch"]  # Auto-detect these themes
+DEFAULT_IMAGE_MODEL = "gemini-2.5-flash-image"
+PREFERRED_THEMES = ["zerg", "zerg-ai", "epoch"]
+
+# Valid enum values
+FORMATS = ["presentation", "document", "webpage", "social"]
+TEXT_MODES = ["generate", "condense", "preserve"]
+TEXT_AMOUNTS = ["brief", "medium", "detailed", "extensive"]
+IMAGE_SOURCES = [
+    "aiGenerated", "pictographic", "pexels", "giphy",
+    "webAllImages", "webFreeToUse", "webFreeToUseCommercially",
+    "placeholder", "noImages",
+]
+CARD_SPLITS = ["auto", "inputTextBreaks"]
+EXPORT_FORMATS = ["pdf", "pptx"]
+
+# Dimensions per format
+DIMENSIONS = {
+    "presentation": ["fluid", "16x9", "4x3"],
+    "document": ["fluid", "pageless", "letter", "a4"],
+    "social": ["1x1", "4x5", "9x16"],
+    "webpage": ["fluid"],
+}
+
+# Header/footer positions
+HEADER_FOOTER_POSITIONS = [
+    "topLeft", "topRight", "topCenter",
+    "bottomLeft", "bottomRight", "bottomCenter",
+]
+HEADER_FOOTER_TYPES = ["text", "image", "cardNumber"]
+
+ACCESS_LEVELS = ["noAccess", "view", "comment", "edit", "fullAccess"]
 
 
 def load_config() -> Dict:
@@ -66,7 +98,7 @@ def api_request(method: str, endpoint: str, data: Optional[Dict] = None) -> Unio
     headers = {
         "X-API-KEY": config["api_key"],
         "Content-Type": "application/json",
-        "User-Agent": "GammaSkill/1.0 (Claude Code Integration)"
+        "User-Agent": "GammaSkill/2.0 (Claude Code Integration)"
     }
 
     body = json.dumps(data).encode() if data else None
@@ -85,7 +117,6 @@ def api_request(method: str, endpoint: str, data: Optional[Dict] = None) -> Unio
         except:
             error_body = str(e)
 
-        # Try to parse error as JSON
         try:
             error_json = json.loads(error_body)
             print(json.dumps({
@@ -150,11 +181,105 @@ def find_preferred_theme() -> Optional[str]:
         return None
 
 
+def build_card_options(args, fmt: str) -> Optional[Dict]:
+    """Build cardOptions from args."""
+    card_opts = {}
+
+    # Dimensions
+    if args.dimensions:
+        valid = DIMENSIONS.get(fmt, [])
+        if args.dimensions not in valid:
+            print(json.dumps({
+                "error": f"Invalid dimensions '{args.dimensions}' for format '{fmt}'",
+                "valid": valid
+            }, indent=2))
+            sys.exit(1)
+        card_opts["dimensions"] = args.dimensions
+
+    # Header/footer
+    if args.header_footer:
+        hf = {}
+        for item in args.header_footer:
+            parts = item.split(":", 2)
+            if len(parts) < 2:
+                print(json.dumps({
+                    "error": f"Invalid header-footer format: '{item}'",
+                    "expected": "position:type[:value]  e.g. topLeft:text:Company Name"
+                }, indent=2))
+                sys.exit(1)
+
+            position = parts[0]
+            hf_type = parts[1]
+
+            if position not in HEADER_FOOTER_POSITIONS:
+                print(json.dumps({"error": f"Invalid position '{position}'", "valid": HEADER_FOOTER_POSITIONS}, indent=2))
+                sys.exit(1)
+            if hf_type not in HEADER_FOOTER_TYPES:
+                print(json.dumps({"error": f"Invalid type '{hf_type}'", "valid": HEADER_FOOTER_TYPES}, indent=2))
+                sys.exit(1)
+
+            entry = {"type": hf_type}
+            if hf_type == "text" and len(parts) == 3:
+                entry["value"] = parts[2]
+            elif hf_type == "image" and len(parts) == 3:
+                entry["value"] = parts[2]
+
+            hf[position] = entry
+
+        if args.hf_hide_first:
+            hf["hideFromFirstCard"] = True
+        if args.hf_hide_last:
+            hf["hideFromLastCard"] = True
+
+        card_opts["headerFooter"] = hf
+
+    return card_opts if card_opts else None
+
+
+def build_sharing_options(args) -> Optional[Dict]:
+    """Build sharingOptions from args."""
+    sharing = {}
+
+    if args.workspace_access:
+        sharing["workspaceAccess"] = args.workspace_access
+    if args.external_access:
+        sharing["externalAccess"] = args.external_access
+    if args.share:
+        sharing["emailOptions"] = {
+            "recipients": args.share,
+            "access": args.share_access or "view",
+        }
+
+    return sharing if sharing else None
+
+
+def build_image_options(args) -> Optional[Dict]:
+    """Build imageOptions from args."""
+    image_opts = {}
+
+    if args.no_images:
+        image_opts["source"] = "noImages"
+    elif args.image_source:
+        image_opts["source"] = args.image_source
+        if args.image_source == "aiGenerated":
+            image_opts["model"] = args.image_model or DEFAULT_IMAGE_MODEL
+    elif args.image_model:
+        image_opts["source"] = "aiGenerated"
+        image_opts["model"] = args.image_model
+    else:
+        image_opts["source"] = "aiGenerated"
+        image_opts["model"] = DEFAULT_IMAGE_MODEL
+
+    if args.image_style:
+        image_opts["style"] = args.image_style
+
+    return image_opts if image_opts else None
+
+
 # Command handlers
 
 def cmd_generate(args):
     """Generate presentation/document from text."""
-    # Read input text from file or use directly
     input_text = args.text
     if args.file:
         try:
@@ -168,21 +293,20 @@ def cmd_generate(args):
         print(json.dumps({"error": "No input text provided. Use positional argument or --file"}))
         sys.exit(1)
 
-    # Auto-detect theme if not specified
+    # Auto-detect theme
     theme_id = args.theme
     if not theme_id and args.auto_theme:
         theme_id = find_preferred_theme()
         if theme_id:
             print(json.dumps({"info": f"Auto-detected theme: {theme_id}"}), file=sys.stderr)
 
-    # Build request data
+    # Build request
     data = {
         "inputText": input_text,
         "textMode": args.text_mode,
         "format": args.format,
     }
 
-    # Optional parameters
     if theme_id:
         data["themeId"] = theme_id
     if args.num_cards:
@@ -193,6 +317,8 @@ def cmd_generate(args):
         data["exportAs"] = args.export_as
     if args.folder:
         data["folderIds"] = [args.folder]
+    if args.card_split:
+        data["cardSplit"] = args.card_split
 
     # Text options
     text_opts = {}
@@ -208,25 +334,19 @@ def cmd_generate(args):
         data["textOptions"] = text_opts
 
     # Image options
-    image_opts = {}
-    if args.image_model:
-        image_opts["source"] = "aiGenerated"
-        image_opts["model"] = args.image_model
-    elif not args.no_images:
-        # Default to Gemini (similar to nano-banana)
-        image_opts["source"] = "aiGenerated"
-        image_opts["model"] = DEFAULT_IMAGE_MODEL
-    if args.no_images:
-        image_opts["source"] = "noImages"
-    if args.image_style:
-        image_opts["style"] = args.image_style
+    image_opts = build_image_options(args)
     if image_opts:
         data["imageOptions"] = image_opts
 
-    # Note: aspectRatio is not currently supported by the API (returns 400)
-    # 16:9 is the default. Keep the arg for future API support but don't send it.
-    # if args.aspect_ratio:
-    #     data["cardOptions"] = {"aspectRatio": args.aspect_ratio}
+    # Card options (dimensions, header/footer)
+    card_opts = build_card_options(args, args.format)
+    if card_opts:
+        data["cardOptions"] = card_opts
+
+    # Sharing options
+    sharing = build_sharing_options(args)
+    if sharing:
+        data["sharingOptions"] = sharing
 
     # Make the generation request
     result = api_request("POST", "/generations", data)
@@ -236,7 +356,6 @@ def cmd_generate(args):
         print(json.dumps({"error": "No generation ID returned", "response": result}))
         sys.exit(1)
 
-    # If --wait, poll until complete
     if args.wait and generation_id:
         result = poll_until_complete(generation_id, args.poll_interval, args.timeout, verbose=True)
 
@@ -257,6 +376,20 @@ def cmd_from_template(args):
         data["folderIds"] = [args.folder]
     if args.export_as:
         data["exportAs"] = args.export_as
+
+    # Image options for templates
+    image_opts = {}
+    if args.image_model:
+        image_opts["model"] = args.image_model
+    if args.image_style:
+        image_opts["style"] = args.image_style
+    if image_opts:
+        data["imageOptions"] = image_opts
+
+    # Sharing options
+    sharing = build_sharing_options(args)
+    if sharing:
+        data["sharingOptions"] = sharing
 
     result = api_request("POST", "/generations-from-template", data)
     generation_id = result.get("generationId")
@@ -284,9 +417,13 @@ def cmd_export(args):
 def cmd_themes(args):
     """List available themes."""
     result = api_request("GET", "/themes")
-    if args.limit and isinstance(result, list):
-        result = result[:args.limit]
-    print(json.dumps(result, indent=2))
+    themes = result.get("data", []) if isinstance(result, dict) else result
+    if args.search:
+        search = args.search.lower()
+        themes = [t for t in themes if search in t.get("name", "").lower() or search in t.get("id", "").lower()]
+    if args.limit:
+        themes = themes[:args.limit]
+    print(json.dumps(themes, indent=2))
 
 
 def cmd_folders(args):
@@ -295,29 +432,50 @@ def cmd_folders(args):
     print(json.dumps(result, indent=2))
 
 
+def add_sharing_args(parser):
+    """Add sharing arguments to a subparser."""
+    sharing = parser.add_argument_group("sharing")
+    sharing.add_argument("--share", nargs="+", metavar="EMAIL", help="Share with email addresses")
+    sharing.add_argument("--share-access", choices=["view", "comment", "edit", "fullAccess"],
+                         default="view", help="Access level for shared users (default: view)")
+    sharing.add_argument("--workspace-access", choices=ACCESS_LEVELS, help="Workspace member access level")
+    sharing.add_argument("--external-access", choices=["noAccess", "view", "comment", "edit"],
+                         help="External user access level")
+
+
+def add_wait_args(parser):
+    """Add wait/polling arguments to a subparser."""
+    parser.add_argument("--wait", "-w", action="store_true", help="Wait for completion")
+    parser.add_argument("--poll-interval", type=int, default=5, help="Seconds between status checks (default: 5)")
+    parser.add_argument("--timeout", type=int, default=300, help="Max wait time in seconds (default: 300)")
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Gamma Skill - Generate presentations, documents, and webpages",
+        description="Gamma Skill v2.0 - Generate presentations, documents, and webpages",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Generate a presentation
-  %(prog)s generate "Introduction to AI..." --format presentation --wait
+  # Generate a presentation with 16:9 slides
+  %(prog)s generate "Introduction to AI..." --format presentation --dimensions 16x9 --wait
 
-  # Generate from a file
-  %(prog)s generate --file notes.md --format document --num-cards 10
+  # Generate from a file with header/footer
+  %(prog)s generate --file notes.md --header-footer "bottomRight:text:Zerg AI" --wait
 
-  # Create from template
-  %(prog)s from-template TEMPLATE_ID "Update with our company info"
+  # Use stock photos instead of AI images
+  %(prog)s generate "Company overview" --image-source pexels --wait
 
-  # List themes
-  %(prog)s themes
+  # Generate and share via email
+  %(prog)s generate "Q1 Report" --share user@company.com --share-access view --wait
 
-  # Check status
-  %(prog)s status GENERATION_ID
+  # Create from template with sharing
+  %(prog)s from-template g_abc123 "Update with our Q1 data" --share team@company.com --wait
 
-  # Get export URLs
-  %(prog)s export GENERATION_ID
+  # Social media cards (4:5 aspect ratio)
+  %(prog)s generate "Key product features" --format social --dimensions 4x5 --wait
+
+  # Search themes
+  %(prog)s themes --search zerg
 """
     )
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
@@ -326,40 +484,54 @@ Examples:
     p_gen = subparsers.add_parser("generate", help="Generate presentation/document from text")
     p_gen.add_argument("text", nargs="?", default="", help="Input text/content")
     p_gen.add_argument("--file", "-F", help="Read input from file instead")
-    p_gen.add_argument("--format", "-f", choices=["presentation", "document", "webpage", "social"],
-                       default="presentation", help="Output format (default: presentation)")
-    p_gen.add_argument("--text-mode", "-m", choices=["generate", "condense", "preserve"],
-                       default="generate", help="Text handling mode (default: generate)")
+    p_gen.add_argument("--format", "-f", choices=FORMATS, default="presentation", help="Output format (default: presentation)")
+    p_gen.add_argument("--text-mode", "-m", choices=TEXT_MODES, default="generate", help="Text handling mode (default: generate)")
     p_gen.add_argument("--theme", "-t", help="Theme ID to apply (or use --auto-theme)")
-    p_gen.add_argument("--auto-theme", "-T", action="store_true",
-                       help="Auto-detect preferred theme (zerg, etc.)")
-    p_gen.add_argument("--num-cards", "-n", type=int, help="Number of slides/cards (1-60 for Pro)")
+    p_gen.add_argument("--auto-theme", "-T", action="store_true", help="Auto-detect preferred theme (zerg, etc.)")
+    p_gen.add_argument("--num-cards", "-n", type=int, help="Number of slides/cards (1-60 Pro, 1-75 Ultra)")
     p_gen.add_argument("--instructions", "-i", help="Additional instructions (max 2000 chars)")
-    p_gen.add_argument("--export-as", "-e", choices=["pdf", "pptx"], help="Also export as PDF/PPTX")
+    p_gen.add_argument("--export-as", "-e", choices=EXPORT_FORMATS, help="Also export as PDF/PPTX")
     p_gen.add_argument("--folder", help="Folder ID to save to")
-    p_gen.add_argument("--tone", help="Content tone (e.g., professional, casual)")
-    p_gen.add_argument("--audience", help="Target audience")
-    p_gen.add_argument("--language", help="Output language")
-    p_gen.add_argument("--text-amount", choices=["less", "default", "more"], help="Text amount per card")
-    p_gen.add_argument("--image-style", help="AI image style description")
-    p_gen.add_argument("--image-model", help="AI image model (default: gemini-2.5-flash-image)")
-    p_gen.add_argument("--no-images", action="store_true", help="Disable AI image generation")
-    p_gen.add_argument("--aspect-ratio", choices=["16:9", "4:3", "1:1", "9:16"], help="Card aspect ratio")
-    p_gen.add_argument("--wait", "-w", action="store_true", help="Wait for completion")
-    p_gen.add_argument("--poll-interval", type=int, default=5, help="Seconds between status checks (default: 5)")
-    p_gen.add_argument("--timeout", type=int, default=300, help="Max wait time in seconds (default: 300)")
+    p_gen.add_argument("--card-split", choices=CARD_SPLITS, help="Card splitting strategy (default: auto)")
+
+    # Text options
+    text_group = p_gen.add_argument_group("text options")
+    text_group.add_argument("--tone", help="Content tone (e.g., professional, casual)")
+    text_group.add_argument("--audience", help="Target audience")
+    text_group.add_argument("--language", help="Output language (ISO code, e.g., en, he, es)")
+    text_group.add_argument("--text-amount", choices=TEXT_AMOUNTS, help="Text density per card")
+
+    # Image options
+    img_group = p_gen.add_argument_group("image options")
+    img_group.add_argument("--image-source", choices=IMAGE_SOURCES, help="Image source type")
+    img_group.add_argument("--image-style", help="AI image style description (max 500 chars)")
+    img_group.add_argument("--image-model", help="AI image model (default: gemini-2.5-flash-image)")
+    img_group.add_argument("--no-images", action="store_true", help="Disable images entirely")
+
+    # Card options
+    card_group = p_gen.add_argument_group("card options")
+    card_group.add_argument("--dimensions", "-d",
+                            help="Card dimensions: presentation(fluid/16x9/4x3), document(fluid/pageless/letter/a4), social(1x1/4x5/9x16)")
+    card_group.add_argument("--header-footer", nargs="+", metavar="POS:TYPE[:VALUE]",
+                            help="Header/footer items, e.g. 'bottomRight:text:Company Name' 'topLeft:image:https://logo.png' 'bottomCenter:cardNumber'")
+    card_group.add_argument("--hf-hide-first", action="store_true", help="Hide header/footer from first card")
+    card_group.add_argument("--hf-hide-last", action="store_true", help="Hide header/footer from last card")
+
+    add_sharing_args(p_gen)
+    add_wait_args(p_gen)
     p_gen.set_defaults(func=cmd_generate)
 
     # from-template
-    p_tmpl = subparsers.add_parser("from-template", help="Create from existing template")
-    p_tmpl.add_argument("template_id", help="Template/Gamma ID to use")
+    p_tmpl = subparsers.add_parser("from-template", help="Create from existing template (Remix)")
+    p_tmpl.add_argument("template_id", help="Gamma ID of the template (e.g., g_abcdef123456)")
     p_tmpl.add_argument("prompt", help="Content/instructions for the template")
-    p_tmpl.add_argument("--theme", "-t", help="Theme ID to apply")
+    p_tmpl.add_argument("--theme", "-t", help="Theme ID to apply (overrides template theme)")
     p_tmpl.add_argument("--folder", help="Folder ID to save to")
-    p_tmpl.add_argument("--export-as", "-e", choices=["pdf", "pptx"], help="Also export as PDF/PPTX")
-    p_tmpl.add_argument("--wait", "-w", action="store_true", help="Wait for completion")
-    p_tmpl.add_argument("--poll-interval", type=int, default=5, help="Seconds between status checks")
-    p_tmpl.add_argument("--timeout", type=int, default=300, help="Max wait time in seconds")
+    p_tmpl.add_argument("--export-as", "-e", choices=EXPORT_FORMATS, help="Also export as PDF/PPTX")
+    p_tmpl.add_argument("--image-model", help="AI image model for template images")
+    p_tmpl.add_argument("--image-style", help="AI image style description")
+    add_sharing_args(p_tmpl)
+    add_wait_args(p_tmpl)
     p_tmpl.set_defaults(func=cmd_from_template)
 
     # status
@@ -375,6 +547,7 @@ Examples:
     # themes
     p_themes = subparsers.add_parser("themes", help="List available themes")
     p_themes.add_argument("--limit", "-l", type=int, help="Limit number of results")
+    p_themes.add_argument("--search", "-s", help="Search themes by name")
     p_themes.set_defaults(func=cmd_themes)
 
     # folders

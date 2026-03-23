@@ -105,6 +105,9 @@ def generate_image(
     output_dir: str = "./generated_images",
     reference_images: list[str] = None,
     output_format: str = "png",
+    no_text: bool = False,
+    cinematic: bool = False,
+    photorealistic: bool = False,
 ) -> str:
     """Generate an image using Gemini 3 Pro Image model."""
 
@@ -132,10 +135,21 @@ def generate_image(
         ref_images = load_reference_images(reference_images)
         contents.extend(ref_images)
 
-    # Add the text prompt (with no-text instruction unless user wants text)
-    if "text" not in prompt.lower() and "typography" not in prompt.lower() and "words" not in prompt.lower() and "label" not in prompt.lower():
-        prompt = f"{prompt}. Do not include any text, words, labels, or typography in the image."
-    contents.append(prompt)
+    # Build prompt with optional style suffixes
+    final_prompt = prompt
+
+    style_suffixes = []
+    if no_text:
+        style_suffixes.append("Do not include any text, words, labels, or typography in the image")
+    if cinematic:
+        style_suffixes.append("Cinematic film still, shot on ARRI Alexa, shallow depth of field, anamorphic lens, film grain")
+    if photorealistic:
+        style_suffixes.append("Photorealistic, hyperrealistic, 8K, highly detailed")
+
+    if style_suffixes:
+        final_prompt = f"{prompt}. {'. '.join(style_suffixes)}."
+
+    contents.append(final_prompt)
 
     # Generate image
     print(f"Generating image: {prompt[:50]}...")
@@ -217,6 +231,21 @@ def main():
         default="png",
         help="Output format (default: png)",
     )
+    parser.add_argument(
+        "--no-text",
+        action="store_true",
+        help="Add instruction to exclude text/typography from image",
+    )
+    parser.add_argument(
+        "--cinematic",
+        action="store_true",
+        help="Add cinematic film style (ARRI Alexa, shallow DoF, film grain)",
+    )
+    parser.add_argument(
+        "--photorealistic",
+        action="store_true",
+        help="Add photorealistic style hints",
+    )
 
     args = parser.parse_args()
 
@@ -227,6 +256,9 @@ def main():
         output_dir=args.output,
         reference_images=args.reference,
         output_format=args.format,
+        no_text=args.no_text,
+        cinematic=args.cinematic,
+        photorealistic=args.photorealistic,
     )
 
 

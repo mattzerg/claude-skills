@@ -1,6 +1,12 @@
-# Gamma Skill - Presentation Generation
+---
+name: gamma-skill
+description: Generate presentations, documents, webpages, and social content using Gamma AI. Supports card dimensions, headers/footers, sharing, multiple image sources, and PDF/PPTX export.
+allowed-tools: Bash, Read
+---
 
-Generate presentations, documents, webpages, and social content using Gamma's AI.
+# Gamma Skill - Presentation Generation (v2.0)
+
+Generate presentations, documents, webpages, and social content using Gamma's API v1.0.
 
 ## First-Time Setup (~2 minutes)
 
@@ -33,31 +39,70 @@ python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate "Your content here"
 python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate --file notes.md --wait
 ```
 
-**Options:**
+**Core Options:**
 
 | Flag | Description | Default |
 |------|-------------|---------|
 | `--format` / `-f` | presentation, document, webpage, social | presentation |
 | `--text-mode` / `-m` | generate, condense, preserve | generate |
 | `--theme` / `-t` | Theme ID | (Gamma default) |
+| `--auto-theme` / `-T` | Auto-detect preferred theme (zerg, etc.) | false |
 | `--num-cards` / `-n` | Number of slides (1-60 Pro, 1-75 Ultra) | (auto) |
 | `--instructions` / `-i` | Additional specs (max 2000 chars) | |
 | `--export-as` / `-e` | pdf or pptx | |
-| `--tone` | Content tone (professional, casual, etc.) | |
-| `--audience` | Target audience | |
-| `--language` | Output language | |
-| `--text-amount` | less, default, more | default |
-| `--aspect-ratio` | 16:9, 4:3, 1:1, 9:16 | 16:9 |
+| `--folder` | Folder ID to save to | |
+| `--card-split` | auto or inputTextBreaks | auto |
 | `--wait` / `-w` | Wait for completion | false |
 | `--timeout` | Max wait seconds | 300 |
+
+**Text Options:**
+
+| Flag | Description | Values |
+|------|-------------|--------|
+| `--tone` | Content tone | any text (professional, casual, etc.) |
+| `--audience` | Target audience | any text |
+| `--language` | Output language | ISO code (en, he, es, fr, etc.) |
+| `--text-amount` | Text density per card | brief, medium, detailed, extensive |
+
+**Image Options:**
+
+| Flag | Description | Values |
+|------|-------------|--------|
+| `--image-source` | Where images come from | aiGenerated, pictographic, pexels, giphy, webAllImages, webFreeToUse, webFreeToUseCommercially, placeholder, noImages |
+| `--image-model` | AI image model | (default: gemini-2.5-flash-image) |
+| `--image-style` | Visual style description | any text (max 500 chars) |
+| `--no-images` | Disable all images | |
+
+**Card Options:**
+
+| Flag | Description | Values |
+|------|-------------|--------|
+| `--dimensions` / `-d` | Card dimensions | presentation: fluid/16x9/4x3; document: fluid/pageless/letter/a4; social: 1x1/4x5/9x16 |
+| `--header-footer` | Header/footer items | position:type[:value] (repeatable) |
+| `--hf-hide-first` | Hide header/footer on first card | |
+| `--hf-hide-last` | Hide header/footer on last card | |
+
+Header/footer positions: topLeft, topRight, topCenter, bottomLeft, bottomRight, bottomCenter
+Header/footer types: text, image, cardNumber
+
+**Sharing Options:**
+
+| Flag | Description | Values |
+|------|-------------|--------|
+| `--share` | Email addresses to share with | space-separated emails |
+| `--share-access` | Access for shared users | view, comment, edit, fullAccess |
+| `--workspace-access` | Workspace member access | noAccess, view, comment, edit, fullAccess |
+| `--external-access` | External user access | noAccess, view, comment, edit |
 
 ### Create from Template
 
 ```bash
-python3 ~/.claude/skills/gamma-skill/gamma_skill.py from-template TEMPLATE_ID "Your content" [options]
+python3 ~/.claude/skills/gamma-skill/gamma_skill.py from-template GAMMA_ID "Your content" [options]
 ```
 
-Get template ID from the Gamma URL (e.g., `gamma.app/docs/TEMPLATE_ID`).
+Get template ID from the Gamma URL (e.g., `gamma.app/docs/GAMMA_ID`).
+
+Supports: `--theme`, `--folder`, `--export-as`, `--image-model`, `--image-style`, all sharing options, `--wait`.
 
 ### Check Generation Status
 
@@ -71,12 +116,12 @@ python3 ~/.claude/skills/gamma-skill/gamma_skill.py status GENERATION_ID
 python3 ~/.claude/skills/gamma-skill/gamma_skill.py export GENERATION_ID
 ```
 
-Returns PDF/PPTX download URLs (if `--export-as` was used during generation).
+Returns PDF/PPTX download URLs (temporary, re-run if expired).
 
 ### List Themes
 
 ```bash
-python3 ~/.claude/skills/gamma-skill/gamma_skill.py themes [--limit N]
+python3 ~/.claude/skills/gamma-skill/gamma_skill.py themes [--limit N] [--search QUERY]
 ```
 
 ### List Folders
@@ -87,79 +132,96 @@ python3 ~/.claude/skills/gamma-skill/gamma_skill.py folders
 
 ## Examples
 
-### Quick Pitch Deck
+### Pitch Deck with Branding
 
 ```bash
 python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
-  "Zerg AI: AI-powered software development.
-   Problem: Code migration is slow and expensive.
-   Solution: Autonomous AI agents that understand and transform code.
-   Market: $500B software services market.
-   Traction: 3 enterprise pilots, $500K ARR.
-   Team: Ex-Google, Apple, Pixar engineers." \
+  "Zerg AI: AI-powered kernel generation.
+   Problem: Custom hardware drivers are expensive.
+   Solution: AI generates optimized kernels automatically.
+   Market: $50B embedded systems market.
+   Traction: 3 enterprise pilots." \
   --format presentation \
+  --dimensions 16x9 \
   --num-cards 10 \
   --tone professional \
   --audience investors \
+  --header-footer "bottomRight:text:Zerg AI" "topLeft:image:https://zergai.com/logo.png" \
+  --hf-hide-first \
+  --auto-theme \
+  --export-as pdf \
   --wait
 ```
 
-### Generate from Obsidian Notes
+### From Obsidian Notes
 
 ```bash
 python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
   --file ~/vault/Writing/pitch-notes.md \
   --format presentation \
   --instructions "Focus on the problem and solution. Use data visualizations." \
+  --export-as pptx \
+  --wait
+```
+
+### Social Media Cards
+
+```bash
+python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
+  "5 ways AI is transforming embedded systems" \
+  --format social \
+  --dimensions 4x5 \
+  --text-amount brief \
+  --image-source pexels \
+  --wait
+```
+
+### Stock Photos Instead of AI Images
+
+```bash
+python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
+  "Company all-hands Q1 review" \
+  --format presentation \
+  --image-source pexels \
+  --tone casual \
+  --audience "engineering team" \
+  --wait
+```
+
+### Share with Team
+
+```bash
+python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
+  "Sprint retrospective - Q1 Week 11" \
+  --format document \
+  --share alice@company.com bob@company.com \
+  --share-access edit \
+  --workspace-access view \
+  --wait
+```
+
+### A4 Document
+
+```bash
+python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
+  --file ~/vault/Epoch/report.md \
+  --format document \
+  --dimensions a4 \
+  --text-mode preserve \
   --export-as pdf \
   --wait
 ```
 
-### Document Generation
+### Remix a Template
 
 ```bash
-python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
-  "Technical documentation for our API..." \
-  --format document \
-  --text-mode preserve \
+python3 ~/.claude/skills/gamma-skill/gamma_skill.py from-template g_abc123def456 \
+  "Update with our Q1 2026 metrics: ARR $2M, 15 enterprise customers, NPS 72" \
+  --export-as pdf \
+  --share investor@firm.com \
+  --share-access view \
   --wait
 ```
-
-### Social Content
-
-```bash
-python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
-  "Key insights from our AI research paper..." \
-  --format social \
-  --tone casual \
-  --wait
-```
-
-## Workflow: Content-First Deck Creation
-
-1. **Draft content** in Obsidian (bullet points, notes, key messages)
-
-2. **Generate initial deck:**
-   ```bash
-   python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
-     --file ~/vault/Epoch/Fundraising/pitch-content.md \
-     --format presentation \
-     --num-cards 12 \
-     --tone professional \
-     --audience investors \
-     --wait
-   ```
-
-3. **Review output** - opens in browser at the returned `gammaUrl`
-
-4. **Iterate:**
-   - Refine in Gamma's editor, or
-   - Adjust content/instructions and regenerate
-
-5. **Export final version:**
-   ```bash
-   python3 ~/.claude/skills/gamma-skill/gamma_skill.py export GENERATION_ID
-   ```
 
 ## Text Modes
 
@@ -169,17 +231,19 @@ python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
 | `condense` | AI summarizes your content |
 | `preserve` | Keep your text mostly as-is, just format it |
 
-## Output
+## Image Sources
 
-All commands return JSON. Example generation response:
-
-```json
-{
-  "generation_id": "abc123",
-  "status": "completed",
-  "gammaUrl": "https://gamma.app/docs/abc123"
-}
-```
+| Source | Description |
+|--------|-------------|
+| `aiGenerated` | AI-generated images (default, uses credits) |
+| `pictographic` | Icon/illustration style |
+| `pexels` | Stock photos from Pexels |
+| `giphy` | GIFs from Giphy |
+| `webAllImages` | Web image search |
+| `webFreeToUse` | Free-to-use web images |
+| `webFreeToUseCommercially` | Commercially licensed web images |
+| `placeholder` | Placeholder images |
+| `noImages` | No images at all |
 
 ## Credit System
 
@@ -190,7 +254,7 @@ Gamma uses credits for generation:
 - **Pro:** ~400 credits/month
 - **Ultra:** ~1000 credits/month
 
-Monitor usage in Gamma Settings.
+Use `--image-source pexels` or `--no-images` to conserve credits.
 
 ## Requirements
 
@@ -203,13 +267,3 @@ Monitor usage in Gamma Settings.
 - API key stored in `~/.claude/skills/gamma-skill/config.json` (gitignored)
 - Key can be revoked in Gamma Settings > Members > API key
 - No OAuth - simple API key authentication
-
-## Troubleshooting
-
-**401 Unauthorized:** Check API key is correct and account has API access.
-
-**429 Rate Limited:** API has generous limits but contact Gamma support if hit.
-
-**Generation timeout:** Increase `--timeout` or check status manually with `status` command.
-
-**Export URLs expired:** URLs are temporary. Re-run `export` command if needed.
