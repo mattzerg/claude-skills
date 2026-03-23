@@ -245,6 +245,38 @@ python3 ~/.claude/skills/gamma-skill/gamma_skill.py from-template g_abc123def456
 | `placeholder` | Placeholder images |
 | `noImages` | No images at all |
 
+## Custom Images (via Google Drive)
+
+The Gamma API doesn't have a dedicated image upload endpoint. To use your own images (AI-generated, diagrams, screenshots):
+
+1. **Generate or obtain your image** (e.g., via nano-banana-pro skill)
+2. **Upload to Google Drive** using the google-docs-skill:
+   ```bash
+   python3 ~/.claude/skills/google-docs-skill/docs_skill.py upload-image /path/to/image.png
+   ```
+3. **Use the `directUrl`** (lh3.googleusercontent.com format) in your inputText:
+   ```
+   Use this image: https://lh3.googleusercontent.com/d/FILE_ID
+   ```
+4. **Set `--image-source noImages`** so Gamma uses only your provided URLs
+
+**Important:** Only `lh3.googleusercontent.com/d/{id}` URLs work. The `drive.google.com/uc?export=view` format does a 303 redirect that Gamma cannot follow.
+
+### Full Pipeline Example
+
+```bash
+# 1. Generate image
+python3 ~/.claude/skills/nano-banana-pro/generate_image.py "circuit board closeup" --output /tmp/imgs
+
+# 2. Upload to Drive (returns lh3 direct URL)
+python3 ~/.claude/skills/google-docs-skill/docs_skill.py upload-image /tmp/imgs/image.png
+
+# 3. Embed URL in content and generate deck
+python3 ~/.claude/skills/gamma-skill/gamma_skill.py generate \
+  "Title slide. Use this image: https://lh3.googleusercontent.com/d/FILE_ID ..." \
+  --image-source noImages --wait
+```
+
 ## Credit System
 
 Gamma uses credits for generation:

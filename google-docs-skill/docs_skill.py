@@ -588,6 +588,63 @@ def cmd_login(args):
     output_json({"success": True, "account": args.account or "default"})
 
 
+def cmd_upload_image(args):
+    """Upload an image to Google Drive and return a public URL."""
+    from googleapiclient.http import MediaFileUpload
+    drive = get_drive_service(args.account)
+
+    file_path = Path(args.file)
+    if not file_path.exists():
+        output_json({"error": f"File not found: {args.file}"})
+        return
+
+    # Detect mime type
+    ext = file_path.suffix.lower()
+    mime_map = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg",
+                ".gif": "image/gif", ".webp": "image/webp", ".svg": "image/svg+xml"}
+    mime_type = mime_map.get(ext, "application/octet-stream")
+
+    # Upload to Drive
+    file_metadata = {"name": file_path.name}
+    if args.folder_id:
+        file_metadata["parents"] = [args.folder_id]
+
+    media = MediaFileUpload(str(file_path), mimetype=mime_type, resumable=True)
+    uploaded = drive.files().create(
+        body=file_metadata, media_body=media,
+        fields="id, name, webViewLink, webContentLink"
+    ).execute()
+
+    file_id = uploaded["id"]
+
+    # Make publicly readable
+    drive.permissions().create(
+        fileId=file_id,
+        body={"type": "anyone", "role": "reader"}
+    ).execute()
+
+    # Get the direct download link
+    file_info = drive.files().get(
+        fileId=file_id,
+        fields="id, name, webViewLink, webContentLink, thumbnailLink"
+    ).execute()
+
+    # Build direct image URLs
+    # lh3 format serves directly (200 OK, image/jpeg) — works for embedding in Gamma, etc.
+    # drive.google.com/uc format does a 303 redirect — many services can't follow it
+    lh3_url = f"https://lh3.googleusercontent.com/d/{file_id}"
+    drive_url = f"https://drive.google.com/uc?export=view&id={file_id}"
+
+    output_json({
+        "id": file_id,
+        "name": file_info.get("name"),
+        "directUrl": lh3_url,
+        "driveUrl": drive_url,
+        "webViewLink": file_info.get("webViewLink"),
+        "webContentLink": file_info.get("webContentLink"),
+    })
+
+
 def cmd_logout(args):
     """Remove authentication for account."""
     path = get_token_path(args.account)
@@ -1083,6 +1140,13 @@ def main():
     delete_cmt.add_argument("comment_id", help="Comment ID to delete")
     add_account_arg(delete_cmt)
     delete_cmt.set_defaults(func=cmd_delete_comment)
+
+    # upload-image
+    upload_img = subs.add_parser("upload-image", help="Upload image to Drive, return public URL")
+    upload_img.add_argument("file", help="Path to image file")
+    upload_img.add_argument("--folder-id", help="Drive folder ID to upload to")
+    add_account_arg(upload_img)
+    upload_img.set_defaults(func=cmd_upload_image)
 
     args = parser.parse_args()
     if not args.command:

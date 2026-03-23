@@ -409,9 +409,21 @@ def cmd_status(args):
 
 
 def cmd_export(args):
-    """Get export URLs (PDF/PPTX) for a generation."""
-    result = api_request("GET", f"/generations/{args.generation_id}/file-urls")
-    print(json.dumps(result, indent=2))
+    """Get export URLs (PDF/PPTX) for a generation.
+
+    Uses the status endpoint which includes exportUrl when available.
+    """
+    result = api_request("GET", f"/generations/{args.generation_id}")
+    export_url = result.get("exportUrl")
+    if export_url:
+        print(json.dumps({"exportUrl": export_url}, indent=2))
+    else:
+        print(json.dumps({
+            "error": "No export URL available",
+            "hint": "Use --export-as pdf or --export-as pptx when generating to get an export URL",
+            "status": result.get("status"),
+            "gammaUrl": result.get("gammaUrl")
+        }, indent=2))
 
 
 def cmd_themes(args):

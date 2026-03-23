@@ -143,6 +143,18 @@ python3 ~/.claude/skills/google-docs-skill/docs_skill.py login --account myemail
 python3 ~/.claude/skills/google-docs-skill/docs_skill.py logout --account myemail@gmail.com
 ```
 
+### Upload Image to Drive
+
+Upload an image to Google Drive and get a public URL for embedding in other services (Gamma, etc.):
+
+```bash
+python3 ~/.claude/skills/google-docs-skill/docs_skill.py upload-image /path/to/image.png [--folder-id FOLDER_ID]
+```
+
+Returns a direct `lh3.googleusercontent.com` URL that serves the image without redirects — works for embedding in Gamma presentations, web pages, etc.
+
+**Integration with Gamma Skill:** To use custom images in Gamma presentations, upload them via this command, then embed the `directUrl` in your Gamma inputText with `--image-source noImages`. The `drive.google.com/uc` URLs do NOT work (303 redirect) — only the `lh3.googleusercontent.com/d/{id}` format serves direct.
+
 ## Markdown Formatting Support
 
 The `create`, `update`, and `from-markdown` commands convert markdown to native Google Docs formatting:
