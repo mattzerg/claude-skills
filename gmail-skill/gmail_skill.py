@@ -378,7 +378,7 @@ def get_credentials(account: Optional[str] = None) -> Credentials:
             expiry = None
             if "expiry" in token_data:
                 try:
-                    expiry = datetime.fromisoformat(token_data["expiry"].replace("Z", "+00:00"))
+                    expiry = datetime.fromisoformat(token_data["expiry"].replace("Z", "+00:00")).replace(tzinfo=None)
                 except:
                     pass
 
@@ -405,7 +405,7 @@ def get_credentials(account: Optional[str] = None) -> Credentials:
                     token_data = json.load(f)
                 token_data["access_token"] = creds.token
                 if creds.expiry:
-                    token_data["expiry"] = creds.expiry.isoformat()
+                    token_data["expiry"] = creds.expiry.replace(tzinfo=None).isoformat() + "Z"
                 with open(token_path, "w") as f:
                     json.dump(token_data, f, indent=2)
                 return creds  # Success - return refreshed creds
@@ -680,6 +680,71 @@ def cmd_read(args):
             output = format_email_summary(msg)
 
         print(json.dumps(output, indent=2))
+
+    except HttpError as e:
+        print(json.dumps({"error": str(e)}))
+        sys.exit(1)
+
+
+def _collect_attachment_parts(payload: dict, parts_out: list):
+    """Recursively collect parts with filenames + attachmentIds from a payload."""
+    if payload.get("filename") and payload.get("body", {}).get("attachmentId"):
+        parts_out.append(payload)
+    for sub in payload.get("parts", []) or []:
+        _collect_attachment_parts(sub, parts_out)
+
+
+def cmd_attachment(args):
+    """Download attachment(s) from an email."""
+    service = get_gmail_service(args.account)
+
+    try:
+        msg = service.users().messages().get(
+            userId="me",
+            id=args.email_id,
+            format="full",
+        ).execute()
+
+        parts = []
+        _collect_attachment_parts(msg.get("payload", {}), parts)
+
+        if not parts:
+            print(json.dumps({"error": "no attachments found", "email_id": args.email_id}))
+            sys.exit(1)
+
+        out_dir = Path(args.out_dir).expanduser()
+        out_dir.mkdir(parents=True, exist_ok=True)
+
+        saved = []
+        for part in parts:
+            filename = part["filename"]
+            if args.filename and args.filename != filename:
+                continue
+            att_id = part["body"]["attachmentId"]
+            att = service.users().messages().attachments().get(
+                userId="me",
+                messageId=args.email_id,
+                id=att_id,
+            ).execute()
+            data = base64.urlsafe_b64decode(att["data"])
+            out_path = out_dir / filename
+            with open(out_path, "wb") as f:
+                f.write(data)
+            saved.append({
+                "filename": filename,
+                "path": str(out_path),
+                "size": len(data),
+                "mimeType": part.get("mimeType"),
+            })
+
+        if args.filename and not saved:
+            print(json.dumps({
+                "error": f"attachment {args.filename!r} not found",
+                "available": [p["filename"] for p in parts],
+            }))
+            sys.exit(1)
+
+        print(json.dumps({"saved": saved}, indent=2))
 
     except HttpError as e:
         print(json.dumps({"error": str(e)}))
@@ -1316,6 +1381,14 @@ def main():
     read_parser.add_argument("--format", choices=["full", "minimal"], default="full", help="Output format")
     add_account_arg(read_parser)
     read_parser.set_defaults(func=cmd_read)
+
+    # Attachment download command
+    attachment_parser = subparsers.add_parser("attachment", help="Download attachment(s) from an email")
+    attachment_parser.add_argument("email_id", help="Email ID to fetch attachments from")
+    attachment_parser.add_argument("--out-dir", default=".", help="Directory to save attachments (default: .)")
+    attachment_parser.add_argument("--filename", help="Download only this specific filename (default: all)")
+    add_account_arg(attachment_parser)
+    attachment_parser.set_defaults(func=cmd_attachment)
 
     # List emails command
     list_parser = subparsers.add_parser("list", help="List recent emails")

@@ -100,3 +100,12 @@ suno-skill/pw-profile/
 
 # Suno skill sessions (cookies/auth state)
 suno-skill/sessions/
+
+# ScanSnap bridge skill (runtime files)
+scansnap-bridge/bridge.log
+scansnap-bridge/bridge.stdout.log
+scansnap-bridge/bridge.stderr.log
+scansnap-bridge/.bridge.pid
+scansnap-bridge/.bridge.state.json
+scansnap-bridge/debug_*.txt
+scansnap-bridge/com.idanbeck.scansnap-bridge.plist
