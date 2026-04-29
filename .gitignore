@@ -109,3 +109,6 @@ scansnap-bridge/.bridge.pid
 scansnap-bridge/.bridge.state.json
 scansnap-bridge/debug_*.txt
 scansnap-bridge/com.idanbeck.scansnap-bridge.plist
+
+# Zergboard skill (sensitive)
+zergboard-skill/config.json
