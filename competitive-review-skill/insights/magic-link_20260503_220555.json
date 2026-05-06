@@ -1,0 +1,812 @@
+{
+  "name": "Magic",
+  "url": "https://magic.link",
+  "domain": "magic.link",
+  "scanned_at": "2026-05-03T22:03:29.698397",
+  "sources": {
+    "landing": {
+      "url": "https://magic.link",
+      "title": "Magic Labs | The fastest way to build onchain",
+      "text": "Magic Labs | The fastest way to build onchain\nDocs\nPricing\nStablecoins\nCompany\nDemo\nLogin\nStart now\nTrusted\nwallet infrastructure\nOver 7 years of proven reliability. Provision non-custodial embedded wallets, trigger onchain actions, and stay compliant\u2014all with one powerful, production-ready API.\nStart now\nContact Sales\nError loading scene\nCannot read properties of undefined (reading 'gl')\n200K\nDevelopers\n53M+\nWallets\n18k\nApps\nEnterprise-grade embedded wallets built for performance and scale\nOnboard and scale your users to millions. Magic offers a powerful API that combines embedded wallet creation, transaction signing, and onchain automation into one seamless experience.\nEmbedded wallets on demand\nProvision wallets for users and agents via API.\nWhitelabel UI\nMatch the in-app wallet experience to your brand identity, down to the pixel.\nFlexible auth\nOnboard users in seconds via email, social, passkeys or SSO. Use Magic\u2019s native auth or plug in your own auth provider (Auth0, Firebase, NextAuth, etc) to power your embedded wallets.\nNon-custodial\nYour users have full control of their digital assets.\nCustomizable sharding\nChoose a setup that fits your security model: Magic-managed, self-hosted, or anything in between.\nSub-second latency\n50-100ms latency for creating wallets and signing transactions.\nAlways-on infrastructure\nInfrastructure that just works with battle-tested reliability.\nMassively scalable\nExecute millions of signatures in just minutes, built for peak demand.\nEnterprise-grade security and compliance\nMagic leads the industry with secure scalability and performance. Our commitment to security and compliance is backed by industry-leading best practices, including SOC 2 Type 2, ISO 27001:2022, CCPA, and GDPR.\nTrusted hardware secured\nKeys are distributed and encrypted across isolated services. Both key reconstruction and signing occur strictly inside trusted execution environments (TEEs).\nMulti-layered resilience\nWe isolate risk at every layer \u2014 keys, data, access \u2014 using secure enclaves, network encryption, and user provided encryption context to enforce least privilege.\nBattle-tested in production\nOperating since 2018, our infrastructure has been hardened by years of real-world usage.\nIntegrate our API in\n<\n10 minutes\nWALLET API\n1\nGet your API credentials\nSet up an account to get your API key and provider ID.\n2\nMake your first API call\nCreate wallets programmatically with a simple HTTP request.\n3\nScale to production\nDeploy with confidence knowing your infrastructure can handle millions of users.\nGo to Docs\nJavaScript\nCOPY\n01\nconst\ngetOrCreateWallet\n=\nasync\n(\n)\n=>\n{\n02\nconst\nres\n=\nawait\nfetch\n(\n\"https://tee.express.magiclabs.com/v1/wallet\"\n,\n{\n03\nmethod\n:\n\"POST\"\n,\n04\nheaders\n:\n{\n05\n\"Content-Type\"\n:\n\"application/json\"\n,\n06\nAuthorization\n:\n`\nBearer\n${\n\"YOUR-AUTH-PROVIDER-JWT\"\n}\n`\n,\n07\n\"X-Magic-API-Key\"\n:\n\"YOUR-MAGIC-API-KEY\"\n,\n08\n\"X-OIDC-Provider-ID\"\n:\n\"YOUR-MAGIC-PROVIDER-ID\"\n,\n09\n\"X-Magic-Chain\"\n:\n\"ETH\"\n,\n10\n}\n,\n11\n}\n)\n;\n12\nconst\ndata\n=\nawait\nres\n.\njson\n(\n)\n;\n13\nreturn\ndata\n.\npublic_address\n;\n14\n}\n;\nNewton Protocol\nLed by Magic Newton Foundation and developed by Magic Labs, Newton Protocol is the first policy protocol designed to govern the new era of AI and assets such as stablecoins and RWAs, which require more compliance and composability than smart contracts allow.\nLearn More\nVerifies every onchain action taken by any entity is within predefined policy\nHandles complex logic and AI reasoning that intakes onchain & offchain data\nComposable across chains and apps, unlike smart contracts\nPreserves privacy\nBacked by the best\nBalaji Srinivasan\nGo live in minutes.\nScale to millions.\nStart now\nContact Sales\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nManage Cookie Settings\nCookies & Privacy\nMagic uses tracking technologies for analytics, personalization and targeted advertising purposes. We also share relevant data with our social media, advertising and analytics partners.\nLearn more here.\nAccept\nDo not sell or share my personal information",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://magic.link/pricing",
+      "title": "Pricing | Magic",
+      "text": "Pricing | Magic\nDocs\nPricing\nStablecoins\nCompany\nDemo\nLogin\nStart now\nUnlimited signatures. Pricing built to scale.\nMonthly\nAnnual (10% off)\nDeveloper\nFor individual builders\nUp to 1,000 Monthly Active Wallets\n$0.045 per additional MAW\nUnlimited Signatures\n$\n0\n/mo\nStart Now\nEmail, SMS, Social, External Wallet Logins\nWallet UI Widgets\nToken Gating\nFiat On-Ramp\nEmail & Community Support\nStartup\nMOST POPULAR\nFor early-stage teams\nUp to 2,500 Monthly Active Wallets\n$0.04 per additional MAW\nUnlimited Signatures\n$\n99\n/mo\nStart Now\nAll Developer Features, plus:\nAuth & Wallets\nMulti-Factor Auth\nSession Management\nLogin Data Export\nSupport\nPrioritized Support\nPlatform\nUp to 5 Team Seats\nEnterprise\nCustom Pricing\nFor large organizations with specific needs. Define your Monthly Active Wallets and design a plan that meets your unique needs and can scale alongside your operations. Transaction-based pricing available as low as $0.001/tx.\nTalk to sales\nTrusted by trailblazers\nCompare all features\nDeveloper\n$0\nStart now\nSTARTUP\n$99\nStart Now\nENTERPRISE\nCustom\nTalk to sales\nMonthly Active Wallets\n1,000\n2,500\nCustom\nFee per Additional MAW\n$0.045\n$0.04\nCustom\nServer Wallets (Core and Express)\nAuthentication\nEmail, SMS, Social, External Wallet Logins\nDedicated Team Support\nSession Management\nLogin Data Export\nMFA w/ Authenticator Apps\nPriority Support\n<24hr response time\nAdditional Team Seats\nCustom Email Provider (SMTP)\nCustom Email Templates\nWhite-labeled Wallet Widget UI\nWhiteglove Support\nDedicated Slack channel, Custom SLAs, Onboarding Support, etc\nAdvanced MFA\nSMS, WebAuthn, Threat Based, Step-Up\nFAQs\nWhat plan is right for me?\nWhat is a \"monthly active wallet\" (MAW)?\nWhat if I exceed my 1,000 free monthly active wallets?\nCan I change my plan later on?\nCan other team members access payment info?\nHave other questions?\nVisit our Docs\nto learn how to integrate the Magic SDK with just a few lines of code.\nWe\u2019re here to help\nNeed resources or help finding the right solution for you?\nContact us\nfor technical support.\nGo live in minutes.\nScale to millions.\nStart now\nContact Sales\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nManage Cookie Settings\nCookies & Privacy\nMagic uses tracking technologies for analytics, personalization and targeted advertising purposes. We also share relevant data with our social media, advertising and analytics partners.\nLearn more here.\nAccept\nDo not sell or share my personal information",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://magic.link/changelog",
+      "title": "",
+      "text": "Docs\nPricing\nStablecoins\nCompany\nDemo\nLogin\nStart now\n404\nSorry, the page you're looking for is in another fort\nGo Home\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nManage Cookie Settings\nCookies & Privacy\nMagic uses tracking technologies for analytics, personalization and targeted advertising purposes. We also share relevant data with our social media, advertising and analytics partners.\nLearn more here.\nAccept\nDo not sell or share my personal information",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://magic.link/docs",
+      "title": "Developer Docs | Magic",
+      "text": "Developer Docs | Magic\nSkip to main content\nMagicLabs\nhome page\nSearch...\n\u2318\nK\nAsk AI\nLog In\nStart now\nStart now\nSearch...\nNavigation\nGet Started\nMagic Home\nHome\nServer Wallets\nEmbedded Wallets\nUnified Orchestration Accounts\nRecipes\nGuides\nCommunity\nBlog\nGet Started\nWelcome\nSecurity\nTeams\nLLM & MCP Access\nFAQ\nOn this page\nServer Wallets\nKey Features\nEmbedded Wallets\nKey Features\nSee It in Action\nGet Started\nMagic Home\nCopy page\nWelcome to Magic docs! Build Web3 applications with our server-side wallet management solutions and embedded wallet infrastructure.\nCopy page\nDocumentation Index\nFetch the complete documentation index at:\nhttps://docs.magic.link/llms.txt\nUse this file to discover all available pages before exploring further.\nMagic provides comprehensive Web3 infrastructure solutions for developers and enterprises:\n\u200b\nServer Wallets\nServer-side wallet management with enterprise-grade security\nExpress API\nStreamlined wallet management with JWT authentication and trusted execution environment technology for rapid development.\nCore API\nAdvanced server-side wallet management with AWS Nitro TEE security and key sharding for maximum control and compliance.\n\u200b\nKey Features\nWhite-label Solution\n: Powerful APIs that integrate seamlessly with your brand and application\nEnterprise Security\n: AWS Nitro TEE security and advanced key sharding for maximum control\nNon-custodial Security\n: Users maintain full control over their private keys\nMulti-chain Support\n: EVM chains, Solana, and Bitcoin support\nProduction Ready\n: Enterprise-grade infrastructure for scalable applications\n\u200b\nEmbedded Wallets\nSeamless Web3 onboarding with non-custodial wallets\nAuthentication\nPasswordless login options including email OTP, SMS, social logins, and Farcaster.\nWallets\nNon-custodial embedded wallets with transaction signing, personal signatures, fiat on-ramps, and key export capabilities.\nSDKs\nClient-side and server-side SDKs for web, mobile (iOS/Android), React Native, Python, and Node.js applications.\nQuickstart\nGet started with embedded wallets using our CLI tool or manual integration guide for seamless Web3 onboarding.\n\u200b\nKey Features\nPasswordless Authentication\n: Email OTP, SMS, social logins, and more\nInstant Wallet Creation\n: Users get wallets immediately upon authentication\nPatent Pending TKMS\n: TEE Key Management System for secure key management\nMulti-chain Support\n: 30+ blockchain networks supported\nCustomizable UI\n: Embedded wallet widgets with full branding control\n\u200b\nSee It in Action\nChoose Your Wallet Type\nExperience both Server Wallets and Embedded Wallets in action. Choose your wallet type and see the differences between our solutions.\nWas this page helpful?\nYes\nNo\nSuggest edits\nRaise issue\nProduct Security\n\u2318\nI\nx\ndiscord\ngithub\nlinkedin\nyoutube\nPowered by\nThis documentation is built and hosted on Mintlify, a developer documentation platform\nAssistant\nResponses are generated using AI and may contain mistakes.",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://magic.link/integrations",
+      "title": "",
+      "text": "Docs\nPricing\nStablecoins\nCompany\nDemo\nLogin\nStart now\n404\nSorry, the page you're looking for is in another fort\nGo Home\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\n\u00a9\n2026\nMagic Labs, Inc.\n548 Market St., PMB 31387\nSan Francisco, California 94104-5401\nPrivacy Policy\n|\nTerms of Service\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nAbout\nBlog\nBrand Assets\nCareers\nContact Us\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nDevelopers\nDocs\nGuides\nGitHub\nPricing\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nResources\nStatus Page\nTrust Center\nWhistleblower Hotline\nCompliance\nSecurity\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nSocial\nX\nDiscord\nFarcaster\nLinkedin\nYouTube\nManage Cookie Settings\nCookies & Privacy\nMagic uses tracking technologies for analytics, personalization and targeted advertising purposes. We also share relevant data with our social media, advertising and analytics partners.\nLearn more here.\nAccept\nDo not sell or share my personal information",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/magic/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Magic",
+          "url": "http://www.getmagicnow.com",
+          "points": 1329,
+          "num_comments": 528,
+          "created_at": "2015-02-22T01:37:55Z",
+          "hn_url": "https://news.ycombinator.com/item?id=9087819"
+        },
+        {
+          "title": "H.264 is Magic",
+          "url": "https://sidbala.com/h-264-is-magic/",
+          "points": 1228,
+          "num_comments": 219,
+          "created_at": "2016-11-04T10:00:57Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12871403"
+        },
+        {
+          "title": "Magic Leap One",
+          "url": "https://www.magicleap.com/?utm_source=reveal&utm_medium=TW&utm_campaign=WTDO",
+          "points": 1115,
+          "num_comments": 623,
+          "created_at": "2017-12-20T14:02:33Z",
+          "hn_url": "https://news.ycombinator.com/item?id=15969511"
+        },
+        {
+          "title": "Apple Silicon M1: Black Magic Fuckery",
+          "url": "https://www.singhkays.com/blog/apple-silicon-m1-black-magic/",
+          "points": 1042,
+          "num_comments": 1083,
+          "created_at": "2020-11-24T19:36:27Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25202147"
+        },
+        {
+          "title": "Magic-trace \u2013 High-resolution traces of what a process is doing",
+          "url": "https://github.com/janestreet/magic-trace",
+          "points": 831,
+          "num_comments": 140,
+          "created_at": "2022-04-22T13:30:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=31121319"
+        },
+        {
+          "title": "Magic Wormhole: get things from one computer to another, safely",
+          "url": "https://github.com/magic-wormhole/magic-wormhole",
+          "points": 816,
+          "num_comments": 255,
+          "created_at": "2024-08-17T16:59:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41275920"
+        },
+        {
+          "title": "14 years ago: the day Teller gave me the secret to my career in magic.",
+          "url": "http://shwood.squarespace.com/news/2009/9/21/14-years-ago-the-day-teller-gave-me-the-secret-to-my-career.html",
+          "points": 797,
+          "num_comments": 63,
+          "created_at": "2012-02-15T21:22:35Z",
+          "hn_url": "https://news.ycombinator.com/item?id=3596124"
+        },
+        {
+          "title": "Cursorless is alien magic from the future",
+          "url": "https://xeiaso.net/notes/cursorless-alien-magic/",
+          "points": 790,
+          "num_comments": 337,
+          "created_at": "2023-11-10T04:04:10Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38214915"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Magic rug",
+          "subreddit": "funny",
+          "score": 88073,
+          "num_comments": 880,
+          "permalink": "https://reddit.com/r/funny/comments/1sb3xxx/magic_rug/",
+          "selftext": ""
+        },
+        {
+          "title": "Laminar flow spread out from a spoon with fingers",
+          "subreddit": "blackmagicfuckery",
+          "score": 87486,
+          "num_comments": 848,
+          "permalink": "https://reddit.com/r/blackmagicfuckery/comments/1m36zrz/laminar_flow_spread_out_from_a_spoon_with_fingers/",
+          "selftext": "\nIs there any specific ~~trick~~ spell to get this done? \n\nTrying to learn the \u2018black magic\u2019 behind it before I go practice it near the sink without wetting myself. "
+        },
+        {
+          "title": "Petaaaah?",
+          "subreddit": "PeterExplainsTheJoke",
+          "score": 79262,
+          "num_comments": 1396,
+          "permalink": "https://reddit.com/r/PeterExplainsTheJoke/comments/1sk5jgk/petaaaah/",
+          "selftext": "Why do they burn the CDs?"
+        },
+        {
+          "title": "Math is magical...",
+          "subreddit": "dndmemes",
+          "score": 74547,
+          "num_comments": 633,
+          "permalink": "https://reddit.com/r/dndmemes/comments/1kxz4bd/math_is_magical/",
+          "selftext": ""
+        },
+        {
+          "title": "Has anyone else noticed that ever since ICE raids started happening on large scales, all of the right wing groups, like the Proud Boys and Three Percenters, have magically disappeared? It's almost as if they're the same people... \ud83e\uddd0\ud83e\udd14",
+          "subreddit": "complaints",
+          "score": 71699,
+          "num_comments": 1663,
+          "permalink": "https://reddit.com/r/complaints/comments/1q7xag1/has_anyone_else_noticed_that_ever_since_ice_raids/",
+          "selftext": ""
+        },
+        {
+          "title": "In the same breath canceling said free speech.",
+          "subreddit": "BlackPeopleTwitter",
+          "score": 70593,
+          "num_comments": 414,
+          "permalink": "https://reddit.com/r/BlackPeopleTwitter/comments/1nl1otp/in_the_same_breath_canceling_said_free_speech/",
+          "selftext": ""
+        },
+        {
+          "title": "My local Home Depot is sick of your nonsense",
+          "subreddit": "DiWHY",
+          "score": 66793,
+          "num_comments": 2874,
+          "permalink": "https://reddit.com/r/DiWHY/comments/1rul1m0/my_local_home_depot_is_sick_of_your_nonsense/",
+          "selftext": ""
+        },
+        {
+          "title": "What\u2019s the magic word?",
+          "subreddit": "MadeMeSmile",
+          "score": 64062,
+          "num_comments": 563,
+          "permalink": "https://reddit.com/r/MadeMeSmile/comments/1odth8r/whats_the_magic_word/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://magic.link/pricing",
+    "changelog": null,
+    "docs": "https://magic.link/docs",
+    "integrations": "https://magic.link/integrations",
+    "g2": "https://www.g2.com/products/magic/reviews"
+  },
+  "analysis": {
+    "name": "Magic",
+    "url": "https://magic.link",
+    "tagline": "The fastest way to build onchain",
+    "value_proposition": "Magic provides a production-ready API for provisioning non-custodial embedded wallets, transaction signing, and onchain automation with enterprise-grade security and compliance.",
+    "target_segment": "dev / enterprise",
+    "ideal_customer": "Web3 developers and enterprises building onchain applications that need scalable embedded wallet infrastructure with compliance requirements",
+    "features": [
+      {
+        "name": "embedded wallets",
+        "description": "Non-custodial embedded wallets provisioned on demand via API for users and agents",
+        "evidence_source": "landing",
+        "evidence_quote": "Provision non-custodial embedded wallets, trigger onchain actions, and stay compliant\u2014all with one powerful, production-ready API.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "server wallets (express api)",
+        "description": "Streamlined server-side wallet management with JWT authentication and TEE technology for rapid development",
+        "evidence_source": "docs",
+        "evidence_quote": "Streamlined wallet management with JWT authentication and trusted execution environment technology for rapid development.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "server wallets (core api)",
+        "description": "Advanced server-side wallet management with AWS Nitro TEE security and key sharding for maximum control and compliance",
+        "evidence_source": "docs",
+        "evidence_quote": "Advanced server-side wallet management with AWS Nitro TEE security and key sharding for maximum control and compliance.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "transaction signing",
+        "description": "Sign blockchain transactions programmatically via API with sub-second latency",
+        "evidence_source": "landing",
+        "evidence_quote": "50-100ms latency for creating wallets and signing transactions.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "unlimited signatures",
+        "description": "No cap on the number of transaction signatures across all paid tiers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Unlimited Signatures",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "whitelabel ui",
+        "description": "Fully customizable embedded wallet widget UI matched to brand identity",
+        "evidence_source": "landing",
+        "evidence_quote": "Match the in-app wallet experience to your brand identity, down to the pixel.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "wallet ui widgets",
+        "description": "Pre-built wallet UI widgets for embedding in applications",
+        "evidence_source": "pricing",
+        "evidence_quote": "Wallet UI Widgets",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "email login",
+        "description": "Passwordless authentication via email OTP",
+        "evidence_source": "docs",
+        "evidence_quote": "Passwordless login options including email OTP, SMS, social logins, and Farcaster.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sms login",
+        "description": "Passwordless authentication via SMS one-time password",
+        "evidence_source": "pricing",
+        "evidence_quote": "Email, SMS, Social, External Wallet Logins",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "social login",
+        "description": "OAuth-based social login for user onboarding",
+        "evidence_source": "pricing",
+        "evidence_quote": "Email, SMS, Social, External Wallet Logins",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "external wallet login",
+        "description": "Support for connecting existing external wallets for authentication",
+        "evidence_source": "pricing",
+        "evidence_quote": "Email, SMS, Social, External Wallet Logins",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "farcaster login",
+        "description": "Authentication via Farcaster social protocol",
+        "evidence_source": "docs",
+        "evidence_quote": "Passwordless login options including email OTP, SMS, social logins, and Farcaster.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "passkey login",
+        "description": "Onboard users via passkeys for passwordless authentication",
+        "evidence_source": "landing",
+        "evidence_quote": "Onboard users in seconds via email, social, passkeys or SSO.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "sso",
+        "description": "Single sign-on support for enterprise and third-party auth provider integration",
+        "evidence_source": "landing",
+        "evidence_quote": "Onboard users in seconds via email, social, passkeys or SSO.",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "bring-your-own auth provider",
+        "description": "Plug in existing auth providers (Auth0, Firebase, NextAuth, etc.) to power embedded wallets",
+        "evidence_source": "landing",
+        "evidence_quote": "Use Magic's native auth or plug in your own auth provider (Auth0, Firebase, NextAuth, etc) to power your embedded wallets.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "multi-factor authentication",
+        "description": "MFA via authenticator apps for additional security on user accounts",
+        "evidence_source": "pricing",
+        "evidence_quote": "MFA w/ Authenticator Apps",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "advanced mfa",
+        "description": "Advanced MFA options including SMS, WebAuthn, threat-based, and step-up authentication",
+        "evidence_source": "pricing",
+        "evidence_quote": "Advanced MFA \u2014 SMS, WebAuthn, Threat Based, Step-Up",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "session management",
+        "description": "Manage user authentication sessions programmatically",
+        "evidence_source": "pricing",
+        "evidence_quote": "Session Management",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "login data export",
+        "description": "Export user login and authentication data",
+        "evidence_source": "pricing",
+        "evidence_quote": "Login Data Export",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "token gating",
+        "description": "Restrict access to content or features based on token ownership",
+        "evidence_source": "pricing",
+        "evidence_quote": "Token Gating",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "fiat on-ramp",
+        "description": "Built-in fiat-to-crypto on-ramp for users within embedded wallet experience",
+        "evidence_source": "pricing",
+        "evidence_quote": "Fiat On-Ramp",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "key export",
+        "description": "Allow users to export their private keys from embedded wallets",
+        "evidence_source": "docs",
+        "evidence_quote": "Non-custodial embedded wallets with transaction signing, personal signatures, fiat on-ramps, and key export capabilities.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "personal signatures",
+        "description": "Support for personal message signing (eth_sign / personal_sign)",
+        "evidence_source": "docs",
+        "evidence_quote": "Non-custodial embedded wallets with transaction signing, personal signatures, fiat on-ramps, and key export capabilities.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "non-custodial key management",
+        "description": "Users retain full control over their private keys; Magic never has unilateral access",
+        "evidence_source": "landing",
+        "evidence_quote": "Your users have full control of their digital assets.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "trusted execution environment (tee)",
+        "description": "Key reconstruction and signing occur strictly inside hardware-backed TEEs for tamper-proof security",
+        "evidence_source": "landing",
+        "evidence_quote": "Both key reconstruction and signing occur strictly inside trusted execution environments (TEEs).",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "aws nitro tee security",
+        "description": "Core API backed by AWS Nitro Enclaves for maximum server-side key security",
+        "evidence_source": "docs",
+        "evidence_quote": "Advanced server-side wallet management with AWS Nitro TEE security and key sharding for maximum control and compliance.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "key sharding",
+        "description": "Customizable key sharding: Magic-managed, self-hosted, or hybrid security models",
+        "evidence_source": "landing",
+        "evidence_quote": "Choose a setup that fits your security model: Magic-managed, self-hosted, or anything in between.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "patent pending tkms",
+        "description": "Proprietary TEE Key Management System for secure embedded wallet key management",
+        "evidence_source": "docs",
+        "evidence_quote": "Patent Pending TKMS: TEE Key Management System for secure key management",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-chain support",
+        "description": "Support for 30+ blockchain networks including EVM chains, Solana, and Bitcoin",
+        "evidence_source": "docs",
+        "evidence_quote": "Multi-chain Support: EVM chains, Solana, and Bitcoin support",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "evm chain support",
+        "description": "Full compatibility with Ethereum and EVM-compatible chains",
+        "evidence_source": "docs",
+        "evidence_quote": "Multi-chain Support: EVM chains, Solana, and Bitcoin support",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "solana support",
+        "description": "Wallet and signing support for Solana blockchain",
+        "evidence_source": "docs",
+        "evidence_quote": "Multi-chain Support: EVM chains, Solana, and Bitcoin support",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bitcoin support",
+        "description": "Wallet and signing support for Bitcoin",
+        "evidence_source": "docs",
+        "evidence_quote": "Multi-chain Support: EVM chains, Solana, and Bitcoin support",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "web sdk",
+        "description": "Client-side JavaScript/TypeScript SDK for web applications",
+        "evidence_source": "docs",
+        "evidence_quote": "Client-side and server-side SDKs for web, mobile (iOS/Android), React Native, Python, and Node.js applications.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ios sdk",
+        "description": "Native iOS mobile SDK for embedding wallets in iOS apps",
+        "evidence_source": "docs",
+        "evidence_quote": "Client-side and server-side SDKs for web, mobile (iOS/Android), React Native, Python, and Node.js applications.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "android sdk",
+        "description": "Native Android mobile SDK for embedding wallets in Android apps",
+        "evidence_source": "docs",
+        "evidence_quote": "Client-side and server-side SDKs for web, mobile (iOS/Android), React Native, Python, and Node.js applications.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "react native sdk",
+        "description": "Cross-platform React Native SDK for mobile wallet integration",
+        "evidence_source": "docs",
+        "evidence_quote": "Client-side and server-side SDKs for web, mobile (iOS/Android), React Native, Python, and Node.js applications.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "python sdk",
+        "description": "Server-side Python SDK for backend wallet operations",
+        "evidence_source": "docs",
+        "evidence_quote": "Client-side and server-side SDKs for web, mobile (iOS/Android), React Native, Python, and Node.js applications.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "node.js sdk",
+        "description": "Server-side Node.js SDK for backend wallet operations",
+        "evidence_source": "docs",
+        "evidence_quote": "Client-side and server-side SDKs for web, mobile (iOS/Android), React Native, Python, and Node.js applications.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rest api",
+        "description": "HTTP REST API for programmatic wallet creation and management",
+        "evidence_source": "landing",
+        "evidence_quote": "Create wallets programmatically with a simple HTTP request.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "unified orchestration accounts",
+        "description": "Unified account abstraction layer orchestrating across wallet types",
+        "evidence_source": "docs",
+        "evidence_quote": "Unified Orchestration Accounts",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "onchain automation",
+        "description": "Trigger and automate onchain actions programmatically at scale",
+        "evidence_source": "landing",
+        "evidence_quote": "Provision non-custodial embedded wallets, trigger onchain actions, and stay compliant\u2014all with one powerful, production-ready API.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "massively parallel signing",
+        "description": "Execute millions of signatures in minutes for peak-demand scenarios",
+        "evidence_source": "landing",
+        "evidence_quote": "Execute millions of signatures in just minutes, built for peak demand.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "custom email provider (smtp)",
+        "description": "Use your own SMTP server for sending authentication emails",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom Email Provider (SMTP)",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom email templates",
+        "description": "Customize transactional email templates for auth flows",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom Email Templates",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "team seats",
+        "description": "Multiple team members can access and manage the Magic dashboard",
+        "evidence_source": "pricing",
+        "evidence_quote": "Up to 5 Team Seats",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "soc 2 type 2 compliance",
+        "description": "SOC 2 Type 2 certified infrastructure for enterprise security assurance",
+        "evidence_source": "landing",
+        "evidence_quote": "SOC 2 Type 2, ISO 27001:2022, CCPA, and GDPR.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "iso 27001:2022 compliance",
+        "description": "ISO 27001:2022 certified information security management",
+        "evidence_source": "landing",
+        "evidence_quote": "SOC 2 Type 2, ISO 27001:2022, CCPA, and GDPR.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gdpr compliance",
+        "description": "GDPR-compliant data handling and privacy controls",
+        "evidence_source": "landing",
+        "evidence_quote": "SOC 2 Type 2, ISO 27001:2022, CCPA, and GDPR.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ccpa compliance",
+        "description": "CCPA-compliant data handling for California consumer privacy",
+        "evidence_source": "landing",
+        "evidence_quote": "SOC 2 Type 2, ISO 27001:2022, CCPA, and GDPR.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "newton protocol",
+        "description": "Policy protocol for governing AI agents and onchain assets like stablecoins and RWAs",
+        "evidence_source": "landing",
+        "evidence_quote": "Newton Protocol is the first policy protocol designed to govern the new era of AI and assets such as stablecoins and RWAs.",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "onchain policy enforcement",
+        "description": "Verify every onchain action taken by any entity is within predefined policy rules",
+        "evidence_source": "landing",
+        "evidence_quote": "Verifies every onchain action taken by any entity is within predefined policy",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "ai agent wallet support",
+        "description": "Provision wallets for AI agents via API alongside user wallets",
+        "evidence_source": "landing",
+        "evidence_quote": "Provision wallets for users and agents via API.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "llm & mcp access",
+        "description": "Access Magic documentation and tools via LLM and Model Context Protocol integrations",
+        "evidence_source": "docs",
+        "evidence_quote": "LLM & MCP Access",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "dedicated slack channel support",
+        "description": "Enterprise customers get a dedicated Slack channel for direct support",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated Slack channel, Custom SLAs, Onboarding Support, etc",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom slas",
+        "description": "Negotiated service level agreements for enterprise customers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated Slack channel, Custom SLAs, Onboarding Support, etc",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "onboarding support",
+        "description": "White-glove onboarding assistance for enterprise customers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated Slack channel, Custom SLAs, Onboarding Support, etc",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "priority support",
+        "description": "Prioritized support with under-24-hour response time",
+        "evidence_source": "pricing",
+        "evidence_quote": "Priority Support \u2014 <24hr response time",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "email & community support",
+        "description": "Standard email and community forum support for free tier users",
+        "evidence_source": "pricing",
+        "evidence_quote": "Email & Community Support",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "status page",
+        "description": "Public infrastructure status and uptime monitoring page",
+        "evidence_source": "landing",
+        "evidence_quote": "Status Page",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "trust center",
+        "description": "Centralized security and compliance documentation hub",
+        "evidence_source": "landing",
+        "evidence_quote": "Trust Center",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "transaction-based pricing option",
+        "description": "Alternative per-transaction pricing model available at enterprise scale",
+        "evidence_source": "pricing",
+        "evidence_quote": "Transaction-based pricing available as low as $0.001/tx.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "cli quickstart tool",
+        "description": "CLI tool for rapid embedded wallet integration and project bootstrapping",
+        "evidence_source": "docs",
+        "evidence_quote": "Get started with embedded wallets using our CLI tool or manual integration guide for seamless Web3 onboarding.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "privacy preservation in policy layer",
+        "description": "Newton Protocol preserves user/transaction privacy while enforcing compliance policies",
+        "evidence_source": "landing",
+        "evidence_quote": "Preserves privacy",
+        "tier": "unknown",
+        "confidence": "low"
+      },
+      {
+        "name": "cross-chain composability",
+        "description": "Newton Protocol policies composable across multiple chains and apps",
+        "evidence_source": "landing",
+        "evidence_quote": "Composable across chains and apps, unlike smart contracts",
+        "tier": "unknown",
+        "confidence": "low"
+      }
+    ],
+    "integrations": [
+      "Auth0",
+      "Firebase",
+      "NextAuth",
+      "Farcaster",
+      "AWS Nitro Enclaves",
+      "Mintlify (docs platform)"
+    ],
+    "differentiators": [
+      "Over 7 years of proven reliability operating since 2018",
+      "Patent Pending TKMS (TEE Key Management System) for secure key management",
+      "Sub-second latency: 50-100ms for wallet creation and transaction signing",
+      "Execute millions of signatures in minutes for peak demand",
+      "Newton Protocol: first policy protocol for governing AI agents and onchain assets including stablecoins and RWAs",
+      "Customizable key sharding: Magic-managed, self-hosted, or hybrid",
+      "Both key reconstruction and signing occur strictly inside TEEs",
+      "Non-custodial by design: users maintain full control of private keys",
+      "53M+ wallets provisioned across 18,000+ apps"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "1,000 monthly active wallets; $0.045 per additional MAW"
+      },
+      "tiers": [
+        {
+          "name": "Developer",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$0",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Up to 1,000 MAWs, unlimited signatures, email/SMS/social login, wallet widgets, token gating, fiat on-ramp"
+        },
+        {
+          "name": "Startup",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$99",
+          "yearly_discount_pct": "10",
+          "headline_inclusions": "Up to 2,500 MAWs, MFA, session management, login data export, priority support, up to 5 team seats"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Custom MAWs, white-glove support, custom email/SMTP, advanced MFA, whitelabeled UI, dedicated Slack, custom SLAs"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Annual billing offers 10% discount. Overage MAW fees: $0.045/MAW (Developer), $0.04/MAW (Startup). Enterprise offers transaction-based pricing as low as $0.001/tx as an alternative model. MAW = Monthly Active Wallet. Server Wallets (Core and Express) included across all tiers."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Building a Web Framework from Scratch",
+        "url": "https://news.ycombinator.com/item?id=48001803",
+        "points": 4,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48001803"
+      },
+      {
+        "title": "Show HN: A (de)compiler and parser/engine for custom Magic: The Gathering cards",
+        "url": "https://chiplis.com/ironsmith/",
+        "points": 3,
+        "comments": 0,
+        "age_days": 1,
+        "hn_url": "https://news.ycombinator.com/item?id=47991926"
+      },
+      {
+        "title": "B.C. researcher taps magic of Dungeons and Dragons to help kids",
+        "url": "https://www.cbc.ca/news/canada/british-columbia/dungeons-and-dragons-kids-therapy-neurodivergence-9.7178879",
+        "points": 3,
+        "comments": 0,
+        "age_days": 1,
+        "hn_url": "https://news.ycombinator.com/item?id=47986892"
+      },
+      {
+        "title": "Word Embedding Is Magic",
+        "url": "https://joker666.github.io/blog/2025-11-12-word-embedding-is-magic",
+        "points": 3,
+        "comments": 0,
+        "age_days": 2,
+        "hn_url": "https://news.ycombinator.com/item?id=47980277"
+      },
+      {
+        "title": "Show HN: Booksearch \u2013 fast TUI search for book collections",
+        "url": "https://github.com/rahimnathwani/booksearch",
+        "points": 2,
+        "comments": 0,
+        "age_days": 3,
+        "hn_url": "https://news.ycombinator.com/item?id=47969647"
+      }
+    ]
+  }
+}

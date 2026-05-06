@@ -1,0 +1,2241 @@
+{
+  "type": "competitive_review_handoff",
+  "category": "video-meetings",
+  "product": "ZergMeeting",
+  "generated_at": "2026-05-02T23:37:18.556638",
+  "competitor_urls": [
+    "https://zoom.us",
+    "https://meet.google.com",
+    "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+    "https://www.around.co",
+    "https://tuple.app",
+    "https://whereby.com",
+    "https://www.webex.com",
+    "https://discord.com",
+    "https://www.daily.co",
+    "https://www.goto.com/meeting"
+  ],
+  "matrix": [
+    {
+      "feature": "video meetings",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "yes",
+        "tuple.app": "yes",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "yes",
+        "us_live": "unknown"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "screen sharing",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "yes",
+        "tuple.app": "yes",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "in-meeting chat",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "unknown",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "cloud recording",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "yes",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "local recording",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "unknown",
+        "tuple.app": "unknown",
+        "hereby.com": "unknown",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "breakout rooms",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "dial-in and pstn",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "partial",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "voip calling and pbx",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "webinars and livestreaming",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "partial",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "whiteboard collaboration",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "unknown",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "partial",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "noise cancellation",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "unknown",
+        "around.co": "yes",
+        "tuple.app": "partial",
+        "hereby.com": "unknown",
+        "ebex.com": "unknown",
+        "discord.com": "unknown",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "virtual backgrounds and blur",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "yes",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "yes",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "reactions and hand raise",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "unknown",
+        "around.co": "yes",
+        "tuple.app": "yes",
+        "hereby.com": "unknown",
+        "ebex.com": "unknown",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "host controls and participant management",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "partial",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "waiting room",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "unknown",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "meeting lock and password protection",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "partial",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "unknown",
+        "hereby.com": "partial",
+        "ebex.com": "yes",
+        "discord.com": "unknown",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "remote control",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "yes",
+        "hereby.com": "no",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "meeting annotations and drawing tools",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "unknown",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "yes",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "persistent room links",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "partial",
+        "microsoft.com": "yes",
+        "around.co": "yes",
+        "tuple.app": "unknown",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "partial",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "browser-based joining",
+      "category": "core",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "yes",
+        "microsoft.com": "partial",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "conference room hardware support",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "h.323 and sip interoperability",
+      "category": "core",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "unknown",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "adaptive network quality",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "unknown",
+        "around.co": "unknown",
+        "tuple.app": "unknown",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "unknown",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "always-on rooms",
+      "category": "core",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "unknown",
+        "microsoft.com": "partial",
+        "around.co": "yes",
+        "tuple.app": "unknown",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "yes",
+        "goto.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "push-to-talk",
+      "category": "core",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "unknown",
+        "tuple.app": "yes",
+        "hereby.com": "unknown",
+        "ebex.com": "unknown",
+        "discord.com": "yes",
+        "goto.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "selective window sharing",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "yes",
+        "tuple.app": "yes",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "echo cancellation",
+      "category": "core",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "unknown",
+        "around.co": "partial",
+        "tuple.app": "yes",
+        "hereby.com": "unknown",
+        "ebex.com": "unknown",
+        "discord.com": "unknown",
+        "goto.com": "partial",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai meeting notes",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "no",
+        "hereby.com": "partial",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "yes",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "meeting transcription",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "yes",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai meeting summary",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "no",
+        "hereby.com": "partial",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "yes",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "live captions",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "real-time speech translation",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "speaker identification",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai video and audio enhancement",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "yes",
+        "microsoft.com": "partial",
+        "around.co": "partial",
+        "tuple.app": "partial",
+        "hereby.com": "partial",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "in-meeting ai assistant",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "partial",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "partial",
+        "us_spec": "partial",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai-generated backgrounds",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "yes",
+        "microsoft.com": "partial",
+        "around.co": "partial",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "unknown",
+        "discord.com": "partial",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai meeting facilitator agent",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "no",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "custom ai companion",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai receptionist",
+      "category": "ai",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "no",
+        "microsoft.com": "partial",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "rest api",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "unknown",
+        "tuple.app": "yes",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "partial",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "webhooks",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "partial",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "embeddable sdk and web component",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "partial",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "native mobile sdks",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "partial",
+        "discord.com": "unknown",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "app marketplace",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "google workspace integration",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "no",
+        "around.co": "partial",
+        "tuple.app": "partial",
+        "hereby.com": "no",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "microsoft 365 integration",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "slack integration",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "yes",
+        "tuple.app": "yes",
+        "hereby.com": "no",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "calendar integration",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "yes",
+        "tuple.app": "yes",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "oauth integration",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "unknown",
+        "tuple.app": "unknown",
+        "hereby.com": "unknown",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "bot platform",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "unknown",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "no-code embedding",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mcp server integration",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "embedded in-meeting apps",
+      "category": "integrations",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "unknown",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sso",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "yes",
+        "hereby.com": "unknown",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "admin console",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "unknown",
+        "hereby.com": "unknown",
+        "ebex.com": "yes",
+        "discord.com": "partial",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "device management",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "data loss prevention and archival",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "unknown",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "end-to-end encryption",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "yes",
+        "microsoft.com": "partial",
+        "around.co": "no",
+        "tuple.app": "yes",
+        "hereby.com": "unknown",
+        "ebex.com": "unknown",
+        "discord.com": "unknown",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "client-side encryption",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "yes",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "yes",
+        "hereby.com": "unknown",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "compliance certifications",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "partial",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "unknown",
+        "hereby.com": "yes",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "partial",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "data residency controls",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "yes",
+        "microsoft.com": "partial",
+        "around.co": "unknown",
+        "tuple.app": "no",
+        "hereby.com": "partial",
+        "ebex.com": "partial",
+        "discord.com": "unknown",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "information barriers",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "partial",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "guest and external access controls",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "partial",
+        "microsoft.com": "yes",
+        "around.co": "partial",
+        "tuple.app": "partial",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "partial",
+        "goto.com": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "governance and policy controls",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "partial",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "programmatic room management",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "partial",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "partial",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "passkeys",
+      "category": "admin",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "yes",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "custom branding",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "camera effects and filters",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "partial",
+        "microsoft.com": "unknown",
+        "around.co": "partial",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "unknown",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "smart camera framing",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "yes",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "portrait mode",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "yes",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "meeting layout options",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "yes",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "unknown",
+        "ebex.com": "unknown",
+        "discord.com": "unknown",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "pre-join device preview",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "unknown",
+        "tuple.app": "unknown",
+        "hereby.com": "unknown",
+        "ebex.com": "unknown",
+        "discord.com": "unknown",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "meeting scheduling",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "partial",
+        "around.co": "partial",
+        "tuple.app": "partial",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "no",
+        "goto.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "polling and surveys",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "unknown",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "unknown",
+        "discord.com": "unknown",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "soundboard",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "yes",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "custom email templates",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "cross-platform support",
+      "category": "ux",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "yes",
+        "tuple.app": "partial",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "workflow automation",
+      "category": "automation",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "task management",
+      "category": "automation",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "yes",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "we_have_they_dont",
+      "evidence": ""
+    },
+    {
+      "feature": "staffing and scheduling",
+      "category": "automation",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "no",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "agentic app platform",
+      "category": "automation",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "no",
+        "microsoft.com": "partial",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "event triggers and api hooks",
+      "category": "automation",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "yes",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "team chat",
+      "category": "collaboration",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "channels and threaded messaging",
+      "category": "collaboration",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "async video clips",
+      "category": "collaboration",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "contact center",
+      "category": "collaboration",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "town hall and all-hands events",
+      "category": "collaboration",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "employee social network",
+      "category": "collaboration",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "partial",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "in-meeting activities and games",
+      "category": "collaboration",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "yes",
+        "microsoft.com": "partial",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "yes",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "watch parties",
+      "category": "collaboration",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "yes",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "co-browsing",
+      "category": "collaboration",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "meeting analytics",
+      "category": "reporting",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "partial",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "partial",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "attendance tracking",
+      "category": "reporting",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "yes",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "partial",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "call quality reporting",
+      "category": "reporting",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "revenue intelligence",
+      "category": "reporting",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "workforce analytics",
+      "category": "reporting",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "partial",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "yes",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile app",
+      "category": "mobile",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "unknown",
+        "tuple.app": "no",
+        "hereby.com": "partial",
+        "ebex.com": "yes",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "android auto support",
+      "category": "mobile",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "yes",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "apple carplay support",
+      "category": "mobile",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "yes",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile web support",
+      "category": "mobile",
+      "presence": {
+        "zoom.us": "unknown",
+        "meet.google.com": "yes",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "unknown",
+        "discord.com": "yes",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "commuter mode",
+      "category": "mobile",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "workspace reservation",
+      "category": "other",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "partial",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "hot desking",
+      "category": "other",
+      "presence": {
+        "zoom.us": "no",
+        "meet.google.com": "no",
+        "microsoft.com": "yes",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "digital signage",
+      "category": "other",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "visitor management",
+      "category": "other",
+      "presence": {
+        "zoom.us": "yes",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "no",
+        "ebex.com": "no",
+        "discord.com": "no",
+        "goto.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "telehealth features",
+      "category": "other",
+      "presence": {
+        "zoom.us": "partial",
+        "meet.google.com": "no",
+        "microsoft.com": "no",
+        "around.co": "no",
+        "tuple.app": "no",
+        "hereby.com": "yes",
+        "ebex.com": "partial",
+        "discord.com": "no",
+        "goto.com": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    }
+  ],
+  "rankings": [
+    {
+      "feature": "screen sharing",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "selective window sharing",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "cross-platform support",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "host controls and participant management",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 3,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    },
+    {
+      "feature": "persistent room links",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 3,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    },
+    {
+      "feature": "guest and external access controls",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 3,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    },
+    {
+      "feature": "in-meeting chat",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 3,
+      "cost": "M",
+      "score": 7.0,
+      "evidence": ""
+    },
+    {
+      "feature": "browser-based joining",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 3,
+      "cost": "M",
+      "score": 7.0,
+      "evidence": ""
+    },
+    {
+      "feature": "ai video and audio enhancement",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 3,
+      "cost": "M",
+      "score": 7.0,
+      "evidence": ""
+    },
+    {
+      "feature": "team chat",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 3,
+      "cost": "M",
+      "score": 7.0,
+      "evidence": ""
+    }
+  ],
+  "drift": [],
+  "summary": {
+    "n_features": 106,
+    "table_stakes_count": 21,
+    "differentiator_parity_count": 84,
+    "whitespace_count": 0,
+    "we_have_they_dont_count": 1,
+    "drift_count": 0
+  }
+}

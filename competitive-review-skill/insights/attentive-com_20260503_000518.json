@@ -1,0 +1,360 @@
+{
+  "name": "Attentive",
+  "url": "https://attentive.com",
+  "domain": "attentive.com",
+  "scanned_at": "2026-05-02T23:58:41.139162",
+  "sources": {
+    "landing": {
+      "url": "https://attentive.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://attentive.com/\nCall log:\n  - navigating to \"https://attentive.com/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "pricing": {
+      "url": "https://attentive.com/pricing",
+      "title": "Attentive Pricing",
+      "text": "Attentive Pricing\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use third-party cookies and tracking technologies on our website to deliver relevant advertising, perform site analytics, and provide the best possible experience. These third parties may use your information for their own purposes.\nBy clicking Accept,\nyou consent to our use of such technologies. For more information, see our\nPrivacy Policy\nand\nCookie Notice\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nPreferences\nStatistics\nMarketing\nShow details\nDetails\nNecessary\n46\nNecessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.\nChilipiper\n3\nLearn more about this provider\ndmn_chk_#\u00a0[x2]\nUsed to maintain the overall functionality of the website: Assigns the user to a server and detects potential errors on specific servers, allowing the website to reassign the users to another server.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nlscache-distinctId\nUsed in context with the website's contact-form.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nDropbox\n1\nLearn more about this provider\nuc_session\nUsed to implement or transfer content through Dropbox.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nGoogle\n2\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nUsed to check if the user's browser supports cookies.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nSESS#\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n3\nLearn more about this provider\nembed/v3/counters.gif\u00a0[x2]\nUsed to implement forms on the website.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\ncookietest\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nLinkedIn\n2\nLearn more about this provider\nbcookie\nUsed in order to detect spam and improve the website's security.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nli_gc\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nattentive.com\nwww.forbes.com\n2\ndatadome\u00a0[x2]\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ncdn.jetboost.io\n2\njetboost-site-config\nTechnical cookie. Used to implement third-party widgets onto the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\njetboost-site-config-origin\nHolds which URL should be presented to the visitor when visiting the site.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\ncookiebot.com\nhelp.attentivemobile.com\n9\nCookieConsent\u00a0[x9]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nevents.attentive.com\ng2.com\ng2crowd.com\nhelp.attentivemobile.com\njs.hs-scripts.com\nt.co\nplayer.vimeo.com\nws.zoominfo.com\n10\n__cf_bm\u00a0[x10]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nhelp.attentivemobile.com\n1\n_help_center_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nhelp.attentivemobile.com\nhsforms.com\nvimeo.com\nwww.attentive.com\nwww.attentivemobile.com\nzoominfo.com\n7\n_cfuvid\u00a0[x7]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nip2org-ext.zi-ext.com\nws.zoominfo.com\n2\nvisitorId\u00a0[x2]\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\njs.qualified.com\n2\n__cflb\u00a0[x2]\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nPreferences\n11\nPreference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.\nCookiebot\n6\nLearn more about this provider\nCookieConsentBulkSetting-#\u00a0[x6]\nEnables cookie consent across multiple websites\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nLinkedIn\n1\nLearn more about this provider\nlidc\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nfast.wistia.net\nhelp.attentivemobile.com\nwww.attentive.com\n4\nwistia-video-progress-#\u00a0[x4]\nContains a timestamp for the website\u2019s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nStatistics\n46\nStatistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.\nAdobe Inc.\n1\nLearn more about this provider\np.gif\nKeeps track of special fonts used on the website for internal analysis. The cookie does not register any visitor data.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nChilipiper\n3\nLearn more about this provider\nph_#_primary_window_exists\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nph_#_window_id\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nph_#_posthog\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nG2Crowd\n1\nLearn more about this provider\ng2tracking\nUsed to track user\u2019s interaction with embedded content.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n12\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\n_ga\u00a0[x3]\nUsed to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_ga_#\u00a0[x3]\nUsed to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_gaclientid\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gahitid\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gasessionid\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gat\nUsed by Google Analytics to throttle request rate\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gid\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: 2 days\nType\n: HTTP Cookie\ncollect\nUsed to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nHotjar\n6\nLearn more about this provider\n_hjAbsoluteSessionInProgress\nThis cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjFirstSeen\nThis cookie is used to determine if the visitor has visited the website before, or if it is a new visitor on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjIncludedInSessionSample_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjSession_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjSessionUser_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_hjTLDTest\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n4\nLearn more about this provider\n__hssc\nIdentifies if the cookie data needs to be updated in the visitor's browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__hssrc\nUsed to recognise the visitor's browser upon reentry on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n__hstc\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nhubspotutk\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLinkedIn\n2\nLearn more about this provider\nln_or\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 2 days\nType\n: HTTP Cookie\nAnalyticsSyncHistory\nUsed in connection with data-synchronization with third-party analysis service.\nMaximum Storage Duration\n: 1 month\nType\n: HTTP Cookie\nMicrosoft\n4\nLearn more about this provider\n_clck\nCollects data on the user\u2019s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_clsk\u00a0[x2]\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_cltk\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nTwitter Inc.\n1\nLearn more about this provider\npersonalization_id\nThis cookie is set by Twitter - The cookie allows the visitor to share content from the website onto their Twitter profile.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nVimeo\n1\nLearn more about this provider\nvuid\nCollects data on the user's visits to the website, such as which pages have been read.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\nZendesk\n1\nLearn more about this provider\nhc:#:recently_visited_articles\nRegisters which articles the user has visited in a Zendesk knowledge base.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nassets.ubembed.com\n1\nub-emb-id\nEnables the website to make variations of their landing-page. This is used to minimize bounce-rates, which means that fewer users leave the page immediately.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncdn.embedly.com\nfast.wistia.net\nhelp.attentivemobile.com\nwww.attentive.com\n5\nwistia\u00a0[x5]\nUsed by the website to track the visitor's use of video-content - The cookie roots from Wistia, which provides video-software to websites.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\njs.qualified.com\n1\n__q_domainTest\nUsed in context with Account-Based-Marketing (ABM). The cookie registers data such as IP-addresses, time spent on the website and page requests for the visit. This is used for retargeting of multiple users rooting from the same IP-addresses. ABM usually facilitates B2B marketing purposes.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nws.zoominfo.com\n3\nziwsSessionId\u00a0[x2]\nCollects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nziwsSession\nCollects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nMarketing\n81\nMarketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.\nMeta Platforms, Inc.\n4\nLearn more about this provider\n_fbp\nUsed by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.\nMaximum Storage Duration\n: 3 months\nType\n: HTTP Cookie\nlastExternalReferrer\nDetects how the user reached the website by registering their last URL-address.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlastExternalReferrerTime\nDetects how the user reached the website by registering their last URL-address.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlog/error\nUsed to detect and log potential tracking errors.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\n6sc.",
+      "source": "playwright",
+      "fallback_path": "/pricing"
+    },
+    "changelog": {
+      "url": "https://attentive.com/changelog",
+      "title": "Not Found",
+      "text": "Not Found\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use third-party cookies and tracking technologies on our website to deliver relevant advertising, perform site analytics, and provide the best possible experience. These third parties may use your information for their own purposes.\nBy clicking Accept,\nyou consent to our use of such technologies. For more information, see our\nPrivacy Policy\nand\nCookie Notice\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nPreferences\nStatistics\nMarketing\nShow details\nDetails\nNecessary\n46\nNecessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.\nChilipiper\n3\nLearn more about this provider\ndmn_chk_#\u00a0[x2]\nUsed to maintain the overall functionality of the website: Assigns the user to a server and detects potential errors on specific servers, allowing the website to reassign the users to another server.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nlscache-distinctId\nUsed in context with the website's contact-form.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nDropbox\n1\nLearn more about this provider\nuc_session\nUsed to implement or transfer content through Dropbox.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nGoogle\n2\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nUsed to check if the user's browser supports cookies.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nSESS#\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n3\nLearn more about this provider\nembed/v3/counters.gif\u00a0[x2]\nUsed to implement forms on the website.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\ncookietest\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nLinkedIn\n2\nLearn more about this provider\nbcookie\nUsed in order to detect spam and improve the website's security.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nli_gc\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nattentive.com\nwww.forbes.com\n2\ndatadome\u00a0[x2]\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ncdn.jetboost.io\n2\njetboost-site-config\nTechnical cookie. Used to implement third-party widgets onto the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\njetboost-site-config-origin\nHolds which URL should be presented to the visitor when visiting the site.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\ncookiebot.com\nhelp.attentivemobile.com\n9\nCookieConsent\u00a0[x9]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nevents.attentive.com\ng2.com\ng2crowd.com\nhelp.attentivemobile.com\njs.hs-scripts.com\nt.co\nplayer.vimeo.com\nws.zoominfo.com\n10\n__cf_bm\u00a0[x10]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nhelp.attentivemobile.com\n1\n_help_center_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nhelp.attentivemobile.com\nhsforms.com\nvimeo.com\nwww.attentive.com\nwww.attentivemobile.com\nzoominfo.com\n7\n_cfuvid\u00a0[x7]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nip2org-ext.zi-ext.com\nws.zoominfo.com\n2\nvisitorId\u00a0[x2]\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\njs.qualified.com\n2\n__cflb\u00a0[x2]\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nPreferences\n11\nPreference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.\nCookiebot\n6\nLearn more about this provider\nCookieConsentBulkSetting-#\u00a0[x6]\nEnables cookie consent across multiple websites\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nLinkedIn\n1\nLearn more about this provider\nlidc\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nfast.wistia.net\nhelp.attentivemobile.com\nwww.attentive.com\n4\nwistia-video-progress-#\u00a0[x4]\nContains a timestamp for the website\u2019s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nStatistics\n46\nStatistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.\nAdobe Inc.\n1\nLearn more about this provider\np.gif\nKeeps track of special fonts used on the website for internal analysis. The cookie does not register any visitor data.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nChilipiper\n3\nLearn more about this provider\nph_#_primary_window_exists\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nph_#_window_id\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nph_#_posthog\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nG2Crowd\n1\nLearn more about this provider\ng2tracking\nUsed to track user\u2019s interaction with embedded content.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n12\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\n_ga\u00a0[x3]\nUsed to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_ga_#\u00a0[x3]\nUsed to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_gaclientid\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gahitid\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gasessionid\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gat\nUsed by Google Analytics to throttle request rate\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gid\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: 2 days\nType\n: HTTP Cookie\ncollect\nUsed to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nHotjar\n6\nLearn more about this provider\n_hjAbsoluteSessionInProgress\nThis cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjFirstSeen\nThis cookie is used to determine if the visitor has visited the website before, or if it is a new visitor on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjIncludedInSessionSample_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjSession_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjSessionUser_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_hjTLDTest\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n4\nLearn more about this provider\n__hssc\nIdentifies if the cookie data needs to be updated in the visitor's browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__hssrc\nUsed to recognise the visitor's browser upon reentry on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n__hstc\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nhubspotutk\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLinkedIn\n2\nLearn more about this provider\nln_or\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 2 days\nType\n: HTTP Cookie\nAnalyticsSyncHistory\nUsed in connection with data-synchronization with third-party analysis service.\nMaximum Storage Duration\n: 1 month\nType\n: HTTP Cookie\nMicrosoft\n4\nLearn more about this provider\n_clck\nCollects data on the user\u2019s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_clsk\u00a0[x2]\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_cltk\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nTwitter Inc.\n1\nLearn more about this provider\npersonalization_id\nThis cookie is set by Twitter - The cookie allows the visitor to share content from the website onto their Twitter profile.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nVimeo\n1\nLearn more about this provider\nvuid\nCollects data on the user's visits to the website, such as which pages have been read.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\nZendesk\n1\nLearn more about this provider\nhc:#:recently_visited_articles\nRegisters which articles the user has visited in a Zendesk knowledge base.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nassets.ubembed.com\n1\nub-emb-id\nEnables the website to make variations of their landing-page. This is used to minimize bounce-rates, which means that fewer users leave the page immediately.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncdn.embedly.com\nfast.wistia.net\nhelp.attentivemobile.com\nwww.attentive.com\n5\nwistia\u00a0[x5]\nUsed by the website to track the visitor's use of video-content - The cookie roots from Wistia, which provides video-software to websites.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\njs.qualified.com\n1\n__q_domainTest\nUsed in context with Account-Based-Marketing (ABM). The cookie registers data such as IP-addresses, time spent on the website and page requests for the visit. This is used for retargeting of multiple users rooting from the same IP-addresses. ABM usually facilitates B2B marketing purposes.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nws.zoominfo.com\n3\nziwsSessionId\u00a0[x2]\nCollects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nziwsSession\nCollects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nMarketing\n81\nMarketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.\nMeta Platforms, Inc.\n4\nLearn more about this provider\n_fbp\nUsed by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.\nMaximum Storage Duration\n: 3 months\nType\n: HTTP Cookie\nlastExternalReferrer\nDetects how the user reached the website by registering their last URL-address.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlastExternalReferrerTime\nDetects how the user reached the website by registering their last URL-address.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlog/error\nUsed to detect and log potential tracking errors.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\n6sc.co\n1\n6su",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://docs.attentivemobile.com",
+      "title": "Introduction to Attentive APIs",
+      "text": "Introduction to Attentive APIs\nJump to Content\nGuides\nAPI Reference\nLog In\nGuides\nSearch\n\u2318K\nLog In\nGuides\nAPI Reference\nIntroduction to Attentive APIs\nGetting Started\nIntroduction to Attentive APIs\nPartner with Attentive\nAuthentication\nCreate and Manage Custom Apps\nDistribute Your App\nPublish Your App\nAttentive SSO Setup - SAML\nAPI Rate Limits\nAPI Testing Console\nWebhooks\nWebhooks Overview\nWebhook Authentication\nCreate and Manage Webhooks\nBest Practices\nWebhook Payloads\nDeveloper Guides\nSDKs\nAttentive Tag SDK\nGoogle Tag Manager SDK\nGTM SDK via Attentive Analytics Template\nMobile SDKs\nSFTP Solution\nAttentive SFTP Data Feeds\nConnect to Attentive SFTP\nDaasity SFTP\nEvent Data Field Definitions\nOptimove Segments\nSubscriber Segment Upload\nIntegrations\nGetting Started\nIntroduction to Attentive APIs\nIntroduction\nAttentive\u2019s APIs allow you as a developer to integrate with the Attentive platform and build custom applications. Use our numerous endpoints to manage user subscriptions, trigger messages related to user actions, save subscriber attributes, and send personalized text messages.\nAttentive APIs\nOur APIs return JSON-encoded responses and use standard HTTP response codes, authentication, and verbs. We provide descriptions, parameter definitions, and code examples to help explain each endpoint. You can also\ndownload our OpenAPI specification\nat any time.\nWebhooks\nYou can use the Attentive platform or our APIs to configure webhook subscriptions for desired events. For example, you can receive a notification when a user subscribes to receive SMS marketing or transactional messages. The webhook takes information about the subscriber and sends it as a payload to the registered endpoint. See\nWebhooks\nfor more information.\nLegacy APIs\nWhile some developers continue to use our legacy APIs, we recommend using the Attentive APIs, which contain more functionality and beneficial features available to your organization. Note that legacy APIs require different access tokens than Attentive APIs. You must contact\nlegacyapi@attentivemobile.com\nto obtain legacy API tokens.\nBuild applications\nLearn how to\ncreate a custom app\nand then\nmake it publicly available\nfor other users outside of your organization to install in their Attentive account. Applications use OAuth 2.0 protocol to ensure that users must authorize your application to make API requests without sharing any passwords.\nDeveloper guides\nThe Developer Guides section includes details about more technical parts of our product, such as how to implement the Attentive tag to capture behavioral data on your website, the different types of data feeds that we can provide, and the various integrations that we\u2019ve built with supported third-party partners.\nUpdated\n2 months ago\nPartner with Attentive\nDid this page help you?\nYes\nNo\nCopy Page\nIntroduction\nResources\nBlog\nGuides\nWebinars\nAPI License\nCompany\nAbout us\nContact us\nCareers\n\u00a9 2026 Attentive, a product of Attentive Mobile, Inc.",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://attentive.com/integrations",
+      "title": "SMS Integrations - Connect your Platforms with Attentive | Attentive",
+      "text": "SMS Integrations - Connect your Platforms with Attentive | Attentive\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use third-party cookies and tracking technologies on our website to deliver relevant advertising, perform site analytics, and provide the best possible experience. These third parties may use your information for their own purposes.\nBy clicking Accept,\nyou consent to our use of such technologies. For more information, see our\nPrivacy Policy\nand\nCookie Notice\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nPreferences\nStatistics\nMarketing\nShow details\nDetails\nNecessary\n46\nNecessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.\nChilipiper\n3\nLearn more about this provider\ndmn_chk_#\u00a0[x2]\nUsed to maintain the overall functionality of the website: Assigns the user to a server and detects potential errors on specific servers, allowing the website to reassign the users to another server.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nlscache-distinctId\nUsed in context with the website's contact-form.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nDropbox\n1\nLearn more about this provider\nuc_session\nUsed to implement or transfer content through Dropbox.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nGoogle\n2\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nUsed to check if the user's browser supports cookies.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nSESS#\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n3\nLearn more about this provider\nembed/v3/counters.gif\u00a0[x2]\nUsed to implement forms on the website.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\ncookietest\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nLinkedIn\n2\nLearn more about this provider\nbcookie\nUsed in order to detect spam and improve the website's security.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nli_gc\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nattentive.com\nwww.forbes.com\n2\ndatadome\u00a0[x2]\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ncdn.jetboost.io\n2\njetboost-site-config\nTechnical cookie. Used to implement third-party widgets onto the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\njetboost-site-config-origin\nHolds which URL should be presented to the visitor when visiting the site.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\ncookiebot.com\nhelp.attentivemobile.com\n9\nCookieConsent\u00a0[x9]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nevents.attentive.com\ng2.com\ng2crowd.com\nhelp.attentivemobile.com\njs.hs-scripts.com\nt.co\nplayer.vimeo.com\nws.zoominfo.com\n10\n__cf_bm\u00a0[x10]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nhelp.attentivemobile.com\n1\n_help_center_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nhelp.attentivemobile.com\nhsforms.com\nvimeo.com\nwww.attentive.com\nwww.attentivemobile.com\nzoominfo.com\n7\n_cfuvid\u00a0[x7]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nip2org-ext.zi-ext.com\nws.zoominfo.com\n2\nvisitorId\u00a0[x2]\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\njs.qualified.com\n2\n__cflb\u00a0[x2]\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nPreferences\n11\nPreference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.\nCookiebot\n6\nLearn more about this provider\nCookieConsentBulkSetting-#\u00a0[x6]\nEnables cookie consent across multiple websites\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nLinkedIn\n1\nLearn more about this provider\nlidc\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nfast.wistia.net\nhelp.attentivemobile.com\nwww.attentive.com\n4\nwistia-video-progress-#\u00a0[x4]\nContains a timestamp for the website\u2019s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nStatistics\n46\nStatistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.\nAdobe Inc.\n1\nLearn more about this provider\np.gif\nKeeps track of special fonts used on the website for internal analysis. The cookie does not register any visitor data.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nChilipiper\n3\nLearn more about this provider\nph_#_primary_window_exists\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nph_#_window_id\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nph_#_posthog\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nG2Crowd\n1\nLearn more about this provider\ng2tracking\nUsed to track user\u2019s interaction with embedded content.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n12\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\n_ga\u00a0[x3]\nUsed to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_ga_#\u00a0[x3]\nUsed to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_gaclientid\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gahitid\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gasessionid\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gat\nUsed by Google Analytics to throttle request rate\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_gid\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: 2 days\nType\n: HTTP Cookie\ncollect\nUsed to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nHotjar\n6\nLearn more about this provider\n_hjAbsoluteSessionInProgress\nThis cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjFirstSeen\nThis cookie is used to determine if the visitor has visited the website before, or if it is a new visitor on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjIncludedInSessionSample_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjSession_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_hjSessionUser_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_hjTLDTest\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n4\nLearn more about this provider\n__hssc\nIdentifies if the cookie data needs to be updated in the visitor's browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__hssrc\nUsed to recognise the visitor's browser upon reentry on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n__hstc\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nhubspotutk\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLinkedIn\n2\nLearn more about this provider\nln_or\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 2 days\nType\n: HTTP Cookie\nAnalyticsSyncHistory\nUsed in connection with data-synchronization with third-party analysis service.\nMaximum Storage Duration\n: 1 month\nType\n: HTTP Cookie\nMicrosoft\n4\nLearn more about this provider\n_clck\nCollects data on the user\u2019s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_clsk\u00a0[x2]\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_cltk\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nTwitter Inc.\n1\nLearn more about this provider\npersonalization_id\nThis cookie is set by Twitter - The cookie allows the visitor to share content from the website onto their Twitter profile.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nVimeo\n1\nLearn more about this provider\nvuid\nCollects data on the user's visits to the website, such as which pages have been read.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\nZendesk\n1\nLearn more about this provider\nhc:#:recently_visited_articles\nRegisters which articles the user has visited in a Zendesk knowledge base.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nassets.ubembed.com\n1\nub-emb-id\nEnables the website to make variations of their landing-page. This is used to minimize bounce-rates, which means that fewer users leave the page immediately.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncdn.embedly.com\nfast.wistia.net\nhelp.attentivemobile.com\nwww.attentive.com\n5\nwistia\u00a0[x5]\nUsed by the website to track the visitor's use of video-content - The cookie roots from Wistia, which provides video-software to websites.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\njs.qualified.com\n1\n__q_domainTest\nUsed in context with Account-Based-Marketing (ABM). The cookie registers data such as IP-addresses, time spent on the website and page requests for the visit. This is used for retargeting of multiple users rooting from the same IP-addresses. ABM usually facilitates B2B marketing purposes.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nws.zoominfo.com\n3\nziwsSessionId\u00a0[x2]\nCollects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nziwsSession\nCollects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nMarketing\n81\nMarketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.\nMeta Platforms, Inc.\n4\nLearn more about this provider\n_fbp\nUsed by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.\nMaximum Storage Duration\n: 3 months\nType\n: HTTP Cookie\nlastExternalReferrer\nDetects how the user reached the website by registering their last URL-address.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlastExternalReferrerTime\nDetects how the user reached the website by registering their last URL-address.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlog/error\nUsed to detect and log potential tracking errors.\nMaximum S",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/attentive/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Neural Attentive Bag-of-Entities Model for Text Classification",
+          "url": "https://github.com/wikipedia2vec/wikipedia2vec/tree/master/examples/text_classification",
+          "points": 17,
+          "num_comments": 0,
+          "created_at": "2019-09-14T22:26:00Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20974243"
+        },
+        {
+          "title": "Biosensors to monitor U.S. students' attentiveness",
+          "url": "http://www.reuters.com/article/us-usa-education-gates-idUSBRE85C17Z20120613",
+          "points": 3,
+          "num_comments": 1,
+          "created_at": "2016-10-24T19:05:12Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12781802"
+        },
+        {
+          "title": "A Pytorch Implementation of Attentive Neural Process",
+          "url": "https://github.com/soobinseo/Attentive-Neural-Process",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2019-05-03T08:30:24Z",
+          "hn_url": "https://news.ycombinator.com/item?id=19816587"
+        },
+        {
+          "title": "Show HN: One-on-one meeting software for attentive leaders",
+          "url": "https://www.oneononemeeting.com/",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2019-03-04T13:05:40Z",
+          "hn_url": "https://news.ycombinator.com/item?id=19300893"
+        },
+        {
+          "title": "Attentive Generative Adversarial Network for Raindrop Removal from Single Image",
+          "url": "https://arxiv.org/abs/1711.10098",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2018-06-23T20:39:22Z",
+          "hn_url": "https://news.ycombinator.com/item?id=17383323"
+        },
+        {
+          "title": "Predicting Attentiveness to Mobile Instant Messages (ACM CHI 2014) [pdf]",
+          "url": "http://pielot.org/pubs/Pielot2014-CHI-AttPred.pdf",
+          "points": 2,
+          "num_comments": 1,
+          "created_at": "2014-05-21T15:32:44Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7778779"
+        },
+        {
+          "title": "Quarantined Conferences: Claustrophobic Technophiles or Attentive Audiences?",
+          "url": "http://radar.oreilly.com/2009/11/quarantined-conferences-claust.html",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2009-11-12T04:57:15Z",
+          "hn_url": "https://news.ycombinator.com/item?id=937147"
+        },
+        {
+          "title": "Memory 2.0: Attentive Memory (2012)",
+          "url": "https://blog.ninlabs.com/blog/2012-02-29-memory-2-0-attentive-memory/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2025-08-09T15:46:59Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44847418"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "My days are nearing and my local hospital allowed me any request. This is how I will go out. Rip &amp; Tear, brothers and sisters.",
+          "subreddit": "Doom",
+          "score": 227227,
+          "num_comments": 4423,
+          "permalink": "https://reddit.com/r/Doom/comments/1qsei9w/my_days_are_nearing_and_my_local_hospital_allowed/",
+          "selftext": "For context, I have been battling Non-Hodgkins Lymphoma since 2022. And up until this point, I never imagined myself to be in a situation where my life expectancy has gone down to possibly weeks. I am currently at one of Canada's best hospitals in Toronto, Ontario; keeping myself afloat through these trying times. Despite it all, I was given the opportunity to make any request for my stay, and this is the one I have chosen. I have been a Doom fan since 2016, and it helped me get through some tou"
+        },
+        {
+          "title": "Good hearted little one \u2665\ufe0f",
+          "subreddit": "MadeMeSmile",
+          "score": 141343,
+          "num_comments": 1047,
+          "permalink": "https://reddit.com/r/MadeMeSmile/comments/1sutq27/good_hearted_little_one/",
+          "selftext": "When Jude Baker was 12, life changed overnight. The middle schooler from Summerville, Georgia, was diagnosed with Ewing sarcoma, a rare and aggressive cancer that attacks bones and the tissue around them. What followed was a two-year fight that included surgery to remove a tumor, nearly a year of chemotherapy, and all the physical and emotional weight that comes with treatment at such a young age.\n\nJude has been open about how hard that period was. In interviews, he said the scariest part wasn\u2019t"
+        },
+        {
+          "title": "Meirl",
+          "subreddit": "meirl",
+          "score": 114685,
+          "num_comments": 1741,
+          "permalink": "https://reddit.com/r/meirl/comments/1q2yhda/meirl/",
+          "selftext": ""
+        },
+        {
+          "title": "Dr. Joren Whitley~chiropractor , has gained attention for adjusting the neck and jaw of a giraffe named Gerry, who was experiencing chewing difficulties.  Gerry loved it.",
+          "subreddit": "interestingasfuck",
+          "score": 93021,
+          "num_comments": 3068,
+          "permalink": "https://reddit.com/r/interestingasfuck/comments/1lexbk6/dr_joren_whitleychiropractor_has_gained_attention/",
+          "selftext": ""
+        },
+        {
+          "title": "Thank you for your attention to this matter.",
+          "subreddit": "asheville",
+          "score": 92712,
+          "num_comments": 536,
+          "permalink": "https://reddit.com/r/asheville/comments/1m90f5u/thank_you_for_your_attention_to_this_matter/",
+          "selftext": ""
+        },
+        {
+          "title": "Always Pay Attention To Instructions",
+          "subreddit": "Unexpected",
+          "score": 87099,
+          "num_comments": 214,
+          "permalink": "https://reddit.com/r/Unexpected/comments/1n5dxjd/always_pay_attention_to_instructions/",
+          "selftext": ""
+        },
+        {
+          "title": "Class Daddy Act by Eminem",
+          "subreddit": "MadeMeSmile",
+          "score": 83071,
+          "num_comments": 539,
+          "permalink": "https://reddit.com/r/MadeMeSmile/comments/1sm66tw/class_daddy_act_by_eminem/",
+          "selftext": ""
+        },
+        {
+          "title": "Grandpa Dunkin",
+          "subreddit": "MadeMeSmile",
+          "score": 82247,
+          "num_comments": 500,
+          "permalink": "https://reddit.com/r/MadeMeSmile/comments/1rzf0wa/grandpa_dunkin/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": null,
+    "docs": "https://docs.attentivemobile.com",
+    "integrations": "https://attentive.com/integrations",
+    "g2": "https://www.g2.com/products/attentive/reviews"
+  },
+  "analysis": {
+    "name": "Attentive",
+    "url": "https://attentive.com",
+    "tagline": "unknown \u2014 pricing/landing pages returned cookie consent walls, not content",
+    "value_proposition": "SMS and personalized text message marketing platform with APIs for managing subscriber subscriptions, triggering event-based messages, and integrating with third-party platforms",
+    "target_segment": "enterprise / mid-market",
+    "ideal_customer": "e-commerce and retail brands running SMS marketing programs at scale, with technical teams needing API/SDK integration",
+    "features": [
+      {
+        "name": "sms marketing",
+        "description": "Send personalized text messages to subscribers for marketing and transactional purposes",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "rest api",
+        "description": "JSON-encoded REST API with standard HTTP verbs, response codes, and OpenAPI spec download",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "webhooks",
+        "description": "Configure webhook subscriptions for platform events (e.g. subscriber opt-in) with payload delivery to registered endpoints",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "webhook authentication",
+        "description": "Authentication mechanism for validating incoming webhook payloads",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "subscriber management",
+        "description": "API endpoints to manage user subscriptions, including subscribe and unsubscribe actions",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "event-triggered messaging",
+        "description": "Trigger messages programmatically in response to user actions via API",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "subscriber attributes",
+        "description": "Save and manage custom attributes on subscriber profiles",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "personalized text messages",
+        "description": "Send individualized SMS/text messages using subscriber data",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "oauth 2.0 app authentication",
+        "description": "OAuth 2.0 protocol for authorizing custom applications without sharing passwords",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "custom app creation",
+        "description": "Build and manage custom applications that integrate with the Attentive platform",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "app marketplace / distribution",
+        "description": "Publish custom apps publicly for other organizations to install in their Attentive accounts",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "sso (saml)",
+        "description": "SAML-based single sign-on setup for enterprise authentication",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "api rate limits",
+        "description": "Enforced API rate limiting with documented limits",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "api testing console",
+        "description": "In-platform console for testing API endpoints",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "attentive tag sdk",
+        "description": "JavaScript SDK for capturing behavioral event data on a website",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "google tag manager sdk",
+        "description": "SDK for deploying the Attentive tag via Google Tag Manager",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "gtm sdk via attentive analytics template",
+        "description": "GTM community template specifically for Attentive analytics data collection",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "mobile sdks",
+        "description": "Native mobile SDKs for integrating Attentive into iOS/Android apps",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "sftp data feeds",
+        "description": "SFTP-based data export feeds for subscriber and event data",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "subscriber segment upload",
+        "description": "Upload subscriber segments via SFTP for targeting",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "openapi specification",
+        "description": "Downloadable OpenAPI spec for the full Attentive API surface",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "legacy api support",
+        "description": "Continued support for legacy API endpoints with separate access tokens (contact required)",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "third-party partner integrations",
+        "description": "Pre-built integrations with supported third-party platforms (specific list not scraped \u2014 integrations page returned cookie wall)",
+        "evidence_source": "integrations",
+        "tier": "paid"
+      }
+    ],
+    "integrations": [
+      "Daasity (SFTP)",
+      "Optimove (Segments)",
+      "Google Tag Manager"
+    ],
+    "differentiators": [
+      "SMS-first marketing platform with dedicated behavioral tag SDK for website event capture",
+      "OAuth 2.0 app ecosystem allowing partners to build and distribute apps to other Attentive customers",
+      "SFTP data feeds for bidirectional subscriber segment data exchange"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing_signal": {
+      "model": "contact-sales",
+      "tier_count": 0,
+      "lowest_paid_seat": null,
+      "free_tier": null
+    }
+  }
+}

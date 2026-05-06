@@ -1,0 +1,346 @@
+{
+  "name": "Origin Financial",
+  "url": "https://originfinancial.com",
+  "domain": "originfinancial.com",
+  "scanned_at": "2026-05-02T17:15:38.792531",
+  "sources": {
+    "landing": {
+      "url": "https://originfinancial.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://originfinancial.com/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error timed out>"
+    },
+    "pricing": {
+      "url": "https://originfinancial.com/pricing",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: Timeout 20000ms exceeded.\nCall log:\n  - navigating to \"https://originfinancial.com/pricing\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error timed out>"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://help.originfinancial.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://help.originfinancial.com/\nCall log:\n  - navigating to \"https://help.originfinancial.com/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/origin-financial/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Day-Trading: 'Origins of Financial Fluctuations in Inelastic Markets Hypothesis'",
+          "url": "https://www.bloomberg.com/news/articles/2020-09-26/every-day-trader-dollar-is-worth-five-in-a-new-theory-on-stocks",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2020-09-26T16:05:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=24599781"
+        },
+        {
+          "title": "In Search of the Origins of Fin Fluctuation:The Inelastic Market Hypothesis",
+          "url": "https://bfi.uchicago.edu/working-paper/in-search-of-the-origins-of-financial-fluctuations-the-inelastic-markets-hypothesis/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2021-11-06T18:17:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=29132495"
+        },
+        {
+          "title": "The Origins of a Financial Tech Accelerator",
+          "url": "http://howtowriteabusinessplan.com/2014/10/the-origins-of-a-financial-tech-accelerator/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2014-10-04T00:59:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=8408423"
+        },
+        {
+          "title": "Financially Independent, Time Sovereign with Sovereign Origin",
+          "url": "https://www.thetransformationofvalue.com/episodes/financially-independent-time-sovereign-with-sovereign-origin",
+          "points": 1,
+          "num_comments": 2,
+          "created_at": "2024-10-28T12:31:28Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41970416"
+        },
+        {
+          "title": "As Cognition Slips, Financial Skills Are Often the First to Go",
+          "url": "http://www.nytimes.com/2015/04/25/your-money/as-cognitivity-slips-financial-skills-are-often-the-first-to-go.html?src=me&module=Ribbon&version=origin&region=Header&action=click&contentCollection=Most%20Emailed&pgtype=article",
+          "points": 42,
+          "num_comments": 14,
+          "created_at": "2015-04-27T12:54:46Z",
+          "hn_url": "https://news.ycombinator.com/item?id=9445890"
+        },
+        {
+          "title": "What Happened to the Money Americans borrowed during the Financial Crisis?",
+          "url": "http://blogs.cfainstitute.org/insideinvesting/2013/12/20/origins-of-the-credit-crisis/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2013-12-20T16:11:45Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6942066"
+        },
+        {
+          "title": "Low interest rates and loneliness: the origins of the pandemic crypto boom",
+          "url": "https://www.theverge.com/2023/8/18/23836104/this-is-not-financial-advice-easy-money-ben-mckenzie-review",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2023-08-18T13:15:53Z",
+          "hn_url": "https://news.ycombinator.com/item?id=37175181"
+        },
+        {
+          "title": "Show HN: Fireproof \u2013 local-first database with Git-like encrypted sync",
+          "url": "https://fireproof.storage/",
+          "points": 99,
+          "num_comments": 48,
+          "created_at": "2024-11-19T15:19:37Z",
+          "hn_url": "https://news.ycombinator.com/item?id=42184362"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Recurring Transactions 2.0 is LIVE \u2014 new calendar view, smarter detection, and more control over your bills",
+          "subreddit": "OriginFinancial",
+          "score": 35,
+          "num_comments": 20,
+          "permalink": "https://reddit.com/r/OriginFinancial/comments/1rycwvu/recurring_transactions_20_is_live_new_calendar/",
+          "selftext": "Hi Originals,\n\nRecurring transactions has been one of the most requested areas for improvement, and today we're delivering. Here's what's new:\n\n# See everything, miss nothing\n\n* **Full calendar view:** 13 months of bills laid out so you always know what's coming\n* **Review flow:** Confirm or dismiss newly detected recurring transactions by swiping on mobile\n* **AI-powered summary:** Smart trends and things to watch in your recurring spending\n* **Expected vs. actual:** See how your recurring expe"
+        },
+        {
+          "title": "Weekly Release: New Roadmap, Fixed Transaction Dates &amp; Tips to Start January Strong",
+          "subreddit": "OriginFinancial",
+          "score": 27,
+          "num_comments": 6,
+          "permalink": "https://reddit.com/r/OriginFinancial/comments/1q8dz36/weekly_release_new_roadmap_fixed_transaction/",
+          "selftext": "Hi Originals,\n\nHope everyone is easing into the New Year! We've hit the ground running to make 2026 our best year yet, and we want to make sure it's your wallet's best year too. Here's what we shipped this week, plus some tips to help you start strong.\n\n# What we shipped:\n\n* **Q1 Roadmap:** Earlier this week we shared a preview of our [Q1 2026 roadmap](https://www.reddit.com/r/OriginFinancial/comments/1q4waa1/origin_q1_roadmap_preview/). Take a peek if you haven't seen it yet and let us know wha"
+        },
+        {
+          "title": "What we shipped this week: Recurring transactions 2.0 \ud83d\udc40",
+          "subreddit": "OriginFinancial",
+          "score": 25,
+          "num_comments": 1,
+          "permalink": "https://reddit.com/r/OriginFinancial/comments/1rz4hyu/what_we_shipped_this_week_recurring_transactions/",
+          "selftext": "Hi again, Originals \ud83d\udc4b\n\nWe\u2019re back and better than ever with another big product update\u2014let\u2019s dive in below \u2b07\ufe0f\n\n**Here\u2019s what shipped this week:**\n\n* **\ud83d\udd01 Recurring Transactions 2.0 (big upgrade):** We rebuilt the entire recurring experience to make it easier to see, manage, and actually trust what\u2019s coming.\n   * **\ud83d\uddd3\ufe0f Full calendar view:** See up to 13 months of upcoming bills so nothing sneaks up on you\n   * **\ud83d\udc46 New review flow:** Quickly confirm or dismiss detected recurring charges (swipe on mo"
+        },
+        {
+          "title": "Feature Fridays: What we shipped this week \u2013 Forecasting (beta), bug fixes, and improvements to notes",
+          "subreddit": "OriginFinancial",
+          "score": 24,
+          "num_comments": 0,
+          "permalink": "https://reddit.com/r/OriginFinancial/comments/1ko4lea/feature_fridays_what_we_shipped_this_week/",
+          "selftext": "Hey Originals!\n\nBig week! We launched our Forecasting beta, fixed some bugs (thank you to our community for the feedback here), and added some helpful improvements to Notes. Whether you're planning your future or just cleaning up your budget, we hope these changes make things smoother and more useful.\n\n# Product launches\n\n* **Forecasting (beta)**: We\u2019ve kicked off a public beta for Origin\u2019s new Forecasting tool! It\u2019s currently rolling out to a small group of users as we gather feedback and conti"
+        },
+        {
+          "title": "Feature Friday: The biggest Origin update yet",
+          "subreddit": "OriginFinancial",
+          "score": 23,
+          "num_comments": 0,
+          "permalink": "https://reddit.com/r/OriginFinancial/comments/1nf4ses/feature_friday_the_biggest_origin_update_yet/",
+          "selftext": "Hey Originals,  \n  \nThis week we rolled out the largest update in Origin\u2019s history. It takes us beyond just *tracking your money* to actually helping you understand it and take action.\n\n# What\u2019s new in Origin\n\n* **AI Advisor** Your own financial guide, available anytime. Ask it questions like *\u201cAm I overspending this month?\u201d* or *\u201cCan I afford parental leave?\u201d* and get personalized, plain-language answers grounded in your data.\n* **Instant Insights** Tap the \u2728 to see why your net worth shifted o"
+        },
+        {
+          "title": "Feature Fridays: What we shipped this week - AI Budget Builder, Notification Center update, and cleaner views of your budget",
+          "subreddit": "OriginFinancial",
+          "score": 19,
+          "num_comments": 5,
+          "permalink": "https://reddit.com/r/OriginFinancial/comments/1kim47g/feature_fridays_what_we_shipped_this_week_ai/",
+          "selftext": "Hey Originals!\n\nThis week\u2019s updates are all about making your money easier to manage and smarter, too. We rolled out a brand-new AI-powered budgeting tool, cleaning up your budget views, and giving notifications a new home. Whether you're fine-tuning your financial habits or just getting started, these updates are here to help you stay in control with less effort.\n\n# Product launches\n\n* **AI Budget Builder**: Budgeting just got a whole lot easier. Our new [AI Budget Builder](https://www.reddit.c"
+        },
+        {
+          "title": "Partner Mode Enhancement! And notification center update",
+          "subreddit": "OriginFinancial",
+          "score": 17,
+          "num_comments": 9,
+          "permalink": "https://reddit.com/r/OriginFinancial/comments/1kh1w6p/partner_mode_enhancement_and_notification_center/",
+          "selftext": "Hey everyone! Last week, we launched **Partner Mode (**[**Reddit Release Post**](https://www.reddit.com/r/OriginFinancial/comments/1kbhq2m/introducing_partner_mode_money_as_a_team_your_way/)**)** \\- the ability to switch between *your*, *my*, and *all* accounts. It was a big hit, and we loved seeing the feedback roll in.\n\n# Feature Enhancement\n\nOne recurring request from the community was, \"Can I customize this more to mix and match which accounts I see?\". This was a great push and over the week"
+        },
+        {
+          "title": "Option to specify relevant start date for net worth charts and other statistics",
+          "subreddit": "OriginFinancial",
+          "score": 18,
+          "num_comments": 8,
+          "permalink": "https://reddit.com/r/OriginFinancial/comments/1qjzljh/option_to_specify_relevant_start_date_for_net/",
+          "selftext": "Not a big deal, be it due to user error or how account linking works, I lost data older than a year from one of my main accounts. This has been reported and acknowledged before: [https://www.reddit.com/r/OriginFinancial/comments/1klmd9b/account\\_reconnects\\_wipes\\_the\\_balance\\_history/](https://www.reddit.com/r/OriginFinancial/comments/1klmd9b/account_reconnects_wipes_the_balance_history/)\n\nSince I still have data from my other accounts (e.g. CCs) predating the 1 year cutoff, my net worth chart"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://originfinancial.com/pricing",
+    "changelog": null,
+    "docs": "https://help.originfinancial.com",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/origin-financial/reviews"
+  },
+  "analysis": {
+    "name": "Origin Financial",
+    "url": "https://originfinancial.com",
+    "tagline": null,
+    "value_proposition": "A personal finance app offering budgeting, net worth tracking, recurring transaction management, and AI-powered financial planning tools.",
+    "target_segment": "consumer",
+    "ideal_customer": "Individuals and couples seeking an all-in-one personal finance management tool with budgeting, forecasting, and shared partner views.",
+    "features": [
+      {
+        "name": "recurring transactions",
+        "description": "Automatic detection and management of recurring bills and subscriptions with calendar view and granular control.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "recurring transaction calendar view",
+        "description": "Visual calendar interface showing upcoming recurring bills and transactions.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "smart recurring detection",
+        "description": "Automated detection of recurring transactions from transaction history.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "forecasting",
+        "description": "Beta feature for projecting future financial state based on current data.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "ai budget builder",
+        "description": "AI-assisted tool for building a personalized budget.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "budget management",
+        "description": "Core budgeting functionality with categorized spending views.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "notification center",
+        "description": "Centralized in-app notification hub for financial alerts and updates.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "partner mode",
+        "description": "Shared financial view enabling couples or partners to manage finances together.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "net worth tracking",
+        "description": "Tracks net worth over time with configurable chart start date.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "net worth chart custom start date",
+        "description": "Option to specify a relevant start date for net worth charts and statistics.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "transaction notes",
+        "description": "Ability to attach user-written notes to individual transactions.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "transaction date management",
+        "description": "Manual correction and display of transaction posting dates.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "product roadmap",
+        "description": "Public-facing roadmap visible to users showing upcoming planned features.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "financial statistics",
+        "description": "Aggregate statistics and analytics across accounts and spending history.",
+        "evidence_source": "other",
+        "tier": "unknown"
+      }
+    ],
+    "integrations": [],
+    "differentiators": [
+      "AI Budget Builder for guided budget creation",
+      "Partner Mode for shared household financial management",
+      "Forecasting (beta) for future financial projection",
+      "Recurring Transactions 2.0 with calendar view and smart detection"
+    ],
+    "recent_ships": [
+      {
+        "date": "2025",
+        "what": "Recurring Transactions 2.0 \u2014 new calendar view, smarter detection, more control over bills",
+        "source": "r/OriginFinancial: 'Recurring Transactions 2.0 is LIVE \u2014 new calendar view, smarter detection, and more control over your bills'"
+      },
+      {
+        "date": "2025",
+        "what": "Forecasting (beta) feature launched",
+        "source": "r/OriginFinancial: 'Feature Fridays: What we shipped this week \u2013 Forecasting (beta), bug fixes, and improvements to notes'"
+      },
+      {
+        "date": "2025",
+        "what": "AI Budget Builder released",
+        "source": "r/OriginFinancial: 'Feature Fridays: What we shipped this week - AI Budget Builder, Notification Center update, and cleaner views of your budget'"
+      },
+      {
+        "date": "2025",
+        "what": "Notification Center updated with cleaner UI",
+        "source": "r/OriginFinancial: 'Feature Fridays: What we shipped this week - AI Budget Builder, Notification Center update, and cleaner views of your budget'"
+      },
+      {
+        "date": "2025",
+        "what": "Partner Mode enhancement",
+        "source": "r/OriginFinancial: 'Partner Mode Enhancement! And notification center update'"
+      },
+      {
+        "date": "2025-01",
+        "what": "Public roadmap launched; fixed transaction dates; January onboarding tips published",
+        "source": "r/OriginFinancial: 'Weekly Release: New Roadmap, Fixed Transaction Dates & Tips to Start January Strong'"
+      },
+      {
+        "date": "2025",
+        "what": "Net worth chart custom start date option added",
+        "source": "r/OriginFinancial: 'Option to specify relevant start date for net worth charts and other statistics'"
+      },
+      {
+        "date": "2025",
+        "what": "Major product update described as 'the biggest Origin update yet'",
+        "source": "r/OriginFinancial: 'Feature Friday: The biggest Origin update yet'"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Active weekly shipping cadence with regular 'Feature Friday' updates suggests strong product velocity",
+        "Recurring Transactions 2.0 well-received (35 upvotes, 20 comments)",
+        "Partner Mode actively discussed and enhanced based on community feedback"
+      ],
+      "complaints": [],
+      "sources": [
+        "reddit"
+      ]
+    },
+    "pricing_signal": {
+      "model": "unknown",
+      "tier_count": 0,
+      "lowest_paid_seat": null,
+      "free_tier": null
+    }
+  }
+}

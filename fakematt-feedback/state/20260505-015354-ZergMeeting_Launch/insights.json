@@ -1,0 +1,276 @@
+{
+  "target": "/private/tmp/fakematt-feedback-drafts-2026-05-05/png/ZergMeeting Launch.png",
+  "kind": "static",
+  "captures": [
+    {
+      "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+      "final_url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+      "title": "ZergMeeting Launch",
+      "h1": null,
+      "headings": [],
+      "primary_cta": null,
+      "forms": [],
+      "links_sample": [],
+      "console": [],
+      "network_errors": [],
+      "axe_violations": [],
+      "perf": {},
+      "text_excerpt": "(static input — no DOM available)",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+      "screenshots": {},
+      "interactions": []
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "positioning",
+      "mode": "broken",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "h1:contains('Meeting Ends. Cards Appear. Work Starts.')",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The headline 'Meeting Ends. Cards Appear. Work Starts.' describes a sequence of events rather than asserting a buyer benefit or outcome. A visitor who has never used the product cannot determine from this headline alone what problem it solves, what category it belongs to, or why they should choose it over alternatives. The tagline below the headline does clarify the value proposition, but that information should be in the headline itself where it will be read.",
+      "suggested_fix": "Rewrite the headline to lead with the outcome buyers care about: 'Turn Meeting Transcripts Into Assigned Action Items Automatically' or 'Capture Every Decision, Generate Cards, Close The Loop.' Use the existing headline as a supporting subhead if the cadence is valuable for brand voice.",
+      "voice_provenance": "q-0004",
+      "principle_provenance": [
+        "p-0030",
+        "p-0043",
+        "p-0044"
+      ],
+      "target_kind_relevance": "Applies to marketing/launch pages; internal tool dashboards would not require this level of positioning clarity.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P0",
+      "category": "cta",
+      "mode": "broken",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "section:contains('Try It')",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The primary CTA in the 'Try It' section requires users to manually copy and run terminal commands, which introduces significant friction for non-technical users and delays time-to-value. The 'Get on the ZergMeeting list' link embedded in body copy below the code block is the actual low-friction entry point, but it is visually subordinated and easy to miss. This inverts the conversion hierarchy: the high-friction developer path is primary, the low-friction signup path is buried.",
+      "suggested_fix": "Reverse the visual hierarchy: make 'Get Early Access' or 'Join the Waitlist' the primary button above the fold, styled as a high-contrast CTA. Move the technical installation instructions into a collapsible 'For Developers' section or a secondary tab. If both audiences must be served on the same page, use a dual-CTA layout with equal visual weight: 'Join Waitlist' and 'Install Now (Developers)'.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0047",
+        "p-0100",
+        "p-0101"
+      ],
+      "target_kind_relevance": "Critical for marketing pages targeting mixed technical/non-technical audiences.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "social_proof",
+      "mode": "broken",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "entire page",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The page contains zero customer logos, testimonials, usage metrics, or external validation. Every competitor in the project-management and meeting-intelligence space (Linear, Asana, Fireflies, Grain, Otter) displays named customer logos or quantified adoption metrics in the hero or trust band. Without social proof, visitors must evaluate credibility based solely on copy claims, which raises perceived risk and suppresses trial signups.",
+      "suggested_fix": "Add a social proof band immediately below the hero section. If customer logos are not yet available, use: (1) early-access user count ('Join 2,400+ teams in early access'), (2) integration logos ('Works with Zoom, Meet, Teams, Linear, Jira'), or (3) founder/team credibility signals ('Built by the team behind [prior company]'). Once beta customers are onboarded, replace placeholder metrics with named logos.",
+      "voice_provenance": "q-0003",
+      "principle_provenance": [
+        "p-0019",
+        "p-0048",
+        "p-0042"
+      ],
+      "target_kind_relevance": "Applies to marketing pages; internal dashboards do not require social proof.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "section:contains('Notes & Brainstorm')",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The 'Notes & Brainstorm' section uses vague, feature-descriptive language ('Cards generated', 'Target audiences', 'Key insight') without quantifying outcomes or demonstrating the business value of these features. The copy assumes the visitor already understands why generating cards from a transcript matters, which forces them to infer the benefit rather than receiving it directly. Competitors like Fireflies and Grain lead with quantified time-savings ('Save 3 hours per week') before describing mechanics.",
+      "suggested_fix": "Rewrite each feature callout to lead with the measurable outcome: 'Cards generated: Ottie...' becomes 'Ottie auto-assigns 8 action items per meeting — no manual notes required.' 'Target audiences: Teams of 5-50...' becomes 'Perfect for teams who spend 10+ hours/week in meetings but lose track of decisions.' Anchor every feature to a number that represents time saved, errors prevented, or velocity gained.",
+      "voice_provenance": "q-0005",
+      "principle_provenance": [
+        "p-0032",
+        "p-0043",
+        "p-0045"
+      ],
+      "target_kind_relevance": "Critical for marketing pages; internal feature documentation can be more mechanically descriptive.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "entire page structure",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The page presents four different product versions (Full Piece, LinkedIn Version, Thread Version, and an embedded 'Try It' flow) in sequence without clarifying their relationship or guiding the visitor toward one primary path. A first-time visitor cannot determine whether these are alternative products, deployment options, or marketing variants. The 'LinkedIn Version' and 'Thread Version' sections read like internal content strategy notes rather than user-facing material, which suggests this page may be a design spec or draft rather than a finalized launch page.",
+      "suggested_fix": "If this is a public-facing launch page: consolidate into a single canonical product description with one clear CTA path. Move alternative versions (LinkedIn copy, Twitter thread) into a 'Share This Launch' toolkit or press kit section clearly labeled as distribution assets. If this is an internal planning document: add a header note clarifying 'Content Strategy Draft — Not Live' and separate marketing copy from distribution variants in the document structure.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0111",
+        "p-0101"
+      ],
+      "target_kind_relevance": "Applies if this is intended as a public marketing page. If it is an internal planning document, the structure is appropriate.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "body text throughout",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "Body text line length exceeds 100 characters in multiple sections ('Full Piece', 'Notes & Brainstorm'), which forces readers to track long horizontal distances and increases the probability of losing their place on line return. This is especially problematic in the dense explanatory paragraphs where the core value proposition is buried. The Bringhurst optimal range is 45-75 characters; this page consistently exceeds 90.",
+      "suggested_fix": "Constrain body text containers to a max-width of 65-70 characters (~600-700px at 16px font size). Use a centered or left-aligned column layout for long-form sections. For the 'Full Piece' section, consider breaking the long paragraphs into shorter blocks with subheadings to improve scannability.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0085",
+        "p-0086"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P2",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "code blocks in 'Try It' section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The code blocks in the 'Try It' section use inconsistent placeholder syntax: {{bare_const_cards}} in the first example, then {$env_const_cards} and {{bare_const_wantlists}} in the second. This inconsistency signals either incomplete templating or lack of technical review. Developers attempting to use these examples will not know which syntax is correct without consulting external documentation.",
+      "suggested_fix": "Standardize placeholder syntax across all code examples. Use either double-curly-brace {{VARIABLE}} or environment-variable ${VARIABLE} notation consistently. Add a single-line comment above the first code block explaining the placeholder format: '# Replace {{VARIABLE}} with your actual values'.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0072",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "section immediately below hero",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The page lacks a concrete product demo or video showing the meeting-to-card flow in action. Every direct competitor in the meeting-intelligence space (Fireflies, Grain, Otter, Fathom) includes a product video or animated walkthrough in the hero or immediately below it. Text descriptions of the workflow ('transcript where the work happens') require visitors to mentally simulate the experience, which most will not do.",
+      "suggested_fix": "Add a 60-90 second product demo video or animated GIF immediately below the headline showing: (1) a live meeting being recorded, (2) the transcript appearing in real-time, (3) cards being auto-generated with assigned owners, (4) a card opening in Linear/Jira with context intact. If video is not yet available, use a high-fidelity clickable prototype or a series of annotated screenshots in a carousel.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0043",
+        "p-0078"
+      ],
+      "target_kind_relevance": "Applies to marketing pages; internal dashboards do not require this level of demonstration.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "section below 'Try It'",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The page does not include a comparison table or feature matrix positioning ZergMeeting against named alternatives (Fireflies, Grain, Linear native transcripts, manual note-taking). Visitors evaluating meeting tools are actively comparing options; forcing them to do this work across multiple tabs increases decision time and abandonment probability. Competitors like Grain and Fireflies include explicit comparison tables.",
+      "suggested_fix": "Add a 'Why ZergMeeting?' section with a 3-5 column comparison table: ZergMeeting vs. Fireflies vs. Manual Notes. Highlight differentiators: (1) 'Cards auto-assigned to Linear/Jira' (vs. standalone transcript repositories), (2) 'No manual tagging required' (vs. manual post-meeting processing), (3) 'Dependency tracking between cards' (unique to ZergMeeting if true). Use checkmarks and X marks for quick scanning.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0078",
+        "p-0101",
+        "p-0110"
+      ],
+      "target_kind_relevance": "Applies to marketing pages targeting users actively evaluating alternatives.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "section:contains('Pricing')",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The 'Pricing' section lists integration tiers ('Zergdesk (notebook)', 'Zergcloud (hosted)') without clarifying what functionality is included in each tier or how pricing scales. The section mentions 'Pay-as-you-go and tuition' and 'flat-fee for higher meeting volumes' but does not provide actual numbers, seat limits, or feature gates. Visitors cannot determine affordability or compare to competitor pricing without this information.",
+      "suggested_fix": "Replace the abstract tier descriptions with a concrete pricing table: 'Starter: $15/user/month, up to 10 hours of meetings; Pro: $30/user/month, unlimited meetings + Linear/Jira sync; Enterprise: Custom pricing for 50+ seats.' If exact pricing is not yet finalized for launch, state 'Pricing starts at $15/user/month — full details available at signup' and link to a waitlist form that captures pricing feedback.",
+      "voice_provenance": "q-0005",
+      "principle_provenance": [
+        "p-0032",
+        "p-0045",
+        "p-0107"
+      ],
+      "target_kind_relevance": "Critical for marketing pages; pricing transparency directly affects conversion.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "polish",
+      "mode": "broken",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "section:contains('Thread Version')",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The 'Thread Version' section uses numbered tweet/thread formatting (1/, 2/, 3/, etc.) which is appropriate for a Twitter thread but reads awkwardly on a web page. The numbered structure also duplicates content from earlier sections ('If Every meeting had stops at the transcript', 'Transcription as a commodity') without adding new information, which increases page length without adding value.",
+      "suggested_fix": "If the 'Thread Version' section is intended as a shareable asset for social distribution: move it to a separate 'Press Kit' or 'Share This Launch' page and link to it with a 'Share on Twitter' button. If it must remain on the main page: reformat the content as a standard prose section without the numbered thread structure, or clearly label it 'Twitter Thread Preview' with a collapsed/expandable UI element.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0111",
+        "p-0107"
+      ],
+      "target_kind_relevance": "Applies if this is a public-facing page; internal content strategy documents can include this structure.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png",
+        "selector": "footer or bottom of page",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015354-ZergMeeting_Launch/screenshots/ZergMeeting Launch.png"
+      },
+      "finding": "The page does not include an FAQ section addressing common objections or setup questions ('Does this work with Google Meet?', 'Do I need to install software?', 'Can I use this for 1:1s?', 'Is the transcript stored securely?'). Pre-answering these questions on the landing page reduces the need for support inquiries and removes conversion friction for cautious buyers.",
+      "suggested_fix": "Add a 'Frequently Asked Questions' section above the footer with 6-8 questions covering: (1) platform compatibility (Zoom, Meet, Teams), (2) data security/privacy, (3) minimum team size, (4) integration setup complexity, (5) whether transcripts are editable, (6) what happens to cards if a meeting is deleted. Use an accordion or expand/collapse pattern to keep the section scannable.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0041",
+        "p-0078",
+        "p-0108"
+      ],
+      "target_kind_relevance": "Applies to marketing pages targeting enterprise or security-conscious buyers.",
+      "role_assumption": null
+    }
+  ],
+  "rejected": []
+}

@@ -2,6 +2,18 @@
 """
 Slack Bridge - Real-time connection between Slack and Claude Code.
 
+NOTE on imports: this module needs `from __future__ import annotations` to
+support PEP 604 union syntax (`X | None`) on Python 3.9 (which is what's
+installed at /Library/Developer/CommandLineTools). Without it, the type
+hints on `run_claude_with_progress` and `finalize_progress_or_send` raise
+TypeError at module-load time.
+"""
+from __future__ import annotations
+
+# (original docstring continues for reference)
+_ORIG_DOCSTRING = """
+Slack Bridge - Real-time connection between Slack and Claude Code.
+
 Listens for incoming Slack messages via Socket Mode and writes them to
 an inbox file. Claude Code can read the inbox and respond.
 
@@ -30,7 +42,7 @@ from threading import Event, Thread
 # Global config for auto-responder
 AUTO_RESPOND = False
 WORK_DIR = None
-ALLOWED_USERS = {"U04R0EJACMR"}  # Idan only - add user IDs to allow others
+ALLOWED_USERS = {"U04R0EJACMR", "U0AFSSPNB1N"}  # Idan + Matt
 THREAD_SESSIONS = {}  # Track Claude Code session IDs per thread: {session_key: session_id}
 ACTIVE_THREADS = {}  # Track threads we've posted to: {thread_ts: {channel, last_response_ts}}
 PENDING_WORK = {}  # Track messages with hourglass: {(channel, ts): {"start_time": float, "text": str, ...}}
@@ -47,7 +59,7 @@ EMOJI_RETRY = "arrows_counterclockwise"
 NO_RESPONSE_SENTINEL = "[NO_RESPONSE]"
 
 # Timeout for stuck work items (seconds)
-WORK_TIMEOUT = 300  # 5 minutes
+WORK_TIMEOUT = 900  # 15 minutes — accommodates legitimately long jobs (fakematt-feedback runs 6-10 min for 8 pages of critique)
 CLEANUP_INTERVAL = 300  # Check every 5 minutes
 
 # Check for required library
@@ -165,6 +177,12 @@ You do NOT need to respond to every message. If the message:
 Then respond with EXACTLY: {NO_RESPONSE_SENTINEL}
 Only respond when you genuinely have something useful to add. When in doubt, don't respond.
 
+CRITICAL — NO DOUBLE-POSTING:
+The bridge automatically posts your final output text to Slack. So:
+- Pick ONE channel: either return your reply as final text (preferred), OR send it yourself via slack-skill / upload — never both.
+- If you already posted to Slack via a tool (slack_skill.py send, upload, MCP slack tool, etc.), you MUST return EXACTLY {NO_RESPONSE_SENTINEL} as your final output. Do not add a recap, confirmation, or "done" message — the user can see what you posted.
+- Never write a summary of what you just said or did. No "I sent X", no "Here's a recap", no "To summarize". The reply itself is the only message.
+
 IMPORTANT CONTEXT:
 - Channel ID: {channel_for_upload}
 - Thread TS: {thread_ts or "none (post to channel)"}
@@ -173,6 +191,7 @@ IMPORTANT CONTEXT:
 IMAGE GENERATION: If the user asks for an image, picture, or visual:
 1. Generate: python ~/.claude/skills/nano-banana-pro/generate_image.py "prompt" --output /tmp
 2. Upload to Slack: python ~/.claude/skills/slack-skill/slack_skill.py upload {channel_for_upload} /tmp/generated_images/[filename].png -m "caption"{thread_flag}
+3. After uploading, return EXACTLY {NO_RESPONSE_SENTINEL} — the upload's caption is the message; do NOT add a follow-up summary.
 
 First message: {prompt}"""
 
@@ -237,11 +256,25 @@ First message: {prompt}"""
 
 
 def run_claude_with_progress(web_client: WebClient, channel: str, thread_ts: str,
-                              prompt: str, user_name: str, channel_name: str, user_id: str) -> str:
-    """Run Claude Code with a progress message that updates with elapsed time."""
+                              prompt: str, user_name: str, channel_name: str, user_id: str) -> tuple[str, str | None]:
+    """Run Claude Code with a single progress message that gets edited in place.
+
+    Pattern (Matt-approved option 3):
+    1. Post "⏳ Working..." immediately to acknowledge the request — keeps the
+       user from thinking the bot is dead during long jobs (fakematt-feedback
+       can legitimately take 6-10 min for an 8-page critique).
+    2. Update that same message every 15s with elapsed time.
+    3. When Claude returns, EDIT the same message in place with the final
+       response — does NOT post a second message. This honors the
+       no-double-post rule (`feedback_fakematt_no_double_post.md`).
+
+    Returns (response_text, progress_ts). The caller can use progress_ts to
+    skip the normal send_slack_response path (since we already replaced the
+    progress message with the response). If progress_ts is None, posting
+    failed and the caller should send a fresh message.
+    """
     from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
 
-    # Post initial progress message
     start_time = time.time()
     progress_ts = None
 
@@ -255,7 +288,6 @@ def run_claude_with_progress(web_client: WebClient, channel: str, thread_ts: str
     except Exception as e:
         print(f"Error posting progress message: {e}")
 
-    # Run Claude Code in a thread so we can update progress
     response = None
     error = None
 
@@ -270,37 +302,69 @@ def run_claude_with_progress(web_client: WebClient, channel: str, thread_ts: str
     with ThreadPoolExecutor(max_workers=1) as executor:
         future = executor.submit(run_claude)
 
-        # Update progress message every 15 seconds while waiting
         while not future.done():
             try:
-                future.result(timeout=15)  # Wait up to 15 seconds
+                future.result(timeout=15)
             except FuturesTimeoutError:
-                # Still running - update progress message
                 elapsed = int(time.time() - start_time)
                 mins, secs = divmod(elapsed, 60)
                 time_str = f"{mins}m {secs}s" if mins > 0 else f"{secs}s"
-
                 if progress_ts:
                     try:
                         web_client.chat_update(
                             channel=channel,
                             ts=progress_ts,
-                            text=f"⏳ Working on your request... ({time_str})",
+                            text=f"⏳ Working on your request... ({time_str} elapsed)",
                         )
                     except Exception as e:
                         print(f"Error updating progress: {e}")
 
-    # Delete progress message
-    if progress_ts:
+    final_text = f"Error: {error}" if error else (response or "I processed that but have no response.")
+    return final_text, progress_ts
+
+
+def finalize_progress_or_send(web_client: WebClient, channel: str, progress_ts: str | None,
+                              text: str, thread_ts: str = None) -> str | None:
+    """Finalize the in-progress message by editing it in place with the final
+    response, or fall back to posting fresh if the progress message wasn't
+    created. Honors Slack's 4000-char-per-message limit by editing the
+    progress message with the first chunk and posting the rest as continuations.
+
+    Returns the timestamp of the LAST message (for thread tracking).
+
+    This implements Matt-approved option 3 (in-progress reply + completion update
+    as edits to the same message, not double-posts) with no-double-post compliance.
+    """
+    max_len = 3900
+    if not progress_ts:
+        return send_slack_response(web_client, channel, text, thread_ts)
+
+    chunks = []
+    remaining = text
+    while remaining:
+        if len(remaining) <= max_len:
+            chunks.append(remaining)
+            break
+        split_at = remaining.rfind("\n", 0, max_len)
+        if split_at == -1 or split_at < max_len // 2:
+            split_at = max_len
+        chunks.append(remaining[:split_at])
+        remaining = remaining[split_at:].lstrip("\n")
+
+    last_ts = progress_ts
+    try:
+        web_client.chat_update(channel=channel, ts=progress_ts, text=chunks[0])
+    except Exception as e:
+        print(f"chat_update failed, falling through to fresh post: {e}")
+        return send_slack_response(web_client, channel, text, thread_ts)
+
+    for chunk in chunks[1:]:
         try:
-            web_client.chat_delete(channel=channel, ts=progress_ts)
+            r = web_client.chat_postMessage(channel=channel, text=chunk, thread_ts=thread_ts)
+            last_ts = r["ts"]
         except Exception as e:
-            print(f"Error deleting progress message: {e}")
-
-    if error:
-        return f"Error: {error}"
-
-    return response or "I processed that but have no response."
+            print(f"chat_postMessage continuation failed: {e}")
+    return last_ts
 
 
 def send_slack_response(web_client: WebClient, channel: str, text: str, thread_ts: str = None) -> str:
@@ -604,7 +668,7 @@ def handle_message(client: SocketModeClient, req: SocketModeRequest, web_client:
                 reply_thread_ts = thread_ts if is_tracked_thread_reply else None
 
                 print(f"  [Auto-responding via Claude Code...]")
-                response_text = run_claude_with_progress(
+                response_text, progress_ts = run_claude_with_progress(
                     web_client, channel, reply_thread_ts,
                     text, user_name, channel_name, user
                 )
@@ -613,10 +677,17 @@ def handle_message(client: SocketModeClient, req: SocketModeRequest, web_client:
                 # Check if Claude chose not to respond
                 if is_no_response(response_text):
                     print(f"  [Claude chose not to respond - skipping]")
+                    if progress_ts:
+                        try:
+                            web_client.chat_delete(channel=channel, ts=progress_ts)
+                        except Exception as e:
+                            print(f"  chat_delete failed: {e}")
                     remove_reaction(web_client, channel, ts, EMOJI_WORKING)
                     mark_work_completed(channel, ts)
                 else:
-                    response_ts = send_slack_response(web_client, channel, response_text, reply_thread_ts)
+                    response_ts = finalize_progress_or_send(
+                        web_client, channel, progress_ts, response_text, reply_thread_ts
+                    )
 
                     # Remove working emoji, add done emoji, mark completed
                     remove_reaction(web_client, channel, ts, EMOJI_WORKING)
@@ -693,7 +764,7 @@ def handle_message(client: SocketModeClient, req: SocketModeRequest, web_client:
                 reply_to_thread = thread_ts or ts
 
                 print(f"  [Auto-responding via Claude Code...]")
-                response_text = run_claude_with_progress(
+                response_text, progress_ts = run_claude_with_progress(
                     web_client, channel, reply_to_thread,
                     clean_text, user_name, channel_name, user
                 )
@@ -702,10 +773,17 @@ def handle_message(client: SocketModeClient, req: SocketModeRequest, web_client:
                 # Check if Claude chose not to respond
                 if is_no_response(response_text):
                     print(f"  [Claude chose not to respond - skipping]")
+                    if progress_ts:
+                        try:
+                            web_client.chat_delete(channel=channel, ts=progress_ts)
+                        except Exception as e:
+                            print(f"  chat_delete failed: {e}")
                     remove_reaction(web_client, channel, ts, EMOJI_WORKING)
                     mark_work_completed(channel, ts)
                 else:
-                    response_ts = send_slack_response(web_client, channel, response_text, reply_to_thread)
+                    response_ts = finalize_progress_or_send(
+                        web_client, channel, progress_ts, response_text, reply_to_thread
+                    )
 
                     # Remove working emoji, add done emoji, mark completed
                     remove_reaction(web_client, channel, ts, EMOJI_WORKING)

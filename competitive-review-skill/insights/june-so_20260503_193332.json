@@ -1,0 +1,390 @@
+{
+  "name": "June",
+  "url": "https://june.so",
+  "domain": "june.so",
+  "scanned_at": "2026-05-03T19:25:19.022767",
+  "sources": {
+    "landing": {
+      "url": "https://june.so",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://june.so/\nCall log:\n  - navigating to \"https://june.so/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "pricing": {
+      "url": "https://june.so/pricing",
+      "title": "June - Pricing Plans",
+      "text": "June - Pricing Plans\nProduct\nSalesforce integration\nNEW\nHubSpot integration\nAttio integration\nCustomers\nPricing\nContent\nBlogs\nGuides\nChangelog\nLet's retain your customers\nWe're a team of product people who will work with you to get the perfect setup for your company\nAll-in-one\nEverything you need as a growing B2B SaaS company\nCompany-level Analytics\nProduct Analytics\nSalesforce, HubSpot and Attio integrations\nCustom insights with SQL & AI\nComputed traits\n1:1 support and onboarding\nCompany and audience alerts\nEmbed API\nStart free trial\nTrusted by next-gen B2B SaaS\nFrequently asked questions\nIs June right for me?\nIf preventing even a single customer from churning saves you $50K, then it could be a great fit\nDo I really need it?\nIf you have a large user base but make only a small amount per user, or if your product is more 'set-and-forget', then another solution will be much better\nWill you help me to set it up?\nWe\u2019ll do whatever it takes to help you fully understand your customers\u2019 usage while minimizing the need for your engineering resources. Setup fees vary based on implementation complexity\nDo you have a startup plan?\nNo. June is a great fit for companies with at least $1M of ARR. If you\u2019re earlier in your startup journey, you might be better off with a cheaper solution\n\"We started using June when one of our biggest customers churned at surprise. After that we sat down with the June team and worked on a great dashboard and workflows. It didn't happen anymore\"\nTimon Ruban\nCo-founder of Luminovo\n\"One of the best things about June is that it is a platform that can be used by our entire team, not just the product manager. This has enabled us to get everyone on board with our data-driven approach, and ensures that everyone has access to the insights they need to do their job effectively\"\nDaniel Zarick\nCEO of Arrows\nJune is joining Amplitude\nAfter 5 years of building June, we're joining Amplitude to continue our mission of helping companies build better products.\nJUN\nAMPL\nFROM\nTO\nJune\nAmplitude\nDEPARTURE\nFLIGHT\n10:00 PM\nAug 8th 2025\nJUN\nAMPL\nFROM\nTO\nJune\nAmplitude\nDEPARTURE\nFLIGHT\n10:00 PM\nAug 8th 2025\nJUN\nAMPL\nFROM\nTO\nJune\nAmplitude\nDEPARTURE\nFLIGHT DATE\n10:00 PM\nAug 8th 2025\nJUN\nAMPL\nFROM\nTO\nJune\nAmplitude\nDEPARTURE\nFLIGHT DATE\n10:00 PM\nAug 8th 2025\nPRODUCT\nPricing\nHelp Center\nINTEGRATIONS\nAttio\nHubSpot\nSalesforce\nRESOURCES\nGuides\nBlog\nBenchmarks\nChangelog\nCustomers\nDeveloper docs\nTHE FUN STUFF\nLinkedIn\nJune school\nTwitter\nYouTube\nThe Balloon App\nTHE FUN-ER STUFF\nPrivacy\nSecurity\nTerms\n4.9 / 5\nSOC 2 Type II\nGDPR Compliant",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://june.so/changelog",
+      "title": "404: This page could not be found",
+      "text": "404: This page could not be found\n404\nThis page could not be found\n.",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://june.so/docs",
+      "title": "Docs - June Docs",
+      "text": "Docs - June Docs\nDocs\nGetting started\nStart here\nWhat should I track?\nQuickstart\nInstall\nIdentify users\nTrack user behaviour\nAdvanced\nIdentify groups\nTrack group behaviour\nSDKs\nWeb\nBrowser\nReact & Next.js\nServer\nNode.JS\nPython\nRuby\nHTTP API\nAuthentication\nIdentify\nGroup\nTrack\nPage\nHelp center\nGo to June home\n/\nLog in\nDocumentation\nLearn how to integrate June with your app\nGet started with tracking\n\u2192\n5 minutes\n\u00b7\nNon-Technical\nNew to product analytics?\nThis is the best place to start\nLearn the basics\n\u2192\nBrowse by language\nDon't see your language? Use\nHTTP\nFor FAQ view our\nhelp center\nCheck out our\nproduct changelog\nInstallation help?\nAsk a question\nBrowser\nReact\nNodeJS\nPython\nRuby\nHTTP",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://june.so/integrations",
+      "title": "404: This page could not be found",
+      "text": "404: This page could not be found\n404\nThis page could not be found\n.",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/june/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Apollo will close down on June 30th",
+          "url": "https://old.reddit.com/r/apolloapp/comments/144f6xm/apollo_will_close_down_on_june_30th_reddits/",
+          "points": 3421,
+          "num_comments": 1609,
+          "created_at": "2023-06-08T17:22:27Z",
+          "hn_url": "https://news.ycombinator.com/item?id=36245435"
+        },
+        {
+          "title": "ICQ will stop working from June 26",
+          "url": "https://icq.com/desktop/en#windows",
+          "points": 1085,
+          "num_comments": 746,
+          "created_at": "2024-05-24T16:16:37Z",
+          "hn_url": "https://news.ycombinator.com/item?id=40467625"
+        },
+        {
+          "title": "FCC will require phone carriers to authenticate calls by June 2021 [pdf]",
+          "url": "https://docs.fcc.gov/public/attachments/DOC-363399A1.pdf",
+          "points": 929,
+          "num_comments": 335,
+          "created_at": "2020-03-31T20:44:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22742349"
+        },
+        {
+          "title": "Internet Explorer 11 (IE11) to be retired on June 15, 2022",
+          "url": "https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/",
+          "points": 763,
+          "num_comments": 294,
+          "created_at": "2021-05-19T18:00:24Z",
+          "hn_url": "https://news.ycombinator.com/item?id=27212127"
+        },
+        {
+          "title": "Cloudflare outage on June 21, 2022",
+          "url": "https://blog.cloudflare.com/cloudflare-outage-on-june-21-2022/",
+          "points": 703,
+          "num_comments": 229,
+          "created_at": "2022-06-21T12:39:30Z",
+          "hn_url": "https://news.ycombinator.com/item?id=31823132"
+        },
+        {
+          "title": "Google Kubernetes Engine is introducing a cluster management fee on June 6",
+          "url": "https://cloud.google.com/kubernetes-engine/pricing",
+          "points": 665,
+          "num_comments": 610,
+          "created_at": "2020-03-04T17:20:56Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22485625"
+        },
+        {
+          "title": "Google Photos will end its free unlimited storage in June 2021",
+          "url": "https://www.theverge.com/2020/11/11/21560810/google-photos-unlimited-cap-free-uploads-15gb-ending",
+          "points": 664,
+          "num_comments": 626,
+          "created_at": "2020-11-11T18:10:26Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25060973"
+        },
+        {
+          "title": "Ask HN: Who is hiring? (June 2016)",
+          "url": null,
+          "points": 644,
+          "num_comments": 1002,
+          "created_at": "2016-06-01T15:01:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=11814828"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Cosmo\u2019s \u2728transformation\u2728",
+          "subreddit": "cats",
+          "score": 131663,
+          "num_comments": 2783,
+          "permalink": "https://reddit.com/r/cats/comments/1qvz1h2/cosmos_transformation/",
+          "selftext": "Cosmo has come SUCH a long way, it still blows my mind looking back at these older pics of him. He came running up our driveway end of June of last year, 8/9 weeks old about 2 lbs, with the worst case of ringworm our vet had ever seen. 27 medicated baths, seven weeks of oral treatment, lots and lots and LOTS of later; you\u2019d never know. \ud83e\udd79"
+        },
+        {
+          "title": "Anti-Fascist (Antifa) Troops invaded Normandy on June 6, 1944",
+          "subreddit": "pics",
+          "score": 114422,
+          "num_comments": 3675,
+          "permalink": "https://reddit.com/r/pics/comments/1nku6li/antifascist_antifa_troops_invaded_normandy_on/",
+          "selftext": ""
+        },
+        {
+          "title": "We\u2019re losing the war.",
+          "subreddit": "GuyCry",
+          "score": 112454,
+          "num_comments": 2983,
+          "permalink": "https://reddit.com/r/GuyCry/comments/1l6vz3f/were_losing_the_war/",
+          "selftext": "Male suicide is still a highly taboo subject in too many corners of our society. \n\nMen are taking their own lives every minute of every day, yet this alarming fact rarely makes news outside of a celebrity making the ultimate choice to escape. \n\nJune is Men\u2019s Mental Health Awareness Month. \n\nLet\u2019s talk about it."
+        },
+        {
+          "title": "Update: Tired and Broken Father",
+          "subreddit": "GuyCry",
+          "score": 106065,
+          "num_comments": 3239,
+          "permalink": "https://reddit.com/r/GuyCry/comments/1kt844o/update_tired_and_broken_father/",
+          "selftext": "Hey everyone,\n\nIt has been a little while since I have given an update.  Bentley has been struggling the last week or so.  He ended up back on nitric oxide due to pulmonary hypertension.  He needed some more sedation during this time and they had to increase his steroids.  We have been told by the doctors, during a care meeting, that we should not expect to leave the hospital before the 1st of the new year.  This will put our total time in the PICU close to one year.  \n\nWhile I sit here and try "
+        },
+        {
+          "title": "Google Earth updated their images of Gaza to last December",
+          "subreddit": "MapPorn",
+          "score": 97195,
+          "num_comments": 10484,
+          "permalink": "https://reddit.com/r/MapPorn/comments/1kh7odt/google_earth_updated_their_images_of_gaza_to_last/",
+          "selftext": "A few months ago in January, I posted on this sub when Google updated the images to early November 2023. The damage was extensive, but I was definitely cherry-picking the worst areas. Now there are images available from 13 months later, and the scale of destruction is almost incomprehensible. Entire villages have been wiped off the map. In the Netzarim Corridor, there are entire square miles without a single standing building. Just vast networks of damaged roads which lead only to dunes of rubbl"
+        },
+        {
+          "title": "LA Protest June 8",
+          "subreddit": "pics",
+          "score": 89345,
+          "num_comments": 5262,
+          "permalink": "https://reddit.com/r/pics/comments/1l7jnbg/la_protest_june_8/",
+          "selftext": ""
+        },
+        {
+          "title": "How did this fall out of national focus so quickly?",
+          "subreddit": "BlueskySkeets",
+          "score": 86634,
+          "num_comments": 1667,
+          "permalink": "https://reddit.com/r/BlueskySkeets/comments/1lhox0r/how_did_this_fall_out_of_national_focus_so_quickly/",
+          "selftext": ""
+        },
+        {
+          "title": "Cut the check Donny...",
+          "subreddit": "agedlikemilk",
+          "score": 85945,
+          "num_comments": 1844,
+          "permalink": "https://reddit.com/r/agedlikemilk/comments/1lmyn9p/cut_the_check_donny/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://june.so/pricing",
+    "changelog": "https://june.so/changelog",
+    "docs": "https://june.so/docs",
+    "integrations": "https://june.so/integrations",
+    "g2": "https://www.g2.com/products/june/reviews"
+  },
+  "analysis": {
+    "name": "June",
+    "url": "https://june.so",
+    "tagline": "Let's retain your customers",
+    "value_proposition": "All-in-one B2B SaaS product analytics platform focused on company-level retention intelligence, CRM integrations, and AI-powered usage insights for teams beyond just product.",
+    "target_segment": "mid-market",
+    "ideal_customer": "B2B SaaS companies with $1M+ ARR that need account-level product usage visibility to prevent churn and align the full team around customer data",
+    "features": [
+      {
+        "name": "company-level analytics",
+        "description": "Analytics aggregated and reported at the account/company level rather than individual users",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "product analytics",
+        "description": "Core product usage tracking, funnel analysis, and behavioral reporting",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "salesforce integration",
+        "description": "Bi-directional sync of product usage data with Salesforce CRM",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "hubspot integration",
+        "description": "Sync product usage data with HubSpot CRM",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "attio integration",
+        "description": "Sync product usage data with Attio CRM",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "sql custom insights",
+        "description": "Custom ad-hoc queries against product data using SQL",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "ai custom insights",
+        "description": "AI-generated analysis and insights layered over product usage data",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "computed traits",
+        "description": "Derived user and company attributes automatically computed from raw event data",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "company alerts",
+        "description": "Automated notifications triggered by company-level usage thresholds or changes",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "audience alerts",
+        "description": "Automated notifications triggered by segment or audience-level usage patterns",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "embed api",
+        "description": "API to embed analytics views or data into external products and portals",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "1:1 onboarding",
+        "description": "Dedicated hands-on setup and onboarding support from the June team; setup fees vary by complexity",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "dashboards",
+        "description": "Custom dashboards for visualizing product usage and customer health metrics",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "user identification",
+        "description": "SDK call to identify and associate users with their event stream",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "group identification",
+        "description": "SDK call to associate users with companies or groups for account-level rollups",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "event tracking",
+        "description": "Custom user and group behavioral event capture via SDK or API",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "page tracking",
+        "description": "Automatic or manual page view tracking",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "browser sdk",
+        "description": "JavaScript SDK for client-side event tracking in the browser",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "react/next.js sdk",
+        "description": "React and Next.js SDK for framework-native integration",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "node.js sdk",
+        "description": "Server-side Node.js SDK for backend event ingestion",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "python sdk",
+        "description": "Server-side Python SDK for backend event ingestion",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "ruby sdk",
+        "description": "Server-side Ruby SDK for backend event ingestion",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "http api",
+        "description": "Language-agnostic HTTP API for identify, group, track, and page calls",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "soc 2 type ii",
+        "description": "SOC 2 Type II security certification",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "gdpr compliance",
+        "description": "GDPR-compliant data handling and storage",
+        "evidence_source": "pricing",
+        "tier": "all"
+      }
+    ],
+    "integrations": [
+      "Salesforce",
+      "HubSpot",
+      "Attio"
+    ],
+    "differentiators": [
+      "Company/account-level analytics as the primary lens, not individual-user analytics",
+      "Designed for the entire company team to use, not just product managers",
+      "Dedicated 1:1 support and onboarding from the June team included",
+      "Explicit minimum ARR threshold ($1M+) \u2014 positions against self-serve tools as a premium retention-focused solution",
+      "Acquired by Amplitude (announced Aug 8 2025) \u2014 product direction now tied to Amplitude roadmap"
+    ],
+    "recent_ships": [
+      {
+        "date": "2025",
+        "what": "Salesforce integration launched (marked NEW on pricing page)",
+        "source": "pricing page header: 'Salesforce integration NEW'"
+      },
+      {
+        "date": "2025-08",
+        "what": "June acquired by / joining Amplitude \u2014 independent product sunset",
+        "source": "pricing page: 'June is joining Amplitude. After 5 years of building June, we're joining Amplitude to continue our mission of helping companies build better products. Aug 8th 2025'"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Platform usable by entire team, not just PMs \u2014 'One of the best things about June is that it is a platform that can be used by our entire team, not just the product manager' (Daniel Zarick, CEO of Arrows)",
+        "Enabled company-wide data-driven culture \u2014 'ensures that everyone has access to the insights they need to do their job effectively' (Daniel Zarick)",
+        "Prevented surprise churn after working with June team on dashboards and workflows \u2014 'We started using June when one of our biggest customers churned at surprise... It didn't happen anymore' (Timon Ruban, Co-founder of Luminovo)",
+        "4.9/5 overall rating (source badge on pricing page)"
+      ],
+      "complaints": [],
+      "sources": [
+        "vendor-site testimonials"
+      ]
+    },
+    "pricing_signal": {
+      "model": "trial",
+      "tier_count": 1,
+      "lowest_paid_seat": null,
+      "free_tier": null
+    }
+  }
+}

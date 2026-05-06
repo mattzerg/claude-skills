@@ -1,0 +1,120 @@
+{
+  "url": "https://sourcegraph.com",
+  "company": "Sourcegraph",
+  "tagline": "Take control of your codebase",
+  "subheadline": "Give humans and agents complete context to understand, oversee, and evolve the world's largest, most complex codebases.",
+  "value_proposition": "Sourcegraph indexes your entire codebase to give AI agents and engineers full context, preventing missed changes, inconsistency, and risk at scale.",
+  "target_audience": "Enterprise engineering teams managing large, complex codebases who are adopting AI coding agents",
+  "primary_cta": {
+    "text": "Get a demo \u2192",
+    "placement": "hero"
+  },
+  "secondary_cta": {
+    "text": "Schedule a demo",
+    "placement": "nav"
+  },
+  "social_proof": {
+    "logos": [
+      "Stripe"
+    ],
+    "testimonials": [
+      "Minions are connected to MCP\u2026 this is how they gather context: internal docs, ticket details, build statuses, and code intelligence via Sourcegraph search. \u2014 Alistair Gray, Stripe"
+    ],
+    "metrics": [
+      "200+ enterprise engineering teams",
+      "1M+ public repositories",
+      "30% cost/task reduction",
+      "38% exec speed increase",
+      "2\u20133\u00d7 retrieval improvement"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "contact-sales",
+    "tiers": [],
+    "price_anchoring": "Value framed around agent efficiency gains (30% cost reduction, 38% speed increase) and risk reduction at enterprise scale; pricing not shown, demo required"
+  },
+  "features": [
+    "Deep Search: agentic natural language AI search with grounded answers and citations",
+    "MCP Server: SCIP-powered code graph knowledge for AI agents across all repositories",
+    "Code Search: exact, deterministic, exhaustive search across the entire codebase",
+    "Code Insights: track migrations, adoption, and risk metrics over time",
+    "Batch Changes: large-scale, cross-repository automated changes and agentic migrations"
+  ],
+  "differentiators": [
+    "SCIP-powered code intelligence giving agents complete cross-repository context vs. fragment-level context from other tools",
+    "Indexes all repositories across entire codebase, not just open files",
+    "Trusted by enterprise for over a decade for deterministic search",
+    "Zero data retention \u2014 LLM inference never stored or shared with third parties",
+    "Built to handle the world's largest monorepos and multi-repo architectures"
+  ],
+  "trust_signals": [
+    "SOC2 Type II compliance",
+    "ISO27001 compliance",
+    "Zero data retention policy",
+    "Enterprise SSO (SAML, OpenID Connect, OAuth)",
+    "SCIM provisioning and lifecycle management",
+    "RBAC for secure centralized authentication",
+    "Dedicated Account Managers and Support Engineers",
+    "200+ enterprise engineering teams",
+    "Named customer: Stripe with named employee testimonial"
+  ],
+  "navigation": [
+    "Platform",
+    "Resources",
+    "Pricing",
+    "Schedule a demo",
+    "Deep Search",
+    "Code Search",
+    "Batch Changes",
+    "Insights",
+    "MCP",
+    "APIs",
+    "CLI",
+    "Cody"
+  ],
+  "design_patterns": {
+    "layout": "Full-width sections with alternating content blocks; hero with large statement text, problem/solution narrative flow, interactive code comparison demo, feature carousels, and enterprise trust section at bottom",
+    "color_scheme": "Dark background with white and light gray text; accent colors for code highlights; minimal use of brand color",
+    "typography": "Large, bold display type for headlines; clean sans-serif body; monospace for code snippets",
+    "visual_style": "Technical and minimal with bold typographic statements; developer-native aesthetic",
+    "notable_patterns": [
+      "Side-by-side agent comparison demo (with vs. without Sourcegraph)",
+      "Animated code/terminal UI mockups",
+      "Scrolling ticker for code monitoring alerts",
+      "Problem-then-solution narrative structure",
+      "Quote callout with customer name and title"
+    ]
+  },
+  "emotional_tone": "confident and urgent \u2014 frames the problem as an incoming 'tidal wave' and positions Sourcegraph as control and survival",
+  "key_objections_addressed": [
+    "Agents already have access to code \u2014 rebutted by showing agents only see fragments without Sourcegraph",
+    "Security and compliance concerns \u2014 addressed with SOC2, ISO27001, zero data retention",
+    "Scalability concerns \u2014 addressed with explicit claim of handling world's largest monorepos",
+    "Agent reliability \u2014 addressed with before/after demo showing missed layers without full context"
+  ],
+  "missing_or_weak": [
+    "No visible pricing page content or even tier names \u2014 high friction for self-serve evaluation",
+    "Only one named customer (Stripe) with a logo; '200+ enterprise teams' claim lacks supporting logos",
+    "No free trial or self-serve signup path \u2014 every CTA requires sales contact",
+    "No video or live demo embed in hero \u2014 the agent comparison is text-based, not visual",
+    "No named competitor comparisons or explicit 'vs.' positioning despite clear differentiation opportunity",
+    "CodeScaleBench report mentioned in a modal/overlay but not integrated into the main narrative",
+    "Cody (AI coding assistant) listed in nav but not featured or explained on the page"
+  ],
+  "standout_elements": [
+    "The side-by-side agent comparison (with vs. without Sourcegraph) is highly concrete and specific \u2014 names exact missed files like auth middleware, audit logging, frontend routes",
+    "Stripe testimonial names a specific person, role, and use case \u2014 not a generic quote",
+    "Problem framing ('tidal wave of code') creates urgency without being alarmist",
+    "CodeScaleBench benchmark (30% cost, 38% speed, 2-3x retrieval) gives quantified ROI that most competitors lack",
+    "Clear three-part framework (Understand. Oversee. Evolve.) gives the platform coherent narrative structure"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 7,
+    "conversion_focus": 6,
+    "differentiation": 9,
+    "overall": 8
+  },
+  "analyzed_at": "2026-04-30T23:51:11.058170"
+}

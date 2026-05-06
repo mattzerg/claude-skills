@@ -1,0 +1,122 @@
+{
+  "url": "https://factory.ai",
+  "company": "Factory",
+  "tagline": "Agent-Native Software Development",
+  "subheadline": "The only software development agents that work everywhere you do. From IDE to CI/CD - delegate complete tasks like refactors, incident response, and migrations to Droids without changing your tools, models, or workflow.",
+  "value_proposition": "AI coding agents (Droids) that integrate natively into any developer workflow\u2014IDE, CLI, Slack, web, or project manager\u2014to autonomously handle complete software engineering tasks.",
+  "target_audience": "Software engineering teams and enterprise engineering orgs seeking to delegate coding tasks to AI agents without disrupting existing tooling, models, or workflows.",
+  "primary_cta": {
+    "text": "curl -fsSL https://app.factory.ai/cli | sh (install via CLI)",
+    "placement": "hero"
+  },
+  "secondary_cta": {
+    "text": "Contact Sales",
+    "placement": "nav and hero"
+  },
+  "social_proof": {
+    "logos": [
+      "Podium",
+      "Groq",
+      "Chainguard"
+    ],
+    "testimonials": [],
+    "metrics": [
+      "$150M Series C",
+      "$1.5B valuation"
+    ],
+    "press": [
+      "Khosla Ventures",
+      "Sequoia Capital",
+      "Blackstone",
+      "Insight Partners",
+      "Evantic Capital",
+      "20VC",
+      "NEA",
+      "Mantis VC"
+    ]
+  },
+  "pricing": {
+    "model": "contact-sales with self-serve CLI entry point",
+    "tiers": [],
+    "price_anchoring": "No pricing shown on page; enterprise deals implied via 'Contact Sales'; free CLI install lowers top-of-funnel barrier"
+  },
+  "features": [
+    "IDE and terminal integration (VS Code, JetBrains, Vim, and more)",
+    "Web/desktop interface for no-setup agent delegation",
+    "CLI for scripting, parallelizing, and CI/CD pipeline integration",
+    "Slack/Teams integration for incident triage and bug fixes in plain English",
+    "Project manager integration (auto-trigger agents from issue assignment, generate PRs with full traceability)"
+  ],
+  "differentiators": [
+    "'The only software development agents that work everywhere you do'",
+    "Interface and vendor agnostic \u2014 works with any model provider, any dev tooling, any interface",
+    "No workflow disruption: 'without changing your tools, models, or workflow'",
+    "'AI that will work with you, not replace you'",
+    "Complete task delegation (not just autocomplete): refactors, incident response, migrations"
+  ],
+  "trust_signals": [
+    "$150M Series C from Khosla Ventures, Sequoia Capital, Blackstone",
+    "$1.5B valuation",
+    "Industry-grade security and compliance",
+    "State-of-the-art security protocols to protect data and IP",
+    "Dedicated security and legal pages (Privacy Policy, Terms, SLA, DPA, BAA)",
+    "Trusted by Podium, Groq, Chainguard"
+  ],
+  "navigation": [
+    "Product",
+    "Enterprise",
+    "Pricing",
+    "News",
+    "Company",
+    "Careers",
+    "Docs",
+    "Log In",
+    "Contact Sales"
+  ],
+  "design_patterns": {
+    "layout": "Full-width dark hero with animated character-by-character headline, marquee logo strip, tabbed product feature section (01\u201305), enterprise two-column section, news card grid, full-width CTA banner, footer",
+    "color_scheme": "Dark background (near-black), high-contrast white text, likely accent color for CTAs; minimal use of color outside text",
+    "typography": "Modern sans-serif, large display type for headline, clean body text; animated letter-splitting effect on hero headline",
+    "visual_style": "Technical, minimal, dark-mode-first",
+    "notable_patterns": [
+      "Character-by-character animated hero headline",
+      "Horizontal marquee/ticker for customer logos",
+      "Numbered tab navigation (01\u201305) for product use cases",
+      "Arrow-right iconography on all CTAs and links",
+      "News section styled as editorial cards with 'New' badges"
+    ]
+  },
+  "emotional_tone": "Confident and aspirational with a technical undercurrent; the 'work with you, not replace you' line adds a reassuring, human touch",
+  "key_objections_addressed": [
+    "Workflow disruption: 'without changing your tools, models, or workflow'",
+    "Vendor lock-in: 'interface and vendor agnostic, working with any model provider'",
+    "Enterprise security: 'industry-grade security and compliance'",
+    "Job displacement fear: 'AI that will work with you, not replace you'",
+    "Setup friction: free CLI one-liner and 'no setup required' web option lower adoption barrier"
+  ],
+  "missing_or_weak": [
+    "Only 3 customer logos \u2014 thin social proof for an enterprise-positioned product",
+    "Zero customer testimonials or quotes anywhere on the page",
+    "No demo video or product screenshot in hero",
+    "No quantified outcomes (e.g., '40% faster PRs', 'reduced MTTR by X')",
+    "Pricing page linked in nav but no pricing shown \u2014 creates uncertainty for self-serve buyers",
+    "No free trial or freemium tier called out explicitly",
+    "News section doubles as social proof but reads more like a blog \u2014 weaker than case studies"
+  ],
+  "standout_elements": [
+    "Bold, falsifiable 'The only' claim anchors differentiation immediately",
+    "Omnichannel coverage (IDE + web + CLI + Slack + PM) is unusually comprehensive and well-organized",
+    "'AI that will work with you, not replace you' directly defuses the most common emotional objection to AI coding tools",
+    "$150M Series C announcement integrated into news section adds real-time credibility",
+    "Numbered 01\u201305 product section makes complex multi-surface product easy to scan",
+    "curl install command in hero signals developer-first authenticity"
+  ],
+  "score": {
+    "clarity": 7,
+    "credibility": 8,
+    "conversion_focus": 6,
+    "differentiation": 8,
+    "overall": 7
+  },
+  "analyzed_at": "2026-04-30T23:47:06.863804"
+}

@@ -111,10 +111,15 @@ def generate_image(
 ) -> str:
     """Generate an image using Gemini 3 Pro Image model."""
 
-    # Check for API key
+    # Check for API key (env var or config.json)
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        print("Error: GEMINI_API_KEY environment variable not set.")
+        config_path = os.path.join(os.path.dirname(__file__), "config.json")
+        if os.path.exists(config_path):
+            import json as _json
+            api_key = _json.load(open(config_path)).get("gemini_api_key")
+    if not api_key:
+        print("Error: GEMINI_API_KEY not set. Add to config.json or environment.")
         sys.exit(1)
 
     # Initialize client

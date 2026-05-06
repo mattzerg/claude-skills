@@ -1,0 +1,108 @@
+{
+  "url": "https://zergai.com",
+  "company": "Zerg AI",
+  "tagline": "Autonomous engineering for mission-critical systems",
+  "subheadline": "AI systems for mission-critical work. Zerg works with teams whose products depend on hard technical systems: hardware, simulations, data and control planes, vendor integrations, migrations, and production workflows.",
+  "value_proposition": "An autonomous AI operating loop that models real environments, generates and validates software against live signals, and continuously monitors for drift \u2014 purpose-built for mission-critical technical systems.",
+  "target_audience": "Platform and infrastructure engineering teams working on hardware, vendor integrations, legacy migrations, data pipelines, and operational tooling where correctness is expensive and AI chat tools fall short.",
+  "primary_cta": {
+    "text": "Join Waitlist",
+    "placement": "nav and implied hero"
+  },
+  "secondary_cta": {
+    "text": "Talk to us",
+    "placement": "hero section"
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [],
+    "metrics": [
+      "2-3/week production integrations shipped and maintained",
+      "24 days for a large JavaScript to TypeScript migration with tests and reviewable checkpoints",
+      "24/7 continuous runtime",
+      "Hardware-in-the-loop signal validation"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "waitlist/contact-sales",
+    "tiers": [],
+    "price_anchoring": "Value framed around team leverage and economics: 'Ship the work that used to be uneconomic' and 'a cadence that used to require a much larger team'"
+  },
+  "features": [
+    "Operating loop: Map (model the real system), Build (generate/modify software), Prove (validate against live signals), Run (continuous monitoring and drift detection)",
+    "Connectors to email, files, calendars, ticketing, CRMs, warehouses, vendor APIs, cloud infrastructure, and custom hardware",
+    "CVE remediation with continuous detection, fix, and verification",
+    "Large-scale code migration and modernization with reviewable checkpoints",
+    "Agent memory, permissions, and recovery for safe access to live systems"
+  ],
+  "differentiators": [
+    "'We do not stop at prompt-to-code' \u2014 full operating loop beyond code generation",
+    "Validates against live services, simulators, devices, and production signals \u2014 not just unit tests",
+    "Keeps watching after delivery so drift becomes a fix path, not a fire drill",
+    "Works against devices, simulators, bench rigs, logs, and signal chains instead of screenshots",
+    "Connectors treated as 'first-class work, not afterthoughts'"
+  ],
+  "trust_signals": [
+    "Specific, quantified proof points (24-day migration, 2-3 integrations/week)",
+    "Technical specificity signals domain depth (hardware-in-the-loop, signal chains, control planes)",
+    "Explicit acknowledgment of hard problems ('The hard part is not generating code once')"
+  ],
+  "navigation": [
+    "Mission",
+    "Runtime",
+    "Loop",
+    "Proof",
+    "Use Cases",
+    "Products",
+    "Blog",
+    "Login",
+    "Join Waitlist"
+  ],
+  "design_patterns": {
+    "layout": "Single long-scroll page with numbered section structure; hero followed by operating loop visualization, mission statements, runtime steps, connectors, proof metrics, and use cases",
+    "color_scheme": "Dark/black background implied by technical tone and 'Live' indicator; likely monochromatic with accent color",
+    "typography": "Clean, technical sans-serif with numbered sections and bold section headers",
+    "visual_style": "Technical, minimal, systems-oriented",
+    "notable_patterns": [
+      "Numbered step framework for operating loop (Map/Build/Prove/Run)",
+      "Numbered mission statements (01\u201304)",
+      "Metric callout blocks with large numbers",
+      "Live status indicator on operating loop diagram",
+      "Cookie consent banner present"
+    ]
+  },
+  "emotional_tone": "Confident and technical with a subtle urgency \u2014 positions itself as the serious tool for teams that have already been burned by simpler AI approaches",
+  "key_objections_addressed": [
+    "'The hard part is not generating code once' \u2014 directly preempts concern that AI just generates throwaway code",
+    "Addresses drift and maintenance: 'When requirements, APIs, or dependencies drift, Zerg detects the change and creates the follow-on fix'",
+    "Addresses safety of live system access: 'Agents need permissions, memory, and verification'",
+    "Addresses scope limitations: explicitly calls out hardware, simulators, and signal chains \u2014 not just web APIs"
+  ],
+  "missing_or_weak": [
+    "No customer logos or named references \u2014 zero social proof from recognizable companies",
+    "No testimonials or customer quotes",
+    "Pricing is completely absent \u2014 creates friction for evaluators",
+    "No demo video or interactive product preview",
+    "'Try Zerg Cloud' CTA has no visible destination or explanation of what cloud means in this context",
+    "No team/founder credibility signals (no About page link, no LinkedIn profiles)",
+    "Waitlist model with no indication of timeline or how to accelerate access",
+    "Navigation item 'Loop' duplicates content covered under 'Runtime' \u2014 slightly confusing IA",
+    "No FAQ section to handle common technical questions"
+  ],
+  "standout_elements": [
+    "Extremely tight, coherent positioning \u2014 'mission-critical' is repeated and operationally defined, not just marketing language",
+    "The Map/Build/Prove/Run loop is a compelling and memorable framework that differentiates from generic AI coding tools",
+    "Honest framing of the hard problem ('The useful AI frontier is not another chat box') builds credibility with skeptical technical buyers",
+    "Use case specificity (CVE remediation, hardware-in-the-loop, JS\u2192TS migration) signals genuine domain depth",
+    "The 'Bring us the system no one wants to own' closing CTA is unusually resonant and memorable for the target audience"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 5,
+    "conversion_focus": 6,
+    "differentiation": 9,
+    "overall": 7
+  },
+  "analyzed_at": "2026-04-30T15:07:00.335487"
+}

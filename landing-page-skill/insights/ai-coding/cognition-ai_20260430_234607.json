@@ -1,0 +1,111 @@
+{
+  "url": "https://www.cognition.ai",
+  "company": "Cognition",
+  "tagline": "cognition is an Agent Lab",
+  "subheadline": "we're the makers of devin \u2014 The AI software engineer",
+  "value_proposition": "Cognition builds AI agents starting with Devin, an AI software engineer that can autonomously handle software development tasks.",
+  "target_audience": "Software engineering teams, CTOs, and enterprises looking to automate or augment software development with AI agents.",
+  "primary_cta": {
+    "text": "Try devin",
+    "placement": "nav and hero"
+  },
+  "secondary_cta": {
+    "text": "get started with devin",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [
+      "Mercedes-Benz"
+    ],
+    "testimonials": [],
+    "metrics": [
+      "10 IOI gold medals (founding team)",
+      "Fortune 500 COBOL modernization customers"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "self-serve with enterprise tier",
+    "tiers": [
+      "self-serve plans",
+      "Enterprise"
+    ],
+    "price_anchoring": "Pricing page exists in nav; blog post 'New self-serve plans for Devin' signals recent democratization of access, implying enterprise was the prior entry point"
+  },
+  "features": [
+    "AI software engineer (Devin) for autonomous coding tasks",
+    "Cloud agent handoff from local terminal (Devin for Terminal)",
+    "SWE-Check: 10x faster bug detection",
+    "Multi-agent workflows",
+    "COBOL and legacy modernization for enterprises"
+  ],
+  "differentiators": [
+    "Self-described as an 'Agent Lab' \u2014 positioning beyond a single product",
+    "Founding team holds 10 IOI gold medals",
+    "Team pedigree: Cursor, Scale AI, Google DeepMind, Waymo, Nuro, Lunchclub, Modal",
+    "Government/federal sector offering",
+    "Global enterprise partnerships (Mercedes-Benz, Fortune 500, Japan, Singapore APAC expansion)"
+  ],
+  "trust_signals": [
+    "Fortune 500 enterprise customers (COBOL modernization)",
+    "Mercedes-Benz named partnership",
+    "Government/Federal product line",
+    "Singapore APAC headquarters opening",
+    "Japan market launch with named partner",
+    "Takumi Masai partnership (Japan)",
+    "~53 open roles across 5 continents signals institutional scale"
+  ],
+  "navigation": [
+    "devin (Overview, Enterprise, Pricing, Customers)",
+    "windsurf (Overview, Install, Enterprise, Pricing)",
+    "blog",
+    "contact us",
+    "government",
+    "careers"
+  ],
+  "design_patterns": {
+    "layout": "Minimal hero-first single-column layout with a rotating/bracketed product callout, followed by a blog feed and careers section",
+    "color_scheme": "Likely dark background with high-contrast white/light text based on bold minimal aesthetic",
+    "typography": "Clean, modern sans-serif; uses lowercase for brand voice ('cognition is an Agent Lab'); bracket notation for labels",
+    "visual_style": "Minimal, technical, confident",
+    "notable_patterns": [
+      "Bracket/array notation for product callouts (e.g., '[ devin / The AI software engineer ]')",
+      "Rotating or animated product tagline in hero",
+      "Numbered job category counts (e.g., '-15-', '-13-')",
+      "Blog feed as social proof/momentum signal on homepage",
+      "prev/next carousel for blog posts"
+    ]
+  },
+  "emotional_tone": "Confident and aspirational with a technical, understated cool \u2014 projects inevitability rather than hype",
+  "key_objections_addressed": [
+    "Is the team credible? \u2014 Addressed with IOI gold medals and named pedigree companies",
+    "Is this enterprise-ready? \u2014 Addressed with Fortune 500, Mercedes-Benz, and government offerings",
+    "Is it globally supported? \u2014 Addressed with Singapore, Japan, UK, India, ANZ, MENA presence",
+    "Is it only for large companies? \u2014 Partially addressed with 'New self-serve plans' blog post"
+  ],
+  "missing_or_weak": [
+    "No customer logos or testimonials visible on the homepage",
+    "No pricing details or even price ranges shown without clicking away",
+    "No product screenshots, demo video, or visual proof of Devin in action",
+    "No explicit ROI metrics or case study statistics (e.g., 'saved X hours')",
+    "Value of Windsurf product is completely unexplained on the homepage",
+    "No live demo or interactive CTA beyond 'Try devin'",
+    "Blog used as social proof but lacks pull quotes or highlighted outcomes"
+  ],
+  "standout_elements": [
+    "'Agent Lab' positioning is bold and category-defining rather than feature-listing",
+    "Team credentials section is unusually strong and specific (IOI medals, named companies)",
+    "Bracket/array syntax creates a distinctive, memorable visual language tied to developer identity",
+    "Blog feed on homepage demonstrates consistent momentum and thought leadership",
+    "Careers section doubles as a trust signal \u2014 53 open roles signals rapid, well-funded growth",
+    "Government product line signals security, trust, and institutional legitimacy without over-explaining"
+  ],
+  "score": {
+    "clarity": 7,
+    "credibility": 8,
+    "conversion_focus": 6,
+    "differentiation": 9,
+    "overall": 7
+  },
+  "analyzed_at": "2026-04-30T23:46:07.750627"
+}

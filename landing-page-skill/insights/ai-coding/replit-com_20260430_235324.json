@@ -1,0 +1,131 @@
+{
+  "url": "https://replit.com",
+  "company": "Replit",
+  "tagline": "What will you build?",
+  "subheadline": "Turn ideas into apps in minutes \u2014 no coding needed",
+  "value_proposition": "An AI-powered platform (Agent 4) that turns natural language prompts into fully deployed, full-stack apps with zero setup.",
+  "target_audience": "Non-technical founders, PMs, designers, and enterprise teams who want to build and ship software without writing code",
+  "primary_cta": {
+    "text": "Create account",
+    "placement": "nav and hero"
+  },
+  "secondary_cta": {
+    "text": "Log in",
+    "placement": "nav"
+  },
+  "social_proof": {
+    "logos": [
+      "Databricks",
+      "Zillow",
+      "Gusto",
+      "Payouts.com",
+      "Talkdesk",
+      "SMFL Digital Lab"
+    ],
+    "testimonials": [
+      "By integrating with Lakebase and Databricks Apps, we're combining Replit's capabilities with trusted enterprise data and governance \u2014 Ali Ghodsi, CEO, Databricks",
+      "Replit Agent 4 is incredible. Its ability to take a one-shot prompt and flesh out the requirements before a full build is unmatched \u2014 Alex Meyers, Principal PM, Gusto",
+      "The parallel task execution is a game-changer for us \u2014 Barak Hirchson, Co-Founder & Chief AI Officer, Payouts.com",
+      "Replit gives our teams the 'superpowers' to prototype and scale internal solutions in hours rather than weeks \u2014 Shauna Geraghty, SVP, Talkdesk"
+    ],
+    "metrics": [],
+    "press": []
+  },
+  "pricing": {
+    "model": "freemium with self-serve paid tiers and contact-sales enterprise",
+    "tiers": [
+      "Starter (Free)",
+      "Replit Core ($18/mo annually)",
+      "Replit Pro ($90/mo annually)",
+      "Enterprise (custom)"
+    ],
+    "price_anchoring": "Free tier lowers entry barrier; Core framed as 'personal projects & simple apps'; Pro discounted from $100 to $90 with annual billing; Enterprise upsells on security and compliance"
+  },
+  "features": [
+    "AI Agent writes production-ready code from natural language prompts",
+    "Parallel Agents execute multiple tasks simultaneously with full visibility before merging",
+    "Infinite Canvas for visual design that applies directly to live apps",
+    "Multiple Artifacts \u2014 build web, mobile, landing pages, and videos in one project",
+    "Built-in full-stack infrastructure: Authentication, Database, Hosting, and Monitoring with zero setup"
+  ],
+  "differentiators": [
+    "Agent 4 with Parallel Agents \u2014 simultaneous multi-agent task execution unique in market",
+    "Infinite Canvas \u2014 visual design layer that connects directly to code/app",
+    "'One-shot prompt' that fleshes out requirements before full build",
+    "Multiple Artifacts support shipping mobile, web, and video in a single project",
+    "Free first prompt with no credit consumption as zero-friction entry"
+  ],
+  "trust_signals": [
+    "SOC 2 certification",
+    "SSO/SAML support",
+    "Admin controls and advanced privacy controls",
+    "Single-tenant environments and VPC peering for Enterprise",
+    "Named enterprise customers: Databricks, Zillow, Gusto, Talkdesk",
+    "Static outbound IPs",
+    "Database restore up to 28 days"
+  ],
+  "navigation": [
+    "Products",
+    "Agent",
+    "Design",
+    "Databases",
+    "Publish Apps",
+    "Integrations",
+    "Mobile",
+    "For Work",
+    "Pro",
+    "Enterprise",
+    "Use Cases",
+    "Resources",
+    "Pricing",
+    "Log in",
+    "Create account",
+    "Contact sales"
+  ],
+  "design_patterns": {
+    "layout": "Full-width hero with centered prompt input, followed by tabbed feature showcases, testimonial carousel, and pricing table",
+    "color_scheme": "Dark background with high-contrast white text; accent colors used for UI mockups and CTAs",
+    "typography": "Clean, modern sans-serif; large bold headlines, smaller descriptive body text",
+    "visual_style": "Bold and technical with aspirational product UI showcases",
+    "notable_patterns": [
+      "Prompt input field as hero CTA \u2014 mirrors the product itself",
+      "Animated/tabbed feature sections (Website, Mobile, Design, Slides, etc.)",
+      "Product UI screenshots embedded inline to demonstrate output quality",
+      "Testimonial carousel with named executives and company logos",
+      "Toggle switch for monthly/yearly pricing comparison"
+    ]
+  },
+  "emotional_tone": "aspirational and confident",
+  "key_objections_addressed": [
+    "No coding required \u2014 explicitly stated in hero",
+    "Free to start \u2014 'Your first prompt is free. No credit consumption.'",
+    "Enterprise-grade security addressed with SOC 2, SSO, VPC peering",
+    "Team collaboration handled \u2014 up to 15 collaborators on Pro, 50 viewers",
+    "Production-readiness addressed \u2014 'Agent writes production-ready code'"
+  ],
+  "missing_or_weak": [
+    "No scale or social proof metrics (no user count, apps built, or revenue processed)",
+    "No video demo or interactive product tour",
+    "No comparison chart against competitors (GitHub Copilot, Cursor, Lovable, Bolt)",
+    "Press/media mentions absent despite being a well-known brand",
+    "Testimonials lack specificity \u2014 no measurable outcomes quoted (time saved, cost reduced)",
+    "Free tier limitations are vague ('Limited Agent intelligence', 'Publish 1 app')",
+    "No FAQ section addressing common concerns about AI code quality or lock-in"
+  ],
+  "standout_elements": [
+    "Hero CTA is the product itself \u2014 the prompt input box creates instant engagement and reduces friction",
+    "C-suite testimonials from recognizable enterprise brands (Databricks CEO, Zillow PM) add elite-tier credibility",
+    "Parallel Agents concept is visually explained and genuinely differentiated",
+    "Birthday promotion ('Replit Agent is free on May 2nd') creates urgency and shareability",
+    "Pricing page is transparent and self-serve \u2014 no 'call for pricing' gatekeeping until Enterprise tier",
+    "Infinite Canvas feature clearly targets Figma-adjacent users expanding into app development"
+  ],
+  "score": {
+    "clarity": 9,
+    "credibility": 8,
+    "conversion_focus": 8,
+    "differentiation": 8,
+    "overall": 8
+  },
+  "analyzed_at": "2026-04-30T23:53:24.989339"
+}

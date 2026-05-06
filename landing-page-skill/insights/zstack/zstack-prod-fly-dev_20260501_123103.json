@@ -1,0 +1,67 @@
+{
+  "url": "https://zstack-prod.fly.dev",
+  "company": "ZStack",
+  "tagline": "ZStack",
+  "subheadline": "Sign in to continue.",
+  "value_proposition": "Unable to determine \u2014 no marketing content is visible; the page is a gated login screen.",
+  "target_audience": "Existing users with credentials; no acquisition messaging present.",
+  "primary_cta": {
+    "text": "Sign in",
+    "placement": "form/center"
+  },
+  "secondary_cta": {
+    "text": null,
+    "placement": null
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [],
+    "metrics": [],
+    "press": []
+  },
+  "pricing": {
+    "model": "unknown \u2014 no pricing visible",
+    "tiers": [],
+    "price_anchoring": "none"
+  },
+  "features": [],
+  "differentiators": [],
+  "trust_signals": [],
+  "navigation": [],
+  "design_patterns": {
+    "layout": "Centered single-column auth form with logo above and email/password fields",
+    "color_scheme": "Unknown from text content alone",
+    "typography": "Unknown from text content alone",
+    "visual_style": "minimal",
+    "notable_patterns": [
+      "centered login card",
+      "no nav",
+      "no footer"
+    ]
+  },
+  "emotional_tone": "neutral/functional",
+  "key_objections_addressed": [],
+  "missing_or_weak": [
+    "No headline or value proposition \u2014 visitors have no idea what ZStack does",
+    "No marketing copy whatsoever",
+    "No social proof of any kind",
+    "No navigation or site structure visible",
+    "No secondary CTA (e.g. sign up, learn more, request demo)",
+    "No trust signals (SSL badges, privacy policy, ToS)",
+    "No subheadline explaining the product",
+    "No 'forgot password' or account creation link visible",
+    "No description of target audience or use case",
+    "This is a login wall, not a landing page \u2014 zero acquisition value"
+  ],
+  "standout_elements": [
+    "Extremely minimal \u2014 low friction for returning users who already know the product"
+  ],
+  "score": {
+    "clarity": 1,
+    "credibility": 1,
+    "conversion_focus": 1,
+    "differentiation": 1,
+    "overall": 1
+  },
+  "analyzed_at": "2026-05-01T12:31:03.322001"
+}

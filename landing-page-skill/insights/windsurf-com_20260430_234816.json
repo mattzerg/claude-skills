@@ -1,0 +1,130 @@
+{
+  "url": "https://windsurf.com",
+  "company": "Windsurf (Windsurf Inc. / Cognition AI, Inc.)",
+  "tagline": "Where developers are doing their best work.",
+  "subheadline": "Ship more with local and cloud agents working together.",
+  "value_proposition": "An AI-powered coding IDE that combines a local agentic assistant (Cascade) with an autonomous cloud agent (Devin) so developers can delegate, parallelize, and ship code faster.",
+  "target_audience": "Software developers and engineering teams \u2014 from individual builders to enterprise organizations \u2014 who want AI to handle boilerplate, debugging, and complex tasks while they stay in flow.",
+  "primary_cta": {
+    "text": "Download for macOS",
+    "placement": "hero and sticky footer"
+  },
+  "secondary_cta": {
+    "text": "Explore Features",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [
+      "Reply"
+    ],
+    "testimonials": [
+      "Every single one of these engineers has to spend literally just one day making projects with Windsurf and it will be like they strapped on rocket boosters. \u2014 Garry Tan, President & CEO",
+      "Windsurf is so much better than Cursor. It just makes the steps easier. \u2014 Avi Schiffmann",
+      "I think @windsurf_ai will win the AI Coding Assistant wars. \u2014 Andrew Brown",
+      "Unreal. I just built an app with 1 prompt. \u2014 Alex Finn",
+      "I've been exclusively using Windsurf for the past 3 weeks. They are not paying me to say this. It's really good. Really really good. \u2014 The Jack Forge",
+      "Windsurf makes coding insanely fun and fast! \u2014 elvis (@omarsar0)"
+    ],
+    "metrics": [
+      "1M+ users",
+      "4,000+ enterprise customers",
+      "94% of code written by AI"
+    ],
+    "press": [
+      "2025 Gartner Magic Quadrant (referenced in footer nav)"
+    ]
+  },
+  "pricing": {
+    "model": "self-serve with enterprise tier; token-based usage plans",
+    "tiers": [
+      "Individual/Developer (implied)",
+      "Enterprise"
+    ],
+    "price_anchoring": "Pricing page exists but no prices shown on landing page; value framed around productivity multiplier ('rocket boosters', '94% code written by AI') rather than cost; blog references 'clear and fair token usage plans'"
+  },
+  "features": [
+    "Cascade \u2014 agentic local AI with deep codebase understanding, real-time awareness, and collaborative flow",
+    "Devin \u2014 autonomous cloud agent for delegating debugging, testing, and deployment while coding locally",
+    "Windsurf Tab \u2014 multi-action autocomplete exclusive to the Windsurf Editor (cursor movement, imports, full completions)",
+    "MCP Support \u2014 one-click connection to external tools and services (Figma, Slack, Stripe, Playwright, etc.)",
+    "Spaces \u2014 bundles agent sessions, PRs, files, and shared context around a single task",
+    "Agent Command Center \u2014 unified Kanban dashboard managing all local Cascade and cloud Devin sessions"
+  ],
+  "differentiators": [
+    "'The most powerful way to code with AI' (Cascade claim)",
+    "Devin is built directly into the IDE \u2014 no separate tool or context switch",
+    "'Full power of Windsurf Tab is exclusive to the Windsurf Editor' \u2014 IDE plugins get autocomplete only",
+    "Local + cloud agents working in parallel \u2014 'close your laptop and come back later'",
+    "94% of code written by AI \u2014 highest productivity claim in the category",
+    "JetBrains native plugin \u2014 not just VS Code"
+  ],
+  "trust_signals": [
+    "1M+ users statistic",
+    "4,000+ enterprise customers",
+    "Garry Tan (Y Combinator President & CEO) named endorsement",
+    "2025 Gartner Magic Quadrant mention",
+    "Arena Leaderboard reference (implies benchmark performance)",
+    "Windsurf for Government offering (implies compliance/security posture)",
+    "Security page in footer",
+    "Named enterprise customer logos (Reply shown in marquee)"
+  ],
+  "navigation": [
+    "Products",
+    "Enterprise",
+    "Pricing",
+    "Blog",
+    "Resources",
+    "Company",
+    "Download"
+  ],
+  "design_patterns": {
+    "layout": "Long-form vertical scroll with full-width hero, alternating feature sections with UI mockups, social proof marquee, testimonial carousel, stats band, and download CTA footer",
+    "color_scheme": "Dark/near-black background with bright accent colors; high-contrast UI screenshots",
+    "typography": "Modern sans-serif; large bold headlines, smaller descriptive body text",
+    "visual_style": "Technical and bold \u2014 product-screenshot-forward with a dark IDE aesthetic",
+    "notable_patterns": [
+      "Auto-scrolling logo marquee for customer logos",
+      "Side-by-side feature sections with animated product UI mockups",
+      "Horizontal testimonial carousel with Twitter-style cards",
+      "Stats band with large number callouts",
+      "Sticky/repeated download CTA at bottom",
+      "Kanban-style UI mockup for Agent Command Center feature"
+    ]
+  },
+  "emotional_tone": "Aspirational and confident \u2014 positions coding with Windsurf as a qualitative leap ('rocket boosters', 'hysterical laughter', 'insanely fun'), not just an incremental improvement",
+  "key_objections_addressed": [
+    "Context-switching fatigue \u2014 Spaces and Agent Command Center keep everything in one place",
+    "AI breaking your flow \u2014 Cascade is framed as keeping you in flow state, not interrupting it",
+    "AI tools being too hands-on \u2014 Devin lets you fully delegate and walk away",
+    "Enterprise trust \u2014 dedicated Enterprise page, Gartner recognition, Government offering, Security page",
+    "Vendor lock-in / model dependency \u2014 'first-class support for every major model provider'",
+    "Cursor comparison \u2014 multiple testimonials directly name Windsurf as better than Cursor"
+  ],
+  "missing_or_weak": [
+    "No pricing visible on the landing page \u2014 forces an extra click before conversion decision",
+    "Logo wall is very thin \u2014 only 'Reply' visible in the marquee despite 4,000+ enterprise claim",
+    "No free trial or freemium CTA \u2014 only 'Download' with no mention of what's free vs paid",
+    "No video or live demo embedded \u2014 feature mockups are static or light animation",
+    "Testimonials are all Twitter posts with no company/title attribution beyond Garry Tan",
+    "No comparison table vs Cursor/Copilot despite multiple testimonials referencing them",
+    "Devin is framed as 'new' but no clear pricing or availability context for it",
+    "No explicit security or compliance callout in the hero/main flow \u2014 buried in footer"
+  ],
+  "standout_elements": [
+    "The 94% AI-written code stat is an unusually bold and specific credibility claim",
+    "Garry Tan quote is a high-signal named endorsement from a recognizable tech figure",
+    "Cursor is beaten without being named \u2014 social proof does the competitive work organically",
+    "Devin-in-IDE positioning is a genuine product differentiator clearly explained with a use-case narrative",
+    "Testimonial carousel with real Twitter handles adds authenticity over generic pull quotes",
+    "MCP support with one-click setup is called out as a UX advantage over competitors",
+    "Windsurf for Government in footer signals serious enterprise/compliance maturity"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 8,
+    "conversion_focus": 6,
+    "differentiation": 9,
+    "overall": 8
+  },
+  "analyzed_at": "2026-04-30T23:48:16.693057"
+}

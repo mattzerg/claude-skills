@@ -1,0 +1,94 @@
+{
+  "url": "https://zcal.fly.dev",
+  "company": "ZCal",
+  "tagline": "Calendars for teams and agents",
+  "subheadline": "A calendar humans and agents share",
+  "value_proposition": "A calendar app with a familiar human UI that also exposes a full REST and WebSocket API so AI agents can own and manage calendars natively.",
+  "target_audience": "Developer teams and AI builders who want a single calendar layer usable by both humans and autonomous agents in multi-tenant environments.",
+  "primary_cta": {
+    "text": "Start free",
+    "placement": "nav and hero"
+  },
+  "secondary_cta": {
+    "text": "See features",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [],
+    "metrics": [],
+    "press": []
+  },
+  "pricing": {
+    "model": "freemium",
+    "tiers": [],
+    "price_anchoring": "Free to start, upgrade framed as growth-triggered: 'upgrade only when your team grows'"
+  },
+  "features": [
+    "Month, week, day views with drag-to-create and dark-mode palette",
+    "In-app ZTC agent (Zerg) for natural-language event creation, moving, and resolution",
+    "Bidirectional incremental Google Calendar sync via OAuth",
+    "RFC 5545 iCal public feeds compatible with Google, Apple, and Outlook",
+    "Agent-native REST + WebSocket API with per-agent token provisioning"
+  ],
+  "differentiators": [
+    "Agent-native WebSocket API \u2014 'your bots can own a calendar too'",
+    "'Google-Calendar-simple interface' combined with full programmatic access",
+    "Multi-tenant by default with isolated data per organization",
+    "Deploy-ready on Fly.io as part of the 'zerg suite'"
+  ],
+  "trust_signals": [
+    "RFC 5545 compliance cited",
+    "Google OAuth integration mentioned",
+    "Live schedule widget implying a real working product"
+  ],
+  "navigation": [
+    "Features",
+    "FAQ",
+    "Log in",
+    "Start free"
+  ],
+  "design_patterns": {
+    "layout": "Single-page with full-width hero, a live stats widget floating in the hero, a 3-column features grid, and an accordion FAQ",
+    "color_scheme": "Dark mode primary palette; no explicit accent colors described in text",
+    "typography": "Clean, modern sans-serif implied by minimal technical tone",
+    "visual_style": "minimal/technical",
+    "notable_patterns": [
+      "Live schedule widget in hero showing real-time event counts and agent activity",
+      "Feature cards in a 2\u20133 column grid",
+      "Accordion FAQ section",
+      "Dual-CTA hero (primary + ghost button)"
+    ]
+  },
+  "emotional_tone": "confident/technical",
+  "key_objections_addressed": [
+    "Can agents use ZCal directly? \u2014 Yes, with API token and WebSocket, no pre-registration required",
+    "Does it sync with Google Calendar? \u2014 Yes, bidirectional incremental sync via OAuth",
+    "Can I subscribe from other apps? \u2014 Yes, RFC 5545 iCal feed works with Google, Apple, Outlook",
+    "Is there a free tier? \u2014 Yes, free to start"
+  ],
+  "missing_or_weak": [
+    "Zero social proof: no customer logos, testimonials, user counts, or case studies",
+    "No pricing page or tier comparison \u2014 free vs paid distinction is completely opaque",
+    "No screenshots, demo video, or interactive preview of the actual calendar UI",
+    "No company credibility signals: no team page, founding story, or 'backed by' mentions",
+    "No security or compliance badges despite targeting teams with sensitive scheduling data",
+    "Live schedule widget stats ('5 events today', '24 this week') read as demo data, not proof of adoption",
+    "No explicit use-case examples or persona-specific messaging beyond 'teams and agents'"
+  ],
+  "standout_elements": [
+    "Agent-native positioning is genuinely differentiated and clearly articulated throughout",
+    "Live schedule widget in hero creates a 'product is real and running' impression",
+    "FAQ section directly neutralizes the top four purchase objections",
+    "Concise, jargon-appropriate copy for a technical developer audience",
+    "Dual-audience framing ('humans and agents') is memorable and novel"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 3,
+    "conversion_focus": 5,
+    "differentiation": 8,
+    "overall": 6
+  },
+  "analyzed_at": "2026-05-01T12:30:41.477091"
+}

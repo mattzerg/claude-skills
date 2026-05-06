@@ -1,0 +1,111 @@
+{
+  "url": "https://zergai.com",
+  "company": "Zerg AI",
+  "tagline": "AI systems for mission-critical work.",
+  "subheadline": "Zerg works with teams whose products depend on hard technical systems: hardware, simulations, data and control planes, vendor integrations, migrations, and production workflows. We model the environment, build the software, validate against real signals, and keep it operating as the system changes.",
+  "value_proposition": "Zerg AI is an autonomous code generation platform that continuously builds, validates against real signals, and maintains software for hard technical systems that normal engineering teams struggle to own.",
+  "target_audience": "Engineering and platform teams at companies running mission-critical systems involving hardware, vendor APIs, data pipelines, large-scale migrations, CVE remediation, or operational workflows with high correctness requirements.",
+  "primary_cta": {
+    "text": "Talk to us",
+    "placement": "hero"
+  },
+  "secondary_cta": {
+    "text": "Try Zerg Cloud",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [],
+    "metrics": [
+      "2-3/week production integrations",
+      "24 days for a large JavaScript-to-TypeScript migration",
+      "24/7 continuous runtime",
+      "signals-based system validation"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "contact-sales / waitlist",
+    "tiers": [],
+    "price_anchoring": "Frames value as enabling work that was previously 'uneconomic' \u2014 shipping integrations at a cadence that used to require a much larger team."
+  },
+  "features": [
+    "Map: Models real systems from codebases, APIs, documents, operators, hardware, tests, and production rules",
+    "Build: Generates integrations, internal tools, migration code, test harnesses, and operational applications",
+    "Prove: Validates against live services, simulators, devices, and production signals beyond unit tests",
+    "Run: Monitors for drift in requirements, APIs, or dependencies and creates follow-on fixes autonomously",
+    "Data Connectors: First-class integrations with email, files, calendars, CRMs, warehouses, vendor APIs, cloud infrastructure, and custom hardware"
+  ],
+  "differentiators": [
+    "'We do not stop at prompt-to-code' \u2014 explicit rejection of one-shot code generation",
+    "Hardware-in-the-loop validation for systems where correctness depends on real signals",
+    "'Connectors are first-class work, not afterthoughts'",
+    "Continuous operating loop that keeps watching and fixing after initial delivery",
+    "Targets problems 'where the problem has real interfaces, live state, and expensive correctness requirements'",
+    "Explicitly positions against 'another chat box'"
+  ],
+  "trust_signals": [
+    "Specific metric: 24-day production JS-to-TS migration with reviewable checkpoints",
+    "Specific metric: 2-3 production integrations shipped per week for platform teams",
+    "Hardware-in-the-loop workflow claim with signal validation",
+    "24/7 continuous runtime claim"
+  ],
+  "navigation": [
+    "Mission",
+    "Runtime",
+    "Loop",
+    "Proof",
+    "Use Cases",
+    "Products",
+    "Blog",
+    "Login",
+    "Join Waitlist"
+  ],
+  "design_patterns": {
+    "layout": "Long-form vertical scroll with clearly delineated named sections (Mission, Runtime, Proof, Use Cases); numbered list patterns for frameworks and use cases; a four-step operating loop visualization",
+    "color_scheme": "Cannot confirm from text alone; tone suggests dark/technical palette typical of infrastructure tooling",
+    "typography": "Technical, structured; heavy use of numbered lists and section labels",
+    "visual_style": "Technical, minimal, infrastructure-focused",
+    "notable_patterns": [
+      "'Live' indicator badge on operating loop suggesting real-time visualization",
+      "Numbered step frameworks (01, 02, 03, 04)",
+      "Metric callouts with large numbers",
+      "Split product listing (Zerg, ZDE, ZTC)"
+    ]
+  },
+  "emotional_tone": "Confident and technical with a mission-driven undertone; avoids hype in favor of precision and operational seriousness",
+  "key_objections_addressed": [
+    "'The hard part is not generating code once' \u2014 addresses skepticism that AI just generates throwaway code",
+    "Validation against real signals, not just unit tests \u2014 addresses concern about AI code quality in production",
+    "Post-delivery monitoring and drift detection \u2014 addresses concern about maintenance and long-term reliability",
+    "Safe access with permissions, memory, and verification \u2014 addresses concern about AI agents having unsafe system access",
+    "Reviewable checkpoints mentioned in migration proof \u2014 addresses concern about loss of human oversight"
+  ],
+  "missing_or_weak": [
+    "Zero named customers or company logos \u2014 no social proof from recognizable organizations",
+    "No testimonials or quotes from actual users",
+    "No team page or founder credibility signals visible",
+    "Waitlist/contact-sales model with no self-serve option creates friction for evaluation",
+    "No case study depth \u2014 metrics are stated but not attributed to specific companies",
+    "No pricing transparency even at a tier level",
+    "No security certifications, SOC 2, or compliance badges despite targeting enterprise/mission-critical buyers",
+    "Product screenshots, demos, or video walkthroughs appear absent",
+    "ZDE and ZTC products mentioned but not explained beyond acronym expansions"
+  ],
+  "standout_elements": [
+    "Extremely sharp ICP targeting \u2014 the page actively narrows its audience to teams with 'hard technical systems', which builds credibility with that audience",
+    "The four-stage operating loop (Map, Build, Prove, Run) is a clear and memorable framework that differentiates from generic AI coding tools",
+    "Explicit rejection of 'prompt-to-code' positions the product above commoditized AI tools",
+    "Hardware-in-the-loop and signal validation claims are rare and compelling for the target audience",
+    "'Bring us the system no one wants to own' is a memorable and emotionally resonant closing CTA framing",
+    "Use case specificity (CVE remediation, ETL pipelines, code migration) avoids vagueness common in AI landing pages"
+  ],
+  "score": {
+    "clarity": 7,
+    "credibility": 4,
+    "conversion_focus": 5,
+    "differentiation": 9,
+    "overall": 6
+  },
+  "analyzed_at": "2026-05-01T00:08:09.472509"
+}

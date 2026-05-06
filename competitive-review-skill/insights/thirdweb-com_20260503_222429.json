@@ -1,0 +1,623 @@
+{
+  "name": "Thirdweb",
+  "url": "https://thirdweb.com",
+  "domain": "thirdweb.com",
+  "scanned_at": "2026-05-03T22:21:16.437524",
+  "sources": {
+    "landing": {
+      "url": "https://thirdweb.com",
+      "title": "thirdweb:  Infrastructure for AI Agents",
+      "text": "thirdweb:  Infrastructure for AI Agents\nProducts\nSolutions\nPricing\nDeveloper\nCompany\nPlayground\nContact Us\nLogin\nAtlas Trading App: Now in beta\nBuild the next generation of internet products\nWhere users and AI can spend, earn and transact autonomously.\nStart for Free\nView Playground\nTrusted by the best teams\nBuy it. Swap it. Spend it. Anywhere.\nPowering the world\u2019s most seamless bridging and swapping experience.\nSwap Crypto\nSign-up for our newsletter.\nGet the latest web3 development news and updates.\nEverything you need in one platform\nCreate tokens for the app economy\nA comprehensive toolkit to create, launch, and sell ERC20, ERC721 and ERC1155 tokens.\nBridge and swap across any chain, instantly\nBring multi-chain access to thousands of tokens into your application with one seamless API integration.\nNative internet payments\nAccept HTTP and agentic payments for your API in any token across thousands of chains.\nAI tools built for blockchains\nPowerful API specialized for blockchain to build agents and crypto-powered AI apps.\nWallets to read, write and transact\nWallets for users, agents, and developers to read and transact in your application.\nBlockchain data access\nInfrastructure that powers thirdweb services with data including real-time, historical, onchain and onchain-related data.\nTrusted by the best\nPowering web3 apps across verticals \u2014 from onchain games to creator platforms.\nView all case studies\nSafe\nIntegrated thirdweb wallet functionality to seamlessly onboard millions of users, serving as the largest multi-sig wallet tool in the world.\nSecuring $100b+\nin crypto assets.\nKing of Destiny\nLaunched collectible avatar NFTs using thirdweb, providing a seamless user experience and accessibility for users at scale.\n1,800 packs sold\nin under 2 minutes.\nCoinbase\nBringing onchain experiences to the real world \u2014 with seamless NFT creation, delivery, & transaction management via the Coinbase Wallet app.\n1000+ real world\ntransactions.\nBuild across EVM and Solana\nOur tools work with any contract deployed on any EVM-compatible chain or Solana.\nExplore Chainlist\nPlans that scale to every team\nFlexible and transparent pricing that scales to your app usage without cutting you off, ever.\nStarter\nIdeal for hobbyists who require basic features.\n$9\n/ month\n$25 Usage Credits\nCommunity Support\nEngine Cloud\nWeb, Mobile & Gaming SDKs\nContract & Wallet APIs\nAccount Abstraction\nBlockchain Infrastructure\nGet Started\nGrowth\nMost Popular\nIdeal for small scale teams and startups.\n$99\n/ month\nCustom In-App Wallet Auth\nWeb, Mobile & Gaming SDKs\nServer Wallets\nContract & Wallet APIs\nAccount Abstraction\nManaged Infrastructure (RPC, IPFS, etc.)\nAudited smart contracts\nChoose Growth\nScale\nIdeal for mid-size businesses.\n$499\n/ month\nEverything in Growth, plus:\n24hr Guaranteed Response\nEmail Support\nDedicated Infrastructure Add-Ons (RPC, Insight)\nRemove thirdweb branding\nAudit Logs\nEcosystem Wallet Add-On\nChoose Scale\nPro\nFor large organizations with custom needs.\n$1,499+\n/ month\nSlack & Telegram Support\n12hr Guaranteed Response\nDedicated Account Executive\nCustom Infrastucture Add-Ons\nNegotiated Volume Discounts\nNo Rate Limits\nEverything in Scale, plus:\nChoose Pro\nStart with thirdweb.\nBuild web3 apps with ease. Get instant access.\nStart Building\nDocumentation\nProducts\nAI Model\nBridge\nContracts\nGas Sponsorship\nInsight\nNexus\nPayments\nRPC Edge\nToken\nTransactions\nVault\nWallets\nx402\nDeveloper\nDocumentation\nTemplates\nLearn\nChainlist\nToken List\nDashboard\nCLI\nMCP Server\nBridge Crypto\nFaucets\nSDKs\nTypescript\nReact\nReact Native\nUnreal Engine\nUnity\n.NET\nSolutions\nEcosystems\nGaming\nConsumer Apps\nDeFi\nMobile Apps\nE-commerce\nCompany\nBlog\nCareers\nPricing\nBrand Kit\nPrivacy Policy\nTerms of Service\nCookie Settings\nReport Abuse\nSocial\nX (ex. Twitter)\nTelegram\nYoutube\nLinkedIn\nGitHub\nInstagram\nTiktok\nWe use cookies to personalize content, run ads, and analyze traffic.",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://thirdweb.com/pricing",
+      "title": "thirdweb Pricing: Plans that scale to every team",
+      "text": "thirdweb Pricing: Plans that scale to every team\nProducts\nSolutions\nPricing\nDeveloper\nCompany\nPlayground\nContact Us\nLogin\nPlans that scale to every team\nFlexible and transparent pricing that scales to your app usage without cutting you off, ever.\nGrowth\nMost Popular\nIdeal for small scale teams and startups.\n$99\n/ month\nCustom In-App Wallet Auth\nWeb, Mobile & Gaming SDKs\nServer Wallets\nContract & Wallet APIs\nAccount Abstraction\nManaged Infrastructure (RPC, IPFS, etc.)\nAudited smart contracts\nChoose Growth\nScale\nIdeal for mid-size businesses.\n$499\n/ month\nEverything in Growth, plus:\n24hr Guaranteed Response\nEmail Support\nDedicated Infrastructure Add-Ons (RPC, Insight)\nRemove thirdweb branding\nAudit Logs\nEcosystem Wallet Add-On\nChoose Scale\nPro\nFor large organizations with custom needs.\n$1,499+\n/ month\nSlack & Telegram Support\n12hr Guaranteed Response\nDedicated Account Executive\nCustom Infrastucture Add-Ons\nNegotiated Volume Discounts\nNo Rate Limits\nEverything in Scale, plus:\nChoose Pro\nChoose\nGrowth\nChoose\nScale\nChoose\nPro\nUser Wallets\n0 - 100,000\n$0.015 / MAU\nFirst 1000 wallets free\n$0.015 / MAU\nFirst 1000 wallets free\n$0.015 / MAU\nFirst 1000 wallets free\n100,001 - 1,000,000\n$0.01 / MAU\n$0.01 / MAU\n$0.01 / MAU\n1,000,001 - 10,000,000\n$0.0075 / MAU\n$0.0075 / MAU\n$0.0075 / MAU\n10,000,000+\n$0.005 / MAU\n$0.005 / MAU\n$0.005 / MAU\nChains Supported\n2500+\n2500+\n2500+\nCustom Branding for Emails\nCustom Auth for In-App Wallets\nRemove thirdweb Branding\nSMS Delivery\nUS & Canada\nInternational\nInternational\nEcosystem Wallets\nServer Wallets\n1,000 Requests\nIncluded\nIncluded\nIncluded\n1,000 - 100K Requests\n$1 / thousand requests\n$1 / thousand requests\n$1 / thousand requests\n100K - 250K Requests\n$0.60 / thousand requests\n$0.60 / thousand requests\n$0.60 / thousand requests\n250K+\n$0.20 / thousand requests\n$0.20 / thousand requests\n$0.20 / thousand requests\nChains Supported\n2500+\n2500+\n2500+\nRate Limit\n250 requests / second\n1000 requests / second\nUnlimited\nGas Sponsorship\n1,000\nIncluded\nIncluded\nIncluded\n1,000 - 100,000\n$1 / thousand txns\n$1 / thousand txns\n$1 / thousand txns\n100,000 - 250,000\n$0.60 / thousand txns\n$0.60 / thousand txns\n$0.60 / thousand txns\n250,000+\n$0.20 / thousand txns\n$0.20 / thousand txns\n$0.20 / thousand txns\nRate Limit\n250 requests / second\n1000 requests / second\nUnlimited\nChains Supported\n145+\n145+\n145+\nGas Surcharge\n2.5% (Mainnet)\n2.5% (Mainnet)\n2.5% (Mainnet)\nGlobal Paymaster Sponsorship Rules\nBridge\nLearn more about fees\nTransaction fees\nFee % on each swap (crypto-to-crypto) transaction.\n0.3% transaction fee\n0.3% transaction fee\n0.3% transaction fee\nChains Supported\n70+\n70+\n70+\nx402\nTransaction fees\nFee % on each transaction executed through facilitator.\n0.3% transaction fee\n0.3% transaction fee\n0.3% transaction fee\nRPC\n1M\nIncluded\nIncluded\nIncluded\n1M - 250M\n$8 / million requests\n$8 / million requests\n$8 / million requests\n250M - 1B\n$6.80 / million requests\n$6.80 / million requests\n$6.80 / million requests\n1B+\n$5.40 / million requests\n$5.40 / million requests\n$5.40 / million requests\nRate Limit\n250 requests / second\n1000 requests / second\nUnlimited\nDedicated Node\nChains Supported\n2,500+\n2,500+\n2,500+\nTokens\nProtocol Fee\n0.5%\n0.5%\n0.5%\nConvenience Fee\n2%\n2%\n2%\nInsight\n1M\nIncluded\nIncluded\nIncluded\n1M - 250M\n$8 / million queries\n$8 / million queries\n$8 / million queries\n250M - 1B\n$6.80 / million queries\n$6.80 / million queries\n$6.80 / million queries\n1B+\n$5.40 / million queries\n$5.40 / million queries\n$5.40 / million queries\nChains Supported\n110+\n110+\n110+\nRate Limit\n250 requests / second\n1000 requests / second\nUnlimited\nAI\nPricing\n$3 / million tokens\n$3 / million tokens\n$3 / million tokens\nRate Limit\n5 RPS / 100 RPM\n10 RPS / 500 RPM\n30 RPS / 1500 RPM\nChains Supported\n2,500+\n2,500+\n2,500+\nWebhooks\n1,000\nIncluded\nIncluded\nIncluded\n1,000 - 100K\n$0.10 / thousand deliveries\n$0.10 / thousand deliveries\n$0.10 / thousand deliveries\n100K - 250K\n$0.06 / thousand deliveries\n$0.06 / thousand deliveries\n$0.06 / thousand deliveries\n250K+\n$0.02 / thousand deliveries\n$0.02 / thousand deliveries\n$0.02 / thousand deliveries\nStorage\n1 GB\nIncluded\nIncluded\nIncluded\n1GB - 1TB\n$0.05 GB / month\n$0.05 GB / month\n$0.05 GB / month\n1TB - 10TB\n$0.04 GB / month\n$0.04 GB / month\n$0.04 GB / month\n10TB+\n$0.03 GB / month\n$0.03 GB / month\n$0.03 GB / month\nBandwidth\nIncluded\nIncluded\nIncluded\nDownload Rate Limit\n100 requests / second\n250 requests / second\n500 requests / second\nUpload Rate Limit\n100 requests / second\n250 requests / second\n500 requests / second\nPlatform\nTeam Seats\n3 seats included\nthen $25 per seat\n5 seats included\nthen $25 per seat\n10 seats included\nthen $25 per seat\nUser Analytics\n30 days\n90 days\nAll-Time\nAudit Logs\nInfrastructure SLA\n99%\n99.9%\nNegotiated Volume Pricing\nSupport\nCommunity & AI\nEmail\nSlack\nTelegram\nAccount Executive\nAdd ons\nThese pricing tiers are in addition to your selected plan and scale based on usage.\nDedicated Relayer\nFrequently asked questions\nHow do I get started?\nWhich plan is right for me?\nWhat are usage credits?\nDo I need to talk to the sales team for the Growth plan?\nWill I be able to see my usage history?\nHow is pricing calculated for user wallets?\nWhat is a Monthly Active Wallet?\nDo you have an implementation fee?\nKey terminologies\nRPC Requests\nStorage Gateway\nStorage Pinning\nMonthly Active Wallet\nStart with thirdweb.\nBuild web3 apps with ease. Get instant access.\nStart Building\nDocumentation\nProducts\nAI Model\nBridge\nContracts\nGas Sponsorship\nInsight\nNexus\nPayments\nRPC Edge\nToken\nTransactions\nVault\nWallets\nx402\nDeveloper\nDocumentation\nTemplates\nLearn\nChainlist\nToken List\nDashboard\nCLI\nMCP Server\nBridge Crypto\nFaucets\nSDKs\nTypescript\nReact\nReact Native\nUnreal Engine\nUnity\n.NET\nSolutions\nEcosystems\nGaming\nConsumer Apps\nDeFi\nMobile Apps\nE-commerce\nCompany\nBlog\nCareers\nPricing\nBrand Kit\nPrivacy Policy\nTerms of Service\nCookie Settings\nReport Abuse\nSocial\nX (ex. Twitter)\nTelegram\nYoutube\nLinkedIn\nGitHub\nInstagram\nTiktok\nWe use cookies to personalize content, run ads, and analyze traffic.",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://blog.thirdweb.com/changelog",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://blog.thirdweb.com/changelog\nCall log:\n  - navigating to \"https://blog.thirdweb.com/changelog\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'blog.thirdweb.com'. (_ssl.c:1129)>"
+    },
+    "docs": {
+      "url": "https://portal.thirdweb.com/docs",
+      "title": "thirdweb docs",
+      "text": "thirdweb docs\nthirdweb\nDocs\nGitHub\nSearch Docs\nK\nAsk AI\nAsk AI\nAsk AI\nAsk AI\nWallets\nx402\nBridge\nTokens\nAI\nAPI Reference\nSDKs\nSDKs\nTypeScript\nTypeScript\nReact\nReact\nReact\nReact Native\n.NET\n.NET\nUnity\nUnity\nUnreal Engine\nUnreal Engine\nSupport\nSupport\nArticles\nAccount\nStatus\nChangelog\nPage Not Found",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://thirdweb.com/integrations",
+      "title": "",
+      "text": "404\nUh oh.\nLooks like you're lost!\nFind live content on our\nhomepage\n,\ndashboard\nor\ndeveloper portal\n.",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/thirdweb/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "The Third Web",
+          "url": "https://tante.cc/2021/12/17/the-third-web/",
+          "points": 105,
+          "num_comments": 120,
+          "created_at": "2021-12-17T13:31:21Z",
+          "hn_url": "https://news.ycombinator.com/item?id=29591819"
+        },
+        {
+          "title": "Show HN: Thirdweb \u2013 Build Web3 apps with low-code",
+          "url": "https://thirdweb.com/",
+          "points": 8,
+          "num_comments": 0,
+          "created_at": "2021-12-15T17:49:05Z",
+          "hn_url": "https://news.ycombinator.com/item?id=29569225"
+        },
+        {
+          "title": "The Third Web",
+          "url": "https://tante.cc/2021/12/17/the-third-web/",
+          "points": 6,
+          "num_comments": 1,
+          "created_at": "2021-12-17T00:38:43Z",
+          "hn_url": "https://news.ycombinator.com/item?id=29586121"
+        },
+        {
+          "title": "Show HN: Release an NFT Drop on IPFS via Filebase and Thirdweb",
+          "url": "https://filebase.com/blog/release-an-nft-drop-and-deliver-geo-redundant-objects-on-ipfs-via-filebase/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2022-03-04T04:51:18Z",
+          "hn_url": "https://news.ycombinator.com/item?id=30550827"
+        },
+        {
+          "title": "Thirdweb: The complete Web3 development framework",
+          "url": "https://thirdweb.com/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2022-11-07T02:14:49Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33500249"
+        },
+        {
+          "title": "Shopify Buys into Web3 Future Helping Back $24M Thirdweb Funding Round",
+          "url": "https://www.forbes.com/sites/mariagraciasantillanalinares/2022/08/25/shopify-buys-into-web3-future-helping-back-24-million-thirdweb-funding-round/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2022-08-27T09:35:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=32617329"
+        },
+        {
+          "title": "Thirdweb \u2013 Build Web3 projects in minutes",
+          "url": "https://thirdweb.com/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2021-10-31T14:24:22Z",
+          "hn_url": "https://news.ycombinator.com/item?id=29057177"
+        },
+        {
+          "title": "Balaji Srinivasan\u200a\u2013\u200athe Third Web Is Coming (Transcript)",
+          "url": "https://blog.rre.com/06-balaji-srinivasan-the-third-web-is-coming-35a16462bcbc",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2017-07-08T23:09:55Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14727630"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Learn Here: What is Abstract? Why are some people angry, and others not? Should you be?",
+          "subreddit": "artms",
+          "score": 103,
+          "num_comments": 18,
+          "permalink": "https://reddit.com/r/artms/comments/1p261h6/learn_here_what_is_abstract_why_are_some_people/",
+          "selftext": "# What is this post for?\n\nI wanted to make an informative post to collect discussion from folks regarding the recent Abstract promotion. The goal here is to explain some things to hopefully assuage some fears or concerns, but also to present the real risks and concerns so that OURII can be informed rather than jumping on a divisive bandwagon be it one direction or the other. Blockchain tech, cypto, cyrptocurrency, NFTs etc are all buzzwords that can have some negative associations from some bad "
+        },
+        {
+          "title": "Exploring the Base Ecosystem, Real Projects You Can Try Today",
+          "subreddit": "BASE",
+          "score": 60,
+          "num_comments": 19,
+          "permalink": "https://reddit.com/r/BASE/comments/1o94eu0/exploring_the_base_ecosystem_real_projects_you/",
+          "selftext": "Base is expanding rapidly, and it\u2019s not just about transactions  \nit\u2019s about **building, experimenting, and discovering** what\u2019s possible onchain.\n\nHere are several real projects in the Base ecosystem that anyone can explore right now:\n\n\n\n**1. Aerodrome Finance**\n\nA core liquidity &amp; AMM hub in the Base world, swapping, liquidity, and insights live onchain.\n\n\n\n**2. SeamlessFi**\n\nNative Base lending &amp; borrowing protocol \u2014 built to be simple, fast, and community-first.\n\n\n\n**3. AIbased**\n\nPl"
+        },
+        {
+          "title": "Neo X developers, good news! \ud83d\ude80 Neo X is now officially supported by @thirdweb, the leading Web3 dev platform. Build dApps, games, and AI agents on Neo X with powerful tools, wallet infrastructure, and onchain data \u2014 all in one place. Let\u2019s get started \ud83d\udc49 https://thirdweb.com/neo-x",
+          "subreddit": "NEO",
+          "score": 33,
+          "num_comments": 2,
+          "permalink": "https://reddit.com/r/NEO/comments/1knhuge/neo_x_developers_good_news_neo_x_is_now/",
+          "selftext": "https://thirdweb.com/neo-x"
+        },
+        {
+          "title": "I asked Super Grok about XCN vs XRP",
+          "subreddit": "XCN",
+          "score": 29,
+          "num_comments": 23,
+          "permalink": "https://reddit.com/r/XCN/comments/1mhqrvp/i_asked_super_grok_about_xcn_vs_xrp/",
+          "selftext": "Onyx is a Layer 3 blockchain built on Ethereum, Base, and Arbitrum, designed for financial-grade applications with near-instant confirmations, low fees, full EVM compatibility, and native bridging. It's powered by Onyxcoin (XCN), an ERC-20 token that functions as the utility, gas, governance, and payment token within the ecosystem. Transaction fees are settled in XCN, with a portion burned to support deflationary mechanics. XCN is listed on various exchanges like Coinbase, Binance, and Kraken, a"
+        },
+        {
+          "title": "Support flows where builders gather",
+          "subreddit": "0xPolygon",
+          "score": 17,
+          "num_comments": 0,
+          "permalink": "https://reddit.com/r/0xPolygon/comments/1oj3tjm/support_flows_where_builders_gather/",
+          "selftext": "https://agentic-docs.polygon.technology/general/x402/intro/"
+        },
+        {
+          "title": "Marc Boiron, Polygon Labs CEO: \"Why we're betting on aggregation\"",
+          "subreddit": "0xPolygon",
+          "score": 17,
+          "num_comments": 1,
+          "permalink": "https://reddit.com/r/0xPolygon/comments/1mbhiku/marc_boiron_polygon_labs_ceo_why_were_betting_on/",
+          "selftext": "We cannot use Web3 like we do the internet if chains stay isolated. Full stop. \n\nEvery major breakthrough in computing that has facilitated user adoption on a large scale has come from unification: common standards, shared rails, and composable infrastructure.\n\nToday, Web3 is still stuck like the internet was in the 70s and early 80s - fragmented, complex, and fundamentally unscalable.\n\nAgglayer is how we fix that.\n\nPolygon is building a unified fabric so that people can transact cross-chain in "
+        },
+        {
+          "title": "A Beginner\u2019s Guide to Launching Your First Token on Base",
+          "subreddit": "BASE",
+          "score": 18,
+          "num_comments": 10,
+          "permalink": "https://reddit.com/r/BASE/comments/1sjz4h9/a_beginners_guide_to_launching_your_first_token/",
+          "selftext": "Launching a cryptocurrency used to require a degree in computer science and a massive budget. Today, thanks to **Base** (Coinbase\u2019s Layer 2 network), you can launch a token in minutes for less than the cost of a cup of coffee.\n\nWhether you want to build a community project, a social experiment, or a digital collectible, here is the simplest path to getting started.\n\n# Step 1: Choose Your Launch Path\n\nBefore you touch a single line of code (or no code at all), you need to decide how \"hands-on\" yo"
+        },
+        {
+          "title": "Monad is a huge giant that includes various projects such as Daps, Dex, and NFT within the ecosystem.",
+          "subreddit": "Monad",
+          "score": 16,
+          "num_comments": 4,
+          "permalink": "https://reddit.com/r/Monad/comments/1noiy6m/monad_is_a_huge_giant_that_includes_various/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://thirdweb.com/pricing",
+    "changelog": "https://blog.thirdweb.com/changelog",
+    "docs": "https://portal.thirdweb.com/docs",
+    "integrations": "https://thirdweb.com/integrations",
+    "g2": "https://www.g2.com/products/thirdweb/reviews"
+  },
+  "analysis": {
+    "name": "Thirdweb",
+    "url": "https://thirdweb.com",
+    "tagline": "Infrastructure for AI Agents",
+    "value_proposition": "Full-stack web3 platform providing wallets, payments, smart contracts, and blockchain data APIs so developers can build apps where users and AI agents can spend, earn, and transact autonomously.",
+    "target_segment": "dev",
+    "ideal_customer": "Web3 developers and engineering teams building consumer apps, games, DeFi products, or AI agents that need wallet infrastructure, cross-chain payments, and blockchain data without managing the underlying infrastructure",
+    "features": [
+      {
+        "name": "in-app wallets",
+        "description": "Embedded wallets for end users within applications with custom auth and branding options",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom In-App Wallet Auth",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "server wallets",
+        "description": "Programmable wallets for backend/server-side and agent use cases with rate-limited API access",
+        "evidence_source": "pricing",
+        "evidence_quote": "Server Wallets \u2014 1,000 Requests Included",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "ecosystem wallets",
+        "description": "White-label wallet infrastructure for entire ecosystems or platforms, available as add-on",
+        "evidence_source": "pricing",
+        "evidence_quote": "Ecosystem Wallet Add-On",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "account abstraction",
+        "description": "ERC-4337 account abstraction support enabling gasless and sponsored transactions for users",
+        "evidence_source": "landing",
+        "evidence_quote": "Account Abstraction",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gas sponsorship",
+        "description": "Pay gas fees on behalf of users; usage-based pricing with 2.5% mainnet surcharge",
+        "evidence_source": "pricing",
+        "evidence_quote": "Gas Surcharge 2.5% (Mainnet) \u2014 Global Paymaster Sponsorship Rules",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bridge and swap",
+        "description": "Cross-chain token bridging and swapping across 70+ chains via single API integration",
+        "evidence_source": "landing",
+        "evidence_quote": "Bring multi-chain access to thousands of tokens into your application with one seamless API integration.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "x402 payments",
+        "description": "Native HTTP and agentic payment protocol for APIs; 0.3% transaction fee per swap",
+        "evidence_source": "pricing",
+        "evidence_quote": "x402 \u2014 Fee % on each transaction executed through facilitator. 0.3% transaction fee",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rpc edge",
+        "description": "Managed RPC node infrastructure across 2500+ chains with tiered rate limits and dedicated node option",
+        "evidence_source": "pricing",
+        "evidence_quote": "RPC \u2014 1M Included; Rate Limit 250 requests/second [Growth] ... Unlimited [Pro]",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "insight (blockchain data api)",
+        "description": "Real-time and historical onchain data query API across 110+ chains, usage-based pricing",
+        "evidence_source": "pricing",
+        "evidence_quote": "Insight \u2014 1M Included ... Chains Supported 110+",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "token creation",
+        "description": "Toolkit to create, launch, and sell ERC20, ERC721, and ERC1155 tokens",
+        "evidence_source": "landing",
+        "evidence_quote": "A comprehensive toolkit to create, launch, and sell ERC20, ERC721 and ERC1155 tokens.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "token protocol fees",
+        "description": "0.5% protocol fee and 2% convenience fee on token operations",
+        "evidence_source": "pricing",
+        "evidence_quote": "Tokens \u2014 Protocol Fee 0.5% \u2014 Convenience Fee 2%",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "smart contracts",
+        "description": "Audited smart contract library supporting any EVM-compatible chain or Solana",
+        "evidence_source": "pricing",
+        "evidence_quote": "Audited smart contracts",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "engine cloud",
+        "description": "Managed transaction and engine infrastructure for reliable onchain operations",
+        "evidence_source": "landing",
+        "evidence_quote": "Engine Cloud",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "ai model (blockchain-specialized)",
+        "description": "Blockchain-specific AI model API at $3/million tokens with chain-aware capabilities across 2500+ chains",
+        "evidence_source": "pricing",
+        "evidence_quote": "AI \u2014 Pricing $3 / million tokens \u2014 Chains Supported 2,500+",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "nexus",
+        "description": "Product listed in platform navigation; specific functionality not detailed in available sources",
+        "evidence_source": "landing",
+        "evidence_quote": "Nexus",
+        "tier": "unknown",
+        "confidence": "low"
+      },
+      {
+        "name": "vault",
+        "description": "Secure key/secret management product listed in platform navigation",
+        "evidence_source": "landing",
+        "evidence_quote": "Vault",
+        "tier": "unknown",
+        "confidence": "low"
+      },
+      {
+        "name": "transactions",
+        "description": "Transaction management and relay infrastructure listed as standalone product",
+        "evidence_source": "landing",
+        "evidence_quote": "Transactions",
+        "tier": "unknown",
+        "confidence": "low"
+      },
+      {
+        "name": "storage (ipfs)",
+        "description": "IPFS pinning and storage gateway with tiered pricing; 1GB included, bandwidth included",
+        "evidence_source": "pricing",
+        "evidence_quote": "Storage \u2014 1 GB Included ... Upload Rate Limit 100 requests/second [Growth]",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Event-driven webhook delivery for onchain events; 1,000 deliveries included per plan",
+        "evidence_source": "pricing",
+        "evidence_quote": "Webhooks \u2014 1,000 Included; 1,000 - 100K $0.10 / thousand deliveries",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "typescript sdk",
+        "description": "Full-featured TypeScript/JavaScript SDK for web3 development",
+        "evidence_source": "landing",
+        "evidence_quote": "SDKs \u2014 Typescript",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "react sdk",
+        "description": "React component library and hooks for web3 frontend development",
+        "evidence_source": "landing",
+        "evidence_quote": "SDKs \u2014 React",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "react native sdk",
+        "description": "Mobile React Native SDK for building web3 iOS and Android apps",
+        "evidence_source": "landing",
+        "evidence_quote": "SDKs \u2014 React Native",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "unity sdk",
+        "description": "Unity game engine SDK for building web3-enabled games",
+        "evidence_source": "landing",
+        "evidence_quote": "SDKs \u2014 Unity",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "unreal engine sdk",
+        "description": "Unreal Engine SDK for integrating web3 capabilities into AAA-style games",
+        "evidence_source": "landing",
+        "evidence_quote": "SDKs \u2014 Unreal Engine",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": ".net sdk",
+        "description": ".NET SDK for C# and server-side web3 application development",
+        "evidence_source": "landing",
+        "evidence_quote": "SDKs \u2014 .NET",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cli",
+        "description": "Command-line interface for project scaffolding, deployment, and management",
+        "evidence_source": "landing",
+        "evidence_quote": "CLI",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "dashboard",
+        "description": "Web-based management console for projects, analytics, and configuration",
+        "evidence_source": "landing",
+        "evidence_quote": "Dashboard",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "mcp server",
+        "description": "Model Context Protocol server enabling AI agents to interact with thirdweb APIs natively",
+        "evidence_source": "landing",
+        "evidence_quote": "MCP Server",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "chainlist",
+        "description": "Public directory of EVM-compatible chains with RPC endpoints",
+        "evidence_source": "landing",
+        "evidence_quote": "Explore Chainlist",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "faucets",
+        "description": "Testnet token faucets for developer use across supported chains",
+        "evidence_source": "landing",
+        "evidence_quote": "Faucets",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "templates",
+        "description": "Pre-built project templates for common web3 app patterns",
+        "evidence_source": "landing",
+        "evidence_quote": "Templates",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "token list",
+        "description": "Curated list of tokens across supported chains for integration use",
+        "evidence_source": "landing",
+        "evidence_quote": "Token List",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "custom branding for emails",
+        "description": "White-label email customization for wallet and auth communications",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom Branding for Emails",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "remove thirdweb branding",
+        "description": "White-label UI option removing thirdweb attribution from embedded UI components",
+        "evidence_source": "pricing",
+        "evidence_quote": "Remove thirdweb Branding",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "sms delivery",
+        "description": "SMS-based wallet authentication and notifications; US/Canada on Scale, international on Pro",
+        "evidence_source": "pricing",
+        "evidence_quote": "SMS Delivery \u2014 US & Canada [Scale] \u2014 International [Pro]",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "audit logs",
+        "description": "Platform-level audit trail of team actions and configuration changes",
+        "evidence_source": "pricing",
+        "evidence_quote": "Audit Logs",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "user analytics",
+        "description": "Wallet and user activity analytics with retention window: 30d (Growth), 90d (Scale), all-time (Pro)",
+        "evidence_source": "pricing",
+        "evidence_quote": "User Analytics \u2014 30 days [Growth] \u2014 90 days [Scale] \u2014 All-Time [Pro]",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated infrastructure",
+        "description": "Dedicated RPC nodes and Insight infrastructure add-ons for isolation and performance",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated Infrastructure Add-Ons (RPC, Insight)",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated relayer",
+        "description": "Dedicated transaction relay service available as a paid add-on to any plan",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated Relayer \u2014 Add ons: These pricing tiers are in addition to your selected plan",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "infrastructure sla",
+        "description": "99% SLA on Scale, 99.9% on Pro with negotiated options for enterprise",
+        "evidence_source": "pricing",
+        "evidence_quote": "Infrastructure SLA \u2014 99% [Scale] \u2014 99.9% [Pro]",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "team seats",
+        "description": "Multi-seat team access; 3 seats (Growth), 5 seats (Scale), 10 seats (Pro), then $25/seat",
+        "evidence_source": "pricing",
+        "evidence_quote": "Team Seats \u2014 3 seats included then $25 per seat [Growth]",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "contract and wallet apis",
+        "description": "REST APIs for deploying and interacting with smart contracts and managing wallets",
+        "evidence_source": "landing",
+        "evidence_quote": "Contract & Wallet APIs",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "solana support",
+        "description": "Tools and contracts compatible with Solana in addition to EVM chains",
+        "evidence_source": "landing",
+        "evidence_quote": "Our tools work with any contract deployed on any EVM-compatible chain or Solana.",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Safe (multi-sig)",
+      "Coinbase Wallet",
+      "IPFS",
+      "Neo X",
+      "Base",
+      "Solana",
+      "Polygon",
+      "Monad"
+    ],
+    "differentiators": [
+      "Infrastructure for AI Agents \u2014 native support for agentic wallets and payments",
+      "x402 protocol for native HTTP/agentic payments without traditional payment rails",
+      "MCP Server enabling direct AI model integration with blockchain APIs",
+      "2500+ chains supported across wallets and RPC \u2014 broadest chain coverage claim",
+      "Works on both EVM and Solana from a single platform",
+      "Pricing that 'scales to your app usage without cutting you off, ever'",
+      "Blockchain-specialized AI model ($3/million tokens) purpose-built for onchain context"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026",
+        "what": "Atlas Trading App launched in beta",
+        "source": "Atlas Trading App: Now in beta (landing page banner)"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Seamless user onboarding at scale (Safe case study: 'onboard millions of users')",
+        "Speed of NFT launches (King of Destiny: '1,800 packs sold in under 2 minutes')",
+        "Leading web3 dev platform for dApps, games, and AI agents (Reddit/r/NEO)"
+      ],
+      "complaints": [],
+      "sources": [
+        "landing",
+        "reddit"
+      ]
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "First 1,000 MAU wallets free; 1M RPC requests free; 1M Insight queries free; 1GB storage free; 1,000 webhook deliveries free; 1,000 gas sponsorship txns free"
+      },
+      "tiers": [
+        {
+          "name": "Starter",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$9",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "$25 usage credits; Engine Cloud; Web/Mobile/Gaming SDKs; Contract & Wallet APIs; Account Abstraction; Blockchain Infrastructure; Community Support"
+        },
+        {
+          "name": "Growth",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$99",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Custom In-App Wallet Auth; Server Wallets; Managed Infra (RPC, IPFS); Audited Contracts; 3 seats; 30-day analytics; 250 req/s rate limit"
+        },
+        {
+          "name": "Scale",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$499",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Everything in Growth + 24hr support SLA; Email support; Remove branding; Audit logs; Ecosystem Wallet add-on; 99% infra SLA; 5 seats; 90-day analytics"
+        },
+        {
+          "name": "Pro",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$1,499+",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Everything in Scale + Slack/Telegram support; 12hr SLA; Account Executive; No rate limits; Negotiated volume discounts; 10 seats; all-time analytics"
+        }
+      ],
+      "enterprise": "$1,499+",
+      "notes": "Usage-based overages apply on all plans: wallets $0.005\u2013$0.015/MAU, RPC $5.40\u2013$8/million, Insight $5.40\u2013$8/million, gas sponsorship $0.20\u2013$1/thousand txns, bridge/x402 0.3% fee, tokens 0.5% protocol + 2% convenience fee, AI $3/million tokens, storage $0.03\u2013$0.05/GB/month, webhooks $0.02\u2013$0.10/thousand. Additional $25/seat beyond plan-included seats. SMS international only on Pro. Dedicated infrastructure and relayer are paid add-ons."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

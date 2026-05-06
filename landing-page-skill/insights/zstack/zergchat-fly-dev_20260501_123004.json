@@ -1,0 +1,78 @@
+{
+  "url": "https://zergchat.fly.dev",
+  "company": "Zergchat",
+  "tagline": "Team messaging workspace",
+  "subheadline": "Open channels, direct messages, threads, search, and the admin console from one workspace.",
+  "value_proposition": "A self-hosted or invite-only team messaging workspace with channels, DMs, threads, and admin tools.",
+  "target_audience": "Small teams or developer communities already invited to a specific workspace; not a broad acquisition page.",
+  "primary_cta": {
+    "text": "Sign in",
+    "placement": "hero/center form"
+  },
+  "secondary_cta": {
+    "text": "Request access",
+    "placement": "hero/nav-adjacent"
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [],
+    "metrics": [],
+    "press": []
+  },
+  "pricing": {
+    "model": "invite-only / gated access",
+    "tiers": [],
+    "price_anchoring": "None \u2014 no pricing information present"
+  },
+  "features": [
+    "Open channels",
+    "Direct messages",
+    "Threads",
+    "Search",
+    "Admin console"
+  ],
+  "differentiators": [],
+  "trust_signals": [],
+  "navigation": [
+    "Sign in",
+    "Request access",
+    "Use invite"
+  ],
+  "design_patterns": {
+    "layout": "Single centered column with login form; minimal above-the-fold content",
+    "color_scheme": "Unknown from text alone \u2014 likely neutral/dark given the app style",
+    "typography": "Functional, no distinctive characterization apparent from text",
+    "visual_style": "minimal/utilitarian",
+    "notable_patterns": [
+      "Login-first layout",
+      "No hero image or illustration described",
+      "Gated access flow"
+    ]
+  },
+  "emotional_tone": "neutral/functional",
+  "key_objections_addressed": [],
+  "missing_or_weak": [
+    "No social proof whatsoever \u2014 no logos, testimonials, or user counts",
+    "No pricing or business model transparency",
+    "No differentiation from Slack, Discord, or other team chat tools",
+    "No hero image, screenshots, or product demo",
+    "No trust signals (security, privacy, uptime)",
+    "No value proposition beyond a single generic tagline",
+    "Page functions as a login screen, not a marketing landing page \u2014 new visitors have no reason to request access",
+    "No explanation of what makes Zergchat worth switching to",
+    "No company credibility signals (who built this, why, team size)",
+    "No FAQ or objection handling"
+  ],
+  "standout_elements": [
+    "Three-path entry flow (sign in / request access / use invite) cleanly handles different visitor types",
+    "Concise feature summary in one sentence is honest and direct"
+  ],
+  "score": {
+    "clarity": 4,
+    "credibility": 1,
+    "conversion_focus": 2,
+    "differentiation": 1,
+    "overall": 2
+  },
+  "analyzed_at": "2026-05-01T12:30:04.177003"
+}

@@ -1,0 +1,101 @@
+{
+  "url": "https://www.atlassian.com/software/jira",
+  "company": "Atlassian (Jira)",
+  "tagline": "Focus on outcomes, not admin",
+  "subheadline": "AI-powered project management that removes the work around work.",
+  "value_proposition": "Jira uses AI (Rovo) to automate administrative overhead so teams can focus on high-impact work instead of busywork.",
+  "target_audience": "Teams of all sizes across marketing, engineering, design, operations, and IT \u2014 particularly those managing projects with multiple tools and seeking AI-augmented workflows.",
+  "primary_cta": {
+    "text": "Get it free",
+    "placement": "nav and hero"
+  },
+  "secondary_cta": {
+    "text": "Sign in",
+    "placement": "nav"
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [
+      "[Jira] makes life easier. [We] can spend time on adding value, not busywork. \u2014 Joe Cotant, Senior Technical Program Manager"
+    ],
+    "metrics": [],
+    "press": [
+      "Gartner Magic Quadrant 2025 \u2014 Leader in Collaborative Work Management, Marketing, and DevOps"
+    ]
+  },
+  "pricing": {
+    "model": "freemium",
+    "tiers": [],
+    "price_anchoring": "Free tier emphasized via 'Get it free' CTA; pricing page linked but not surfaced on this page"
+  },
+  "features": [
+    "Rovo AI for planning \u2014 break down ideas, polish descriptions, link resources",
+    "AI agents to create project plans, identify trends, and flag risks",
+    "Goals alignment \u2014 connect work to company-level objectives",
+    "Automation \u2014 update statuses, pull integration data, assign agent tasks via Studio",
+    "Teamwork Graph \u2014 surfaces context from every company resource for faster decision-making"
+  ],
+  "differentiators": [
+    "Only platform recognized as a Leader in Gartner MQ for Collaborative Work Management, Marketing, AND DevOps",
+    "Native AI agents (Rovo) deeply integrated \u2014 not bolted on",
+    "MCP Gallery for orchestrating entire tool stack from one workspace",
+    "Teamwork Collection bundles Jira, Confluence, Loom, and Rovo together"
+  ],
+  "trust_signals": [
+    "Gartner Magic Quadrant 2025 Leader recognition (three categories)",
+    "Customer story from named individual at enterprise org",
+    "Atlassian brand reputation implied via footer product suite"
+  ],
+  "navigation": [
+    "Features",
+    "Solutions",
+    "Guide",
+    "Templates",
+    "Pricing"
+  ],
+  "design_patterns": {
+    "layout": "Full-width hero with email capture, followed by use-case tabs, feature highlight sections, social proof, and a closing CTA \u2014 standard SaaS top-down narrative flow",
+    "color_scheme": "Atlassian blue primary, white backgrounds, dark text; minimal use of accent colors",
+    "typography": "Clean, modern sans-serif; large bold headlines, lighter body copy",
+    "visual_style": "Minimal and professional with aspirational copy; product video in hero section",
+    "notable_patterns": [
+      "Email capture in hero (not just a button)",
+      "Tabbed use-case selector (Marketing / Engineering / Design / Operations / IT)",
+      "Video embed in hero",
+      "Feature cards with 'Explore' CTAs",
+      "Single customer quote callout"
+    ]
+  },
+  "emotional_tone": "Aspirational and confident \u2014 positions AI as empowering rather than threatening, framing teams as 'human-AI super teams'",
+  "key_objections_addressed": [
+    "Too much admin overhead \u2014 directly addressed in headline and subheadline",
+    "Works for different team types \u2014 tabbed use cases show breadth",
+    "Trustworthy/enterprise-grade \u2014 Gartner recognition provides credibility",
+    "Too expensive to try \u2014 'Get it free' lowers entry barrier"
+  ],
+  "missing_or_weak": [
+    "No customer logos visible \u2014 significant trust gap for enterprise buyers",
+    "No quantified metrics (e.g., '10M teams', 'saves X hours/week') to anchor value",
+    "Only one testimonial, from an unnamed company \u2014 weak social proof density",
+    "Pricing not surfaced at all on the page \u2014 friction for self-serve evaluators",
+    "No comparison to competitors (Asana, Monday, Linear) to aid switching decisions",
+    "No FAQ or objection-handling section for common hesitations",
+    "Feature descriptions are abstract ('Surface related work') rather than concrete outcomes",
+    "No free trial countdown or urgency mechanism beyond the webinar banner"
+  ],
+  "standout_elements": [
+    "Gartner tri-category leadership claim is a strong, specific credibility anchor",
+    "Email capture in hero rather than generic CTA button increases intent signaling",
+    "Framing AI as 'human-AI super team' is differentiated and non-threatening positioning",
+    "MCP Gallery callout signals technical sophistication to developer/eng audiences",
+    "Teamwork Collection bundling creates upsell narrative without feeling pushy"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 6,
+    "conversion_focus": 7,
+    "differentiation": 7,
+    "overall": 7
+  },
+  "analyzed_at": "2026-04-30T15:17:13.379122"
+}

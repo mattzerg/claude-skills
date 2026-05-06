@@ -1,0 +1,869 @@
+{
+  "name": "Alchemy",
+  "url": "https://alchemy.com",
+  "domain": "alchemy.com",
+  "scanned_at": "2026-05-03T22:27:29.853684",
+  "sources": {
+    "landing": {
+      "url": "https://alchemy.com",
+      "title": "Alchemy - the blockchain development platform",
+      "text": "Alchemy - the blockchain development platform\nSkip to content\nWe just launched a $20M fund just for Solana builders. Up to $25k in credits per team.\nApply now\nPlatform\nSolutions\nDevelopers\nResources\nPricing\nContact sales\nSign in\nInfrastructure that moves billions at scale\nThe complete blockchain developer platform trusted by leading fintechs and developers worldwide.\nGet your API key\nTalk to sales\nPowered by Cortex\nOne integrated platform\nPowered by Cortex, the world's first intelligent blockchain engine. Get 13x more throughput and 5x more reliability than other providers.\n$4.2T+\ntransactions annually\n100M+\nhumans using crypto\n$1B+\ngasless transactions\nInfrastructure\n99.99% uptime\nBuild and scale the fastest and most reliable apps on proven industry-leading blockchain infrastructure, powered by Cortex.\nNode RPC API\nReal-time, block-perfect data\nRollups\nLaunch your own custom chain\nAI Agents\nAgents onchain\nGive your agents blockchain data. A CLI, MCP server, and skills that let agents read onchain state, send transactions, and ship apps end-to-end.\nAlchemy CLI\nInstall and start shipping\nDocumentation\nBrowse APIs, skills, and MCP setup\nOrchestration\nMove money\nSwap, mint, and stake at lightning speed with no gas fees or multi-step approvals.\nGasless transactions\nSponsor gas for your users\nStablecoins\nOrchestrate payments onchain\nDeFi\nSwap, earn, and stake\nData\nGrow revenue\nLeverage real-time and historical blockchain data to understand, engage, and monetize your users.\nWebhooks\nStream push notifications\nPortfolio APIs\nQuery transaction history\nToken APIs\nReal-time price data for any token\nDevtools\nGo to market in minutes\nDead simple APIs and SDKs that help you deploy production-ready experiences with no blockchain complexity.\nProven Experience\n8+ years building scalable infrastructure.\nSuperior Tooling\nBest-in-class debugging features.\nWorld-class support\n24/7/365.\nTrusted by leaders succeeding at scale\nLearn how industry-defining companies go from first deploy to scaling applications that handle millions of users and billions in volume.\nPOWERING\nScaling World Chain to 23M people globally\n#1\nrollup on a RaaS\n500+ ETH\nsequencer revenue\n47M\nmonthly user ops\n\"World needed more than just a vendor\u2014we needed someone who would be there for any challenge...\"\nSteven Smith\n-\nVP of Engineering, Protocol\nRead the case study\nAlchemy in the news\nSolana is Global Podcast: The critical infra behind Solana\nAlchemy's CTO on the challenges of delivering infra to match Solana's performance\nAmerican Banker: AI transaction volumes are coming\nWith agentic transactions on the rise, credit card rails will need to evolve to meet demand.\nAlchemy on CNBC Crypto World: Stablecoin transformation\nAlchemy CEO on his 2026 stablecoin predictions to support new types of financial products with stablecoins.\nBuild blockchain magic\nGet started for free\nThe web3 development platform\nSupercharge your inbox\nSign up for our developer newsletter.\nSubscribe\nProducts\nCortex\nRPC API\nRollups\nNFT API\nWebhooks\nWebsockets\nTransfers API\nToken API\nBundler API\nGas Manager API\nDevelopers\nSign up\nStatus\nDocs\nSupport\nFaucets\nGwei calculator\nChain directory\nRequest a chain\nSnapshots\nCommunity\nAlchemy University\nBlog\nCustomer stories\nOverviews\nApp store\nEvents\nNewsletter\nStartup program\nOffchain bug bounties\nOnchain bug bounties\nCompany\nAbout us\nCareers\nCustomers\nNewsroom\nPress kit\nSecurity\nLegal\nContact\nSales\nPress\nEmail\nDiscord\n2026 Alchemy Insights, Inc.\n\u00b7\nLegal",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.alchemy.com/pricing",
+      "title": "Alchemy Pricing: Free, Pay as You Go & Enterprise Plans",
+      "text": "Alchemy Pricing: Free, Pay as You Go & Enterprise Plans\nSkip to content\nWe just launched a $20M fund just for Solana builders. Up to $25k in credits per team.\nApply now\nPlatform\nSolutions\nDevelopers\nResources\nPricing\nContact sales\nSign in\nBuilt for performance. \nPriced for scale.\nFlexible plans built around your workload, not the other way around.\nFree\nWeb3's most powerful free tier.\n25 requests per second\n5 apps & 5 webhooks\nFree 30M CU per month\nFull developer platform\nAll mainnets & testnets\nStandard support\nStart for free\nPay as You Go\nPay for what you use.\nStarting from 300 requests/second\n30 apps & 100 webhooks\nAs low as $0.40/1M CUs\nUse more, save more\nIncluded:\nPremium endpoints\nEnterprise-grade latency & uptime\nThroughput add-on to fit your needs\nStart building\nEnterprise\nFor critical performance,\nsecurity\nand\nsupport\nStarting from 1000 requests/second\n200 apps & 500 webhooks\nPremium support packages\nVolume discounts\nPriority on product roadmaps\nIncluded:\nAdvanced security\nSigned SLAs\nIncreased eth_getLogs() ranges\nContact sales\nFree\nWeb3's most powerful free tier.\n25 requests per second\n5 apps & 5 webhooks\nFree 30M CU per month\nFull developer platform\nAll mainnets & testnets\nStandard support\nStart for free\nPay as You Go\nPay for what you use.\nStarting from 300 requests/second\n30 apps & 100 webhooks\nAs low as $0.40/1M CUs\nUse more, save more\nIncluded:\nPremium endpoints\nEnterprise-grade latency & uptime\nThroughput add-on to fit your needs\nStart building\nEnterprise\nFor critical performance,\nsecurity\nand\nsupport\nStarting from 1000 requests/second\n200 apps & 500 webhooks\nPremium support packages\nVolume discounts\nPriority on product roadmaps\nIncluded:\nAdvanced security\nSigned SLAs\nIncreased eth_getLogs() ranges\nContact sales\nGet a recommendation on the most suitable plan for you.\nConfigure\nScale your business and your rates\nFeatures\nFree\nStart building\nPay as You Go\nStart building\nEnterprise\nContact sales\nCORE APIS\nNode API\nFull developer platform and core blockchain infrastructure.\nCore APIs\nNode API\nSmart websockets\nDebug API\n\u2014\nTrace API\n\u2014\nData APIs\nToken API\nPrices API\nTransfers API\nPortfolio API\nNFT API\nWebhooks\nWallets & transactions\nWallet API\nGas sponsorship\nTestnet only\nTransaction batching\nERC-4337 & 7702 transactions\nTransaction simulation\nPrivate transactions\n\u2014\nBundler sponsored operations\n\u2014\nPaymaster API\nBundler API\nRollups\nMainnet\n\u2014\n\u2014\nTestnet\n\u2014\nSECURITY\nSecurity & compliance\nAdvanced security, SLAs, and compliance controls.\nSecurity\nIP/domain allowlisting\nGoogle sign in (OAuth)\nSAML single sign on (SSO)\n\u2014\n\u2014\nAccount activity logs\n\u2014\n\u2014\nRole-based access control (RBAC)\n\u2014\n\u2014\nTOOLS\nDeveloper tools\nAdditional tools and dashboard features.\nTools\nMulti-chain sandbox\nRequest logs\nCustom error and usage alerts\nMempool visualizer\nApp and team analytics\nUsage reporting\nComposer\nFull archive data\nParity trace and gETH debug\n\u2014\nSUPPORT\nSupport\nFrom community to dedicated account management.\nSupport tiers\nTarget response time\n48 hours\n24 hours\nCustom\nEmail & ticket support\nPremium Support\n\u2014\n\u2014\nCOST\nDetailed pricing\nExplore our competitive pricing plans tailored for robust infrastructure solutions to scale your projects.\nPlan\nAlchemy\nFree up to 30M CU\n$.45/1M CU\nCustom\n300M+ CU rate\nN/A\n$.40/1M CU\nCustom\nNumber of apps\n5\n30\n200\nWebhooks\n5\n100\n500\nThroughput CU/s (requests/s)\n500 CU/s (25)\n10,000 CU/s (300)\nCustom\nSolana\ngRPC\n\u2014\nStarting at $80/TB\nCustom\nArchival data\n30M CU\n$0.45/1M up to 300M; $0.40 after\nCustom\nGas sponsorship\nAdmin fee\n\u2014\n8%\nCustom\nLimit\n\u2014\nPre-load funds\nCustom\nFree\nPay as You Go\nEnterprise\nStart building\nCORE APIS\nNode API\nFull developer platform and core blockchain infrastructure.\nCore APIs\nNode API\nSmart websockets\nDebug API\n\u2014\nTrace API\n\u2014\nData APIs\nToken API\nPrices API\nTransfers API\nPortfolio API\nNFT API\nWebhooks\nWallets & transactions\nWallet API\nGas sponsorship\nTestnet only\nTransaction batching\nERC-4337 & 7702 transactions\nTransaction simulation\nPrivate transactions\n\u2014\nBundler sponsored operations\n\u2014\nPaymaster API\nBundler API\nRollups\nMainnet\n\u2014\nTestnet\n\u2014\nSECURITY\nSecurity & compliance\nAdvanced security, SLAs, and compliance controls.\nSecurity\nIP/domain allowlisting\nGoogle sign in (OAuth)\nSAML single sign on (SSO)\n\u2014\nAccount activity logs\n\u2014\nRole-based access control (RBAC)\n\u2014\nTOOLS\nDeveloper tools\nAdditional tools and dashboard features.\nTools\nMulti-chain sandbox\nRequest logs\nCustom error and usage alerts\nMempool visualizer\nApp and team analytics\nUsage reporting\nComposer\nFull archive data\nParity trace and gETH debug\n\u2014\nSUPPORT\nSupport\nFrom community to dedicated account management.\nSupport tiers\nTarget response time\n48 hours\nEmail & ticket support\nPremium Support\n\u2014\nCOST\nDetailed pricing\nExplore our competitive pricing plans tailored for robust infrastructure solutions to scale your projects.\nPlan\nAlchemy\nFree up to 30M CU\n300M+ CU rate\nN/A\nNumber of apps\n5\nWebhooks\n5\nThroughput CU/s (requests/s)\n500 CU/s (25)\nSolana\ngRPC\n\u2014\nArchival data\n30M CU\nGas sponsorship\nAdmin fee\n\u2014\nLimit\n\u2014\nPremium support\nEnterprise-grade support packages designed for mission-critical applications. Choose the tier that fits your needs.\nSupport features\nBronze\nSilver\nGold\nTarget response time\n12 hours\n4 hours\n2 hours\nDedicated Slack/Telegram\nNamed account manager\nNamed solution engineer\n\u2014\n\u2014\nSigned SLAs\n\u2014\n\u2014\nBronze\nSilver\nGold\nTarget response time\n12 hours\nDedicated Slack/Telegram\nNamed account manager\nNamed solution engineer\n\u2014\nSigned SLAs\n\u2014\nChoose the most suitable plan for you\nEstimated monthly requests\n10M\nEstimated throughput\nBelow 300 RPS\nSupport options\nEmail support/ticket based\nSuggested plan\nRecommended\nPay As You Go\n$104\n/mo estimated\nStart building\nFinal pricing may vary based on specific requirements and volume commitments.\nFrequently asked questions\nHave more questions about our plans? Email sales@alchemy.com.\nWhat is a compute unit (CU)?\nCompute Units (CUs) measure the computational resources your application consumes. Each API request uses a certain number of CUs depending on its complexity\u2014for example, a simple JSON-RPC call might use 10 CUs, while more complex operations may use 100+ CUs. This enables flexible, usage-based pricing. For a simpler way to estimate your traffic in Compute Units, you can assume an average of 27 CUs per request, which reflects the most common traffic patterns we observe on our platform. Check the full breakdown of CUs / method in our\ndocs\n.\nHow do I start?\nGetting started is simple: 1) Sign up for a free account at\ndashboard.alchemy.com\n, 2) Create an application to get your API keys, 3) Integrate our SDK or make direct API calls, 4) Start building! You'll immediately have access to 30M free Compute Units per month on the Free plan.\nWhat is the Pay As You Go plan?\nPay As You Go is our flexible pricing plan for teams scaling beyond the free tier. You pay $0.45 per million CUs for your first 300M CUs per month, then $0.40 per million CUs for any additional usage. There are no upfront commitments \u2014 you only pay for what you use. This plan includes priority support and higher rate limits.\nWhich plan is right for me?\nThe Free plan is perfect for development and low-traffic applications. If you're production-ready or expecting significant usage growth, the Pay As You Go plan offers scalability and cost-efficiency. For enterprises with predictable, high-volume usage, contact our sales team for custom pricing and SLAs.\nWhat blockchains and networks does Alchemy support?\nAlchemy supports all major Layer 1 and Layer 2 networks including Ethereum, Solana, BNB Smart Chain, Avalanche, Polygon PoS, Arbitrum, Optimism, Base, Starknet, ZKsync, Blast, and many more. Visit our\ndocumentation\nfor the complete list of supported chains.\nHow does invoicing and billing work?\nFor Pay As You Go plans, you'll be billed monthly based on your actual usage. You can view your current usage and estimated costs in the\nAlchemy Dashboard\nat any time. Enterprise customers receive custom invoicing based on their contract terms.\nCan I upgrade or downgrade my plan?\nYes! You can upgrade from Free to Pay As You Go at any time directly from your dashboard. For Enterprise plans, contact our sales team. Downgrades take effect at the start of your next billing cycle.\nWhat do key terms like CU, throughput, and SLA mean?\nCU (Compute Units): A measure of computational resource usage. Throughput: The maximum number of requests per second your plan supports. SLA (Service Level Agreement): Guaranteed uptime and response time commitments. Rate Limit: The maximum number of API requests allowed per second.\nThe web3 development platform\nSupercharge your inbox\nSign up for our developer newsletter.\nSubscribe\nProducts\nCortex\nRPC API\nRollups\nNFT API\nWebhooks\nWebsockets\nTransfers API\nToken API\nBundler API\nGas Manager API\nDevelopers\nSign up\nStatus\nDocs\nSupport\nFaucets\nGwei calculator\nChain directory\nRequest a chain\nSnapshots\nCommunity\nAlchemy University\nBlog\nCustomer stories\nOverviews\nApp store\nEvents\nNewsletter\nStartup program\nOffchain bug bounties\nOnchain bug bounties\nCompany\nAbout us\nCareers\nCustomers\nNewsroom\nPress kit\nSecurity\nLegal\nContact\nSales\nPress\nEmail\nDiscord\n2026 Alchemy Insights, Inc.\n\u00b7\nLegal",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://www.alchemy.com/changelog",
+      "title": "Changelog | Alchemy Docs",
+      "text": "Changelog | Alchemy Docs\nFor the complete documentation index, see\nllms.txt\n.\nSkip to content\nSearch\n/\nGo to Dashboard\nGet Started\nNode\nData\nWallets\nRollups\nChains\nChangelog\nGet Started\nNode\nData\nWallets\nRollups\nChains\nChangelog\nGo to Dashboard\nChangelog\nStay in touch with new updates and improvements in the Alchemy ecosystem.\nApril 30, 2026\nWallets\nUpdates\nAdded CPI rent prefunding support for Solana transactions in Gas Manager. Use\nprefundRent: true\nwith\nalchemy_requestFeePayer\nwhen a sponsored transaction may create accounts through a cross-program invocation (CPI) and needs rent covered.\nLearn more\n.\nNode\nUpgrades\nArc Testnet: arc-consensus\n0.4.0\n, arc-execution\n0.6.0\nBob Mainnet: op-reth\nv2.1.0-rc.1\n, op-node\nv1.16.13-rc.1\nBob Sepolia: op-reth\nv2.1.0-rc.1\n, op-node\nv1.16.13-rc.1\nGnosis Chiado: nethermind\n1.37.0\nGnosis Mainnet: nethermind\n1.37.0\nInjective Mainnet: injective-core\nv1.19.0\nInjective Testnet: evm-gateway\nv1.2.0\nJovay Mainnet: jovay 0.12.1-rc2\nMode Mainnet: op-reth\nv2.1.0-rc.1\n, op-node\nv1.16.13-rc.1\nMode Sepolia: op-reth\nv2.1.0-rc.1\n, op-node\nv1.16.13-rc.1\nShape Mainnet: op-reth v1.11.5, op-node\nv1.16.11\nShape Sepolia: op-reth v1.11.5, op-node\nv1.16.11\nXlayer Mainnet: op-reth\nv0.0.5.1\nXlayer Testnet: op-reth\nv0.0.5.1\nApril 23, 2026\nNode\nUpgrades\nBitcoin Mainnet: bitcoind\n30.2\nInjective Mainnet: evm-gateway\nv1.2.0\nInjective Testnet: evm-gateway\nv1.2.0\nStarknet Mainnet: pathfinder\nv0.22.3\nStarknet Testnet: pathfinder\nv0.22.3\nTempo Mainnet: tempo\n1.6.0\nTempo Moderato: tempo\n1.6.0\nApril 16, 2026\nWallets\nSDK\nSDK v5 reference docs\nare now live. We recommend that\naa-sdk\nusers upgrade.\n@alchemy/wallet-apis\nis the recommended package for most users, with updated lower-level packages available for integrating directly with viem.\nAdded stricter selector checks in the MAv2 permission builder.\nRundler\nFixed an initialization bug with flashblocks on fast block time networks (e.g., Xlayer).\nNode\nUpgrades\nInjective Mainnet: evm-gateway\nv1.1.1\nInjective Testnet: evm-gateway\nv1.1.1\n, injective-core\nv1.19.0-beta\nOptimism Sepolia: op-geth\nv1.101701.0\n, op-node\nv1.16.11\nSei Mainnet: seid\nv6.4.2\nWorldchain Mainnet: op-reth\nv1.11.3-2\n, op-node\nv1.16.11\nWorldchain Sepolia: op-reth\nv1.11.3-2\n, op-node\nv1.16.11\nXlayer Mainnet: op-reth\nv0.0.4\nXlayer Testnet: op-reth\nv0.0.4\nApril 9, 2026\nWallets\nUpdates\nAdded sponsored EIP-7702 undelegation for enterprise customers via wallet APIs.\nLearn more\n.\nNode\nUpgrades\nEth Mainnet: Geth\nv1.17.2\n, Lighthouse\nv8.1.3\nInjective Mainnet: injective-core\nv1.18.3\nJovay Mainnet: jovay 0.12.1-rc1\nJovay Testnet: jovay 0.12.1-rc1\nRise Testnet: rise-node\nsha-f97ed60\n, op-node\nsha-83a4272\nSei Testnet: seid\nv6.4.0\nSonic Testnet: Sonic\nv2.1.4\nStable Testnet: stabled\ncosmovisor-v1.7.1\nStarknet Mainnet: Pathfinder\nv0.22.2\nStarknet Sepolia: Pathfinder\nv0.22.2\nApril 2, 2026\nNode\nUpgrades\nAptos Mainnet: Aptos\naptos-node-v1.42.1\nArbitrum Sepolia: Arbitrum\nv3.9.8-4624977\nBSC Mainnet: Geth\nv1.7.2\nPolygon Mainnet: Bor\nv2.7.0\nStarknet Mainnet: Pathfinder\nv0.22.1\nStarknet Sepolia: Pathfinder\nv0.22.1\nMarch 26, 2026\nDeveloper Experience\nDashboard\nAdded a\nSolana product page\nin the dashboard with a one-click API sandbox and quickstart guides.\nLaunched the\nWallet API Debugging Dashboard\nfor debugging wallet transactions across the full lifecycle (prepare, send, track), with AI-powered error explanations.\nLearn more\n.\nNode\nNew Chains\nTempo Mainnet\nis now live and publicly available.\nUpgrades\nAbstract Mainnet: Abstract\nv29.14.0\nArbitrum Mainnet: Arbitrum\nv3.9.7-75e084e\nBase Mainnet: Opnode\nop-node/v1.16.9\n, Reth\nv1.5.1\nPolygon Amoy: Bor\nv2.7.0-beta3\nSonic Mainnet: Sonic\nv2.1.6\nStarknet Sepolia: Starknet\nv0.22.0\nZksync Sepolia: Zksync\nv29.14.0\nMarch 19, 2026\nNode\nUpgrades\nAptos Mainnet: Aptos\naptos-node-v1.41.9-hotfix\nBsc Mainnet: Reth\nv0.0.8-beta\nMegaeth Mainnet: Megaeth v2.0.17\nMonad Mainnet: Monad 0.13.0\nPolygon Amoy: Erigon\nv3.5.0-beta2\nStory Aeneid: Geth\nv1.2.1\n, Story\nv1.5.2\nMarch 12, 2026\nData\nAdded NFT API support for Robinhood Testnet across all NFT endpoints.\nWallets\nUpdates\n@alchemy/wallet-apis\nbeta released. This is the recommended replacement for\n@account-kit/wallet-client\n.\nNode\nUpgrades\nArbitrum Mainnet: Arbitrum\nv3.9.7-75e084e\nArbitrum One: Arbitrum\nv3.9.7-75e084e\nBsc Mainnet: Geth\nv1.6.7\nEth Hoodi: Lighthouse\nv8.1.2\nEth Mainnet: Lighthouse\nv8.1.2\nEth Sepolia: Lighthouse\nv8.1.2\nOptimism Mainnet: Op Node\nop-node/v1.16.6\nOptimism Sepolia: Opnode\nop-node/v1.16.7\n, Reth\nv1.10.2\nUnichain Mainnet: Reth\nv1.10.2\n, Opnode\nop-node/v1.16.7\nMarch 5, 2026\nNode\nUpgrades\nAptos Mainnet: Aptos\naptos-node-v1.41.8\nBsc Mainnet: Geth\nv1.7.0-alpha\nEth Hoodi: Reth\nv1.10.2\n, Lighthouse\nv8.1.1\nEth Mainnet: Lighthouse\nv8.1.1\n, Geth\nv1.16.9\n, Reth\nv1.10.2\nEth Sepolia: Reth\nv1.10.2\n, Lighthouse\nv8.1.1\n, Geth\nv1.16.9\nGnosis Mainnet: Erigon\nv3.3.8\nOptimism Mainnet: Op Node\nop-node/v1.16.6\nFebruary 26, 2026\nNode\nUpgrades\nAptos Mainnet: Aptos\naptos-node-v1.41.5\nAstar Mainnet: Runtime\nruntime-2101\nPolygon Mainnet: Bor\nv2.6.0\nLoad More",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://docs.alchemy.com",
+      "title": "Alchemy Documentation - Build anything onchain",
+      "text": "Alchemy Documentation - Build anything onchain\nFor the complete documentation index, see\nllms.txt\n.\nSkip to content\nSearch\n/\nGo to Dashboard\nGet Started\nNode\nData\nWallets\nRollups\nChains\nChangelog\nGet Started\nNode\nData\nWallets\nRollups\nChains\nChangelog\nGo to Dashboard\nBuild anything onchain\nNode\nBuild and scale your app on the most powerful web3 development platform.\nData\nAccess complete blockchain data through one unified API that grows with you.\nWallets\nSimple APIs to send gasless transactions with advanced smart wallet features.\nRollups\nLaunch a custom rollup with native developer tools and scale to millions.\nQuery the blockchain instantly\nRequest\nEthereum\neth_getBlockByNumber\nRUN\ncurl\n-X\nPOST https://eth-mainnet.g.alchemy.com/v2/\n{\napiKey\n}\n\\\n-H\n\"Content-Type: application/json\"\n\\\n-d\n'{\n\"jsonrpc\": \"2.0\",\n\"method\": \"eth_getBlockByNumber\",\n\"params\": [\n\"0x68b3\",\nfalse\n],\n\"id\": 1\n}'\nQuickstart\nGuides for 500+ endpoints on 80+ networks\nGet started\nBuild anything onchain\nBlockchain basics\nGet started by learning how to connect your app to Ethereum using Alchemy's JSON-RPC API.\nGet started\nSponsor gas\nSend gasless transactions on EVM and Solana or allow users to pay with ERC-20 tokens for seamless transactions\nStart tutorial\nReal-time notifications via webhooks\nReceive fast and reliable HTTP POST requests for onchain events across 80+ chains. No polling required.\nView quickstart\nSend reliable transactions\nBuilt-in retries, gas optimization, and status tracking so transactions land onchain every time\nStart tutorial\nOnchain events subscriptions\nLearn to subscribe to pending transactions, log events, new blocks and more using WebSockets across chains.\nView quickstart\nUpgrade to EIP-7702\nEnable existing EOAs to benefit from batching actions, sponsoring transactions, and more.\nLearn more\nAlchemy Logo\nSupport & platform\nSupport Hub Icon\nFAQs and support\nPlatform status\nContact sales\nResources\nllms.txt for AI builders\nAlchemy University Icon\nAlchemy University\nStay updated\nSubscribe to our newsletter\nX Icon\nFollow us on X\nDiscord Icon\nJoin our discord\nTerms & Conditions\n\u00a9\n2026\nAlchemy Insights, Inc",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.alchemy.com/integrations",
+      "title": "Integrations for Rollups",
+      "text": "Integrations for Rollups\nSkip to content\nWe just launched a $20M fund just for Solana builders. Up to $25k in credits per team.\nApply now\nPlatform\nSolutions\nDevelopers\nResources\nPricing\nContact sales\nSign in\nIntegrations\nCustomize your rollup. Work with the top teams in Web3. Get discounted access to the services and tools you need on-chain.\nBecome a Partner\nBlockaid\nSecurity\nEnables builders to protect users from fraud, phishing and hacks\nBlockscout\nExplorer\nAn open-source, universally-available and customizable block explorer\nBoost\nIncentives\nA fullstack toolkit for networks to deploy & manage onchain incentive campaigns\nCoinflow\nPayments\nA blockchain-based payment processor enabling instant settlement for payment acceptance and payouts\nDecent\nInteroperability\nImplement fast, cheap cross-chain swaps and transactions in minutes\nDIA\nOracle\nCross-chain data & oracle platform, sourcing and delivering customizable data feeds on and off-chain\nHalliday\nCommerce Automation\nSave time, grow rollup TVL, and drive revenue via frictionless, embedded commerce\nHexagate\nSecurity\nReal-time threat prevention and risk intelligence to proactively prevent onchain attacks\nHyperlane\nInteroperability\nAn open interoperability framework to connect rollups anywhere onchain\nHypernative\nSecurity\nGet real-time monitoring, risk detection, and automated responses for on- and off-chain data sources\nNoves\nData/Analytics\nBring enriched, human-friendly data to your entire chain ecosystem\nPalmera\nSecurity\nPalmera deploys and maintains Safe on your chain to enable secure operations\nParsec\nExplorer\nA fast, highly customizable block explorer and onchain analytics platform\nPredicate\nInteroperability\nA network for defining and simplifying transaction prerequisites\nSuccinct\nDeveloper Tools\nLess than 1 hour finality for rollups, with full EVM compatibility\nSpearbit\nSecurity\nIndustry-leading, end-to-end security services for web3\nSuperbridge\nBridge\nCustomisable and user-friendly bridge interface, ready to launch on Day 1\nTally\nCommunity\nA comprehensive governance platform for onchain decentralized organizations\nThirdweb\nDeveloper Tools\nThe full stack development platform for building scalable web3 apps & games\nWebacy\nSecurity\nThe Trust and Safety layer for protecting your platform with the Safety Score and embeddable APIs\nZapper\nExplorer\nA comprehensive crypto explorer, across NFTs, DeFi and onchain activity\nWant to launch your own rollup?\nContact sales\nThe web3 development platform\nSupercharge your inbox\nSign up for our developer newsletter.\nSubscribe\nProducts\nCortex\nRPC API\nRollups\nNFT API\nWebhooks\nWebsockets\nTransfers API\nToken API\nBundler API\nGas Manager API\nDevelopers\nSign up\nStatus\nDocs\nSupport\nFaucets\nGwei calculator\nChain directory\nRequest a chain\nSnapshots\nCommunity\nAlchemy University\nBlog\nCustomer stories\nOverviews\nApp store\nEvents\nNewsletter\nStartup program\nOffchain bug bounties\nOnchain bug bounties\nCompany\nAbout us\nCareers\nCustomers\nNewsroom\nPress kit\nSecurity\nLegal\nContact\nSales\nPress\nEmail\nDiscord\n2026 Alchemy Insights, Inc.\n\u00b7\nLegal",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/alchemy/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Machine learning has become alchemy (2017) [video]",
+          "url": "https://www.youtube.com/watch?v=x7psGHgatGM",
+          "points": 253,
+          "num_comments": 124,
+          "created_at": "2018-12-25T21:11:00Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18759241"
+        },
+        {
+          "title": "Little Alchemy 2",
+          "url": "https://littlealchemy2.com/",
+          "points": 251,
+          "num_comments": 34,
+          "created_at": "2019-09-14T18:03:50Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20972574"
+        },
+        {
+          "title": "Little Alchemy",
+          "url": "https://littlealchemy.com/",
+          "points": 173,
+          "num_comments": 41,
+          "created_at": "2017-06-10T04:22:40Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14526152"
+        },
+        {
+          "title": "Alchemy Micro-Service Framework: Using RabbitMQ Instead of HTTP",
+          "url": "https://github.com/LoyaltyNZ/alchemy-framework",
+          "points": 149,
+          "num_comments": 75,
+          "created_at": "2016-03-14T17:41:13Z",
+          "hn_url": "https://news.ycombinator.com/item?id=11284197"
+        },
+        {
+          "title": "Alchemy \u2013 Open Source AI",
+          "url": "http://alchemy.cs.washington.edu/",
+          "points": 143,
+          "num_comments": 22,
+          "created_at": "2015-11-27T07:00:44Z",
+          "hn_url": "https://news.ycombinator.com/item?id=10636196"
+        },
+        {
+          "title": "Launch HN: Atomic Alchemy (YC W19) \u2013 Manufacturing Nuclear Medicine",
+          "url": null,
+          "points": 99,
+          "num_comments": 40,
+          "created_at": "2019-04-03T17:23:00Z",
+          "hn_url": "https://news.ycombinator.com/item?id=19565224"
+        },
+        {
+          "title": "Alchemy: A Language and Compiler for Homomorphic Encryption Made Easy [pdf]",
+          "url": "http://web.eecs.umich.edu/~cpeikert/pubs/alchemy.pdf",
+          "points": 81,
+          "num_comments": 7,
+          "created_at": "2018-10-20T23:05:05Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18265948"
+        },
+        {
+          "title": "Tool of Hope: A Sober Alchemy to End My Helplessness",
+          "url": "https://matthewcauble.com/tool-of-hope-a-sober-alchemy-to-end-my-helplessness-5d4b9c9dda1d",
+          "points": 73,
+          "num_comments": 44,
+          "created_at": "2017-03-05T19:07:43Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13797844"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Big Beautiful Bill",
+          "subreddit": "union",
+          "score": 28452,
+          "num_comments": 607,
+          "permalink": "https://reddit.com/r/union/comments/1mgfof7/big_beautiful_bill/",
+          "selftext": ""
+        },
+        {
+          "title": "Alchemy is truly alive and well!",
+          "subreddit": "memes",
+          "score": 22231,
+          "num_comments": 291,
+          "permalink": "https://reddit.com/r/memes/comments/1rem7us/alchemy_is_truly_alive_and_well/",
+          "selftext": ""
+        },
+        {
+          "title": "Modern day alchemy",
+          "subreddit": "memes",
+          "score": 22193,
+          "num_comments": 187,
+          "permalink": "https://reddit.com/r/memes/comments/1kpl66c/modern_day_alchemy/",
+          "selftext": ""
+        },
+        {
+          "title": "I saw a funny article here's a meme",
+          "subreddit": "memes",
+          "score": 11912,
+          "num_comments": 140,
+          "permalink": "https://reddit.com/r/memes/comments/1qjf0kc/i_saw_a_funny_article_heres_a_meme/",
+          "selftext": ""
+        },
+        {
+          "title": "Alchemy: A Fine Tradition",
+          "subreddit": "dndmemes",
+          "score": 11183,
+          "num_comments": 16,
+          "permalink": "https://reddit.com/r/dndmemes/comments/1o9z3no/alchemy_a_fine_tradition/",
+          "selftext": "What does retirement look like for Adventurers?"
+        },
+        {
+          "title": "The Best Ending In Anime History",
+          "subreddit": "FullmetalAlchemist",
+          "score": 10304,
+          "num_comments": 453,
+          "permalink": "https://reddit.com/r/FullmetalAlchemist/comments/1n8icf1/the_best_ending_in_anime_history/",
+          "selftext": ""
+        },
+        {
+          "title": "Why Does Trump Get Away With It? \u2022NY Times\u2022OPINION",
+          "subreddit": "NewsRewind",
+          "score": 8844,
+          "num_comments": 1331,
+          "permalink": "https://reddit.com/r/NewsRewind/comments/1q1oydx/why_does_trump_get_away_with_it_ny_timesopinion/",
+          "selftext": "# **OPINION**\n## **GUEST ESSAY**\n# **Why Does Trump Get Away With It?**\n**Dec. 30, 2025**\n\n***Credit...***  \n*Eric Lee for The New York Times*\n\n**By Thomas B. Edsall**  \n\n*Mr. Edsall contributes a weekly column from Washington on politics, demographics and inequality.*\n\n---\n\nOn Dec. 24, 2008, President George W. Bush revoked the pardon he granted a day earlier to Isaac Robert Toussie, a developer in Brooklyn who had pleaded guilty to mail fraud and making false statements to the U.S. Department "
+        },
+        {
+          "title": "W",
+          "subreddit": "shitposting",
+          "score": 8737,
+          "num_comments": 60,
+          "permalink": "https://reddit.com/r/shitposting/comments/1oxh8sc/w/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.alchemy.com/pricing",
+    "changelog": "https://www.alchemy.com/changelog",
+    "docs": "https://docs.alchemy.com",
+    "integrations": "https://www.alchemy.com/integrations",
+    "g2": "https://www.g2.com/products/alchemy/reviews"
+  },
+  "analysis": {
+    "name": "Alchemy",
+    "url": "https://alchemy.com",
+    "tagline": "Infrastructure that moves billions at scale",
+    "value_proposition": "Complete blockchain developer platform with enterprise-grade RPC, data, wallet, and rollup APIs powering production web3 apps at scale.",
+    "target_segment": "dev",
+    "ideal_customer": "Blockchain and web3 developers \u2014 from indie builders to fintech engineering teams \u2014 shipping production apps on EVM chains and Solana",
+    "features": [
+      {
+        "name": "node rpc api",
+        "description": "High-performance JSON-RPC API for querying 80+ blockchain networks with real-time block-perfect data",
+        "evidence_source": "docs",
+        "evidence_quote": "Guides for 500+ endpoints on 80+ networks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cortex engine",
+        "description": "Proprietary intelligent blockchain engine providing 13x more throughput and 5x more reliability than competing providers",
+        "evidence_source": "landing",
+        "evidence_quote": "Powered by Cortex, the world's first intelligent blockchain engine. Get 13x more throughput",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "smart websockets",
+        "description": "Real-time blockchain event subscriptions over persistent WebSocket connections",
+        "evidence_source": "pricing",
+        "evidence_quote": "Smart websockets",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "debug api",
+        "description": "Access to debug-level RPC methods for transaction tracing and EVM-level debugging",
+        "evidence_source": "pricing",
+        "evidence_quote": "Debug API",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "trace api",
+        "description": "Full parity/trace-level RPC methods for deep transaction analysis; enterprise plan only",
+        "evidence_source": "pricing",
+        "evidence_quote": "Trace API",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "token api",
+        "description": "Real-time and historical price and metadata for any ERC-20 token across chains",
+        "evidence_source": "pricing",
+        "evidence_quote": "Token API \u2014 Real-time price data for any token",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "prices api",
+        "description": "Token price feeds for onchain and offchain price data",
+        "evidence_source": "pricing",
+        "evidence_quote": "Prices API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "transfers api",
+        "description": "Query full historical transfer and transaction history for any wallet address",
+        "evidence_source": "pricing",
+        "evidence_quote": "Transfers API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "portfolio api",
+        "description": "Aggregated token balances and portfolio data for any wallet address",
+        "evidence_source": "pricing",
+        "evidence_quote": "Portfolio API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "nft api",
+        "description": "Fetch NFT metadata, ownership, and collection data across chains",
+        "evidence_source": "pricing",
+        "evidence_quote": "NFT API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Push HTTP notifications for onchain events across 80+ chains without polling",
+        "evidence_source": "docs",
+        "evidence_quote": "Receive fast and reliable HTTP POST requests for onchain events across 80+ chains. No polling required.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "wallet api",
+        "description": "Smart wallet APIs for creating and managing ERC-4337 and EIP-7702 smart accounts",
+        "evidence_source": "pricing",
+        "evidence_quote": "Wallet API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gas sponsorship",
+        "description": "Sponsor gas fees for users via ERC-4337 paymasters; free tier limited to testnet only",
+        "evidence_source": "pricing",
+        "evidence_quote": "Gas sponsorship \u2014 Testnet only [on free tier]",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "gasless transactions",
+        "description": "Enable end users to submit transactions with zero gas fees via account abstraction",
+        "evidence_source": "landing",
+        "evidence_quote": "Gasless transactions \u2014 Sponsor gas for your users",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "transaction batching",
+        "description": "Combine multiple contract calls into a single onchain transaction via smart accounts",
+        "evidence_source": "pricing",
+        "evidence_quote": "Transaction batching",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "erc-4337 transactions",
+        "description": "Account abstraction user operations conforming to ERC-4337 standard",
+        "evidence_source": "pricing",
+        "evidence_quote": "ERC-4337 & 7702 transactions",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "eip-7702 transactions",
+        "description": "Upgrade existing EOAs to smart accounts using EIP-7702 delegation",
+        "evidence_source": "docs",
+        "evidence_quote": "Upgrade to EIP-7702 \u2014 Enable existing EOAs to benefit from batching actions, sponsoring transactions",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "eip-7702 undelegation",
+        "description": "Sponsored removal of EIP-7702 delegation for enterprise customers via wallet APIs",
+        "evidence_source": "changelog",
+        "evidence_quote": "Added sponsored EIP-7702 undelegation for enterprise customers via wallet APIs.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "transaction simulation",
+        "description": "Simulate transactions before submission to preview outcomes and catch errors",
+        "evidence_source": "pricing",
+        "evidence_quote": "Transaction simulation",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "private transactions",
+        "description": "Submit transactions privately to protect against MEV and frontrunning",
+        "evidence_source": "pricing",
+        "evidence_quote": "Private transactions",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "bundler api",
+        "description": "ERC-4337 bundler for submitting and managing user operations onchain",
+        "evidence_source": "pricing",
+        "evidence_quote": "Bundler API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bundler sponsored operations",
+        "description": "Gas-sponsored bundler operations for paymaster-backed user ops",
+        "evidence_source": "pricing",
+        "evidence_quote": "Bundler sponsored operations",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "paymaster api",
+        "description": "ERC-4337 paymaster for covering user operation gas costs programmatically",
+        "evidence_source": "pricing",
+        "evidence_quote": "Paymaster API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rollups",
+        "description": "Launch and operate a custom Layer 2 rollup chain with native developer tooling",
+        "evidence_source": "landing",
+        "evidence_quote": "Rollups \u2014 Launch your own custom chain",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "rollup testnet",
+        "description": "Deploy and test custom rollup on testnet; available on Pay as You Go and above",
+        "evidence_source": "pricing",
+        "evidence_quote": "Rollups \u2014 Testnet [available on Pay as You Go]",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "rollup mainnet",
+        "description": "Deploy production rollup on mainnet; enterprise plan only",
+        "evidence_source": "pricing",
+        "evidence_quote": "Rollups \u2014 Mainnet [Enterprise only]",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ip/domain allowlisting",
+        "description": "Restrict API key usage to specific IP addresses or domains",
+        "evidence_source": "pricing",
+        "evidence_quote": "IP/domain allowlisting",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "google oauth sign-in",
+        "description": "Authenticate to Alchemy dashboard using Google OAuth",
+        "evidence_source": "pricing",
+        "evidence_quote": "Google sign in (OAuth)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sso",
+        "description": "SAML-based single sign-on for enterprise team authentication",
+        "evidence_source": "pricing",
+        "evidence_quote": "SAML single sign on (SSO)",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "account activity logs",
+        "description": "Audit logs of all account and team activity for security and compliance",
+        "evidence_source": "pricing",
+        "evidence_quote": "Account activity logs",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "rbac",
+        "description": "Role-based access control for managing team member permissions on apps and keys",
+        "evidence_source": "pricing",
+        "evidence_quote": "Role-based access control (RBAC)",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-chain sandbox",
+        "description": "Interactive sandbox for testing API calls across multiple blockchain networks simultaneously",
+        "evidence_source": "pricing",
+        "evidence_quote": "Multi-chain sandbox",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "request logs",
+        "description": "Full logs of all API requests for debugging and audit purposes",
+        "evidence_source": "pricing",
+        "evidence_quote": "Request logs",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom error and usage alerts",
+        "description": "Configurable threshold alerts for API error rates and compute unit consumption",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom error and usage alerts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mempool visualizer",
+        "description": "Real-time visual dashboard of pending transactions in the Ethereum mempool",
+        "evidence_source": "pricing",
+        "evidence_quote": "Mempool visualizer",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "app and team analytics",
+        "description": "Dashboard analytics for per-app usage, team activity, and API performance metrics",
+        "evidence_source": "pricing",
+        "evidence_quote": "App and team analytics",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "usage reporting",
+        "description": "Detailed reports of compute unit consumption and API usage over time",
+        "evidence_source": "pricing",
+        "evidence_quote": "Usage reporting",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "composer",
+        "description": "Visual API composer tool for interactively building and testing blockchain API calls",
+        "evidence_source": "pricing",
+        "evidence_quote": "Composer",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "full archive data",
+        "description": "Access to complete historical blockchain data from genesis block on all plans",
+        "evidence_source": "pricing",
+        "evidence_quote": "Full archive data",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "parity trace and geth debug",
+        "description": "Advanced EVM trace methods (parity_trace, debug_traceTransaction) for deep inspection",
+        "evidence_source": "pricing",
+        "evidence_quote": "Parity trace and gETH debug",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "increased eth_getlogs ranges",
+        "description": "Higher block range limits for eth_getLogs queries; enterprise plan only",
+        "evidence_source": "pricing",
+        "evidence_quote": "Increased eth_getLogs() ranges",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ai agents support",
+        "description": "CLI, MCP server, and skills enabling AI agents to read onchain state and send transactions end-to-end",
+        "evidence_source": "landing",
+        "evidence_quote": "A CLI, MCP server, and skills that let agents read onchain state, send transactions, and ship apps end-to-end.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "alchemy cli",
+        "description": "Command-line interface for installing Alchemy tooling and starting blockchain development",
+        "evidence_source": "landing",
+        "evidence_quote": "Alchemy CLI \u2014 Install and start shipping",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "mcp server",
+        "description": "Model Context Protocol server for connecting AI agents to blockchain data and transaction capabilities",
+        "evidence_source": "landing",
+        "evidence_quote": "A CLI, MCP server, and skills that let agents read onchain state, send transactions",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "solana grpc",
+        "description": "High-throughput gRPC streaming access for Solana blockchain data",
+        "evidence_source": "pricing",
+        "evidence_quote": "Solana gRPC \u2014 Starting at $80/TB",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "solana gas manager",
+        "description": "Fee payer sponsorship for Solana transactions including CPI rent prefunding for account creation",
+        "evidence_source": "changelog",
+        "evidence_quote": "Added CPI rent prefunding support for Solana transactions in Gas Manager. Use prefundRent: true",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "wallet api debugging dashboard",
+        "description": "Dashboard for tracing wallet transactions across prepare/send/track lifecycle with AI-powered error explanations",
+        "evidence_source": "changelog",
+        "evidence_quote": "Launched the Wallet API Debugging Dashboard for debugging wallet transactions across the full lifecycle",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sdk",
+        "description": "TypeScript SDK (@alchemy/wallet-apis) for integrating smart wallets and transactions via viem",
+        "evidence_source": "changelog",
+        "evidence_quote": "SDK v5 reference docs are now live. @alchemy/wallet-apis is the recommended package for most users",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "solana api sandbox",
+        "description": "One-click Solana API sandbox with quickstart guides inside the developer dashboard",
+        "evidence_source": "changelog",
+        "evidence_quote": "Added a Solana product page in the dashboard with a one-click API sandbox and quickstart guides.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "throughput add-on",
+        "description": "Purchasable throughput booster to increase requests-per-second beyond base plan limits",
+        "evidence_source": "pricing",
+        "evidence_quote": "Throughput add-on to fit your needs",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "stablecoin payments",
+        "description": "APIs for orchestrating stablecoin payment flows onchain",
+        "evidence_source": "landing",
+        "evidence_quote": "Stablecoins \u2014 Orchestrate payments onchain",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "defi apis",
+        "description": "APIs for swap, earn, and stake operations against DeFi protocols",
+        "evidence_source": "landing",
+        "evidence_quote": "DeFi \u2014 Swap, earn, and stake",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "signed slas",
+        "description": "Contractual SLA agreements for uptime and performance guarantees; enterprise only",
+        "evidence_source": "pricing",
+        "evidence_quote": "Signed SLAs",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "premium support packages",
+        "description": "Tiered support (Bronze/Silver/Gold) with dedicated Slack, named account manager, 2\u201312hr response SLAs",
+        "evidence_source": "pricing",
+        "evidence_quote": "Premium support packages \u2014 Bronze 12hr, Silver 4hr, Gold 2hr response times",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "faucets",
+        "description": "Testnet token faucets for development and testing across supported chains",
+        "evidence_source": "landing",
+        "evidence_quote": "Faucets",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "gwei calculator",
+        "description": "Utility tool for converting between Gwei, ETH, and USD gas values",
+        "evidence_source": "landing",
+        "evidence_quote": "Gwei calculator",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "chain directory",
+        "description": "Directory of all supported blockchain networks with RPC endpoints and chain configuration",
+        "evidence_source": "landing",
+        "evidence_quote": "Chain directory",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "snapshots",
+        "description": "Pre-synced blockchain data snapshots for accelerating node bootstrapping",
+        "evidence_source": "landing",
+        "evidence_quote": "Snapshots",
+        "tier": "unknown",
+        "confidence": "low"
+      },
+      {
+        "name": "alchemy university",
+        "description": "Free educational platform with courses for learning blockchain and web3 development",
+        "evidence_source": "landing",
+        "evidence_quote": "Alchemy University",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "startup program",
+        "description": "Credits, resources, and support for early-stage blockchain startups including a $20M Solana fund",
+        "evidence_source": "landing",
+        "evidence_quote": "We just launched a $20M fund just for Solana builders. Up to $25k in credits per team.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "bug bounty program",
+        "description": "Separate offchain and onchain bug bounty programs for security researchers",
+        "evidence_source": "landing",
+        "evidence_quote": "Offchain bug bounties \u2014 Onchain bug bounties",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "priority product roadmap access",
+        "description": "Enterprise customers get priority influence over Alchemy's product roadmap",
+        "evidence_source": "pricing",
+        "evidence_quote": "Priority on product roadmaps",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "volume discounts",
+        "description": "Negotiated discounts on compute unit pricing for high-volume enterprise customers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Volume discounts",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "transaction retry and gas optimization",
+        "description": "Built-in retry logic and automatic gas optimization to ensure transactions land onchain",
+        "evidence_source": "docs",
+        "evidence_quote": "Built-in retries, gas optimization, and status tracking so transactions land onchain every time",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Blockaid",
+      "Blockscout",
+      "Boost",
+      "Coinflow",
+      "Decent",
+      "DIA",
+      "Halliday",
+      "Hexagate",
+      "Hyperlane",
+      "Hypernative",
+      "Noves",
+      "Palmera",
+      "Parsec",
+      "Predicate",
+      "Succinct",
+      "Spearbit",
+      "Superbridge",
+      "Tally",
+      "Thirdweb",
+      "Webacy",
+      "Zapper"
+    ],
+    "differentiators": [
+      "Cortex: claimed world's first intelligent blockchain engine with 13x more throughput than competitors",
+      "5x more reliability than other blockchain infrastructure providers",
+      "99.99% uptime SLA",
+      "$4.2T+ in transactions processed annually",
+      "100M+ end users on crypto apps powered by Alchemy",
+      "$1B+ gasless transactions processed",
+      "8+ years of blockchain infrastructure experience",
+      "MCP server and AI agent skills for onchain AI use cases \u2014 first-class AI agent support",
+      "500+ endpoints across 80+ blockchain networks from a single platform",
+      "Account abstraction (ERC-4337 and EIP-7702) as a core first-party product",
+      "Native rollup launch capability with integrated developer tooling"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-04",
+        "what": "CPI rent prefunding for Solana Gas Manager \u2014 sponsor account creation costs in cross-program invocations",
+        "source": "Added CPI rent prefunding support for Solana transactions in Gas Manager. Use prefundRent: true with alchemy_requestFeePayer"
+      },
+      {
+        "date": "2026-04",
+        "what": "SDK v5 (@alchemy/wallet-apis) generally available \u2014 replaces aa-sdk with viem-native lower-level packages",
+        "source": "SDK v5 reference docs are now live. @alchemy/wallet-apis is the recommended package for most users, with updated lower-level packages available for integrating directly with viem."
+      },
+      {
+        "date": "2026-04",
+        "what": "Sponsored EIP-7702 undelegation for enterprise customers via wallet APIs",
+        "source": "Added sponsored EIP-7702 undelegation for enterprise customers via wallet APIs."
+      },
+      {
+        "date": "2026-03",
+        "what": "Wallet API Debugging Dashboard with AI-powered error explanations across full transaction lifecycle",
+        "source": "Launched the Wallet API Debugging Dashboard for debugging wallet transactions across the full lifecycle (prepare, send, track), with AI-powered error explanations."
+      },
+      {
+        "date": "2026-03",
+        "what": "Solana product page in dashboard with one-click API sandbox and quickstart guides",
+        "source": "Added a Solana product page in the dashboard with a one-click API sandbox and quickstart guides."
+      },
+      {
+        "date": "2026-03",
+        "what": "Tempo Mainnet chain support launched",
+        "source": "Tempo Mainnet is now live and publicly available."
+      },
+      {
+        "date": "2026-03",
+        "what": "@alchemy/wallet-apis beta released \u2014 recommended replacement for @account-kit/wallet-client",
+        "source": "@alchemy/wallet-apis beta released. This is the recommended replacement for @account-kit/wallet-client."
+      },
+      {
+        "date": "2026-03",
+        "what": "NFT API support added for Robinhood Testnet across all NFT endpoints",
+        "source": "Added NFT API support for Robinhood Testnet across all NFT endpoints."
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "30M CU/mo, 25 RPS, 5 apps, 5 webhooks, gas sponsorship testnet only"
+      },
+      "tiers": [
+        {
+          "name": "Free",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$0",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "30M CU/mo free, 25 RPS, 5 apps, 5 webhooks, all mainnets & testnets, standard support (48hr)"
+        },
+        {
+          "name": "Pay as You Go",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "$0.45/1M CU up to 300M CU, $0.40/1M after; 300 RPS, 30 apps, 100 webhooks, premium endpoints, 24hr support"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Custom CU pricing, 1000+ RPS, 200 apps, 500 webhooks, SSO, RBAC, signed SLAs, rollup mainnet, custom support SLA"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Purely usage-based (Compute Units) with no flat monthly fee on PAYG; Solana gRPC charged at $80/TB starting price; gas sponsorship carries 8% admin fee on PAYG; premium support (Bronze 12hr / Silver 4hr / Gold 2hr) is an enterprise add-on with named account manager and dedicated Slack; free tier has hard 30M CU/mo limit; free tier overages require upgrade to PAYG"
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Alchemy and Machinery: What Apple's Steve Jobs Can Teach Pronatalists",
+        "url": "https://www.governance.fyi/p/alchemy-and-machinery-what-apples",
+        "points": 4,
+        "comments": 0,
+        "age_days": 17,
+        "hn_url": "https://news.ycombinator.com/item?id=47793949"
+      },
+      {
+        "title": "Alchemy and Machinery: What Apple's Steve Jobs Can Teach Pronatalists",
+        "url": "https://www.governance.fyi/p/alchemy-and-machinery-what-apples",
+        "points": 2,
+        "comments": 0,
+        "age_days": 16,
+        "hn_url": "https://news.ycombinator.com/item?id=47804718"
+      },
+      {
+        "title": "Why Cheap Land Is Cheap and How to Turn It into Gold",
+        "url": "https://devonzuegel.com/land-development-math-is-alchemy",
+        "points": 2,
+        "comments": 0,
+        "age_days": 24,
+        "hn_url": "https://news.ycombinator.com/item?id=47705111"
+      },
+      {
+        "title": "The Making of IA Notebook",
+        "url": "https://ia.net/topics/paper-alchemy-the-making-of-ia-notebook",
+        "points": 2,
+        "comments": 0,
+        "age_days": 43,
+        "hn_url": "https://news.ycombinator.com/item?id=47473674"
+      },
+      {
+        "title": "Ask HN: How do you verify crypto payments in your app?",
+        "url": "https://news.ycombinator.com/item?id=47230346",
+        "points": 1,
+        "comments": 5,
+        "age_days": 61,
+        "hn_url": "https://news.ycombinator.com/item?id=47230346"
+      }
+    ]
+  }
+}

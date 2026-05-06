@@ -1,0 +1,122 @@
+{
+  "url": "https://github.com/features/copilot",
+  "company": "GitHub",
+  "tagline": "Command your craft",
+  "subheadline": "Your AI accelerator for every workflow, from the editor to the enterprise.",
+  "value_proposition": "GitHub Copilot is an AI coding assistant that accelerates software development across the IDE, terminal, and GitHub platform with multi-model support and enterprise-grade controls.",
+  "target_audience": "Software developers and engineering teams ranging from individual hobbyists to enterprise organizations using GitHub and popular IDEs.",
+  "primary_cta": {
+    "text": "Get started",
+    "placement": "hero"
+  },
+  "secondary_cta": {
+    "text": "See plans & pricing",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [
+      "Coyote Logistics",
+      "Duolingo",
+      "General Motors",
+      "Mercado Libre",
+      "Shopify",
+      "Stripe",
+      "CocaCola"
+    ],
+    "testimonials": [
+      "Grupo Botic\u00e1rio increases developer productivity by 94% with Copilot"
+    ],
+    "metrics": [
+      "up to 75% higher job satisfaction",
+      "up to 55% more productive at writing code",
+      "94% developer productivity increase at Grupo Botic\u00e1rio",
+      "millions of individual users",
+      "tens of thousands of business customers"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "freemium with self-serve paid tiers",
+    "tiers": [
+      "Free ($0)",
+      "Pro ($10/user/month)",
+      "Pro+ ($39/user/month)"
+    ],
+    "price_anchoring": "Free tier lowers the barrier to entry; Pro is labeled 'Most popular'; Pro+ justified by 5x premium requests and access to top-tier models like Claude Opus 4.7."
+  },
+  "features": [
+    "AI code completion, chat, and agent mode in the IDE (VS Code, JetBrains, Neovim, etc.)",
+    "Copilot cloud agent that autonomously plans, explores, and executes background tasks",
+    "GitHub Copilot CLI for natural language terminal workflows",
+    "Copilot Spaces for team knowledge management across docs and repos",
+    "Multi-model choice including Claude, GPT, Gemini, and Codex"
+  ],
+  "differentiators": [
+    "Described as 'the world's most widely adopted AI developer tool'",
+    "Natively built into GitHub, not just an IDE plugin",
+    "Choice of leading LLMs optimized for speed, accuracy, or cost",
+    "Works across GitHub, IDE, CLI, project tools, chat apps, and custom MCP servers",
+    "Enterprise-grade governance with audit logs, agent control plane, and MCP allow lists",
+    "'The competitive advantage developers ask for by name'"
+  ],
+  "trust_signals": [
+    "GitHub Copilot Trust Center linked from page",
+    "Enterprise audit logs and single control plane for agent governance",
+    "MCP server allow lists to prevent unauthorized access",
+    "IP indemnity mentioned in FAQ for Business/Enterprise plans",
+    "No credit card required for Free tier"
+  ],
+  "navigation": [
+    "Platform",
+    "Solutions",
+    "Resources",
+    "Open Source",
+    "Enterprise",
+    "Pricing"
+  ],
+  "design_patterns": {
+    "layout": "Full-width hero with dual CTAs, scrolling customer logo marquee, feature-section rows alternating text and visual, three-column pricing table, FAQ accordion at bottom",
+    "color_scheme": "Dark/black background with white typography, GitHub green accents; high-contrast enterprise aesthetic",
+    "typography": "Clean modern sans-serif; large bold headlines contrasted with lighter body copy",
+    "visual_style": "Technical and bold with aspirational undertones; product screenshots embedded in feature sections",
+    "notable_patterns": [
+      "Auto-scrolling logo marquee for social proof",
+      "Pause/play control on hero animation",
+      "Feature cards linking to deeper docs",
+      "Side-by-side plan comparison table",
+      "'Most popular' badge on mid-tier plan"
+    ]
+  },
+  "emotional_tone": "Confident and aspirational with technical authority; 'Command your craft' frames the developer as empowered, not replaced",
+  "key_objections_addressed": [
+    "Does Copilot copy-paste code? (FAQ explicitly debunks this with explanation of probabilistic generation)",
+    "IP and copyright risk (indemnity mentioned for business plans)",
+    "Privacy and security concerns (Trust Center prominently linked)",
+    "Language and IDE compatibility (extensive list of supported platforms provided)",
+    "Cost barrier (free tier with no credit card required)"
+  ],
+  "missing_or_weak": [
+    "Pro and Pro+ plans marked 'Temporarily unavailable' \u2014 a significant conversion blocker for the two revenue-generating tiers",
+    "No direct customer testimonial pull-quotes on the page; only a headline stat and a link to a case study",
+    "No live demo or interactive product preview embedded in the page",
+    "No comparison table against competitors (Cursor, Codeium, Amazon CodeWhisperer)",
+    "FAQ is text-heavy and buried; key trust content like IP indemnity is hard to find",
+    "No explicit onboarding time-to-value claim (e.g., 'up and running in 2 minutes')"
+  ],
+  "standout_elements": [
+    "Customer logo marquee with instantly recognizable enterprise brands builds immediate credibility",
+    "Free tier with no credit card required dramatically lowers acquisition friction",
+    "Multi-model positioning is a genuine differentiator clearly communicated ('Choose from leading LLMs')",
+    "MCP server governance is a forward-looking enterprise feature competitors lack",
+    "'Command your craft' headline is confident and developer-identity-affirming without being hyperbolic",
+    "Breadth of supported IDEs and platforms is exhaustively listed, removing compatibility objections"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 8,
+    "conversion_focus": 5,
+    "differentiation": 7,
+    "overall": 7
+  },
+  "analyzed_at": "2026-04-30T23:52:22.387742"
+}

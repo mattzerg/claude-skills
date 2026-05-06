@@ -1,0 +1,227 @@
+{
+  "executive_summary": "Zergboard has a genuinely differentiated positioning concept \u2014 API-first kanban built explicitly for agent automation workflows \u2014 but executes it defensively and without the social proof infrastructure that engineering buyers require to convert. Against competitors who command trust through named customer logos (Linear: OpenAI, Ramp; Asana: Spotify, Danone), quantified ROI metrics (ClickUp: 384% Forrester-validated ROI, $3.9M revenue gains), and analyst recognition (Asana + Jira both cite Gartner Magic Quadrant Leadership), Zergboard's zero social proof and defensive headline create a credibility gap that will suppress trial adoption regardless of product quality. The core positioning idea \u2014 the middle ground between Trello's simplicity and Linear's structure, built natively for agent-driven automation \u2014 is a real and unclaimed market gap, but it is buried in a subheadline and never validated with any evidence.",
+  "competitive_landscape": {
+    "patterns_across_competitors": [
+      "Freemium 'Get started free' primary CTA appears on all 6 competitor pages \u2014 reducing signup friction is table stakes, not a differentiator; Zergboard's 'Start free' matches this minimum but does not stand out",
+      "Named enterprise customer logos above the fold on every competitor: Linear leads with OpenAI and Ramp, Asana with Spotify and Danone, Trello with IKEA and ThoughtWorks \u2014 trust is established within seconds of landing before any copy is read",
+      "AI-native or AI-powered framing in the H1 or tagline: Asana ('AI that gets work done'), Jira ('AI-powered project management'), ClickUp ('AI Agents & Workflows'), Linear ('Designed for the AI era'), monday.com ('best AI work platform') \u2014 five of six competitors lead with AI",
+      "Secondary demo CTA alongside primary signup: Asana 'View demo', Jira embedded product video in hero, ClickUp 'Get a Demo', monday.com tabbed interactive product tour \u2014 buyers want to see before they commit",
+      "Outcome-oriented headline copy rather than feature descriptions: Jira 'Focus on outcomes, not admin', Linear 'Issue tracking is dead', monday.com 'Outpace everyone', ClickUp 'Create infinite productivity' \u2014 none lead with what the product lacks",
+      "Specific quantified social proof metrics as standalone callouts: ClickUp '5M+ teams, 384% ROI', Asana '85% of Fortune 100', monday.com '60% of Fortune 500', Linear '25,000 product teams' \u2014 numbers anchor perceived scale instantly",
+      "Analyst or third-party research as external validation: Asana (Forrester Wave Leader + Gartner Magic Quadrant Leader three years running), Jira (Gartner Leader in three separate categories), ClickUp (Forrester Total Economic Impact report with specific dollar ROI)"
+    ],
+    "best_in_class": {
+      "element": "Quantified ROI from third-party research used as social proof",
+      "source": "ClickUp",
+      "description": "ClickUp commissions and prominently features a Forrester Total Economic Impact report citing 384% ROI, $3.9M in revenue gains, 92,400 hours saved, and payback under 6 months. This converts abstract value claims into auditable business outcomes that procurement and finance can evaluate. It also means ClickUp's social proof cannot be dismissed as cherry-picked testimonials \u2014 it carries the weight of an independent methodology. No other competitor in this set matches the specificity or third-party credibility of this proof point."
+    },
+    "market_gaps": [
+      "No competitor explicitly targets AI agents as the primary buyer persona or runtime environment \u2014 all frame AI as a productivity layer for human teams, not as a first-class autonomous actor that creates, reads, updates, and deletes project state",
+      "The 'multi-tenant project management API for SaaS builders embedding kanban into their own products' use case is completely unaddressed by any competitor \u2014 Zergboard's multi-tenant architecture is a unique go-to-market angle no one is owning",
+      "The engineering platform team and developer infrastructure buyer is underserved \u2014 all competitors target end users (marketers, PMs, ops teams); no one is selling directly to the team building the tooling layer itself",
+      "Terminal and IDE-native project management is entirely unaddressed \u2014 every competitor is a browser-first SaaS with no CLI positioning, leaving the ZTC and ZDE integration story unclaimed",
+      "Agent-to-agent workflow coordination, where project state is machine-readable and machine-writable as the core value proposition rather than a bolted-on feature, is a completely open category claim"
+    ]
+  },
+  "zerg_assessment": {
+    "strengths": [
+      "The positioning triangle \u2014 Trello-simple + Linear-structured + API-first for agents \u2014 is a coherent and genuinely differentiated concept with real market whitespace between two named competitors",
+      "The agent flow callout ('7 tickets automatically created from QA failures') concretizes the agent use case better than any competitor on the market does \u2014 it is a specific, believable scenario that makes the value tangible",
+      "Multi-tenant workspace isolation is named explicitly and is architecturally unique versus competitors who retrofit multi-org support on single-tenant foundations",
+      "FAQ section directly addresses key conversion objections ('Can AI agents use this?', 'Can I self-host?') which reduces abandonment and signals product maturity",
+      "Pricing anchor progression (Free \u2192 $12 \u2192 $39 \u2192 $149) is logical and the tier names are clear, with the annual billing nudge following SaaS best practices"
+    ],
+    "gaps": [
+      "Zero social proof of any kind \u2014 no customer logos, no testimonials, no user counts, no press mentions \u2014 while every single competitor has at least three named enterprise customers above the fold",
+      "No secondary demo CTA \u2014 all major competitors provide a 'See it in action' path for buyers who need product validation before signup; Zergboard sends them to a pricing table instead",
+      "No quantified outcome metrics anywhere \u2014 competitors anchor with '384% ROI', '85% Fortune 100', '25,000 teams'; Zergboard offers no equivalent credibility anchor",
+      "Headline leads with what the product lacks ('without enterprise bloat') rather than what it enables \u2014 a defensive posture that signals smallness to enterprise evaluators",
+      "No video or animated product demo \u2014 Jira, ClickUp, and monday.com all use motion to demonstrate value before the visitor reads a single word of copy",
+      "Agent-first differentiation is buried as a subheadline qualifier ('so your agent flows can...') rather than the primary positioning claim in the headline hierarchy",
+      "No analyst recognition, press coverage, or third-party validation of any kind \u2014 trust has no external anchor",
+      "The Zerg AI platform story (ZDE, ZTC, Zergboard, Zerg Cloud) is completely absent \u2014 Zergboard appears as a standalone $12 kanban tool rather than infrastructure within a premium AI engineering platform, undermining pricing justification"
+    ],
+    "positioning_clarity": "The core value proposition is stated but not proven. 'Trello-simple interface with Linear-level structure' is a clear conceptual frame, but without product screenshots demonstrating this parity, customer validation confirming it, or a demo path to verify it, the claim sits unanchored. The agent automation differentiation \u2014 Zergboard's strongest and most defensible angle \u2014 is secondary in the hierarchy when it should lead. Buyers in this category (engineering platform teams, agent developers) are skeptical by default; positioning claims without evidence convert poorly with technically sophisticated audiences.",
+    "conversion_bottlenecks": [
+      "Zero social proof means any visitor's first instinct when asked to 'Start free' is 'who else is using this?' \u2014 with no answer anywhere on the page, abandonment is the likely outcome for buyer-intent traffic",
+      "No demo path means high-intent visitors who are evaluating but not ready to commit have no intermediate conversion step \u2014 they leave rather than entering a nurture pipeline",
+      "The defensive headline ('without enterprise bloat') signals immaturity and smallness to enterprise buyers who associate 'enterprise features' with compliance, security, and scale \u2014 not bloat",
+      "Pricing table appears before social proof, feature demonstrations, or testimonials have been established \u2014 visitors encounter $149/seat before they've seen a single customer name or validated use case",
+      "No platform narrative means buyers don't understand the broader Zerg AI ecosystem value, making Zergboard look like a $12 Trello clone rather than the project-state layer of an AI-native engineering stack"
+    ]
+  },
+  "recommendations": [
+    {
+      "priority": 1,
+      "category": "social_proof",
+      "title": "Add named customer logos and at least one testimonial above the fold",
+      "current_state": "Zero social proof of any kind \u2014 no logos, no testimonials, no user counts, no press coverage anywhere on the page",
+      "recommendation": "Secure 3-5 design partner companies (even pre-revenue beta users) to provide a company logo and one-sentence testimonial. Place a logo bar immediately below the hero. Feature one named testimonial with title and company in the first scroll section. If named customers are not yet available, use 'Used by 200+ engineering teams' or 'Built with engineers at [Company A] and [Company B]' with explicit permission.",
+      "rationale": "Every competitor has named logos above the fold: Linear leads with OpenAI and Ramp, Asana with Spotify and Danone, Trello with IKEA and ThoughtWorks, ClickUp with Fortune 500 claims. SaaS conversion research consistently shows social proof is the highest-impact trust signal. Zergboard is asking visitors to trust their engineering workflows to a platform with zero external validation \u2014 a blocker that no copy optimization can overcome.",
+      "effort": "medium",
+      "impact": "high"
+    },
+    {
+      "priority": 2,
+      "category": "headline",
+      "title": "Rewrite the H1 from defensive positioning to agent-native aspirational claim",
+      "current_state": "'Project boards without enterprise bloat' \u2014 leads with what the product lacks; does not mention AI agents, automation, or engineering teams",
+      "recommendation": "Rewrite to lead with the agent-human collaboration outcome: 'The project board your agents and engineers share' or 'Project management built for autonomous engineering teams.' Make agent-native the H1 claim, not a subheadline qualifier. The product's strongest differentiator should occupy the highest-attention real estate on the page.",
+      "rationale": "Five of six competitors lead with AI in their primary headline or tagline. Linear's 'The product development system for teams and agents' is the closest comp \u2014 Zergboard should stake a more specific and technically credible version of that claim. 'Without enterprise bloat' is a fear-based frame that (1) defines the product relative to a competitor's weakness rather than its own strength, and (2) signals that the product is small and early rather than purposefully minimal.",
+      "effort": "low",
+      "impact": "high"
+    },
+    {
+      "priority": 3,
+      "category": "cta",
+      "title": "Replace the 'View pricing' secondary CTA with a demo or walkthrough path",
+      "current_state": "Two CTAs: 'Start free' (primary) and 'View pricing' (secondary) \u2014 the secondary CTA moves visitors to a pricing table before they have seen product value demonstrated",
+      "recommendation": "Replace 'View pricing' with 'Watch it in action' linking to a 2-3 minute Loom screen recording or an animated GIF sequence showing an agent creating and closing a card via API. Move the pricing link to the nav. This creates an intermediate conversion step for visitors who are evaluating but not yet ready to commit.",
+      "rationale": "Asana, ClickUp, and monday.com all pair their primary CTA with a 'View demo' or 'Get a Demo' secondary CTA. Jira embeds a product video directly in the hero. This pattern is universal because it captures high-intent visitors who want to evaluate before signing up. Sending curious visitors to pricing before they understand the product value guarantees early abandonment \u2014 they see $149 before they understand why it's worth $12.",
+      "effort": "low",
+      "impact": "high"
+    },
+    {
+      "priority": 4,
+      "category": "copy",
+      "title": "Elevate the agent automation workflow to first-class hero positioning",
+      "current_state": "Agent capability appears in subheadline as an API feature benefit ('so your agent flows can create, update, and resolve work automatically') \u2014 framed as a technical specification, not the primary use case",
+      "recommendation": "Lead the hero narrative with the agent automation workflow as the primary value story. Show a concrete before/after scenario: 'Before: engineer manually triages every failed test into a ticket. After: your QA agent creates, labels, assigns, and closes them automatically.' The existing '7 tickets from QA failures' callout is the most compelling content on the page \u2014 it needs to anchor the hero, not live in a demo snapshot below the fold.",
+      "rationale": "Linear is the only competitor approaching this narrative with 'delegate issues end-to-end to agents' and 'AI agents as first-class collaborators' \u2014 but even Linear frames humans as primary actors. The fully autonomous agent workflow, where Zergboard is the project-state layer for a machine-driven engineering system, is entirely unclaimed in the market. Zergboard's architectural choices (API-first, stable endpoints, webhooks) are exactly the right foundation for this claim.",
+      "effort": "medium",
+      "impact": "high"
+    },
+    {
+      "priority": 5,
+      "category": "structure",
+      "title": "Add the Zerg AI platform ecosystem narrative to the Zergboard page",
+      "current_state": "Zergboard is positioned as a standalone kanban tool with no mention of ZDE (web IDE), ZTC (terminal), or Zerg Cloud \u2014 the platform context that would justify premium pricing and higher switching cost",
+      "recommendation": "Add a 'Part of the Zerg AI platform' section showing ZDE + ZTC + Zergboard + Zerg Cloud as an integrated engineering OS. Position Zergboard as the project-state layer that connects agent work across the full stack. Include a simple architecture diagram or icon grid. This transforms the value narrative from '$12/seat kanban' to 'project intelligence infrastructure for an AI-native engineering platform.'",
+      "rationale": "No competitor offers an integrated IDE + terminal + project management + cloud infrastructure stack targeting engineering teams \u2014 this is Zerg AI's deepest competitive moat. Showing the ecosystem converts Zergboard from a tool into infrastructure, raises perceived switching cost, and justifies premium pricing. Evaluators who discover the platform context mid-evaluation are more likely to champion internal adoption rather than choosing a single-product alternative.",
+      "effort": "medium",
+      "impact": "high"
+    },
+    {
+      "priority": 6,
+      "category": "trust",
+      "title": "Add a quantified metrics bar between the hero and features section",
+      "current_state": "No metrics, no user counts, no throughput numbers, no infrastructure signals of any kind anywhere on the page",
+      "recommendation": "Add a horizontal metrics strip with 3-4 proof points. Use real metrics if available (workspaces created, API calls processed, cards automated per day). If real user metrics are not yet available, use architectural and infrastructure claims: '99.9% API uptime SLA', 'Multi-tenant by design \u2014 workspace-isolated Postgres', 'REST API with zero breaking changes since launch', 'Open API \u2014 no proprietary lock-in.'",
+      "rationale": "ClickUp leads with '5M+ teams', '3M+ tasks automated by Agents', '30,000+ hours saved per year.' Asana claims '85% of Fortune 100.' Linear cites '25,000 product teams.' These numbers create instant scale credibility before a visitor reads any feature copy. For developer audiences, infrastructure metrics (uptime, API stability, response time SLA) are as credible as user counts \u2014 sometimes more so.",
+      "effort": "low",
+      "impact": "medium"
+    },
+    {
+      "priority": 7,
+      "category": "structure",
+      "title": "Add a direct competitive comparison section positioning against Trello and Linear",
+      "current_state": "Competitors are named only in the subheadline ('Trello-simple interface with Linear-level structure') \u2014 there is no dedicated section developing or winning the comparison",
+      "recommendation": "Create a three-column comparison section or alternating feature callout: 'Trello gives you simplicity. Linear gives you structure. Neither was built for agents.' Then show how Zergboard delivers all three. Follow Linear's 'Issue tracking is dead' playbook \u2014 reframe the category rather than attack the competitor. This converts visitors who arrive having already evaluated Trello or Linear.",
+      "rationale": "The subheadline already names Trello and Linear, which signals to visitors that Zergboard considers these its primary reference points. Naming them without winning the comparison implicitly endorses them as alternatives. A dedicated section converts the significant portion of traffic that is actively evaluating all three \u2014 which the subheadline itself attracts.",
+      "effort": "medium",
+      "impact": "medium"
+    },
+    {
+      "priority": 8,
+      "category": "trust",
+      "title": "Add security, reliability, and compliance signals targeting engineering platform buyers",
+      "current_state": "No uptime SLA, no security certifications, no data isolation documentation, no compliance mentions, no status page link anywhere on the page",
+      "recommendation": "Add a trust section or footer band with: API uptime SLA, multi-tenant data isolation model (even a sentence like 'Every workspace is PostgreSQL-isolated \u2014 no shared tables between organizations'), SOC 2 Type II status or in-progress roadmap, webhook delivery guarantees, and a link to a public status page. Even architectural transparency is a meaningful trust signal for this audience.",
+      "rationale": "Engineering platform teams evaluating any API-dependent, multi-tenant tool will assess infrastructure reliability and data security before adoption \u2014 particularly when the tool will receive data from autonomous agents operating on production systems. monday.com has a dedicated 'AI Trust Center'; Asana offers 'Asana Gov' with FedRAMP compliance. Zergboard's silence on security in a multi-tenant product is a purchase blocker for exactly the enterprise buyers the Scale tier at $149/seat is built to capture.",
+      "effort": "medium",
+      "impact": "medium"
+    },
+    {
+      "priority": 9,
+      "category": "design",
+      "title": "Add an animated product demo showing agent API interaction in or near the hero",
+      "current_state": "The page describes 'a live work snapshot with real-time card counts as social proof substitute' \u2014 static card counts are not the same as showing the product working in real time",
+      "recommendation": "Create a 30-60 second screen recording or looping animated GIF showing: an agent POST request to the API \u2192 card appearing on the board \u2192 status updating automatically \u2192 webhook firing to a downstream system. Embed in or immediately below the hero. This is the single highest-converting asset for technically sophisticated evaluators who want to verify the API actually works before investing time in a trial.",
+      "rationale": "Jira has a product video in the hero. ClickUp has a full animated demo sequence. monday.com has a tabbed interactive product tour. Trello shows board animation. The pattern is universal because product demos answer 'does this actually work?' faster than any copy. For developer audiences evaluating an API-first tool, seeing the agent automation flow live is directly correlated with conversion intent and time-to-signup.",
+      "effort": "high",
+      "impact": "high"
+    },
+    {
+      "priority": 10,
+      "category": "pricing",
+      "title": "Move the pricing table lower in the page and add ROI framing above it",
+      "current_state": "Pricing table appears early in the page scroll before social proof, feature demonstrations, or customer validation have been established \u2014 visitors see $149/seat before they've seen a single use case",
+      "recommendation": "Move pricing below the social proof section, features section, and at least one testimonial. Add a value-anchoring statement above the pricing table: 'Engineering teams using agent-driven workflows close surfaced issues significantly faster than manual triaging \u2014 with no engineering overhead.' Lead with outcome, close with cost.",
+      "rationale": "ClickUp leads with Forrester's 384% ROI and $3.9M revenue gains before showing any pricing. monday.com leads with '60% of Fortune 500 trust us' before pricing is visible. Showing pricing before establishing value trains visitors to evaluate on price rather than outcome \u2014 which always favors competitors with more brand recognition at similar price points. The Scale tier at $149/seat especially requires value justification that the current page does not provide before the number appears.",
+      "effort": "low",
+      "impact": "medium"
+    }
+  ],
+  "quick_wins": [
+    "Replace the 'View pricing' secondary hero CTA with 'Watch it in action' linking to a Loom screen recording \u2014 a 1-2 hour investment that immediately creates a mid-intent conversion path for evaluators who would otherwise leave",
+    "Rewrite the H1 from 'Project boards without enterprise bloat' to 'The project board your agents and engineers share' \u2014 a 30-minute copy change that shifts tone from defensive to aspirational and explicitly names the agent use case",
+    "Add a horizontal metrics bar between hero and features: '99.9% API uptime | Multi-tenant workspace isolation | REST API with zero breaking changes | Open API \u2014 no proprietary lock-in' \u2014 these architectural claims are meaningful trust signals for developer audiences and require no customer data to publish",
+    "Secure one design partner testimonial (name, title, company) and place it above the features section \u2014 even a single named testimonial is infinitely more credible than zero and takes hours to collect if you already have beta users",
+    "Add a 'Part of the Zerg AI platform' callout or section with icons for ZDE, ZTC, Zergboard, and Zerg Cloud \u2014 shifts Zergboard's perceived value from standalone $12 kanban tool to infrastructure within a premium AI engineering platform"
+  ],
+  "copy_rewrites": [
+    {
+      "element": "H1 / Tagline",
+      "current": "Project boards without enterprise bloat",
+      "suggested": "The project board your agents and engineers share",
+      "why": "Shifts from defensive (leading with absence of a negative) to aspirational (leading with a specific capability). Explicitly names the agent-human collaboration use case that no competitor owns. Mirrors Linear's 'The product development system for teams and agents' but stakes a more specific, technically grounded claim that speaks directly to the autonomous engineering team buyer."
+    },
+    {
+      "element": "Subheadline",
+      "current": "Zergboard gives you a Trello-simple interface with Linear-level structure, multi-tenant workspaces, and an API-first core so your agent flows can create, update, and resolve work automatically.",
+      "suggested": "Autonomous engineering teams need project infrastructure that works while they sleep. Zergboard is API-first by design \u2014 agents create tickets, update statuses, and close work automatically, while engineers get a clean Kanban interface without the Jira overhead.",
+      "why": "Opens with the buyer's situation rather than the product's feature list. Names the concrete outcome (agents work autonomously), positions against a named competitor (Jira overhead) without defensive framing, and speaks to the aspiration of the buyer identity ('autonomous engineering team') rather than listing capabilities."
+    },
+    {
+      "element": "Primary CTA",
+      "current": "Start free",
+      "suggested": "Start building \u2014 it's free",
+      "why": "'Start building' speaks directly to the developer and engineering audience's professional identity as builders. 'Start free' is generic and appears verbatim on Trello, ClickUp, and nearly every SaaS competitor. The identity alignment in 'building' is a small word choice with meaningful persona resonance."
+    },
+    {
+      "element": "Secondary CTA",
+      "current": "View pricing",
+      "suggested": "See it in action",
+      "why": "'View pricing' as a secondary CTA sends evaluators to a cost conversation before value has been established. 'See it in action' captures high-intent visitors at an intermediate trust level \u2014 they are interested but not committed. This is the dual-CTA structure used by Asana ('View demo'), ClickUp ('Get a Demo'), and monday.com (interactive tabbed tour)."
+    },
+    {
+      "element": "API feature callout",
+      "current": "API-first architecture for automation, bots, and agents",
+      "suggested": "Your agents are first-class citizens. Every action in Zergboard \u2014 create, move, close, comment \u2014 is a stable REST endpoint. Build automation that never breaks because the API was designed before the UI.",
+      "why": "The phrase 'API was designed before the UI' signals true API-first architecture to a developer audience who have been burned by tools that claim API support but deliver an afterthought. 'First-class citizens' directly addresses the buyer's core concern: will the API be maintained and stable, or de-prioritized when the product evolves?"
+    },
+    {
+      "element": "Value anchor above pricing table",
+      "current": "[absent \u2014 no value framing appears before the pricing table]",
+      "suggested": "Engineering teams running agent-driven workflows resolve issues faster and with less overhead than teams triaging manually. Zergboard is the project layer that makes it possible \u2014 built for machines and humans alike, without the overhead of tools designed for managers, not engineers.",
+      "why": "Provides an outcome anchor before cost appears, following ClickUp's pattern of establishing ROI value before surfacing pricing. 'Built for managers, not engineers' sharpens the differentiation against Jira, Asana, and monday.com in a single phrase that will resonate with the technical buyer persona."
+    }
+  ],
+  "new_sections_to_add": [
+    {
+      "section": "Customer Logo Bar and Featured Testimonial",
+      "rationale": "All six competitors use named customer logos as the first trust signal after the hero. Zergboard has zero. Visitors immediately ask 'who else is using this?' and find no answer \u2014 creating an abandonment inflection point that no copy optimization can overcome. This is the highest-ROI structural addition to the page.",
+      "content_guidance": "3-5 company logos from design partners, beta users, or early adopters. Below the logos: one testimonial block with a full quote (2-3 sentences), person name, title, and company name. Target testimonials that speak specifically to agent automation, API reliability, or the multi-tenant use case \u2014 not generic product praise. If no public-facing customers are available yet, use 'Trusted by engineering teams at [X] companies building AI-native products' with a real count, even if small."
+    },
+    {
+      "section": "How Agents Use Zergboard \u2014 Automation Workflow Walkthrough",
+      "rationale": "No competitor has a section showing autonomous AI agent API interactions as the primary narrative. Linear shows 'delegate issues to agents' but frames it as human-initiated. ClickUp shows 'AI Super Agents' but generically. Zergboard can own the 'here is the actual API call, here is the resulting board state, here is the webhook payload' walkthrough \u2014 content that makes engineering leads and developer advocates share and bookmark the page.",
+      "content_guidance": "Show a three-step agent workflow with actual API endpoint syntax alongside the resulting board state: (1) Agent detects test failure \u2192 POST /v1/cards with context payload shown as a code block, (2) Card appears on board, auto-labeled and assigned, shown as a product screenshot, (3) Agent closes card when fix is merged \u2192 PATCH /v1/cards/{id} with status update. Include real HTTP verb and endpoint structure. End with a callout: 'Every endpoint is versioned, documented, and stable \u2014 your agent workflows won't break on deployment.'"
+    },
+    {
+      "section": "The Zerg AI Platform \u2014 Where Zergboard Fits",
+      "rationale": "Zergboard in isolation is a $12/seat kanban tool competing against Trello's brand recognition and Linear's category definition. Zergboard as the project-state layer of an AI-native engineering platform (ZDE + ZTC + Zergboard + Zerg Cloud) is category-defining infrastructure that commands premium pricing and a switching cost conversation that no single-product competitor can match.",
+      "content_guidance": "Show the four Zerg AI products as an integrated engineering stack with Zergboard positioned as the coordination layer: ZDE (where agents and engineers write code) \u2192 ZTC (where agents execute work in the terminal) \u2192 Zergboard (where all work is tracked, assigned, and resolved) \u2192 Zerg Cloud (where it all runs). Use a simple architecture diagram or four-icon grid. Tagline: 'Zergboard is where your engineering stack keeps score \u2014 whether the work is done by humans or agents.' Include links to ZDE, ZTC, and Zerg Cloud product pages."
+    },
+    {
+      "section": "Zergboard vs. Trello vs. Linear \u2014 Built for a Different Era",
+      "rationale": "The subheadline already names Trello and Linear as reference points, which attracts visitors who are actively evaluating these alternatives. Naming them without winning the comparison implicitly validates them. A dedicated comparison section converts the high-intent traffic the subheadline itself generates. Follow Linear's 'Issue tracking is dead' playbook: reframe the category rather than attack the competitor directly.",
+      "content_guidance": "Three-column comparison or alternating feature callout. Trello: simple and visual, but no API depth for agent automation, no multi-tenant isolation, no structure for engineering workflows. Linear: structured and engineering-native, but human-centric by design, no multi-tenant architecture, expensive for teams that want API-first automation without the full Linear complexity. Zergboard: Trello's simplicity, Linear's structure, multi-tenant by default, API-first before the UI \u2014 built for the era when your team includes agents. Close with 'Start free \u2014 no credit card required.'"
+    },
+    {
+      "section": "Security and Reliability for Engineering Platform Teams",
+      "rationale": "Engineering platform teams evaluating any API-dependent, multi-tenant tool will assess security posture before adoption \u2014 particularly when the tool will receive data from autonomous agents operating on production systems. monday.com has a dedicated 'AI Trust Center'; Asana offers 'Asana Gov' with FedRAMP compliance. Zergboard's silence on security and reliability in a multi-tenant product is a direct purchase blocker for the enterprise buyers the Scale tier at $149/seat is priced to capture.",
+      "content_guidance": "Uptime SLA (e.g., 99.9% with a link to public status page), multi-tenant data isolation model ('Each workspace runs in a PostgreSQL-isolated schema \u2014 no shared tables between organizations'), SOC 2 Type II certification status or roadmap with expected timeline, API rate limits and quotas documented, webhook delivery guarantees (retry logic, failure notifications), and a link to the API documentation. Even architectural transparency signals seriousness to developer audiences who know what workspace isolation means."
+    }
+  ]
+}

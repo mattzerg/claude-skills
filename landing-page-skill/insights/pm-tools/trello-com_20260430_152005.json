@@ -1,0 +1,122 @@
+{
+  "url": "https://trello.com",
+  "company": "Trello (Atlassian)",
+  "tagline": "Capture, organize, and tackle your to-dos from anywhere.",
+  "subheadline": "Escape the clutter and chaos\u2014unleash your productivity with Trello.",
+  "value_proposition": "A visual task and project management tool that helps individuals and teams capture, organize, and act on work from any device.",
+  "target_audience": "Teams of 2\u20132,000 across marketing, engineering, design, product, and remote work; also individuals seeking personal productivity",
+  "primary_cta": {
+    "text": "Sign up - it's free!",
+    "placement": "hero"
+  },
+  "secondary_cta": {
+    "text": "Get Trello for free",
+    "placement": "nav"
+  },
+  "social_proof": {
+    "logos": [
+      "Women Who Code",
+      "ThoughtWorks",
+      "IKEA/PTC"
+    ],
+    "testimonials": [
+      "Great for simplifying complex processes. As a manager, I can chunk [processes] down into bite-sized pieces for my team and then delegate that out, but still keep a bird's-eye view. \u2014 Joey Rosenberg, Global Leadership Director at Women Who Code",
+      "Whether someone is in the office, working from home, or working on-site with a client, everyone can share context and information through Trello. \u2014 Sumeet Moghe, Product Manager at ThoughtWorks",
+      "We used Trello to provide clarity on steps, requirements, and procedures. This was exceptional when communicating with teams that had deep cultural and language differences. \u2014 Jefferson Scomacao, Development Manager at IKEA/PTC"
+    ],
+    "metrics": [
+      "75% of organizations report that Trello delivers value to their business within 30 days (TechValidate Survey)",
+      "81% of customers chose Trello for its ease of use (TechValidate Survey)",
+      "74% of customers say Trello has improved communication with their co-workers and teams (TechValidate Survey)",
+      "Millions of users globally"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "freemium",
+    "tiers": [
+      "Free",
+      "Standard",
+      "Premium",
+      "Enterprise"
+    ],
+    "price_anchoring": "Free plan prominently featured as default entry point; paid tiers positioned by team size and feature depth (Standard for scaling teams, Premium for up to 100 users with multiple views, Enterprise for large org administration)"
+  },
+  "features": [
+    "Inbox: Capture to-dos from email (forward to Trello), Slack, and Microsoft Teams with AI-generated summaries",
+    "Boards: Visual kanban-style task tracking from to-do to done",
+    "Planner: Calendar sync with drag-and-drop time allocation for focused work",
+    "Automation: No-code built-in automation on every board",
+    "Card Mirroring: View to-dos from multiple boards in one place"
+  ],
+  "differentiators": [
+    "AI features now available for all Premium and Enterprise tiers",
+    "No-code automation is built into every Trello board \u2014 no add-on required",
+    "Email-to-Trello: forward emails directly to Inbox; AI transforms them into organized to-dos",
+    "Native integrations with Slack and Microsoft Teams that push messages directly into Trello Inbox",
+    "Card mirroring allows to-dos to appear across multiple boards simultaneously"
+  ],
+  "trust_signals": [
+    "Backed by Atlassian (enterprise-grade parent brand)",
+    "TechValidate third-party survey data cited for all key metrics",
+    "Testimonials attributed to named individuals with titles and organizations",
+    "Atlassian Privacy Policy referenced at signup",
+    "GDPR/privacy compliance language in cookie consent flow"
+  ],
+  "navigation": [
+    "Features",
+    "Solutions",
+    "Plans",
+    "Pricing",
+    "Resources",
+    "Log in",
+    "Get Trello for free"
+  ],
+  "design_patterns": {
+    "layout": "Top nav \u2192 hero with email signup \u2192 feature showcase (Inbox/Boards/Planner) \u2192 use-case section \u2192 integrations/automation highlight \u2192 social proof carousel \u2192 pricing tier overview \u2192 final CTA",
+    "color_scheme": "Trello blue as primary brand color; white backgrounds with clean card-based sections",
+    "typography": "Sans-serif, clean and modern; headline-heavy with short punchy copy",
+    "visual_style": "Friendly and minimal; approachable rather than technical",
+    "notable_patterns": [
+      "Inline email signup in hero (no modal)",
+      "Feature tabs (Inbox/Boards/Planner) with likely animated product screenshots",
+      "Rotating testimonial carousel with TechValidate stat interleaved",
+      "Use-case cards for team verticals (marketing, engineering, design, etc.)",
+      "Video CTA in hero ('Watch video') as soft secondary engagement"
+    ]
+  },
+  "emotional_tone": "Friendly and aspirational with a productivity empowerment angle; accessible rather than enterprise-serious",
+  "key_objections_addressed": [
+    "Too complex for small teams: addressed with 'It's simple \u2014 sign-up, create a board, and you're off!'",
+    "Cost concerns: Free plan prominently featured throughout",
+    "Works for my team size: '...whether you're a team of 2 or 2,000'",
+    "Remote/distributed team friction: dedicated remote team use case and testimonial from ThoughtWorks",
+    "Cross-cultural/language barriers: IKEA/PTC testimonial directly addresses this",
+    "Time-to-value: '75% of organizations report value within 30 days' stat"
+  ],
+  "missing_or_weak": [
+    "No named press or media logos (TechCrunch, Forbes, G2, etc.) \u2014 social proof relies entirely on TechValidate surveys and three testimonials",
+    "No live user count or growth signal (e.g. '10 million teams use Trello')",
+    "No security/compliance badges visible (SOC 2, GDPR, ISO) despite enterprise tier offering",
+    "Pricing page not shown inline \u2014 users must navigate away to see actual prices, adding friction",
+    "AI features announced via banner but not deeply explained or positioned as a differentiator on the main page",
+    "No comparison table vs. competitors (Asana, Monday, Notion, ClickUp) \u2014 differentiation is implicit not explicit",
+    "Video CTA present but no thumbnail/preview to incentivize clicks",
+    "Feature depth for power users (automations, views, APIs) undersold on this page"
+  ],
+  "standout_elements": [
+    "TechValidate survey stats are unusually specific and credible (75%, 81%, 74%) \u2014 stronger than generic claim copy",
+    "Email-to-Trello Inbox flow is a genuinely novel feature clearly explained with concrete mechanism",
+    "Testimonials span very different industries and team contexts (nonprofit leadership, enterprise consulting, global retail/manufacturing) \u2014 broad applicability signaling",
+    "Free plan is front-and-center throughout without feeling desperate \u2014 trust-building rather than pressure-driven",
+    "Team vertical segmentation (marketing, engineering, design, startups, remote) efficiently qualifies diverse visitors"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 7,
+    "conversion_focus": 8,
+    "differentiation": 5,
+    "overall": 7
+  },
+  "analyzed_at": "2026-04-30T15:20:05.981494"
+}

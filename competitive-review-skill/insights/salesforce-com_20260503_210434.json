@@ -1,0 +1,833 @@
+{
+  "name": "Salesforce Service Cloud",
+  "url": "https://www.salesforce.com/products/service-cloud",
+  "domain": "salesforce.com",
+  "scanned_at": "2026-05-03T21:01:47.961656",
+  "sources": {
+    "landing": {
+      "url": "https://www.salesforce.com/products/service-cloud",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.salesforce.com/products/service-cloud\" on this server.\nReference #18.ecf12417.1777867308.84e42587\nhttps://errors.edgesuite.net/18.ecf12417.1777867308.84e42587",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.salesforce.com/editions-pricing/service-cloud/",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.salesforce.com/editions-pricing/service-cloud/\" on this server.\nReference #18.ecf12417.1777867320.84e594e1\nhttps://errors.edgesuite.net/18.ecf12417.1777867320.84e594e1",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.salesforce_release_notes.htm",
+      "title": "Salesforce Summer \u201926 Release Notes",
+      "text": "Salesforce Summer \u201926 Release Notes\nLoading\n\u00d7\nSorry to interrupt\nCSS Error\nRefresh\nSelect An Org\nOpen Main Menu\nClose\nModal Body...\nAgentforce is temporarily unavailable. Please try again later or visit Help topics below. For additional support, please contact\nyour local support number\nfor assistance. Thank you!\nSalesforce now sends email only from verified domains.\nRead More\nClose\nSalesforce Summer \u201926 Release Notes\nSummer \u201926\nLoading\nPDF\nTable of Contents\nClose\nClose\nSearch\nSearch\nFilter by (0)\nAdd\nSelect Filters\nProduct Area\nFeature Impact\nEdition\nExperience\nClear All\nDone\nNo results\nHere are some search tips\nCheck the spelling of your keywords.\nUse more general search terms.\nSelect fewer filters to broaden your search.\nSearch all of Salesforce Help\nSearch all of Salesforce Help\nSalesforce Summer \u201926 Release Notes\nMonthly Release Notes\nRelease Note Changes\nHow and When Do Features Become Available?\nSalesforce Overall\nGeneral Enhancements\nRotate Your Certificates More Frequently\nValidate Domain Information More Often\nUpdate Your mTLS Certificates\nGet Ready for IPv6\nFind and Deploy Solutions Easily with Category Tags and Guided...\nChatter Is Turned Off by Default in New Orgs\nEnable Accessibility Enhancements for Page Headers and Modal Windows...\nEnable Accessibility Enhancements for Date Pickers, Popovers, Bottom...\nEnable Accessibility Enhancements for Cards, Docked Containers, Menu...\nEnable Accessibility Enhancements for To Do Lists and Lightning Dual...\nArchive App\nMonitor Archive Progress with New Activity Statuses\nManage Data More Efficiently with New Archive App Settings\nRename Archive App Features to Align with Salesforce Standards\nPrepare for Retirement of Own Archive Managed Package and Legacy...\nSalesforce Foundations\nPrioritize Your Top Leads with People Scoring in Foundations\nTurn Web Traffic into Actionable Insights with Web Tracking\nSalesforce Data Pipelines\nIncrease Performance and Reliability with the Salesforce Data...\nExport Recipe Schedules to Your External Calendar for Easy Tracking\nSimplify Recipe Backup with Direct Upload and Download in Data Manager\nImprove Snapshot Data Recipe Performance with Optimized Upsert and...\nOutput Your Salesforce Data Pipelines Data to Azure Data Lake...\nSalesforce Scheduler\nShow the Category-Specific Position on Waitlist Participant Cards\nHelp Users Resolve Appointment Errors Faster with Custom Validation...\nKeep Custom Lobby Components in Sync with Territory Selections\nSalesforce My Trust Center\nStay Up to Date with the Salesforce My Trust Center (Generally...\nRelease Updates\nAgentforce\nAgentforce Platform Features by Month\nAgentforce\nRoute Agentforce Voice Calls Using SIP\nBuild an Agent Script-Powered Agent End to End with the Updated...\nIncrease Trust with Citations in Bring Your Own Channel\nAnalytics\nTableau Next\nTableau Next Features Released by Month\nData\nAnalyze Data Lake Objects in Tableau Next\nTableau Next Highlights\nReports and Dashboards\nEnsure Consistent Branding Across Your Reports and Dashboards with...\nEmbed Custom Lightning Web Components in Dashboards for Interactive...\nExpand Reporting Capabilities with More Row-Level Formulas\nSecure Excel Exports by Disabling Formulas\nData 360 Reports and Dashboards\nAnalyze Data Trends with Calculated Insight Object History (Beta)\nPerform Faster Drill-Downs with Dimensional Hierarchies (Beta)\nGain Accurate Financial Insights with Currency Reporting in Data 360...\nCRM Analytics\nAnalytics Experience and Visualizations\nEmbed Data 360 Live Data Widgets in Experience Cloud Sites\nImprove Dashboard Responsiveness with Result Reuse for Data 360 Live...\nBoost Query Performance and Data Efficiency with Semi-Joins and...\nFilter Dashboards with Multiple Text Values Simultaneously\nPublish Large Dashboard Layouts with Full-Width Printing\nManage Column Total Visibility in Your Compare Table\nExport CRM Analytics Dashboards as Documents with Custom Page Sizes...\nSubscribe to Dashboard Widgets in Experience Cloud Sites (Beta)\nData Integration\nIncrease Performance and Reliability with the CRM Analytics Recipe...\nExport Recipe Schedules to Your External Calendar for Easy Tracking\nSimplify Recipe Backup with Direct Upload and Download in Data Manager\nStreamline Your Data Prep by Writing to Multiple Data 360 Outputs in...\nImprove Snapshot Data Recipe Performance with Optimized Upsert and...\nImprove Write to Data 360 Output Performance with Optimized Append,...\nOutput Your CRM Analytics Data to Azure Data Lake (Generally...\nTableau\nAccessibility Enhancements in Analytics\nAutomation\nAutomation Features Released by Month\nFlow Builder\nFlow Builder Updates\nImprove Performance with Batching for Scheduled Flows\nAvoid Manually Fixing Email Template References After Deploying...\nCollapse Fault Paths to Focus on Your Main Flow\nUse Streaming DMO Activations, More Flow Elements, and Debug with...\nFind and Select Resources More Easily in the Add Prompt Instructions...\nImproved Resource Selection in Recommendation Strategy Flow Elements\nUse Date Operators in Decision Logic\nScreen Flow Updates\nUpdate Screen Flows with Natural Language Prompts\nView Related Record Names and Open the Related Record from Data...\nCustomize Screen Flows with Styling Overrides in More Components\nAdd Static Resource Images to Display Text Without Leaving Flow...\nSave Screen Space with Radio Button Groups in Screen Flows\nExpose the Flow Runtime Version to Custom Screen Components\nFlow Marketing Cloud\nPersonalize Messaging with Integrated Data by Using Clicks, Not Code\nView and Restore Flow Version Edit History\nUse Flow Elements and Features Across All Marketing Flow Types\nCoordinate Complex Journeys Across Flows\nRemove Contacts Automatically from an Active Engagement Flow\nPersonalize Flows with Deeper Access to Source Data\nReach Audiences from One Streamlined Flow Category\nBuild More Precise Logic in Decision Elements and Exit Rules\nSet Conditions and Reentry Criteria for Event-Triggered Flows\nAdd More Contact Points and Related DMOs to Event-Triggered Flows...\nFilter Element Analytics by Date Range\nView Path Outcome Metrics for Path Experiment\nKeep Send Log Data in Marketing Flows\nUsers Can Now View Flow Dependencies\nFlow Data 360\nUse Streaming DMO Activations, More Flow Elements, and Debug with...\nUse Wait Elements and Test Flows with Broadcast Flow Enhancements\nFlow Actions\nUse Formula Mode for Action Inputs Without Creating Resources\nControl Timeout Path Visibility for Asynchronous Actions\nUse Transform Mode for Action Inputs Without Adding Transform Elements\nSet Field Values Directly for Apex-Defined Inputs\nStreamline Object Type Selection for Generic SObject Action Inputs\nConfigure Optional Apex Action Inputs Without Include Toggle\nUse Custom and Custom Collection Types in Invocable Action Output...\nFlow Debugging\nVisualize the Execution Path When Testing a Screen Flow\nTroubleshoot and Fix Flow Errors with Agentforce (Beta)\nReview Flow Errors and Warnings with the Redesigned Validation Panel\nFlow Management\nIdentify Flow Version Changes at a Glance\nCompare Transform Element Changes in a Flow\nTriage Issues Directly from the Flows List View\nFlow List View Column Names Were Changed\nFlow Extensions\nAdd Custom Property Editors to Individual Apex Action Inputs\nDefine Picklist Values for Apex Action Inputs\nCustomize an Apex Action\u2019s Standard Property Editor Header\nStreamline Metadata Selection for Apex Action Inputs\nExpose Style Settings for Your Custom Flow Screen Components\nFlow and Process Release Updates\nEnforcing No-Argument Constructor on Apex Classes Used for Invocable...\nSort Apex Batch Action Results by Request Order (Release Update)\nFlow Approval Processes\nRequire Unanimous Approval for Approval Steps Assigned to Groups\nApproval Designers Can Now View Flow Dependencies\nFlow Orchestration\nFlow Orchestration Is Now a Standard Feature\nMuleSoft for Flow: Integration\nCentralize Value Mapping Management for MuleSoft for Flow: Integration\nAgentforce Supply Chain\nComplete Multiple Tasks at a Time\nStart Up to 2,500 Workflows from a CSV File\nConfigure Multiple Task Escalations\nGenerate Blueprints by Describing Your Process\nBuild Excel-Based Automations (Beta)\nExtract More Accurate Data from the New Document Reader Agent (Beta)\nCommerce\nB2C Commerce\nB2C Commerce 2026 Deployment Schedule\nB2B Commerce\nAgentforce for B2B Commerce\nEnable In-Agent Shopping and Checkout for B2B Buyers\nCommerce Store Pages\nTailor Your Pricing Strategy to the Needs of Each B2B Store\nDisplay Contract-Based Pricing in a B2B Store\nCustomize a B2B Commerce Store Registration Page Using Native...\nCommerce Cart, Checkout, and Shipping\nTurn Quotes into Orders with Self-Service Checkout\nCommerce Search\nControl Which Products Appear First in Search Results\nBoost and Bury More Products with Higher Rule Limits\nExpand Product Discoverability with Increased Category Indexing Limits\nCommerce Subscriptions\nManage Subscriptions and View History Without Contacting Salesforce\nSalesforce Order Management\nAgentforce for Salesforce Order Management\nAddress Fulfillment Disruptions with Agentforce\nChatter is Turned Off by Default on New Orgs\nMitigate Supply Chain Issues with Proactive Fulfillment Alerts\nUse Custom Routing Rule Logic for Delivery Estimations\nManage Order Routing Logic with UI-Based Rules\nExpand Region and Shipment Coverage for Delivery Estimations\nSalesforce Point of Sale\nSalesforce Point of Sale Features Released Monthly\nSalesforce Point of Sale Version 12.0.1\nIncrease Warranty Revenue and Reduce Friction at the Point of Sale\nImprove Checkout Flow with Reliable Card on File Payments\nEliminate Checkout Disruptions for Nontaxable Scenarios with Vertex\nStreamline Remote Checkout with Real-Time Payment Sync\nEnsure Accurate BOGO Pricing and Simplify Returns with Lowest-Price...\nReduce Fulfillment Costs and Improve Customer Satisfaction by...\nReduce Sales Loss Because of Gift Card Compatibility\nConfigure Tax Free Integrations Faster for All Stores\nExpand into New Markets with Fiscal SPIs\nReduce Compliance Risk with Granular Inventory Permissions\nImprove Sales in Offline Mode with Accurate Product Images\nEmpower Franchise Managers with Scoped Access Control and...\nPrioritize Orders and Reduce Late Fulfillments\nSalesforce Payments\nStreamline Checkout with Dynamically Hidden Shipping Fields\nSpeed Up Pay Now Payments with One-Time Password Authentication\nCustomization\nCustomization Features Released by Month\nAgentExchange\nNew Branded Trialforce Login Pages Aren\u2019t Supported on Cloudforce.com\nExternal Services\nBuild More Robust Integrations with External Services Support for...\nGlobalization\nSupport More Time Zones\nExpand End-User Language Translations to Catalan and Basque (Beta)\nReview Updated Label Translations\nEnable ICU Locale Formats (Release Update)\nPermissions\nReview Field Access Across Profiles, Permission Sets, and Permission...\nTrack Permission Dependencies More Easily\nEnable Profile Filtering (Release Update)\nMonitor Administrative Changes to Profiles with Transaction Security...\nSalesforce Connect\nBuild More Secure Integrations with Cross-Org Adapter Support for...\nSetup with Agentforce\nThe Legacy Agent for Setup Can No Longer Be Enabled\nSharing\nChoose Whether to Grant Access Using Role Hierarchies for Queues\nUpdate Organization-Wide Defaults Quicker and More Reliably\nExtend Access for Unified Employee License Users\nUpdate Apex Code and Flows for Changed Sharing Recalculation...\nGeneral Setup\nDo More with Custom Fields on Standard Entities\nManage List View Sharing and Editing with Granular Permissions\nData 360\nConnect Data\nAutomatically Enable the Correct Permissions for Copy Field...\nUse Multi-dimensional Aggregatable Calculated Insights Objects in...\nTroubleshoot Ingestion Errors with Problem Records DLOs\nDevelopment\nLightning Components\nGet the Latest LWC Changes with LWC API Version 67.0\nGroup Details Elements with the name Attribute\nImprove Hot Module Reloading Performance\nLocal Dev is Now Live Preview\nPreview a Single Lightning Web Component in Your Browser (Generally...\nPreview a Single Lightning Web Component in Visual Studio Code...\nSimplify Data Interactions with State Managers for LWC (Generally...\nAPI Distortion Changes in Lightning Web Security\nHTMLAnchorElement Distortion Blocks data: URI Scheme\nPreview Features with Salesforce Release Manager (Beta)\nLoad Large Lists Dynamically (Developer Preview)\nImprove Encapsulation in Base Components with Internal Method Changes\nLightning Components Release Updates\nRemove Non-Public Fields from Custom Object Data in Aura Action...\nLightning Design System\nSalesforce Lightning Design System Component Blueprints Updates\nGet Faster Design Guidance with SLDS MCP Tools (Beta)\nUse Dark Mode in More Editions and Features (Beta)\nApex\nDatabase Operations Run in User Mode by Default, Not System Mode\nApex Classes Enforce Sharing Rules by Default\nThe WITH SECURITY_ENFORCED SOQL Clause is Removed\nApex Triggers Always Run in System Mode\nWrite Integration Tests for Agentforce and Data 360 in Apex...\nAvoid Workflow Disruptions by Enabling Elastic Limits for...\nBlock Apex Anonymous Code Execution from Managed Packages (Release...\nWrite Cleaner Code by Using Multiline Strings\nWork with Apex Code in Web Console (Beta)\nGet Key Apex Metrics in Setup with Agentforce (Beta)\nUse Visualforce PDF Rendering Service with Apex Blob.toPdf()...\nCustomize Apex Action Configuration in Flow Builder\nProvide Visible No-Argument Constructors for Custom Apex Classes...\nAPI\nConnect AI Agents to Salesforce Securely with Hosted MCP Servers...\nEnable AI Assistants to More Efficiently Find and Create Salesforce...\nCreate Agent Actions from Named Query API (Generally Available)\nSalesforce Platform API Versions 31.0 Through 40.0 Are Being Retired\nRestrict Login Access to SOAP API\nUse JWT-based Access Tokens with SOAP API\nQuery Data 360 More Precisely\nCalculate Values in a SOQL WHERE Clause (Pilot)\nGet Better Visibility into Your Agent's API Usage with Improved...\nUpdate Instanced URLs in API Traffic (Release Upd",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://help.salesforce.com/s/products/service-cloud",
+      "title": "Salesforce Help | Home",
+      "text": "Salesforce Help | Home\nLoading\n\u00d7\nSorry to interrupt\nCSS Error\nRefresh\nSelect An Org\nOpen Main Menu\nClose\nModal Body...\nAgentforce is temporarily unavailable. Please try again later or visit Help topics below. For additional support, please contact\nyour local support number\nfor assistance. Thank you!\nSalesforce now sends email only from verified domains.\nRead More\nClose\nHow can we help you?\nExplore Docs by Product\nSales\nService\nMarketing\nCommerce\nData 360\nAnalytics\nPlatform\nExperiences\nAgentforce\nCross-Product\nFinancial Services\nHealthcare & Life Sciences\nManufacturing\nSustainability\nConsumer Goods\nSalesforce for Nonprofits\nCommunications, Media, Energy & Utilities\nMuleSoft\nAdditional Products\n1-800-667-6389\nSALESFORCE\nPrivacy Statement\nSecurity Statement\nTerms of Use\nParticipation Guidelines\nCookie Preference Center\nYour Privacy Choices\nCOMMUNITY\nAppExchange\nSalesforce Admins\nSalesforce Developers\nTrailhead\nTraining\nTrust\nEnglish\nSelect Org\nSelect Org\nEnglish\nFran\u00e7ais\nDeutsch\nItaliano\n\u65e5\u672c\u8a9e\nEspa\u00f1ol (M\u00e9xico)\nEspa\u00f1ol\n\u4e2d\u6587\uff08\u7b80\u4f53\uff09\n\u4e2d\u6587\uff08\u7e41\u9ad4\uff09\n\ud55c\uad6d\uc5b4\n\u0420\u0443\u0441\u0441\u043a\u0438\u0439\nPortugu\u00eas (Brasil)\nSuomi\nDansk\nSvenska\nNederlands\nNorsk\n\u00a9 Copyright 2026 Salesforce.com, inc. All rights reserved. Various trademarks held by their respective owners.\nSalesforce, Inc. Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105, United States\nLoading\nSalesforce Help | Home\nCookie Consent Manager\nGeneral Information\nRequired Cookies\nFunctional Cookies\nAdvertising Cookies\nGeneral Information\nWe use three kinds of cookies on our websites: required, functional, and advertising. You can choose whether functional and advertising cookies apply. Click on the different cookie categories to find out more about each category and to change the default settings.\nPrivacy Statement\nRequired Cookies\nAlways Active\nRequired cookies are necessary for basic website functionality. Some examples include: session cookies needed to transmit the website, authentication cookies, and security cookies.\nCookies Details\u200e\nFunctional Cookies\nFunctional Cookies\nFunctional cookies enhance functions, performance, and services on the website. Some examples include: cookies used to analyze site traffic, cookies used for market research, and cookies used to display advertising that is not directed to a particular individual.\nCookies Details\u200e\nAdvertising Cookies\nAdvertising Cookies\nAdvertising cookies track activity across websites in order to understand a viewer\u2019s interests, and direct them specific marketing. Some examples include: cookies used for remarketing, or interest-based advertising.\nCookies Details\u200e\nBack Button\nCookie List\nFilter Button\nConsent\nLeg.Interest\ncheckbox label\nlabel\ncheckbox label\nlabel\ncheckbox label\nlabel\nClear\ncheckbox label\nlabel\nApply\nCancel\nSave Settings\nAccept All Cookies",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://appexchange.salesforce.com/",
+      "title": "Salesforce AppExchange is now AgentExchange",
+      "text": "Salesforce AppExchange is now AgentExchange\nCookie Consent Manager\nGeneral Information\nRequired Cookies\nFunctional Cookies\nAdvertising Cookies\nGeneral Information\nWe use three kinds of cookies on our websites: required, functional, and advertising. You can choose whether functional and advertising cookies apply. Click on the different cookie categories to find out more about each category and to change the default settings.\nPrivacy Statement\nRequired Cookies\nAlways Active\nRequired cookies are necessary for basic website functionality. Some examples include: session cookies needed to transmit the website, authentication cookies, and security cookies.\nCookies Details\u200e\nFunctional Cookies\nFunctional Cookies\nFunctional cookies enhance functions, performance, and services on the website. Some examples include: cookies used to analyze site traffic, cookies used for market research, and cookies used to display advertising that is not directed to a particular individual.\nCookies Details\u200e\nAdvertising Cookies\nAdvertising Cookies\nAdvertising cookies track activity across websites in order to understand a viewer\u2019s interests, and direct them specific marketing. Some examples include: cookies used for remarketing, or interest-based advertising.\nCookies Details\u200e\nBack Button\nCookie List\nFilter Button\nConsent\nLeg.Interest\ncheckbox label\nlabel\ncheckbox label\nlabel\ncheckbox label\nlabel\nClear\ncheckbox label\nlabel\nApply\nCancel\nSave Settings\nAccept All Cookies",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/salesforce-service-cloud/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Salesforce Service Cloud and Customers Take Home Four 2012 CRM Magazine Awards",
+          "url": "http://www.istockanalyst.com/business/news/5734077/salesforce-service-cloud-and-customers-take-home-four-2012-crm-magazine-service-awards",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2012-03-19T13:54:42Z",
+          "hn_url": "https://news.ycombinator.com/item?id=3723915"
+        },
+        {
+          "title": "Corteza Service Cloud, the New Open-Source Salesforce Service Cloud Alternative",
+          "url": "https://cortezaproject.org/corteza-service-cloud-the-open-source-salesforce-service-cloud-alternative-has-been-released/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2019-11-13T18:18:41Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21527443"
+        },
+        {
+          "title": "Salesforce Certification Series: Service Cloud Consultant",
+          "url": "http://jessealtman.com/2013/09/salesforce-certification-series-service-cloud-consultant/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2013-09-28T12:48:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6461676"
+        },
+        {
+          "title": "What is the most difficult about selling SaaS?",
+          "url": null,
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2017-04-19T21:05:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14151763"
+        },
+        {
+          "title": "Salesforce Debuts A More Social Service Cloud 3 With Chatter",
+          "url": "http://techcrunch.com/2011/03/02/salesforce-debuts-a-more-social-service-cloud-3-with-chatter-facebook-and-twitter/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Techcrunch+%28TechCrunch%29&utm_content=Google+Reader",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2011-03-03T05:10:59Z",
+          "hn_url": "https://news.ycombinator.com/item?id=2282907"
+        },
+        {
+          "title": "Larry Ellison calls Salesforce the 'Roach Motel' of cloud services",
+          "url": "http://techcrunch.com/2011/10/06/ellison-reveals-oracles-public-cloud-calls-salesforce-the-roach-motel-of-cloud-services/",
+          "points": 2,
+          "num_comments": 1,
+          "created_at": "2011-10-07T08:52:42Z",
+          "hn_url": "https://news.ycombinator.com/item?id=3083182"
+        },
+        {
+          "title": "Salesforce IoT Cloud Consulting Services",
+          "url": "https://www.forcetalks.com/blog/salesforce-iot-cloud-consulting-services-enhancing-customer-experience/",
+          "points": 1,
+          "num_comments": 1,
+          "created_at": "2023-11-01T10:34:29Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38096575"
+        },
+        {
+          "title": "Salesforce Draws A Step Closer to AWS",
+          "url": "http://blogs.wsj.com/cio/2016/12/05/the-morning-download-salesforce-draws-step-closer-to-amazon-web-services-cloud/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2016-12-05T14:09:21Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13105395"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "How I Ended Up a Business Analyst in Insurance (And Why I\u2019m Still Doing It)",
+          "subreddit": "businessanalyst",
+          "score": 42,
+          "num_comments": 26,
+          "permalink": "https://reddit.com/r/businessanalyst/comments/1m0etyt/how_i_ended_up_a_business_analyst_in_insurance/",
+          "selftext": "I never planned to become a Business Analyst, let alone one specializing in insurance SaaS implementations. Like many BAs, I kind of fell into the role. My background was originally more general admin and operational support, but over time I found myself translating between tech teams and business users more and more.\n\nOver the years, I worked my way through several financial and insurance companies\u2014ING, MassMutual, Ambac, to name a few\u2014usually embedded in large-scale projects where new systems "
+        },
+        {
+          "title": "Constructive feedback please - Engineer to PM Resume",
+          "subreddit": "PMCareers",
+          "score": 19,
+          "num_comments": 18,
+          "permalink": "https://reddit.com/r/PMCareers/comments/1rwdik1/constructive_feedback_please_engineer_to_pm_resume/",
+          "selftext": "Hi, as the title states I transitioned from Engineering to Project Management. I\u2019m wanting constructive feedback on my resume to help in job search. Thank you all in advance for the help!"
+        },
+        {
+          "title": "Thousands of applications, zero callbacks. Looking for a brutal but helpful resume review.",
+          "subreddit": "PMCareers",
+          "score": 17,
+          "num_comments": 54,
+          "permalink": "https://reddit.com/r/PMCareers/comments/1mr06nu/thousands_of_applications_zero_callbacks_looking/",
+          "selftext": "Hey everyone,\n\nI\u2019m at the point where putting in resumes has become my job. Thousands of applications and I have yet to get a single interview request. I know something is wrong, and i suspect it\u2019s my resume.\n\nThanks in advance."
+        },
+        {
+          "title": "Going from IT to project coordinator - what am I doing wrong?",
+          "subreddit": "PMCareers",
+          "score": 14,
+          "num_comments": 32,
+          "permalink": "https://reddit.com/r/PMCareers/comments/1ongo32/going_from_it_to_project_coordinator_what_am_i/",
+          "selftext": "Project Management Resume\n\nI've been searching for at least 4 months now for a remote project coordinator role. I've had a few interviews, 2 offers which I turned down as they weren't a good fit, and a whole lot of recruiter ghosts. I'm trying to figure out what I can do to improve my chances of landing an interview, any feedback is welcome! This is a new version based on reading the wiki and simplifying it down significantly."
+        },
+        {
+          "title": "Email-to-Case should use the \u201cReply-To\u201d address instead of always defaulting to \u201cFrom\u201d",
+          "subreddit": "salesforce",
+          "score": 13,
+          "num_comments": 6,
+          "permalink": "https://reddit.com/r/salesforce/comments/1o1h0o9/emailtocase_should_use_the_replyto_address/",
+          "selftext": "Hey folks,\n\nI just submitted a new IdeaExchange proposal that could make life a lot easier for Service Cloud and support teams.\n\n\ud83d\udc49 **The issue:**  \nRight now, Salesforce Email-to-Case always replies to the \u201cFrom\u201d address, even when a \u201cReply-To\u201d is provided. This becomes a real pain when automated systems or shared inboxes send emails \u2014 all case replies end up in the wrong place (like \u201cnoreply@\u2026\u201d).\n\n\ud83d\udc49 **The idea:**  \nLet Email-to-Case automatically respect the **Reply-To** header if it\u2019s present."
+        },
+        {
+          "title": "Has anyone done a serious migration to Salesforce before?",
+          "subreddit": "CRM",
+          "score": 12,
+          "num_comments": 33,
+          "permalink": "https://reddit.com/r/CRM/comments/1oogv80/has_anyone_done_a_serious_migration_to_salesforce/",
+          "selftext": "We are thinking of migrating to Salesforce since Zendesk Sell is shutting down. We have nearly 4 years' worth of data. Our engineering team is kinda small and were thinking of using some migration tool. Has anyone done this before? Which service or tool did you use? How did it go? Also, we recently started using Zendesk, &lt;1year, we are planning on shifting that to Salesforce Service Cloud as well. Not as worried about this as the CRM data, if you have done this before, highly appreciate your "
+        },
+        {
+          "title": "Udemy Free Courses for 01 June 2025",
+          "subreddit": "udemyfreeebies",
+          "score": 12,
+          "num_comments": 0,
+          "permalink": "https://reddit.com/r/udemyfreeebies/comments/1l0p88w/udemy_free_courses_for_01_june_2025/",
+          "selftext": "# Udemy Free Courses for 01 June 2025\n\nNote : Coupons might expire anytime, so enroll as soon as possible to get the courses for FREE.\n\n* [REDEEM OFFER ](https://idownloadcoupon.com/udemy/8867/)\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e ChatGPT: \u0437\u0430\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0439\u0442\u0435 \u0434\u0435\u043d\u044c\u0433\u0438 \u0441 ChatGPT\n* [REDEEM OFFER ](https://idownloadcoupon.com/udemy/8866/)Gu\u00eda ChatGPT: C\u00f3mo ganar dinero en l\u00ednea usando ChatGPT\n* [REDEEM OFFER ](https://idownloadcoupon.com/udemy/8865/)Basic Sales Skills: Sales Skills Every Entrepreneur Needs\n* [REDEEM OFFER ](https:"
+        },
+        {
+          "title": "Udemy Free Courses for 01 June 2025",
+          "subreddit": "udemyfreebies",
+          "score": 9,
+          "num_comments": 0,
+          "permalink": "https://reddit.com/r/udemyfreebies/comments/1l0p8dr/udemy_free_courses_for_01_june_2025/",
+          "selftext": "# Udemy Free Courses for 01 June 2025\n\n*Note : Coupons might expire anytime, so enroll as soon as possible to get the courses for FREE.*\n\n* [REDEEM OFFER ](https://idownloadcoupon.com/udemy/8867/)\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e ChatGPT: \u0437\u0430\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0439\u0442\u0435 \u0434\u0435\u043d\u044c\u0433\u0438 \u0441 ChatGPT\n* [REDEEM OFFER ](https://idownloadcoupon.com/udemy/8866/)Gu\u00eda ChatGPT: C\u00f3mo ganar dinero en l\u00ednea usando ChatGPT\n* [REDEEM OFFER ](https://idownloadcoupon.com/udemy/8865/)Basic Sales Skills: Sales Skills Every Entrepreneur Needs\n* [REDEEM OFFER ](http"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.salesforce.com/editions-pricing/service-cloud/",
+    "changelog": "https://help.salesforce.com/s/articleView?id=release-notes.salesforce_release_notes.htm",
+    "docs": "https://help.salesforce.com/s/products/service-cloud",
+    "integrations": "https://appexchange.salesforce.com/",
+    "g2": "https://www.g2.com/products/salesforce-service-cloud/reviews"
+  },
+  "analysis": {
+    "name": "Salesforce Service Cloud",
+    "url": "https://www.salesforce.com/products/service-cloud",
+    "tagline": "The world's #1 AI CRM for service",
+    "value_proposition": "An AI-powered customer service platform unifying omnichannel support, automation, and analytics on a single platform to resolve cases faster and at scale.",
+    "target_segment": "enterprise / mid-market",
+    "ideal_customer": "Large enterprises and mid-market companies running multi-channel customer support operations with complex routing, SLA, and compliance requirements",
+    "features": [
+      {
+        "name": "case management",
+        "description": "Core object for tracking customer issues from creation through resolution with full history",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "email-to-case",
+        "description": "Automatically creates cases from inbound emails; routes to queues based on rules",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "web-to-case",
+        "description": "HTML form generation to capture cases directly from a website",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "omni-channel routing",
+        "description": "Routes work items (cases, chats, calls) to agents based on skills, capacity, and priority",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "skills-based routing",
+        "description": "Routes cases to agents with matching skill sets and proficiency levels",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "queue management",
+        "description": "Organizes unassigned cases into queues with configurable membership and assignment rules",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "case assignment rules",
+        "description": "Automatically assigns cases to users or queues based on criteria",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "case escalation rules",
+        "description": "Automatically escalates cases that breach time thresholds",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "auto-response rules",
+        "description": "Sends automatic email responses to customers upon case creation based on criteria",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "entitlements",
+        "description": "Defines the level of support a customer is entitled to (e.g., response SLAs per contract)",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "milestones",
+        "description": "Required steps within entitlement processes that track SLA compliance",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "sla management",
+        "description": "Tracks time-to-first-response and time-to-resolution against contractual commitments",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "knowledge base",
+        "description": "Article authoring, versioning, and publishing for agent and self-service consumption",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "article recommendations",
+        "description": "Einstein AI suggests relevant knowledge articles to agents while working a case",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "service console",
+        "description": "Multi-tab agent workspace with split views for handling multiple cases simultaneously",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "macros",
+        "description": "One-click automation for repetitive agent actions like applying templates and updating fields",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "quick text",
+        "description": "Predefined message snippets agents insert into emails, chats, and case comments",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "live agent (chat)",
+        "description": "Real-time web chat channel for agents to handle customer conversations",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "messaging for in-app and web",
+        "description": "Asynchronous messaging channel embedded in mobile apps and websites",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "social customer service",
+        "description": "Monitor and respond to customer inquiries on Twitter/X, Facebook, and Instagram",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "whatsapp integration",
+        "description": "Bi-directional WhatsApp Business messaging channel routed through omni-channel",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "sms / text messaging",
+        "description": "Two-way SMS channel for case updates and proactive notifications",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "service cloud voice",
+        "description": "Native telephony integration with Amazon Connect and other CTI providers for phone support",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "agentforce voice (sip routing)",
+        "description": "Route AI voice calls via SIP for Agentforce-powered telephony interactions",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "cti (computer telephony integration)",
+        "description": "Open CTI framework to embed third-party phone systems in the service console",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "einstein bots",
+        "description": "No-code AI chatbot builder for deflecting common inquiries before agent handoff",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "agentforce autonomous agents",
+        "description": "AI agents that autonomously resolve service cases end-to-end without human handoff",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "agentforce citations (byoc)",
+        "description": "Adds source citations to AI agent responses in Bring Your Own Channel deployments for trust",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "einstein case classification",
+        "description": "AI auto-populates case fields (type, priority, reason) based on case content",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "einstein next best action",
+        "description": "Surfaces AI-recommended actions for agents based on case context and historical data",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "einstein reply recommendations",
+        "description": "AI suggests chat/email reply text to agents during live interactions",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "einstein conversation mining",
+        "description": "Analyzes chat/call transcripts to surface common topics and bot training opportunities",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "einstein sentiment analysis",
+        "description": "Detects customer sentiment in messages to prioritize frustrated customers",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "einstein search",
+        "description": "AI-powered semantic search across cases, articles, and records in the console",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "field service (fsl)",
+        "description": "Schedule and dispatch field technicians with mobile app, work orders, and inventory management",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "work orders",
+        "description": "Tracks on-site service tasks linked to accounts, assets, and cases",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "asset management",
+        "description": "Tracks customer-owned products and their service history",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "contracts",
+        "description": "Manages service contracts with start/end dates, terms, and renewal tracking",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "self-service portal / experience cloud",
+        "description": "Branded customer community for case submission, knowledge search, and peer Q&A",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "salesforce scheduler",
+        "description": "Appointment scheduling with waitlist management, territory-based routing, and custom lobby components",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "flow builder",
+        "description": "Visual automation builder for creating screen flows, record-triggered flows, and scheduled flows",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "screen flows",
+        "description": "Guided UI wizards for agents or customers with conditional logic and dynamic components",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "natural language flow updates",
+        "description": "Update screen flow logic using natural language prompts via AI",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "scheduled flows",
+        "description": "Time-based automated processes that run on a schedule with batch processing support",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "approval processes",
+        "description": "Multi-step approval workflows for records requiring human sign-off",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "reports and dashboards",
+        "description": "Native reporting with custom report types, filters, and visual dashboards",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "crm analytics (tableau crm)",
+        "description": "Advanced analytics platform with AI-powered insights, embedded dashboards, and custom datasets",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "tableau next",
+        "description": "Next-generation BI and data visualization platform integrated with Salesforce data",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "service analytics app",
+        "description": "Pre-built analytics app with KPI dashboards for CSAT, case resolution, and agent performance",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "data pipelines",
+        "description": "ETL recipe-based data preparation and transformation for analytics workloads",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "azure data lake output",
+        "description": "Export CRM Analytics and Data Pipelines data to Azure Data Lake Storage",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "chatter",
+        "description": "Internal social collaboration feed for @mentions, file sharing, and case collaboration (off by default in new orgs)",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "slack integration",
+        "description": "Bi-directional Slack-Salesforce integration for case swarming and alert notifications",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "surveys / feedback management",
+        "description": "CSAT and NPS survey builder with automated distribution post-case-close",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "service catalog",
+        "description": "Structured menu of requestable services for employee or customer self-service",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "incident management",
+        "description": "Track and coordinate response to widespread service outages with broadcast updates",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "workforce management",
+        "description": "Forecasting, scheduling, and adherence tracking for contact center staffing",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "sso / saml",
+        "description": "SAML 2.0 and OAuth-based single sign-on with identity provider configuration",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "multi-factor authentication",
+        "description": "Enforced MFA for all user logins with authenticator app, SMS, or hardware key support",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "shield platform encryption",
+        "description": "Encryption at rest for data fields beyond standard encryption, with customer-managed keys",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "event monitoring",
+        "description": "Audit logs of user actions and API calls for security forensics and compliance",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "field-level security",
+        "description": "Granular access control to restrict read/edit per field per profile",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "permission sets",
+        "description": "Additive permission grants beyond base profile for fine-grained access control",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "custom objects",
+        "description": "User-defined data model extensions beyond standard Salesforce objects",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "apex (custom code)",
+        "description": "Proprietary Java-like server-side programming language for custom business logic",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "lightning web components",
+        "description": "Standard-based web component framework for building custom UI in the service console",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "api access (rest/soap/bulk)",
+        "description": "REST, SOAP, Bulk, and Streaming APIs for external system integration",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "mulesoft integration",
+        "description": "Native integration to MuleSoft Anypoint Platform for enterprise API and data mesh connectivity",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "sandbox environments",
+        "description": "Full and partial copy sandboxes for development, testing, and staging",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "change sets / deployment",
+        "description": "Metadata packaging and deployment tools for moving configuration between orgs",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "translation workbench",
+        "description": "Multi-language UI and data field translation management",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "mobile app (salesforce mobile)",
+        "description": "iOS and Android native app for agents to manage cases and tasks on the go",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "certificate management",
+        "description": "Rotate and manage mTLS and org certificates with validity tracking",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "ipv6 support",
+        "description": "Infrastructure readiness for IPv6 network connectivity",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "archive app",
+        "description": "Data archiving with progress monitoring and configurable retention policies",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "salesforce foundations",
+        "description": "Lightweight bundled capabilities including lead scoring and web traffic tracking across clouds",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "people scoring (foundations)",
+        "description": "AI-driven lead/contact scoring surfaced in Foundations tier",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "web tracking (foundations)",
+        "description": "Tracks website visitor behavior to generate actionable insights within Salesforce",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "accessibility enhancements",
+        "description": "WCAG-aligned accessibility improvements for page headers, modals, date pickers, and navigation",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "agentexchange (appexchange)",
+        "description": "Marketplace for third-party apps, components, and AI agents extending Service Cloud",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "einstein generative ai (einstein gpt)",
+        "description": "Generative AI for drafting case replies, summarizing cases, and generating knowledge articles",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "case summarization",
+        "description": "AI auto-generates a summary of case history and conversation for agents",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "bring your own channel (byoc)",
+        "description": "Framework to connect non-native messaging channels into omni-channel routing",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "data 360 reports and dashboards",
+        "description": "Extended reporting with calculated insight object history and dimensional hierarchies (beta)",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "currency reporting",
+        "description": "Multi-currency financial reporting in Data 360 with accurate exchange rate handling",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      }
+    ],
+    "integrations": [
+      "Slack",
+      "MuleSoft",
+      "Amazon Connect",
+      "Genesys",
+      "Avaya",
+      "Twilio",
+      "Zoom",
+      "Microsoft Teams",
+      "Google Workspace (Gmail, Calendar)",
+      "WhatsApp Business",
+      "Facebook Messenger",
+      "Instagram Direct",
+      "Twitter/X",
+      "SAP",
+      "DocuSign",
+      "Box",
+      "Dropbox",
+      "LinkedIn",
+      "Jira",
+      "ServiceNow",
+      "AWS",
+      "Azure Data Lake",
+      "Tableau",
+      "Zendesk (migration)",
+      "CTI adapters (open CTI framework)"
+    ],
+    "differentiators": [
+      "Unified platform across sales, service, marketing, and commerce on a single data model",
+      "Agentforce autonomous AI agents that resolve service cases without human handoff",
+      "Largest ecosystem of third-party apps and integrations via AgentExchange (formerly AppExchange)",
+      "Einstein AI natively embedded across every workflow \u2014 classification, routing, reply, summarization",
+      "Salesforce Shield for enterprise-grade encryption, event monitoring, and compliance",
+      "Field Service Lightning as integrated on-site service extension of the same platform",
+      "No-code/low-code automation via Flow Builder with natural language editing (Summer '26)",
+      "MuleSoft-native connectivity for enterprise data mesh without external middleware"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026",
+        "what": "Route Agentforce Voice Calls Using SIP \u2014 native SIP routing for AI-powered voice interactions",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "Citations in Bring Your Own Channel \u2014 AI agent responses include source citations for transparency",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "Update Screen Flows with Natural Language Prompts \u2014 edit flow logic via plain-English instructions",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "Batching for Scheduled Flows \u2014 performance improvement for high-volume scheduled automations",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "Radio Button Groups in Screen Flows \u2014 UI component addition for more compact form layouts",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "Output CRM Analytics and Data Pipelines data to Azure Data Lake (GA)",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "People Scoring in Salesforce Foundations \u2014 AI lead/contact scoring in the bundled Foundations tier",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "Web Tracking in Foundations \u2014 website visitor behavior tracking generally available",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "Chatter turned off by default in new orgs \u2014 signals deprioritization of Chatter vs. Slack",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "Salesforce Scheduler \u2014 category-specific waitlist position on participant cards, custom validation messages for appointment errors",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "CRM Analytics \u2014 semi-joins for query optimization, subscribe to dashboard widgets in Experience Cloud (beta)",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      },
+      {
+        "date": "2026",
+        "what": "Archive App GA \u2014 new activity statuses for monitoring archive progress, settings overhaul",
+        "source": "Salesforce Summer '26 Release Notes changelog"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Comprehensive feature set that covers nearly every service use case in one platform",
+        "Deep customization capabilities via Apex, Flow, and custom objects",
+        "Strong reporting and analytics out of the box",
+        "Large partner and consultant ecosystem for implementation support",
+        "Robust API access enabling complex integrations"
+      ],
+      "complaints": [
+        "Email-to-Case defaults to 'From' address instead of 'Reply-To', causing routing frustration (r/salesforce)",
+        "Migration complexity and data portability concerns \u2014 Larry Ellison famously called it the 'Roach Motel of cloud services' (HN)",
+        "High cost relative to mid-market alternatives; significant implementation cost on top of licensing",
+        "Steep learning curve; requires dedicated Salesforce admins to maintain",
+        "Sources describe migration as serious undertaking: 'Has anyone done a serious migration to Salesforce before?' with 33 comments suggesting complexity (r/CRM)"
+      ],
+      "sources": [
+        "reddit (r/salesforce)",
+        "reddit (r/CRM)",
+        "hn"
+      ]
+    },
+    "pricing_signal": {
+      "model": "contact-sales",
+      "tier_count": 5,
+      "lowest_paid_seat": "$25/mo",
+      "free_tier": null
+    }
+  }
+}

@@ -1,0 +1,1748 @@
+{
+  "type": "competitive_review_handoff",
+  "category": "workspace-email",
+  "product": "ZergMail",
+  "generated_at": "2026-05-02T21:37:45.692619",
+  "competitor_urls": [
+    "https://workspace.google.com",
+    "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook",
+    "https://www.hey.com",
+    "https://superhuman.com",
+    "https://proton.me/mail",
+    "https://www.fastmail.com",
+    "https://www.zoho.com/mail",
+    "https://front.com",
+    "https://www.shortwave.com",
+    "https://www.spike.email"
+  ],
+  "matrix": [
+    {
+      "feature": "email",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "yes",
+        "shortwave.com": "yes",
+        "spike.email": "yes",
+        "us_spec": "yes",
+        "us_live": "yes"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "calendar",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "partial",
+        "shortwave.com": "yes",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "contacts management",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "partial",
+        "superhuman.com": "no",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "unknown",
+        "shortwave.com": "unknown",
+        "spike.email": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "tasks",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "file storage",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "partial",
+        "superhuman.com": "no",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "unknown",
+        "shortwave.com": "no",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "search",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "yes",
+        "shortwave.com": "yes",
+        "spike.email": "yes",
+        "us_spec": "partial",
+        "us_live": "yes"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "folders and labels",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "yes",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "scheduled send",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "unknown",
+        "superhuman.com": "yes",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "unknown",
+        "shortwave.com": "unknown",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "undo send",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "unknown",
+        "superhuman.com": "yes",
+        "proton.me": "yes",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "unknown",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "follow-up reminders",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "partial",
+        "hey.com": "unknown",
+        "superhuman.com": "yes",
+        "proton.me": "unknown",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "focused inbox",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "yes",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "unknown",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "spam filtering",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "yes",
+        "superhuman.com": "unknown",
+        "proton.me": "yes",
+        "fastmail.com": "unknown",
+        "zoho.com": "yes",
+        "shortwave.com": "partial",
+        "spike.email": "unknown",
+        "us_spec": "yes",
+        "us_live": "yes"
+      },
+      "frequency": 6,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "custom filters",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "partial",
+        "superhuman.com": "yes",
+        "proton.me": "yes",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "unknown",
+        "us_spec": "partial",
+        "us_live": "partial"
+      },
+      "frequency": 6,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "multi-account support",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "yes",
+        "shortwave.com": "yes",
+        "spike.email": "yes",
+        "us_spec": "partial",
+        "us_live": "partial"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "snippets and templates",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "unknown",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "block and unsubscribe",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "partial",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "unknown",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "unknown",
+        "us_spec": "unknown",
+        "us_live": "partial"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "crm integration",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "yes",
+        "shortwave.com": "yes",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "cloud storage integration",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "partial",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "pop/imap/smtp support",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "partial",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "yes",
+        "shortwave.com": "partial",
+        "spike.email": "yes",
+        "us_spec": "yes",
+        "us_live": "yes"
+      },
+      "frequency": 8,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "external account linking",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "microsoft.com": "yes",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "partial",
+        "fastmail.com": "yes",
+        "zoho.com": "partial",
+        "shortwave.com": "partial",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "add-in marketplace",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "api and developer platform",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "yes",
+        "zoho.com": "yes",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "yes",
+        "us_live": "yes"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mcp integration",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "no",
+        "microsoft.com": "no",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "yes",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai thread summarization",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "partial",
+        "fastmail.com": "no",
+        "zoho.com": "partial",
+        "shortwave.com": "yes",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "ai reply suggestions",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "partial",
+        "fastmail.com": "no",
+        "zoho.com": "partial",
+        "shortwave.com": "yes",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "ai autocomplete",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "partial",
+        "fastmail.com": "no",
+        "zoho.com": "partial",
+        "shortwave.com": "yes",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "ai tone and clarity coaching",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "partial",
+        "shortwave.com": "partial",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai inbox organization",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "partial",
+        "fastmail.com": "no",
+        "zoho.com": "partial",
+        "shortwave.com": "yes",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "ai auto-labeling",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "microsoft.com": "partial",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "partial",
+        "shortwave.com": "yes",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai memory",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "no",
+        "microsoft.com": "no",
+        "hey.com": "no",
+        "superhuman.com": "partial",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "yes",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai voice and tone matching",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "no",
+        "microsoft.com": "no",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "yes",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sso",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "unknown",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "unknown",
+        "shortwave.com": "unknown",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "two-factor authentication",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "unknown",
+        "superhuman.com": "unknown",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "yes",
+        "shortwave.com": "unknown",
+        "spike.email": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "admin console",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "partial",
+        "superhuman.com": "no",
+        "proton.me": "partial",
+        "fastmail.com": "yes",
+        "zoho.com": "yes",
+        "shortwave.com": "unknown",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "yes"
+      },
+      "frequency": 7,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "data loss prevention",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ediscovery and vault",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "enterprise data regions",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "partial",
+        "fastmail.com": "no",
+        "zoho.com": "partial",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "end-to-end encryption",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "microsoft.com": "partial",
+        "hey.com": "unknown",
+        "superhuman.com": "no",
+        "proton.me": "yes",
+        "fastmail.com": "partial",
+        "zoho.com": "yes",
+        "shortwave.com": "no",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "s/mime encryption",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "phishing and threat protection",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "microsoft.com": "yes",
+        "hey.com": "unknown",
+        "superhuman.com": "no",
+        "proton.me": "yes",
+        "fastmail.com": "unknown",
+        "zoho.com": "yes",
+        "shortwave.com": "partial",
+        "spike.email": "unknown",
+        "us_spec": "partial",
+        "us_live": "partial"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "compliance support",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "partial",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "yes",
+        "fastmail.com": "unknown",
+        "zoho.com": "partial",
+        "shortwave.com": "partial",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "dark mode",
+      "category": "ux",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "unknown",
+        "superhuman.com": "unknown",
+        "proton.me": "unknown",
+        "fastmail.com": "unknown",
+        "zoho.com": "yes",
+        "shortwave.com": "unknown",
+        "spike.email": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "custom themes",
+      "category": "ux",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "unknown",
+        "superhuman.com": "unknown",
+        "proton.me": "unknown",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "keyboard shortcuts",
+      "category": "ux",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "unknown",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "inbox splits and bundles",
+      "category": "ux",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "partial",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "unknown",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "notification controls",
+      "category": "ux",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "unknown",
+        "superhuman.com": "unknown",
+        "proton.me": "unknown",
+        "fastmail.com": "partial",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "newsletter feed segregation",
+      "category": "ux",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "no",
+        "hey.com": "yes",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "partial",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "auto archive",
+      "category": "automation",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "partial",
+        "hey.com": "unknown",
+        "superhuman.com": "yes",
+        "proton.me": "unknown",
+        "fastmail.com": "unknown",
+        "zoho.com": "unknown",
+        "shortwave.com": "unknown",
+        "spike.email": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "auto reminders",
+      "category": "automation",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mail merge",
+      "category": "automation",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "no",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "delivery schedules",
+      "category": "automation",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "auto-bcc to crm",
+      "category": "automation",
+      "presence": {
+        "orkspace.google.com": "no",
+        "microsoft.com": "no",
+        "hey.com": "no",
+        "superhuman.com": "partial",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "partial",
+        "shortwave.com": "yes",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "workflow automation scripting",
+      "category": "automation",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "partial",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "partial",
+        "zoho.com": "partial",
+        "shortwave.com": "partial",
+        "spike.email": "no",
+        "us_spec": "partial",
+        "us_live": "partial"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "shared inboxes",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "partial",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "yes",
+        "shortwave.com": "unknown",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "shared drafts",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "unknown",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "team comments",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "yes",
+        "superhuman.com": "yes",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "yes",
+        "spike.email": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "team reply indicators",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "no",
+        "microsoft.com": "no",
+        "hey.com": "no",
+        "superhuman.com": "yes",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "unknown",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "video calls",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "partial",
+        "hey.com": "no",
+        "superhuman.com": "partial",
+        "proton.me": "partial",
+        "fastmail.com": "no",
+        "zoho.com": "unknown",
+        "shortwave.com": "partial",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "voice messages",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "microsoft.com": "no",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "collaborative notes",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "partial",
+        "fastmail.com": "no",
+        "zoho.com": "unknown",
+        "shortwave.com": "partial",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "online presence",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "partial",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "unknown",
+        "shortwave.com": "no",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "emoji reactions",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "unknown",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "unknown",
+        "shortwave.com": "unknown",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "link tracking",
+      "category": "reporting",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "unknown",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "unknown",
+        "shortwave.com": "yes",
+        "spike.email": "unknown",
+        "us_spec": "no",
+        "us_live": "partial"
+      },
+      "frequency": 1,
+      "bucket": "we_have_they_dont",
+      "evidence": ""
+    },
+    {
+      "feature": "meeting attendance tracking",
+      "category": "reporting",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "partial",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "native mobile apps",
+      "category": "mobile",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "yes",
+        "hey.com": "yes",
+        "superhuman.com": "unknown",
+        "proton.me": "yes",
+        "fastmail.com": "yes",
+        "zoho.com": "yes",
+        "shortwave.com": "partial",
+        "spike.email": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "offline support",
+      "category": "mobile",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "microsoft.com": "unknown",
+        "hey.com": "unknown",
+        "superhuman.com": "yes",
+        "proton.me": "unknown",
+        "fastmail.com": "yes",
+        "zoho.com": "yes",
+        "shortwave.com": "unknown",
+        "spike.email": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "e-signature",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "unknown",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "appointment booking pages",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "meeting recording",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "unknown",
+        "proton.me": "unknown",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "noise cancellation",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "speech translation",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "microsoft.com": "unknown",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "package and flight tracking",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "no",
+        "microsoft.com": "yes",
+        "hey.com": "no",
+        "superhuman.com": "no",
+        "proton.me": "no",
+        "fastmail.com": "no",
+        "zoho.com": "no",
+        "shortwave.com": "no",
+        "spike.email": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "custom domain email",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "email aliases",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "email signatures",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "email snooze",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "calendar sync",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ai email drafting",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ai-powered search",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "email retention policies",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "email tracker blocking",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "masked email aliases",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "conversational email view",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "email screener",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "email ownership assignment",
+      "category": "collaboration",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "shared calendars",
+      "category": "collaboration",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "email engagement tracking",
+      "category": "reporting",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    }
+  ],
+  "rankings": [
+    {
+      "feature": "external account linking",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "calendar",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 3,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    },
+    {
+      "feature": "native mobile apps",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 3,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    },
+    {
+      "feature": "ai thread summarization",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 3,
+      "cost": "M",
+      "score": 7.0,
+      "evidence": ""
+    },
+    {
+      "feature": "ai reply suggestions",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 3,
+      "cost": "M",
+      "score": 7.0,
+      "evidence": ""
+    },
+    {
+      "feature": "ai autocomplete",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 3,
+      "cost": "M",
+      "score": 7.0,
+      "evidence": ""
+    },
+    {
+      "feature": "ai inbox organization",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 3,
+      "cost": "M",
+      "score": 7.0,
+      "evidence": ""
+    },
+    {
+      "feature": "file storage",
+      "bucket": "table_stakes",
+      "frequency": 6,
+      "fit": 3,
+      "cost": "M",
+      "score": 6.0,
+      "evidence": ""
+    },
+    {
+      "feature": "folders and labels",
+      "bucket": "table_stakes",
+      "frequency": 6,
+      "fit": 3,
+      "cost": "M",
+      "score": 6.0,
+      "evidence": ""
+    },
+    {
+      "feature": "cloud storage integration",
+      "bucket": "table_stakes",
+      "frequency": 6,
+      "fit": 3,
+      "cost": "M",
+      "score": 6.0,
+      "evidence": ""
+    }
+  ],
+  "drift": [
+    {
+      "feature": "webhooks",
+      "spec_says": "yes",
+      "live_says": "no",
+      "note": "spec aspiration \u2014 spec lists webhooks in docs and positioning ('REST + webhooks'), live site never mentions webhooks"
+    },
+    {
+      "feature": "websocket / json-rpc api",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 live site prominently features WebSocket/JSON-RPC realtime API and Realtime Core module; spec only mentions REST"
+    },
+    {
+      "feature": "multi-tenant / workspace isolation",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 live site centers multi-tenancy and workspace-scoped isolation as a primary differentiator; spec has no mention of tenancy model"
+    },
+    {
+      "feature": "dkim signing",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 live site calls out DKIM signing on outbound; spec only says 'direct SMTP outbound'"
+    },
+    {
+      "feature": "spam / trust filtering (spf, dkim checks, dnsbl, bayesian, greylist, rate limits)",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 live site lists a full Trust & Filtering module; spec is silent on inbound filtering"
+    },
+    {
+      "feature": "read / open tracking",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 live site surfaces read/open tracking and tracking timeline in both hero and Workspace Console; spec omits it"
+    },
+    {
+      "feature": "tiered pricing (free / core / growth / scale)",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 live site shows four priced tiers ($0/$12/$39/$149); spec has no mention of pricing model or tiers"
+    },
+    {
+      "feature": "cli",
+      "spec_says": "partial",
+      "live_says": "yes",
+      "note": "description mismatch \u2014 spec mentions a 'CLI guide' in docs and an internal Claude skill but doesn't surface CLI as a product feature; live site shows zmail CLI as a first-class user-facing primitive alongside the API"
+    },
+    {
+      "feature": "no per-seat licensing",
+      "spec_says": "yes",
+      "live_says": "no",
+      "note": "spec aspiration \u2014 spec differentiator explicitly says 'no per-seat licensing'; live site charges Core/Growth/Scale per seat/mo"
+    },
+    {
+      "feature": "outbox worker with retry / failure tracking",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 live site lists Outbox Worker as a named product module; spec only says 'direct SMTP outbound'"
+    },
+    {
+      "feature": "admin panel / privileged user lifecycle",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 live site has a dedicated Admin Panel module and nav link; spec has no mention of admin or operator management surfaces"
+    }
+  ],
+  "summary": {
+    "n_features": 87,
+    "table_stakes_count": 12,
+    "differentiator_parity_count": 59,
+    "whitespace_count": 15,
+    "we_have_they_dont_count": 1,
+    "drift_count": 11
+  }
+}

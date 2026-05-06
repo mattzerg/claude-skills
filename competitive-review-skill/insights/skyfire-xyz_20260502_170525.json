@@ -1,0 +1,326 @@
+{
+  "name": "Skyfire",
+  "url": "https://skyfire.xyz",
+  "domain": "skyfire.xyz",
+  "scanned_at": "2026-05-02T17:03:24.122806",
+  "sources": {
+    "landing": {
+      "url": "https://skyfire.xyz",
+      "title": "Home - Skyfire",
+      "text": "Home - Skyfire\nProduct\nAbout\nUse Case\nBlog\nDocs\nContact\nLaunch Skyfire\nProduct\nAbout\nUse Case\nBlog\nDocs\nContact\nLaunch Skyfire\nSearch for:\nClose Search\nThe Agentic Commerce Platform\nKYA identity and agent payments\nExplore Use Cases\nLaunch Skyfire ->\nWHAT IS SKYFIRE?\nPayments and Identity Built for the AI Economy\nSkyfire empowers AI to process payments, verify identities and access essential services without human intervention.  From API account creation to monetizing websites, we drive commerce for the world's fastest-growing consumer base: AI agents.\nLearn how it works\nBENEFITS AT A GLANCE\nWhy Skyfire?\nThe trusted network for global payments that move at the speed of AI.  Drive the future of commerce with instant payments and Know Your Agent (KYA) identity.\nADVANTAGE 1\nAutonomous Payments\nPay instantly without human involvement.\nADVANTAGE 2\nNew Revenue Streams\nSell to AI and open new, untapped customers and markets.\nADVANTAGE 3\nKYA: Identity Verification\nGive your agents a verified identity for autonomous account creation and access.\nLearn how it works\nTHE PROCESS\nSeamless  AI Transactions in Action\nSkyfire empowers AI agents to conduct transactions effortlessly. They can pay businesses, verify their identity, and access essential data and services in real-time.\nService Request\nAI agent makes a service request via API\nKYA: Identity Verification\nService verifies agent identity and payment\nPayment Processing\nService delivered and agent is charged\nFeatured in\nReady to Power AI Transactions?\nEmpower AI to pay, verify, and transact autonomously with seamless access to services\nExplore Use Cases\nLaunch Skyfire ->\nProduct\nAbout\nUse Case\nBlog\nDocs\nContact\n\u00a9 Skyfire                        2026 All rights reserved.\nPrivacy Policy\nData Processing Agreement\nSkyfire Cookie Policy\nSkyfire Sub-Processors List\nIndustry Articles",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://skyfire.xyz/pricing",
+      "title": "Page not found - Skyfire",
+      "text": "Page not found - Skyfire\nProduct\nAbout\nUse Case\nBlog\nDocs\nContact\nLaunch Skyfire\nProduct\nAbout\nUse Case\nBlog\nDocs\nContact\nLaunch Skyfire\nSearch for:\nClose Search\nNot Found :(\nNothing found for the requested page. Try a search instead?\nSearch for:\nProduct\nAbout\nUse Case\nBlog\nDocs\nContact\n\u00a9 Skyfire                        2026 All rights reserved.\nPrivacy Policy\nData Processing Agreement\nSkyfire Cookie Policy\nSkyfire Sub-Processors List\nIndustry Articles",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://docs.skyfire.xyz",
+      "title": "Developer Documentation",
+      "text": "Developer Documentation\nJump to Content\nHome\nHome\nGuides\nAPI Reference\nHome\nLog In\nGuides\nLog In\nHome\nGuides\nAPI Reference\nDeveloper Documentation\nSearch\n\u2318K\nOverview\nDeveloper Documentation\nKYAPay Tokens\nCommon Token Claims\nKYA Token\nExample KYA Token\nPAY Token\nExample PAY Token\nKYA-PAY Token\nExample Token Interactions\nQuick Start\nSkyfire Setup\nIntegration One-Pager\nLIVE IMPLEMENTATIONS\nDappier.com\nBuildShip.tools\nApify.com\nDEMOS & REFERENCE IMPLEMENTATIONS\nSmart News Crawler Demo - News and Content given End-User Identity\nDiscovery and Purchase of Premium Financial Data by an Agent\nAccess to Protected / Premium Web Content by a Paying Web Crawler\nSECURity\nSecurity Brief for Sellers and Bot Managers\nBuyer Workflows\nBuyer Account Creation\nBuyer Onboarding\nKnow Your Agent (KYA)\nWallet Funding\nSeller Workflows\nSeller Account Creation\nSeller Onboarding\nKnow Your Agent (KYA)\nSkyfire Directory\nService Discovery\nVerified Service Guarantee\nPowered by\nDeveloper Documentation\nIdentity and Payments for AI. This guide provides technical instructions for using the Skyfire platform as both a Buyer and Seller.\nOverview\nSkyfire enables programmatic interaction between\nBuyers\nand\nSellers\nusing a token-based identity and payment protocol.\nEach user manages one or more agent accounts (Buyer or Seller).  Buyers interact with seller websites, APIs, MCP servers, and services by presenting Skyfire tokens:\nkya\n(identity)\npay\n(payment)\nkya-pay\n(combined identity and payment)\nPlatform Structure\nUsers\nA\nUser\nis the top-level entity on the Skyfire platform. Users typically represent an individual person or business.\nUsers:\nManage one or more\nagent accounts\nMaintain a verified identity\nControl API keys and wallet access\nA user's verified identity may be leveraged by their agents for:\nAccount creation\nAuthentication\nAccess to seller services\nAgent Accounts\nAgent accounts are the operational entities that interact with Skyfire APIs.\nEach agent:\nIs tied to exactly one user\nHas exactly one role:\nBuyer\nor\nSeller\nIs accessed programmatically via unique API keys.\nEach user may have:\nOne\nBuyer agent account\n(created by default at signup).\nOne optional\nSeller agent account\n(created via the Skyfire Dashboard)\nEach agent may have one or more API keys for secure access.\nBuyer Agent\nActs on behalf of the user to discover and purchase services or tools from sellers.\nCapabilities:\nCan create accounts with seller services\nSubscribe to or purchase services\nGenerate:\nkya\ntokens (identity)\npay\ntokens (payment)\nkya-pay\ntokens (identity + payment)\nEach buyer agent has a\nwallet\n, funded by the user, used to transact with sellers.\nWhen calling a seller service, the buyer includes the appropriate token as specified by the seller (e.g. HTTP header or request body).\nSeller Agent\nEnables a user to publish and monetize services, tools, or APIs.\nSeller agents:\nMust be explicitly created via the Skyfire Dashboard\nRegister\nSeller Services\nDefine identity and payment requirements for buyer requests\nVerify incoming tokens via standard JWKS libraries to:\nAuthenticate the buyer (\nkya\n)\nCharge the buyer (\npay\nor\nkya-pay\n)\nSellers receive payments via Skyfire's settlement system once services are delivered.\nWallets\nEach agent account comes with an associated wallet, managed by Skyfire.\nBuyers\nfund their wallets to purchase services and tools\nSellers\nreceive funds in their wallets after successfully charging buyer tokens and delivering the service\nSkyfire handles\nsettlement and transfer\nof funds between wallets after a successful transaction.\nSeller Services\nSeller services are the products, tools, or APIs made available by seller agents to buyers.\nA seller can define\nmultiple seller services\nunder one seller agent.\nServices may include:\nRemote/local MCP servers\nAPIs\nWebsites\nEach Seller Service specifies:\nPricing\nIdentity requirements\nAccepted token types\nToken format and expected delivery method (e.g.\nskyfire-pay-id\nheader)\nIdentity Requirements\nSeller Services may optionally enforce identity requirements.\nIf\nno identity requirements\nare specified:\nAny buyer can create tokens for it\nThe buyer principal's email address will be included in the\nhid\nclaim\nIf identity requirements are specified:\nOnly buyers that satisfy those identity requirements can create tokens for it\nRules\n:\nIf only\nbusiness identity\nis required:\nOnly buyers that have verified their business identity can create tokens\nBuyers that have NOT verified identity OR have verified individual identity CANNOT create tokens\nIf only\nindividual identity\nis required\nOnly buyers that have verified their individual identity can create tokens\nBuyers that have NOT verified identity OR have verified business identity CANNOT create tokens\nIf both\nindividual and business identity\nis required\nOnly buyers that have verified either their individual identity or their business identity can create tokens\nBuyers that have NOT verified identity at all CANNOT create tokens\nBuyers with no verified identity cannot create tokens for restricted services\nServices can be:\nPaid\n, require\npay\nor\nkya-pay\ntokens\nFree\n, require\nkya\ntokens (identity only)\nUpdated\nabout 2 months ago\nWhat\u2019s Next\nUnderstanding KYA+Pay Tokens\nKYA+Pay Tokens\nDid this page help you?\nYes\nNo\nCopy Page\nOverview\nPlatform Structure\nUsers\nAgent Accounts\nSeller Services",
+      "source": "playwright"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/skyfire/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Opera acquires Skyfire labs for $155M",
+          "url": "http://mashable.com/2013/02/15/opera-acquires-skyfire-labs-for-155-million/",
+          "points": 39,
+          "num_comments": 22,
+          "created_at": "2013-02-15T08:18:14Z",
+          "hn_url": "https://news.ycombinator.com/item?id=5225136"
+        },
+        {
+          "title": "Opera acquires Skyfire for its video-optimization and smartphone monetization",
+          "url": "http://www.opera.com/press/releases/2013/02/15/",
+          "points": 16,
+          "num_comments": 0,
+          "created_at": "2013-02-15T05:52:36Z",
+          "hn_url": "https://news.ycombinator.com/item?id=5224687"
+        },
+        {
+          "title": "Skyfire Launches the First Flash Video Enabled Mobile Browser for Android",
+          "url": "http://www.skyfire.com/",
+          "points": 4,
+          "num_comments": 2,
+          "created_at": "2010-04-29T17:54:46Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1305335"
+        },
+        {
+          "title": "Skyfire iPhone app: Gone from iTunes,",
+          "url": "http://www.csmonitor.com/Innovation/Horizons/2010/1104/Skyfire-iPhone-app-Gone-from-iTunes-but-for-how-long",
+          "points": 3,
+          "num_comments": 1,
+          "created_at": "2010-11-05T12:20:21Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1872844"
+        },
+        {
+          "title": "Skyfire Notches One Million Downloads of its Android Mobile Browser",
+          "url": "http://www.skyfire.com/skyfire-notches-one-million-downloads-of-its-android-mobile-browser/",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2010-09-16T07:06:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1697052"
+        },
+        {
+          "title": "Skyfire for iOS sold out in 5 hrs - iphone/ipad users DO want flash video",
+          "url": "http://www.engadget.com/2010/11/03/skyfire-disappears-from-itunes-app-store-due-to-technical-diffic/",
+          "points": 2,
+          "num_comments": 1,
+          "created_at": "2010-11-04T12:19:05Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1868542"
+        },
+        {
+          "title": "Why Opera Software Bought Skyfire",
+          "url": "http://www.techweekeurope.co.uk/interview/why-opera-software-bought-skyfire-107578",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2013-02-18T13:57:17Z",
+          "hn_url": "https://news.ycombinator.com/item?id=5238252"
+        },
+        {
+          "title": "Skyfire lets AI agents spend your money",
+          "url": "https://techcrunch.com/2024/08/21/skyfire-lets-ai-agents-spend-your-money/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2024-08-21T13:45:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41310236"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://skyfire.xyz/pricing",
+    "changelog": null,
+    "docs": "https://docs.skyfire.xyz",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/skyfire/reviews"
+  },
+  "analysis": {
+    "name": "Skyfire",
+    "url": "https://skyfire.xyz",
+    "tagline": "The Agentic Commerce Platform",
+    "value_proposition": "Skyfire gives AI agents a verified identity and payment wallet so they can autonomously transact with APIs, websites, and services without human involvement.",
+    "target_segment": "dev / enterprise",
+    "ideal_customer": "Developers and businesses building or deploying AI agents that need to autonomously purchase services, and API/SaaS vendors who want to monetize access to AI agents as customers.",
+    "features": [
+      {
+        "name": "autonomous payments",
+        "description": "AI agents can initiate and complete payments without any human intervention.",
+        "evidence_source": "landing",
+        "tier": "unknown"
+      },
+      {
+        "name": "kya identity verification",
+        "description": "Know Your Agent (KYA) protocol that verifies an agent's identity before granting access or charging payment.",
+        "evidence_source": "landing|docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "kya tokens",
+        "description": "JWT-based identity tokens that assert a buyer agent's verified identity to seller services.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "pay tokens",
+        "description": "JWT-based payment tokens that authorize a seller to charge a buyer agent's wallet for a service.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "kya-pay tokens",
+        "description": "Combined identity and payment token that simultaneously authenticates the agent and authorizes a charge.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "buyer agent accounts",
+        "description": "Operational agent accounts that discover, subscribe to, and purchase seller services on behalf of a user.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "seller agent accounts",
+        "description": "Operational agent accounts that publish, configure, and monetize services or APIs to buyer agents.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "agent wallet",
+        "description": "Per-agent wallet funded by the user; buyers spend from it, sellers receive settlement into it.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "wallet funding",
+        "description": "Users top up buyer agent wallets to fund autonomous purchases.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "settlement system",
+        "description": "Skyfire-managed transfer of funds between buyer and seller wallets after successful service delivery.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "api keys",
+        "description": "Per-agent API keys for programmatic, secure access to the Skyfire platform.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "seller services registry",
+        "description": "Sellers define and publish one or more named services under a seller agent, each with pricing and identity requirements.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "service discovery",
+        "description": "Skyfire Directory that lets buyer agents find available seller services.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "verified service guarantee",
+        "description": "Platform-level assurance that listed seller services are verified.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "mcp server support",
+        "description": "Seller services can expose remote or local MCP servers as purchasable resources.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "automated account creation",
+        "description": "Buyer agents can autonomously create accounts with seller services using their verified KYA identity.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "individual identity verification",
+        "description": "Sellers can restrict services to buyers who have verified their individual (personal) identity.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "business identity verification",
+        "description": "Sellers can restrict services to buyers who have verified their business identity.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "identity requirements enforcement",
+        "description": "Per-service policy engine that gates token issuance based on buyer's verified identity level (none, individual, business, or either).",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "jwks token verification",
+        "description": "Sellers verify incoming KYA/PAY tokens using standard JWKS libraries, enabling framework-agnostic integration.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "token delivery configuration",
+        "description": "Sellers specify how tokens should be delivered per service (e.g., HTTP header skyfire-pay-id or request body).",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "per-service pricing configuration",
+        "description": "Each seller service independently defines its own pricing for buyer agents.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "multi-agent account management",
+        "description": "A single user can manage one buyer and one seller agent account, each with multiple API keys.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "skyfire dashboard",
+        "description": "Web UI for creating seller agent accounts, managing services, and viewing wallet state.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "buyer onboarding workflow",
+        "description": "Guided setup flow for buyer account creation, identity verification, and wallet funding.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "seller onboarding workflow",
+        "description": "Guided setup flow for seller account creation, service registration, and token requirement configuration.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "api-based service access",
+        "description": "Buyer agents call seller APIs and include tokens in the request to authenticate and pay in a single call.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "free service support",
+        "description": "Seller services can be configured as free (identity-only, using kya tokens) with no payment required.",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "new revenue streams for sellers",
+        "description": "Enables existing API/web businesses to monetize access specifically to AI agent customers.",
+        "evidence_source": "landing",
+        "tier": "unknown"
+      }
+    ],
+    "integrations": [
+      "Dappier.com",
+      "BuildShip.tools",
+      "Apify.com"
+    ],
+    "differentiators": [
+      "Know Your Agent (KYA) \u2014 purpose-built identity verification protocol for AI agents, analogous to KYC for humans",
+      "Payments move at the speed of AI \u2014 no human approval step in the transaction loop",
+      "First mover framing as 'The Agentic Commerce Platform' targeting AI agents as a consumer base",
+      "Combined identity + payment in a single token (kya-pay), reducing round-trips",
+      "Enables sellers to gate access by verified identity level (individual vs. business) for AI buyers"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing_signal": {
+      "model": "unknown",
+      "tier_count": 0,
+      "lowest_paid_seat": null,
+      "free_tier": null
+    }
+  }
+}

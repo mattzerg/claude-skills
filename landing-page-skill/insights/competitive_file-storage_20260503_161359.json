@@ -1,0 +1,1897 @@
+{
+  "type": "competitive_review_handoff",
+  "category": "file-storage",
+  "product": "ZergBox",
+  "generated_at": "2026-05-03T16:13:59.181731",
+  "competitor_urls": [
+    "https://workspace.google.com/products/drive",
+    "https://www.dropbox.com",
+    "https://www.box.com",
+    "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
+    "https://www.sync.com",
+    "https://www.pcloud.com",
+    "https://tresorit.com",
+    "https://nextcloud.com",
+    "https://proton.me/drive",
+    "https://www.apple.com/icloud/"
+  ],
+  "matrix": [
+    {
+      "feature": "cloud storage",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "partial",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "yes",
+        "us_live": "unknown"
+      },
+      "frequency": 8,
+      "frequency_weighted": 7.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "file upload and download",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "yes",
+        "us_live": "unknown"
+      },
+      "frequency": 8,
+      "frequency_weighted": 8.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "folder organization",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 8,
+      "frequency_weighted": 8.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "full-text and media search",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "partial",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "frequency_weighted": 5.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "file sync",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 8,
+      "frequency_weighted": 8.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "offline access",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 7,
+      "frequency_weighted": 7.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "version history",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 7,
+      "frequency_weighted": 7.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "deleted file recovery",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "unknown",
+        "apple.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "large file transfer",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "unknown",
+        "apple.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "file locking",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "file requests",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "yes",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "shared links",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 8,
+      "frequency_weighted": 8.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "password-protected sharing",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "no",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "link expiry dates",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "no",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "shared drives",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "partial",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 8,
+      "frequency_weighted": 7.5,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "file ownership transfer",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "unknown",
+        "microsoft.com": "unknown",
+        "pcloud.com": "unknown",
+        "nextcloud.com": "unknown",
+        "proton.me": "unknown",
+        "apple.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "document scanning",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "yes",
+        "box.com": "unknown",
+        "microsoft.com": "yes",
+        "pcloud.com": "unknown",
+        "nextcloud.com": "unknown",
+        "proton.me": "unknown",
+        "apple.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "photo and media backup",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "unknown",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "unknown",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "video storage and playback",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "unknown",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "unknown",
+        "proton.me": "unknown",
+        "apple.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "archive creation and extraction",
+      "category": "core",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "yes",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "google workspace integration",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "unknown",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "microsoft office integration",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "unknown",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "unknown",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sharepoint integration",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "unknown",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "microsoft teams integration",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "unknown",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "rest api",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "dropbox.com": "unknown",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "unknown",
+        "proton.me": "unknown",
+        "apple.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "webhooks",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "dropbox.com": "unknown",
+        "box.com": "yes",
+        "microsoft.com": "unknown",
+        "pcloud.com": "no",
+        "nextcloud.com": "unknown",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sdk",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "dropbox.com": "unknown",
+        "box.com": "yes",
+        "microsoft.com": "unknown",
+        "pcloud.com": "yes",
+        "nextcloud.com": "unknown",
+        "proton.me": "unknown",
+        "apple.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "oauth 2.0",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "dropbox.com": "unknown",
+        "box.com": "unknown",
+        "microsoft.com": "unknown",
+        "pcloud.com": "yes",
+        "nextcloud.com": "unknown",
+        "proton.me": "unknown",
+        "apple.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "cli",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "dropbox.com": "unknown",
+        "box.com": "yes",
+        "microsoft.com": "unknown",
+        "pcloud.com": "no",
+        "nextcloud.com": "unknown",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "yes",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "we_have_they_dont",
+      "evidence": ""
+    },
+    {
+      "feature": "windows network drive support",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "unknown",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mcp server integration",
+      "category": "integrations",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai assistant",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai file summarization and q&a",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai-powered metadata extraction",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "automated content classification",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ocr",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "video transcripts and captions",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "yes",
+        "box.com": "no",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai image generation and editing",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "agentic workflows",
+      "category": "ai",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "admin console",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "partial",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "frequency_weighted": 5.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "granular permissions",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "partial",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "frequency_weighted": 5.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sso",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "multi-factor authentication",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 7,
+      "frequency_weighted": 7.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "tiered admin roles",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "partial",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "frequency_weighted": 5.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "device approvals and remote wipe",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "no",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "account transfer",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "unknown",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "audit logging",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "partial",
+        "box.com": "partial",
+        "microsoft.com": "partial",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "retention policies",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "partial",
+        "box.com": "yes",
+        "microsoft.com": "partial",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "legal holds",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "unknown",
+        "box.com": "yes",
+        "microsoft.com": "unknown",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "data classification",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "partial",
+        "pcloud.com": "no",
+        "nextcloud.com": "partial",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "compliance certifications",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "partial",
+        "pcloud.com": "yes",
+        "nextcloud.com": "unknown",
+        "proton.me": "partial",
+        "apple.com": "unknown",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ediscovery",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "no",
+        "box.com": "partial",
+        "microsoft.com": "unknown",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 1.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "end-to-end encryption",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "dropbox.com": "yes",
+        "box.com": "no",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "partial",
+        "proton.me": "yes",
+        "apple.com": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "frequency_weighted": 5.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "zero-knowledge encryption",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "no",
+        "pcloud.com": "yes",
+        "nextcloud.com": "partial",
+        "proton.me": "yes",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "advanced key management",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "unknown",
+        "microsoft.com": "unknown",
+        "pcloud.com": "no",
+        "nextcloud.com": "partial",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ransomware detection and recovery",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "dropbox.com": "yes",
+        "box.com": "no",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "threat detection and alerts",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "partial",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "malware detection",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "dropbox.com": "unknown",
+        "box.com": "yes",
+        "microsoft.com": "partial",
+        "pcloud.com": "no",
+        "nextcloud.com": "unknown",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 1.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "branding and white-labeling",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "partial",
+        "box.com": "unknown",
+        "microsoft.com": "no",
+        "pcloud.com": "partial",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "self-hosted deployment",
+      "category": "admin",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "partial",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 1.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "automated document generation",
+      "category": "automation",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "real-time co-authoring",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "partial",
+        "box.com": "yes",
+        "microsoft.com": "yes",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 5.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "comments and annotations",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "unknown",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "tasks",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "e-signature",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "video review and commenting",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "yes",
+        "box.com": "no",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "visitor sharing",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "shared photo albums",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "partial",
+        "pcloud.com": "no",
+        "nextcloud.com": "no",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "whiteboard",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "video conferencing",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "partial",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "team chat",
+      "category": "collaboration",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "partial",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "storage analytics",
+      "category": "reporting",
+      "presence": {
+        "orkspace.google.com": "partial",
+        "dropbox.com": "partial",
+        "box.com": "partial",
+        "microsoft.com": "partial",
+        "pcloud.com": "partial",
+        "nextcloud.com": "partial",
+        "proton.me": "unknown",
+        "apple.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "activity reporting",
+      "category": "reporting",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "partial",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "compliance reporting",
+      "category": "reporting",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "yes",
+        "microsoft.com": "partial",
+        "pcloud.com": "partial",
+        "nextcloud.com": "partial",
+        "proton.me": "partial",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile app",
+      "category": "mobile",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "unknown",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "frequency_weighted": 7.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "automatic mobile backup",
+      "category": "mobile",
+      "presence": {
+        "orkspace.google.com": "yes",
+        "dropbox.com": "yes",
+        "box.com": "unknown",
+        "microsoft.com": "yes",
+        "pcloud.com": "yes",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "frequency_weighted": 7.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "open source",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "no",
+        "pcloud.com": "no",
+        "nextcloud.com": "yes",
+        "proton.me": "yes",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "password manager",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "no",
+        "pcloud.com": "yes",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "independent security audits",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "unknown",
+        "dropbox.com": "unknown",
+        "box.com": "unknown",
+        "microsoft.com": "unknown",
+        "pcloud.com": "partial",
+        "nextcloud.com": "unknown",
+        "proton.me": "yes",
+        "apple.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 1.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "lifetime purchase option",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "no",
+        "box.com": "no",
+        "microsoft.com": "no",
+        "pcloud.com": "yes",
+        "nextcloud.com": "no",
+        "proton.me": "no",
+        "apple.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "family plan",
+      "category": "other",
+      "presence": {
+        "orkspace.google.com": "no",
+        "dropbox.com": "unknown",
+        "box.com": "no",
+        "microsoft.com": "unknown",
+        "pcloud.com": "yes",
+        "nextcloud.com": "no",
+        "proton.me": "yes",
+        "apple.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "hybrid deployment",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "data center region choice",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "mdm support",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "dark mode",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "file labeling and tagging",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "file watermarking",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "notifications",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "activity feed",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "viewer history",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "digital asset management",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "built-in media player",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "screen reader accessibility",
+      "category": "ux",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "workflow automation",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "no-code apps and connected forms",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "file approvals",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile document scanning",
+      "category": "mobile",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    }
+  ],
+  "rankings": [
+    {
+      "feature": "folder organization",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 4,
+      "cost": "M",
+      "score": 10.67,
+      "evidence": ""
+    },
+    {
+      "feature": "file sync",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 4,
+      "cost": "M",
+      "score": 10.67,
+      "evidence": ""
+    },
+    {
+      "feature": "shared links",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 4,
+      "cost": "M",
+      "score": 10.67,
+      "evidence": ""
+    },
+    {
+      "feature": "shared drives",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 4,
+      "cost": "M",
+      "score": 10.67,
+      "evidence": ""
+    },
+    {
+      "feature": "offline access",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 4,
+      "cost": "M",
+      "score": 9.33,
+      "evidence": ""
+    },
+    {
+      "feature": "version history",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 4,
+      "cost": "M",
+      "score": 9.33,
+      "evidence": ""
+    },
+    {
+      "feature": "multi-factor authentication",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 4,
+      "cost": "M",
+      "score": 9.33,
+      "evidence": ""
+    },
+    {
+      "feature": "mobile app",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 4,
+      "cost": "M",
+      "score": 9.33,
+      "evidence": ""
+    },
+    {
+      "feature": "automatic mobile backup",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 4,
+      "cost": "M",
+      "score": 9.33,
+      "evidence": ""
+    },
+    {
+      "feature": "deleted file recovery",
+      "bucket": "table_stakes",
+      "frequency": 6,
+      "fit": 4,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    }
+  ],
+  "drift": [
+    {
+      "feature": "live site content",
+      "spec_says": "no",
+      "live_says": "no",
+      "note": "other; no live scrape was provided \u2014 cannot perform diff without live site data"
+    }
+  ],
+  "summary": {
+    "n_features": 97,
+    "table_stakes_count": 12,
+    "differentiator_parity_count": 68,
+    "whitespace_count": 16,
+    "we_have_they_dont_count": 1,
+    "drift_count": 1,
+    "_thresholds": {
+      "table_stakes": 0.75,
+      "parity_lower": 0.25,
+      "partial_weight": 0.5
+    }
+  }
+}

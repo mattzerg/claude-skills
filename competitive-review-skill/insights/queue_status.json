@@ -1,0 +1,450 @@
+[
+  {
+    "category": "internal-chat",
+    "product": "ZergChat",
+    "started": "2026-05-02T18:01:55.126511",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-02T20:09:55.238622",
+    "ok": true,
+    "elapsed_seconds": 7680.111883
+  },
+  {
+    "category": "workspace-email",
+    "product": "ZergMail",
+    "started": "2026-05-02T20:10:00.240147",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-02T21:37:45.699873",
+    "ok": true,
+    "elapsed_seconds": 5265.4595
+  },
+  {
+    "category": "calendar",
+    "product": "ZergCal",
+    "started": "2026-05-02T21:37:50.701200",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-02T22:13:08.993370",
+    "ok": true,
+    "elapsed_seconds": 2118.291854
+  },
+  {
+    "category": "video-meetings",
+    "product": "ZergMeeting",
+    "started": "2026-05-02T22:13:13.998855",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-02T23:37:18.566829",
+    "ok": true,
+    "elapsed_seconds": 5044.567499
+  },
+  {
+    "category": "sms-messaging",
+    "product": "ZMsg",
+    "started": "2026-05-02T23:37:23.569970",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-03T00:16:39.023433",
+    "ok": true,
+    "elapsed_seconds": 2355.453225
+  },
+  {
+    "category": "crm",
+    "product": "ZergCRM",
+    "started": "2026-05-03T00:16:44.024257",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-03T01:49:02.915916",
+    "ok": true,
+    "elapsed_seconds": 5538.891422
+  },
+  {
+    "category": "file-storage",
+    "product": "ZergBox",
+    "started": "2026-05-03T01:49:07.919844",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-03T16:13:59.191307",
+    "ok": true,
+    "elapsed_seconds": 51891.27114
+  },
+  {
+    "category": "analytics",
+    "product": "Zergalytics",
+    "started": "2026-05-03T16:14:04.197011",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-03T19:56:38.786360",
+    "ok": true,
+    "elapsed_seconds": 13354.589156
+  },
+  {
+    "category": "email-marketing",
+    "product": "Zstack",
+    "started": "2026-05-03T19:56:43.791146",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-03T20:41:42.811372",
+    "ok": true,
+    "elapsed_seconds": 2699.019937
+  },
+  {
+    "category": "customer-support",
+    "product": "Zstack",
+    "started": "2026-05-03T20:41:47.821104",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-03T21:31:35.353595",
+    "ok": true,
+    "elapsed_seconds": 2987.532279
+  },
+  {
+    "category": "accounting",
+    "product": "Zstack",
+    "started": "2026-05-03T21:31:40.357547",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-03T22:19:23.833603",
+    "ok": true,
+    "elapsed_seconds": 2863.475792
+  },
+  {
+    "category": "expense-management",
+    "product": "Zstack",
+    "started": "2026-05-03T22:19:28.836853",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-03T23:16:50.643844",
+    "ok": true,
+    "elapsed_seconds": 3441.806749
+  },
+  {
+    "category": "hris-payroll",
+    "product": "Zstack",
+    "started": "2026-05-03T23:16:55.645277",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-04T00:10:19.117745",
+    "ok": true,
+    "elapsed_seconds": 3203.472229
+  },
+  {
+    "category": "marketing-automation",
+    "product": "Zstack",
+    "started": "2026-05-04T00:10:24.120933",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-05-04T00:55:25.537638",
+    "ok": true,
+    "elapsed_seconds": 2701.41636
+  },
+  {
+    "category": "notes-wiki",
+    "product": "Zstack",
+    "started": "2026-05-04T00:55:30.543383",
+    "phases": {
+      "discover": {
+        "rc": 1,
+        "err_tail": "[claude] attempt 2/3 failed: Claude CLI exit 1: \n[claude] attempt 3/3 failed: Claude CLI exit 1: \nTraceback (most recent call last):\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py\", line 112, in <module>\n    main()\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py\", line 75, in main\n    candidates = claude.call_claude_json(prompt)\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/lib/claude.py\", line 189, in call_claude_json\n    raw = call_claude(prompt, system=system, model=model, timeout=timeout)\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/lib/claude.py\", line 178, in call_claude\n    raise RuntimeError(f\"Claude CLI failed after {MAX_RETRIES} attempts: {last_err}\")\nRuntimeError: Claude CLI failed after 3 attempts: Claude CLI exit 1: "
+      }
+    },
+    "ended": "2026-05-04T00:56:11.296965",
+    "ok": false,
+    "stage_failed": "discover"
+  },
+  {
+    "category": "all-in-one-platforms",
+    "product": "Zstack",
+    "started": "2026-05-04T00:56:16.303096",
+    "phases": {
+      "discover": {
+        "rc": 1,
+        "err_tail": "[claude] attempt 2/3 failed: Claude CLI exit 1: \n[claude] attempt 3/3 failed: Claude CLI exit 1: \nTraceback (most recent call last):\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py\", line 112, in <module>\n    main()\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py\", line 75, in main\n    candidates = claude.call_claude_json(prompt)\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/lib/claude.py\", line 189, in call_claude_json\n    raw = call_claude(prompt, system=system, model=model, timeout=timeout)\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/lib/claude.py\", line 178, in call_claude\n    raise RuntimeError(f\"Claude CLI failed after {MAX_RETRIES} attempts: {last_err}\")\nRuntimeError: Claude CLI failed after 3 attempts: Claude CLI exit 1: "
+      }
+    },
+    "ended": "2026-05-04T00:56:57.512637",
+    "ok": false,
+    "stage_failed": "discover"
+  }
+]

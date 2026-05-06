@@ -370,6 +370,9 @@ def cmd_create(args: argparse.Namespace) -> None:
             emit({"error": f"Assignee email not on this board: {args.assignee}"})
             sys.exit(1)
         body["assigneeUserIds"] = [assignee["user_id"]]
+    if args.parent:
+        parent = resolve_card(args.parent)
+        body["parentCardId"] = parent["id"]
 
     data = request("POST", "/api/cards", body=body)
     emit({"card": data.get("card", data)})
@@ -388,8 +391,15 @@ def cmd_update(args: argparse.Namespace) -> None:
             body["dueAt"] = f"{args.due}T09:00:00.000Z"
         else:
             body["dueAt"] = args.due
+    if args.parent is not None:
+        # Pass --parent="" or "none" to clear the parent relationship.
+        if args.parent.lower() in ("", "none", "null"):
+            body["parentCardId"] = None
+        else:
+            parent = resolve_card(args.parent)
+            body["parentCardId"] = parent["id"]
     if not body:
-        emit({"error": "Nothing to update — pass at least one of --title/--description/--priority/--due/--estimate"})
+        emit({"error": "Nothing to update — pass at least one of --title/--description/--priority/--due/--estimate/--parent"})
         sys.exit(1)
     data = request("PATCH", f"/api/cards/{card['id']}", body=body)
     emit({"card": data.get("card", data)})
@@ -550,6 +560,7 @@ def main() -> None:
     s.add_argument("--priority", choices=["urgent", "high", "medium", "low"])
     s.add_argument("--column")
     s.add_argument("--assignee")
+    s.add_argument("--parent", help="External id (e.g. MAR-2) of parent card")
     s.set_defaults(func=cmd_create)
 
     s = sub.add_parser("update")
@@ -559,6 +570,7 @@ def main() -> None:
     s.add_argument("--priority", choices=["urgent", "high", "medium", "low"])
     s.add_argument("--due")
     s.add_argument("--estimate", type=int)
+    s.add_argument("--parent", help="External id of parent card. Pass '' or 'none' to clear.")
     s.set_defaults(func=cmd_update)
 
     s = sub.add_parser("move")

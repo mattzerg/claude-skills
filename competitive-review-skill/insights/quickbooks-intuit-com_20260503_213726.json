@@ -1,0 +1,275 @@
+{
+  "name": "QuickBooks",
+  "url": "https://quickbooks.intuit.com",
+  "domain": "quickbooks.intuit.com",
+  "scanned_at": "2026-05-03T21:32:05.062761",
+  "sources": {
+    "landing": {
+      "url": "https://quickbooks.intuit.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "pricing": {
+      "url": "https://quickbooks.intuit.com/pricing/",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/pricing/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/pricing/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://quickbooks.intuit.com/learn-support/",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/learn-support/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/learn-support/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "integrations": {
+      "url": "https://quickbooks.intuit.com/app/apps/home/",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/app/apps/home/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/app/apps/home/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/quickbooks-online/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "An open-source alternative to QuickBooks",
+          "url": "https://bigcapital.ly",
+          "points": 524,
+          "num_comments": 209,
+          "created_at": "2023-05-29T22:44:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=36118990"
+        },
+        {
+          "title": "QuickBooks Cloud Hosting Firm iNSYNQ Hit in Ransomware Attack",
+          "url": "https://krebsonsecurity.com/2019/07/quickbooks-cloud-hosting-firm-insynq-hit-in-ransomware-attack/",
+          "points": 254,
+          "num_comments": 134,
+          "created_at": "2019-07-19T16:47:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20480261"
+        },
+        {
+          "title": "Show HN: Bigcapital - A open-source alternative to QuickBooks",
+          "url": "https://github.com/bigcapitalhq/bigcapital",
+          "points": 93,
+          "num_comments": 32,
+          "created_at": "2023-09-25T20:05:45Z",
+          "hn_url": "https://news.ycombinator.com/item?id=37649811"
+        },
+        {
+          "title": "Show HN: Bigcapital - An open-source alternative to QuickBooks",
+          "url": "https://bigcapital.ly/#",
+          "points": 87,
+          "num_comments": 10,
+          "created_at": "2023-07-02T22:41:58Z",
+          "hn_url": "https://news.ycombinator.com/item?id=36566556"
+        },
+        {
+          "title": "QuickBooks Desktop moves to subscription model",
+          "url": "https://www.askwoody.com/2021/quickbooks-desktop-moves-to-subscription-model/",
+          "points": 76,
+          "num_comments": 61,
+          "created_at": "2021-09-07T17:56:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=28447731"
+        },
+        {
+          "title": "LessAccounting, the Startup That Challenged QuickBooks, Sold",
+          "url": "https://mixergy.com/interviews/lessaccounting-allan-branch-steven-bristol/",
+          "points": 71,
+          "num_comments": 28,
+          "created_at": "2016-06-06T18:40:10Z",
+          "hn_url": "https://news.ycombinator.com/item?id=11849150"
+        },
+        {
+          "title": "QuickBooks Bitcoin Payments",
+          "url": "http://intuitlabs.com/labexperiments/quickbooks-bitcoin-payments",
+          "points": 55,
+          "num_comments": 9,
+          "created_at": "2014-05-18T22:05:37Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7764610"
+        },
+        {
+          "title": "Ask HN: Best Intro to Accounting/QuickBooks?",
+          "url": null,
+          "points": 48,
+          "num_comments": 15,
+          "created_at": "2017-02-18T19:40:25Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13676300"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Client suspended IT services",
+          "subreddit": "sysadmin",
+          "score": 767,
+          "num_comments": 517,
+          "permalink": "https://reddit.com/r/sysadmin/comments/1krliyo/client_suspended_it_services/",
+          "selftext": "I managed a small business IT needs. The previous owners did not know how to use the PC at all.\n\nI charged a monthly fee to maintain everything the business needed for IT domain, emails, licenses, backups, and mainly technical assistance. The value I brought to the business was more than anything being able to assist immediately to any minor issue they would have that prevented them from doing anything in quickbooks, online, email or what not.\n\nThe company owners changed. The new owner sent me a"
+        },
+        {
+          "title": "my boss said I\u2019m threatened by his \u201cmasculine energy\u201d",
+          "subreddit": "BestofRedditorUpdates",
+          "score": 6493,
+          "num_comments": 364,
+          "permalink": "https://reddit.com/r/BestofRedditorUpdates/comments/1ndz14q/my_boss_said_im_threatened_by_his_masculine_energy/",
+          "selftext": "**my boss said I\u2019m threatened by his \u201cmasculine energy\u201d**\n\n**Originally posted to Ask A Manager**\n\n**TRIGGER WARNING:** &gt;!Toxic masculinity!&lt;\n\n**MOOD SPOILER:** &gt;!positive for OOP. Trainwreck horror for everyone else!&lt; \n\n[Original Post](https://www.askamanager.org/2025/07/my-boss-said-im-threatened-by-his-masculine-energy.html)  **July 2, 2025**\n\nI am a Millennial woman and my new boss is a Gen X man. We have been butting heads a lot, mostly because I think he lacks the basic skills "
+        },
+        {
+          "title": "Claude just did my taxes. $INTU is cooked",
+          "subreddit": "wallstreetbets",
+          "score": 5131,
+          "num_comments": 1238,
+          "permalink": "https://reddit.com/r/wallstreetbets/comments/1sgtwub/claude_just_did_my_taxes_intu_is_cooked/",
+          "selftext": "**TL;DR:**\u00a0I used Claude Code to do my 2024 and 2025 federal + state taxes. It worked. It cost \\~$0 and took 0 clicks through their stupid wizard.\n\nNow I'm short $100k INTU\n\n\\---  \nLast week I pointed Claude at my tax folder and said the magic words \u201cdo my taxes\u201d\n\nIt nailed it. Read my W-2s, 1099s, 1040\u2019s, 8949 and my schedule D. Downloaded the tax forms directly from papa IRS, asked me a few questions about how much agriculture income I\u2019ve had this year (none) and if I\u2019ve finally upgraded from "
+        },
+        {
+          "title": "Its not BS",
+          "subreddit": "memesopdidnotlike",
+          "score": 4663,
+          "num_comments": 3065,
+          "permalink": "https://reddit.com/r/memesopdidnotlike/comments/1r0ocpa/its_not_bs/",
+          "selftext": ""
+        },
+        {
+          "title": "16k dummies liked this, I guess everything is believable when you're not smart",
+          "subreddit": "insanepeoplefacebook",
+          "score": 3246,
+          "num_comments": 227,
+          "permalink": "https://reddit.com/r/insanepeoplefacebook/comments/1lfjb47/16k_dummies_liked_this_i_guess_everything_is/",
+          "selftext": ""
+        },
+        {
+          "title": "Evolution of shirt sponsorship in Premier League (and Division One) clubs in the period 1986-2026 (taken from Football Kit Archive)",
+          "subreddit": "soccer",
+          "score": 2801,
+          "num_comments": 268,
+          "permalink": "https://reddit.com/r/soccer/comments/1mh8b7z/evolution_of_shirt_sponsorship_in_premier_league/",
+          "selftext": ""
+        },
+        {
+          "title": "Got a raise to start off my 2026! First check of the year just hit.",
+          "subreddit": "Money",
+          "score": 2088,
+          "num_comments": 230,
+          "permalink": "https://reddit.com/r/Money/comments/1q8epm5/got_a_raise_to_start_off_my_2026_first_check_of/",
+          "selftext": "After 2 years and a half without a raise, I received a very generous raise and I couldn\u2019t be more excited about it. I honestly never imagine I\u2019d be able to make this much money in my life, don\u2019t have many people to share it with so this seems like the right place. Ask away if you have questions. For context, I\u2019ve been with this company for almost 5 years. My first paycheck here was $1250. "
+        },
+        {
+          "title": "Has anyone realised this?",
+          "subreddit": "Smart_Calendar1874",
+          "score": 2075,
+          "num_comments": 12,
+          "permalink": "https://reddit.com/r/Smart_Calendar1874/comments/1p2qxp9/has_anyone_realised_this/",
+          "selftext": "It's literally called \"Cylinder Champ\". Lol \n\nu/Smart_Calendar1874"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://quickbooks.intuit.com/pricing/",
+    "changelog": null,
+    "docs": "https://quickbooks.intuit.com/learn-support/",
+    "integrations": "https://quickbooks.intuit.com/app/apps/home/",
+    "g2": "https://www.g2.com/products/quickbooks-online/reviews"
+  },
+  "analysis": {
+    "name": "QuickBooks",
+    "url": "https://quickbooks.intuit.com",
+    "tagline": "unknown \u2014 no landing page source provided",
+    "value_proposition": "Small business accounting software covering bookkeeping, invoicing, payroll, and tax preparation",
+    "target_segment": "SMB",
+    "ideal_customer": "Small business owners and accountants managing books, payroll, and taxes without a dedicated finance team",
+    "features": [
+      {
+        "name": "cloud hosting",
+        "description": "QuickBooks data hosted in the cloud via third-party and native cloud infrastructure",
+        "evidence_source": "hn",
+        "evidence_quote": "QuickBooks Cloud Hosting Firm iNSYNQ Hit in Ransomware Attack",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "desktop application",
+        "description": "Locally installed desktop version of QuickBooks, historically perpetual-license, moved to subscription",
+        "evidence_source": "hn",
+        "evidence_quote": "QuickBooks Desktop moves to subscription model",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "subscription billing model",
+        "description": "QuickBooks Desktop transitioned from one-time purchase to recurring subscription",
+        "evidence_source": "hn",
+        "evidence_quote": "QuickBooks Desktop moves to subscription model",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "bitcoin payments",
+        "description": "Ability to accept Bitcoin as a payment method within QuickBooks",
+        "evidence_source": "hn",
+        "evidence_quote": "QuickBooks Bitcoin Payments",
+        "tier": "unknown",
+        "confidence": "low"
+      },
+      {
+        "name": "accounting / bookkeeping",
+        "description": "Core double-entry accounting and bookkeeping functionality \u2014 basis for open-source alternatives being built",
+        "evidence_source": "hn",
+        "evidence_quote": "An open-source alternative to QuickBooks",
+        "tier": "paid",
+        "confidence": "low"
+      }
+    ],
+    "integrations": [],
+    "differentiators": [],
+    "recent_ships": [
+      {
+        "date": "unknown",
+        "what": "QuickBooks Desktop moved to mandatory subscription model",
+        "source": "HN thread: 'QuickBooks Desktop moves to subscription model' (76\u2191 61c)"
+      },
+      {
+        "date": "unknown",
+        "what": "Bitcoin payment acceptance added",
+        "source": "HN thread: 'QuickBooks Bitcoin Payments' (55\u2191 9c)"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [
+        "Forced subscription model for Desktop drew significant negative community reaction (HN: 76\u2191 61c on the announcement thread)",
+        "Cloud hosting security concerns \u2014 third-party QB hosting firm hit by ransomware (HN: 254\u2191 134c)",
+        "Enough pain points that multiple open-source alternatives have been built and gained traction on HN (524\u2191 and 93\u2191 threads)"
+      ],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "trial",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [],
+      "enterprise": null,
+      "notes": "No pricing page source provided. Known from HN that Desktop moved to subscription; Online tiers not evidenced in provided sources."
+    }
+  }
+}

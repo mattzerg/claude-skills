@@ -1,0 +1,496 @@
+{
+  "name": "Nextcloud",
+  "url": "https://nextcloud.com",
+  "domain": "nextcloud.com",
+  "scanned_at": "2026-05-03T13:58:44.701034",
+  "sources": {
+    "landing": {
+      "url": "https://nextcloud.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://nextcloud.com/\nCall log:\n  - navigating to \"https://nextcloud.com/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "pricing": {
+      "url": "https://nextcloud.com/pricing/",
+      "title": "Nextcloud Enterprise pricing",
+      "text": "Nextcloud Enterprise pricing\nSkip to main content\nJoin\nNextcloud Summit 2026\nRegister now\nProducts\nNextcloud Hub\nThe next-generation digital workspace\nNextcloud Files\nFile Sync and Share\nNextcloud Talk\nCalls, chat and video conferencing\nNextcloud Groupware\nCalendar, Contacts & Mail\nNextcloud Office\nReal time document collaboration\nNextcloud Assistant\nPrivate and local AI assistant\nNextcloud Flow\nDriving digital transformation with automation\nRoundcube\nThe most popular on premise webmail\nMicrosoft integrations\nOutlook, Sharepoint, Teams and more\nSolutions\nNextcloud Enterprise\nFor mission-critical use\nPublic sector\nEnterprise for the public sector\nEnterprises\nEnterprise for organizations\nService providers\nEnterprise for service providers\nEducation\nEnterprise for universities and schools\nPricing\nNextcloud Enterprise plans and pricing\nMigration\nMigrate to Nextcloud: Simple and secure\nNextcloud at home\nFor families, students & you\nResources\nBlog\nNextcloud news and articles\nEvents\nAll in-person and virtual Nextcloud events\nWebinars\nAll upcoming webinars and recordings\nSuccess stories\nSuccess stories and case studies\nWhitepapers\nDownload our whitepapers\nPodcast\nLatest Nextcloud Podcast episodes\nFeatures\nA complete list of features\nCompliance\nAll about privacy\nFeatured\nFeatured blog\nEuro-Office: Building momentum\nBlog, Business, Community, News, Release\nAll news and articles\nApp Store\nHundreds of Nextcloud apps\nDocumentation\nAdmin, user and developer manuals\nFAQ\nNextcloud Enterprise FAQ\nSupport Portal\nCustomer access to Enterprise support\nSecurity\nAdvanced protection at a glance\nPartners\nFind a partner\nMeet our trusted partners\nBecome a partner\nExplore our different collaboration paths\nChannel Partner Program\nJoin our mission as a Channel Partner\nCommunity\nHow to contribute\nTranslation\nDesign\nCode on GitHub\nReport a bug\nCommunity support\nDeveloper program\nCode of Conduct\nNextcloud Include\nAbout\nAbout us\nComparison with others\nPress\nSecurity\nTeam\nJobs\nSearch our site\nDownload\nDesktop & mobile apps\nWindows , macOS, Linux, Android, iOS\nNextcloud server\nFor self-hosting on your server\nSign up now\nGet free account at a provider\nInstant trial\nContact\nEnglish\nFran\u00e7ais\nDeutsch\nEspa\u00f1ol\nItaliano\nNederlands\nNextcloud\nEnterprise pricing\nNextcloud Enterprise is pre-configured, optimized and hardened for the special needs of large scale, production-critical enterprise deployments. It is backed by a Nextcloud Subscription which gives you access to our expertise, partner services and more.\nTry Nextcloud Enterprise now\nPlans and pricing\nSuccessfully host your private cloud\nwith Nextcloud Enterprise\n.\nNextcloud Files\nNextcloud Talk\nStandard\nStarting at 100 users for 71.29\u20ac/user/year\nPremium\nStarting at 100 users for 104.99\u20ac/user/year\nUltimate\nStarting at 100 users for 204.75\u20ac/user/year\nFeatures\nNextcloud Files\nFile sync and share. Providing a secure, reliable, enterprise-ready product to sync and share data across platforms, internal and with third parties.\nIncluded\nIncluded\nIncluded\nNextcloud Assistant\nThe first local AI assistant, integrated across Nextcloud Hub, summarizing email discussions, offering suggestions while writing a document and translating chat messages.\nNot included\nNot included\nIncluded\nNextcloud Flow\nThe workflow automation app can run consecutive flows, or execute multiple flows in parallel, trigger an\napproval request for employees, interact with external services like payment systems, and much more.\nNot included\nNot included\nIncluded\nNextcloud Whiteboard\nNextcloud Whiteboard supports hand drawing with multiple colors and stroke types, shapes, images, arrows and other objects, also works seamlessly with Nextcloud Talk.\nNot included\nOptional\nOptional (extra costs)\nIncluded\nMobile and desktop clients\nNextcloud-branded iOS, Android and desktop apps are free.\nIncluded\nIncluded\nIncluded\nEnterprise capabilities\nPowerful enterprise features like SAML authentication, Windows Network Drive support, password policies, audit-ready logging, workflow handling and more.\nIncluded\nIncluded\nIncluded\nFully Open Source\nThe AGPL license provides legal certainty for all customers and users.\nIncluded\nIncluded\nIncluded\nNextcloud Guard\nNextcloud Guard, available for Nextcloud Enterprise, monitors mission-critical systems for security, performance and other issues.\nIncluded\nIncluded\nIncluded\nBenefits\nMaintenance life cycle\nIf you need the certainty that you can remain on your stable, proven Nextcloud release for a long time.\n1 year\n5+ years\n5+ years\nEarly security and stability patches\nAhead of time access to security and stability patches.\nIncluded\nIncluded\nIncluded\nReaction time\nQuestions and issues are generally responded to in this time, depending on the severity of the issue.\n2 business days\n1 business day\n1h, 4h, 12h or 24h\nPortal support\nOur Nextcloud Knowledge Portal helps you find answers to your questions or contact our professional support engineers.\nIncluded\nIncluded\nIncluded\nMigration support\u00b9\nSome migrations are included, ask your sales representative for details.\nIncluded\nIncluded\nIncluded\nEmail support\nYou can contact our capable and responsive support engineers by email and expect a quick response time.\nIncluded\nbusiness hours\nIncluded\nExtended business hours\nIncluded\nup to 24/7\nPhone support\nYou can contact our support engineers by phone in these times (Languages: German, English and Spanish)\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nIncluded\nup to 24/7\nExtended support\nIf necessary, calls or remote sessions with our engineers to solve issues.\nNot included\nIncluded\nIncluded\nSee more\nBranding\nUse your corporate design in branded and pre-configured sync clients for desktop and mobile.\nIncluded\nIncluded\nMDM supported\nIncluded\nMDM supported\nInstallation review\u00b9\nWe will review your Nextcloud instance after you set it up and assist you in its configuration and fine-tuning\nIncluded\nIncluded\nIncluded\nCustom consulting and integrations\u00b9\nIf you need access to experienced engineers to built custom solutions for your unique needs.\nNot included\nIncluded\nIncluded\nUpgrade stand-by support\u00b9\nUpgrades can be disruptive. Our engineers will ensure yours will go smooth!\nNot included\nIncluded\nIncluded\nSupport for clustered instances\nOnce you need to scale Nextcloud to large numbers of users, a full clustering solution is required. We will support your clustered instance.\nNot included\nIncluded\nIncluded\nSLA on fixes\nWe can guarantee turn-around times on mitigations and fixes for bugs.\nNot included\nIncluded\nIncluded\nOptional components\nCan be separately purchased\nNextcloud Talk\nSecure online meetings, chat and web conferencing\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nSIP bridge for phone dial-in and dial-out\nThe SIP bridge connects Nextcloud Talk to a SIP provider. Requires a Nextcloud Talk subscription.\nNot included\nNot included\nIncluded\nRequires a Nextcloud Talk subscription\nNextcloud Groupware\nTeam planning and email made easy\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nNextcloud Office\nEdit office documents collaboratively from within Nextcloud.\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nONLYOFFICE\nEdit office documents collaboratively from within Nextcloud.\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nThinkfree Office\nEdit office documents collaboratively from within Nextcloud.\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nGlobal Scale\nGlobal Scale delivers a true globally scalable solution for deployments with hundreds of millions of users\nNot included\nOptional\nOptional (extra costs)\nOptional\nOptional (extra costs)\nOpenProject integration\nEfficient classic, agile or hybrid project management in a secure environment, includes the OpenProject Nextcloud integration\nOptional (extra costs)\nOptional (extra costs)\nOptional (extra costs)\nMicrosoft integrations\nSendent Outlook Secure Sharing Add-in\nShare and receive files in a secure way directly from Microsoft Outlook\nOptional\nOptional (extra costs, Windows only)\nOptional\nOptional (extra costs, Windows only)\nIncluded\nPlus\n(Win/Mac/Web)\nNextcloud Exchange connector\nThe Exchange Connector offers bi-directional syncing with Microsoft Exchange. With this new connector,\nyou can seamlessly sync your contacts and agenda items between Nextcloud Enterprise and Exchange.\nNot included\nNot included\nIncluded\nSendent Microsoft Teams Integration\nThe Teams integration offers sharing of files and documents within Microsoft Teams.\nNot included\nNot included\nIncluded\nMicrosoft Office Online Server Connector\nSupport for the Microsoft Office Online Server connector, used within Office Online Integration app where enterprises can view and edit documents from within Nextcloud\nNot included\nIncluded\nIncluded\nAdditionally\nsupported apps\nTables\nThe impressive Microsoft SharePoint Lists or Airtables alternative. Nextcloud Tables helps businesses and organizations manage their structured data\nNot included\nNot included\nIncluded\nCollectives\nThe knowledge management space for your organization. It\u2019s the knowledge base for your business\nwhere all the important information and know-how is.\nNot included\nNot included\nIncluded\nNotes\nThe ideal note-taking app with simple features. It provides categories for better organization and\nsupports formatting using Markdown syntax.\nNot included\nNot included\nIncluded\nForms\nCreate customizable forms and surveys with Nextcloud Forms without limitations or privacy concerns. The app ensures secure data processing, unlimited questions and responses, and ultimate privacy.\nNot included\nNot included\nIncluded\nSlack Integration\nSlack integration lets you send files to Slack from Nextcloud Files.\nNot included\nNot included\nIncluded\nSee more\nMiro Integration\nMiro integration lets users create boards, share board links and open boards directly in Nextcloud.\nNot included\nNot included\nIncluded\nPicker for Webex Integration\nThe picker is needed to use the Nextcloud Webex integration on Webex side. The integration allows\nWebex users to view and edit documents on a Nextcloud instance.\nNot included\nNot included\nIncluded\nGitHub Integration\nProvides a dashboard widget displaying your most important notifications and a unified search provider\nfor repositories, issues and pull requests.\nNot included\nNot included\nIncluded\nGitLab Integration\nProvides a dashboard widget displaying your most important notifications and a unified search provider\nfor repositories, issues and merge requests\nNot included\nNot included\nIncluded\nJira Integration\nJira integration provides a dashboard widget displaying your important notifications, a unified search\nprovider to search for issues and notifications about recent activity related to your assigned issues.\nNot included\nNot included\nIncluded\nMattermost Integration\nProvides a dashboard widget displaying your most important notifications and a unified search provider\nfor messages. It also lets you send files to Mattermost from Nextcloud Files\nNot included\nNot included\nIncluded\nNotion Integration\nNotion integration adds ability to search in Notion and render its links.\nNot included\nNot included\nIncluded\nPricing\nper user/year\nStarting at 100 users\nPricing starts at 100 users. Contact us for a quote relevant for your specific market vertical.\n71.29\u20ac per user/year\n104.99\u20ac per user/year\n204.75\u20ac per user/year\nStarting at 200 users\nContact us for a quote relevant for your specific market.\n53.17\u20ac per user/year\n81.99\u20ac per user/year\n183.75\u20ac per user/year\nAdditional pricing tiers and framework agreements are available up to millions of users\nContact us for a quote relevant for your specific market.\nRequest offer\nRequest offer\nRequest offer\nStandard\nStarting at 42\u20ac/user/year\nFeatures\nNextcloud Talk\nSecure online meetings, chat and web conferencing\nIncluded\nNextcloud Assistant\nThe first local AI assistant, integrated across Nextcloud Hub, summarizing email discussions, offering suggestions while writing a document and translating chat messages.\nOptional\nOptional (extra costs)\nNextcloud Whiteboard\nNextcloud Whiteboard supports hand drawing with multiple colors and stroke types, shapes, images, arrows and other objects, also works seamlessly with Nextcloud Talk.\nOptional\nOptional (extra costs)\nSIP bridge for phone dial-in and dial-out\nThe SIP bridge connects Nextcloud Talk to a SIP provider. Requires a Nextcloud Talk subscription.\nIncluded\nMobile and desktop clients\nNextcloud-branded iOS, Android and desktop apps are free.\nIncluded\nEnterprise capabilities\nPowerful enterprise features like SAML authentication, Windows Network Drive support, password policies, audit-ready logging, workflow handling and more.\nIncluded\nFully Open Source\nThe AGPL license provides legal certainty for all customers and users.\nIncluded\nNextcloud Guard\nNextcloud Guard, available for Nextcloud Enterprise, monitors mission-critical systems for security, performance and other issues.\nIncluded\nBenefits\nMaintenance life cycle\nIf you need the certainty that you can remain on your stable, proven Nextcloud release for a long time.\n1 year\nEarly security and stability patches\nAhead of time access to security and stability patches.\nIncluded\nReaction time\nQuestions and issues are generally responded to in this time, depending on the severity of the issue.\n2 business days\nPortal support\nOur Nextcloud Knowledge Portal helps you find answers to your questions or contact our professional support engineers.\nIncluded\nEmail support\nYou can contact our capable and responsive support engineers by email and expect a quick response time.\nIncluded\nBusiness hours\nBranding\nUse your corporate design in branded and pre-configured sync clients for desktop and mobile.\nIncluded\nInstallation review\u00b9\nWe will review your Nextcloud instance after you set it up and assist you in its configuration and fine-tunin",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://nextcloud.com/changelog/",
+      "title": "Nextcloud changelog",
+      "text": "Nextcloud changelog\nSkip to main content\nJoin\nNextcloud Summit 2026\nRegister now\nProducts\nNextcloud Hub\nThe next-generation digital workspace\nNextcloud Files\nFile Sync and Share\nNextcloud Talk\nCalls, chat and video conferencing\nNextcloud Groupware\nCalendar, Contacts & Mail\nNextcloud Office\nReal time document collaboration\nNextcloud Assistant\nPrivate and local AI assistant\nNextcloud Flow\nDriving digital transformation with automation\nRoundcube\nThe most popular on premise webmail\nMicrosoft integrations\nOutlook, Sharepoint, Teams and more\nSolutions\nNextcloud Enterprise\nFor mission-critical use\nPublic sector\nEnterprise for the public sector\nEnterprises\nEnterprise for organizations\nService providers\nEnterprise for service providers\nEducation\nEnterprise for universities and schools\nPricing\nNextcloud Enterprise plans and pricing\nMigration\nMigrate to Nextcloud: Simple and secure\nNextcloud at home\nFor families, students & you\nResources\nBlog\nNextcloud news and articles\nEvents\nAll in-person and virtual Nextcloud events\nWebinars\nAll upcoming webinars and recordings\nSuccess stories\nSuccess stories and case studies\nWhitepapers\nDownload our whitepapers\nPodcast\nLatest Nextcloud Podcast episodes\nFeatures\nA complete list of features\nCompliance\nAll about privacy\nFeatured\nFeatured blog\nEuro-Office: Building momentum\nBlog, Business, Community, News, Release\nAll news and articles\nApp Store\nHundreds of Nextcloud apps\nDocumentation\nAdmin, user and developer manuals\nFAQ\nNextcloud Enterprise FAQ\nSupport Portal\nCustomer access to Enterprise support\nSecurity\nAdvanced protection at a glance\nPartners\nFind a partner\nMeet our trusted partners\nBecome a partner\nExplore our different collaboration paths\nChannel Partner Program\nJoin our mission as a Channel Partner\nCommunity\nHow to contribute\nTranslation\nDesign\nCode on GitHub\nReport a bug\nCommunity support\nDeveloper program\nCode of Conduct\nNextcloud Include\nAbout\nAbout us\nComparison with others\nPress\nSecurity\nTeam\nJobs\nSearch our site\nDownload\nDesktop & mobile apps\nWindows , macOS, Linux, Android, iOS\nNextcloud server\nFor self-hosting on your server\nSign up now\nGet free account at a provider\nInstant trial\nContact\nEnglish\nFran\u00e7ais\nDeutsch\nEspa\u00f1ol\nItaliano\nNederlands\nNextcloud server changelog\nNextcloud Hub 26 Winter release\nWe recommend you follow our\nrelease channels\nto always have the latest and most secure Nextcloud server version which fits your needs.\nGo directly to the latest maintenance release of:\nHub 26 Winter\nNextcloud 33\nSee more\nNextcloud 32\nSee more\nOld unsupported versions\nSee more\nPrivacy needs security\nWe strongly recommend to stay up to date with Nextcloud to keep your data safe. The minor releases fix security issues that are found through, for example, our\nHackerOne program.\nNot doing so can put your data at risk. Update timely and don\u2019t run unmaintained Nextcloud versions.\nPrivacy does not exist without security.\nOur security policy is to publicize CVE\u2019s about 3 weeks after public availability of a new minor release. Administrators can then learn more about the vulnerabilities fixed and determine if their systems might have been vulnerable. As malicious actors are at this point more able to determine attack vectors, it is important to have updated before the CVE\u2019s are published.\nWe provide advance patches and security information for no-downtime-security-patching for Nextcloud Enterprise. If you run a server with sensitive data at scale, we highly recommend to use Nextcloud Enterprise.\nLatest Nextcloud 33 release below.\nApril 30, 2026\n#\nVersion 33.0.3\nDownload:\nnextcloud-33.0.3.tar.bz2\nor\nnextcloud-33.0.3.zip\nCheck the file integrity with:\nMD5:\nnextcloud-33.0.3.tar.bz2.md5\nor\nnextcloud-33.0.3.zip.md5\nSHA256:\nnextcloud-33.0.3.tar.bz2.sha256\nor\nnextcloud-33.0.3.zip.sha256\nSHA512:\nnextcloud-33.0.3.tar.bz2.sha512\nor\nnextcloud-33.0.3.zip.sha512\nPGP (\nKey\n):\nnextcloud-33.0.3.tar.bz2.asc\nor\nnextcloud-33.0.3.zip.asc\nChanges:\nserver\nFeat(migration-attributes): add DataCleansing (server#54861)\nWelcome stable32 (server#54862)\nFeat(SystemTag): Add typed events for tag mapper events (server#54863)\n32.0.0 RC1 (server#54864)\nStyle(contactsmenu): properly align contacts menu actions (server#54865)\nFix(security): Update Expires time (server#54868)\nBuild(deps-dev): bump phpunit/phpunit from 9.6.21 to 9.6.25 in /build/integration (server#54872)\nBuild(deps-dev): bump @testing-library/cypress from 10.0.3 to 10.1.0 (server#54873)\nBuild(deps): bump phpunit/phpunit from 10.5.35 to 10.5.53 in /vendor-bin/phpunit (server#54879)\nBuild(deps-dev): bump msw from 2.10.5 to 2.11.1 (server#54881)\nBuild(deps-dev): bump symfony/event-dispatcher from 6.4.13 to 6.4.25 in /build/integration (server#54884)\nBuild(deps): bump libphonenumber-js from 1.12.13 to 1.12.15 (server#54892)\nBuild(deps-dev): bump @zip.js/zip.js from 2.7.72 to 2.7.73 (server#54895)\nBuild(deps-dev): bump jasmine-core from 2.5.2 to 2.99.1 (server#54898)\nFix: TypeError: this.fetchDisplayName is not a function (server#54902)\nFix: remove executable flag from source files (server#54906)\nChore(flake): update haze to 2.1.2 (server#54910)\nAdd task processing manager method to get the list of available task type IDs (server#54917)\nChore(deps-dev): bump puppeteer from 24.17.0 to 24.19.0 (server#54929)\nChore(deps-dev): bump sass from 1.90.0 to 1.92.1 (server#54930)\nChore(deps): bump @nextcloud/sharing from 0.2.5 to 0.3.0 (server#54931)\nFix npm audit (server#54938)\nFix(cache): Set default Redis port to `0` for UNIX sockets (server#54945)\nFeat(file_sharing): Provide template creator list in public shares (server#54948)\nFix: ensure all object store configuration have distict bucket names (server#54952)\nFix: calculate node limit using MiB instead of MB (server#54956)\nChore(deps): update `doctrine/dbal` to v3.10.2 (server#54960)\nFeat: show object store instance in info:file (server#54961)\nFix: remove loading removed script (server#54964)\nFeat(files_trashbin): Refactor expire background job to support parallel run (server#54967)\nFix(files_trashbin): Fix size propagation when moving file to trash (server#54972)\nFix: Avoid internal error when logging in with the wrong account to verify email address (server#54973)\nPerf(mounts): avoid array_merge in mounts loop (server#54976)\nFix(security): Update CA certificate bundle (server#54982)\nFix: don\u2019t show object size warning if we can\u2019t determine the object size (server#54996)\n32.0.0 RC2 (server#55000)\nFix: update transifex link (server#55017)\nFix(user-status): adjust user status icon size (server#55018)\nFeat(ZipFolderPlugin): always use the parent folder name as archive name (server#55020)\nFix(auth): allow access to dynamic js files during 2FA (server#55023)\nBuild(deps-dev): bump puppeteer from 24.19.0 to 24.20.0 (server#55028)\nBuild(deps-dev): bump msw from 2.11.1 to 2.11.2 (server#55033)\nBuild(deps): bump query-string from 9.2.2 to 9.3.0 (server#55035)\nBuild(deps-dev): bump @zip.js/zip.js from 2.7.73 to 2.8.2 (server#55037)\nBuild(deps-dev): bump stylelint from 16.23.1 to 16.24.0 (server#55038)\nBuild(deps): bump @nextcloud/upload from 1.10.0 to 1.11.0 (server#55040)\nBuild(deps-dev): bump dockerode from 4.0.7 to 4.0.8 (server#55042)\nFix(security): Update code signing revocation list (server#55051)\nFeat(encryption): Add integration tests for occ commands and fix them (server#55060)\nFix(PWA): fix standalone window margins (server#55064)\nFix(unified-search): make sure date range option is translated (server#55076)\nFix(ownCloud): ensure that `accounts.display_name` fits into `users.displayname` (server#55078)\nFix(files_sharing): use `newPassword` always for the unsaved password (server#55082)\nFix(settings): rename \u201cSettings presets\u201d to \u201cQuick presets\u201d (server#55084)\nFix(contactsmenu): adjust padding to new design (server#55088)\nBuild(deps-dev): bump phpunit/phpunit from 9.6.25 to 9.6.26 in /build/integration (server#55094)\nBuild(deps): bump phpunit/phpunit from 10.5.53 to 10.5.54 in /vendor-bin/phpunit (server#55095)\nBuild(deps-dev): bump mime from 4.0.7 to 4.1.0 (server#55096)\nBuild(deps): bump @nextcloud/vue from 8.29.2 to 8.34.0 (server#55097)\nBuild(deps-dev): bump wait-on from 8.0.4 to 8.0.5 (server#55098)\nBuild(deps): bump libphonenumber-js from 1.12.15 to 1.12.17 (server#55099)\nFix: Dispatch favorite event with an actual path (server#55127)\nFix: handleIMip undefined array key (server#55138)\nBuild: Update 3rdparty ignorelist (server#55145)\nFix: always use english name for recently contacted category (server#55146)\nFix(Updater): Lower deadlock log level from warning to info (server#55150)\nFix: Allow hyphen in appid (server#55152)\nFix: make sure default contact exists by default (server#55154)\nFix(userconfig): set \u2018mail\u2019 as indexed (server#55159)\n32.0.0 RC3 (server#55162)\nFix(TaskProcessing): Cache task types by user language (server#55165)\nFix(lexicon): trigger email indexing (server#55167)\nFeat(files_sharing): provide web components based API for sidebar (server#55174)\nFix(trashbin): Translate Nextcloud exception to Sabre exception (server#55189)\nUpdate calendar-availability-vue to v2.2.11 (TrashCanOutline) (server#55192)\nFix(comments): add inline container size query to comment body (server#55195)\nBuild(deps): bump @nextcloud/calendar-availability-vue from 2.2.10 to 2.2.11 (server#55202)\nBuild(deps): bump @simplewebauthn/browser from 13.1.2 to 13.2.0 (server#55203)\nBuild(deps-dev): bump phpunit/phpunit from 9.6.26 to 9.6.27 in /build/integration (server#55204)\nBuild(deps): bump phpunit/phpunit from 10.5.54 to 10.5.55 in /vendor-bin/phpunit (server#55205)\nBuild(deps-dev): bump sass from 1.92.1 to 1.93.0 (server#55206)\nBuild(deps-dev): bump @types/dockerode from 3.3.43 to 3.3.44 (server#55207)\nBuild(deps): bump @nextcloud/dialogs from 6.3.1 to 6.3.2 (server#55208)\nBuild(deps): bump query-string from 9.3.0 to 9.3.1 (server#55209)\nBuild(deps): bump dompurify from 3.2.6 to 3.2.7 (server#55210)\nBuild(deps): bump color from 5.0.0 to 5.0.2 (server#55211)\nBuild(deps-dev): bump cypress-split from 1.24.21 to 1.24.23 (server#55212)\nBuild(deps): bump marked from 16.2.1 to 16.3.0 (server#55213)\nBuild(deps-dev): bump puppeteer from 24.20.0 to 24.22.0 (server#55214)\nBuild(deps): bump @nextcloud/axios from 2.5.1 to 2.5.2 (server#55229)\nBuild(deps-dev): bump msw from 2.11.2 to 2.11.3 (server#55238)\nFix(ocm-invites): add route to invite accept dialog (server#55239)\nFix(comments): expand long comment on click (server#55242)\nFix(github): add labels and milestone to PR checklist (server#55246)\nFix: added bluesky link (server#55249)\nFix(encryption): do not setup filesystem without permissions (server#55253)\nFeat(db): add SSL/TLS support for PostgreSQL (server#55256)\nChore(i18n): Fixed grammar (server#55270)\nFix(systemtags): Provide initial state for admin restriction setting (server#55279)\nFix(comments): explicitly return limbo status of comment (server#55285)\nFix: create room/resource calendar synchronously (server#55292)\nFix: Stop infinite loop in ExpireTrash (server#55295)\n32.0.0 RC4 (server#55298)\nFeat(Unified search): Use existing min search length setting (server#55301)\nFix(core): Stop abusing the cache for avatar upload (server#55303)\nUpdate assistant text gradient (server#55305)\nFix(workflowenigne): stricter length header handling (server#55316)\nFeat: Mark OC.SystemTags as deprecated (server#55323)\nFix(ocm): ignore cache if not setup (server#55326)\nFix(sharing): ensure to check new password (server#55327)\nFix: add missing sharing options to ui and add full-match results (server#55329)\nBuild(deps): bump libphonenumber-js from 1.12.17 to 1.12.23 (server#55337)\nBuild(deps-dev): bump phpunit/phpunit from 9.6.27 to 9.6.29 in /build/integration (server#55338)\nBuild(deps): bump phpunit/phpunit from 10.5.55 to 10.5.57 in /vendor-bin/phpunit (server#55339)\nBuild(deps-dev): bump sass from 1.93.0 to 1.93.2 (server#55340)\nBuild(deps-dev): bump puppeteer from 24.22.0 to 24.22.3 (server#55341)\nBuild(deps-dev): bump tar from 7.4.3 to 7.5.1 (server#55342)\n32.0.0 (server#55354)\nFix(cache): Ensure unique global prefix per instanceid (server#55386)\nFix: Do not try to create lazy ghosts for PHP internal classes (server#55399)\nRevert: feat(core): Hide header in PWA (server#55402)\nFix: small typo fix (server#55407)\nFix(files): Stop overwriting scan_permissions (server#55411)\nAdmin-delegation occ \u2013 add output option for show command to support JSON formats (server#55430)\nTest: mock appstore response in Cypress tests (server#55435)\nFix(appstore): Also catch ClientException and ServerException (server#55437)\nFix(appstore): Make appstore timeout configurable (server#55440)\nFix(security): Update code signing revocation list (server#55445)\nFix: legacy app navigation snapper on RTL layout (server#55465)\nFix(IUserManager): Fix deprecation of search method (server#55480)\nRefactor(ShareApiController): Add more error handling (server#55489)\nFeat: add header with user id in response (server#55502)\nFix(user_ldap): Fix configuration creation and copy (server#55515)\nAllow to remove a website in the user profile (server#55523)\nBuild(deps): bump nextcloud/openapi-extractor from 1.8.3 to 1.8.5 in /vendor-bin/openapi-extractor (server#55540)\nBuild(deps): bump phpunit/phpunit from 10.5.57 to 10.5.58 in /vendor-bin/phpunit (server#55541)\nBuild(deps-dev): bump stylelint from 16.24.0 to 16.25.0 (server#55542)\nBuild(deps-dev): bump @testing-library/jest-dom from 6.8.0 to 6.9.1 (server#55543)\nBuild(deps-dev): bump typescript from 5.9.2 to 5.9.3 (server#55545)\nBuild(deps-dev): bump dockerode from 4.0.8 to 4.0.9 (server#55546)\nFix(setup): set dbtype value also for single-db (server#55562)\nFix(unified-search): Remove hard-coded search result limit (server#55565)\nFix(files): Always return a valid mimetype (server#55570)\nFeat(test-case): allow to use PHPUnit Group attributes to mark tests requiring database (server#55571)\nFix(ldap): Fix copying and creating LDAP configuration (server#55584)\nChore(CODEOWNERS): include mjs and cjs for frontend (server#55587)\nBuild(deps): bump @nextcloud/browser-storage fro",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://docs.nextcloud.com/",
+      "title": "Nextcloud Documentation",
+      "text": "Nextcloud Documentation\nProducts\nNextcloud Files\nFile Sync and Share\nNextcloud Talk\nCalls, chat and web meetings\nNextcloud Groupware\nCalendar, Contacts & Mail\nNextcloud at home\nFor home users\nSupport\nNextcloud Support\nCommunity support\nPricing\nDocumentation\nWhite papers\nMigration\nApp Store\nCommunity\nHow to contribute\nCode on GitHub\nReport a bug\nDeveloper Docs\nCode of Conduct\nSecurity information\nAbout\nAbout us\nBlog\nSecurity\nTeam\nPartners\nEvents\nJobs\nDemo\nDownload\nBuy\nFAQ\nNextcloud Documentation Overview\n\u00b6\nNextcloud Server\n\u00b6\nYou can download and install Nextcloud on your own Linux server, use the Web\n\t\t\t\t\t\t\t\tInstaller to install it on shared Web hosting, try some prefab cloud or virtual\n\t\t\t\t\t\t\t\tmachine images, or sign up for hosted Nextcloud services. See the\nGet Started\npage for more information.\nThe below are the\ncurrently maintained\nversions of Nextcloud Server.\nNextcloud 34\n\u00b6\nThis documents the\nupcoming\nversion of Nextcloud (not released).\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 33\n\u00b6\nThis documents the\nlatest stable\nversion of Nextcloud.\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 32\n\u00b6\nThis documents the\nlast supported stable\nversion of Nextcloud.\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud Desktop Client\n\u00b6\nOnce you have a Nextcloud Server running, you can connect to it with various\nclients like our mobile and desktop client.\nFind documentation for the desktop client below.\nUser Manual\nAdministration Manual\nDeveloper Manual\nOlder Nextcloud Server releases\n\u00b6\nThis documents the\nolder\nversions of Nextcloud. These releases are no longer\n\t\t\t\t\t\t\t\tpublicly maintained and users are strongly encouraged to upgrade to a maintained\n\t\t\t\t\t\t\t\trelease or get access to long term security and stability updates with\nNextcloud Enterprise.\nNextcloud 31\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 30\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 29\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 28\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 27\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 26\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 25\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 24\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 23\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 22\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 21\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 20\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 19\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 18\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 17\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 16\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 15\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 14\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 13\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nNextcloud 12\n\u00b6\nUser Manual\n(\nDownload PDF\n)\nAdministration Manual\n(\nDownload PDF\n)\nDeveloper Manual\nReporting Documentation Bugs & How to Contribute\n\u00b6\nIf you find an error or omission in any of the manuals, we welcome your bug\n\t\t\t\t\t\t\treports and contributions. Contribution to the documentation is very easy as\n\t\t\t\t\t\t\tthe code is entirely\non\n\t\t\t\t\t\t\tGitHub and can be edited there online.\nAll documentation licensed under the\nCreative Commons Attribution 3.0 Unported license\n.\nNextcloud offers a modern, on premise content collaboration platform with real-time document editing, video chat & groupware on mobile, desktop and web.\nAbout Nextcloud\nAbout us\nJobs\nPartners\nCode of Conduct\nPrivacy\nPress\nLegal notice\nTrademarks\nBrand guidelines\nFeatures\nHuman Rights Policy\nCode of Ethics\nEvents\nResources\nDownload\nApp Store\nAdmin manual\nUser manual\nSecurity\nDeveloper information\nCode on GitHub\nCompare with others\nSearch\nStatus\nInteract\nSupport\nForums\nDemo\nContact us\nBug Tracker\nFollow us\nBlog\nFacebook\nX\nInstagram\nLinkedIn\nYouTube\nMastodon\nFeed\n\u00a9 2026 Nextcloud GmbH",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://nextcloud.com/integrations/",
+      "title": "Page not found - Nextcloud",
+      "text": "Page not found - Nextcloud\nSkip to main content\nJoin\nNextcloud Summit 2026\nRegister now\nJoin\nNextcloud Summit 2026\nRegister now\nJoin\nNextcloud Summit 2026\nRegister now\nJoin\nNextcloud Summit 2026\nRegister now\nJoin\nNextcloud Summit 2026\nRegister now\n\u2039\n\u203a\nProducts\nNextcloud Hub\nThe next-generation digital workspace\nNextcloud Files\nFile Sync and Share\nNextcloud Talk\nCalls, chat and video conferencing\nNextcloud Groupware\nCalendar, Contacts & Mail\nNextcloud Office\nReal time document collaboration\nNextcloud Assistant\nPrivate and local AI assistant\nNextcloud Flow\nDriving digital transformation with automation\nRoundcube\nThe most popular on premise webmail\nMicrosoft integrations\nOutlook, Sharepoint, Teams and more\nSolutions\nNextcloud Enterprise\nFor mission-critical use\nPublic sector\nEnterprise for the public sector\nEnterprises\nEnterprise for organizations\nService providers\nEnterprise for service providers\nEducation\nEnterprise for universities and schools\nPricing\nNextcloud Enterprise plans and pricing\nMigration\nMigrate to Nextcloud: Simple and secure\nNextcloud at home\nFor families, students & you\nResources\nBlog\nNextcloud news and articles\nEvents\nAll in-person and virtual Nextcloud events\nWebinars\nAll upcoming webinars and recordings\nSuccess stories\nSuccess stories and case studies\nWhitepapers\nDownload our whitepapers\nPodcast\nLatest Nextcloud Podcast episodes\nFeatures\nA complete list of features\nCompliance\nAll about privacy\nFeatured\nFeatured blog\nEuro-Office: Building momentum\nBlog, Business, Community, News, Release\nAll news and articles\nApp Store\nHundreds of Nextcloud apps\nDocumentation\nAdmin, user and developer manuals\nFAQ\nNextcloud Enterprise FAQ\nSupport Portal\nCustomer access to Enterprise support\nSecurity\nAdvanced protection at a glance\nPartners\nFind a partner\nMeet our trusted partners\nBecome a partner\nExplore our different collaboration paths\nChannel Partner Program\nJoin our mission as a Channel Partner\nCommunity\nHow to contribute\nTranslation\nDesign\nCode on GitHub\nReport a bug\nCommunity support\nDeveloper program\nCode of Conduct\nNextcloud Include\nAbout\nAbout us\nComparison with others\nPress\nSecurity\nTeam\nJobs\nSearch our site\nDownload\nDesktop & mobile apps\nWindows , macOS, Linux, Android, iOS\nNextcloud server\nFor self-hosting on your server\nSign up now\nGet free account at a provider\nInstant trial\nContact\nEnglish\nFran\u00e7ais\nDeutsch\nEspa\u00f1ol\nItaliano\nNederlands\n404 - Page not Found\nBack\nNextcloud offers a modern, on-premises content collaboration platform with real-time document editing, video chat & groupware on mobile, desktop and web.\nSearch\nSearch:\nAbout Nextcloud\nAbout us\nJobs\nCode of conduct\nPrivacy\nPress\nLegal note\nTrademarks\nBrand guidelines\nFeatures\nHuman Rights Policy\nCode of Ethics\nResources\nDownload\nApp Store\nAdmin manual\nUser manual\nSecurity\nDeveloper information\nCode on GitHub\nCompare with others\nSearch\nNewsletter\nStatus\nInteract\nSupport\nForums\nDemo\nContact us\nBug Tracker\nCookies preferences\n\u00a9 2016 - 2026 Nextcloud GmbH\nWe save some cookies to count visitors and make the site easier to use. This doesn't leave our server and isn't to track you personally!\n                See our\nPrivacy Policy\nfor more information.\nCustomize\nAccept all cookies\nReject all\nCustomize\nEssentials\nMore details\nEssential cookies enable basic functions and are necessary for the proper function of the website.\nAccept cookie\nCookie name:\nwp-wpml_current_language\nCookie description:\nSet the language on the website\nCookie expiry:\nNo expiration\nConsent\nAccept cookie\nCookie name:\nnc_cookie_banner\nCookie description:\nSaves the cookie containing the user cookies preferences\nCookie expiry:\n30 days\nConsent\nAccept cookie\nConvenience\nMore details\nCookies used to save the data entered in forms, such as name, email, phone number, and preferred language.\nAccept cookie\nCookie name:\nnc_form_fields\nCookie description:\nRemembers the data filled in the forms for the next time (name, email, phone and preferred language)\nCookie expiry:\n30 days\nConsent\nAccept cookie\nCookie name:\nnc_utm_parameters\nCookie description:\nWe use cookies to store UTM parameters from your visit so we can understand how you arrived at our website.\nCookie expiry:\n30 days\nConsent\nAccept cookie\nStatistics\nMore details\nStatistics cookies collect information anonymously and help us understand how our visitors use our website. We use cloud-hosted\nMatomo\nAccept cookie\nService:\nMatomo\nCookies description:\n_pk_ses*: Counts the first visit of the user\n_pk_id*: Helps not to double count the visits.\nmtm_cookie_consent: Remembers that consent for storing and using cookies was given by the user.\nCookies expiry:\n_pk_ses*: 30 minutes\n_pk_id*: 13 months\nmtm_cookie_consent: 30 days\nConsent\nAccept cookie\nExternal media\nMore details\nAllows connections for loading external media. No cookies from external media services will be set.\nAccept cookie\nService:\nPlay Youtube videos\nService description:\nAll of the Youtube videos get unblocked if this setting is saved\nCookie expiry:\n-\nConsent\nAccept cookie\nService:\nPlay Vimeo videos\nService description:\nAll of the Vimeo videos get unblocked if this setting is saved\nCookie expiry:\n-\nConsent\nAccept cookie\nService:\nShow OpenStreetMap iframes\nService description:\nAll of the OpenStreetMap iframes get unblocked if this setting is saved\nCookie expiry:\n-\nConsent\nAccept cookie",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/nextcloud/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Austrian ministry kicks out Microsoft in favor of Nextcloud",
+          "url": "https://news.itsfoss.com/austrian-ministry-kicks-out-microsoft/",
+          "points": 479,
+          "num_comments": 109,
+          "created_at": "2025-10-28T13:16:40Z",
+          "hn_url": "https://news.ycombinator.com/item?id=45732485"
+        },
+        {
+          "title": "Why Nextcloud feels slow to use",
+          "url": "https://ounapuu.ee/posts/2025/11/03/nextcloud-slow/",
+          "points": 457,
+          "num_comments": 350,
+          "created_at": "2025-11-03T13:21:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=45798681"
+        },
+        {
+          "title": "The recently lost file upload feature in the Nextcloud app for Android",
+          "url": "https://nextcloud.com/blog/nextcloud-android-file-upload-issue-google/",
+          "points": 415,
+          "num_comments": 166,
+          "created_at": "2025-05-14T05:38:00Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43981170"
+        },
+        {
+          "title": "YouTube cancelled my Nextcloud installation how-to",
+          "url": "https://mccormick.cx/news/entries/youtube-cancelled-my-nextcloud-how-to-video",
+          "points": 362,
+          "num_comments": 151,
+          "created_at": "2022-04-02T08:58:41Z",
+          "hn_url": "https://news.ycombinator.com/item?id=30886834"
+        },
+        {
+          "title": "Roundcube open-source webmail software merges with Nextcloud",
+          "url": "https://www.phoronix.com/news/Roundcube-Nextcloud",
+          "points": 341,
+          "num_comments": 251,
+          "created_at": "2023-11-29T11:03:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38457953"
+        },
+        {
+          "title": "Nextcloud: Open-Source Cloud Apps",
+          "url": "https://nextcloud.com/",
+          "points": 310,
+          "num_comments": 245,
+          "created_at": "2024-09-22T06:50:21Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41615102"
+        },
+        {
+          "title": "Setting up your own Nextcloud instance to get off of Google",
+          "url": "https://kiramclean.com/blog/how-to-set-up-your-own-nextcloud-server/",
+          "points": 283,
+          "num_comments": 172,
+          "created_at": "2020-12-19T21:39:37Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25481465"
+        },
+        {
+          "title": "Nextcloud cries foul over Google Play Store app rejection",
+          "url": "https://www.theregister.com/2025/05/13/nextcloud_play_store_complaint/",
+          "points": 280,
+          "num_comments": 230,
+          "created_at": "2025-05-13T09:02:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43970959"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Goodbye Google \u2014 I self-host everything now on 4 tiny PCs in a 3D printed rack",
+          "subreddit": "selfhosted",
+          "score": 2012,
+          "num_comments": 290,
+          "permalink": "https://reddit.com/r/selfhosted/comments/1rmfwoa/goodbye_google_i_selfhost_everything_now_on_4/",
+          "selftext": "After months of planning and building, I finally have a fully self-hosted setup that replaced almost everything I was paying for or trusting to big tech. Put together a video walking through the whole build if anyone's interested.\n\nhttps://preview.redd.it/87mqpt1utfng1.jpg?width=4000&amp;format=pjpg&amp;auto=webp&amp;s=943578451b7da34e1ef993b177895a85de9bde67\n\n**What I replaced:**\n\n* Google Photos \u2192 **Immich** \n* Google Drive / OneDrive \u2192 **Nextcloud** (file sync across all devices)\n* Ring / Nes"
+        },
+        {
+          "title": "Choose European Today So Tomorrow We Don't Have To Choose How To Defend Greenland",
+          "subreddit": "BuyFromEU",
+          "score": 21084,
+          "num_comments": 1417,
+          "permalink": "https://reddit.com/r/BuyFromEU/comments/1qeaqij/choose_european_today_so_tomorrow_we_dont_have_to/",
+          "selftext": ""
+        },
+        {
+          "title": "The full guide to switching from big US tech to supporting more ethical and EU-based companies! (Now with a website)",
+          "subreddit": "europe",
+          "score": 5725,
+          "num_comments": 769,
+          "permalink": "https://reddit.com/r/europe/comments/1pgev8g/the_full_guide_to_switching_from_big_us_tech_to/",
+          "selftext": ""
+        },
+        {
+          "title": "DeGoogle - and don't forget to DeMeta, DeMicrosoft, DeApple, etc!",
+          "subreddit": "degoogle",
+          "score": 4600,
+          "num_comments": 379,
+          "permalink": "https://reddit.com/r/degoogle/comments/1sv578c/degoogle_and_dont_forget_to_demeta_demicrosoft/",
+          "selftext": "My favorites:  \nLinux  \nTuta Mail  \nFairphone  \nEcosia  \nMastodon  \nNextcloud (love Tuta's new Nextcloud integration)"
+        },
+        {
+          "title": "300 companies:Airbus, Nextcloud,Proton,Ecosia,Dassault-EuroStack initiative will focus on three initiatives: \u201cBuy European, Sell European and Fund European\u201d, pushing for \u201cpro-European bias in public procurement\u201d, a measure that\u2019s expected at the EU level in the upcoming Public Procurement Act.",
+          "subreddit": "BuyFromEU",
+          "score": 3074,
+          "num_comments": 54,
+          "permalink": "https://reddit.com/r/BuyFromEU/comments/1prdvrd/300_companiesairbus/",
+          "selftext": ""
+        },
+        {
+          "title": "My little homelab",
+          "subreddit": "homelab",
+          "score": 2683,
+          "num_comments": 353,
+          "permalink": "https://reddit.com/r/homelab/comments/1lanu32/my_little_homelab/",
+          "selftext": "Hey everyone,\n\nafter learning so much from this community, I wanted to finally share my setup. Nearly everything here was bought second-hand or restored. I'd say around 98% of the components are used, repaired, or salvaged. A lot has been modified to reduce noise and power consumption while increasing efficiency. Everything lives in a 42U server rack I bought from a company on eBay that was getting rid of their old equipment.\n\nAt the top of the rack is an HPE ProLiant DL20 Gen9 with a 4-core Xeo"
+        },
+        {
+          "title": "I 3D printed an entire server rack \u2014 12U, holds $3,700 of gear, took 2 days of printing",
+          "subreddit": "3Dprinting",
+          "score": 2277,
+          "num_comments": 140,
+          "permalink": "https://reddit.com/r/3Dprinting/comments/1rnel1o/i_3d_printed_an_entire_server_rack_12u_holds_3700/",
+          "selftext": "Printed the KWS Rack V2 \u2014 a 12U, 10-inch modular server rack designed by Ilan Kushnir. It now holds $3,700 worth of computers, storage, and networking gear on my desk.\n\n**Print details:**\n\n\\- **Printer:** Bambu Lab P1S\n\n\\- **Nozzle:** 0.8mm (speed over detail \u2014 structural parts don't need fine resolution)\n\n\\- **Filament:** Bambu Lab PETG-HF, 2.5 rolls\n\n\\- **Print time:**  Around 2 full days for all pieces\n\n\\- **Hardware:** M5 brass heat inserts (soldering iron), M5/M6 socket head screws\n\n\\- **Co"
+        },
+        {
+          "title": "First homelab - built from old school computers I bought at a charity auction",
+          "subreddit": "homelab",
+          "score": 2015,
+          "num_comments": 218,
+          "permalink": "https://reddit.com/r/homelab/comments/1rjqihc/first_homelab_built_from_old_school_computers_i/",
+          "selftext": "Long-time lurker, first-time poster here.  \nI've been wanting to build a homelab for ages, but the cost always held me back especially in current shortages :\\\\.  \nThen I found out my local school was auctioning off their old hardware and I lost my mind. I ended up going home with a stack of Lenovo mini PCs for next to nothing, all while supporting some cause.\n\nCurrently I'm still working on architecture of It and I know It's a bit an overkill but I'll figure something out to use extra compute.\n\n"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://nextcloud.com/pricing/",
+    "changelog": "https://nextcloud.com/changelog/",
+    "docs": "https://docs.nextcloud.com/",
+    "integrations": "https://nextcloud.com/integrations/",
+    "g2": "https://www.g2.com/products/nextcloud/reviews"
+  },
+  "analysis": {
+    "name": "Nextcloud",
+    "url": "https://nextcloud.com",
+    "tagline": "The next-generation digital workspace",
+    "value_proposition": "A fully open-source, self-hosted collaboration platform combining file sync, communication, groupware, and AI \u2014 keeping all data on your own infrastructure.",
+    "target_segment": "enterprise / public sector / SMB / homelab / prosumer",
+    "ideal_customer": "European public sector bodies, privacy-conscious enterprises, and self-hosters who require on-premise data sovereignty and a full Google Workspace / Microsoft 365 replacement",
+    "features": [
+      {
+        "name": "file sync and share",
+        "description": "Cross-platform file synchronization and sharing internally and with external parties",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "video conferencing",
+        "description": "Built-in video calls and conferencing via Nextcloud Talk",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "team chat",
+        "description": "Real-time messaging and group chat channels via Nextcloud Talk",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "calendar",
+        "description": "Personal and shared calendars via Nextcloud Groupware",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "contacts management",
+        "description": "Address book and contacts sync via Nextcloud Groupware",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "email client",
+        "description": "Integrated mail client via Nextcloud Groupware and bundled Roundcube webmail",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "real-time document collaboration",
+        "description": "Collaborative editing of documents, spreadsheets, and presentations via Nextcloud Office",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "ai assistant",
+        "description": "Local, private AI assistant integrated across Hub for summarization, writing suggestions, and translation",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "workflow automation",
+        "description": "Nextcloud Flow runs sequential or parallel automated flows, approval requests, and external service interactions",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "whiteboard",
+        "description": "Collaborative whiteboard with drawing, shapes, images, arrows; integrates with Talk",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "desktop client",
+        "description": "Native sync clients for Windows, macOS, and Linux",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "mobile client",
+        "description": "iOS and Android apps for file access and collaboration",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "saml authentication",
+        "description": "Enterprise SAML-based single sign-on support",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "sso",
+        "description": "Single sign-on via SAML for enterprise identity provider integration",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "windows network drive support",
+        "description": "Mount Nextcloud as a Windows Network Drive for seamless file access",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "password policies",
+        "description": "Configurable password complexity and rotation policies for enterprise compliance",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "audit logging",
+        "description": "Audit-ready logging of user and admin actions for compliance and forensics",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "file tagging",
+        "description": "SystemTag-based file tagging with typed events for automation and classification",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "public shares",
+        "description": "Share files and folders via public links with optional password protection",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "share templates",
+        "description": "Template creator list available in public shares for consistent sharing workflows",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "trashbin",
+        "description": "Deleted file recovery with background expiry job supporting parallel processing",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "object store support",
+        "description": "External object store (e.g. S3-compatible) as primary storage backend",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "redis caching",
+        "description": "Redis-based distributed caching including UNIX socket support",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "app store",
+        "description": "Hundreds of installable Nextcloud apps extending platform functionality",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "self-hosted deployment",
+        "description": "Install on your own Linux server, shared hosting via web installer, or VM/container images",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "nextcloud guard",
+        "description": "Monitors mission-critical Nextcloud instances for security, performance, and operational issues",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "branding and white-labeling",
+        "description": "Custom corporate design in branded, pre-configured desktop and mobile sync clients",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "mdm support",
+        "description": "Mobile Device Management integration for deploying and managing mobile clients",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "no-downtime security patching",
+        "description": "Advance patches and security information for zero-downtime updates on enterprise deployments",
+        "evidence_source": "changelog",
+        "tier": "enterprise"
+      },
+      {
+        "name": "long-term support releases",
+        "description": "5+ year maintenance lifecycle for Premium and Ultimate enterprise plans",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "migration support",
+        "description": "Assisted migrations included with enterprise subscription",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "installation review",
+        "description": "Expert review and configuration fine-tuning of new Nextcloud deployments",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "phone support",
+        "description": "Telephone support from engineers in German, English, and Spanish",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "extended remote support",
+        "description": "Remote sessions with Nextcloud engineers to resolve complex issues",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "task processing api",
+        "description": "Server-side task processing manager with enumerable task type IDs for AI/automation pipelines",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "roundcube webmail",
+        "description": "Bundled Roundcube open-source webmail as the on-premise email interface",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "data cleansing",
+        "description": "Migration-time data cleansing attributes for cleaning up legacy data during upgrades",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "open source (agpl)",
+        "description": "Full AGPL-licensed codebase providing legal certainty and full auditability",
+        "evidence_source": "pricing",
+        "tier": "all"
+      }
+    ],
+    "integrations": [
+      "Microsoft Outlook",
+      "Microsoft SharePoint",
+      "Microsoft Teams",
+      "Roundcube",
+      "Redis",
+      "S3-compatible object storage",
+      "SAML identity providers",
+      "MDM platforms",
+      "HackerOne (security disclosure)",
+      "YouTube (media embedding)",
+      "Vimeo (media embedding)",
+      "OpenStreetMap"
+    ],
+    "differentiators": [
+      "First local, on-device AI assistant \u2014 no data leaves the server",
+      "Fully open source under AGPL \u2014 complete auditability and no vendor lock-in",
+      "On-premise by design \u2014 full data sovereignty, no third-party cloud required",
+      "European company with strong EU public sector adoption and EuroStack positioning",
+      "Roundcube merger \u2014 integrated the most popular open-source webmail",
+      "All-in-one replacement for Google Workspace and Microsoft 365 on your own hardware",
+      "5+ year LTS maintenance lifecycle for enterprise stability"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-04",
+        "what": "Nextcloud 33.0.3 patch: template creator list in public shares, parallel trashbin expiry, Redis UNIX socket fix, object store multi-instance safeguards, task processing manager API",
+        "source": "changelog"
+      },
+      {
+        "date": "2025",
+        "what": "Roundcube open-source webmail merged into Nextcloud product suite",
+        "source": "hacker_news"
+      },
+      {
+        "date": "2025",
+        "what": "Nextcloud Hub 26 Winter release",
+        "source": "changelog"
+      },
+      {
+        "date": "2024",
+        "what": "Nextcloud Assistant launched as first local AI assistant integrated across Nextcloud Hub",
+        "source": "pricing"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Viable full Google replacement for self-hosters: 'Goodbye Google \u2014 I self-host everything now'",
+        "Strong European sovereignty story \u2014 adopted by Austrian government ministry",
+        "Active in EuroStack / Buy European movement alongside Proton and Airbus",
+        "Homelab community staple \u2014 featured repeatedly in homelab showcase posts",
+        "Open-source credibility and community size"
+      ],
+      "complaints": [
+        "Performance: 'Why Nextcloud feels slow to use' \u2014 top HN thread with 350 comments",
+        "Android app regression: 'The recently lost file upload feature in the Nextcloud app for Android'",
+        "Google Play Store friction: 'Nextcloud cries foul over Google Play Store app rejection'",
+        "Complexity of self-hosting setup cited as barrier for non-technical users"
+      ],
+      "sources": [
+        "hn",
+        "reddit"
+      ]
+    },
+    "pricing_signal": {
+      "model": "open-source",
+      "tier_count": 3,
+      "lowest_paid_seat": "\u20ac71.29/user/year (minimum 100 users, Standard enterprise plan)",
+      "free_tier": "Full self-hosted community edition free under AGPL; hosted accounts available via provider sign-up"
+    }
+  }
+}

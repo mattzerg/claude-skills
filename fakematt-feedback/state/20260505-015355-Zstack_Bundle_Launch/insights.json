@@ -1,0 +1,48 @@
+{
+  "target": "/private/tmp/fakematt-feedback-drafts-2026-05-05/png/Zstack Bundle Launch.png",
+  "kind": "static",
+  "captures": [
+    {
+      "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015355-Zstack_Bundle_Launch/screenshots/Zstack Bundle Launch.png",
+      "final_url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015355-Zstack_Bundle_Launch/screenshots/Zstack Bundle Launch.png",
+      "title": "Zstack Bundle Launch",
+      "h1": null,
+      "headings": [],
+      "primary_cta": null,
+      "forms": [],
+      "links_sample": [],
+      "console": [],
+      "network_errors": [],
+      "axe_violations": [],
+      "perf": {},
+      "text_excerpt": "(static input — no DOM available)",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015355-Zstack_Bundle_Launch/screenshots/Zstack Bundle Launch.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015355-Zstack_Bundle_Launch/screenshots/Zstack Bundle Launch.png",
+      "screenshots": {},
+      "interactions": []
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "file:///Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015355-Zstack_Bundle_Launch/screenshots/Zstack Bundle Launch.png",
+        "selector": "h1, page title area",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260505-015355-Zstack_Bundle_Launch/screenshots/Zstack Bundle Launch.png"
+      },
+      "finding": "The document title 'ZergStack Bundle Launch' uses the internal product name 'ZergStack' while all body copy refers to 'Zergstack' (inconsistent capitalization) and multiple product names (ZergChat, ZergCal, ZergMail, Zergbot). This creates immediate confusion about what is being launched — a single integrated product or a bundle of separate tools. The title provides no clarity on which products are included or what problem the bundle solves.",
+      "suggested_fix": "Standardize the product name capitalization across all mentions (recommend 'Zergstack' based on body usage frequency). Retitle the document to explicitly name what's in the bundle: 'Zergstack Bundle Launch: ZergChat + ZergCal + ZergMail + Zergbot for AI Agent Teams' or similar. This anchors the reader immediately and prevents the need to parse inconsistent naming through the document.",
+      "voice_provenance": "q-0017",
+      "principle_provenance": [
+        "p-0107",
+        "p-0044"
+      ],
+      "target_kind_relevance": "Applies to all document types where clarity of subject is foundational to comprehension",
+      "role_assumption": null
+    }
+  ],
+  "rejected": []
+}

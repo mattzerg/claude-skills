@@ -1,0 +1,391 @@
+{
+  "name": "NetSuite",
+  "url": "https://netsuite.com",
+  "domain": "netsuite.com",
+  "scanned_at": "2026-05-03T21:55:20.374874",
+  "sources": {
+    "landing": {
+      "url": "https://netsuite.com",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://netsuite.com/\" on this server.\nReference #18.152d3e17.1777870520.2248a6cc\nhttps://errors.edgesuite.net/18.152d3e17.1777870520.2248a6cc",
+      "source": "playwright"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/",
+      "title": "NetSuite - Get Started",
+      "text": "NetSuite - Get Started\nSkip to Content\nSkip to Search\nHome\nCloud Applications\nCloud Applications\nFusion Applications Suite\nNetSuite Applications\nIndustry-Specific Applications\nCloud Applications Readiness\nCloud Infrastructure\nCloud Infrastructure\nGet Started\nFree Tier\nGovernment Cloud\nServices\nDeveloper Resources\nSecurity\nMore Resources\nLaunch Infrastructure Console\nAll Cloud Infrastructure\nOn-Premises Applications\nOn-Premises Applications\nFusion Applications On Premises\nEnterprise Performance Management\nE-Business\nPeopleSoft\nSiebel\nJD Edwards\nAll Applications\nMiddleware\nMiddleware\nBusiness Intelligence\nData Integrator\nEnterprise Manager\nGoldenGate\nIdentity Management\nJavaScript Extension Toolkit\nPlatform Security Services\nSOA Suite\nWebCenter\nWebLogic Server\nAll Middleware\nDatabase\nDatabase\nOracle AI Database\nAutonomous AI Database\nOracle APEX\nOracle GoldenGate\nOracle Essbase\nOracle NoSQL\nBig Data\nEnterprise Manager\nAll Database Related Products\nEngineered Systems\nEngineered Systems\nAdvanced Support Gateway\nAutonomous Health Checks and Diagnostics\nBig Data Appliance\nDatabase Appliance\nEnterprise Manager\nExadata Database Machine\nExalogic Elastic Cloud\nExalytics In-Memory Machine\nMiniCluster\nPrivate Cloud Appliance\nSuperCluster\nZero Data Loss Recovery Appliance\nZFS Storage Appliance\nAll Engineered Systems\nJava\nJava\nJava EE\nJava Embedded\nJava SE\nAll Java\nSystems\nSystems\nNetworking\nServers\nStorage\nAll Systems\nOperating Environments\nOperating Environments\nOperating Systems\nVirtualization\nAll Operating Environments\nVirtualization\nVirtualization\nOracle Linux Virtualization Manager\nOracle VM\nOracle VM VirtualBox\nSecure Global Desktop\nAll Virtualization\nIndustry-Specific Applications\nIndustry-Specific Applications\nCommunications\nConstruction and Engineering\nDigital Government\nFinancial Services\nFood and Beverage\nHealth\nHealth Sciences\nHospitality\nInsurance\nPublic Sector\nRetail\nState and Local\nUtilities\nAll Industries\nArchitecture Center\nArchitecture Center\nReference Architectures\nSolution Playbooks\nBuilt & Deployed\nAll Architecture Center\nTutorials and Labs\nAll Services & Products\nHelp Center Home\nOracle.com Home\nGet started with Cloud\nHelp Center\nen/cloud/saas/netsuite\nSearch is scoped to:\nen/cloud/saas/netsuite\nNo matching results\nTry a different search query.\nSearch Unavailable\nWe are making updates to our Search system right now. Please try again later.\nSign In\nAccount\nOracle Account\nAccount\nHelp\nSign Out\nOracle Account\nManage your account and access personalized content.\nSign up for an Oracle Account\nSign in to my Account\nSign in to Cloud\nAccess your cloud dashboard, manage orders, and more.\nFree Cloud Platform Trial\nSign in to Cloud\nCloud\nCloud Applications\nNetSuite\nNetSuite\nSearch\nHelp Center Home\nAccount Administration\nGlobalization\nSuiteAnalytics\nCountry-Specific Features\nEmployee Management\nMarketing, Sales Force Automation, and Partners\nProjects\nOrder Management\nAccounting\nSCM (Supply Chain Management)\nSupport Management\nCommerce\nSuiteCloud Platform\nNetSuite for Mobile\nSuiteApps\nNon-Profit SuiteApps\nMore\nThe #1 Cloud ERP. One unified business management suite, encompassing ERP/Financials, CRM and ecommerce.\nGet Started\nWhat's New\nSneak Peeks\nRelease Notes\nRelease Preview Guide\nLearning About NetSuite\nNetSuite Basics\nVideos\nTraining Resources\nPDF User Guides\nDeveloper Documentation\nSuiteAnswers (requires NetSuite log in)\nJoin Communities\nJoin NetSuite Support Community\nTry NetSuite\nFree Product Tour\nProduct Demo\nOther NetSuite Products\nOracle NetSuite SuiteProjects Pro\nOracle NetSuite Analytics Warehouse\nNetSuite Enterprise Performance Management\nWas this page helpful?\nTell us how to improve\n\u00a9 Oracle\nAbout Oracle\nContact Us\nProducts & Services\nTerms of Use & Privacy\nCookie Preferences\nAd Choices\n\u00a9 Oracle\n\u00d7\nVideo\n\u00d7\nAccount Administration\nGlobalization\nSuiteAnalytics\nCountry-Specific Features\nEmployee Management\nMarketing, Sales Force Automation, and Partners\nProjects\nOrder Management\nAccounting\nSCM (Supply Chain Management)\nSupport Management\nCommerce\nSuiteCloud Platform\nNetSuite for Mobile\nSuiteApps\nNon-Profit SuiteApps",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.netsuite.com/portal/platform/overview.shtml",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.netsuite.com/portal/platform/overview.shtml\" on this server.\nReference #18.8e2d3e17.1777870574.45952f6b\nhttps://errors.edgesuite.net/18.8e2d3e17.1777870574.45952f6b",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/netsuite/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Oracle Buys NetSuite for $9.3B",
+          "url": "http://www.bloomberg.com/news/articles/2016-07-28/oracle-buys-netsuite-in-deal-valued-at-about-9-3-billion",
+          "points": 225,
+          "num_comments": 134,
+          "created_at": "2016-07-28T14:34:13Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12180443"
+        },
+        {
+          "title": "Oracle to buy Netsuite",
+          "url": "http://www.wsj.com/articles/oracle-to-buy-netsuite-for-9-3-billion-1469708380",
+          "points": 6,
+          "num_comments": 1,
+          "created_at": "2016-07-28T12:33:36Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12179770"
+        },
+        {
+          "title": "Oracle acquires NetSuite for $9.3B",
+          "url": "https://techcrunch.com/2016/07/28/oracle-buys-enterprise-cloud-services-company-netsuite-for-9-3b/?sr_share=facebook",
+          "points": 4,
+          "num_comments": 0,
+          "created_at": "2016-07-28T13:48:33Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12180144"
+        },
+        {
+          "title": "Oracle buys enterprise cloud services company NetSuite for $9.3B",
+          "url": "https://techcrunch.com/2016/07/28/oracle-buys-enterprise-cloud-services-company-netsuite-for-9-3b/",
+          "points": 4,
+          "num_comments": 0,
+          "created_at": "2016-07-28T13:17:29Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12179966"
+        },
+        {
+          "title": "We Built Barawave \u2013 An AI-Powered ERP Alternative to NetSuite and SAP",
+          "url": "https://barawave.com/",
+          "points": 3,
+          "num_comments": 1,
+          "created_at": "2025-07-14T09:32:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44558046"
+        },
+        {
+          "title": "Oracle buys deeper into the cloud game with NetSuite",
+          "url": "http://blogs.csc.com/2016/08/11/oracle-buys-deeper-into-the-cloud-game-with-netsuite/",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2016-08-12T16:23:31Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12276853"
+        },
+        {
+          "title": "NetSuite to file IPO (Ellison to make $500M)",
+          "url": "http://www.marketwatch.com/news/story/story.aspx?guid=%7B5C8D133C%2DD17B%2D42F3%2D881F%2D35FBDC10386F%7D&siteid=rss",
+          "points": 2,
+          "num_comments": 3,
+          "created_at": "2007-07-02T19:03:52Z",
+          "hn_url": "https://news.ycombinator.com/item?id=32095"
+        },
+        {
+          "title": "NetSuite auction doubles IPO price",
+          "url": "http://blogs.zdnet.com/SAAS/?p=431",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2007-12-23T01:56:18Z",
+          "hn_url": "https://news.ycombinator.com/item?id=92122"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "When's a good time for a business to integrate an ERP?",
+          "subreddit": "smallbusiness",
+          "score": 147,
+          "num_comments": 60,
+          "permalink": "https://reddit.com/r/smallbusiness/comments/1ph10b8/whens_a_good_time_for_a_business_to_integrate_an/",
+          "selftext": "I run a small business with 5 employees at around $600k annual revenue. We're managing everything through QuickBooks and Google Sheets and it works but feels a bit messy\n\nTwo friends who run bigger companies (80 and 150 employees) both use full ERP systems like NetSuite and SAP. They're always talking about how everything connects and it sounds incredible but also like total overkill for my size haha  \nIs there a revenue or employee threshold where ERP actually makes sense? Right now I'm wonderi"
+        },
+        {
+          "title": "CFO wants to migrate from Quickbooks to Netsuite",
+          "subreddit": "smallbusiness",
+          "score": 141,
+          "num_comments": 75,
+          "permalink": "https://reddit.com/r/smallbusiness/comments/1otmj0k/cfo_wants_to_migrate_from_quickbooks_to_netsuite/",
+          "selftext": "We\u2019re a 20 person saas. Our revenue is fine and everything is running ok\n\n  \nOur CFO came in today and said that we have outgrown Quickbooks because we actually need enterprise grade systems for scaling\n\n  \nEvery startup I know that went Netsuite ended up in configuration hell (they're good but I dont think they're suitable for startups)\n\n  \nI just dont understand why do we need a whole ass ERP?"
+        },
+        {
+          "title": "Counteroffer for New Job",
+          "subreddit": "sysadmin",
+          "score": 91,
+          "num_comments": 97,
+          "permalink": "https://reddit.com/r/sysadmin/comments/1khx70d/counteroffer_for_new_job/",
+          "selftext": "I\u2019ve been the IT guy for a sales and service small business company for about 8 years. I do computer, phone, tablet, VoIP, MDM, printer, NetSuite Admin, etc. and get paid around 79K per year in the SF Bay Area. I\u2019ve had my ups and downs with my boss with his style of management. He micromanages and gets involved in a lot of things. Other employees are feeling it too. I currently drive to work and it takes me about 30 minutes each way.\n\nI started looking for a job and found one as a field tech in"
+        },
+        {
+          "title": "Dessriel fans, what do we think of this?",
+          "subreddit": "DessrielWorSHIPpers",
+          "score": 1342,
+          "num_comments": 25,
+          "permalink": "https://reddit.com/r/DessrielWorSHIPpers/comments/1nn719r/dessriel_fans_what_do_we_think_of_this/",
+          "selftext": "Apparently Asriel was planned to own a bat similarly to Dess in DR."
+        },
+        {
+          "title": "Minha m\u00e3e est\u00e1 h\u00e1 mais de dois anos procurando emprego ent\u00e3o \u00e9 chamada nem para entrevistas",
+          "subreddit": "curriculos",
+          "score": 489,
+          "num_comments": 149,
+          "permalink": "https://reddit.com/r/curriculos/comments/1qr7lea/minha_m\u00e3e_est\u00e1_h\u00e1_mais_de_dois_anos_procurando/",
+          "selftext": "Minha m\u00e3e est\u00e1 desempregada desde o final de 2023, desde ent\u00e3o ela vem se candidatando para todo tipo de vaga mas ningu\u00e9m chama ela, nem para as entrevistas, n\u00e3o colocamos no curr\u00edculo mas ela tem 53 anos de idade, as plataformas de emprego pedem esse dado, ent\u00e3o n\u00e3o adianta n\u00e3o deixar no curr\u00edculo, me parece ser o \u00fanico motivo plaus\u00edvel para essa situa\u00e7\u00e3o, o que voc\u00eas acham que pode estar acontecendo?"
+        },
+        {
+          "title": "How the fuck am I supposed to get NetSuite experience if no one who uses it will hire me without NetSuite experience?",
+          "subreddit": "Accounting",
+          "score": 413,
+          "num_comments": 91,
+          "permalink": "https://reddit.com/r/Accounting/comments/1pp2t04/how_the_fuck_am_i_supposed_to_get_netsuite/",
+          "selftext": "Fuck this fucking job market. I'm a CPA with 2 years of public accounting experience and 2 years of corporate accounting, and I've still been unemployed for 7 months. These job requirements are such bullshit. It should not be this hard for someone like me to get a job. I'll even do AP/AR if I have to. JUST FUCKING HIRE ME ALREADY."
+        },
+        {
+          "title": "Calling All Accountants",
+          "subreddit": "overemployed",
+          "score": 300,
+          "num_comments": 81,
+          "permalink": "https://reddit.com/r/overemployed/comments/1pzzvn9/calling_all_accountants/",
+          "selftext": "I made 400k this year. My TC across 3js is 360k but I overlapped 4js for short periods. I am by no means a pro, but I have found a few OE rules to live by. \n\n1. Target SAAS companies. They are remote. Cater your resume accordingly\n\n2. Find your accounting niche within SAAS (expense, revenue, AP, AR etc) ONLY take specialized roles, otherwise you are going to be overworked with a steep learning curve in broad areas \n\n3. Only consider companies on the same ERP (netsuite is most common for SAAS com"
+        },
+        {
+          "title": "I'm playing Tech like an action hero he always meant to be",
+          "subreddit": "menace",
+          "score": 275,
+          "num_comments": 34,
+          "permalink": "https://reddit.com/r/menace/comments/1rndxbo/im_playing_tech_like_an_action_hero_he_always/",
+          "selftext": "Winner use drug"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": null,
+    "docs": "https://docs.oracle.com/en/cloud/saas/netsuite/",
+    "integrations": "https://www.netsuite.com/portal/platform/overview.shtml",
+    "g2": "https://www.g2.com/products/netsuite/reviews"
+  },
+  "analysis": {
+    "name": "NetSuite",
+    "url": "https://netsuite.com",
+    "tagline": "The #1 Cloud ERP. One unified business management suite, encompassing ERP/Financials, CRM and ecommerce.",
+    "value_proposition": "A single cloud platform unifying ERP, financials, CRM, and ecommerce for growing businesses.",
+    "target_segment": "mid-market / enterprise",
+    "ideal_customer": "Mid-market and enterprise companies outgrowing entry-level accounting software (e.g. QuickBooks) that need integrated ERP, financials, and CRM under one roof.",
+    "features": [
+      {
+        "name": "accounting",
+        "description": "Core financial accounting including GL, AR, AP, and financial reporting.",
+        "evidence_source": "docs",
+        "evidence_quote": "Accounting",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "erp / financials",
+        "description": "Enterprise resource planning suite covering financials and business operations.",
+        "evidence_source": "docs",
+        "evidence_quote": "One unified business management suite, encompassing ERP/Financials, CRM and ecommerce.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "crm",
+        "description": "Customer relationship management including sales force automation and partner management.",
+        "evidence_source": "docs",
+        "evidence_quote": "Marketing, Sales Force Automation, and Partners",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ecommerce",
+        "description": "Integrated commerce / ecommerce storefront and order management.",
+        "evidence_source": "docs",
+        "evidence_quote": "One unified business management suite, encompassing ERP/Financials, CRM and ecommerce.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "order management",
+        "description": "End-to-end order lifecycle management from quote to fulfillment.",
+        "evidence_source": "docs",
+        "evidence_quote": "Order Management",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "supply chain management",
+        "description": "SCM capabilities covering procurement, inventory, and logistics.",
+        "evidence_source": "docs",
+        "evidence_quote": "SCM (Supply Chain Management)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "employee management",
+        "description": "HR and employee lifecycle management including payroll-adjacent features.",
+        "evidence_source": "docs",
+        "evidence_quote": "Employee Management",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "project management",
+        "description": "Project tracking and resource management; extended via SuiteProjects Pro.",
+        "evidence_source": "docs",
+        "evidence_quote": "Projects",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "support management",
+        "description": "Customer support case management integrated with CRM and order data.",
+        "evidence_source": "docs",
+        "evidence_quote": "Support Management",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "marketing automation",
+        "description": "Marketing campaign management integrated with sales force automation.",
+        "evidence_source": "docs",
+        "evidence_quote": "Marketing, Sales Force Automation, and Partners",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "suiteanalytics",
+        "description": "Built-in reporting, dashboards, and analytics across all modules.",
+        "evidence_source": "docs",
+        "evidence_quote": "SuiteAnalytics",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "analytics warehouse",
+        "description": "Dedicated analytics warehouse product for large-scale BI workloads.",
+        "evidence_source": "docs",
+        "evidence_quote": "Oracle NetSuite Analytics Warehouse",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "globalization / multi-currency",
+        "description": "Multi-currency, multi-language, and multi-subsidiary support for global operations.",
+        "evidence_source": "docs",
+        "evidence_quote": "Globalization",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "country-specific features",
+        "description": "Localized compliance and tax rules for specific countries and regions.",
+        "evidence_source": "docs",
+        "evidence_quote": "Country-Specific Features",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "suitecloud platform",
+        "description": "Developer platform for building custom applications and workflows on top of NetSuite.",
+        "evidence_source": "docs",
+        "evidence_quote": "SuiteCloud Platform",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "suiteapps marketplace",
+        "description": "Third-party and first-party app marketplace extending NetSuite functionality.",
+        "evidence_source": "docs",
+        "evidence_quote": "SuiteApps",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "non-profit suiteapps",
+        "description": "Purpose-built apps and configurations for non-profit organizations.",
+        "evidence_source": "docs",
+        "evidence_quote": "Non-Profit SuiteApps",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile app",
+        "description": "Native mobile access to NetSuite data and workflows.",
+        "evidence_source": "docs",
+        "evidence_quote": "NetSuite for Mobile",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "enterprise performance management",
+        "description": "Separate EPM product for advanced planning, budgeting, and consolidation.",
+        "evidence_source": "docs",
+        "evidence_quote": "NetSuite Enterprise Performance Management",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "suiteprojects pro",
+        "description": "Advanced project management and professional services automation add-on.",
+        "evidence_source": "docs",
+        "evidence_quote": "Oracle NetSuite SuiteProjects Pro",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "account administration",
+        "description": "User roles, permissions, and system configuration management.",
+        "evidence_source": "docs",
+        "evidence_quote": "Account Administration",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [],
+    "differentiators": [
+      "The #1 Cloud ERP \u2014 self-described market leadership claim",
+      "Single unified suite spanning ERP, CRM, and ecommerce (no stitching required)",
+      "Purpose-built industry verticals (non-profit, communications, retail, hospitality, etc.) via SuiteApps"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [
+        "Seen as a credible upgrade path from QuickBooks for scaling businesses (r/smallbusiness CFO migration thread)",
+        "Enough market penetration that NetSuite experience is a distinct hiring credential (r/Accounting thread)"
+      ],
+      "complaints": [
+        "Steep experience barrier \u2014 'How the fuck am I supposed to get NetSuite experience if no one who uses it will hire me without NetSuite experience?' (r/Accounting, 413\u2191)"
+      ],
+      "sources": [
+        "reddit"
+      ]
+    },
+    "pricing": {
+      "model": "contact-sales",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [],
+      "enterprise": "contact-sales",
+      "notes": "No pricing page was accessible during scrape (access denied). NetSuite is universally known to be contact-sales with per-module licensing; no self-serve tiers exist. Free product tour available but not a free tier."
+    }
+  }
+}

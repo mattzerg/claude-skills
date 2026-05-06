@@ -1,0 +1,903 @@
+{
+  "name": "Resend",
+  "url": "https://resend.com",
+  "domain": "resend.com",
+  "scanned_at": "2026-05-03T20:11:17.946506",
+  "sources": {
+    "landing": {
+      "url": "https://resend.com",
+      "title": "Resend \u00b7 Email for developers",
+      "text": "Resend \u00b7 Email for developers\nOpen main menu\nFeatures\nCompany\nResources\nHelp\nDocs\nAI\nPricing\nLog in\nGet started\nAnnouncing Resend Forward\nEmail for\ndevelopers\nThe best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.\nGet started\nDocumentation\nCompanies of all sizes trust Resend to deliver their most important emails.\nIntegrate\nthis weekend\nA simple, elegant interface so you can start sending emails in minutes. It fits right into your code with SDKs for your favorite programming languages.\nNode.js\nServerless\nRuby\nPython\nPHP\nCLI\nGo\nRust\nJava\nElixir\n.NET\nREST\nSMTP\nNode.js\nNext.js\nRemix\nNuxt\nExpress\nHono\nRedwood\nBun\nAstro\n1\nimport\n{\nResend\n}\nfrom\n'resend'\n;\n2\n3\nconst\nresend\n=\nnew\nResend\n(\n're_xxxxxxxxx'\n)\n;\n4\n5\n(\nasync\nfunction\n(\n)\n{\n6\nconst\n{\ndata\n,\nerror\n}\n=\nawait\nresend\n.\nemails\n.\nsend\n(\n{\n7\nfrom\n:\n'onboarding@resend.dev'\n,\n8\nto\n:\n'delivered@resend.dev'\n,\n9\nsubject\n:\n'Hello World'\n,\n10\nhtml\n:\n'<strong>it works!</strong>'\n11\n}\n)\n;\n12\n13\nif\n(\nerror\n)\n{\n14\nreturn\nconsole\n.\nlog\n(\nerror\n)\n;\n15\n}\n16\n17\nconsole\n.\nlog\n(\ndata\n)\n;\n18\n}\n)\n(\n)\n;\nView on GitHub\nDownload ZIP\nFirst-class\ndeveloper experience\nWe are a team of engineers who love building tools for other engineers.\nOur goal is to create the email platform we've always wished we had \u2014 one that\njust works\n.\ndelivered\ndelivered@resend.dev\nSend\nHTTP 200:\n{ \"id\":\n\"26abdd24-36a9-475d-83bf-4d27a31c7def\"\n}\nHTTP 200:\n{ \"id\":\n\"cc3817db-d398-4892-8bc0-8bc589a2cfb3\"\n}\nHTTP 200:\n{ \"id\":\n\"4ea2f827-c3a2-471e-b0a1-8bb0bcb5c67c\"\n}\nHTTP 200:\n{ \"id\":\n\"8e1d73b4-ebe1-485d-bce8-0d7044f1d879\"\n}\nHTTP 200:\n{ \"id\":\n\"a08045a6-122a-4e16-ace1-aa81df4278ac\"\n}\nHTTP 200:\n{ \"id\":\n\"c3be1838-b80e-457a-9fc5-3abf49c3b33e\"\n}\nHTTP 200:\n{ \"id\":\n\"13359f77-466e-436d-9cb2-ff0b0c9a8af4\"\n}\nTest mode\nSimulate events and experiment with our API without the risk of accidentally sending real emails to real people.\nLearn more\ndelivered\nMay 03\n08:11:23\nto\njackson@xerox.com\nwith subject\nMagic Link\non\nagent\nProtonMail\nrunning on\nWindows\nclicked\nMay 03\n08:11:23\nfrom\nava@figma.com\non\nWelcome\non\nagent\nGmail\nrunning on\nmacOS\nopened\nMay 03\n08:11:23\nfrom\ncharlotte@xerox.com\nwith subject\nWelcome\non\nagent\nGmail\nrunning on\nmacOS\ncomplained\nMay 03\n08:11:23\nto\nnoah@figma.com\nwith feedback\nSpam\non\nagent\nOutlook\nrunning on\nmacOS\nbounced\nMay 03\n08:11:23\nto\njackson@figma.com\nwith type\nSpam\non\nagent\nProtonMail\nrunning on\nmacOS\nModular webhooks\nReceive real-time notifications directly to your server. Every time an email is delivered, opened, bounces, or a link is clicked.\nLearn more\nWrite using a delightful editor\nA modern editor that makes it easy for anyone to write, format, and send emails.\nVisually build your email and change the design by adding custom styles.\nStyles\nWeekly Acme Newsletter\na day ago\nTest\nSend\nFrom\nyour.name@acme.com\nTo\nNewsletter\nSubscribers\nSubject\nWeekly Newsletter\nGo beyond editing\nGroup and control your contacts in a simple and intuitive way.\nStraightforward analytics and reporting tools that will help you send better emails.\nContact management\nImport your list in minutes, regardless the size of your audience. Get full visibility of each contact and their personal attributes.\nLearn more\nBroadcast analytics\nUnlock powerful insights and understand exactly how your audience is interacting with your broadcast emails.\nLearn more\nDevelop emails using React\nCreate beautiful templates without having to deal with <table> layouts and HTML.\nPowered by react-email, our open source component library.\nGet started\nCheck the docs\nuser-welcome.tsx\nreset-password.tsx\nuser-invite.tsx\nweekly-digest.tsx\n1\nimport\n{\nBody\n,\nButton\n,\nColumn\n,\nContainer\n,\nHead\n,\nHeading\n,\nHr\n,\nHtml\n,\nImg\n,\nLink\n,\nPreview\n,\nRow\n,\nSection\n,\nText\n,\nTailwind\n}\nfrom\n'react-email'\n;\n2\nimport\n*\nas\nReact\nfrom\n'react'\n;\n3\n4\nconst\nWelcomeEmail\n=\n(\n{\n5\nusername\n=\n'Steve'\n,\n6\ncompany\n=\n'ACME'\n,\n7\n}\n:\nWelcomeEmailProps\n)\n=>\n{\n8\nconst\npreviewText\n=\n`\nWelcome to\n${\ncompany\n}\n,\n${\nusername\n}\n!\n`\n;\n9\n10\nreturn\n(\n11\n<\nHtml\n>\n12\n<\nHead\n/>\n13\n<\nPreview\n>\n{\npreviewText\n}\n</\nPreview\n>\n14\n<\nTailwind\n>\n15\n<\nBody\nclassName\n=\n\"\nbg-white my-auto mx-auto font-sans\n\"\n>\n16\n<\nContainer\nclassName\n=\n\"\nmy-10 mx-auto p-5 w-[465px]\n\"\n>\n17\n<\nSection\nclassName\n=\n\"\nmt-8\n\"\n>\n18\n<\nImg\n19\nsrc\n=\n{\n`\n${\nbaseUrl\n}\n/static/example-logo.png\n`\n}\n20\nwidth\n=\n\"\n80\n\"\n21\nheight\n=\n\"\n80\n\"\n22\nalt\n=\n\"\nLogo Example\n\"\n23\nclassName\n=\n\"\nmy-0 mx-auto\n\"\n24\n/>\n25\n</\nSection\n>\n26\n<\nHeading\nclassName\n=\n\"\ntext-2xl font-normal text-center p-0 my-8 mx-0\n\"\n>\n27\nWelcome to\n<\nstrong\n>\n{\ncompany\n}\n</\nstrong\n>\n,\n{\nusername\n}\n!\n28\n</\nHeading\n>\n29\n<\nText\nclassName\n=\n\"\ntext-sm\n\"\n>\n30\nHello\n{\nusername\n}\n,\n31\n</\nText\n>\n32\n<\nText\nclassName\n=\n\"\ntext-sm\n\"\n>\n33\nWe're excited to have you onboard at\n<\nstrong\n>\n{\ncompany\n}\n</\nstrong\n>\n. We hope you enjoy your journey with us. If you have any questions or need assistance, feel free to reach out.\n34\n</\nText\n>\n35\n<\nSection\nclassName\n=\n\"\ntext-center mt-[32px] mb-[32px]\n\"\n>\n36\n<\nButton\n37\npX\n=\n{\n20\n}\n38\npY\n=\n{\n12\n}\n39\nclassName\n=\n\"\nbg-[#00A3FF] rounded-sm text-white text-xs font-semibold no-underline text-center\n\"\n40\nhref\n=\n{\n`\n${\nbaseUrl\n}\n/get-started\n`\n}\n41\n>\n42\nGet Started\n43\n</\nButton\n>\n44\n</\nSection\n>\n45\n<\nText\nclassName\n=\n\"\ntext-sm\n\"\n>\n46\nCheers,\n47\n<\nbr\n/>\n48\nThe\n{\ncompany\n}\nTeam\n49\n</\nText\n>\n50\n</\nContainer\n>\n51\n</\nBody\n>\n52\n</\nTailwind\n>\n53\n</\nHtml\n>\n54\n)\n;\n55\n}\n;\n56\n57\ninterface\nWelcomeEmailProps\n{\n58\nusername\n?\n:\nstring\n;\n59\ncompany\n?\n:\nstring\n;\n60\n}\n61\n62\nconst\nbaseUrl\n=\nprocess\n.\nenv\n.\nURL\n63\n?\n`\nhttps://\n${\nprocess\n.\nenv\n.\nURL\n}\n`\n64\n:\n''\n;\n65\n66\nexport\ndefault\nWelcomeEmail\n;\nWelcome to\nACME\n, user!\nHello Steve,\nWe're excited to have you onboard at\nACME\n. We hope you enjoy your journey with us. If you have any questions or need assistance, feel free to reach out.\nGet Started\nCheers,\nThe ACME Team\nReach humans, not spam folders\nProactive blocklist tracking\nBe the first to know if your domain is added to a\nDNSBLs\nsuch as those offered by\nSpamhaus\nwith removal requests generated by Resend.\nFaster time to inbox\nSend emails from the region closest to your users. Reduce delivery latency with North American, South American, European, and Asian regions.\nBuild confidence with BIMI\nShowcase your logo and company branding with\nBIMI\n. Receive guidance to obtain a\nVMC\n- the email equivalent of a checkmark on social media.\nManaged dedicated IPs\nGet a fully managed dedicated IP that automatically warms up and autoscales based on your sending volume, no waiting period.\nDynamic suppression list\nPrevent repeated sending to recipients who no longer want your email and comply with standards like the\nCAN-SPAM Act\nand others.\nIP and domain monitoring\nMonitor your DNS configuration for any errors or regressions. Be notified of any changes that could hinder your deliverability.\nVerify DNS records\nProtect your reputation by verifying your identity as a legitimate sender. Secure your email communication using\nDKIM\nand\nSPF\n.\nBattle-tested infrastructure\nRely on a platform of reputable IP's used by trustworthy senders with distributed workloads across different IP pools.\nPrevent spoofing with DMARC\nAvoid impersonation by creating\nDMARC\npolicies and instructing inbox providers on how to treat unauthenticated email.\nResend is transforming email for developers. Simple interface, easy integrations, handy templates. What else could we ask for.\nGuillermo Rauch\nCEO at Vercel\nSend with Next.js\nEverything in your control\nAll the features you need to manage your email sending, troubleshoot with\ndetailed logs, and protect your domain reputation \u2013 without the friction.\nIntuitive analytics\nFull visibility\nDomain authentication\nBeyond expectations\nResend is driving remarkable developer experiences that enable success\nstories, empower businesses, and fuel growth across industries and individuals.\n\"\nOur team loves Resend. It makes email sending so easy and reliable. After we switched to Dedicated IPs, our deliverability improved tremendously and we don't hear complaints about emails landing on spam anymore.\n\"\nVlad Matsiiako\nCo-founder of Infisical\n\"\nI've used Mailgun, Sendgrid, and Mandrill and they don't come close to providing the quality of developer experience you get with Resend.\n\"\nBrandon Strittmatter\nCo-founder of Outerbase\n\"\nResend is an amazing product. It was so easy to switch over. I feel confident knowing that our important emails are in good hands with Resend. Everyone should be using this.\n\"\nShariar Kabir\nFounder at Ruby Card\n\"\nAll of our customers are located in South America, so having a solution that could send emails from the region closest to our users is very important. Resend's multi-region feature is a game-changer for us.\n\"\nGiovanni Keppelen\nCTO & Partner at VOA Hoteis\n\"\nThe speed and ease of integrating with the product was incredible, but what really stood out was their intricate knowledge of email and relentless support day or night. Oh and we also ended up winning Product of the week.\n\"\nSam Ducker\nCo-founder of Anyone\n\"\nAs a developer I love the approach that the Resend team is taking. Its so refreshing. They are also extremely user-centric and helpful in terms of getting you up and running, sending beautiful emails that deliver.\n\"\nHahnbee Lee\nCo-Founder at Mintlify\n\"\nThe Resend team have built a great product in a space that hasn't seen 10x innovation for years. Engineering peers are raving about Resend - it's such a smoother dev experience.\n\"\nRoberto Riccio\nHead of Product at Alliance\n\"\nIf you're a developer or working on a startup, you're going to love Resend's approach to emailing.\n\"\nJoe DeMaria\nCo-founder & CEO of SpecCheck\n\"\nWe were up and running with Resend in no time. It was seamless to integrate into our existing automation and gave us a tremendous amount of visibility into our email capabilities. Simple to say, it was a no-brainer.\n\"\nTy Sharp\nCo-founder & CEO of InBuild\n\"\nResend not only streamlines our emails to accommodate our expanding customer base, but their team also offered valuable hands-on support during the transition from our old API. Their product is visually stunning and seamlessly integrates with React Email.\n\"\nThiago Costa\nCo-founder of Fey and Narative\n\"\nAs of our last deployment all of our emails are using Resend. We are loving the development experience of React Email - not having to leave my dev environment to develop new emails is a game-changer.\n\"\nAdam Rankin\nFounding Engineer at Warp\n\"\nWorking with Resend has been amazing. By using Webhooks, I'm able to track email opened/clicked events via Segment and log those events in LogSnag for visibility. I highly believe in the people behind Resend.\n\"\nTaylor Facen\nFounder of Finta\n\"\nResend is super easy to set up. Loving the modern approach the team is taking with supercharging email. Never been a fan of other clunky tools.\n\"\nBrek Goin\nFounder of Hammr\n\"\nOur team loves Resend. It makes email sending so easy and reliable. After we switched to Dedicated IPs, our deliverability improved tremendously and we don't hear complaints about emails landing on spam anymore.\n\"\nVlad Matsiiako\nCo-founder of Infisical\n\"\nI've used Mailgun, Sendgrid, and Mandrill and they don't come close to providing the quality of developer experience you get with Resend.\n\"\nBrandon Strittmatter\nCo-founder of Outerbase\n\"\nResend is an amazing product. It was so easy to switch over. I feel confident knowing that our important emails are in good hands with Resend. Everyone should be using this.\n\"\nShariar Kabir\nFounder at Ruby Card\n\"\nAll of our customers are located in South America, so having a solution that could send emails from the region closest to our users is very important. Resend's multi-region feature is a game-changer for us.\n\"\nGiovanni Keppelen\nCTO & Partner at VOA Hoteis\n\"\nThe speed and ease of integrating with the product was incredible, but what really stood out was their intricate knowledge of email and relentless support day or night. Oh and we also ended up winning Product of the week.\n\"\nSam Ducker\nCo-founder of Anyone\n\"\nAs a developer I love the approach that the Resend team is taking. Its so refreshing. They are also extremely user-centric and helpful in terms of getting you up and running, sending beautiful emails that deliver.\n\"\nHahnbee Lee\nCo-Founder at Mintlify\n\"\nThe Resend team have built a great product in a space that hasn't seen 10x innovation for years. Engineering peers are raving about Resend - it's such a smoother dev experience.\n\"\nRoberto Riccio\nHead of Product at Alliance\n\"\nIf you're a developer or working on a startup, you're going to love Resend's approach to emailing.\n\"\nJoe DeMaria\nCo-founder & CEO of SpecCheck\n\"\nWe were up and running with Resend in no time. It was seamless to integrate into our existing automation and gave us a tremendous amount of visibility into our email capabilities. Simple to say, it was a no-brainer.\n\"\nTy Sharp\nCo-founder & CEO of InBuild\n\"\nResend not only streamlines our emails to accommodate our expanding customer base, but their team also offered valuable hands-on support during the transition from our old API. Their product is visually stunning and seamlessly integrates with React Email.\n\"\nThiago Costa\nCo-founder of Fey and Narative\n\"\nAs of our last deployment all of our emails are using Resend. We are loving the development experience of React Email - not having to leave my dev environment to develop new emails is a game-changer.\n\"\nAdam Rankin\nFounding Engineer at Warp\n\"\nWorking with Resend has been amazing. By using Webhooks, I'm able to track email opened/clicked events via Segment and log those events in LogSnag for visibility. I highly believe in the people behind Resend.\n\"\nTaylor Facen\nFounder of Finta\n\"\nResend is super easy to set up. Loving the modern approach the team is taking with supercharging email. Never been a fan of other clunky tools.\n\"\nBrek Goin\nFounder of Hammr\n\"\nOur team loves Resend. It makes email sending so easy and reliable. After we switched to Dedicated IPs, our deliverability improved tremendously and we don't hear complaints about e",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://resend.com/pricing",
+      "title": "Pricing \u00b7 Resend",
+      "text": "Pricing \u00b7 Resend\nOpen main menu\nFeatures\nCompany\nResources\nHelp\nDocs\nAI\nPricing\nLog in\nGet started\nPricing\nStart for free and scale as you grow.\nTransactional emails\nMarketing emails\n3K\n3,000\n50K\n50,000\n100K\n100,000\n200K\n200,000\n500K\n500,000\n1M\n1,000,000\n1.5M\n1,500,000\n2.5M\n2,500,000\n3M+\n3,000,000+\nFree\nRecommended\n$0 / mo\n3,000 emails / mo\nSending & receiving\nTicket support\n10,000 automation runs\n30-day data retention\n1 domain\n5 AI credits / mo\n100 emails a day\nDedicated IPs\nGet started\nPro\nRecommended\n$20 / mo\n50,000 emails / mo\nExtra emails:\n$0.90\n/ 1,000\nSending & receiving\nTicket support\n10,000 automation runs\n30-day data retention\n10 domains\n100 AI credits / mo\nNo daily limit\nDedicated IPs\nGet started\nScale\nRecommended\n$90 / mo\n100,000 emails / mo\nExtra emails:\n$0.90\n/ 1,000\nSending & receiving\nSlack & ticket support\n10,000 automation runs\n30-day data retention\n1,000 domains\n500 AI credits / mo\nNo daily limit\nDedicated IP with add-on\nGet started\nEnterprise\nRecommended\nCustom\nA plan based on your specific needs\nSending & receiving\nPriority support\nFlexible automation runs\nFlexible data retention\nFlexible domains\nFlexible AI credits\nNo daily limit\nDedicated IPs with add-on\nContact us\nAre you an AI agent? See pricing\nPay-as-you-go\nEmails\nContinue sending and receiving emails beyond your quota. Resend automatically charges your plan's overage rate for each additional bucket of 1,000 emails. Available to paid subscriptions.\nEnable pay-as-you-go\nAutomations\n\u00b7 $0.0015 / per run\nStart with 10,000 Automation Runs for free, and scale as you need. Resend automatically charges for each run beyond the free limit. Available to paid subscriptions.\nEnable pay-as-you-go\nAdd-ons\nDedicated IPs - $30 / mo\nAvailable to customers exceeding 500 emails sent per day on the Scale plan. We take great care to maintain good-standing shared IP's, but for some high-volume senders, you can't leave anything up to chance. We will warmup, monitor, and autoscale it based on your utilization so you can focus on one thing, sending.\nRequest dedicated IP\nSending & receiving\nFree\nPro\nScale\nEnterprise\nDaily limit\n100\nNo limit\nNo limit\nNo limit\nInbound emails\nRESTful API\nSMTP relay\nOfficial SDKs\nSchedule emails\nBatch sending\nOpen tracking\nLink tracking\nReact Email\nDeliverability & reliability\nFree\nPro\nScale\nEnterprise\nCustom domains\n1\n10\n1,000\nFlexible\nDedicated IPs\n\u2013\n\u2013\nWith add-on\nWith add-on\nDedicated IP warming\n\u2013\n\u2013\nPristine shared IPs\nAutomatic suppression list\nBounce details\nMulti-region\nData retention\n30 days\n30 days\n30 days\nFlexible\nDeliverability insights\nDKIM, SPF, DMARC authentication\nWebhook endpoints\n1 endpoint\n10 endpoints\n10 endpoints\nFlexible\nWebhook events\nAll events\nAll events\nAll events\nAll events\nSecurity & privacy\nFree\nPro\nScale\nEnterprise\nSocial login\nGDPR compliance\nSOC 2 Type II certification\nPenetration testing\nDDoS protection\nAutomated backups\nMulti-factor authentication\nAPI key permissions\nSigned webhook endpoints\nCustomer support\nFree\nPro\nScale\nEnterprise\nTicket support\nSlack support\n\u2013\n\u2013\nUrgent response SLA\n\u2013\n\u2013\nDeliverability expertise\n\u2013\nIn-app documentation\nAI assistant\nAI credits\nFree\nPro\nScale\nEnterprise\nAI credits / mo\n5\n100\n500\nFlexible\nTrusted by\nFrequently asked questions\nDo you offer any discounts for annual subscriptions?\nDo you offer non-profit or education pricing?\nWhat payment methods do you accept?\nIs there a free trial available?\nWho can I contact about a custom plan?\nWhat happens if I send more emails than my plan allows?\nWhat is the difference between transactional and marketing emails?\nWhat does \"unlimited broadcast sending\" mean?\nDo broadcast emails count against the transactional email limits?\nHow are inbound emails counted?\n\"\nOur team loves Resend. It makes email sending so easy and reliable. After we switched to Dedicated IPs, our deliverability improved tremendously and we don't hear complaints about emails landing on spam anymore.\n\"\nVlad Matsiiako\nCo-founder of Infisical\n\"\nI've used Mailgun, Sendgrid, and Mandrill and they don't come close to providing the quality of developer experience you get with Resend.\n\"\nBrandon Strittmatter\nCo-founder of Outerbase\n\"\nResend is an amazing product. It was so easy to switch over. I feel confident knowing that our important emails are in good hands with Resend. Everyone should be using this.\n\"\nShariar Kabir\nFounder at Ruby Card\n\"\nAll of our customers are located in South America, so having a solution that could send emails from the region closest to our users is very important. Resend's multi-region feature is a game-changer for us.\n\"\nGiovanni Keppelen\nCTO & Partner at VOA Hoteis\n\"\nThe speed and ease of integrating with the product was incredible, but what really stood out was their intricate knowledge of email and relentless support day or night. Oh and we also ended up winning Product of the week.\n\"\nSam Ducker\nCo-founder of Anyone\n\"\nAs a developer I love the approach that the Resend team is taking. Its so refreshing. They are also extremely user-centric and helpful in terms of getting you up and running, sending beautiful emails that deliver.\n\"\nHahnbee Lee\nCo-Founder at Mintlify\n\"\nThe Resend team have built a great product in a space that hasn't seen 10x innovation for years. Engineering peers are raving about Resend - it's such a smoother dev experience.\n\"\nRoberto Riccio\nHead of Product at Alliance\n\"\nIf you're a developer or working on a startup, you're going to love Resend's approach to emailing.\n\"\nJoe DeMaria\nCo-founder & CEO of SpecCheck\n\"\nWe were up and running with Resend in no time. It was seamless to integrate into our existing automation and gave us a tremendous amount of visibility into our email capabilities. Simple to say, it was a no-brainer.\n\"\nTy Sharp\nCo-founder & CEO of InBuild\n\"\nResend not only streamlines our emails to accommodate our expanding customer base, but their team also offered valuable hands-on support during the transition from our old API. Their product is visually stunning and seamlessly integrates with React Email.\n\"\nThiago Costa\nCo-founder of Fey and Narative\n\"\nAs of our last deployment all of our emails are using Resend. We are loving the development experience of React Email - not having to leave my dev environment to develop new emails is a game-changer.\n\"\nAdam Rankin\nFounding Engineer at Warp\n\"\nWorking with Resend has been amazing. By using Webhooks, I'm able to track email opened/clicked events via Segment and log those events in LogSnag for visibility. I highly believe in the people behind Resend.\n\"\nTaylor Facen\nFounder of Finta\n\"\nResend is super easy to set up. Loving the modern approach the team is taking with supercharging email. Never been a fan of other clunky tools.\n\"\nBrek Goin\nFounder of Hammr\n\"\nOur team loves Resend. It makes email sending so easy and reliable. After we switched to Dedicated IPs, our deliverability improved tremendously and we don't hear complaints about emails landing on spam anymore.\n\"\nVlad Matsiiako\nCo-founder of Infisical\n\"\nI've used Mailgun, Sendgrid, and Mandrill and they don't come close to providing the quality of developer experience you get with Resend.\n\"\nBrandon Strittmatter\nCo-founder of Outerbase\n\"\nResend is an amazing product. It was so easy to switch over. I feel confident knowing that our important emails are in good hands with Resend. Everyone should be using this.\n\"\nShariar Kabir\nFounder at Ruby Card\n\"\nAll of our customers are located in South America, so having a solution that could send emails from the region closest to our users is very important. Resend's multi-region feature is a game-changer for us.\n\"\nGiovanni Keppelen\nCTO & Partner at VOA Hoteis\n\"\nThe speed and ease of integrating with the product was incredible, but what really stood out was their intricate knowledge of email and relentless support day or night. Oh and we also ended up winning Product of the week.\n\"\nSam Ducker\nCo-founder of Anyone\n\"\nAs a developer I love the approach that the Resend team is taking. Its so refreshing. They are also extremely user-centric and helpful in terms of getting you up and running, sending beautiful emails that deliver.\n\"\nHahnbee Lee\nCo-Founder at Mintlify\n\"\nThe Resend team have built a great product in a space that hasn't seen 10x innovation for years. Engineering peers are raving about Resend - it's such a smoother dev experience.\n\"\nRoberto Riccio\nHead of Product at Alliance\n\"\nIf you're a developer or working on a startup, you're going to love Resend's approach to emailing.\n\"\nJoe DeMaria\nCo-founder & CEO of SpecCheck\n\"\nWe were up and running with Resend in no time. It was seamless to integrate into our existing automation and gave us a tremendous amount of visibility into our email capabilities. Simple to say, it was a no-brainer.\n\"\nTy Sharp\nCo-founder & CEO of InBuild\n\"\nResend not only streamlines our emails to accommodate our expanding customer base, but their team also offered valuable hands-on support during the transition from our old API. Their product is visually stunning and seamlessly integrates with React Email.\n\"\nThiago Costa\nCo-founder of Fey and Narative\n\"\nAs of our last deployment all of our emails are using Resend. We are loving the development experience of React Email - not having to leave my dev environment to develop new emails is a game-changer.\n\"\nAdam Rankin\nFounding Engineer at Warp\n\"\nWorking with Resend has been amazing. By using Webhooks, I'm able to track email opened/clicked events via Segment and log those events in LogSnag for visibility. I highly believe in the people behind Resend.\n\"\nTaylor Facen\nFounder of Finta\n\"\nResend is super easy to set up. Loving the modern approach the team is taking with supercharging email. Never been a fan of other clunky tools.\n\"\nBrek Goin\nFounder of Hammr\n\"\nOur team loves Resend. It makes email sending so easy and reliable. After we switched to Dedicated IPs, our deliverability improved tremendously and we don't hear complaints about emails landing on spam anymore.\n\"\nVlad Matsiiako\nCo-founder of Infisical\n\"\nI've used Mailgun, Sendgrid, and Mandrill and they don't come close to providing the quality of developer experience you get with Resend.\n\"\nBrandon Strittmatter\nCo-founder of Outerbase\n\"\nResend is an amazing product. It was so easy to switch over. I feel confident knowing that our important emails are in good hands with Resend. Everyone should be using this.\n\"\nShariar Kabir\nFounder at Ruby Card\n\"\nAll of our customers are located in South America, so having a solution that could send emails from the region closest to our users is very important. Resend's multi-region feature is a game-changer for us.\n\"\nGiovanni Keppelen\nCTO & Partner at VOA Hoteis\n\"\nThe speed and ease of integrating with the product was incredible, but what really stood out was their intricate knowledge of email and relentless support day or night. Oh and we also ended up winning Product of the week.\n\"\nSam Ducker\nCo-founder of Anyone\n\"\nAs a developer I love the approach that the Resend team is taking. Its so refreshing. They are also extremely user-centric and helpful in terms of getting you up and running, sending beautiful emails that deliver.\n\"\nHahnbee Lee\nCo-Founder at Mintlify\n\"\nThe Resend team have built a great product in a space that hasn't seen 10x innovation for years. Engineering peers are raving about Resend - it's such a smoother dev experience.\n\"\nRoberto Riccio\nHead of Product at Alliance\n\"\nIf you're a developer or working on a startup, you're going to love Resend's approach to emailing.\n\"\nJoe DeMaria\nCo-founder & CEO of SpecCheck\n\"\nWe were up and running with Resend in no time. It was seamless to integrate into our existing automation and gave us a tremendous amount of visibility into our email capabilities. Simple to say, it was a no-brainer.\n\"\nTy Sharp\nCo-founder & CEO of InBuild\n\"\nResend not only streamlines our emails to accommodate our expanding customer base, but their team also offered valuable hands-on support during the transition from our old API. Their product is visually stunning and seamlessly integrates with React Email.\n\"\nThiago Costa\nCo-founder of Fey and Narative\n\"\nAs of our last deployment all of our emails are using Resend. We are loving the development experience of React Email - not having to leave my dev environment to develop new emails is a game-changer.\n\"\nAdam Rankin\nFounding Engineer at Warp\n\"\nWorking with Resend has been amazing. By using Webhooks, I'm able to track email opened/clicked events via Segment and log those events in LogSnag for visibility. I highly believe in the people behind Resend.\n\"\nTaylor Facen\nFounder of Finta\n\"\nResend is super easy to set up. Loving the modern approach the team is taking with supercharging email. Never been a fan of other clunky tools.\n\"\nBrek Goin\nFounder of Hammr\nStart sending\nthis weekend\nResend delivers mission-critical emails for some\nof the fastest growing teams.\nSign up for free\n2261 Market Street #5039\nSan Francisco, CA 94114\nAll systems operational\nFeatures\nEmail API\nSMTP\nInbound\nAudiences\nBroadcasts\nTemplates\nWebhooks\nResources\nChangelog\nPricing\nSecurity\nSOC 2\nGDPR\nBrand\nCompany\nAbout\nBlog\nCareers\nCustomers\nHumans\nPhilosophy\nHelp\nContact\nSupport\nStatus\nMigrate\nKnowledge base\nLegal policies\nCommunity\nEvents\nInsiders\nOpen source\nWallpapers",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://resend.com/changelog",
+      "title": "Changelog \u00b7 Resend",
+      "text": "Changelog \u00b7 Resend\nOpen main menu\nFeatures\nCompany\nResources\nHelp\nDocs\nAI\nPricing\nLog in\nGet started\nChangelog\nSearch\u2026\n\u2318\nK\nSubscribe\nApr\t30, 2026\nNew Chart Component\nEmbed bar, line, and area charts directly in your emails.\nApr\t9, 2026\nLogs API\nAccess your API request logs from anywhere.\nFelipe Freitag\nApr\t7, 2026\nOfficial Resend MCP Server\nOur official MCP server with Resend platform coverage, and an official HTTP transport.\nApr\t2, 2026\nAsync Support for the Python SDK\nSend emails asynchronously in Python using the new async methods powered by httpx.\nDerich Pacheco\nMar\t13, 2026\nOfficial CLI for Resend\nBuilt for humans and AI agents. Manage your emails from the terminal.\nMar\t12, 2026\nIntroducing the New Email Editor\nA completely rebuilt editor for broadcasts and templates, now available to everyone.\n+\n2\nMar\t6, 2026\nResend adapter for Vercel Chat SDK\nThe official Resend adapter for Vercel Chat SDK turns email into a first-class channel for AI agents.\nJo\u00e3o Melo\nMar\t5, 2026\nDomain Verification Events\nDomain verification events are now more visible and actionable.\n+\n1\nFeb\t20, 2026\nOfficial n8n Node for Resend\nYou can now send emails, manage contacts, and trigger workflows from n8n.\nSilke Pilon\nFeb\t12, 2026\nCreate and Send Broadcasts via API\nUse the Broadcast API to create and send a broadcast with a single request.\nAlexandre Cisneiros\nFeb\t2, 2026\nImproved Logs Visibility\nFind issues faster with log search, status filters, and actionable 403 error guidance.\nBrian Kerr\nJan\t26, 2026\nWebhooks Ingester\nA self-hosted solution to store all your Resend webhook events in your own database.\nJan\t22, 2026\nWebhook Event Visibility\nA backwards-compatible change in the way we share webhook events.\n+\n1\nJan\t15, 2026\nBulk Actions\nPerform actions on multiple items at once in the Dashboard.\nDanilo Woznica\nJan\t8, 2026\nIntroducing Email Suppression Visibility\nLearn how the new suppressed status gives you visibility into your email performance.\nDec\t5, 2025\nPay-as-you-go Pricing\nLearn how you can enable pay-as-you-go pricing for your transactional email plans.\nVitor Capretz\nNov\t13, 2025\nExports General Availability\nExports is now generally available for all Resend users.\nOct\t31, 2025\nManaging Webhooks via API\nCreate, retrieve, list, and delete webhooks programmatically.\nOct\t24, 2025\nList Sent Emails Endpoint\nList sent emails from your account.\nOct\t16, 2025\nPagination for List Endpoints\nWe've added optional pagination for list endpoints to optimize retrieving data.\nOct\t2, 2025\nDownload Attachments\nYou can now view and download attachments for emails in the dashboard.\nVitor Capretz\nSep\t24, 2025\nTags for Batch and Scheduled Emails\nAdd tags to batch and scheduled emails.\nVitor Capretz\nSep\t19, 2025\nBatch Validation Modes\nUse batch validation modes to control how emails are validated in batch sending.\nPedro Gomes\nAug\t21, 2025\nAutomatic Plain Text Emails\nResend now automatically generates plain text for your emails.\nIsabella Aquino\nAug\t14, 2025\nEmbed Images using CID\nLearn how to inline image attachments in your emails.\nAlexandre Cisneiros\nAug\t1, 2025\nExports as CSV\nLearn how you can export your data as CSV. Currently in Beta.\nJul\t3, 2025\nCustom Unsubscribe\nMaintain your brand identity throughout the unsubscribe experience.\nCassio Zen\nJun\t26, 2025\nEnhanced Metrics Dashboard\nEnhanced metrics dashboard for your email sending performance and usage.\nJun\t19, 2025\nKeyboard Shortcut Visibility\nExposing keyboard shortcuts in a new way.\nDanilo Woznica\nJun\t12, 2025\nImproved Bounced and Delivery Details\nAccess detailed delivery logs and understand bounce causes with actionable insights.\nJun\t5, 2025\nBatch Idempotency Keys\nUse idempotency keys to ensure that your batch emails are sent only once.\nAlexandre Cisneiros\nMay\t22, 2025\nImproved DNS Detection and Troubleshooting\nStreamlining Domain Verification with Resend.\nBrian Kerr\nMay\t15, 2025\nCustom Return Path\nSet a custom return path for your domain.\nIsabella Aquino\nMay\t8, 2025\nGet Contact by Email\nGet a contact by their email address.\nCarolina Josephik\nMay\t1, 2025\nIdempotency Keys\nUse idempotency keys to ensure that emails are sent only once.\nApr\t22, 2025\nDeliverability Insights GA\nDeliverability Insights is now generally available for free for all Resend users.\nChris Pennington\nApr\t17, 2025\nExtended Email Scheduling\nSchedule emails up to 30 days in advance using Broadcasts or the API.\nFelipe Volpone\nApr\t10, 2025\nDomains Search and Filters\nQuickly find or filter through your domains with ease.\nDanilo Woznica\nMar\t13, 2025\nData Privacy Framework Certification\nResend is now certified under the EU-US Data Privacy Framework (DPF)\nJonni Lundy\nMar\t6, 2025\nMulti-Region for everyone\nResend now allows free users to send emails from any region.\nZeno Rocha\nFeb\t20, 2025\nAnnouncing the .NET SDK\nIntegrate email into your .NET apps using the new Resend SDK.\nFilipe Toscano\nFeb\t6, 2025\nNew Domains Workflow\nWe've launched a new workflow for adding and verifying domains.\nDanilo Woznica\nJan\t30, 2025\nNew Social Links Component\nWe reengineered the way you add social links to your emails.\nZeh Fernandes\nJan\t22, 2025\nUpdated Contact Endpoint\nUpdate any contact by their email address.\nVitor Capretz\nDec\t3, 2024\nNew X/Twitter Component\nEmbed X/Twitter posts in your Broadcasts.\nDanilo Woznica\nNov\t22, 2024\nNew Domain Webhooks\nReceive real-time notifications when domains are created, updated, or deleted.\nVitor Capretz\nOct\t31, 2024\nNew YouTube Component\nEmbed YouTube videos in your Broadcasts.\nChris Pennington\nOct\t3, 2024\nSchedule API with Natural Language\nUse natural language to schedule emails programmatically.\nBu Kinoshita\nJul\t17, 2024\nNew Contact Webhooks\nReceive real-time notifications when contacts are created, updated, or deleted.\nFelipe Volpone\nJul\t11, 2024\nIn-App Billing\nManage your subscription directly in the dashboard.\nVitor Capretz\nJul\t4, 2024\nNew Code Block Component\nImprove how you display code in your emails.\nZeh Fernandes\nJun\t14, 2024\nAnnouncing the Rust SDK\nYou can now send emails with the official Resend SDK in your Rust projects.\nTony Barotsis\nJun\t12, 2024\nAdvanced TLS Configuration\nUnderstand how TLS works and the different TLS policies available.\nBu Kinoshita\nJun\t7, 2024\nPython SDK 2.0\nSee what changed in the new major version of the Resend Python SDK.\nDerich Pacheco\nMay\t15, 2024\nNew Section Component\nExpand the layout and design capabilities of your emails.\nZeh Fernandes\nMay\t8, 2024\nZapier Integration\nAutomate workflows without using code.\nJonni Lundy\nApr\t23, 2024\nNew Editor Styles\nEnhance the appearance of your email broadcasts with more options.\nZeh Fernandes\nMar\t6, 2024\nUpdate Click/Open Tracking via API\nManage the entire lifecycle of your domains programmatically.\nBu Kinoshita\nFeb\t14, 2024\nMulti-Factor Authentication\nSecure your Resend account even further with multi-factor authentication.\nBu Kinoshita\nDec\t15, 2023\nEmail Bounce Details\nUnderstand the underlying reason why an email bounced.\nZeh Fernandes\nNov\t3, 2023\nAdding support for Next.js 14\nLearn how you can integrate with the new Server Actions and App Router.\nZeno Rocha\nOct\t18, 2023\nIntroducing Resend's OpenAPI Spec\nInteract with the Resend API using Postman, Insomnia, or any API client of your choice.\nKewyn Akshlley\nSep\t25, 2023\nAnnouncing the Java SDK\nNow you can send emails using the official Resend SDK for Java apps.\nKewyn Akshlley\nAug\t28, 2023\nIn-App Docs\nEasily access all API methods from within the Resend dashboard.\nZeh Fernandes\nAug\t17, 2023\nAPI Key Insights\nHave more control and visibility over your API usage.\nZeno Rocha\nAug\t10, 2023\nSupabase Integration\nSend and monitor emails from Supabase Auth using a custom SMTP server.\nZeno Rocha\nAug\t8, 2023\nSMTP Service\nStart integrating with third-party services and sending emails via SMTP.\nJonni Lundy\nJul\t27, 2023\nEmail Events Timeline\nSee the status of every email that you send.\nZeh Fernandes\nJul\t12, 2023\nCustom Email Headers\nCustomize how emails are sent with your own headers.\nBu Kinoshita\nJul\t10, 2023\nImproved Overview Metrics\nSee all of your email statistics in a more granular way.\nZeh Fernandes\nMay\t24, 2023\nAPI Rate Limit\nNew headers to help you control your API requests.\nJonni Lundy\nMay\t3, 2023\nAnnouncing the Python SDK\nIntegrate email into your Python apps using the new Resend SDK.\nDerich Pacheco\nApr\t26, 2023\nSending test emails\nSimulate different events by sending test emails.\nZeno Rocha\nApr\t12, 2023\nNew API Key Permissions\nEasily secure your account access with different permissions.\nBu Kinoshita\nApr\t6, 2023\nAnnouncing the PHP SDK\nNow you can send emails using the official Resend SDK for PHP apps.\nJayan Ratna\n2261 Market Street #5039\nSan Francisco, CA 94114\nAll systems operational\nFeatures\nEmail API\nSMTP\nInbound\nAudiences\nBroadcasts\nTemplates\nWebhooks\nResources\nChangelog\nPricing\nSecurity\nSOC 2\nGDPR\nBrand\nCompany\nAbout\nBlog\nCareers\nCustomers\nHumans\nPhilosophy\nHelp\nContact\nSupport\nStatus\nMigrate\nKnowledge base\nLegal policies\nCommunity\nEvents\nInsiders\nOpen source\nWallpapers",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://resend.com/docs",
+      "title": "Introduction - Resend",
+      "text": "Introduction - Resend\nSkip to main content\nResend\nhome page\nDocumentation\nAPI Reference\nBuild with AI\nKnowledge Base\nWebhooks\nSign In\nGet Started\nGet Started\nSearch...\nNavigation\nDocumentation\nIntroduction\nSearch...\n\u2318\nK\nDocumentation\nIntroduction\nQuickstart\nNode.js\nServerless\nPHP\nRuby\nPython\nGo\nRust\nElixir\nJava\n.NET\nSMTP\nCLI\nLearn\nSending\nReceiving\nBroadcasts\nAutomations\nTemplates\nAudience\nDomains\nLogs\nAPI Keys\nWebhooks\nSettings\nResources\nExamples\nSDKs\nCLI\nMCP Server\nSecurity\nIntegrations\nStoring Webhooks Data\nOn this page\nQuickstart\nExplore\nDocumentation\nIntroduction\nCopy page\nResend is the email API for developers.\nCopy page\nDocumentation Index\nFetch the complete documentation index at:\nhttps://resend.com/docs/llms.txt\nUse this file to discover all available pages before exploring further.\n\u200b\nQuickstart\nLearn how to get Resend set up in your project.\nNode.js\nNode.js Quickstart\nNext.js\nNext.js Quickstart\nExpress\nExpress Quickstart\nPHP\nPHP Quickstart\nLaravel\nLaravel Quickstart\nPython\nPython Quickstart\nRuby\nRuby Quickstart\nRails\nRails Quickstart\nGo\nGo Quickstart\nRust\nRust Quickstart\nElixir\nElixir Quickstart\nJava\nJava Quickstart\n.NET\n.NET Quickstart\nTerminal\nCLI Quickstart\n\u200b\nExplore\nDiscover the full range of features and capabilities.\nEmails\nVisualize all the activity in your account.\nDomains\nEnsure deliverability of your emails.\nWebhooks\nNotify your application about email events.\nWas this page helpful?\nYes\nNo\nSend emails with Node.js\nNext\n\u2318\nI\nx\ngithub\nyoutube\nwebsite\nAssistant\nResponses are generated using AI and may contain mistakes.",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://resend.com/docs/integrations",
+      "title": "Integrations - Resend",
+      "text": "Integrations - Resend\nSkip to main content\nResend\nhome page\nDocumentation\nAPI Reference\nBuild with AI\nKnowledge Base\nWebhooks\nSign In\nGet Started\nGet Started\nSearch...\nNavigation\nResources\nIntegrations\nSearch...\n\u2318\nK\nDocumentation\nIntroduction\nQuickstart\nNode.js\nServerless\nPHP\nRuby\nPython\nGo\nRust\nElixir\nJava\n.NET\nSMTP\nCLI\nLearn\nSending\nReceiving\nBroadcasts\nAutomations\nTemplates\nAudience\nDomains\nLogs\nAPI Keys\nWebhooks\nSettings\nResources\nExamples\nSDKs\nCLI\nMCP Server\nSecurity\nIntegrations\nStoring Webhooks Data\nOn this page\nAI\nNo-code\nNotifications\nContent Management Systems\nDeveloper tools\nBuild your own integration\nResources\nIntegrations\nCopy page\nIntegrate Resend with the tools you already use.\nCopy page\nDocumentation Index\nFetch the complete documentation index at:\nhttps://resend.com/docs/llms.txt\nUse this file to discover all available pages before exploring further.\n\u200b\nAI\nLovable\nLovable\nTell the Lovable AI to send emails\nAnything\nAnything\nAdd email to your Anything projects\nWildcard\nWildcard\nSend natural language emails using Wildcard\nmcp.run\nmcp.run\nBuild email AI agents using mcp.run\nRocket\nRocket\nSend emails from apps built with Rocket\nBase44\nBase44\nAdd email to your Base44 apps\nLeap.new\nLeap.new\nAdd email to your Leap apps\nParsley\nParsley\nSend alerts and follow-ups with Parsley\nPica\nPica\nIntegrate Pica with Resend\n\u200b\nNo-code\nn8n\nn8n\nBuild email workflows using n8n\nZapier\nZapier\nAutomate emails using Zapier\nEmail Element\nEmail Element\nSend emails using Email Element\nPipedream\nPipedream\nBuild workflows using Pipedream\nActivepieces\nActivepieces\nBuild workflows using Activepieces\nBunny\nQuote and bill customers from Bunny\nMonkedo\nMonkedo\nAutomate emails using Monkedo\nMake.com\nMake.com\nBuild workflows using Make.com\nLindy\nLindy\nBuild workflows using Lindy\nBuildShip\nBuildShip\nBuild workflows using BuildShip\nViaSocket\nviaSocket\nBuild automations using viaSocket\nStacksync\nStacksync\nBuild automations using Stacksync\nApiX-Drive\nUse Resend as a data destination in ApiX-Drive\nPost SMTP\nPost SMTP\nSend emails from WordPress with Post SMTP\n\u200b\nNotifications\nCourier\nCourier\nTrigger messages using Courier\nNovu\nNovu\nSend notifications using Novu\nKnock\nKnock\nSend notifications using Knock\nEngagespot\nEngagespot\nSend notifications using Engagespot\nDittofeed\nDittofeed\nSend automated emails using Dittofeed\nSuprsend\nSuprsend\nSend notifications using Suprsend\n\u200b\nContent Management Systems\nPayload CMS\nPayload CMS\nSend emails using Payload CMS\nStrapi CMS\nStrapi CMS\nSend emails using Strapi CMS\n\u200b\nDeveloper tools\nRaycast\nRaycast\nManage emails, domains, and more\nConvex\nConvex\nSend emails with Convex\u2019s Resend Component\nInngest\nInngest\nSend drip campaigns using Inngest\nUpstash\nUpstash\nSend emails using Upstash\nEncore\nEncore\nSend emails backed by Encore\u2019s observability and infrastructure\nTrigger.dev\nTrigger.dev\nSend drip campaigns using Trigger.dev\nInfisical\nInfisical\nSend email when self-hosting Infisical\nFastgen\nFastgen\nBuild workflows using Fastgen\nMedusa\nMedusa\nSend e-commerce emails using Medusa\nOpenMeter\nOpenMeter\nSend usage emails using OpenMeter\nInvopop\nInvopop\nSend invoice emails using Invopop\nTinybird\nTinybird\nAnalyze your email data in real time\nCoolify\nCoolify\nSend email notifications using Coolify\nCourrier\nCourrier\nAPI-powered email delivery for Ruby apps\nKinde\nKinde\nSend auth and billing emails using Kinde\nPulsetic\nPulsetic\nSend status page notifications using Pulsetic\nBrin\nbrin\nScan inbound emails for phishing before your app processes them\n\u200b\nBuild your own integration\nHere\u2019s how to build your own integration with Resend:\nRead the documentation on\nhow to send emails\n.\nIntegrate with your product offering.\nReach out to us\nto feature your product on this page.\nWas this page helpful?\nYes\nNo\nSecurity\nPrevious\nHow to Store Webhooks Data\nNext\n\u2318\nI\nx\ngithub\nyoutube\nwebsite\nAssistant\nResponses are generated using AI and may contain mistakes.",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/resend/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Launch HN: Resend (YC W23) \u2013 Email API for developers using React",
+          "url": "https://resend.com",
+          "points": 432,
+          "num_comments": 270,
+          "created_at": "2023-06-13T12:16:25Z",
+          "hn_url": "https://news.ycombinator.com/item?id=36309120"
+        },
+        {
+          "title": "Flickr: Invitations disclosure (resend feature)",
+          "url": "https://hackerone.com/reports/1533",
+          "points": 317,
+          "num_comments": 90,
+          "created_at": "2014-04-06T07:50:23Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7540194"
+        },
+        {
+          "title": "Resend Security Incident",
+          "url": "https://resend.com/blog/incident-report-for-january-10-2024",
+          "points": 33,
+          "num_comments": 10,
+          "created_at": "2024-01-10T22:16:13Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38944146"
+        },
+        {
+          "title": "Show HN: Vercel and Resend Integration",
+          "url": "https://vercel.com/integrations/resend",
+          "points": 14,
+          "num_comments": 1,
+          "created_at": "2024-08-20T14:56:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41300650"
+        },
+        {
+          "title": "Resend (YC W23) raises $18M Series A",
+          "url": "https://resend.com/blog/series-a",
+          "points": 12,
+          "num_comments": 5,
+          "created_at": "2024-12-04T15:38:32Z",
+          "hn_url": "https://news.ycombinator.com/item?id=42318483"
+        },
+        {
+          "title": "Incident report for Resends 12 hour outage",
+          "url": "https://resend.com/blog/incident-report-for-february-21-2024",
+          "points": 12,
+          "num_comments": 3,
+          "created_at": "2024-02-22T17:47:00Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39470533"
+        },
+        {
+          "title": "Send Marketing Emails with Resend Broadcasts",
+          "url": "https://resend.com/blog/send-marketing-emails-with-resend-broadcasts",
+          "points": 8,
+          "num_comments": 0,
+          "created_at": "2024-01-15T15:39:36Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39002134"
+        },
+        {
+          "title": "Resend Incident report for January 10th, 2024",
+          "url": null,
+          "points": 7,
+          "num_comments": 2,
+          "created_at": "2024-01-11T01:21:41Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38946157"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Blow a minor incident out of proportions? Dont mind if i do!",
+          "subreddit": "MaliciousCompliance",
+          "score": 11853,
+          "num_comments": 287,
+          "permalink": "https://reddit.com/r/MaliciousCompliance/comments/1kkuzyu/blow_a_minor_incident_out_of_proportions_dont/",
+          "selftext": "I work as an engineer for a company that assigns me to various client projects. For one such assignment, I was added to a project that wouldn\u2019t start for a few weeks, so in the meantime I stayed focused on other ongoing work. A few days before the project was due to begin, the external project lead sent me a ZIP file containing technical documentation: diagrams, requirements, and other materials relevant to the upcoming project.  I skimmed through it briefly, then moved on with my day. Nothing u"
+        },
+        {
+          "title": "Wedding check bounced - what to say on thank you note?",
+          "subreddit": "wedding",
+          "score": 4213,
+          "num_comments": 1324,
+          "permalink": "https://reddit.com/r/wedding/comments/1n983cg/wedding_check_bounced_what_to_say_on_thank_you/",
+          "selftext": "I had a large (150+ person) wedding this year. We are still working on thank you notes.\n\nI invited a friend and their partner to the wedding. I haven't seen this person in a little while, but I care about them and they are part of a larger friend group I invited. They live a little further away and either would have had a short flight or a long drive to get to our wedding, plus they likely rented a car and paid for a hotel room. They definitely cared about us enough to invest in attending.\n\nThey"
+        },
+        {
+          "title": "Nothing better than coding during Christmas \ud83c\udf84",
+          "subreddit": "vibecoding",
+          "score": 3781,
+          "num_comments": 369,
+          "permalink": "https://reddit.com/r/vibecoding/comments/1puy76y/nothing_better_than_coding_during_christmas/",
+          "selftext": ""
+        },
+        {
+          "title": "Warning to all Steam users: API Key scam can cost you your entire inventory \u2014 even if you're careful!",
+          "subreddit": "Steam",
+          "score": 3464,
+          "num_comments": 166,
+          "permalink": "https://reddit.com/r/Steam/comments/1kuog7m/warning_to_all_steam_users_api_key_scam_can_cost/",
+          "selftext": "Hey everyone,\n\nJust wanted to raise awareness about something that many Steam users (myself included) didn't know about \u2014 until it was too late:\n\n\n---\n\nThe Steam Web API Key scam.\n\nThis is a legitimate feature created by Steam for developers to interact with your inventory.\nBut if you're not careful, a malicious site or extension can silently activate it on your account without your knowledge \u2014 and then use it to scam you.\n\n\n---\n\nHow does the scam work?\n\nYou get tricked into logging into a fake "
+        },
+        {
+          "title": "Seasonal Flipping: How I turn $60 into $240 over and over",
+          "subreddit": "Flipping",
+          "score": 3418,
+          "num_comments": 422,
+          "permalink": "https://reddit.com/r/Flipping/comments/1pp786t/seasonal_flipping_how_i_turn_60_into_240_over_and/",
+          "selftext": "(Reposted with recommended edits from mods)\n\n**TL;DR (the whole method):**\n\nI'm a seasonal flipper, so I'll flip patio furniture and other things during the summer, but patio furniture sucks to flip in the winter (there's no supply even though there's still a reasonable amount of demand), so this is what I do instead:\n\nI buy portable AC units\u00a0in the winter\u00a0when demand is dead for \\~$60\u00a0each, store them for a few months, and then\u00a0sell them in summer for \\~$240/each.\n\nIn winter, portable ACs are l"
+        },
+        {
+          "title": "Finally his time will come!",
+          "subreddit": "pokemongo",
+          "score": 2719,
+          "num_comments": 58,
+          "permalink": "https://reddit.com/r/pokemongo/comments/1ndkvys/finally_his_time_will_come/",
+          "selftext": "I never used him and almost forgot, but with the resend announcement iam so excitet to use him as Mega!"
+        },
+        {
+          "title": "The gaming PC I built 10 months ago for $2,138 is $865 more expensive today",
+          "subreddit": "gaming",
+          "score": 2414,
+          "num_comments": 284,
+          "permalink": "https://reddit.com/r/gaming/comments/1q0rbgf/the_gaming_pc_i_built_10_months_ago_for_2138_is/",
+          "selftext": ""
+        },
+        {
+          "title": "Discord server!",
+          "subreddit": "Loona_Cult",
+          "score": 2269,
+          "num_comments": 33,
+          "permalink": "https://reddit.com/r/Loona_Cult/comments/1ltxgtj/discord_server/",
+          "selftext": "https://discord.gg/sCquyaw8HU\n\nWe saw many people don't know we have a discord, so resending link as a reminder."
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://resend.com/pricing",
+    "changelog": "https://resend.com/changelog",
+    "docs": "https://resend.com/docs",
+    "integrations": "https://resend.com/docs/integrations",
+    "g2": "https://www.g2.com/products/resend/reviews"
+  },
+  "analysis": {
+    "name": "Resend",
+    "url": "https://resend.com",
+    "tagline": "Email for developers",
+    "value_proposition": "A developer-first email API for sending transactional and marketing emails at scale with clean SDKs, React-based templates, and strong deliverability tooling.",
+    "target_segment": "dev",
+    "ideal_customer": "Software engineers and dev-led startups who want a code-first email platform that integrates cleanly into modern stacks and avoids the clunky UX of legacy ESPs.",
+    "features": [
+      {
+        "name": "restful api",
+        "description": "HTTP API for sending, scheduling, and managing emails programmatically",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "smtp relay",
+        "description": "SMTP endpoint for legacy app compatibility",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "official sdks",
+        "description": "First-party SDKs for Node.js, Python, Ruby, PHP, Go, Rust, Elixir, Java, and .NET",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "cli",
+        "description": "Official terminal CLI for managing emails, built for humans and AI agents",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "mcp server",
+        "description": "Official MCP server with full Resend platform coverage and HTTP transport for AI agent integration",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "react email",
+        "description": "Build email templates using React components instead of raw HTML table layouts; powered by open-source react-email library",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "email editor",
+        "description": "Visual drag-and-drop editor for broadcasts and templates with custom styles support",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "test mode",
+        "description": "Simulate send events and experiment with the API without sending real emails",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "transactional email sending",
+        "description": "Send one-off triggered emails via API or SDK",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "marketing email / broadcasts",
+        "description": "Send bulk marketing emails to audience lists",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "inbound email receiving",
+        "description": "Receive inbound emails and process them via webhooks",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "batch sending",
+        "description": "Send multiple emails in a single API call",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "scheduled emails",
+        "description": "Schedule emails up to 30 days in advance via API or broadcasts",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "natural language scheduling",
+        "description": "Use natural language strings to schedule emails programmatically via the API",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "automations",
+        "description": "Trigger automated email sequences; 10,000 runs/mo included on all plans",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "contact management",
+        "description": "Import, store, and manage contact lists with personal attributes and full visibility per contact",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "audience segmentation",
+        "description": "Group and control contacts for targeted sending",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "broadcast analytics",
+        "description": "Insights into how audiences interact with broadcast emails",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "open tracking",
+        "description": "Track when recipients open emails",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "link tracking / click tracking",
+        "description": "Track when recipients click links in emails",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "webhooks",
+        "description": "Real-time event notifications to your server for delivered, opened, bounced, clicked, and complained events",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "signed webhook endpoints",
+        "description": "Cryptographically signed webhook payloads for security verification",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "domain webhooks",
+        "description": "Real-time notifications when domains are created, updated, or deleted",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "contact webhooks",
+        "description": "Real-time notifications when contacts are created, updated, or deleted",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "webhook management via api",
+        "description": "Create, retrieve, list, and delete webhooks programmatically",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "webhooks ingester",
+        "description": "Self-hosted solution to store all Resend webhook events in your own database",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "custom domains",
+        "description": "Send from your own domain; 1 on Free, 10 on Pro, 1,000 on Scale",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "dkim/spf/dmarc authentication",
+        "description": "Full email authentication setup for domain verification",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "custom return path",
+        "description": "Set a custom return-path header for your sending domain",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "dedicated ips",
+        "description": "Dedicated sending IPs, add-on available on Scale and Enterprise plans at $30/mo",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "dedicated ip warming",
+        "description": "Managed IP warmup, monitoring, and autoscaling for dedicated IPs",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "pristine shared ips",
+        "description": "Actively maintained shared sending IPs with good reputation",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "multi-region sending",
+        "description": "Send emails from the region closest to your users; available to all tiers",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "deliverability insights",
+        "description": "Dashboard with deliverability metrics and diagnostics; GA and free for all users",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "blocklist / dnsbl monitoring",
+        "description": "Proactive tracking of domain against DNSBLs (e.g. Spamhaus) with removal request generation",
+        "evidence_source": "landing",
+        "tier": "unknown"
+      },
+      {
+        "name": "automatic suppression list",
+        "description": "Automatically suppress bounced and complained addresses",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "suppression visibility",
+        "description": "Suppressed email status visible in logs and dashboard",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "bounce details",
+        "description": "Detailed bounce reason codes and delivery logs",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "logs",
+        "description": "Full email send/event log with search, status filters, and error guidance",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "logs api",
+        "description": "Programmatic access to API request logs from anywhere",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "data retention",
+        "description": "30-day data retention on all self-serve plans; flexible on Enterprise",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "exports as csv",
+        "description": "Export email log and audience data as CSV files",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "api key permissions",
+        "description": "Scoped API keys with configurable permission levels",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "idempotency keys",
+        "description": "Prevent duplicate sends by providing idempotency keys on single and batch email requests",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "batch validation modes",
+        "description": "Control how emails are validated when sending in batch",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "email tagging",
+        "description": "Add metadata tags to batch and scheduled emails for filtering and analytics",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "automatic plain text generation",
+        "description": "Resend auto-generates plain text versions of HTML emails",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "cid image embedding",
+        "description": "Inline image attachments in emails using Content-ID (CID)",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "attachments",
+        "description": "Send and view/download email attachments; downloadable in dashboard",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "chart component",
+        "description": "Embed bar, line, and area charts directly in emails",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "code block component",
+        "description": "Syntax-highlighted code block component for email templates",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "x/twitter embed component",
+        "description": "Embed X/Twitter posts inside broadcast emails",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "youtube embed component",
+        "description": "Embed YouTube videos inside broadcast emails",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "social links component",
+        "description": "Pre-built component for adding social media links to email templates",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "custom unsubscribe",
+        "description": "Branded unsubscribe page and flow to maintain brand identity",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "broadcasts via api",
+        "description": "Create and trigger broadcast sends programmatically via REST API",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "list sent emails endpoint",
+        "description": "API endpoint to list and query sent emails from the account",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "bulk actions",
+        "description": "Perform actions on multiple dashboard items (emails, contacts, etc.) at once",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "domains search and filters",
+        "description": "Search and filter through configured sending domains in the dashboard",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "in-app billing",
+        "description": "Manage subscription and billing directly from the Resend dashboard",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "pay-as-you-go pricing",
+        "description": "Automatically charge overage for emails ($0.90/1k) and automation runs ($0.0015/run) beyond plan limits",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "ai assistant",
+        "description": "In-app AI assistant for help with email setup and deliverability",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "ai credits",
+        "description": "Monthly AI credits for AI-powered features; 5 on Free, 100 on Pro, 500 on Scale",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "vercel chat sdk adapter",
+        "description": "Official adapter to make email a first-class channel for AI agents built on Vercel Chat SDK",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "enhanced metrics dashboard",
+        "description": "Dashboard for email sending performance, usage metrics, and trends",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "mfa / multi-factor authentication",
+        "description": "Multi-factor authentication for dashboard account security",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "social login",
+        "description": "Login via social providers (OAuth)",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "soc 2 type ii",
+        "description": "SOC 2 Type II security certification",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "gdpr compliance",
+        "description": "GDPR-compliant data handling",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "eu-us data privacy framework",
+        "description": "Certified under EU-US Data Privacy Framework (DPF)",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "ddos protection",
+        "description": "DDoS protection for the sending infrastructure",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "automated backups",
+        "description": "Automated data backups",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "penetration testing",
+        "description": "Regular third-party penetration testing of the platform",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "slack support",
+        "description": "Direct Slack channel support for Scale and Enterprise customers",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "urgent response sla",
+        "description": "Guaranteed urgent response SLA for Scale and Enterprise support",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "deliverability expertise",
+        "description": "Access to Resend deliverability experts for Pro and above",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "async python sdk support",
+        "description": "Asynchronous email sending in Python using httpx-powered async methods",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "domain verification events",
+        "description": "Visible and actionable domain verification status events",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "dns troubleshooting",
+        "description": "Improved DNS detection and guided troubleshooting for domain verification",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "pagination for list endpoints",
+        "description": "Optional cursor-based pagination for all list API endpoints",
+        "evidence_source": "changelog",
+        "tier": "all"
+      }
+    ],
+    "integrations": [
+      "Lovable",
+      "Anything",
+      "Wildcard",
+      "mcp.run",
+      "Rocket",
+      "Base44",
+      "Leap.new",
+      "Parsley",
+      "Pica",
+      "n8n",
+      "Zapier",
+      "Email Element",
+      "Pipedream",
+      "Activepieces",
+      "Bunny",
+      "Monkedo",
+      "Make.com",
+      "Lindy",
+      "BuildShip",
+      "ViaSocket",
+      "Stacksync",
+      "ApiX-Drive",
+      "Post SMTP (WordPress)",
+      "Courier",
+      "Novu",
+      "Knock",
+      "Engagespot",
+      "Dittofeed",
+      "Suprsend",
+      "Payload CMS",
+      "Strapi CMS",
+      "Raycast",
+      "Convex",
+      "Inngest",
+      "Upstash",
+      "Encore",
+      "Trigger.dev",
+      "Infisical",
+      "Fastgen",
+      "Medusa",
+      "OpenMeter",
+      "Invopop",
+      "Tinybird",
+      "Coolify",
+      "Courrier",
+      "Kinde",
+      "Pulsetic",
+      "Brin",
+      "Vercel Chat SDK",
+      "Next.js",
+      "Remix",
+      "Nuxt",
+      "Express",
+      "Hono",
+      "Redwood",
+      "Bun",
+      "Astro",
+      "Laravel",
+      "Rails"
+    ],
+    "differentiators": [
+      "Developer-first positioning: 'Email for developers' with first-class DX as the core product promise",
+      "React Email integration: build templates in React components rather than raw HTML tables",
+      "Official MCP server enabling AI agent email workflows",
+      "Multi-region sending from infrastructure closest to end users",
+      "Proactive DNSBL/blocklist monitoring with auto-generated removal requests",
+      "Natural language email scheduling via API",
+      "Built by engineers for engineers: 'the email platform we've always wished we had'",
+      "Broad AI tooling integration surface (Lovable, Wildcard, mcp.run, Vercel Chat SDK adapter)",
+      "Webhooks Ingester: self-hosted solution for storing webhook events in your own database"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-04",
+        "what": "New Chart Component \u2014 embed bar, line, area charts in emails",
+        "source": "changelog"
+      },
+      {
+        "date": "2026-04",
+        "what": "Logs API \u2014 programmatic access to API request logs",
+        "source": "changelog"
+      },
+      {
+        "date": "2026-04",
+        "what": "Official Resend MCP Server with HTTP transport",
+        "source": "changelog"
+      },
+      {
+        "date": "2026-04",
+        "what": "Async Support for Python SDK using httpx",
+        "source": "changelog"
+      },
+      {
+        "date": "2026-03",
+        "what": "Official CLI for Resend \u2014 built for humans and AI agents",
+        "source": "changelog"
+      },
+      {
+        "date": "2026-03",
+        "what": "Introducing the New Email Editor \u2014 completely rebuilt for broadcasts and templates",
+        "source": "changelog"
+      },
+      {
+        "date": "2026-03",
+        "what": "Resend adapter for Vercel Chat SDK \u2014 email as a first-class AI agent channel",
+        "source": "changelog"
+      },
+      {
+        "date": "2026-02",
+        "what": "Official n8n Node for Resend \u2014 send emails and manage contacts from n8n",
+        "source": "changelog"
+      },
+      {
+        "date": "2026-02",
+        "what": "Create and Send Broadcasts via API",
+        "source": "changelog"
+      },
+      {
+        "date": "2026-01",
+        "what": "Webhooks Ingester \u2014 self-hosted webhook event storage solution",
+        "source": "changelog"
+      },
+      {
+        "date": "2026-01",
+        "what": "Bulk Actions \u2014 perform actions on multiple dashboard items at once",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-12",
+        "what": "Pay-as-you-go Pricing launched for transactional email plans",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-11",
+        "what": "Exports General Availability \u2014 export data for all users",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-10",
+        "what": "Managing Webhooks via API \u2014 full CRUD for webhooks programmatically",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-09",
+        "what": "Batch Validation Modes \u2014 control validation behavior in batch sends",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-08",
+        "what": "Automatic Plain Text Emails \u2014 auto-generate plain text from HTML",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-07",
+        "what": "Custom Unsubscribe \u2014 branded unsubscribe experience",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-06",
+        "what": "Batch Idempotency Keys \u2014 prevent duplicate batch sends",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-05",
+        "what": "Custom Return Path \u2014 set custom return-path for domains",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-05",
+        "what": "Idempotency Keys for single email sends",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-04",
+        "what": "Deliverability Insights GA \u2014 free for all Resend users",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-04",
+        "what": "Extended Email Scheduling \u2014 schedule up to 30 days in advance",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-03",
+        "what": "EU-US Data Privacy Framework (DPF) Certification",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-03",
+        "what": "Multi-Region for everyone including free tier",
+        "source": "changelog"
+      },
+      {
+        "date": "2025-02",
+        "what": "Announcing the .NET SDK",
+        "source": "changelog"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Developer experience: 'I've used Mailgun, Sendgrid, and Mandrill and they don't come close to providing the quality of developer experience you get with Resend.' \u2014 Brandon Strittmatter, Co-founder of Outerbase",
+        "Deliverability improvement: 'After we switched to Dedicated IPs, our deliverability improved tremendously and we don't hear complaints about emails landing on spam anymore.' \u2014 Vlad Matsiiako, Co-founder of Infisical",
+        "Easy integration: 'It was so easy to switch over. I feel confident knowing that our important emails are in good hands.' \u2014 Shariar Kabir, Founder at Ruby Card",
+        "Multi-region capability: 'Resend's multi-region feature is a game-changer for us.' \u2014 Giovanni Keppelen, CTO at VOA Hoteis",
+        "Support quality: 'Their intricate knowledge of email and relentless support day or night' \u2014 Sam Ducker, Co-founder of Anyone",
+        "React integration: 'Their product is visually stunning and seamlessly integrates with React' \u2014 Ty Sharp, Co-founder of InBuild",
+        "Speed of integration: 'The speed and ease of integrating with the product was incredible'",
+        "HN launch received 432 upvotes and strong positive developer reception (YC W23)"
+      ],
+      "complaints": [
+        "Security incident reported on Hacker News (title: 'Resend Security Incident')",
+        "12-hour outage reported on Hacker News with incident report",
+        "January 10th, 2024 incident reported on Hacker News"
+      ],
+      "sources": [
+        "hn",
+        "pricing page testimonials"
+      ]
+    },
+    "pricing_signal": {
+      "model": "freemium",
+      "tier_count": 4,
+      "lowest_paid_seat": "$20/mo",
+      "free_tier": "3,000 emails/mo (100/day limit), 1 domain, 5 AI credits/mo, ticket support, 10,000 automation runs, 30-day data retention"
+    }
+  }
+}

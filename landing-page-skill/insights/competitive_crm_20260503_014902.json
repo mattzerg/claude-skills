@@ -1,0 +1,2489 @@
+{
+  "type": "competitive_review_handoff",
+  "category": "crm",
+  "product": "ZergCRM",
+  "generated_at": "2026-05-03T01:49:02.908404",
+  "competitor_urls": [
+    "https://www.salesforce.com",
+    "https://www.hubspot.com",
+    "https://attio.com",
+    "https://www.pipedrive.com",
+    "https://www.folk.app",
+    "https://www.clay.com",
+    "https://www.close.com",
+    "https://www.affinity.co",
+    "https://www.zoho.com/crm",
+    "https://www.microsoft.com/en-us/dynamics-365/products/sales"
+  ],
+  "matrix": [
+    {
+      "feature": "contact management",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "company and account management",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "partial",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "lead management",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "partial",
+        "clay.com": "partial",
+        "close.com": "yes",
+        "affinity.co": "partial",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "deal management",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "pipeline management",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "multi-pipeline support",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "unknown",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "opportunity management",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "activity and task management",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "follow-up reminders",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "unknown",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "custom fields",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "custom objects",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "unknown",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "unknown",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "lead routing",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "unknown",
+        "folk.app": "no",
+        "clay.com": "partial",
+        "close.com": "yes",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "interaction history and activity timeline",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "products catalog",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "unknown",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "cpq (configure price quote)",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "yes",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sales goal tracking",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "partial",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "territory management",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "partial",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "web forms and lead capture",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "partial",
+        "close.com": "yes",
+        "affinity.co": "partial",
+        "zoho.com": "yes",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "leads inbox",
+      "category": "core",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "partial",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "gmail integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "unknown",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "outlook integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "unknown",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "slack integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "unknown",
+        "clay.com": "yes",
+        "close.com": "unknown",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "linkedin sales navigator integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "partial",
+        "pipedrive.com": "partial",
+        "folk.app": "yes",
+        "clay.com": "partial",
+        "close.com": "unknown",
+        "affinity.co": "partial",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "calendar sync",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "email sync",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "microsoft 365 and exchange integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "partial",
+        "pipedrive.com": "partial",
+        "folk.app": "partial",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "partial",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "power bi integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "zapier integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "yes",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "webhooks",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "unknown",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "yes",
+        "affinity.co": "partial",
+        "zoho.com": "partial",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "rest api",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "marketplace and app store",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "partial",
+        "close.com": "unknown",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "salesforce integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "unknown",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "unknown",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "whatsapp integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "browser extension",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "yes",
+        "zoho.com": "no",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mcp integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "no",
+        "us_spec": "unknown",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "reverse etl",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ad audience sync",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "docusign integration",
+      "category": "integrations",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "unknown",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "ai sales assistant",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "partial",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai email assistant",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "partial",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai call summarization and transcription",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "predictive lead scoring",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai opportunity scoring",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "partial",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai contact enrichment",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "partial",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "partial",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai forecasting",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "no",
+        "pipedrive.com": "partial",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai autonomous agents",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "partial",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "yes",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "conversation intelligence",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "relationship intelligence",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "partial",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "yes",
+        "zoho.com": "no",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "natural language queries",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "partial",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "signal and intent tracking",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "waterfall enrichment",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "partial",
+        "pipedrive.com": "no",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "partial",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai web scraping",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai content creation",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "yes",
+        "pipedrive.com": "partial",
+        "folk.app": "partial",
+        "clay.com": "partial",
+        "close.com": "partial",
+        "affinity.co": "no",
+        "zoho.com": "partial",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "warm introduction surfacing",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "yes",
+        "zoho.com": "no",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "anomaly detection",
+      "category": "ai",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "role-based access control",
+      "category": "admin",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "partial",
+        "pipedrive.com": "partial",
+        "folk.app": "yes",
+        "clay.com": "partial",
+        "close.com": "yes",
+        "affinity.co": "partial",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "sso",
+      "category": "admin",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "gdpr compliance",
+      "category": "admin",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "yes",
+        "folk.app": "unknown",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "yes",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "hipaa compliance",
+      "category": "admin",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "unknown",
+        "folk.app": "unknown",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "yes",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "data import and export",
+      "category": "admin",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "partial",
+        "pipedrive.com": "partial",
+        "folk.app": "yes",
+        "clay.com": "partial",
+        "close.com": "yes",
+        "affinity.co": "partial",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "user management",
+      "category": "admin",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "partial",
+        "clay.com": "partial",
+        "close.com": "partial",
+        "affinity.co": "unknown",
+        "zoho.com": "partial",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "sandbox environment",
+      "category": "admin",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "verified email sending domains",
+      "category": "admin",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "partial",
+        "pipedrive.com": "no",
+        "folk.app": "partial",
+        "clay.com": "no",
+        "close.com": "partial",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "certificate management",
+      "category": "admin",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "data permissions and visibility rules",
+      "category": "admin",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "partial",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "partial",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "saved views and smart views",
+      "category": "ux",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "unknown",
+        "folk.app": "partial",
+        "clay.com": "unknown",
+        "close.com": "yes",
+        "affinity.co": "partial",
+        "zoho.com": "unknown",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "custom page layouts",
+      "category": "ux",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "unknown",
+        "folk.app": "unknown",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "yes",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "canvas design studio",
+      "category": "ux",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "drag-and-drop pipeline view",
+      "category": "ux",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "unknown",
+        "folk.app": "unknown",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "desktop app",
+      "category": "ux",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "unknown",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "multi-language support",
+      "category": "ux",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "yes",
+        "folk.app": "unknown",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "blueprint and process visualization",
+      "category": "ux",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "keyboard shortcuts",
+      "category": "ux",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "unknown",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "favorites and bookmarks",
+      "category": "ux",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "unknown",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "workflow automation",
+      "category": "automation",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "visual flow builder",
+      "category": "automation",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "partial",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "partial",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "email sequences and sales cadences",
+      "category": "automation",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "partial",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "marketing automation",
+      "category": "automation",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "partial",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "event-triggered automation",
+      "category": "automation",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "scheduled automation",
+      "category": "automation",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "partial",
+        "pipedrive.com": "partial",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "yes",
+        "affinity.co": "unknown",
+        "zoho.com": "partial",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "outbound automation",
+      "category": "automation",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "partial",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "functions and custom code",
+      "category": "automation",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "lead nurturing automation",
+      "category": "automation",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "yes",
+        "close.com": "yes",
+        "affinity.co": "partial",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "mentions and notes",
+      "category": "collaboration",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "partial",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "partial",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "call coaching",
+      "category": "collaboration",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "network mapping and relationship graph",
+      "category": "collaboration",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "yes",
+        "zoho.com": "no",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "team performance monitoring",
+      "category": "collaboration",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "partial",
+        "clay.com": "unknown",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "centralized inbox",
+      "category": "collaboration",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "partial",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "partial",
+        "zoho.com": "partial",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "sales leaderboards",
+      "category": "collaboration",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "unknown",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "knowledge base",
+      "category": "collaboration",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "partial",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "interaction sharing",
+      "category": "collaboration",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "reporting and dashboards",
+      "category": "reporting",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "yes",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "sales forecasting",
+      "category": "reporting",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "partial",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "yes",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "revenue forecasting",
+      "category": "reporting",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "email analytics",
+      "category": "reporting",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "partial",
+        "pipedrive.com": "yes",
+        "folk.app": "partial",
+        "clay.com": "unknown",
+        "close.com": "partial",
+        "affinity.co": "unknown",
+        "zoho.com": "partial",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "customer health scoring",
+      "category": "reporting",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "yes",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "dashboard subscriptions and exports",
+      "category": "reporting",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "partial",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "crm analytics",
+      "category": "reporting",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "partial",
+        "folk.app": "partial",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "advanced sales metrics and kpis",
+      "category": "reporting",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "partial",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile app",
+      "category": "mobile",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "yes",
+        "folk.app": "partial",
+        "clay.com": "unknown",
+        "close.com": "yes",
+        "affinity.co": "yes",
+        "zoho.com": "unknown",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile sdk",
+      "category": "mobile",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile responsive web",
+      "category": "mobile",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "unknown",
+        "folk.app": "yes",
+        "clay.com": "unknown",
+        "close.com": "unknown",
+        "affinity.co": "unknown",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "built-in voip calling",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "unknown",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "power dialer",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "predictive dialer",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "call recording",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "voicemail drop",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "built-in sms",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "no",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "partial",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "omni-channel communication",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "partial",
+        "pipedrive.com": "partial",
+        "folk.app": "partial",
+        "clay.com": "no",
+        "close.com": "partial",
+        "affinity.co": "no",
+        "zoho.com": "yes",
+        "microsoft.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "meeting scheduler",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "yes",
+        "affinity.co": "no",
+        "zoho.com": "partial",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "customer surveys",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "commerce, billing, and payments",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "yes",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "partial",
+        "microsoft.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "account-based marketing (abm)",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "unknown",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "data marketplace",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "partial",
+        "hubspot.com": "partial",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "tam sourcing",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "no",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "academy and certifications",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "yes",
+        "pipedrive.com": "partial",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "no",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "partner program",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "yes",
+        "hubspot.com": "yes",
+        "pipedrive.com": "yes",
+        "folk.app": "no",
+        "clay.com": "yes",
+        "close.com": "no",
+        "affinity.co": "no",
+        "zoho.com": "unknown",
+        "microsoft.com": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "vertical crm solutions",
+      "category": "other",
+      "presence": {
+        "salesforce.com": "unknown",
+        "hubspot.com": "no",
+        "pipedrive.com": "no",
+        "folk.app": "no",
+        "clay.com": "no",
+        "close.com": "no",
+        "affinity.co": "yes",
+        "zoho.com": "yes",
+        "microsoft.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "duplicate contact management",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    }
+  ],
+  "rankings": [
+    {
+      "feature": "company and account management",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "lead management",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "rest api",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "role-based access control",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "workflow automation",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "email sequences and sales cadences",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "event-triggered automation",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "outbound automation",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "functions and custom code",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "lead nurturing automation",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    }
+  ],
+  "drift": [],
+  "summary": {
+    "n_features": 119,
+    "table_stakes_count": 38,
+    "differentiator_parity_count": 79,
+    "whitespace_count": 2,
+    "we_have_they_dont_count": 0,
+    "drift_count": 0
+  }
+}

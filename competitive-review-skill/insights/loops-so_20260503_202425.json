@@ -1,0 +1,560 @@
+{
+  "name": "Loops",
+  "url": "https://loops.so",
+  "domain": "loops.so",
+  "scanned_at": "2026-05-03T20:22:23.450256",
+  "sources": {
+    "landing": {
+      "url": "https://loops.so",
+      "title": "Loops - One platform for all your email",
+      "text": "Loops - One platform for all your email\nCLI now available\nOne platform,\nevery email\nLoops is the simplest way to send\nproduct\n,\nmarketing\n,\nand\ntransactional\nemail, from waitlist to IPO.\nGet started\nFor agents\nFramer\nLinear\nPerplexity\nGranola\nClerk\nReuters\nY Combinator\nEmail design from first principles\nIt was hard to design emails that work everywhere. We fixed that. Designs crafted with Loops will work in all supported email clients. Easy.\nHuman\nAgent\nAlpha\nThemes\nbackground\n#1C1917\npadding\n24px\nborder\n1px solid\nradius\n6px\nborder width\n1px\nborder color\n#1C1917\nLoops <hello@loops.so>\nLearn more\nLearn\nEditing basics\nReusable assets\nStyles and themes\nMore\nA delightful developer experience\nWe have contacts, contact properties, events and event properties. Understand the concepts? You know how to use Loops.\nHuman\nAgent\nCreate contact\nPOST\nhttps://app.loops.so/api/v1/contacts/create\n{\n\"\nemail\n\"\n:\n\"test@example.com\"\n,\n\"\nfirstName\n\"\n:\n\"Alice\"\n,\n\"\nlastName\n\"\n:\n\"Smith\"\n,\n\"\nsource\n\"\n:\n\"signup_form\"\n,\n\"\nsubscribed\n\"\n:\ntrue\n,\n\"\nuserGroup\n\"\n:\n\"paying\"\n}\n$\nnpm i loops\n173.9K / WEEK\n173.9K\n/week\nView on npm\nNode\nN\nNextJS\nRuby\nPHP\nphp\nNuxtJS\nLaravel\nLearn\nAPI quickstart\nContacts API\nEvents API\nMore\nBuild powerful lifecycle loops\nYour best opportunity for connecting with users once they close the tab is the inbox. Time to use your best opportunity.\nHuman\nAgent\nSoon\nAcquisition\nStart\nTrigger\nuserCreated\nDelay\n5 mins\nSend\nwelcome email\nBranch\nDelay\n3 days\nFilter\n!activated\nFinish\nSend\nsetup guide\nExit\nRemove from Loop\n!activated after 14d\nLearn\nTriggers\nBranching\nPlaybooks\nMore\nYour growth team's most effective lever\nConnect Loops to your app and track what emails drive upgrades, churn reduction, and revenue.\nGoal conversions\nComing soon\n124\nFree \u2192 Pro\n124\n3.2%\nOnboarding Complete\n892\n68%\nReferral Link Click\n445\n12%\nLearn\nExperiments\nSegments and filters\nEvent properties\nMore\nFinally, marketing in sync with product\nBuild segments from properties and engagement, reuse them across campaigns and loops, and they will stay in sync with your product.\nSaved segments\n3\ntotal\nPaying Customers\n1,240\nplan is pro\n+\n2\nRecent Signups\n850\nsigned up < 7d ago\n+\n2\nDidn't open last campaign\n125\nlast campaign not opened\n+\n2\nLearn\nSegments and filters\nContact properties\nMailing lists\nMore\nStay synced with your stack\nLoops sits on top of your data to help you send emails. Connect the products you already use for a simple, connected experience.\nWebhooks\nSupabase\nClerk\nZapier\nFramer\nMake\nSegment\nWebflow\nBubble\nStripe\nPostHog\nAuth0\nLearn\nStripe billing events\nSupabase user sync\nClerk auth sync\nAll integrations\nSee why teams stick with Loops\nOur retention is high. We spend most of our time building things for our existing customers. Here are some nice things they've said.\n\"Loops is focused, fast, and does just what we need\"\nJorn, Founder\n,\nFramer\n->\n\"Loops is super simple, intuitive, and has what we need without the bloat\"\nLuca, Founder\n,\nCosmos\n->\nStart sending better email today\nFree to start. No credit card required.\nStart for free\nFor agents\nCompany\nAbout\nCareers\nCredits\nCustomers\nProduct\nPricing\nDocs\nTemplates\nExamples\nResources\nChangelog\nEngineering\nGlossary\nAgents\nConnect\nEmail\nLinkedIn\nThreads\n\ud835\udd4f\n\u00a9\u00a02026 Astrodon Inc.\nPrivacy\nTerms\nTrust (SOC2)\nDPA\nDPF\nAll systems operational\nGuides\nPricing\nDocs\nLog in\nStart",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://loops.so/pricing",
+      "title": "Loops - Pricing",
+      "text": "Loops - Pricing\nPricing\nOur pricing is based on subscribed contacts synced to Loops. Move the slider to estimate pricing. If you need a custom plan, please\nsend us an email\n.\nHow many subscribers do you have?\n100\n1.5m+\n1,000\nSubscribers\nFree\nPer month\nEarly Stage Plan\nThe free plan is for early products and smaller audiences.\nGet started\nUp to 4,000 sends/month (enough for weekly emails)\nAll features included\nIncludes a small \"Powered by Loops\" footer\nNeed a custom solution? Contact us\n\u2192\nFramer\nReplicate\nunDraw\nperplexity\nModal\nclerk\nwabi\nSpline\nLinear\nReuters\nFrequently Asked Questions\nWait, what's your price again?\nOur pricing is based on subscribed contacts. Transactional email sending is included at no additional charge.\nHow is a subscriber defined?\nA subscribed contact is an email address marked as subscribed. You can view all subscribed and unsubscribed contacts on your Audience page.\nWhat does the free plan include?\nThe free plan includes up to 4,000 sends a month to 1,000 stored subscribed contacts. We do not charge for additional stored contacts. It also includes Loops branding at the bottom of your emails. Any paid plan will remove these limitations.\nDo you charge for team seats?\nNo.\nDo you charge for email sends?\nNo.\nHow are you different from other email platforms?\nSending email for your business is important and will have a material impact long term. You should take a look at all your options and go with what's best for your business.\nLoops is free to start, with no credit card required and you can invite your entire team to help you make a decision. We believe we've built the best tool in our class. If you need to send email for your SaaS, we can confidently say Loops is likely the right choice.\nGuides\nPricing\nDocs\nCompany\nAbout\nCareers\nCredits\nCustomers\nProduct\nPricing\nDocs\nTemplates\nExamples\nResources\nChangelog\nEngineering\nGlossary\nAgents\nConnect\nEmail\nLinkedIn\nThreads\n\ud835\udd4f\n\u00a9\u00a02026 Astrodon Inc.\nPrivacy\nTerms\nTrust (SOC2)\nDPA\nDPF\nAll systems operational\nLog in\nStart",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://loops.so/changelog",
+      "title": "Loops - Changelog",
+      "text": "Loops - Changelog\nChangelog\nSmall changes, shipped often. Product updates, reliability improvements, and the occasional quality-of-life tweak.\nCLI, Skills and Array support\nApr 16, 2026\nRead\nCode blocks in the editor\nApr 3, 2026\nRead\nDNS zone file generation\nApr 2, 2026\nRead\nZoom in the loop builder\nApr 1, 2026\nRead\nNew Stripe Events\nMar 31, 2026\nRead\nLLM Translation\nJan 13, 2026\nRead\nDouble opt-in\nNov 20, 2025\nRead\nIntroducing Guardian\nSep 17, 2025\nRead\nMarkdown and more\nAug 13, 2025\nRead\nSplit testing\nJun 3, 2025\nRead\nEditor redesign\nApr 21, 2025\nRead\nWebhooks, Personal Blocklist and CC/BCC\nFeb 5, 2025\nRead\nAccount switcher\nDec 17, 2024\nRead\nColumns arrive at Loops\nOct 7, 2024\nRead\nPerformance updates\nSep 5, 2024\nRead\nHomepage refresh and editor updates\nJul 25, 2024\nRead\nDashboard redesign and Clerk\nJul 16, 2024\nRead\nComponents and Transactional Workflow\nJul 9, 2024\nRead\nLists, Preferences and Slack Notifications\nJul 2, 2024\nRead\nFeature Update: Language Support\nMay 27, 2024\nRead\nApril Updates\nMay 8, 2024\nRead\nMarch: Day 4\nMar 21, 2024\nRead\nMarch: Day 3\nMar 20, 2024\nRead\nMarch: Day 2\nMar 19, 2024\nRead\nMarch: Day 1\nMar 18, 2024\nRead\nJanuary: Day 5\nFeb 2, 2024\nRead\nJanuary: Day 4\nFeb 1, 2024\nRead\nJanuary: Day 3\nJan 31, 2024\nRead\nJanuary: Day 2\nJan 30, 2024\nRead\nJanuary: Day 1\nJan 28, 2024\nRead\nNovember Updates\nDec 7, 2023\nRead\nOctober Updates\nOct 30, 2023\nRead\nSeptember Updates\nOct 2, 2023\nRead\nAugust Updates\nAug 17, 2023\nRead\nAugust - Mini Update\nAug 2, 2023\nRead\nJuly - Mini Update\nJul 11, 2023\nRead\nJune Updates\nJun 30, 2023\nRead\nMay Updates\nMay 12, 2023\nRead\nMarch: Day 5\nMar 22, 224\nRead\nGuides\nPricing\nDocs\nCompany\nAbout\nCareers\nCredits\nCustomers\nProduct\nPricing\nDocs\nTemplates\nExamples\nResources\nChangelog\nEngineering\nGlossary\nAgents\nConnect\nEmail\nLinkedIn\nThreads\n\ud835\udd4f\n\u00a9\u00a02026 Astrodon Inc.\nPrivacy\nTerms\nTrust (SOC2)\nDPA\nDPF\nAll systems operational\nLog in\nStart",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://loops.so/docs",
+      "title": "Loops Documentation - Loops",
+      "text": "Loops Documentation - Loops\nSkip to main content\nLoops\nhome page\nContact Us\nLog in\nLoops\nSearch...\nNavigation\nLoops Documentation\nSearch...\n\u2318\nK\nLearn\nGet started\nEditing emails\nLoop builder\nEvents\nContacts\nTransactional email\nIntegrations\nSMTP\nAccount\nAgent Skills\nSecurity\nAPI\nAPI Introduction\nAPI Reference\nExamples\nSDKs\nWebhooks\nAPI Changelog\nCLI\nCLI Introduction\nAuth\nCompletion\nContact properties\nContacts\nEvents\nLists\nTransactional\nGuides\nAll guides\nGetting started\nLoops\nDeliverability\nIntegrations\nCreating emails\nEmail basics\nLoops Documentation\nCopy page\nWelcome to Loops, the way software companies send email.\nCopy page\nDocumentation Index\nFetch the complete documentation index at:\nhttps://loops.so/docs/llms.txt\nUse this file to discover all available pages before exploring further.\n\u200b\nGuides\nQuickstart\nYour step-by-step guide for getting started\nEditing emails\nHow to craft an email using our editor\nSet up your sending domain\nSet up your domain to start sending email\nImprove your inbox placement\nRead our guide for improving your email deliverability and placement\nStart sending transactional email\nLearn how to send transactional email\nSend a product update email\nLearn how to send a product update email\n\u200b\nSDKs\nAdd Loops to your application in minutes with our SDKs.\nJavaScript\nThe official JavaScript/TypeScript SDK for Loops.\nNuxt\nThe official Nuxt module for Loops.\nPHP\nThe official PHP SDK for Loops.\nRuby\nThe official Ruby SDK for Loops.\n\u200b\nIntegrations\nConnect Loops with thousands of other platforms\nStripe\nBubble\nSupabase\nZapier\nMake\nClerk\nFramer\nView all ->\nLast modified on\nFebruary 5, 2026\nWas this page helpful?\nYes\nNo\n\u2318\nI\nx\nlinkedin\nAssistant\nResponses are generated using AI and may contain mistakes.\nContact support",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://loops.so/integrations",
+      "title": "Loops - One platform for all your email",
+      "text": "Loops - One platform for all your email\n404\nL'oops\nThis page got lost in the, uh, mail.\nHead home",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/loops/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "CrowdStrike Update: Windows Bluescreen and Boot Loops",
+          "url": "https://old.reddit.com/r/crowdstrike/comments/1e6vmkf/bsod_error_in_latest_crowdstrike_update/",
+          "points": 4489,
+          "num_comments": 3859,
+          "created_at": "2024-07-19T05:26:13Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41002195"
+        },
+        {
+          "title": "Almost anything you give sustained attention to will begin to loop on itself",
+          "url": "https://www.henrikkarlsson.xyz/p/attention",
+          "points": 773,
+          "num_comments": 223,
+          "created_at": "2025-09-04T12:29:49Z",
+          "hn_url": "https://news.ycombinator.com/item?id=45126503"
+        },
+        {
+          "title": "Fixing for loops in Go 1.22",
+          "url": "https://go.dev/blog/loopvar-preview",
+          "points": 598,
+          "num_comments": 455,
+          "created_at": "2023-09-19T19:34:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=37575204"
+        },
+        {
+          "title": "Infinite loop in macOS Night Shift in the summer near the Arctic Circle",
+          "url": "https://twitter.com/AustinJ/status/1144655793612107778",
+          "points": 588,
+          "num_comments": 164,
+          "created_at": "2019-06-28T19:16:50Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20307891"
+        },
+        {
+          "title": "Show HN: A Dalle-3 and GPT4-Vision feedback loop",
+          "url": "https://dalle.party/",
+          "points": 587,
+          "num_comments": 149,
+          "created_at": "2023-11-27T14:18:24Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38432486"
+        },
+        {
+          "title": "Loops is a federated, open-source TikTok",
+          "url": "https://joinloops.org/",
+          "points": 575,
+          "num_comments": 382,
+          "created_at": "2026-02-22T18:56:40Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47113618"
+        },
+        {
+          "title": "Procrastinatory Doom Loops",
+          "url": "https://brennancolberg.com/blog/procrastinatory-doom-loops",
+          "points": 537,
+          "num_comments": 278,
+          "created_at": "2022-01-06T03:20:10Z",
+          "hn_url": "https://news.ycombinator.com/item?id=29818894"
+        },
+        {
+          "title": "\u201cCoding is basically just ifs and for loops.\u201d",
+          "url": "https://twitter.com/ID_AA_Carmack/status/1466934223831506951",
+          "points": 496,
+          "num_comments": 393,
+          "created_at": "2021-12-04T17:16:11Z",
+          "hn_url": "https://news.ycombinator.com/item?id=29442307"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://loops.so/pricing",
+    "changelog": "https://loops.so/changelog",
+    "docs": "https://loops.so/docs",
+    "integrations": "https://loops.so/integrations",
+    "g2": "https://www.g2.com/products/loops/reviews"
+  },
+  "analysis": {
+    "name": "Loops",
+    "url": "https://loops.so",
+    "tagline": "One platform, every email",
+    "value_proposition": "The simplest way for SaaS companies to send product, marketing, and transactional email from a single platform.",
+    "target_segment": "SMB / dev",
+    "ideal_customer": "Early-stage to growth-stage SaaS founders and developers who want a unified email platform without per-seat or per-send pricing complexity",
+    "features": [
+      {
+        "name": "email editor",
+        "description": "Visual drag-and-drop email editor with cross-client compatibility guarantees",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "email templates",
+        "description": "Reusable email templates accessible across the team",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "transactional email",
+        "description": "API-triggered transactional email sending included in all plans at no extra charge",
+        "evidence_source": "landing|pricing",
+        "tier": "all"
+      },
+      {
+        "name": "marketing email",
+        "description": "Broadcast campaign emails sent to segments or lists",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "product email",
+        "description": "Lifecycle product emails for onboarding, activation, and retention",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "loop builder",
+        "description": "Visual canvas-based automation workflow builder for lifecycle email sequences",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "triggers",
+        "description": "Event-based triggers to start email automation loops",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "branching",
+        "description": "Conditional logic branches within automation loops",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "delays",
+        "description": "Time-based delays between steps in automation loops",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "filters",
+        "description": "Audience and property filters applied within loop steps",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "playbooks",
+        "description": "Pre-built automation playbook templates for common lifecycle scenarios",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "contact management",
+        "description": "Store, view, and manage email contacts with subscribed/unsubscribed status",
+        "evidence_source": "landing|pricing",
+        "tier": "all"
+      },
+      {
+        "name": "contact properties",
+        "description": "Custom key-value properties on contacts for segmentation and personalization",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "event tracking",
+        "description": "Track user events from the app to trigger and filter emails",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "event properties",
+        "description": "Custom properties attached to events for fine-grained filtering",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "segments",
+        "description": "Dynamic audience segments built from contact properties and engagement",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "saved segments",
+        "description": "Reusable saved segments shared across campaigns and loops, auto-synced with product data",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "mailing lists",
+        "description": "Subscriber list management with opt-in/opt-out handling",
+        "evidence_source": "landing|docs",
+        "tier": "all"
+      },
+      {
+        "name": "subscriber preferences",
+        "description": "Subscriber-facing preference center for managing list subscriptions",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "goal conversions",
+        "description": "Track email-attributed conversion events like upgrades, activations, and referral clicks",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "split testing",
+        "description": "A/B experiments on email content or subject lines",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "themes",
+        "description": "Reusable design themes with global background, padding, border, and radius settings",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "reusable assets",
+        "description": "Shared design assets reusable across emails",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "columns layout",
+        "description": "Multi-column layout support in the email editor",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "code blocks in editor",
+        "description": "Insert styled code blocks directly into email content",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "markdown support",
+        "description": "Write email content using Markdown syntax",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "rest api",
+        "description": "Full REST API for contacts, events, lists, and transactional sending",
+        "evidence_source": "landing|docs",
+        "tier": "all"
+      },
+      {
+        "name": "sdks",
+        "description": "Official SDKs for JavaScript/TypeScript, Nuxt, PHP, Ruby; also Next.js and Laravel mentioned",
+        "evidence_source": "landing|docs",
+        "tier": "all"
+      },
+      {
+        "name": "cli",
+        "description": "Command-line interface for managing Loops resources including contacts, events, lists, and transactional",
+        "evidence_source": "landing|changelog|docs",
+        "tier": "all"
+      },
+      {
+        "name": "agent skills",
+        "description": "Support for AI agents to send email via Loops, with dedicated skill primitives",
+        "evidence_source": "changelog|docs",
+        "tier": "all"
+      },
+      {
+        "name": "array support",
+        "description": "Array data type support in contact/event properties",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "webhooks",
+        "description": "Outbound webhooks to notify external systems of email events",
+        "evidence_source": "landing|changelog",
+        "tier": "all"
+      },
+      {
+        "name": "smtp",
+        "description": "SMTP sending endpoint as an alternative to the API",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "double opt-in",
+        "description": "Confirmation email flow requiring subscribers to verify their address",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "guardian",
+        "description": "Deliverability protection system (launched Sep 2025, exact feature set not detailed in sources)",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "llm translation",
+        "description": "AI-powered automatic translation of email content into other languages",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "language support",
+        "description": "Multi-language email sending support",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "dns zone file generation",
+        "description": "Auto-generate DNS zone file for sending domain setup",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "personal blocklist",
+        "description": "Block specific email addresses from receiving any emails",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "cc/bcc",
+        "description": "CC and BCC recipient support on transactional emails",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "account switcher",
+        "description": "Switch between multiple Loops accounts from a single login",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "slack notifications",
+        "description": "Receive Loops notifications inside Slack",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "zoom in loop builder",
+        "description": "Zoom/pan controls on the loop builder canvas",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "transactional workflow",
+        "description": "Dedicated workflow for triggering and managing transactional email templates",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "components",
+        "description": "Reusable email content components shared across multiple emails",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "unlimited team seats",
+        "description": "No per-seat charges; entire team can be invited at no additional cost",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "powered-by branding removal",
+        "description": "Remove 'Powered by Loops' footer branding on any paid plan",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "soc2 compliance",
+        "description": "SOC2 trust report available; DPA and DPF also provided",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "deliverability guides",
+        "description": "Documentation and guides for improving inbox placement",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "sending domain setup",
+        "description": "Custom sending domain configuration with DNS verification",
+        "evidence_source": "docs",
+        "tier": "all"
+      }
+    ],
+    "integrations": [
+      "Supabase",
+      "Clerk",
+      "Zapier",
+      "Make (Integromat)",
+      "Framer",
+      "Webflow",
+      "Bubble",
+      "Stripe",
+      "PostHog",
+      "Auth0",
+      "Segment",
+      "Slack"
+    ],
+    "differentiators": [
+      "No per-seat pricing \u2014 entire team included at no extra cost",
+      "No per-send pricing \u2014 unlimited sends on paid plans",
+      "Transactional email included in all plans at no additional charge",
+      "All features included on every plan (including free)",
+      "Built specifically for SaaS companies, not general-purpose email",
+      "AI agent email support ('For agents') as a first-class use case",
+      "CLI available for developer-first workflows",
+      "Cross-email-client compatible design system out of the box",
+      "Simple mental model: contacts, contact properties, events, event properties"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-04",
+        "what": "CLI, Agent Skills, and Array property type support",
+        "source": "CLI, Skills and Array support \u2014 Apr 16, 2026"
+      },
+      {
+        "date": "2026-04",
+        "what": "Code blocks in the email editor",
+        "source": "Code blocks in the editor \u2014 Apr 3, 2026"
+      },
+      {
+        "date": "2026-04",
+        "what": "Automated DNS zone file generation for sending domain setup",
+        "source": "DNS zone file generation \u2014 Apr 2, 2026"
+      },
+      {
+        "date": "2026-04",
+        "what": "Zoom and pan controls in the loop builder canvas",
+        "source": "Zoom in the loop builder \u2014 Apr 1, 2026"
+      },
+      {
+        "date": "2026-03",
+        "what": "New Stripe event types for billing automation triggers",
+        "source": "New Stripe Events \u2014 Mar 31, 2026"
+      },
+      {
+        "date": "2026-01",
+        "what": "LLM-powered automatic email translation",
+        "source": "LLM Translation \u2014 Jan 13, 2026"
+      },
+      {
+        "date": "2025-11",
+        "what": "Double opt-in confirmation flow",
+        "source": "Double opt-in \u2014 Nov 20, 2025"
+      },
+      {
+        "date": "2025-09",
+        "what": "Guardian deliverability protection system",
+        "source": "Introducing Guardian \u2014 Sep 17, 2025"
+      },
+      {
+        "date": "2025-08",
+        "what": "Markdown support and additional editor improvements",
+        "source": "Markdown and more \u2014 Aug 13, 2025"
+      },
+      {
+        "date": "2025-06",
+        "what": "Split testing / A/B experiments on emails",
+        "source": "Split testing \u2014 Jun 3, 2025"
+      },
+      {
+        "date": "2025-04",
+        "what": "Full email editor redesign",
+        "source": "Editor redesign \u2014 Apr 21, 2025"
+      },
+      {
+        "date": "2025-02",
+        "what": "Outbound webhooks, personal blocklist, and CC/BCC on transactional",
+        "source": "Webhooks, Personal Blocklist and CC/BCC \u2014 Feb 5, 2025"
+      },
+      {
+        "date": "2024-12",
+        "what": "Account switcher for multi-account management",
+        "source": "Account switcher \u2014 Dec 17, 2024"
+      },
+      {
+        "date": "2024-10",
+        "what": "Multi-column layout support in email editor",
+        "source": "Columns arrive at Loops \u2014 Oct 7, 2024"
+      },
+      {
+        "date": "2024-07",
+        "what": "Reusable email components and transactional workflow",
+        "source": "Components and Transactional Workflow \u2014 Jul 9, 2024"
+      },
+      {
+        "date": "2024-07",
+        "what": "Mailing lists, subscriber preferences, and Slack notifications",
+        "source": "Lists, Preferences and Slack Notifications \u2014 Jul 2, 2024"
+      },
+      {
+        "date": "2024-05",
+        "what": "Multi-language email support",
+        "source": "Feature Update: Language Support \u2014 May 27, 2024"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "\"Loops is focused, fast, and does just what we need\" \u2014 Jorn, Founder at Framer",
+        "\"Loops is super simple, intuitive, and has what we need without the bloat\" \u2014 Luca, Founder at Cosmos"
+      ],
+      "complaints": [],
+      "sources": [
+        "landing page testimonials"
+      ]
+    },
+    "pricing_signal": {
+      "model": "freemium",
+      "tier_count": 2,
+      "lowest_paid_seat": null,
+      "free_tier": "Up to 4,000 sends/month, 1,000 subscribed contacts stored, all features included, 'Powered by Loops' footer branding, no credit card required"
+    }
+  }
+}

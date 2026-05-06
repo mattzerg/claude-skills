@@ -1,0 +1,135 @@
+# Fake Matt feedback — https://ca-org.fly.dev/org-chart
+
+_Reviewed 2026-05-03 00:05; 3 pages, 17 findings (0 rejected for missing provenance)._
+
+**Severity:** P0=5 · P1=9 · P2=3
+
+## If I only fix three things
+- A user who follows a link to `/org-chart` is silently redirected to a login wall with zero explanation of what they were trying to access, whose workspace they're entering, or why authentication is required. The page surfaces 'Operations Atlas ORG' and a form — nothing else. For any collaborative or link-sharing flow, this is a structural dead end: the visitor has no anchor to why they're here and no reason to trust the page they landed on.
+  - **Fix:** Pass the intended destination as a query param on redirect and preserve it post-auth so users land where they intended. Surface the organization name or content type on the login page itself — e.g., 'Sign in to view [Org Name]'s org chart' — so users arriving via a shared link have context before they enter credentials.
+- There is no signup, request-access, or account-creation path anywhere on the login page. A new user who receives a shared link hits this form and has exactly one option: know their credentials or leave. This kills adoption for any invite-based or link-sharing workflow before it starts — the login page is both the acquisition surface and a dead end simultaneously.
+  - **Fix:** Add a 'Don't have an account? Request access' or 'Sign up' link below the form. If the product is invite-only, replace it with 'Need access? Contact your admin' with a support or contact link. Either path is better than a silent wall.
+- The `<html>` element has no `lang` attribute — axe flags this as 'serious' impact. Screen readers cannot correctly announce the page language, breaking the experience for assistive technology users before they reach the first form field. This is a one-line fix with zero design cost that eliminates the highest-severity violation on the page.
+  - **Fix:** Add `lang="en"` (or the appropriate locale) to the root `<html>` element. One attribute, one line, removes the serious-impact axe violation.
+
+## All findings
+
+### P0 — friction
+- **Where:** https://ca-org.fly.dev/login (`body`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/org-chart_desktop.png)
+- **Finding:** A user who follows a link to `/org-chart` is silently redirected to a login wall with zero explanation of what they were trying to access, whose workspace they're entering, or why authentication is required. The page surfaces 'Operations Atlas ORG' and a form — nothing else. For any collaborative or link-sharing flow, this is a structural dead end: the visitor has no anchor to why they're here and no reason to trust the page they landed on.
+- **Fix:** Pass the intended destination as a query param on redirect and preserve it post-auth so users land where they intended. Surface the organization name or content type on the login page itself — e.g., 'Sign in to view [Org Name]'s org chart' — so users arriving via a shared link have context before they enter credentials.
+- **Provenance:** voice=`q-0006` · principles=`p-0106`, `p-0108`
+
+### P0 — cta
+- **Where:** https://ca-org.fly.dev/login (`form`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/org-chart_desktop.png)
+- **Finding:** There is no signup, request-access, or account-creation path anywhere on the login page. A new user who receives a shared link hits this form and has exactly one option: know their credentials or leave. This kills adoption for any invite-based or link-sharing workflow before it starts — the login page is both the acquisition surface and a dead end simultaneously.
+- **Fix:** Add a 'Don't have an account? Request access' or 'Sign up' link below the form. If the product is invite-only, replace it with 'Need access? Contact your admin' with a support or contact link. Either path is better than a silent wall.
+- **Provenance:** voice=`q-0008` · principles=`p-0047`, `p-0024`
+
+### P0 — accessibility
+- **Where:** https://ca-org.fly.dev/login (`html`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/org-chart_desktop.png)
+- **Finding:** The `<html>` element has no `lang` attribute — axe flags this as 'serious' impact. Screen readers cannot correctly announce the page language, breaking the experience for assistive technology users before they reach the first form field. This is a one-line fix with zero design cost that eliminates the highest-severity violation on the page.
+- **Fix:** Add `lang="en"` (or the appropriate locale) to the root `<html>` element. One attribute, one line, removes the serious-impact axe violation.
+- **Provenance:** voice=`q-0009` · principles=`p-0002`
+
+### P0 — accessibility
+- **Where:** https://ca-org.fly.dev/login (`html`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/login_desktop.png)
+- **Finding:** The <html> element has no lang attribute. Screen readers default to system language, which breaks pronunciation for any user whose system language differs from the page content — assistive tech will mispronounce every word on the page. This is a WCAG 2.2 AA hard failure on the first element of the DOM.
+- **Fix:** Add lang="en" (or the appropriate locale) to the <html> tag. One attribute, zero effort, eliminates a serious axe violation.
+- **Provenance:** voice=`q-0006` · principles=`p-0002`, `p-0001`
+
+### P0 — accessibility
+- **Where:** https://ca-org.fly.dev/login (`form input[type='email'], form input[type='password']`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/login_desktop.png)
+- **Finding:** Both form fields have no `name` attribute. This breaks autofill on every major browser — password managers (1Password, Bitwarden, Chrome's native autofill) rely on `name` to match credentials. Forcing users to type credentials manually on every login is friction that has zero business justification and directly increases session-start abandonment.
+- **Fix:** Add name="email" to the email input and name="password" to the password input. Also add autocomplete="email" and autocomplete="current-password" respectively to fully enable credential manager autofill.
+- **Provenance:** voice=`q-0008` · principles=`p-0050`, `p-0061`
+
+### P1 — copy
+- **Where:** https://ca-org.fly.dev/login (`a[href='/forgot-password']`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/org-chart_desktop.png)
+- **Finding:** The forgot-credentials link reads 'Forgot username/password?' but the login form only collects an email address — there is no username field anywhere on the page. This is either a copy artifact from a previous auth model that was never updated, or the form is missing a field. Either way, it plants confusion at the exact moment a user is trying to authenticate.
+- **Fix:** Change the link copy to 'Forgot password?' to match the email-based auth model. If username login is genuinely supported via a separate path, surface that — but the current copy implies a field the form doesn't have.
+- **Provenance:** voice=`q-0022` · principles=`p-0107`, `p-0109`
+
+### P1 — accessibility
+- **Where:** https://ca-org.fly.dev/login (`.login-brand`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/org-chart_desktop.png)
+- **Finding:** Three additional axe violations: no `<main>` landmark, no H1, and page content sitting outside any landmark region. 'Sign in' is rendered as a heading visually but not marked as `<h1>`. Screen reader users cannot navigate the page structure; search engines cannot identify the primary content region. These are structural omissions — not design trade-offs — and all three resolve with markup changes only.
+- **Fix:** Wrap the login card in a `<main>` element. Promote the 'Sign in' heading to `<h1>`. Ensure all visible page content (brand block, form, footer link) sits inside a named landmark (`<main>`, `<header>`, `<footer>`).
+- **Provenance:** voice=`q-0009` · principles=`p-0002`, `p-0030`
+
+### P1 — positioning
+- **Where:** https://ca-org.fly.dev/login (`.login-brand`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/org-chart_desktop.png)
+- **Finding:** 'Operations Atlas ORG' is the entire value proposition visible to a first-time visitor — it signals nothing about what the product does, who it's for, or why a user arriving via a shared link should trust entering credentials here. A five-second test fails immediately: someone who didn't already know what this product is will have no idea after reading the login screen.
+- **Fix:** Add a single descriptor line beneath the product name — e.g., 'Org chart and people directory for [Company Name]' — so users arriving via shared links immediately understand what they're signing into and why the login gate exists.
+- **Provenance:** voice=`q-0017` · principles=`p-0044`, `p-0029`
+
+### P1 — accessibility
+- **Where:** https://ca-org.fly.dev/forgot-password (`html`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/forgot-password_desktop.png)
+- **Finding:** The root <html> element has no lang attribute — a serious axe violation. Screen readers cannot determine the correct pronunciation engine without it. Every user hitting this page is already locked out of their account; making the recovery form inaccessible on top of that is a credibility problem, not just a compliance checkbox. This is a one-attribute fix with zero downside.
+- **Fix:** Add lang="en" to the opening <html> tag. Five-minute fix, ships today.
+- **Provenance:** voice=`q-0009` · principles=`p-0002`
+
+### P1 — accessibility
+- **Where:** https://ca-org.fly.dev/forgot-password (`body`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/forgot-password_desktop.png)
+- **Finding:** No <main> landmark and six content nodes outside landmark regions — two moderate axe violations on a page with almost no content. Screen reader users navigating by landmark cannot jump directly to the form; they tab through every decorative element first. On a page this structurally simple, both violations together read as incomplete rather than intentional.
+- **Fix:** Wrap the heading, form, and back-link in a <main> element. Wrap any top-of-page branding in <header>. This is a 10-minute structural change that resolves both violations simultaneously.
+- **Provenance:** voice=`q-0009` · principles=`p-0002`
+
+### P1 — friction
+- **Where:** https://ca-org.fly.dev/forgot-password (`form input[type="email"]`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/forgot-password_desktop.png)
+- **Finding:** The email input has name="" (empty string) and no autocomplete attribute. Password managers and browser autofill use the name attribute to match stored credentials — an empty name means neither fires. A user who forgot their password now also has to manually type the email address they may not remember is associated with the account. The form is a bit wonky where it counts most.
+- **Fix:** Set name="email" and autocomplete="email" on the input. Two attributes ensure every major password manager and browser autofill fires correctly on this field.
+- **Provenance:** voice=`q-0022` · principles=`p-0061`, `p-0050`
+
+### P1 — accessibility
+- **Where:** https://ca-org.fly.dev/login (`.login-brand`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/login_desktop.png)
+- **Finding:** The page has no <main> landmark and no H1. The only heading is an H2 ('Sign in'). Screen readers navigate by landmark and heading hierarchy; without a <main> and an H1, keyboard and AT users land on a page with no semantic anchor point. axe flags this as moderate — it's a structural omission, not a cosmetic one.
+- **Fix:** Wrap the login card in a <main> element. Promote 'Sign in' from H2 to H1, or add a visually-hidden H1 ('Operations Atlas — Sign in') above it. Both fixes together resolve three axe violations simultaneously: landmark-one-main, page-has-heading-one, and region.
+- **Provenance:** voice=`q-0006` · principles=`p-0002`, `p-0107`
+
+### P1 — copy
+- **Where:** https://ca-org.fly.dev/login (`.login-brand strong`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/login_desktop.png)
+- **Finding:** The page title is 'Operations Atlas' and the only visible context is an 'ORG' sub-badge. For a returning user landing on this screen from a bookmark or email link, there is no signal indicating whose org they're signing into, what environment this is (production? staging?), or what the product actually does. The title tag matches — 'Operations Atlas' — but gives no org-level disambiguation. Users managing multiple workspaces will hesitate.
+- **Fix:** Replace the static 'ORG' badge with the actual organization name pulled from the subdomain or session context. If multi-org is not yet supported, at minimum add a subtitle line beneath 'Operations Atlas' with the workspace identifier so users can confirm they're in the right place before entering credentials.
+- **Provenance:** voice=`q-0017` · principles=`p-0106`, `p-0107`
+
+### P1 — friction
+- **Where:** https://ca-org.fly.dev/login (`a[href='/forgot-password']`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/login_desktop.png)
+- **Finding:** The recovery link reads 'Forgot username/password?' — a slash construction that signals the product isn't sure which credential type applies. Modern auth is email-first; there is no 'username' in the form. The ambiguity adds cognitive load and the question mark on a link (rather than a declarative 'Reset password') makes the action feel uncertain.
+- **Fix:** Change to 'Forgot your password?' as a plain declarative link. Remove 'username' — the form collects email, so that path doesn't exist. Per WCAG 2.4.4, link text should describe its destination unambiguously.
+- **Provenance:** voice=`q-0024` · principles=`p-0011`, `p-0047`
+
+### P2 — ux
+- **Where:** https://ca-org.fly.dev/forgot-password (`.page-kicker`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/forgot-password_desktop.png)
+- **Finding:** "ORG" appears as a visible label in the page hierarchy alongside the product name. It's vague, doesn't map to anything a locked-out user can act on, and reads like a developer artifact that wasn't cleaned up before launch. If this is a tenant or workspace identifier, show the actual org name or domain — "Our views of a changing world" energy applied to identity context.
+- **Fix:** Either replace "ORG" with the actual organization name or subdomain (e.g., "Signing in to zergai.com") if the page is tenant-aware, or remove it entirely if it's decorative scaffolding.
+- **Provenance:** voice=`q-0017` · principles=`p-0107`, `p-0111`
+
+### P2 — ux
+- **Where:** https://ca-org.fly.dev/login (`form`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/login_desktop.png)
+- **Finding:** The field labels ('EMAIL', 'PASSWORD') are all-caps. axe didn't flag this, but all-caps labels reduce reading speed by ~13% compared to title-case or sentence-case — they register as shouting and break the cognitive ease that makes a login feel frictionless. Every competitor login screen (Linear, Notion, GitHub) uses sentence-case or title-case labels.
+- **Fix:** Switch labels to 'Email' and 'Password'. If the all-caps aesthetic is intentional brand voice, apply it only to headings and brand elements — not to functional form labels where legibility matters more than style.
+- **Provenance:** voice=`q-0022` · principles=`p-0022`, `p-0059`
+
+### P2 — technical
+- **Where:** https://ca-org.fly.dev/login (`html`)
+- ![](/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-235415-ca-org/screenshots/login_desktop.png)
+- **Finding:** All page content sits outside any landmark region (axe: 'region' violation, 5 nodes). This is structural — the login card, brand header, and form are all uncontained. For assistive tech users navigating by landmark, the page is an undifferentiated blob. Five nodes flagged means this isn't one missed wrapper; it's a systematic landmark omission.
+- **Fix:** Wrap all visible content in a <main> landmark (see f-0003). Ensure the brand header lives inside it or in a <header> element. This resolves both the 'region' and 'landmark-one-main' violations in a single structural fix.
+- **Provenance:** voice=`q-0006` · principles=`p-0002`, `p-0003`
+

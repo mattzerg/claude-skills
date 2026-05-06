@@ -1,0 +1,137 @@
+{
+  "url": "https://devin.ai",
+  "company": "Devin",
+  "tagline": "Devin, the AI software engineer",
+  "subheadline": "Industry leaders choose to Build with Devin",
+  "value_proposition": "An autonomous AI software engineer that handles complex, repetitive, and large-scale engineering tasks\u2014from code migrations to bug triage\u2014at a fraction of the cost and time of human engineers.",
+  "target_audience": "Enterprise engineering teams and technical leaders at large organizations dealing with legacy codebases, large-scale migrations, or high volumes of repetitive engineering work.",
+  "primary_cta": {
+    "text": "Sign up",
+    "placement": "nav and hero"
+  },
+  "secondary_cta": {
+    "text": "Contact sales",
+    "placement": "nav"
+  },
+  "social_proof": {
+    "logos": [
+      "Nubank",
+      "Confluence",
+      "Airtable",
+      "Segment",
+      "Asana",
+      "Notion",
+      "Stripe",
+      "AWS",
+      "GitHub",
+      "Datadog",
+      "Linear",
+      "Databricks",
+      "Slack",
+      "Google Drive",
+      "Sentry",
+      "PostgreSQL",
+      "Azure",
+      "Snowflake",
+      "MongoDB"
+    ],
+    "testimonials": [
+      "Devin provided an easy way to reduce the number of engineering hours for the migration, in a way that was more stable and less prone to human error. Rather than engineers having to work across several files and complete an entire migration task 100%, they could just review Devin's changes, make minor adjustments, then merge their PR \u2014 Jose Carlos Castro, Senior Product Manager, Nubank"
+    ],
+    "metrics": [
+      "8x engineering time efficiency gain",
+      "20x cost savings",
+      "8-12x faster migration",
+      "6 million lines of code migrated",
+      "~100,000 data class implementations",
+      "40 minutes per sub-task dropped to 10 after fine-tuning",
+      "2x improvement in task completion scores after fine-tuning"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "self-serve + contact-sales enterprise",
+    "tiers": [
+      "Standard (Sign up)",
+      "Enterprise"
+    ],
+    "price_anchoring": "Frames cost savings as 20x cheaper than human engineer hourly rates; additional value emphasized as completing projects months ahead of schedule"
+  },
+  "features": [
+    "PR review and visual QA with automatic bug identification and intelligent diff organization",
+    "Auto-generated documentation and system diagrams for legacy codebases",
+    "Parallel fleet of agents for large-scale code migrations and refactors (COBOL, .NET, Talend, legacy ETL)",
+    "Issue triage and bug fixing via Datadog, Slack, and Linear integrations",
+    "Fine-tuning on organization-specific examples to improve task completion speed and accuracy over time"
+  ],
+  "differentiators": [
+    "Fine-tuning capability on customer-specific codebases and task examples",
+    "Fleet-of-agents model for parallelizing large migrations across thousands of sub-tasks",
+    "Learns tribal knowledge and gets faster/more reliable with each task (compounding improvement)",
+    "Deep integration with the tools engineering teams already use (GitHub, Linear, Slack, Datadog)",
+    "Human stays in the loop only for review and approval, not execution"
+  ],
+  "trust_signals": [
+    "Detailed Nubank enterprise case study with verified quantitative outcomes",
+    "Named enterprise tier implying security/compliance controls",
+    "Quote attributed to named executive (Jose Carlos Castro, Senior PM at Nubank)",
+    "Benchmark evaluation set methodology described for fine-tuning validation"
+  ],
+  "navigation": [
+    "Enterprise",
+    "Pricing",
+    "Customers",
+    "Resources",
+    "Blog",
+    "Docs",
+    "Careers",
+    "About us",
+    "Contact"
+  ],
+  "design_patterns": {
+    "layout": "Top nav with dual CTA, large hero section, featured customer case study with metrics, use-case grid, integration logos marquee, enterprise conversion section at bottom",
+    "color_scheme": "Dark background with high-contrast white text; accent colors likely blue or electric tones (inferred from AI/tech brand conventions and page structure)",
+    "typography": "Modern sans-serif; bold display type for metrics and headlines",
+    "visual_style": "Technical and confident; enterprise-grade with clean minimal structure",
+    "notable_patterns": [
+      "Metric callout cards (8x, 20x) as anchor elements",
+      "Logo marquee for integration partners",
+      "Long-form case study embedded in hero to establish credibility before feature listing",
+      "Use-case grid with learn-more links",
+      "Side-by-side knowledge/workflow UI mockup for 'learns your codebase' section"
+    ]
+  },
+  "emotional_tone": "confident/aspirational \u2014 positions Devin as the obvious solution to a painful, expensive, universal engineering problem; aspirational framing around freeing engineers from drudgework",
+  "key_objections_addressed": [
+    "Is it actually reliable? (addressed via fine-tuning benchmark scores and case study completion rates)",
+    "Will engineers lose control? (addressed by emphasizing human-in-the-loop review and PR approval workflow)",
+    "Is it too expensive? (addressed with 20x cost savings vs engineer hourly rates)",
+    "Can it handle our complex, unique codebase? (addressed via fine-tuning on org-specific examples and tribal knowledge learning)",
+    "Will it slow us down to set up? (addressed by framing setup as 'small fixed cost' with compounding returns)"
+  ],
+  "missing_or_weak": [
+    "No visible pricing page content or starting price \u2014 forces contact for even basic cost discovery",
+    "Only one customer case study prominently featured (Nubank); needs more diversity of logos and named testimonials",
+    "No free trial or sandbox offer \u2014 high commitment ask for a technical buyer who wants to evaluate before purchasing",
+    "Security and compliance details (SOC 2, data handling, code confidentiality) not surfaced on the landing page despite enterprise audience",
+    "No video demo or interactive product tour \u2014 technical buyers typically want to see the product in action before engaging sales",
+    "Competitor differentiation is implicit rather than explicit \u2014 no direct comparison to GitHub Copilot, Cursor, or other AI coding tools",
+    "No FAQ section to address common technical or procurement concerns"
+  ],
+  "standout_elements": [
+    "Leading with a deeply specific, metrics-rich enterprise case study (Nubank) before any feature list \u2014 builds massive credibility immediately",
+    "Fine-tuning narrative is a genuine differentiator and is explained clearly with before/after numbers (40min \u2192 10min)",
+    "Compounding improvement story ('like a human engineer') creates a compelling long-term value narrative",
+    "Fleet-of-agents framing is distinctive and addresses scale in a way competitors don't",
+    "Integration ecosystem breadth (18+ named tools) signals enterprise readiness without a dedicated integrations page",
+    "'Fewer dreaded migration tasks' as a benefit \u2014 speaks directly to engineer sentiment, not just manager ROI"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 9,
+    "conversion_focus": 6,
+    "differentiation": 8,
+    "overall": 8
+  },
+  "analyzed_at": "2026-04-30T14:54:31.824531"
+}

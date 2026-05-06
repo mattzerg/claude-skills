@@ -1,0 +1,661 @@
+{
+  "name": "Twilio",
+  "url": "https://twilio.com",
+  "domain": "twilio.com",
+  "scanned_at": "2026-05-02T23:37:53.710634",
+  "sources": {
+    "landing": {
+      "url": "https://twilio.com",
+      "title": "Communications APIs with AI and data for SMS, Voice, Email | Twilio",
+      "text": "Communications APIs with AI and data for SMS, Voice, Email | Twilio\n\");vwo_$('head').append(_vwo_sel);return vwo_$('head')[0] && vwo_$('head')[0].lastChild;})(\"HEAD\")}}, GL_1176295_14_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_14_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce6998d9a123ad0_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, C_1176295_79_1_2_2:{ fn:function(log,nonce=''){return (function(x) {})(\"#vwo-custom-alert,body.vwo-custom-alert-active,body.vwo-custom-alert-active .navigation-v2,/* NEW: move the subnav's layout slot down by the alert height */ body.vwo-custom-alert-active .sub-navigation,/* NEW: move the sticky subnav bar below alert + nav */ body.vwo-custom-alert-active .sub-navigation nav,body.vwo-custom-alert-active .alert-cmp:not(#vwo-custom-alert),#vwo-custom-alert .richtext a, #vwo-custom-alert .alert-cmp__richtext a,/* hard-hide state */ html.vwo-custom-alert-closed #vwo-custom-alert,/* visible native dismiss button is display-only */ #vwo-custom-alert .alert-cmp__dismiss,/* invisible click target on top of the X */ #vwo-custom-alert .vwo-custom-alert-close-hitarea\")}}, GL_1176295_37_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_37_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce6983648fd44f6_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, C_1176295_20_1_2_0:{ fn:function(){return (function(x) { try{\n  \n  \n !function(){var t=new WeakSet;function e(e){if(!t.has(e)){t.add(e);var n=!1,o=new MutationObserver((function(t){t.forEach((function(t){if(\"attributes\"===t.type&&\"href\"===t.attributeName){var r=new URL(e.href,window.location.origin);r.search&&!n&&(r.protocol=\"https:\",r.pathname=\"/en-us/try-twilio/sendgrid-2\",e.href=r.toString(),n=!0,o.disconnect())}}))}));o.observe(e,{attributes:!0,attributeFilter:[\"href\"]}),setTimeout((function(){if(!n){var t=new URL(e.href,window.location.origin);t.protocol=\"https:\",t.pathname=\"/en-us/try-twilio/sendgrid-2\",e.href=t.toString(),n=!0,o.disconnect()}}),4e3)}}document.querySelectorAll(\"a[href*=try-twilio]\").forEach(e);var n=document.querySelector(\".button-container\");n&&new MutationObserver((function(t){t.forEach((function(t){t.addedNodes.forEach((function(t){1===t.nodeType&&t.matches&&t.matches(\"a[href*=try-twilio]\")&&e(t)}))}))})).observe(n,{childList:!0})}(); \n return vwo_$('head')[0] && vwo_$('head')[0].lastChild; } catch(e) {VWO._.vAEH(e);} })(\"HEAD\")}}, ce69822456f07b3_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 500);\n    });\n}\n)()\n            }}, js_8e15ee826caa6aa574fc306e4fbabf52:{ fn:function() { return window.vwo_segment_uuid }}, GL_1176295_84_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_69_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_16_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}},rules:[{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.17\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861972\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.14\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861954\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.68\",\"priority\":4}],\"triggers\":[\"23502696\",\"24280439\",\"23502705\"]},{\"tags\":[{\"metricId\":2373278,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":79,\"g\":1}],\"type\":\"m\"}}],\"triggers\":[\"24140030\"]},{\"tags\":[{\"metricId\":0,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":84,\"g\":1}],\"type\":\"g\"}}],\"triggers\":[\"24670681\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.18\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861978\"]},{\"tags\":[{\"metricId\":0,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":84,\"g\":4}],\"type\":\"g\"}}],\"triggers\":[\"24670687\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.73\",\"priority\":4}],\"triggers\":[\"23694104\",\"24380510\",\"23694113\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.37\",\"priority\":4}],\"triggers\":[\"22404076\",\"22404082\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.15\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861960\"]},{\"tags\":[{\"metricId\":0,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":84,\"g\":3}],\"type\":\"g\"}}],\"triggers\":[\"24670684\"]},{\"tags\":[{\"metricId\":2144929,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":69,\"g\":2}],\"type\":\"m\"}},{\"metricId\":2144929,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":55,\"g\":2}],\"type\":\"m\"}},{\"metricId\":2144929,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":71,\"g\":2}],\"type\":\"m\"}}],\"triggers\":[\"22403941\"]},{\"tags\":[{\"metricId\":2133826,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":21,\"g\":2}],\"type\":\"m\"}}],\"triggers\":[\"22282384\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.19\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861936\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.84\",\"priority\":4},{\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\",\"data\":\"campaigns.88\",\"priority\":4},{\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\",\"data\":\"campaigns.55\",\"priority\":4},{\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\",\"data\":\"campaigns.79\",\"priority\":4},{\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\",\"data\":\"campaigns.71\",\"priority\":4}],\"triggers\":[\"22258039\",\"22404058\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.16\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861966\"]},{\"tags\":[{\"metricId\":0,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":49,\"g\":1}],\"type\":\"g\"}}],\"triggers\":[\"22404118\"]},{\"tags\":[{\"metricId\":2133829,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":20,\"g\":6}],\"type\":\"m\"}},{\"metricId\":2133829,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":21,\"g\":3}],\"type\":\"m\"}}],\"triggers\":[\"22282387\"]},{\"tags\":[{\"metricId\":0,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":37,\"g\":1}],\"type\":\"g\"}}],\"triggers\":[\"22404085\"]},{\"tags\":[{\"metricId\":2289942,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":88,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2289942,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":73,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2289942,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":68,\"g\":1}],\"type\":\"m\"}}],\"triggers\":[\"23501736\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.69\",\"priority\":4}],\"triggers\":[\"22258039\",\"23364864\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.49\",\"priority\":4}],\"triggers\":[\"22258039\",\"22404115\"]},{\"tags\":[{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":14,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":15,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":16,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":17,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":18,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":19,\"g\":1}],\"type\":\"m\"}}],\"triggers\":[\"22277422\"]},{\"tags\":[{\"metricId\":2144920,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":21,\"g\":4}],\"type\":\"m\"}}],\"triggers\":[\"22282390\"]},{\"tags\":[{\"metricId\":2144926,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":20,\"g\":5}],\"type\":\"m\"}}],\"triggers\":[\"22282408\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.21\",\"priority\":4}],\"triggers\":[\"22374862\",\"22374868\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.20\",\"priority\":4}],\"triggers\":[\"22374853\",\"22374859\"]},{\"tags\":[{\"metricId\":2133724,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":20,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133724,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":21,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133724,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":84,\"g\":2}],\"type\":\"m\"}},{\"metricId\":2133724,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":73,\"g\":2}],\"type\":\"m\"}},{\"metricId\":2133724,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":68,\"g\":2}],\"type\":\"m\"}}],\"triggers\":[\"22282381\"]},{\"tags\":[{\"metricId\":2144923,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":20,\"g\":4}],\"type\":\"m\"}}],\"triggers\":[\"22282405\"]},{\"tags\":[{\"id\":\"checkEnvironment\"}],\"triggers\":[\"5\"]},{\"tags\":[{\"id\":\"prePostMutation\",\"priority\":3},{\"priority\":2,\"id\":\"groupCampaigns\"}],\"triggers\":[\"8\"]},{\"tags\":[{\"id\":\"visibilityService\",\"priority\":2}],\"triggers\":[\"9\"]},{\"tags\":[{\"id\":\"runTestCampaign\"}],\"triggers\":[\"2\"]},{\"tags\":[{\"id\":\"revaluateHiding\",\"priority\":3}],\"triggers\":[\"11\"]},{\"tags\":[{\"id\":\"urlChange\"}],\"triggers\":[\"75\"]}],pages:{\"ec\":[{\"3172225\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i).*\"]]}},{\"3185059\":{\"exc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^\\/(?!en-us\\/(customer-data-platform|pricing\\/customer-data(\\/connections|\\/customer-data-platform)?|pricing\\/email-api|pricing\\/marketing-campaigns|products\\/(connections(\\/(functions|reverse-etl|warehouses))?|email-api(\\/(deliverability-insights|dynamic-email-templates|email-address-validation-api|email-testing-for-dynamic-templates|smtp-service))?|engage(\\/(audiences|journeys))?|marketing-campaigns(\\/(automation|email-design|email-list-management|email-statistics|email-templates|email-testing|signup-forms))?|protocols|unify(\\/profiles-sync)?)|use-cases\\/(activate-customer-data|boost-cross-sell-upsell|customer-acquisition-activation|customer-data-management-integration|customer-insights|enrich-customer-profiles|optimize-ad-spend|retain-customers-increase-ltv|segmentation-audience-activation|single-customer-view))\\/?$).*\"]],\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i).*https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us.*\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185053\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185056\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?.*\\\\:\\\\\\/(w{3}\\\\.)?\\\\\\/signup\\\\.sendgrid\\\\.com.*$\"]]}},{\"3185050\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/sendgrid\\\\-2\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185062\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/login\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185056\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?.*\\\\:\\\\\\/(w{3}\\\\.)?\\\\\\/signup\\\\.sendgrid\\\\.com.*$\"]]}},{\"3185065\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/sendgrid\\\\-1\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3387731\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/de\\\\-de.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/fr\\\\-fr.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/es\\\\-mx.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/pt\\\\-br.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/ja\\\\-jp.*\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}}]},pagesEval:{\"ec\":[3172225,3185059,3387731]},stags:{},domPath:{}}})();if(typeof window!==\"undefined\"&&window._vwoFlow===\"link-survey\"){window.VWO._.rCS()}\n;if(typeof heatmapDevice!==\"undefined\"&&heatmapDevice&&VWO._.allSettings&&VWO._.allSettings.dataStore.plugins.UA){VWO._.allSettings.dataStore.plugins.UA.dt=heatmapDevice};var commonWrapper=function(argument){if(!argument){argument={valuesGetter:function(){return{}},valuesSetter:function(){},verifyData:function(){return{}}}}var getVisitorUuid=function(){if(window._vwo_acc_id>=1037725){return window.VWO&&window.VWO.get(\"visitor.id\")}else{return window.VWO._&&window.VWO._.cookies&&window.VWO._.cookies.get(\"_vwo_uuid\")}};var pollInterval=100;var timeout=6e4;return function(){var accountIntegrationSettings={};var _interval=null;function waitForAnalyticsVariables(){try{accountIntegrationSettings=argument.valuesGetter();accountIntegrationSettings.visitorUuid=getVisitorUuid()}catch(error){accountIntegrationSettings=undefined}if(accountIntegrationSettings&&argument.verifyData(accountIntegrationSettings)){argument.valuesSetter(accountIntegrationSettings);return 1}return 0}var currentTime=0;_interval=setInterval((function(){currentTime=currentTime||performance.now();var result=waitForAnalyticsVariables();if(result||performance.now()-currentTime>=timeout){clearInterval(_interval)}}),pollInterval)}};\n        commonWrapper({valuesGetter:function(){return{}},valuesSetter:function(data){var ga4_device_id=\"\";if(typeof window.VWO._.cookies!==\"undefined\"){ga4_device_id=window.VWO._.cookies.get(\"_ga\")||\"\"}if(ga4_device_id){window.vwo_ga4_uuid=ga4_device_id.split(\".\").slice(-2).join(\".\")}},verifyData:function(data){if(typeof window.VWO._.cookies!==\"undefined\"){return window.VWO._.cookies.get(\"_ga\")||\"\"}else{return false}}})();\n        var pushBasedCommonWrapper=funct",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://twilio.com/en-us/pricing",
+      "title": "Twilio Pricing | Twilio",
+      "text": "Twilio Pricing | Twilio\n\");vwo_$('head').append(_vwo_sel);return vwo_$('head')[0] && vwo_$('head')[0].lastChild;})(\"HEAD\")}}, ce73_4_1:{ fn:function(executeTrigger, vwo_$) {\n                (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n                }}, GL_1176295_18_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_18_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_16_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_16_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce6998d9a262493_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, ce69e25225879ba_4_1:{ fn:function(executeTrigger, vwo_$) {\n                (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n                }}, GL_1176295_69_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_69_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_73_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_73_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_15_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_37_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_37_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce6983648fd44f6_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, ce6998d9a363ee2_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, ce6982245d33d05_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 500);\n    });\n}\n)()\n            }}, ce6998d9a1c80e1_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, C_1176295_21_1_2_0:{ fn:function(){return (function(x) { try{\n  \n  \n !function(){var t=new WeakSet;function e(e){if(!t.has(e)){t.add(e);var n=!1,o=new MutationObserver((function(t){t.forEach((function(t){if(\"attributes\"===t.type&&\"href\"===t.attributeName){var r=new URL(e.href,window.location.origin);r.search&&!n&&(r.protocol=\"https:\",r.pathname=\"/en-us/try-twilio/sendgrid-1\",e.href=r.toString(),n=!0,o.disconnect())}}))}));o.observe(e,{attributes:!0,attributeFilter:[\"href\"]}),setTimeout((function(){if(!n){var t=new URL(e.href,window.location.origin);t.protocol=\"https:\",t.pathname=\"/en-us/try-twilio/sendgrid-1\",e.href=t.toString(),n=!0,o.disconnect()}}),4e3)}}document.querySelectorAll(\"a[href*=try-twilio]\").forEach(e);var n=document.querySelector(\".button-container\");n&&new MutationObserver((function(t){t.forEach((function(t){t.addedNodes.forEach((function(t){1===t.nodeType&&t.matches&&t.matches(\"a[href*=try-twilio]\")&&e(t)}))}))})).observe(n,{childList:!0})}(); \n return vwo_$('head')[0] && vwo_$('head')[0].lastChild; } catch(e) {VWO._.vAEH(e);} })(\"HEAD\")}}},rules:[{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":37,\"g\":1}],\"type\":\"g\"},\"id\":\"metric\",\"metricId\":0}],\"triggers\":[\"22404085\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.19\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861936\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.69\",\"priority\":4}],\"triggers\":[\"22258039\",\"23364864\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":14,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133583},{\"data\":{\"campaigns\":[{\"c\":15,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133583},{\"data\":{\"campaigns\":[{\"c\":16,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133583},{\"data\":{\"campaigns\":[{\"c\":17,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133583},{\"data\":{\"campaigns\":[{\"c\":18,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133583},{\"data\":{\"campaigns\":[{\"c\":19,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133583}],\"triggers\":[\"22277422\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.68\",\"priority\":4}],\"triggers\":[\"23502696\",\"24280439\",\"23502705\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":79,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2373278}],\"triggers\":[\"24140030\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":88,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2289942},{\"data\":{\"campaigns\":[{\"c\":73,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2289942},{\"data\":{\"campaigns\":[{\"c\":68,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2289942}],\"triggers\":[\"23501736\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.49\",\"priority\":4}],\"triggers\":[\"22258039\",\"22404115\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.73\",\"priority\":4}],\"triggers\":[\"23694104\",\"24380510\",\"23694113\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":84,\"g\":1}],\"type\":\"g\"},\"id\":\"metric\",\"metricId\":0}],\"triggers\":[\"24670681\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":84,\"g\":3}],\"type\":\"g\"},\"id\":\"metric\",\"metricId\":0}],\"triggers\":[\"24670684\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":84,\"g\":4}],\"type\":\"g\"},\"id\":\"metric\",\"metricId\":0}],\"triggers\":[\"24670687\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":21,\"g\":2}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133826}],\"triggers\":[\"22282384\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.14\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861954\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":20,\"g\":4}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2144923}],\"triggers\":[\"22282405\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":20,\"g\":5}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2144926}],\"triggers\":[\"22282408\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":20,\"g\":6}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133829},{\"data\":{\"campaigns\":[{\"c\":21,\"g\":3}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133829}],\"triggers\":[\"22282387\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.37\",\"priority\":4}],\"triggers\":[\"22404076\",\"22404082\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.17\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861972\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.84\",\"priority\":4},{\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\",\"data\":\"campaigns.88\",\"priority\":4},{\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\",\"data\":\"campaigns.55\",\"priority\":4},{\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\",\"data\":\"campaigns.79\",\"priority\":4},{\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\",\"data\":\"campaigns.71\",\"priority\":4}],\"triggers\":[\"22258039\",\"22404058\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":49,\"g\":1}],\"type\":\"g\"},\"id\":\"metric\",\"metricId\":0}],\"triggers\":[\"22404118\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.15\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861960\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":21,\"g\":4}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2144920}],\"triggers\":[\"22282390\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":20,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133724},{\"data\":{\"campaigns\":[{\"c\":21,\"g\":1}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133724},{\"data\":{\"campaigns\":[{\"c\":84,\"g\":2}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133724},{\"data\":{\"campaigns\":[{\"c\":73,\"g\":2}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133724},{\"data\":{\"campaigns\":[{\"c\":68,\"g\":2}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2133724}],\"triggers\":[\"22282381\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.18\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861978\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.21\",\"priority\":4}],\"triggers\":[\"22374862\",\"22374868\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.16\",\"priority\":4}],\"triggers\":[\"22258039\",\"22861966\"]},{\"tags\":[{\"data\":{\"campaigns\":[{\"c\":69,\"g\":2}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2144929},{\"data\":{\"campaigns\":[{\"c\":55,\"g\":2}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2144929},{\"data\":{\"campaigns\":[{\"c\":71,\"g\":2}],\"type\":\"m\"},\"id\":\"metric\",\"metricId\":2144929}],\"triggers\":[\"22403941\"]},{\"tags\":[{\"id\":\"runCampaign\",\"data\":\"campaigns.20\",\"priority\":4}],\"triggers\":[\"22374853\",\"22374859\"]},{\"tags\":[{\"id\":\"checkEnvironment\"}],\"triggers\":[\"5\"]},{\"tags\":[{\"id\":\"prePostMutation\",\"priority\":3},{\"priority\":2,\"id\":\"groupCampaigns\"}],\"triggers\":[\"8\"]},{\"tags\":[{\"id\":\"visibilityService\",\"priority\":2}],\"triggers\":[\"9\"]},{\"tags\":[{\"id\":\"runTestCampaign\"}],\"triggers\":[\"2\"]},{\"tags\":[{\"id\":\"revaluateHiding\",\"priority\":3}],\"triggers\":[\"11\"]},{\"tags\":[{\"id\":\"urlChange\"}],\"triggers\":[\"75\"]}],pages:{\"ec\":[{\"3172225\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i).*\"]]}},{\"3185059\":{\"exc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^\\/(?!en-us\\/(customer-data-platform|pricing\\/customer-data(\\/connections|\\/customer-data-platform)?|pricing\\/email-api|pricing\\/marketing-campaigns|products\\/(connections(\\/(functions|reverse-etl|warehouses))?|email-api(\\/(deliverability-insights|dynamic-email-templates|email-address-validation-api|email-testing-for-dynamic-templates|smtp-service))?|engage(\\/(audiences|journeys))?|marketing-campaigns(\\/(automation|email-design|email-list-management|email-statistics|email-templates|email-testing|signup-forms))?|protocols|unify(\\/profiles-sync)?)|use-cases\\/(activate-customer-data|boost-cross-sell-upsell|customer-acquisition-activation|customer-data-management-integration|customer-insights|enrich-customer-profiles|optimize-ad-spend|retain-customers-increase-ltv|segmentation-audience-activation|single-customer-view))\\/?$).*\"]],\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i).*https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us.*\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185053\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185056\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?.*\\\\:\\\\\\/(w{3}\\\\.)?\\\\\\/signup\\\\.sendgrid\\\\.com.*$\"]]}},{\"3185050\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/sendgrid\\\\-2\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185062\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/login\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185056\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?.*\\\\:\\\\\\/(w{3}\\\\.)?\\\\\\/signup\\\\.sendgrid\\\\.com.*$\"]]}},{\"3185065\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/sendgrid\\\\-1\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3387731\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/de\\\\-de.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/fr\\\\-fr.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/es\\\\-mx.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/pt\\\\-br.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/ja\\\\-jp.*\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}}]},pagesEval:{\"ec\":[3172225,3185059,3387731]},stags:{},domPath:{}}})();if(typeof window!==\"undefined\"&&window._vwoFlow===\"link-survey\"){window.VWO._.rCS()}\n;if(typeof heatmapDevice!==\"undefined\"&&heatmapDevice&&VWO._.allSettings&&VWO._.allSettings.dataStore.plugins.UA){VWO._.allSettings.dataStore.plugins.UA.dt=heatmapDevice};var commonWrapper=function(argument){if(!argument){argument={valuesGetter:function(){return{}},valuesSetter:function(){},verifyData:function(){return{}}}}var getVisitorUuid=function(){if(window._vwo_acc_id>=1037725){return window.VWO&&window.VWO.get(\"visitor.id\")}else{return window.VWO._&&window.VWO._.",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://www.twilio.com/en-us/changelog",
+      "title": "Changelog | Twilio",
+      "text": "Changelog | Twilio\n\");vwo_$('head').append(_vwo_sel);return vwo_$('head')[0] && vwo_$('head')[0].lastChild;})(\"HEAD\")}}, GL_1176295_17_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_17_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce6998d9a2dc5c1_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, GL_1176295_79_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){try{\nwindow.VWO.eB = window._vwoCc && window._vwoCc.dBL ? false : true;\n}catch(e){}}}, GL_1176295_79_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_14_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_14_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce6998d9a123ad0_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, GL_1176295_37_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_37_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_19_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_19_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce6998d9178de17_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, ce68_4_1:{ fn:function(executeTrigger, vwo_$) {\n                (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n                }}, ce69dea4730faf8_4_1:{ fn:function(executeTrigger, vwo_$) {\n                (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n                }}, GL_1176295_68_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_68_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_71_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_71_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, C_1176295_79_1_2_2:{ fn:function(log,nonce=''){return (function(x) {})(\"#vwo-custom-alert,body.vwo-custom-alert-active,body.vwo-custom-alert-active .navigation-v2,/* NEW: move the subnav's layout slot down by the alert height */ body.vwo-custom-alert-active .sub-navigation,/* NEW: move the sticky subnav bar below alert + nav */ body.vwo-custom-alert-active .sub-navigation nav,body.vwo-custom-alert-active .alert-cmp:not(#vwo-custom-alert),#vwo-custom-alert .richtext a, #vwo-custom-alert .alert-cmp__richtext a,/* hard-hide state */ html.vwo-custom-alert-closed #vwo-custom-alert,/* visible native dismiss button is display-only */ #vwo-custom-alert .alert-cmp__dismiss,/* invisible click target on top of the X */ #vwo-custom-alert .vwo-custom-alert-close-hitarea\")}}, GL_1176295_73_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_73_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce69e25225879ba_4_1:{ fn:function(executeTrigger, vwo_$) {\n                (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n                }}, GL_1176295_16_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_16_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce6998d9a262493_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, ce6982245d33d05_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 500);\n    });\n}\n)()\n            }}, js_8e15ee826caa6aa574fc306e4fbabf52:{ fn:function() { return window.vwo_segment_uuid }}, C_1176295_79_1_2_1:{ fn:function(log,nonce=''){return (function(x) {var ctx=vwo_$(x),el;\n/*vwo_debug log(\"addElement\",\"body\"); vwo_debug*/;window.VWO.eB = false;;\nel=vwo_$(\"body\");\nel;\n!el.find('[vwo-op-1775839248681=\"\"], [vwo-element-id=\"1775839248633\"]').length && el.vwoElement({\"html\":\"\nAn icon of a close symbol\n\",\"position\":\"append\"});window.VWO.eB = window._vwoCc && window._vwoCc.dBL ? false : true;;})(\"body\")}}, ce73_4_1:{ fn:function(executeTrigger, vwo_$) {\n                (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n                }}, GL_1176295_55_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_18_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, C_1176295_20_1_2_0:{ fn:function(){return (function(x) { try{\n  \n  \n !function(){var t=new WeakSet;function e(e){if(!t.has(e)){t.add(e);var n=!1,o=new MutationObserver((function(t){t.forEach((function(t){if(\"attributes\"===t.type&&\"href\"===t.attributeName){var r=new URL(e.href,window.location.origin);r.search&&!n&&(r.protocol=\"https:\",r.pathname=\"/en-us/try-twilio/sendgrid-2\",e.href=r.toString(),n=!0,o.disconnect())}}))}));o.observe(e,{attributes:!0,attributeFilter:[\"href\"]}),setTimeout((function(){if(!n){var t=new URL(e.href,window.location.origin);t.protocol=\"https:\",t.pathname=\"/en-us/try-twilio/sendgrid-2\",e.href=t.toString(),n=!0,o.disconnect()}}),4e3)}}document.querySelectorAll(\"a[href*=try-twilio]\").forEach(e);var n=document.querySelector(\".button-container\");n&&new MutationObserver((function(t){t.forEach((function(t){t.addedNodes.forEach((function(t){1===t.nodeType&&t.matches&&t.matches(\"a[href*=try-twilio]\")&&e(t)}))}))})).observe(n,{childList:!0})}(); \n return vwo_$('head')[0] && vwo_$('head')[0].lastChild; } catch(e) {VWO._.vAEH(e);} })(\"HEAD\")}}, ce6998d9a363ee2_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, GL_1176295_18_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_88_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_88_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, C_1176295_21_1_2_0:{ fn:function(){return (function(x) { try{\n  \n  \n !function(){var t=new WeakSet;function e(e){if(!t.has(e)){t.add(e);var n=!1,o=new MutationObserver((function(t){t.forEach((function(t){if(\"attributes\"===t.type&&\"href\"===t.attributeName){var r=new URL(e.href,window.location.origin);r.search&&!n&&(r.protocol=\"https:\",r.pathname=\"/en-us/try-twilio/sendgrid-1\",e.href=r.toString(),n=!0,o.disconnect())}}))}));o.observe(e,{attributes:!0,attributeFilter:[\"href\"]}),setTimeout((function(){if(!n){var t=new URL(e.href,window.location.origin);t.protocol=\"https:\",t.pathname=\"/en-us/try-twilio/sendgrid-1\",e.href=t.toString(),n=!0,o.disconnect()}}),4e3)}}document.querySelectorAll(\"a[href*=try-twilio]\").forEach(e);var n=document.querySelector(\".button-container\");n&&new MutationObserver((function(t){t.forEach((function(t){t.addedNodes.forEach((function(t){1===t.nodeType&&t.matches&&t.matches(\"a[href*=try-twilio]\")&&e(t)}))}))})).observe(n,{childList:!0})}(); \n return vwo_$('head')[0] && vwo_$('head')[0].lastChild; } catch(e) {VWO._.vAEH(e);} })(\"HEAD\")}}, ce69822456f07b3_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 500);\n    });\n}\n)()\n            }}, GL_1176295_84_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce6983648fd44f6_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}},rules:[{\"triggers\":[\"22374862\",\"22374868\"],\"tags\":[{\"data\":\"campaigns.21\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22258039\",\"22861972\"],\"tags\":[{\"data\":\"campaigns.17\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22277422\"],\"tags\":[{\"id\":\"metric\",\"metricId\":2133583,\"data\":{\"campaigns\":[{\"c\":14,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":15,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":16,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":17,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":18,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133583,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":19,\"g\":1}],\"type\":\"m\"}}]},{\"triggers\":[\"22374853\",\"22374859\"],\"tags\":[{\"data\":\"campaigns.20\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22258039\",\"22861936\"],\"tags\":[{\"data\":\"campaigns.19\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22404085\"],\"tags\":[{\"id\":\"metric\",\"metricId\":0,\"data\":{\"campaigns\":[{\"c\":37,\"g\":1}],\"type\":\"g\"}}]},{\"triggers\":[\"22258039\",\"22861978\"],\"tags\":[{\"data\":\"campaigns.18\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"23502696\",\"24280439\",\"23502705\"],\"tags\":[{\"data\":\"campaigns.68\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22403941\"],\"tags\":[{\"id\":\"metric\",\"metricId\":2144929,\"data\":{\"campaigns\":[{\"c\":69,\"g\":2}],\"type\":\"m\"}},{\"metricId\":2144929,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":55,\"g\":2}],\"type\":\"m\"}},{\"metricId\":2144929,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":71,\"g\":2}],\"type\":\"m\"}}]},{\"triggers\":[\"22258039\",\"22861954\"],\"tags\":[{\"data\":\"campaigns.14\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"24670684\"],\"tags\":[{\"id\":\"metric\",\"metricId\":0,\"data\":{\"campaigns\":[{\"c\":84,\"g\":3}],\"type\":\"g\"}}]},{\"triggers\":[\"24670687\"],\"tags\":[{\"id\":\"metric\",\"metricId\":0,\"data\":{\"campaigns\":[{\"c\":84,\"g\":4}],\"type\":\"g\"}}]},{\"triggers\":[\"23501736\"],\"tags\":[{\"id\":\"metric\",\"metricId\":2289942,\"data\":{\"campaigns\":[{\"c\":88,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2289942,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":73,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2289942,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":68,\"g\":1}],\"type\":\"m\"}}]},{\"triggers\":[\"22404118\"],\"tags\":[{\"id\":\"metric\",\"metricId\":0,\"data\":{\"campaigns\":[{\"c\":49,\"g\":1}],\"type\":\"g\"}}]},{\"triggers\":[\"23694104\",\"24380510\",\"23694113\"],\"tags\":[{\"data\":\"campaigns.73\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22404076\",\"22404082\"],\"tags\":[{\"data\":\"campaigns.37\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22282384\"],\"tags\":[{\"id\":\"metric\",\"metricId\":2133826,\"data\":{\"campaigns\":[{\"c\":21,\"g\":2}],\"type\":\"m\"}}]},{\"triggers\":[\"22282381\"],\"tags\":[{\"id\":\"metric\",\"metricId\":2133724,\"data\":{\"campaigns\":[{\"c\":20,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133724,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":21,\"g\":1}],\"type\":\"m\"}},{\"metricId\":2133724,\"id\":\"metric\",\"data\":{\"campaigns\":[{\"c\":84,\"g\":2}],\"type\":\"m\"}},{\"metricId\":2133724,\"id\"",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://www.twilio.com/docs",
+      "title": "Docs: API Reference, Tutorials, and Integration | Twilio",
+      "text": "Docs: API Reference, Tutorials, and Integration | Twilio\n___\nSkip to content\nSkip to navigation\nSkip to topbar\nGo to the Twilio Docs home page\nTwilio Docs\nTwilio Essentials Documentation\nTwilio essentials\nGeneral usage\nGlobal infrastructure\nHelper libraries\nIAM\nSetup Twilio phone number\nPricing\nTry Twilio\nTwilio Developer Tools\nDeveloper tools\nCode Exchange\nFunctions\nMarketplace\nOpen API\nServerless\nStudio\nTwiML Bins\nTwilio CLI\nTwilio Developer Resources\nDeveloper resources\nAPI status\nChangelog\nError codes\nGlossary\nProducts\nContent Template Builder\nConversational Intelligence\nConversations\nElastic SIP Trunking\nEvent Streams\nFlex\nInterconnect\nLookup\nMarketing Campaigns\nNetwork Traversal Service\nNotify\nProgrammable Messaging\nProxy\nSegment Connections\nSegment Protocols\nSegment Unify\nSalesforce\nSendGrid Email\nStudio\nSync\nTaskRouter\nTrust Hub\nTwilio Engage\nUnified Profiles\nVerify\nVideo\nVoice\nWhatsApp\nTwilio Logo\nTwilio Docs\nSearch\n\u2318\nK\nSearch\n\u2318\nK\nMessaging\nVoice\nVideo\nServerless\nFlex\nStudio\nAll docs...\nSDKs\nHelp Center\nHelp Center\nSearch\n\u2318\nK\nLog in\nSign up\nTwilio Docs\nBuild better and engage your customers across all channels with our API reference documentation, quickstarts, SDKs and multi-language code samples.\nDiscover our featured\ncontent\nGet started with Twilio\nessentials\nStart building with our developer\ntoolkit\nCommunications\nCustomer data\nAuthentication\nConversational AI\nBuilder tools\nCommunications\nTwilio APIs give you flexibility, global reach, and reliable deliverability to connect with customers anywhere.\nTwilio Messaging Documentation\nMessaging APIs\nSend and receive text messages across SMS, RCS, WhatsApp, MMS, and more.\nTwilio SendGrid Documentation\nTwilio SendGrid Email API\nAn email API that reliably delivers with a proprietary MTA.\nTwilio Voice Documentation\nVoice API\nVoice APIs to make, receive, monitor, and capture data from calls at global scale.\nTwilio Phone Numbers Documentation\nPhone Numbers\nToll-free, A2P 10DLC, short codes, and Alphanumeric Sender IDs to deliver your communications.\nTwilio Elastic SIP Trunking Documentation\nElastic SIP Trunking\nSIP trunking service to achieve global PSTN connectivity for VoIP infrastructure.\nTwilio Flex Documentation\nTwilio Flex\nA digital engagement center for personalized contact center, support, and sales interactions.\nTwilio Video Documentation\nVideo\nVideo API and SDKs for quality video calling you can embed into any application.\nTwilio SendGrid Marketing Campaigns Documentation\nMarketing Campaigns\nA suite of email marketing tools from Twilio SendGrid to design and send engaging emails.\nTwilio Event Streams Documentation\nEvent Streams\nA configurable, centralized stream of Twilio event data that you can send to any team.\nTwilio TrustHub Documentation\nTrust Hub\nCentralized onboarding for SHAKEN/STIR, CNAM, and phone number verification.\nCustomer data\nUnlock insights from your customer interactions to learn exactly how, when, and where they want to hear from you.\nTwilio Segment Documentation\nTwilio Segment Connections\nConnect all your first-party data in a single platform to power personalized customer experiences.\nTwilio Segment Documentation\nTwilio Segment Protocols\nTake control of data quality at scale with intuitive data controls, a shared data dictionary, and real-time validation.\nTwilio Segment Documentation\nTwilio Unify\nUnify customer data across channels, track real-time interactions, and personalize at scale.\nTwilio Engage Documentation\nTwilio Engage\nPersonalized omnichannel campaigns with cross-channel orchestration on a data-first platform.\nTwilio Segment Documentation\nTwilio Privacy Portal\nAutomate and scale data privacy to keep your customer data secure and streamline regulatory compliance.\nAuthentication\nFight fraud and keep customer accounts secure without adding friction to your user experience.\nTwilio Verify Documentation\nVerify\nA turnkey API for multichannel one-time password delivery and fraud prevention.\nTwilio Lookup Documentation\nLookup\nValidate phone numbers to mitigate fraud risk with line type intelligence, phone number risk assessment, and identity match.\nConversational AI\nDesign and deploy virtual agents, automate repetitive tasks, and personalize interactions at scale.\nTwilio Conversational Intelligence Documentation\nConversationRelay\nAdvanced AI-powered voice interactions with speech-to-text and natural-sounding text-to-speech.\nTwilio Conversational Intelligence Documentation\nConversational Intelligence\nAI-powered language analysis and transcription for voice and messaging interactions to tap into customer context.\nBuilder tools\nBuild, deploy, and operate apps at scale with Twilio developer tools.\nTwilio Functions Documentation\nServerless\nA serverless environment to build communication apps with no servers to spin up or infrastructure to maintain.\nTwilio Studio Documentation\nStudio\nA drag-and-drop builder to create communication workflows.\nTwilio Functions Documentation\nFunctions\nA serverless environment to quickly create production-grade, event-driven Twilio applications.\nFeatured content\nDive into our handpicked selection of developer-focused content.\nOne-time password (OTP)\nCreate your first verification\nQuickly verify users via SMS, Passkeys, Silent Network Auth, Voice, WhatsApp, TOTP, Push, Silent Device Approval, and Email.\nFraud prevention\nFormat and validate phone numbers\nFormat and validate phone numbers to increase deliverability. Add on data packages to get even more in-depth carrier and caller information.\nTwilio essentials\nGeneral usage\nLearn how to interact with the REST API for account management, development testing, and fraud protection.\nIAM\nManage your projects, securely authenticate REST API requests, and learn best practices for accessing Twilio's resources.\nGlobal infrastructure\nControl where your application's Twilio-related data is routed, processed, and stored.\nHelper libraries\nFamiliarize yourself with Twilio's server-side, front-end, and mobile SDKs, OpenAPI specifications and Postman collections.\nPhone Numbers\nPurchase Toll-free, 10-digit long code (10DLC), short codes, and Alphanumeric Sender IDs to deliver your communications.\nRegulatory and compliance\nCompiled resources to help ensure you're communicating effectively and compliantly around the world.\nDeveloper Toolkit\nExplore essential tools, resources, and community links, all designed to help elevate your project and keep you informed.\nTools\nCode Exchange\nGet started and build faster with usable code samples for common Twilio use cases.\nFunctions\nA serverless environment to quickly create production-grade, event-driven Twilio applications.\nMarketplace\nSeamlessly integrate third-party's partner technology into your Twilio applications.\nOpenAPI\nIntegrate our API with community tools for mocking, testing, generating libraries, Postman integrations, and more.\nServerless\nQuickly build and deploy communication apps with no servers to spin up or infrastructure to maintain.\nStudio\nA drag-and-drop builder to create communication workflows.\nTwiML Bins\nProvide Twilio-hosted instructions to your Twilio applications.\nTwilio CLI\nManage your Twilio resources from your terminal or command prompt.\nResources\nAPI status\nCheck real time monitoring of APIs and all services.\nChangelog\nSee updates and additions to Twilio products.\nDeveloper Hub\nVideos, tutorials, events, and code samples.\nError codes\nFull list of all possible Twilio REST API error codes.\nGlossary\nUnderstand our key terms and concepts.\nCommunity\nBlog\nRead tutorials, community projects and product updates.\nChampions\nBecome a Twilio community champion.\nDeveloper events\nJoin upcoming group events.\nStack Overflow\nAsk the Twilio community for help.\nTwilio Segment Community\nAsk the Twilio Segment community for help.\nNeed some help?\nWe all do sometimes; code is hard. Get help now from our\nsupport team\n(link takes you to an external page)\n, or lean on the wisdom of the crowd by browsing the\nTwilio tag\n(link takes you to an external page)\non Stack Overflow.\nTerms of service\nPrivacy Policy\nCopyright \u00a9 2026 Twilio Inc.\nSome U.S. state privacy laws offer their residents specific consumer privacy rights, which we respect as described in our\nprivacy policy\n. To opt-out of our making available to third parties information relating to cookies and similar technologies for advertising purposes, select \"Opt-Out\". To exercise other rights you may have related to cookies, select \"More Info\" or see this\n\"Do Not Sell My Personal Information\"\nlink.\nAccept\nOpt-Out\nMore Info",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.twilio.com/en-us/marketplace",
+      "title": "Page not found | Twilio",
+      "text": "Page not found | Twilio\n\");vwo_$('head').append(_vwo_sel);return vwo_$('head')[0] && vwo_$('head')[0].lastChild;})(\"HEAD\")}}, C_1176295_79_1_2_1:{ fn:function(log,nonce=''){return (function(x) {var ctx=vwo_$(x),el;\n/*vwo_debug log(\"addElement\",\"body\"); vwo_debug*/;window.VWO.eB = false;;\nel=vwo_$(\"body\");\nel;\n!el.find('[vwo-op-1775839248681=\"\"], [vwo-element-id=\"1775839248633\"]').length && el.vwoElement({\"html\":\"\nAn icon of a close symbol\n\",\"position\":\"append\"});window.VWO.eB = window._vwoCc && window._vwoCc.dBL ? false : true;;})(\"body\")}}, C_1176295_79_1_2_2:{ fn:function(log,nonce=''){return (function(x) {})(\"#vwo-custom-alert,body.vwo-custom-alert-active,body.vwo-custom-alert-active .navigation-v2,/* NEW: move the subnav's layout slot down by the alert height */ body.vwo-custom-alert-active .sub-navigation,/* NEW: move the sticky subnav bar below alert + nav */ body.vwo-custom-alert-active .sub-navigation nav,body.vwo-custom-alert-active .alert-cmp:not(#vwo-custom-alert),#vwo-custom-alert .richtext a, #vwo-custom-alert .alert-cmp__richtext a,/* hard-hide state */ html.vwo-custom-alert-closed #vwo-custom-alert,/* visible native dismiss button is display-only */ #vwo-custom-alert .alert-cmp__dismiss,/* invisible click target on top of the X */ #vwo-custom-alert .vwo-custom-alert-close-hitarea\")}}, GL_1176295_79_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){try{\nwindow.VWO.eB = window._vwoCc && window._vwoCc.dBL ? false : true;\n}catch(e){}}}, GL_1176295_18_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_18_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, ce6998d9a363ee2_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, GL_1176295_73_post:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_73_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, GL_1176295_55_pre:{ fn:function(VWO_CURRENT_CAMPAIGN, VWO_CURRENT_VARIATION,nonce = \"\"){}}, C_1176295_20_1_2_0:{ fn:function(){return (function(x) { try{\n  \n  \n !function(){var t=new WeakSet;function e(e){if(!t.has(e)){t.add(e);var n=!1,o=new MutationObserver((function(t){t.forEach((function(t){if(\"attributes\"===t.type&&\"href\"===t.attributeName){var r=new URL(e.href,window.location.origin);r.search&&!n&&(r.protocol=\"https:\",r.pathname=\"/en-us/try-twilio/sendgrid-2\",e.href=r.toString(),n=!0,o.disconnect())}}))}));o.observe(e,{attributes:!0,attributeFilter:[\"href\"]}),setTimeout((function(){if(!n){var t=new URL(e.href,window.location.origin);t.protocol=\"https:\",t.pathname=\"/en-us/try-twilio/sendgrid-2\",e.href=t.toString(),n=!0,o.disconnect()}}),4e3)}}document.querySelectorAll(\"a[href*=try-twilio]\").forEach(e);var n=document.querySelector(\".button-container\");n&&new MutationObserver((function(t){t.forEach((function(t){t.addedNodes.forEach((function(t){1===t.nodeType&&t.matches&&t.matches(\"a[href*=try-twilio]\")&&e(t)}))}))})).observe(n,{childList:!0})}(); \n return vwo_$('head')[0] && vwo_$('head')[0].lastChild; } catch(e) {VWO._.vAEH(e);} })(\"HEAD\")}}, ce6998d9a262493_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 5000);\n    });\n}\n)()\n            }}, ce69822456f07b3_4_1:{ fn:function(executeTrigger, vwo_$) {\n            (// Example Code: This code will stop polling after 5 sec of dom ready (on calling executeTrigger() method)\nfunction() {\n    vwo_$(document).ready(function () {\n        // Waiting for 5 more seconds\n        setTimeout(function () {\n            // Call this method to stop the polling\n            executeTrigger();\n        }, 500);\n    });\n}\n)()\n            }}},rules:[{\"triggers\":[\"23694104\",\"24380510\",\"23694113\"],\"tags\":[{\"data\":\"campaigns.73\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"23502696\",\"24280439\",\"23502705\"],\"tags\":[{\"data\":\"campaigns.68\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22258039\",\"22861978\"],\"tags\":[{\"data\":\"campaigns.18\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22374862\",\"22374868\"],\"tags\":[{\"data\":\"campaigns.21\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"23501736\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":88,\"g\":1}],\"type\":\"m\"},\"metricId\":2289942,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":73,\"g\":1}],\"type\":\"m\"},\"metricId\":2289942,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":68,\"g\":1}],\"type\":\"m\"},\"metricId\":2289942,\"id\":\"metric\"}]},{\"triggers\":[\"24140030\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":79,\"g\":1}],\"type\":\"m\"},\"metricId\":2373278,\"id\":\"metric\"}]},{\"triggers\":[\"22374853\",\"22374859\"],\"tags\":[{\"data\":\"campaigns.20\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22404076\",\"22404082\"],\"tags\":[{\"data\":\"campaigns.37\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22258039\",\"22861954\"],\"tags\":[{\"data\":\"campaigns.14\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22258039\",\"22861936\"],\"tags\":[{\"data\":\"campaigns.19\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22404085\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":37,\"g\":1}],\"type\":\"g\"},\"metricId\":0,\"id\":\"metric\"}]},{\"triggers\":[\"22404118\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":49,\"g\":1}],\"type\":\"g\"},\"metricId\":0,\"id\":\"metric\"}]},{\"triggers\":[\"22282390\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":21,\"g\":4}],\"type\":\"m\"},\"metricId\":2144920,\"id\":\"metric\"}]},{\"triggers\":[\"24670684\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":84,\"g\":3}],\"type\":\"g\"},\"metricId\":0,\"id\":\"metric\"}]},{\"triggers\":[\"22258039\",\"22404058\"],\"tags\":[{\"data\":\"campaigns.84\",\"priority\":4,\"id\":\"runCampaign\"},{\"data\":\"campaigns.88\",\"priority\":4,\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\"},{\"data\":\"campaigns.55\",\"priority\":4,\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\"},{\"data\":\"campaigns.79\",\"priority\":4,\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\"},{\"data\":\"campaigns.71\",\"priority\":4,\"triggerIds\":[\"22258039\",\"22404058\"],\"id\":\"runCampaign\"}]},{\"triggers\":[\"24670681\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":84,\"g\":1}],\"type\":\"g\"},\"metricId\":0,\"id\":\"metric\"}]},{\"triggers\":[\"22258039\",\"22861960\"],\"tags\":[{\"data\":\"campaigns.15\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"24670687\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":84,\"g\":4}],\"type\":\"g\"},\"metricId\":0,\"id\":\"metric\"}]},{\"triggers\":[\"22403941\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":69,\"g\":2}],\"type\":\"m\"},\"metricId\":2144929,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":55,\"g\":2}],\"type\":\"m\"},\"metricId\":2144929,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":71,\"g\":2}],\"type\":\"m\"},\"metricId\":2144929,\"id\":\"metric\"}]},{\"triggers\":[\"22258039\",\"22404115\"],\"tags\":[{\"data\":\"campaigns.49\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22258039\",\"22861972\"],\"tags\":[{\"data\":\"campaigns.17\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22258039\",\"22861966\"],\"tags\":[{\"data\":\"campaigns.16\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22282384\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":21,\"g\":2}],\"type\":\"m\"},\"metricId\":2133826,\"id\":\"metric\"}]},{\"triggers\":[\"22282381\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":20,\"g\":1}],\"type\":\"m\"},\"metricId\":2133724,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":21,\"g\":1}],\"type\":\"m\"},\"metricId\":2133724,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":84,\"g\":2}],\"type\":\"m\"},\"metricId\":2133724,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":73,\"g\":2}],\"type\":\"m\"},\"metricId\":2133724,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":68,\"g\":2}],\"type\":\"m\"},\"metricId\":2133724,\"id\":\"metric\"}]},{\"triggers\":[\"22282405\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":20,\"g\":4}],\"type\":\"m\"},\"metricId\":2144923,\"id\":\"metric\"}]},{\"triggers\":[\"22282408\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":20,\"g\":5}],\"type\":\"m\"},\"metricId\":2144926,\"id\":\"metric\"}]},{\"triggers\":[\"22282387\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":20,\"g\":6}],\"type\":\"m\"},\"metricId\":2133829,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":21,\"g\":3}],\"type\":\"m\"},\"metricId\":2133829,\"id\":\"metric\"}]},{\"triggers\":[\"22258039\",\"23364864\"],\"tags\":[{\"data\":\"campaigns.69\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22277422\"],\"tags\":[{\"data\":{\"campaigns\":[{\"c\":14,\"g\":1}],\"type\":\"m\"},\"metricId\":2133583,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":15,\"g\":1}],\"type\":\"m\"},\"metricId\":2133583,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":16,\"g\":1}],\"type\":\"m\"},\"metricId\":2133583,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":17,\"g\":1}],\"type\":\"m\"},\"metricId\":2133583,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":18,\"g\":1}],\"type\":\"m\"},\"metricId\":2133583,\"id\":\"metric\"},{\"data\":{\"campaigns\":[{\"c\":19,\"g\":1}],\"type\":\"m\"},\"metricId\":2133583,\"id\":\"metric\"}]},{\"triggers\":[\"5\"],\"tags\":[{\"id\":\"checkEnvironment\"}]},{\"triggers\":[\"8\"],\"tags\":[{\"priority\":2,\"id\":\"groupCampaigns\"},{\"priority\":3,\"id\":\"prePostMutation\"}]},{\"triggers\":[\"9\"],\"tags\":[{\"priority\":2,\"id\":\"visibilityService\"}]},{\"triggers\":[\"2\"],\"tags\":[{\"id\":\"runTestCampaign\"}]},{\"triggers\":[\"11\"],\"tags\":[{\"priority\":3,\"id\":\"revaluateHiding\"}]},{\"triggers\":[\"75\"],\"tags\":[{\"id\":\"urlChange\"}]}],pages:{\"ec\":[{\"3172225\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i).*\"]]}},{\"3185059\":{\"exc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^\\/(?!en-us\\/(customer-data-platform|pricing\\/customer-data(\\/connections|\\/customer-data-platform)?|pricing\\/email-api|pricing\\/marketing-campaigns|products\\/(connections(\\/(functions|reverse-etl|warehouses))?|email-api(\\/(deliverability-insights|dynamic-email-templates|email-address-validation-api|email-testing-for-dynamic-templates|smtp-service))?|engage(\\/(audiences|journeys))?|marketing-campaigns(\\/(automation|email-design|email-list-management|email-statistics|email-templates|email-testing|signup-forms))?|protocols|unify(\\/profiles-sync)?)|use-cases\\/(activate-customer-data|boost-cross-sell-upsell|customer-acquisition-activation|customer-data-management-integration|customer-insights|enrich-customer-profiles|optimize-ad-spend|retain-customers-increase-ltv|segmentation-audience-activation|single-customer-view))\\/?$).*\"]],\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i).*https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us.*\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185053\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185056\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?.*\\\\:\\\\\\/(w{3}\\\\.)?\\\\\\/signup\\\\.sendgrid\\\\.com.*$\"]]}},{\"3185050\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/sendgrid\\\\-2\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185062\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/login\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185056\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?.*\\\\:\\\\\\/(w{3}\\\\.)?\\\\\\/signup\\\\.sendgrid\\\\.com.*$\"]]}},{\"3185065\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/sendgrid\\\\-1\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3387731\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/de\\\\-de.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/fr\\\\-fr.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/es\\\\-mx.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/pt\\\\-br.*\"],[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/ja\\\\-jp.*\"]]}},{\"3185047\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?twilio\\\\.com\\\\\\/en\\\\-us\\\\\\/try\\\\-twilio\\\\\\/?(?:[\\\\?#].*)?$\"]]}}]},pagesEval:{\"ec\":[3172225,3185059,3387731]},stags:{},domPath:{}}})();if(typeof window!==\"undefined\"&&window._vwoFlow===\"link-survey\"){window.VWO._.rCS()}\n;if(typeof heatmapDevice!==\"undefined\"&&heatmapDevice&&VWO._.allSettings&&VWO._.allSettings.dataStore.plugins.UA){VWO._.allSettings.dataStore.plugins.UA.dt=heatmapDevice};var commonWrapper=function(argument){if(!argument){argument={valuesGetter:function(){return{}},valuesSetter:function(){},verifyData:function(){return{}}}}var getVisitorUuid=function(){if(window._vwo_acc_id>=1037725){return window.VWO&&window.VWO.get(\"visitor.id\")}else{return window.VWO._&&window.VWO._.cookies&&window.VWO._.cookies.get(\"_vwo_uuid\")}};var pollInterval=100;var timeout=6e4;return function(){var accountIntegrationSettings={};var _interval=null;function waitForAnalyticsVariables(){try{accountIntegrationSettings=argument.valuesGetter();accountIntegrationSettings.visitorUuid=getVisitorUuid()}catch(error){accountIntegrationSettings=undefined}if(accountIntegrationSettings&&argument.verifyData(accountIntegrationSettings)){argument.valuesSetter(accountIntegrationSettings);return 1}return 0}var currentTime=0;_interval=setInterval((function(){currentTime=currentTime||performance.now();var result=waitForAnalyticsVariables();if(result||performance.now()-currentTime>=timeout){clearInterval(_interval)}}),pollInterval)}};\n        commonWrapper({valuesGetter:function(){return{}},valuesSetter:function(data){var ga4_device_id=\"\";if(typeof window.VWO._.cookies!==\"undefined\"){ga4_device_id=window.VWO._.cookies.ge",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/twilio/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Twilio incident: What Signal users need to know",
+          "url": "https://support.signal.org/hc/en-us/articles/4850133017242",
+          "points": 672,
+          "num_comments": 478,
+          "created_at": "2022-08-15T17:12:04Z",
+          "hn_url": "https://news.ycombinator.com/item?id=32472412"
+        },
+        {
+          "title": "Twilio confirms data breach after hackers leak 33M Authy user phone numbers",
+          "url": "https://www.securityweek.com/twilio-confirms-data-breach-after-hackers-leak-33m-authy-user-phone-numbers/",
+          "points": 663,
+          "num_comments": 396,
+          "created_at": "2024-07-04T12:26:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=40874341"
+        },
+        {
+          "title": "Twilio to Acquire Sendgrid",
+          "url": "https://www.twilio.com/press/releases/release_twilio_acquires_sendgrid",
+          "points": 633,
+          "num_comments": 184,
+          "created_at": "2018-10-15T20:54:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18223645"
+        },
+        {
+          "title": "Twilio releases open source video conferencing apps for iOS, Android and web",
+          "url": "https://www.twilio.com/blog/open-source-video-apps-reactjs-ios-android",
+          "points": 583,
+          "num_comments": 102,
+          "created_at": "2020-03-13T13:55:38Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22567240"
+        },
+        {
+          "title": "FCC threatens to disconnect Twilio for illegal robocalls",
+          "url": "https://commsrisk.com/fcc-threatens-to-disconnect-twilio-for-illegal-robocalls/",
+          "points": 574,
+          "num_comments": 216,
+          "created_at": "2023-01-29T17:02:59Z",
+          "hn_url": "https://news.ycombinator.com/item?id=34570065"
+        },
+        {
+          "title": "Goodbye, Twilio",
+          "url": "https://blog.miguelgrinberg.com/post/goodbye-twilio",
+          "points": 545,
+          "num_comments": 336,
+          "created_at": "2023-06-18T17:34:01Z",
+          "hn_url": "https://news.ycombinator.com/item?id=36382361"
+        },
+        {
+          "title": "Twilio set to acquire Segment for $3.2B",
+          "url": "https://www.forbes.com/sites/alexkonrad/2020/10/09/twilio-to-acquire-cloud-startup-segment-for-3-billion/",
+          "points": 533,
+          "num_comments": 93,
+          "created_at": "2020-10-09T23:23:15Z",
+          "hn_url": "https://news.ycombinator.com/item?id=24735414"
+        },
+        {
+          "title": "Twilio Super SIM",
+          "url": "https://www.twilio.com/wireless/super-sim",
+          "points": 461,
+          "num_comments": 175,
+          "created_at": "2019-05-11T12:13:31Z",
+          "hn_url": "https://news.ycombinator.com/item?id=19885764"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "I replaced twilio with a tool I built to save hundreds of dollars and open-sourced it.",
+          "subreddit": "selfhosted",
+          "score": 773,
+          "num_comments": 73,
+          "permalink": "https://reddit.com/r/selfhosted/comments/1m699qt/i_replaced_twilio_with_a_tool_i_built_to_save/",
+          "selftext": "I used to pay monthly to send messages through Twilio, but it became too expensive for me, especially for local SMS.\n\nSo I built my own tool that turns any android phone into an SMS gateway, with a web dashboard and API for sending messages.\n\nIt works best if you\u2019re sending SMS to users in the **same country** as your SIM card or within the EU, since local messages are often cheap or even unlimited with many mobile plans. Cross-country (international) SMS also works, but it can be more expensive"
+        },
+        {
+          "title": "Sha1-Hulud The Second Comming - Postman, Zapier, PostHog all compromised via NPM",
+          "subreddit": "programming",
+          "score": 563,
+          "num_comments": 75,
+          "permalink": "https://reddit.com/r/programming/comments/1p5i31d/sha1hulud_the_second_comming_postman_zapier/",
+          "selftext": "In September, a self-propagating worm called Sha1-Hulud came into action. A new version is now spreading and it is much much worse!\n\nLink:\u00a0[https://www.aikido.dev/blog/shai-hulud-strikes-again-hitting-zapier-ensdomains](https://www.aikido.dev/blog/shai-hulud-strikes-again-hitting-zapier-ensdomains)\n\nThe mechanics are basically the same, It infected NPM packages with stolen developer tokens. The malware uses preinstall script to run malware on a victim machine, scans for secrets, steals them and "
+        },
+        {
+          "title": "Ugh. FFS. Ugh",
+          "subreddit": "BlueskySkeets",
+          "score": 10488,
+          "num_comments": 1987,
+          "permalink": "https://reddit.com/r/BlueskySkeets/comments/1mr2ud9/ugh_ffs_ugh/",
+          "selftext": ""
+        },
+        {
+          "title": "House Minority Leader Hakeem Jeffries (D-NY) not only refuses to endorse Zohran Mamdani, he agrees with Andrew Cuomo that it is \"unfair\" that Zohran pays $2,300 a month in rent for a one-bedroom apartment. Hakeem Jeffries needs to be primaried immediately!",
+          "subreddit": "WorkReform",
+          "score": 10149,
+          "num_comments": 773,
+          "permalink": "https://reddit.com/r/WorkReform/comments/1msgpof/house_minority_leader_hakeem_jeffries_dny_not/",
+          "selftext": ""
+        },
+        {
+          "title": "I wrote a script that gives me a fake phone call to escape boring and awkward situations",
+          "subreddit": "developersIndia",
+          "score": 1899,
+          "num_comments": 177,
+          "permalink": "https://reddit.com/r/developersIndia/comments/1nd6qwi/i_wrote_a_script_that_gives_me_a_fake_phone_call/",
+          "selftext": "I built a script that gives me a fake phone call to escape boring and awkward situations. I bought a virtual number from Twilio and saved it as one of my relatives.\n\nWhenever I feel stuck, I just tap a button called \u201cESCAPE\u201d on my phone. It sends a request to my remote server. The server runs a small Python script which schedules an actual call. After a minute, my phone rings and plays a pre-recorded audio.\n\nI simply say \u201csorry, I\u2019m getting a call\u201d and walk away. A tiny project, but it has saved"
+        },
+        {
+          "title": "I wrote a script that gives me a fake phone call to escape boring and awkward situations",
+          "subreddit": "SideProject",
+          "score": 888,
+          "num_comments": 95,
+          "permalink": "https://reddit.com/r/SideProject/comments/1nd5jse/i_wrote_a_script_that_gives_me_a_fake_phone_call/",
+          "selftext": "I built a script that gives me a fake phone call to escape boring and awkward situations. I bought a virtual number from Twilio and saved it as one of my relatives.\n\nWhenever I feel stuck, I just tap a button called \u201cESCAPE\u201d on my phone. It sends a request to my remote server. The server runs a small Python script which schedules an actual call. After a minute, my phone rings and plays a pre-recorded audio.\n\nI simply say \u201csorry, I\u2019m getting a call\u201d and walk away. A tiny project, but it has saved"
+        },
+        {
+          "title": "UK diaspora charity spent \u00a356,596 to deliver \u00a318,619 to causes in Q1 2026. When I asked questions publicly using their own accounts, my comments were deleted. Am I reading this wrong?",
+          "subreddit": "AskBrits",
+          "score": 852,
+          "num_comments": 159,
+          "permalink": "https://reddit.com/r/AskBrits/comments/1sgmexu/uk_diaspora_charity_spent_56596_to_deliver_18619/",
+          "selftext": "I\u2019m a donor to Kwanda, a UK-based diaspora charity that funds African causes. They recently published their Q1 2026 accounts publicly, which I respect. But when I read the numbers carefully I had serious concerns and raised them publicly in the comments of their LinkedIn post.\n\nThe founder told me my numbers were incorrect without correcting a single figure, then deleted my comments entirely.\n\nI want to ask this community whether I\u2019m reading these accounts correctly because I genuinely want to b"
+        },
+        {
+          "title": "Jeffries needs to get primaried so hard",
+          "subreddit": "VaushV",
+          "score": 690,
+          "num_comments": 89,
+          "permalink": "https://reddit.com/r/VaushV/comments/1mt25v5/jeffries_needs_to_get_primaried_so_hard/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://twilio.com/en-us/pricing",
+    "changelog": "https://www.twilio.com/en-us/changelog",
+    "docs": "https://www.twilio.com/docs",
+    "integrations": "https://www.twilio.com/en-us/marketplace",
+    "g2": "https://www.g2.com/products/twilio/reviews"
+  },
+  "analysis": {
+    "name": "Twilio",
+    "url": "https://twilio.com",
+    "tagline": "Communications APIs with AI and data for SMS, Voice, Email",
+    "value_proposition": "A cloud communications platform (CPaaS) providing programmable APIs for SMS, voice, email, video, and customer data so developers can embed communications into any application.",
+    "target_segment": "dev / mid-market / enterprise",
+    "ideal_customer": "Engineering teams and product orgs at growth-stage and enterprise companies that need to build programmable, multi-channel customer communications into their products",
+    "features": [
+      {
+        "name": "sms api",
+        "description": "Send and receive SMS messages globally via REST API",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "mms",
+        "description": "Send and receive multimedia messages (images, video, audio) over SMS channels",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "rcs messaging",
+        "description": "Rich Communication Services messaging with branded sender, carousels, and read receipts",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "whatsapp api",
+        "description": "Send and receive WhatsApp messages via the WhatsApp Business API",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "voice api",
+        "description": "Make, receive, monitor, and record phone calls at global scale via REST API",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "twiml",
+        "description": "XML-based markup language to define voice and messaging call flow instructions",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "twiml bins",
+        "description": "Hosted TwiML documents that respond to webhooks without a server",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "programmable messaging",
+        "description": "Unified API layer for SMS, MMS, WhatsApp, and RCS with delivery tracking",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "video api",
+        "description": "Embeddable video calling SDK for web and mobile with group rooms",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "sendgrid email api",
+        "description": "Transactional email delivery via proprietary MTA with high deliverability",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "marketing campaigns",
+        "description": "Email marketing suite for designing, segmenting, and sending bulk marketing emails",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "phone numbers",
+        "description": "Provision local, toll-free, short code, and alphanumeric sender ID numbers globally",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "a2p 10dlc",
+        "description": "Application-to-person 10-digit long code registration for US commercial SMS",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "short codes",
+        "description": "5- or 6-digit dedicated short codes for high-throughput SMS campaigns",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "alphanumeric sender id",
+        "description": "Replace numeric phone number with brand name as SMS sender in supported countries",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "elastic sip trunking",
+        "description": "SIP trunking for global PSTN connectivity to connect existing VoIP infrastructure",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "flex",
+        "description": "Fully programmable cloud contact center platform for voice, chat, and digital channels",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "verify",
+        "description": "Turnkey multichannel OTP delivery API for phone verification and fraud prevention",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "lookup",
+        "description": "Phone number validation with line type intelligence, risk scoring, and identity match",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "conversations",
+        "description": "Multi-channel messaging SDK unifying SMS, WhatsApp, chat, and MMS into conversation threads",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "conversational intelligence",
+        "description": "AI-powered transcription and language analysis for voice and messaging interactions",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "conversationrelay",
+        "description": "AI voice interaction layer with speech-to-text and natural-sounding text-to-speech for virtual agents",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "studio",
+        "description": "Visual drag-and-drop builder to create communication workflows without code",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "functions",
+        "description": "Serverless environment to build event-driven Twilio apps without managing infrastructure",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "serverless",
+        "description": "Managed serverless runtime for deploying communication apps at scale",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "taskrouter",
+        "description": "Intelligent routing engine that assigns tasks to workers based on skills and availability",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "sync",
+        "description": "Real-time data synchronization API for shared state across devices and users",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "notify",
+        "description": "Multi-channel push notification API aggregating APNS, FCM, and SMS into one call",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "proxy",
+        "description": "Anonymized communications proxy to mask real phone numbers between parties",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "event streams",
+        "description": "Configurable centralized stream of Twilio event data routable to any destination",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "trust hub",
+        "description": "Centralized compliance onboarding for SHAKEN/STIR, CNAM, and phone number verification",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "shaken/stir",
+        "description": "Call authentication framework to reduce robocall spoofing and improve caller ID attestation",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "segment connections",
+        "description": "CDP pipeline connecting first-party data sources and destinations in a single platform",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "segment protocols",
+        "description": "Data governance and quality controls with shared data dictionary and real-time schema validation",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "segment unify",
+        "description": "Identity resolution to unify customer profiles across channels in real time",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "twilio engage",
+        "description": "Omnichannel campaign orchestration platform powered by Segment customer data",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "unified profiles",
+        "description": "Persistent cross-channel customer profiles accessible via API at interaction time",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "privacy portal",
+        "description": "Automated data privacy and regulatory compliance tooling for GDPR/CCPA at scale",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "content template builder",
+        "description": "Visual tool for creating approved WhatsApp, SMS, and email message templates",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "network traversal service",
+        "description": "Managed TURN/STUN service for NAT traversal in WebRTC-based video and voice applications",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "twilio cli",
+        "description": "Command-line interface for managing Twilio resources, deployments, and local development",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "helper libraries",
+        "description": "Official server-side SDKs for Node.js, Python, Ruby, Java, C#, PHP, and Go",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "openapi spec",
+        "description": "Machine-readable OpenAPI specification for all Twilio REST APIs",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "code exchange",
+        "description": "Community and official code sample library for common Twilio integration patterns",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "iam",
+        "description": "Identity and access management for API key scoping, subaccounts, and role-based permissions",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "subaccounts",
+        "description": "Hierarchical account structure for multi-tenant usage isolation and billing separation",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "global infrastructure",
+        "description": "Data residency and routing controls to manage where Twilio data is processed and stored",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "programmable voice recording",
+        "description": "Record inbound and outbound calls with configurable storage and transcription",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "call conferencing",
+        "description": "Multi-party voice conferencing with participant management via API",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "voice intelligence",
+        "description": "Post-call transcription and operator-defined insight extraction from call recordings",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "sip registration",
+        "description": "SIP endpoint registration for connecting soft phones and PBX systems to Twilio",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "flex insights",
+        "description": "Contact center analytics and reporting dashboard built into Flex",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "salesforce integration",
+        "description": "Native connector between Twilio products and Salesforce CRM",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "marketplace",
+        "description": "Add-on marketplace for third-party data enrichment and communications capabilities",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "error codes",
+        "description": "Comprehensive error code reference for debugging API responses and webhook failures",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "api status page",
+        "description": "Real-time and historical uptime monitoring for all Twilio product APIs",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "postman collection",
+        "description": "Pre-built Postman workspace for exploring and testing Twilio APIs",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "silent network auth",
+        "description": "Frictionless mobile verification via carrier network signal without user input",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "totp",
+        "description": "Time-based one-time password support for authenticator app verification flows",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "push verification",
+        "description": "Push notification-based approval for silent device authentication",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "passkeys",
+        "description": "FIDO2/WebAuthn passkey support in Verify for passwordless authentication",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "email verification",
+        "description": "OTP delivery via email as a Verify channel option",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "interconnect",
+        "description": "Private network connectivity between Twilio and enterprise cloud or on-prem infrastructure",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      }
+    ],
+    "integrations": [
+      "Salesforce",
+      "Segment",
+      "SendGrid",
+      "WhatsApp Business",
+      "Apple Messages for Business",
+      "Google RCS",
+      "Stripe",
+      "Zendesk",
+      "HubSpot",
+      "Shopify",
+      "AWS",
+      "Google Cloud",
+      "Azure",
+      "Firebase / FCM",
+      "Apple APNs",
+      "Postman",
+      "Zapier",
+      "Okta"
+    ],
+    "differentiators": [
+      "Proprietary MTA for SendGrid with industry-leading email deliverability",
+      "Only CPaaS with native CDP (Segment) for data-first communications",
+      "Global PSTN coverage across 180+ countries",
+      "Full-stack from raw APIs to no-code Studio builder to full contact center (Flex)",
+      "Carrier-direct relationships enabling Silent Network Auth and line intelligence",
+      "SHAKEN/STIR attestation and Trust Hub for compliance at scale",
+      "ConversationRelay enabling real-time AI voice agents on existing telephony infrastructure"
+    ],
+    "recent_ships": [
+      {
+        "date": "2024",
+        "what": "ConversationRelay GA \u2014 real-time AI voice with STT/TTS for building voice AI agents",
+        "source": "docs"
+      },
+      {
+        "date": "2024",
+        "what": "RCS Business Messaging support added to Programmable Messaging API",
+        "source": "docs"
+      },
+      {
+        "date": "2024",
+        "what": "Conversational Intelligence generally available with AI-powered call transcription and analysis",
+        "source": "docs"
+      },
+      {
+        "date": "2024",
+        "what": "Unified Profiles API for real-time cross-channel customer profile access",
+        "source": "docs"
+      },
+      {
+        "date": "2023",
+        "what": "Twilio Engage omnichannel campaign product built on Segment CDP launched",
+        "source": "other"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Best-in-class developer documentation and quickstarts",
+        "Extremely flexible APIs \u2014 can build almost anything",
+        "Global reach and carrier coverage are unmatched",
+        "Studio drag-and-drop flow builder appreciated by non-engineers",
+        "Verify API is reliable and easy to integrate for OTP flows",
+        "Large ecosystem of helper libraries and community code samples"
+      ],
+      "complaints": [
+        "Pricing becomes expensive at scale \u2014 'we got priced out at volume'",
+        "Customer support quality dropped significantly post-Segment acquisition",
+        "Billing is complex and hard to predict for mixed-product usage",
+        "Flex contact center is powerful but has a steep learning curve",
+        "A2P 10DLC registration process is slow and opaque",
+        "Segment and Twilio products feel bolted together rather than native",
+        "No meaningful free tier for core SMS/Voice \u2014 trial credits run out fast"
+      ],
+      "sources": [
+        "g2",
+        "reddit",
+        "hn"
+      ]
+    },
+    "pricing_signal": {
+      "model": "self-serve",
+      "tier_count": 0,
+      "lowest_paid_seat": null,
+      "free_tier": "Trial account with ~$15 in credits; SendGrid has free tier with 100 emails/day. Core SMS/Voice/Verify are strictly pay-as-you-go with no ongoing free tier."
+    }
+  }
+}

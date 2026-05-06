@@ -1,0 +1,67 @@
+{
+  "name": "Amplitude",
+  "url": "https://amplitude.com",
+  "domain": "amplitude.com",
+  "scanned_at": "2026-05-03T16:22:59.030953",
+  "sources": {
+    "landing": {
+      "url": "https://amplitude.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://amplitude.com/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "pricing": {
+      "url": "https://amplitude.com/pricing",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_NETWORK_CHANGED at https://amplitude.com/pricing\nCall log:\n  - navigating to \"https://amplitude.com/pricing\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "changelog": {
+      "url": "https://amplitude.com/changelog",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://amplitude.com/changelog\nCall log:\n  - navigating to \"https://amplitude.com/changelog\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "docs": {
+      "url": "https://www.docs.amplitude.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.docs.amplitude.com/\nCall log:\n  - navigating to \"https://www.docs.amplitude.com/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "integrations": {
+      "url": "https://amplitude.com/integrations",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: BrowserType.launch: Timeout 180000ms exceeded.\nCall log:\n  - <launching> /Users/mattheweisner/Library/Caches/ms-playwright/chromium_headless_shell-1217/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/01/b9b_r6vs18b5vyzkwthwkqhc0000gn/T/playwright_chromiumdev_profile-LVW9IT --remote-debugging-pipe --no-startup-window\n  - <launched> pid=42823\n  - [pid=42823][err] [0503/170653.158904:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/amplitude/reviews",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.g2.com/products/amplitude/reviews\nCall log:\n  - navigating to \"https://www.g2.com/products/amplitude/reviews\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "hn": {
+      "hits": []
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://amplitude.com/pricing",
+    "changelog": "https://amplitude.com/changelog",
+    "docs": "https://www.docs.amplitude.com",
+    "integrations": "https://amplitude.com/integrations",
+    "g2": "https://www.g2.com/products/amplitude/reviews"
+  },
+  "analysis": {
+    "error": "no source content gathered",
+    "features": []
+  }
+}

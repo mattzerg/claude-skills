@@ -1,0 +1,88 @@
+# Competitive review categories — edit seeds and product mappings here.
+# Used by run_queue.py and any ad-hoc category pickers.
+#
+# Schema per entry:
+#   - slug:        category slug (becomes MattZerg/Competitive/<slug>/)
+#     product:     Zerg product to compare against (must have spec at Projects/Zstack/<Product>.md or Projects/<Product>.md)
+#     seeds:       list of competitor URLs/domains to discover from
+#     notes:       optional free-text describing why this category is in the queue
+
+categories:
+  # === Tier A: existing Zstack products (priority) ===
+
+  - slug: pm-software
+    product: Zergboard
+    seeds: [linear.app, asana.com, atlassian.com/software/jira, monday.com, clickup.com, notion.so, shortcut.com, github.com/features/project-management, trello.com]
+    notes: Zergboard is live, mature, in production. Highest ROI for closing gaps.
+
+  - slug: finance-and-wallets
+    product: Zergwallet
+    seeds: [metamask.io, rainbow.me, skyfire.xyz, crossmint.com, monarchmoney.com, copilot.money, ynab.com, originfinancial.com, cash.app, coinbase.com/wallet, privy.io, rocketmoney.com, wealthfront.com]
+    notes: Zergwallet is pre-launch — agent-payments + PFM intersection.
+
+  - slug: internal-chat
+    product: ZergChat
+    seeds: [slack.com, microsoft.com/microsoft-teams, discord.com, mattermost.com, rocket.chat, twist.com]
+    notes: Slack/Teams/Discord are mature; Zerg differentiator is agent-native.
+
+  - slug: workspace-email
+    product: ZergMail
+    seeds: [workspace.google.com, microsoft.com/microsoft-365/outlook, hey.com, superhuman.com, proton.me/mail, fastmail.com]
+
+  - slug: calendar
+    product: ZergCal
+    seeds: [calendar.google.com, outlook.live.com/owa, calendar.notion.so, reclaim.ai, motion.app, fantastical.app]
+
+  - slug: video-meetings
+    product: ZergMeeting
+    seeds: [zoom.us, meet.google.com, microsoft.com/microsoft-teams, around.co, tuple.app, whereby.com]
+
+  - slug: sms-messaging
+    product: ZMsg
+    seeds: [twilio.com, messagebird.com, sinch.com, plivo.com, vonage.com, telnyx.com]
+
+  - slug: crm
+    product: ZergCRM
+    seeds: [salesforce.com, hubspot.com, attio.com, pipedrive.com, folk.app, clay.com]
+
+  - slug: file-storage
+    product: ZergBox
+    seeds: [workspace.google.com/products/drive, dropbox.com, box.com, onedrive.live.com, sync.com, pcloud.com]
+
+  - slug: analytics
+    product: Zergalytics
+    seeds: [analytics.google.com, mixpanel.com, amplitude.com, posthog.com, june.so, plausible.io]
+
+  # === Tier C: whitespace categories — Zstack as the "us" reference ===
+
+  - slug: email-marketing
+    product: Zstack
+    seeds: [mailchimp.com, klaviyo.com, customer.io, beehiiv.com, resend.com, convertkit.com]
+
+  - slug: customer-support
+    product: Zstack
+    seeds: [zendesk.com, intercom.com, front.com, plain.com, helpscout.com, gorgias.com]
+
+  - slug: accounting
+    product: Zstack
+    seeds: [quickbooks.intuit.com, xero.com, waveapps.com, bench.co, freshbooks.com, sage.com]
+
+  - slug: expense-management
+    product: Zstack
+    seeds: [brex.com, ramp.com, expensify.com, pleo.com, navan.com]
+
+  - slug: hris-payroll
+    product: Zstack
+    seeds: [gusto.com, rippling.com, justworks.com, deel.com, bamboohr.com]
+
+  - slug: marketing-automation
+    product: Zstack
+    seeds: [hubspot.com, marketo.com, activecampaign.com, customer.io, autopilot.com]
+
+  - slug: notes-wiki
+    product: Zstack
+    seeds: [notion.so, confluence.atlassian.com, coda.io, obsidian.md, slite.com, mem.ai]
+
+  - slug: all-in-one-platforms
+    product: Zstack
+    seeds: [notion.so, airtable.com, clickup.com, coda.io, fibery.io]

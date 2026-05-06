@@ -1,0 +1,234 @@
+{
+  "executive_summary": "Zerg AI has genuine technical differentiation that no competitor owns \u2014 a full operating loop that validates against live signals and monitors for drift \u2014 but the landing page buries this advantage under insider language that speaks to engineers who already believe, not to the engineering leaders and budget holders who must be convinced. Cursor and Devin win with celebrity-grade social proof and quantified ROI that makes the business case obvious; Zerg's page requires visitors to do that work themselves. The core positioning ('serious AI for serious engineering') is correct and defensible, but the execution treats differentiation as implicit when it must be explicit, quantified, and repeated.",
+  "competitive_landscape": {
+    "patterns_across_competitors": [
+      "Named, recognizable customer logos displayed prominently in a trust band immediately below the hero \u2014 all three competitors (Cursor, Devin, Lovable) use this pattern; Zerg has none",
+      "A single dominant superlative claim in the H1 or tagline ('best way to code with AI', 'AI software engineer', 'Create apps by chatting') \u2014 Zerg's tagline is a category description, not a claim",
+      "Quantified ROI framing: Cursor (80% adoption, 40,000 engineers), Devin (20x cost savings, 8x efficiency, 6M lines migrated), Lovable (millions of projects/day) \u2014 all anchor value in numbers before pricing",
+      "A primary CTA that implies low commitment and immediate access ('Download', 'Sign up', 'Get started') \u2014 Zerg's 'Join Waitlist' signals the opposite",
+      "A secondary CTA aimed at enterprise/high-intent visitors ('Contact sales', 'Talk to us') \u2014 Zerg has 'Talk to us' but it competes with the primary waitlist CTA rather than serving a distinct segment",
+      "Social proof stratified by seniority: CEO-level quotes (Jensen Huang, Patrick Collison) to signal enterprise legitimacy, engineer-level quotes to signal product quality \u2014 Zerg has zero testimonials",
+      "A 'how it works' section explaining the product flow in 3\u20135 steps \u2014 Cursor (autonomy slider concept), Devin (PR review \u2192 auto-docs \u2192 fleet \u2192 triage), Lovable (Start \u2192 Watch \u2192 Refine) all do this; Zerg's 'Loop' section is closest but reads as internal documentation"
+    ],
+    "best_in_class": {
+      "element": "Social proof architecture",
+      "source": "Cursor",
+      "description": "Cursor layers social proof strategically: a logo-less Fortune 500 stat ('over half') for immediate enterprise legitimacy, then named CEO testimonials (Jensen Huang, Patrick Collison, Greg Brockman) for credibility by association, then a practitioner quote (shadcn) for bottom-up adoption signal. Each testimonial includes a specific metric or behavior change, not just sentiment. The result is a trust stack that works for both the CTO deciding vendor and the engineer proposing the tool. Devin's Nubank case study is best-in-class for a different reason: it gives a single detailed, verifiable outcome (8-12x faster migration, 6M lines migrated, 40min \u2192 10min per sub-task) that makes internal ROI calculation trivial for a buyer."
+    },
+    "market_gaps": [
+      "Hardware-in-the-loop and embedded/signal-chain AI: no competitor targets teams whose software talks to physical systems, devices, simulators, or control planes \u2014 this segment is completely unaddressed and highly underserved",
+      "Post-delivery ownership: Cursor, Devin, and Lovable all stop at 'ship the code'; no competitor explicitly claims continuous monitoring, drift detection, or autonomous maintenance after delivery \u2014 Zerg's 'Run' phase is entirely uncontested",
+      "Migration economics as a standalone pitch: Devin gestures at migration but frames it as one use case; no competitor has built a dedicated migration ROI calculator or quantified the 'uneconomic work' category at scale",
+      "Correctness-as-a-competitive-moat: all competitors compete on speed and productivity; none compete on the cost of being wrong (downtime, compliance failures, production incidents) \u2014 Zerg's hardware/signal validation story is the clearest wedge into this gap",
+      "Platform engineering and infrastructure teams as a named segment: Cursor and Devin target 'enterprise engineering teams' generically; no competitor speaks specifically to the platform team, infra team, or reliability engineering persona who owns the hardest, most critical code"
+    ]
+  },
+  "zerg_assessment": {
+    "strengths": [
+      "Only competitor with a coherent 'operating loop' narrative (Map \u2192 Build \u2192 Prove \u2192 Run) that differentiates from prompt-to-code tools \u2014 this is a genuine structural advantage that Cursor and Devin cannot easily claim",
+      "Specific, quantified proof points (24-day JS\u2192TS migration, 2-3 integrations/week, hardware-in-the-loop validation) give technical credibility that Lovable entirely lacks and Cursor rarely provides at this specificity",
+      "Explicit acknowledgment of what AI chat tools cannot do ('We do not stop at prompt-to-code') creates a clean competitive frame without naming competitors directly",
+      "Target audience precision \u2014 'hardware, simulations, data and control planes, vendor integrations, migrations, production workflows' \u2014 is more specific than any competitor and signals real domain expertise to the right reader",
+      "Connector ecosystem framing ('first-class work, not afterthoughts') addresses a real objection enterprise teams have about AI tools that break at integration boundaries"
+    ],
+    "gaps": [
+      "Zero named customers, logos, or testimonials \u2014 every competitor (including early-stage Lovable) has social proof; Zerg's page asks visitors to trust claims with no external validation",
+      "No visual demonstration of the product \u2014 Cursor shows agent output, Devin shows a PR review workflow, Lovable has interactive prompt input; Zerg describes the loop in prose but shows nothing",
+      "No ROI or business case language visible to a non-technical buyer: a VP Eng or CTO cannot extract a budget justification from the current page without significant effort",
+      "Primary CTA 'Join Waitlist' signals product unavailability and maximizes friction at the moment of highest intent \u2014 Cursor offers a download, Devin lets you sign up immediately",
+      "Navigation items (Mission, Runtime, Loop, Proof, Use Cases, Products, Blog) are internally logical but map to Zerg's mental model, not the buyer's \u2014 a VP Eng does not know what 'Runtime' means before reading the page",
+      "No pricing tier or packaging signal: even a 'contact sales for enterprise' tier with a free trial for smaller teams would reduce uncertainty; Zerg's page gives no signal about access path or cost",
+      "Copy reads as written for an engineer who already believes, not a decision-maker who needs to be sold \u2014 phrases like 'hardware-in-the-loop signal validation' will resonate with 5% of buyers and confuse the other 95%",
+      "No comparison table or 'why not ChatGPT/Cursor/Copilot' section \u2014 Devin and Cursor both implicitly frame against the category; Zerg assumes the visitor already knows why generic AI tools fail at mission-critical work"
+    ],
+    "positioning_clarity": "The positioning is intellectually defensible but experientially opaque. A technically sophisticated reader who spends 5+ minutes with the page will understand what Zerg does and why it's different. A typical landing page visitor who spends 8\u201315 seconds scanning headlines, subheadlines, and CTAs will leave without a clear answer to 'what does this do and why should I care.' The H1 ('Autonomous engineering for mission-critical systems') is correct but passive \u2014 it describes a category, not a transformation. The subheadline frontloads audience qualification (good) but buries the unique mechanism. The operating loop concept (Map, Build, Prove, Run) is Zerg's most distinctive asset and appears too deep in the page to anchor the hero.",
+    "conversion_bottlenecks": [
+      "'Join Waitlist' as the primary CTA creates a dead end \u2014 visitors who are ready to act cannot act, and no conversion path captures their intent for follow-up beyond a passive list join",
+      "No social proof above the fold means the page must earn trust through copy alone before any credibility is established \u2014 the conversion funnel leaks at the very first step",
+      "The operating loop explanation uses internal terminology (Map, Build, Prove, Run) without first establishing the problem those phases solve \u2014 visitors must do cognitive assembly before understanding the value",
+      "Navigation structure (Mission, Runtime, Loop) requires familiarity with Zerg's own framework to navigate, creating friction for first-time visitors who do not know what they are looking for",
+      "No case study page or expandable proof section means the specific metrics (24-day migration, 2-3 integrations/week) float without context \u2014 a buyer cannot understand how they translate to their situation",
+      "Absence of a demo, video, or interactive prototype means high-intent visitors who want to evaluate the product must contact the team \u2014 many will not, especially at early research stages"
+    ]
+  },
+  "recommendations": [
+    {
+      "priority": 1,
+      "category": "social_proof",
+      "title": "Add named customer logos and one anchor testimonial above the fold",
+      "current_state": "No logos, no testimonials, no named customers anywhere on the page. Trust is established entirely through technical specificity and claimed metrics.",
+      "recommendation": "Add a logo trust band immediately below the hero CTA row (5\u20138 company logos, grayscale). Add one anchor quote from a VP Engineering or Head of Platform at a recognizable company, with a specific outcome metric attached. If live customer quotes are not available, secure 3 design partners willing to provide a quote in exchange for case study co-marketing, and launch with those.",
+      "rationale": "Every competitor uses logos as the first trust signal after the hero. Cursor's Jensen Huang and Patrick Collison quotes are the single strongest conversion driver on their page \u2014 a Fortune 500 CTO's endorsement collapses sales cycles. Devin's Nubank case study with verified numbers ('8-12x faster, 6M lines migrated') is cited as the primary enterprise proof point in B2B SaaS. Without any external validation, Zerg is asking every visitor to be a first believer.",
+      "effort": "medium",
+      "impact": "high"
+    },
+    {
+      "priority": 2,
+      "category": "headline",
+      "title": "Rewrite H1 to lead with transformation, not category",
+      "current_state": "H1 reads 'Autonomous engineering for mission-critical systems' \u2014 a category description that tells the reader what Zerg is, not what changes for them.",
+      "recommendation": "Lead with the outcome or the contrast that makes Zerg's value obvious. Test variants that open with the problem displacement ('Your hardest engineering work, running continuously without a team to match'), the operating loop advantage ('AI that doesn't stop when the code ships'), or the correctness frame ('The only AI that validates against your live systems, not its imagination'). Follow immediately with a one-sentence mechanism statement.",
+      "rationale": "Cursor's tagline ('Built to make you extraordinarily productive') leads with personal transformation. Devin's subheadline ('Industry leaders choose to Build with Devin') leads with social authority. Lovable's tagline ('Create apps and websites by chatting with AI') leads with the mechanism and the desired action. All three are verb-forward and outcome-anchored. Zerg's current H1 is a noun phrase that reads as a category tag rather than an invitation.",
+      "effort": "low",
+      "impact": "high"
+    },
+    {
+      "priority": 3,
+      "category": "cta",
+      "title": "Replace 'Join Waitlist' with a segmented dual-CTA that captures intent without blocking access",
+      "current_state": "Primary CTA is 'Join Waitlist' (high friction, signals unavailability). Secondary CTA is 'Talk to us' (also high commitment). No low-friction conversion path exists.",
+      "recommendation": "Primary CTA: 'Request Early Access' or 'See It Running' (links to a recorded demo or interactive walkthrough). Secondary CTA: 'Talk to Engineering' (replaces generic 'Talk to us' with a signal that this conversation will be technical, not a sales pitch). Add a third micro-CTA inline in the proof section: 'Read the migration case study \u2192'. This creates three commitment levels: observe, engage, buy.",
+      "rationale": "Cursor's primary CTA is 'Download for macOS' \u2014 immediate, zero-friction, reversible. Devin's is 'Sign up' with 'Contact sales' as secondary \u2014 two distinct commitment levels that segment self-serve from enterprise in one click. Lovable makes the product itself the CTA (interactive prompt input). Zerg's current setup puts the highest-friction option first and offers no lower-commitment alternative, which means visitors who are not ready to join a waitlist leave with no conversion captured.",
+      "effort": "low",
+      "impact": "high"
+    },
+    {
+      "priority": 4,
+      "category": "structure",
+      "title": "Add a 'The problem with AI coding tools' contrast section directly below the hero",
+      "current_state": "Zerg implicitly positions against chat-based AI tools with the line 'We do not stop at prompt-to-code' but does not explain why prompt-to-code fails for mission-critical work before introducing the solution.",
+      "recommendation": "Add a 2-column 'before/after' or 'why not X' section immediately below the hero that names the failure modes of tools like Copilot, ChatGPT, and Cursor for infrastructure/platform teams: hallucinated API contracts, no live signal validation, no drift monitoring, integration work left to the human. Keep it factual and specific, not disparaging. Then transition directly into Zerg's operating loop as the answer.",
+      "rationale": "No competitor claims the 'correctness' framing. Cursor, Devin, and Lovable all compete on speed and productivity. Zerg's wedge is that correctness failures in mission-critical systems are catastrophically expensive. A contrast section forces this framing into the visitor's mind before they evaluate the solution. Devin does a version of this with '20x cheaper than a human engineer' \u2014 they make the alternative comparison explicit. Zerg's alternative comparison is 'what happens when the AI is wrong in production,' which is far more visceral and memorable.",
+      "effort": "medium",
+      "impact": "high"
+    },
+    {
+      "priority": 5,
+      "category": "social_proof",
+      "title": "Expand the 24-day migration proof point into a scannable case study module",
+      "current_state": "The 24-day JS\u2192TS migration and 2-3 integrations/week metrics appear as bullet points in the page but lack the context, before/after framing, or human attribution that would make them believable and transferable to a buyer's situation.",
+      "recommendation": "Build a dedicated proof module (not a full case study page) that frames the migration metric as: Company type + size of codebase \u2192 Zerg approach \u2192 outcome in days + number of reviewable checkpoints + test coverage delta. Add one human name or team descriptor ('Platform team at a Series C fintech'). Use Devin's Nubank case study structure as the template: problem context, the Zerg method, quantified outcome, human quote.",
+      "rationale": "Devin's Nubank case study is cited explicitly in their positioning as their primary enterprise sales tool \u2014 'Jose Carlos Castro, Senior Product Manager, Nubank' with '8-12x faster migration' is attributable and verifiable. Zerg's metrics ('24 days') are equally impressive but float without context, making them easy to dismiss as marketing claims. A named source with a method description turns a claim into evidence.",
+      "effort": "medium",
+      "impact": "high"
+    },
+    {
+      "priority": 6,
+      "category": "structure",
+      "title": "Add a product visualization or recorded walkthrough of the operating loop",
+      "current_state": "The operating loop (Map, Build, Prove, Run) is described in text. No screenshot, video, animation, or interactive demo shows what the product actually looks like or does.",
+      "recommendation": "Add a 60\u201390 second recorded screen walkthrough of Zerg completing one end-to-end task: receive a vendor API change notification \u2192 map the affected surface \u2192 generate the fix \u2192 validate against live signals \u2192 confirm no drift. Embed it in the 'Loop' section with a play button. If video production is not ready, a static annotated screenshot sequence (4 frames: Map, Build, Prove, Run) showing the actual UI with real output is significantly better than prose alone.",
+      "rationale": "Cursor's homepage shows agent output in motion. Devin shows a PR review diff with Devin's comments visible. Lovable makes the build experience the CTA itself. Visual product evidence is the single strongest differentiator in AI tooling sales because the category is crowded with claims. A VP Engineering evaluating Zerg needs to see the output quality and the UI before they will invest political capital in recommending the tool.",
+      "effort": "high",
+      "impact": "high"
+    },
+    {
+      "priority": 7,
+      "category": "copy",
+      "title": "Rewrite the subheadline to lead with the buyer's pain, not Zerg's taxonomy",
+      "current_state": "Subheadline reads: 'AI systems for mission-critical work. Zerg works with teams whose products depend on hard technical systems: hardware, simulations, data and control planes, vendor integrations, migrations, and production workflows.' This is an audience qualification list, not a pain statement.",
+      "recommendation": "Rewrite to open with the pain or the economic frame before the qualification. Lead with what makes this work different from what AI tools handle today, then qualify the audience. Example structure: '[Pain/cost of getting it wrong] \u2192 [What Zerg does differently] \u2192 [Who this is for].' The list of system types is valuable but should appear as supporting detail, not the headline.",
+      "rationale": "Devin's subheadline 'Industry leaders choose to Build with Devin' leads with social authority. Cursor's 'The best way to code with AI' leads with superlative positioning. Both create a frame before asking the reader to self-qualify. Zerg's current subheadline forces the reader to self-qualify first, which means anyone who doesn't immediately see their exact system type in the list may exit before reading the value proposition.",
+      "effort": "low",
+      "impact": "medium"
+    },
+    {
+      "priority": 8,
+      "category": "trust",
+      "title": "Add explicit security and compliance signals relevant to enterprise buyers",
+      "current_state": "No SOC 2, ISO 27001, HIPAA, or FedRAMP badges or mentions visible on the page. No data handling or agent permissions explanation at the trust-signal level.",
+      "recommendation": "Add a trust footer band or sidebar callout that includes: agent permission model summary ('agents operate with scoped credentials you control'), any security certifications in progress or achieved, and a one-line data handling statement ('your code never leaves your infrastructure' if true, or 'SOC 2 Type II in progress, available Q[X]'). Link to a dedicated security page.",
+      "rationale": "Cursor's SOC 2 Certified badge is prominently placed and listed as a key differentiator \u2014 for enterprise sales, security certification can be a hard gate. Devin links to an enterprise tier implying security review availability. Lovable has a dedicated security page and Trust Center linked in the nav. Mission-critical engineering teams \u2014 Zerg's exact audience \u2014 operate in environments with strict security review processes. Absence of any security signal is a significant enterprise sales barrier, especially for hardware, manufacturing, and financial infrastructure teams.",
+      "effort": "low",
+      "impact": "medium"
+    },
+    {
+      "priority": 9,
+      "category": "structure",
+      "title": "Add a use-case navigation layer that maps buyer problems to Zerg capabilities",
+      "current_state": "Current navigation uses Zerg's internal framework names (Mission, Runtime, Loop, Proof, Use Cases, Products) which require pre-existing familiarity with Zerg's model to navigate meaningfully.",
+      "recommendation": "Add a horizontal use-case selector or tab group on the page (not in the nav) with buyer-language labels: 'Legacy Migration', 'Vendor Integration', 'CVE Remediation', 'Hardware Validation', 'Production Monitoring'. Each tab reveals a brief description, the relevant loop phase, and a specific metric or case. This lets a Platform Engineering lead navigate directly to their problem without reading the full page.",
+      "rationale": "Devin's page organizes proof around use cases with specific metrics per use case (migration, PR review, bug triage). Cursor organizes around environments (IDE, CLI, Slack, GitHub). Both structures let a visitor with a specific problem find their answer in under 30 seconds. Zerg's current structure is sequential and requires end-to-end reading to map capabilities to problems \u2014 a significant friction cost for senior buyers with limited time.",
+      "effort": "medium",
+      "impact": "medium"
+    },
+    {
+      "priority": 10,
+      "category": "pricing",
+      "title": "Add a packaging signal with an entry path that doesn't require a waitlist",
+      "current_state": "No pricing, no tiers, no packaging visible. Only access path is 'Join Waitlist.' There is no signal about how a team would begin using Zerg or what the economics look like.",
+      "recommendation": "Add a simple two-tier packaging signal: a 'Team' tier (invite-only early access, specific team size and use case scope, apply with a 'Get Access' form) and an 'Enterprise' tier (custom deployment, dedicated support, 'Talk to Engineering' CTA). Frame pricing language around leverage economics: 'priced per team, not per seat' or 'economics of a senior engineer, cost of a tool.' Even without public prices, this signals structure and removes the 'is this even accessible to me' ambiguity that the waitlist creates.",
+      "rationale": "Cursor uses 'self-serve with enterprise contact-sales' \u2014 two distinct paths, two distinct conversion mechanisms. Devin frames pricing as '20x cheaper than human engineer hourly rates' \u2014 ROI anchoring before any number is revealed. Lovable uses freemium with student and enterprise tiers. All three give the visitor a mental model of how to engage. Zerg's pure waitlist model is appropriate for early launch but is now a conversion tax \u2014 it signals scarcity without revealing why, and high-intent enterprise buyers who see no access path move on to Cursor or Devin.",
+      "effort": "medium",
+      "impact": "high"
+    }
+  ],
+  "quick_wins": [
+    "Replace 'Join Waitlist' CTA button text with 'Request Early Access' \u2014 same action, lower perceived friction, signals the visitor is being considered rather than queued",
+    "Add 3\u20135 grayscale company logos to a trust band below the hero with no other changes \u2014 even 'stealth' or unnamed category descriptors ('a Fortune 500 semiconductor company') are meaningfully better than nothing",
+    "Add 'SOC 2 in progress' or equivalent security signal to the page footer or nav area \u2014 this costs nothing to write and removes a hard gate in enterprise security reviews",
+    "Change 'Talk to us' secondary CTA to 'Talk to an Engineer' \u2014 the specificity signals a technical conversation, not a sales pitch, which is the right expectation to set for Zerg's audience and increases response quality from inbound",
+    "Move the operating loop proof metrics (24-day migration, 2-3 integrations/week, 24/7 runtime) into a visually distinct callout band with large-format numbers above the fold \u2014 these are Zerg's strongest trust signals and currently live too deep in the page to influence first-impression conversion"
+  ],
+  "copy_rewrites": [
+    {
+      "element": "H1",
+      "current": "Autonomous engineering for mission-critical systems",
+      "suggested": "The AI that doesn't stop when the code ships",
+      "why": "Current H1 is a category description, not a transformation claim. The suggested line names Zerg's unique operating loop advantage (continuous monitoring, drift detection) in plain language that immediately differentiates from Cursor, Devin, and Copilot without using any internal terminology. It's a contrast claim \u2014 'others stop, we don't' \u2014 which forces the visitor to ask what happens after the code ships, drawing them into the subheadline."
+    },
+    {
+      "element": "Subheadline",
+      "current": "AI systems for mission-critical work. Zerg works with teams whose products depend on hard technical systems: hardware, simulations, data and control planes, vendor integrations, migrations, and production workflows.",
+      "suggested": "Your infrastructure, vendor integrations, and legacy systems are too critical \u2014 and too complex \u2014 for AI tools that guess. Zerg maps your real environment, builds against live signals, and keeps watching after delivery so drift becomes a fix, not a fire.",
+      "why": "Current subheadline leads with audience qualification (a list of system types) before establishing the pain or the value. The rewrite leads with the buyer's risk ('too critical to guess'), introduces the correctness differentiator ('live signals'), and introduces the post-delivery advantage ('keeps watching') \u2014 all before asking the reader to self-qualify. It speaks to the emotional stakes of mission-critical work rather than cataloguing system categories."
+    },
+    {
+      "element": "Primary CTA",
+      "current": "Join Waitlist",
+      "suggested": "Request Early Access",
+      "why": "'Join Waitlist' implies an indefinite queue with no control. 'Request Early Access' implies the visitor is being considered as a partner, which is accurate for Zerg's current go-to-market and sets a more intentional expectation. It also subtly signals exclusivity (early access) without the negative connotation of a passive list."
+    },
+    {
+      "element": "Secondary CTA",
+      "current": "Talk to us",
+      "suggested": "Talk to an Engineer",
+      "why": "'Talk to us' is generic and could describe a sales call. 'Talk to an Engineer' signals a technical peer conversation, which is exactly what Zerg's ICP (platform engineers, infrastructure leads) wants to have \u2014 and is afraid a 'Talk to us' CTA won't deliver. This specificity increases both click rate and inbound quality."
+    },
+    {
+      "element": "Operating loop intro line",
+      "current": "We do not stop at prompt-to-code",
+      "suggested": "Every AI tool can generate code. Only Zerg validates it against your live systems, then keeps watching to catch what drifts.",
+      "why": "The current line is a good competitive frame but is stated as a negative ('we do not'). The rewrite acknowledges the category, asserts the differentiator positively, and adds the drift monitoring advantage \u2014 which is entirely uncontested territory. 'Keeps watching' is a phrase that will stick with an infrastructure engineer because it maps directly to the monitoring mindset they already have."
+    },
+    {
+      "element": "Proof section metric callout",
+      "current": "24 days for a large JavaScript to TypeScript migration with tests and reviewable checkpoints",
+      "suggested": "A large JS \u2192 TypeScript migration: 24 days. With tests, reviewable PRs, and zero nights-and-weekends for your team.",
+      "why": "The current phrasing reads like a spec sheet. The rewrite adds the implicit before-state ('nights-and-weekends') that makes the 24-day number feel fast rather than just factual. The 'your team' ending personalizes the outcome and speaks directly to the engineering manager calculating whether this is worth their team's time to evaluate."
+    },
+    {
+      "element": "Navigation item 'Runtime'",
+      "current": "Runtime",
+      "suggested": "How It Works",
+      "why": "'Runtime' is meaningful to someone who has already read the Zerg docs. 'How It Works' is the universal signal for 'this section explains the product' \u2014 it reduces navigation friction for first-time visitors and maps to the mental model pattern every competitor uses for their mechanism section."
+    }
+  ],
+  "new_sections_to_add": [
+    {
+      "section": "Trust band / Social proof logo strip",
+      "rationale": "Every competitor (Cursor: Fortune 500 stat, Devin: 19 named logos including Stripe, AWS, Notion, GitHub, Lovable: 'teams from top companies') places external validation immediately below the hero. Zerg has none. The trust band is the highest-ROI section-add relative to effort because it does not require original content creation \u2014 it requires customer permission, which should already be part of the design partner relationship.",
+      "content_guidance": "5\u20138 company logos (grayscale, equal size, horizontal row) with a one-line label: 'Trusted by platform and infrastructure teams at:' \u2014 If logos are unavailable, use industry/company-type descriptors: 'Series B industrial automation startup', 'Fortune 500 semiconductor manufacturer', 'Top-10 US bank infrastructure team'. Place this band at the bottom of the hero section, before any body copy begins."
+    },
+    {
+      "section": "Why not Cursor / Copilot / Claude for this",
+      "rationale": "Zerg's ICP has already tried Cursor, GitHub Copilot, or ChatGPT for their hard engineering problems and found them insufficient \u2014 but the current page assumes the visitor already knows this. A contrast section educates the unconvinced majority and validates the experience of visitors who have already been burned. No competitor owns this framing because no competitor can honestly claim to be better at mission-critical correctness \u2014 only Zerg can.",
+      "content_guidance": "Two-column comparison or a 3-row table: problem scenario (e.g., 'Your vendor updates their API schema') | 'With a chat AI tool' (hallucinates the new contract, passes unit tests, breaks in staging) | 'With Zerg' (maps the live API, validates the change against your integration layer, ships the fix). Use 3 specific scenarios: vendor API change, legacy migration, CVE in production dependency. Keep it factual, not disparaging \u2014 the goal is to describe a real failure mode, not attack a competitor."
+    },
+    {
+      "section": "ROI / Economics callout",
+      "rationale": "Devin's '20x cost savings' and '8x engineering time efficiency' are their single most-cited metrics by enterprise evaluators. Cursor frames ROI through adoption scale (40,000 NVIDIA engineers). Zerg's '2-3 production integrations per week' and '24-day migration' are equivalent ROI signals but are not framed as economics \u2014 they are framed as capabilities. A VP Engineering needs to present a business case to a CFO, and Zerg currently gives them no vocabulary to do that.",
+      "content_guidance": "A 3-stat callout band: [metric 1: shipping cadence vs. team size it would require] [metric 2: migration speed vs. traditional timeline] [metric 3: continuous monitoring hours vs. on-call cost]. Frame each as 'what this means for your team': '2\u20133 production integrations shipped per week \u2014 the output of a dedicated integration team, without the headcount.' Position this section after the first proof mention and before the use-case detail."
+    },
+    {
+      "section": "Security and trust",
+      "rationale": "Cursor lists SOC 2 Certified as a key differentiator. Lovable has a dedicated Trust Center linked from the nav. Devin implies enterprise security review availability through its Enterprise tier. Zerg's audience \u2014 platform engineers at regulated companies, hardware teams, financial infrastructure \u2014 operates under strict security review requirements. The absence of any security page or signal is a hard gate in the enterprise sales process for this specific ICP.",
+      "content_guidance": "A dedicated section (or footer callout) covering: agent permission model ('agents operate with scoped, revocable credentials \u2014 they read and write only what you authorize'), data handling policy summary, any certifications in progress (SOC 2, ISO 27001), and a link to a full security page. If certifications are not yet in place, frame it as a commitment: 'SOC 2 Type II certification in progress, Q[X] 2025. Security documentation available on request.'"
+    },
+    {
+      "section": "Mission-critical use case selector",
+      "rationale": "Devin segments proof by use case (migration, PR review, bug triage, documentation) which lets a visitor with a specific problem find their answer in under 30 seconds. Zerg's operating loop applies to multiple distinct buyer problems (migration, CVE remediation, vendor integration, hardware validation, production monitoring) but these are currently mixed into a single sequential page narrative. A use-case selector dramatically reduces cognitive load for high-intent buyers and allows Zerg to show different proof metrics for different problems.",
+      "content_guidance": "A horizontal tab group or card grid with 5 use cases: 'Legacy Migration', 'Vendor Integration', 'CVE Remediation', 'Hardware & Signal Validation', 'Production Monitoring'. Each card/tab shows: the specific pain in one sentence, the relevant Zerg capability in one sentence, and the best proof metric available. The 24-day migration metric goes under Legacy Migration. The 2-3 integrations/week metric goes under Vendor Integration. Hardware-in-the-loop goes under Hardware & Signal Validation. Each card links to a deeper case study or proof page."
+    }
+  ]
+}

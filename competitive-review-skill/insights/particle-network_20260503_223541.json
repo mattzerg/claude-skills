@@ -1,0 +1,498 @@
+{
+  "name": "Particle Network",
+  "url": "https://particle.network",
+  "domain": "particle.network",
+  "scanned_at": "2026-05-03T22:32:37.268161",
+  "sources": {
+    "landing": {
+      "url": "https://particle.network",
+      "title": "Particle Network - Transcend Onchain",
+      "text": "Particle Network - Transcend Onchain\nProducts\nBlog\nDocumentation\nYOUR\nAPP,\nREADY FOR THE WORLD\nOnboard users in one click. Accept any digital asset. Ship 100% onchain.\nUniversal Accounts\nUniversal Accounts\nAbstract all multi-chain complexities.\nUsers can access your dApp with assets from any chain, without bridging.\nI want to make my app chain-agnostic\nAccount Abstraction\nAccount Abstraction\nSponsor users gas fees, remove signature popups, and more.\nI want to remove gas fees and popups for my users\nSocial Logins\nSocial Logins\nOne-click onboarding with email, Google, X, Facebook, and more. No managing seed phrases.\nI want to onboard Web2 users into my app\nYOUR\nAPP,\nREADY FOR THE WORLD\nOnboard users in one click. Accept any digital asset. Ship 100% onchain.\nUniversal\nAccounts\nAbstract all multi-chain complexities.\nUsers can access your dApp with assets from any chain, without bridging.\nI want to make my app chain-agnostic\nAccount\nAbstraction\nSocial\nLogins\nUniversal\nAccounts\nOnboard users from any chain. Abstract multi-chain operations. Become retail-friendly.\nGo chain-agnostic in under 30 lines of code\nBecome Chain-Agnostic\n// Trade $10 worth of TSLAX on Solana\nconst\ntransaction =\nawait\nuniversalAccount.\ncreateBuyTransaction\n({\ntoken\n: {\nchainId\n:\nCHAIN_ID\n.\nSOLANA_MAINNET\n,\naddress\n:\n'XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB'\n,\n    },\n// Buy $10 of TSLAX\namountInUSD\n:\n'10'\n,\n  });\nBecome Chain-Agnostic\nAccount\nAbstraction\nSponsor gas fees for your users, allow them to pay gas in stablecoins, or remove signature popups. In less than 15 minutes.\nIntegrate Account Abstraction\n// Define a simple transaction\nconst\ntx = {\nto\n:\n'0xRecipientAddressHere'\n,\nvalue\n:\nparseEther\n(\n'0.001'\n).\ntoString\n(),\ndata\n:\n'0x'\n,\n};\nasync\nfunction\nsendTxWithERC20Gas\n(\n) {\n// 1. Get available ERC-20 token fee options\nconst\nfeeQuotes =\nawait\nsmartAccount.\ngetFeeQuotes\n(tx);\nconst\ntokenOptions = feeQuotes?.\ntokenPaymaster\n?.\nfeeQuotes\n|| [];\nconst\npaymaster = feeQuotes?.\ntokenPaymaster\n?.\ntokenPaymasterAddress\n;\n// 2. Choose a token (for example, the first one)\nconst\nselectedQuote = tokenOptions[\n0\n];\n// 3. Build the UserOperation with the selected token quote\nconst\n{ userOp, userOpHash } =\nawait\nsmartAccount.\nbuildUserOperation\n({\n    tx,\nfeeQuote\n: selectedQuote,\ntokenPaymasterAddress\n: paymaster,\n  });\n// 4. Send the UserOperation\nconst\ntxHash =\nawait\nsmartAccount.\nsendUserOperation\n({\n    userOp,\n    userOpHash,\n  });\nconsole\n.\nlog\n(\n'Transaction sent with ERC-20 gas payment:'\n, txHash);\n}\nIntegrate Account Abstraction\nSocial\nLogins\nOnboard users in seconds. No seed phrases, no downloading wallets. Log in using any OAuth method.\nIntegrate Social Logins\nimport\n{ useConnect }\nfrom\n'@particle-network/authkit'\n;\nconst\n{ connect, connected } =\nuseConnect\n();\n// Login with Google\nconst\nhandleLogin\n=\nasync\n(\n) => {\nif\n(!connected) {\nawait\nconnect\n({\nsocialType\n:\n'google'\n,\n    });\n  }\n};\nIntegrate Social Logins\nIt's free, forever.\nLet's get you started\nGet In Touch\nStart Building\nNEWS\nMore\nThe Universal SDK Is Now Public! Get Building\nChain-Agnostic Apps\nToday\nJul 23, 2025\nTranscending Onchain:\nAnnouncing the Universal Layer for RWAs...\nAug 4, 2025\nThe\nParticle Chain\nIs Launching On Avalanche!\nSep 3, 2025\n\u00a9 2025 Particle Network. All rights reserved.\nCompany\nBlog\nLinkedin\nSlack\nLegal\nTerm of Use\nPrivacy Policy\nCompany\nBlog\nLinkedin\nSlack\nLegal\nTerm of Use\nPrivacy Policy\n\u00a9 2025 Particle Network. All rights reserved.\nPARTICLE",
+      "source": "playwright"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "url": "https://particle.network/blog",
+      "title": "Particle Network - Transcend Onchain",
+      "text": "Particle Network - Transcend Onchain\nProducts\nBlog\nDocumentation\n404\nSorry, the page you're looking for isn't here.\nGo to Home\n\u00a9 2025 Particle Network. All rights reserved.\nCompany\nBlog\nLinkedin\nSlack\nLegal\nTerm of Use\nPrivacy Policy\nCompany\nBlog\nLinkedin\nSlack\nLegal\nTerm of Use\nPrivacy Policy\n\u00a9 2025 Particle Network. All rights reserved.\nPARTICLE",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://developers.particle.network",
+      "title": "Particle Network Docs - Chain Abstraction & Universal Accounts",
+      "text": "Particle Network Docs - Chain Abstraction & Universal Accounts\nSkip to main content\nParticle Network docs\nhome page\nWhat is Particle Network?\nUniversal Accounts\nSocial Logins\nAccount Abstraction\nSupport\nSearch...\n\u2318\nK\nBlog\nGitHub\nSlack\nDashboard\nParticle Network docs\nhome page\nSearch or ask...\nNavigation\nOVERVIEW\nIntroduction\nParticle Network\nSlack\nGitHub\nUniversal Accounts Demo\nOVERVIEW\nIntroduction\nWhat is Particle Network?\nWhat is Chain Abstraction?\nWhat is Universal Liquidity?\nPARTICLE PRODUCTS\nIntroduction to Universal Accounts\nIntroduction to Social Logins\nIntroduction to Account Abstraction\nMORE RESOURCES\nSecurity Audits\nBrand Assets\nModel Context Protocol (MCP) Server\nLEGAL\nAPI & SDK License Agreement\nPrivacy Policy\nTerms of Use\nOVERVIEW\nIntroduction\nCopy page\nParticle Network\u2019s developer docs.\nCopy page\nDocumentation Index\nFetch the complete documentation index at:\nhttps://developers.particle.network/llms.txt\nUse this file to discover all available pages before exploring further.\n\u200b\nParticle Network Documentation\nParticle Network provides the infrastructure for building\nchain-agnostic, next-generation Web3 applications\n.\nOur stack consists of three core products:\nUniversal Accounts\nUniversal Accounts enable any app to become chain-agnostic. They do so by providing users with a single account and unified balance across multiple chains.\nThanks to this, users can spend their assets from multiple chains in a combined manner, use integrated dApps regardless of where their assets are or the chain the dApp is deployed on, and never manually bridge again.\nThis user experience is known as\nchain abstraction\n.\nSocial Logins\nWallet creation and access with familiar Web2 credentials (Google, Twitter, Discord, etc.). This lowers onboarding friction and lets users start using dApps instantly.\nAccount Abstraction (ERC-4337 AA)\nSmart account infrastructure following the ERC-4337 standard.\nFeatures include gas sponsorship, batched transactions, and programmable account logic.\n\u200b\nNew to Particle Network?\nIntroduction to Universal Accounts\nLearn how Universal Accounts unify balances across chains to enable Chain Abstraction.\nIntroduction to Social Logins\nOnboard users instantly with familiar Web2 logins and auto-generated wallets.\nIntroduction to Account Abstraction\nExplore how ERC-4337 smart accounts enable gasless txs, batching, and programmability.\nWhat is Particle Network?\nUnderstand our mission to make Web3 retail-ready through Chain Abstraction and beyond.\n\u200b\nWant to Build?\nUniversal Account Quickstart\nIntegrate Universal Accounts into an existing dApp in minutes.\nSocial Login Quickstart\nAdd social logins to your dApp with just a few lines of code.\nAccount Abstraction Quickstart\nStart building with ERC-4337 Smart Accounts using the Particle AA SDK.\n\u200b\nResources\nGitHub Repos\nParticle Network\u2019s open-source SDKs and core packages.\nTutorial Videos\nWatch walkthroughs and deep dives on integration.\nSlack Community\nJoin our Slack community for support and collaboration.\nWas this page helpful?\nYes\nNo\nSuggest edits\nRaise issue\nWhat is Particle Network?\nNext\n\u2318\nI\nx\ngithub\ndiscord\nPowered by\nThis documentation is built and hosted on Mintlify, a developer documentation platform\nOn this page\nParticle Network Documentation\nNew to Particle Network?\nWant to Build?\nResources",
+      "source": "playwright"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/particle-network/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "This is it for the Particle Mesh Network",
+          "url": "https://hackaday.com/2020/01/30/this-is-it-for-the-particle-mesh-network/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2020-02-03T17:49:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22226745"
+        },
+        {
+          "title": "It for the Particle Mesh Network",
+          "url": "https://hackaday.com/2020/01/30/this-is-it-for-the-particle-mesh-network/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2020-01-31T04:01:17Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22198920"
+        },
+        {
+          "title": "From Micro to Macro",
+          "url": "https://news.mit.edu/2019/micro-macro-formation-particle-networks-0521",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2019-05-21T19:57:28Z",
+          "hn_url": "https://news.ycombinator.com/item?id=19974236"
+        },
+        {
+          "title": "On-Chain Gaming: Can Smart Wallet-as-a-Service Tools Be Used for Gaming",
+          "url": "https://blog.particle.network/fully-on-chain-gaming/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2023-12-03T10:47:59Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38506138"
+        },
+        {
+          "title": "A deep neural network for particle identification in a neutrino detector",
+          "url": "https://arxiv.org/abs/1808.07269",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2018-08-23T01:13:38Z",
+          "hn_url": "https://news.ycombinator.com/item?id=17823726"
+        },
+        {
+          "title": "Particle Mesh: Mesh Networking for the Internet of Things",
+          "url": "https://www.particle.io/mesh/",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2018-02-21T00:03:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=16425548"
+        },
+        {
+          "title": "Parameters Is All You Need: Tiny Neural Networks for Particle Physics",
+          "url": "https://arxiv.org/abs/2310.16121",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2023-11-07T20:42:20Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38182548"
+        },
+        {
+          "title": "Show HN: Party \u2013 WebGPU particle system and physics engine and playground",
+          "url": "https://caza.la/party/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2026-01-07T16:32:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=46528432"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "USF Scientists Just Ran 15 Years Worth Of Molecular Simulations To Finally Answer The 100-Year-Old Question That The Entire $260 Billion Tire Industry Was Built On Without Ever Knowing The Answer \ud83d\udede",
+          "subreddit": "InterstellarKinetics",
+          "score": 1253,
+          "num_comments": 49,
+          "permalink": "https://reddit.com/r/InterstellarKinetics/comments/1sndvw7/usf_scientists_just_ran_15_years_worth_of/",
+          "selftext": "A research team led by University of South Florida engineering professor David Simmons has solved one of the most consequential unsolved problems in materials science: why adding microscopic carbon black particles to soft natural rubber transforms it into a material strong enough to support the full weight of a loaded commercial aircraft.  The answer, published this week in the Proceedings of the National Academy of Sciences, required running 1,500 molecular dynamics simulations totaling the equ"
+        },
+        {
+          "title": "\u062d\u0628\u064a\u062a \u0627\u0648\u0631\u064a\u0643\u0645 \u0627\u062f\u0648\u0627\u062a\u064a \u0628\u062f\u0648\u0646 \u0633\u0628\u0628",
+          "subreddit": "ArabUnix",
+          "score": 108,
+          "num_comments": 32,
+          "permalink": "https://reddit.com/r/ArabUnix/comments/1m0yt5d/\u062d\u0628\u064a\u062a_\u0627\u0648\u0631\u064a\u0643\u0645_\u0627\u062f\u0648\u0627\u062a\u064a_\u0628\u062f\u0648\u0646_\u0633\u0628\u0628/",
+          "selftext": "[Particles\\_Network](https://github.com/abod8639/Particles_Network)\n\n[eww-music-widget](https://github.com/abod8639/eww-music-widget)\n\n  \n[arduino-cli-manager](https://github.com/abod8639/arduino-cli-manager)\n\n  \n"
+        },
+        {
+          "title": "Next Gen Ui",
+          "subreddit": "FlutterDev",
+          "score": 66,
+          "num_comments": 13,
+          "permalink": "https://reddit.com/r/FlutterDev/comments/1kpetep/next_gen_ui/",
+          "selftext": "my new package\n\n# [particles\\_network](https://pub.dev/packages/particles_network)\n\nTransform your app's UI with a breathtaking, high-performance particle network animation that reacts to touch and adapts seamlessly to any screen.\n\n[pub.dev](https://pub.dev/packages/particles_network)\n\n\n\n"
+        },
+        {
+          "title": "Big update to Next gen Ui  \ud83e\udd29",
+          "subreddit": "FlutterDev",
+          "score": 63,
+          "num_comments": 18,
+          "permalink": "https://reddit.com/r/FlutterDev/comments/1l1y2rr/big_update_to_next_gen_ui/",
+          "selftext": "# \ud83d\ude80 particles_network \u2013 Ultra-Performant Interactive Particle Network for Flutter\n\nHey Flutter devs! \ud83d\udc4b  \nI\u2019ve been working on a major upgrade to a particle network library for Flutter that delivers **massive performance improvements** and much more **customization power**.\n\n# \ud83d\udd27 What\u2019s New?\n\n* \u2705 **Massively Improved Performance** Rewrote the internal engine with a focus on raw speed and smooth rendering. Now you can render **hundreds or even thousands of particles** with zero jank, even on lower-"
+        },
+        {
+          "title": "Particle Network is launching an L1 on AVAX to power chain-agnostic UX w/ Universal Accounts. Making all L1s, assets, and apps feel like the same ecosystem.",
+          "subreddit": "Avax",
+          "score": 37,
+          "num_comments": 2,
+          "permalink": "https://reddit.com/r/Avax/comments/1n7oyfe/particle_network_is_launching_an_l1_on_avax_to/",
+          "selftext": "The Particle Chain is a high-performance coordination &amp; settlement layer enabling:\n\n* Universal Liquidity across chains\n* Gas abstraction **(pay in any token)**\n* Seamless cross-chain UX\n* 15+ validators at launch (Q4), with **permissionless participation**\n\nFor devs, the Universal Accounts SDK brings multi-chain access, social logins, and a frictionless user experience out of the box.\n\n[Official announcement](https://www.avax.network/about/press/particle-network-brings-the-particle-chain-to"
+        },
+        {
+          "title": "Avalanche September Recap \ud83d\udd3a",
+          "subreddit": "Avax",
+          "score": 33,
+          "num_comments": 4,
+          "permalink": "https://reddit.com/r/Avax/comments/1nvgp62/avalanche_september_recap/",
+          "selftext": "Avalanche in September:\n\n- Mirae Asset, with $316B AUM, signed an MOU with Ava Labs for fund tokenization and on-chain operations.\n\n- Hivemind Capital raised $550M to acquire AVAX and tokenize assets, backing AVAX One (formerly AgriFORCE).\n\n- SkyBridge Capital tokenized $300M in hedge funds with Tokeny and Apex Group.\n\n- BDACS and Woori Bank launched KRW1, a fully collateralized Korean won stablecoin.\n\n- JPYC deployed its regulatory-approved yen stablecoin on Avalanche.\n\n- PayPal USD (PYUSD) int"
+        },
+        {
+          "title": "\u0628\u0641\u0636\u0644 \u0627\u0644\u0644\u0647 \u0639\u0645\u0644\u062a \u0645\u0643\u062a\u0628\u0647 \u0641\u064a \u0641\u0644\u0627\u062a\u0631 ( flutter )",
+          "subreddit": "Egypt_Developers",
+          "score": 34,
+          "num_comments": 7,
+          "permalink": "https://reddit.com/r/Egypt_Developers/comments/1keul3d/\u0628\u0641\u0636\u0644_\u0627\u0644\u0644\u0647_\u0639\u0645\u0644\u062a_\u0645\u0643\u062a\u0628\u0647_\u0641\u064a_\u0641\u0644\u0627\u062a\u0631_flutter/",
+          "selftext": "* \\# Particles\\_Network\n\n\u0647\u064a \u0645\u0643\u062a\u0628\u0647 \u0644\u0625\u0646\u0634\u0627\u0621 \u062a\u0623\u062b\u064a\u0631 \u0631\u0633\u0648\u0645\u064a\u0627\u062a \u062c\u0645\u064a\u0644 \u0639\u0644\u0649 \u0634\u0643\u0644 \u0634\u0628\u0643\u0629 \u0645\u0646 \u0627\u0644\u062c\u0633\u064a\u0645\u0627\u062a \u0627\u0644\u0645\u062a\u0635\u0644\u0629 \u0628\u062e\u0637\u0648\u0637\n\n\u062a\u062a\u062d\u0631\u0643 \u0627\u0644\u062c\u0633\u064a\u0645\u0627\u062a \u0628\u0634\u0643\u0644 \u0633\u0644\u0633 \u0645\u0639 \u0641\u064a\u0632\u064a\u0627\u0621 \u0628\u0633\u064a\u0637\u0629 \u0648\u062a\u0633\u062a\u062c\u064a\u0628 \u0644\u0644\u0645\u0633 \u0639\u0644\u0649 \u0627\u0644\u0634\u0627\u0634\u0629 \u0628\u062d\u064a\u062b \u062a\u0646\u062c\u0630\u0628 \u0625\u0644\u0649 \u0645\u0643\u0627\u0646 \u0627\u0644\u0644\u0645\u0633 \u0645\u0645\u0627 \u064a\u0639\u0637\u064a \u0634\u0639\u0648\u0631 \u062a\u0641\u0627\u0639\u0644\u064a \u0648\u062d\u064a\u0648\u064a \n\n* \u0623\u062f\u0627\u0621 \u0639\u0627\u0644\u064a \u062d\u062a\u0649 \u0645\u0639 \u0639\u062f\u062f \u0643\u0628\u064a\u0631 \u0645\u0646 \u0627\u0644\u062c\u0633\u064a\u0645\u0627\u062a\n* \u062a\u062e\u0635\u064a\u0635 \u0643\u0627\u0645\u0644 \u0644\u0644\u0623\u0644\u0648\u0627\u0646\u060c \u0627\u0644\u0639\u062f\u062f\u060c \u0627\u0644\u0633\u0631\u0639\u0629\u060c \u0648\u062d\u062c\u0645 \u0627\u0644\u062c\u0633\u064a\u0645\u0627\u062a\n* \u0643\u0648\u062f \u0645\u0643\u062a\u0648\u0628 \u0628\u0637\u0631\u064a\u0642\u0629 \u0646\u0638\u064a\u0641\u0629 \u0648\u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u062a\u0648\u0633\u0639\u0629\n* \u064a\u062f\u0639\u0645 \u0627\u0644\u0644\u0645\u0633 \u0648\u0627\u0644\u0645\u0624\u062b\u0631\u0627\u062a \u0627\u0644\u062a\u0641\u0627\u0639\u0644\u064a\u0629\n* \u0645\u062a\u0648\u0627\u0641\u0642 \u0645\u0639 \u0627\u0644\u062c\u0648\u0627\u0644 \u0648\u0627\u0644\u0648\u064a\u0628\n* \u0633\u0647\u0644\u0647 \u0627\u0644\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \n\n\n\n*  [\u0627\u0644\u0645\u0643\u062a\u0628\u0647](https://pub.dev/packages/particles_network)[pub.dev](http"
+        },
+        {
+          "title": "Kite AI Brings The Agentic Internet Revolution",
+          "subreddit": "Avax",
+          "score": 16,
+          "num_comments": 1,
+          "permalink": "https://reddit.com/r/Avax/comments/1nk9hdp/kite_ai_brings_the_agentic_internet_revolution/",
+          "selftext": "https://preview.redd.it/a8vyb9kolxpf1.png?width=680&amp;format=png&amp;auto=webp&amp;s=5a2e53e1b0e89d9f5d55c7ff3b3e4a20dcac9400\n\nAI agents are evolving beyond chatbots. \n\nSoon, they'll shop for you, book travel, and handle transactions autonomously.\n\nBut there's a problem: today's internet wasn't built for this. \n\nThat's where Kite AI steps in. \ud83e\uddf5\ud83d\udc47\ud83c\udffb \n\n1/ Kite AI is building the foundational infrastructure for the \u201cagentic internet\".\n\nThink of it as the trust layer that allows AI agents to authent"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": "https://particle.network/blog",
+    "docs": "https://developers.particle.network",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/particle-network/reviews"
+  },
+  "analysis": {
+    "name": "Particle Network",
+    "url": "https://particle.network",
+    "tagline": "YOUR APP, READY FOR THE WORLD",
+    "value_proposition": "Chain-abstraction infrastructure that lets Web3 dApps onboard users in one click with social logins, unified cross-chain balances, and gasless transactions.",
+    "target_segment": "dev",
+    "ideal_customer": "Web3 dApp developers who want to abstract multi-chain complexity and onboard mainstream (Web2) users without seed phrases or bridging friction",
+    "features": [
+      {
+        "name": "universal accounts",
+        "description": "Single account with unified balance across multiple chains, enabling cross-chain asset spending without bridging",
+        "evidence_source": "docs",
+        "evidence_quote": "providing users with a single account and unified balance across multiple chains",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "chain abstraction",
+        "description": "Abstracts multi-chain complexity so users interact with dApps regardless of which chain their assets are on",
+        "evidence_source": "docs",
+        "evidence_quote": "users can spend their assets from multiple chains in a combined manner...and never manually bridge again",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "universal liquidity",
+        "description": "Aggregates liquidity across chains into a single spendable balance for end users",
+        "evidence_source": "docs",
+        "evidence_quote": "What is Universal Liquidity?",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "social logins",
+        "description": "OAuth-based wallet creation and dApp access \u2014 no seed phrases required",
+        "evidence_source": "docs",
+        "evidence_quote": "Wallet creation and access with familiar Web2 credentials (Google, Twitter, Discord, etc.).",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "google login",
+        "description": "OAuth sign-in via Google account",
+        "evidence_source": "landing",
+        "evidence_quote": "One-click onboarding with email, Google, X, Facebook, and more. No managing seed phrases.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "twitter/x login",
+        "description": "OAuth sign-in via X (Twitter) account",
+        "evidence_source": "landing",
+        "evidence_quote": "One-click onboarding with email, Google, X, Facebook, and more.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "facebook login",
+        "description": "OAuth sign-in via Facebook account",
+        "evidence_source": "landing",
+        "evidence_quote": "One-click onboarding with email, Google, X, Facebook, and more.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "discord login",
+        "description": "OAuth sign-in via Discord account",
+        "evidence_source": "docs",
+        "evidence_quote": "Wallet creation and access with familiar Web2 credentials (Google, Twitter, Discord, etc.)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email login",
+        "description": "Email-based authentication for wallet creation without seed phrases",
+        "evidence_source": "landing",
+        "evidence_quote": "One-click onboarding with email, Google, X, Facebook, and more.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "account abstraction (erc-4337)",
+        "description": "ERC-4337-compliant smart account infrastructure for programmable wallet behavior",
+        "evidence_source": "docs",
+        "evidence_quote": "Smart account infrastructure following the ERC-4337 standard.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gas sponsorship",
+        "description": "Developers can sponsor gas fees on behalf of users so users never pay gas",
+        "evidence_source": "docs",
+        "evidence_quote": "Features include gas sponsorship, batched transactions, and programmable account logic.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "erc-20 gas payment",
+        "description": "Allow users to pay gas in stablecoins or ERC-20 tokens instead of native chain tokens",
+        "evidence_source": "landing",
+        "evidence_quote": "allow them to pay gas in stablecoins",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "batched transactions",
+        "description": "Bundle multiple transactions into a single UserOperation to reduce friction and cost",
+        "evidence_source": "docs",
+        "evidence_quote": "Features include gas sponsorship, batched transactions, and programmable account logic.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "programmable account logic",
+        "description": "Customizable smart account behavior beyond standard ERC-4337 defaults",
+        "evidence_source": "docs",
+        "evidence_quote": "Features include gas sponsorship, batched transactions, and programmable account logic.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "signature popup removal",
+        "description": "Eliminate transaction confirmation popups for smoother end-user experience",
+        "evidence_source": "landing",
+        "evidence_quote": "Sponsor users gas fees, remove signature popups, and more.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "no-bridge cross-chain asset access",
+        "description": "Users spend assets from any chain in any dApp without manual bridging",
+        "evidence_source": "landing",
+        "evidence_quote": "Users can access your dApp with assets from any chain, without bridging.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cross-chain buy transaction",
+        "description": "SDK method to execute purchases using assets from any chain (e.g. buy Solana token with funds on another chain)",
+        "evidence_source": "landing",
+        "evidence_quote": "const transaction = await universalAccount.createBuyTransaction({...amountInUSD: '10'})",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "useroperation builder",
+        "description": "Programmatic builder for ERC-4337 UserOperations with fee quote selection",
+        "evidence_source": "landing",
+        "evidence_quote": "const { userOp, userOpHash } = await smartAccount.buildUserOperation({tx, feeQuote})",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "fee quote api",
+        "description": "API to fetch available ERC-20 token fee options before sending a transaction",
+        "evidence_source": "landing",
+        "evidence_quote": "const feeQuotes = await smartAccount.getFeeQuotes(tx);",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "react sdk (authkit)",
+        "description": "React hooks for social login integration via @particle-network/authkit package",
+        "evidence_source": "landing",
+        "evidence_quote": "import { useConnect } from '@particle-network/authkit';",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "universal sdk",
+        "description": "Unified SDK for integrating Universal Accounts and chain abstraction; recently made public",
+        "evidence_source": "landing",
+        "evidence_quote": "The Universal SDK Is Now Public! Get Building",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "open-source sdks",
+        "description": "Open-source SDKs and core packages published on GitHub",
+        "evidence_source": "docs",
+        "evidence_quote": "GitHub Repos \u2014 Particle Network's open-source SDKs and core packages.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mcp server",
+        "description": "Model Context Protocol server for AI/LLM integration with Particle developer tooling",
+        "evidence_source": "docs",
+        "evidence_quote": "Model Context Protocol (MCP) Server",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "developer dashboard",
+        "description": "Web dashboard for managing projects, API keys, and integration configuration",
+        "evidence_source": "docs",
+        "evidence_quote": "Dashboard",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "security audits",
+        "description": "Published third-party security audits for smart contract and protocol infrastructure",
+        "evidence_source": "docs",
+        "evidence_quote": "Security Audits",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "particle chain (l1)",
+        "description": "Proprietary L1 blockchain built on Avalanche to power chain-agnostic UX at scale",
+        "evidence_source": "other",
+        "evidence_quote": "Particle Network is launching an L1 on AVAX to power chain-agnostic UX w/ Universal Accounts.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "rwa universal layer",
+        "description": "Universal layer infrastructure for Real World Assets (RWAs) across chains",
+        "evidence_source": "landing",
+        "evidence_quote": "Transcending Onchain: Announcing the Universal Layer for RWAs...",
+        "tier": "unknown",
+        "confidence": "low"
+      },
+      {
+        "name": "slack community support",
+        "description": "Developer support and collaboration channel via Slack",
+        "evidence_source": "docs",
+        "evidence_quote": "Slack Community \u2014 Join our Slack community for support and collaboration.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "tutorial videos",
+        "description": "Video walkthroughs and integration deep-dives for developers",
+        "evidence_source": "docs",
+        "evidence_quote": "Tutorial Videos \u2014 Watch walkthroughs and deep dives on integration.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "llms.txt documentation index",
+        "description": "Machine-readable documentation index at /llms.txt for AI tooling consumption",
+        "evidence_source": "docs",
+        "evidence_quote": "Fetch the complete documentation index at: https://developers.particle.network/llms.txt",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Google (OAuth)",
+      "Twitter/X (OAuth)",
+      "Discord (OAuth)",
+      "Facebook (OAuth)",
+      "Solana",
+      "Avalanche (AVAX)",
+      "ERC-4337 standard",
+      "GitHub",
+      "Mintlify (docs platform)"
+    ],
+    "differentiators": [
+      "Universal Accounts: single account with unified cross-chain balance \u2014 no bridging ever required",
+      "Chain abstraction as a first-class primitive, not a bolted-on bridge",
+      "'Go chain-agnostic in under 30 lines of code'",
+      "'Integrate Account Abstraction in less than 15 minutes'",
+      "It's free, forever \u2014 no paid tiers advertised on landing",
+      "Proprietary L1 on Avalanche purpose-built for chain-agnostic UX",
+      "MCP Server for AI/LLM developer tooling integration",
+      "llms.txt documentation for AI-native developer discovery"
+    ],
+    "recent_ships": [
+      {
+        "date": "2025-09",
+        "what": "Particle Chain L1 launching on Avalanche",
+        "source": "The Particle Chain Is Launching On Avalanche!"
+      },
+      {
+        "date": "2025-07",
+        "what": "Universal Layer for Real World Assets (RWAs) announced",
+        "source": "Transcending Onchain: Announcing the Universal Layer for RWAs..."
+      },
+      {
+        "date": "2025",
+        "what": "Universal SDK made publicly available",
+        "source": "The Universal SDK Is Now Public! Get Building"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Free",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$0",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Full platform access; landing page states 'It's free, forever'"
+        }
+      ],
+      "enterprise": null,
+      "notes": "Landing page states 'It's free, forever' with no paid tiers, usage caps, or enterprise pricing visible in any crawled source. No dedicated pricing page was returned. Actual limits, if any, are undisclosed."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

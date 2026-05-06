@@ -1,0 +1,51 @@
+{
+  "name": "PostHog",
+  "url": "https://posthog.com",
+  "domain": "posthog.com",
+  "scanned_at": "2026-05-03T17:22:03.570886",
+  "sources": {
+    "landing": {
+      "url": "https://posthog.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://posthog.com/\nCall log:\n  - navigating to \"https://posthog.com/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "error": "no content",
+      "url": null
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/posthog/reviews",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.g2.com/products/posthog/reviews\nCall log:\n  - navigating to \"https://www.g2.com/products/posthog/reviews\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "hn": {
+      "hits": []
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "g2": "https://www.g2.com/products/posthog/reviews"
+  },
+  "analysis": {
+    "error": "no source content gathered",
+    "features": []
+  }
+}

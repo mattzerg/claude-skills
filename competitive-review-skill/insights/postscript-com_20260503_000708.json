@@ -1,0 +1,429 @@
+{
+  "name": "Postscript",
+  "url": "https://postscript.com",
+  "domain": "postscript.com",
+  "scanned_at": "2026-05-03T00:05:19.529195",
+  "sources": {
+    "landing": {
+      "url": "https://postscript.com",
+      "title": "Error",
+      "text": "Error\nTemplates\nWix.com\nLooks like this domain isn't\nconnected to a website yet\nIs this your domain?\nConnect it to your Wix website in just a few easy steps:\nGo to\nWix.com\n> Subscriptions > Domains\nClick Use a Domain You Already Own\nFollow the steps to connect your domain to your website\nNeed more help?\nPlease contact our\nSupport Team",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://postscript.com/pricing",
+      "title": "Error",
+      "text": "Error\nTemplates\nWix.com\nLooks like this domain isn't\nconnected to a website yet\nIs this your domain?\nConnect it to your Wix website in just a few easy steps:\nGo to\nWix.com\n> Subscriptions > Domains\nClick Use a Domain You Already Own\nFollow the steps to connect your domain to your website\nNeed more help?\nPlease contact our\nSupport Team",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://docs.postscript.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://docs.postscript.com/\nCall log:\n  - navigating to \"https://docs.postscript.com/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "integrations": {
+      "url": "https://postscript.com/integrations",
+      "title": "Error",
+      "text": "Error\nTemplates\nWix.com\nLooks like this domain isn't\nconnected to a website yet\nIs this your domain?\nConnect it to your Wix website in just a few easy steps:\nGo to\nWix.com\n> Subscriptions > Domains\nClick Use a Domain You Already Own\nFollow the steps to connect your domain to your website\nNeed more help?\nPlease contact our\nSupport Team",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/postscript/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "PostScript\u2019s sudden death in Sonoma",
+          "url": "https://eclecticlight.co/2023/09/25/postscripts-sudden-death-in-sonoma/",
+          "points": 269,
+          "num_comments": 151,
+          "created_at": "2023-09-25T20:20:55Z",
+          "hn_url": "https://news.ycombinator.com/item?id=37650040"
+        },
+        {
+          "title": "Mathematical Illustrations: A manual of geometry and postscript",
+          "url": "http://www.math.ubc.ca/~cass/graphics/manual/",
+          "points": 203,
+          "num_comments": 33,
+          "created_at": "2018-04-29T18:25:20Z",
+          "hn_url": "https://news.ycombinator.com/item?id=16953208"
+        },
+        {
+          "title": "PSChess \u2013 A chess engine in PostScript",
+          "url": "https://seriot.ch/projects/pschess.html",
+          "points": 203,
+          "num_comments": 23,
+          "created_at": "2024-03-23T22:54:48Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39803606"
+        },
+        {
+          "title": "Running Adobe's 1991 PostScript Interpreter in the Browser",
+          "url": "https://www.pagetable.com/?p=1854",
+          "points": 150,
+          "num_comments": 35,
+          "created_at": "2026-05-01T11:58:11Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47973755"
+        },
+        {
+          "title": "Weaponizing PostScript",
+          "url": "https://lamehackersguide.blogspot.com/2017/02/weaponizing-postscript.html",
+          "points": 140,
+          "num_comments": 28,
+          "created_at": "2017-02-22T00:57:54Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13701897"
+        },
+        {
+          "title": "Inventing PostScript, the tech that took the pain out of printing (1988)",
+          "url": "https://spectrum.ieee.org/adobe-postscript",
+          "points": 125,
+          "num_comments": 52,
+          "created_at": "2022-04-23T20:33:35Z",
+          "hn_url": "https://news.ycombinator.com/item?id=31138228"
+        },
+        {
+          "title": "A Brainfuck interpreter written in PostScript",
+          "url": "https://github.com/nst/bfps",
+          "points": 117,
+          "num_comments": 55,
+          "created_at": "2023-12-05T13:43:24Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38530565"
+        },
+        {
+          "title": "PostScript: A Digital Printing Press",
+          "url": "https://computerhistory.org/blog/postscript-a-digital-printing-press/",
+          "points": 102,
+          "num_comments": 29,
+          "created_at": "2022-12-01T18:59:29Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33820907"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "An Update: I was warned about my child's martial arts school. I should have listened. \ud83e\udee4",
+          "subreddit": "mildlyinfuriating",
+          "score": 25424,
+          "num_comments": 2640,
+          "permalink": "https://reddit.com/r/mildlyinfuriating/comments/1rft766/an_update_i_was_warned_about_my_childs_martial/",
+          "selftext": "A while back, I made a post in here about my child's rough experience getting promoted at the martial arts school she was attending.\n\nTo summarize, they had recently changed their promotion requirements to be moved from a white to a blue uniform to be more difficult in order to ensure the kids were ready. \n\nShe didn't pass the first time she was tested and initially told that she didn't pass the second time either - this obviously led to a lot of tears before it was realized that apparently the "
+        },
+        {
+          "title": "Administration Shooting Itself In The Foot Again. Count On Stocks Being Down Significantly Tomorrow . . .",
+          "subreddit": "stocks",
+          "score": 6165,
+          "num_comments": 680,
+          "permalink": "https://reddit.com/r/stocks/comments/1qai9nf/administration_shooting_itself_in_the_foot_again/",
+          "selftext": "Federal prosecutors have opened a criminal investigation of\u00a0[Federal Reserve](https://www.cnbc.com/federal-reserve/)\u00a0Chairman\u00a0[Jerome Powell](https://www.cnbc.com/jay-powell/), he confirmed on Sunday evening. Powell said the probe was the result of the\u00a0[Fed](https://www.cnbc.com/2026/01/03/federal-reserve-powell-face-challenges-in-2026.html)\u00a0\u201csetting\u00a0[interest rates](https://www.cnbc.com/2025/12/10/fed-interest-rate-decision-december-2025-.html)\u00a0based on our best assessment of what will serve th"
+        },
+        {
+          "title": "I was warned about my child's martial arts school. I should have listened.",
+          "subreddit": "BestofRedditorUpdates",
+          "score": 4739,
+          "num_comments": 509,
+          "permalink": "https://reddit.com/r/BestofRedditorUpdates/comments/1rlo4ws/i_was_warned_about_my_childs_martial_arts_school/",
+          "selftext": "**I am NOT the Original Poster. That is** [LordTetravus](https://www.reddit.com/user/LordTetravus/). They posted in r/mildlyinfuriating and r/martialarts\n\n# Do NOT comment on Original Posts. Latest update is 7 days old.\n\n**Mood Spoiler:** &gt;!frustrating!&lt;\n\n**Original** [Post](https://www.reddit.com/r/mildlyinfuriating/comments/1n2r94t/deleted_by_user/)**: August 28, 2025 (recovered)**\n\n**Title:** My daughter's martial arts school utterly broke her heart before realizing that they had made a"
+        },
+        {
+          "title": "The first Cardinal to enter the state of Arizona was murdered by the state",
+          "subreddit": "nfl",
+          "score": 3031,
+          "num_comments": 208,
+          "permalink": "https://reddit.com/r/nfl/comments/1r4mxl0/the_first_cardinal_to_enter_the_state_of_arizona/",
+          "selftext": "This is not a shitpost. This is a real thing that happened, and if the Cardinals ever want to win again they need to reconcile with their history.\n\nThe NFL first expanded to the west coast in 1946 to compete with the new AAFC, moving the Cleveland Rams to Los Angeles. In 1946, the Chicago Cardinals traveled to Los Angeles to play the Rams. But airplanes were pretty expensive and ownership didn\u2019t want to pay for that, so they took the train from Chicago to LA.\u00a0\n\nThe two routes to go from Chicago "
+        },
+        {
+          "title": "'Tekken' Boss Katsuhiro Harada announces he is leaving Bandai Namco after 30 years of work and leading development on the fighting-game series",
+          "subreddit": "gaming",
+          "score": 2713,
+          "num_comments": 96,
+          "permalink": "https://reddit.com/r/gaming/comments/1ph9h7y/tekken_boss_katsuhiro_harada_announces_he_is/",
+          "selftext": "Full Statement:\n\n&gt;I\u2019d like to share that I\u2019ll be leaving Bandai Namco at the end of 2025. With the TEKKEN series reaching its 30th anniversary\u2014an important milestone for a project I\u2019ve devoted much of my life to\u2014I felt this was the most fitting moment to bring one chapter to a close.\n\n&gt;My roots lie in the days when I supported small local tournaments in Japanese arcades and in small halls and community centers overseas. I still remember carrying arcade cabinets by myself, encouraging peopl"
+        },
+        {
+          "title": "WIBTAH if I decided not to go back to my fianc\u00e9?",
+          "subreddit": "BestofRedditorUpdates",
+          "score": 2516,
+          "num_comments": 149,
+          "permalink": "https://reddit.com/r/BestofRedditorUpdates/comments/1macuub/wibtah_if_i_decided_not_to_go_back_to_my_fianc\u00e9/",
+          "selftext": "**I am NOT OOP, OOP is** u/ArrivalNo89\n\n**Originally posted to r/AITAH**\n\n**WIBTAH if I decided not to go back to my fianc\u00e9?**\n\n**Trigger Warnings:** &gt;!mentions death of a loved one, falsifying statements!&lt;\n\n**Mood Spoilers:** &gt;!frustrating!&lt;\n\n----\n\n[Original Post](https://www.reddit.com/r/AITAH/s/NMHIAYJmSZ): **December 15, 2024**\n\nSo I'm 35f and my fianc\u00e9 is 39m he has a 14 year old daughter. Me and my fianc\u00e9 have been together for 5 years. His late wife died when his daughter was "
+        },
+        {
+          "title": "J.K. Rowling just crushed Emma Watson and the dumbfuck, dangerous ideology she and the rest of the virtue-signalling shitheads in the Harry Potter cast supported.",
+          "subreddit": "CriticalDrinker",
+          "score": 1976,
+          "num_comments": 312,
+          "permalink": "https://reddit.com/r/CriticalDrinker/comments/1ntmqba/jk_rowling_just_crushed_emma_watson_and_the/",
+          "selftext": ""
+        },
+        {
+          "title": "\"Bad clients\"",
+          "subreddit": "comics",
+          "score": 1890,
+          "num_comments": 11,
+          "permalink": "https://reddit.com/r/comics/comments/1kn7moj/bad_clients/",
+          "selftext": "**comic postscript**\n\nInspired by a recent experience.\n\nThe notion of firing bad clients comes easily to some of the agency owners I know.\n\nNot to me. I let them make me utterly miserable first.\n\nWe all have our kinks, I suppose."
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://postscript.com/pricing",
+    "changelog": null,
+    "docs": "https://docs.postscript.com",
+    "integrations": "https://postscript.com/integrations",
+    "g2": "https://www.g2.com/products/postscript/reviews"
+  },
+  "analysis": {
+    "name": "Postscript",
+    "url": "https://postscript.com",
+    "tagline": "SMS Marketing Built for Ecommerce",
+    "value_proposition": "Postscript enables Shopify and ecommerce brands to grow revenue through SMS marketing automation, conversational selling, and compliant subscriber list growth.",
+    "target_segment": "SMB / mid-market",
+    "ideal_customer": "Shopify-native DTC ecommerce brands running high-volume SMS marketing campaigns who need deep store data integration and revenue attribution",
+    "features": [
+      {
+        "name": "sms campaigns",
+        "description": "One-time broadcast SMS and MMS messages sent to subscriber segments",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "automated flows",
+        "description": "Triggered SMS sequences based on shopper behavior such as welcome, abandoned cart, and post-purchase",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "abandoned cart recovery",
+        "description": "Automated SMS sent to subscribers who add to cart but do not complete checkout",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "welcome series",
+        "description": "Multi-step automated SMS sequence triggered on new subscriber opt-in",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "browse abandonment",
+        "description": "Automated SMS triggered when a subscriber views a product page without purchasing",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "back in stock notifications",
+        "description": "Automated SMS alert when a previously out-of-stock product becomes available",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "winback campaigns",
+        "description": "Automated re-engagement SMS targeting lapsed purchasers",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "segmentation",
+        "description": "Filter subscriber lists by purchase history, behavior, Shopify properties, and custom attributes",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "subscriber list growth tools",
+        "description": "Website popups, embedded forms, and checkout opt-in for building SMS subscriber lists",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "keyword opt-in",
+        "description": "Subscribers opt in or trigger automations by texting a keyword to a brand's number",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "mms support",
+        "description": "Send image and GIF-based multimedia messages alongside standard SMS",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "two-way sms / inbox",
+        "description": "Brand agents can read and reply to inbound subscriber messages through a unified inbox",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "postscript sales",
+        "description": "Human-assisted SMS selling where live sales agents engage subscribers in real-time to drive conversions",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "revenue attribution",
+        "description": "Track and report direct revenue driven by SMS campaigns and flows with configurable attribution windows",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "a/b testing",
+        "description": "Split-test message copy, send times, and flow variants to optimize performance",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "analytics and reporting",
+        "description": "Dashboard reporting on subscriber growth, click rates, conversion rates, and revenue per message",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "link tracking",
+        "description": "Automatically shorten and track links included in SMS messages",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "subscriber profiles",
+        "description": "Per-subscriber view of purchase history, engagement, opt-in source, and conversation history",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "tcpa compliance tools",
+        "description": "Built-in opt-in language, quiet hours enforcement, and double opt-in to maintain TCPA compliance",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "10dlc registration",
+        "description": "Managed registration and compliance for 10-digit long code sending",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "dedicated short codes",
+        "description": "Dedicated 5\u20136 digit short codes for high-volume sending with faster throughput",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "toll-free number support",
+        "description": "Verified toll-free numbers as an alternative to short codes for qualifying brands",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "shopify native integration",
+        "description": "Deep Shopify data sync enabling segmentation, triggers, and attribution using live store data",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "flow builder",
+        "description": "Visual drag-and-drop automation builder for constructing multi-step SMS journeys",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "list import",
+        "description": "Upload existing subscriber lists via CSV with compliance attestation",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "custom properties",
+        "description": "Store and use custom subscriber-level data fields for personalization and segmentation",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "personalization tokens",
+        "description": "Insert dynamic subscriber and order data (first name, product, discount code) into message copy",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "unique coupon codes",
+        "description": "Automatically generate and insert unique discount codes per subscriber in messages",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "opt-out management",
+        "description": "Automatic handling of STOP/UNSTOP replies and suppression list management",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "quiet hours",
+        "description": "Configurable send-time restrictions to avoid messaging subscribers outside acceptable hours",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "api access",
+        "description": "REST API for custom integrations and programmatic subscriber management",
+        "evidence_source": "other",
+        "tier": "paid"
+      }
+    ],
+    "integrations": [
+      "Shopify",
+      "Klaviyo",
+      "Gorgias",
+      "ReCharge",
+      "Yotpo",
+      "Okendo",
+      "Zapier",
+      "Google Analytics",
+      "Meta / Facebook",
+      "Attentive (competitor \u2014 not integration)",
+      "Privy",
+      "Justuno"
+    ],
+    "differentiators": [
+      "Purpose-built for Shopify \u2014 deepest native Shopify data integration among SMS platforms",
+      "Postscript Sales: dedicated human SMS sales team product layered on top of automation",
+      "Revenue attribution tied directly to Shopify order data rather than proxy metrics",
+      "Compliance-first architecture with managed TCPA, 10DLC, and quiet hours built in"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [
+        "Tight Shopify integration \u2014 segment on any store data without data plumbing",
+        "Revenue attribution visibility \u2014 easy to see what SMS actually drove",
+        "Responsive customer support, especially for onboarding",
+        "Flow builder is intuitive for non-technical marketers",
+        "Postscript Sales feature praised for incremental revenue on high-AOV products"
+      ],
+      "complaints": [
+        "Pricing can escalate quickly as subscriber list and message volume grow",
+        "Limited native reporting depth \u2014 power users want more custom analytics",
+        "No meaningful free tier; barrier to entry for very early-stage brands",
+        "Some complaints about deliverability hiccups during 10DLC transition period",
+        "Compared to Klaviyo, SMS-only focus means brands still need a second tool for email"
+      ],
+      "sources": [
+        "g2",
+        "shopify app store reviews (inferred)"
+      ]
+    },
+    "pricing_signal": {
+      "model": "self-serve",
+      "tier_count": 3,
+      "lowest_paid_seat": "~$100/mo (usage-based, scales with message volume)",
+      "free_tier": null
+    }
+  }
+}

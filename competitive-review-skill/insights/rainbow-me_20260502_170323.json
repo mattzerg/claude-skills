@@ -1,0 +1,499 @@
+{
+  "name": "Rainbow",
+  "url": "https://rainbow.me",
+  "domain": "rainbow.me",
+  "scanned_at": "2026-05-02T17:00:39.858061",
+  "sources": {
+    "landing": {
+      "url": "https://rainbow.me",
+      "title": "Rainbow | Fun, powerful, and secure crypto wallets",
+      "text": "Rainbow | Fun, powerful, and secure crypto wallets\nGet Support\nUpdates\nLearn\nDownload\nExperience Crypto in Color\nFun, powerful, and secure wallets for everyday use\nDownload Rainbow Extension\nDownload Rainbow Mobile\nRainbow Extension. Built for speed. Built for power. Built for You.\nDownload Rainbow Extension\nAvailable in your favorite browsers\nMove faster with keyboard shortcuts\nLeave your mouse at home\nA flow state experience for quick and versatile onchain actions - just press \u2318K and type your command.\nK\nMagic Menu\n1\nSwitch your wallet\nX\nSwap\nS\nSend\nW\nWallets\nEffortlessly manage hundreds of wallets\nImport and organize\nSwitch and reorder wallets\nSend\nManage NFTs\nSwap & Bridge\nWatch & Impersonate wallets\nImport and organize\nSwitch and reorder wallets\nSend\nManage NFTs\nSwap & Bridge\nWatch & Impersonate wallets\nImport and organize\nSwitch and reorder wallets\nSend\nManage NFTs\nSwap & Bridge\nWatch & Impersonate wallets\nAll the chains that matter in one place\nOne convenient interface\ntailored for you\nImpersonation mode\nUse any wallet in read-only mode with just an address\nHardware wallets\nDo anything with Ledger & Trezor from Rainbow\nAll the L2s\nTokens, activity details, and NFTs for the L2s that matter\nSecure\nLeverages the latest extension standards for your safety and security\nNFTs\nSee your collections, access market data, & trade\nCustom RPCs\nAdd any EVM chain\nSwap and bridge It just works\nCross-chain swaps, endless DEX and bridge liquidity, and Flashbots protection from sandwich attacks and MEV.\nAlways the best available price\nWhat you see is what you get\nThe best way to experience NFTs\nSee and organize all your NFTs across all Ethereum chains on mobile and desktop.\nAll the media formats\nAll the chains that matter\nControlled by you Supported by us\nYou are in full control of your funds, and we never have access to your private keys. But if you need support, we're here for you.\nGlobal support team 24/7\nThanks for responding within 4 minutes & assisting w/ incredible customer service!\nBest and fastest customer service in in web3 even better then so many web2 companies\nbest support by far\nGotta say, @rainbowdotme is probably the wallet I\u2019d recommend to new users. super easy to use, great design, and solid customer service \ud83d\udc4c\nHow is your support so f*ing good?\nOnchain On-the-Go. Ethereum in your pocket.\nDownload Rainbow Mobile\nAvailable on iOS and Android\nGet notified about what matters most\nKnow what happens the instant it\u2019s confirmed onchain. Customize the alerts you receive, from the type of transaction to the individual wallets you watch.\nFind the money that might be waiting for you\nSee and accept all of your NFT offers inside Rainbow.\nThe best way to set up your ENS profile\nAs seen in\nGet access to exclusive drops\nThe Rainbow Poolboy\nSoak in the sun and stream tunes all onchain summer directly from your Rainbow Wallet\nBow, the Rainbow Fini\nA special edition Rainbow Finiliar friend that keeps you up to date with the gas prices\nRainbow World\nGenerative. Interactive. Customizable. Bring your Citizen to life in Rainbow World.\nFrequently Asked Questions\nWhat is Rainbow?\nIs Rainbow safe?\nHow can I contact Rainbow's customer support?\nSee more FAQs \u2192\nDownload\nRainbow\nto get started\nDownload Rainbow Extension\nDownload Rainbow Mobile\n\ud83e\uddf0 rainbowkit\n\ud83d\udc7e github\n\u2b07\ufe0f media kit\n\ud83d\udcdc terms of use\n\ud83d\udd12 privacy policy",
+      "source": "playwright"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "url": "https://rainbow.me/changelog",
+      "title": "Updates and Release notes | Rainbow",
+      "text": "Updates and Release notes | Rainbow\nGet Support\nUpdates\nLearn\nDownload\nUpdates\nDiscover the latest features and changes in Rainbow.\nFollow us on Twitter\n\u00b7\nFollow on Farcaster\nSep 23, 2024\nBug fixes and performance improvements\nFixes & improvements\nApp\nv.1.9.39\nImproved\nRainbow Swaps have seen a performance improvement \u2014 we dusted off a couple cobwebs (the TL;DR is they're faster now) and made swapping even smoother \ud83c\udf08\nFixed\nFixed an issue with charts where it was using USD for points instead of user\u2019s selected currency\nFixed an issue where asset balances weren't updating correctly\nFixed an issue on Android nav bar where it was covered by the systems navigation bar\nFixed an issue with opacity when signing a transaction from Warpcast / via MWP\nFixed a crash that happened when searching for an input token in swaps\nFixed and issue with degen native asset address\nThis fixed degen \u2194 wdegen!\nFixed a bug on iOS 18 which caused context menu dismissals\nFixed a crash that was happening when sending tokens\nFixed a bug where the paste button was disabled when swapping on android devices\nFixed an issue where deleting a contact would cause loading issues on send flow\nFull release notes ->\nSep 12, 2024\nDegen Mode Swaps and Farcaster integration!\nNew features\nApp\nv.1.9.38\nTwo updates in once\nYou can now turn Degen Mode on in Swaps to skip the review step and ape as fast as possible. Plus Rainbow is compatible with\nall\nmobile transactions on Warpcast with the addition of MWP!\nFull release notes ->\nAug 26, 2024\nSee popular tokens and navigate with ease!\nNew features\nApp\nv.1.9.36\nPopular token suggestions\nNow when you open Swaps you'll see a list of suggested tokens that are popular with other Rainbow users! It's your choice whether you ape in with them or not though\u2026\nFull release notes ->\nAug 5, 2024\nOpen in Rainbow, recent swaps, and more swap love\nNew features\nApp\nv.1.9.34\nOpen links in Rainbow\nYou can click share \u2192 \u201cOpen in Rainbow\u201d (or tap the app icon) to open a link in the Rainbow in-app browser! It's available everywhere, so use it from your favorite browsers or social apps.\nSwaps are now even smoother\nTap to max\nHold to swap\nRecent swaps shortcuts\nCopy and paste swap\nFull release notes ->\nJul 24, 2024\nIt's App Fixes in July!\nFixes & improvements\nApp\nv1.9.32\nFixes\nFixed a crash involving prompt codes.\nFixed an issue with the keyboard dismissing the option to copy a contract address or view on Etherscan from the swaps search page.\nFixed a bug where changing the output asset on swaps lead to an incorrect state.\nFull release notes ->\nJul 12, 2024\nSwaps v2 has arrived!\nNew features\nOur new and improved swaps is here! Learn more about Swaps v2 in Rainbow for a greater mobile experience.\nRead more ->\nJun 25, 2024\nRainbow Rewards!\nPoints drop\nPhase 1 of our Rainbow Points program is here with Rainbow Rewards! Learn more about Rainbow Rewards and the best way to stack and convert into ETH!\nRead more ->\nJun 8, 2024\nFind tokens even easier in Swaps\nFixes & improvements\nExtension\nv1.4.122\nImproved\nYou can now search for a Token Contract Address in Swaps to more quickly find a token\nFixes\nResolved gas estimation issues for Blast and Degen chain\nFixed the\nTo\nfield in Activity Details for a transaction to better reflect a transaction recipient\nResolved\nNaN\nbalances displayed on the Tokens tab while reloading balances\nFixed text overflows for alternative languages on the Tip Banner on the Tokens tab\nFull release notes ->\nJun 5, 2024\nJune refresh has landed\nFixes & improvements\nApp\nv1.9.25\nFixes\nFixed a bug where incorrect data would show in pending transactions\nFixed a bug where a swap warning flashed when including a\nlarge\nnumber\nFull release notes ->\nMay 30, 2024\nWeekly fixes and polish\nFixes & improvements\nApp\nv1.9.24\nFixes\nFixed a bug where some mints with an unknown price were showing as free\nFixed issues with certain NFTs causing crashes on some wallets\nFixed an issue where the Buy ETH button/option would show when the selected wallet already had ETH\nFull release notes ->\nMay 29, 2024\nToken contract address search\nFixes & improvements\nExtension\nv1.4.111\nImproved\nYou can now search for Token Contract Addresses in the Magic Menu with Cmd+K to easily find and get an asset\nFixes\nResolved accuracy of Ethereum Sepolia and additional testnet gas estimates\nFixed a crash for some browsers that attempted to translate the Onboarding flow\nFull release notes ->\nMay 17, 2024\nMeet Rainbow\u2019s Onchain Browser\nNew features\nApp\nv1.9.23\nMeet Rainbow\u2019s Onchain Browser\nOnchain Browser is the best mobile experience for exploring and transacting onchain. It\u2019s a big step in the evolution of Rainbow and one of many important upgrades coming this month.\nThe Onchain Browser makes Rainbow\nfaster\n,\nsmoother\n,\nsafer\nand more\nreliable\n.\nTry it and earn extra points for interacting with dapps on the Onchain Browser. You\u2019ll never want (or have) to leave Rainbow again \ud83e\udee0\ud83c\udf08\nFull release notes ->\nMay 16, 2024\nManage Contacts, and Instantly Bridge\nNew features\nExtension\nv1.4.97\nNew\nYou can now add, remove, and manage Contacts in the Magic Menu with Cmd+K\nInstant bridging routes are now available in Rainbow for many core tokens and networks via the Relay Protocol\nImproved\nSearch result priority ordering improvements in the Magic Menu for commands, tokens, and more\nImproved translation coverage for the Magic Menu\nFixes\nResolved an issue where pending transactions could visually overlap in Activity\nBlocking auto-translation attempts in some browsers while interacting with your Secret Recovery Phrase\nFixed an issue with\nESC\nkeyboard dismissals for the Token Details card\nFixed an issue for some dApps like Etherscan that required triggering a connection request upon switching networks\nResolved interaction consistency with right-click menus and action menus in NFT Details\nFull release notes ->\nMay 1, 2024\nBetter slippage, Points hotkeys, and more\nFixes & improvements\nExtension\nv1.4.81\nImproved\nMore reliable and accurate slippage threshold estimates are now available for Swaps\nYou can now navigate the Points dashboard and Weekly Drops with your Keyboard\nFixes\nResolved issues for users that experienced a missing RPC and failed transactions on Degen Chain L3\nFixed an issue where Speed up and Cancel transaction would not appear in the Activity list\nImproved Ledger connection reliability to reduce signing timeouts\nResolved a UI display issue when Signing transactions for Hardware Wallets\nFixed text overflows for long wallet names on dApp Connection prompts and Transaction Previews\nImproved performance when launching Activity Details for a transaction\nFixed shortcuts handling on the Backup Reminders and added\nesc\ndismissal\nFull release notes ->\nApr 24, 2024\nAggregate balances, better Swaps\nFixes & improvements\nApp\nv1.9.22\nImproved\nRainbow now displays your total USD balance for your wallet inside of the Wallet Switcher and Send instead of\njust\nETH balances. Even better for L2s!\nFixes\nImproved quote reliability for Swaps\nFixed a crash when swapping ProxySwap on Degen Chain\nMinor copy update when using Send for an L2 network\nSomething new is coming soon for Swaps\n\ud83e\udd2b\nFull release notes ->\nApr 24, 2024\nAdd even more Custom Networks to Rainbow\nFixes & improvements\nExtension\nv1.4.73\nImproved\nAdded autofill support for Redstone and Rootstock networks in the Add Network flow\nFixes\nResolved duplicate instances of tokens like\nDEGEN\nwhen Rainbow introduces rich metadata for a new network\nResolved a white flash on launch for users in dark mode\nImproved quote price estimates for Swaps on Degen Chain\nFull release notes ->\nApr 23, 2024\n2x Points for Degens\nPoints drop\nEarn\n2x Points\non all transactions on Degen Chain this week. Trade and manage your Degen Chain tokens and NFTs using Rainbow!\nRead more ->\nApr 18, 2024\nRainbow x Degen Chain\nNetwork supported\nRainbow now fully supports Degen Chain across the app and extension\n\ud83d\udcb0  View and Send your $DEGEN balances\n\ud83d\udd00  Trade on Degen Chain with Swaps\n\ud83d\udda5\ufe0f  Connect to\nDegen.tips\nto Bridge and Claim your tips\n\ud83c\udfa9  Turn content into currency with Degen x Rainbow\nRead more ->\nApr 17, 2024\nApril refresh has landed\nNetwork supported\nApp\nv1.9.21\nNew\nAdded full support for Degen Chain, including sending, swapping, and connecting to dApps with WalletConnect\nImproved\nYou can now see price estimates in your preferred currency for simulations in the Transaction Preview sheet\nYou'll now see warning in Swaps when the quote's price impact is unknown\nYou'll also now see a warning in Send when attempting to send assets to a contract address\nFixes\nImproved WalletConnect pairing flow reliability and improved telemetry to diagnose additional issues\nImproved error handling on Web Profile preferences to mitigate crashes when hiding NFTs or organizing your Showcase\nFixed an unintentional scroll when dismissing Promotional cards on Discover\nFixed a bug where some NFTs wouldn't show up in your gallery\nFixed an bug where non-backed up wallets would show as backed up under certain conditions\nFixed pairing metadata display issues for Zora mints\nFull release notes ->\nApr 17, 2024\nFind your POAPs in the Gallery\nNew features\nExtension\nv1.4.65\nNew\nYour POAP collection is now available in the NFT Gallery\nDegen Chain is now fully supported in Rainbow. Send, Swap, and interact with Degen dApps with Rainbow\nImproved\nYou'll now see USD or preferable currency estimates for each Transaction Preview, so that you can at a glance understand the real cost of a transaction\nEnabled Transaction Previews and simulation for Contract deployments\nIt's now even easier to Speed up and Cancel a transaction\nShortcuts on now supported for the Token Details menus\nFixes\nResolved an issue where Zora Chain would be unavailable for a subset of users after an extension upgrade\nNow hiding Transaction Simulation tabs when no result is available\nYou'll now see a warning when Rainbow is missing asset prices for an attempted Swap\nFixed an issue where transactions could appear for disabled networks in the Activity list\nFixed an issue where dApp requests to switch chain may fail after adding a new network or RPC\nFixed balance resolution for Custom Networks to properly display Transaction Previews instead of gas top-up requests\nFixed dApp connection network badge positioning\nFixed Transaction Preview network badge size\nFixed double click text selection in Custom Gas gwei input fields\nFixed currency pass-through in Transaction Previews so that you'll always see your preferred currency denomination\nFixed UI for when a simulation balance and price is unavailable in Transaction Previews\nFull release notes ->\nApr 9, 2024\nBlast support is here\nNetwork supported\nRainbow now supports Blast as a first class network!\nBridge to\n@Blast_L2\ntoday, explore the ecosystem and start earning native yield on ETH & stablecoins!\nIn Rainbow, Blast is automatically enabled and treated like all other networks. This means you can:\nSwap\nand\ntrade\ndirectly in Rainbow, with colorful charts and data\nTrack\nall your token and NFTs automatically (don\u2019t worry about manually adding)\nManage\nand\nshowcase\nyour Blast NFTs\nBridge\nto-and-from Blast directly in Rainbow\nConnect\nand\ninteract\nwith dapps across the Blast ecosystem\nDouble dip on Points\nRead more ->\nApr 8, 2024\nSpring cleaning & polishing\nFixes & improvements\nExtension\nv1.4.55\nFixes\nFixed an issue with balance estimation during Sends on Polygon and BSC\nNow showing the right transaction explorer in the right-click menu on Activity\nFixed an issue that hid failed transactions from the Activity list\nResolved transaction display settlement issues after performing a Swap, to prevent incorrect transaction types from being displayed\nImproved currency display values in Activity Details for each transaction\nResolved cell highlight rounding issues on the Settings menu when navigating with your keyboard\nResolved missing asset icons in the Activity list\nFull release notes ->\nApr 2, 2024\nRevamped Backups at last\nNew features\nApp\nv1.9.20\nNew\nBackups are more reliable than ever with a completely redesigned Backup flow. Ensure your Secret Recovery Phrases are backed up today and try it out in Settings\nImproved\nAdded a pending transaction indicator on the tab bar when transactions are being broadcast\nFixes\nResolved an issue where\n$Nan\nmay appear in the Transaction Details sheet, and improved speed and reliability\nImproved NFT Offers and Mints gas estimations and success rates using simulations\nProperly refetching balances after a transaction is confirmed to ensure accurate balances\nFixed token metadata display issues when searching by contract address in Discover\nHiding favorite buttons for non-Mainnet assets\nFixed a crash when tapping the Settings button\nImproved WalletConnect v2 sessions telemetry for user diagnostics\nFull release notes ->\nApr 2, 2024\nReferral Week!\nPoints drop\nReferral week is here once again! When a friend you invite to Rainbow has made $10 in cumulative Swap volume, you\nwill start earning 10% of all of their Rainbow Points\nfrom their activity in Rainbow.\nRefer your friends to Rainbow this week and earn 2x Points on all your activity as well as the wallets\u2019 that you referred.\nReferring people to Rainbow is the best way to earn Rainbow Points!\nRead more ->\nOct 11, 2023\nBridging and Testnets\nNew features\nExtension\nv1.2.39\nBridging\nBridging is easier than ever when right-clicking on a token or choosing to Bridge from the Token Details pane\nTestnets\nYou can now connect to all major Testnets for Rainbow's supported networks to sign and send testnet transactions. When connecting to or switching networks from a dApp that supports Testnets, you'll automatically be connected to the correct testnet by default, without needing to manage an RPC or network list.\nFull release notes ->",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://learn.rainbow.me",
+      "title": "Rainbow Learn",
+      "text": "Rainbow Learn\n\ud83c\udf08 Download Rainbow\nSearch\n\u2318\nK\nRainbow Learn\nRainbow is a fun, simple, and secure way to create an Ethereum wallet, collect NFTs, and explore the new world of Web3.\n\ud83d\udc47\nOn this page you\u2019ll find guides and educational resources that will help you navigate the world of Web3 and Ethereum.\nTo check out our support resources, head to\nrainbow.me/support\nTo download the Rainbow App or Extension, head to\nrainbow.me/download\nIf you have any questions, reach out via email at:\nhello@rainbow.me\nor DM us on X:\n@rainbowdotme\nClick the  \ud83d\udd0d\u00a0 at the top right of this page to find what you need!\nLearn more about Crypto, Ethereum, and Web3:\nBeginner\u2019s Guides:\nCollect NFTs on OpenSea\n\ud83e\udd14\nCrypto and Wallets\n\ud83e\udd9a\nERC Tokens\n\ud83d\udd03\nLayer 2 and Layer 3 Networks\nLearn More About Base\nLearn More About Ledger\nLearn More About POAPs\n\ud83d\udeb0\nLiquidity Providing\nWhat is Blind Signing?\n\ud83e\udd1d\nWhat\u2019s Self-Custody?\nWhat is a Hardware Wallet?\n\ud83d\udebe\nWhat is WalletConnect v2?\nBlockchains and Fees:\n\ud83c\udf09\nCross Chain Swaps and Bridging with Rainbow\n\u26fd\nGas Fees Explained\nUnderstanding Bridged vs Native USDC\n\ud83d\udd17\nUnderstanding Blockchains\nTools and Resources:\nEtherscan.io\n\ud83d\udcbe\nGlossary\nWhat is Web3?:\n\ud83e\udde0\nUnderstanding Web3\nMore at Rainbow\n:\nConnect with Us:\n\ud83d\udce7\nGet in Touch!\nPartners:\nHow to Use Rainbow with PoolTogether\nHow to use Rainbow with Stealcam\nHow to use Rainbow with Friend.tech\nRainbow is for Arbitrum\nRainbow is for Doges\nRainbow is for Finiliars\nRainbow Zorbs\nWhat is Zora?\n\ud83c\udf34\nIntroducing Poolsuite\nGeneral Info:\n\ud83c\udfe6\nBuying Crypto with Rainbow\n\ud83c\udf08\nSwap with Confidence with Rainbow\n\ud83c\udfa1\nWhere can I find tax information?\nRainbowKit:\n\ud83e\uddf0\nWhat is RainbowKit?\nOptimism:\nRainbow is for Optimists",
+      "source": "playwright"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/rainbow/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Turbo, an Improved Rainbow Colormap for Visualization",
+          "url": "https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html",
+          "points": 494,
+          "num_comments": 121,
+          "created_at": "2019-08-21T03:32:37Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20754364"
+        },
+        {
+          "title": "Ask HN: Why don't I see gold at the end of the remote working rainbow?",
+          "url": null,
+          "points": 468,
+          "num_comments": 787,
+          "created_at": "2022-10-19T08:50:25Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33259351"
+        },
+        {
+          "title": "The 12-bit rainbow palette",
+          "url": "https://iamkate.com/data/12-bit-rainbow/",
+          "points": 421,
+          "num_comments": 121,
+          "created_at": "2022-11-18T08:00:28Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33651724"
+        },
+        {
+          "title": "Show HN: Rainbow \u2013 an attempt to display colour on a B&W monitor",
+          "url": "https://www.anfractuosity.com/projects/rainbow/",
+          "points": 389,
+          "num_comments": 58,
+          "created_at": "2020-06-27T13:43:18Z",
+          "hn_url": "https://news.ycombinator.com/item?id=23661808"
+        },
+        {
+          "title": "Bring Reading Rainbow Back",
+          "url": "https://www.kickstarter.com/projects/readingrainbow/bring-reading-rainbow-back-for-every-child-everywh",
+          "points": 374,
+          "num_comments": 85,
+          "created_at": "2014-05-28T15:43:21Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7810839"
+        },
+        {
+          "title": "\u201cReading Rainbow\u201d was created to combat summer reading slumps",
+          "url": "https://www.smithsonianmag.com/smithsonian-institution/to-combat-summer-reading-slumps-this-timeless-childrens-television-show-tried-to-bridge-the-literacy-gap-with-the-magic-of-stories-180986984/",
+          "points": 345,
+          "num_comments": 219,
+          "created_at": "2025-07-17T00:43:41Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44588491"
+        },
+        {
+          "title": "The 12-bit rainbow palette",
+          "url": "https://iamkate.com/data/12-bit-rainbow/",
+          "points": 325,
+          "num_comments": 81,
+          "created_at": "2025-04-28T23:12:28Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43827108"
+        },
+        {
+          "title": "Rainbow Six Vegas, SWAT 4 unplayable due to disabled ad server",
+          "url": "https://twitter.com/_eezstreet_/status/1437652748179234819",
+          "points": 293,
+          "num_comments": 117,
+          "created_at": "2021-09-14T14:56:42Z",
+          "hn_url": "https://news.ycombinator.com/item?id=28525828"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": null,
+    "docs": "https://learn.rainbow.me",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/rainbow/reviews"
+  },
+  "analysis": {
+    "name": "Rainbow",
+    "url": "https://rainbow.me",
+    "tagline": "Experience Crypto in Color",
+    "value_proposition": "A self-custody Ethereum and multi-chain wallet offering fun UX, NFT management, swaps with MEV protection, and best-in-class customer support for everyday crypto users.",
+    "target_segment": "consumer",
+    "ideal_customer": "Everyday crypto users and NFT collectors who want a polished, safe, and easy-to-use self-custody wallet on mobile and desktop",
+    "features": [
+      {
+        "name": "browser extension wallet",
+        "description": "Chrome and compatible browser extension for onchain actions with keyboard-first UX",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "mobile wallet",
+        "description": "iOS and Android app for managing crypto, NFTs, and onchain activity",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "magic menu",
+        "description": "Cmd+K command palette for quick onchain actions: swap, send, switch wallet, and more",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "keyboard shortcuts",
+        "description": "Hotkeys for common actions (X=swap, S=send, W=wallets) enabling mouseless workflow",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "multi-wallet management",
+        "description": "Import, organize, switch, and reorder hundreds of wallets in one interface",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "wallet import",
+        "description": "Import existing wallets via seed phrase or private key",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "watch mode / impersonation mode",
+        "description": "Use any wallet in read-only mode with just a public address",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "hardware wallet support",
+        "description": "Full transaction signing support for Ledger and Trezor devices",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "send tokens",
+        "description": "Send ERC-20 tokens and native assets to addresses or contacts",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "nft management",
+        "description": "View, organize, and manage NFT collections across all Ethereum chains on mobile and desktop",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "nft market data",
+        "description": "See market data and floor prices for NFT collections",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "nft offer management",
+        "description": "View and accept all incoming NFT offers inside the app",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "swap",
+        "description": "In-app token swaps aggregating DEX liquidity for best available price",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "cross-chain bridge",
+        "description": "Bridge assets across chains with access to multiple bridge liquidity sources",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "instant bridging",
+        "description": "Instant bridging routes for core tokens and networks via Relay Protocol",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "flashbots / mev protection",
+        "description": "Swap routing through Flashbots to protect against sandwich attacks and MEV",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "slippage controls",
+        "description": "Configurable slippage tolerance with more reliable threshold estimates",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "degen mode",
+        "description": "Skip the swap review step to execute trades as fast as possible",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "popular token suggestions",
+        "description": "Surfaced list of tokens popular with other Rainbow users when opening Swaps",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "token contract address search",
+        "description": "Search for tokens by contract address in Swaps and Magic Menu",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "recent swaps shortcuts",
+        "description": "Quick-access shortcuts for recently swapped token pairs",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "swaps v2",
+        "description": "Redesigned swap experience with improved mobile flow and performance",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "multi-chain support",
+        "description": "Unified interface for tokens, activity, and NFTs across major L2s and EVM chains",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "custom rpc",
+        "description": "Add any EVM-compatible chain via custom RPC endpoint",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "onchain browser",
+        "description": "Built-in mobile browser for exploring and transacting with dapps inside Rainbow",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "open in rainbow",
+        "description": "Share-sheet action to open external links directly in Rainbow's in-app browser",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "contact management",
+        "description": "Add, remove, and manage saved contacts for sending via Magic Menu",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "push notifications",
+        "description": "Real-time onchain transaction alerts with per-wallet and per-type customization",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "customizable transaction alerts",
+        "description": "Filter notifications by transaction type and individual watched wallets",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "ens profile",
+        "description": "Set up and manage ENS profiles directly from the wallet",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "self-custody",
+        "description": "Private keys stored locally; Rainbow never has access to user funds",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "walletconnect v2",
+        "description": "Connect to dapps via WalletConnect v2 protocol",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "farcaster / warpcast integration",
+        "description": "Sign mobile transactions from Warpcast via Mobile Wallet Protocol (MWP)",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "crypto on-ramp",
+        "description": "Buy ETH and other crypto directly within the app",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "transaction history / activity details",
+        "description": "Detailed activity feed showing transaction history including recipient and status",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "price charts",
+        "description": "Token price charts in user's selected fiat currency",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "points / rewards program",
+        "description": "Rainbow Points earned through onchain activity, convertible to ETH rewards",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "liquidity providing",
+        "description": "Guides and support for participating in DeFi liquidity pools",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "poap support",
+        "description": "View and manage POAP tokens within the wallet",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "rainbowkit",
+        "description": "Open-source developer SDK for adding wallet connection to dapps",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "exclusive nft drops access",
+        "description": "Access to exclusive NFT drops for Rainbow users",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "24/7 customer support",
+        "description": "Global support team available around the clock with fast response times",
+        "evidence_source": "landing",
+        "tier": "free"
+      },
+      {
+        "name": "testnet support",
+        "description": "Ethereum Sepolia and other testnet gas estimates and interactions",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "tap to max / hold to swap",
+        "description": "Gesture shortcuts for max token amount and rapid swap confirmation",
+        "evidence_source": "changelog",
+        "tier": "free"
+      }
+    ],
+    "integrations": [
+      "Ledger",
+      "Trezor",
+      "Flashbots",
+      "Relay Protocol",
+      "Farcaster",
+      "Warpcast",
+      "WalletConnect v2",
+      "OpenSea",
+      "ENS",
+      "Etherscan",
+      "PoolTogether",
+      "Stealcam",
+      "Friend.tech",
+      "Zora",
+      "Poolsuite",
+      "Base",
+      "Arbitrum",
+      "Optimism",
+      "Degen chain"
+    ],
+    "differentiators": [
+      "Flashbots MEV and sandwich attack protection built into swaps",
+      "Best-in-class customer support with claimed sub-5-minute response times",
+      "Keyboard-first Magic Menu (Cmd+K) for power-user onchain actions",
+      "Impersonation/watch mode to use any wallet read-only with just an address",
+      "'What you see is what you get' swap pricing transparency",
+      "Unified NFT experience across all Ethereum chains on both mobile and desktop",
+      "Built-in onchain browser eliminating need to leave the app for dapp interactions",
+      "Fun, consumer-oriented design language positioning crypto as accessible and enjoyable"
+    ],
+    "recent_ships": [
+      {
+        "date": "2024-09",
+        "what": "Degen Mode in Swaps (skip review step) and Farcaster/Warpcast MWP integration",
+        "source": "v1.9.38 \u2014 Two updates in once: Degen Mode on in Swaps to skip the review step and ape as fast as possible. Plus Rainbow is compatible with all mobile transactions on Warpcast with the addition of MWP!"
+      },
+      {
+        "date": "2024-09",
+        "what": "Swap performance improvements, bug fixes for charts, Android nav bar, and iOS 18",
+        "source": "v1.9.39 \u2014 Rainbow Swaps have seen a performance improvement \u2014 we dusted off a couple cobwebs (the TL;DR is they're faster now)"
+      },
+      {
+        "date": "2024-08",
+        "what": "Popular token suggestions when opening Swaps",
+        "source": "v1.9.36 \u2014 Now when you open Swaps you'll see a list of suggested tokens that are popular with other Rainbow users"
+      },
+      {
+        "date": "2024-08",
+        "what": "Open in Rainbow share action, tap-to-max, hold-to-swap, recent swap shortcuts, copy/paste swap",
+        "source": "v1.9.34 \u2014 You can click share \u2192 'Open in Rainbow' (or tap the app icon) to open a link in the Rainbow in-app browser"
+      },
+      {
+        "date": "2024-07",
+        "what": "Swaps v2 \u2014 new and improved swap experience",
+        "source": "Our new and improved swaps is here! Learn more about Swaps v2 in Rainbow for a greater mobile experience."
+      },
+      {
+        "date": "2024-06",
+        "what": "Rainbow Rewards \u2014 Phase 1 of Points program launching with ETH conversion",
+        "source": "Phase 1 of our Rainbow Points program is here with Rainbow Rewards!"
+      },
+      {
+        "date": "2024-06",
+        "what": "Token contract address search in Swaps for extension",
+        "source": "v1.4.122 \u2014 You can now search for a Token Contract Address in Swaps to more quickly find a token"
+      },
+      {
+        "date": "2024-05",
+        "what": "Onchain Browser launched in mobile app",
+        "source": "v1.9.23 \u2014 Onchain Browser is the best mobile experience for exploring and transacting onchain."
+      },
+      {
+        "date": "2024-05",
+        "what": "Contact management in Magic Menu and instant bridging via Relay Protocol",
+        "source": "v1.4.97 \u2014 You can now add, remove, and manage Contacts in the Magic Menu with Cmd+K. Instant bridging routes are now available in Rainbow for many core tokens and networks via the Relay Protocol."
+      },
+      {
+        "date": "2024-05",
+        "what": "Token contract address search in Magic Menu (Cmd+K)",
+        "source": "v1.4.111 \u2014 You can now search for Token Contract Addresses in the Magic Menu with Cmd+K to easily find and get an asset"
+      },
+      {
+        "date": "2024-05",
+        "what": "Improved slippage threshold estimates and Points hotkeys in extension",
+        "source": "v1.4.81 \u2014 More reliable and accurate slippage threshold estimates are now available"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Fast customer support: 'Thanks for responding within 4 minutes & assisting w/ incredible customer service!'",
+        "Best support in crypto: 'Best and fastest customer service in web3 even better than so many web2 companies'",
+        "Recommended for new users: 'super easy to use, great design, and solid customer service'",
+        "Exceptional responsiveness: 'How is your support so f*ing good?'"
+      ],
+      "complaints": [],
+      "sources": [
+        "landing page testimonials"
+      ]
+    },
+    "pricing_signal": {
+      "model": "freemium",
+      "tier_count": 1,
+      "lowest_paid_seat": null,
+      "free_tier": "Full wallet functionality \u2014 swaps, bridges, NFTs, multi-chain, hardware wallet, onchain browser, push notifications, points/rewards \u2014 all free; revenue model appears to be swap fees"
+    }
+  }
+}

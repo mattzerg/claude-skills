@@ -1,0 +1,747 @@
+{
+  "name": "Infobip",
+  "url": "https://infobip.com",
+  "domain": "infobip.com",
+  "scanned_at": "2026-05-02T23:56:05.609074",
+  "sources": {
+    "landing": {
+      "url": "https://infobip.com",
+      "title": "Infobip - The best omnichannel marketing platform",
+      "text": "Infobip - The best omnichannel marketing platform\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use necessary cookies to make our website and web-based interface work. With your permission we will set optional cookies to provide social media features, to show you personalised ads relevant to your interests, and to analyse our traffic. We won't set optional cookies unless you enable them.   To get more information about these cookies, how and why we use them and how you can change your settings, check our\nCookie Policy\n.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nFunctional\nAnalytical\nAdvertising\nShow details\nDetails\nNecessary\n124\nWe use necessary cookies to make our website and web-based interface work properly. Necessary cookies enable core functionalities such as security, network management, and accessibility.\nAirtable\n9\nLearn more about this provider\n__Host-airtable-session\nContains a specific ID for the current session. This is necessary for running the website correctly.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__Host-airtable-session.sig\nContains a specific ID for the current session. This is necessary for running the website correctly.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nAWSALBTG\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nAWSALBTGCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nbrw\nDetects and logs potential errors on third-party provided functions on the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nlogin-status-p\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nAmazon\n13\nLearn more about this provider\nvisitorId\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ncookietest\u00a0[x12]\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nEventbrite\n3\nLearn more about this provider\ncsrftoken\nHelps prevent Cross-Site Request Forgery (CSRF) attacks.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ndebug\u00a0[x2]\nThis cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n7\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nUsed to check if the user's browser supports cookies.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_grecaptcha\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::b\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::d-15#\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::f\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nMckinsey &amp; Company\n3\nLearn more about this provider\n_abck\nUsed to detect and defend against replay-cookie-attacks \u2013 The cookie is necessary for the security and integrity of the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nAKA_A2\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nbm_sz\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nStripe\n3\nLearn more about this provider\n__stripe_mid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__stripe_sid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nm\nDetermines the device used to access the website. This allows the website to be formatted accordingly.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nSurveyMonkey\n1\nLearn more about this provider\nauth\nRegisters whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nUsercentrics GmbH\n2\nLearn more about this provider\nucData\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nucString\nNecessary for the correct implementation of the websites Consent Management Platform (CMP)\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nZapier\n1\nLearn more about this provider\nvisitor_id\nPreserves the visitor's session state across page requests.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nacademy.infobip.com\ncookiebot.com\nexperiences.infobip.com\nlivechat.infobip.com\npartners.infobip.com\nresearch.infobip.com\nsst.infobip.com\nstartups.infobip.com\nstatus.infobip.com\nsupport.infobip.com\n24\nCookieConsent\u00a0[x24]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nacademy.infobip.com\npartners.infobip.com\nresearch.infobip.com\nstartups.infobip.com\nsupport.infobip.com\nwww.infobip.com\n6\ncache-sprite-plyr\u00a0[x6]\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncache.sessionize.com\nsessionize.com\n2\nSESS#\u00a0[x2]\nPreserves users states across page requests.\nMaximum Storage Duration\n: 6 months\nType\n: HTTP Cookie\ncdn-web.infobip.com\npartners.infobip.com\nstartups.infobip.com\n3\nes-storage\u00a0[x3]\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncdn.evbstatic.com\n2\ncookies.js\u00a0[x2]\nDetermines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ncdn.signalfx.com\n1\n_splunk_rum_sid\nDetects and logs potential errors on third-party provided functions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nembed.lu.ma\nt.co\nplayer.vimeo.com\n4\n__cf_bm\u00a0[x4]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\ngeoip-js.com\nslush.org\nvimeo.com\nzoominfo.com\n4\n_cfuvid\u00a0[x4]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ngoogle.com\nwww.recaptcha.net\n2\n_GRECAPTCHA\u00a0[x2]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\ninfobip.com\n4\najs_anonymous_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\najs_group_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\najs_user_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nIbAuthCookie\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\njs.tito.io\n1\nsessionId\nPreserves the visitor's session state across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nportal.infobip.com\nportal2.infobip.com\nportal-ae2.infobip.com\nportal-eu1.infobip.com\nportal-eu2.infobip.com\nportal-gb1.infobip.com\nportal-id1.infobip.com\nportal-munm.infobip.com\nportal-ny2.infobip.com\nportal-sa2.infobip.com\nportal-tr1.infobip.com\nwww.infobip.com\n12\n_csrf\u00a0[x12]\nEnsures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.infobip.com\nacademy.infobip.com\npartners.infobip.com\nresearch.infobip.com\nstartups.infobip.com\nsupport.infobip.com\n12\nplyr\u00a0[x6]\nNecessary for the implementation of video-content on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ntraffic_type\u00a0[x6]\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.infobip.com\npartners.infobip.com\n2\nwp-wpml_current_language\u00a0[x2]\nDesignates the country code that is calculated based on the user's IP address. Used to determine what language should be used for the visitor.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.infobip.com\npartners.infobip.com\nstartups.infobip.com\n3\nesForms-country\u00a0[x3]\nPending\nMaximum Storage Duration\n: 15 days\nType\n: HTTP Cookie\nFunctional\n11\nFunctionality   cookies allow the website and web-based interface to remember your preferences   and settings e.g., by remembering your language choice.\nAirtable\n2\nLearn more about this provider\ninternal/page_view\nStores data entered with a form so that when you return to the website you don't have to fill in the data again.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nAmazon\n1\nLearn more about this provider\nrp.gif\nNecessary for the implementation of the Reddit.com's share-button function.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nCookiebot\n1\nLearn more about this provider\nCookieConsentBulkSetting-#\nEnables cookie consent across multiple websites\nMaximum Storage Duration\n: 1 year\nType\n: HTML Local Storage\nSurveyMonkey\n1\nLearn more about this provider\nep#\nSaves user states across page requests when completing a web-based survey.\nMaximum Storage Duration\n: 3 months\nType\n: HTTP Cookie\nfast.wistia.net\npartners.infobip.com\n3\nwistia-video-progress-#\u00a0[x3]\nContains a timestamp for the website\u2019s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.infobip.com\n3\nchakra-ui-color-mode\nNecessary for the functionality of the website's chat-box function.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlightMode\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nloglevel\nMaintains settings and outputs when using the Developer Tools Console on current session.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nAnalytical\n71\nThese cookies   collect information that is used either in aggregate form to help us   understand how our website and web-based interface are being used, how   effective our marketing campaigns are, or to help us customize our web-based   interface for you to enhance your experience.\nAbtasty\n4\nLearn more about this provider\nABTasty\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: 13 months\nType\n: HTTP Cookie\nABTastySession\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nABTastyData\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition ",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.infobip.com/pricing",
+      "title": "Pricing",
+      "text": "Pricing\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use necessary cookies to make our website and web-based interface work. With your permission we will set optional cookies to provide social media features, to show you personalised ads relevant to your interests, and to analyse our traffic. We won't set optional cookies unless you enable them.   To get more information about these cookies, how and why we use them and how you can change your settings, check our\nCookie Policy\n.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nFunctional\nAnalytical\nAdvertising\nShow details\nDetails\nNecessary\n124\nWe use necessary cookies to make our website and web-based interface work properly. Necessary cookies enable core functionalities such as security, network management, and accessibility.\nAirtable\n9\nLearn more about this provider\n__Host-airtable-session\nContains a specific ID for the current session. This is necessary for running the website correctly.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__Host-airtable-session.sig\nContains a specific ID for the current session. This is necessary for running the website correctly.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nAWSALBTG\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nAWSALBTGCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nbrw\nDetects and logs potential errors on third-party provided functions on the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nlogin-status-p\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nAmazon\n13\nLearn more about this provider\nvisitorId\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ncookietest\u00a0[x12]\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nEventbrite\n3\nLearn more about this provider\ncsrftoken\nHelps prevent Cross-Site Request Forgery (CSRF) attacks.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ndebug\u00a0[x2]\nThis cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n7\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nUsed to check if the user's browser supports cookies.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_grecaptcha\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::b\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::d-15#\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::f\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nMckinsey &amp; Company\n3\nLearn more about this provider\n_abck\nUsed to detect and defend against replay-cookie-attacks \u2013 The cookie is necessary for the security and integrity of the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nAKA_A2\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nbm_sz\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nStripe\n3\nLearn more about this provider\n__stripe_mid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__stripe_sid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nm\nDetermines the device used to access the website. This allows the website to be formatted accordingly.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nSurveyMonkey\n1\nLearn more about this provider\nauth\nRegisters whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nUsercentrics GmbH\n2\nLearn more about this provider\nucData\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nucString\nNecessary for the correct implementation of the websites Consent Management Platform (CMP)\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nZapier\n1\nLearn more about this provider\nvisitor_id\nPreserves the visitor's session state across page requests.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nacademy.infobip.com\ncookiebot.com\nexperiences.infobip.com\nlivechat.infobip.com\npartners.infobip.com\nresearch.infobip.com\nsst.infobip.com\nstartups.infobip.com\nstatus.infobip.com\nsupport.infobip.com\n24\nCookieConsent\u00a0[x24]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nacademy.infobip.com\npartners.infobip.com\nresearch.infobip.com\nstartups.infobip.com\nsupport.infobip.com\nwww.infobip.com\n6\ncache-sprite-plyr\u00a0[x6]\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncache.sessionize.com\nsessionize.com\n2\nSESS#\u00a0[x2]\nPreserves users states across page requests.\nMaximum Storage Duration\n: 6 months\nType\n: HTTP Cookie\ncdn-web.infobip.com\npartners.infobip.com\nstartups.infobip.com\n3\nes-storage\u00a0[x3]\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncdn.evbstatic.com\n2\ncookies.js\u00a0[x2]\nDetermines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ncdn.signalfx.com\n1\n_splunk_rum_sid\nDetects and logs potential errors on third-party provided functions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nembed.lu.ma\nt.co\nplayer.vimeo.com\n4\n__cf_bm\u00a0[x4]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\ngeoip-js.com\nslush.org\nvimeo.com\nzoominfo.com\n4\n_cfuvid\u00a0[x4]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ngoogle.com\nwww.recaptcha.net\n2\n_GRECAPTCHA\u00a0[x2]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\ninfobip.com\n4\najs_anonymous_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\najs_group_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\najs_user_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nIbAuthCookie\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\njs.tito.io\n1\nsessionId\nPreserves the visitor's session state across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nportal.infobip.com\nportal2.infobip.com\nportal-ae2.infobip.com\nportal-eu1.infobip.com\nportal-eu2.infobip.com\nportal-gb1.infobip.com\nportal-id1.infobip.com\nportal-munm.infobip.com\nportal-ny2.infobip.com\nportal-sa2.infobip.com\nportal-tr1.infobip.com\nwww.infobip.com\n12\n_csrf\u00a0[x12]\nEnsures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.infobip.com\nacademy.infobip.com\npartners.infobip.com\nresearch.infobip.com\nstartups.infobip.com\nsupport.infobip.com\n12\nplyr\u00a0[x6]\nNecessary for the implementation of video-content on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ntraffic_type\u00a0[x6]\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.infobip.com\npartners.infobip.com\n2\nwp-wpml_current_language\u00a0[x2]\nDesignates the country code that is calculated based on the user's IP address. Used to determine what language should be used for the visitor.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.infobip.com\npartners.infobip.com\nstartups.infobip.com\n3\nesForms-country\u00a0[x3]\nPending\nMaximum Storage Duration\n: 15 days\nType\n: HTTP Cookie\nFunctional\n11\nFunctionality   cookies allow the website and web-based interface to remember your preferences   and settings e.g., by remembering your language choice.\nAirtable\n2\nLearn more about this provider\ninternal/page_view\nStores data entered with a form so that when you return to the website you don't have to fill in the data again.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nAmazon\n1\nLearn more about this provider\nrp.gif\nNecessary for the implementation of the Reddit.com's share-button function.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nCookiebot\n1\nLearn more about this provider\nCookieConsentBulkSetting-#\nEnables cookie consent across multiple websites\nMaximum Storage Duration\n: 1 year\nType\n: HTML Local Storage\nSurveyMonkey\n1\nLearn more about this provider\nep#\nSaves user states across page requests when completing a web-based survey.\nMaximum Storage Duration\n: 3 months\nType\n: HTTP Cookie\nfast.wistia.net\npartners.infobip.com\n3\nwistia-video-progress-#\u00a0[x3]\nContains a timestamp for the website\u2019s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.infobip.com\n3\nchakra-ui-color-mode\nNecessary for the functionality of the website's chat-box function.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlightMode\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nloglevel\nMaintains settings and outputs when using the Developer Tools Console on current session.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nAnalytical\n71\nThese cookies   collect information that is used either in aggregate form to help us   understand how our website and web-based interface are being used, how   effective our marketing campaigns are, or to help us customize our web-based   interface for you to enhance your experience.\nAbtasty\n4\nLearn more about this provider\nABTasty\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: 13 months\nType\n: HTTP Cookie\nABTastySession\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nABTastyData\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: Pe",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://infobip.com/changelog",
+      "title": "Page not found - Infobip",
+      "text": "Page not found - Infobip\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use necessary cookies to make our website and web-based interface work. With your permission we will set optional cookies to provide social media features, to show you personalised ads relevant to your interests, and to analyse our traffic. We won't set optional cookies unless you enable them.   To get more information about these cookies, how and why we use them and how you can change your settings, check our\nCookie Policy\n.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nFunctional\nAnalytical\nAdvertising\nShow details\nDetails\nNecessary\n124\nWe use necessary cookies to make our website and web-based interface work properly. Necessary cookies enable core functionalities such as security, network management, and accessibility.\nAirtable\n9\nLearn more about this provider\n__Host-airtable-session\nContains a specific ID for the current session. This is necessary for running the website correctly.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__Host-airtable-session.sig\nContains a specific ID for the current session. This is necessary for running the website correctly.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nAWSALBTG\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nAWSALBTGCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nbrw\nDetects and logs potential errors on third-party provided functions on the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nlogin-status-p\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nAmazon\n13\nLearn more about this provider\nvisitorId\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ncookietest\u00a0[x12]\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nEventbrite\n3\nLearn more about this provider\ncsrftoken\nHelps prevent Cross-Site Request Forgery (CSRF) attacks.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ndebug\u00a0[x2]\nThis cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n7\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nUsed to check if the user's browser supports cookies.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_grecaptcha\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::b\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::d-15#\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::f\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nMckinsey &amp; Company\n3\nLearn more about this provider\n_abck\nUsed to detect and defend against replay-cookie-attacks \u2013 The cookie is necessary for the security and integrity of the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nAKA_A2\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nbm_sz\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nStripe\n3\nLearn more about this provider\n__stripe_mid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__stripe_sid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nm\nDetermines the device used to access the website. This allows the website to be formatted accordingly.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nSurveyMonkey\n1\nLearn more about this provider\nauth\nRegisters whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nUsercentrics GmbH\n2\nLearn more about this provider\nucData\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nucString\nNecessary for the correct implementation of the websites Consent Management Platform (CMP)\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nZapier\n1\nLearn more about this provider\nvisitor_id\nPreserves the visitor's session state across page requests.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nacademy.infobip.com\ncookiebot.com\nexperiences.infobip.com\nlivechat.infobip.com\npartners.infobip.com\nresearch.infobip.com\nsst.infobip.com\nstartups.infobip.com\nstatus.infobip.com\nsupport.infobip.com\n24\nCookieConsent\u00a0[x24]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nacademy.infobip.com\npartners.infobip.com\nresearch.infobip.com\nstartups.infobip.com\nsupport.infobip.com\nwww.infobip.com\n6\ncache-sprite-plyr\u00a0[x6]\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncache.sessionize.com\nsessionize.com\n2\nSESS#\u00a0[x2]\nPreserves users states across page requests.\nMaximum Storage Duration\n: 6 months\nType\n: HTTP Cookie\ncdn-web.infobip.com\npartners.infobip.com\nstartups.infobip.com\n3\nes-storage\u00a0[x3]\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncdn.evbstatic.com\n2\ncookies.js\u00a0[x2]\nDetermines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ncdn.signalfx.com\n1\n_splunk_rum_sid\nDetects and logs potential errors on third-party provided functions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nembed.lu.ma\nt.co\nplayer.vimeo.com\n4\n__cf_bm\u00a0[x4]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\ngeoip-js.com\nslush.org\nvimeo.com\nzoominfo.com\n4\n_cfuvid\u00a0[x4]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ngoogle.com\nwww.recaptcha.net\n2\n_GRECAPTCHA\u00a0[x2]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\ninfobip.com\n4\najs_anonymous_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\najs_group_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\najs_user_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nIbAuthCookie\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\njs.tito.io\n1\nsessionId\nPreserves the visitor's session state across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nportal.infobip.com\nportal2.infobip.com\nportal-ae2.infobip.com\nportal-eu1.infobip.com\nportal-eu2.infobip.com\nportal-gb1.infobip.com\nportal-id1.infobip.com\nportal-munm.infobip.com\nportal-ny2.infobip.com\nportal-sa2.infobip.com\nportal-tr1.infobip.com\nwww.infobip.com\n12\n_csrf\u00a0[x12]\nEnsures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.infobip.com\nacademy.infobip.com\npartners.infobip.com\nresearch.infobip.com\nstartups.infobip.com\nsupport.infobip.com\n12\nplyr\u00a0[x6]\nNecessary for the implementation of video-content on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ntraffic_type\u00a0[x6]\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.infobip.com\npartners.infobip.com\n2\nwp-wpml_current_language\u00a0[x2]\nDesignates the country code that is calculated based on the user's IP address. Used to determine what language should be used for the visitor.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.infobip.com\npartners.infobip.com\nstartups.infobip.com\n3\nesForms-country\u00a0[x3]\nPending\nMaximum Storage Duration\n: 15 days\nType\n: HTTP Cookie\nFunctional\n11\nFunctionality   cookies allow the website and web-based interface to remember your preferences   and settings e.g., by remembering your language choice.\nAirtable\n2\nLearn more about this provider\ninternal/page_view\nStores data entered with a form so that when you return to the website you don't have to fill in the data again.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nAmazon\n1\nLearn more about this provider\nrp.gif\nNecessary for the implementation of the Reddit.com's share-button function.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nCookiebot\n1\nLearn more about this provider\nCookieConsentBulkSetting-#\nEnables cookie consent across multiple websites\nMaximum Storage Duration\n: 1 year\nType\n: HTML Local Storage\nSurveyMonkey\n1\nLearn more about this provider\nep#\nSaves user states across page requests when completing a web-based survey.\nMaximum Storage Duration\n: 3 months\nType\n: HTTP Cookie\nfast.wistia.net\npartners.infobip.com\n3\nwistia-video-progress-#\u00a0[x3]\nContains a timestamp for the website\u2019s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.infobip.com\n3\nchakra-ui-color-mode\nNecessary for the functionality of the website's chat-box function.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlightMode\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nloglevel\nMaintains settings and outputs when using the Developer Tools Console on current session.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nAnalytical\n71\nThese cookies   collect information that is used either in aggregate form to help us   understand how our website and web-based interface are being used, how   effective our marketing campaigns are, or to help us customize our web-based   interface for you to enhance your experience.\nAbtasty\n4\nLearn more about this provider\nABTasty\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: 13 months\nType\n: HTTP Cookie\nABTastySession\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nABTastyData\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Stor",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://www.infobip.com/docs",
+      "title": "Infobip Documentation Hub | Infobip Docs",
+      "text": "Infobip Documentation Hub | Infobip Docs\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use necessary cookies to make our website and web-based interface work. With your permission we will set optional cookies to provide social media features, to show you personalised ads relevant to your interests, and to analyse our traffic. We won't set optional cookies unless you enable them.   To get more information about these cookies, how and why we use them and how you can change your settings, check our\nCookie Policy\n.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nFunctional\nAnalytical\nAdvertising\nShow details\nDetails\nNecessary\n124\nWe use necessary cookies to make our website and web-based interface work properly. Necessary cookies enable core functionalities such as security, network management, and accessibility.\nAirtable\n9\nLearn more about this provider\n__Host-airtable-session\nContains a specific ID for the current session. This is necessary for running the website correctly.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__Host-airtable-session.sig\nContains a specific ID for the current session. This is necessary for running the website correctly.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nAWSALBTG\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nAWSALBTGCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nbrw\nDetects and logs potential errors on third-party provided functions on the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nlogin-status-p\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nAmazon\n13\nLearn more about this provider\nvisitorId\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ncookietest\u00a0[x12]\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nEventbrite\n3\nLearn more about this provider\ncsrftoken\nHelps prevent Cross-Site Request Forgery (CSRF) attacks.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ndebug\u00a0[x2]\nThis cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n7\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nUsed to check if the user's browser supports cookies.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_grecaptcha\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::b\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::d-15#\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::f\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nMckinsey &amp; Company\n3\nLearn more about this provider\n_abck\nUsed to detect and defend against replay-cookie-attacks \u2013 The cookie is necessary for the security and integrity of the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nAKA_A2\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nbm_sz\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nStripe\n3\nLearn more about this provider\n__stripe_mid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__stripe_sid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nm\nDetermines the device used to access the website. This allows the website to be formatted accordingly.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nSurveyMonkey\n1\nLearn more about this provider\nauth\nRegisters whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nUsercentrics GmbH\n2\nLearn more about this provider\nucData\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nucString\nNecessary for the correct implementation of the websites Consent Management Platform (CMP)\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nZapier\n1\nLearn more about this provider\nvisitor_id\nPreserves the visitor's session state across page requests.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nacademy.infobip.com\ncookiebot.com\nexperiences.infobip.com\nlivechat.infobip.com\npartners.infobip.com\nresearch.infobip.com\nsst.infobip.com\nstartups.infobip.com\nstatus.infobip.com\nsupport.infobip.com\n24\nCookieConsent\u00a0[x24]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nacademy.infobip.com\npartners.infobip.com\nresearch.infobip.com\nstartups.infobip.com\nsupport.infobip.com\nwww.infobip.com\n6\ncache-sprite-plyr\u00a0[x6]\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncache.sessionize.com\nsessionize.com\n2\nSESS#\u00a0[x2]\nPreserves users states across page requests.\nMaximum Storage Duration\n: 6 months\nType\n: HTTP Cookie\ncdn-web.infobip.com\npartners.infobip.com\nstartups.infobip.com\n3\nes-storage\u00a0[x3]\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncdn.evbstatic.com\n2\ncookies.js\u00a0[x2]\nDetermines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ncdn.signalfx.com\n1\n_splunk_rum_sid\nDetects and logs potential errors on third-party provided functions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nembed.lu.ma\nt.co\nplayer.vimeo.com\n4\n__cf_bm\u00a0[x4]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\ngeoip-js.com\nslush.org\nvimeo.com\nzoominfo.com\n4\n_cfuvid\u00a0[x4]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ngoogle.com\nwww.recaptcha.net\n2\n_GRECAPTCHA\u00a0[x2]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\ninfobip.com\n4\najs_anonymous_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\najs_group_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\najs_user_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nIbAuthCookie\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\njs.tito.io\n1\nsessionId\nPreserves the visitor's session state across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nportal.infobip.com\nportal2.infobip.com\nportal-ae2.infobip.com\nportal-eu1.infobip.com\nportal-eu2.infobip.com\nportal-gb1.infobip.com\nportal-id1.infobip.com\nportal-munm.infobip.com\nportal-ny2.infobip.com\nportal-sa2.infobip.com\nportal-tr1.infobip.com\nwww.infobip.com\n12\n_csrf\u00a0[x12]\nEnsures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.infobip.com\nacademy.infobip.com\npartners.infobip.com\nresearch.infobip.com\nstartups.infobip.com\nsupport.infobip.com\n12\nplyr\u00a0[x6]\nNecessary for the implementation of video-content on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ntraffic_type\u00a0[x6]\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.infobip.com\npartners.infobip.com\n2\nwp-wpml_current_language\u00a0[x2]\nDesignates the country code that is calculated based on the user's IP address. Used to determine what language should be used for the visitor.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.infobip.com\npartners.infobip.com\nstartups.infobip.com\n3\nesForms-country\u00a0[x3]\nPending\nMaximum Storage Duration\n: 15 days\nType\n: HTTP Cookie\nFunctional\n11\nFunctionality   cookies allow the website and web-based interface to remember your preferences   and settings e.g., by remembering your language choice.\nAirtable\n2\nLearn more about this provider\ninternal/page_view\nStores data entered with a form so that when you return to the website you don't have to fill in the data again.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nAmazon\n1\nLearn more about this provider\nrp.gif\nNecessary for the implementation of the Reddit.com's share-button function.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nCookiebot\n1\nLearn more about this provider\nCookieConsentBulkSetting-#\nEnables cookie consent across multiple websites\nMaximum Storage Duration\n: 1 year\nType\n: HTML Local Storage\nSurveyMonkey\n1\nLearn more about this provider\nep#\nSaves user states across page requests when completing a web-based survey.\nMaximum Storage Duration\n: 3 months\nType\n: HTTP Cookie\nfast.wistia.net\npartners.infobip.com\n3\nwistia-video-progress-#\u00a0[x3]\nContains a timestamp for the website\u2019s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.infobip.com\n3\nchakra-ui-color-mode\nNecessary for the functionality of the website's chat-box function.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlightMode\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nloglevel\nMaintains settings and outputs when using the Developer Tools Console on current session.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nAnalytical\n71\nThese cookies   collect information that is used either in aggregate form to help us   understand how our website and web-based interface are being used, how   effective our marketing campaigns are, or to help us customize our web-based   interface for you to enhance your experience.\nAbtasty\n4\nLearn more about this provider\nABTasty\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: 13 months\nType\n: HTTP Cookie\nABTastySession\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nABTastyData\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the si",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.infobip.com/integrations",
+      "title": "Page not found - Infobip",
+      "text": "Page not found - Infobip\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use necessary cookies to make our website and web-based interface work. With your permission we will set optional cookies to provide social media features, to show you personalised ads relevant to your interests, and to analyse our traffic. We won't set optional cookies unless you enable them.   To get more information about these cookies, how and why we use them and how you can change your settings, check our\nCookie Policy\n.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nFunctional\nAnalytical\nAdvertising\nShow details\nDetails\nNecessary\n124\nWe use necessary cookies to make our website and web-based interface work properly. Necessary cookies enable core functionalities such as security, network management, and accessibility.\nAirtable\n9\nLearn more about this provider\n__Host-airtable-session\nContains a specific ID for the current session. This is necessary for running the website correctly.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__Host-airtable-session.sig\nContains a specific ID for the current session. This is necessary for running the website correctly.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nAWSALBTG\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nAWSALBTGCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nbrw\nDetects and logs potential errors on third-party provided functions on the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nlogin-status-p\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nAmazon\n13\nLearn more about this provider\nvisitorId\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ncookietest\u00a0[x12]\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nEventbrite\n3\nLearn more about this provider\ncsrftoken\nHelps prevent Cross-Site Request Forgery (CSRF) attacks.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ndebug\u00a0[x2]\nThis cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n7\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nUsed to check if the user's browser supports cookies.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_grecaptcha\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::b\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::d-15#\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::f\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nMckinsey &amp; Company\n3\nLearn more about this provider\n_abck\nUsed to detect and defend against replay-cookie-attacks \u2013 The cookie is necessary for the security and integrity of the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nAKA_A2\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nbm_sz\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nStripe\n3\nLearn more about this provider\n__stripe_mid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__stripe_sid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nm\nDetermines the device used to access the website. This allows the website to be formatted accordingly.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nSurveyMonkey\n1\nLearn more about this provider\nauth\nRegisters whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nUsercentrics GmbH\n2\nLearn more about this provider\nucData\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nucString\nNecessary for the correct implementation of the websites Consent Management Platform (CMP)\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nZapier\n1\nLearn more about this provider\nvisitor_id\nPreserves the visitor's session state across page requests.\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\nacademy.infobip.com\ncookiebot.com\nexperiences.infobip.com\nlivechat.infobip.com\npartners.infobip.com\nresearch.infobip.com\nsst.infobip.com\nstartups.infobip.com\nstatus.infobip.com\nsupport.infobip.com\n24\nCookieConsent\u00a0[x24]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nacademy.infobip.com\npartners.infobip.com\nresearch.infobip.com\nstartups.infobip.com\nsupport.infobip.com\nwww.infobip.com\n6\ncache-sprite-plyr\u00a0[x6]\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncache.sessionize.com\nsessionize.com\n2\nSESS#\u00a0[x2]\nPreserves users states across page requests.\nMaximum Storage Duration\n: 6 months\nType\n: HTTP Cookie\ncdn-web.infobip.com\npartners.infobip.com\nstartups.infobip.com\n3\nes-storage\u00a0[x3]\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncdn.evbstatic.com\n2\ncookies.js\u00a0[x2]\nDetermines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ncdn.signalfx.com\n1\n_splunk_rum_sid\nDetects and logs potential errors on third-party provided functions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nembed.lu.ma\nt.co\nplayer.vimeo.com\n4\n__cf_bm\u00a0[x4]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\ngeoip-js.com\nslush.org\nvimeo.com\nzoominfo.com\n4\n_cfuvid\u00a0[x4]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ngoogle.com\nwww.recaptcha.net\n2\n_GRECAPTCHA\u00a0[x2]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\ninfobip.com\n4\najs_anonymous_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\najs_group_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\najs_user_id\nThis cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nIbAuthCookie\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\njs.tito.io\n1\nsessionId\nPreserves the visitor's session state across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nportal.infobip.com\nportal2.infobip.com\nportal-ae2.infobip.com\nportal-eu1.infobip.com\nportal-eu2.infobip.com\nportal-gb1.infobip.com\nportal-id1.infobip.com\nportal-munm.infobip.com\nportal-ny2.infobip.com\nportal-sa2.infobip.com\nportal-tr1.infobip.com\nwww.infobip.com\n12\n_csrf\u00a0[x12]\nEnsures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.infobip.com\nacademy.infobip.com\npartners.infobip.com\nresearch.infobip.com\nstartups.infobip.com\nsupport.infobip.com\n12\nplyr\u00a0[x6]\nNecessary for the implementation of video-content on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ntraffic_type\u00a0[x6]\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.infobip.com\npartners.infobip.com\n2\nwp-wpml_current_language\u00a0[x2]\nDesignates the country code that is calculated based on the user's IP address. Used to determine what language should be used for the visitor.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.infobip.com\npartners.infobip.com\nstartups.infobip.com\n3\nesForms-country\u00a0[x3]\nPending\nMaximum Storage Duration\n: 15 days\nType\n: HTTP Cookie\nFunctional\n11\nFunctionality   cookies allow the website and web-based interface to remember your preferences   and settings e.g., by remembering your language choice.\nAirtable\n2\nLearn more about this provider\ninternal/page_view\nStores data entered with a form so that when you return to the website you don't have to fill in the data again.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nAmazon\n1\nLearn more about this provider\nrp.gif\nNecessary for the implementation of the Reddit.com's share-button function.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nCookiebot\n1\nLearn more about this provider\nCookieConsentBulkSetting-#\nEnables cookie consent across multiple websites\nMaximum Storage Duration\n: 1 year\nType\n: HTML Local Storage\nSurveyMonkey\n1\nLearn more about this provider\nep#\nSaves user states across page requests when completing a web-based survey.\nMaximum Storage Duration\n: 3 months\nType\n: HTTP Cookie\nfast.wistia.net\npartners.infobip.com\n3\nwistia-video-progress-#\u00a0[x3]\nContains a timestamp for the website\u2019s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.infobip.com\n3\nchakra-ui-color-mode\nNecessary for the functionality of the website's chat-box function.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nlightMode\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nloglevel\nMaintains settings and outputs when using the Developer Tools Console on current session.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nAnalytical\n71\nThese cookies   collect information that is used either in aggregate form to help us   understand how our website and web-based interface are being used, how   effective our marketing campaigns are, or to help us customize our web-based   interface for you to enhance your experience.\nAbtasty\n4\nLearn more about this provider\nABTasty\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: 13 months\nType\n: HTTP Cookie\nABTastySession\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nABTastyData\nThis cookie is used by the website\u2019s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.\nMaximum Stor",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/infobip/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "European communications startup Infobip raises $200M for over $1B valuation",
+          "url": "https://www.reuters.com/article/us-infobip-fundraising-exclusive/exclusive-european-software-startup-infobip-raises-over-200-million-in-series-a-funding-sources-idUSKCN24V05E",
+          "points": 63,
+          "num_comments": 31,
+          "created_at": "2020-07-30T07:33:18Z",
+          "hn_url": "https://news.ycombinator.com/item?id=23995583"
+        },
+        {
+          "title": "Infobip's MCP Servers Enable Smarter AI Communication",
+          "url": "https://shiftmag.dev/infobip-mcp-servers-open-api-6358/",
+          "points": 1,
+          "num_comments": 1,
+          "created_at": "2025-10-15T14:26:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=45593105"
+        },
+        {
+          "title": "You're not a senior engineer until you've worked on a legacy project (2023)",
+          "url": "https://www.infobip.com/developers/blog/seniors-working-on-a-legacy-project",
+          "points": 783,
+          "num_comments": 412,
+          "created_at": "2025-02-14T11:36:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43047341"
+        },
+        {
+          "title": "Communication Logs: Handling 250M SMS messages a day",
+          "url": "http://www.infobip.com/engineering/communication_logs/",
+          "points": 27,
+          "num_comments": 9,
+          "created_at": "2015-12-16T09:55:15Z",
+          "hn_url": "https://news.ycombinator.com/item?id=10743304"
+        },
+        {
+          "title": "We don't write 'else' blocks",
+          "url": "https://www.infobip.com/developers/blog/we-dont-write-else-blocks",
+          "points": 7,
+          "num_comments": 3,
+          "created_at": "2024-08-09T14:07:43Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41201972"
+        },
+        {
+          "title": "The siren song of ChatGPT and junior devs that listen to it",
+          "url": "https://www.infobip.com/engineering/chat-gpt-and-the-things-i-learned-while-using-it",
+          "points": 4,
+          "num_comments": 2,
+          "created_at": "2024-08-31T18:05:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41410612"
+        },
+        {
+          "title": "The must-have content to include in your API documentation",
+          "url": "https://www.infobip.com/developers/blog/the-must-have-content-to-include-in-your-api",
+          "points": 4,
+          "num_comments": 0,
+          "created_at": "2023-11-27T22:14:01Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38439179"
+        },
+        {
+          "title": "Improving Docker deployment process across remote data centers",
+          "url": "http://www.infobip.com/en/engineering/optimizing-multi-data-center-deployments-using-docker-registry",
+          "points": 4,
+          "num_comments": 0,
+          "created_at": "2016-05-23T09:17:28Z",
+          "hn_url": "https://news.ycombinator.com/item?id=11752714"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Scaling through crisis: how infrastructure handled 1B messages in a single day",
+          "subreddit": "programming",
+          "score": 149,
+          "num_comments": 38,
+          "permalink": "https://reddit.com/r/programming/comments/1nodab9/scaling_through_crisis_how_infrastructure_handled/",
+          "selftext": "We recently published a piece on ShiftMag (a project by Infobip) that I think might interest folks here. It\u2019s a candid breakdown of how Infobip\u2019s infrastructure team scaled to handling 10 billion messages in a single day \u2014 not just the technical wins, but also the painful outages, bad regexes, and hard lessons learned along the way."
+        },
+        {
+          "title": "Andr\u00e1s R\u00e1cz: Adatkezel\u00e9si botr\u00e1ny: a  Digit\u00e1lis Polg\u00e1ri K\u00f6r\u00f6k T\u00c9NYLEG k\u00fclf\u00f6ldre viszik a felhaszn\u00e1l\u00f3k adatait, b\u00e1r a Fidesz a TISZA p\u00e1rtot v\u00e1dolja ilyesmivel",
+          "subreddit": "hungary",
+          "score": 421,
+          "num_comments": 38,
+          "permalink": "https://reddit.com/r/hungary/comments/1p5ddr1/andr\u00e1s_r\u00e1cz_adatkezel\u00e9si_botr\u00e1ny_a_digit\u00e1lis/",
+          "selftext": "Elolvastam az \"egyes sz\u00e1m\u00fa Digit\u00e1lis Polg\u00e1ri K\u00f6r\" (DPK) adatv\u00e9delmi t\u00e1j\u00e9koztat\u00f3j\u00e1t \u00e9s adatkezel\u0151i inform\u00e1ci\u00f3it. Ez az a DPK, aminek Orb\u00e1n Viktor is az egyik alap\u00edt\u00f3ja, \u00e9s ez a szervezet koordin\u00e1lja a t\u00f6bbi DPK munk\u00e1j\u00e1t is.\n\n.\n\nAz adatkezel\u00e9si t\u00e1j\u00e9koztat\u00f3b\u00f3l kider\u00fcl, hogy a Digit\u00e1lis Polg\u00e1ri K\u00f6r\u00f6k a felhaszn\u00e1l\u00f3k adatait k\u00fclf\u00f6ldre, harmadik orsz\u00e1gba tov\u00e1bb\u00edthatj\u00e1k. Eg\u00e9szen pontosan: \" Az Adatkezel\u0151 a harmadik orsz\u00e1gbeli adatfeldolgoz\u00f3i r\u00e9sz\u00e9re tov\u00e1bb\u00edthat harmadik orsz\u00e1gba szem\u00e9lyes adatokat.\"\n\n.\n"
+        },
+        {
+          "title": "TGR Haas VF26 Concept Livery",
+          "subreddit": "F1Liveries",
+          "score": 327,
+          "num_comments": 9,
+          "permalink": "https://reddit.com/r/F1Liveries/comments/1ppyf5u/tgr_haas_vf26_concept_livery/",
+          "selftext": ""
+        },
+        {
+          "title": "Toyota Gazoo Haas F1 Team Kit for 2026",
+          "subreddit": "formula1",
+          "score": 319,
+          "num_comments": 34,
+          "permalink": "https://reddit.com/r/formula1/comments/1qiwygs/toyota_gazoo_haas_f1_team_kit_for_2026/",
+          "selftext": ""
+        },
+        {
+          "title": "Haas 2026 livery [3392 \u00d7 1908]",
+          "subreddit": "F1Porn",
+          "score": 278,
+          "num_comments": 0,
+          "permalink": "https://reddit.com/r/F1Porn/comments/1qh42k6/haas_2026_livery_3392_1908/",
+          "selftext": ""
+        },
+        {
+          "title": "TGR HAAS F1 2026 livery concept",
+          "subreddit": "F1Liveries",
+          "score": 160,
+          "num_comments": 5,
+          "permalink": "https://reddit.com/r/F1Liveries/comments/1qokkj3/tgr_haas_f1_2026_livery_concept/",
+          "selftext": ""
+        },
+        {
+          "title": "Infobip intervju(i) - mid i senior role",
+          "subreddit": "CroIT",
+          "score": 123,
+          "num_comments": 96,
+          "permalink": "https://reddit.com/r/CroIT/comments/1sg2zx6/infobip_intervjui_mid_i_senior_role/",
+          "selftext": "Imam ubrzo razgovor s njima, ne\u0161to sam \u010da\u010dkao po njihovom portalu i vidio da imaju \"Hiring process\", odlu\u010dim baciti oko i vidim idu\u0107e:\n\n*How many rounds might an interview loop include?*\n\n*The number of interview rounds depends on the role you\u2019re applying for. On average, once you pass the initial recruiter interview, you can expect 3 to 5 additional rounds.*\n\n*For example, software engineering roles may include a technical interview and coding assignment with team members, a behavioral intervie"
+        },
+        {
+          "title": "Oliver Bearman (Haas VF-26). 3rd free practice, 2026 Japanese GP [3200x2100]",
+          "subreddit": "F1Porn",
+          "score": 93,
+          "num_comments": 0,
+          "permalink": "https://reddit.com/r/F1Porn/comments/1s6gvbm/oliver_bearman_haas_vf26_3rd_free_practice_2026/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.infobip.com/pricing",
+    "changelog": null,
+    "docs": "https://www.infobip.com/docs",
+    "integrations": "https://www.infobip.com/integrations",
+    "g2": "https://www.g2.com/products/infobip/reviews"
+  },
+  "analysis": {
+    "name": "Infobip",
+    "url": "https://infobip.com",
+    "tagline": "The best omnichannel marketing platform",
+    "value_proposition": "Infobip is a global CPaaS and customer engagement platform that lets enterprises orchestrate personalized omnichannel communications across SMS, WhatsApp, email, voice, and chat apps from a single platform.",
+    "target_segment": "enterprise / mid-market",
+    "ideal_customer": "Large enterprises in banking, fintech, retail, and telecoms needing global reach for transactional messaging, marketing automation, and customer support across multiple channels",
+    "features": [
+      {
+        "name": "sms messaging",
+        "description": "Programmatic and campaign SMS sending with global carrier reach",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "mms messaging",
+        "description": "Multimedia message sending with images, video, and audio attachments",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "rcs messaging",
+        "description": "Rich Communication Services messaging with branded sender, carousels, and quick replies",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "whatsapp business api",
+        "description": "Send and receive WhatsApp messages at scale via official Meta Business API",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "facebook messenger api",
+        "description": "Two-way messaging via Facebook Messenger for customer engagement",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "viber messaging",
+        "description": "Send promotional and transactional messages over Viber",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "line messaging",
+        "description": "Messaging over LINE app, primarily for APAC markets",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "apple messages for business",
+        "description": "Customer messaging through Apple's native Messages app",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "google business messages",
+        "description": "Messaging via Google Search and Maps business entry points",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "email sending",
+        "description": "Bulk and transactional email delivery with deliverability optimization",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "voice calls (outbound)",
+        "description": "Programmatic outbound voice calls for notifications and alerts",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "voice calls (inbound)",
+        "description": "Inbound call handling with IVR and routing",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "ivr (interactive voice response)",
+        "description": "Drag-and-drop IVR flow builder for automated call routing and self-service",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "sip trunking",
+        "description": "SIP trunk connectivity for enterprise PBX and contact center integration",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "number masking",
+        "description": "Anonymize caller/callee phone numbers for marketplace and privacy use cases",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "click-to-call",
+        "description": "Web widget that initiates a voice call between a customer and agent",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "video calls",
+        "description": "Embedded video calling via WebRTC SDK for in-app support or telehealth",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "push notifications",
+        "description": "Mobile and web push notification delivery for iOS and Android",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "in-app messaging",
+        "description": "SDK-based in-app message display for mobile apps",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "live chat widget",
+        "description": "Embeddable web chat widget for real-time customer support",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "moments (customer journey builder)",
+        "description": "Visual omnichannel journey/flow builder for marketing automation and lifecycle campaigns",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "conversations (contact center)",
+        "description": "Unified agent workspace aggregating all inbound channels into a single inbox",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "answers (chatbot builder)",
+        "description": "No-code and NLP-powered chatbot builder for deflection and self-service automation",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "people (cdp)",
+        "description": "Customer data platform for building unified profiles, segments, and audiences",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "audience segmentation",
+        "description": "Rule-based and behavioral segment builder against CDP profiles",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "a/b testing",
+        "description": "Split testing for message content, channel, and send-time optimization",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "send time optimization",
+        "description": "ML-driven optimal send-time prediction per recipient",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "omni api",
+        "description": "Unified REST API to send across any channel with a single integration",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "rest api",
+        "description": "Channel-specific REST APIs (SMS, email, voice, WhatsApp, etc.)",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "sdks",
+        "description": "Mobile and server-side SDKs for iOS, Android, Java, Python, PHP, Node.js, Go, Ruby",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "webhooks",
+        "description": "Real-time delivery receipt and inbound message event webhooks",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "two-factor authentication (2fa / otp)",
+        "description": "One-time password delivery via SMS, voice, or email for user verification",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "silent mobile verification",
+        "description": "SIM-based phone number verification without OTP, using mobile network data",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "mobile identity",
+        "description": "Carrier-grade identity signals for fraud prevention and step-up auth",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "number lookup / hlr lookup",
+        "description": "Real-time phone number validation and carrier/roaming status lookup",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "fraud prevention",
+        "description": "SMS pumping and fraudulent traffic detection with automated blocking",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "short codes",
+        "description": "Dedicated and shared short code provisioning for high-volume SMS",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "long codes / 10dlc",
+        "description": "10-digit long code and A2P 10DLC registration for US messaging",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "toll-free numbers",
+        "description": "Toll-free number provisioning for voice and SMS",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "alphanumeric sender id",
+        "description": "Named sender ID for SMS in supported countries",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "virtual phone numbers",
+        "description": "Local and international virtual number provisioning",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "campaign analytics",
+        "description": "Delivery, open, click, conversion, and revenue reporting per campaign",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "real-time reporting dashboard",
+        "description": "Live traffic, delivery, and engagement metrics across all channels",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "data export / log api",
+        "description": "Export message logs and analytics data to external data warehouses",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "contact center routing",
+        "description": "Skills-based, priority, and round-robin routing for inbound conversations",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "agent canned responses",
+        "description": "Pre-saved reply templates for contact center agents",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "agent supervisor tools",
+        "description": "Monitoring, coaching, barge-in, and queue management for contact center supervisors",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "chatbot to agent handoff",
+        "description": "Seamless escalation from automated bot to live agent with context preserved",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "ai-powered intent recognition",
+        "description": "NLU engine for chatbot intent detection and entity extraction",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "ai agent assist",
+        "description": "Real-time AI suggestions and next-best-action recommendations for human agents",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "ai-generated message content",
+        "description": "Generative AI for drafting and personalizing message copy",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "personalization tokens",
+        "description": "Dynamic content placeholders in message templates driven by contact attributes",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "message templates",
+        "description": "Pre-built and custom message templates for regulated channels (e.g. WhatsApp HSM)",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "opt-in / opt-out management",
+        "description": "Automated consent tracking and suppression list management",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "unsubscribe handling",
+        "description": "Automatic STOP/UNSTOP keyword processing for SMS compliance",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "quiet hours",
+        "description": "Configurable do-not-disturb windows that delay or suppress message delivery",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "drip campaigns",
+        "description": "Time-based automated message sequences for onboarding and nurture",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "event-triggered messaging",
+        "description": "Real-time messages triggered by customer behavior or system events",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "transactional messaging",
+        "description": "High-priority single send for receipts, alerts, and notifications",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "two-way messaging",
+        "description": "Receive and process inbound replies across SMS, WhatsApp, and other channels",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "scheduled messaging",
+        "description": "Queue messages for future delivery at a specified date/time",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "message retries / failover",
+        "description": "Automatic retry and channel fallback (e.g. SMS fallback for WhatsApp) on delivery failure",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "channel fallback (failover routing)",
+        "description": "Automatically switch to secondary channel if primary delivery fails",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "delivery receipts (dlr)",
+        "description": "Per-message delivery status callbacks from carrier networks",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "sub-accounts / multi-tenant",
+        "description": "Create child accounts with isolated credentials and billing for agencies or business units",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "role-based access control (rbac)",
+        "description": "Granular permission management for users and teams",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "sso",
+        "description": "SAML/SSO integration for enterprise identity provider login",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "audit logs",
+        "description": "Immutable activity logs for compliance and security review",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "gdpr compliance tools",
+        "description": "Data residency, retention controls, and consent management for GDPR",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "hipaa compliance",
+        "description": "BAA and healthcare-grade data handling for regulated industries",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "ip whitelisting",
+        "description": "Restrict API access to specified IP addresses",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "contact list management",
+        "description": "Import, store, and manage contact databases with custom attributes",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "link shortening / click tracking",
+        "description": "URL shortening with click-through tracking for messages",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "qr codes",
+        "description": "Generate scannable QR codes linking to campaigns or conversations",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "landing pages",
+        "description": "Hosted mobile-optimized landing pages linked from SMS/MMS campaigns",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "forms and surveys",
+        "description": "Embeddable web forms and surveys triggered from messaging campaigns",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "waba management",
+        "description": "WhatsApp Business Account onboarding, template submission, and quality monitoring",
+        "evidence_source": "other",
+        "tier": "paid"
+      },
+      {
+        "name": "global direct carrier connections",
+        "description": "Direct interconnects with 700+ carriers across 190+ countries for higher deliverability",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "dedicated infrastructure",
+        "description": "Dedicated sending infrastructure and IP pools for high-volume senders",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "geo-routing",
+        "description": "Automatic routing through optimal carrier path by recipient geography",
+        "evidence_source": "other",
+        "tier": "all"
+      },
+      {
+        "name": "sms firewall",
+        "description": "Carrier-grade SMS A2P firewall and grey route filtering",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "portability lookup",
+        "description": "Number portability check to route to current carrier",
+        "evidence_source": "other",
+        "tier": "all"
+      }
+    ],
+    "integrations": [
+      "Salesforce",
+      "HubSpot",
+      "Microsoft Dynamics 365",
+      "Shopify",
+      "Zapier",
+      "Zendesk",
+      "Adobe Experience Platform",
+      "Segment",
+      "BigCommerce",
+      "Magento",
+      "WooCommerce",
+      "SAP",
+      "Oracle",
+      "Google Analytics",
+      "Microsoft Teams",
+      "Slack",
+      "Twilio (number porting)",
+      "AWS",
+      "Azure"
+    ],
+    "differentiators": [
+      "Direct carrier connections in 190+ countries \u2014 bypasses aggregators for better deliverability and latency",
+      "Single platform spanning CPaaS (API), marketing automation (Moments), contact center (Conversations), and chatbots (Answers)",
+      "Carrier-grade SMS firewall and fraud prevention built into the platform",
+      "Silent mobile verification leveraging SIM/carrier data without OTP codes",
+      "Mobile identity and network-based authentication for financial services",
+      "Operates own global telecom infrastructure rather than purely reselling capacity"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [
+        "Global delivery reach and reliability \u2014 users cite high deliverability rates across hard-to-reach markets",
+        "Comprehensive channel coverage in a single platform reduces vendor sprawl",
+        "Strong enterprise support and dedicated account management",
+        "WhatsApp Business API onboarding and template management praised as smooth",
+        "Detailed delivery reporting and message log visibility"
+      ],
+      "complaints": [
+        "Pricing is opaque and high \u2014 contact-sales model makes cost comparison difficult",
+        "Platform complexity is steep; steep learning curve for Moments journey builder",
+        "API documentation can be inconsistent across channels",
+        "UI feels dated compared to newer CPaaS competitors",
+        "Slow support response times for non-enterprise tiers",
+        "Chatbot builder (Answers) NLU accuracy requires significant training data to perform well"
+      ],
+      "sources": [
+        "g2",
+        "reddit"
+      ]
+    },
+    "pricing_signal": {
+      "model": "contact-sales",
+      "tier_count": 0,
+      "lowest_paid_seat": null,
+      "free_tier": "Free trial / test credits available on signup; no permanent free tier"
+    }
+  }
+}

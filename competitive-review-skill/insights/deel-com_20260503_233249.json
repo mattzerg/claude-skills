@@ -1,0 +1,695 @@
+{
+  "name": "Deel",
+  "url": "https://deel.com",
+  "domain": "deel.com",
+  "scanned_at": "2026-05-03T23:29:35.066241",
+  "sources": {
+    "landing": {
+      "url": "https://deel.com",
+      "title": "Deel | Global Payroll, Compliance, HR Solutions | HRIS",
+      "text": "Deel | Global Payroll, Compliance, HR Solutions | HRIS\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you\u2019ve provided to them or that they\u2019ve collected from your use of their services.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nPreferences\nStatistics\nMarketing\nShow details\nDetails\nNecessary\n80\nNecessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.\nCloudflare\n1\nLearn more about this provider\ncf.turnstile.u\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n2\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nPending\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_GRECAPTCHA\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nHubSpot\n5\nLearn more about this provider\ncookietest\u00a0[x5]\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nLinkedIn\n1\nLearn more about this provider\nli_gc\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLoom\n5\nLearn more about this provider\nawc.taskSessions\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nawc.taskSessionsInit\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n__awc_tld_test__\u00a0[x2]\nNecessary for the general functionality of the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nGCLB\nThis cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nOptimizely\n3\nLearn more about this provider\nAWSELB\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nAWSELBCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\noptimizelyRumLB\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStackAdapt\n2\nLearn more about this provider\nsa-u-date\nPending\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\nsa-u-source\nPending\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\napp.deel.com\n1\nAppboyServiceWorkerAsyncStorage#optOut\nIdentifies if the visitor has deselected any cookies, trackers or other audience targeting tools.\nMaximum Storage Duration\n: Persistent\nType\n: IndexedDB\napp.deel.com\ncalendly.com\ndeel.com\ndeel.wtf\ndemo.deel.com\nhelp.letsdeel.com\nhsassets.deel.com\nhsforms.com\nlab.deel.com\nzoominfo.com\n11\n_cfuvid\u00a0[x11]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nconsent.cookiebot.com\napp.demo.deel.com\ndev.deel.wtf\n11\nCookieConsent\u00a0[x11]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ndd.g2.com\n1\ndatadome\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ng2.com\n1\ncf_clearance\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nhelp.letsdeel.com\n3\n_help_center_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_zendesk_authenticated\nRegisters whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_zendesk_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nm.stripe.com\n3\nLearn more about this provider\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nmountain.com\n1\nguid\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nob.withflowersea.com\n2\n_cq_suid\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_cq_check\nDetermines whether the user has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nobs.withflowersea.com\n1\ncg_uuid\nNecessary for the website security.\nMaximum Storage Duration\n: 11 months\nType\n: HTTP Cookie\npinchjs-cdn.gdn.smartling.com\n2\nslTranslations-de\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nslTranslations-fr\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\npx.mountain.com\n1\ntt\nRegisters the website's speed and performance. This function can be used in context with statistics and load-balancing.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nwebsite-media.deel.com\n2\nrc::b\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::f\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\n3\nembed/v3/counters.gif\nUsed to implement forms on the website.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\ncalendly.com\ndeel.network\ndeel.training\ndeel.wtf\nwww.g2.com\nhelp.letsdeel.com\nhsassets.deel.com\nhubspot.com\nlab.deel.com\npvd.to\npvdpix.com\ncdn.ssrn.com\nstape.io\ntwitter.com\n18\n__cf_bm\u00a0[x18]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nPreferences\n7\nPreference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.\nLoom\n1\nLearn more about this provider\nloom_anon_comment\nThis cookie stores information for the widget settings on the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ng2.com\n1\n_g2_session_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nm.stripe.com\n1\nLearn more about this provider\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\n1\ni18nextLng\nDetermines the preferred language of the visitor. Allows the website to set the preferred language upon the visitor's re-entry.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\ndeel.navattic.com\n2\ntheme-ui-color-mode\u00a0[x2]\nRemembers the user's preferences in terms of font size and colours on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.g2.com\n1\nevents_distinct_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStatistics\n98\nStatistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.\nClaritas\n1\nLearn more about this provider\nbarometric[idfa]\nTracks user interaction with the website\u2019s community feature for segmentation purposes and in order to compile statistical reports on how the website is being used.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nG2Crowd\n1\nLearn more about this provider\ng2tracking\nUsed to track user\u2019s interaction with embedded content.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n5\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\n_ga\u00a0[x2]\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_ga_#\u00a0[x2]\nUsed by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\ndemandbase_company_id\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHotjar\n6\nLearn more about this provider\n_hjSession_#\u00a0[x2]\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_hjSessionUser_#\u00a0[x2]\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_hjTLDTest\u00a0[x2]\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n12\nLearn more about this provider\n__hssc\u00a0[x3]\nIdentifies if the cookie data needs to be updated in the visitor's browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__hssrc\u00a0[x3]\nUsed to recognise the visitor's browser upon reentry on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n__hstc\u00a0[x3]\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nhubspotutk\u00a0[x3]\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLoom\n7\nLearn more about this provider\najs_anonymous_id\nThis cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nsentryReplaySession\nRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nviewer_session_data\nUsed in connection with End User Experience Monitoring (EUEM). The cookie collects information on application/device performance, which allows support/website staff to optimize their products and services.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\najs_anonymous_id\u00a0[x2]\nThis cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__Host-psifi.analyticsTrace\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__Host-psifi.analyticsTraceV2\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nOptimizely\n15\nLearn more about this provider\noptimizelyEndUserId\nUsed to measure how selected users react to targeted changes to the website's content and functionality, in order to determine what variation is most efficacious in terms of converting users to customers.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\noptimizelyOptOut\u00a0[x2]\nCollects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ndomainName_oeu[#]$session_state$\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nhttps://#_oeu#.#$layer_states\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$tracker_optimizely\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$variation_map\nPending\nMaximum Storage Duration\n: Persistent",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.deel.com/pricing",
+      "title": "Pricing | Transparent & Fair Pricing | HRIS Costs | Deel",
+      "text": "Pricing | Transparent & Fair Pricing | HRIS Costs | Deel\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you\u2019ve provided to them or that they\u2019ve collected from your use of their services.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nPreferences\nStatistics\nMarketing\nShow details\nDetails\nNecessary\n80\nNecessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.\nCloudflare\n1\nLearn more about this provider\ncf.turnstile.u\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n2\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nPending\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_GRECAPTCHA\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nHubSpot\n5\nLearn more about this provider\ncookietest\u00a0[x5]\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nLinkedIn\n1\nLearn more about this provider\nli_gc\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLoom\n5\nLearn more about this provider\nawc.taskSessions\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nawc.taskSessionsInit\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n__awc_tld_test__\u00a0[x2]\nNecessary for the general functionality of the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nGCLB\nThis cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nOptimizely\n3\nLearn more about this provider\nAWSELB\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nAWSELBCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\noptimizelyRumLB\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStackAdapt\n2\nLearn more about this provider\nsa-u-date\nPending\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\nsa-u-source\nPending\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\napp.deel.com\n1\nAppboyServiceWorkerAsyncStorage#optOut\nIdentifies if the visitor has deselected any cookies, trackers or other audience targeting tools.\nMaximum Storage Duration\n: Persistent\nType\n: IndexedDB\napp.deel.com\ncalendly.com\ndeel.com\ndeel.wtf\ndemo.deel.com\nhelp.letsdeel.com\nhsassets.deel.com\nhsforms.com\nlab.deel.com\nzoominfo.com\n11\n_cfuvid\u00a0[x11]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nconsent.cookiebot.com\napp.demo.deel.com\ndev.deel.wtf\n11\nCookieConsent\u00a0[x11]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ndd.g2.com\n1\ndatadome\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ng2.com\n1\ncf_clearance\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nhelp.letsdeel.com\n3\n_help_center_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_zendesk_authenticated\nRegisters whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_zendesk_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nm.stripe.com\n3\nLearn more about this provider\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nmountain.com\n1\nguid\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nob.withflowersea.com\n2\n_cq_suid\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_cq_check\nDetermines whether the user has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nobs.withflowersea.com\n1\ncg_uuid\nNecessary for the website security.\nMaximum Storage Duration\n: 11 months\nType\n: HTTP Cookie\npinchjs-cdn.gdn.smartling.com\n2\nslTranslations-de\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nslTranslations-fr\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\npx.mountain.com\n1\ntt\nRegisters the website's speed and performance. This function can be used in context with statistics and load-balancing.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nwebsite-media.deel.com\n2\nrc::b\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::f\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\n3\nembed/v3/counters.gif\nUsed to implement forms on the website.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\ncalendly.com\ndeel.network\ndeel.training\ndeel.wtf\nwww.g2.com\nhelp.letsdeel.com\nhsassets.deel.com\nhubspot.com\nlab.deel.com\npvd.to\npvdpix.com\ncdn.ssrn.com\nstape.io\ntwitter.com\n18\n__cf_bm\u00a0[x18]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nPreferences\n7\nPreference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.\nLoom\n1\nLearn more about this provider\nloom_anon_comment\nThis cookie stores information for the widget settings on the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ng2.com\n1\n_g2_session_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nm.stripe.com\n1\nLearn more about this provider\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\n1\ni18nextLng\nDetermines the preferred language of the visitor. Allows the website to set the preferred language upon the visitor's re-entry.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\ndeel.navattic.com\n2\ntheme-ui-color-mode\u00a0[x2]\nRemembers the user's preferences in terms of font size and colours on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.g2.com\n1\nevents_distinct_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStatistics\n98\nStatistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.\nClaritas\n1\nLearn more about this provider\nbarometric[idfa]\nTracks user interaction with the website\u2019s community feature for segmentation purposes and in order to compile statistical reports on how the website is being used.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nG2Crowd\n1\nLearn more about this provider\ng2tracking\nUsed to track user\u2019s interaction with embedded content.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n5\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\n_ga\u00a0[x2]\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_ga_#\u00a0[x2]\nUsed by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\ndemandbase_company_id\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHotjar\n6\nLearn more about this provider\n_hjSession_#\u00a0[x2]\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_hjSessionUser_#\u00a0[x2]\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_hjTLDTest\u00a0[x2]\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n12\nLearn more about this provider\n__hssc\u00a0[x3]\nIdentifies if the cookie data needs to be updated in the visitor's browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__hssrc\u00a0[x3]\nUsed to recognise the visitor's browser upon reentry on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n__hstc\u00a0[x3]\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nhubspotutk\u00a0[x3]\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLoom\n7\nLearn more about this provider\najs_anonymous_id\nThis cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nsentryReplaySession\nRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nviewer_session_data\nUsed in connection with End User Experience Monitoring (EUEM). The cookie collects information on application/device performance, which allows support/website staff to optimize their products and services.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\najs_anonymous_id\u00a0[x2]\nThis cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__Host-psifi.analyticsTrace\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__Host-psifi.analyticsTraceV2\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nOptimizely\n15\nLearn more about this provider\noptimizelyEndUserId\nUsed to measure how selected users react to targeted changes to the website's content and functionality, in order to determine what variation is most efficacious in terms of converting users to customers.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\noptimizelyOptOut\u00a0[x2]\nCollects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ndomainName_oeu[#]$session_state$\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nhttps://#_oeu#.#$layer_states\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$tracker_optimizely\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$variation_map\nPending\nMaximum Storage Duration\n: Persiste",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://deel.com/changelog",
+      "title": "Deel",
+      "text": "Deel\n___\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you\u2019ve provided to them or that they\u2019ve collected from your use of their services.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nPreferences\nStatistics\nMarketing\nShow details\nDetails\nNecessary\n80\nNecessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.\nCloudflare\n1\nLearn more about this provider\ncf.turnstile.u\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n2\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nPending\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_GRECAPTCHA\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nHubSpot\n5\nLearn more about this provider\ncookietest\u00a0[x5]\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nLinkedIn\n1\nLearn more about this provider\nli_gc\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLoom\n5\nLearn more about this provider\nawc.taskSessions\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nawc.taskSessionsInit\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n__awc_tld_test__\u00a0[x2]\nNecessary for the general functionality of the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nGCLB\nThis cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nOptimizely\n3\nLearn more about this provider\nAWSELB\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nAWSELBCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\noptimizelyRumLB\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStackAdapt\n2\nLearn more about this provider\nsa-u-date\nPending\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\nsa-u-source\nPending\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\napp.deel.com\n1\nAppboyServiceWorkerAsyncStorage#optOut\nIdentifies if the visitor has deselected any cookies, trackers or other audience targeting tools.\nMaximum Storage Duration\n: Persistent\nType\n: IndexedDB\napp.deel.com\ncalendly.com\ndeel.com\ndeel.wtf\ndemo.deel.com\nhelp.letsdeel.com\nhsassets.deel.com\nhsforms.com\nlab.deel.com\nzoominfo.com\n11\n_cfuvid\u00a0[x11]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nconsent.cookiebot.com\napp.demo.deel.com\ndev.deel.wtf\n11\nCookieConsent\u00a0[x11]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ndd.g2.com\n1\ndatadome\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ng2.com\n1\ncf_clearance\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nhelp.letsdeel.com\n3\n_help_center_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_zendesk_authenticated\nRegisters whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_zendesk_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nm.stripe.com\n3\nLearn more about this provider\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nmountain.com\n1\nguid\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nob.withflowersea.com\n2\n_cq_suid\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_cq_check\nDetermines whether the user has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nobs.withflowersea.com\n1\ncg_uuid\nNecessary for the website security.\nMaximum Storage Duration\n: 11 months\nType\n: HTTP Cookie\npinchjs-cdn.gdn.smartling.com\n2\nslTranslations-de\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nslTranslations-fr\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\npx.mountain.com\n1\ntt\nRegisters the website's speed and performance. This function can be used in context with statistics and load-balancing.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nwebsite-media.deel.com\n2\nrc::b\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::f\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\n3\nembed/v3/counters.gif\nUsed to implement forms on the website.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\ncalendly.com\ndeel.network\ndeel.training\ndeel.wtf\nwww.g2.com\nhelp.letsdeel.com\nhsassets.deel.com\nhubspot.com\nlab.deel.com\npvd.to\npvdpix.com\ncdn.ssrn.com\nstape.io\ntwitter.com\n18\n__cf_bm\u00a0[x18]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nPreferences\n7\nPreference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.\nLoom\n1\nLearn more about this provider\nloom_anon_comment\nThis cookie stores information for the widget settings on the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ng2.com\n1\n_g2_session_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nm.stripe.com\n1\nLearn more about this provider\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\n1\ni18nextLng\nDetermines the preferred language of the visitor. Allows the website to set the preferred language upon the visitor's re-entry.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\ndeel.navattic.com\n2\ntheme-ui-color-mode\u00a0[x2]\nRemembers the user's preferences in terms of font size and colours on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.g2.com\n1\nevents_distinct_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStatistics\n98\nStatistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.\nClaritas\n1\nLearn more about this provider\nbarometric[idfa]\nTracks user interaction with the website\u2019s community feature for segmentation purposes and in order to compile statistical reports on how the website is being used.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nG2Crowd\n1\nLearn more about this provider\ng2tracking\nUsed to track user\u2019s interaction with embedded content.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n5\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\n_ga\u00a0[x2]\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_ga_#\u00a0[x2]\nUsed by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\ndemandbase_company_id\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHotjar\n6\nLearn more about this provider\n_hjSession_#\u00a0[x2]\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_hjSessionUser_#\u00a0[x2]\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_hjTLDTest\u00a0[x2]\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n12\nLearn more about this provider\n__hssc\u00a0[x3]\nIdentifies if the cookie data needs to be updated in the visitor's browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__hssrc\u00a0[x3]\nUsed to recognise the visitor's browser upon reentry on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n__hstc\u00a0[x3]\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nhubspotutk\u00a0[x3]\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLoom\n7\nLearn more about this provider\najs_anonymous_id\nThis cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nsentryReplaySession\nRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nviewer_session_data\nUsed in connection with End User Experience Monitoring (EUEM). The cookie collects information on application/device performance, which allows support/website staff to optimize their products and services.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\najs_anonymous_id\u00a0[x2]\nThis cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__Host-psifi.analyticsTrace\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__Host-psifi.analyticsTraceV2\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nOptimizely\n15\nLearn more about this provider\noptimizelyEndUserId\nUsed to measure how selected users react to targeted changes to the website's content and functionality, in order to determine what variation is most efficacious in terms of converting users to customers.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\noptimizelyOptOut\u00a0[x2]\nCollects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ndomainName_oeu[#]$session_state$\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nhttps://#_oeu#.#$layer_states\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$tracker_optimizely\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$variation_map\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$vi",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://deel.com/docs",
+      "title": "Deel",
+      "text": "Deel\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you\u2019ve provided to them or that they\u2019ve collected from your use of their services.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nPreferences\nStatistics\nMarketing\nShow details\nDetails\nNecessary\n80\nNecessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.\nCloudflare\n1\nLearn more about this provider\ncf.turnstile.u\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n2\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nPending\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_GRECAPTCHA\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nHubSpot\n5\nLearn more about this provider\ncookietest\u00a0[x5]\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nLinkedIn\n1\nLearn more about this provider\nli_gc\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLoom\n5\nLearn more about this provider\nawc.taskSessions\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nawc.taskSessionsInit\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n__awc_tld_test__\u00a0[x2]\nNecessary for the general functionality of the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nGCLB\nThis cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nOptimizely\n3\nLearn more about this provider\nAWSELB\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nAWSELBCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\noptimizelyRumLB\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStackAdapt\n2\nLearn more about this provider\nsa-u-date\nPending\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\nsa-u-source\nPending\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\napp.deel.com\n1\nAppboyServiceWorkerAsyncStorage#optOut\nIdentifies if the visitor has deselected any cookies, trackers or other audience targeting tools.\nMaximum Storage Duration\n: Persistent\nType\n: IndexedDB\napp.deel.com\ncalendly.com\ndeel.com\ndeel.wtf\ndemo.deel.com\nhelp.letsdeel.com\nhsassets.deel.com\nhsforms.com\nlab.deel.com\nzoominfo.com\n11\n_cfuvid\u00a0[x11]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nconsent.cookiebot.com\napp.demo.deel.com\ndev.deel.wtf\n11\nCookieConsent\u00a0[x11]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ndd.g2.com\n1\ndatadome\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ng2.com\n1\ncf_clearance\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nhelp.letsdeel.com\n3\n_help_center_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_zendesk_authenticated\nRegisters whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_zendesk_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nm.stripe.com\n3\nLearn more about this provider\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nmountain.com\n1\nguid\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nob.withflowersea.com\n2\n_cq_suid\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_cq_check\nDetermines whether the user has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nobs.withflowersea.com\n1\ncg_uuid\nNecessary for the website security.\nMaximum Storage Duration\n: 11 months\nType\n: HTTP Cookie\npinchjs-cdn.gdn.smartling.com\n2\nslTranslations-de\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nslTranslations-fr\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\npx.mountain.com\n1\ntt\nRegisters the website's speed and performance. This function can be used in context with statistics and load-balancing.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nwebsite-media.deel.com\n2\nrc::b\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::f\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\n3\nembed/v3/counters.gif\nUsed to implement forms on the website.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\ncalendly.com\ndeel.network\ndeel.training\ndeel.wtf\nwww.g2.com\nhelp.letsdeel.com\nhsassets.deel.com\nhubspot.com\nlab.deel.com\npvd.to\npvdpix.com\ncdn.ssrn.com\nstape.io\ntwitter.com\n18\n__cf_bm\u00a0[x18]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nPreferences\n7\nPreference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.\nLoom\n1\nLearn more about this provider\nloom_anon_comment\nThis cookie stores information for the widget settings on the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ng2.com\n1\n_g2_session_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nm.stripe.com\n1\nLearn more about this provider\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\n1\ni18nextLng\nDetermines the preferred language of the visitor. Allows the website to set the preferred language upon the visitor's re-entry.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\ndeel.navattic.com\n2\ntheme-ui-color-mode\u00a0[x2]\nRemembers the user's preferences in terms of font size and colours on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.g2.com\n1\nevents_distinct_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStatistics\n98\nStatistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.\nClaritas\n1\nLearn more about this provider\nbarometric[idfa]\nTracks user interaction with the website\u2019s community feature for segmentation purposes and in order to compile statistical reports on how the website is being used.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nG2Crowd\n1\nLearn more about this provider\ng2tracking\nUsed to track user\u2019s interaction with embedded content.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n5\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\n_ga\u00a0[x2]\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_ga_#\u00a0[x2]\nUsed by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\ndemandbase_company_id\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHotjar\n6\nLearn more about this provider\n_hjSession_#\u00a0[x2]\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_hjSessionUser_#\u00a0[x2]\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_hjTLDTest\u00a0[x2]\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n12\nLearn more about this provider\n__hssc\u00a0[x3]\nIdentifies if the cookie data needs to be updated in the visitor's browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__hssrc\u00a0[x3]\nUsed to recognise the visitor's browser upon reentry on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n__hstc\u00a0[x3]\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nhubspotutk\u00a0[x3]\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLoom\n7\nLearn more about this provider\najs_anonymous_id\nThis cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nsentryReplaySession\nRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nviewer_session_data\nUsed in connection with End User Experience Monitoring (EUEM). The cookie collects information on application/device performance, which allows support/website staff to optimize their products and services.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\najs_anonymous_id\u00a0[x2]\nThis cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__Host-psifi.analyticsTrace\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__Host-psifi.analyticsTraceV2\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nOptimizely\n15\nLearn more about this provider\noptimizelyEndUserId\nUsed to measure how selected users react to targeted changes to the website's content and functionality, in order to determine what variation is most efficacious in terms of converting users to customers.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\noptimizelyOptOut\u00a0[x2]\nCollects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ndomainName_oeu[#]$session_state$\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nhttps://#_oeu#.#$layer_states\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$tracker_optimizely\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$variation_map\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$visito",
+      "source": "playwright",
+      "fallback_path": "/docs"
+    },
+    "integrations": {
+      "url": "https://www.deel.com/integrations",
+      "title": "App Store Integrations | Connect Third-party Apps | Deel",
+      "text": "App Store Integrations | Connect Third-party Apps | Deel\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you\u2019ve provided to them or that they\u2019ve collected from your use of their services.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nPreferences\nStatistics\nMarketing\nShow details\nDetails\nNecessary\n80\nNecessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.\nCloudflare\n1\nLearn more about this provider\ncf.turnstile.u\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n2\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nPending\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_GRECAPTCHA\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nHubSpot\n5\nLearn more about this provider\ncookietest\u00a0[x5]\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nLinkedIn\n1\nLearn more about this provider\nli_gc\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLoom\n5\nLearn more about this provider\nawc.taskSessions\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nawc.taskSessionsInit\nThis cookie is necessary for the login function on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n__awc_tld_test__\u00a0[x2]\nNecessary for the general functionality of the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nGCLB\nThis cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nOptimizely\n3\nLearn more about this provider\nAWSELB\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nAWSELBCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\noptimizelyRumLB\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStackAdapt\n2\nLearn more about this provider\nsa-u-date\nPending\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\nsa-u-source\nPending\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\napp.deel.com\n1\nAppboyServiceWorkerAsyncStorage#optOut\nIdentifies if the visitor has deselected any cookies, trackers or other audience targeting tools.\nMaximum Storage Duration\n: Persistent\nType\n: IndexedDB\napp.deel.com\ncalendly.com\ndeel.com\ndeel.wtf\ndemo.deel.com\nhelp.letsdeel.com\nhsassets.deel.com\nhsforms.com\nlab.deel.com\nzoominfo.com\n11\n_cfuvid\u00a0[x11]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nconsent.cookiebot.com\napp.demo.deel.com\ndev.deel.wtf\n11\nCookieConsent\u00a0[x11]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ndd.g2.com\n1\ndatadome\nUsed in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ng2.com\n1\ncf_clearance\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nhelp.letsdeel.com\n3\n_help_center_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_zendesk_authenticated\nRegisters whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_zendesk_session\nPreserves users states across page requests.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nm.stripe.com\n3\nLearn more about this provider\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nmountain.com\n1\nguid\nPreserves users states across page requests.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nob.withflowersea.com\n2\n_cq_suid\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n_cq_check\nDetermines whether the user has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nobs.withflowersea.com\n1\ncg_uuid\nNecessary for the website security.\nMaximum Storage Duration\n: 11 months\nType\n: HTTP Cookie\npinchjs-cdn.gdn.smartling.com\n2\nslTranslations-de\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nslTranslations-fr\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\npx.mountain.com\n1\ntt\nRegisters the website's speed and performance. This function can be used in context with statistics and load-balancing.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nwebsite-media.deel.com\n2\nrc::b\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nrc::f\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\n3\nembed/v3/counters.gif\nUsed to implement forms on the website.\nMaximum Storage Duration\n: Session\nType\n: Pixel Tracker\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\ncalendly.com\ndeel.network\ndeel.training\ndeel.wtf\nwww.g2.com\nhelp.letsdeel.com\nhsassets.deel.com\nhubspot.com\nlab.deel.com\npvd.to\npvdpix.com\ncdn.ssrn.com\nstape.io\ntwitter.com\n18\n__cf_bm\u00a0[x18]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nPreferences\n7\nPreference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.\nLoom\n1\nLearn more about this provider\nloom_anon_comment\nThis cookie stores information for the widget settings on the website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\ng2.com\n1\n_g2_session_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nm.stripe.com\n1\nLearn more about this provider\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\n1\ni18nextLng\nDetermines the preferred language of the visitor. Allows the website to set the preferred language upon the visitor's re-entry.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwebsite-media.deel.wtf\ndeel.navattic.com\n2\ntheme-ui-color-mode\u00a0[x2]\nRemembers the user's preferences in terms of font size and colours on the website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.g2.com\n1\nevents_distinct_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStatistics\n98\nStatistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.\nClaritas\n1\nLearn more about this provider\nbarometric[idfa]\nTracks user interaction with the website\u2019s community feature for segmentation purposes and in order to compile statistical reports on how the website is being used.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nG2Crowd\n1\nLearn more about this provider\ng2tracking\nUsed to track user\u2019s interaction with embedded content.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nGoogle\n5\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\n_ga\u00a0[x2]\nRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\n_ga_#\u00a0[x2]\nUsed by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\ndemandbase_company_id\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHotjar\n6\nLearn more about this provider\n_hjSession_#\u00a0[x2]\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_hjSessionUser_#\u00a0[x2]\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_hjTLDTest\u00a0[x2]\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nHubSpot\n12\nLearn more about this provider\n__hssc\u00a0[x3]\nIdentifies if the cookie data needs to be updated in the visitor's browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__hssrc\u00a0[x3]\nUsed to recognise the visitor's browser upon reentry on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n__hstc\u00a0[x3]\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nhubspotutk\u00a0[x3]\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLoom\n7\nLearn more about this provider\najs_anonymous_id\nThis cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nsentryReplaySession\nRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nviewer_session_data\nUsed in connection with End User Experience Monitoring (EUEM). The cookie collects information on application/device performance, which allows support/website staff to optimize their products and services.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\najs_anonymous_id\u00a0[x2]\nThis cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__Host-psifi.analyticsTrace\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__Host-psifi.analyticsTraceV2\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nOptimizely\n15\nLearn more about this provider\noptimizelyEndUserId\nUsed to measure how selected users react to targeted changes to the website's content and functionality, in order to determine what variation is most efficacious in terms of converting users to customers.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\noptimizelyOptOut\u00a0[x2]\nCollects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ndomainName_oeu[#]$session_state$\nPending\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nhttps://#_oeu#.#$layer_states\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$tracker_optimizely\nPending\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhttps://#_oeu#.#$variation_map\nPending\nMaximum Storage Duration\n: Persiste",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/deel/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Rippling sues Deel over spying",
+          "url": "https://twitter.com/parkerconrad/status/1901615179718406276",
+          "points": 536,
+          "num_comments": 135,
+          "created_at": "2025-03-17T13:03:52Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43388133"
+        },
+        {
+          "title": "Ask HN: How do you deel with loneliness when WFH alone?",
+          "url": null,
+          "points": 40,
+          "num_comments": 33,
+          "created_at": "2021-02-28T14:43:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=26293703"
+        },
+        {
+          "title": "Rippling suing Deel for espionage after Slack honeypot worked",
+          "url": "https://www.rippling.com/blog/lawsuit-alleges-12-billion-unicorn-deel-cultivated-spy-orchestrated-long-running-trade-secret-theft-corporate-espionage-against-competitor",
+          "points": 38,
+          "num_comments": 3,
+          "created_at": "2025-03-17T14:07:41Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43388769"
+        },
+        {
+          "title": "Rippling Sues Deel, a Software Rival, over Corporate Spying",
+          "url": "https://www.nytimes.com/2025/03/17/business/dealbook/rippling-deel-corporate-spy.html",
+          "points": 16,
+          "num_comments": 1,
+          "created_at": "2025-03-17T16:20:53Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43390114"
+        },
+        {
+          "title": "The affidavit of a Rippling employee caught spying for Deel",
+          "url": "https://techcrunch.com/2025/04/02/the-affidavit-of-a-rippling-employee-caught-spying-for-deel-reads-like-a-movie/",
+          "points": 12,
+          "num_comments": 0,
+          "created_at": "2025-04-02T20:06:16Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43560940"
+        },
+        {
+          "title": "Alleged Deel Spy Confesses to Coordinating with Deel CEO Alex Bouaziz",
+          "url": "https://www.newcomer.co/p/breaking-alleged-deel-spy-confesses",
+          "points": 10,
+          "num_comments": 1,
+          "created_at": "2025-04-02T15:41:53Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43557951"
+        },
+        {
+          "title": "New banking records prove Deel paid thief who stole trade secrets from Rippling",
+          "url": "https://www.rippling.com/blog/new-banking-records-prove-deel-paid-thief-who-stole-trade-secrets-from-rippling",
+          "points": 9,
+          "num_comments": 0,
+          "created_at": "2025-11-20T21:24:42Z",
+          "hn_url": "https://news.ycombinator.com/item?id=45997960"
+        },
+        {
+          "title": "Rippling sues Deel, Deel denies 'all legal wrongdoing',Slack is the main witness",
+          "url": "https://techcrunch.com/2025/03/17/rippling-sues-deel-deel-denies-all-legal-wrongdoing-and-slack-is-the-main-witness/",
+          "points": 8,
+          "num_comments": 2,
+          "created_at": "2025-03-17T21:30:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43392905"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Fair but I still don\u2019t get it",
+          "subreddit": "NonPoliticalTwitter",
+          "score": 65976,
+          "num_comments": 1476,
+          "permalink": "https://reddit.com/r/NonPoliticalTwitter/comments/1ocb3xw/fair_but_i_still_dont_get_it/",
+          "selftext": ""
+        },
+        {
+          "title": "Tattoo of my mothers note she left before she died",
+          "subreddit": "tattooadvice",
+          "score": 16228,
+          "num_comments": 587,
+          "permalink": "https://reddit.com/r/tattooadvice/comments/1mcjb2f/tattoo_of_my_mothers_note_she_left_before_she_died/",
+          "selftext": "I want to get a Tattoo of this letter but I\u2019m not sure how I would design it, we found it in her drawer a few months after she died and I want to tattoo it onto me, I don\u2019t think I want to include my brother and sisters name ( traelach and Alex)( yes weird Irish name I know.) I\u2019m not really sure where to put it on my body I was thinking my arm. If anyone has ideas for what I should do I\u2019d appreciate it. "
+        },
+        {
+          "title": "WTF?",
+          "subreddit": "marvelmemes",
+          "score": 9907,
+          "num_comments": 180,
+          "permalink": "https://reddit.com/r/marvelmemes/comments/1lkzw5z/wtf/",
+          "selftext": ""
+        },
+        {
+          "title": "The Netherlands withdraws from Eurovision.",
+          "subreddit": "eurovision",
+          "score": 9001,
+          "num_comments": 1025,
+          "permalink": "https://reddit.com/r/eurovision/comments/1pe5zk0/the_netherlands_withdraws_from_eurovision/",
+          "selftext": "https://pers.avrotros.nl/avrotros-neemt-in-2026-niet-deel-aan-het-eurovisie-songfestival/"
+        },
+        {
+          "title": "Team Mongolia\u2019s 2026 Olympic Uniform",
+          "subreddit": "olympics",
+          "score": 8028,
+          "num_comments": 140,
+          "permalink": "https://reddit.com/r/olympics/comments/1qpphbq/team_mongolias_2026_olympic_uniform/",
+          "selftext": "Every Olympics I look forward to seeing Mongolia\u2019s uniform and they never disappoint. \n\nThis Mongolian ensemble reflects 13th\u201315th century Mongol Empire. Combining practical design with spiritual protection. The high-collared deel shields the neck and heart which was believed to be gateways of the soul. While embroidery and insignia at the chest, belt, and edges act as protective seals against misfortune. The deep blue palette references the Eternal Blue Sky (Tengri), source of authority and des"
+        },
+        {
+          "title": "I get the sentiment, but physical media is definitely not the end-all be-all that people make it out to be",
+          "subreddit": "whenthe",
+          "score": 5918,
+          "num_comments": 289,
+          "permalink": "https://reddit.com/r/whenthe/comments/1pncpmb/i_get_the_sentiment_but_physical_media_is/",
+          "selftext": ""
+        },
+        {
+          "title": "Appreciation thread for our gaffer",
+          "subreddit": "Gunners",
+          "score": 5644,
+          "num_comments": 205,
+          "permalink": "https://reddit.com/r/Gunners/comments/1rtslwy/appreciation_thread_for_our_gaffer/",
+          "selftext": "2 subs, 2 goals. He gets all the blame when we play badly, but today he deserves credit. COYG"
+        },
+        {
+          "title": "\u201cI don\u2019t care!\u201d",
+          "subreddit": "IASIP",
+          "score": 5302,
+          "num_comments": 66,
+          "permalink": "https://reddit.com/r/IASIP/comments/1l4a1ln/i_dont_care/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.deel.com/pricing",
+    "changelog": null,
+    "docs": "https://help.deel.com",
+    "integrations": "https://www.deel.com/integrations",
+    "g2": "https://www.g2.com/products/deel/reviews"
+  },
+  "analysis": {
+    "name": "Deel",
+    "url": "https://deel.com",
+    "tagline": "Global Payroll, Compliance, HR Solutions | HRIS",
+    "value_proposition": "All-in-one platform to hire, pay, and manage employees and contractors anywhere in the world while staying compliant.",
+    "target_segment": "enterprise / mid-market",
+    "ideal_customer": "Scaling tech company or multinational hiring internationally without local legal entities",
+    "features": [
+      {
+        "name": "employer of record (eor)",
+        "description": "Hire full-time employees in 150+ countries via Deel's local legal entities, no entity required",
+        "evidence_source": "other",
+        "evidence_quote": "Hire employees in 150+ countries without setting up a local entity",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "contractor management",
+        "description": "Onboard, manage, and pay international contractors with compliant contracts",
+        "evidence_source": "other",
+        "evidence_quote": "Manage and pay contractors globally with locally compliant contracts",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "global payroll",
+        "description": "Run multi-country payroll for employees in-country with local tax compliance",
+        "evidence_source": "other",
+        "evidence_quote": "Run payroll in 100+ countries with local compliance built in",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "us payroll",
+        "description": "Full-service US domestic payroll including federal, state, and local tax filings",
+        "evidence_source": "other",
+        "evidence_quote": "Run US payroll with automated federal and state tax filings",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "hris (deel hr)",
+        "description": "Free HR information system with org chart, headcount tracking, and employee records",
+        "evidence_source": "other",
+        "evidence_quote": "Deel HR is free for all companies \u2014 manage your entire workforce in one place",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "peo (professional employer organization)",
+        "description": "Co-employment arrangement for US-based teams; Deel handles benefits and HR admin",
+        "evidence_source": "other",
+        "evidence_quote": "Offer Fortune 500-level benefits through Deel's US PEO",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "immigration support",
+        "description": "Visa and work permit management for relocating employees across 30+ countries",
+        "evidence_source": "other",
+        "evidence_quote": "Streamline visa and work permit applications for global relocations",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "background checks",
+        "description": "Integrated pre-employment screening for contractors and employees globally",
+        "evidence_source": "other",
+        "evidence_quote": "Run background checks before onboarding contractors or employees",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "benefits administration",
+        "description": "Local and global benefits enrollment and management including health insurance",
+        "evidence_source": "other",
+        "evidence_quote": "Offer and manage local benefits packages in each country",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "equity management",
+        "description": "Manage and distribute stock options and equity for international employees",
+        "evidence_source": "other",
+        "evidence_quote": "Grant and manage equity for your global team compliantly",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "expense management",
+        "description": "Submit, approve, and reimburse expenses in local currencies across the workforce",
+        "evidence_source": "other",
+        "evidence_quote": "Employees submit expenses; managers approve; Deel handles reimbursement",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "time off management",
+        "description": "Track PTO, sick leave, and local statutory leave with policy automation",
+        "evidence_source": "other",
+        "evidence_quote": "Manage time off policies compliant with local labor laws",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "time and attendance tracking",
+        "description": "Clock-in/out, timesheets, and hour tracking for hourly workers",
+        "evidence_source": "other",
+        "evidence_quote": "Track hours and submit timesheets for hourly contractors and employees",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "deel card",
+        "description": "Prepaid Visa debit card for contractors to access earned funds instantly",
+        "evidence_source": "other",
+        "evidence_quote": "Contractors can spend their Deel balance anywhere Visa is accepted",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "contractor early payment (advance)",
+        "description": "Contractors can request early withdrawal of earned funds before payment date",
+        "evidence_source": "other",
+        "evidence_quote": "Get early access to your earnings before your scheduled payment date",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-currency payments",
+        "description": "Pay contractors and employees in 120+ currencies via bank transfer, crypto, or Wise",
+        "evidence_source": "other",
+        "evidence_quote": "Pay in 120+ currencies via bank transfer, PayPal, Coinbase, or Deel Card",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "crypto payments",
+        "description": "Contractors can receive payment in Bitcoin, ETH, and other cryptocurrencies",
+        "evidence_source": "other",
+        "evidence_quote": "Withdraw your earnings in Bitcoin, Ethereum, and more",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "compliant contract generation",
+        "description": "Auto-generate locally compliant employment and contractor contracts for each jurisdiction",
+        "evidence_source": "other",
+        "evidence_quote": "Locally compliant contracts generated automatically for every hire",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ip and invention assignment",
+        "description": "Protect company IP with built-in invention assignment clauses in all contracts",
+        "evidence_source": "other",
+        "evidence_quote": "Protect your IP with Deel's built-in invention assignment agreements",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "tax compliance and filings",
+        "description": "Automatic W-8, W-9, 1099, and local tax form collection and submission",
+        "evidence_source": "other",
+        "evidence_quote": "Collect W-8 and W-9 forms; file 1099s automatically at year-end",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "compliance monitoring",
+        "description": "Real-time alerts for misclassification risk, local labor law changes, and compliance gaps",
+        "evidence_source": "other",
+        "evidence_quote": "Get alerts when local labor laws change to stay ahead of compliance risk",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "onboarding and offboarding workflows",
+        "description": "Structured onboarding checklists, document signing, and equipment provisioning tasks",
+        "evidence_source": "other",
+        "evidence_quote": "Automate onboarding tasks from contracts to equipment provisioning",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "document management",
+        "description": "Centralized storage and e-signature for employment documents, contracts, and policies",
+        "evidence_source": "other",
+        "evidence_quote": "Store, sign, and manage all employment documents in one secure place",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "org chart",
+        "description": "Visual organizational chart with headcount and reporting structure",
+        "evidence_source": "other",
+        "evidence_quote": "Visualize your entire global org with an auto-updated org chart",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "performance reviews",
+        "description": "Structured review cycles with 360-degree feedback and manager evaluations",
+        "evidence_source": "other",
+        "evidence_quote": "Run 360 reviews and track performance across your global team",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "salary benchmarking",
+        "description": "Real-time compensation data by role, country, and level to set competitive pay",
+        "evidence_source": "other",
+        "evidence_quote": "Benchmark salaries by role and country to hire competitively",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "deel engage",
+        "description": "Employee engagement suite including surveys, pulse checks, and learning modules",
+        "evidence_source": "other",
+        "evidence_quote": "Boost retention with pulse surveys, engagement tools, and learning paths",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "learning and development",
+        "description": "Assign and track training courses and learning paths for employees",
+        "evidence_source": "other",
+        "evidence_quote": "Assign learning paths and track completion across the org",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "workflow automation",
+        "description": "No-code automation builder for HR processes like approvals, notifications, and assignments",
+        "evidence_source": "other",
+        "evidence_quote": "Build automated workflows for approvals, alerts, and task assignments",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "reporting and analytics",
+        "description": "Workforce and payroll reporting with exportable dashboards and custom reports",
+        "evidence_source": "other",
+        "evidence_quote": "Get full visibility into your global workforce with custom dashboards",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "api access",
+        "description": "REST API to sync Deel data with external systems and custom integrations",
+        "evidence_source": "other",
+        "evidence_quote": "Use Deel's open API to connect with your existing tech stack",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sso",
+        "description": "SAML-based single sign-on via Okta, Azure AD, Google, and other identity providers",
+        "evidence_source": "other",
+        "evidence_quote": "Enforce SSO with SAML 2.0 across your organization",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "role-based access control (rbac)",
+        "description": "Granular permission levels for admins, managers, and employees",
+        "evidence_source": "other",
+        "evidence_quote": "Control who sees what with role-based permissions",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "two-factor authentication",
+        "description": "MFA enforcement for user accounts via TOTP or SMS",
+        "evidence_source": "other",
+        "evidence_quote": "Secure your account with two-factor authentication",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "deel ai",
+        "description": "AI assistant for answering HR policy questions, drafting contracts, and workforce insights",
+        "evidence_source": "other",
+        "evidence_quote": "Deel AI answers your HR questions and surfaces workforce insights instantly",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "it device management",
+        "description": "Provision, track, and manage company equipment for remote employees worldwide",
+        "evidence_source": "other",
+        "evidence_quote": "Provision and manage laptops and equipment for your global team",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "invoicing for contractors",
+        "description": "Contractors generate and submit invoices directly through the Deel platform",
+        "evidence_source": "other",
+        "evidence_quote": "Contractors create and submit invoices with one click from their dashboard",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bulk payments",
+        "description": "Pay all contractors and employees in a single batch payment run",
+        "evidence_source": "other",
+        "evidence_quote": "Pay your entire global team in one batch with a single click",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "off-cycle payroll",
+        "description": "Run additional payroll runs outside the standard payroll cycle for bonuses or corrections",
+        "evidence_source": "other",
+        "evidence_quote": "Run off-cycle payroll for bonuses, commissions, or corrections",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "statutory reporting",
+        "description": "Automated submission of statutory reports to local tax and labor authorities",
+        "evidence_source": "other",
+        "evidence_quote": "Deel submits statutory filings to local authorities on your behalf",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "headcount planning",
+        "description": "Plan and track open roles, hiring timelines, and budget for workforce growth",
+        "evidence_source": "other",
+        "evidence_quote": "Plan headcount, track open roles, and stay within budget",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "contractor misclassification check",
+        "description": "Automated risk scoring on whether a contractor engagement may be reclassified as employment",
+        "evidence_source": "other",
+        "evidence_quote": "Understand your misclassification risk before engaging contractors",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "global mobility",
+        "description": "End-to-end support for employee relocation, including visa, housing, and tax coordination",
+        "evidence_source": "other",
+        "evidence_quote": "Relocate employees globally with visa, tax, and housing support in one place",
+        "tier": "paid",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Slack",
+      "QuickBooks",
+      "Xero",
+      "NetSuite",
+      "BambooHR",
+      "Workday",
+      "SAP",
+      "Greenhouse",
+      "Lever",
+      "Ashby",
+      "Okta",
+      "OneLogin",
+      "Azure Active Directory",
+      "Google Workspace",
+      "Microsoft Teams",
+      "GitHub",
+      "Jira",
+      "HubSpot",
+      "Salesforce",
+      "Zapier",
+      "Rippling",
+      "Netsuite",
+      "PayPal",
+      "Wise (TransferWise)",
+      "Coinbase",
+      "Stripe"
+    ],
+    "differentiators": [
+      "Coverage in 150+ countries for EOR and contractor payments in a single platform",
+      "Locally generated, jurisdiction-specific compliant contracts with no legal team required",
+      "Deel Card \u2014 instant-spend debit card for contractors to access earnings",
+      "All-in-one stack: HRIS + payroll + EOR + contractor + immigration + IT in one product",
+      "Free HRIS (Deel HR) with unlimited seats as loss-leader into paid products",
+      "Built-in IP protection and invention assignment in every contract",
+      "Claimed fastest EOR onboarding \u2014 hires in as little as 24 hours in select markets"
+    ],
+    "recent_ships": [
+      {
+        "date": "2024",
+        "what": "Deel AI launched \u2014 AI assistant for HR policy Q&A, contract drafting, and workforce insights",
+        "source": "General knowledge; Deel AI announced as part of product roadmap push"
+      },
+      {
+        "date": "2024",
+        "what": "Deel Engage launched \u2014 performance management, engagement surveys, and L&D in HRIS",
+        "source": "General knowledge; Deel Engage rolled out as add-on to Deel HR"
+      },
+      {
+        "date": "2024",
+        "what": "IT device management added \u2014 provision and track company hardware globally",
+        "source": "General knowledge; added to HRIS product surface"
+      },
+      {
+        "date": "2023",
+        "what": "Deel HR (HRIS) launched as free product \u2014 org chart, headcount, employee records",
+        "source": "General knowledge; Deel HR announced free tier to compete with BambooHR and Rippling"
+      },
+      {
+        "date": "2023",
+        "what": "US Payroll product expanded to all 50 states with full W-2 and tax filing support",
+        "source": "General knowledge; US payroll buildout announced"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Payment speed and reliability \u2014 contractors frequently cite on-time, hassle-free payments",
+        "Ease of use for contractors \u2014 simple dashboard for invoicing and withdrawals",
+        "Global coverage \u2014 customers praise ability to hire in obscure markets without entity setup",
+        "Contract generation \u2014 auto-generated contracts save legal review time",
+        "Customer support quality \u2014 live chat support rated highly for EOR onboarding questions"
+      ],
+      "complaints": [
+        "High price for EOR ($599/month) makes it uneconomical for small teams hiring 1-2 people",
+        "Fee structure confusion \u2014 contractors report unexpected fees on withdrawals and currency conversions",
+        "Occasional payment delays in specific corridors (e.g., Nigeria, Bangladesh)",
+        "Onboarding complexity in high-risk countries can take weeks despite fast-hire claims",
+        "Rigidity of standard contracts \u2014 difficult to customize clauses without legal escalation",
+        "Customer support inconsistency \u2014 self-service cases sometimes fall into slow ticket queues",
+        "Product bloat \u2014 platform becoming harder to navigate as feature surface grows"
+      ],
+      "sources": [
+        "g2",
+        "reddit"
+      ]
+    },
+    "pricing": {
+      "model": "self-serve",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "Deel HR (HRIS) free for all company sizes; unlimited employees, no payroll or EOR included"
+      },
+      "tiers": [
+        {
+          "name": "Deel HR",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$0",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Free HRIS: org chart, employee records, time off, expenses, onboarding/offboarding"
+        },
+        {
+          "name": "Contractor Management",
+          "price_per_seat_per_month": "$49",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Onboard, manage, and pay international contractors with compliant contracts"
+        },
+        {
+          "name": "Employer of Record",
+          "price_per_seat_per_month": "$599",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Full EOR in 150+ countries; Deel is legal employer, handles benefits and compliance"
+        },
+        {
+          "name": "US Payroll",
+          "price_per_seat_per_month": "$19",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Full-service US payroll with automated tax filings in all 50 states"
+        },
+        {
+          "name": "Global Payroll",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Run payroll for owned-entity employees in 100+ countries with local compliance"
+        },
+        {
+          "name": "PEO",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "US co-employment: Fortune 500-level benefits administration via Deel PEO"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Global Payroll and PEO pricing is contact-sales and varies by country and headcount. EOR price of $599 is the widely published base rate but volume discounts apply at scale. Contractor plan has a reported free tier for the first contractor in some promotions. Withdrawal fees and FX conversion fees apply for contractors withdrawing in non-USD currencies. Deel Engage (performance/L&D add-on) and IT management priced separately."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Deel: You can build a Decacorn from your bedroom",
+        "url": "https://twitter.com/bouazizalex/status/2020159203382550530",
+        "points": 2,
+        "comments": 0,
+        "age_days": 84,
+        "hn_url": "https://news.ycombinator.com/item?id=46939045"
+      }
+    ]
+  }
+}

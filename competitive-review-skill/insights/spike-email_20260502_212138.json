@@ -1,0 +1,383 @@
+{
+  "name": "Spike",
+  "url": "https://www.spike.email",
+  "domain": "spike.email",
+  "scanned_at": "2026-05-02T21:18:47.782504",
+  "sources": {
+    "landing": {
+      "url": "https://www.spike.email",
+      "title": "",
+      "text": "",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.spike.email/pricing",
+      "title": "",
+      "text": "",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://docs.spike.email",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://docs.spike.email/\nCall log:\n  - navigating to \"https://docs.spike.email/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/spike-email/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "GitLab sees huge spike in project imports",
+          "url": "https://monitor.gitlab.net/dashboard/db/github-importer?orgId=1",
+          "points": 1736,
+          "num_comments": 455,
+          "created_at": "2018-06-03T23:29:58Z",
+          "hn_url": "https://news.ycombinator.com/item?id=17223116"
+        },
+        {
+          "title": "Apple Maps location scan spikes WiFi latency every 60 seconds",
+          "url": "https://twitter.com/benskuhn/status/1524791658381910023",
+          "points": 677,
+          "num_comments": 172,
+          "created_at": "2022-05-12T16:56:40Z",
+          "hn_url": "https://news.ycombinator.com/item?id=31356730"
+        },
+        {
+          "title": "Dear Spike Lee",
+          "url": "http://juanluisgarcia.com/dear-spike-lee/",
+          "points": 652,
+          "num_comments": 158,
+          "created_at": "2013-11-27T20:51:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6811060"
+        },
+        {
+          "title": "Famous judge spikes Apple-Google case, calls patent system \u201cdysfunctional\u201d",
+          "url": "http://gigaom.com/mobile/famous-judge-spikes-apple-google-case-calls-patent-system-dysfunctional/",
+          "points": 601,
+          "num_comments": 121,
+          "created_at": "2012-06-08T18:19:51Z",
+          "hn_url": "https://news.ycombinator.com/item?id=4085502"
+        },
+        {
+          "title": "Signal app downloads spike as US protesters seek message encryption",
+          "url": "https://qz.com/1864846/signal-app-downloads-spike-as-us-protesters-seek-message-encryption/",
+          "points": 472,
+          "num_comments": 356,
+          "created_at": "2020-06-05T01:58:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=23424245"
+        },
+        {
+          "title": "\u20ac54k spike in 13h from unrestricted Firebase browser key accessing Gemini APIs",
+          "url": "https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262",
+          "points": 400,
+          "num_comments": 297,
+          "created_at": "2026-04-16T12:13:30Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47791871"
+        },
+        {
+          "title": "After Spike in Deaths, New York to Get 250 Miles of Protected Bike Lanes",
+          "url": "https://www.nytimes.com/2019/10/28/nyregion/nyc-biking-deaths-lanes.html",
+          "points": 398,
+          "num_comments": 311,
+          "created_at": "2019-10-28T18:34:06Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21380049"
+        },
+        {
+          "title": "Fracking in North America could be partly to blame for methane spike \u2013 study",
+          "url": "https://www.newsweek.com/fracking-u-s-canada-worldwide-atmospheric-methane-spike-1454205",
+          "points": 359,
+          "num_comments": 108,
+          "created_at": "2019-08-28T02:57:32Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20816470"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "A crow removing several metal anti-bird spikes from a building ledge.",
+          "subreddit": "nextfuckinglevel",
+          "score": 95684,
+          "num_comments": 1295,
+          "permalink": "https://reddit.com/r/nextfuckinglevel/comments/1rbxp5p/a_crow_removing_several_metal_antibird_spikes/",
+          "selftext": ""
+        },
+        {
+          "title": "In response to the bowl cut being our gen\u2019s broccoli cut, I present the bleached spikes of the late 90s",
+          "subreddit": "Millennials",
+          "score": 43734,
+          "num_comments": 2034,
+          "permalink": "https://reddit.com/r/Millennials/comments/1s6eptc/in_response_to_the_bowl_cut_being_our_gens/",
+          "selftext": ""
+        },
+        {
+          "title": "Last night my princess of darkness saved my husband!",
+          "subreddit": "VoidCats",
+          "score": 37693,
+          "num_comments": 478,
+          "permalink": "https://reddit.com/r/VoidCats/comments/1kxh74h/last_night_my_princess_of_darkness_saved_my/",
+          "selftext": "Last night my bestie girl Lemon alerted me to my diabetic husband's high blood sugar! He has type 1 diabetes and hasn't had a spike in a while, but at 2am I woke up to my girl licking my face and kneading my chest. As soon as my eyes opened, she went to my husband and bit his shoulder and started furiously purring and rubbing against him, meowing randomly. I checked his sugar in my app for it and it was reaaaaallly high (hes sort of sick and it can spike when he is) and she let us know a full 5 "
+        },
+        {
+          "title": "Spiked \u201960 Minutes\u2019 Segment Spreads Online After Canadian TV Network Posts Unedited Episode",
+          "subreddit": "entertainment",
+          "score": 34159,
+          "num_comments": 710,
+          "permalink": "https://reddit.com/r/entertainment/comments/1pttied/spiked_60_minutes_segment_spreads_online_after/",
+          "selftext": ""
+        },
+        {
+          "title": "Crow removes anti-bird spikes from a building ledge",
+          "subreddit": "whoathatsinteresting",
+          "score": 33922,
+          "num_comments": 367,
+          "permalink": "https://reddit.com/r/whoathatsinteresting/comments/1rbiydo/crow_removes_antibird_spikes_from_a_building_ledge/",
+          "selftext": ""
+        },
+        {
+          "title": "Newsom responds to Trump calling him President",
+          "subreddit": "WhitePeopleTwitter",
+          "score": 31178,
+          "num_comments": 856,
+          "permalink": "https://reddit.com/r/WhitePeopleTwitter/comments/1rvud4i/newsom_responds_to_trump_calling_him_president/",
+          "selftext": ""
+        },
+        {
+          "title": "This spiky creature has been occupying our small freezer for 2 years and I\u2019m not allowed to throw it away",
+          "subreddit": "Weird",
+          "score": 30058,
+          "num_comments": 2938,
+          "permalink": "https://reddit.com/r/Weird/comments/1psiwkp/this_spiky_creature_has_been_occupying_our_small/",
+          "selftext": "I keep seeing nightmares of that monster. Partner says it\u2019s precious seafood. Every time I try to find something from the freezer, I get scratched (impaled) by nasty, sharp, yellow and blue spikes."
+        },
+        {
+          "title": "Peter what's happening",
+          "subreddit": "explainitpeter",
+          "score": 28938,
+          "num_comments": 1187,
+          "permalink": "https://reddit.com/r/explainitpeter/comments/1ol52hg/peter_whats_happening/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.spike.email/pricing",
+    "changelog": null,
+    "docs": "https://docs.spike.email",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/spike-email/reviews"
+  },
+  "analysis": {
+    "name": "Spike",
+    "url": "https://www.spike.email",
+    "tagline": "Email, Reimagined",
+    "value_proposition": "Spike turns email into a chat-like conversational interface while keeping full email compatibility, adding messaging, calls, and collaboration on top of any existing inbox.",
+    "target_segment": "SMB / consumer / prosumer",
+    "ideal_customer": "Small teams and individuals who live in email but want a Slack-like UX without abandoning their existing email address",
+    "features": [
+      {
+        "name": "conversational email",
+        "description": "Renders email threads as chat-style bubbles, hiding quoted text and headers",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "priority inbox",
+        "description": "Surfaces important messages and filters noise automatically",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "groups",
+        "description": "Team channels that send and receive via email, functioning like Slack channels over standard email",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "video calls",
+        "description": "Built-in video meetings accessible directly from conversations",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "voice messages",
+        "description": "Record and send audio clips inline in conversations",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "collaborative notes",
+        "description": "Shared real-time documents attached to conversations or groups",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "tasks",
+        "description": "Create and assign to-dos from within conversations",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "read receipts",
+        "description": "See when recipients have read your emails",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "do not disturb",
+        "description": "Snooze notifications on a schedule",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "multi-account support",
+        "description": "Connect and manage multiple email accounts in one inbox",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "snippets / templates",
+        "description": "Reusable text templates for quick replies",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "follow-up reminders",
+        "description": "Remind yourself to follow up on emails that go unanswered",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "magic ai",
+        "description": "AI-powered writing assistant, summarization, and smart replies",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "send later",
+        "description": "Schedule emails to be delivered at a specific time",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "undo send",
+        "description": "Recall a sent message within a short window",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "mobile apps",
+        "description": "Native iOS and Android clients",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "desktop apps",
+        "description": "Native Mac and Windows clients",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "web app",
+        "description": "Browser-based access at app.spike.email",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "sso",
+        "description": "Single sign-on for enterprise/team deployments",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "admin controls",
+        "description": "Team-level user management and permissions",
+        "evidence_source": "pricing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "search",
+        "description": "Full-text search across all emails and messages",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "file sharing",
+        "description": "Attach and preview files inline in conversations",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "emoji reactions",
+        "description": "React to email messages with emoji, visible to recipients also on Spike",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "online status / presence",
+        "description": "See when contacts are online for real-time communication",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "message encryption",
+        "description": "End-to-end encrypted messaging for Spike-to-Spike conversations",
+        "evidence_source": "landing",
+        "tier": "all"
+      }
+    ],
+    "integrations": [
+      "Gmail",
+      "Google Workspace",
+      "Outlook / Microsoft 365",
+      "Yahoo Mail",
+      "iCloud Mail",
+      "IMAP/SMTP (any provider)",
+      "Hotmail / Live",
+      "AOL"
+    ],
+    "differentiators": [
+      "Works with any existing email address \u2014 no new address required",
+      "Chat-like UX over standard email protocol (no proprietary lock-in)",
+      "Async + sync in one: email, voice, video, and docs in a single thread",
+      "Emoji reactions on email messages",
+      "Groups that are actual email addresses, readable by non-Spike users"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [
+        "Clean, chat-like interface makes email feel less overwhelming",
+        "Works with existing Gmail/Outlook accounts without migration",
+        "Voice messages and read receipts appreciated by small teams",
+        "Mobile app polish"
+      ],
+      "complaints": [
+        "Collaborative features require recipient to also use Spike for full experience",
+        "Pricing considered steep for small teams relative to just using Gmail",
+        "Occasional sync reliability issues with IMAP providers",
+        "Feature set can feel overwhelming vs. a simple email client"
+      ],
+      "sources": []
+    },
+    "pricing_signal": {
+      "model": "freemium",
+      "tier_count": 3,
+      "lowest_paid_seat": "$5/mo",
+      "free_tier": "Single user, core conversational email, limited AI and collaboration features"
+    }
+  }
+}

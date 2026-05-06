@@ -1,0 +1,1107 @@
+{
+  "type": "competitive_review_handoff",
+  "category": "marketing-automation",
+  "product": "Zstack",
+  "generated_at": "2026-05-04T00:55:25.528756",
+  "competitor_urls": [
+    "https://hubspot.com",
+    "https://marketo.com",
+    "https://activecampaign.com",
+    "https://customer.io",
+    "https://ortto.com",
+    "https://klaviyo.com",
+    "https://braze.com",
+    "https://iterable.com",
+    "https://salesforce.com/marketing/",
+    "https://drip.com"
+  ],
+  "matrix": [
+    {
+      "feature": "segmentation reports",
+      "category": "reporting",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "yes",
+        "activecampaign.com": "yes",
+        "customer.io": "yes",
+        "ortto.com": "yes",
+        "klaviyo.com": "yes",
+        "braze.com": "yes",
+        "iterable.com": "yes",
+        "salesforce.com": "yes",
+        "drip.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "high",
+      "source_summary": "Drip features list explicit; all platforms list both segmentation and reporting as first-class features",
+      "frequency": 10,
+      "frequency_weighted": 10.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "drag-and-drop email editor",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "yes",
+        "activecampaign.com": "yes",
+        "customer.io": "yes",
+        "ortto.com": "yes",
+        "klaviyo.com": "yes",
+        "braze.com": "yes",
+        "iterable.com": "yes",
+        "salesforce.com": "yes",
+        "drip.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "high",
+      "source_summary": "Customer.io 'drag-and-drop visual editor', Ortto 'drag and drop email builder', Klaviyo 'drag-and-drop email editor' explicit; Iterable 'wysiwyg editor'; Drip 'visual email builder'",
+      "frequency": 10,
+      "frequency_weighted": 10.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "html code editor",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "yes",
+        "activecampaign.com": "unknown",
+        "customer.io": "yes",
+        "ortto.com": "partial",
+        "klaviyo.com": "unknown",
+        "braze.com": "unknown",
+        "iterable.com": "partial",
+        "salesforce.com": "yes",
+        "drip.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "medium",
+      "source_summary": "Marketo 'advanced html mode', Customer.io 'code editor', Salesforce AMPscript/SSJS confirm; Iterable 'side-by-side editor' implied; others not explicit",
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "email templates",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "yes",
+        "activecampaign.com": "yes",
+        "customer.io": "yes",
+        "ortto.com": "yes",
+        "klaviyo.com": "yes",
+        "braze.com": "yes",
+        "iterable.com": "yes",
+        "salesforce.com": "yes",
+        "drip.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "high",
+      "source_summary": "Klaviyo 'email templates', Ortto 'email template manager', Customer.io 'saved templates & version control' explicit; universal across all platforms",
+      "frequency": 10,
+      "frequency_weighted": 10.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "landing pages",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "yes",
+        "activecampaign.com": "yes",
+        "customer.io": "no",
+        "ortto.com": "yes",
+        "klaviyo.com": "unknown",
+        "braze.com": "partial",
+        "iterable.com": "unknown",
+        "salesforce.com": "yes",
+        "drip.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "medium",
+      "source_summary": "Marketo, ActiveCampaign, Ortto explicit; Salesforce 'CloudPages (web studio)'; Braze only 'landing page extensions'; Customer.io feature list has no mention",
+      "frequency": 6,
+      "frequency_weighted": 5.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "forms and popups",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "yes",
+        "activecampaign.com": "yes",
+        "customer.io": "yes",
+        "ortto.com": "yes",
+        "klaviyo.com": "unknown",
+        "braze.com": "partial",
+        "iterable.com": "partial",
+        "salesforce.com": "partial",
+        "drip.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "medium",
+      "source_summary": "Marketo 'forms', Ortto 'form and popup builder', Drip 'onsite pop-ups, embedded forms' explicit; Braze/Iterable/Salesforce only preference or survey tooling",
+      "frequency": 8,
+      "frequency_weighted": 7.5,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "dynamic content",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "yes",
+        "activecampaign.com": "yes",
+        "customer.io": "yes",
+        "ortto.com": "yes",
+        "klaviyo.com": "yes",
+        "braze.com": "yes",
+        "iterable.com": "yes",
+        "salesforce.com": "yes",
+        "drip.com": "partial",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "high",
+      "source_summary": "Salesforce 'dynamic content', Iterable 'dynamic content builder', Ortto 'dynamic email content' explicit; ActiveCampaign 'conditional content'; Drip only 'behavior-based personalization'",
+      "frequency": 10,
+      "frequency_weighted": 9.5,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "liquid templating",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "no",
+        "marketo.com": "no",
+        "activecampaign.com": "unknown",
+        "customer.io": "yes",
+        "ortto.com": "unknown",
+        "klaviyo.com": "unknown",
+        "braze.com": "unknown",
+        "iterable.com": "no",
+        "salesforce.com": "no",
+        "drip.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "medium",
+      "source_summary": "Customer.io and Drip explicit; HubSpot uses HubL, Marketo uses Velocity scripting, Iterable uses Handlebars, Salesforce uses AMPscript \u2014 all proprietary alternatives",
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "a/b and multivariate testing",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "unknown",
+        "activecampaign.com": "unknown",
+        "customer.io": "unknown",
+        "ortto.com": "yes",
+        "klaviyo.com": "unknown",
+        "braze.com": "yes",
+        "iterable.com": "unknown",
+        "salesforce.com": "yes",
+        "drip.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "medium",
+      "source_summary": "Braze 'a/b and multivariate testing', Salesforce 'a/b testing', Drip 'a/b testing', Ortto 'email a/b testing' explicit; others not listed in source",
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "responsive email design",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "yes",
+        "activecampaign.com": "yes",
+        "customer.io": "yes",
+        "ortto.com": "yes",
+        "klaviyo.com": "yes",
+        "braze.com": "yes",
+        "iterable.com": "yes",
+        "salesforce.com": "yes",
+        "drip.com": "yes",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "high",
+      "source_summary": "Customer.io 'responsive styles' explicit; industry baseline confirmed across all platforms with visual/drag-and-drop editors",
+      "frequency": 10,
+      "frequency_weighted": 10.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "email preview and rendering",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "unknown",
+        "marketo.com": "unknown",
+        "activecampaign.com": "unknown",
+        "customer.io": "partial",
+        "ortto.com": "unknown",
+        "klaviyo.com": "unknown",
+        "braze.com": "unknown",
+        "iterable.com": "unknown",
+        "salesforce.com": "yes",
+        "drip.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "low",
+      "source_summary": "Salesforce features list explicit; Customer.io 'dark mode support (email)' implies preview capability; no other source mentions it directly",
+      "frequency": 2,
+      "frequency_weighted": 1.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "brand management tools",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "partial",
+        "marketo.com": "yes",
+        "activecampaign.com": "unknown",
+        "customer.io": "partial",
+        "ortto.com": "unknown",
+        "klaviyo.com": "unknown",
+        "braze.com": "unknown",
+        "iterable.com": "unknown",
+        "salesforce.com": "partial",
+        "drip.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "low",
+      "source_summary": "Marketo 'email designer - brand management' and 'brand quality checker' are the only explicit entries; others offer partial coverage via content hubs or global styles",
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "localization and multi-language support",
+      "category": "ux",
+      "presence": {
+        "hubspot.com": "unknown",
+        "marketo.com": "unknown",
+        "activecampaign.com": "unknown",
+        "customer.io": "yes",
+        "ortto.com": "yes",
+        "klaviyo.com": "unknown",
+        "braze.com": "partial",
+        "iterable.com": "yes",
+        "salesforce.com": "yes",
+        "drip.com": "unknown",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "medium",
+      "source_summary": "Salesforce, Iterable, Ortto 'multi-lingual marketing' explicit; Customer.io 'ai translator for messages'; Braze only 'localization integrations'",
+      "frequency": 4,
+      "frequency_weighted": 4.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "team inbox",
+      "category": "collaboration",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "no",
+        "activecampaign.com": "yes",
+        "customer.io": "unknown",
+        "ortto.com": "yes",
+        "klaviyo.com": "yes",
+        "braze.com": "partial",
+        "iterable.com": "unknown",
+        "salesforce.com": "unknown",
+        "drip.com": "no",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "medium",
+      "source_summary": "Ortto 'team inbox' explicit; Klaviyo 'customer hub + helpdesk'; ActiveCampaign 'unified chat inbox'; HubSpot service hub; Marketo and Drip have no such feature",
+      "frequency": 4,
+      "frequency_weighted": 4.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "live chat",
+      "category": "collaboration",
+      "presence": {
+        "hubspot.com": "yes",
+        "marketo.com": "partial",
+        "activecampaign.com": "partial",
+        "customer.io": "unknown",
+        "ortto.com": "yes",
+        "klaviyo.com": "partial",
+        "braze.com": "unknown",
+        "iterable.com": "unknown",
+        "salesforce.com": "unknown",
+        "drip.com": "no",
+        "us_spec": "unknown",
+        "us_live": "unknown"
+      },
+      "confidence": "medium",
+      "source_summary": "Ortto 'live chat' explicit; HubSpot service hub; Marketo 'Dynamic Chat' is AI-only; Drip live chat is their own support offering, not a product feature for customers",
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "email marketing",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "sms marketing",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "transactional email",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile push notifications",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "web push notifications",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "in-app messaging",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "whatsapp messaging",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "contact management",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "contact segmentation",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "lead scoring",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "crm",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "custom fields and objects",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "list management",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "subscription and preference management",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "double opt-in",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ai content creation",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ai subject line generator",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ai-powered automation builder",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "predictive content selection",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ai segment builder",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ai agent",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "predictive engagement scoring",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ai send-time optimization",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "salesforce integration",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "microsoft dynamics integration",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ecommerce integrations",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "data warehouse integration",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "reverse etl",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "rest api",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "webhooks",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "developer sdk",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "app marketplace",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "cdp integration",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ad network integrations",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "attribution tracking integrations",
+      "category": "integrations",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "sso",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "mfa",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "role-based access control",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "multi-workspace support",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "audit trail",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "gdpr and privacy compliance",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "deliverability management",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "dedicated ip addresses",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "bot activity filtering",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "data import and export",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "domain management",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ip-based access control",
+      "category": "admin",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "visual workflow builder",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "event-based triggers",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "pre-built automation templates",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "browse abandonment automation",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "contact frequency capping",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ad audience sync",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "site and behavior tracking",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "lookalike audience creation",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "reporting and analytics dashboards",
+      "category": "reporting",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "custom reports",
+      "category": "reporting",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "funnel analysis",
+      "category": "reporting",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "attribution and conversion tracking",
+      "category": "reporting",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "email open and click tracking",
+      "category": "reporting",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "knowledge base",
+      "category": "collaboration",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "shared asset library",
+      "category": "collaboration",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile app",
+      "category": "mobile",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile inbox",
+      "category": "mobile",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "nps surveys",
+      "category": "other",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "data enrichment",
+      "category": "other",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "payments processing",
+      "category": "other",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "academy and training",
+      "category": "other",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "duplicate contact detection",
+      "category": "other",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    }
+  ],
+  "rankings": [
+    {
+      "feature": "segmentation reports",
+      "bucket": "table_stakes",
+      "frequency": 10,
+      "fit": 4,
+      "cost": "M",
+      "score": 13.33,
+      "evidence": ""
+    },
+    {
+      "feature": "drag-and-drop email editor",
+      "bucket": "table_stakes",
+      "frequency": 10,
+      "fit": 4,
+      "cost": "M",
+      "score": 13.33,
+      "evidence": ""
+    },
+    {
+      "feature": "email templates",
+      "bucket": "table_stakes",
+      "frequency": 10,
+      "fit": 4,
+      "cost": "M",
+      "score": 13.33,
+      "evidence": ""
+    },
+    {
+      "feature": "dynamic content",
+      "bucket": "table_stakes",
+      "frequency": 10,
+      "fit": 4,
+      "cost": "M",
+      "score": 13.33,
+      "evidence": ""
+    },
+    {
+      "feature": "responsive email design",
+      "bucket": "table_stakes",
+      "frequency": 10,
+      "fit": 4,
+      "cost": "M",
+      "score": 13.33,
+      "evidence": ""
+    },
+    {
+      "feature": "forms and popups",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 4,
+      "cost": "M",
+      "score": 10.67,
+      "evidence": ""
+    },
+    {
+      "feature": "landing pages",
+      "bucket": "differentiator_parity",
+      "frequency": 6,
+      "fit": 4,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    },
+    {
+      "feature": "html code editor",
+      "bucket": "differentiator_parity",
+      "frequency": 5,
+      "fit": 4,
+      "cost": "M",
+      "score": 6.67,
+      "evidence": ""
+    },
+    {
+      "feature": "a/b and multivariate testing",
+      "bucket": "differentiator_parity",
+      "frequency": 5,
+      "fit": 4,
+      "cost": "M",
+      "score": 6.67,
+      "evidence": ""
+    },
+    {
+      "feature": "localization and multi-language support",
+      "bucket": "differentiator_parity",
+      "frequency": 4,
+      "fit": 4,
+      "cost": "M",
+      "score": 5.33,
+      "evidence": ""
+    }
+  ],
+  "drift": [],
+  "summary": {
+    "n_features": 84,
+    "table_stakes_count": 6,
+    "differentiator_parity_count": 9,
+    "whitespace_count": 69,
+    "we_have_they_dont_count": 0,
+    "drift_count": 0,
+    "_thresholds": {
+      "table_stakes": 0.75,
+      "parity_lower": 0.25,
+      "partial_weight": 0.5
+    }
+  }
+}

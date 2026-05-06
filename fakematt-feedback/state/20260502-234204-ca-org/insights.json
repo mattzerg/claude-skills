@@ -1,0 +1,543 @@
+{
+  "target": "https://ca-org.fly.dev/org-chart",
+  "kind": "live_url",
+  "captures": [
+    {
+      "url": "https://ca-org.fly.dev/org-chart",
+      "final_url": "https://ca-org.fly.dev/login",
+      "title": "Operations Atlas",
+      "h1": null,
+      "headings": [
+        "Sign in"
+      ],
+      "primary_cta": "Sign in",
+      "forms": [
+        {
+          "action": "",
+          "fields": [
+            {
+              "type": "email",
+              "name": "",
+              "required": true
+            },
+            {
+              "type": "password",
+              "name": "",
+              "required": true
+            }
+          ]
+        }
+      ],
+      "links_sample": [
+        "https://ca-org.fly.dev/forgot-password"
+      ],
+      "console": [],
+      "network_errors": [],
+      "axe_violations": [
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "help": "Document should have one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "help": "Page should contain a level-one heading",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "help": "All page content should be contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+          "node_count": 5,
+          "first_node_html": "<div class=\"login-brand\" data-v-d0151c9c=\"\"><strong data-v-d0151c9c=\"\">Operations Atlas</strong><span class=\"login-brand-sub\" data-v-d0151c9c=\"\">ORG</span></div>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 1177,
+        "load_event_ms": 1264,
+        "transfer_size_kb": 10,
+        "encoded_body_size_kb": 10
+      },
+      "text_excerpt": "Operations Atlas\nORG\nSign in\nEMAIL\nPASSWORD\nSign in\nForgot username/password?",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/org-chart_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/org-chart_mobile.png"
+    },
+    {
+      "url": "https://ca-org.fly.dev/forgot-password",
+      "final_url": "https://ca-org.fly.dev/forgot-password",
+      "title": "Operations Atlas",
+      "h1": "Reset password",
+      "headings": [
+        "Reset password"
+      ],
+      "primary_cta": "Send reset link",
+      "forms": [
+        {
+          "action": "",
+          "fields": [
+            {
+              "type": "email",
+              "name": "",
+              "required": true
+            }
+          ]
+        }
+      ],
+      "links_sample": [
+        "https://ca-org.fly.dev/login"
+      ],
+      "console": [],
+      "network_errors": [],
+      "axe_violations": [
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "help": "Document should have one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "help": "All page content should be contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+          "node_count": 6,
+          "first_node_html": "<p class=\"page-kicker\" data-v-fca586d5=\"\">Account Recovery</p>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 179,
+        "load_event_ms": 184,
+        "transfer_size_kb": 10,
+        "encoded_body_size_kb": 9
+      },
+      "text_excerpt": "ACCOUNT RECOVERY\n\nOperations Atlas\nORG\nReset password\n\nEnter your work email and we will send a reset link.\n\nEMAIL\nSend reset link\nBack to sign in",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/forgot-password_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/forgot-password_mobile.png"
+    },
+    {
+      "url": "https://ca-org.fly.dev/login",
+      "final_url": "https://ca-org.fly.dev/login",
+      "title": "Operations Atlas",
+      "h1": null,
+      "headings": [
+        "Sign in"
+      ],
+      "primary_cta": "Sign in",
+      "forms": [
+        {
+          "action": "",
+          "fields": [
+            {
+              "type": "email",
+              "name": "",
+              "required": true
+            },
+            {
+              "type": "password",
+              "name": "",
+              "required": true
+            }
+          ]
+        }
+      ],
+      "links_sample": [
+        "https://ca-org.fly.dev/forgot-password"
+      ],
+      "console": [],
+      "network_errors": [],
+      "axe_violations": [
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "help": "Document should have one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "help": "Page should contain a level-one heading",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "help": "All page content should be contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+          "node_count": 5,
+          "first_node_html": "<div class=\"login-brand\" data-v-d0151c9c=\"\"><strong data-v-d0151c9c=\"\">Operations Atlas</strong><span class=\"login-brand-sub\" data-v-d0151c9c=\"\">ORG</span></div>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 105,
+        "load_event_ms": 109,
+        "transfer_size_kb": 10,
+        "encoded_body_size_kb": 10
+      },
+      "text_excerpt": "Operations Atlas\nORG\nSign in\nEMAIL\nPASSWORD\nSign in\nForgot username/password?",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/login_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/login_mobile.png"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "axe flags html-has-lang as **serious** — every screen reader defaults to OS-detected language when this attribute is absent, mispronouncing content and breaking all language-dependent AT behavior from the root element down. This is a one-attribute fix with zero excuse for being absent in production.",
+      "suggested_fix": "Add lang=\"en\" (or the appropriate BCP 47 locale tag) to the <html> element. Resolves the axe violation in under one minute.",
+      "voice_provenance": "q-0022",
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "accessibility",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "body",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "Two landmark violations fire together: no <main> element (landmark-one-main) and 5 content nodes outside any landmark region (region). On a login page where the entire job-to-be-done is a single form, forcing AT users to tab through every unfenced element before reaching the email field is friction on the only critical path the page has. The brand lockup, form, and surrounding content are all structurally invisible to landmark-navigation users.",
+      "suggested_fix": "Wrap the brand lockup in <header> and the login form in <main>. One structural pass resolves both violations and costs under 10 minutes.",
+      "voice_provenance": "q-0024",
+      "principle_provenance": [
+        "p-0002",
+        "p-0106"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": ".login-form h2, [class*='title']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "axe page-has-heading-one fires — \"Sign in\" exists as visual copy but not as a semantic h1, which means screen reader users navigating by heading land on a page with no document anchor. The visual treatment is irrelevant; the semantic outline is broken at the top level.",
+      "suggested_fix": "Render \"Sign in\" as an <h1>. Visual size and weight are controlled by CSS independently. Zero layout impact, full heading-hierarchy fix.",
+      "voice_provenance": "q-0017",
+      "principle_provenance": [
+        "p-0030"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "ux",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "body",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "The page silently redirects /org-chart to /login with zero context. A user following a shared link to the org chart gets bounced to a sign-in screen with no message explaining why or what they're about to access after authenticating. Nielsen's first heuristic requires users to always know where they stand — this page fails that at the first pixel for every user arriving from a direct or forwarded URL.",
+      "suggested_fix": "Detect redirect origin and surface a contextual flash above the form: \"Sign in to view the org chart.\" Preserve the intended destination as a ?next=/org-chart param for automatic post-login redirect. 15 minutes of work with a measurable drop in sign-in abandonment.",
+      "voice_provenance": "q-0015",
+      "principle_provenance": [
+        "p-0106",
+        "p-0108"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P0",
+      "category": "cta",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "form",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "The login page has one CTA (Sign in) and one escape (Forgot username/password?) — and nothing for the user who doesn't have credentials. A first-time user arriving via a shared link hits a dead end: no instruction, no action to take, no next step. That's not a login page; that's a wall. The page fails to convert on its own differentiating premise the moment anyone without an account lands on it.",
+      "suggested_fix": "Add a secondary link below the form: \"Don't have an account? Contact your admin\" linked to a mailto or provisioning request form. If self-serve signup is intentionally off, that's an acceptable product decision — but the page must acknowledge users without credentials and give them a forward path.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0047",
+        "p-0108"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "positioning",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "div.login-brand",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "\"Operations Atlas ORG\" is a product name with zero description of what it does or what the user is authenticating into. An infrequent user arriving from a bookmark, a forwarded link, or a password manager autofill has no anchor for what this tool is. The brand lockup does less work than a favicon.",
+      "suggested_fix": "Add a single-line descriptor directly beneath the product name: e.g., \"Live org chart for [Company Name]\" or \"Your organization's reporting structure.\" One line of copy, no layout changes, eliminates all ambiguity for every user who doesn't log in daily.",
+      "voice_provenance": "q-0017",
+      "principle_provenance": [
+        "p-0044",
+        "p-0107"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P2",
+      "category": "copy",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "a[href='/forgot-password']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "\"Forgot username/password?\" conflates two distinct recovery flows into one ambiguous CTA. Password reset is automated via email; username recovery usually isn't. A user who only forgot their password pauses on \"username\" unnecessarily — micro-friction at the one moment they're already stuck.",
+      "suggested_fix": "Change to \"Forgot password?\" unless a genuine, distinct username recovery flow exists and is reachable from the same destination. If both flows exist, split into two separate links with explicit labels.",
+      "voice_provenance": "q-0022",
+      "principle_provenance": [
+        "p-0050",
+        "p-0047"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P1",
+      "category": "friction",
+      "location": {
+        "url": "https://ca-org.fly.dev/forgot-password",
+        "selector": "form input[type='email']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/forgot-password_desktop.png"
+      },
+      "finding": "The email field has no `name` attribute (`name=\"\"`). Browser password managers and autofill use the name attribute to identify fields — without it, saved email addresses won't populate and mobile users have to type their address manually every time. On a recovery page where the user is already locked out, adding a manual typing burden is a second failure stacked on the first.",
+      "suggested_fix": "Add `name=\"email\"` and `autocomplete=\"email\"` to the input element. Two attributes, zero rework.",
+      "voice_provenance": "q-0009",
+      "principle_provenance": [
+        "p-0061"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "accessibility",
+      "location": {
+        "url": "https://ca-org.fly.dev/forgot-password",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/forgot-password_desktop.png"
+      },
+      "finding": "The `<html>` element has no `lang` attribute — axe rates this serious. Screen readers fall back to the OS language setting, producing incorrect pronunciation for any non-English content and failing WCAG 3.1.1. This is a one-line fix that closes a real accessibility liability on a page that handles account recovery, where assistive technology use is disproportionately high.",
+      "suggested_fix": "Add `lang=\"en\"` (or the appropriate BCP 47 language tag) to the `<html>` element.",
+      "voice_provenance": "q-0009",
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "location": {
+        "url": "https://ca-org.fly.dev/forgot-password",
+        "selector": "body",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/forgot-password_desktop.png"
+      },
+      "finding": "The page has no `<main>` landmark and axe flags 6 content nodes living outside any landmark region. Keyboard and screen reader users navigating by landmark skip straight past the form — they land on the page and have no structural anchor to the recovery flow. Landmark violations on a form-only page with a single job to do are hard to excuse.",
+      "suggested_fix": "Wrap the kicker, heading, instruction copy, and form in a single `<main>` element. Move the 'Back to sign in' link inside or immediately after `<main>`. Ensure nothing visible sits outside header/main/footer.",
+      "voice_provenance": "q-0009",
+      "principle_provenance": [
+        "p-0002",
+        "p-0110"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "friction",
+      "location": {
+        "url": "https://ca-org.fly.dev/forgot-password",
+        "selector": "form",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/forgot-password_desktop.png"
+      },
+      "finding": "There is no indication of inline validation on the email field. A malformed address submitted to this form surfaces its error post-submit — the user has to re-read the page, identify the field, and re-type. On a recovery flow where the user is already frustrated, submit-time errors compound the problem instead of resolving it. Every competitor auth form validates email format on blur.",
+      "suggested_fix": "Add blur-time validation: if the value doesn't match a basic email pattern, display an inline error directly beneath the field — 'Enter a valid email address' — before the user clicks submit. Don't wait for the round-trip.",
+      "voice_provenance": "q-0022",
+      "principle_provenance": [
+        "p-0060",
+        "p-0008"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P2",
+      "category": "copy",
+      "location": {
+        "url": "https://ca-org.fly.dev/forgot-password",
+        "selector": "p.page-kicker ~ p",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/forgot-password_desktop.png"
+      },
+      "finding": "\"Enter your work email and we will send a reset link\" sets no expectation for when the email arrives. Users who don't see it in 30 seconds will submit again (creating duplicate tokens) or open a support ticket. The instruction is also silent on spam filtering — a near-universal failure mode for transactional email. Vague copy that doesn't answer the next obvious question forces support to answer it instead.",
+      "suggested_fix": "Update to: \"Enter your work email. We'll send a reset link within a few minutes — check your spam folder if it doesn't arrive.\" Optionally surface a support contact link beneath the CTA for users whose email domain blocks transactional mail.",
+      "voice_provenance": "q-0017",
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "friction",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "form input[type='email'], form input[type='password']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/login_desktop.png"
+      },
+      "finding": "Both form fields have empty `name` attributes. Password managers — 1Password, Bitwarden, browser autofill — key off `name` to match and fill credentials. An enterprise user who can't autofill hits a dead stop at the front door before they've seen a single feature. This isn't a polish issue; it's a login gate that actively discourages re-entry.",
+      "suggested_fix": "Add `name=\"email\"` to the email input and `name=\"password\"` to the password input. Also add `autocomplete=\"email\"` and `autocomplete=\"current-password\"` respectively — required for WHATWG autofill contracts that all major password managers rely on.",
+      "voice_provenance": "q-0015",
+      "principle_provenance": [
+        "p-0061",
+        "p-0050",
+        "p-0109"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P0",
+      "category": "accessibility",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/login_desktop.png"
+      },
+      "finding": "The `<html>` element has no `lang` attribute — a serious axe violation. Screen readers default to whatever language the OS is set to, meaning an English page gets read in whatever locale the assistive tech assumes. For a product targeting enterprise teams (where procurement reviews include accessibility compliance), this is a compliance gap, not a cosmetic one.",
+      "suggested_fix": "Add `lang=\"en\"` to the `<html>` element. One attribute, zero effort, eliminates the serious-impact axe violation.",
+      "voice_provenance": "q-0022",
+      "principle_provenance": [
+        "p-0002",
+        "p-0107"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "body",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/login_desktop.png"
+      },
+      "finding": "No `<main>` landmark exists, and 5 content nodes sit outside any landmark region. Screen reader users navigating by landmark — the standard skip-nav pattern — land in a void. The `page-has-heading-one` violation compounds this: the visible 'Sign in' heading is not an H1, so document structure is flat. Three moderate axe violations on a single login page signals that accessibility was never tested, which raises questions about the rest of the product.",
+      "suggested_fix": "Wrap the login card in `<main>`. Promote the 'Sign in' heading to `<h1>`. This resolves landmark-one-main, region, and page-has-heading-one in one pass.",
+      "voice_provenance": "q-0024",
+      "principle_provenance": [
+        "p-0002",
+        "p-0003",
+        "p-0106"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "copy",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "a[href*='forgot-password']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/login_desktop.png"
+      },
+      "finding": "'Forgot username/password?' implies the login field accepts a username, but the form takes an email address. Users don't 'forget' their email — they forget their password. The conflated copy creates a half-second of doubt ('wait, do I have a username for this?') that is unnecessary friction at a moment when the user just wants to get in.",
+      "suggested_fix": "Change link text to 'Forgot password?' or 'Reset password' — whichever matches the actual recovery flow. If the system does support a separate username field somewhere, separate the two recovery paths.",
+      "voice_provenance": "q-0017",
+      "principle_provenance": [
+        "p-0107",
+        "p-0022"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "ux",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "form",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/login_desktop.png"
+      },
+      "finding": "No inline validation is detectable from the payload — errors will surface only on submit. A user who miskeys their email format or caps-locks their password gets no signal until they've already clicked through. Submit-only validation forces backtracking to a field that's no longer in context, and on a login form where every failed attempt erodes confidence, preventing that error in the first place is worth more than recovering gracefully from it.",
+      "suggested_fix": "Add blur-triggered inline validation on the email field (format check) and a visible caps-lock warning on the password field. Surface credential error messages inline adjacent to the relevant field, not just as a banner above the form.",
+      "voice_provenance": "q-0015",
+      "principle_provenance": [
+        "p-0060",
+        "p-0109",
+        "p-0008"
+      ],
+      "opinion_only": false
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P2",
+      "category": "technical",
+      "location": {
+        "url": "https://ca-org.fly.dev/login",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260502-234204-ca-org/screenshots/login_desktop.png"
+      },
+      "finding": "Page title is 'Operations Atlas' with no suffix indicating login state (e.g., 'Sign In — Operations Atlas'). Browser tabs, OS-level window switchers, and screen reader page announcements all read the title verbatim. For a user with multiple tabs open, this makes the login tab indistinguishable from any other app page.",
+      "suggested_fix": "Set `<title>Sign In — Operations Atlas</title>`. Consistent title patterns across all pages also improve screen reader navigation and reduce user confusion in multi-tab workflows.",
+      "voice_provenance": "q-0024",
+      "principle_provenance": [
+        "p-0106",
+        "p-0107"
+      ],
+      "opinion_only": false
+    }
+  ],
+  "rejected": []
+}

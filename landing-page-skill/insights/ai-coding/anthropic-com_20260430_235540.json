@@ -1,0 +1,111 @@
+{
+  "url": "https://www.anthropic.com/claude-code",
+  "company": "Anthropic",
+  "tagline": "Built for hackers",
+  "subheadline": "Work with Claude directly in your codebase. Build, debug, and ship from your terminal, IDE, Slack, or the web. Describe what you need, and Claude handles the rest.",
+  "value_proposition": "An AI coding agent that lives inside your existing dev environment\u2014terminal, IDE, Slack, or web\u2014and autonomously handles tasks from a natural language description all the way to a mergeable pull request.",
+  "target_audience": "Professional software developers who live in the terminal and IDE and want an AI agent that integrates into their existing workflow rather than replacing it",
+  "primary_cta": {
+    "text": "Get Claude Code",
+    "placement": "hero"
+  },
+  "secondary_cta": {
+    "text": "Developer docs",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [],
+    "metrics": [],
+    "press": []
+  },
+  "pricing": {
+    "model": "tiered self-serve with free trial implied via 'Try Claude'",
+    "tiers": [
+      "Pro ($17/mo annual, $20/mo monthly)",
+      "Max 5x ($100/mo)",
+      "Max 20x ($200/mo)",
+      "Team ($20/seat/mo)",
+      "Enterprise (contact sales)",
+      "Claude API (pay-as-you-go)"
+    ],
+    "price_anchoring": "Leads with 'included in your Pro plan' to signal low barrier to entry; frames higher tiers as 'great value for everyday use in larger codebases' and 'power users'"
+  },
+  "features": [
+    "Works across terminal, IDE (VS Code, JetBrains), Slack, web, and iOS",
+    "Manages multiple parallel tasks with visual diffs and server previews",
+    "Start a task from your phone and return to a ready-to-merge pull request",
+    "Routines: configure once, run on a schedule, API call, or event trigger",
+    "Reads local environment context without requiring setup or context file selection"
+  ],
+  "differentiators": [
+    "'Built for hackers' \u2014 deliberately counter-mainstream positioning vs. GUI-first AI tools",
+    "Runs on the local machine with full CLI tool access, not a sandboxed cloud environment",
+    "Mobile-to-PR handoff: 'start a task from your phone, come back to a pull request'",
+    "Native extensions for VS Code forks (Cursor, Windsurf) and JetBrains",
+    "Routines as a first-class feature for scheduled and event-driven automation"
+  ],
+  "trust_signals": [
+    "Anthropic brand (maker of Claude)",
+    "Official VS Code and JetBrains marketplace extensions",
+    "Slack App Marketplace listing",
+    "Available via documented curl/PowerShell install script (developer credibility signal)"
+  ],
+  "navigation": [
+    "Meet Claude",
+    "Products",
+    "Platform",
+    "Solutions",
+    "Pricing",
+    "Resources",
+    "Learn",
+    "Connect",
+    "Login",
+    "Contact sales",
+    "Try Claude"
+  ],
+  "design_patterns": {
+    "layout": "Full-width dark hero with animated 'Doodling...' element; tabbed showcase cycling through Desktop/Terminal/IDE/Web/Slack environments; pricing grid; feature narrative sections with alternating text and UI screenshots",
+    "color_scheme": "Dark background hero with Anthropic's neutral/off-white palette; minimal accent color usage",
+    "typography": "Clean sans-serif; large hero weight for 'Built for hackers'; monospace used for install commands reinforcing terminal aesthetic",
+    "visual_style": "Technical and minimal with a deliberate hacker/developer subculture edge",
+    "notable_patterns": [
+      "Tabbed environment switcher in hero to show cross-platform reach",
+      "Animated code/drawing element to suggest active intelligence",
+      "Three-step narrative block: 'Message from phone \u2192 Claude works locally \u2192 You get a PR'",
+      "Copyable curl/PowerShell install commands inline in hero"
+    ]
+  },
+  "emotional_tone": "Confident and aspirational with a technical edge; 'hackers' framing signals respect for developer autonomy rather than hand-holding",
+  "key_objections_addressed": [
+    "Works in your existing tools \u2014 no new environment to adopt",
+    "Included in Pro plan \u2014 low cost barrier to try it",
+    "Runs on your local machine \u2014 addresses privacy/context concerns vs. cloud-only agents",
+    "Available for teams and enterprise \u2014 not just for individual developers",
+    "Works on mobile for asynchronous delegation \u2014 addresses the 'I'm not at my desk' use case"
+  ],
+  "missing_or_weak": [
+    "Zero social proof: no customer logos, testimonials, or user/company count",
+    "No video demo or GIF showing the agent actually completing a real task end-to-end",
+    "No security or compliance section despite enterprise targeting",
+    "No comparison to competitors (GitHub Copilot, Cursor, Devin) even implicitly",
+    "No success metrics (e.g., 'reduces time to PR by X%', 'used by N developers')",
+    "Pricing section buries the free-entry tier; 'included in Pro' is undersold",
+    "Routines feature gets a single callout but no explanation of what it can actually do"
+  ],
+  "standout_elements": [
+    "'Built for hackers' headline \u2014 rare willingness to narrow the audience signal trust with the target persona",
+    "Phone-to-PR narrative is a genuinely compelling and concrete workflow story",
+    "Tabbed environment switcher effectively shows breadth without overwhelming",
+    "Install command directly in the hero \u2014 no friction between intent and action for CLI-comfortable users",
+    "Routines positioned as a product differentiator, not just a setting"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 4,
+    "conversion_focus": 7,
+    "differentiation": 8,
+    "overall": 7
+  },
+  "analyzed_at": "2026-04-30T23:55:40.409642"
+}

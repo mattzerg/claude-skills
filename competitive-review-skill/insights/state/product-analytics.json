@@ -1,0 +1,96 @@
+{
+  "category": "product-analytics",
+  "product": null,
+  "seeds": [
+    "https://plausible.io",
+    "https://fathom.com",
+    "https://umami.is",
+    "https://posthog.com",
+    "https://amplitude.com",
+    "https://mixpanel.com",
+    "https://analytics.google.com",
+    "https://simpleanalytics.com"
+  ],
+  "candidates": [
+    {
+      "name": "Plausible Analytics",
+      "url": "https://plausible.io",
+      "one_liner": "Lightweight, privacy-first web analytics with no cookies",
+      "segment": "SMB",
+      "is_seed": true,
+      "domain": "plausible.io"
+    },
+    {
+      "name": "Fathom Analytics",
+      "url": "https://usefathom.com",
+      "one_liner": "Simple, GDPR-compliant website analytics without cookie banners",
+      "segment": "SMB",
+      "is_seed": true,
+      "domain": "usefathom.com"
+    },
+    {
+      "name": "Umami",
+      "url": "https://umami.is",
+      "one_liner": "Open-source, self-hostable privacy-focused web analytics",
+      "segment": "open-source",
+      "is_seed": true,
+      "domain": "umami.is"
+    },
+    {
+      "name": "PostHog",
+      "url": "https://posthog.com",
+      "one_liner": "Open-source product analytics with replays, flags, and A/B testing",
+      "segment": "open-source",
+      "is_seed": true,
+      "domain": "posthog.com"
+    },
+    {
+      "name": "Amplitude",
+      "url": "https://amplitude.com",
+      "one_liner": "Enterprise digital analytics platform for product and growth teams",
+      "segment": "enterprise",
+      "is_seed": true,
+      "domain": "amplitude.com"
+    },
+    {
+      "name": "Mixpanel",
+      "url": "https://mixpanel.com",
+      "one_liner": "Event-based product analytics for web and mobile applications",
+      "segment": "mid-market",
+      "is_seed": true,
+      "domain": "mixpanel.com"
+    },
+    {
+      "name": "Google Analytics",
+      "url": "https://analytics.google.com",
+      "one_liner": "Free web and app analytics platform from Google",
+      "segment": "SMB",
+      "is_seed": true,
+      "domain": "analytics.google.com"
+    },
+    {
+      "name": "Simple Analytics",
+      "url": "https://simpleanalytics.com",
+      "one_liner": "Cookie-free, privacy-first website analytics with clean dashboard",
+      "segment": "SMB",
+      "is_seed": true,
+      "domain": "simpleanalytics.com"
+    },
+    {
+      "name": "Heap",
+      "url": "https://heap.io",
+      "one_liner": "Auto-capture product analytics that retroactively tracks all user events",
+      "segment": "mid-market",
+      "is_seed": false,
+      "domain": "heap.io"
+    },
+    {
+      "name": "Pendo",
+      "url": "https://pendo.io",
+      "one_liner": "Product analytics combined with in-app guides, surveys, and feedback",
+      "segment": "enterprise",
+      "is_seed": false,
+      "domain": "pendo.io"
+    }
+  ]
+}

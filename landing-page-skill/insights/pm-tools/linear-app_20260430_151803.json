@@ -1,0 +1,115 @@
+{
+  "url": "https://linear.app",
+  "company": "Linear",
+  "tagline": "The product development system for teams and agents",
+  "subheadline": "Purpose-built for planning and building products. Designed for the AI era.",
+  "value_proposition": "Linear is an AI-native product development platform that replaces fragmented issue tracking with an integrated system for planning, building, and shipping software \u2014 shared by humans and AI agents.",
+  "target_audience": "Engineering and product teams at modern software companies, particularly those adopting AI-assisted development workflows and seeking to replace legacy tools like Jira.",
+  "primary_cta": {
+    "text": "Sign up",
+    "placement": "nav/hero"
+  },
+  "secondary_cta": {
+    "text": "Get started",
+    "placement": "bottom-of-page CTA section"
+  },
+  "social_proof": {
+    "logos": [
+      "OpenAI",
+      "Ramp",
+      "Opendoor"
+    ],
+    "testimonials": [
+      "You just have to use it and you will see, you will just feel it. \u2014 Gabriel Peal, OpenAI",
+      "Our speed is intense and Linear helps us be action biased. \u2014 Nik Koblov, Ramp",
+      "Linear is excellent, just excellent. It has the right opinions for fast moving teams. \u2014 Kaz Nejatian, Opendoor"
+    ],
+    "metrics": [
+      "25,000 product teams"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "contact-sales with self-serve implied (Sign up CTA present)",
+    "tiers": [],
+    "price_anchoring": "No pricing shown on homepage; 'Contact sales' alongside 'Get started' implies enterprise upsell; Startups segment mentioned in footer"
+  },
+  "features": [
+    "AI-powered issue intake: converts Slack conversations and customer feedback into triaged, labeled, prioritized issues automatically",
+    "Product planning with initiatives, roadmaps, and PRDs aligned across teams",
+    "AI agent integration: delegate issues end-to-end to agents like GitHub Copilot, Codex, Cursor",
+    "Structural code diffs for reviewing human and agent output without leaving Linear",
+    "Progress monitoring via Pulse updates, cycle analytics, and dashboards"
+  ],
+  "differentiators": [
+    "'Issue tracking is dead' \u2014 bold category repositioning away from Jira-era tools",
+    "'A new species of product tool' \u2014 claims a fundamentally new category",
+    "AI agents as first-class collaborators, not bolted-on features",
+    "Structural diffs for agent PR review built natively into the product",
+    "'Designed for the AI era' \u2014 positions competitors as legacy"
+  ],
+  "trust_signals": [
+    "25,000+ product teams listed",
+    "Named enterprise customers: OpenAI, Ramp, Opendoor",
+    "Named testimonial givers with titles and companies",
+    "Changelog with dated releases signals active development",
+    "Enterprise and Startups tiers mentioned in footer"
+  ],
+  "navigation": [
+    "Product",
+    "Resources",
+    "Customers",
+    "Pricing",
+    "Now",
+    "Contact",
+    "Docs",
+    "Open app",
+    "Log in",
+    "Sign up"
+  ],
+  "design_patterns": {
+    "layout": "Linear vertical scroll with named sections (Intake, Plan, Build, Diffs, Monitor), each pairing a bold headline with an animated product UI demo",
+    "color_scheme": "Dark-first with high-contrast white text and subtle gray tones; code blocks and UI panels use dark backgrounds",
+    "typography": "Clean, modern sans-serif; large display headlines with tight tracking; monospace for code snippets",
+    "visual_style": "Minimal and technical with a premium, opinionated aesthetic \u2014 closer to developer tooling than typical SaaS",
+    "notable_patterns": [
+      "Live-looking product screenshots with animated agent activity (typewriter-style Bash commands, progress indicators)",
+      "Split-pane code diff view showing before/after for agent PR output",
+      "Numbered section flow (1.0 Intake \u2192 2.0 Plan \u2192 3.0 Build \u2192 4.0 Diffs \u2192 5.0 Monitor) framing the product as a complete system",
+      "Slack-style conversation thread embedded in page to show real-world intake workflow",
+      "Changelog section with specific dated releases to signal velocity"
+    ]
+  },
+  "emotional_tone": "Confident and aspirational with technical credibility \u2014 provocative ('Issue tracking is dead') but grounded in concrete product detail",
+  "key_objections_addressed": [
+    "Is AI actually useful here or just a gimmick? \u2014 Addressed via specific agent demos (GitHub Copilot, Codex) doing real tasks",
+    "Will this work for my existing stack? \u2014 Addressed via named integrations (GitHub, Slack, MCP, Microsoft Teams)",
+    "Is it just for small teams? \u2014 Addressed via enterprise customer logos and 25,000 teams metric",
+    "Can I trust agent output? \u2014 Addressed via native diff review for agent PRs"
+  ],
+  "missing_or_weak": [
+    "No pricing transparency on the homepage \u2014 friction for self-serve evaluation",
+    "No free trial or freemium callout visible in hero \u2014 unclear entry point for new users",
+    "Security and compliance signals absent (no SOC 2, GDPR, SSO badges)",
+    "No comparison to Jira/Asana/Linear competitors explicitly, despite the 'issue tracking is dead' claim",
+    "Testimonials lack specificity \u2014 no before/after metrics or outcome data",
+    "No video or interactive demo \u2014 heavy reliance on static/animated screenshots",
+    "Footer mentions Startups tier but no explanation of what it includes"
+  ],
+  "standout_elements": [
+    "'Issue tracking is dead' opens the page as a provocation \u2014 immediately signals category disruption",
+    "Numbered product narrative (1.0\u20135.0) frames the tool as a complete system, not a point solution",
+    "Showing actual agent CLI output (Bash commands, GitHub Copilot status) makes AI integration tangible and credible",
+    "Structural diff section is genuinely differentiated \u2014 no competitor shows this natively",
+    "Weekly Pulse demo with real-sounding project names and risks grounds the monitoring story in PM reality",
+    "Changelog embedded on homepage signals fast iteration and transparency"
+  ],
+  "score": {
+    "clarity": 9,
+    "credibility": 7,
+    "conversion_focus": 6,
+    "differentiation": 9,
+    "overall": 8
+  },
+  "analyzed_at": "2026-04-30T15:18:03.123789"
+}

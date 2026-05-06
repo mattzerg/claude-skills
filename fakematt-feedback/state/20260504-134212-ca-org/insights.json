@@ -1,0 +1,2894 @@
+{
+  "target": "https://ca-org.fly.dev/org-chart",
+  "kind": "live_url",
+  "captures": [
+    {
+      "url": "https://ca-org.fly.dev/org-chart",
+      "final_url": "https://ca-org.fly.dev/org-chart",
+      "title": "Org Chart — CesiumAstro",
+      "h1": null,
+      "headings": [
+        "ORGANIZATION"
+      ],
+      "primary_cta": "Org Chart",
+      "forms": [],
+      "links_sample": [
+        "https://ca-org.fly.dev/org-chart",
+        "https://ca-org.fly.dev/employee-directory",
+        "https://ca-org.fly.dev/people",
+        "https://ca-org.fly.dev/people/1001",
+        "https://ca-org.fly.dev/people/1032",
+        "https://ca-org.fly.dev/people/1872",
+        "https://ca-org.fly.dev/people/1007",
+        "https://ca-org.fly.dev/people/1364",
+        "https://ca-org.fly.dev/people/1578",
+        "https://ca-org.fly.dev/people/1034",
+        "https://ca-org.fly.dev/people/1859",
+        "https://ca-org.fly.dev/people/1187",
+        "https://ca-org.fly.dev/people/1184",
+        "https://ca-org.fly.dev/people/1002"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://ca-org.fly.dev/api/admin/business-units",
+          "status": 403
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "help": "Page should contain a level-one heading",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 1462,
+        "load_event_ms": 1463,
+        "transfer_size_kb": 1072,
+        "encoded_body_size_kb": 1072
+      },
+      "text_excerpt": "OPERATIONS ATLAS\nCesiumAstro\nORG\nVIEW\nOrg Chart\nSearch\n⌘K\nEDITOR\nMatthew Eisner\nORGANIZATION\nOrg Chart\nEmployee Directory\nPeople Search\n\nSIGNED IN\n\nMatthew Eisner\nCesiumAstro\neditor\nLIVE STRUCTURE\nOrg Chart\nOrg\nCollapse\nExpand All\n−\n+\nFit\n58%\nShey Sabripour\nCEO\n517 people under\n10 DIRECT\n▾\n10\nPappas, Trey\nChief Revenue Officer\n34 people under\n18 DIRECT\n▾\n18\nPB\nPaulson, Brett\nChief Operating Officer\n416 people under\n18 DIRECT\n▾\n18\nMagesacher, Thomas\nChief Scientist\n25 people under\n13 DIRECT\n▾\n13\nSmith, Kenneth\nChief Financial Officer\n27 people under\n6 DIRECT\n▾\n6\nNikishchenko, Igor\nChief Propulsion Systems Engineer\n3 people under\n▾\n3\nRice, William\nDirector of Strategic Initiatives\n2 people under\n▾\n2\nIL\nCaponio, Krystle\nVice President, General Counsel\nIL\nCarwell, James\nVice President of Engineering\n↗\nSPACE SYSTEMS\nIL\nConwell, Eleane\nExecutive Assistant\nIL\nDadic, Danilo\nChief Engineer\n↗\nSPACE SYSTEMS",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "OPERATIONS ATLAS\nCesiumAstro\nORG",
+          "selector": "button.system-logo.product-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/org-chart_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/org-chart_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "Search\n⌘K",
+          "selector": "button.cmdk-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/org-chart_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/org-chart_int1_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "EDITOR\nMatthew Eisner",
+          "selector": "button.user-menu-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/org-chart_int2_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/org-chart_int2_after.png"
+        }
+      ]
+    },
+    {
+      "url": "https://ca-org.fly.dev/employee-directory",
+      "final_url": "https://ca-org.fly.dev/employee-directory",
+      "title": "Employee Directory — CesiumAstro",
+      "h1": "Employee Directory",
+      "headings": [
+        "ORGANIZATION",
+        "Employee Directory"
+      ],
+      "primary_cta": "Org Chart",
+      "forms": [],
+      "links_sample": [
+        "https://ca-org.fly.dev/org-chart",
+        "https://ca-org.fly.dev/employee-directory",
+        "https://ca-org.fly.dev/people",
+        "https://ca-org.fly.dev/people/1001",
+        "https://ca-org.fly.dev/people/1872",
+        "https://ca-org.fly.dev/people/1003",
+        "https://ca-org.fly.dev/people/1334",
+        "https://ca-org.fly.dev/people/1031",
+        "https://ca-org.fly.dev/people/1296",
+        "https://ca-org.fly.dev/people/1011",
+        "https://ca-org.fly.dev/people/1685",
+        "https://ca-org.fly.dev/people/1032",
+        "https://ca-org.fly.dev/people/1364",
+        "https://ca-org.fly.dev/people/1007",
+        "https://ca-org.fly.dev/people/1534",
+        "https://ca-org.fly.dev/people/1766",
+        "https://ca-org.fly.dev/people/1353",
+        "https://ca-org.fly.dev/people/1860",
+        "https://ca-org.fly.dev/people/1313",
+        "https://ca-org.fly.dev/people/1018",
+        "https://ca-org.fly.dev/people/1227",
+        "https://ca-org.fly.dev/people/1084",
+        "https://ca-org.fly.dev/people/1211",
+        "https://ca-org.fly.dev/people/1146",
+        "https://ca-org.fly.dev/people/1572",
+        "https://ca-org.fly.dev/people/1245",
+        "https://ca-org.fly.dev/people/1195",
+        "https://ca-org.fly.dev/people/1622",
+        "https://ca-org.fly.dev/people/1776",
+        "https://ca-org.fly.dev/people/1379"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://ca-org.fly.dev/api/admin/business-units",
+          "status": 403
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "image-redundant-alt",
+          "impact": "minor",
+          "help": "Alternative text of images should not be repeated as text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=axeAPI",
+          "node_count": 91,
+          "first_node_html": "<img src=\"/api/photos/1001?size=thumb\" alt=\"Shey Sabripour\" class=\"avatar-img-sm\" loading=\"lazy\" decoding=\"async\" data-v-0db96779=\"\">"
+        },
+        {
+          "id": "select-name",
+          "impact": "critical",
+          "help": "Select element must have an accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/select-name?application=axeAPI",
+          "node_count": 3,
+          "first_node_html": "<select data-v-0db96779=\"\">"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 621,
+        "load_event_ms": 622,
+        "transfer_size_kb": 23,
+        "encoded_body_size_kb": 23
+      },
+      "text_excerpt": "OPERATIONS ATLAS\nCesiumAstro\nORG\nVIEW\nEmployee Directory\nSearch\n⌘K\nEDITOR\nMatthew Eisner\nORGANIZATION\nOrg Chart\nEmployee Directory\nPeople Search\n\nSIGNED IN\n\nMatthew Eisner\nCesiumAstro\neditor\n\nORGANIZATION INDEX\n\nEmployee Directory\n\nSearch the org, slice by department or location, and jump directly into a person profile.\n\n1–100 OF 518\nManagers only\nAll Departments\nSoftware\nSystems Eng Integration & Test\nManufacturing\nMechanical\nSupply Chain\nAdvanced Projects\nEngineering\nDigital/Mixed Signal\nFinance\nQuality Assurance\nSystems\nBusiness Development\nPower & Analog\nWaveform\nHuman Resources\nRF\nProducts\nProgram Management\nExecutive\nIT\nSpacecraft\nSpecialty\nAntenna\nMarketing\nOperations\nRocketry\nSales\nAll Locations\nAustin, TX\nWestminster, CO\nRemote / Offsite\nEl Segundo, CA\nMilton Keynes\n6000\nGermany\nJapan\nTaiwan\nNAME\tTITLE\tDEPARTMENT\tLOCATION\tREPORTS TO\tREPORTS\n\nShey Sabripour\n\tCEO\tExecutive\tAustin, TX\t—\t10\n\nPaulson, Brett\n\tChief Operating Officer\tExecutive\tAustin, TX\tShey Sabripour\t18\n\nVreeland, David\n\tSenior Engineering Manager, Electronics\tDigital/Mixed Signal\tAustin, TX\tPaulson, Brett\t39\n\nAlam, Zane\n\tSenior Manager Communications Payload Integra\tSystems Eng Integration & Test\tAustin, TX\tPaulson, Brett\t10\n\nSass, Jonathan\n\tSenior Engineering Manager, Software\tSoftware\tAustin, TX\tPaulson, Brett\t8\n\nHarper, Eric\n\tSenior Manufacturing Manager\tManufacturing\tAustin, TX\tPaulson, Brett\t5\n\nQuan, Aaron\n\tSenior Engineering Manager, Mechanical Design\tMechanical\tAustin, TX\tPaulson, Brett\t35\n\nDiamond, Dean\n\tSenior Manager, Purchasing & Planning\tSupply Chain\tWestminster, CO\tPaulson, Brett\t6\n\nPappas, Trey\n\tChief Revenue Officer\tBusiness Development\tAustin, TX\tShey Sabripour\t18\n\nSmith, Kenneth\n\tChief Financial Officer\tFinance\tAustin, TX\tShey Sabripour\t6\n\nMagesacher, Thomas\n\tChief Scientist\tAdvanced Projects\tAustin, TX\tShey Sabripour\t13\n\nBuchanan, Robert\n\tTest Engineering Manager\tSystems Eng Integration & Test\tWestminster, CO\tAlam, Zane\t9\n\nDelaquil, Matthew\n\tVice President of Engineering\tEngineering\tRemote / Offsite\tPaulson, Brett\t21\n\nMurphy, Benjamin\n\tSenior Director of Business Development\tBusiness Development\tWestminster, CO\tPaulson, Brett\t4\n\nJudd, James\n\tVP, Operational Excellence & Mission Assuranc\tExecutive\tAustin, TX\tPaulson, Brett\t1\n\nPerez, Frank\n\tSenior Manufacturing Manager - PCBA\tManufacturing\tAustin, TX\tHarper, Eric\t16\n\nChuang, Vera\n\tManager of Quality and Continuous Improvement\tQuality Assurance\tAustin, TX\tJudd, James\t7\n\nEllis, William\n\tTest Engineering Manager\tSystems Eng Integration & Test\tAustin, TX\tAlam, Zane\t19\n\nSenofsky, Mark\n\tSoftware Engineering Manager\tSoftware\tRemote / Offsite\tSass, Jonathan\t19\n\nVanderVennet, John\n\tSenior Engineering Manager, Systems Eng\tSystems\tEl Segundo, CA\tPaulson, Brett\t17\n\nManternach, Peter\n\tVice President of Human Resources\tHuman Resources\tAustin, TX\tPaulson, Brett\t5\n\nCook, Christian\n\tProgram Director\tProgram Management\tWestminster, CO\tMurphy, Benjamin\t5\n\nTurriate Gastulo, Victor\n\tSenior Engineering Manager, Power & Analog\tPowe",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "OPERATIONS ATLAS\nCesiumAstro\nORG",
+          "selector": "button.system-logo.product-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/employee-directory_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/employee-directory_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "Search\n⌘K",
+          "selector": "button.cmdk-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/employee-directory_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/employee-directory_int1_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "EDITOR\nMatthew Eisner",
+          "selector": "button.user-menu-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/employee-directory_int2_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/employee-directory_int2_after.png"
+        }
+      ]
+    },
+    {
+      "url": "https://ca-org.fly.dev/people",
+      "final_url": "https://ca-org.fly.dev/people",
+      "title": "People Search — CesiumAstro",
+      "h1": "People Search",
+      "headings": [
+        "ORGANIZATION",
+        "People Search"
+      ],
+      "primary_cta": "Delaquil, Matthew\nVice President of Engineering\nEngineering\nRemote / Offsite\n21 ",
+      "forms": [],
+      "links_sample": [
+        "https://ca-org.fly.dev/org-chart",
+        "https://ca-org.fly.dev/employee-directory",
+        "https://ca-org.fly.dev/people",
+        "https://ca-org.fly.dev/people/1003",
+        "https://ca-org.fly.dev/people/1011",
+        "https://ca-org.fly.dev/people/1766",
+        "https://ca-org.fly.dev/people/1227",
+        "https://ca-org.fly.dev/people/1084",
+        "https://ca-org.fly.dev/people/1872",
+        "https://ca-org.fly.dev/people/1032",
+        "https://ca-org.fly.dev/people/1211",
+        "https://ca-org.fly.dev/people/1313",
+        "https://ca-org.fly.dev/people/1245",
+        "https://ca-org.fly.dev/people/1007",
+        "https://ca-org.fly.dev/people/1776",
+        "https://ca-org.fly.dev/people/1649",
+        "https://ca-org.fly.dev/people/adp_UK001",
+        "https://ca-org.fly.dev/people/1622",
+        "https://ca-org.fly.dev/people/1379",
+        "https://ca-org.fly.dev/people/1453",
+        "https://ca-org.fly.dev/people/1595",
+        "https://ca-org.fly.dev/people/1001",
+        "https://ca-org.fly.dev/people/1334",
+        "https://ca-org.fly.dev/people/1188",
+        "https://ca-org.fly.dev/people/1534",
+        "https://ca-org.fly.dev/people/1031",
+        "https://ca-org.fly.dev/people/1619"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://ca-org.fly.dev/api/admin/business-units",
+          "status": 403
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 684,
+        "load_event_ms": 686,
+        "transfer_size_kb": 37,
+        "encoded_body_size_kb": 36
+      },
+      "text_excerpt": "OPERATIONS ATLAS\nCesiumAstro\nORG\nVIEW\nPeople Search\nSearch\n⌘K\nEDITOR\nMatthew Eisner\nORGANIZATION\nOrg Chart\nEmployee Directory\nPeople Search\n\nSIGNED IN\n\nMatthew Eisner\nCesiumAstro\neditor\n\nSEARCH SURFACE\n\nPeople Search\n\nSearch for anyone in the organization to open their full profile, reporting chain, GA hours, and staffing allocations.\n\nPEOPLE\n518\nMANAGERS\n62\nDEPARTMENTS\n27\nLOCATIONS\n9\n\nTop 24 by report count — start typing to search all 518 people.\n\nVreeland, David\nSenior Engineering Manager, Electronics\nDigital/Mixed Signal\nAustin, TX\n39 reports\nQuan, Aaron\nSenior Engineering Manager, Mechanical Design\nMechanical\nAustin, TX\n35 reports\nDelaquil, Matthew\nVice President of Engineering\nEngineering\nRemote / Offsite\n21 reports\nEllis, William\nTest Engineering Manager\nSystems Eng Integration & Test\nAustin, TX\n19 reports\nSenofsky, Mark\nSoftware Engineering Manager\nSoftware\nRemote / Offsite\n19 reports\nPaulson, Brett\nChief Operating Officer\nExecutive\nAustin, TX\n18 reports\nPappas, Trey\nChief Revenue Officer\nBusiness Development\nAustin, TX\n18 reports\nVanderVennet, John\nSenior Engineering Manager, Systems Eng\nSystems\nEl Segundo, CA\n17 reports\nPerez, Frank\nSenior Manufacturing Manager - PCBA\nManufacturing\nAustin, TX\n16 reports\nTurriate Gastulo, Victor\nSenior Engineering Manager, Power & Analog\nPower & Analog\nEl Segundo, CA\n14 reports\nMagesacher, Thomas\nChief Scientist\nAdvanced Projects\nAustin, TX\n13 reports\nWall, Vickie\nFPGA Engineering Manager\nSoftware\nWestminster, CO\n12 reports\nEllis, Joseph\nMachine Learning Scientist\nAdvanced Projects\nAustin, TX\n12 reports\nNannetti, Gianni\nSenior Director Engineering\nWaveform\nMilton Keynes\n12 reports\nPete, Travoy\nInventory Control Manager\nSupply Chain\nAustin, TX\n11 reports\nZanella, Michael\nProduction & Material Planning Manager\nSupply Chain\nAustin, TX\n11 reports\nChicotka, Brett\nTest Engineering Manager\nSystems Eng Integration & Test\nWestminster, CO\n11 reports\nKatchen, Alex\nProduction Manager\nOperations\nWestminster, CO\n11 reports\nShey Sabripour\nCEO\nExecutive\nAustin, TX\n10 reports\nAlam, Zane\nSenior Manager Communications Payload Integra\nSystems Eng Integration & Test\nAustin, TX\n10 reports\nCheung, Michael\nVice President of Products\nProducts\nEl Segundo, CA\n10 reports\nBuchanan, Robert\nTest Engineering Manager\nSystems Eng Integration & Test\nWestminster, CO\n9 reports\nSass, Jonathan\nSenior Engineering Manager, Software\nSoftware\nAustin, TX\n8 reports\nSalinas, Roberto\nQuality Control Manager\nQuality Assurance\nAustin, TX\n8 reports\n\n494 more — type a name, title, department, or location to find them.",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "OPERATIONS ATLAS\nCesiumAstro\nORG",
+          "selector": "button.system-logo.product-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "Search\n⌘K",
+          "selector": "button.cmdk-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_int1_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "EDITOR\nMatthew Eisner",
+          "selector": "button.user-menu-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_int2_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_int2_after.png"
+        }
+      ]
+    },
+    {
+      "url": "https://ca-org.fly.dev/people/1001",
+      "final_url": "https://ca-org.fly.dev/people/1001",
+      "title": "Sabripour, Shey — CesiumAstro",
+      "h1": "Shey Sabripour",
+      "headings": [
+        "ORGANIZATION",
+        "Shey Sabripour",
+        "Shey Sabripour",
+        "Direct Reports",
+        "Manager Snapshot",
+        "Attachments"
+      ],
+      "primary_cta": "Magesacher, Thomas\nChief Scientist\nAdvanced Projects · Austin, TX\n13 reports",
+      "forms": [],
+      "links_sample": [
+        "https://ca-org.fly.dev/org-chart",
+        "https://ca-org.fly.dev/employee-directory",
+        "https://ca-org.fly.dev/people",
+        "https://ca-org.fly.dev/people/1859",
+        "https://ca-org.fly.dev/people/1187",
+        "https://ca-org.fly.dev/people/1184",
+        "https://ca-org.fly.dev/people/1002",
+        "https://ca-org.fly.dev/people/1007",
+        "https://ca-org.fly.dev/people/1578",
+        "https://ca-org.fly.dev/people/1032",
+        "https://ca-org.fly.dev/people/1872",
+        "https://ca-org.fly.dev/people/1034",
+        "https://ca-org.fly.dev/people/1364"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://ca-org.fly.dev/api/admin/business-units",
+          "status": 403
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<h3 data-v-1db00057=\"\">Direct Reports</h3>"
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "label",
+          "impact": "critical",
+          "help": "Form elements must have labels",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<input type=\"file\" accept=\"image/*\" class=\"visually-hidden\" data-v-1db00057=\"\" style=\"\">"
+        },
+        {
+          "id": "landmark-main-is-top-level",
+          "impact": "moderate",
+          "help": "Main landmark should not be contained in another landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-main-is-top-level?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<main class=\"person-page\" data-v-1db00057=\"\">"
+        },
+        {
+          "id": "landmark-no-duplicate-main",
+          "impact": "moderate",
+          "help": "Document should not have more than one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-main?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<main class=\"content\">"
+        },
+        {
+          "id": "landmark-unique",
+          "impact": "moderate",
+          "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
+          "node_count": 2,
+          "first_node_html": "<aside class=\"sidebar\">"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 774,
+        "load_event_ms": 776,
+        "transfer_size_kb": 92,
+        "encoded_body_size_kb": 91
+      },
+      "text_excerpt": "OPERATIONS ATLAS\nCesiumAstro\nORG\nVIEW\nPeople Search\nSearch\n⌘K\nEDITOR\nMatthew Eisner\nORGANIZATION\nOrg Chart\nEmployee Directory\nPeople Search\n\nSIGNED IN\n\nMatthew Eisner\nCesiumAstro\neditor\n← Back to people search\n\nPORTRAIT\n\nChange Image\nRemove\nDIRECT\n10\nTOTAL\n517\n\nPROFILE\n\nShey Sabripour\nEdit\n\nCEO\n\nExecutive · Austin, TX\n\nMANAGER\nTop-level leader\nLOCATION\nAustin, TX\nDEPARTMENT\nExecutive\nEXTERNAL ID\n1001\nLAST SYNCED\n2026-04-30T17:08:21.995Z\n\nPERSON PROFILE\n\nShey Sabripour\n\nCEO\n\nExecutive · Austin, TX\n\nTEAM\n\nDirect Reports\n10\nCaponio, Krystle\nVice President, General Counsel\nExecutive · El Segundo, CA\nCarwell, James\nVice President of Engineering\nEngineering · Austin, TX\nConwell, Eleane\nExecutive Assistant\nExecutive · Austin, TX\nDadic, Danilo\nChief Engineer\nEngineering · Austin, TX\nMagesacher, Thomas\nChief Scientist\nAdvanced Projects · Austin, TX\n13 reports\nNikishchenko, Igor\nChief Propulsion Systems Engineer\nRocketry · El Segundo, CA\n3 reports\nPappas, Trey\nChief Revenue Officer\nBusiness Development · Austin, TX\n18 reports\nPB\nPaulson, Brett\nChief Operating Officer\nExecutive · Austin, TX\n18 reports\nRice, William\nDirector of Strategic Initiatives\nExecutive · Austin, TX\n2 reports\nSmith, Kenneth\nChief Financial Officer\nFinance · Austin, TX\n6 reports\n\nSPAN\n\nManager Snapshot\nMANAGERS\n6\nICS\n4\n\nFILES\n\nAttachments\n0\n📎\nDrop files or click to upload\nPDF, DOCX, TXT — up to 30 MB each\nNo attachments yet.",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "OPERATIONS ATLAS\nCesiumAstro\nORG",
+          "selector": "button.system-logo.product-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1001_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1001_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "Search\n⌘K",
+          "selector": "button.cmdk-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1001_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1001_int1_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "EDITOR\nMatthew Eisner",
+          "selector": "button.user-menu-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1001_int2_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1001_int2_after.png"
+        }
+      ]
+    },
+    {
+      "url": "https://ca-org.fly.dev/people/1032",
+      "final_url": "https://ca-org.fly.dev/people/1032",
+      "title": "Pappas, Trey — CesiumAstro",
+      "h1": "Pappas, Trey",
+      "headings": [
+        "ORGANIZATION",
+        "Pappas, Trey",
+        "Pappas, Trey",
+        "Direct Reports",
+        "Manager Snapshot",
+        "Attachments"
+      ],
+      "primary_cta": "AA\nAhiers, Aimee\nDirector of Marketing\nMarketing · Austin, TX\n3 reports",
+      "forms": [],
+      "links_sample": [
+        "https://ca-org.fly.dev/org-chart",
+        "https://ca-org.fly.dev/employee-directory",
+        "https://ca-org.fly.dev/people",
+        "https://ca-org.fly.dev/people/1001",
+        "https://ca-org.fly.dev/people/1321",
+        "https://ca-org.fly.dev/people/1484",
+        "https://ca-org.fly.dev/people/1520",
+        "https://ca-org.fly.dev/people/1188",
+        "https://ca-org.fly.dev/people/1514",
+        "https://ca-org.fly.dev/people/1613",
+        "https://ca-org.fly.dev/people/1530",
+        "https://ca-org.fly.dev/people/1848",
+        "https://ca-org.fly.dev/people/adp_UK012",
+        "https://ca-org.fly.dev/people/adp_JP002",
+        "https://ca-org.fly.dev/people/adp_JP001",
+        "https://ca-org.fly.dev/people/1870",
+        "https://ca-org.fly.dev/people/1522",
+        "https://ca-org.fly.dev/people/1203",
+        "https://ca-org.fly.dev/people/1513",
+        "https://ca-org.fly.dev/people/UK021",
+        "https://ca-org.fly.dev/people/1337",
+        "https://ca-org.fly.dev/people/adp_TWN001"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://ca-org.fly.dev/api/admin/business-units",
+          "status": 403
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<h3 data-v-1db00057=\"\">Direct Reports</h3>"
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "label",
+          "impact": "critical",
+          "help": "Form elements must have labels",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<input type=\"file\" accept=\"image/*\" class=\"visually-hidden\" data-v-1db00057=\"\" style=\"\">"
+        },
+        {
+          "id": "landmark-main-is-top-level",
+          "impact": "moderate",
+          "help": "Main landmark should not be contained in another landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-main-is-top-level?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<main class=\"person-page\" data-v-1db00057=\"\">"
+        },
+        {
+          "id": "landmark-no-duplicate-main",
+          "impact": "moderate",
+          "help": "Document should not have more than one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-main?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<main class=\"content\">"
+        },
+        {
+          "id": "landmark-unique",
+          "impact": "moderate",
+          "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
+          "node_count": 2,
+          "first_node_html": "<aside class=\"sidebar\">"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 1709,
+        "load_event_ms": 1712,
+        "transfer_size_kb": 14354,
+        "encoded_body_size_kb": 14354
+      },
+      "text_excerpt": "OPERATIONS ATLAS\nCesiumAstro\nORG\nVIEW\nPeople Search\nSearch\n⌘K\nEDITOR\nMatthew Eisner\nORGANIZATION\nOrg Chart\nEmployee Directory\nPeople Search\n\nSIGNED IN\n\nMatthew Eisner\nCesiumAstro\neditor\n← Back to people search\n\nPORTRAIT\n\nChange Image\nRemove\nDIRECT\n18\nTOTAL\n34\n\nPROFILE\n\nPappas, Trey\nEdit\n\nChief Revenue Officer\n\nBusiness Development · Austin, TX\n\nMANAGER\nShey Sabripour\nLOCATION\nAustin, TX\nDEPARTMENT\nBusiness Development\nEXTERNAL ID\n1032\nLAST SYNCED\n2026-04-30T17:08:22.112Z\n\nPERSON PROFILE\n\nPappas, Trey\n\nChief Revenue Officer\n\nBusiness Development · Austin, TX\n\nREPORTS THROUGH\nShey Sabripour\n\nTEAM\n\nDirect Reports\n18\nAA\nAhiers, Aimee\nDirector of Marketing\nMarketing · Austin, TX\n3 reports\nBurns, David\nSenior Program Manager\nBusiness Development · El Segundo, CA\nCapra, Meagan\nBusiness Development Operations Manager\nSales · Austin, TX\nCheung, Michael\nVice President of Products\nProducts · El Segundo, CA\n10 reports\nDarveau, Mark\nSales Operations Manager\nSales · Austin, TX\nDoll, Steven\nExport Compliance Manager\nSupply Chain · Westminster, CO\nEgert, Dannel\nInformation Systems Security Manager\nBusiness Development · Westminster, CO\nFreud, Paul\nDirector of Business Development\nBusiness Development · Westminster, CO\nHI\nHatziathanasou, Iraklis\nSenior Director Business Development\nBusiness Development · Milton Keynes\nHM\nHigashi, Masa\nDirector, Business Development\nBusiness Development · Japan\nMT\nMasamura, Tak\nSenior Director, Business Development\nBusiness Development · Japan\nMR\nMyhill, Robert\nVice President, Business Development & Govern\nBusiness Development · Remote / Offsite\nParikh, Manan\nSenior Business Development Manager\nBusiness Development · El Segundo, CA\nRobison, James\nSenior Sales Manager\nSales · Austin, TX\n1 report\nRoope, Daniel\nFacilities Security Officer\nExecutive · El Segundo, CA\nSI\nSmith-Davenport, Ivor\nDirector, Contracts & Compliance\nBusiness Development · Milton Keynes\nThai, Christopher\nDirector of Business Capture\nBusiness Development · El Segundo, CA\n1 report\nWB\nWang, Ben\nSenior Director, Supplier Management and Taiwan Country Leader\nBusiness Development · Taiwan\n1 report\n\nSPAN\n\nManager Snapshot\nMANAGERS\n5\nICS\n13\n\nFILES\n\nAttachments\n0\n📎\nDrop files or click to upload\nPDF, DOCX, TXT — up to 30 MB each\nNo attachments yet.",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "OPERATIONS ATLAS\nCesiumAstro\nORG",
+          "selector": "button.system-logo.product-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1032_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1032_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "Search\n⌘K",
+          "selector": "button.cmdk-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1032_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1032_int1_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "EDITOR\nMatthew Eisner",
+          "selector": "button.user-menu-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1032_int2_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_1032_int2_after.png"
+        }
+      ]
+    },
+    {
+      "url": "https://ca-org.fly.dev/people/adp_UK001",
+      "final_url": "https://ca-org.fly.dev/people/adp_UK001",
+      "title": "Nannetti, Gianni — CesiumAstro",
+      "h1": "Nannetti, Gianni",
+      "headings": [
+        "ORGANIZATION",
+        "Nannetti, Gianni",
+        "Nannetti, Gianni",
+        "Direct Reports",
+        "Manager Snapshot",
+        "Attachments"
+      ],
+      "primary_cta": "Amr, Ismail\nPrincipal DSP Engineer I\nWaveform · Milton Keynes",
+      "forms": [],
+      "links_sample": [
+        "https://ca-org.fly.dev/org-chart",
+        "https://ca-org.fly.dev/employee-directory",
+        "https://ca-org.fly.dev/people",
+        "https://ca-org.fly.dev/people/1872",
+        "https://ca-org.fly.dev/people/1001",
+        "https://ca-org.fly.dev/people/adp_UK004",
+        "https://ca-org.fly.dev/people/1082",
+        "https://ca-org.fly.dev/people/adp_UK016",
+        "https://ca-org.fly.dev/people/adp_UK007",
+        "https://ca-org.fly.dev/people/adp_UK008",
+        "https://ca-org.fly.dev/people/UK020",
+        "https://ca-org.fly.dev/people/adp_UK005",
+        "https://ca-org.fly.dev/people/adp_UK002",
+        "https://ca-org.fly.dev/people/adp_UK017",
+        "https://ca-org.fly.dev/people/adp_UK003",
+        "https://ca-org.fly.dev/people/adp_UK006",
+        "https://ca-org.fly.dev/people/adp_UK014"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://ca-org.fly.dev/api/admin/business-units",
+          "status": 403
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<h3 data-v-1db00057=\"\">Direct Reports</h3>"
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "label",
+          "impact": "critical",
+          "help": "Form elements must have labels",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<input type=\"file\" accept=\"image/*\" class=\"visually-hidden\" data-v-1db00057=\"\" style=\"\">"
+        },
+        {
+          "id": "landmark-main-is-top-level",
+          "impact": "moderate",
+          "help": "Main landmark should not be contained in another landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-main-is-top-level?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<main class=\"person-page\" data-v-1db00057=\"\">"
+        },
+        {
+          "id": "landmark-no-duplicate-main",
+          "impact": "moderate",
+          "help": "Document should not have more than one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-main?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<main class=\"content\">"
+        },
+        {
+          "id": "landmark-unique",
+          "impact": "moderate",
+          "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
+          "node_count": 2,
+          "first_node_html": "<aside class=\"sidebar\">"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 891,
+        "load_event_ms": 895,
+        "transfer_size_kb": 3897,
+        "encoded_body_size_kb": 3896
+      },
+      "text_excerpt": "OPERATIONS ATLAS\nCesiumAstro\nORG\nVIEW\nPeople Search\nSearch\n⌘K\nEDITOR\nMatthew Eisner\nORGANIZATION\nOrg Chart\nEmployee Directory\nPeople Search\n\nSIGNED IN\n\nMatthew Eisner\nCesiumAstro\neditor\n← Back to people search\n\nPORTRAIT\n\nChange Image\nRemove\nDIRECT\n12\nTOTAL\n12\n\nPROFILE\n\nNannetti, Gianni\nEdit\n\nSenior Director Engineering\n\nWaveform · Milton Keynes\n\nMANAGER\nPaulson, Brett\nLOCATION\nMilton Keynes\nDEPARTMENT\nWaveform\nLAST SYNCED\n2026-04-30T17:08:23.544Z\n\nPERSON PROFILE\n\nNannetti, Gianni\n\nSenior Director Engineering\n\nWaveform · Milton Keynes\n\nREPORTS THROUGH\nShey Sabripour\n→\nPaulson, Brett\n\nTEAM\n\nDirect Reports\n12\nAmr, Ismail\nPrincipal DSP Engineer I\nWaveform · Milton Keynes\nEdwards, Aaron\nSenior DSP Engineer II\nWaveform · Austin, TX\nGibbs, Michael\nPrincipal Embedded Software Engineer I\nWaveform · Milton Keynes\nHerbert, Gavin\nPrincipal FPGA Engineer I\nWaveform · Milton Keynes\nKothekar, Kunal\nSenior FPGA Engineer I\nWaveform · Milton Keynes\nMA\nMakarov, Alex\nPrincipal Communications Test Engineer I\nWaveform · Milton Keynes\nMengot, Nanye\nPrincipal DSP Engineer I\nWaveform · Milton Keynes\nOnions, Paul\nCommunication Systems Research Scientist\nWaveform · Milton Keynes\nSmall, Scarlett\nSenior DSP/FPGA Engineer I\nWaveform · Milton Keynes\nSA\nSpanos, Angelos\nPrincipal FPGA Engineer I\nWaveform · Milton Keynes\nStein, Ciara\nRF Communication Engineer\nWaveform · Milton Keynes\nVD\nVujadinovic, Dusko\nPrincipal DSP Engineer I\nWaveform · Milton Keynes\n\nSPAN\n\nManager Snapshot\nMANAGERS\n0\nICS\n12\n\nFILES\n\nAttachments\n0\n📎\nDrop files or click to upload\nPDF, DOCX, TXT — up to 30 MB each\nNo attachments yet.",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "OPERATIONS ATLAS\nCesiumAstro\nORG",
+          "selector": "button.system-logo.product-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK001_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK001_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "Search\n⌘K",
+          "selector": "button.cmdk-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK001_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK001_int1_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "EDITOR\nMatthew Eisner",
+          "selector": "button.user-menu-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK001_int2_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK001_int2_after.png"
+        }
+      ]
+    },
+    {
+      "url": "https://ca-org.fly.dev/people/adp_TWN001",
+      "final_url": "https://ca-org.fly.dev/people/adp_TWN001",
+      "title": "Wang, Ben — CesiumAstro",
+      "h1": "Wang, Ben",
+      "headings": [
+        "ORGANIZATION",
+        "Wang, Ben",
+        "Wang, Ben",
+        "Direct Reports",
+        "Manager Snapshot",
+        "Attachments"
+      ],
+      "primary_cta": "CC\nChang, Charles\nTest Engineering Program Manager\nBusiness Development · Taiwan",
+      "forms": [],
+      "links_sample": [
+        "https://ca-org.fly.dev/org-chart",
+        "https://ca-org.fly.dev/employee-directory",
+        "https://ca-org.fly.dev/people",
+        "https://ca-org.fly.dev/people/1032",
+        "https://ca-org.fly.dev/people/1001",
+        "https://ca-org.fly.dev/people/TWN002"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://ca-org.fly.dev/api/admin/business-units",
+          "status": 403
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<h3 data-v-1db00057=\"\">Direct Reports</h3>"
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "label",
+          "impact": "critical",
+          "help": "Form elements must have labels",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<input type=\"file\" accept=\"image/*\" class=\"visually-hidden\" data-v-1db00057=\"\" style=\"\">"
+        },
+        {
+          "id": "landmark-main-is-top-level",
+          "impact": "moderate",
+          "help": "Main landmark should not be contained in another landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-main-is-top-level?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<main class=\"person-page\" data-v-1db00057=\"\">"
+        },
+        {
+          "id": "landmark-no-duplicate-main",
+          "impact": "moderate",
+          "help": "Document should not have more than one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-main?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<main class=\"content\">"
+        },
+        {
+          "id": "landmark-unique",
+          "impact": "moderate",
+          "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
+          "node_count": 2,
+          "first_node_html": "<aside class=\"sidebar\">"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 727,
+        "load_event_ms": 738,
+        "transfer_size_kb": 17,
+        "encoded_body_size_kb": 17
+      },
+      "text_excerpt": "OPERATIONS ATLAS\nCesiumAstro\nORG\nVIEW\nPeople Search\nSearch\n⌘K\nEDITOR\nMatthew Eisner\nORGANIZATION\nOrg Chart\nEmployee Directory\nPeople Search\n\nSIGNED IN\n\nMatthew Eisner\nCesiumAstro\neditor\n← Back to people search\n\nPORTRAIT\n\nWB\nUpload Image\nDIRECT\n1\nTOTAL\n1\n\nPROFILE\n\nWang, Ben\nEdit\n\nSenior Director, Supplier Management and Taiwan Country Leader\n\nBusiness Development · Taiwan\n\nMANAGER\nPappas, Trey\nLOCATION\nTaiwan\nDEPARTMENT\nBusiness Development\nLAST SYNCED\n2026-04-30T17:08:27.380Z\n\nPERSON PROFILE\n\nWang, Ben\n\nSenior Director, Supplier Management and Taiwan Country Leader\n\nBusiness Development · Taiwan\n\nREPORTS THROUGH\nShey Sabripour\n→\nPappas, Trey\n\nTEAM\n\nDirect Reports\n1\nCC\nChang, Charles\nTest Engineering Program Manager\nBusiness Development · Taiwan\n\nSPAN\n\nManager Snapshot\nMANAGERS\n0\nICS\n1\n\nFILES\n\nAttachments\n0\n📎\nDrop files or click to upload\nPDF, DOCX, TXT — up to 30 MB each\nNo attachments yet.",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "OPERATIONS ATLAS\nCesiumAstro\nORG",
+          "selector": "button.system-logo.product-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_TWN001_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_TWN001_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "Search\n⌘K",
+          "selector": "button.cmdk-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_TWN001_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_TWN001_int1_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "EDITOR\nMatthew Eisner",
+          "selector": "button.user-menu-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_TWN001_int2_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_TWN001_int2_after.png"
+        }
+      ]
+    },
+    {
+      "url": "https://ca-org.fly.dev/people/adp_UK004",
+      "final_url": "https://ca-org.fly.dev/people/adp_UK004",
+      "title": "Amr, Ismail — CesiumAstro",
+      "h1": "Amr, Ismail",
+      "headings": [
+        "ORGANIZATION",
+        "Amr, Ismail",
+        "Amr, Ismail",
+        "Direct Reports",
+        "Attachments"
+      ],
+      "primary_cta": "Org Chart",
+      "forms": [],
+      "links_sample": [
+        "https://ca-org.fly.dev/org-chart",
+        "https://ca-org.fly.dev/employee-directory",
+        "https://ca-org.fly.dev/people",
+        "https://ca-org.fly.dev/people/adp_UK001",
+        "https://ca-org.fly.dev/people/1001",
+        "https://ca-org.fly.dev/people/1872"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://ca-org.fly.dev/api/admin/business-units",
+          "status": 403
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<h3 data-v-1db00057=\"\">Direct Reports</h3>"
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html style=\"--zerg-drawer-width: 0px;\">"
+        },
+        {
+          "id": "label",
+          "impact": "critical",
+          "help": "Form elements must have labels",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<input type=\"file\" accept=\"image/*\" class=\"visually-hidden\" data-v-1db00057=\"\" style=\"\">"
+        },
+        {
+          "id": "landmark-main-is-top-level",
+          "impact": "moderate",
+          "help": "Main landmark should not be contained in another landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-main-is-top-level?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<main class=\"person-page\" data-v-1db00057=\"\">"
+        },
+        {
+          "id": "landmark-no-duplicate-main",
+          "impact": "moderate",
+          "help": "Document should not have more than one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-main?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<main class=\"content\">"
+        },
+        {
+          "id": "landmark-unique",
+          "impact": "moderate",
+          "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
+          "node_count": 2,
+          "first_node_html": "<aside class=\"sidebar\">"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 968,
+        "load_event_ms": 969,
+        "transfer_size_kb": 3608,
+        "encoded_body_size_kb": 3608
+      },
+      "text_excerpt": "OPERATIONS ATLAS\nCesiumAstro\nORG\nVIEW\nPeople Search\nSearch\n⌘K\nEDITOR\nMatthew Eisner\nORGANIZATION\nOrg Chart\nEmployee Directory\nPeople Search\n\nSIGNED IN\n\nMatthew Eisner\nCesiumAstro\neditor\n← Back to people search\n\nPORTRAIT\n\nChange Image\nRemove\nDIRECT\n0\nTOTAL\n0\n\nPROFILE\n\nAmr, Ismail\nEdit\n\nPrincipal DSP Engineer I\n\nWaveform · Milton Keynes\n\nMANAGER\nNannetti, Gianni\nLOCATION\nMilton Keynes\nDEPARTMENT\nWaveform\nLAST SYNCED\n2026-04-30T17:08:26.518Z\n\nPERSON PROFILE\n\nAmr, Ismail\n\nPrincipal DSP Engineer I\n\nWaveform · Milton Keynes\n\nREPORTS THROUGH\nShey Sabripour\n→\nPaulson, Brett\n→\nNannetti, Gianni\n\nTEAM\n\nDirect Reports\n0\nNo direct reports.\n\nFILES\n\nAttachments\n0\n📎\nDrop files or click to upload\nPDF, DOCX, TXT — up to 30 MB each\nNo attachments yet.",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "OPERATIONS ATLAS\nCesiumAstro\nORG",
+          "selector": "button.system-logo.product-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK004_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK004_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "Search\n⌘K",
+          "selector": "button.cmdk-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK004_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK004_int1_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "EDITOR\nMatthew Eisner",
+          "selector": "button.user-menu-trigger",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK004_int2_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/people_adp_UK004_int2_after.png"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "The page is missing a lang attribute on the html element, which is a serious accessibility violation flagged by axe. Screen readers rely on lang to determine pronunciation rules and voice characteristics. Without it, assistive technology cannot correctly interpret the content language, causing misreadings that make the interface unusable for non-sighted users.",
+      "suggested_fix": "Add lang='en' (or appropriate language code) to the html element: <html lang='en' style='--zerg-drawer-width: 0px;'>",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": "Applies to all internal tools requiring WCAG AA compliance",
+      "role_assumption": "All users including those using assistive technology"
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "The page contains no h1 heading, only section headings starting at h2 or lower. The axe violation 'page-has-heading-one' indicates a moderate accessibility issue: screen reader users navigating by heading landmarks cannot identify the primary page purpose. The page title 'Org Chart — CesiumAstro' should have a corresponding visible h1.",
+      "suggested_fix": "Wrap the main 'Org Chart' text in the center panel (currently displayed as the page headline) in an h1 element. If 'LIVE STRUCTURE' is intended as context, make 'Org Chart' alone the h1 and keep 'LIVE STRUCTURE' as a smaller label above it.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0011"
+      ],
+      "target_kind_relevance": "Applies to all pages requiring semantic document structure",
+      "role_assumption": "All users, especially those using screen readers or heading navigation"
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": ".product-trigger",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/interactions/org-chart_int0_after.png"
+      },
+      "finding": "The product switcher modal (triggered by 'CesiumAstro ORG' button in top-left) displays a card titled 'Organization' with subtitle 'People, reporting lines, business units, staffing, and HR intelligence.' and an 'EDITOR' role badge, but the modal heading reads 'SWITCH PRODUCT' while the centered title says 'CesiumAstro'. This creates confusion about whether the user is switching products or viewing product metadata. The interaction model is unclear: is this a switcher or a product detail view?",
+      "suggested_fix": "If this is a single-product app, remove the 'SWITCH PRODUCT' heading and rename the button label to 'Product Info' or similar. If multiple products exist, show a list of products with the current one indicated, not a single card modal. Clarify the primary action: viewing metadata vs. switching context.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0108"
+      ],
+      "target_kind_relevance": "Applies to internal tools with product navigation",
+      "role_assumption": "All users"
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": ".org-chart-node",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "Employee cards in the org chart show inline role badges (IL = Individual Contributor, PB = ?, 10 DIRECT, etc.) but these abbreviations are not defined anywhere visible. First-time users cannot decode 'IL', 'PB', or the downward-arrow-with-number pattern without guessing or asking. The 'IL' badge appears on multiple cards (Caponio, Carwell, Conwell, Dadic) but its meaning is implicit.",
+      "suggested_fix": "Add a legend/key toggle button in the top control bar next to 'Org', 'Collapse', 'Expand All' that reveals a tooltip or drawer explaining each badge type: 'IL = Individual Contributor', 'PB = [meaning]', '↓ N = N Direct Reports', '↗ SPACE SYSTEMS = Matrix reporting'. Alternatively, use full-word badges on hover or expand.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0110"
+      ],
+      "target_kind_relevance": "Applies to internal tools with domain-specific notation",
+      "role_assumption": "New users or infrequent viewers"
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "interaction",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": ".org-chart-node",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "Employee cards display expansion indicators ('↓ 10' for 10 direct reports, '↓ 3' for 3 direct reports) but there is no visible affordance showing these are interactive. The chevron-down icon appears as a static label rather than a button. Users cannot tell whether clicking the card, the chevron, or the number will expand the subtree. The 'Collapse' and 'Expand All' buttons in the top bar suggest tree interaction exists, but individual card affordances are missing.",
+      "suggested_fix": "Make the chevron icon and direct-report count visually distinct as a button (add hover state, change cursor to pointer, increase contrast). Alternatively, add a '+' or 'Expand' button directly on each card that has direct reports. Ensure keyboard users can Tab to the expansion control and activate with Enter/Space.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0100"
+      ],
+      "target_kind_relevance": "Applies to all org-chart tools",
+      "role_assumption": "All users, especially keyboard-only users"
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P2",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": ".org-chart-viewport",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_mobile.png"
+      },
+      "finding": "On tablet (768px), the org chart truncates the rightmost employees (Carwell, Conwell, Dadic are cut off) without horizontal scroll affordance or indication that more content exists off-screen. The zoom controls ('Fit', '58%', '-', '+') are present but do not solve discoverability: users cannot see that content is clipped. The desktop view (1440px) shows 11 employees in the second row; tablet shows only 6 fully visible.",
+      "suggested_fix": "Add a subtle horizontal scroll indicator (gradient fade at edges, or horizontal scrollbar that appears on hover/touch). Alternatively, adjust the 'Fit' button default behavior to ensure all nodes are visible within viewport on load for tablet widths. Consider a two-finger pinch-zoom gesture for touch devices with a toast message on first load: 'Pinch to zoom, drag to pan'.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0010",
+        "p-0106"
+      ],
+      "target_kind_relevance": "Applies to tablet and mobile views of org chart",
+      "role_assumption": "All users on tablet/mobile devices"
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P1",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": ".org-chart-node",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "The CEO card (Shey Sabripour) displays '517 people under / 10 DIRECT' while direct-report cards show only the count ('34 people under / 18 DIRECT', '416 people under / 18 DIRECT'). However, cards for individual contributors show 'IL' badge with no '0 people under' text, creating inconsistent information density. Some cards have matrix-reporting arrows ('↗ SPACE SYSTEMS') while others do not, but it's unclear if this is a data difference or a display bug.",
+      "suggested_fix": "Standardize the card template: all cards should show '[N] people under / [M] DIRECT' if they have reports, or omit both fields if they don't (instead of mixing 'IL' badge with missing count). If matrix reporting is rare, consider showing it only on hover or in a detail panel rather than inline, to reduce visual clutter.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0097",
+        "p-0111"
+      ],
+      "target_kind_relevance": "Applies to all org-chart visualizations",
+      "role_assumption": "All users"
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": ".org-chart-node",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "The 'PB' badge on Paulson, Brett's card is unexplained and appears nowhere else in the visible org chart. Unlike 'IL' (which appears on multiple cards and can be inferred as 'Individual Contributor' by pattern), 'PB' is a singleton abbreviation. This could be initials, a role code, or a data error — users cannot distinguish without a legend or hover tooltip.",
+      "suggested_fix": "If 'PB' is a role/project badge, add it to the legend (see f-0004). If it is a data artifact or debug string, remove it. If it represents a unique attribute (e.g. 'Project Bridge' or 'Principal Architect'), spell it out or add a tooltip on hover: '[PB] = Project Bridge Lead'.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0032"
+      ],
+      "target_kind_relevance": "Internal tool; domain-specific labels must be clear to all internal users",
+      "role_assumption": "All users"
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P1",
+      "category": "technical",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": "network",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "A 403 Forbidden error is logged for '/api/admin/business-units' in the network panel. This suggests the current user (Matthew Eisner, role: editor) does not have permission to fetch business-unit data, but the UI does not surface this failure. If business-unit filtering or context is a planned feature, silent failure leaves users unaware of missing functionality. If the endpoint is unused, the request should not be made.",
+      "suggested_fix": "If business-unit data is required for full functionality, show an in-app banner: 'Some organization data is unavailable due to permissions. Contact your admin to request access.' If the endpoint is deprecated or not yet implemented, remove the client-side request. If it's a backend error, return a more specific error message and handle it gracefully in the UI.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106",
+        "p-0008"
+      ],
+      "target_kind_relevance": "Applies to all user roles; error visibility is critical for trust",
+      "role_assumption": "Editor role (Matthew Eisner); may differ for admin"
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": ".org-chart-controls",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "The control bar offers 'Collapse' and 'Expand All' but lacks a 'Reset View' or 'Center on CEO' button. If a user zooms/pans and loses their place, the only recovery path is manual panning or clicking 'Fit' (which adjusts zoom but may not center the root node). Similar tools (Lucidchart, Miro, Figma) provide a 'Reset to Default View' action.",
+      "suggested_fix": "Add a 'Center' or 'Reset View' button that resets zoom to default (e.g. 58% or 'Fit') and centers the viewport on the root node (Shey Sabripour). Place it in the control bar between 'Expand All' and the zoom controls. Keyboard shortcut: '0' (zero) or 'Home' key.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0108",
+        "p-0110"
+      ],
+      "target_kind_relevance": "Applies to all org-chart tools with zoom/pan",
+      "role_assumption": "All users"
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": ".org-chart-node",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "Employee cards are linked (clicking a name navigates to /people/[id]) but there is no visual indication that cards are clickable beyond the name being a different color. Competing org tools (ChartHop, Lattice, Hibob) add a hover state (shadow lift, border highlight) to the entire card to signal interactivity. Without this, users may not discover the click behavior.",
+      "suggested_fix": "Add a hover state to the entire employee card: subtle box-shadow increase, border color change, or background lightening. Ensure the cursor changes to pointer on hover over the entire card, not just the name link. For keyboard users, ensure Tab focus on a card shows a clear focus ring around the entire card boundary.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0003",
+        "p-0100"
+      ],
+      "target_kind_relevance": "Applies to all org-chart tools",
+      "role_assumption": "All users"
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/org-chart",
+        "selector": ".org-chart-controls",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/org-chart_desktop.png"
+      },
+      "finding": "The org chart has no visible export or share functionality. Users who need to present the chart in a meeting or document cannot easily capture a clean view (screenshot tools will include the sidebar and browser chrome). Competing tools (Lucidchart, Miro, OrgWeaver) offer 'Export as PNG/PDF' or 'Share Link' buttons.",
+      "suggested_fix": "Add an 'Export' button in the control bar that generates a PNG or PDF of the current visible org chart view (respecting zoom level and expansion state). Alternatively, add a 'Copy Shareable Link' button that encodes the current view state in a URL parameter (e.g. ?zoom=58&expanded=1001,1032) so recipients see the same view.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0074"
+      ],
+      "target_kind_relevance": "Applies to internal tools used in cross-functional collaboration",
+      "role_assumption": "All users with sharing needs (managers, HR, exec assistants)"
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "The page lacks a lang attribute on the root html element, violating WCAG 2.2 AA SC 4.1.2. Screen readers cannot correctly determine the document language, leading to incorrect pronunciation of content and reduced comprehension for users relying on assistive technology. This is a critical accessibility blocker.",
+      "suggested_fix": "Add lang=\"en\" to the opening <html> tag. If the application serves multiple languages, set lang dynamically based on the user's locale or browser preference.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": "select[data-v-0db96779]",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "Three select dropdowns ('Show [100] per page' dropdown and the two filter dropdowns for departments and locations) lack accessible names. Screen reader users encounter these as 'select, collapsed' without context about what they control. This violates WCAG 2.2 AA SC 4.1.2 and blocks effective navigation for keyboard-only and screen-reader users.",
+      "suggested_fix": "Add aria-label or associate visible labels via <label for=\"...\"> for each select. For the pagination dropdown, use aria-label=\"Items per page\". For the department filter, aria-label=\"Filter by department\". For location filter, aria-label=\"Filter by location\".",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0110"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": "img[alt=\"Shey Sabripour\"]",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "All 91 employee avatar images use alt text that duplicates the adjacent visible name text (e.g., alt=\"Shey Sabripour\" immediately next to the clickable \"Shey Sabripour\" link). This violates WCAG 2.2 AA SC 1.1.1 (image-redundant-alt) and creates redundant announcements for screen reader users, who hear each name twice in succession.",
+      "suggested_fix": "Set alt=\"\" (empty string) on all avatar images since they are decorative and the name is already present in adjacent text. Alternatively, if avatars convey status or other non-decorative information, include that in the alt (e.g., alt=\"Profile photo\").",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0011"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "interaction",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": "th[data-v-0db96779]",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "Table column headers (NAME, TITLE, DEPARTMENT, LOCATION, REPORTS TO, REPORTS) appear static and provide no visual affordance that they might be sortable. In data-heavy directory applications, users expect to sort by name, department, or report count. The absence of sort icons or hover states leaves users uncertain whether sorting is supported.",
+      "suggested_fix": "Add sort affordances to headers: display ascending/descending arrow icons on hover or on the currently-sorted column. On click, sort the table and update the icon to reflect direction. If sorting is not yet implemented, add cursor:pointer and hover underline to signal interactivity, then implement client-side or server-side sorting.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0100"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P2",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": ".org-nav a[href='/employee-directory'], .org-nav a[href='/people']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "The left navigation exposes both 'Employee Directory' and 'People Search' as separate links, but the payload shows '/people' and '/employee-directory' URLs with no clear functional distinction documented. Users are forced to click both to learn the difference, creating unnecessary friction in a tool meant for quick lookups.",
+      "suggested_fix": "Add hover tooltips or adjacent help text explaining the difference (e.g., 'Employee Directory: Browse by department' vs 'People Search: Find by keyword'). If the pages serve the same purpose, consolidate them into a single view with tabbed or toggled modes.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0110"
+      ],
+      "target_kind_relevance": "Internal tool — navigation clarity directly impacts task completion speed",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": "td:nth-child(5)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "The 'REPORTS TO' column displays a mix of full names ('Shey Sabripour', 'Paulson, Brett') and em-dashes ('—') with inconsistent formatting. One row shows 'Shey Sabripour' while others show 'Paulson, Brett' (last name first). This inconsistency suggests either a data-import bug or missing normalization logic, and reduces scannability.",
+      "suggested_fix": "Normalize all manager names to a single format: either 'First Last' or 'Last, First' throughout. Ensure the display logic consistently applies the same formatting rule to all rows, and validate data imports to catch format mismatches at ingestion time.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0096",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": ".hero-description",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "The subheadline 'Search the org, slice by department or location, and jump directly into a person profile' uses informal, conversational phrasing ('slice', 'jump directly into') that may feel out of place in an enterprise HR tool context. While approachable, it does not match the formal tone of other enterprise org tools.",
+      "suggested_fix": "Revise to professional phrasing: 'Search the directory, filter by department or location, and view detailed employee profiles.' This maintains clarity while aligning with the tone expected in internal HR/people systems.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107"
+      ],
+      "target_kind_relevance": "Internal tool — tone should match enterprise HR context",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P1",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": "table",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_mobile.png"
+      },
+      "finding": "On tablet (768px), the table columns compress but retain all six columns side-by-side, resulting in severe horizontal cramping. The 'REPORTS TO' and 'REPORTS' columns become nearly illegible. On smaller viewports, this layout will fail entirely unless horizontal scroll is introduced, which violates WCAG 1.4.10 (Reflow).",
+      "suggested_fix": "Implement a responsive table pattern: at 768px and below, hide 'LOCATION', 'REPORTS TO', and 'REPORTS' columns by default, and expose them via expandable row detail panels triggered by tapping a row. Alternatively, switch to a card-based layout where each employee is a card showing name, title, department, with expandable details.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0010",
+        "p-0058"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": "table",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "The directory lacks inline contact actions (email, Teams/Slack link, calendar) within each row. Users who want to reach out to an employee must click through to the profile, copy the email, and return — a multi-step flow that breaks momentum in a tool designed for rapid lookups.",
+      "suggested_fix": "Add icon buttons in each row for common actions: 'Email' (mailto: link), 'Message' (if integrated with Slack/Teams), and 'View Profile'. Place these in a new rightmost column labeled 'ACTIONS'. This reduces clicks-to-contact from 3+ to 1.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0071",
+        "p-0108"
+      ],
+      "target_kind_relevance": "Internal tool — optimizing for frequent lookup-and-contact workflows",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P1",
+      "category": "ux",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": ".pagination",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "The pagination footer displays 'Showing 1–100 of 518' on the right and '‹ Prev | Page 1 of 6 | Next ›' in the center. The total-count phrasing '1–100 of 518' uses an en-dash that is visually similar to a hyphen, reducing clarity. Additionally, 'Prev' and 'Next' use abbreviated labels that add no space savings and reduce scannability.",
+      "suggested_fix": "Change 'Showing 1–100 of 518' to 'Showing 1 to 100 of 518' (spelled-out 'to' for clarity). Expand 'Prev' to 'Previous' and ensure both buttons are large enough to meet 24×24px touch-target minimums per WCAG 2.5.8.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0009",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": ".filter-controls",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "The department and location filters are single-select dropdowns, which forces users to choose one value at a time. In organizations with matrixed teams or remote employees spanning multiple offices, users may want to filter 'Software OR Manufacturing' or 'Austin OR Remote' simultaneously. The current UI does not support multi-select filtering.",
+      "suggested_fix": "Convert the department and location filters to multi-select dropdowns (e.g., using checkboxes within the dropdown menu). Display selected filters as removable tags above the table. Add a 'Clear filters' button to reset all selections at once.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0071",
+        "p-0101"
+      ],
+      "target_kind_relevance": "Internal tool — power users will want to cross-reference multiple departments",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P1",
+      "category": "technical",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/employee-directory",
+        "selector": "network tab",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/employee-directory_desktop.png"
+      },
+      "finding": "The page logs a 403 Forbidden error for '/api/admin/business-units' in the network payload. This suggests the current user role (editor) is attempting to fetch data they do not have permission to access. While the page still renders, this error may indicate incomplete role-based access control (RBAC) logic or a data dependency that is silently failing.",
+      "suggested_fix": "Audit the '/api/admin/business-units' endpoint call: determine if the editor role should have access (and fix permissions), or remove the call for non-admin users. Implement client-side role checks before making admin API requests, and log user-facing error messages if critical data fails to load.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": "Applies to 'editor' role; may not occur for 'admin' users"
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "The page is missing the required `lang` attribute on the `<html>` element, flagged by axe-core as a serious violation. This prevents screen readers from correctly announcing content in the appropriate language and is an automatic WCAG 2.2 Level A failure that blocks accessibility certification.",
+      "suggested_fix": "Add `lang=\"en\"` (or appropriate language code) to the `<html>` tag: `<html lang=\"en\" style=\"--zerg-drawer-width: 0px;\">`",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": ".person-card:nth-child(11) .name",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "The person card for 'Alam, Zane' displays a truncated role title ending with 'Integra' instead of the full 'Communications Payload Integra[tion]'. This inconsistency with other cards (which display complete titles) suggests a CSS or character-limit issue specific to this entry. Users scanning for this person by full title may miss them.",
+      "suggested_fix": "Investigate CSS overflow settings or character limits on the `.person-card .role` element. Ensure all role titles either wrap to multiple lines or use a consistent truncation pattern with ellipsis (e.g., 'Communications Payload Integ…').",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "interaction",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": ".stat-card",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "The four summary stat cards (People: 518, Managers: 62, Departments: 27, Locations: 9) appear purely informational with no interactive affordance. In similar tools (e.g., Linear's project filters, Asana's workspace stats), clicking these cards filters the list below to that subset. Users who expect this pattern will click and receive no feedback.",
+      "suggested_fix": "Make stat cards clickable filters: clicking 'Managers: 62' filters the list to show only managers, with a visual selected state (border or background accent). Add aria-pressed or aria-selected state and keyboard navigation. Include a 'Clear filters' affordance when any stat is active.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0100",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": ".instruction-text",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "The instruction text 'Top 24 by report count — start typing to search all 518 people' buries two critical UX facts in one dense sentence: that the default view is sorted by report count (not alphabetical, not department), and that typing triggers a different search mode. Users who don't parse this instruction will assume the list is alphabetically sorted and may miss their target.",
+      "suggested_fix": "Split into two explicit elements: a visible sort indicator above the results ('Sorted by: Report Count ↓' with dropdown to change sort) and move the search instruction into the placeholder text of the search input itself ('Search by name, title, department, or location').",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P2",
+      "category": "interaction",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": ".person-card",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "Person cards show report count badges ('39 reports', '21 reports') but clicking the badge performs the same action as clicking anywhere else on the card (navigating to the person's detail page). Users familiar with org tools like ChartHop or Lattice expect clicking the report count to expand an inline direct-reports preview or navigate directly to that person's org chart view.",
+      "suggested_fix": "Make the report-count badge a separate interactive target: clicking it opens the person's Org Chart view filtered to show their direct reports. Add a tooltip on hover ('View 39 direct reports') and ensure the badge has distinct :hover and :focus states separate from the parent card.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0100"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": ".person-card-grid",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_mobile.png"
+      },
+      "finding": "At tablet width (768px), person cards stack into a single column which is appropriate, but the card height becomes inconsistent due to varying role title lengths. Cards with two-line titles ('Senior Engineering Manager, Mechanical Design') create noticeable vertical rhythm breaks compared to single-line titles ('CEO'), making the list harder to scan.",
+      "suggested_fix": "Set a fixed or minimum height for person cards at tablet/mobile widths, or normalize title wrapping by setting a fixed line-height and max-height with overflow ellipsis. Alternatively, restructure mobile cards to use a horizontal layout (avatar left, content right) which naturally handles variable text lengths.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0097",
+        "p-0086"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": ".page-description",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "The description 'Search for anyone in the organization to open their full profile, reporting chain, GA hours, and staffing allocations' uses the acronym 'GA hours' without definition. Users unfamiliar with this internal term (likely meaning 'General Availability' or 'Generally Allocated') must guess its meaning or ignore the feature.",
+      "suggested_fix": "Either spell out the acronym on first use ('GA (General Availability) hours') or replace with plain language ('availability hours', 'scheduled hours'). If GA is a specific product term, add a tooltip or help icon next to it.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0022"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": "input[placeholder='Search by name or title...']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "The search input uses placeholder text as the only label ('Search by name or title…'), which violates WCAG 2.2 Level A Success Criterion 3.3.2 (Labels or Instructions). Placeholders disappear on focus, and screen readers often skip them entirely. Users with cognitive disabilities or screen readers cannot reliably identify the field's purpose once they start typing.",
+      "suggested_fix": "Add a visually-hidden `<label for=\"search-input\">` element with text like 'Search employees' above the input. Keep the placeholder as supplementary help text. Ensure the label remains programmatically associated with the input via the `for` attribute.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0008"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P2",
+      "category": "polish",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": ".person-card .avatar",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "Several person cards show generic avatar placeholders (single-letter initials or silhouettes) instead of profile photos. While functionally acceptable, this reduces visual scanability — users who recognize colleagues by face must read every name. Competitors like Lattice and BambooHR make photo upload a high-visibility prompt.",
+      "suggested_fix": "Add a gentle prompt or banner for users without profile photos: 'Help your team recognize you — add a profile photo'. For admins viewing this page, consider adding a batch-upload flow or highlighting incomplete profiles in an 'Onboarding Tasks' dashboard section.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0097"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": "Applies to end-users without photos and admins managing onboarding completeness"
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P1",
+      "category": "technical",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": "network panel",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "Console shows a 403 error for `/api/admin/business-units`, indicating a permissions failure or missing auth header. If this endpoint is required for filtering or stat calculations, the page may be loading in a degraded state. If it's not required for this view, the client is making an unnecessary failing request.",
+      "suggested_fix": "Investigate whether this endpoint is intended to be accessible for the 'editor' role. If not, remove the client-side request logic for non-admin users. If it should be accessible, fix the server-side authorization logic or ensure the client sends the correct auth token.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": "Viewer is logged in as 'editor'; admins may not see this error"
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": ".person-card .department-tag",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "Department tags (e.g., 'Digital/Mixed Signal', 'Systems Eng Integration & Test', 'Remote / Offsite') use inconsistent text sizing and truncation behavior. Some are displayed at full width while others appear compressed or abbreviated, creating visual noise. The styling does not clearly distinguish department from location tags.",
+      "suggested_fix": "Standardize tag typography: use a single text size (e.g., 12px), set max-width with ellipsis overflow, and differentiate department vs. location tags with subtle color or icon differences (e.g., location tags in muted grey, department tags in brand accent color).",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0096",
+        "p-0097"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P1",
+      "category": "interaction",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people",
+        "selector": ".search-results-footer",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_desktop.png"
+      },
+      "finding": "The footer text '494 more — type a name, title, department, or location to find them' indicates that most employees are hidden below the fold, but there is no 'Load More' button or infinite scroll behavior. Users must perform a search to access 95% of the directory, which is a significant friction point if they want to browse rather than search.",
+      "suggested_fix": "Add a 'Load More' or 'Show All' button at the bottom of the initial 24 results. Alternatively, implement infinite scroll with a scroll-progress indicator. For power users, add a 'View All (518)' link that disables pagination entirely.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0108",
+        "p-0050"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "The page has no lang attribute on the <html> element, which prevents screen readers from announcing content in the correct language and blocks text-to-speech from selecting the appropriate voice. This is an axe 'serious' violation that fails WCAG 3.1.1.",
+      "suggested_fix": "Add lang=\"en\" (or the appropriate language code) to the <html> element: <html lang=\"en\" style=\"--zerg-drawer-width: 0px;\">",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": "input[type=\"file\"][accept=\"image/*\"]",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "The portrait image upload file input (triggered by 'Change Image' button) has no associated label, failing WCAG 4.1.2. Screen reader users cannot identify the purpose of this control, which blocks a core profile-editing task.",
+      "suggested_fix": "Wrap the input in a <label> or add aria-label=\"Upload portrait image\" to the input element. If the input is intentionally hidden and triggered by the 'Change Image' button, ensure the button itself is properly labeled and the input gets focus when activated.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0008"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": "Applies to super-admin and users with edit permissions."
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": "main.person-page",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "The page contains two <main> landmarks (one nested inside another), and two <aside> landmarks with identical accessible names. This violates WCAG 1.3.1 and confuses screen reader users attempting to navigate by landmark, as they cannot distinguish between duplicate regions.",
+      "suggested_fix": "Remove the outer <main class=\"content\"> wrapper (the page-level main should contain the person-page main, not the reverse), or convert the outer main to a <div>. For the duplicate <aside> elements, add unique aria-label attributes: aria-label=\"Navigation sidebar\" for the left nav and aria-label=\"Profile metadata\" for any secondary aside.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": "h3[data-v-1db00057]",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "The 'Direct Reports' heading is an h3, but there is no preceding h2 on the page, creating a non-sequential heading structure. Screen reader users who navigate by heading level expect a logical hierarchy (h1 → h2 → h3), and skipping levels breaks that expectation.",
+      "suggested_fix": "Change the 'Direct Reports', 'Manager Snapshot', and 'Attachments' headings to h2 elements. If visual hierarchy needs to remain smaller, use CSS to reduce font size rather than using a lower heading level.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": ".sidebar",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "The left navigation shows 'People Search' as the current page, but the actual page is a person detail view. This creates a mismatch between the nav state and the user's location, making it unclear how to return to the search results or where the user is in the navigation hierarchy.",
+      "suggested_fix": "Either (1) remove the active state from 'People Search' when viewing a person detail, or (2) add a breadcrumb or parent-page indicator above the person name (e.g. 'People Search > Shey Sabripour') to show the hierarchy. The '← Back to people search' link partially addresses this but should be more prominent.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": ".last-synced-field",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "The 'LAST SYNCED' timestamp is displayed as a raw ISO 8601 string (2026-04-30T17:08:21.995Z), which is developer-facing format that most users cannot parse. This makes it impossible to quickly assess data freshness without mental translation.",
+      "suggested_fix": "Format the timestamp as a relative time ('2 hours ago', 'Last updated yesterday') or human-readable absolute time ('Apr 30, 2026 at 5:08 PM'). Reserve the raw ISO string for a tooltip on hover if precise millisecond data is needed for debugging.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P2",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": ".team-list",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "Most direct reports show avatars with photos, but 'Paulson, Brett' shows only initials ('PB') on a colored background. This inconsistency is visually jarring and may signal incomplete data entry, even if the user simply hasn't uploaded a photo.",
+      "suggested_fix": "Ensure all avatar placeholders use a consistent visual treatment (e.g. all initials on colored backgrounds, or a default silhouette icon). If photos are preferred, add a tooltip or indicator on the 'PB' avatar encouraging the user to upload a photo ('Click to add photo').",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0022"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P1",
+      "category": "interaction",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": ".team-list .person-card",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "Direct report cards in the 'Team' section do not show any hover state or click affordance, making it unclear whether the cards are clickable links to the person's detail page. Users may not realize they can drill down into each report's profile.",
+      "suggested_fix": "Add a hover state (subtle background color change, border highlight, or shadow) and a cursor:pointer style to each person card. Consider adding a subtle arrow icon (→) in the top-right corner of each card to signal navigation.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0100"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": ".person-card .title",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "The person's name and title within each direct-report card have nearly identical visual weight (both appear to be ~14-15px, similar color), making it difficult to quickly scan the list for names vs. roles. The name should be the dominant element.",
+      "suggested_fix": "Increase the font-weight of the name (font-weight: 600) and/or increase its size by 2px relative to the title. Reduce the opacity of the title line to 0.7 to create secondary hierarchy, per Refactoring UI's 'de-emphasize with color' pattern.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0093",
+        "p-0094"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P1",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": ".team-list",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_mobile.png"
+      },
+      "finding": "On tablet (768px), the 'Direct Reports' section switches to a two-column grid, but several cards have long titles ('Chief Propulsion Systems Engineer') that create uneven row heights and visual imbalance. The grid does not adapt gracefully to varying content lengths.",
+      "suggested_fix": "Either (1) enforce a min-height on all person cards to normalize the grid, (2) truncate long titles with ellipsis and show full title on hover/tap, or (3) switch to a single-column layout at tablet widths to avoid the ragged-grid effect.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0058",
+        "p-0097"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P1",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": ".team-list",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "The 'Direct Reports' list shows 10 reports but provides no way to filter, sort, or search within this list. For users with 50+ direct reports (e.g. a VP-level executive), scrolling through an unsorted list to find a specific person is inefficient.",
+      "suggested_fix": "Add a small search/filter input above the 'Direct Reports' heading that filters cards in real-time as the user types. Consider adding sort controls (by name, by title, by department) as a dropdown or toggle buttons. This is especially valuable for the 'TOTAL: 517' view if that expands to show all indirect reports.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1001",
+        "selector": ".span-card",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1001_desktop.png"
+      },
+      "finding": "The 'Manager Snapshot' card shows MANAGERS: 6 and ICS: 4 but provides no explanation of what 'ICS' means (likely 'Individual Contributors'). This acronym is not universally known and may confuse new users or external stakeholders viewing the tool.",
+      "suggested_fix": "Spell out 'Individual Contributors' in full, or add a small info icon (ⓘ) next to 'ICS' that reveals a tooltip on hover: 'Individual Contributors — employees with no direct reports.' Consider adding a brief explainer of the snapshot metrics as a collapsed accordion under the card.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "The <html> element is missing a lang attribute, which prevents screen readers from correctly pronouncing content and forces assistive technology to guess the document language. This is a WCAG Level A failure that blocks international users and screen reader users from correct page interpretation.",
+      "suggested_fix": "Add lang=\"en\" to the <html> element (or the appropriate ISO 639-1 language code if the application supports multiple languages).",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": "input[type='file'][accept='image/*']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "The file input associated with 'Change Image' has no programmatic label (axe-core violation: label). Screen reader users encounter an unlabeled form control and cannot determine its purpose, blocking image upload functionality for assistive tech users.",
+      "suggested_fix": "Wrap the visually-hidden file input in a <label> element or add an aria-label=\"Upload profile photo\" attribute directly to the input. Ensure the associated 'Change Image' button triggers the input via a for/id association or JavaScript click handler.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": "Applies to all users with edit permissions; super-admins and profile owners see this control."
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": "h3:contains('Direct Reports')",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "Heading levels jump from h1 ('Pappas, Trey' in the PERSON PROFILE section) directly to h3 ('Direct Reports'), skipping h2 entirely (axe-core violation: heading-order). This breaks the document outline and confuses screen reader users navigating by heading structure.",
+      "suggested_fix": "Demote 'Direct Reports' to an h2 element, or insert an h2 between the page h1 and the current h3 to maintain sequential heading hierarchy. Ensure all major sections (TEAM, SPAN, FILES) use h2 tags.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": "main.person-page",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "The page contains two <main> landmarks — one wrapping the person-page content and another wrapping the broader .content container (axe-core violations: landmark-main-is-top-level, landmark-no-duplicate-main). Screen readers cannot determine which is the primary content region, causing navigation confusion.",
+      "suggested_fix": "Remove the nested <main> landmark inside .person-page and use a <section> or <article> element instead. Ensure only one <main> landmark exists per page, wrapping the entire primary content area.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": "aside.sidebar",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "Multiple <aside> landmarks exist on the page without unique accessible names (axe-core violation: landmark-unique). Screen reader users navigating by landmark cannot differentiate between the left sidebar navigation and any other complementary regions.",
+      "suggested_fix": "Add aria-label attributes to each <aside> to distinguish them (e.g., aria-label=\"Organization navigation\" for the sidebar, aria-label=\"Manager snapshot\" for the span card if it uses aside).",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": ".team-members",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "Some direct reports display a '3 reports' / '10 reports' / '1 report' subordinate count below their name, while most do not. The inconsistency suggests either incomplete data or a missing visual indicator that some managers have no direct reports (which should be surfaced explicitly).",
+      "suggested_fix": "For managers with zero reports, display '0 reports' or omit the line entirely but add a consistent visual cue (e.g., a dimmed people-icon or no icon at all). Ensure every manager card renders the subordinate-count field in the same position for scanability.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0097"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": ".external-id-field",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "The 'EXTERNAL ID' field displays '1032' without context. Users unfamiliar with the internal HR system won't know if this is an ADP ID, a badge number, or another identifier. The label is technically accurate but assumes insider knowledge.",
+      "suggested_fix": "Rename the label to match the source system (e.g., 'ADP ID', 'Employee Number', 'Workday ID') or add helper text below the value explaining what the number represents. If multiple ID systems coexist, consider a format like 'External ID (ADP): 1032'.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107"
+      ],
+      "target_kind_relevance": "Internal tool; does not require marketing-level copy polish, but clarity matters for cross-departmental users (HR, IT, managers).",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": ".last-synced-field",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "The 'LAST SYNCED' timestamp is displayed as '2026-04-30T17:08:22.112Z' in raw ISO 8601 format. This is unreadable for non-technical users and provides no indication of timezone or relative recency (e.g., '2 hours ago').",
+      "suggested_fix": "Format the timestamp in a human-readable format: 'April 30, 2026 at 5:08 PM UTC' or 'Synced 2 hours ago'. If the application serves multiple timezones, display the time in the user's local timezone with a timezone label.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P1",
+      "category": "empty_state",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": ".attachments-section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "The Attachments section shows a passive empty state ('No attachments yet.') without guiding the user on what to attach or why. This is a missed onboarding opportunity for a feature that likely sees low adoption due to unclear value.",
+      "suggested_fix": "Replace the empty state with teaching copy: 'Upload contracts, resumes, or offer letters here. Drag files or click to upload.' Consider adding a sample file type (e.g., 'Try uploading Trey's signed offer letter') for first-time editors.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0109"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": "Applies to editors and super-admins; read-only viewers see no upload affordance."
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P1",
+      "category": "interaction",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": ".direct-reports-section h3",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "The 'Direct Reports' section heading displays a count badge ('18') but the list is truncated to ~17 visible cards in the desktop view, requiring scroll to see the rest. There is no visual indicator (scrollbar, 'Show all' button, pagination) that more reports exist below the fold.",
+      "suggested_fix": "Add a subtle scrollbar or shadow fade at the bottom of the Direct Reports container to signal additional content, or append a 'Show all 18 reports' expand button if the list is intentionally collapsed. Alternatively, display all reports and let the section naturally scroll.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": ".person-card .title",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "Job titles in the Direct Reports cards (e.g., 'Vice President, Business Development & Govern') are truncated mid-word without ellipsis or tooltip. This happens on 'Myhill, Robert' where 'Government' is cut to 'Govern', making the title ambiguous.",
+      "suggested_fix": "Apply CSS text-overflow: ellipsis and a title attribute (or tooltip on hover) to the title field so users can read the full text. Alternatively, allow the title to wrap to two lines with a max-height constraint.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0085"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P1",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": ".manager-snapshot-card",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_mobile.png"
+      },
+      "finding": "On tablet (768px), the Manager Snapshot card and Attachments card stack vertically but consume equal full-width, making the '5 managers / 13 ICs' stat card feel empty and the Attachments dropzone feel cramped. The desktop 2-column layout is abandoned prematurely.",
+      "suggested_fix": "Maintain the 2-column layout for SPAN and FILES sections down to 768px width, collapsing to single-column only below 640px. Alternatively, use a 60/40 width split at tablet breakpoint so the denser card (Attachments) gets more horizontal space.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0010"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0013",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/1032",
+        "selector": ".person-card",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_1032_desktop.png"
+      },
+      "finding": "The Direct Reports list shows name, title, department, and location for each person, but does not display tenure, start date, or employment type (FTE/contractor). Similar org tools (BambooHR, Lattice) expose these fields to help managers quickly identify new hires or contractors during planning.",
+      "suggested_fix": "Add a small badge or secondary metadata line to each person card showing 'Started Apr 2024' or 'Contractor • 6 months' if that data is available in the system. Make it collapsible or toggleable via a 'Show details' checkbox in the section header if density is a concern.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110"
+      ],
+      "target_kind_relevance": "Internal tool; applies to HR and manager workflows.",
+      "role_assumption": "Relevant for managers and HR; may not apply to peer viewers."
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "The page is missing the lang attribute on the root <html> element, which is a critical accessibility failure. Screen readers cannot determine the document's language, causing incorrect pronunciation and text-to-speech failures for all content. This is flagged by axe-core as a serious violation.",
+      "suggested_fix": "Add lang=\"en\" to the <html> element. If the application serves multiple locales, set this dynamically based on user or org preference.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": "Applies to all users. Critical for assistive technology compatibility.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": "input[type='file'][accept='image/*'].visually-hidden",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "The file input for portrait image upload has no associated <label>, meaning screen reader users cannot discover or activate it. axe-core flags this as a critical violation. The 'Change Image' button likely triggers this input, but the programmatic association is missing.",
+      "suggested_fix": "Add an aria-label or associate a <label> element with the file input using for/id attributes. Ensure the 'Change Image' button has aria-controls pointing to the input ID.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0008"
+      ],
+      "target_kind_relevance": "Applies to all users uploading portraits. Blocks keyboard-only and screen-reader users.",
+      "role_assumption": "Assumes user has edit permissions. Non-editors do not see this control."
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": "h3[data-v-1db00057] (Direct Reports heading)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "Heading hierarchy is broken: the page jumps from h1 ('Nannetti, Gianni') directly to h3 ('Direct Reports') without an intervening h2. This confuses screen reader users navigating by heading level and signals poor document structure. axe-core flags this as a moderate violation.",
+      "suggested_fix": "Change 'TEAM' label to an h2, and make 'Direct Reports' an h3 beneath it. Alternatively, demote 'Direct Reports' to h2 if no parent section heading is semantically appropriate.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": "main.person-page, main.content",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "Two <main> landmarks are present on the page, and one is nested inside an <aside>. axe-core flags this as a moderate violation. Screen reader users navigating by landmark will encounter duplicate 'main' regions, causing confusion about the primary content area.",
+      "suggested_fix": "Remove the <main> wrapper from 'person-page' or rename it to <article> or <section>. Keep only one <main> element per page, wrapping the entire primary content region (sidebar + person detail).",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": ".team-member card (Makarov, Alex)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "One employee card displays initials 'MA' in a badge instead of a portrait photo, while all other cards show photos. This inconsistency is unexplained and looks like missing data. Users may assume the record is incomplete or that the UI failed to load.",
+      "suggested_fix": "If no portrait is available, apply this fallback treatment consistently (initials badge) to all employees without photos, and consider adding a tooltip explaining 'No photo uploaded'. Alternatively, use a generic avatar silhouette for all missing photos.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0022"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": ".profile-section LAST SYNCED",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "The 'LAST SYNCED' timestamp is rendered in raw ISO 8601 format (2026-04-30T17:08:23.544Z), which most users cannot parse quickly. This is a developer artifact leaking into the UI and signals unfinished implementation.",
+      "suggested_fix": "Format this as a relative time ('Synced 2 hours ago') or a localized absolute date ('Synced Apr 30, 2026 at 5:08 PM'). Consider adding a tooltip showing the full ISO timestamp for debugging if needed.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0022"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P1",
+      "category": "empty_state",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": ".attachments-section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "The 'Attachments' empty state shows passive copy ('No attachments yet.') and a large dashed upload dropzone, but provides no context about what attachments are for or why a user would add one. This is a teaching opportunity missed.",
+      "suggested_fix": "Replace 'No attachments yet.' with teaching copy: 'Upload performance reviews, onboarding docs, or notes for this employee.' Consider adding a small example list of common attachment types.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "target_kind_relevance": "Applies to editors. Non-editors may see a read-only empty state.",
+      "role_assumption": "Assumes user has upload permissions (editor role)."
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P2",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": ".profile-section, .person-profile-section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "The left panel heading reads 'PROFILE' and the right panel heading reads 'PERSON PROFILE', both describing the same entity. This redundancy suggests unclear information architecture and could confuse users scanning the layout.",
+      "suggested_fix": "Rename left panel to 'Details' or 'Summary' and right panel to 'Team & Reporting' to clarify each section's purpose. Alternatively, merge semantically redundant sections if they serve the same function.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0111"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P2",
+      "category": "interaction",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": ".team-member cards in Direct Reports section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "The list of 12 direct reports is displayed as a flat vertical stack with no grouping, sorting, or filtering controls. In orgs with larger teams (20+ reports), this list becomes unwieldy and unscannable.",
+      "suggested_fix": "Add sortable column headers (by name, title, location) or filter chips (by department, location) above the list. Consider grouping by team or seniority level if those fields are available.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0101"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": "Labels like 'DIRECT', 'TOTAL', 'MANAGER', 'LOCATION', 'DEPARTMENT'",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "All-caps labels ('DIRECT', 'TOTAL', 'MANAGER') are used inconsistently for field labels. Some sections (left profile) use all-caps, while others (right panel) use title case. This creates visual noise and reduces readability.",
+      "suggested_fix": "Standardize on either title case (better readability) or all-caps (stronger hierarchy) across all field labels. If using all-caps, reduce font size or weight to prevent shouting effect.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0096",
+        "p-0093"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P1",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": ".manager-snapshot, .attachments-section on tablet",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_mobile.png"
+      },
+      "finding": "At tablet width (768px), the 'Manager Snapshot' and 'Attachments' sections stack below the fold, requiring significant scrolling to reach. The desktop layout shows these in a right sidebar, preserving above-the-fold visibility.",
+      "suggested_fix": "At tablet breakpoint, consider collapsing 'Manager Snapshot' into an accordion or summary card near the top of the page, and deferring 'Attachments' to a secondary tab or modal to prioritize team list visibility.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0010",
+        "p-0061"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK001",
+        "selector": ".team-member cards",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK001_desktop.png"
+      },
+      "finding": "Each direct report card shows title and location but omits tenure, last review date, or performance indicators. Similar tools (BambooHR, Lattice) surface this context inline to help managers prioritize 1:1s and spot flight risk.",
+      "suggested_fix": "Add a small metadata line to each card: 'Hired Jan 2024 · Last review: Dec 2024'. Consider adding a visual indicator (dot, badge) for employees due for review or nearing tenure milestones.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110"
+      ],
+      "target_kind_relevance": "Applies to manager view. End-users viewing their own profile may not need this context.",
+      "role_assumption": "Assumes viewer is a manager or HR admin with access to performance data."
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "The page is missing a lang attribute on the <html> element, causing screen readers to use incorrect pronunciation rules for employee names and location data. This is flagged as a serious violation by axe-core and blocks assistive technology from correctly interpreting multilingual content (Taiwan locations, Chinese names like 'Wang, Ben' and 'Chang, Charles').",
+      "suggested_fix": "Add lang='en' to the <html> element. If the page contains substantial non-English content blocks (like Chinese employee names), consider wrapping those in <span lang='zh'> to provide correct pronunciation hints.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": "Internal tool; affects all users relying on assistive tech.",
+      "role_assumption": "Applies to all viewer roles."
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": "input[type='file'][accept='image/*']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "The portrait upload input has no associated <label> element, making it invisible and inoperable for screen reader users. Axe-core flags this as a critical violation. Keyboard-only users and assistive tech users cannot discover or activate the upload function.",
+      "suggested_fix": "Wrap the 'Upload Image' button and the hidden file input in a <label for='portrait-upload'> element, or add aria-label='Upload portrait image' directly to the input and ensure the button programmatically triggers the input via onclick.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0008"
+      ],
+      "target_kind_relevance": "Internal tool; critical for editors who manage profiles.",
+      "role_assumption": "Affects editors and super-admins who upload images."
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": "h3[data-v-1db00057]",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "Heading hierarchy skips from H1 ('Wang, Ben') directly to H3 ('Direct Reports'), violating WCAG 1.3.1 and axe's heading-order rule. Screen reader users navigating by headings will miss structural cues and be disoriented when jumping multiple levels.",
+      "suggested_fix": "Change section headings ('TEAM', 'SPAN', 'FILES') from uppercase label spans to semantic H2 elements, and make subsection headings ('Direct Reports', 'Manager Snapshot', 'Attachments') H3. This establishes a proper document outline: H1 → H2 → H3.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": "Internal tool; affects all users relying on semantic navigation.",
+      "role_assumption": "Applies to all viewer roles."
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": "main.person-page",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "The page contains two <main> landmarks (one wrapping the entire content area, one wrapping the person-page), and the person-page main is nested inside the outer main. Axe flags this as a moderate violation; screen reader users navigating by landmark will encounter ambiguous structure and may skip content.",
+      "suggested_fix": "Remove the redundant inner <main class='person-page'> and replace it with <section> or <article>. The outer <main class='content'> should be the only main landmark on the page.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": "Internal tool; affects all users relying on semantic navigation.",
+      "role_assumption": "Applies to all viewer roles."
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": "aside.sidebar",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "Two <aside> elements (left sidebar and possibly another complementary region) share the same role without unique accessible names, violating WCAG 1.3.1. Screen reader users navigating by landmark will hear 'complementary' twice with no distinguishing label, forcing manual exploration to determine which is which.",
+      "suggested_fix": "Add aria-label='Organization navigation' to the sidebar <aside> and aria-label='Profile details' (or similar) to the other complementary region if one exists. Alternatively, ensure only one <aside> is present and wrap other secondary content in <section>.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": "Internal tool; affects all users relying on semantic navigation.",
+      "role_assumption": "Applies to all viewer roles."
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": ".profile-card .last-synced",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "The 'LAST SYNCED' timestamp displays as a raw ISO 8601 string ('2026-04-30T17:08:27.380Z'), which is unreadable and lacks timezone context for users. This is a developer field that leaked into the UI without formatting. Users cannot determine recency at a glance.",
+      "suggested_fix": "Format the timestamp as a relative time string ('Synced 2 hours ago') or absolute local time ('Apr 30, 2026 at 10:08 AM PDT'). Use a library like date-fns or Intl.DateTimeFormat to respect the user's locale and timezone.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0032"
+      ],
+      "target_kind_relevance": "Internal tool; applies to all profile views.",
+      "role_assumption": "Applies to all viewer roles."
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": ".person-profile .reports-through",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "The 'REPORTS THROUGH' chain in the top-right profile card is duplicated in the 'MANAGER' field in the left profile card, creating redundant navigation paths and visual clutter. Users see 'Pappas, Trey' in two places within 400px of each other with no clear functional difference.",
+      "suggested_fix": "Remove the 'REPORTS THROUGH' element from the top-right card and consolidate all hierarchical metadata (manager, location, department) into the left profile card. If showing the full reporting chain is important, expand the left card's 'MANAGER' field to display multi-level paths only there.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0111",
+        "p-0107"
+      ],
+      "target_kind_relevance": "Internal tool; applies to all profile views.",
+      "role_assumption": "Applies to all viewer roles."
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P1",
+      "category": "empty_state",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": ".attachments-card .empty-state",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "The Attachments empty state says 'No attachments yet.' below a drop zone, but provides no context on what attachments are for or what users should upload. This is a passive empty state that misses the opportunity to teach users the feature's purpose (résumés? contracts? performance reviews?).",
+      "suggested_fix": "Replace 'No attachments yet.' with teaching copy: 'Upload résumés, contracts, or performance reviews for Wang, Ben. Accepted formats: PDF, DOCX, TXT — up to 30 MB each.' This positions the feature as a document repository with clear use cases.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0043"
+      ],
+      "target_kind_relevance": "Internal tool; affects editors and super-admins primarily.",
+      "role_assumption": "Most relevant to editors and super-admins who manage profiles."
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": ".profile-card .section-label",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "Section labels ('PORTRAIT', 'PERSON PROFILE', 'TEAM', 'SPAN', 'FILES') use all-caps styling without reduced tracking (letter-spacing), making them feel visually cramped and harder to scan. Desktop screenshots show labels like 'REPORTS THROUGH' and 'MANAGER' tightly packed.",
+      "suggested_fix": "Add letter-spacing: 0.05em to all-caps labels to improve readability and visual rhythm. This is a standard typographic adjustment for uppercase text and will make section headers feel more polished.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0096",
+        "p-0086"
+      ],
+      "target_kind_relevance": "Internal tool; polish improvement affecting all views.",
+      "role_assumption": "Applies to all viewer roles."
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P2",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": ".manager-snapshot",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_mobile.png"
+      },
+      "finding": "On tablet view (768px), the 'Manager Snapshot' card displays 'MANAGERS: 0' and 'ICS: 1' side-by-side, but 'ICS' is an unexplained abbreviation that likely means 'Individual Contributors'. This label is unclear for non-HR users and lacks hover explanation or help text.",
+      "suggested_fix": "Change 'ICS' to 'Individual Contributors' or add a tooltip on hover that explains 'ICS = Individual Contributors'. If space is constrained on mobile, use 'ICs' (common HR shorthand) instead of 'ICS'.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0032"
+      ],
+      "target_kind_relevance": "Internal tool; affects all users unfamiliar with HR terminology.",
+      "role_assumption": "Applies to all viewer roles."
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "interaction",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": ".direct-reports .employee-card",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "The 'Direct Reports' section shows one employee card (Chang, Charles) with no visible click target or hover state. Users cannot tell if the card is clickable to view Chang's profile. Similar org-chart tools (Pingboard, BambooHR, ChartHop) make employee cards visually interactive.",
+      "suggested_fix": "Add a hover state (subtle border color change or shadow lift) to the employee card to signal clickability, and make the entire card a clickable link to Chang's profile page. Ensure the card also responds to keyboard focus with a visible outline.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0100",
+        "p-0003"
+      ],
+      "target_kind_relevance": "Internal tool; improves navigation for all users.",
+      "role_assumption": "Applies to all viewer roles."
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P1",
+      "category": "technical",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_TWN001",
+        "selector": "network: /api/admin/business-units",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_TWN001_desktop.png"
+      },
+      "finding": "Console shows a 403 error for /api/admin/business-units, indicating a failed API call that likely populates the 'Organization' dropdown in the product switcher. The dropdown may be broken or showing stale data for non-admin users, but the UI provides no error message to explain the failure.",
+      "suggested_fix": "If the user lacks permission to view business units, either suppress the API call entirely or display a graceful 'Not available for your role' message in the dropdown. Failing silently in the console while showing potentially incomplete data erodes trust in the system's accuracy.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0108",
+        "p-0106"
+      ],
+      "target_kind_relevance": "Internal tool; affects non-admin users.",
+      "role_assumption": "Likely affects viewers without admin permissions."
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": "html",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "The page has no lang attribute on the <html> element, causing screen readers to guess the language incorrectly. This is a critical WCAG AA violation that affects all assistive technology users.",
+      "suggested_fix": "Add lang=\"en\" to the <html> tag. This is a one-line fix that should be applied to the base template.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": "input[type='file'][accept='image/*']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "The hidden file input under 'Change Image' has no associated label, making it impossible for screen reader users to understand its purpose. This violates WCAG 2.2 AA and blocks a core workflow.",
+      "suggested_fix": "Add an aria-label=\"Upload profile image\" attribute to the file input, or wrap it with a <label> element that includes visually-hidden text.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0011"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": "Applies to users with edit permissions who can change images"
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": "h3.direct-reports-heading",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "The 'Direct Reports' heading is an h3, but it appears after an h1 with no intervening h2, violating WCAG heading hierarchy rules. Screen reader users rely on heading structure to navigate content efficiently.",
+      "suggested_fix": "Change 'Direct Reports' to h2, or insert an h2 parent heading (e.g., 'Team Structure') that groups 'Direct Reports' and any sibling sections logically.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": ".profile-card .last-synced",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "The 'LAST SYNCED' timestamp displays as an ISO 8601 string ('2026-04-30T17:08:26.518Z') instead of a human-readable format. This raw developer output reduces user confidence that the data is current and well-maintained.",
+      "suggested_fix": "Format as relative time ('2 hours ago', 'Last synced April 30, 2026 at 5:08 PM') or at minimum as a localized datetime string without milliseconds. Consider showing relative time by default with full timestamp on hover.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0022"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": ".person-page main",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "The page contains two <main> landmarks (one for .person-page, one for .content), violating WCAG landmark uniqueness rules and causing screen reader confusion about the page's primary content region.",
+      "suggested_fix": "Remove the <main> tag from either .person-page or .content. The outer .content container should likely be a <div>, with .person-page remaining as <main>.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": "aside.sidebar",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "Two <aside> elements (the left navigation sidebar and likely the user menu) have no distinguishing aria-label or role/label combination, violating WCAG landmark uniqueness. Screen reader users cannot differentiate them when navigating by landmark.",
+      "suggested_fix": "Add aria-label=\"Main navigation\" to the left sidebar <aside> and aria-label=\"User account menu\" to the user menu <aside> (or whatever descriptive label matches its content).",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P1",
+      "category": "empty_state",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": ".direct-reports-section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "The 'No direct reports' empty state is purely passive — it states the absence of data without explaining whether this is expected or how to add direct reports if relevant. Users with edit permissions have no next action.",
+      "suggested_fix": "If the viewer is a manager or HR admin, add copy like 'No direct reports yet. Assign employees via [Employee Directory link] or your HRIS sync.' If the viewer lacks permissions, the current passive state is acceptable but should clarify 'This employee has no direct reports.'",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106",
+        "p-0073"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": "Improvement applies primarily to editors/managers; read-only users see acceptable passive state"
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P2",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": ".person-profile-card, .profile-card",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "The employee's name, title, and org location appear in three places (PORTRAIT card, PERSON PROFILE card upper-right, PROFILE card lower-left), but with slight formatting differences. The PERSON PROFILE version uses 'Waveform · Milton Keynes' with a middot separator, while the PROFILE card lists 'Waveform' under DEPARTMENT and 'Milton Keynes' under LOCATION as separate fields. This inconsistency suggests accidental duplication rather than intentional progressive disclosure.",
+      "suggested_fix": "Remove the redundant PERSON PROFILE card in the upper-right if the detailed PROFILE card below always displays the same data, or clarify their distinct purposes. If PERSON PROFILE is a persistent sidebar summary, ensure it uses identical field formatting to the detailed card.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0111",
+        "p-0096"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P2",
+      "category": "interaction",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": ".reports-through a",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "The 'REPORTS THROUGH' chain (Shey Sabripour → Paulson, Brett → Nannetti, Gianni) displays as hyperlinks, but the interaction model is unclear: clicking navigates to each person's profile, but there's no visual affordance (underline, icon, hover state visible in screenshots) to signal this. Users may not realize the chain is interactive.",
+      "suggested_fix": "Add a subtle underline or change link color on hover to signal interactivity. Consider adding a tooltip on hover that says 'View [Name]'s profile' to clarify the action.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0100",
+        "p-0011"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": ".person-page",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "The page shows DIRECT reports count (0) but does not surface TOTAL reports (also 0 in this case, but the field exists). For managers with indirect reports (reports-of-reports), showing 'Direct: 0, Total: 5' would clarify their span of influence. This is common in similar tools (BambooHR, Lattice).",
+      "suggested_fix": "Add a 'Total Reports: N' line under 'Direct Reports: N' in the TEAM section. If Total = Direct, show only one line to avoid redundancy.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106",
+        "p-0072"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": ".attachments-section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "The Attachments dropzone accepts 'PDF, DOCX, TXT — up to 30 MB each' but provides no examples of what documents are typically uploaded here (onboarding forms, contracts, performance reviews, certifications). New users may hesitate to use the feature without this context.",
+      "suggested_fix": "Add helper text under the file-type line: 'Examples: offer letters, performance reviews, certifications, training records.' This guides usage without constraining it.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0076"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": "Applies to editors who can upload files"
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P1",
+      "category": "technical",
+      "mode": "broken",
+      "location": {
+        "url": "https://ca-org.fly.dev/people/adp_UK004",
+        "selector": "console / network",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-134212-ca-org/screenshots/people_adp_UK004_desktop.png"
+      },
+      "finding": "A 403 error on /api/admin/business-units is logged in the console and network log. This suggests a failed permissions check or missing backend resource that may be blocking a feature (likely the 'Switch Product' dropdown in the OPERATIONS ATLAS menu, which attempts to load business units). The user sees no error message, so the failure is silent.",
+      "suggested_fix": "Add proper error handling that either (a) suppresses the request if the user lacks permissions, or (b) shows a user-facing message if business units are required for the UI to function. Investigate why the request fires for a non-admin user.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106",
+        "p-0108"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": "Likely fires for non-admin users who don't need business-unit data; admin users may see it succeed"
+    },
+    {
+      "finding_id": "inc-h1-name",
+      "severity": "P1",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "/people/{ID}",
+        "selector": "h1",
+        "screenshot": null
+      },
+      "finding": "Heading name format is inconsistent across the /people/{ID} template. 1 pages use 'firstname-lastname', but 1 use a different format (e.g. 'Pappas, Trey'). Pick one and apply it everywhere.",
+      "suggested_fix": "Normalize to 'firstname-lastname' on every page in this template, or document which records are intentionally different and why.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-recognition"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null,
+      "_source": "inconsistency_scanner"
+    }
+  ],
+  "rejected": []
+}

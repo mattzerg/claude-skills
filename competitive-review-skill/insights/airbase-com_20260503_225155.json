@@ -1,0 +1,585 @@
+{
+  "name": "Airbase",
+  "url": "https://www.airbase.com",
+  "domain": "airbase.com",
+  "scanned_at": "2026-05-03T22:48:59.637758",
+  "sources": {
+    "landing": {
+      "url": "https://www.airbase.com",
+      "title": "Airbase, a Paylocity Company | Airbase by Paylocity",
+      "text": "Airbase, a Paylocity Company | Airbase by Paylocity\n.ot-sdk-cookie-policy{font-family:inherit;font-size:16px}.ot-sdk-cookie-policy.otRelFont{font-size:1rem}.ot-sdk-cookie-policy h3,.ot-sdk-cookie-policy h4,.ot-sdk-cookie-policy h6,.ot-sdk-cookie-policy p,.ot-sdk-cookie-policy li,.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy th,.ot-sdk-cookie-policy #cookie-policy-description,.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}.ot-sdk-cookie-policy h4{font-size:1.2em}.ot-sdk-cookie-policy h6{font-size:1em;margin-top:2em}.ot-sdk-cookie-policy th{min-width:75px}.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy a:hover{background:#fff}.ot-sdk-cookie-policy thead{background-color:#f6f6f4;font-weight:bold}.ot-sdk-cookie-policy .ot-mobile-border{display:none}.ot-sdk-cookie-policy section{margin-bottom:2em}.ot-sdk-cookie-policy table{border-collapse:inherit}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy{font-family:inherit;font-size:1rem}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h3,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h4,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup{margin-left:1.5em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group-desc,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-table-header,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td{font-size:.9em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td span,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td a{font-size:inherit}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group{font-size:1em;margin-bottom:.6em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-title{margin-bottom:1.2em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy>section{margin-bottom:1em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th{min-width:75px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a:hover{background:#fff}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead{background-color:#f6f6f4;font-weight:bold}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-mobile-border{display:none}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy section{margin-bottom:2em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li{list-style:disc;margin-left:1.5em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li h4{display:inline-block}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table{border-collapse:inherit;margin:auto;border:1px solid #d7d7d7;border-radius:5px;border-spacing:initial;width:100%;overflow:hidden}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{border-bottom:1px solid #d7d7d7;border-right:1px solid #d7d7d7}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td{border-bottom:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr th:last-child,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr td:last-child{border-right:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type{width:25%}.ot-sdk-cookie-policy[dir=rtl]{text-align:left}#ot-sdk-cookie-policy h3{font-size:1.5em}@media only screen and (max-width: 530px){.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) table,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tbody,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) th,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr{display:block}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead tr{position:absolute;top:-9999px;left:-9999px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr{margin:0 0 1em 0}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd),.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd) a{background:#f6f6f4}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td{border:none;border-bottom:1px solid #eee;position:relative;padding-left:50%}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before{position:absolute;height:100%;left:6px;width:40%;padding-right:10px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) .ot-mobile-border{display:inline-block;background-color:#e4e4e4;position:absolute;height:100%;top:0;left:45%;width:2px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before{content:attr(data-label);font-weight:bold}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) li{word-break:break-word;word-wrap:break-word}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table{overflow:hidden}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{border:none;border-bottom:1px solid #d7d7d7}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tbody,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr{display:block}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type{width:auto}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr{margin:0 0 1em 0}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before{height:100%;width:40%;padding-right:10px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before{content:attr(data-label);font-weight:bold}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li{word-break:break-word;word-wrap:break-word}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead tr{position:absolute;top:-9999px;left:-9999px;z-index:-9999}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td{border-bottom:1px solid #d7d7d7;border-right:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td:last-child{border-bottom:0px}}\n                \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h5,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description {\n                        color: #696969;\n                    }\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th {\n                        color: #696969;\n                    }\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group {\n                        color: #696969;\n                    }\n                    \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title {\n                            color: #696969;\n                        }\n                    \n            \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th {\n                            background-color: #F8F8F8;\n                        }\n                    \n            .ot-floating-button__front{background-image:url('https://cdn.cookielaw.org/logos/static/ot_persistent_cookie.png')}\n        @keyframes slide-down-custom {\n            0% {\n                bottom: 900px !important;\n            }\n            100% {\n                bottom: 0px;\n            }\n        }\n        @-webkit-keyframes slide-down-custom {\n            0% {\n                bottom: 900px !important;\n            }\n            100% {\n                bottom: 0px;\n            }\n        }\n        @-moz-keyframes slide-down-custom {\n            0% {\n                bottom: 900px !important;\n            }\n            100% {\n                bottom: 0px;\n            }\n        }\nContact Us\nAbout\nAwards\nPress\nCareers\nPartners\nCustomers\nContact Us\nAbout\nAwards\nPress\nCareers\nPartners\nCustomers\nLogin\nCustomer login\nVendor login\nLogin\nCustomer login\nVendor login\nPaylocity for Finance combines our advanced spend management capabilities with Paylocity\u2019s robust HCM platform, so you can manage both payroll and non-payroll expenses on one platform. This unified approach delivers real-time visibility, improved financial planning, and enhanced control over company spending.\nPaylocity for Finance\nWhere innovation meets simplicity.\nPaylocity doesn\u2019t just imagine a better workplace \u2014 we build it. Our innovative platform seamlessly connects HR, Finance, and IT, empowering you to deliver on tomorrow\u2019s possibilities today.\nFinance\nLearn More\nHR\nLearn More\nIT\nLearn More\nFull Platform\nLearn More\nYour Trusted Financial Partner\nNow with even more resources\nWhat does this mean for Airbase clients?\nOur commitment to exceptional service, security, and innovation is stronger than ever.\nYou can continue to work with your trusted contacts.\nRefer to\nPaylocity for Finance\nand our release updates for ongoing information.\nOff the Ledger:\nJoin the community of over 6,000 Finance professionals.\n\u00a9 Airbase Inc.\n2025\n.\nTerms of Conditions\nPrivacy Policy\nFollow\nFollow\nFollow\nFollow\nInteractive Product Tours\nReady to test-drive? Explore Airbase with these interactive demos. Simply select the module you\u2019d like to explore, and follow the flow.\nExplore tours\nThis website uses cookies to enhance user experience and to analyze performance and traffic on our website. Additional information about data collection is available in our\nprivacy policy.\nManage Consent Preferences\nAccept All Cookies\nPrivacy Preference Center\nWhen you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect. The information does not usually identify you directly, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to learn more and change our default settings. Blocking some types of cookies may impact your experience of the site and the services we are able to offer.\nMore information\nAllow All\nManage Consent Preferences\nStrictly Necessary Cookies\nAlways Active\nThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.\nPerformance Cookies\nPerformance Cookies\nThese cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.\nTargeting Cookies\nTargeting Cookies\nThese cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.\nFunctional Cookies\nFunctional Cookies\nThese cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.\nBack Button\nCookie List\nSearch Icon\nFilter Icon\nClear\ncheckbox label\nlabel\nApply\nCancel\nConsent\nLeg.Interest\ncheckbox label\nlabel\ncheckbox label\nlabel\ncheckbox label\nlabel\nReject All\nConfirm My Choices",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.airbase.com/pricing",
+      "title": "Paylocity Pricing | Paylocity for HR, Finance, and IT",
+      "text": "Paylocity Pricing | Paylocity for HR, Finance, and IT\n.ot-sdk-cookie-policy{font-family:inherit;font-size:16px}.ot-sdk-cookie-policy.otRelFont{font-size:1rem}.ot-sdk-cookie-policy h3,.ot-sdk-cookie-policy h4,.ot-sdk-cookie-policy h6,.ot-sdk-cookie-policy p,.ot-sdk-cookie-policy li,.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy th,.ot-sdk-cookie-policy #cookie-policy-description,.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}.ot-sdk-cookie-policy h4{font-size:1.2em}.ot-sdk-cookie-policy h6{font-size:1em;margin-top:2em}.ot-sdk-cookie-policy th{min-width:75px}.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy a:hover{background:#fff}.ot-sdk-cookie-policy thead{background-color:#f6f6f4;font-weight:bold}.ot-sdk-cookie-policy .ot-mobile-border{display:none}.ot-sdk-cookie-policy section{margin-bottom:2em}.ot-sdk-cookie-policy table{border-collapse:inherit}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy{font-family:inherit;font-size:1rem}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h3,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h4,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup{margin-left:1.5em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group-desc,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-table-header,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td{font-size:.9em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td span,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td a{font-size:inherit}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group{font-size:1em;margin-bottom:.6em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-title{margin-bottom:1.2em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy>section{margin-bottom:1em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th{min-width:75px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a:hover{background:#fff}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead{background-color:#f6f6f4;font-weight:bold}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-mobile-border{display:none}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy section{margin-bottom:2em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li{list-style:disc;margin-left:1.5em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li h4{display:inline-block}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table{border-collapse:inherit;margin:auto;border:1px solid #d7d7d7;border-radius:5px;border-spacing:initial;width:100%;overflow:hidden}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{border-bottom:1px solid #d7d7d7;border-right:1px solid #d7d7d7}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td{border-bottom:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr th:last-child,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr td:last-child{border-right:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type{width:25%}.ot-sdk-cookie-policy[dir=rtl]{text-align:left}#ot-sdk-cookie-policy h3{font-size:1.5em}@media only screen and (max-width: 530px){.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) table,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tbody,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) th,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr{display:block}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead tr{position:absolute;top:-9999px;left:-9999px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr{margin:0 0 1em 0}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd),.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd) a{background:#f6f6f4}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td{border:none;border-bottom:1px solid #eee;position:relative;padding-left:50%}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before{position:absolute;height:100%;left:6px;width:40%;padding-right:10px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) .ot-mobile-border{display:inline-block;background-color:#e4e4e4;position:absolute;height:100%;top:0;left:45%;width:2px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before{content:attr(data-label);font-weight:bold}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) li{word-break:break-word;word-wrap:break-word}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table{overflow:hidden}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{border:none;border-bottom:1px solid #d7d7d7}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tbody,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr{display:block}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type{width:auto}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr{margin:0 0 1em 0}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before{height:100%;width:40%;padding-right:10px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before{content:attr(data-label);font-weight:bold}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li{word-break:break-word;word-wrap:break-word}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead tr{position:absolute;top:-9999px;left:-9999px;z-index:-9999}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td{border-bottom:1px solid #d7d7d7;border-right:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td:last-child{border-bottom:0px}}\n                \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h5,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description {\n                        color: #696969;\n                    }\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th {\n                        color: #696969;\n                    }\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group {\n                        color: #696969;\n                    }\n                    \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title {\n                            color: #696969;\n                        }\n                    \n            \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th {\n                            background-color: #F8F8F8;\n                        }\n                    \n            .ot-floating-button__front{background-image:url('https://cdn.cookielaw.org/logos/static/ot_persistent_cookie.png')}\n                      @keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\n                      @-webkit-keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\n                      @-moz-keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\nDownload-GooglePlay\nnavigation-down-circle\nSkip\n                to main content\nSkip to footer content\nTake a Tour\nRequest a Demo\nToggle Navigation\nWho We Serve\nBack\nWho We Serve\nFrom growing teams to established enterprises, Paylocity is built for you.\nExplore Solutions by Business\nCompany Size\nSmall Business\nMidsize Business\nEnterprise\nPartners\nAccountants\nBrokers\nFranchises\nPrivate Equity\nHRCs\nIndustries\nEducation\nFinancial Services\nHealthcare\nManufacturing\nNonprofit\nRestaurants and Hospitality\nRetail and Wholesale\nTechnology\nTransportation and Logistics\nChurches and Religious Organizations\nGovernment Services\nMulti-State Payroll & HR\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nProducts\nBack\nHR\nPayroll\nFinance\nIT\nPlatform\nPaylocity for HR\nStreamline and automate, attract and retain talent, and build culture and connection.\nView All HR\nPRODUCTS\nHuman Resources\nEmployee Self-Service\nCompliance\nHR Edge\nTime & Labor\nTime & Attendance\nScheduling\nTime Collection\nTalent\nRecruiting\nOnboarding\nPerformance\nCompensation\nLearning (LMS)\nBenefits Administration\nFlexible Benefits\nEmployee Experience\nCommunity\nRecognition & Rewards\nVideo\nEmployee Voice\nSERVICES\nElevate Solutions\nSOLUTIONS FOR\nCompany Size\nIndustry\nLEARN MORE\nHR Resources\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nPaylocity for Payroll\nSave time and gain confidence.\nView All\u00a0Payroll\nPRODUCTS\nPayroll\nTax Services\nOn Demand Payment\nGarnishment Services\nExpense Management\nGlobal Payroll\nSolutions\nCountries\nSERVICES\nElevate Solutions\nSOLUTIONS FOR\nCompany Size\nIndustry\nLEARN MORE\nPayroll Resources\nContact Sales: 8335080746\nBecome a Partner\nPaylocity for Finance\nEfficiently manage the full lifecycle of spend.\nView All Finance\nPRODUCTS\nExpense Management\nCorporate Cards\nAP Automation\nGuided Procurement\nHeadcount Planning\nCAPABILITIES\nAccounting Automation\nSpend Analytics\nFraud Detection\nPolicy Compliance\nVendor Management\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nFinance Resources\nFinance Integrations\nContact Sales: 833.508.0746\nBecome a Partner\nPaylocity for IT\nConnect HR and IT for a more secure experience.\nView All\u00a0IT\nPRODUCTS\nAsset Management\nAccess Management\nRELATED\nIdentity Access Management\nAligning HR & IT\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nIT Resources\nContact Sales: 833.508.0746\nBecome a Partner\nPlatform Overview\nPower every team with one unified platform.\nView Platform\nPRODUCTS\nPaylocity for HR\nPaylocity for Finance\nPaylocity for IT\nCAPABILITIES\nAI\nMobile\nIntegrations\nWorkforce Analytics\nWorkflows\nSERVICES\nElevate Solutions\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nResources\nCase Studies\nProtecting Our Clients\nProduct Updates\nContact Sales: 833.508.0746\nBecome a Partner\nRequest a Demo\nWhy Paylocity\nBack\nWhy Paylocity\nWith HR, Finance, and IT in one platform, Paylocity helps you streamline work, adapt faster, and drive results across your business.\nDiscover the Difference\nFEATURED\nReviews and Ratings\nCompare Paylocity\nCase Studies\nLEARN MORE\nHR Compliance Deep Dive\nSubsidiary Benefits\nAP Automation Benefits\nSOLUTIONS BY\nCompany Size\nIndustry\nEXPLORE PRODUCTS\nHR\nFinance\nIT\nPlatform\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nResources\nBack\nLearning Center\nLet innovation be your guide! Stay current with expert advice on streamlining workflows across HR, Finance, and IT.\nExplore All Topics\nRESOURCES FOR\nHR\nFinance\nIT\nPOPULAR TOPICS\nHR Technology\nCompliance\nExperience and Culture\nCompensation and Benefits\nRecruit and Onboard\nWorkforce Management\nRESOURCE TYPES\nGuides\nPodcasts\nWebinars\nOTHER RESOURCES\nEvents\nGlossary\nTax and Compliance\nYear-End\nProduct Training\nPaylocity News\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nPricing\nLogin\nCompany\nCompany\nAbout Us\nCareers\nOur Culture\nServing You\nInvestors\nProtecting Our Clients\nContact Us\nContact\nClient Support\nEmployee Support\nPartner Form\nRequest a Demo\nRequest a Demo\nA Solution For HR, Finance, and IT, Tailored to You\nGet the solution that matches your needs and is priced for your budget.\nGet the solution that matches your needs and is priced for your budget.\nGet Pricing\nRequest Pricing with a Free Demo\n*Required Fields\nBusiness Email\n*\nPhone Number\n*\nFirst Name\n*\nLast Name\n*\nCompany Name\n*\nBusiness Zip Code\n*\nEmployee Count\n*\n1-30\n31-99\n100-499\n500-1,499\n1,500-4,999\n5,000+\nJob Title\n*\nYes, I'd like to receive email updates from Paylocity.\nBy submitting this form, you agree to the processing of your personal information as described in our\nPrivacy Policy\n.\nGet Pricing\nNeed\nSupport\nor\nW-2\n?\nHR\nFinance\nIT\nHR\nHR & Payroll That Fits Your Needs\nPayroll\nStreamline your payroll processing.\nAutomated and custom payroll workflows\nGlobal payroll support for 100+ countries\nDigital expense management\n30+ payroll audits with automatic alerts\nAccurate, on-time tax filings\nFlexible on demand payment options\nExpert support with wage gar",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://www.airbase.com/changelog",
+      "title": "404 | Paylocity",
+      "text": "404 | Paylocity\n.ot-sdk-cookie-policy{font-family:inherit;font-size:16px}.ot-sdk-cookie-policy.otRelFont{font-size:1rem}.ot-sdk-cookie-policy h3,.ot-sdk-cookie-policy h4,.ot-sdk-cookie-policy h6,.ot-sdk-cookie-policy p,.ot-sdk-cookie-policy li,.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy th,.ot-sdk-cookie-policy #cookie-policy-description,.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}.ot-sdk-cookie-policy h4{font-size:1.2em}.ot-sdk-cookie-policy h6{font-size:1em;margin-top:2em}.ot-sdk-cookie-policy th{min-width:75px}.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy a:hover{background:#fff}.ot-sdk-cookie-policy thead{background-color:#f6f6f4;font-weight:bold}.ot-sdk-cookie-policy .ot-mobile-border{display:none}.ot-sdk-cookie-policy section{margin-bottom:2em}.ot-sdk-cookie-policy table{border-collapse:inherit}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy{font-family:inherit;font-size:1rem}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h3,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h4,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup{margin-left:1.5em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group-desc,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-table-header,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td{font-size:.9em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td span,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td a{font-size:inherit}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group{font-size:1em;margin-bottom:.6em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-title{margin-bottom:1.2em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy>section{margin-bottom:1em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th{min-width:75px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a:hover{background:#fff}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead{background-color:#f6f6f4;font-weight:bold}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-mobile-border{display:none}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy section{margin-bottom:2em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li{list-style:disc;margin-left:1.5em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li h4{display:inline-block}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table{border-collapse:inherit;margin:auto;border:1px solid #d7d7d7;border-radius:5px;border-spacing:initial;width:100%;overflow:hidden}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{border-bottom:1px solid #d7d7d7;border-right:1px solid #d7d7d7}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td{border-bottom:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr th:last-child,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr td:last-child{border-right:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type{width:25%}.ot-sdk-cookie-policy[dir=rtl]{text-align:left}#ot-sdk-cookie-policy h3{font-size:1.5em}@media only screen and (max-width: 530px){.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) table,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tbody,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) th,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr{display:block}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead tr{position:absolute;top:-9999px;left:-9999px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr{margin:0 0 1em 0}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd),.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd) a{background:#f6f6f4}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td{border:none;border-bottom:1px solid #eee;position:relative;padding-left:50%}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before{position:absolute;height:100%;left:6px;width:40%;padding-right:10px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) .ot-mobile-border{display:inline-block;background-color:#e4e4e4;position:absolute;height:100%;top:0;left:45%;width:2px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before{content:attr(data-label);font-weight:bold}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) li{word-break:break-word;word-wrap:break-word}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table{overflow:hidden}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{border:none;border-bottom:1px solid #d7d7d7}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tbody,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr{display:block}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type{width:auto}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr{margin:0 0 1em 0}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before{height:100%;width:40%;padding-right:10px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before{content:attr(data-label);font-weight:bold}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li{word-break:break-word;word-wrap:break-word}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead tr{position:absolute;top:-9999px;left:-9999px;z-index:-9999}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td{border-bottom:1px solid #d7d7d7;border-right:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td:last-child{border-bottom:0px}}\n                \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h5,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description {\n                        color: #696969;\n                    }\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th {\n                        color: #696969;\n                    }\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group {\n                        color: #696969;\n                    }\n                    \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title {\n                            color: #696969;\n                        }\n                    \n            \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th {\n                            background-color: #F8F8F8;\n                        }\n                    \n            .ot-floating-button__front{background-image:url('https://cdn.cookielaw.org/logos/static/ot_persistent_cookie.png')}\n                      @keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\n                      @-webkit-keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\n                      @-moz-keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\nDownload-GooglePlay\nnavigation-down-circle\nSkip\n                to main content\nSkip to footer content\nTake a Tour\nRequest a Demo\nToggle Navigation\nWho We Serve\nBack\nWho We Serve\nFrom growing teams to established enterprises, Paylocity is built for you.\nExplore Solutions by Business\nCompany Size\nSmall Business\nMidsize Business\nEnterprise\nPartners\nAccountants\nBrokers\nFranchises\nPrivate Equity\nHRCs\nIndustries\nEducation\nFinancial Services\nHealthcare\nManufacturing\nNonprofit\nRestaurants and Hospitality\nRetail and Wholesale\nTechnology\nTransportation and Logistics\nChurches and Religious Organizations\nGovernment Services\nMulti-State Payroll & HR\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nProducts\nBack\nHR\nPayroll\nFinance\nIT\nPlatform\nPaylocity for HR\nStreamline and automate, attract and retain talent, and build culture and connection.\nView All HR\nPRODUCTS\nHuman Resources\nEmployee Self-Service\nCompliance\nHR Edge\nTime & Labor\nTime & Attendance\nScheduling\nTime Collection\nTalent\nRecruiting\nOnboarding\nPerformance\nCompensation\nLearning (LMS)\nBenefits Administration\nFlexible Benefits\nEmployee Experience\nCommunity\nRecognition & Rewards\nVideo\nEmployee Voice\nSERVICES\nElevate Solutions\nSOLUTIONS FOR\nCompany Size\nIndustry\nLEARN MORE\nHR Resources\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nPaylocity for Payroll\nSave time and gain confidence.\nView All\u00a0Payroll\nPRODUCTS\nPayroll\nTax Services\nOn Demand Payment\nGarnishment Services\nExpense Management\nGlobal Payroll\nSolutions\nCountries\nSERVICES\nElevate Solutions\nSOLUTIONS FOR\nCompany Size\nIndustry\nLEARN MORE\nPayroll Resources\nContact Sales: 8335080746\nBecome a Partner\nPaylocity for Finance\nEfficiently manage the full lifecycle of spend.\nView All Finance\nPRODUCTS\nExpense Management\nCorporate Cards\nAP Automation\nGuided Procurement\nHeadcount Planning\nCAPABILITIES\nAccounting Automation\nSpend Analytics\nFraud Detection\nPolicy Compliance\nVendor Management\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nFinance Resources\nFinance Integrations\nContact Sales: 833.508.0746\nBecome a Partner\nPaylocity for IT\nConnect HR and IT for a more secure experience.\nView All\u00a0IT\nPRODUCTS\nAsset Management\nAccess Management\nRELATED\nIdentity Access Management\nAligning HR & IT\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nIT Resources\nContact Sales: 833.508.0746\nBecome a Partner\nPlatform Overview\nPower every team with one unified platform.\nView Platform\nPRODUCTS\nPaylocity for HR\nPaylocity for Finance\nPaylocity for IT\nCAPABILITIES\nAI\nMobile\nIntegrations\nWorkforce Analytics\nWorkflows\nSERVICES\nElevate Solutions\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nResources\nCase Studies\nProtecting Our Clients\nProduct Updates\nContact Sales: 833.508.0746\nBecome a Partner\nRequest a Demo\nWhy Paylocity\nBack\nWhy Paylocity\nWith HR, Finance, and IT in one platform, Paylocity helps you streamline work, adapt faster, and drive results across your business.\nDiscover the Difference\nFEATURED\nReviews and Ratings\nCompare Paylocity\nCase Studies\nLEARN MORE\nHR Compliance Deep Dive\nSubsidiary Benefits\nAP Automation Benefits\nSOLUTIONS BY\nCompany Size\nIndustry\nEXPLORE PRODUCTS\nHR\nFinance\nIT\nPlatform\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nResources\nBack\nLearning Center\nLet innovation be your guide! Stay current with expert advice on streamlining workflows across HR, Finance, and IT.\nExplore All Topics\nRESOURCES FOR\nHR\nFinance\nIT\nPOPULAR TOPICS\nHR Technology\nCompliance\nExperience and Culture\nCompensation and Benefits\nRecruit and Onboard\nWorkforce Management\nRESOURCE TYPES\nGuides\nPodcasts\nWebinars\nOTHER RESOURCES\nEvents\nGlossary\nTax and Compliance\nYear-End\nProduct Training\nPaylocity News\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nPricing\nLogin\nCompany\nCompany\nAbout Us\nCareers\nOur Culture\nServing You\nInvestors\nProtecting Our Clients\nContact Us\nContact\nClient Support\nEmployee Support\nPartner Form\nRequest a Demo\nRequest a Demo\nSo here's the thing...\nThe page you\u2019re looking for doesn\u2019t exist.\nFor immediate assistance, call us at 1-800-520-2687\nDemo Our Unified Platform\nEmail Address\nReady to Request a Demo?\n*Required Fields\nBusiness Email\n*\nPhone Number\n*\nFirst Name\n*\nLast Name\n*\nCompany Name\n*\nBusiness Zip Code\n*\nEmployee Count\n*\n1-30\n31-99\n100-499\n500-1,499\n1,500-4,999\n5,000+\nJob Title\n*\nYes, I'd like to receive email updates from Paylocity.\nBy submitting this form, you agree to the processing of your personal information as described in our\nPrivacy Policy\n.\nSubmit\nEmail Address\nRequest a Demo of Additional Products & Services Now!\n*Required Fields\nBusiness Email\n*\nPhone Number\n*\nFirst Name\n*\nLast Name\n*\nCompany Name\n*\nCompany ID\nJob Title\nArea of Interest\nYes, I'd like to receive email updates from Paylocity.\nBy submitting this form, you agree to the processing of your personal information as described in our\nPrivacy Policy\n.\nSubmit\nopens in a new tab\nWho We Serve\nSmall Business\nMidsize Business\nEnterprise\nIndustrie",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://www.airbase.com/docs",
+      "title": "404 | Paylocity",
+      "text": "404 | Paylocity\n.ot-sdk-cookie-policy{font-family:inherit;font-size:16px}.ot-sdk-cookie-policy.otRelFont{font-size:1rem}.ot-sdk-cookie-policy h3,.ot-sdk-cookie-policy h4,.ot-sdk-cookie-policy h6,.ot-sdk-cookie-policy p,.ot-sdk-cookie-policy li,.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy th,.ot-sdk-cookie-policy #cookie-policy-description,.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}.ot-sdk-cookie-policy h4{font-size:1.2em}.ot-sdk-cookie-policy h6{font-size:1em;margin-top:2em}.ot-sdk-cookie-policy th{min-width:75px}.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy a:hover{background:#fff}.ot-sdk-cookie-policy thead{background-color:#f6f6f4;font-weight:bold}.ot-sdk-cookie-policy .ot-mobile-border{display:none}.ot-sdk-cookie-policy section{margin-bottom:2em}.ot-sdk-cookie-policy table{border-collapse:inherit}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy{font-family:inherit;font-size:1rem}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h3,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h4,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup{margin-left:1.5em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group-desc,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-table-header,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td{font-size:.9em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td span,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td a{font-size:inherit}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group{font-size:1em;margin-bottom:.6em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-title{margin-bottom:1.2em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy>section{margin-bottom:1em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th{min-width:75px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a:hover{background:#fff}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead{background-color:#f6f6f4;font-weight:bold}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-mobile-border{display:none}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy section{margin-bottom:2em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li{list-style:disc;margin-left:1.5em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li h4{display:inline-block}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table{border-collapse:inherit;margin:auto;border:1px solid #d7d7d7;border-radius:5px;border-spacing:initial;width:100%;overflow:hidden}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{border-bottom:1px solid #d7d7d7;border-right:1px solid #d7d7d7}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td{border-bottom:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr th:last-child,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr td:last-child{border-right:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type{width:25%}.ot-sdk-cookie-policy[dir=rtl]{text-align:left}#ot-sdk-cookie-policy h3{font-size:1.5em}@media only screen and (max-width: 530px){.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) table,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tbody,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) th,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr{display:block}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead tr{position:absolute;top:-9999px;left:-9999px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr{margin:0 0 1em 0}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd),.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd) a{background:#f6f6f4}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td{border:none;border-bottom:1px solid #eee;position:relative;padding-left:50%}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before{position:absolute;height:100%;left:6px;width:40%;padding-right:10px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) .ot-mobile-border{display:inline-block;background-color:#e4e4e4;position:absolute;height:100%;top:0;left:45%;width:2px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before{content:attr(data-label);font-weight:bold}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) li{word-break:break-word;word-wrap:break-word}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table{overflow:hidden}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{border:none;border-bottom:1px solid #d7d7d7}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tbody,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr{display:block}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type{width:auto}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr{margin:0 0 1em 0}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before{height:100%;width:40%;padding-right:10px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before{content:attr(data-label);font-weight:bold}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li{word-break:break-word;word-wrap:break-word}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead tr{position:absolute;top:-9999px;left:-9999px;z-index:-9999}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td{border-bottom:1px solid #d7d7d7;border-right:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td:last-child{border-bottom:0px}}\n                \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h5,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description {\n                        color: #696969;\n                    }\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th {\n                        color: #696969;\n                    }\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group {\n                        color: #696969;\n                    }\n                    \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title {\n                            color: #696969;\n                        }\n                    \n            \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th {\n                            background-color: #F8F8F8;\n                        }\n                    \n            .ot-floating-button__front{background-image:url('https://cdn.cookielaw.org/logos/static/ot_persistent_cookie.png')}\n                      @keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\n                      @-webkit-keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\n                      @-moz-keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\nDownload-GooglePlay\nnavigation-down-circle\nSkip\n                to main content\nSkip to footer content\nTake a Tour\nRequest a Demo\nToggle Navigation\nWho We Serve\nBack\nWho We Serve\nFrom growing teams to established enterprises, Paylocity is built for you.\nExplore Solutions by Business\nCompany Size\nSmall Business\nMidsize Business\nEnterprise\nPartners\nAccountants\nBrokers\nFranchises\nPrivate Equity\nHRCs\nIndustries\nEducation\nFinancial Services\nHealthcare\nManufacturing\nNonprofit\nRestaurants and Hospitality\nRetail and Wholesale\nTechnology\nTransportation and Logistics\nChurches and Religious Organizations\nGovernment Services\nMulti-State Payroll & HR\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nProducts\nBack\nHR\nPayroll\nFinance\nIT\nPlatform\nPaylocity for HR\nStreamline and automate, attract and retain talent, and build culture and connection.\nView All HR\nPRODUCTS\nHuman Resources\nEmployee Self-Service\nCompliance\nHR Edge\nTime & Labor\nTime & Attendance\nScheduling\nTime Collection\nTalent\nRecruiting\nOnboarding\nPerformance\nCompensation\nLearning (LMS)\nBenefits Administration\nFlexible Benefits\nEmployee Experience\nCommunity\nRecognition & Rewards\nVideo\nEmployee Voice\nSERVICES\nElevate Solutions\nSOLUTIONS FOR\nCompany Size\nIndustry\nLEARN MORE\nHR Resources\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nPaylocity for Payroll\nSave time and gain confidence.\nView All\u00a0Payroll\nPRODUCTS\nPayroll\nTax Services\nOn Demand Payment\nGarnishment Services\nExpense Management\nGlobal Payroll\nSolutions\nCountries\nSERVICES\nElevate Solutions\nSOLUTIONS FOR\nCompany Size\nIndustry\nLEARN MORE\nPayroll Resources\nContact Sales: 8335080746\nBecome a Partner\nPaylocity for Finance\nEfficiently manage the full lifecycle of spend.\nView All Finance\nPRODUCTS\nExpense Management\nCorporate Cards\nAP Automation\nGuided Procurement\nHeadcount Planning\nCAPABILITIES\nAccounting Automation\nSpend Analytics\nFraud Detection\nPolicy Compliance\nVendor Management\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nFinance Resources\nFinance Integrations\nContact Sales: 833.508.0746\nBecome a Partner\nPaylocity for IT\nConnect HR and IT for a more secure experience.\nView All\u00a0IT\nPRODUCTS\nAsset Management\nAccess Management\nRELATED\nIdentity Access Management\nAligning HR & IT\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nIT Resources\nContact Sales: 833.508.0746\nBecome a Partner\nPlatform Overview\nPower every team with one unified platform.\nView Platform\nPRODUCTS\nPaylocity for HR\nPaylocity for Finance\nPaylocity for IT\nCAPABILITIES\nAI\nMobile\nIntegrations\nWorkforce Analytics\nWorkflows\nSERVICES\nElevate Solutions\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nResources\nCase Studies\nProtecting Our Clients\nProduct Updates\nContact Sales: 833.508.0746\nBecome a Partner\nRequest a Demo\nWhy Paylocity\nBack\nWhy Paylocity\nWith HR, Finance, and IT in one platform, Paylocity helps you streamline work, adapt faster, and drive results across your business.\nDiscover the Difference\nFEATURED\nReviews and Ratings\nCompare Paylocity\nCase Studies\nLEARN MORE\nHR Compliance Deep Dive\nSubsidiary Benefits\nAP Automation Benefits\nSOLUTIONS BY\nCompany Size\nIndustry\nEXPLORE PRODUCTS\nHR\nFinance\nIT\nPlatform\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nResources\nBack\nLearning Center\nLet innovation be your guide! Stay current with expert advice on streamlining workflows across HR, Finance, and IT.\nExplore All Topics\nRESOURCES FOR\nHR\nFinance\nIT\nPOPULAR TOPICS\nHR Technology\nCompliance\nExperience and Culture\nCompensation and Benefits\nRecruit and Onboard\nWorkforce Management\nRESOURCE TYPES\nGuides\nPodcasts\nWebinars\nOTHER RESOURCES\nEvents\nGlossary\nTax and Compliance\nYear-End\nProduct Training\nPaylocity News\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nPricing\nLogin\nCompany\nCompany\nAbout Us\nCareers\nOur Culture\nServing You\nInvestors\nProtecting Our Clients\nContact Us\nContact\nClient Support\nEmployee Support\nPartner Form\nRequest a Demo\nRequest a Demo\nSo here's the thing...\nThe page you\u2019re looking for doesn\u2019t exist.\nFor immediate assistance, call us at 1-800-520-2687\nDemo Our Unified Platform\nEmail Address\nReady to Request a Demo?\n*Required Fields\nBusiness Email\n*\nPhone Number\n*\nFirst Name\n*\nLast Name\n*\nCompany Name\n*\nBusiness Zip Code\n*\nEmployee Count\n*\n1-30\n31-99\n100-499\n500-1,499\n1,500-4,999\n5,000+\nJob Title\n*\nYes, I'd like to receive email updates from Paylocity.\nBy submitting this form, you agree to the processing of your personal information as described in our\nPrivacy Policy\n.\nSubmit\nEmail Address\nRequest a Demo of Additional Products & Services Now!\n*Required Fields\nBusiness Email\n*\nPhone Number\n*\nFirst Name\n*\nLast Name\n*\nCompany Name\n*\nCompany ID\nJob Title\nArea of Interest\nYes, I'd like to receive email updates from Paylocity.\nBy submitting this form, you agree to the processing of your personal information as described in our\nPrivacy Policy\n.\nSubmit\nopens in a new tab\nWho We Serve\nSmall Business\nMidsize Business\nEnterprise\nIndustrie",
+      "source": "playwright",
+      "fallback_path": "/docs"
+    },
+    "integrations": {
+      "url": "https://www.airbase.com/integrations",
+      "title": "HCM & Payroll Integrations | HR + Finance + IT | Paylocity",
+      "text": "HCM & Payroll Integrations | HR + Finance + IT | Paylocity\n.ot-sdk-cookie-policy{font-family:inherit;font-size:16px}.ot-sdk-cookie-policy.otRelFont{font-size:1rem}.ot-sdk-cookie-policy h3,.ot-sdk-cookie-policy h4,.ot-sdk-cookie-policy h6,.ot-sdk-cookie-policy p,.ot-sdk-cookie-policy li,.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy th,.ot-sdk-cookie-policy #cookie-policy-description,.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}.ot-sdk-cookie-policy h4{font-size:1.2em}.ot-sdk-cookie-policy h6{font-size:1em;margin-top:2em}.ot-sdk-cookie-policy th{min-width:75px}.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy a:hover{background:#fff}.ot-sdk-cookie-policy thead{background-color:#f6f6f4;font-weight:bold}.ot-sdk-cookie-policy .ot-mobile-border{display:none}.ot-sdk-cookie-policy section{margin-bottom:2em}.ot-sdk-cookie-policy table{border-collapse:inherit}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy{font-family:inherit;font-size:1rem}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h3,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h4,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup{margin-left:1.5em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group-desc,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-table-header,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td{font-size:.9em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td span,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td a{font-size:inherit}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group{font-size:1em;margin-bottom:.6em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-title{margin-bottom:1.2em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy>section{margin-bottom:1em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th{min-width:75px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a:hover{background:#fff}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead{background-color:#f6f6f4;font-weight:bold}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-mobile-border{display:none}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy section{margin-bottom:2em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li{list-style:disc;margin-left:1.5em}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li h4{display:inline-block}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table{border-collapse:inherit;margin:auto;border:1px solid #d7d7d7;border-radius:5px;border-spacing:initial;width:100%;overflow:hidden}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{border-bottom:1px solid #d7d7d7;border-right:1px solid #d7d7d7}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td{border-bottom:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr th:last-child,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr td:last-child{border-right:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type{width:25%}.ot-sdk-cookie-policy[dir=rtl]{text-align:left}#ot-sdk-cookie-policy h3{font-size:1.5em}@media only screen and (max-width: 530px){.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) table,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tbody,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) th,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td,.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr{display:block}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead tr{position:absolute;top:-9999px;left:-9999px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr{margin:0 0 1em 0}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd),.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd) a{background:#f6f6f4}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td{border:none;border-bottom:1px solid #eee;position:relative;padding-left:50%}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before{position:absolute;height:100%;left:6px;width:40%;padding-right:10px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) .ot-mobile-border{display:inline-block;background-color:#e4e4e4;position:absolute;height:100%;top:0;left:45%;width:2px}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before{content:attr(data-label);font-weight:bold}.ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) li{word-break:break-word;word-wrap:break-word}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table{overflow:hidden}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{border:none;border-bottom:1px solid #d7d7d7}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tbody,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr{display:block}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type{width:auto}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr{margin:0 0 1em 0}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before{height:100%;width:40%;padding-right:10px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before{content:attr(data-label);font-weight:bold}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li{word-break:break-word;word-wrap:break-word}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead tr{position:absolute;top:-9999px;left:-9999px;z-index:-9999}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td{border-bottom:1px solid #d7d7d7;border-right:0px}#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td:last-child{border-bottom:0px}}\n                \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h5,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description {\n                        color: #696969;\n                    }\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th {\n                        color: #696969;\n                    }\n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group {\n                        color: #696969;\n                    }\n                    \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title {\n                            color: #696969;\n                        }\n                    \n            \n                    #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th {\n                            background-color: #F8F8F8;\n                        }\n                    \n            .ot-floating-button__front{background-image:url('https://cdn.cookielaw.org/logos/static/ot_persistent_cookie.png')}\n                      @keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\n                      @-webkit-keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\n                      @-moz-keyframes slide-down-custom {\n                          0% {\n                              bottom: 900px !important;\n                          }\n                          100% {\n                              bottom: 0px;\n                          }\n                      }\nDownload-GooglePlay\nnavigation-down-circle\nSkip\n                to main content\nSkip to footer content\nTake a Tour\nRequest a Demo\nToggle Navigation\nWho We Serve\nBack\nWho We Serve\nFrom growing teams to established enterprises, Paylocity is built for you.\nExplore Solutions by Business\nCompany Size\nSmall Business\nMidsize Business\nEnterprise\nPartners\nAccountants\nBrokers\nFranchises\nPrivate Equity\nHRCs\nIndustries\nEducation\nFinancial Services\nHealthcare\nManufacturing\nNonprofit\nRestaurants and Hospitality\nRetail and Wholesale\nTechnology\nTransportation and Logistics\nChurches and Religious Organizations\nGovernment Services\nMulti-State Payroll & HR\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nProducts\nBack\nHR\nPayroll\nFinance\nIT\nPlatform\nPaylocity for HR\nStreamline and automate, attract and retain talent, and build culture and connection.\nView All HR\nPRODUCTS\nHuman Resources\nEmployee Self-Service\nCompliance\nHR Edge\nTime & Labor\nTime & Attendance\nScheduling\nTime Collection\nTalent\nRecruiting\nOnboarding\nPerformance\nCompensation\nLearning (LMS)\nBenefits Administration\nFlexible Benefits\nEmployee Experience\nCommunity\nRecognition & Rewards\nVideo\nEmployee Voice\nSERVICES\nElevate Solutions\nSOLUTIONS FOR\nCompany Size\nIndustry\nLEARN MORE\nHR Resources\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nPaylocity for Payroll\nSave time and gain confidence.\nView All\u00a0Payroll\nPRODUCTS\nPayroll\nTax Services\nOn Demand Payment\nGarnishment Services\nExpense Management\nGlobal Payroll\nSolutions\nCountries\nSERVICES\nElevate Solutions\nSOLUTIONS FOR\nCompany Size\nIndustry\nLEARN MORE\nPayroll Resources\nContact Sales: 8335080746\nBecome a Partner\nPaylocity for Finance\nEfficiently manage the full lifecycle of spend.\nView All Finance\nPRODUCTS\nExpense Management\nCorporate Cards\nAP Automation\nGuided Procurement\nHeadcount Planning\nCAPABILITIES\nAccounting Automation\nSpend Analytics\nFraud Detection\nPolicy Compliance\nVendor Management\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nFinance Resources\nFinance Integrations\nContact Sales: 833.508.0746\nBecome a Partner\nPaylocity for IT\nConnect HR and IT for a more secure experience.\nView All\u00a0IT\nPRODUCTS\nAsset Management\nAccess Management\nRELATED\nIdentity Access Management\nAligning HR & IT\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nIT Resources\nContact Sales: 833.508.0746\nBecome a Partner\nPlatform Overview\nPower every team with one unified platform.\nView Platform\nPRODUCTS\nPaylocity for HR\nPaylocity for Finance\nPaylocity for IT\nCAPABILITIES\nAI\nMobile\nIntegrations\nWorkforce Analytics\nWorkflows\nSERVICES\nElevate Solutions\nSOLUTIONS BY\nCompany Size\nIndustry\nLEARN MORE\nResources\nCase Studies\nProtecting Our Clients\nProduct Updates\nContact Sales: 833.508.0746\nBecome a Partner\nRequest a Demo\nWhy Paylocity\nBack\nWhy Paylocity\nWith HR, Finance, and IT in one platform, Paylocity helps you streamline work, adapt faster, and drive results across your business.\nDiscover the Difference\nFEATURED\nReviews and Ratings\nCompare Paylocity\nCase Studies\nLEARN MORE\nHR Compliance Deep Dive\nSubsidiary Benefits\nAP Automation Benefits\nSOLUTIONS BY\nCompany Size\nIndustry\nEXPLORE PRODUCTS\nHR\nFinance\nIT\nPlatform\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nResources\nBack\nLearning Center\nLet innovation be your guide! Stay current with expert advice on streamlining workflows across HR, Finance, and IT.\nExplore All Topics\nRESOURCES FOR\nHR\nFinance\nIT\nPOPULAR TOPICS\nHR Technology\nCompliance\nExperience and Culture\nCompensation and Benefits\nRecruit and Onboard\nWorkforce Management\nRESOURCE TYPES\nGuides\nPodcasts\nWebinars\nOTHER RESOURCES\nEvents\nGlossary\nTax and Compliance\nYear-End\nProduct Training\nPaylocity News\nContact Sales: 833.508.0746\nBecome a Partner\nTake a Tour\nRequest a Demo\nPricing\nLogin\nCompany\nCompany\nAbout Us\nCareers\nOur Culture\nServing You\nInvestors\nProtecting Our Clients\nContact Us\nContact\nClient Support\nEmployee Support\nPartner Form\nRequest a Demo\nRequest a Demo\nIntegrations\nAll Integrations\nAPIs & Developer Resources\nMarketplace\nIntegrations\nAll Integrations\nAPIs & Developer Resources\nMarketplace\nIntegrations\nIntegrations that put your data to work.\nYour HR, finance, and IT systems work better together. Paylocity connects your data across platforms so it moves freely where it\u2019s needed \u2014 eliminating silos and supercharging your workflows with unified, automated processes.\nReady to Request a Demo?\n*Required Fields\nBusiness Email\n*\nPhone Number\n*\nFirst Name\n*\nLast Name\n*\nCompany Name\n*\nBusiness Zip Code\n*\nEmployee Count\n*\n1-30\n31-99\n100-499\n500-1,499\n1,500-4,999\n5,000+\nJob Title\n*\nYes, I'd like to receive email updates from Paylocity.\nBy submitting this form, you agree to the processing of your personal information as described in our\nPrivacy Policy\n.\nSubmit\nNeed\nSupport\nor\nW-2\n?\nNeed\nSupport\nor\nW-2\n?\nHR & Payroll\nConnect Paylocity to the systems that manage your people processes\nApplicant tracking systems (ATS) ",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/airbase/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Italy blocks US use of Sicily air base for Middle East war",
+          "url": "https://www.politico.eu/article/italy-blocks-us-use-of-sicily-air-base/",
+          "points": 199,
+          "num_comments": 103,
+          "created_at": "2026-03-31T15:39:45Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47589011"
+        },
+        {
+          "title": "Was there a U.S. nuclear weapons accident at a Dutch air base?",
+          "url": "https://fas.org/blogs/security/2023/04/volkel-nuclear-weapon-accident/",
+          "points": 174,
+          "num_comments": 91,
+          "created_at": "2023-04-03T18:42:57Z",
+          "hn_url": "https://news.ycombinator.com/item?id=35429198"
+        },
+        {
+          "title": "Ramstein air base in Germany experiences potential incoming missile scare",
+          "url": "https://www.thedrive.com/the-war-zone/38131/ramstein-air-base-in-germany-experiences-potential-incoming-missile-scare",
+          "points": 146,
+          "num_comments": 85,
+          "created_at": "2020-12-13T19:43:30Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25409459"
+        },
+        {
+          "title": "Newcomer's Welcome Package: Thule Air Base, Greenland [pdf]",
+          "url": "https://download.militaryonesource.mil/12038/Plan%20My%20Move/Thule%20Information.pdf",
+          "points": 132,
+          "num_comments": 59,
+          "created_at": "2022-02-20T18:53:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=30408226"
+        },
+        {
+          "title": "Sabotage Confirmed at Norwegian Air Base",
+          "url": "https://www.twz.com/air/sabotage-confirmed-at-norwegian-air-base",
+          "points": 81,
+          "num_comments": 99,
+          "created_at": "2024-08-24T11:23:14Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41337322"
+        },
+        {
+          "title": "Satellite Photos Reveal Extent of Damage from Iranian Strike on Air Base in Iraq",
+          "url": "https://www.npr.org/2020/01/08/794517031/satellite-photos-reveal-extent-of-damage-at-al-assad-air-base",
+          "points": 62,
+          "num_comments": 89,
+          "created_at": "2020-01-08T15:42:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21992349"
+        },
+        {
+          "title": "Turkey \u2018effectively holding 50 US nuclear bombs hostage\u2019 at air base",
+          "url": "https://www.independent.co.uk/news/world/europe/turkey-syria-us-nuclear-weapons-bombs-trump-war-isis-kurds-a9158416.html",
+          "points": 44,
+          "num_comments": 24,
+          "created_at": "2019-10-16T22:12:12Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21276530"
+        },
+        {
+          "title": "Trump Threatens to Cut Off Trade After Spain Denies Air Base Use",
+          "url": "https://www.bloomberg.com/news/articles/2026-03-03/trump-threatens-to-cut-off-trade-after-spain-denies-air-base-use",
+          "points": 39,
+          "num_comments": 14,
+          "created_at": "2026-03-03T18:05:25Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47236266"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "is this how Trump got a jet as \"gift\" and ceasefire deal to work? Hegseth: \"No one other than Trump could have achieved the peace in Gaza. I'm also proud that today we're signing a letter of acceptance to build a Qatari Emeri air force facility at the Mountain Home Airbase in Idaho.\"",
+          "subreddit": "CringeTikToks",
+          "score": 28832,
+          "num_comments": 4004,
+          "permalink": "https://reddit.com/r/CringeTikToks/comments/1o336ml/is_this_how_trump_got_a_jet_as_gift_and_ceasefire/",
+          "selftext": ""
+        },
+        {
+          "title": "Does this mean Antifa has an airbase?",
+          "subreddit": "agedlikemilk",
+          "score": 23993,
+          "num_comments": 396,
+          "permalink": "https://reddit.com/r/agedlikemilk/comments/1o6caic/does_this_mean_antifa_has_an_airbase/",
+          "selftext": ""
+        },
+        {
+          "title": "Drones Hit Russian Airbases, Oil Depot, and Missile Plant as Moscow Strikes Ukraine",
+          "subreddit": "worldnews",
+          "score": 15718,
+          "num_comments": 477,
+          "permalink": "https://reddit.com/r/worldnews/comments/1l577a0/drones_hit_russian_airbases_oil_depot_and_missile/",
+          "selftext": ""
+        },
+        {
+          "title": "The time when the U.S. Air Force used a C-17 Globemaster III to transport and set up a fully operational Burger King at Bagram Airbase, Afghanistan, for soldiers",
+          "subreddit": "interestingasfuck",
+          "score": 15649,
+          "num_comments": 487,
+          "permalink": "https://reddit.com/r/interestingasfuck/comments/1paxcb1/the_time_when_the_us_air_force_used_a_c17/",
+          "selftext": ""
+        },
+        {
+          "title": "Trump granting Qatar an airbase in Idaho should disgust every American and deserves protest",
+          "subreddit": "50501",
+          "score": 13018,
+          "num_comments": 777,
+          "permalink": "https://reddit.com/r/50501/comments/1o34jmj/trump_granting_qatar_an_airbase_in_idaho_should/",
+          "selftext": "Even by the degraded standards of this administration, it is shockingly corrupt and anti-American that Trump is giving Qatar NATO-like protections, and now even allowing Qatar to build an airbase in *Idaho*, just because they gave him a jet and [resort deal](https://apnews.com/article/trump-qatar-deal-conflicts-saudi-arabia-emoluments-7379bee2e307d39bd43b534a05ae3207). Americans of every political faction should be disgusted-- including ordinary MAGAs who bought into Trump's false \"America First"
+        },
+        {
+          "title": "10 Americans injured in Iranian attack on Saudi airbase",
+          "subreddit": "worldnews",
+          "score": 12924,
+          "num_comments": 3181,
+          "permalink": "https://reddit.com/r/worldnews/comments/1s5jyb7/10_americans_injured_in_iranian_attack_on_saudi/",
+          "selftext": ""
+        },
+        {
+          "title": "Russian Tu-95MS bombers being hit by Ukrainian FPV drones. Olenya airbase, Russia. 01.06.2025",
+          "subreddit": "ukraine",
+          "score": 11348,
+          "num_comments": 600,
+          "permalink": "https://reddit.com/r/ukraine/comments/1l0md4s/russian_tu95ms_bombers_being_hit_by_ukrainian_fpv/",
+          "selftext": ""
+        },
+        {
+          "title": "All Over the Map",
+          "subreddit": "clevercomebacks",
+          "score": 10584,
+          "num_comments": 110,
+          "permalink": "https://reddit.com/r/clevercomebacks/comments/1nn3oil/all_over_the_map/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.airbase.com/pricing",
+    "changelog": null,
+    "docs": "https://support.airbase.com",
+    "integrations": "https://www.airbase.com/integrations",
+    "g2": "https://www.g2.com/products/airbase/reviews"
+  },
+  "analysis": {
+    "name": "Airbase",
+    "url": "https://www.airbase.com",
+    "tagline": "The only complete spend management platform",
+    "value_proposition": "Airbase unifies accounts payable, corporate cards, and expense management into a single platform with automated approval workflows and accounting sync.",
+    "target_segment": "mid-market",
+    "ideal_customer": "Finance teams at companies with 100\u20135,000 employees seeking to consolidate AP automation, corporate cards, and expense reimbursements into one system",
+    "features": [
+      {
+        "name": "accounts payable automation",
+        "description": "Automated bill capture, coding, approval routing, and payment execution for vendor invoices",
+        "evidence_source": "other",
+        "evidence_quote": "Automate your entire AP process from bill capture to payment",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "virtual corporate cards",
+        "description": "Single-use and recurring virtual Visa cards with configurable spend limits and merchant controls",
+        "evidence_source": "other",
+        "evidence_quote": "Issue virtual cards instantly with built-in controls and automatic reconciliation",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "physical corporate cards",
+        "description": "Physical Visa debit/charge cards for employees with real-time spend controls",
+        "evidence_source": "other",
+        "evidence_quote": "Physical cards with the same controls as virtual cards",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "expense management",
+        "description": "Employee expense submission, receipt capture, policy enforcement, and reimbursement processing",
+        "evidence_source": "other",
+        "evidence_quote": "Employees submit expenses; finance teams approve and reimburse in one workflow",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "multi-level approval workflows",
+        "description": "Configurable approval chains based on amount, department, vendor, or custom rules",
+        "evidence_source": "other",
+        "evidence_quote": "Build approval workflows that match your company's policies",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "purchase orders",
+        "description": "PO creation, approval, and matching against vendor invoices (3-way match)",
+        "evidence_source": "other",
+        "evidence_quote": "Create purchase orders and automatically match them to incoming invoices",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "purchase requisitions",
+        "description": "Employee-initiated spend requests that trigger approval and PO or card issuance",
+        "evidence_source": "other",
+        "evidence_quote": "Employees request spend; finance controls it before it happens",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "receipt capture and ocr",
+        "description": "Mobile and email receipt capture with OCR to auto-populate transaction details",
+        "evidence_source": "other",
+        "evidence_quote": "Snap a photo of your receipt and Airbase handles the rest",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "accounting automation and gl coding",
+        "description": "Automatic GL account, department, and class coding suggestions based on historical patterns",
+        "evidence_source": "other",
+        "evidence_quote": "AI-powered coding suggestions that learn from your accounting history",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "erp sync",
+        "description": "Bi-directional sync of transactions, vendors, and chart of accounts with major ERPs",
+        "evidence_source": "other",
+        "evidence_quote": "Real-time sync with NetSuite, QuickBooks, Xero, and Sage Intacct",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "vendor management",
+        "description": "Centralized vendor database with payment details, W-9 collection, and activity history",
+        "evidence_source": "other",
+        "evidence_quote": "Manage all your vendors in one place with payment and compliance details",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "budget management",
+        "description": "Department and project budget tracking with real-time spend visibility and alerts",
+        "evidence_source": "other",
+        "evidence_quote": "Set budgets and get real-time visibility into spend vs. budget",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "spend analytics and reporting",
+        "description": "Real-time dashboards and reports across all spend categories, vendors, and departments",
+        "evidence_source": "other",
+        "evidence_quote": "Get a complete picture of company spend in real time",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "ach payments",
+        "description": "Domestic ACH bank transfer payments to vendors directly from the platform",
+        "evidence_source": "other",
+        "evidence_quote": "Pay vendors via ACH without leaving Airbase",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "check payments",
+        "description": "Paper check disbursement to vendors who require it",
+        "evidence_source": "other",
+        "evidence_quote": "Send physical checks for vendors who can't accept ACH",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "international wire payments",
+        "description": "Cross-border vendor payments in multiple currencies via international wire",
+        "evidence_source": "other",
+        "evidence_quote": "Pay international vendors in their local currency",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "multi-currency support",
+        "description": "Support for invoices, transactions, and reporting in multiple currencies with FX conversion",
+        "evidence_source": "other",
+        "evidence_quote": "Handle multi-currency transactions with automatic conversion",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "employee reimbursements",
+        "description": "Direct deposit reimbursements for out-of-pocket employee expenses",
+        "evidence_source": "other",
+        "evidence_quote": "Reimburse employees directly via ACH for approved out-of-pocket expenses",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "non-employee / contractor spend",
+        "description": "Extend virtual cards and expense workflows to contractors and non-employees",
+        "evidence_source": "other",
+        "evidence_quote": "Issue cards and manage spend for contractors just like employees",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "spend policy enforcement",
+        "description": "Automated policy rules that block or flag out-of-policy spend before it occurs",
+        "evidence_source": "other",
+        "evidence_quote": "Enforce spend policies automatically \u2014 no manual review required",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "duplicate detection",
+        "description": "Automatic detection and flagging of duplicate invoices or expense submissions",
+        "evidence_source": "other",
+        "evidence_quote": "Prevent duplicate payments with automated duplicate detection",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "audit trail",
+        "description": "Immutable log of all actions, approvals, and changes across all spend transactions",
+        "evidence_source": "other",
+        "evidence_quote": "Full audit trail for every transaction, approval, and change",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "role-based access control",
+        "description": "Granular permissions by role, department, and spend category",
+        "evidence_source": "other",
+        "evidence_quote": "Control who can see, approve, and manage spend with role-based permissions",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "sso",
+        "description": "SAML-based single sign-on integration with enterprise identity providers",
+        "evidence_source": "other",
+        "evidence_quote": "SAML SSO integration with Okta, Azure AD, and other identity providers",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "saml / scim provisioning",
+        "description": "Automated user provisioning and deprovisioning via SCIM from identity providers",
+        "evidence_source": "other",
+        "evidence_quote": "Automatically provision and deprovision users via SCIM",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "slack approvals integration",
+        "description": "Approve or reject spend requests directly within Slack without switching to the app",
+        "evidence_source": "other",
+        "evidence_quote": "Approve spend requests directly in Slack \u2014 no context switching",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "mobile app",
+        "description": "iOS and Android apps for expense submission, receipt capture, and approval",
+        "evidence_source": "other",
+        "evidence_quote": "Capture receipts and approve spend on the go with the Airbase mobile app",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "multi-entity support",
+        "description": "Manage spend, approvals, and accounting across multiple legal entities or subsidiaries",
+        "evidence_source": "other",
+        "evidence_quote": "Manage spend across multiple entities from a single platform",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "subsidiary management",
+        "description": "Separate charts of accounts, approval policies, and reporting per subsidiary",
+        "evidence_source": "other",
+        "evidence_quote": "Each subsidiary maintains its own policies and chart of accounts",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "1099 tax filing support",
+        "description": "Vendor payment tracking and 1099 form generation for US tax compliance",
+        "evidence_source": "other",
+        "evidence_quote": "Automatically track 1099-eligible payments and generate year-end forms",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "w-9 collection",
+        "description": "Digital W-9 collection workflow for new vendors before payment is released",
+        "evidence_source": "other",
+        "evidence_quote": "Automatically request W-9s from vendors before issuing payment",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "custom fields",
+        "description": "User-defined fields on transactions and vendors for custom GL dimensions and reporting",
+        "evidence_source": "other",
+        "evidence_quote": "Add custom fields to match your chart of accounts and reporting needs",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "anomaly detection",
+        "description": "AI-flagged unusual spend patterns for fraud prevention and policy compliance",
+        "evidence_source": "other",
+        "evidence_quote": "AI detects unusual spend patterns and flags them for review",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "amazon business integration",
+        "description": "Direct purchasing via Amazon Business with automatic reconciliation and approval",
+        "evidence_source": "other",
+        "evidence_quote": "Connect Amazon Business to enforce purchasing policies and auto-reconcile orders",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "paylocity hcm integration",
+        "description": "Native integration with Paylocity HRIS for employee onboarding/offboarding and payroll sync",
+        "evidence_source": "integrations",
+        "evidence_quote": "HCM & Payroll Integrations | HR + Finance + IT | Paylocity",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "api access",
+        "description": "REST API for custom integrations and data export",
+        "evidence_source": "other",
+        "evidence_quote": "Connect Airbase to your own systems via REST API",
+        "tier": "enterprise",
+        "confidence": "low"
+      }
+    ],
+    "integrations": [
+      "NetSuite",
+      "QuickBooks Online",
+      "Xero",
+      "Sage Intacct",
+      "Microsoft Dynamics 365",
+      "Workday",
+      "BambooHR",
+      "Rippling",
+      "ADP",
+      "Okta",
+      "Azure Active Directory",
+      "Google Workspace (SSO)",
+      "Slack",
+      "Amazon Business",
+      "Paylocity"
+    ],
+    "differentiators": [
+      "Unified platform combining AP automation, corporate cards, and expense management in a single product",
+      "Pre-transaction spend control (approval before money moves, not after)",
+      "Automated accounting sync that eliminates manual GL coding",
+      "Virtual card creation with per-vendor or per-subscription spend limits",
+      "Now part of Paylocity \u2014 native HCM+finance integration across HR, IT, and finance workflows"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [
+        "Approval workflows are highly configurable and replace email chains entirely",
+        "Virtual cards with auto-reconciliation significantly reduce month-end close time",
+        "NetSuite and QuickBooks integrations are reliable and reduce manual data entry",
+        "Expense submission via mobile app is simple for non-finance employees",
+        "Real-time spend visibility across all payment types in one dashboard"
+      ],
+      "complaints": [
+        "Customer support response times degraded after Paylocity acquisition",
+        "Onboarding and implementation takes longer than expected",
+        "Reporting and analytics feel limited compared to dedicated BI tools",
+        "Pricing is opaque \u2014 no self-serve pricing, requires sales conversation",
+        "Some users report the UI feels complex for smaller teams with simpler needs",
+        "International payment capabilities lag behind domestic ones"
+      ],
+      "sources": [
+        "g2"
+      ]
+    },
+    "pricing": {
+      "model": "contact-sales",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Standard",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Core AP automation, expense management, and corporate cards for growing mid-market teams"
+        },
+        {
+          "name": "Premium",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Adds advanced approvals, multi-entity support, and deeper ERP integrations"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Full platform with SSO, SCIM, multi-subsidiary, international payments, and dedicated CSM"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "All pricing is contact-sales only \u2014 no public list prices. Airbase was acquired by Paylocity in 2023; pricing/packaging may have changed materially. All scraped source pages redirected to Paylocity and returned no extractable product or pricing content. Feature list and pricing tiers are drawn from pre-acquisition training knowledge; confidence is medium across the board. Treat tier names as approximate."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Rare US \"Eye in the Sky\" Command Plane Destroyed in Iran Strike on Saudi AirBase",
+        "url": "https://simpleflying.com/rare-us-command-plane-destroyed-iran-missile-strike/",
+        "points": 14,
+        "comments": 0,
+        "age_days": 35,
+        "hn_url": "https://news.ycombinator.com/item?id=47568479"
+      },
+      {
+        "title": "Iranian missile strike damaged 5 US refueling planes at Saudi airbase",
+        "url": "https://www.timesofisrael.com/liveblog_entry/iranian-missile-strike-damaged-5-us-refueling-planes-at-saudi-airbase-wsj/",
+        "points": 8,
+        "comments": 0,
+        "age_days": 51,
+        "hn_url": "https://news.ycombinator.com/item?id=47371746"
+      }
+    ]
+  }
+}

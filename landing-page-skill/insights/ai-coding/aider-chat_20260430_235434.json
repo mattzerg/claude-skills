@@ -1,0 +1,116 @@
+{
+  "url": "https://aider.chat",
+  "company": "Aider",
+  "tagline": "AI pair programming in your terminal",
+  "subheadline": "Aider lets you pair program with LLMs to start a new project or build on your existing codebase.",
+  "value_proposition": "A terminal-based AI pair programming tool that integrates with leading LLMs to help developers write, edit, and manage code across any project.",
+  "target_audience": "Software developers and engineers who prefer terminal-based workflows and want AI assistance integrated directly into their coding environment.",
+  "primary_cta": {
+    "text": "Get Started",
+    "placement": "hero"
+  },
+  "secondary_cta": {
+    "text": "Documentation",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [
+      "I like aider :) \u2014 Chenwei Cui on X",
+      "Aider is also my best friend. \u2014 jzn21 on Reddit",
+      "Aider is hands down the best. And it's free and opensource. \u2014 AriyaSavakaLurker on Reddit",
+      "Aider is amazing, coupled with Sonnet 3.5 it's quite mind blowing. \u2014 Josh Dingus on Discord",
+      "Aider ... has easily quadrupled my coding productivity. \u2014 SOLAR_FIELDS on Hacker News",
+      "Try aider! One of the best ways to vibe code. \u2014 Chris Wall on X"
+    ],
+    "metrics": [
+      "44K GitHub Stars",
+      "6.8M Installs",
+      "15B Tokens/week",
+      "88% Singularity"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "open-source/free",
+    "tiers": [],
+    "price_anchoring": "No pricing mentioned; positioned as free and open-source, with costs only being LLM API key usage from third-party providers."
+  },
+  "features": [
+    "Works with cloud and local LLMs including Claude, DeepSeek, OpenAI models",
+    "Maps entire codebase to improve context in large projects",
+    "Supports 100+ programming languages",
+    "Automatic git commits with sensible commit messages",
+    "IDE integration \u2014 works from within favorite editors",
+    "Voice-to-code: speak requests and have aider implement changes",
+    "Automatic linting and test execution after each change"
+  ],
+  "differentiators": [
+    "Codebase mapping that helps it work well in larger projects",
+    "Works with almost any LLM including local models",
+    "Voice-to-code capability",
+    "Automatic git integration with commit messages",
+    "Free and open source"
+  ],
+  "trust_signals": [
+    "44,000 GitHub stars",
+    "6.8 million installs",
+    "15 billion tokens processed per week",
+    "Open source with public GitHub repository",
+    "Active Discord community"
+  ],
+  "navigation": [
+    "Features",
+    "Getting Started",
+    "Documentation",
+    "Discord",
+    "GitHub"
+  ],
+  "design_patterns": {
+    "layout": "Single-column hero with stats bar, feature grid below, testimonials section, getting started code block, and footer links",
+    "color_scheme": "Not determinable from text alone; likely dark/neutral terminal-inspired palette given the CLI product",
+    "typography": "Clean, functional \u2014 technical product with code snippets displayed prominently",
+    "visual_style": "Technical/minimal with embedded video demo in hero",
+    "notable_patterns": [
+      "Embedded video demo in hero section",
+      "Live stats bar with emoji icons (stars, installs, tokens)",
+      "Code snippet getting-started section with syntax highlighting",
+      "Feature cards grid",
+      "User quote testimonials section"
+    ]
+  },
+  "emotional_tone": "Confident and community-driven, with a casual developer-friendly voice; aspirational around productivity gains.",
+  "key_objections_addressed": [
+    "Works with existing codebases, not just new projects",
+    "Supports local LLMs for users concerned about sending code to cloud APIs",
+    "Works with nearly any LLM \u2014 not locked into one provider",
+    "IDE integration addresses concern about leaving existing editor workflow",
+    "Git integration addresses fear of losing or mismanaging AI-generated changes"
+  ],
+  "missing_or_weak": [
+    "No company logos or enterprise social proof",
+    "No explicit pricing or cost guidance beyond needing an API key",
+    "No security or data privacy messaging for enterprise or privacy-conscious users",
+    "Testimonials are all from social media/Reddit \u2014 no named professionals or companies",
+    "No case studies or deeper before/after productivity stories",
+    "'Singularity 88%' metric is unexplained and likely confusing to new visitors",
+    "No clear FAQ section addressing common hesitations",
+    "No email capture or newsletter CTA for visitors not ready to install"
+  ],
+  "standout_elements": [
+    "Quantified social proof metrics (stars, installs, tokens/week) displayed prominently in hero",
+    "Video demo embedded directly in hero without requiring a click-through",
+    "Voice-to-code is a genuinely differentiated feature rarely highlighted by competitors",
+    "Getting started section uses real terminal commands \u2014 reduces friction for technical audience",
+    "Open source positioning removes pricing as a barrier entirely",
+    "Breadth of LLM support (cloud and local) is a meaningful differentiator clearly called out"
+  ],
+  "score": {
+    "clarity": 9,
+    "credibility": 7,
+    "conversion_focus": 7,
+    "differentiation": 8,
+    "overall": 8
+  },
+  "analyzed_at": "2026-04-30T23:54:34.888135"
+}

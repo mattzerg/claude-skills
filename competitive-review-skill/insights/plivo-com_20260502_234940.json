@@ -1,0 +1,692 @@
+{
+  "name": "Plivo",
+  "url": "https://plivo.com",
+  "domain": "plivo.com",
+  "scanned_at": "2026-05-02T23:46:47.885375",
+  "sources": {
+    "landing": {
+      "url": "https://plivo.com",
+      "title": "Plivo - Build Voice AI Agents That Sound Human | Plivo",
+      "text": "Plivo - Build Voice AI Agents That Sound Human | Plivo\nSkip to main content\nAI Agents\nPlatform\nDocumentation\nPricing\nLogin\nContact sales\nSign up for free\nSign up for free\n01\nvoice ai\navailable on\n\u00b7\nvoice\nsms\nwhatsapp\nchat\nBuild human-like\nvoice AI agents\nFrom no-code builders for teams to flexible APIs for developers, deploy voice agents that actually sound human.\nStart for free\nRead the docs\n$10 in free credits.\nlatency\n<500\nms\nuptime\n99.99\n%\ncountries\n150\n+\nready \u00b7 sample call\n\u2014:\u2014\n/\n01:01\nag_01HAZ7K\nPlay sample call \u00b7\n01:01\nA real voice agent reschedules a dental appointment.\n\u203a\nscript\nInbound \u00b7 customer reschedules a dental appointment with an AI voice agent.\n11 turns \u00b7 4 tool calls \u00b7 ~61 sec\nlatency\n483ms\nlang\nen-US\ntool\nidle\nSTT\nLLM\nTTS\n02\ncustomers\ntrusted by teams at\n03\nstack\ntwo ways to build\nBuild AI agents your way with\ncode\nor\nprompt\n/stack/programmable\nmodular\nTTS\nNatural Text-to-Speech voices (or bring your own)\n[\n01\n]\nSTT\nSpeech-to-Text with 95%+ accuracy across accents\n[\n02\n]\nTurn detection\nIntelligent turn-taking that eliminates awkward interruptions\n[\n03\n]\nVAD\nVoice Activity Detection that knows when users start and stop speaking\n[\n04\n]\nAudio stream\nReal-time bi-directional audio with <300ms latency\n[\n05\n]\nProgrammable AI agents\nsdk \u00b7 api\nStart with our fully managed stack or strip it down to just audio streaming. Swap in your own LLM, customize ASR and TTS. Full control, zero hassle.\n\u203a\nPick and choose what you want\n\u203a\nBring your own LLM\n\u203a python\n\u203a node\n\u203a go\n\u203a rest\nTalk to us\n/stack/studio\nprompt\ndescribe your agent\n\u21b5 enter\n\u203a\n\u201c\nOutbound agent for collecting post-delivery feedback. Ask 3 short rating questions and log responses to the CRM.\n\u201d\n\u203a\n\u201c\nInbound support agent. Look up order status by phone number and read out the ETA.\n\u201d\nNo-code AI agent studio\nvisual \u00b7 prompt\nBuild, test, and deploy omni-channel AI agents in minutes. No code required. Best for teams who want to move fast and focus on outcomes.\n\u203a\nBuild agent in plain English\n\u203a\nDrag and drop simplicity\n\u203a studio\n\u203a templates\n\u203a instant preview\nSign up free\n04\nscale\nlive \u00b7 realtime counter\nPlivo is built to scale\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n,\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n,\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\nminutes of customer conversations handled by our AI Agents\n<500ms\nVoice latency\n99.99%\nPlatform uptime\n50+\nLanguages supported\n150+\nCountries connected\nSales\nLead qualification\nOrder tracking\nPayment collection\nFeedback surveys\nIdentity verification\nSales\nLead qualification\nOrder tracking\nPayment collection\nFeedback surveys\nIdentity verification\nSales\nLead qualification\nOrder tracking\nPayment collection\nFeedback surveys\nIdentity verification\nSales\nLead qualification\nOrder tracking\nPayment collection\nFeedback surveys\nIdentity verification\n05\npillars\nfour pillars of a human-like agent\nWhy are Plivo's voice AI agents human-like\npillar /\n01\nrealtime\n500 ms\n1 hop\n< 500ms latency\n\u203a\n700-900ms optimal response\n\u203a\nOne-hop global routing\n\u203a\nNo awkward pauses\n\u203a\nReal-time processing\npillar /\n02\naudio\nInbound support call\ntravel \u00b7 hospitality\n\ud83c\uddfa\ud83c\uddf8 english\n0s/43s\nHuman-like conversation quality\n\u203a\nAI noise cancellation\n\u203a\n30+ accents & languages\n\u203a\nTone & hallucination control\n\u203a\nNatural prosody\npillar /\n03\nconversation\nTurn detection\nOFF\n\ud83c\uddfa\ud83c\uddf8\nEnglish\nsupport\n0s/39s\nTurn detection\nON\n\ud83c\uddfa\ud83c\uddf8\nEnglish\nsupport\n0s/24s\nNatural turn taking\n\u203a\nInterruption detection\n\u203a\nSmart turn detection\n\u203a\nBarge-in handling\n\u203a\nSilence detection\npillar /\n04\nfeedback loop\nSelf-improving\n\u203a\nAuto simulations & evals\n\u203a\nReal-time observability\n\u203a\nGoal-based optimization\n\u203a\nContinuous learning\n06\nsecurity & compliance\nhipaa \u00b7 gdpr \u00b7 soc 2 \u00b7 pci dss\nEnterprise-grade security\n& compliance\nHIPAA\nGDPR\nSOC 2\nPCI DSS\nSTAR\nEncryption everywhere\nTLS in transit. AES-256 at rest. No exceptions.\ntls \u00b7 aes-256\nData residency\nChoose US, EU, or APAC. Your data stays where you need it.\nus \u00b7 eu \u00b7 apac\nAudit-ready\nFull access logs, RBAC, and compliance reports on demand.\nlogs \u00b7 rbac \u00b7 reports\n07\nship it\none command \u00b7 production-ready\nReady to make every call count?\nGet $10 in free credits. No credit card required. Deploy your first agent in under 10 minutes.\nSign up for free\nTalk to sales\n\u203a no credit card\n\u203a free credits\n\u203a cancel anytime\n~/plivo\n02:28:07\n$\nplivo agents create --voice nova --language en-US\n\u2713 spinning up runtime ...\n\u2713 routing in 150+ countries\n\u2713 ready: agent id = ag_01HAZ7K2...\n$\nopen https://cx.plivo.com/agents/ag_01HAZ7K2\nagent deployed \u00b7\n5\nsteps\nquickstart \u2192\nPlatform\nAI Agents\nPricing\nCommunications\nVoice\nSMS\nWhatsApp\nChat\nAPI platform\nAPI login\nDocumentation\nPlatform status\nAPI reference\nResources\nBlog\nKnowledge base\nGet support\nSecurity\nCompany\nAbout\nJobs\nTalk to sales\nLegal\n\u00a9\n2026\nPlivo Inc.\nWe use cookies for analytics and marketing.\nLearn more\nReject\nManage\nAccept\nCookie preferences\nNecessary storage is always on. Use the toggles below to allow or deny\n            optional analytics and marketing technologies.\nNecessary\nRequired for security, form handling, theme preference, and saving your consent choices.\nAlways on\nAnalytics\nHelps us understand site usage and performance through analytics tags managed with Google Tag Manager.\nMarketing\nSupports lead attribution and marketing follow-up with HubSpot tracking cookies.\nLearn more about our cookies\nSave preferences\nAccept all",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.plivo.com/pricing/",
+      "title": "Pricing | Plivo",
+      "text": "Pricing | Plivo\nSkip to main content\nAI Agents\nPlatform\nDocumentation\nPricing\nLogin\nContact sales\nSign up for free\nSign up for free\n~\npricing\npay as you go \u00b7 no lock-in\nStart now with\n$10\nfree credits\n\ud83c\uddfa\ud83c\uddf8\nUnited States\nPay as you go\n$10\nin free credits. No credit card required.\nSign up for free\nSee what's included\nEnterprise\nStarts at $1,000 per month\nTalk to sales\nSee what's included\nChannel Pricing\nVoice\nVoice calls\nRoute type\nOutbound calls\nInbound calls\nLocal Calls\n$0.0115/min\n$0.0055/min\nToll-Free Calls\n$0.0060/min\n$0.0180/min\nBrowser SDK and SIP Calls\n$0.0033/min\n$0.0033/min\nAudio streaming & noise cancellation\nIncluded\nIncluded\nAdd-on services\nService\nPrice\nAnswering Machine Detection\n$0.0000/min\nCall Insights - Basic\n$0.0000/min\nCall Insights - Premium\n$0.0025/min\nCall Recording\n$0.0000/min\nRecording Storage *\n$0.0000/min\nAutomatic Speech Recognition\n$0.02/ 15 seconds\nCall Transcription\n$0.0095/min\nConference Calls\n$0.0000/min\nMultilingual Text to Speech\n$0.0000/min\nCNAM Lookup\n$0.00500/lookup\n* Free for 90 days. $0.0004/min per month afterwards.\nView detailed pricing\n\u2192\nAI Agents\nAI agent usage\nComponent\nRate\nVoice AI agent\n$0.050/min\nAI text conversations\n$0.005/outcome\nChannel pricing (voice calls, SMS, WhatsApp) is charged separately.\nPlatform features\nFeature\nPrice\nKnowledge base\nIncluded free\nFunction calling / tool use\nIncluded free\nCall recording\nIncluded free\nCall transfer\nIncluded free\nReal-time transcription\nIncluded free\nMultilingual support\nIncluded free\nSMS & RCS\nSMS messaging\nRoute type\nOutbound SMS\nInbound SMS\nLong Codes*\n$0.0077/sms\n$0.0077/sms\nShort Code*\n$0.0077/sms\n$0.0077/sms\nToll-Free\n$0.0079/sms\n$0.0079/sms\nRCS messaging\nType\nOutbound\nInbound\nRCS Rich*\n$0.00770\n$0.00770\nRCS Rich Media*\n$0.01800\n$0.01800\nView detailed pricing\n\u2192\nWhatsApp\nWhatsApp Business conversations\nMessage Category\nPrice per message\nMarketing\n$0.0275/message\nUtility\n$0.0044/message\nAuthentication\n$0.0044/message\nService\nFree\nWhatsApp voice calls\nCall type\nPrice per minute\nInbound\n$0.0040/min\nOutbound\n$0.0160/min\nAudio streaming & noise cancellation\nIncluded\nView detailed pricing\n\u2192\nAll Voice and AI Agent calls are billed in 60-second intervals.\n~\nplivo-pricing-faq\nFrequently asked questions\nHow does pay-as-you-go pricing work?\nWhat's included in the free trial?\nAre there volume discounts available?\nWhat payment methods do you accept?\nCan I set spending limits on my account?\nHow are AI Agent costs calculated?\nDo prices vary by country?\nIs there a contract or commitment required?\n07\nship it\none command \u00b7 production-ready\nGo live in minutes\nGet $10 in free credits. No credit card required. Deploy your first agent in under 10 minutes.\nSign up for free\nTalk to sales\n\u203a no credit card\n\u203a free credits\n\u203a cancel anytime\n~/plivo\n02:27:59\n$\nplivo agents create --voice nova --language en-US\n\u2713 spinning up runtime ...\n\u2713 routing in 150+ countries\n\u2713 ready: agent id = ag_01HAZ7K2...\n$\nopen https://cx.plivo.com/agents/ag_01HAZ7K2\nagent deployed \u00b7\n5\nsteps\nquickstart \u2192\nPlatform\nAI Agents\nPricing\nCommunications\nVoice\nSMS\nWhatsApp\nChat\nAPI platform\nAPI login\nDocumentation\nPlatform status\nAPI reference\nResources\nBlog\nKnowledge base\nGet support\nSecurity\nCompany\nAbout\nJobs\nTalk to sales\nLegal\n\u00a9\n2026\nPlivo Inc.\nWe use cookies for analytics and marketing.\nLearn more\nReject\nManage\nAccept\nCookie preferences\nNecessary storage is always on. Use the toggles below to allow or deny\n            optional analytics and marketing technologies.\nNecessary\nRequired for security, form handling, theme preference, and saving your consent choices.\nAlways on\nAnalytics\nHelps us understand site usage and performance through analytics tags managed with Google Tag Manager.\nMarketing\nSupports lead attribution and marketing follow-up with HubSpot tracking cookies.\nLearn more about our cookies\nSave preferences\nAccept all",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://plivo.com/changelog",
+      "title": "API - Product updates",
+      "text": "API - Product updates\nSubscribe to updates\nmegaphone\nProduct updates\nSee the latest feature releases, product improvements and bug fixes\nHave an idea or feature request?\nLeave feedback\nCategories\nClear\nSMS API\nPlatform\nPhone Numbers\nConsole\nMobile SDK\nBrowser SDK\nVoice API\nZentrunk\nNumber Masking\nVerify API\nPowered by LaunchNotes\nLoading...\nLoading...\nJanuary 2025\nPlatform\nUnlock Flexible Rates with Dynamic Usage-Based Pricing\nWe\u2019ve introduced a new pricing structure that rewards higher usage with progressively lower per-unit costs. An automated system tracks your usage in real...\nJanuary 6, 2025\nNovember 2024\nPhone Numbers\nAutomated Indian Phone Number Activation is Now Live\nThis release automates the activation of Indian numbers after compliance approval, streamlining the process for you. Once an India compliance application is...\nNovember 12, 2024\nConsole\nEnhanced Self-Service Account Security and Profile Management\nWe've introduced new self-service features that let you manage your Plivo account security and user profile information directly from the console. You can...\nNovember 5, 2024\nOctober 2024\nPhone Numbers\nTitle: Expanded CNAM Coverage and API Support Now Available\nThis update significantly enhances our CNAM (Caller ID Name) services for US-based phone numbers. You can now assign CNAM to all Plivo US-based phone...\nOctober 11, 2024\nVoice API\nEnhanced Transparency for Voice Outbound Invoices\nThis update improves the Voice Outbound invoice by offering a detailed breakdown of your spending for each country. With this enhancement, you can easily see...\nOctober 8, 2024\nSeptember 2024\nVerify API\nNew Parameters Added to Verify API: Brand Name, AppHash, and Code Length\nWe're pleased to introduce three new optional parameters for our Verify API\u2014 Brand Name , AppHash , and Code Length \u2014giving you greater control over your...\nSeptember 30, 2024\nConsole\nVoice API\nEnhanced Geo Permissions Experience Now Available for Voice API on Console\nWe\u2019ve revamped the Geo Permission under Voice API on the Plivo console to offer a more intuitive and efficient way for you to manage your geo-permissions....\nSeptember 24, 2024\nVoice API\nProactive Voice Call Monitoring with Voice Alerts Now Available\nThe Voice Alerts feature is now live, offering real-time monitoring of voice call performance. This proactive tool detects critical issues like call quality...\nSeptember 10, 2024\nAugust 2024\nPhone Numbers\nConsole\nRent India Domestic Numbers Directly on Plivo Console\nThe new India Domestic Compliance Application simplifies the process of obtaining India domestic numbers by enabling you to submit compliance information and...\nAugust 28, 2024\nPhone Numbers\nConsole\nStreamlined Toll-Free Verification Profile Workflow Now Live\nWe\u2019ve introduced an optimized workflow for Toll-Free verification, allowing you to create dedicated profiles for Toll-Free verification on the Plivo console...\nAugust 27, 2024\nleft chevron\n1\n2\n3\n4\n5\n6\n7\nleft chevron\nJump to Month\nJanuary 2025\nNovember 2024\nOctober 2024\nSeptember 2024\nAugust 2024\nJuly 2024\nJune 2024\nMay 2024\nApril 2024\nMarch 2024\nFebruary 2024\nDecember 2023\nAugust 2023\nJuly 2023\nJune 2023\nApril 2023\nMarch 2023\nFebruary 2023\nJanuary 2023\nDecember 2022\nNovember 2022\nSeptember 2022\nApril 2022\nOlder\nPowered by LaunchNotes\nHave an idea or feature request?\nLeave feedback\nProduct\nSMS API\nMMS API\nVoice API\nZentrunk\nResources\nContent Library\nService status\nCompany\nAbout\nCopyright \u00a9 Plivo 2023\nTerms of Service\nPrivacy Policy\nShare your thoughts\nWhat kind of feedback do you have?\n\u00d7\nShort summary of your feedback:\nHow important is this to you?\nNice to have\nSomewhat\nExtremely\nWhat's your email address?\nVerify your email to send the team your feedback\nSubmit\nBy clicking submit, you accept our\nprivacy policy\nand\nterms and conditions\n, reCAPTCHA\nprivacy\nand\nterms\n.\nShare your thoughts\nWhat kind of feedback do you have?\n\u00d7\nShort summary of your feedback:\nHow important is this to you?\nNice to have\nSomewhat\nExtremely\nWhat's your email address?\nVerify your email to send the team your feedback\nSubmit\nBy clicking submit, you accept our\nprivacy policy\nand\nterms and conditions\n, reCAPTCHA\nprivacy\nand\nterms\n.\nSubscribe to updates\n\u00d7\n*\nEmail\n*\nCategories\nSelect categories\nChoose the topics you'd like to stay updated on.\nPlease select at least one category.\nSubscribe\nBy clicking subscribe, you accept our\nprivacy policy\nand\nterms and conditions\n.\nreCAPTCHA\nprivacy\nand\nterms\napply",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://www.plivo.com/docs/",
+      "title": "Home - Plivo",
+      "text": "Home - Plivo\nSkip to main content\nPlivo\nhome page\nSearch...\n\u2318\nK\nAsk AI\nSupport\nConsole\nSign Up\nSearch...\nNavigation\nHome\nVoice Agents\nProgrammable APIs\nFAQ\nDocumentation Index\nFetch the complete documentation index at:\nhttps://plivo.com/docs/llms.txt\nUse this file to discover all available pages before exploring further.\nWelcome to Plivo\nDocumentation\nExplore comprehensive guides, API references, and discussions to integrate, manage, and optimize your Plivo solutions.\nVoice Agents\nBuild AI-powered voice agents using Audio Streaming or SIP Trunking integrations\nProgrammable APIs\nFull API access for Voice, Messaging, SIP Trunking, Verify, and more\nFAQ\nFrequently asked questions about Messaging, Account Management, and Billing\n\u2318\nI\nAssistant\nResponses are generated using AI and may contain mistakes.",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.plivo.com/integrations/",
+      "title": "AI Agents That Just Work | Plivo | Plivo",
+      "text": "AI Agents That Just Work | Plivo | Plivo\nSkip to main content\nAI Agents\nPlatform\nDocumentation\nPricing\nLogin\nContact sales\nSign up for free\nSign up for free\nAI agents that just work\nNo code. No guesswork. Just reliable automation for key customer moments.\nContact Sales\nSignup now\n02\ncustomers\ntrusted by teams at\n~\nuse cases\nVibe create your agents for your use case in plain English\nExplore the top AI agents that streamline operations, boost CSAT, and cut resolution times - no training required.\nReceive message on WhatsApp\nCapture Leads\nGreet the prospects and ask gather their details and requirements.\nAI Conversation\nLead capture & qualification\nCapture inbound leads across chat, SMS, and voice, qualify them in real-time using smart branching logic, and instantly route high-intent prospects to your sales team.\nSales\nCRM\nMarketing\nIncoming call on Voice\nResolve Query\nLook up order details and provide real-time shipping updates.\nAI Conversation\nCustomer support\nConnect to Shopify or Woo to automatically manage order status, shipping updates, and product inquiries, directly on call.\neCommerce\nLogistics\nSaaS\nIncoming call on Voice\nBook Appointment\nCheck availability and confirm booking in real-time.\nAI Conversation\nAppointment booking\nLet customers schedule appointments via phone or chat, with real-time availability synced to Calendly or your booking system.\nHealthcare\nServices\nHospitality\nIncoming call on Voice\nRun Diagnostics\nTroubleshoot using knowledge base and escalate if needed.\nAI Conversation\nTech support\nTroubleshoot common tech queries using your knowledge base, with smart conversational flows that route only complex cases to humans.\nSaaS\nTelecom\nIT Services\nReceive SMS message\nCollect Feedback\nRun post-interaction surveys and gather CSAT scores.\nAI Conversation\nSurvey & feedback\nGather timely input from customers through surveys and conversations, so you can improve continuously.\nRetail\nHealthcare\nConsumer Services\nNew chat message\nRoute & Engage\nDetect channel, maintain context, and engage seamlessly.\nAI Conversation\nMultichannel engagement\nBuild agents that work where your customers are - voice, chat, SMS, or WhatsApp - with context preserved across every touchpoint.\nEnterprise\neCommerce\nFinance\n~\ngo live steps\nGo live with AI agents in minutes\nWith Plivo's guided setup, you can build, test, and launch production-ready agents - without code or complexity.\n01\nVibe Agent\n\"Build me a customer support agent that handles refund requests. It should ask for the order number, look it up, and process refunds automatically...\"\nAnalyzing your requirements...\nDescribe your use case\nShare what you want your agent to do. Vibe understands your intent and gets to work.\n02\nTrigger\nWhen a customer calls\nGreeting Message\nLet Vibe Agent build the flow\nVibe connects the dots - setting up actions, triggers, and integrations automatically.\n03\nAnalysis Mode\nTotal Response: 5\nUser Message\nHi, I placed an order last week and it still hasn't arrived. Can you help me check the status?\nAI Response 1\nFine Tune\nCurrent Node:\nGreet the customer\nPrompt:\n**Greeting the Customer** Alright, let's kick things off by g...\nChosen Path:\n--\nReview and launch\nTest the experience, make quick tweaks, and deploy your agent across channels with a single click.\nContact Sales\nGet Started Now\n~\nbuild smarter\nBuild smarter, launch faster\nBuild and deploy high-performing agents without code. AI Agent connects to your tools, understands your workflows, and starts delivering results on day one.\nVibe agent builder\nJust say what you want to build\nDescribe the use case, and Vibe Agent builds the agent instantly.\nAsk to make changes anytime\nUpdate steps, messages, or logic in Vibe Agent by simply describing what you want. No coding required.\nTest and go live\nTest conversations in a safe environment, fine-tune responses, and go live instantly when you're ready.\nAI Agent Studio\nStart building your Agent\nAppointment Booking Agent\nCustomer Support Agent\nLead Qualification Agent\nPayment Reminder Agent\nSelect a template to get started\nAI Agent\n4 channels active\nVoice\nInbound & outbound calls\nActive\nWeb Chat\nWebsite & in-app chat\nActive\nSMS\nTwo-way messaging\nActive\nWhatsApp\nBusiness messaging\nActive\nDeploy once, run everywhere\nAll channels synced\nWorks across every channel\nOne agent across all channels\nBuild agents that work where your customers are, whether it is voice, chat, SMS or WhatsApp.\nConsistent across touchpoints\nAgents remember context and move with the customer across every interaction.\nEvery agent is multimodal and multichannel\nAgents can understand and generate text, audio, images, and video while communicating seamlessly across multiple channels.\n~\nintegrations marquee\nConnect the tools that your business uses\nEasily integrate MCP servers and API based tools so every agent can work with your existing stack without extra effort.\nHubSpot\nSalesforce\nZoho CRM\nShopify\nZapier\nWoo\nStripe\nIntercom\nJira\nNotion\nAirtable\nHubSpot\nSalesforce\nZoho CRM\nShopify\nZapier\nWoo\nStripe\nIntercom\nJira\nNotion\nAirtable\nHubSpot\nSalesforce\nZoho CRM\nShopify\nZapier\nWoo\nStripe\nIntercom\nJira\nNotion\nAirtable\nHubSpot\nSalesforce\nZoho CRM\nShopify\nZapier\nWoo\nStripe\nIntercom\nJira\nNotion\nAirtable\nZendesk\nFreshdesk\nZoho Desk\nSlack\nGoogle Calendar\nCalendly\nServiceNow\nGitHub\nGoogle Sheets\nMongoDB\nBigQuery\nPostgreSQL\nZendesk\nFreshdesk\nZoho Desk\nSlack\nGoogle Calendar\nCalendly\nServiceNow\nGitHub\nGoogle Sheets\nMongoDB\nBigQuery\nPostgreSQL\nZendesk\nFreshdesk\nZoho Desk\nSlack\nGoogle Calendar\nCalendly\nServiceNow\nGitHub\nGoogle Sheets\nMongoDB\nBigQuery\nPostgreSQL\nZendesk\nFreshdesk\nZoho Desk\nSlack\nGoogle Calendar\nCalendly\nServiceNow\nGitHub\nGoogle Sheets\nMongoDB\nBigQuery\nPostgreSQL\n~\nai feature cards\nBuilt to support every customer interaction with ease\nKnowledge Base\nApps\nWebsite\nFiles\nSelect data source\nNotion\nFAQs\n9 pages\nPolicies\n3 pages\nBlog Posts\n124 posts\nConversations that sound like you and stay accurate\nAI agents adapt to your brand voice and pull answers from your latest knowledge base and connected data sources.\nAgent Handoff\nActive\nTransfer to human agent\nAssign to IT team\nTransfer to human\nAssign to\nSelect agent or team\nHuman Agents\nTeams\nSearch Agents\nIT Support\n(25 members)\nHuman in the loop\nEasily route conversations to the right support team when human help is needed. Assign by agent, team, or custom rules, without breaking the flow.\n07\nship it\none command \u00b7 production-ready\nStart building your AI agent now\nNo setup fees, no coding required.\nSign up for free\nTalk to sales\n\u203a no credit card\n\u203a free credits\n\u203a cancel anytime\n~/plivo\n02:27:52\n$\nplivo agents create --voice nova --language en-US\n\u2713 spinning up runtime ...\n\u2713 routing in 150+ countries\n\u2713 ready: agent id = ag_01HAZ7K2...\n$\nopen https://cx.plivo.com/agents/ag_01HAZ7K2\nagent deployed \u00b7\n5\nsteps\nquickstart \u2192\nPlatform\nAI Agents\nPricing\nCommunications\nVoice\nSMS\nWhatsApp\nChat\nAPI platform\nAPI login\nDocumentation\nPlatform status\nAPI reference\nResources\nBlog\nKnowledge base\nGet support\nSecurity\nCompany\nAbout\nJobs\nTalk to sales\nLegal\n\u00a9\n2026\nPlivo Inc.\nWe use cookies for analytics and marketing.\nLearn more\nReject\nManage\nAccept\nCookie preferences\nNecessary storage is always on. Use the toggles below to allow or deny\n            optional analytics and marketing technologies.\nNecessary\nRequired for security, form handling, theme preference, and saving your consent choices.\nAlways on\nAnalytics\nHelps us understand site usage and performance through analytics tags managed with Google Tag Manager.\nMarketing\nSupports lead attribution and marketing follow-up with HubSpot tracking cookies.\nLearn more about our cookies\nSave preferences\nAccept all",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/plivo/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Plivo - an opensource alternative to Twilio",
+          "url": "http://www.plivo.org/",
+          "points": 114,
+          "num_comments": 48,
+          "created_at": "2011-06-03T13:14:12Z",
+          "hn_url": "https://news.ycombinator.com/item?id=2616183"
+        },
+        {
+          "title": "Plivo (YC S12) launches scalable API platform for Voice & SMS Apps",
+          "url": "http://techcrunch.com/2012/07/09/yc-backed-plivo-launches-its-scalable-api-platform-for-voice-sms-apps/",
+          "points": 91,
+          "num_comments": 36,
+          "created_at": "2012-07-09T18:03:38Z",
+          "hn_url": "https://news.ycombinator.com/item?id=4219456"
+        },
+        {
+          "title": "Plivo makes it to 50 countries in 30 days, outstrips competition",
+          "url": "http://venturebeat.com/2012/08/13/plivo-makes-it-to-50-countries-in-30-days-outstrips-competition/",
+          "points": 88,
+          "num_comments": 45,
+          "created_at": "2012-08-14T00:12:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=4378801"
+        },
+        {
+          "title": "SIP Trunking to Replace My Landline Phone Using Plivo",
+          "url": "http://plivo.com/blog/sip-trunking-to-replace-my-landline-phone-using-plivo/",
+          "points": 71,
+          "num_comments": 32,
+          "created_at": "2013-07-29T17:17:25Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6122440"
+        },
+        {
+          "title": "Plivo (YC S12) raises 1.75 million from Andreessen Horowitz, SV Angel, others",
+          "url": "http://www.marketwire.com/press-release/-1732727.htm",
+          "points": 53,
+          "num_comments": 38,
+          "created_at": "2012-12-03T14:34:05Z",
+          "hn_url": "https://news.ycombinator.com/item?id=4865501"
+        },
+        {
+          "title": "Why Plivo Cloud is better than Twilio",
+          "url": "http://clintberry.com/2012/why-plivo-cloud-is-better-than-twilio/",
+          "points": 51,
+          "num_comments": 13,
+          "created_at": "2012-08-01T01:01:54Z",
+          "hn_url": "https://news.ycombinator.com/item?id=4320570"
+        },
+        {
+          "title": "Plivo Launches Bring Your Own Carrier",
+          "url": "http://plivo.com/blog/plivo-launches-bring-your-own-carrier/",
+          "points": 48,
+          "num_comments": 19,
+          "created_at": "2013-08-14T17:52:54Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6213087"
+        },
+        {
+          "title": "Plivo Targets Big Enterprises With 'Bring Your Own Carrier' Cloud Telephony",
+          "url": "http://www.forbes.com/sites/tomiogeron/2013/08/14/plivo-targets-big-enterprises-with-bring-your-own-carrier-cloud-telephony/",
+          "points": 38,
+          "num_comments": 29,
+          "created_at": "2013-08-14T16:04:16Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6212293"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Failed 11+ companies interviews been trying for almost 1 year finally got an offer",
+          "subreddit": "developersIndia",
+          "score": 1414,
+          "num_comments": 220,
+          "permalink": "https://reddit.com/r/developersIndia/comments/1n3wkx6/failed_11_companies_interviews_been_trying_for/",
+          "selftext": "Hey folks,\n\nJust wanted to share my interview journey so far. Not all stories are about cracking everything in one shot sometimes it\u2019s about failing again and again, and still hanging in there.\n\nHere\u2019s how it went for me:\n\nIndMoney \u2013 Recruiter reached out, made it till 3rd round, then rejected.\n\nPlivo \u2013 Rejected in the very first round.\n\nPlum \u2013 Same, first round out.\n\nSwiggy \u2013 Referral, cleared the online test\u2026 but never got a call after that.\n\nSyndr \u2013 First round rejection.\n\nFanCode (Dream11) \u2013"
+        },
+        {
+          "title": "\u201cLeBron takes all the credit for winning but none of the blame\u201d  another false narrative about GOAT James. Here\u2019s 6 minutes of LeBron taking all the blame \ud83d\udc10",
+          "subreddit": "lebron",
+          "score": 252,
+          "num_comments": 83,
+          "permalink": "https://reddit.com/r/lebron/comments/1nwkwqr/lebron_takes_all_the_credit_for_winning_but_none/",
+          "selftext": ""
+        },
+        {
+          "title": "With a 4-1 win over Hartford, the Bridgeport Islanders are Calder Cup playoffs bound for the first time in 4 years!",
+          "subreddit": "NewYorkIslanders",
+          "score": 136,
+          "num_comments": 13,
+          "permalink": "https://reddit.com/r/NewYorkIslanders/comments/1sjub5e/with_a_41_win_over_hartford_the_bridgeport/",
+          "selftext": "Please clap"
+        },
+        {
+          "title": "P\u0113d\u0113jais risin\u0101jums",
+          "subreddit": "okdraudzindauni",
+          "score": 122,
+          "num_comments": 13,
+          "permalink": "https://reddit.com/r/okdraudzindauni/comments/1sx596a/p\u0113d\u0113jais_risin\u0101jums/",
+          "selftext": ""
+        },
+        {
+          "title": "Vet du hva PLIVO er?",
+          "subreddit": "Politiet",
+          "score": 67,
+          "num_comments": 5,
+          "permalink": "https://reddit.com/r/Politiet/comments/1ohb80i/vet_du_hva_plivo_er/",
+          "selftext": "Vet du hva PLIVO er?\n\nPLIVO st\u00e5r for p\u00e5g\u00e5ende livstruende vold.\n\nHvert \u00e5r har n\u00f8detatene \u00f8velser sammen hvor vi trener p\u00e5 kriseh\u00e5ndtering.\n\nHer har du en liten snutt fra en av \u00f8velsene i \u00e5r."
+        },
+        {
+          "title": "Fanmade poster I made!",
+          "subreddit": "Spiderman",
+          "score": 61,
+          "num_comments": 6,
+          "permalink": "https://reddit.com/r/Spiderman/comments/1s9x52q/fanmade_poster_i_made/",
+          "selftext": "Took me a couple of days to make and has 170 layers total."
+        },
+        {
+          "title": "Title: Complete n8n Tools Directory (300+ Nodes) \u2014 Categorised List",
+          "subreddit": "n8n",
+          "score": 38,
+          "num_comments": 12,
+          "permalink": "https://reddit.com/r/n8n/comments/1mc9rei/title_complete_n8n_tools_directory_300_nodes/",
+          "selftext": "**Sharing a clean, categorised list of 300+ n8n tools/nodes for easy discovery.**\n\n**Communication &amp; Messaging**\n\nSlack, Discord, Telegram, WhatsApp, Line, Matrix, Mattermost, [Rocket.Chat](http://Rocket.Chat), Twist, Zulip, Vonage, Twilio, MessageBird, Plivo, Sms77, Msg91, Pushbullet, Pushcut, Pushover, Gotify, Signl4, Spontit, Drift\n\n**CRM &amp; Sales**\n\nSalesforce, HubSpot, Pipedrive, Freshworks CRM, Copper, Agile CRM, Affinity, Monica CRM, Keap, Zoho, HighLevel, Salesmate, SyncroMSP, Hal"
+        },
+        {
+          "title": "What we learned sending 50,000 tracking updates a day (best SMS platform for logistics)",
+          "subreddit": "logistics",
+          "score": 30,
+          "num_comments": 24,
+          "permalink": "https://reddit.com/r/logistics/comments/1ltvlej/what_we_learned_sending_50000_tracking_updates_a/",
+          "selftext": "I'm working at a logistics company that operates across four countries. On a typical day, we send 50,000+ SMS messages mostly tracking updates, delivery confirmations, and delay alerts.\n\nWe\u2019ve cycled through a few different SMS providers. Started with Plivo, tried Sinch, and eventually switched to Messente. Here\u2019s what we learned from the process.\n\n# What went wrong with the others\n\nPlivo worked fine at low volume, but as we grew, we started seeing issues:\n\n* Unexplained delivery failures  \n* No"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.plivo.com/pricing/",
+    "changelog": null,
+    "docs": "https://www.plivo.com/docs/",
+    "integrations": "https://www.plivo.com/integrations/",
+    "g2": "https://www.g2.com/products/plivo/reviews"
+  },
+  "analysis": {
+    "name": "Plivo",
+    "url": "https://plivo.com",
+    "tagline": "Build Voice AI Agents That Sound Human",
+    "value_proposition": "A communications platform offering both no-code and API-first tools to deploy human-like voice AI agents and programmable messaging across voice, SMS, WhatsApp, and chat.",
+    "target_segment": "dev / mid-market / enterprise",
+    "ideal_customer": "Engineering teams and ops-focused businesses that need scalable, low-latency voice AI agents or programmable communications APIs, especially in regulated industries requiring HIPAA/PCI compliance.",
+    "features": [
+      {
+        "name": "voice ai agent",
+        "description": "Fully managed AI-powered voice agents with sub-500ms latency for inbound and outbound calls",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "no-code agent studio",
+        "description": "Visual drag-and-drop builder to create, test, and deploy omni-channel AI agents without writing code",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "vibe agent builder",
+        "description": "Plain-English agent creation: describe the use case and the system builds the agent flow automatically",
+        "evidence_source": "integrations",
+        "tier": "paid"
+      },
+      {
+        "name": "programmable voice api",
+        "description": "Full REST/SDK API for building custom voice call flows, routing, and telephony logic",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "sms api",
+        "description": "Programmatic two-way SMS over long codes, short codes, and toll-free numbers",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "mms api",
+        "description": "Multimedia messaging API support",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "whatsapp business messaging",
+        "description": "WhatsApp Business API for marketing, utility, authentication, and service conversations",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "whatsapp voice calls",
+        "description": "Inbound and outbound voice calls over WhatsApp",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "rcs messaging",
+        "description": "Rich Communication Services messaging including rich media (images, cards)",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "web chat",
+        "description": "Website and in-app chat channel for AI agents",
+        "evidence_source": "integrations",
+        "tier": "paid"
+      },
+      {
+        "name": "text-to-speech (tts)",
+        "description": "Natural TTS voices with 30+ accents; bring-your-own TTS supported",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "speech-to-text (stt)",
+        "description": "ASR with 95%+ accuracy across accents and 50+ languages",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "automatic speech recognition",
+        "description": "Standalone ASR add-on billed per 15-second increment",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "real-time audio streaming",
+        "description": "Bi-directional audio stream with under 300ms latency for custom integrations",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "voice activity detection (vad)",
+        "description": "Detects when users start and stop speaking to enable natural conversation flow",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "turn detection",
+        "description": "Intelligent turn-taking that eliminates awkward pauses and handles interruptions",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "barge-in handling",
+        "description": "Detects and handles mid-sentence user interruptions gracefully",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "silence detection",
+        "description": "Identifies when a caller has gone silent to trigger appropriate agent responses",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "ai noise cancellation",
+        "description": "Background noise suppression on audio streams, included at no extra charge",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "bring your own llm",
+        "description": "Swap in a custom LLM instead of Plivo's managed model for voice agents",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "function calling / tool use",
+        "description": "Agents can call external APIs and tools during conversations; included free",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "knowledge base",
+        "description": "Connect docs, website, files, and app data as a retrieval source for agents; included free",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "call recording",
+        "description": "Record voice calls; free for 90 days of storage then per-minute fee",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "call transcription",
+        "description": "Post-call transcription of recorded calls",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "real-time transcription",
+        "description": "Live in-call transcription included with AI agent platform",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "call transfer",
+        "description": "Mid-call transfer to human agents or other endpoints; included free",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "conference calls",
+        "description": "Multi-party conference bridging at no per-minute add-on charge",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "answering machine detection",
+        "description": "Detects voicemail/AMD on outbound calls",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "call insights - basic",
+        "description": "Basic call analytics and quality metrics",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "call insights - premium",
+        "description": "Advanced call analytics at $0.0025/min",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "voice alerts",
+        "description": "Proactive real-time monitoring that detects critical call quality issues and alerts operators",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "cnam lookup",
+        "description": "Caller ID name lookup and assignment for US phone numbers",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "verify api",
+        "description": "OTP/phone verification API with configurable brand name, app hash, and code length",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "sip trunking (zentrunk)",
+        "description": "SIP trunking product for connecting existing telephony infrastructure",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "browser sdk",
+        "description": "In-browser voice calls via WebRTC SDK",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "mobile sdk",
+        "description": "Native mobile SDK for voice integration in iOS/Android apps",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "bring your own carrier",
+        "description": "Connect your own carrier/trunk to the Plivo platform",
+        "evidence_source": "other",
+        "tier": "enterprise"
+      },
+      {
+        "name": "number masking",
+        "description": "Proxy/number masking API to connect parties without revealing real numbers",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "phone number provisioning",
+        "description": "Self-service rental of local, toll-free, and short-code numbers across 150+ countries",
+        "evidence_source": "pricing",
+        "tier": "paid"
+      },
+      {
+        "name": "geo permissions management",
+        "description": "Console UI to control which geographies are permitted for outbound voice",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "india domestic number compliance",
+        "description": "Self-service compliance application and automated activation for Indian phone numbers",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "toll-free verification",
+        "description": "Dedicated workflow for US toll-free number verification profiles",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "multilingual support",
+        "description": "50+ languages across TTS and STT; included free in AI agent platform",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "tone and hallucination control",
+        "description": "Agent configuration to manage response tone and suppress hallucinations",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "auto simulations and evals",
+        "description": "Automated conversation simulations to evaluate and improve agent performance",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "real-time observability",
+        "description": "Live monitoring dashboard for agent conversations and platform metrics",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "goal-based optimization",
+        "description": "Continuous agent improvement loop driven by defined outcome goals",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "agent templates",
+        "description": "Pre-built templates for appointment booking, customer support, lead qualification, payment reminders",
+        "evidence_source": "integrations",
+        "tier": "all"
+      },
+      {
+        "name": "multichannel agent deployment",
+        "description": "Single agent deployed simultaneously across voice, SMS, WhatsApp, and web chat",
+        "evidence_source": "integrations",
+        "tier": "paid"
+      },
+      {
+        "name": "cross-channel context preservation",
+        "description": "Agents maintain conversation context when a customer moves across channels",
+        "evidence_source": "integrations",
+        "tier": "paid"
+      },
+      {
+        "name": "mcp server integrations",
+        "description": "Connect Model Context Protocol servers to extend agent tool access",
+        "evidence_source": "integrations",
+        "tier": "paid"
+      },
+      {
+        "name": "rbac",
+        "description": "Role-based access control for console and account management",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "audit logs",
+        "description": "Full access logs for compliance and security review",
+        "evidence_source": "landing",
+        "tier": "paid"
+      },
+      {
+        "name": "data residency",
+        "description": "Choose data storage region: US, EU, or APAC",
+        "evidence_source": "landing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "encryption at rest and in transit",
+        "description": "TLS for data in transit; AES-256 for data at rest",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "hipaa compliance",
+        "description": "HIPAA-compliant infrastructure for healthcare use cases",
+        "evidence_source": "landing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "gdpr compliance",
+        "description": "GDPR-compliant data handling",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "soc 2 certification",
+        "description": "SOC 2 certified platform",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "pci dss compliance",
+        "description": "PCI DSS compliance for payment-related use cases",
+        "evidence_source": "landing",
+        "tier": "enterprise"
+      },
+      {
+        "name": "self-service account security management",
+        "description": "Console UI for managing account security settings and user profile directly",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "dynamic usage-based pricing",
+        "description": "Automated tiered pricing that lowers per-unit cost as usage volume increases",
+        "evidence_source": "changelog",
+        "tier": "paid"
+      },
+      {
+        "name": "spending limits",
+        "description": "Account-level spending cap controls",
+        "evidence_source": "pricing",
+        "tier": "all"
+      },
+      {
+        "name": "voice outbound invoice breakdown",
+        "description": "Detailed per-country spending breakdown on voice outbound invoices",
+        "evidence_source": "changelog",
+        "tier": "all"
+      },
+      {
+        "name": "one-hop global routing",
+        "description": "Single-hop call routing across 150+ countries to minimize latency",
+        "evidence_source": "landing",
+        "tier": "all"
+      }
+    ],
+    "integrations": [
+      "HubSpot",
+      "Salesforce",
+      "Zoho CRM",
+      "Shopify",
+      "Zapier",
+      "WooCommerce",
+      "Stripe",
+      "Intercom",
+      "Jira",
+      "Notion",
+      "Airtable",
+      "Zendesk",
+      "Freshdesk",
+      "Zoho Desk",
+      "Slack",
+      "Google Calendar",
+      "Calendly",
+      "ServiceNow",
+      "GitHub",
+      "Google Sheets",
+      "MongoDB",
+      "BigQuery",
+      "PostgreSQL"
+    ],
+    "differentiators": [
+      "Sub-500ms voice latency via one-hop global routing",
+      "99.99% platform uptime SLA",
+      "Bring-your-own LLM architecture \u2014 full model flexibility",
+      "Modular stack: swap individual components (ASR, TTS, LLM) independently",
+      "Dual build paths: no-code Vibe/Studio builder AND full programmable API in the same platform",
+      "Multichannel single-agent deployment across voice, SMS, WhatsApp, and chat simultaneously",
+      "AI noise cancellation included at no extra cost",
+      "Real-time bi-directional audio streaming at <300ms",
+      "Self-improving agents with auto simulations, evals, and goal-based optimization",
+      "150+ countries connected with single-hop routing",
+      "HIPAA + PCI DSS + SOC 2 + GDPR + STAR compliance stack"
+    ],
+    "recent_ships": [
+      {
+        "date": "2025-01",
+        "what": "Dynamic usage-based pricing with automated volume discounts",
+        "source": "Unlock Flexible Rates with Dynamic Usage-Based Pricing \u2014 changelog Jan 6 2025"
+      },
+      {
+        "date": "2024-11",
+        "what": "Automated Indian phone number activation post-compliance approval",
+        "source": "Automated Indian Phone Number Activation is Now Live \u2014 changelog Nov 12 2024"
+      },
+      {
+        "date": "2024-11",
+        "what": "Self-service account security and profile management in console",
+        "source": "Enhanced Self-Service Account Security and Profile Management \u2014 changelog Nov 5 2024"
+      },
+      {
+        "date": "2024-10",
+        "what": "Expanded CNAM coverage and API support for all US-based numbers",
+        "source": "Expanded CNAM Coverage and API Support Now Available \u2014 changelog Oct 11 2024"
+      },
+      {
+        "date": "2024-10",
+        "what": "Per-country spending breakdown on voice outbound invoices",
+        "source": "Enhanced Transparency for Voice Outbound Invoices \u2014 changelog Oct 8 2024"
+      },
+      {
+        "date": "2024-09",
+        "what": "Verify API new parameters: brand name, AppHash, code length",
+        "source": "New Parameters Added to Verify API \u2014 changelog Sep 30 2024"
+      },
+      {
+        "date": "2024-09",
+        "what": "Revamped geo permissions UI for Voice API in console",
+        "source": "Enhanced Geo Permissions Experience Now Available \u2014 changelog Sep 24 2024"
+      },
+      {
+        "date": "2024-09",
+        "what": "Voice Alerts for proactive real-time call quality monitoring",
+        "source": "Proactive Voice Call Monitoring with Voice Alerts Now Available \u2014 changelog Sep 10 2024"
+      },
+      {
+        "date": "2024-08",
+        "what": "India domestic number self-service compliance application in console",
+        "source": "Rent India Domestic Numbers Directly on Plivo Console \u2014 changelog Aug 28 2024"
+      },
+      {
+        "date": "2024-08",
+        "what": "Streamlined toll-free verification profile workflow",
+        "source": "Streamlined Toll-Free Verification Profile Workflow Now Live \u2014 changelog Aug 27 2024"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Early positioning as open-source/cheaper Twilio alternative resonated with developer community (HN: 'Plivo - an opensource alternative to Twilio', 114 upvotes)",
+        "Fast international expansion praised: 'Plivo makes it to 50 countries in 30 days, outstrips competition' (HN, 88 upvotes)",
+        "Developer-friendly API platform highlighted positively: 'Why Plivo Cloud is better than Twilio' (HN, 51 upvotes)",
+        "Bring Your Own Carrier feature noted as enterprise-relevant differentiator (HN, 48 upvotes)"
+      ],
+      "complaints": [
+        "No specific product complaints surfaced from available Reddit or G2 data (G2 page did not load; Reddit results were off-topic)"
+      ],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing_signal": {
+      "model": "self-serve",
+      "tier_count": 2,
+      "lowest_paid_seat": null,
+      "free_tier": "$10 in free credits, no credit card required; pay-as-you-go thereafter with no monthly minimum"
+    }
+  }
+}

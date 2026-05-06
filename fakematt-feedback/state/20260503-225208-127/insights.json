@@ -1,0 +1,356 @@
+{
+  "target": "http://127.0.0.1:5151/?period=7d",
+  "kind": "local_url",
+  "captures": [
+    {
+      "url": "http://127.0.0.1:5151/?period=7d",
+      "final_url": "http://127.0.0.1:5151/?period=7d",
+      "title": "Zerglytics — Dashboard",
+      "h1": "Visitor analytics",
+      "headings": [
+        "Visitor analytics",
+        "What changed\nAI SUMMARY · VS PRIOR PERIOD",
+        "Visitors over time\nDISTINCT VISITORS PER BUCKET · — PRIOR PERIOD",
+        "Top pages\nBY VISITORS",
+        "Top sources\nREFERRER HOST",
+        "Top countries\nVIA EDGE GEO",
+        "Devices, browsers & OS\nSHARE OF VISITORS",
+        "Top campaigns\nUTM_SOURCE",
+        "Campaign matrix\nCAMPAIGN · MEDIUM · SOURCE — VISITORS DRIVEN",
+        "Goals\nCONVERSION EVENTS · % OF VISITORS",
+        "Signup funnel\nHOMEPAGE → PRICING → SIGNUP → COMPLETED",
+        "Deploys & previews\nCI EVENTS FROM GITHUB ACTIONS"
+      ],
+      "primary_cta": "Export CSV ↓",
+      "forms": [],
+      "links_sample": [
+        "http://127.0.0.1:5151/api/export.csv?domain=zergboard.com&period=7d"
+      ],
+      "console": [],
+      "network_errors": [],
+      "axe_violations": [
+        {
+          "id": "aria-required-children",
+          "impact": "critical",
+          "help": "Certain ARIA roles must contain particular children",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-children?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<div class=\"period\" role=\"tablist\" aria-label=\"Time period\">"
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "node_count": 6,
+          "first_node_html": "<div class=\"delta up-good\" id=\"delta-visitors\">▲ 200.0% vs prior</div>"
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<h3>\n      What changed <span class=\"hint\">AI summary · vs prior period</span>\n    </h3>"
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "help": "Document should have one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<html lang=\"en\">"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "help": "All page content should be contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+          "node_count": 11,
+          "first_node_html": "<h3>\n      What changed <span class=\"hint\">AI summary · vs prior period</span>\n    </h3>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 11,
+        "load_event_ms": 23,
+        "transfer_size_kb": 7,
+        "encoded_body_size_kb": 7
+      },
+      "text_excerpt": "ZERGLYTICS\nPRIVACY-FIRST · NO COOKIES · DAILY-ROTATED HASHES\n\nADMIN · ANALYTICS\n\nVisitor analytics\n\nPageviews, sources, and outcomes — without tracking anyone.\n\nzergboard.com\n24H\n7 DAYS\n30 DAYS\n6 MO\n12 MO\nAUTO-REFRESH\nExport CSV ↓\n0 active right now LAST 5 MIN\nQuiet right now.\n\nUNIQUE VISITORS\n\n447\n▲ 200.0% vs prior\n\nTOTAL PAGEVIEWS\n\n447\n▲ 200.0% vs prior\n\nBOUNCE RATE\n\n100%\n• 0.0 pp vs prior\n\nAVG SESSION\n\n0s\nno prior data\nWhat changed\nAI SUMMARY · VS PRIOR PERIOD\n/case-studies pulled in 142 visitors, up 220% vs prior week — driven by linkedin.com referrals\nDirect traffic to / fell from 180 to 95 visitors as paid sources took over\nThe blog-launch campaign on LinkedIn outperformed Twitter 2:1 (89 vs 41 visitors)\nUS share held steady at 78%; no surprises in geo mix\nBounce rate flat at 84% — engagement profile didn't shift\nGENERATED 4M AGO · CACHED\nREFRESH\nVisitors over time\nDISTINCT VISITORS PER BUCKET · — PRIOR PERIOD\n80\n60\n40\n20\n0\n04-27\n04-28\n04-29\n04-30\n05-01\n05-02\n05-03\n05-04\nTop pages\nBY VISITORS\n/pricing\n122\n/case-studies\n113\n/\n110\n/security\n102\nTop sources\nREFERRER HOST\nx.com\n120\ngoogle.com\n116\nDirect / None\n115\nlinkedin.com\n96\nTop countries\nVIA EDGE GEO\n🇺🇸 US\n447\nDevices, browsers & OS\nSHARE OF VISITORS\nDEVICES\nDesktop\n447\nBROWSERS\nChrome\n447\nOS\nMacos\n447\nTop campaigns\nUTM_SOURCE\nDirect / None\n224\nlinkedin\n112\ntwitter\n111\nCampaign matrix\nCAMPAIGN · MEDIUM · SOURCE — VISITORS DRIVEN\nCAMPAIGN\tMEDIUM\tSOURCE\tVISITORS\tPAGEVIEWS\nblog-launch\tsocial\tlinkedin\t112\t112\nblog-launch\tsocial\ttwitter\t111\t111\n\nTag links with ?utm_campaign=…&utm_medium=…&utm_source=… on the share side to populate this table.\n\nGoals\nCONVERSION EVENTS · % OF VISITORS\nNo goals fired yet — call window.zb('your_goal_name') from your page.\n\nFire goals from the page with window.zb('signup_completed', { plan: 'team' })\n\nSignup funnel\nHOMEPAGE → PRICING → SIGNUP → COMPLETED\n1. Visited homepage\n110\n2. Read pricing or CSP\n122\n· 110.9% of prev\n↓ -10.9% drop\n3. Read a case study\n113\n· 92.6% of prev\n↓ 7.4% drop\n4. Clicked an outbound link\n0\n· 0% of prev\n↓ 100% drop\nDeploys & previews\nCI EVENTS FROM GITHUB ACTIONS\nNo deploys yet — merge a PR to ship one.\n\nEach merge to main pings POST /api/deploy. PRs ship preview URLs you can hit before merge.\n\nPrivacy posture. No cookies on the visitor side. No raw IP or user-agent stored. Visitor identity is SHA256(daily_salt + ip + ua + domain), truncated to 16 chars; the salt rotates every UTC day, so the same person tomorrow is counted as a new visitor. Referrers are reduced to hostname only. URLs strip query strings before storage. Country comes from the edge (CF or Vercel headers) — no geoip lookup, no IP retention.",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "24H",
+          "selector": "button",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/interactions/home_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/interactions/home_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "7 DAYS",
+          "selector": "button.active",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/interactions/home_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/interactions/home_int1_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "30 DAYS",
+          "selector": "button",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/interactions/home_int2_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/interactions/home_int2_after.png"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": "div.period[role='tablist']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "The period selector implements role='tablist' but does not contain required role='tab' children. This is a critical ARIA pattern violation that breaks screen reader navigation—assistive tech announces a tab control but cannot enumerate or select any tabs. Keyboard users receive no indication of which period is active.",
+      "suggested_fix": "Replace the tablist pattern with a proper implementation: wrap each period button in role='tab', add aria-selected='true' to the active tab, set tabindex='0' on the active tab and tabindex='-1' on inactive tabs, and add arrow-key navigation that moves focus and updates aria-selected. Alternatively, if tab semantics aren't needed, use role='group' with aria-label='Time period' and mark buttons with aria-pressed to indicate toggle state.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0110"
+      ],
+      "target_kind_relevance": "All dashboards with time-range controls need accessible navigation patterns.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": "div.delta",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "Six delta indicators (e.g., '▲ 200.0% vs prior') fail WCAG AA color contrast requirements. The axe scan flags these as serious violations. Low-contrast deltas are unreadable for users with low vision and in bright mobile environments, making period-over-period comparison—a core dashboard function—unusable for a meaningful segment of users.",
+      "suggested_fix": "Increase contrast to meet 4.5:1 minimum for normal text. If the current green/red delta colors are brand-locked, darken them or add a semi-transparent dark background behind the text. Test final values with a contrast checker (e.g., WebAIM tool) and verify all six flagged nodes pass.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0001",
+        "p-0095"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": "h3:first-of-type",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "Heading hierarchy jumps from h1 ('Visitor analytics') directly to h3 ('What changed'), skipping h2. Screen reader users rely on heading levels to build a mental model of page structure; skipping levels breaks this navigation pattern and triggers an axe moderate violation.",
+      "suggested_fix": "Either demote the h3 tags to h2 (if these are true top-level sections), or insert a visually-hidden h2 above the first h3 to maintain semantic structure. If the visual hierarchy requires different sizing, use CSS to style h2 elements to match the current h3 appearance.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": "body",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "The page has no main landmark and 11 content nodes are not wrapped in semantic landmarks (main, nav, aside). Screen reader users cannot jump to primary content or skip repeated UI, and the structure is opaque to assistive tech. This is flagged as a moderate axe violation but impacts daily navigation efficiency for AT users.",
+      "suggested_fix": "Wrap the dashboard content area (starting at 'Visitor analytics' heading) in a <main> element. If the top bar ('ADMIN · ANALYTICS') is navigation, mark it with <nav> and aria-label='Primary navigation'. Wrap any sidebar or supplementary content in <aside>. This gives AT users clear skip-to-main functionality and explicit content regions.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0106"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": ".funnel-step, .delta",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "Delta formatting is inconsistent across the dashboard. Metric cards show '▲ 200.0% vs prior' with an arrow prefix, while funnel steps show '· 110.9% of prev' with a bullet prefix and different wording ('vs prior' vs 'of prev'). This inconsistency forces users to parse different comparison patterns in each section, increasing cognitive load.",
+      "suggested_fix": "Standardize on a single delta format across all sections. Recommended pattern: '{arrow} {value}% vs prior' for all period-over-period comparisons. If the funnel logic differs (step-to-step vs period-over-period), use a distinct label like 'vs previous step' to signal the different baseline, but keep the arrow-value-label structure consistent.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0022",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "interaction",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": "button:contains('AUTO-REFRESH')",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "The 'AUTO-REFRESH' control does not indicate its current state. Users cannot tell whether auto-refresh is currently enabled or disabled without clicking it and observing behavior. This ambiguity is especially problematic in a monitoring dashboard where refresh behavior directly affects data freshness.",
+      "suggested_fix": "Change the button label to reflect state: 'Auto-refresh: ON' or 'Auto-refresh: OFF'. Add aria-pressed='true|false' to expose toggle state to assistive tech. Consider a more explicit toggle UI (switch or checkbox) if space permits, as these afford clearer on/off semantics than a text button.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P2",
+      "category": "empty_state",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": "section:contains('No goals fired')",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "The 'No goals fired yet' empty state is passive—it states what's missing but doesn't guide the admin on next steps. The follow-up instruction ('Fire goals from the page with window.zb…') is present but visually subordinate, making the path forward less obvious than it should be for a first-time user.",
+      "suggested_fix": "Restructure the empty state to lead with the action: 'Set up your first goal' as a heading, followed by the code snippet in a highlighted code block, and a 'View documentation' link if docs exist. Alternatively, show a working example ('Track signups: window.zb(\"signup_completed\", { plan: \"team\" })') as a copyable snippet with a button to copy to clipboard.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0074",
+        "p-0109"
+      ],
+      "target_kind_relevance": "Applies to all dashboards with instrumentation-dependent features.",
+      "role_assumption": "Assumes viewer is an admin who can add tracking code."
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": ".metric-card .delta",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "In the metric cards (Unique Visitors, Total Pageviews, etc.), the large primary number (e.g., '447') and the delta ('▲ 200.0% vs prior') have similar visual weight, making it unclear which value is the current metric and which is the comparison. The delta should be visually subordinate to the primary value.",
+      "suggested_fix": "Reduce the delta text size by at least 2 steps in the type scale, and reduce opacity to 0.7 or use a lighter grey. This creates clear hierarchy: the primary metric dominates, and the delta reads as supporting context. Refer to Refactoring UI's hierarchy guidance on using both size and color for emphasis.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0093",
+        "p-0096"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": "table th",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "The Campaign matrix table displays column labels (CAMPAIGN, MEDIUM, SOURCE, VISITORS, PAGEVIEWS) but these are not marked up as <th> elements. Screen readers cannot associate data cells with their column headers, making the table structure illegible to AT users navigating cell-by-cell.",
+      "suggested_fix": "Wrap the first row in <thead> and mark each column label as <th scope='col'>. Wrap the data rows in <tbody>. This allows screen readers to announce 'Campaign: blog-launch' instead of just 'blog-launch', providing essential context for each cell.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": "section:contains('Top pages')",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "The 'Top pages' and 'Top sources' lists show raw counts but no context on what share of total traffic each represents. Adding a visual share indicator (bar chart or percentage) would allow admins to quickly assess traffic concentration without doing mental math across multiple sections.",
+      "suggested_fix": "Add a horizontal bar behind each row, scaled to the max value in that section, and optionally show the percentage in parentheses after the count: '/pricing 122 (27%)'. This is a common pattern in analytics tools (Plausible, Fathom) and improves scannability without requiring additional table columns.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106",
+        "p-0110"
+      ],
+      "target_kind_relevance": "Useful for any dashboard displaying ranked lists of items.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": ".period button",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_mobile.png"
+      },
+      "finding": "The period selector buttons (24H, 7 DAYS, 30 DAYS, 6 MO, 12 MO, AUTO-REFRESH) are likely to overflow or wrap awkwardly on mobile viewports, especially if labels are long. The mobile screenshot should confirm whether horizontal scroll or button wrapping occurs.",
+      "suggested_fix": "If overflow is present, implement a horizontal scrollable button group (overflow-x: auto with scroll-snap-type: x mandatory) so users can swipe through period options on touch devices. Ensure the active button is scrolled into view on page load. Alternatively, collapse less-used periods (6 MO, 12 MO) into a dropdown on small screens.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0058",
+        "p-0010"
+      ],
+      "target_kind_relevance": "Mobile layout concern, not relevant to desktop-only users.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "http://127.0.0.1:5151/?period=7d",
+        "selector": ".hint",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260503-225208-127/screenshots/home_desktop.png"
+      },
+      "finding": "Hint labels use midpoint bullets ('·') as separators, which render inconsistently across fonts and may be unclear to non-native English readers. The pattern 'AI SUMMARY · VS PRIOR PERIOD' reads as a title-subtitle pair but the relationship is ambiguous—is 'vs prior period' a filter on the summary or a clarification of the comparison baseline?",
+      "suggested_fix": "Replace midpoint separators with em dashes or parentheses for clearer grouping: 'AI summary — vs prior period' or 'AI summary (vs prior period)'. If the hint structure is consistent across all sections, consider a lighter color or smaller size to further distinguish it from primary headings.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0011"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    }
+  ],
+  "rejected": []
+}

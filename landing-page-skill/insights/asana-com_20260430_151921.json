@@ -1,0 +1,126 @@
+{
+  "url": "https://asana.com",
+  "company": "Asana",
+  "tagline": "Supercharge your teams with AI that gets work done",
+  "subheadline": "Give your teams AI that understands their work, keeps projects moving, and gets better the more your teams use it.",
+  "value_proposition": "An AI-powered work management platform that helps teams plan, track, and automate projects while connecting individual tasks to company-wide goals.",
+  "target_audience": "Enterprise and mid-market teams across marketing, operations, IT, and leadership \u2014 particularly companies looking to integrate AI into existing workflows",
+  "primary_cta": {
+    "text": "Get started",
+    "placement": "hero and nav"
+  },
+  "secondary_cta": {
+    "text": "View demo",
+    "placement": "hero and nav"
+  },
+  "social_proof": {
+    "logos": [
+      "Danone",
+      "KENDO",
+      "Spotify",
+      "Gannett"
+    ],
+    "testimonials": [
+      "Asana makes everything shareable, which saves us time executing programs because it's so much easier to replicate and learn from what others have done. \u2014 Simon Levinson, Danone",
+      "To hit our ambitious growth target, we need to move fast. But we can't do it without clear processes that remove as many blockers as possible. \u2014 Romain Ehrhard, KENDO",
+      "Asana is our air traffic control. We have the visibility to scale production and support a higher number of ad campaigns to support our revenue goals. \u2014 Eugenia Contreras, Spotify",
+      "Having one centralized ecosystem that brings all doers and stakeholders together has really accelerated our understanding of the work we do. \u2014 Steven Tai, Gannett"
+    ],
+    "metrics": [
+      "85% of Fortune 100 companies choose Asana",
+      "300+ integrations",
+      "More than 12,000 user reviews"
+    ],
+    "press": [
+      "Forrester Wave: Collaborative Work Management Tools 2025 \u2014 Leader",
+      "Gartner Magic Quadrant for Collaborative Work Management 2025 \u2014 Leader (three years in a row)"
+    ]
+  },
+  "pricing": {
+    "model": "freemium with self-serve and contact-sales tiers",
+    "tiers": [
+      "Personal",
+      "Starter",
+      "Advanced",
+      "Enterprise"
+    ],
+    "price_anchoring": "Free personal tier lowers barrier to entry; enterprise tier requires sales contact, implying high value; analyst recognition (Forrester, Gartner) used to justify premium positioning"
+  },
+  "features": [
+    "AI Teammates \u2014 autonomous AI agents that handle work end-to-end",
+    "AI Studio \u2014 build and configure AI workflows",
+    "Goals and reporting \u2014 connect team work to company-level OKRs",
+    "Workflows and automation \u2014 standardize and automate cross-department processes",
+    "Resource management \u2014 visualize team capacity and staffing"
+  ],
+  "differentiators": [
+    "AI that 'understands their work' and 'gets better the more your teams use it' \u2014 implying contextual, compounding intelligence",
+    "'The only platform that can support your company at any scale'",
+    "Asana Gov \u2014 FedRAMP-compliant offering for government agencies",
+    "Human + AI collaboration framing \u2014 positions AI as teammate, not just tool",
+    "85% of Fortune 100 companies use Asana"
+  ],
+  "trust_signals": [
+    "Forrester Wave Leader 2025",
+    "Gartner Magic Quadrant Leader 2025 \u2014 three consecutive years",
+    "12,000+ user reviews on review platforms",
+    "85% of Fortune 100 companies",
+    "Asana Gov \u2014 compliance-grade product for government",
+    "Trust and security page linked in footer",
+    "CPRA/privacy compliance signals in cookie consent UI"
+  ],
+  "navigation": [
+    "Product",
+    "Solutions",
+    "Learning & support",
+    "Pricing",
+    "Contact sales",
+    "Log in",
+    "Get started"
+  ],
+  "design_patterns": {
+    "layout": "Full-width hero with centered headline, tabbed use-case section, horizontal scrolling carousel for case studies, three-column feature grid, analyst badge row, footer with extensive site map",
+    "color_scheme": "Coral/red-pink primary brand color against white backgrounds; dark navy for text; muted grays for secondary content",
+    "typography": "Clean, modern sans-serif; large bold hero headlines; medium-weight subtext; small caps used for section labels",
+    "visual_style": "Minimal and professional with aspirational AI-forward messaging; warm but enterprise-grade",
+    "notable_patterns": [
+      "Tab-switching hero section segmented by team role (Marketing, Operations, IT, Leadership)",
+      "Horizontal scrolling use-case carousel",
+      "Testimonial carousel with company size and industry metadata",
+      "Analyst badge triptych (Forrester, Gartner, G2)",
+      "Cookie consent modal with granular privacy controls"
+    ]
+  },
+  "emotional_tone": "Aspirational and confident \u2014 positions AI as an amplifier of human potential rather than a replacement; enterprise-authoritative without being cold",
+  "key_objections_addressed": [
+    "Scale concerns \u2014 'the only platform that can support your company at any scale'",
+    "Security/compliance for regulated industries \u2014 Asana Gov callout",
+    "AI adoption anxiety \u2014 framed as 'human + AI collaboration', not automation replacing people",
+    "Switching cost hesitation \u2014 300+ integrations with existing enterprise tools",
+    "Complexity \u2014 'Get started easily' section with demo, templates, and help articles"
+  ],
+  "missing_or_weak": [
+    "No visible pricing on the homepage \u2014 users must navigate to a separate pricing page, adding friction",
+    "Testimonials lack quantified outcomes (e.g., '40% faster campaign delivery') \u2014 qualitative only",
+    "AI differentiation is vague \u2014 'gets better the more your teams use it' is not explained mechanically",
+    "No free trial CTA with a time bound (e.g., '30-day free trial') \u2014 'Get started' is ambiguous",
+    "Social proof logos are limited to four named companies; no logo wall of recognizable brands",
+    "No video embed or product walkthrough in the hero \u2014 demo is gated behind a click",
+    "Competitor comparison or 'why switch from X' content is absent"
+  ],
+  "standout_elements": [
+    "Role-based hero tabs (Marketing/Operations/IT/Leadership) create immediate relevance segmentation",
+    "Analyst trifecta (Forrester + Gartner + G2) displayed together is unusually strong third-party validation",
+    "Asana Gov differentiates meaningfully for a large, underserved enterprise segment",
+    "'Human + AI collaboration' platform framing is resonant and timely without being hyperbolic",
+    "85% of Fortune 100 stat is a powerful, specific credibility anchor placed early in the page"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 9,
+    "conversion_focus": 7,
+    "differentiation": 6,
+    "overall": 7
+  },
+  "analyzed_at": "2026-04-30T15:19:21.572722"
+}

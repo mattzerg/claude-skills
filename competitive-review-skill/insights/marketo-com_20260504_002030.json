@@ -1,0 +1,729 @@
+{
+  "name": "Adobe Marketo Engage",
+  "url": "https://marketo.com",
+  "domain": "marketo.com",
+  "scanned_at": "2026-05-04T00:15:04.659306",
+  "sources": {
+    "landing": {
+      "url": "https://marketo.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://marketo.com/\nCall log:\n  - navigating to \"https://marketo.com/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "pricing": {
+      "url": "https://www.adobe.com/products/marketo.html",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.adobe.com/products/marketo.html\nCall log:\n  - navigating to \"https://www.adobe.com/products/marketo.html\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "changelog": {
+      "url": "https://experienceleague.adobe.com/docs/marketo/using/release-notes/current.html",
+      "title": "Current Release Notes | Adobe Marketo Engage",
+      "text": "Current Release Notes | Adobe Marketo Engage\nDocumentation\nMarketo Engage\nMarketo Guide\nRelease Notes: March 2026\nLast update:\nApril 9, 2026\nBookmark\nSign-in to bookmark\nCopy link\nCopy link URL\nTopics:\nRelease Information\nBelow you\u2019ll find all the features included in the March '26 release. Check your Adobe Marketo Engage edition for feature availability.\nThe Release Notes specifically for Adobe Dynamic Chat\ncan be found here\n.\nStandard Release Cycle Features\nThe following features fall under the standard release cycle and will start to be released on\nMarch 27, 2026\n, with a phased rollout of remaining features over the subsequent weeks. Release features and dates are subject to change. Please check next to each feature for its status.\nFeature\nStatus\nDocumentation\nEmail Designer - Manage Brands (beta)\n: Generate email content based on your organization/brand's specific copywriting guidelines.\nReleased\nCreate and manage brands\nEmail Designer - Quick Actions\n:\nParity with the old email editor\n. Quick actions are now available for all Email Designer assets (emails, email templates, fragments). Supported quick actions include: Duplicate, Delete, Move, Create/Edit Draft.\nReleased\nn/a\nEmail Designer - Outlook Rendering Fix\n: This update fixes rendering issues, especially in MS Outlook. Advanced HTML Mode allows you to make minor HTML/CSS edits or add script tags to your email template.\nReleased\nEdit email templates with the advanced HTML editor\nEmail Designer - Brand Quality Checker\n: Assess general content quality to identify potential issues with readability, content cohesiveness, and effectiveness, independent of your brand guidelines.\nComing Soon\nComing Soon\nPicklist Management\n: You can now specify the values that can be used in fields in Marketo Engage.\nComing Soon\nComing Soon\nPush Notifications\n: Redirect URLs configured in Push notification messages now support Marketo Engage tokens (applicable to\nLaunch App URLs\nonly).\nComing Soon\nComing Soon\nAnnouncements\nSEO Feature Deprecation\n: On Tuesday, March 31, 2026, Marketo Engage will deprecate the Search Engine Optimization feature (SEO). If you don\u2019t actively use SEO, you don\u2019t have to do anything. If you have used SEO recently, you have the option of exporting your data.\nLearn more\n.\nREST API Merge Leads limit\n: Beginning March 31, 2026, calls that include more than 25 IDs in the leadIds parameter of a Merge Leads API call will result in a 1080 error code, and the call will be skipped. Jobs requiring the merger of more than 25 records into one should be split into multiple jobs to ensure the success of those calls.\nRest API \u2018access_token\u2019 Parameter Deprecation\n: The\naccess_token\nquery parameter used to authenticate Marketo REST API calls is being deprecated and will not be available after July 31, 2026. All new and existing integrations should authenticate REST API calls using the \u2018Authorization\u2019 header,\nas described here\n.\nSOAP API Deprecation\n: Support for the Marketo SOAP API will end on July 31, 2026. Services which use SOAP API capabilities should be migrated to the\nREST API\n.\nPrevious page\nRelease Schedule\nNext page\nDynamic Chat Release\nTable of contents\nMarketo Engage\nExpand all sections\nHome\nGetting Started with Marketo Engage\nWhat is Adobe Marketo Engage?\nInitial Setup\nSetup Steps\nConfigure Protocols\nUser Setup\nImplementing a New Marketo Engage Instance\nWhere to Start\nNew Instance Best Practices: Admin Section Checklist\nNew Instance Best Practices: Database Checklist\nNew Instance Best Practices: Design Studio Checklist\nNew Instance Best Practices: Marketing Activities Checklist\nNew Instance Best Practices: Analytics Checklist\nNew Instance Best Practices: Document Your Setup\nThings to Know\nMarketo Engage glossary\nIcon glossary\nClassic icon glossary\nHelp center\nSubscribe to system status notifications\nQuick Wins\nGet Set up and Add a Person\nSend an Email\nLanding Page with a Form\nSimple Scoring\nEmail Auto-Response\nImport a List of People\nDrip, Drip, Nurture\nPersonalize an Email\nAlert the Sales Rep\nUpdate Person Data\nRedirect a Landing Page\nAutomate an Alert for Possible Duplicate People\nInheriting a Marketo Engage Instance\nWhere to Start\nInherited Instance: Admin Section Checklist\nInherited Instance: Database Checklist\nInherited Instance: Design Studio Checklist\nInherited Instance: Marketing Activities Checklist\nInherited Instance: Document Your Setup\nReviewing Core Skills\nProduct Docs\nMarketo AI\nOverview\nSettings and Setup\nAgents\nImport leads\nProgram QA\nAdministration\nSetup\nFind Out What Permissions You Have\nMinimum System Requirements\nMunchkin\nSupported Browsers\nAdditional Integrations\nAdd Adobe Connect as a LaunchPoint Service\nAdd Google AdWords as a Launchpoint Service with a Manager Account\nAdd Google AdWords as a LaunchPoint Service\nAdd GoToWebinar as a LaunchPoint Service\nAdd Level 3 Web Meeting as a LaunchPoint Service\nAdd Munchkin Tracking Code to Your Website\nAdd Single Sign-On to a Portal\nAdd Webex as a LaunchPoint Service\nAdd Zoom as a LaunchPoint Service\nConnect BrightTALK to Marketo\nCreate a Custom Service for Use with ReST API\nCreate a Webhook\nCreate an Allowlist for IP-Based API Access\nDownload GoogleAdwords Activity Log\nRestrict User Login to SSO Only\nAudit Trail\nAudit Trail Overview\nChange Details in Audit Trail\nEnable Audit Trail\nFiltering in Audit Trail\nUser Login History\nEmail Setup\nAdd Multiple Branding Domains\nAdd an Additional Branding Domain with Workspaces\nAdd an Additional Branding Domain\nDelete a Branding Domain\nEdit Your Default Branding Domain with Workspaces\nEdit Your Default Branding Domain\nOverwrite Primary Domain for Emails\nChange Custom Object Retrieval Limits in Velocity Scripting\nChange the Default From Email and From Label\nEdit the Unsubscribe Message\nMake Your Unsubscribe Message Dynamic for Languages\nEdit the \u201cView as Web Page\u201d Message\nEnable Communication Limits\nEnable Person Restrictions for Smart Campaigns\nEmail Open Tracking at Campaign Level\nFiltering Email Bot Activity\nRemove Unsubscribe Text\nField Management\nBlock Field Updates During List Import from Untrusted Sources\nBlock Updates to a Field\nChange the Type of a Marketo Custom Field\nCreate a Custom Field in Marketo\nCreate and Use a Concatenated String (Formula) Field\nCustom Field Type Glossary\nDelete a Custom Field in Marketo\nEdit Field Aliases for List Import\nExport All Object Metadata\nExport a List of All Marketo API Field Names\nExport Used By Data for a Field\nHide and Unhide a Field\nHTML Encode Tokens in Emails\nMark a Field as Sensitive\nRename a Field\nUnderstanding System Managed Fields\nView Field Mappings Between Marketo and Salesforce\nMarketo Custom Activities\nUnderstanding Custom Activities\nAdd/Edit/Delete Marketo Custom Activity Fields\nCreate a Custom Activity\nEdit a Custom Activity\nPublish a Custom Activity\nCustom Activity Metadata Export\nMarketo Custom Objects\nUnderstanding Marketo Custom Objects\nAdd Marketo Custom Object Fields\nAdd Marketo Custom Object Link Fields\nApprove a Custom Object\nCreate Marketo Custom Objects\nEdit and Delete a Marketo Custom Object\nEdit and Delete Marketo Custom Object Fields\nImport Custom Object Data\nTrigger Off Custom Object Changes\nCustom Object Metadata Export\nMarketo with Adobe Identity\nQuick Guide\nAdobe Identity Management Overview\nAdmin Setup\nProduct Admin Setup\nUser Sign-in with Adobe ID\nSettings\nBulk Export API Information\nCampaign Inspector\nChange Attribution Settings for Analytics\nCreating a Custom Tab for the Person Detail Page\nEdit \u201cDo Not Track\u201d Browser Support Settings\nEdit Landing Page Settings\nEdit Link Expiration in Reports and Alerts\nEmail Tracking Link Headers\nEdit Subscription Settings\nEnable or Disable Treasure Chest Features\nEnable Personalized URLs for Your Account\nGlobal Form Validation Rules\nLanding Page Headers\nRestrict Marketo Logins Based on IP\nChange Your Time Zone\nSet a Fallback Page\nSet the Default Currency\nUnderstanding Privacy Settings\nTags\nCreate a New Program Tag and Tag Values\nCreate a Program Channel\nCreate Custom Tags\nDelete a Program Channel\nDelete a Program Status From a Program Channel\nHide/Unhide a Program Channel\nManaging Tag Values\nUsers and Roles\nAdd or Remove a Product Admin\nAdd or Remove a User\nCreate an API Only User Role\nCreate an API Only User\nCreate, Delete, Edit and Change a User Role\nEdit User Workspaces\nExport a List of Users and Roles\nManaging User Roles and Permissions\nExport Roles and Permissions\nDescriptions of Role Permissions\nEnable No-Draft for Snippets\nWorkspaces and Person Partitions\nUnderstanding Workspaces and Person Partitions\nAllow User Access to a Workspace\nAssign Person Partitions to Workspaces\nAssigning Person Partitions with Assignment Rules\nChange the Name of a Workspace\nCreate a New Workspace\nCreate a Person Partition\nDelete a Workspace\nEdit a Workspace\nEdit an Existing Person Partition\nShare Segmentations Across Workspaces and Partitions\nAdobe Experience Cloud Integrations\nAdobe Experience Cloud Integrations Overview\nSet up Adobe Organization Mapping\nSync an Audience From Adobe Experience Cloud\nImporting Assets with Adobe Experience Manager\nAdobe Experience Cloud Interface Overview\nCore Marketo Concepts\nSmart Campaigns\nUnderstanding Smart Campaigns\nCreating a Smart Campaign\nUnderstanding Batch and Trigger Smart Campaigns\nCreate a New Smart Campaign\nDefine Smart List for Smart Campaign | Batch\nDefine Smart List for Smart Campaign | Trigger\nSmart Campaign Checklist\nUsing Smart Campaigns\nAbort a Smart Campaign\nActivate a Trigger Smart Campaign | Schedule Tab\nApply Communication Limits to Smart Campaign\nAutomatic Trigger Campaign Cleanup\nCampaign Actions: Clone a Smart Campaign\nCampaign Actions: Delete a Smart Campaign\nCancel a Scheduled Batch Campaign Run\nCancel a Scheduled Recurring Batch Campaign Run\nDeactivate a Trigger Smart Campaign | Schedule Tab\nEdit Qualification Rules in a Smart Campaign\nMove a Smart Campaign\nOverride Person Restrictions in a Smart Campaign\nPriority Override for Trigger Campaigns\nRename a Smart Campaign\nRun a Batch Smart Campaign Now | Schedule Tab\nSchedule a Batch Smart Campaign to Run Later\nSchedule a Recurring Batch Campaign\nSetting Up a Trigger Smart Campaign for Sales Using \u201cCampaign is Requested\u201d\nUsing Standard Smart List Rule Logic\nFlow Actions\nAdd a Flow Step to a Smart Campaign\nReorder the Flow Steps in a Smart Campaign\nAdd to List\nAppend Data to a Field\nCall Webhook\nChange Data Value\nClear Field Values\nChange Person Partition\nChange Revenue Stage\nChange Score\nConvert Person\nDelete a Flow Step\nDelete Person\nExecute Campaign\nFlow Step Service\nInteresting Moment\nRemove from Flow\nRemove from List\nReorder \u201cAdd Choice\u201d in a Flow Step\nRequest Campaign\nSend Alert\nSend Email\nTriggers and Filters for Mobile Smart Campaigns\nUse a Webhook in a Smart Campaign\nUse Add Choice in a Flow Step\nUse Tokens in Flow Steps\nWait\nWait Overview\nUse a Date Token in a Wait Flow Step\nUse a Duration in a Wait Flow Step\nUse a Specific Date in a Wait Flow Step\nProgram Flow Actions\nAdd to Engagement Program\nChange Engagement Program Cadence\nChange Engagement Program Stream\nChange Program Status\nChange Program Success\nChange Program Member Data\nMicrosoft Dynamics Flow Actions\nAdd or Remove People from your Dynamics Campaign\nChange Owner in Microsoft\nCreate Task in Microsoft\nSync Person to Microsoft\nSalesforce Flow Actions\nAdd to SFDC Campaign\nChange Owner\nChange Status in SFDC Campaign\nCreate Task\nDelete Person from SFDC\nRemove from SFDC Campaign\nSync Person to SFDC\nSmart Campaign Data\nExport Smart Campaign Results to Excel\nFilter Smart Campaign Results\nView Blocked People in a Smart Campaign\nView Qualified People in a Smart Campaign\nView Smart Campaign Members\nView Smart Campaign Results\nSmart Lists and Static Lists\nUnderstanding Smart Lists\nCreating a Smart List\nBest Practices for Smart Lists\nCreate a Smart List\nDefine Smart List Filters\nFind and Add Filters to a Smart List\nSmart List Filter Operators Glossary\nUsing Smart Lists\nAdd a Constraint to a Smart List Filter\nAdd Multiple Values to a Smart List Filter\nClone a List or Smart List\nCreate and Change Views for Lists and Smart List\nInferred Filters\nOpportunity Filters and Triggers\nReference a List or Smart List Across Workspaces\nRefresh a List or Smart List\nRun a Single Flow Step from a Smart List\nUse Built-in/System Smart Lists\nUse Inactivity Filters in a Smart List\nUse the Data Value Changed Filter in a Smart List\nUsing Advanced Smart List Rule Logic\nManaging People in Smart Lists\nAdd Person to Blocklist\nCreate a Person Manually\nDatabase Dashboard\nDelete People in a Smart List or List\nExport People to Excel from a List or Smart List\nFilter Activity Types in the Activity Log of a Person\nFind All People in a Revenue Stage\nFind and Merge Duplicate People\nFind Duplicate People with Custom Logic\nLocate the Activity Log for a Person\nUnderstanding Anonymous Activity and People\nUse Members of List in a Smart List\nUse Quick Find in a List or Smart List\nUsing the Person Detail Page\nStatic Lists\nCreate a Static List\nSend a List to Adobe Experience Cloud\nPush an Adobe Experience Platform Segment to a Marketo Static List\nUnderstanding Static Lists\nPrograms\nCreating Programs\nUnderstanding Programs\nCreate a Program\nUnderstanding Local Assets in a Program\nUnderstanding Program Membership\nUsing the Assets Tab\nUsing the Program Home Tab\nWorking with Programs\nBest Practice: How to Organize your Programs\nClone a Program\nClone an Asset in a Program\nDelete a Program\nEdit Analytics Behavior Settings\nImport a Program\nImport Members from a Spreadsheet into a Program\nLocal Asset Expiration\nManage and View Members\nProgram Member Custom Fields\nProgram Member Custom Field Sync\nSync an SFDC Campaign with a Program\nUnderstanding Period Costs\nUnderstanding Tags\nUse Tags in a Program\nUsing Period Costs in a Program\nProgram Library\nProgram Import Library Overview\nEM-YYYY-MM-DD-Single Email Send\nNL-YYYY-MM-Newsletter\nWBN-YYYY-MM-DD-Webinar Program\nEV-YYYY-MM-DD-Event Program\nTS-YYYY-MM-DD-Tradeshow Program\nNUR-YYYY-MM-Simple Nurture\nNUR-YYYY-MM-Adv",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://experienceleague.adobe.com/docs/marketo/using/home.html",
+      "title": "Marketo Product Docs | Adobe Marketo Engage",
+      "text": "Marketo Product Docs | Adobe Marketo Engage\nDocumentation\nMarketo Engage\nMarketo Guide\nMarketo Engage Product Docs\nLast update:\nApril 29, 2026\nBookmark\nSign-in to bookmark\nCopy link\nCopy link URL\nModern demand marketing strategies require end-to-end engagement to deliver the best possible customer experiences. Learn how to achieve this with Marketo Engage\u2014part of Adobe Experience Cloud\u2014by viewing our range of docs, guides, and tutorials.\nWhether you are just getting started and want an introductory Marketo Engage tutorial, or you are an experienced user looking to get more out of your subscription, you\u2019ll find all the answers you need in the Marketo Engage Product Docs.\nGet started\nSetup Steps\nConfigure Protocols for Marketo Engage\nGet Set Up and Add a Person\nMarketo Engage Glossary\nPopular Marketo Engage articles\nUnderstanding the Salesforce Sync\nUnderstanding the Microsoft Dynamics Sync\nUnderstanding Smart Campaigns\nAdobe Dynamic Chat Overview\nEmail Designer Overview\nRelease notes\nCurrent Release\nDynamic Chat Release Notes\nTable of contents\nMarketo Engage\nExpand all sections\nHome\nGetting Started with Marketo Engage\nWhat is Adobe Marketo Engage?\nInitial Setup\nSetup Steps\nConfigure Protocols\nUser Setup\nImplementing a New Marketo Engage Instance\nWhere to Start\nNew Instance Best Practices: Admin Section Checklist\nNew Instance Best Practices: Database Checklist\nNew Instance Best Practices: Design Studio Checklist\nNew Instance Best Practices: Marketing Activities Checklist\nNew Instance Best Practices: Analytics Checklist\nNew Instance Best Practices: Document Your Setup\nThings to Know\nMarketo Engage glossary\nIcon glossary\nClassic icon glossary\nHelp center\nSubscribe to system status notifications\nQuick Wins\nGet Set up and Add a Person\nSend an Email\nLanding Page with a Form\nSimple Scoring\nEmail Auto-Response\nImport a List of People\nDrip, Drip, Nurture\nPersonalize an Email\nAlert the Sales Rep\nUpdate Person Data\nRedirect a Landing Page\nAutomate an Alert for Possible Duplicate People\nInheriting a Marketo Engage Instance\nWhere to Start\nInherited Instance: Admin Section Checklist\nInherited Instance: Database Checklist\nInherited Instance: Design Studio Checklist\nInherited Instance: Marketing Activities Checklist\nInherited Instance: Document Your Setup\nReviewing Core Skills\nProduct Docs\nMarketo AI\nOverview\nSettings and Setup\nAgents\nImport leads\nProgram QA\nAdministration\nSetup\nFind Out What Permissions You Have\nMinimum System Requirements\nMunchkin\nSupported Browsers\nAdditional Integrations\nAdd Adobe Connect as a LaunchPoint Service\nAdd Google AdWords as a Launchpoint Service with a Manager Account\nAdd Google AdWords as a LaunchPoint Service\nAdd GoToWebinar as a LaunchPoint Service\nAdd Level 3 Web Meeting as a LaunchPoint Service\nAdd Munchkin Tracking Code to Your Website\nAdd Single Sign-On to a Portal\nAdd Webex as a LaunchPoint Service\nAdd Zoom as a LaunchPoint Service\nConnect BrightTALK to Marketo\nCreate a Custom Service for Use with ReST API\nCreate a Webhook\nCreate an Allowlist for IP-Based API Access\nDownload GoogleAdwords Activity Log\nRestrict User Login to SSO Only\nAudit Trail\nAudit Trail Overview\nChange Details in Audit Trail\nEnable Audit Trail\nFiltering in Audit Trail\nUser Login History\nEmail Setup\nAdd Multiple Branding Domains\nAdd an Additional Branding Domain with Workspaces\nAdd an Additional Branding Domain\nDelete a Branding Domain\nEdit Your Default Branding Domain with Workspaces\nEdit Your Default Branding Domain\nOverwrite Primary Domain for Emails\nChange Custom Object Retrieval Limits in Velocity Scripting\nChange the Default From Email and From Label\nEdit the Unsubscribe Message\nMake Your Unsubscribe Message Dynamic for Languages\nEdit the \u201cView as Web Page\u201d Message\nEnable Communication Limits\nEnable Person Restrictions for Smart Campaigns\nEmail Open Tracking at Campaign Level\nFiltering Email Bot Activity\nRemove Unsubscribe Text\nField Management\nBlock Field Updates During List Import from Untrusted Sources\nBlock Updates to a Field\nChange the Type of a Marketo Custom Field\nCreate a Custom Field in Marketo\nCreate and Use a Concatenated String (Formula) Field\nCustom Field Type Glossary\nDelete a Custom Field in Marketo\nEdit Field Aliases for List Import\nExport All Object Metadata\nExport a List of All Marketo API Field Names\nExport Used By Data for a Field\nHide and Unhide a Field\nHTML Encode Tokens in Emails\nMark a Field as Sensitive\nRename a Field\nUnderstanding System Managed Fields\nView Field Mappings Between Marketo and Salesforce\nMarketo Custom Activities\nUnderstanding Custom Activities\nAdd/Edit/Delete Marketo Custom Activity Fields\nCreate a Custom Activity\nEdit a Custom Activity\nPublish a Custom Activity\nCustom Activity Metadata Export\nMarketo Custom Objects\nUnderstanding Marketo Custom Objects\nAdd Marketo Custom Object Fields\nAdd Marketo Custom Object Link Fields\nApprove a Custom Object\nCreate Marketo Custom Objects\nEdit and Delete a Marketo Custom Object\nEdit and Delete Marketo Custom Object Fields\nImport Custom Object Data\nTrigger Off Custom Object Changes\nCustom Object Metadata Export\nMarketo with Adobe Identity\nQuick Guide\nAdobe Identity Management Overview\nAdmin Setup\nProduct Admin Setup\nUser Sign-in with Adobe ID\nSettings\nBulk Export API Information\nCampaign Inspector\nChange Attribution Settings for Analytics\nCreating a Custom Tab for the Person Detail Page\nEdit \u201cDo Not Track\u201d Browser Support Settings\nEdit Landing Page Settings\nEdit Link Expiration in Reports and Alerts\nEmail Tracking Link Headers\nEdit Subscription Settings\nEnable or Disable Treasure Chest Features\nEnable Personalized URLs for Your Account\nGlobal Form Validation Rules\nLanding Page Headers\nRestrict Marketo Logins Based on IP\nChange Your Time Zone\nSet a Fallback Page\nSet the Default Currency\nUnderstanding Privacy Settings\nTags\nCreate a New Program Tag and Tag Values\nCreate a Program Channel\nCreate Custom Tags\nDelete a Program Channel\nDelete a Program Status From a Program Channel\nHide/Unhide a Program Channel\nManaging Tag Values\nUsers and Roles\nAdd or Remove a Product Admin\nAdd or Remove a User\nCreate an API Only User Role\nCreate an API Only User\nCreate, Delete, Edit and Change a User Role\nEdit User Workspaces\nExport a List of Users and Roles\nManaging User Roles and Permissions\nExport Roles and Permissions\nDescriptions of Role Permissions\nEnable No-Draft for Snippets\nWorkspaces and Person Partitions\nUnderstanding Workspaces and Person Partitions\nAllow User Access to a Workspace\nAssign Person Partitions to Workspaces\nAssigning Person Partitions with Assignment Rules\nChange the Name of a Workspace\nCreate a New Workspace\nCreate a Person Partition\nDelete a Workspace\nEdit a Workspace\nEdit an Existing Person Partition\nShare Segmentations Across Workspaces and Partitions\nAdobe Experience Cloud Integrations\nAdobe Experience Cloud Integrations Overview\nSet up Adobe Organization Mapping\nSync an Audience From Adobe Experience Cloud\nImporting Assets with Adobe Experience Manager\nAdobe Experience Cloud Interface Overview\nCore Marketo Concepts\nSmart Campaigns\nUnderstanding Smart Campaigns\nCreating a Smart Campaign\nUnderstanding Batch and Trigger Smart Campaigns\nCreate a New Smart Campaign\nDefine Smart List for Smart Campaign | Batch\nDefine Smart List for Smart Campaign | Trigger\nSmart Campaign Checklist\nUsing Smart Campaigns\nAbort a Smart Campaign\nActivate a Trigger Smart Campaign | Schedule Tab\nApply Communication Limits to Smart Campaign\nAutomatic Trigger Campaign Cleanup\nCampaign Actions: Clone a Smart Campaign\nCampaign Actions: Delete a Smart Campaign\nCancel a Scheduled Batch Campaign Run\nCancel a Scheduled Recurring Batch Campaign Run\nDeactivate a Trigger Smart Campaign | Schedule Tab\nEdit Qualification Rules in a Smart Campaign\nMove a Smart Campaign\nOverride Person Restrictions in a Smart Campaign\nPriority Override for Trigger Campaigns\nRename a Smart Campaign\nRun a Batch Smart Campaign Now | Schedule Tab\nSchedule a Batch Smart Campaign to Run Later\nSchedule a Recurring Batch Campaign\nSetting Up a Trigger Smart Campaign for Sales Using \u201cCampaign is Requested\u201d\nUsing Standard Smart List Rule Logic\nFlow Actions\nAdd a Flow Step to a Smart Campaign\nReorder the Flow Steps in a Smart Campaign\nAdd to List\nAppend Data to a Field\nCall Webhook\nChange Data Value\nClear Field Values\nChange Person Partition\nChange Revenue Stage\nChange Score\nConvert Person\nDelete a Flow Step\nDelete Person\nExecute Campaign\nFlow Step Service\nInteresting Moment\nRemove from Flow\nRemove from List\nReorder \u201cAdd Choice\u201d in a Flow Step\nRequest Campaign\nSend Alert\nSend Email\nTriggers and Filters for Mobile Smart Campaigns\nUse a Webhook in a Smart Campaign\nUse Add Choice in a Flow Step\nUse Tokens in Flow Steps\nWait\nWait Overview\nUse a Date Token in a Wait Flow Step\nUse a Duration in a Wait Flow Step\nUse a Specific Date in a Wait Flow Step\nProgram Flow Actions\nAdd to Engagement Program\nChange Engagement Program Cadence\nChange Engagement Program Stream\nChange Program Status\nChange Program Success\nChange Program Member Data\nMicrosoft Dynamics Flow Actions\nAdd or Remove People from your Dynamics Campaign\nChange Owner in Microsoft\nCreate Task in Microsoft\nSync Person to Microsoft\nSalesforce Flow Actions\nAdd to SFDC Campaign\nChange Owner\nChange Status in SFDC Campaign\nCreate Task\nDelete Person from SFDC\nRemove from SFDC Campaign\nSync Person to SFDC\nSmart Campaign Data\nExport Smart Campaign Results to Excel\nFilter Smart Campaign Results\nView Blocked People in a Smart Campaign\nView Qualified People in a Smart Campaign\nView Smart Campaign Members\nView Smart Campaign Results\nSmart Lists and Static Lists\nUnderstanding Smart Lists\nCreating a Smart List\nBest Practices for Smart Lists\nCreate a Smart List\nDefine Smart List Filters\nFind and Add Filters to a Smart List\nSmart List Filter Operators Glossary\nUsing Smart Lists\nAdd a Constraint to a Smart List Filter\nAdd Multiple Values to a Smart List Filter\nClone a List or Smart List\nCreate and Change Views for Lists and Smart List\nInferred Filters\nOpportunity Filters and Triggers\nReference a List or Smart List Across Workspaces\nRefresh a List or Smart List\nRun a Single Flow Step from a Smart List\nUse Built-in/System Smart Lists\nUse Inactivity Filters in a Smart List\nUse the Data Value Changed Filter in a Smart List\nUsing Advanced Smart List Rule Logic\nManaging People in Smart Lists\nAdd Person to Blocklist\nCreate a Person Manually\nDatabase Dashboard\nDelete People in a Smart List or List\nExport People to Excel from a List or Smart List\nFilter Activity Types in the Activity Log of a Person\nFind All People in a Revenue Stage\nFind and Merge Duplicate People\nFind Duplicate People with Custom Logic\nLocate the Activity Log for a Person\nUnderstanding Anonymous Activity and People\nUse Members of List in a Smart List\nUse Quick Find in a List or Smart List\nUsing the Person Detail Page\nStatic Lists\nCreate a Static List\nSend a List to Adobe Experience Cloud\nPush an Adobe Experience Platform Segment to a Marketo Static List\nUnderstanding Static Lists\nPrograms\nCreating Programs\nUnderstanding Programs\nCreate a Program\nUnderstanding Local Assets in a Program\nUnderstanding Program Membership\nUsing the Assets Tab\nUsing the Program Home Tab\nWorking with Programs\nBest Practice: How to Organize your Programs\nClone a Program\nClone an Asset in a Program\nDelete a Program\nEdit Analytics Behavior Settings\nImport a Program\nImport Members from a Spreadsheet into a Program\nLocal Asset Expiration\nManage and View Members\nProgram Member Custom Fields\nProgram Member Custom Field Sync\nSync an SFDC Campaign with a Program\nUnderstanding Period Costs\nUnderstanding Tags\nUse Tags in a Program\nUsing Period Costs in a Program\nProgram Library\nProgram Import Library Overview\nEM-YYYY-MM-DD-Single Email Send\nNL-YYYY-MM-Newsletter\nWBN-YYYY-MM-DD-Webinar Program\nEV-YYYY-MM-DD-Event Program\nTS-YYYY-MM-DD-Tradeshow Program\nNUR-YYYY-MM-Simple Nurture\nNUR-YYYY-MM-Advanced Nurture\nCT-YYYY-MM-Content on Marketo Landing Page\nCT-YYYY-MM-Content Non-Marketo Landing Page\nWR-YYYY-MM-Web Request Program\nOA-YYYY-MM-Online Advertising Marketo Landing Page\nOP-Data Management\nOP-Lead Management\nOP-Scoring-Behavior\nOP-Scoring-Demographic\nOP-Acquisition-API\nOP-Deliverability Management\nQuick Start Email Template\nQuick Start Landing Page Template\nProgram Performance Report\nCreate a Program Performance Report\nAdd Program Status Columns to a Program Report\nFilter a Program Report by Period Cost\nFilter a Program Report by Program\nFilter a Program Report by Tag\nProgram Schedule View\nCreate Custom Entry Types\nCreating a Batch Smart Campaign in the Program Schedule View\nCreating a New Email Program in the Schedule View\nCreating an Entry in the Program Schedule View\nCreating Custom Overlays in Program Schedule View\nEditing Entries in the Program Schedule View\nHiding and Unhiding Custom Entry Types\nMoving Entries in the Program Schedule View\nNavigating the Program Schedule View\nProgram Schedule View Entry Types\nRerun a Smart Campaign in the Program Schedule View\nReschedule a Batch Smart Campaign in the Program Schedule View\nRescheduling an Entire Program from the Schedule View\nUnderstanding Tentative/Confirmed Dates\nUsing a Global Overlay\nTokens\nManaging My Tokens\nUnderstanding My Tokens in a Program\nProgram Member Custom Field Tokens\nMarketing Calendar\nUnderstanding the Calendar\nIssue/Revoke a Marketing Calendar License\nNavigating the Marketing Calendar\nUnderstand/Enable Program Focus\nView Entry Details\nWorking with the Calendar\nConfirm Entries Directly In the Marketing Calendar\nCreate Entries Directly in the Marketing Calendar\nDelete Entries Directly In the Marketing Calendar\nDeleting a Filter in the Marketing Calendar\nEdit Entries Directly In the Marketing Calendar\nFiltering the Marketing Calendar by Workspace\nFiltering the Marketing Calendar\nSaving a Filter Definition in the Marketing Calendar\nSharing a Filter Definition in the Marketing Calendar\nCalendar HD\nAdd a Background Image to a Presentation\nClone a Presentation\nCreate a Custom Goal\nCreate a Pres",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://launchpoint.marketo.com/",
+      "title": "Browse Marketo Engage apps | Adobe Exchange",
+      "text": "Browse Marketo Engage apps | Adobe Exchange\nFeatured\nCreative Cloud\nExperience Cloud\nApp switcher\nSign in\nExperience Cloud listings\nExperience Cloud listings\nApplications\nSolutions\nApplications\nSearch\nProduct\nAll products\nAcrobat Sign\nAdobe Experience Platform\nAdobe Journey Optimizer\nAdvertising Cloud\nAnalytics\nAudience Manager\nCampaign\nCommerce\nExperience Manager\nGenStudio\nMarketo Engage\nReal Time CDP\nTarget\nWorkfront\nApp Type\nCountry\nIndustry\nOther Experience Platform Services\nPartner level\nAll partner levels\nPlatinum\nGold\nSilver\nFeatured\nVibes SMS for Adobe Marketo Engage\nVibes\nOneTrust Consent Collection\nOneTrust LLC\nAcxiom Digital Recognition for...\nAcxiom Corporation\nUpsun: Formerly Platform.sh\nPlatform.sh\n53  results\u00a0in\nMarketo Engage\nSort by:\nSort by:\nRelevance\nMost recent\nTitle (A-Z)\nPartner (A-Z)\nRelevance\nWebflow Optimize\nWebflow\nMaximize conversions with rapid insights, tailored visitor experiences, and AI-powered delivery.\nMarketo Engage\nMovable Ink Studio\nMovable Ink\nAutomatically transform data into email and mobile personalization, for each customer, in real-time and send through Adobe Campaign or Journey...\nMarketo Engage\n+ 5 more\nSendSafely for Adobe Marketo Engage\nSendSafely Inc.\nThe SendSafely app for Marketo enables you to collect large and sensitive files from your users on Marketo form submission.\nMarketo Engage\nKnak - Email and landing page creation\nKnak\nCodeless email and landing page creation for enterprise marketing teams. Dynamic drag and drop emails and LPs exactly how you want them, at scale,...\nMarketo Engage\n+ 1 more\nInfobip Marketo Engage Contact and Event Sync\nInfobip LTD.\nAutomate your communications by importing lead data into People CDP from Marketo Engage solution\nMarketo Engage\nRingLead Data Orchestration Platform\nZoomInfo Technologies LLC\nRingLead by ZoomInfo orchestrates Marketo processes like managing duplicates, data normalization, segmentation, enrichment.\nMarketo Engage\nChat by ZoomInfo\nZoomInfo Technologies LLC\nIdentify & connect with prospects from your Marketo database when they are on your website and guide them through personalized conversation flows...\nMarketo Engage\nSurveySparrow - Automate Lead Capture and Segmentation with Ease\nSurveySparrow\nEffortlessly Automate Lead Generation and Segmentation to Capture Insights and Enhance Engagement Across All Customer Interactions!\nMarketo Engage\nAutomated RSS Emails\nFeedotter\nTurn your blog posts into ready-to-send Marketo emails\u2014automatically\nMarketo Engage\nZeroBounce Marketo Integration\nZeroBounce\nClean your Marketo database with the ZeroBounce integration for bulk and real-time email verification. Sync data faster, boost deliverability, and...\nMarketo Engage\n+ 1 more\nM-Clean: Dedupe and Standardize Marketo Data\nGrazitti Interactive Inc.\nM-Clean identifies & merges duplicate leads in Marketo Engage. It also standardizes data for consistent entry, resulting in a cleaner database.\nMarketo Engage\nCData Marketo Engage Connectors\nCData Software\nConnect to Marketo from Anywhere!\nMarketo Engage\nPrevious\n1\n2\n3\n4\n5\nNext\nDo you have an integration?\nAre you interested in listing your integration? Join the Technology Partner Program.\nExplore Technology Partner Program now\nAdobe\nAdobe.com\nAbout Exchange\nCreative Cloud publishers\nCreate a cloud integration\nCreate a UXP or CEP plugin\nExperience Cloud partners\nBecome a partner\nLearn about partner benefits\nCommunity\nAdobe Exchange Partner Blog\nSign up for the Partner Newsletter\nSupport\nTroubleshooting for Creative Cloud\nCopyright \u00a9 2026 Adobe. All rights reserved.\nPrivacy (Updated)\nTerms of Use\nCookie preferences\nDo not sell or share my personal information\nAdChoices",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/adobe-marketo-engage/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Social is dead; only media left",
+          "url": null,
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2023-04-13T19:30:15Z",
+          "hn_url": "https://news.ycombinator.com/item?id=35560906"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.adobe.com/products/marketo.html",
+    "changelog": "https://experienceleague.adobe.com/docs/marketo/using/release-notes/current.html",
+    "docs": "https://experienceleague.adobe.com/docs/marketo/using/home.html",
+    "integrations": "https://launchpoint.marketo.com/",
+    "g2": "https://www.g2.com/products/adobe-marketo-engage/reviews"
+  },
+  "analysis": {
+    "name": "Adobe Marketo Engage",
+    "url": "https://marketo.com",
+    "tagline": "Modern demand marketing strategies require end-to-end engagement to deliver the best possible customer experiences.",
+    "value_proposition": "Enterprise marketing automation platform for demand generation, lead management, multi-channel engagement, and revenue attribution as part of Adobe Experience Cloud.",
+    "target_segment": "enterprise / mid-market",
+    "ideal_customer": "B2B enterprise marketing teams running complex demand generation, lead nurturing, and multi-touch revenue attribution programs at scale",
+    "features": [
+      {
+        "name": "email designer",
+        "description": "Visual drag-and-drop email builder with templates, fragments, and advanced HTML mode",
+        "evidence_source": "docs",
+        "evidence_quote": "Email Designer Overview",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email designer - brand management",
+        "description": "Generate email content based on organization/brand-specific copywriting guidelines (beta)",
+        "evidence_source": "changelog",
+        "evidence_quote": "Generate email content based on your organization/brand's specific copywriting guidelines.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email designer - brand quality checker",
+        "description": "Assess content quality for readability, cohesiveness, and effectiveness independent of brand guidelines",
+        "evidence_source": "changelog",
+        "evidence_quote": "Assess general content quality to identify potential issues with readability, content cohesiveness, and effectiveness",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email designer - advanced html mode",
+        "description": "Make minor HTML/CSS edits or add script tags to email templates; resolves MS Outlook rendering issues",
+        "evidence_source": "changelog",
+        "evidence_quote": "Advanced HTML Mode allows you to make minor HTML/CSS edits or add script tags to your email template.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email designer - quick actions",
+        "description": "Duplicate, delete, move, and create/edit drafts for email assets, templates, and fragments",
+        "evidence_source": "changelog",
+        "evidence_quote": "Quick actions are now available for all Email Designer assets (emails, email templates, fragments).",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "smart campaigns",
+        "description": "Automated marketing workflows triggered by lead behaviors, data changes, and schedule",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding Smart Campaigns",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dynamic chat",
+        "description": "AI-powered conversational marketing chatbot for real-time website visitor engagement",
+        "evidence_source": "docs",
+        "evidence_quote": "Adobe Dynamic Chat Overview",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "marketo ai",
+        "description": "AI agents for program QA, lead import assistance, and automated content generation",
+        "evidence_source": "docs",
+        "evidence_quote": "Marketo AI \u2014 Overview, Settings and Setup, Agents, Import leads, Program QA",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "lead scoring",
+        "description": "Score leads based on behavioral and demographic attributes to prioritize sales follow-up",
+        "evidence_source": "docs",
+        "evidence_quote": "Simple Scoring",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "landing pages",
+        "description": "Build and host branded landing pages with form embeds and redirect support",
+        "evidence_source": "docs",
+        "evidence_quote": "Landing Page with a Form",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "forms",
+        "description": "Embeddable web forms for lead capture with global validation rules",
+        "evidence_source": "docs",
+        "evidence_quote": "Global Form Validation Rules",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email personalization",
+        "description": "Dynamic content tokens and velocity scripting for per-recipient personalized email content",
+        "evidence_source": "docs",
+        "evidence_quote": "Personalize an Email",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "drip / nurture programs",
+        "description": "Multi-step automated email nurture sequences for lead development over time",
+        "evidence_source": "docs",
+        "evidence_quote": "Drip, Drip, Nurture",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email auto-response",
+        "description": "Automated triggered email replies based on lead form submissions or actions",
+        "evidence_source": "docs",
+        "evidence_quote": "Email Auto-Response",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "push notifications",
+        "description": "Mobile push notification delivery with Marketo token support in Launch App redirect URLs",
+        "evidence_source": "changelog",
+        "evidence_quote": "Redirect URLs configured in Push notification messages now support Marketo Engage tokens",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "audit trail",
+        "description": "Comprehensive log of all user actions, asset changes, and login history for compliance and governance",
+        "evidence_source": "docs",
+        "evidence_quote": "Audit Trail Overview \u2014 Change Details in Audit Trail, Enable Audit Trail, Filtering in Audit Trail",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom fields",
+        "description": "Create, rename, delete, and manage custom data fields on person and object records",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a Custom Field in Marketo",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom objects",
+        "description": "Extend the data model with custom object types linked to person records",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding Marketo Custom Objects",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom activities",
+        "description": "Define and track custom behavioral event types beyond built-in activity types",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding Custom Activities",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "salesforce sync",
+        "description": "Bidirectional real-time sync of leads, contacts, accounts, and opportunities with Salesforce CRM",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding the Salesforce Sync",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft dynamics sync",
+        "description": "Bidirectional sync of records with Microsoft Dynamics CRM",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding the Microsoft Dynamics Sync",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rest api",
+        "description": "Programmatic access to leads, campaigns, assets, and activities via REST endpoints with OAuth",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a Custom Service for Use with ReST API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bulk export api",
+        "description": "Asynchronous bulk export of lead and activity data via dedicated API endpoints",
+        "evidence_source": "docs",
+        "evidence_quote": "Bulk Export API Information",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Outbound HTTP callbacks triggered by campaign events to notify external systems",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a Webhook",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "workspaces",
+        "description": "Partition instance into separate workspaces for multi-brand or multi-team data isolation",
+        "evidence_source": "docs",
+        "evidence_quote": "Add an Additional Branding Domain with Workspaces",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "sso",
+        "description": "Single sign-on via Adobe Identity Management; can restrict logins to SSO only",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Single Sign-On to a Portal \u2014 Restrict User Login to SSO Only",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "adobe identity management",
+        "description": "User authentication and access control via Adobe IMS with Adobe ID sign-in",
+        "evidence_source": "docs",
+        "evidence_quote": "Marketo with Adobe Identity \u2014 Adobe Identity Management Overview",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "branding domains",
+        "description": "Configure multiple custom branding domains for email and landing page delivery",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Multiple Branding Domains",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "communication limits",
+        "description": "Set per-person caps on email send frequency to prevent over-messaging contacts",
+        "evidence_source": "docs",
+        "evidence_quote": "Enable Communication Limits",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email open tracking",
+        "description": "Track email opens at the campaign level with configurable tracking settings",
+        "evidence_source": "docs",
+        "evidence_quote": "Email Open Tracking at Campaign Level",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bot activity filtering",
+        "description": "Filter out bot-generated email opens and link clicks from reporting metrics",
+        "evidence_source": "docs",
+        "evidence_quote": "Filtering Email Bot Activity",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "lead / person database",
+        "description": "Central contact and person record repository with search, segmentation, and list management",
+        "evidence_source": "docs",
+        "evidence_quote": "New Instance Best Practices: Database Checklist",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "picklist management",
+        "description": "Specify and enforce allowed values for picklist fields across the instance",
+        "evidence_source": "changelog",
+        "evidence_quote": "You can now specify the values that can be used in fields in Marketo Engage.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "program tags",
+        "description": "Organize and categorize programs with custom tag values and channel definitions",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a New Program Tag and Tag Values",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "campaign inspector",
+        "description": "Single-view dashboard to inspect and manage all active campaigns across the instance",
+        "evidence_source": "docs",
+        "evidence_quote": "Campaign Inspector",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "personalized urls",
+        "description": "Generate unique personalized URLs per recipient for landing page tracking and personalization",
+        "evidence_source": "docs",
+        "evidence_quote": "Enable Personalized URLs for Your Account",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "attribution settings",
+        "description": "Configure multi-touch revenue attribution models for campaign analytics reporting",
+        "evidence_source": "docs",
+        "evidence_quote": "Change Attribution Settings for Analytics",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "munchkin tracking",
+        "description": "JavaScript snippet for anonymous and known website visitor behavior tracking",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Munchkin Tracking Code to Your Website",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ip-based api access control",
+        "description": "Allowlist specific IP ranges for REST API access to block unauthorized callers",
+        "evidence_source": "docs",
+        "evidence_quote": "Create an Allowlist for IP-Based API Access",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ip-based login restriction",
+        "description": "Restrict user logins to Marketo from approved IP address ranges only",
+        "evidence_source": "docs",
+        "evidence_quote": "Restrict Marketo Logins Based on IP",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sensitive field marking",
+        "description": "Mark specific fields as sensitive to restrict export and limit visibility",
+        "evidence_source": "docs",
+        "evidence_quote": "Mark a Field as Sensitive",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "list import",
+        "description": "Bulk import contacts from CSV files with field mapping and deduplication",
+        "evidence_source": "docs",
+        "evidence_quote": "Import a List of People",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sales rep alerts",
+        "description": "Automated notifications to sales reps when assigned leads take notable actions",
+        "evidence_source": "docs",
+        "evidence_quote": "Alert the Sales Rep",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "velocity scripting",
+        "description": "Apache Velocity templating language for advanced dynamic content in emails and landing pages",
+        "evidence_source": "docs",
+        "evidence_quote": "Change Custom Object Retrieval Limits in Velocity Scripting",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "duplicate person detection",
+        "description": "Automated detection and alerting for possible duplicate person records in the database",
+        "evidence_source": "docs",
+        "evidence_quote": "Automate an Alert for Possible Duplicate People",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "design studio",
+        "description": "Central asset library for reusable emails, landing pages, forms, images, and snippets",
+        "evidence_source": "docs",
+        "evidence_quote": "New Instance Best Practices: Design Studio Checklist",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "analytics and reporting",
+        "description": "Built-in reporting and dashboards for campaign performance, revenue cycle, and funnel metrics",
+        "evidence_source": "docs",
+        "evidence_quote": "New Instance Best Practices: Analytics Checklist",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "unsubscribe management",
+        "description": "Manage and customize unsubscribe message content including dynamic multi-language support",
+        "evidence_source": "docs",
+        "evidence_quote": "Edit the Unsubscribe Message \u2014 Make Your Unsubscribe Message Dynamic for Languages",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "do not track support",
+        "description": "Configurable browser Do Not Track (DNT) signal handling for privacy compliance",
+        "evidence_source": "docs",
+        "evidence_quote": "Edit \"Do Not Track\" Browser Support Settings",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "privacy settings",
+        "description": "Instance-level privacy controls for data handling and regulatory compliance",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding Privacy Settings",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "crm field mapping",
+        "description": "View and configure field-level mappings between Marketo and connected CRM systems",
+        "evidence_source": "docs",
+        "evidence_quote": "View Field Mappings Between Marketo and Salesforce",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "concatenated / formula fields",
+        "description": "Create computed string fields by concatenating values from other fields",
+        "evidence_source": "docs",
+        "evidence_quote": "Create and Use a Concatenated String (Formula) Field",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "person restrictions for smart campaigns",
+        "description": "Limit which people qualify to be processed by a given smart campaign",
+        "evidence_source": "docs",
+        "evidence_quote": "Enable Person Restrictions for Smart Campaigns",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom tabs on person detail",
+        "description": "Add custom tabs to the person detail view for displaying extended or external data",
+        "evidence_source": "docs",
+        "evidence_quote": "Creating a Custom Tab for the Person Detail Page",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "google adwords integration",
+        "description": "Connect Google AdWords as a LaunchPoint service for paid search conversion tracking",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Google AdWords as a LaunchPoint Service",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webinar integrations",
+        "description": "Native LaunchPoint integrations with GoToWebinar, Webex, Zoom, BrightTALK, and Level 3 Web Meeting",
+        "evidence_source": "docs",
+        "evidence_quote": "Add GoToWebinar as a LaunchPoint Service \u2014 Add Webex as a LaunchPoint Service \u2014 Add Zoom",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "launchpoint ecosystem",
+        "description": "Marketplace of third-party integrations via Adobe Exchange LaunchPoint technology partner program",
+        "evidence_source": "integrations",
+        "evidence_quote": "53 results in Marketo Engage \u2014 Vibes SMS, OneTrust, Acxiom, Webflow, Movable Ink...",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sms delivery integration",
+        "description": "SMS message delivery via Vibes integration for multi-channel campaign execution",
+        "evidence_source": "integrations",
+        "evidence_quote": "Vibes SMS for Adobe Marketo Engage",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "consent management integration",
+        "description": "Consent collection and synchronization via OneTrust integration for privacy compliance",
+        "evidence_source": "integrations",
+        "evidence_quote": "OneTrust Consent Collection",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "data enrichment integration",
+        "description": "Third-party data enrichment via Acxiom Digital Recognition integration",
+        "evidence_source": "integrations",
+        "evidence_quote": "Acxiom Digital Recognition for... Marketo Engage",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "data deduplication integration",
+        "description": "Identify and merge duplicate leads via RingLead/ZoomInfo and M-Clean integrations",
+        "evidence_source": "integrations",
+        "evidence_quote": "RingLead by ZoomInfo orchestrates Marketo processes like managing duplicates, data normalization",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "email verification integration",
+        "description": "Bulk and real-time email address verification via ZeroBounce integration",
+        "evidence_source": "integrations",
+        "evidence_quote": "Clean your Marketo database with the ZeroBounce integration for bulk and real-time email verification.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "rss-to-email automation",
+        "description": "Automatically convert blog RSS feed posts into ready-to-send Marketo emails via Feedotter",
+        "evidence_source": "integrations",
+        "evidence_quote": "Turn your blog posts into ready-to-send Marketo emails\u2014automatically",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "file collection via forms",
+        "description": "Collect large and sensitive files from users on Marketo form submission via SendSafely",
+        "evidence_source": "integrations",
+        "evidence_quote": "The SendSafely app for Marketo enables you to collect large and sensitive files from your users",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "website visitor identification",
+        "description": "Identify and engage known prospects from Marketo database when they visit the website",
+        "evidence_source": "integrations",
+        "evidence_quote": "Identify & connect with prospects from your Marketo database when they are on your website",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "landing page redirect",
+        "description": "Configure URL redirects from old landing page paths to new destinations",
+        "evidence_source": "docs",
+        "evidence_quote": "Redirect a Landing Page",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "link expiration in reports and alerts",
+        "description": "Configure expiration time for links sent in reports and alert emails",
+        "evidence_source": "docs",
+        "evidence_quote": "Edit Link Expiration in Reports and Alerts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email tracking link headers",
+        "description": "Configure custom headers on tracked email links for downstream analytics",
+        "evidence_source": "docs",
+        "evidence_quote": "Email Tracking Link Headers",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Salesforce CRM",
+      "Microsoft Dynamics",
+      "Google AdWords",
+      "GoToWebinar",
+      "Webex",
+      "Zoom",
+      "BrightTALK",
+      "Adobe Connect",
+      "Level 3 Web Meeting",
+      "Vibes SMS",
+      "OneTrust",
+      "Acxiom",
+      "Webflow",
+      "Movable Ink",
+      "SendSafely",
+      "Knak",
+      "Infobip",
+      "ZoomInfo (RingLead Data Orchestration)",
+      "ZoomInfo Chat",
+      "SurveySparrow",
+      "Feedotter (Automated RSS Emails)",
+      "ZeroBounce",
+      "Grazitti Interactive M-Clean",
+      "CData Software Connectors",
+      "Platform.sh (Upsun)",
+      "Adobe Analytics",
+      "Adobe Experience Platform",
+      "Adobe Journey Optimizer",
+      "Adobe Target",
+      "Adobe GenStudio"
+    ],
+    "differentiators": [
+      "Part of Adobe Experience Cloud \u2014 native integration with Analytics, Target, AEP, GenStudio, AJO, Advertising Cloud",
+      "End-to-end demand marketing from awareness through revenue attribution in a single platform",
+      "Marketo AI agents for program QA, lead import, and AI-assisted content generation",
+      "Dynamic Chat for AI-powered conversational marketing on web properties",
+      "LaunchPoint partner ecosystem with certified third-party integrations via Adobe Exchange",
+      "Enterprise workspaces for multi-brand and multi-team data isolation within a single instance",
+      "Deep bidirectional CRM sync natively with both Salesforce and Microsoft Dynamics"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-03",
+        "what": "Email Designer - Manage Brands (beta): generate email content from org/brand copywriting guidelines",
+        "source": "Generate email content based on your organization/brand's specific copywriting guidelines. Released."
+      },
+      {
+        "date": "2026-03",
+        "what": "Email Designer - Quick Actions: duplicate, delete, move, create/edit draft for all email assets",
+        "source": "Quick actions are now available for all Email Designer assets (emails, email templates, fragments). Released."
+      },
+      {
+        "date": "2026-03",
+        "what": "Email Designer - Outlook Rendering Fix with Advanced HTML Mode for minor HTML/CSS edits",
+        "source": "Advanced HTML Mode allows you to make minor HTML/CSS edits or add script tags to your email template. Released."
+      },
+      {
+        "date": "2026-03",
+        "what": "Email Designer - Brand Quality Checker for readability, cohesiveness, effectiveness assessment (coming soon)",
+        "source": "Assess general content quality to identify potential issues with readability, content cohesiveness, and effectiveness"
+      },
+      {
+        "date": "2026-03",
+        "what": "Picklist Management: specify and enforce allowed values for Marketo Engage fields (coming soon)",
+        "source": "You can now specify the values that can be used in fields in Marketo Engage."
+      },
+      {
+        "date": "2026-03",
+        "what": "Push Notifications: Marketo token support in Launch App redirect URLs (coming soon)",
+        "source": "Redirect URLs configured in Push notification messages now support Marketo Engage tokens (applicable to Launch App URLs only)."
+      },
+      {
+        "date": "2026-03",
+        "what": "SEO feature deprecated March 31, 2026 with data export option for existing users",
+        "source": "On Tuesday, March 31, 2026, Marketo Engage will deprecate the Search Engine Optimization feature (SEO)."
+      },
+      {
+        "date": "2026-07",
+        "what": "SOAP API end-of-life July 31, 2026 \u2014 all integrations to migrate to REST API",
+        "source": "Support for the Marketo SOAP API will end on July 31, 2026. Services which use SOAP API capabilities should be migrated to the REST API."
+      },
+      {
+        "date": "2026-07",
+        "what": "REST API access_token query parameter deprecated July 31, 2026 \u2014 migrate to Authorization header",
+        "source": "The access_token query parameter used to authenticate Marketo REST API calls is being deprecated and will not be available after July 31, 2026."
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "contact-sales",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [],
+      "enterprise": "contact-sales",
+      "notes": "No pricing page was available in the provided sources. Adobe Marketo Engage is enterprise contact-sales only with no public tier pricing. Historically priced by database size (number of marketable contacts), not per-seat. Growth, Select, Prime, and Ultimate packages have been marketed in the past but prices are not publicly listed."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

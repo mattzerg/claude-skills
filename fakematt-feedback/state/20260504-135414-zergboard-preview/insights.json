@@ -1,0 +1,1898 @@
+{
+  "target": "https://zergboard-preview.pages.dev",
+  "kind": "live_url",
+  "captures": [
+    {
+      "url": "https://zergboard-preview.pages.dev",
+      "final_url": "https://zergboard-preview.pages.dev/",
+      "title": "Zergboard — The project board your team and agents share",
+      "h1": "THE PROJECT BOARD YOUR TEAM AND AGENTS SHARE.",
+      "headings": [
+        "THE PROJECT BOARD YOUR TEAM AND AGENTS SHARE.",
+        "EVERY PM TOOL STARTS SIMPLE. THEN COMES THE BLOAT.",
+        "Cards & columns",
+        "Multi-tenant workspaces",
+        "API-first architecture",
+        "Admin controls",
+        "BOARDS YOUR AGENTS CAN DRIVE.",
+        "THE HIDDEN COST OF \"ALL-IN-ONE\".",
+        "TEAMS THAT SHIP MORE THAN THEY CONFIGURE.",
+        "Cut your standup in half.",
+        "One login, every client.",
+        "From kitchen-table to Series B.",
+        "HONEST TIERS. ON THE HOMEPAGE.",
+        "THE QUESTIONS YOU'D ASK A PM TOOL ON A SALES CALL.",
+        "SPIN UP A BOARD IN 90 SECONDS."
+      ],
+      "primary_cta": "START FREE — NO CREDIT CARD",
+      "forms": [],
+      "links_sample": [
+        "https://zergboard-preview.pages.dev/index.html",
+        "https://zergboard-preview.pages.dev/features.html",
+        "https://zergboard-preview.pages.dev/pricing.html",
+        "https://zergboard-preview.pages.dev/use-cases.html",
+        "https://zergboard-preview.pages.dev/integrations.html",
+        "https://zergboard-preview.pages.dev/compare.html",
+        "https://zergboard-preview.pages.dev/signup.html",
+        "https://zergboard-preview.pages.dev/admin.html"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 405 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "status": 405
+        },
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "method": "POST",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "node_count": 25,
+          "first_node_html": "<span style=\"color: var(--accent);\">live</span>"
+        },
+        {
+          "id": "empty-table-header",
+          "impact": "minor",
+          "help": "Table header text should not be empty",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<th></th>"
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<h4>Product</h4>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 2704,
+        "load_event_ms": 2704,
+        "transfer_size_kb": 7,
+        "encoded_body_size_kb": 6
+      },
+      "text_excerpt": "SKIP TO CONTENT\nZERGBOARD\nFEATURES\nPRICING\nUSE CASES\nINTEGRATIONS\nCOMPARE\nLOGIN\nSTART FREE\n\nFROM THE TEAM BEHIND ZERG AI · V3.2\n\nTHE PROJECT BOARD YOUR TEAM AND AGENTS SHARE.\n\nTrello-simple for your team. API-complete for your agents. Multi-tenant workspaces with the structure to scale — and the webhooks to automate everything.\n\nSTART FREE — NO CREDIT CARD\nSEE HOW IT WORKS\n\nFree forever for teams < 10. Self-host or cloud. SOC 2 Type II in flight.\n\nWORKSPACE · ACME-ENG\nLIVE\n● AGENT · CREATED 7 CARDS FROM SENTRY ALERTS\n● AGENT · MOVED 3 CARDS TO SHIPPED ON PR MERGE\n● AGENT · POSTED V3.2.1 RELEASE NOTES TO #ENG\nBACKLOG\n12\nMigrate auth to OIDC\n P2\nAdd webhook retries\n P3\nQuarterly billing report\n P3\nIN PROGRESS\n4\nStripe → Mercury reconciliation\n P1 · AGENT\nMulti-tenant audit log\n P2\nSHIPPED\n38\nAPI rate-limit tier\n✓ TODAY\nWorkspace transfer flow\n✓ TODAY\n4\nTHINGS THAT MATTER — NOT 40\n<90s\nFROM SIGNUP TO FIRST BOARD\n100%\nOF FEATURES IN THE API\n$0\nUNTIL YOU OUTGROW THE FREE TIER\n\nTRUSTED BY TEAMS SHIPPING AT\n\nYC STARTUP\nDEV STUDIO\nFINTECH SERIES B\nDEVTOOLS OSS\nINTERNAL IT, F500\nMULTI-TENANT SAAS\n\nReal logos coming as our first cohort goes public · be a launch partner →\n\n01 · THE PITCH\n\nEVERY PM TOOL STARTS SIMPLE. THEN COMES THE BLOAT.\n\nSprints. Roadmaps. OKRs. Forms. Approval chains. Custom fields you'll configure once and never touch. Suddenly you're paying for a workflow engine, an automation builder, a docs tool, a chat tool — and an AI to help you find anything in it. Zergboard does the four things every team actually opens the app to do, and gets out of the way.\n\n01\n\nCards & columns\n\nDrag, drop, ship. Keyboard-first, sub-50ms interactions, real-time across every client.\n\n02\n\nMulti-tenant workspaces\n\nOne account, many isolated workspaces. Built for agencies, holdcos, and SaaS that resell boards.\n\n03\n\nAPI-first architecture\n\nEvery feature is a REST + webhook endpoint. The UI is just one client among many.\n\n04\n\nAdmin controls\n\nSSO, SCIM, audit logs, granular roles. Enterprise-grade governance without enterprise-grade overhead.\n\n02 · AGENTS WELCOME\n\nBOARDS YOUR AGENTS CAN DRIVE.\n\nZergboard is built for the world where humans and AI agents share the same backlog. Every action in the UI is one curl away. Hand a board to a Zerg agent, a Claude agent, or your own — they'll create tickets, move cards, and post status updates the same way your team does.\n\nREAD API DOCS →\nENGINEERING USE CASES →\n# An agent moves a card and adds a comment\ncurl -X PATCH https://api.zergboard.com/v1/cards/card_8f2a \\\n  -H \"Authorization: Bearer $ZB_TOKEN\" \\\n  -d '{\"column\": \"shipped\", \"comment\": \"Deployed in v3.2.1\"}'\n\n→ 200 OK\n→ webhook fired: card.moved\n→ slack notified: #eng-ship\n\n# Or, with the SDK\nawait zergboard.cards.move(\"card_8f2a\", \"shipped\");\n\n03 · COMPETITIVE MATH\n\nTHE HIDDEN COST OF \"ALL-IN-ONE\".\n\nMost PM tools sell you a platform when you came for a board. Here's what's actually different.\n\n\tZERGBOARD\tJIRA\tMONDAY\tASANA\tLINEAR\tTRELLO\nPricing visible on homepage\t✓\t—\t",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/home_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/home_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/home_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/home_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/home_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/home_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "REJECT ANALYTICS",
+          "selector": "button",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/interactions/home_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/interactions/home_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "ACCEPT ALL",
+          "selector": "button",
+          "before": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/interactions/home_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/interactions/home_int1_after.png"
+        }
+      ]
+    },
+    {
+      "url": "https://zergboard-preview.pages.dev/index.html",
+      "final_url": "https://zergboard-preview.pages.dev/",
+      "title": "Zergboard — The project board your team and agents share",
+      "h1": "THE PROJECT BOARD YOUR TEAM AND AGENTS SHARE.",
+      "headings": [
+        "THE PROJECT BOARD YOUR TEAM AND AGENTS SHARE.",
+        "EVERY PM TOOL STARTS SIMPLE. THEN COMES THE BLOAT.",
+        "Cards & columns",
+        "Multi-tenant workspaces",
+        "API-first architecture",
+        "Admin controls",
+        "BOARDS YOUR AGENTS CAN DRIVE.",
+        "THE HIDDEN COST OF \"ALL-IN-ONE\".",
+        "TEAMS THAT SHIP MORE THAN THEY CONFIGURE.",
+        "Cut your standup in half.",
+        "One login, every client.",
+        "From kitchen-table to Series B.",
+        "HONEST TIERS. ON THE HOMEPAGE.",
+        "THE QUESTIONS YOU'D ASK A PM TOOL ON A SALES CALL.",
+        "SPIN UP A BOARD IN 90 SECONDS."
+      ],
+      "primary_cta": "START FREE — NO CREDIT CARD",
+      "forms": [],
+      "links_sample": [
+        "https://zergboard-preview.pages.dev/index.html",
+        "https://zergboard-preview.pages.dev/features.html",
+        "https://zergboard-preview.pages.dev/pricing.html",
+        "https://zergboard-preview.pages.dev/use-cases.html",
+        "https://zergboard-preview.pages.dev/integrations.html",
+        "https://zergboard-preview.pages.dev/compare.html",
+        "https://zergboard-preview.pages.dev/signup.html",
+        "https://zergboard-preview.pages.dev/admin.html"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 405 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "status": 405
+        },
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "method": "POST",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "node_count": 25,
+          "first_node_html": "<span style=\"color: var(--accent);\">live</span>"
+        },
+        {
+          "id": "empty-table-header",
+          "impact": "minor",
+          "help": "Table header text should not be empty",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<th></th>"
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<h4>Product</h4>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 174,
+        "load_event_ms": 174,
+        "transfer_size_kb": 7,
+        "encoded_body_size_kb": 6
+      },
+      "text_excerpt": "SKIP TO CONTENT\nZERGBOARD\nFEATURES\nPRICING\nUSE CASES\nINTEGRATIONS\nCOMPARE\nLOGIN\nSTART FREE\n\nFROM THE TEAM BEHIND ZERG AI · V3.2\n\nTHE PROJECT BOARD YOUR TEAM AND AGENTS SHARE.\n\nTrello-simple for your team. API-complete for your agents. Multi-tenant workspaces with the structure to scale — and the webhooks to automate everything.\n\nSTART FREE — NO CREDIT CARD\nSEE HOW IT WORKS\n\nFree forever for teams < 10. Self-host or cloud. SOC 2 Type II in flight.\n\nWORKSPACE · ACME-ENG\nLIVE\n● AGENT · CREATED 7 CARDS FROM SENTRY ALERTS\n● AGENT · MOVED 3 CARDS TO SHIPPED ON PR MERGE\n● AGENT · POSTED V3.2.1 RELEASE NOTES TO #ENG\nBACKLOG\n12\nMigrate auth to OIDC\n P2\nAdd webhook retries\n P3\nQuarterly billing report\n P3\nIN PROGRESS\n4\nStripe → Mercury reconciliation\n P1 · AGENT\nMulti-tenant audit log\n P2\nSHIPPED\n38\nAPI rate-limit tier\n✓ TODAY\nWorkspace transfer flow\n✓ TODAY\n4\nTHINGS THAT MATTER — NOT 40\n<90s\nFROM SIGNUP TO FIRST BOARD\n100%\nOF FEATURES IN THE API\n$0\nUNTIL YOU OUTGROW THE FREE TIER\n\nTRUSTED BY TEAMS SHIPPING AT\n\nYC STARTUP\nDEV STUDIO\nFINTECH SERIES B\nDEVTOOLS OSS\nINTERNAL IT, F500\nMULTI-TENANT SAAS\n\nReal logos coming as our first cohort goes public · be a launch partner →\n\n01 · THE PITCH\n\nEVERY PM TOOL STARTS SIMPLE. THEN COMES THE BLOAT.\n\nSprints. Roadmaps. OKRs. Forms. Approval chains. Custom fields you'll configure once and never touch. Suddenly you're paying for a workflow engine, an automation builder, a docs tool, a chat tool — and an AI to help you find anything in it. Zergboard does the four things every team actually opens the app to do, and gets out of the way.\n\n01\n\nCards & columns\n\nDrag, drop, ship. Keyboard-first, sub-50ms interactions, real-time across every client.\n\n02\n\nMulti-tenant workspaces\n\nOne account, many isolated workspaces. Built for agencies, holdcos, and SaaS that resell boards.\n\n03\n\nAPI-first architecture\n\nEvery feature is a REST + webhook endpoint. The UI is just one client among many.\n\n04\n\nAdmin controls\n\nSSO, SCIM, audit logs, granular roles. Enterprise-grade governance without enterprise-grade overhead.\n\n02 · AGENTS WELCOME\n\nBOARDS YOUR AGENTS CAN DRIVE.\n\nZergboard is built for the world where humans and AI agents share the same backlog. Every action in the UI is one curl away. Hand a board to a Zerg agent, a Claude agent, or your own — they'll create tickets, move cards, and post status updates the same way your team does.\n\nREAD API DOCS →\nENGINEERING USE CASES →\n# An agent moves a card and adds a comment\ncurl -X PATCH https://api.zergboard.com/v1/cards/card_8f2a \\\n  -H \"Authorization: Bearer $ZB_TOKEN\" \\\n  -d '{\"column\": \"shipped\", \"comment\": \"Deployed in v3.2.1\"}'\n\n→ 200 OK\n→ webhook fired: card.moved\n→ slack notified: #eng-ship\n\n# Or, with the SDK\nawait zergboard.cards.move(\"card_8f2a\", \"shipped\");\n\n03 · COMPETITIVE MATH\n\nTHE HIDDEN COST OF \"ALL-IN-ONE\".\n\nMost PM tools sell you a platform when you came for a board. Here's what's actually different.\n\n\tZERGBOARD\tJIRA\tMONDAY\tASANA\tLINEAR\tTRELLO\nPricing visible on homepage\t✓\t—\t",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/index_html_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/index_html_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/index_html_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/index_html_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/index_html_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/index_html_mobile.png"
+      },
+      "interactions": []
+    },
+    {
+      "url": "https://zergboard-preview.pages.dev/features.html",
+      "final_url": "https://zergboard-preview.pages.dev/features",
+      "title": "Features — Zergboard",
+      "h1": "EVERYTHING A FOCUSED PM TOOL NEEDS.\nNOTHING IT DOESN'T.",
+      "headings": [
+        "EVERYTHING A FOCUSED PM TOOL NEEDS.\nNOTHING IT DOESN'T.",
+        "CARDS & COLUMNS, IN 50MS.",
+        "MULTI-TENANT. BY DESIGN, NOT BY ADD-ON.",
+        "EVERY FEATURE IN THE API. EVERY ONE.",
+        "THE CISO CHECKLIST. ALL OF IT.",
+        "ALL THE SMALL STUFF. NOTHING EXTRA TO INSTALL.",
+        "Search",
+        "Mentions & comments",
+        "Attachments",
+        "Filters & saved views",
+        "Automations",
+        "Templates",
+        "Notifications",
+        "Mobile apps",
+        "Import & export",
+        "SEE THE BOARD YOU'VE BEEN WAITING FOR."
+      ],
+      "primary_cta": "SKIP TO CONTENT",
+      "forms": [],
+      "links_sample": [
+        "https://zergboard-preview.pages.dev/index.html",
+        "https://zergboard-preview.pages.dev/features.html",
+        "https://zergboard-preview.pages.dev/pricing.html",
+        "https://zergboard-preview.pages.dev/use-cases.html",
+        "https://zergboard-preview.pages.dev/integrations.html",
+        "https://zergboard-preview.pages.dev/compare.html",
+        "https://zergboard-preview.pages.dev/signup.html",
+        "https://zergboard-preview.pages.dev/admin.html"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 405 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "status": 405
+        },
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "method": "POST",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "node_count": 18,
+          "first_node_html": "<div class=\"col-head\">Backlog <span class=\"col-count\">8</span></div>"
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 4,
+          "first_node_html": "<h4>Keyboard-first</h4>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 194,
+        "load_event_ms": 194,
+        "transfer_size_kb": 5,
+        "encoded_body_size_kb": 5
+      },
+      "text_excerpt": "SKIP TO CONTENT\nZERGBOARD\nFEATURES\nPRICING\nUSE CASES\nINTEGRATIONS\nCOMPARE\nLOGIN\nSTART FREE\n\nFEATURES\n\nEVERYTHING A FOCUSED PM TOOL NEEDS.\nNOTHING IT DOESN'T.\n\nWe didn't ship sprints, OKRs, docs, or a chat tool. We shipped a board that's faster than yours, an API that covers 100% of it, and the admin controls your CISO will actually approve.\n\n01 · THE BOARD\n\nCARDS & COLUMNS, IN 50MS.\n\nA board you'll forget you're using — keyboard-first, real-time, and fast on a 5-year-old laptop. Drag a card and every teammate sees it before their coffee hits the table.\n\nKeyboard-first\n\nPress c to create, e to edit, / to search, g+b to jump boards. Mouse optional.\n\nReal-time everywhere\n\nMove a card; everyone sees it in <200ms. CRDT-backed, no merge conflicts, no refresh.\n\nCustom fields, no plan upgrade\n\nNumbers, dates, dropdowns, links, people — included on every tier.\n\nViews: board, list, calendar, timeline\n\nSame data, four lenses. Toggle with one key.\n\nBACKLOG\n8\nRefactor billing service\n P2\nVendor security review\n P3\nOnboarding email refresh\n P3\nDOING\n3\nAdd card mentions\n P1\nSCIM provisioning\n P2\nDONE\n42\nAPI rate limits\n✓\nWorkspace search\n✓\nCalendar view\n✓\nYOUR WORKSPACES\n+ NEW\nacme-eng\n14 members · 6 boards\nTEAM\nclient-northwind\n3 guests · 2 boards\nFREE\nclient-globex\n7 guests · 4 boards\nTEAM\ninternal-ops\n22 members · 11 boards\nBUSINESS\n\n02 · WORKSPACES\n\nMULTI-TENANT. BY DESIGN, NOT BY ADD-ON.\n\nMost PM tools were built around a single team. Zergboard was built for the world where one operator runs many teams — agencies with clients, holding companies with portfolios, SaaS products embedding boards for their own customers.\n\nTrue data isolation\n\nEach workspace gets its own row-level scoped data, audit trail, and SSO config. A guest in one workspace cannot enumerate another.\n\nPer-workspace billing\n\nCharge clients per workspace, mark them up, or absorb the cost. No \"site license\" lock-in.\n\nWorkspace transfer\n\nDone with a client? One-click transfer the workspace to them. No CSV exports.\n\nWhite-label optional\n\nBring your own domain, logo, and colors on Business. Embed boards inside your own product on Enterprise.\n\n03 · API\n\nEVERY FEATURE IN THE API. EVERY ONE.\n\nThe UI is one client among many. If you can do it in the app, you can do it with curl. We pinky-swear: anything we ship to the UI ships to the API in the same release.\n\nREST\nWEBHOOKS\nGRAPHQL (BETA)\nSDKS: TS, PY, GO\nOAUTH + PAT\nMCP SERVER\nSEE INTEGRATIONS →\n# List boards in a workspace\nGET /v1/workspaces/acme-eng/boards\n\n# Create a card from a webhook payload\nPOST /v1/cards\n{\n  \"board\": \"board_42\",\n  \"title\": \"Customer reported 5xx on /export\",\n  \"column\": \"triage\",\n  \"labels\": [\"bug\", \"p1\"],\n  \"source\": \"sentry\"\n}\n\n# Subscribe to every change in a workspace\nPOST /v1/webhooks\n{\n  \"workspace\": \"acme-eng\",\n  \"events\": [\"card.*\", \"comment.created\"],\n  \"url\": \"https://your-app/zb-events\"\n}\n\n# Idempotent writes — safe to retry\nPOST /v1/cards\nIdempotency-Key: a8f...\n\n04 · ADMIN\n\nTHE CISO CHECKLIST. ALL OF IT.\n\nEnterpr",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_mobile.png"
+      },
+      "interactions": []
+    },
+    {
+      "url": "https://zergboard-preview.pages.dev/pricing.html",
+      "final_url": "https://zergboard-preview.pages.dev/pricing",
+      "title": "Pricing — Zergboard",
+      "h1": "THREE TIERS.\nONE ON THE HOMEPAGE.\nNONE OF THEM LIE.",
+      "headings": [
+        "THREE TIERS.\nONE ON THE HOMEPAGE.\nNONE OF THEM LIE.",
+        "WHAT YOU'D ACTUALLY PAY ELSEWHERE.",
+        "THINGS YOU'D ASK BEFORE YOU SWIPED.",
+        "TRY IT BEFORE YOU DECIDE WHAT TIER YOU NEED."
+      ],
+      "primary_cta": "SKIP TO CONTENT",
+      "forms": [],
+      "links_sample": [
+        "https://zergboard-preview.pages.dev/index.html",
+        "https://zergboard-preview.pages.dev/features.html",
+        "https://zergboard-preview.pages.dev/pricing.html",
+        "https://zergboard-preview.pages.dev/use-cases.html",
+        "https://zergboard-preview.pages.dev/integrations.html",
+        "https://zergboard-preview.pages.dev/compare.html",
+        "https://zergboard-preview.pages.dev/signup.html",
+        "https://zergboard-preview.pages.dev/admin.html"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 405 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "status": 405
+        },
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "method": "POST",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "node_count": 9,
+          "first_node_html": "<div class=\"name\">Free</div>"
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<h4>Product</h4>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 319,
+        "load_event_ms": 319,
+        "transfer_size_kb": 5,
+        "encoded_body_size_kb": 4
+      },
+      "text_excerpt": "SKIP TO CONTENT\nZERGBOARD\nFEATURES\nPRICING\nUSE CASES\nINTEGRATIONS\nCOMPARE\nLOGIN\nSTART FREE\n\nPRICING\n\nTHREE TIERS.\nONE ON THE HOMEPAGE.\nNONE OF THEM LIE.\n\nYou shouldn't need a sales call to find out what a board costs. You shouldn't have to upgrade three tiers to get SSO. We don't think \"enterprise pricing\" is a feature.\n\nFREE\n$0 / forever\n\nFor small teams & solo founders.\n\nUp to 10 seats\nUnlimited boards & cards\n100MB / file attachments\nFull REST + webhook API\nMobile apps (iOS, Android)\nCommunity support\nSTART FREE\nTEAM\n$6 / user / month, billed yearly\n\n$8 month-to-month. For growing teams.\n\nEverything in Free\nUnlimited seats\n1GB / file attachments\nSSO (Google, Okta, Azure AD)\nAudit log retention (90 days)\nWorkspace transfer\nPriority email support (24h)\nSTART 14-DAY TRIAL\nBUSINESS\n$14 / user / month, billed yearly\n\n$18 month-to-month. For regulated & multi-tenant.\n\nEverything in Team\nSCIM provisioning\nCustom roles & granular RBAC\nUnlimited audit log retention\nSelf-host option (Docker, K8s)\nSOC 2 + signed DPA\nWhite-label workspaces\nDedicated CSM & SLA\nTALK TO SALES\n\nAll prices in USD. Yearly = 25% off month-to-month. Cancel anytime, no penalty.\n\nANCHOR CHECK\n\nWHAT YOU'D ACTUALLY PAY ELSEWHERE.\n\nSame team size (15 users). Same need (a board, SSO, audit log). Public pricing as of April 2026.\n\nTOOL\tTIER NEEDED FOR SSO\tPER-USER / MO\t15-USER TEAM / YR\tAUDIT LOG\nZergboard Team\tTeam ($6)\t$6\t$1,080\t90 days incl.\nLinear\tBusiness ($14)\t$14\t$2,520\t+$$ Enterprise\nAsana Starter\tAdvanced ($24.99)\t$24.99\t$4,498\tEnterprise only\nMonday Pro\tEnterprise (call us)\t~$24\t$4,320+\tEnterprise only\nJira Premium\tPremium ($15.25)\t$15.25\t$2,745\tPremium incl.\nClickUp Business\tBusiness+ ($19)\t$19\t$3,420\tEnterprise only\nTrello Premium\tEnterprise ($17.50)\t$17.50\t$3,150\tEnterprise only\n\nAll prices billed annually. Sources: each vendor's public pricing page, April 2026. We rechecked these last week. Full feature comparison →\n\nPRICING FAQ\n\nTHINGS YOU'D ASK BEFORE YOU SWIPED.\nWhat counts as a \"seat\"?\n\nAnyone who can read or write to a board with a real login. Guests on Free and Team tiers (read-only, single-board access) don't count. Bots and API tokens don't count either — they're free.\n\nDo I get charged when I add a seat mid-month?\nIs there a discount for nonprofits / startups / education?\nHow does the free tier compare to Trello / Asana free?\nWhat happens when I exceed 10 free users?\nCan I self-host on Team?\nDo you offer custom Enterprise contracts?\nCan I downgrade?\nHow do refunds work?\n\nPRICING ISN'T THE FRICTION\n\nTRY IT BEFORE YOU DECIDE WHAT TIER YOU NEED.\n\nSpin up a board in 90 seconds. Upgrade if and when you outgrow Free.\n\nSTART FREE\nTALK TO SALES\nZERGBOARD\n\nProject boards without enterprise bloat. Built by Zerg AI for teams who'd rather ship than configure.\n\nPRODUCT\nFeatures\nPricing\nIntegrations\nvs Jira / Monday / Linear\nSOLUTIONS\nEngineering teams\nAgencies\nFounders & solo\nInternal IT\nCOMPANY\nZerg AI\nDocs\nStatus\nContact\nAdmin (analytics)\n© 2026 ZERG AI · MADE FOR TEAMS WHO W",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_mobile.png"
+      },
+      "interactions": []
+    },
+    {
+      "url": "https://zergboard-preview.pages.dev/use-cases.html",
+      "final_url": "https://zergboard-preview.pages.dev/use-cases",
+      "title": "Use Cases — Zergboard",
+      "h1": "A BOARD BUILT FOR\nTHE WORK YOU ACTUALLY DO.",
+      "headings": [
+        "A BOARD BUILT FOR\nTHE WORK YOU ACTUALLY DO.",
+        "CUT YOUR STANDUP IN HALF. OR SKIP IT.",
+        "\"We deleted our daily standup channel. The board became the standup.\"",
+        "\"We bill it back to clients at 2x. They love that they get a real tool.\"",
+        "ONE LOGIN. EVERY CLIENT. REAL ISOLATION.",
+        "FREE UNTIL YOUR SEED ROUND CLOSES.",
+        "THE LIGHTWEIGHT TICKETING TOOL YOU KEEP MEANING TO BUILD.",
+        "START WITH A BOARD. ADD THE REST ONLY IF YOU NEED TO."
+      ],
+      "primary_cta": "ENGINEERING",
+      "forms": [],
+      "links_sample": [
+        "https://zergboard-preview.pages.dev/index.html",
+        "https://zergboard-preview.pages.dev/features.html",
+        "https://zergboard-preview.pages.dev/pricing.html",
+        "https://zergboard-preview.pages.dev/use-cases.html",
+        "https://zergboard-preview.pages.dev/integrations.html",
+        "https://zergboard-preview.pages.dev/compare.html",
+        "https://zergboard-preview.pages.dev/signup.html",
+        "https://zergboard-preview.pages.dev/admin.html"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 405 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "status": 405
+        },
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "method": "POST",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "node_count": 9,
+          "first_node_html": "<p style=\"opacity: 0.8; font-size: 0.95rem; line-height: 1.6;\">"
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 5,
+          "first_node_html": "<h4>Auto-create cards</h4>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 307,
+        "load_event_ms": 308,
+        "transfer_size_kb": 5,
+        "encoded_body_size_kb": 5
+      },
+      "text_excerpt": "SKIP TO CONTENT\nZERGBOARD\nFEATURES\nPRICING\nUSE CASES\nINTEGRATIONS\nCOMPARE\nLOGIN\nSTART FREE\n\nUSE CASES\n\nA BOARD BUILT FOR\nTHE WORK YOU ACTUALLY DO.\n\nZergboard is intentionally narrow — it's a board, not a platform. That makes it terrifyingly good for four kinds of teams.\n\nENGINEERING\nAGENCIES\nFOUNDERS\nINTERNAL IT\n\n01 · ENGINEERING TEAMS\n\nCUT YOUR STANDUP IN HALF. OR SKIP IT.\n\nYour CI is already telling the truth about what shipped. Your error tracker already knows what broke. Your Slack already has the conversation. Why is anyone hand-updating tickets?\n\nZergboard's API-first architecture means every system that already knows what's happening can update the board automatically. The board becomes a snapshot, not a chore.\n\nAuto-create cards\n\nSentry / Datadog / Pagerduty webhooks → instant triage cards with the right labels.\n\nAuto-move on PR merge\n\nGitHub action moves cards to \"shipped\" when the PR with the card ID merges.\n\nAgent-friendly\n\nHand a board to Claude or Devin or your own agent — they can read, write, and comment via API.\n\nNo sprints unless you want them\n\nUse Zergboard kanban-style or import a sprint template. Both are first-class.\n\nSTORY · 14-PERSON ENG TEAM\n\n\"We deleted our daily standup channel. The board became the standup.\"\n\n\"Sentry creates the bug card. The on-call moves it. GitHub closes it. Linear's API was good enough — Zergboard's API is good enough and covers everything in the UI. We don't need a meeting to know what's happening.\"\n\nVP Eng, fintech series B\nMIGRATED FROM JIRA\n\nSTORY · 22-PERSON AGENCY\n\n\"We bill it back to clients at 2x. They love that they get a real tool.\"\n\n\"Every client has their own Zergboard workspace. They invite their own people. Their data never touches another client's. When the engagement ends, we hand them the workspace — they keep using it without us. Asana made us juggle eleven 'projects' under one bill.\"\n\nFounder, dev studio\nMIGRATED FROM ASANA\n\n02 · AGENCIES & CONSULTANCIES\n\nONE LOGIN. EVERY CLIENT. REAL ISOLATION.\n\nMost \"team\" PM tools handle multi-client like an afterthought — duplicate workspaces, leaky permissions, billing nightmares. Zergboard's multi-tenant architecture treats it as the primary case.\n\nTrue data isolation\n\nRow-level scoped per workspace. Guests cannot enumerate or join other workspaces.\n\nPer-workspace billing\n\nBill clients directly, mark up, or absorb. Each workspace has its own subscription.\n\nWorkspace transfer\n\nEngagement over? One-click hand the workspace to the client. They keep their data.\n\nWhite-label (Business)\n\nYour domain, logo, colors. Optional embed inside a client portal.\n\n03 · FOUNDERS & SOLO\n\nFREE UNTIL YOUR SEED ROUND CLOSES.\n\nTrello is a sticky-note app pretending to be a tool. Linear is built for 50-person engineering teams. You're three people in a Discord. Zergboard's free tier is the same product as Business — just without SSO and audit logs you don't need yet.\n\nFree for 10 users, forever\n\nNo \"trial expired, please pay\" emails. The free tier is a real tier.\n\n",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/use-cases_html_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/use-cases_html_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/use-cases_html_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/use-cases_html_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/use-cases_html_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/use-cases_html_mobile.png"
+      },
+      "interactions": []
+    },
+    {
+      "url": "https://zergboard-preview.pages.dev/integrations.html",
+      "final_url": "https://zergboard-preview.pages.dev/integrations",
+      "title": "Integrations & API — Zergboard",
+      "h1": "IF YOU CAN DO IT IN THE APP,\nYOU CAN DO IT WITH CURL.",
+      "headings": [
+        "IF YOU CAN DO IT IN THE APP,\nYOU CAN DO IT WITH CURL.",
+        "REST + WEBHOOKS. BORING ON PURPOSE.",
+        "Read",
+        "Write",
+        "PUSH, NOT JUST PULL.",
+        "FIRST-CLASS FOR THE LANGUAGES YOU ACTUALLY USE.",
+        "TypeScript",
+        "Python",
+        "Go",
+        "AN MCP SERVER. SO YOUR AGENTS ALREADY KNOW HOW TO USE IT.",
+        "THE HANDFUL YOU ACTUALLY NEED.",
+        "HAND IT TO YOUR TEAM. HAND IT TO YOUR AGENTS."
+      ],
+      "primary_cta": "READ THE DOCS",
+      "forms": [],
+      "links_sample": [
+        "https://zergboard-preview.pages.dev/index.html",
+        "https://zergboard-preview.pages.dev/features.html",
+        "https://zergboard-preview.pages.dev/pricing.html",
+        "https://zergboard-preview.pages.dev/use-cases.html",
+        "https://zergboard-preview.pages.dev/integrations.html",
+        "https://zergboard-preview.pages.dev/compare.html",
+        "https://zergboard-preview.pages.dev/signup.html",
+        "https://zergboard-preview.pages.dev/admin.html"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 405 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "status": 405
+        },
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "method": "POST",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "node_count": 30,
+          "first_node_html": "<span class=\"c\"># List boards in a workspace</span>"
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 3,
+          "first_node_html": "<h4>Standard MCP transport</h4>"
+        },
+        {
+          "id": "landmark-unique",
+          "impact": "moderate",
+          "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<pre class=\"code\" role=\"region\" aria-label=\"Code example\">"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 302,
+        "load_event_ms": 302,
+        "transfer_size_kb": 5,
+        "encoded_body_size_kb": 4
+      },
+      "text_excerpt": "SKIP TO CONTENT\nZERGBOARD\nFEATURES\nPRICING\nUSE CASES\nINTEGRATIONS\nCOMPARE\nLOGIN\nSTART FREE\n\nINTEGRATIONS & API\n\nIF YOU CAN DO IT IN THE APP,\nYOU CAN DO IT WITH CURL.\n\nZergboard treats the UI as one client, not the source of truth. Every feature ships to the API in the same release. Anything else is backwards.\n\nREAD THE DOCS\nSEE SDKS\n100%\nFEATURES IN THE API\n3\nOFFICIAL SDKS (TS / PY / GO)\n14\nWEBHOOK EVENTS\n1\nMCP SERVER (FOR AGENTS)\n\n01 · THE SHAPE OF IT\n\nREST + WEBHOOKS. BORING ON PURPOSE.\nRead\n# List boards in a workspace\nGET /v1/workspaces/acme-eng/boards\nAuthorization: Bearer $ZB_TOKEN\n\n# Get a card with full history\nGET /v1/cards/card_8f2a?expand=history,comments\n\n# Search across the workspace\nGET /v1/search?q=\"5xx errors\"&workspace=acme-eng\nWrite\n# Create a card (idempotent)\nPOST /v1/cards\nIdempotency-Key: req_a8f...\n{\n  \"board\": \"board_42\",\n  \"title\": \"User reports billing 5xx\",\n  \"column\": \"triage\",\n  \"labels\": [\"bug\", \"p1\"]\n}\n\n# Move + comment in one call\nPATCH /v1/cards/card_8f2a\n{ \"column\": \"shipped\", \"comment\": \"v3.2.1\" }\n\n02 · WEBHOOKS\n\nPUSH, NOT JUST PULL.\n\nSubscribe once, get every change as a signed POST. Retries, dead-letter queue, and replay all built in. We send the events you'd expect — and let you wildcard them.\n\nCARD.CREATED\nCARD.MOVED\nCARD.UPDATED\nCARD.DELETED\nCOMMENT.CREATED\nCOMMENT.UPDATED\nWORKSPACE.MEMBER.ADDED\nWORKSPACE.MEMBER.REMOVED\nBOARD.CREATED\nBOARD.ARCHIVED\nAUTOMATION.FIRED\nAUDIT.EVENT\nSLA.BREACHED\nATTACHMENT.UPLOADED\n# Webhook payload (signed via HMAC-SHA256 in header)\n{\n  \"event\": \"card.moved\",\n  \"id\": \"evt_b91c...\",\n  \"workspace\": \"acme-eng\",\n  \"timestamp\": \"2026-04-30T14:22:18Z\",\n  \"actor\": { \"type\": \"agent\",\n              \"id\": \"agent_claude-code\" },\n  \"data\": {\n    \"card_id\": \"card_8f2a\",\n    \"from_column\": \"in_progress\",\n    \"to_column\": \"shipped\",\n    \"comment\": \"Deployed in v3.2.1\"\n  }\n}\n\n# Verify with one HMAC check — example header:\n# X-Zergboard-Signature: t=1714400538,v1=8d2...\n\n03 · SDKS\n\nFIRST-CLASS FOR THE LANGUAGES YOU ACTUALLY USE.\nTypeScript\nimport { Zergboard } from \"@zergboard/sdk\";\n\nconst zb = new Zergboard({\n  token: process.env.ZB_TOKEN,\n});\n\nawait zb.cards.create({\n  board: \"board_42\",\n  title: \"Fix billing 5xx\",\n});\nPython\nfrom zergboard import Zergboard\n\nzb = Zergboard(token=os.environ[\"ZB_TOKEN\"])\n\nzb.cards.create(\n    board=\"board_42\",\n    title=\"Fix billing 5xx\",\n)\nGo\nzb := zergboard.New(os.Getenv(\"ZB_TOKEN\"))\n\ncard, err := zb.Cards.Create(ctx, &zergboard.CardCreate{\n  Board: \"board_42\",\n  Title: \"Fix billing 5xx\",\n})\n\n04 · AGENTS\n\nAN MCP SERVER. SO YOUR AGENTS ALREADY KNOW HOW TO USE IT.\n\nZergboard ships an official Model Context Protocol server. Plug it into Claude Code, Cursor, or any MCP-compatible runtime — your agent can list boards, create cards, move them, and post comments using standard MCP tool calls. No glue code.\n\nStandard MCP transport\n\nstdio & SSE. Pin the version, scope the tools, audit the calls.\n\nBuilt-in scopes\n\nHand an agent a token scoped to cards:write on one works",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_mobile.png"
+      },
+      "interactions": []
+    },
+    {
+      "url": "https://zergboard-preview.pages.dev/compare.html",
+      "final_url": "https://zergboard-preview.pages.dev/compare",
+      "title": "Zergboard vs Jira, Monday, Asana, Linear, ClickUp, Trello",
+      "h1": "WE'RE NOT FOR EVERYONE.\nHERE'S WHERE WE'RE NOT.",
+      "headings": [
+        "WE'RE NOT FOR EVERYONE.\nHERE'S WHERE WE'RE NOT.",
+        "THE FULL GRID.",
+        "IF YOU'RE SHIPPING ENTERPRISE SDLC, JIRA WINS. OTHERWISE, ZERGBOARD.",
+        "When Jira is the right call",
+        "When Zergboard is the right call",
+        "MONDAY IS A PLATFORM. ZERGBOARD IS A BOARD.",
+        "When Monday is the right call",
+        "When Zergboard is the right call",
+        "ASANA IS FOR CROSS-FUNCTIONAL OPS AT SCALE. ZERGBOARD IS FOR SHIPPING.",
+        "When Asana is the right call",
+        "When Zergboard is the right call",
+        "LINEAR IS THE CLOSEST COMP. PICK BY TEAM SHAPE.",
+        "When Linear is the right call",
+        "When Zergboard is the right call",
+        "CLICKUP WANTS TO \"REPLACE ALL SOFTWARE\". WE WANT TO REPLACE YOUR BOARD.",
+        "When ClickUp is the right call",
+        "When Zergboard is the right call",
+        "IF YOU LOVE TRELLO, YOU'LL LOVE ZERGBOARD WITH ADULT PLUMBING.",
+        "When Trello is the right call",
+        "When Zergboard is the right call",
+        "TRY IT FOR TEN MINUTES. YOU'LL KNOW."
+      ],
+      "primary_cta": "VS CLICKUP",
+      "forms": [],
+      "links_sample": [
+        "https://zergboard-preview.pages.dev/index.html",
+        "https://zergboard-preview.pages.dev/features.html",
+        "https://zergboard-preview.pages.dev/pricing.html",
+        "https://zergboard-preview.pages.dev/use-cases.html",
+        "https://zergboard-preview.pages.dev/integrations.html",
+        "https://zergboard-preview.pages.dev/compare.html",
+        "https://zergboard-preview.pages.dev/signup.html",
+        "https://zergboard-preview.pages.dev/admin.html"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 405 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "status": 405
+        },
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "method": "POST",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "node_count": 13,
+          "first_node_html": "<th class=\"us\">Zergboard</th>"
+        },
+        {
+          "id": "empty-table-header",
+          "impact": "minor",
+          "help": "Table header text should not be empty",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<th></th>"
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+          "node_count": 1,
+          "first_node_html": "<h4>Product</h4>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 289,
+        "load_event_ms": 289,
+        "transfer_size_kb": 5,
+        "encoded_body_size_kb": 4
+      },
+      "text_excerpt": "SKIP TO CONTENT\nZERGBOARD\nFEATURES\nPRICING\nUSE CASES\nINTEGRATIONS\nCOMPARE\nLOGIN\nSTART FREE\n\nHONEST COMPARISON\n\nWE'RE NOT FOR EVERYONE.\nHERE'S WHERE WE'RE NOT.\n\nComparison pages usually exist to make one tool look obviously better. This one tries something harder: tell you when our competitors are the right call.\n\nVS JIRA\nVS MONDAY\nVS ASANA\nVS LINEAR\nVS CLICKUP\nVS TRELLO\n\nAT A GLANCE\n\nTHE FULL GRID.\n\tZERGBOARD\tJIRA\tMONDAY\tASANA\tLINEAR\tCLICKUP\tTRELLO\nPricing on homepage\t✓\t—\t—\t—\t—\t—\t—\nFree tier seat cap\t10\t10\t2\t10\t10\tUnlimited\tUnlimited\nSSO included on lowest paid tier\t✓ ($6)\t— ($15)\t— (Ent.)\t— ($25)\t— ($14)\t— ($19)\t— ($17)\n100% feature coverage in API\t✓\t~70%\t~60%\t~70%\t✓\t~60%\t~50%\nMulti-tenant workspaces\t✓\t—\t—\t—\t—\t—\t—\nSelf-host option\t✓ ($14)\tData Center ($$$)\t—\t—\t—\t—\t—\nMCP server (agent-ready)\t✓ official\t—\t—\t—\t✓ (community)\t—\t—\nOpen import path\t✓ Tr/Ji/Li/As\tlimited\tvia Asana/Tr\tlimited\tJira/GitHub\tmost tools\tAsana/Jira\nBest for\tLean teams, agencies, agent ops\tEnterprise SDLC\tCross-functional, marketing\tMid-market ops, leadership\tModern eng teams\t\"Replace everything\"\tPersonal, simple boards\n\nPrices are entry per-user/mo (annual). Sourced from each vendor's public pricing page, April 2026. We rechecked last week.\n\nVS JIRA (ATLASSIAN)\n\nIF YOU'RE SHIPPING ENTERPRISE SDLC, JIRA WINS. OTHERWISE, ZERGBOARD.\nWhen Jira is the right call\n→ You're already deep in the Atlassian stack (Confluence, Bitbucket)\n→ You need ITSM (Jira Service Management) under the same roof\n→ You actually use sprints, story points, epics, and burndown reports\n→ Your security team requires Atlassian's exact compliance bundle\nWhen Zergboard is the right call\n→ You spend more time configuring Jira than using it\n→ You want SSO without paying for \"Premium\"\n→ You want your CI/agents to drive the board, not your PM\n→ You want one workspace per client, not Jira \"projects\"\n\nMigration: one-click Jira → Zergboard importer. Bring epics, issues, sprints, and history.\n\nVS MONDAY.COM\n\nMONDAY IS A PLATFORM. ZERGBOARD IS A BOARD.\nWhen Monday is the right call\n→ Your team includes marketing, sales, ops, HR — and you want one tool\n→ You need a CRM and a project tool fused\n→ You want extensive automation/workflow building (and someone to maintain it)\n→ You're enterprise-procurement-friendly\nWhen Zergboard is the right call\n→ You came for a board, not \"Work OS\"\n→ You'd rather have a real API than 500 templates\n→ Free tier of 10 users beats Monday's 2-user free\n→ You bristle at \"contact sales\" for Enterprise pricing\n\nVS ASANA\n\nASANA IS FOR CROSS-FUNCTIONAL OPS AT SCALE. ZERGBOARD IS FOR SHIPPING.\nWhen Asana is the right call\n→ You need OKRs / Goals tied to project work\n→ You're 200+ across departments and need execs to see across\n→ You value polished mobile and gentle onboarding\n→ You're already in the Asana enterprise-procurement orbit\nWhen Zergboard is the right call\n→ You want SSO at $6, not $24.99\n→ You'd rather have multi-tenant workspaces than \"portfolios\"\n→ You want self-host as an option, not a ",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_mobile.png"
+      },
+      "interactions": []
+    },
+    {
+      "url": "https://zergboard-preview.pages.dev/signup.html",
+      "final_url": "https://zergboard-preview.pages.dev/signup",
+      "title": "Start Free — Zergboard",
+      "h1": "FROM \"WHAT'S THAT?\" TO \"WE'RE USING IT\" IN 90 SECONDS.",
+      "headings": [
+        "FROM \"WHAT'S THAT?\" TO \"WE'RE USING IT\" IN 90 SECONDS.",
+        "SPIN UP A WORKSPACE.",
+        "FOR LARGER TEAMS OR UNUSUAL NEEDS.",
+        "NO SURPRISES.",
+        "Confirm email (~10s)",
+        "Workspace created",
+        "Invite teammates"
+      ],
+      "primary_cta": "SKIP TO CONTENT",
+      "forms": [
+        {
+          "action": "https://app.zergboard.com/signup",
+          "fields": [
+            {
+              "type": "email",
+              "name": "email",
+              "required": true
+            },
+            {
+              "type": "text",
+              "name": "workspace",
+              "required": true
+            },
+            {
+              "type": "select-one",
+              "name": "size",
+              "required": false
+            },
+            {
+              "type": "select-one",
+              "name": "source",
+              "required": false
+            }
+          ]
+        },
+        {
+          "action": "https://api.zergboard.com/v1/contact",
+          "fields": [
+            {
+              "type": "text",
+              "name": "name",
+              "required": true
+            },
+            {
+              "type": "email",
+              "name": "email",
+              "required": true
+            },
+            {
+              "type": "text",
+              "name": "company",
+              "required": true
+            },
+            {
+              "type": "select-one",
+              "name": "size",
+              "required": false
+            },
+            {
+              "type": "textarea",
+              "name": "needs",
+              "required": false
+            }
+          ]
+        }
+      ],
+      "links_sample": [
+        "https://zergboard-preview.pages.dev/index.html",
+        "https://zergboard-preview.pages.dev/features.html",
+        "https://zergboard-preview.pages.dev/pricing.html",
+        "https://zergboard-preview.pages.dev/use-cases.html",
+        "https://zergboard-preview.pages.dev/integrations.html",
+        "https://zergboard-preview.pages.dev/compare.html",
+        "https://zergboard-preview.pages.dev/signup.html",
+        "https://zergboard-preview.pages.dev/admin.html"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 405 ()"
+        }
+      ],
+      "network_errors": [
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "status": 405
+        },
+        {
+          "url": "https://zergboard-preview.pages.dev/api/event",
+          "method": "POST",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "axe_violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "node_count": 3,
+          "first_node_html": "<a href=\"#\" style=\"color: var(--accent);\">Terms</a>"
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "help": "Links must be distinguishable without relying on color",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+          "node_count": 3,
+          "first_node_html": "<a href=\"#\" style=\"color: var(--accent);\">Terms</a>"
+        }
+      ],
+      "perf": {
+        "dom_content_loaded_ms": 357,
+        "load_event_ms": 357,
+        "transfer_size_kb": 3,
+        "encoded_body_size_kb": 3
+      },
+      "text_excerpt": "SKIP TO CONTENT\nZERGBOARD\nFEATURES\nPRICING\nUSE CASES\nINTEGRATIONS\nCOMPARE\nLOGIN\nSTART FREE\n\nGET STARTED\n\nFROM \"WHAT'S THAT?\" TO \"WE'RE USING IT\" IN 90 SECONDS.\n\nNo credit card. No demo wall. The free tier is the same product as Business — just without SSO and audit logs you don't need yet.\n\nSELF-SERVE · FREE\n\nSPIN UP A WORKSPACE.\n\nFree forever for teams under ten. Upgrade only when you outgrow it.\n\nWORK EMAIL \nWORKSPACE NAME \n\nLowercase, dashes only. Becomes your subdomain.\n\nTEAM SIZE \nJust me\n2–5\n6–10\n11–25\n26–50\n51+\nHOW'D YOU FIND US? (OPTIONAL) \n—\nSearch (Google, etc.)\nTwitter / X\nHacker News\nFrom a colleague\nAlready use Zerg AI\nOther\nCREATE WORKSPACE\n\nBy signing up you agree to our Terms and Privacy Policy.\n\nTALK TO SALES · BUSINESS\n\nFOR LARGER TEAMS OR UNUSUAL NEEDS.\n\nSelf-host, SOC 2, white-label, custom procurement. We'll get back inside one business day.\n\nYOUR NAME \nWORK EMAIL \nCOMPANY \nTEAM SIZE \nUnder 50\n50–250\n250–1000\n1000+\nWHAT ARE YOU TRYING TO DO? \nSEND\n\nOr email us directly: hello@zergboard.com\n\nSOC 2 TYPE II IN FLIGHT (Q3 2026)\n·\nTLS 1.3 + AES-256\n·\nUS-EAST-1 / EU-WEST-1\n·\nSELF-HOST ON BUSINESS\n·\n14-DAY MONEY-BACK\n\nWHAT HAPPENS AFTER YOU CLICK SIGN UP\n\nNO SURPRISES.\n\n01\n\nConfirm email (~10s)\n\nOne-click magic link. We don't send a \"verify your account\" gauntlet.\n\n02\n\nWorkspace created\n\nYour subdomain is live. You're an admin. We pre-load three example boards you can delete.\n\n03\n\nInvite teammates\n\nPaste emails, send. They join in two clicks. No SSO setup required at this tier.\n\nTotal time: under 90 seconds. Tested every Monday by a member of our team using a fresh laptop and a stopwatch.\n\nZERGBOARD\n\nProject boards without enterprise bloat. Built by Zerg AI for teams who'd rather ship than configure.\n\nPRODUCT\nFeatures\nPricing\nIntegrations\nvs Jira / Monday / Linear\nSOLUTIONS\nEngineering teams\nAgencies\nFounders & solo\nInternal IT\nCOMPANY\nZerg AI\nDocs\nStatus\nContact\nAdmin (analytics)\n© 2026 ZERG AI · MADE FOR TEAMS WHO WANT THEIR TOOLS TO STAY OUT OF THE WAY\nPRIVACY · TERMS · SECURITY",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/signup_html_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/signup_html_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/signup_html_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/signup_html_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/signup_html_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/signup_html_mobile.png"
+      },
+      "interactions": []
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": ".col-head, .card, .workspace-item",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "18 elements fail WCAG AA contrast requirements (4.5:1 for normal text, 3:1 for large text). Most violations appear in the interactive board preview section where beige/cream text on light backgrounds renders labels and card metadata nearly unreadable. This directly blocks users with low vision and creates legal risk.",
+      "suggested_fix": "Audit all text in the board preview section. Replace beige (#E8DCC8 or similar) with a color that meets 4.5:1 against its background. For the 'Backlog 8' column header and similar elements, either darken the text to at least #6B5D4F or lighten the background. Run axe DevTools to verify all violations are resolved.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0001",
+        "p-0095"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": "h4 (Keyboard-first, Real-time everywhere, etc.)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "Four heading-level violations where h4 elements appear without parent h2/h3 structure. Screen readers rely on heading hierarchy to navigate page sections; skipping levels (h1 → h4) breaks assistive navigation and forces users to manually scan for content boundaries.",
+      "suggested_fix": "Change all feature-name headings under 'CARDS & COLUMNS, IN 50MS' section from <h4> to <h3>. If visual size needs to remain the same, apply a class that sets font-size to match current h4 styling while preserving semantic correctness.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P0",
+      "category": "technical",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/api/event",
+        "selector": "Network panel",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "Two POST requests to /api/event fail with 405 Method Not Allowed and ERR_ABORTED. If this endpoint is intended for analytics or conversion tracking, the failure means no visitor behavior data is being collected, making it impossible to measure feature-page effectiveness or attribute signups to this page.",
+      "suggested_fix": "Verify the /api/event endpoint exists and accepts POST requests. If this is a preview environment limitation, add environment detection to skip analytics calls on *.pages.dev domains. If the endpoint should exist, check CORS configuration and ensure the method is allowed in the route handler.",
+      "voice_provenance": "q-0014",
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "target_kind_relevance": "Only matters if this is a production or production-like environment where tracking is expected.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": "Hero headline",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "Headline 'EVERYTHING A FOCUSED PM TOOL NEEDS. NOTHING IT DOESN'T.' is a category descriptor that tells visitors what Zergboard is (a focused PM tool) but not why it wins. The statement is defensively framed — it signals restraint rather than superiority — and requires visitors to infer the benefit of 'focused' rather than asserting measurable outcomes.",
+      "suggested_fix": "Lead with the outcome that focus delivers: 'SHIP 40% FASTER WITH THE BOARD AGENTS UNDERSTAND.' or 'THE ONLY PM TOOL YOUR CISO WILL APPROVE IN ONE MEETING.' This names a specific result (speed, compliance approval) that differentiates Zergboard from Linear/Jira rather than describing its design philosophy.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0029",
+        "p-0030",
+        "p-0043"
+      ],
+      "target_kind_relevance": "marketing-page",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "positioning",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": "Hero subhead below headline",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "Hero subhead lists what Zergboard didn't ship (sprints, OKRs, docs, chat) before stating what it did ship. This inverts value communication: visitors see absence before presence, which reads as limitation rather than intentional focus. The genuine differentiation — 'API that covers 100% of it' and 'admin controls your CISO will actually approve' — is buried in the second half of a long sentence.",
+      "suggested_fix": "Lead with the differentiation: 'A board faster than Linear. An API that covers 100% of the UI. Admin controls that pass SOC 2 audits in one review.' If you want to signal what's excluded, move that to a separate line below the primary value props so scanned readers don't see 'We didn't ship X' as the first complete thought.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0043",
+        "p-0035"
+      ],
+      "target_kind_relevance": "marketing-page",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P0",
+      "category": "social_proof",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": "Hero section (no trust band present)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "Zero customer logos, quantified adoption metrics, or third-party validation appear anywhere on the page. Every competitor in the PM tool space (Linear, Asana, Jira, ClickUp, Monday) displays named enterprise logos or user counts within the first viewport. Absence of social proof forces visitors to trust claims about speed, API completeness, and CISO approval without external validation, which directly suppresses trial conversion among skeptical buyers.",
+      "suggested_fix": "Add a trust band immediately below the hero with 4–6 recognizable customer logos (if available) or quantified metrics ('Trusted by 12,000+ engineering teams' or 'Processing 8M API calls/day'). If you lack named customers, use proxy signals: 'Built by the team behind [credible prior product]' or 'SOC 2 Type II certified since [date]' with certification badge.",
+      "voice_provenance": "q-0007",
+      "principle_provenance": [
+        "p-0019",
+        "p-0048"
+      ],
+      "target_kind_relevance": "marketing-page",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": "Section headings: '01 · THE BOARD', '02 · WORKSPACES', '03 · API', '04 · ADMIN'",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "Numeric prefixes ('01 · THE BOARD') imply a sequence or process that doesn't exist — these sections are independent feature categories, not steps. The numbered format creates false expectation that section 02 depends on understanding section 01, which increases cognitive load for scanners who jump directly to 'API' or 'ADMIN' sections.",
+      "suggested_fix": "Remove numeric prefixes entirely, leaving only the category labels ('THE BOARD', 'WORKSPACES', 'API', 'ADMIN'). If you want visual rhythm, replace numbers with a consistent icon or graphic element that doesn't imply sequence. Alternatively, use category names that explicitly signal independence: 'Core Features', 'Multi-Tenant Architecture', 'Developer Platform', 'Enterprise Controls'.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0022"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": "Feature description paragraphs under each section heading",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "Body copy appears to use line-height below 1.4, making multi-line paragraphs (especially in the 'MULTI-TENANT' section) feel dense and reducing readability on mobile where line wrapping increases. The tight leading creates visual clutter that competes with the intentional whitespace elsewhere on the page.",
+      "suggested_fix": "Set line-height to 1.6 for all body copy (paragraphs, feature descriptions, list items). This is especially critical in the 'MULTI-TENANT' and 'API' sections where multi-sentence descriptions currently run together visually.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0086"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P1",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": ".workspace-list section (desktop vs tablet comparison)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_mobile.png"
+      },
+      "finding": "The workspace list preview collapses to a narrow single column on tablet (768px) with excessive whitespace on the right, creating the appearance of a layout that hasn't reflowed correctly. The list feels cramped and under-utilizes available screen width, especially compared to the board preview which scales more gracefully.",
+      "suggested_fix": "At 768px breakpoint, maintain two-column layout for workspace list items rather than forcing single column. Use 48% width per item with 4% gap, or switch to a card-based grid layout that uses full width more efficiently. Inspect current CSS media query to verify the column constraint is intentional and not a missing breakpoint.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0010",
+        "p-0097"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P2",
+      "category": "interaction",
+      "mode": "additive",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": "Board preview section with cards",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "Board preview is a static image of the UI. Competitors (Linear, Asana) often use interactive demos or video walkthroughs that let visitors experience the product's speed and real-time behavior firsthand. A static preview makes claims about '50ms' and 'real-time everywhere' feel unsubstantiated because visitors cannot verify them.",
+      "suggested_fix": "Embed a 10–15 second looping video showing a card being dragged across columns with visible real-time updates appearing on multiple simulated users' screens simultaneously. Alternatively, make the board preview live-interactive: let visitors drag one card and see it update instantly. This turns the speed claim from stated to demonstrated.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0048",
+        "p-0032"
+      ],
+      "target_kind_relevance": "marketing-page",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P1",
+      "category": "cta",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": "Primary CTA in hero (appears to be 'START FREE' in top-right, not visible in hero itself)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "No primary CTA is present in the hero section below the headline. The only visible CTA is 'START FREE' in the top navigation, which is small and far from the value proposition copy. Visitors who read the headline and subhead have no clear next action within the same viewport, increasing the probability they scroll away rather than convert.",
+      "suggested_fix": "Add a prominent 'Start free — no credit card' button directly below the hero subhead, centered or left-aligned. Make it visually distinct (high contrast, 48px height minimum) and ensure it's reachable within 3 seconds of reading the headline. Duplicate the CTA above the footer as well to capture visitors who scroll through features.",
+      "voice_provenance": "q-0008",
+      "principle_provenance": [
+        "p-0047",
+        "p-0100"
+      ],
+      "target_kind_relevance": "marketing-page",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/features",
+        "selector": "'ALL THE SMALL STUFF. NOTHING EXTRA TO INSTALL.' section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/features_html_desktop.png"
+      },
+      "finding": "Feature grid uses vague, jargon-heavy descriptions that don't name the outcome. 'Search' says 'Full-text search cards, comments, attachments' — accurate but uncompelling. 'Automations' says 'Rules that execute…' which is a mechanical description rather than a use case. Visitors scanning this grid see ingredients, not meals, making it harder to visualize how these features solve their problems.",
+      "suggested_fix": "Rewrite each feature blurb to lead with the outcome: 'Search — Find any card, comment, or file in under 200ms' (names the speed benefit). 'Automations — Auto-assign bugs to on-call engineers when Sentry fires' (names a concrete workflow). This pattern shifts from 'what it is' to 'what it does for you', aligning with Schwartz's principle of meeting desire where it exists.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0043",
+        "p-0033"
+      ],
+      "target_kind_relevance": "marketing-page",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": ".name (Free tier header, Team tier header, and 7 other elements)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "Nine elements fail WCAG AA contrast ratio requirements (4.5:1 for normal text). The axe violation identifies tier name headers and other text elements that are insufficiently distinct from their backgrounds. This is particularly problematic on the pricing cards where the cream/beige background reduces the effective contrast of grey text.",
+      "suggested_fix": "Darken all text that currently fails contrast to meet 4.5:1 minimum. For the tier card headers ('Free', 'Team', 'Business'), use #1f2937 or darker instead of the current lighter grey. For feature list text, ensure at least #374151. Run axe DevTools to verify all violations are resolved.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0001",
+        "p-0095"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": "Footer section starting with <h4>Product</h4>",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "Footer navigation uses an h4 heading immediately after the main h1, skipping h2 and h3 entirely. This violates WCAG heading-order requirements and breaks screen reader navigation hierarchy. Users relying on heading-level navigation will experience a disorienting jump from level 1 to level 4.",
+      "suggested_fix": "Change footer section headings from <h4> to <h2>. If visual size must remain small, use CSS to style h2 elements to match the current h4 appearance (font-size: 0.875rem or similar). Update 'PRODUCT', 'SOLUTIONS', and 'COMPANY' headers accordingly.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P0",
+      "category": "technical",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/api/event",
+        "selector": "Network request (console + network_errors payload)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "The page attempts to POST to /api/event and receives a 405 Method Not Allowed response, causing two console errors visible to any user with DevTools open. This indicates either a broken analytics endpoint or misconfigured event tracking. On a pricing page, failed conversion tracking means attribution data is being lost.",
+      "suggested_fix": "Investigate the /api/event endpoint: verify the method is POST-compatible, ensure CORS headers are correct, and confirm the endpoint exists in the deployment environment. If this is an analytics beacon, wrap it in error handling so failures don't pollute the console. If the endpoint is not yet implemented, remove the tracking call until the backend is ready.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "target_kind_relevance": "Critical for marketing pages where conversion tracking is ROI-protective infrastructure.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": "primary_cta: 'SKIP TO CONTENT'",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "The structured payload identifies 'SKIP TO CONTENT' as the primary CTA, which is an accessibility landmark link, not a conversion action. This suggests the actual primary CTA ('START FREE' or 'START 14-DAY TRIAL') is not being correctly identified, or the skip link is inappropriately prioritized in the DOM order or aria labeling.",
+      "suggested_fix": "Verify that 'START FREE' is marked as the primary CTA in both semantic HTML (e.g., class='btn-primary' or role='button' with appropriate aria attributes) and visual hierarchy. Move the skip link outside the main navigation flow or ensure it only receives focus when Tab is pressed, not on page load. Update metadata extraction if needed to correctly identify conversion CTAs.",
+      "voice_provenance": "q-0008",
+      "principle_provenance": [
+        "p-0047",
+        "p-0100"
+      ],
+      "target_kind_relevance": "Critical for marketing pages; internal tools may not have a single primary CTA.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": "Comparison table: 'Audit Log' column for Linear and Asana",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "The 'AUDIT LOG' column in the competitor comparison table uses '+$$ Enterprise' and 'Enterprise only' inconsistently. '+$$ Enterprise' for Linear suggests an additional cost on top of the Business tier, while 'Enterprise only' for Asana and Monday Pro suggests unavailability at listed tiers. This ambiguity undermines the credibility of the comparison.",
+      "suggested_fix": "Standardize the notation: use 'Enterprise only' when the feature is unavailable at the listed tier, and 'Enterprise tier required ($X/user)' when pricing is known. If Linear's Enterprise audit log pricing is unknown, use 'Enterprise tier required (contact sales)' to signal unavailability without implying an add-on cost.",
+      "voice_provenance": "q-0003",
+      "principle_provenance": [
+        "p-0032",
+        "p-0045"
+      ],
+      "target_kind_relevance": "Marketing page with competitive positioning.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": "Hero headline: 'THREE TIERS. ONE ON THE HOMEPAGE. NONE OF THEM LIE.'",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "The hero headline uses hard line breaks that create uneven rhythm and awkward orphans ('NONE OF THEM LIE.' isolated on its own line). On tablet view, the breaks are even more pronounced, making the headline feel fragmented rather than declarative. This reduces the punchy impact the copy is clearly aiming for.",
+      "suggested_fix": "Remove hard <br> tags and let the headline reflow naturally based on viewport width, using CSS max-width (e.g., max-width: 18em on the headline container) to control line length. Alternatively, use <wbr> or soft hyphens to suggest break points without forcing them. Test at 768px, 1024px, and 1440px to ensure the breaks feel intentional.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0085",
+        "p-0096"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P1",
+      "category": "cta",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": "Business tier card: 'TALK TO SALES' button",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "The Business tier uses 'TALK TO SALES' as its sole CTA, while the page copy explicitly critiques 'enterprise pricing' and promises no sales-call gates. This creates cognitive dissonance: the positioning says 'pricing is transparent,' but the highest tier still requires a conversation. Visitors who need SCIM or white-label are forced into a high-friction path.",
+      "suggested_fix": "Add a secondary 'START 14-DAY TRIAL' button to the Business tier card that mirrors the Team tier CTA. Keep 'TALK TO SALES' as a tertiary text link below for custom contracts or volume discounts. This preserves self-serve access while still offering a high-touch path for complex needs.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0047",
+        "p-0062"
+      ],
+      "target_kind_relevance": "Marketing page with freemium/trial conversion model.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P2",
+      "category": "interaction",
+      "mode": "additive",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": "Comparison table: 'TIER NEEDED FOR SSO' and 'PER-USER / MO' columns",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "The competitor comparison table has no sort or filter affordances, even though it contains numeric data (price, team cost) that users might want to reorder. Users comparing Zergboard to specific competitors must visually scan all rows to find the relevant vendor, increasing cognitive load.",
+      "suggested_fix": "Add click-to-sort functionality on the 'PER-USER / MO' and '15-USER TEAM / YR' column headers. Use a small ↕ icon on sortable headers that changes to ↑ or ↓ on click. Ensure sort state persists if the user navigates away and returns. Alternatively, add a 'Compare to:' dropdown above the table that filters to show only Zergboard + the selected competitor.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0101"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P1",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": "Comparison table at 768px width",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_mobile.png"
+      },
+      "finding": "On tablet view (768px), the comparison table retains its full desktop column structure, forcing horizontal scroll to see the 'AUDIT LOG' column. The table does not reflow into a card-based or accordion layout, making mobile comparison nearly unusable. Users must scroll horizontally and lose context of which row they are comparing.",
+      "suggested_fix": "At breakpoints below 1024px, convert the table into vertically-stacked comparison cards: each vendor gets its own card showing Tool, Tier, Price, Team Cost, and Audit Log as labeled rows within the card. This eliminates horizontal scroll and keeps all data visible without context loss. Use a sticky 'Zergboard' comparison card at the top for reference.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0010",
+        "p-0058"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": "FAQ section: 'THINGS YOU'D ASK BEFORE YOU SWIPED.'",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20060504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "The FAQ section headline uses present-conditional framing ('THINGS YOU'D ASK') that assumes the reader is about to convert, but the questions themselves reveal doubt (downgrade policy, refunds, seat limits). This tonal mismatch makes the FAQ feel defensive rather than reassuring. The headline also uses 'SWIPED', which is credit-card language that doesn't match the free-tier-first positioning.",
+      "suggested_fix": "Reframe the headline to acknowledge doubt explicitly: 'QUESTIONS BEFORE YOU START' or 'THINGS TEAMS ASK BEFORE COMMITTING'. This matches the reader's actual mental state (evaluating, not yet decided) and positions the FAQ as decision-support rather than objection-handling. Remove 'SWIPED' — it signals payment friction where the page promises a free start.",
+      "voice_provenance": "q-0007",
+      "principle_provenance": [
+        "p-0029",
+        "p-0044"
+      ],
+      "target_kind_relevance": "Marketing page with self-serve conversion model.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": "Entire pricing page",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "The page has no ROI calculator or cost-comparison widget that lets users input their team size and see the annual cost delta between Zergboard and a selected competitor. Every serious B2B SaaS pricing page in the benchmarking set includes some form of interactive calculation to make the business case tangible.",
+      "suggested_fix": "Add a 'Calculate your savings' module below the comparison table: two dropdowns (team size: 5/10/15/25/50, compare to: Linear/Asana/Monday/Jira) that dynamically show 'You'd pay $X with [competitor], $Y with Zergboard — save $Z per year'. Include a 'Share this comparison' button that generates a URL with params for the sales team to send in follow-up emails.",
+      "voice_provenance": "q-0004",
+      "principle_provenance": [
+        "p-0045",
+        "p-0032"
+      ],
+      "target_kind_relevance": "Marketing page targeting enterprise/team buyers who need business-case justification.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P1",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/pricing",
+        "selector": "Team tier: '$8 month-to-month' vs Business tier: '$18 month-to-month'",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/pricing_html_desktop.png"
+      },
+      "finding": "The month-to-month pricing callout uses inconsistent formatting: '$8 month-to-month' for Team tier vs '$18 month-to-month' for Business tier. Neither includes the '/user' unit, making it unclear whether $8 is per-seat or total. The subheadline says 'For growing teams' but doesn't quantify 'growing' — is that 10–50 users, or 50–200?",
+      "suggested_fix": "Standardize to '$8/user per month, month-to-month' and '$18/user per month, month-to-month'. Add explicit seat-range guidance in the subheadline: 'For growing teams (10–50 users)' and 'For regulated teams (50+ users)' or similar. This eliminates unit ambiguity and helps buyers self-select the right tier without needing a sales call.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0032",
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/use-cases",
+        "selector": "p[style*='opacity: 0.8']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/use-cases_html_desktop.png"
+      },
+      "finding": "Nine text elements fail WCAG AA contrast requirements (axe violation: color-contrast, impact serious). The opacity: 0.8 styling on body copy reduces contrast below 4.5:1, making paragraphs harder to read for users with low vision and in bright-light mobile environments. This affects all feature descriptions and testimonial attribution text.",
+      "suggested_fix": "Remove opacity: 0.8 from paragraph styles. Use a semantically darker grey (#4B5563 or #374151) directly in the color property instead of reducing opacity on black text. Test all body copy against WCAG 2.2 SC 1.4.3 to ensure 4.5:1 minimum contrast.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0001",
+        "p-0095"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/use-cases",
+        "selector": "h4",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/use-cases_html_desktop.png"
+      },
+      "finding": "Heading hierarchy skips levels (axe violation: heading-order, impact moderate, 5 instances). The page jumps from H1 ('A BOARD BUILT FOR...') directly to H4 ('Auto-create cards', 'Auto-move on PR merge') without intermediate H2/H3 levels. This breaks screen reader navigation and violates semantic HTML structure.",
+      "suggested_fix": "Remap heading levels to follow proper hierarchy: use H2 for section titles ('CUT YOUR STANDUP IN HALF'), H3 for feature group headers ('STORY · 14-PERSON ENG TEAM'), and H4 for individual feature names ('Auto-create cards'). Adjust visual styling via CSS to maintain current design while fixing semantic structure.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P0",
+      "category": "cta",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/use-cases",
+        "selector": "nav primary button",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/use-cases_html_desktop.png"
+      },
+      "finding": "Primary CTA in header reads 'ENGINEERING' instead of a verb or outcome. This appears to be a navigation label misidentified as the primary action, creating confusion about what action users should take. The structured payload confirms 'ENGINEERING' is marked as primary_cta but it functions as a section anchor, not a conversion point.",
+      "suggested_fix": "Replace header CTA with 'START FREE' (already present in top-right) as the primary action button. Style it with higher visual weight (solid background, accent color). Ensure 'ENGINEERING', 'AGENCIES', 'FOUNDERS', 'INTERNAL IT' buttons are visually distinct as secondary navigation anchors, not primary CTAs.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0047",
+        "p-0100"
+      ],
+      "target_kind_relevance": "marketing-page: CTA clarity critical for conversion",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/use-cases",
+        "selector": ".story-card attribution",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/use-cases_html_desktop.png"
+      },
+      "finding": "Testimonial attributions use inconsistent formatting. 'VP Eng, fintech series B' includes role + company stage but 'Founder, dev studio' includes only role + company type. The second testimonial on desktop also shows 'MIGRATED FROM JIRA' and 'MIGRATED FROM ASANA' tags but the first has none visible in the dark card.",
+      "suggested_fix": "Standardize attribution format: '[Role], [Company Type/Stage]' for all testimonials. Add migration source tags to all testimonials if they apply, or remove them entirely if not universally available. Ensure tags are visible on dark backgrounds (check contrast).",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0032"
+      ],
+      "target_kind_relevance": "marketing-page: social proof consistency affects credibility",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": ".code span.c (comment spans in code examples)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "30 code comment spans fail WCAG AA contrast requirements (4.5:1 minimum for normal text). These grey-on-black comments in code examples are unreadable for users with low vision and in bright mobile environments. The axe violation confirms 'serious' impact.",
+      "suggested_fix": "Increase comment text color from current grey to at least #8B8B8B on #000000 background (meets 4.52:1). Test all syntax-highlighted token colors against background and ensure minimum 4.5:1 ratio.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0001",
+        "p-0095"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "h4 headings in 'AN MCP SERVER...' section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "Heading hierarchy skips from h2 ('AN MCP SERVER...') directly to h4 ('Standard MCP transport', 'Built-in scopes', 'Idempotent writes'). This violates WCAG 1.3.1 and breaks screen reader navigation for users who jump by heading level.",
+      "suggested_fix": "Change h4 elements to h3. If visual sizing must match current h4 styling, apply that styling to h3 tags via CSS rather than semantic markup.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "pre.code[role='region'][aria-label='Code example']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "Multiple <pre> elements share identical aria-label='Code example', violating WCAG 2.4.6 (landmark-unique). Screen reader users navigating by landmark cannot distinguish between the six different code examples on the page.",
+      "suggested_fix": "Give each code block a unique aria-label that describes its content: 'REST read examples', 'REST write examples', 'Webhook payload structure', 'TypeScript SDK usage', 'Python SDK usage', 'Go SDK usage'.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0002",
+        "p-0011"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "technical",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "network console",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "POST to /api/event returns 405 Method Not Allowed and appears twice in network log, once as 405 and once as ERR_ABORTED. This suggests broken analytics or tracking infrastructure that is logging console errors visible to any developer inspecting the page.",
+      "suggested_fix": "Either implement the /api/event endpoint to accept POST requests, or remove the client-side code attempting to POST to it. If analytics tracking is not yet live, stub the endpoint to return 204 No Content rather than 405.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "Hero paragraph text",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "Hero subheadline 'Zergboard treats the UI as one client, not the source of truth' uses insider engineering language ('source of truth') that may not resonate with non-technical decision-makers evaluating the product. The phrase assumes the reader already values API-first architecture.",
+      "suggested_fix": "Reframe to outcome: 'Every feature ships to the API and UI simultaneously — no waiting for integrations, no second-class API access.' This explains the benefit (simultaneous access, no lag) rather than the philosophical stance.",
+      "voice_provenance": "q-0007",
+      "principle_provenance": [
+        "p-0107",
+        "p-0043"
+      ],
+      "target_kind_relevance": "marketing-page: positioning copy must be outcome-focused",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "'THE HANDFUL YOU ACTUALLY NEED' section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "The integrations grid lists 14 third-party tools (GitHub, GitLab, Slack, Discord, etc.) but provides no affordance to learn more, configure, or install them. Each card shows a name and one-line description with no button, link, or next step. Users cannot tell if these integrations are live, planned, or conceptual.",
+      "suggested_fix": "Add a 'Learn more' or 'Configure' link to each card. If integrations are not yet available, replace with 'Coming soon' badge and email capture CTA ('Get notified'). If they are live, link to setup documentation or in-app config flow.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0108",
+        "p-0100"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P2",
+      "category": "interaction",
+      "mode": "additive",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "Code example <pre> blocks",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "Code examples have no copy-to-clipboard button, forcing users to manually select and copy long API calls and SDK snippets. Competitors (Stripe, Twilio, GitHub) universally provide one-click copy buttons on code blocks as a baseline dev-experience feature.",
+      "suggested_fix": "Add a copy button to the top-right corner of each <pre> block. On click, copy the plaintext content to clipboard and change button label from 'Copy' to 'Copied!' for 2 seconds. Ensure button is keyboard-accessible (Tab + Enter).",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0047",
+        "p-0100"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P1",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "Stats row (100% / 3 / 14 / 1)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_mobile.png"
+      },
+      "finding": "On tablet (768px), the four-column stats row collapses into two rows of two stats each, but the whitespace distribution is uneven — there is more vertical space between the rows than between the stat number and its label within each card. This violates Gestalt proximity principles and makes it unclear which label belongs to which number.",
+      "suggested_fix": "Reduce inter-row spacing from current value (appears ~40px) to ~24px, and ensure intra-card spacing (number to label) is tighter at ~8px. Alternatively, stack all four stats vertically in a single column on tablet for clearer hierarchy.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0097",
+        "p-0058"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "Section number labels (01, 02, 03, 04)",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "Section number labels ('01 · THE SHAPE OF IT', '02 · WEBHOOKS', etc.) use a light grey that appears to be below the 4.5:1 contrast threshold against the cream background. While these are decorative, they serve as wayfinding cues and should meet minimum contrast for users scanning the page structure.",
+      "suggested_fix": "Darken section number color to at least #757575 on the cream background (assuming #F5F5F0 or similar) to meet 4.5:1 ratio. Test with a contrast checker before deployment.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0001",
+        "p-0093"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P1",
+      "category": "cta",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "Hero CTAs: 'READ THE DOCS' and 'SEE SDKS'",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "The primary CTA 'READ THE DOCS' uses action-oriented language rather than outcome-oriented language. It tells users what to do (read) rather than what they will gain (build, integrate, deploy). The secondary CTA 'SEE SDKS' has the same problem and is visually underemphasized (appears as a text link rather than a button).",
+      "suggested_fix": "Reframe primary CTA to outcome: 'Start building' or 'Explore the API'. Make secondary CTA a styled button (not just a text link) with outcome framing: 'Get SDKs' or 'Install SDK'. Ensure both CTAs have equal visual weight if both are primary paths.",
+      "voice_provenance": "q-0008",
+      "principle_provenance": [
+        "p-0047",
+        "p-0043"
+      ],
+      "target_kind_relevance": "marketing-page: CTAs should frame value received, not action taken",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "'PUSH, NOT JUST PULL' webhook section",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "The webhook event list (CARD.CREATED, CARD.MOVED, etc.) is displayed as static styled divs with no interactivity. Users cannot filter by category, search for a specific event, or expand to see payload schemas. Stripe and Twilio allow inline event filtering and schema preview on their webhook docs pages.",
+      "suggested_fix": "Add a search/filter input above the event list to allow users to type and filter events (e.g., typing 'card' shows only CARD.* events). Alternatively, make each event name clickable to expand an inline payload schema example.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0100"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P2",
+      "category": "polish",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/integrations",
+        "selector": "Footer legal/compliance links",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/integrations_html_desktop.png"
+      },
+      "finding": "Footer includes standard legal links (Privacy, Terms, etc.) but text sizing and spacing is inconsistent with the rest of the page typography. The footer text appears smaller than body copy elsewhere, and link underlines are inconsistent (some links underlined, some not).",
+      "suggested_fix": "Audit footer typography against the site's type scale (per p-0096). Set footer body text to match the smallest body size used elsewhere (likely 14px or 16px) and ensure all footer links have consistent underline treatment (recommend underline on hover only, or always underlined).",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0096",
+        "p-0099"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "th.us",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "Axe detected 13 instances of color-contrast violations, starting with the 'Zergboard' column header in the comparison table. The beige text on cream background fails WCAG AA 4.5:1 minimum contrast ratio. This affects readability for users with low vision and in bright-light mobile environments, and creates legal/compliance risk.",
+      "suggested_fix": "Increase contrast of all table text to meet WCAG AA: use #2D2D2D or darker for body text on cream backgrounds, or invert to dark background with light text. Test all combinations with a contrast checker before shipping.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0001",
+        "p-0095"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "table th:first-child",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "The comparison table contains an empty header cell in the top-left corner (axe violation: empty-table-header). Screen readers cannot announce the purpose of the first column, forcing AT users to infer the table structure from context.",
+      "suggested_fix": "Add visually-hidden text 'Feature' or 'Attribute' to the first <th> element: <th><span class='sr-only'>Feature</span></th>. This preserves the visual layout while providing semantic structure for assistive technology.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "footer h4",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "The footer uses an <h4> tag ('Product') without any preceding h2 or h3, violating heading hierarchy (axe: heading-order). This breaks document outline for screen readers and makes skip-navigation unreliable.",
+      "suggested_fix": "Either change footer headings to <div class='footer-heading'> with appropriate ARIA if no semantic heading is needed, or establish proper h2/h3 hierarchy: page h1 → section h2s → footer h3s. Do not skip levels.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P0",
+      "category": "technical",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/api/event",
+        "selector": "network console",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "Two failed POST requests to /api/event (405 Method Not Allowed, ERR_ABORTED) appear in network logs. This indicates broken analytics or event tracking—either the endpoint doesn't exist yet or the deployment config is rejecting POST. All page interactions are going untracked.",
+      "suggested_fix": "If /api/event is for conversion tracking, implement the endpoint or route to a working analytics service (Posthog, Mixpanel, GA4). If not yet needed, remove the client-side calls to eliminate console noise. Verify UTM and conversion pixel tracking work end-to-end before running paid campaigns.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "target_kind_relevance": "Critical for marketing pages with paid acquisition; lower priority for internal tools.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "table td containing 'Tr/Ji/Li/As'",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20060504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "The 'Open import path' row uses unexplained abbreviations ('Tr/Ji/Li/As', 'via Asana/Tr') that require users to decode tool names. This increases cognitive load and makes scanning harder, especially for first-time visitors evaluating multiple tools.",
+      "suggested_fix": "Spell out tool names in full: 'Trello, Jira, Linear, Asana' instead of 'Tr/Ji/Li/As'. If space is constrained, use tooltips or expand on hover. Consistency: competitors also use 'Jira/GitHub' and 'Asana/Jira' in full—match that pattern.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0022"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "table.comparison",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_mobile.png"
+      },
+      "finding": "The 7-column comparison table on mobile (768px) forces horizontal scrolling with no sticky first column, making it difficult to track which feature corresponds to which vendor as users scroll right. The 'Zergboard' column disappears off-screen when viewing competitor columns.",
+      "suggested_fix": "Implement sticky first column (position: sticky; left: 0) with a subtle right border/shadow to maintain context while scrolling. Alternatively, collapse to a card-based layout on <1024px where each vendor becomes a separate card with all features visible vertically.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0010",
+        "p-0110"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "h1",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "The h1 contains a line break encoded as literal \\n ('WE'RE NOT FOR EVERYONE.\\nHERE'S WHERE WE'RE NOT.') which renders as two lines but is stored as a single semantic string. This is non-standard and may cause issues with SEO crawlers or screen readers that read it as one continuous sentence.",
+      "suggested_fix": "Mark up as proper semantic structure: <h1><span class='line1'>We're not for everyone.</span> <span class='line2'>Here's where we're not.</span></h1> and use CSS for line breaking. This preserves visual layout while maintaining semantic correctness.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "additive",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "nav.anchor-links",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "The six competitor quick-links (VS JIRA, VS MONDAY, etc.) are not visually connected to the corresponding sections below—no highlighting on scroll, no indicator of current section. Users who click VS LINEAR and scroll to that section have no persistent signal that they're in the right place.",
+      "suggested_fix": "Add scroll-spy behavior: highlight the active anchor link when its corresponding section enters the viewport. Use a subtle underline or background color change. Consider sticky positioning for the anchor nav on scroll so users can jump between comparisons without scrolling back to top.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106",
+        "p-0110"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "table footer note",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "The table footer note claims pricing data was 'rechecked last week' but the page payload shows 'April 2026' as the source date—a date in the future. This is either a placeholder that leaked into production or a typo, and it destroys credibility by signaling the data is fabricated or untested.",
+      "suggested_fix": "Replace with accurate recency language: 'Prices sourced from vendor sites, verified [Month YYYY]' or 'Last verified: [actual date]'. If this is preview/staging content, add a banner: 'PREVIEW BUILD — pricing data is illustrative only'.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0032",
+        "p-0042"
+      ],
+      "target_kind_relevance": "Critical on marketing pages where trust is prerequisite to conversion.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "section.comparison-cards",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "Each competitor comparison section lists 'When [Tool] is the right call' and 'When Zergboard is the right call' but provides no direct way to test the claim. Users who are evaluating based on these criteria have no next step beyond 'START FREE' at the bottom—no tool-specific migration guide, no ROI calculator, no 'See Zergboard vs [Tool] demo'.",
+      "suggested_fix": "Add a section-specific CTA to each comparison block: 'See Zergboard vs Jira in 2 minutes' linking to a short video walkthrough, or 'Import your Jira board now' linking directly to the importer. This reduces the gap between interest and action for users who resonate with a specific comparison.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0047",
+        "p-0024"
+      ],
+      "target_kind_relevance": "Additive optimization for marketing pages; not applicable to internal tools.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "interaction",
+      "mode": "additive",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "table.comparison",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "The comparison table shows static checkmarks and dashes with no way to filter or highlight rows by criteria. Users evaluating on specific features (e.g. 'Must have SSO under $10/user') must manually scan all rows. Competitors like G2 comparison grids allow column hiding or row filtering.",
+      "suggested_fix": "Add filter toggles above the table: 'Show only: API coverage | SSO | Self-host | Agent-ready'. Clicking a toggle highlights or isolates matching rows. This reduces cognitive load for users with specific requirements and makes the differentiation more legible.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0101",
+        "p-0110"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P2",
+      "category": "polish",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/compare",
+        "selector": "table td containing '~70%', '~60%'",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/compare_html_desktop.png"
+      },
+      "finding": "The 'API coverage' row uses tilde approximations ('~70%', '~60%') for competitors but a definitive checkmark for Zergboard ('✓ 100% feature coverage'). This inconsistency in precision signals either that competitor data is estimated/unverified or that Zergboard's claim lacks the same rigor, depending on interpretation.",
+      "suggested_fix": "Make precision consistent: either source exact percentages for all vendors ('Jira: 68% coverage per Atlassian API docs, audited 2025-04') or use the same approximation level for all ('Zergboard ~100%, Jira ~70%'). If exact data exists only for Zergboard, add a footnote explaining methodology.",
+      "voice_provenance": "q-0006",
+      "principle_provenance": [
+        "p-0032"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "accessibility",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/signup",
+        "selector": "a[href='#'][style*='color: var(--accent)']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/signup_html_desktop.png"
+      },
+      "finding": "The Terms and Privacy Policy links in the signup form footer fail WCAG AA contrast requirements and are not distinguishable from surrounding text except by color. axe-core reports both 'color-contrast' and 'link-in-text-block' violations with 'serious' impact across 3 instances. Users with low vision or colorblindness cannot reliably identify these links, and keyboard-only users navigating by text scanning may miss them entirely.",
+      "suggested_fix": "Change the accent color to meet 4.5:1 contrast against the beige background, or add an underline to all inline links so they are distinguishable without relying on color. Verify the new color passes WebAIM contrast checker for both normal and large text sizes.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0001",
+        "p-0011"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "friction",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/signup",
+        "selector": "select[name='source']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/signup_html_desktop.png"
+      },
+      "finding": "The 'HOW'D YOU FIND US?' dropdown defaults to an em-dash placeholder and lists six options including 'Already use Zerg AI'. This field is marked optional but interrupts the signup flow with a question that provides no value to the user. Each additional form field—even optional ones—increases cognitive load and drop-off probability during the critical moment before clicking 'CREATE WORKSPACE'.",
+      "suggested_fix": "Remove the 'How'd you find us?' field entirely from the signup form. Collect attribution data post-signup via a lightweight one-question survey on the workspace dashboard, or infer it from UTM parameters and referrer headers captured server-side.",
+      "voice_provenance": "q-0008",
+      "principle_provenance": [
+        "p-0063",
+        "p-0101"
+      ],
+      "target_kind_relevance": "Applies to all signup flows; attribution questions are commonly tested and found to reduce conversion.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/signup",
+        "selector": "label[for='workspace'] + .help-text",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/signup_html_desktop.png"
+      },
+      "finding": "The workspace name field shows helper text 'Lowercase, dashes only. Becomes your subdomain.' This is a technical constraint message that doesn't explain what a subdomain is or why it matters. Users unfamiliar with the concept of a subdomain may not understand they're choosing their permanent workspace URL (e.g. acme-eng.zergboard.com), which can lead to regret and support requests later.",
+      "suggested_fix": "Rewrite the helper text to: 'This becomes your workspace URL: yourname.zergboard.com — choose carefully, it can't be changed later.' Add real-time inline preview that shows 'yourname.zergboard.com' updating as the user types, so the consequence is visible before submission.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0109"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P1",
+      "category": "friction",
+      "mode": "broken",
+      "location": {
+        "url": "https://zergboard-preview.pages.dev/signup",
+        "selector": "form[action='https://app.zergboard.com/signup']",
+        "screenshot": "/Users/mattheweisner/.claude/skills/fakematt-feedback/state/20260504-135414-zergboard-preview/screenshots/signup_html_desktop.png"
+      },
+      "finding": "The payload shows no evidence of inline validation on the email or workspace name fields. Both fields have format constraints (email RFC compliance, workspace alphanumeric-plus-dashes only) that could be validated on blur to catch errors before the user clicks 'CREATE WORKSPACE'. Surfacing errors only after form submission forces users to mentally backtrack across the entire form, especially painful if the workspace name is taken and they need to brainstorm alternatives.",
+      "suggested_fix": "Add onBlur validation to the email field (valid format check) and the workspace name field (format check + real-time availability check via API). Display green checkmark icon on success, red error message on failure, positioned directly below the field while the user is still in context.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0060",
+        "p-0109"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "model_error",
+      "finding": {
+        "_error": "sdk: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.0.content.3.image.source.base64.data: At least one of the image dimensions exceed max allowed size: 8000 pixels'}, 'request_id': 'req_011CaiCEgvufVYYfyzFUbuuv'}"
+      }
+    },
+    {
+      "reason": "model_error",
+      "finding": {
+        "_error": "sdk: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.0.content.3.image.source.base64.data: At least one of the image dimensions exceed max allowed size: 8000 pixels'}, 'request_id': 'req_011CaiCEkyjfcKcapqM5xW48'}"
+      }
+    }
+  ]
+}

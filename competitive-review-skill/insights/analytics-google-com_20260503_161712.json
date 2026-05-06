@@ -1,0 +1,507 @@
+{
+  "name": "Google Analytics",
+  "url": "https://analytics.google.com",
+  "domain": "analytics.google.com",
+  "scanned_at": "2026-05-03T16:14:30.974207",
+  "sources": {
+    "landing": {
+      "url": "https://analytics.google.com",
+      "title": "Google Analytics",
+      "text": "Google Analytics\nSign in\nto continue to Google Analytics\nEmail or phone\nForgot email?\nType the text you hear or see\nNot your computer? Use Guest mode to sign in privately.\nLearn more about using Guest mode\nNext\nCreate account\nFor my personal use\nFor my child\nFor work or my business\nEnglish (United States)\nAfrikaans\naz\u0259rbaycan\nbosanski\ncatal\u00e0\n\u010ce\u0161tina\nCymraeg\nDansk\nDeutsch\neesti\nEnglish (United Kingdom)\nEnglish (United States)\nEspa\u00f1ol (Espa\u00f1a)\nEspa\u00f1ol (Latinoam\u00e9rica)\neuskara\nFilipino\nFran\u00e7ais (Canada)\nFran\u00e7ais (France)\nGaeilge\ngalego\nHrvatski\nIndonesia\nisiZulu\n\u00edslenska\nItaliano\nKiswahili\nlatvie\u0161u\nlietuvi\u0173\nmagyar\nMelayu\nNederlands\nnorsk\no\u2018zbek\npolski\nPortugu\u00eas (Brasil)\nPortugu\u00eas (Portugal)\nrom\u00e2n\u0103\nshqip\nSloven\u010dina\nsloven\u0161\u010dina\nsrpski (latinica)\nSuomi\nSvenska\nTi\u1ebfng Vi\u1ec7t\nT\u00fcrk\u00e7e\n\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac\n\u0431\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f\n\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438\n\u043a\u044b\u0440\u0433\u044b\u0437\u0447\u0430\n\u049b\u0430\u0437\u0430\u049b \u0442\u0456\u043b\u0456\n\u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438\n\u043c\u043e\u043d\u0433\u043e\u043b\n\u0420\u0443\u0441\u0441\u043a\u0438\u0439\n\u0441\u0440\u043f\u0441\u043a\u0438 (\u045b\u0438\u0440\u0438\u043b\u0438\u0446\u0430)\n\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430\n\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8\n\u0570\u0561\u0575\u0565\u0580\u0565\u0576\n\u202b\u05e2\u05d1\u05e8\u05d9\u05ea\u202c\u200e\n\u202b\u0627\u0631\u062f\u0648\u202c\u200e\n\u202b\u0627\u0644\u0639\u0631\u0628\u064a\u0629\u202c\u200e\n\u202b\u0641\u0627\u0631\u0633\u06cc\u202c\u200e\n\u12a0\u121b\u122d\u129b\n\u0928\u0947\u092a\u093e\u0932\u0940\n\u092e\u0930\u093e\u0920\u0940\n\u0939\u093f\u0928\u094d\u0926\u0940\n\u0985\u09b8\u09ae\u09c0\u09af\u09bc\u09be\n\u09ac\u09be\u0982\u09b2\u09be\n\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40\n\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0\n\u0b13\u0b21\u0b3c\u0b3f\u0b06\n\u0ba4\u0bae\u0bbf\u0bb4\u0bcd\n\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41\n\u0c95\u0ca8\u0ccd\u0ca8\u0ca1\n\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02\n\u0dc3\u0dd2\u0d82\u0dc4\u0dbd\n\u0e44\u0e17\u0e22\n\u0ea5\u0eb2\u0ea7\n\u1019\u103c\u1014\u103a\u1019\u102c\n\u1781\u17d2\u1798\u17c2\u179a\n\ud55c\uad6d\uc5b4\n\u4e2d\u6587\uff08\u9999\u6e2f\uff09\n\u65e5\u672c\u8a9e\n\u7b80\u4f53\u4e2d\u6587\n\u7e41\u9ad4\u4e2d\u6587\nHelp\nPrivacy\nTerms",
+      "source": "playwright"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "url": "https://support.google.com/analytics/answer/9164320",
+      "title": "What's new in Google Analytics - Analytics Help",
+      "text": "What's new in Google Analytics - Analytics Help\nSkip to main content\nAnalytics Help\nSign in\nSend feedback on...\nThis help content & information\nGeneral Help Center experience\nNext\nHelp Center\nCommunity\nAnnouncements\nAnalytics\nContact us\nGet started with Analytics\nCollect and manage data\nReport and explore\nAdvertising and attribution\nAudiences and remarketing\nManage accounts, properties, and users\nGoogle Analytics 360\nPolicies and data privacy\nWhat's new in Google Analytics\nThis article provides information on the latest releases in Google Analytics for this year. For information on releases from past years, see the\nWhat's New archive\n.\nReleases\nApril 29, 2026\nFebruary 10, 2026\nJanuary 16, 2026\nApril 29, 2026\nConfigure your Google Analytics settings using Task Assistant\nTo help you get the most out of your Google Analytics property, we are introducing Task Assistant. Task Assistant provides tailored recommendations to help you optimize your configuration and improve data collection,. Available from the left navigation menu, it organizes these recommendations into actionable categories, such as connecting your accounts, enhancing your reporting, and fixing data issues. You can easily manage your property's progress by marking tasks as complete as you finish them, or skipping tasks that aren't relevant to your current business goals. Return back to the Task Assistant for additional tasks.\nLearn more about Task Assistant\nFebruary 10, 2026\nGenerated insights on the Home page\nWe\u2019ve added\nGenerated insights\nto your Home page. This feature summarizes the top three data changes since your last visit, including key configuration updates, anomalies, and seasonality trends.This helps you quickly catch up on what\u2019s happening in your property and spot performance shifts without needing to dig into detailed reports.\nLearn more about Generated insights\nCross-channel budgeting (Beta)\nThis feature may not be available to your Google Analytics property. The Google Analytics team is actively working to expand this feature to more properties. Please reach out to your support team if you have questions about the eligibility of your property.\nThe Google Analytics team is excited to announce the release of cross-channel budgeting. Use cross-channel budgeting to track performance and optimize paid channel investments.\nJanuary 16, 2026\nCross-channel budgeting (Beta)\nThis feature may not be available to your Google Analytics property. The Google Analytics team is actively working to expand this feature to more properties. Please reach out to your support team if you have questions about the eligibility of your property.\nThe Google Analytics team is excited to announce the release of cross-channel budgeting. Use cross-channel budgeting to track performance and optimize paid channel investments.\nProjection plans\nhelp you identify areas for improvement and make quick optimization decisions. You can see how advertising channels are expected to perform against your performance indicators (KPIs) like spend, conversions, and revenue.\nScenario plans\nhelp you determine the optimal distribution of your budget\u00a0for future media initiatives by letting you explore potential ROI at different budget levels.\nWith these tools, you'll be able to answer critical questions like, \"Is my spend on track?\", \"How many future conversions are forecasted based on my planned spend?\" and \u201cHow should I allocate my budgets to maximize revenue and ROI?\u201d\nLearn more about cross-channel budgeting\nImproved web conversion management and reporting capabilities for Google Ads customers (Beta)\nThis feature may not be available to your Google Analytics property. The Google Analytics team is actively working to expand this feature to more properties. Please reach out to your support team if you have questions about the eligibility of your property.\nMore flexible web conversion management tools and new cross-channel reporting features are now available for marketers and advertisers.\nConversion attribution settings are now adjustable independently for every conversion, enabling customers to fine-tune their bidding strategies in Google Ads, eliminate a common cause of conversion reporting discrepancies versus Google Ads, and gain greater confidence in the efficacy of their ad spend.\nWe\u2019re also adding more comprehensive cross-channel reporting features and capabilities, including new reporting dimension filters, to unlock new insights.\nLearn more about cross-channel conversion reporting in Analytics\nConversion attribution analysis report (Beta)\nThis feature may not be available to your Google Analytics property. The Google Analytics team is actively working to expand this feature to more properties. Please reach out to your support team if you have questions about the eligibility of your property.\nThe\nConversion attribution analysis\nreport is a new addition to the advertising workspace that provides customers with the ability to uncover the full value of their marketing channels across the entire customer journey.\nThis report helps you visualize how different touchpoints contribute to your bottom line through two specialized views:\nAssisted conversions (Last Click)\n:\nThis view allows you to see \"Assists\"\u2014touchpoints that engaged customers early in their journey but weren't the final click. This is essential for identifying undervalued upper-funnel channels, such as YouTube or Demand Gen, that drive interest before a final search or direct visit.\nRefined funnel analysis (Data-driven attribution)\n:\nThis view categorizes touchpoints into Early, Mid, and Late stages. We now separate single-touchpoint paths from multi-touchpoint journeys, giving you a clearer picture of which campaigns are closing complex journeys versus those that act as standalone drivers.\nBy using these new insights, advertisers can better justify upper-funnel spend and build a more holistic budget strategy that rewards every stage of the funnel.\nGive feedback about this article\nChoose a section to give feedback on\nWas this helpful?\nHow can we improve it?\nSubmit\nNeed more help?\nTry these next steps:\nPost to the help community\nGet answers from community members\nContact us\nTell us more and we\u2019ll help you get there\nfalse\n\u00a92026 Google\nPrivacy Policy\nTerms of Service\nLanguage\ncatal\u00e0\u200e\ndansk\u200e\nDeutsch\u200e\nespa\u00f1ol\u200e\nespa\u00f1ol (Latinoam\u00e9rica)\u200e\nFilipino\u200e\nfran\u00e7ais\u200e\nhrvatski\u200e\nIndonesia\u200e\nitaliano\u200e\nlatvie\u0161u\u200e\nlietuvi\u0173\u200e\nmagyar\u200e\nNederlands\u200e\nnorsk\u200e\npolski\u200e\nportugu\u00eas\u200e\nportugu\u00eas (Brasil)\u200e\nrom\u00e2n\u0103\u200e\nsloven\u010dina\u200e\nsloven\u0161\u010dina\u200e\nsuomi\u200e\nsvenska\u200e\nTi\u1ebfng Vi\u1ec7t\u200e\nT\u00fcrk\u00e7e\u200e\n\u010de\u0161tina\u200e\n\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac\u200e\n\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438\u200e\n\u0440\u0443\u0441\u0441\u043a\u0438\u0439\u200e\n\u0441\u0440\u043f\u0441\u043a\u0438\u200e\n\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430\u200e\n\u200f\n\u05e2\u05d1\u05e8\u05d9\u05ea\n\u200f\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629\n\u0939\u093f\u0928\u094d\u0926\u0940\u200e\n\u0e44\u0e17\u0e22\u200e\n\u4e2d\u6587\uff08\u7b80\u4f53\uff09\u200e\n\u4e2d\u6587\uff08\u7e41\u9ad4\uff09\u200e\n\u65e5\u672c\u8a9e\u200e\n\ud55c\uad6d\uc5b4\u200e\nEnglish\u200e\nEnglish\u200e\ncatal\u00e0\u200e\ndansk\u200e\nDeutsch\u200e\nespa\u00f1ol\u200e\nespa\u00f1ol (Latinoam\u00e9rica)\u200e\nFilipino\u200e\nfran\u00e7ais\u200e\nhrvatski\u200e\nIndonesia\u200e\nitaliano\u200e\nlatvie\u0161u\u200e\nlietuvi\u0173\u200e\nmagyar\u200e\nNederlands\u200e\nnorsk\u200e\npolski\u200e\nportugu\u00eas\u200e\nportugu\u00eas (Brasil)\u200e\nrom\u00e2n\u0103\u200e\nsloven\u010dina\u200e\nsloven\u0161\u010dina\u200e\nsuomi\u200e\nsvenska\u200e\nTi\u1ebfng Vi\u1ec7t\u200e\nT\u00fcrk\u00e7e\u200e\n\u010de\u0161tina\u200e\n\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac\u200e\n\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438\u200e\n\u0440\u0443\u0441\u0441\u043a\u0438\u0439\u200e\n\u0441\u0440\u043f\u0441\u043a\u0438\u200e\n\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430\u200e\n\u200f\u05e2\u05d1\u05e8\u05d9\u05ea\n\u200f\u0627\u0644\u0639\u0631\u0628\u064a\u0629\n\u0939\u093f\u0928\u094d\u0926\u0940\u200e\n\u0e44\u0e17\u0e22\u200e\n\u4e2d\u6587\uff08\u7b80\u4f53\uff09\u200e\n\u4e2d\u6587\uff08\u7e41\u9ad4\uff09\u200e\n\u65e5\u672c\u8a9e\u200e\n\ud55c\uad6d\uc5b4\u200e\nEnglish\u200e\nEnable Dark Mode\nSend feedback on...\nThis help content & information\nGeneral Help Center experience\nSearch\nClear search\nClose search\nMain menu\nGoogle apps\n6656369874512339148\ntrue\nSearch Help Center\nfalse\ntrue\ntrue\ntrue\nGoogle Help\nHelp Center\nGet started with Analytics\nCollect and manage data\nReport and explore\nAdvertising and attribution\nAudiences and remarketing\nManage accounts, properties, and users\nGoogle Analytics 360\nPolicies and data privacy\nCommunity\nAnalytics\nPrivacy Policy\nTerms of Service\nSubmit feedback\nIntroduction to Analytics\nSet up Analytics\nGuides and videos\nTroubleshoot\nGlossary\nEvents and key events\nImport data from external systems\nIntegrations\nMeasure ecommerce\nMeasure lead generation\nFirst-party data\nTroubleshoot data issues\nReports\nExplorations\nDimensions and metrics\nAnalytics Intelligence\nThe Analytics app\nHow data is stored and displayed\nUnderstand advertising\nUnderstand attribution\nManage and configure attribution\niOS conversion measurement\nSet up audiences\nUse audiences for advertising and remarketing\nAudiences for common marketing objectives\nTroubleshoot audiences\n[GA4] Subproperties\nRoll-up properties\n[GA4] Subproperties\nRoll-up properties\nHow data is stored and displayed\nData privacy and security\ntrue\ntrue\n69256\ntrue\nfalse\nWhat is the issue with this selection?\nWhat is the issue with this selection?\nInaccurate - doesn't match what I see in the product\nHard to understand - unclear or translation is wrong\nMissing info - relevant but not comprehensive\nIrrelevant - doesn\u2019t match the title and / or my expectations\nMinor errors - formatting issues, typos, and / or broken links\nOther suggestions - ideas to improve the content\nShare additional info or suggestions\n\u200b\n\u200b\nDo not share any personal info\nCancel\nSubmit\nBy continuing, you agree Google uses your answers,\naccount & system info\nto improve services, per our\nPrivacy\n&\nTerms\n.\nHelp guide\nHelp guide\nHi, I\u2019m a\ndigital support assistant\n. Chat with me to find answers and solve account issues.\nLet\u2019s chat\nfalse\nfalse",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://developers.google.com/analytics",
+      "title": "Google Analytics \u00a0|\u00a0 Google for Developers",
+      "text": "Google Analytics \u00a0|\u00a0 Google for Developers\nSkip to main content\nGoogle\nAnalytics\nOverview\nDeveloper documentation\nRelated products\nMeasurement UIs\nAnalytics\nMarketing Platform\nTag Platform\nDeveloper products\nMarketing Platform API\nData Manager API\nCampaign Manager 360\nMeridian MMM\nGoogle Ads API\nDisplay & Video 360\nGoogle Ads Scripts\nBid Manager API\nAdManager\nInteractive Media Ads\nAdMob\nAuthorized Buyers\nGoogle Publisher Tag\nAdSense\nBlog\nCommunity\nCommunity\nDiscord\nStack Overflow\nYouTube\nGitHub\nMore\n/\nEnglish\nDeutsch\nEspa\u00f1ol\nEspa\u00f1ol \u2013 Am\u00e9rica Latina\nFran\u00e7ais\nIndonesia\nItaliano\nPolski\nPortugu\u00eas \u2013 Brasil\nTi\u00ea\u0301ng Vi\u00ea\u0323t\nT\u00fcrk\u00e7e\n\u0420\u0443\u0441\u0441\u043a\u0438\u0439\n\u05e2\u05d1\u05e8\u05d9\u05ea\n\u0627\u0644\u0639\u0631\u0628\u064a\u0651\u0629\n\u0641\u0627\u0631\u0633\u06cc\n\u0939\u093f\u0902\u0926\u0940\n\u09ac\u09be\u0982\u09b2\u09be\n\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22\n\u4e2d\u6587 \u2013 \u7b80\u4f53\n\u4e2d\u6587 \u2013 \u7e41\u9ad4\n\u65e5\u672c\u8a9e\n\ud55c\uad6d\uc5b4\nSign in\nWith Google Analytics, you can fine-tune your digital strategy, optimize your campaigns, and take your online presence to new heights.\nGo to Analytics\nGoogle\nAnalytics\nOverview\nDeveloper documentation\nRelated products\nMore\nBlog\nCommunity\nMore\nMeasurement UIs\nAnalytics\nMarketing Platform\nTag Platform\nDeveloper products\nMarketing Platform API\nData Manager API\nCampaign Manager 360\nMeridian MMM\nGoogle Ads API\nDisplay & Video 360\nGoogle Ads Scripts\nBid Manager API\nAdManager\nInteractive Media Ads\nAdMob\nAuthorized Buyers\nGoogle Publisher Tag\nAdSense\nCommunity\nDiscord\nStack Overflow\nYouTube\nGitHub\nTry the MCP server for Google Analytics. Install from\nGitHub\n, and see the\nannouncement\nfor more details.\nHome\nProducts\nGoogle Analytics\nSend feedback\nStart learning about\nGoogle Analytics\nGoogle Analytics is the go-to platform for millions of website and app owners seeking to gain a deeper understanding of their website and app performance. With Google Analytics, you can fine-tune your digital strategy, optimize your campaigns, and take your online presence to new heights.\nChoose your path\nNew to Google Analytics?\nCheck out our\nfree courses\nto get started.\nLooking for developer documentation?\nSee\nGoogle Analytics for developers\n.\nChoose your path\nAnalytics for beginners and small businesses\nFor anyone who's new to Google Analytics or simply needs to understand its fundamentals.\nGet started\nAnalytics for marketing specialists and digital analysts\nFor marketers or data analysts looking to explore Google Analytics, including advanced features and capabilities.\nGet started\nAnalytics for developers\nFor developers who want to tag a website or app, set up events or ecommerce, or build custom Analytics functionality.\nGet started\nTake the Analytics Academy course on Skillshop\nGoogle provides free courses to help you get started with Google Analytics. First, learn how Google Analytics works and create your account and property. Then, learn how to navigate the Google Analytics web interface, use reports for your business, and manage the data you send.\nGet started\nWatch Google Analytics videos\nGet started with Google Analytics\nLearn how to set up Google Analytics on a website for the first time using Google Tag Manager.\nTurn insights into ROI with Google Analytics\nLearn how Google Analytics helps you uncover relevant customer insights, that you can quickly activate in Google\u2019s media platforms to drive performance.\nBest practices for account structure\nLearn the best practice methods for setting up your Google Analytics account structure, including the use of Subproperties and Roll-up properties.\nWatch more on the Google Analytics YouTube\n  channel \u2192\nContinue learning\nWhat's New\nLearn about new features and functionality in the release notes for Google Analytics.\nDiscord\nAsk Google Analytics questions to a community of practitioners to help accomplish your data collection and analysis goals.\nAsk an expert\nFind Certified Companies and Sales Partners who can support you every step of the way.\nLearn about Google Analytics 360\nLearn with GMP\nLearn more about Google Analytics 360 by attending a live course with subject matter experts offered in US, Canada, and Latin America time zones.\nGMP Academy\nLearn more about Google Analytics 360 by attending a live course with subject matter experts in Europe, Middle East, and Africa time zones.\nEnterprise Marketing Portal\nAre you a certified GMP Partner? Visit the EMP for exclusive partner-only resources to deepen your Google Analytics knowledge.\nDeveloper resources\nDeveloper documentation\nLearn how to use Google Analytics APIs and developer products to automate your measurement and reporting solutions.\nSample code\nGet started with Google Analytics for developers using our client libraries and code samples on GitHub.\nDemos and Tools\nDiscover what's possible with the Google Analytics platform using our demos and tools for developers.\nDidn't find what you were looking for?\nSearch the Google Analytics documentation to find what you're looking for.\nWas this helpful?\nSend feedback\nNewsletter\nSign up for Google Analytics developer newsletter\nDiscord\nJoin Google Analytics Discord server\nBlog\nRead the Google Analytics blog\nGitHub\nTry Google Analytics code samples\nStack Overflow\nAsk questions using the google-analytics tag\nVideos\nWatch Google Analytics videos on YouTube\nResources\nHelp center\nDeveloper site\nRelease notes\nGet help\nReport an issue\nJoin a community\nDeveloper community & updates\nAnalytics community forum\nProduct information\nPartner portal\nGoogle Marketing Platform\nTerms of Service\nProtocol / SDK Policy\nBranding Policy\nAndroid\nChrome\nFirebase\nGoogle Cloud Platform\nGoogle AI\nAll products\nTerms\nPrivacy\nManage cookies\nEnglish\nDeutsch\nEspa\u00f1ol\nEspa\u00f1ol \u2013 Am\u00e9rica Latina\nFran\u00e7ais\nIndonesia\nItaliano\nPolski\nPortugu\u00eas \u2013 Brasil\nTi\u00ea\u0301ng Vi\u00ea\u0323t\nT\u00fcrk\u00e7e\n\u0420\u0443\u0441\u0441\u043a\u0438\u0439\n\u05e2\u05d1\u05e8\u05d9\u05ea\n\u0627\u0644\u0639\u0631\u0628\u064a\u0651\u0629\n\u0641\u0627\u0631\u0633\u06cc\n\u0939\u093f\u0902\u0926\u0940\n\u09ac\u09be\u0982\u09b2\u09be\n\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22\n\u4e2d\u6587 \u2013 \u7b80\u4f53\n\u4e2d\u6587 \u2013 \u7e41\u9ad4\n\u65e5\u672c\u8a9e\n\ud55c\uad6d\uc5b4\nInfo\nChat\nAPI\nPage info\nbug_report\nfullscreen\nclose_fullscreen\nclose\nNo additional info available on this page.",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://marketingplatform.google.com/about/partners/",
+      "title": "Work with Partners",
+      "text": "Work with Partners\nJump to Content\nEnterprise Marketing Portal\nHome\nBecome a Partner\nWork with Partners\nFAQ\nSign in\nmenu\nEnterprise Marketing Portal\nWork with Partners\nWhether you\u2019re looking for help with a single project or a bigger, long-term partnership, Google's ecosystem of partners and experts have the resources and expertise you need to help you achieve more with your marketing.\nGoogle Marketing Partners\nAdvertising Technology Partners\nYouTube Activation Partners\nMarketing Partner Gallery\nFind a Google Marketing Platform Partner\nAdvertising Technology Partner directory\nFind an Advertising Technology Partner\nYouTube Activation Partner Roster\nFind a YouTube Activation Partner\nExpert Help, When You Need It\nExpertise\nPartners are vetted by Google so you can trust you're working with a company who knows our solutions and can provide the expertise you are looking for.\ninfo_outline\nFlexibility\nOur partners offer a broad array of products, services and multiple engagement models \u2014 including self-service, full-service and hybrid \u2014 to meet the specific needs of your business.\ninfo_outline\nA Full Toolbox\nWhether you're looking for help with strategy, media management, system integrations, measurement and attribution or more \u2014 our partners offer the right combination of tools, expertise, services and products.\ninfo_outline\nGoogle Marketing Platform Partners\nThe Expertise That You Need\nWhether you're looking for help with a single project or a bigger, long-term partnership, Google Marketing Platform Partners have the resources and expertise you need to help you achieve more with your marketing.\nLook for the Badge\nWhen a company has a partners badge, it means they've been carefully vetted and meet our standards. It also means we consider them to be a trusted business partner in providing the kind of support you need to be successful.\nFind a Partner\u2019s Specialization\nPartners specialize in one or more of the following areas. Explore our partners to find one that's right for you.\nDisplay and Video Advertising\nNeed help with your media strategy, planning, buying, trafficking, and optimization including programmatic buys across display and video? These partners are the experts who can help.\ninfo_outline\nSearch Advertising\nThese partners create and optimize search and other performance channels including keyword strategy and budget planning.\ninfo_outline\nAnalytics and Testing\nThese partners provide data strategy, data collection, testing, reporting, and dashboard services for websites and mobile apps.\ninfo_outline\nCreative Design\nThese partners are creative experts and provide services to support your display and video advertising creative needs.\ninfo_outline\nExplore the Gallery for Google Marketing Partners\nWhatever your needs are, we have Certified Companies and Sales Partners who can support you every step of the way.\nExplore the Gallery\nopen_in_new\nAdvertising Technology Partners\nAchieve Your Goals\nThe Advertising Technology Partners website and directory provides information on independent companies that have advertising integrations with Google. Whether you\u2019re looking to maximize reach, build consideration and interest, or drive outcomes, these partners can help you meet your business goals on Google media.*\nAbout the Program\nThe Advertising Technology Partners program includes select third-party ad measurement partners and product categories available on YouTube, Google Video Partners, and Search inventory, and is not a complete list of partners that support measurement across Google media. Additionally, new product categories may be added over time.\n*Information in the directory is provided for reference only, and is subject to change. Advertising Technology Partners provide independent measurement solutions on Google media. As such, Google is not responsible for and makes no warranties or guarantees about (i) any third-party company, product, or information listed in the directory, or (ii) the coverage or availability of any third-party product on Google inventory (e.g. for a certain inventory type or ad format, in a given country, etc.). Inclusion in the program and directory is not an endorsement from Google. Please conduct your own due diligence of any company that you choose to work with.\nFind a Partner to Support Measurement\nAdvertising Technology Partners have an integration with Google for one or more of the following ad measurement product categories.\nFor more information about these product category integrations, please refer to the general integration information\nhere\n.\nBrand Lift\nBrand Lift partners measure the effectiveness of a YouTube brand\n           campaign by surveying an audience of users who were either exposed\n            to ads in a campaign, or eligible but not exposed. The survey quantifies\n            the incremental change that the campaign had on brand perception and\n            user behavior. Key metrics include Lift in Awareness, Consideration\n            and Purchase intent, Cost Per Lifted User, Total Reach and Frequency.\nBrand Safety\nBrand Safety partners provide independent verification and transparency\n            into the brand safety and suitability of ad placements on YouTube\n            and Google Video Partners inventory, based on global industry standards\n            defined by the Global Alliance for Responsible Media (\u201cGARM\u201d).\n            Key metrics include GARM brand safety and GARM brand suitability.\nEnhanced Conversions for Web\nEnhanced conversions for web can improve the accuracy of your conversion\n            measurement on YouTube and Search to unlock more powerful bidding.\n            It supplements your existing conversion tags by sending hashed first party conversion data from your website to Google in a privacy safe way. Enhanced conversions for web partners can streamline implementation and troubleshoot setups through additional technical support.\nGeo Experiments (GeoX)\nGeoX partners help advertisers understand the return on their investments\n            across YouTube, Google Video Partners, and Search inventory by measuring\n            the impact of media on driving incremental offline sales volume leveraging\n            small and controlled geo-based tests under live conditions. Key metrics\n            reported include % lift in sales, incremental sales and return on ad spend (ROAS).\nReach\nAd Reach partners provide advertisers and agencies with independent measurement of the audience and reach of their cross-media advertising campaigns on YouTube and Google Video Partners inventory. Key metrics include impressions (inclusive of co-viewing), unique audience reach, frequency, and on-target %.\nUser Sales Lift\nUser Sales Lift partners measure how effective YouTube campaigns are at moving CPG products off the shelves, helping brand advertisers optimize their spend based on performance insights. Key metrics reported include % lift in sales, incremental sales and return on ad spend (ROAS).\nViewability and Invalid Traffic\nViewability and Invalid Traffic partners provide independent and transparent measurement of video and display inventory on YouTube and Google Video Partners sites. Key metrics include viewability, audibility, watch time, and fraud/bot detection, based on global industry standards and proprietary vendor methodologies.\nExplore the Directory for Advertising Technology Partners\nExplore the directory to learn more about Google\u2019s Advertising Technology Partners. When a company is listed in the Advertising Technology Partners directory, it means that they have an integration with Google to support your marketing objectives for one or more of the product categories above, and that they are a member of this Advertising Technology Partners program.\nExplore the Directory\nopen_in_new\nYouTube Activation Partners\nDiscover YouTube Advertising Experts\nWhether you need strategic guidance to evolve your YouTube buying strategy, or additional expertise to manage your next YouTube campaign, YouTube Activation Partners can help you achieve your advertising goals.\nWork with an Expert\nWhen a company appears on our YouTube Activation Partner roster, it means they've been reviewed by Google and meet our standards.\nThe YouTube Activation Partners badge means we consider them to be a trusted business partner for both Advertisers and Agencies looking for specialized YouTube support & expertise.\nExplore YouTube Activation Partners\nFrom planning to execution and beyond, our partners are ready to help you activate on YouTube.\nExplore the Roster\nopen_in_new\nInterested in Becoming a YouTube Activation Partner?\nWhile we are not onboarding new partners at this time, we are accepting applications for future membership on a rolling basis. Before you apply, please make sure you review all the requirements you must meet in order to be considered for future membership.\nExpand all\nunfold_more\nAdmission Requirements\nBelow is some guidance about the criteria that companies should meet\n          to be considered for YouTube Activation Partner Program:\nCompany is an independent service provider servicing end advertising clients.\n          For clarity, company must not be not partially owned, nor a subsidiary of, a Media Agency HoldCo.\nCompany has an established and scaled Google Ads business, with material managed YouTube spend in Google Ads annually.\nCompany has a dedicated sales team to commercialize video-based media activation solutions in market, and account management capabilities to provide support to joining customers.\nCompany has dedicated engineering / development resources to integrate with Google / YT product integrations (i.e. APIs, etc).\nCompany has strong customer demand for company\u2019s Google-centric services (Note: Google assesses demand in a few ways, including sponsorship from major brands and agencies, advertiser inquiries provided to Google Sales, general market research, proven adoption in a target market).\nCompany is in full compliance with Google & YouTube policies and have accounts in good standing.\nAgrees to have core team members complete Google Ads Video certification.\nApply\nopen_in_new\nTake the Next Step\nAll users are welcome to sign up as a Member of our EMP community!\nBecome a Member\nPrivacy\nTerms\nAbout Google\nGoogle Products\nhelp\nHelp",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/google-analytics/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Tech-savvy audiences block Google Analytics",
+          "url": "https://plausible.io/blog/google-analytics-adblockers-missing-data",
+          "points": 1214,
+          "num_comments": 681,
+          "created_at": "2021-08-31T08:18:59Z",
+          "hn_url": "https://news.ycombinator.com/item?id=28365163"
+        },
+        {
+          "title": "Use of Google Analytics declared illegal by French data protection authority",
+          "url": "https://www.cnil.fr/en/use-google-analytics-and-data-transfers-united-states-cnil-orders-website-manageroperator-comply",
+          "points": 1172,
+          "num_comments": 1095,
+          "created_at": "2022-02-10T10:18:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=30284372"
+        },
+        {
+          "title": "Show HN: I made a privacy-first minimalist Google Analytics",
+          "url": "https://simpleanalytics.io",
+          "points": 968,
+          "num_comments": 263,
+          "created_at": "2018-09-19T14:12:56Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18024277"
+        },
+        {
+          "title": "Italian watchdog bans use of Google Analytics",
+          "url": "https://www.gpdp.it/web/guest/home/docweb/-/docweb-display/docweb/9782874#english",
+          "points": 942,
+          "num_comments": 587,
+          "created_at": "2022-06-23T17:27:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=31852384"
+        },
+        {
+          "title": "Umami: Self-hosted open-source alternative to Google Analytics",
+          "url": "https://umami.is/",
+          "points": 820,
+          "num_comments": 227,
+          "created_at": "2020-08-18T13:35:29Z",
+          "hn_url": "https://news.ycombinator.com/item?id=24198329"
+        },
+        {
+          "title": "Google Analytics: Stop feeding the beast",
+          "url": "https://casparwre.de/blog/stop-using-google-analytics/",
+          "points": 771,
+          "num_comments": 383,
+          "created_at": "2021-02-25T14:36:43Z",
+          "hn_url": "https://news.ycombinator.com/item?id=26263149"
+        },
+        {
+          "title": "Lightweight Alternatives to Google Analytics",
+          "url": "https://lwn.net/SubscriberLink/822568/61d29096a4012e06/",
+          "points": 738,
+          "num_comments": 319,
+          "created_at": "2020-06-18T07:56:28Z",
+          "hn_url": "https://news.ycombinator.com/item?id=23560823"
+        },
+        {
+          "title": "Firefox replaces Google Analytics with fake no-op in strict tracking protection",
+          "url": "https://twitter.com/__jakub_g/status/1365400306767581185",
+          "points": 648,
+          "num_comments": 235,
+          "created_at": "2021-02-26T22:51:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=26280808"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "I built rybbit.io, an open source Google Analytics replacement",
+          "subreddit": "selfhosted",
+          "score": 1792,
+          "num_comments": 228,
+          "permalink": "https://reddit.com/r/selfhosted/comments/1kgytl4/i_built_rybbitio_an_open_source_google_analytics/",
+          "selftext": "I built this because I was unhappy with existing web analytics tools. Google Analytics was really hard to use and I found other open source alternatives to be lacking in the features I wanted to have. \n\nGithub repo. [https://github.com/rybbit-io/rybbit](https://github.com/rybbit-io/rybbit)\n\nWebsite [https://rybbit.io](https://rybbit.io)\n\nSelf-host docs: [https://www.rybbit.io/docs/self-hosting](https://www.rybbit.io/docs/self-hosting)"
+        },
+        {
+          "title": "From $6M/year to near-bankruptcy overnight - and how it turned into a $50M pivot",
+          "subreddit": "Entrepreneur",
+          "score": 1528,
+          "num_comments": 189,
+          "permalink": "https://reddit.com/r/Entrepreneur/comments/1mwfcdy/from_6myear_to_nearbankruptcy_overnight_and_how/",
+          "selftext": "In 2014 I launched a Shopify store in an adult niche (cannabis accessories). Everyone told me I was insane. \"Illegal\", \"will never work\", \"you cant advertise\". But I saw where the legalization trend was going and pushed forward anyway.\n\nBy 2016 we were doing $6M a year in revenue. 25,000 square foot warehouse, thousands of SKUs, private label containers arriving monthly, 60 full-time staff, free lunch, cold brew on tap, all that fun stuff. 99% of our traffic came from Google Search, because at t"
+        },
+        {
+          "title": "I planted fake API keys in online code editors and monitored where they went. CodePen sends your code to servers as you type.",
+          "subreddit": "webdev",
+          "score": 1448,
+          "num_comments": 170,
+          "permalink": "https://reddit.com/r/webdev/comments/1rj1oac/i_planted_fake_api_keys_in_online_code_editors/",
+          "selftext": "I've been auditing the privacy practices of developer tools. This time I tested what happens to your code in online editors.\n\nTest data: const API\\_KEY = \"sk-secret-test-12345\"; const DB\\_PASSWORD = \"hunter2\";\n\nCodePen The moment you type, your code is sent to CodePen's servers via POST requests to codepen.io/cpe/process (Babel transpilation) and codepen.io/cpe/boomboom/store (preview rendering). You don't need to click Save it happens in real-time. My fake API key was transmitted verbatim in th"
+        },
+        {
+          "title": "[\ud83d\udc38 Rybbit v2.0.0] Google Analytics alternative - now with cool maps!",
+          "subreddit": "selfhosted",
+          "score": 653,
+          "num_comments": 71,
+          "permalink": "https://reddit.com/r/selfhosted/comments/1o8szvx/rybbit_v200_google_analytics_alternative_now_with/",
+          "selftext": "Hi friends, I got a big Rybbit update for you guys!\n\nQuick intro - Rybbit is a fun and GDPR compliant version of Google Analytics that is open source and and self-hostable under AGPL-3.0.\n\n**What New:**\n\n* Totally revamped the maps - Added replayable timeline and a bunch of other cool features!\n* User journeys redesign\n* Improvements to filters\n* Improvements to sessions and users page\n* Added optional IP address collection (as an escape hatch in case you want to catch an attacker or bot -- only"
+        },
+        {
+          "title": "$160M VC-backed company just killed my EU trademark for a small OSS project. Is it even worth fighting?",
+          "subreddit": "ExperiencedDevs",
+          "score": 573,
+          "num_comments": 106,
+          "permalink": "https://reddit.com/r/ExperiencedDevs/comments/1mopzhz/160m_vcbacked_company_just_killed_my_eu_trademark/",
+          "selftext": "I run a small open-source project Deepkit (Trademark 017875717) I've been building for many years. It's not huge, just a few thousand users compared to the big OSS names, but to me it was worth protecting, so I trademarked the name in the EU and US a few years back. I had hoped to be protected from other corporations this way and live peacefully.\n\nA $160M-funded company named Deepki (Trademark 1751952) came along and filed for cancellation at EUIPO since they needed the trademark now after getti"
+        },
+        {
+          "title": "She ended up begging me to stop hacking her website",
+          "subreddit": "pettyrevenge",
+          "score": 30980,
+          "num_comments": 271,
+          "permalink": "https://reddit.com/r/pettyrevenge/comments/1krc9z2/she_ended_up_begging_me_to_stop_hacking_her/",
+          "selftext": "This is my freelance-revenge story that happened about 8 years ago, and it was one of the first times I was ghosted without pay.\n\nI created a landing page for her Elven symbol jewelry store (a bunch of esoteric BS, but I was young and trying to break into copywriting, so I took any deal I could).\n\nWe agreed on a pure performance deal, so I got nothing upfront, but we settled on a 5% performance fee.\n\nHer wordpress store was really small, and I was aiming to get $300-800 out of it, but honestly a"
+        },
+        {
+          "title": "YSK that free file converter websites like iLovePDF set 637 cookies from 221 domains when you upload a single document",
+          "subreddit": "YouShouldKnow",
+          "score": 19733,
+          "num_comments": 575,
+          "permalink": "https://reddit.com/r/YouShouldKnow/comments/1rjifb9/ysk_that_free_file_converter_websites_like/",
+          "selftext": "Why YSK: If you've ever converted a PDF, merged documents, or compressed images using a free online tool, your files were likely processed on servers surrounded by dozens of ad networks and tracking scripts. Knowing this helps you make better decisions about which tools you trust with sensitive documents like tax returns, contracts, and resumes.\n\nI audited the privacy practices of popular free file converter sites by inspecting network requests, reading privacy policies, and counting cookies and"
+        },
+        {
+          "title": "Canada Computers online card skimmer",
+          "subreddit": "bapccanada",
+          "score": 2413,
+          "num_comments": 883,
+          "permalink": "https://reddit.com/r/bapccanada/comments/1qk4axy/canada_computers_online_card_skimmer/",
+          "selftext": "**If you have made a purchase recently on Canada Computers' online store, you should immediately freeze or cancel the card you used.**\n\nI found a card skimmer on Canada Computers' online checkout page. This malware steals any information you enter on the page and sends it to the attacker's website.\n\nThe malware is a Magecart-style script that listens to any input on the payment form fields, validates them, and steals them. It's obfuscated and loads from CodePen through a disguised Google Analyti"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": "https://support.google.com/analytics/answer/9164320",
+    "docs": "https://developers.google.com/analytics",
+    "integrations": "https://marketingplatform.google.com/about/partners/",
+    "g2": "https://www.g2.com/products/google-analytics/reviews"
+  },
+  "analysis": {
+    "name": "Google Analytics",
+    "url": "https://analytics.google.com",
+    "tagline": "Fine-tune your digital strategy, optimize your campaigns, and take your online presence to new heights",
+    "value_proposition": "A free web and app analytics platform that measures user behavior, campaign performance, and conversion data to help businesses optimize their digital presence and Google Ads spend.",
+    "target_segment": "SMB / mid-market / enterprise",
+    "ideal_customer": "Website and app owners ranging from individual marketers and small businesses using the free tier to large enterprises needing cross-channel campaign measurement, Google Ads optimization, and data governance via GA 360",
+    "features": [
+      {
+        "name": "web analytics",
+        "description": "Track website visitor behavior, sessions, pageviews, and engagement metrics",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "app analytics",
+        "description": "Measure mobile and web app performance and user interactions",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "event tracking",
+        "description": "Capture custom user interactions and events on websites and apps",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "ecommerce tracking",
+        "description": "Measure purchase funnels, revenue, and product performance",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "conversion tracking",
+        "description": "Define and measure goal completions and conversion events",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "data-driven attribution",
+        "description": "Attribute conversions across touchpoints using machine learning; segments single vs. multi-touchpoint paths",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "per-conversion attribution settings",
+        "description": "Independently adjust attribution model per conversion to fine-tune Google Ads bidding and eliminate reporting discrepancies",
+        "evidence_source": "changelog",
+        "tier": "unknown"
+      },
+      {
+        "name": "conversion attribution analysis report",
+        "description": "Advertising workspace report visualizing full-funnel touchpoint contribution with assisted conversions and funnel stage views",
+        "evidence_source": "changelog",
+        "tier": "unknown"
+      },
+      {
+        "name": "assisted conversions view",
+        "description": "See touchpoints that engaged customers early in their journey before the final converting click to surface undervalued upper-funnel channels",
+        "evidence_source": "changelog",
+        "tier": "unknown"
+      },
+      {
+        "name": "funnel analysis",
+        "description": "Categorize touchpoints into Early, Mid, and Late funnel stages to understand campaign contribution across complex vs. standalone journeys",
+        "evidence_source": "changelog",
+        "tier": "unknown"
+      },
+      {
+        "name": "cross-channel reporting",
+        "description": "Unified reporting across paid and organic channels with new dimension filtering capabilities",
+        "evidence_source": "changelog",
+        "tier": "unknown"
+      },
+      {
+        "name": "cross-channel budgeting",
+        "description": "Track performance and optimize paid channel investments across channels with projection and scenario planning (Beta)",
+        "evidence_source": "changelog",
+        "tier": "unknown"
+      },
+      {
+        "name": "projection plans",
+        "description": "Forecast how advertising channels are expected to perform against KPIs like spend, conversions, and revenue",
+        "evidence_source": "changelog",
+        "tier": "unknown"
+      },
+      {
+        "name": "scenario plans",
+        "description": "Model optimal budget allocation across channels at different spend levels to maximize ROI for future media initiatives",
+        "evidence_source": "changelog",
+        "tier": "unknown"
+      },
+      {
+        "name": "generated insights",
+        "description": "AI-summarized top three data changes since last visit on the home page, including anomalies, configuration updates, and seasonality trends",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "task assistant",
+        "description": "Tailored configuration recommendations organized into actionable categories (connect accounts, enhance reporting, fix data issues) with progress tracking",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "advertising workspace",
+        "description": "Dedicated workspace for advertisers to access attribution, conversion, and cross-channel campaign reports",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "audience building",
+        "description": "Create audience segments for remarketing and activation across Google media platforms",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "remarketing",
+        "description": "Re-engage users via audience lists shared to Google Ads and other Google platforms",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "real-time reporting",
+        "description": "Monitor active users and events on your site or app in real time",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "exploration reports",
+        "description": "Ad-hoc analysis workspace for custom segmentation, funnels, path analysis, and cohort studies",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "subproperties",
+        "description": "Create filtered sub-views of a parent property for granular data governance across business units",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "roll-up properties",
+        "description": "Aggregate data from multiple properties into a single combined view for cross-property analysis",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "google tag manager integration",
+        "description": "Deploy and manage Analytics tags via Google Tag Manager without direct code changes",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "google ads integration",
+        "description": "Link Analytics to Google Ads for shared audiences, conversion import, and smart bidding signals",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "enhanced conversions for web",
+        "description": "Supplement conversion tags with hashed first-party data sent to Google in a privacy-safe way to improve measurement accuracy",
+        "evidence_source": "integrations",
+        "tier": "free"
+      },
+      {
+        "name": "reporting api",
+        "description": "Programmatic access to Analytics data via the Google Analytics Data API for custom dashboards and automation",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "admin api",
+        "description": "Automate account and property management configuration via the Google Analytics Admin API",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "client libraries",
+        "description": "Official SDKs for multiple programming languages to integrate Analytics into custom applications",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "mcp server",
+        "description": "Model Context Protocol server enabling AI agent access to Analytics data and configuration",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "custom dimensions and metrics",
+        "description": "Define custom data parameters to extend the default Analytics data model",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "user access management",
+        "description": "Manage account, property, and user permissions across the Analytics hierarchy",
+        "evidence_source": "changelog",
+        "tier": "free"
+      },
+      {
+        "name": "data collection configuration",
+        "description": "Configure what data is collected including events, parameters, and data streams",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "brand lift measurement",
+        "description": "Measure incremental brand awareness, consideration, and purchase intent lift from YouTube campaigns via certified Ad Tech partners",
+        "evidence_source": "integrations",
+        "tier": "paid"
+      },
+      {
+        "name": "brand safety measurement",
+        "description": "Independent verification of ad placement brand safety and suitability on YouTube and Google Video Partners per GARM standards via certified partners",
+        "evidence_source": "integrations",
+        "tier": "paid"
+      },
+      {
+        "name": "geo experiments (geox)",
+        "description": "Measure advertising ROI via geographic holdout experiments with certified partner support",
+        "evidence_source": "integrations",
+        "tier": "paid"
+      },
+      {
+        "name": "google analytics 360",
+        "description": "Enterprise tier with higher data limits, guaranteed SLAs, subproperties, roll-up properties, and dedicated support",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "certified partner ecosystem",
+        "description": "Network of vetted Google Marketing Platform Partners for analytics, testing, media buying, and creative services",
+        "evidence_source": "integrations",
+        "tier": "all"
+      },
+      {
+        "name": "skillshop free training",
+        "description": "Free online courses for Analytics fundamentals, marketing specialist, and developer tracks via Google Skillshop",
+        "evidence_source": "docs",
+        "tier": "free"
+      }
+    ],
+    "integrations": [
+      "Google Ads",
+      "Google Tag Manager",
+      "YouTube",
+      "Display & Video 360",
+      "Campaign Manager 360",
+      "Google Marketing Platform",
+      "Firebase",
+      "Google Cloud Platform",
+      "Meridian MMM",
+      "AdMob",
+      "AdSense",
+      "Google Publisher Tag",
+      "Google Ad Manager",
+      "Authorized Buyers"
+    ],
+    "differentiators": [
+      "Deep native integration with Google Ads enabling direct bidding signal sharing and conversion optimization",
+      "Data-driven attribution using Google machine learning across the full customer journey",
+      "Cross-channel budgeting with AI projection and scenario planning (Beta)",
+      "AI-generated insights surfacing anomalies and seasonality trends automatically on the home page",
+      "MCP server for AI agent access to Analytics data",
+      "Massive partner ecosystem of vetted Google Marketing Platform Partners",
+      "Free tier delivering enterprise-grade event collection and measurement at unlimited scale",
+      "Enhanced Conversions for Web for privacy-safe first-party data measurement"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-04",
+        "what": "Task Assistant \u2014 tailored configuration recommendations in left nav organized into actionable categories with progress tracking",
+        "source": "To help you get the most out of your Google Analytics property, we are introducing Task Assistant"
+      },
+      {
+        "date": "2026-02",
+        "what": "Generated insights on Home page \u2014 AI summary of top 3 data changes since last visit including anomalies and seasonality trends",
+        "source": "We've added Generated insights to your Home page. This feature summarizes the top three data changes since your last visit"
+      },
+      {
+        "date": "2026-01",
+        "what": "Cross-channel budgeting (Beta) with projection plans and scenario plans for optimizing paid channel ROI",
+        "source": "Use cross-channel budgeting to track performance and optimize paid channel investments"
+      },
+      {
+        "date": "2026-01",
+        "what": "Improved web conversion management with per-conversion attribution settings and new cross-channel reporting dimension filters",
+        "source": "Conversion attribution settings are now adjustable independently for every conversion"
+      },
+      {
+        "date": "2026-01",
+        "what": "Conversion attribution analysis report with assisted conversions (Last Click) and refined funnel analysis (Data-driven attribution) views",
+        "source": "The Conversion attribution analysis report is a new addition to the advertising workspace that provides customers with the ability to uncover the full value of their marketing channels"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Dominant market adoption \u2014 millions of website and app owners rely on it (docs)",
+        "Comprehensive free tier with no seat cost",
+        "Deep Google Ads ecosystem integration for campaign optimization"
+      ],
+      "complaints": [
+        "Blocked by tech-savvy users running ad blockers \u2014 'Tech-savvy audiences block Google Analytics' (HN 1214\u2191)",
+        "Declared illegal by French data protection authority for GDPR violations (HN 1172\u2191)",
+        "Banned by Italian watchdog (HN 942\u2191)",
+        "Privacy-invasive model driving active community migration to self-hosted alternatives like Umami, Plausible, and Rybbit (HN/Reddit multiple high-vote threads)",
+        "'Google Analytics: Stop feeding the beast' \u2014 perceived as surveillance infrastructure for Google's ad business (HN 771\u2191)",
+        "Firefox blocks it in strict tracking protection mode (HN 648\u2191)"
+      ],
+      "sources": [
+        "hn",
+        "reddit"
+      ]
+    },
+    "pricing_signal": {
+      "model": "freemium",
+      "tier_count": 2,
+      "lowest_paid_seat": null,
+      "free_tier": "Full GA4 platform including event tracking, conversion measurement, audience building, reporting APIs, and cross-channel reports \u2014 no cost; GA 360 is the paid enterprise tier with higher data limits, SLAs, subproperties, and roll-up properties"
+    }
+  }
+}

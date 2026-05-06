@@ -1,0 +1,110 @@
+{
+  "url": "https://bolt.new",
+  "company": "Bolt (by StackBlitz)",
+  "tagline": "What will you build today?",
+  "subheadline": "Create stunning apps & websites by chatting with AI.",
+  "value_proposition": "An AI-powered app and website builder that handles coding, infrastructure, and deployment in one platform so non-engineers can ship production-ready products fast.",
+  "target_audience": "Product managers, entrepreneurs, marketers, agencies, and students who want to build apps or websites without deep engineering expertise",
+  "primary_cta": {
+    "text": "Build now",
+    "placement": "hero"
+  },
+  "secondary_cta": {
+    "text": "Plan",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [
+      "Porsche",
+      "Material UI",
+      "Chakra UI",
+      "Shadcn UI",
+      "Washington Post"
+    ],
+    "testimonials": [],
+    "metrics": [
+      "98% less errors",
+      "projects 1,000 times larger than before"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "freemium",
+    "tiers": [],
+    "price_anchoring": "Leads with 'start building for free' at the bottom CTA; Pricing link in nav implies tiered plans exist but no price anchoring is shown on the page"
+  },
+  "features": [
+    "AI chat-based app and website builder",
+    "Frontier coding agent integrations from multiple AI labs",
+    "Built-in hosting with analytics and custom domains",
+    "Unlimited databases and user authentication",
+    "Design system import (Figma, GitHub, component libraries)"
+  ],
+  "differentiators": [
+    "'The #1 professional vibe coding tool'",
+    "'Always the best, without switching tools' \u2014 single interface for multiple frontier AI agents",
+    "'98% less errors' through automatic testing, refactoring, and iteration",
+    "'Projects 1,000 times larger than before' with improved context management",
+    "Your company's design system built in \u2014 Porsche, Washington Post, Material UI etc."
+  ],
+  "trust_signals": [
+    "Claims '#1 professional vibe coding tool trusted by' (though specific customer names are cut off in the text)",
+    "Named enterprise design system partners: Porsche, Washington Post",
+    "Framing as 'enterprise-grade' backend infrastructure",
+    "Parent company branding: '\u00a9 2026 StackBlitz'"
+  ],
+  "navigation": [
+    "Community",
+    "Enterprise",
+    "Resources",
+    "Careers",
+    "Pricing",
+    "Sign in",
+    "Get started"
+  ],
+  "design_patterns": {
+    "layout": "Full-width hero with centered CTA, followed by feature sections with supporting metrics, a role-based value prop grid, and a closing CTA \u2014 classic SaaS top-down narrative flow",
+    "color_scheme": "Likely dark background with high-contrast accent (typical for AI/dev tools); cannot confirm from text alone",
+    "typography": "Bold display headline, clean sans-serif body \u2014 modern and confident",
+    "visual_style": "Bold and aspirational with technical credibility signals",
+    "notable_patterns": [
+      "Design system logo carousel / showcase section",
+      "Role-based segmentation cards (PM, Entrepreneur, Marketer, Agency, Student)",
+      "Stat callouts ('98% less errors', '1,000 times larger')",
+      "Import integrations (Figma, GitHub) as hero trust signals"
+    ]
+  },
+  "emotional_tone": "Aspirational and confident \u2014 'What will you build today?' invites possibility; '#1 tool' and bold metrics project authority",
+  "key_objections_addressed": [
+    "Fear of errors / debugging: '98% less errors \u2014 Bolt automatically tests, refactors, and iterates'",
+    "AI tool overload: 'No more AI anxiety or juggling multiple platforms'",
+    "Scalability concerns: 'Handle projects 1,000 times larger than before'",
+    "Infrastructure complexity: 'Stop stitching together platforms \u2014 hosting, databases, auth all built in'",
+    "Starting from scratch: 'Stop building from scratch. Start building on-brand.' via design system import"
+  ],
+  "missing_or_weak": [
+    "No actual customer testimonials or named quotes",
+    "The 'trusted by' claim is incomplete \u2014 no company names follow it in visible text",
+    "No pricing shown on page; tiers and costs are entirely hidden behind a nav link",
+    "No live demo, video, or screenshot of the product in action mentioned in text",
+    "No guarantees, SLAs, or refund policies",
+    "Press mentions entirely absent despite being a well-known product",
+    "No specific customer success stories or case studies",
+    "Vague on what 'frontier coding agents' means to a non-technical buyer"
+  ],
+  "standout_elements": [
+    "Design system import is a genuinely differentiated enterprise hook \u2014 naming Porsche and Washington Post is credible and aspirational",
+    "Role-based value prop section (PM, Entrepreneur, Marketer, etc.) addresses multiple buyer personas without a confusing multi-product feel",
+    "Framing '98% less errors' as a headline metric is unusually specific and compelling for this category",
+    "'Build now' vs 'Plan' dual CTA neatly segments decisive vs exploratory visitors",
+    "Positioning as the convergence point for multiple AI labs ('frontier coding agents') is a smart hedge against model commoditization"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 6,
+    "conversion_focus": 8,
+    "differentiation": 7,
+    "overall": 7
+  },
+  "analyzed_at": "2026-04-30T23:50:21.933556"
+}

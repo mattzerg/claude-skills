@@ -1,0 +1,101 @@
+{
+  "url": "https://zergboard.com",
+  "company": "Zergboard",
+  "tagline": "Project boards without enterprise bloat",
+  "subheadline": "Zergboard gives you a Trello-simple interface with Linear-level structure, multi-tenant workspaces, and an API-first core so your agent flows can create, update, and resolve work automatically.",
+  "value_proposition": "A lightweight kanban board with multi-tenant workspaces and an API-first architecture designed for teams and AI agent automation.",
+  "target_audience": "Small-to-mid-size product teams and developers building agent-driven or automated workflows who want Trello's simplicity with Linear's structure.",
+  "primary_cta": {
+    "text": "Start free",
+    "placement": "hero and nav"
+  },
+  "secondary_cta": {
+    "text": "View pricing",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [],
+    "metrics": [],
+    "press": []
+  },
+  "pricing": {
+    "model": "freemium with self-serve upgrade",
+    "tiers": [
+      "Free",
+      "Core",
+      "Growth",
+      "Scale"
+    ],
+    "price_anchoring": "Free tier anchors entry, $12/seat Core positioned as Trello replacement, $39 Growth for multi-project teams, $149 Scale for enterprise-grade needs; annual billing discount (~15%) mentioned to nudge commitment"
+  },
+  "features": [
+    "Kanban cards and columns with drag-and-drop",
+    "Multi-tenant workspaces with organization-level isolation",
+    "API-first architecture for automation, bots, and agents",
+    "Webhooks and API tokens (Growth tier+)",
+    "Superuser admin panel for platform-level governance"
+  ],
+  "differentiators": [
+    "Trello-simple interface with Linear-level structure",
+    "Multi-tenant by default \u2014 not bolted on",
+    "API-first core built explicitly for agent and automation flows",
+    "Deploy-ready on Fly.io with portable stack (Nuxt + Postgres)",
+    "Positioned as the middle ground between Trello bloat and Linear complexity"
+  ],
+  "trust_signals": [],
+  "navigation": [
+    "Features",
+    "Pricing",
+    "FAQ",
+    "Docs",
+    "Log in",
+    "Start free"
+  ],
+  "design_patterns": {
+    "layout": "Single-column scroll with hero, live demo snapshot, feature grid, pricing table, and FAQ accordion",
+    "color_scheme": "Not determinable from text alone, but technical/SaaS conventions implied",
+    "typography": "Clean, concise \u2014 short punchy headers with utilitarian body copy",
+    "visual_style": "Minimal and technical",
+    "notable_patterns": [
+      "Live work snapshot with real-time card counts as social proof substitute",
+      "Agent flow update callout (7 tickets from QA failures) as dynamic demo moment",
+      "FAQ accordion addressing objections directly",
+      "Monthly/Yearly pricing toggle"
+    ]
+  },
+  "emotional_tone": "confident and pragmatic",
+  "key_objections_addressed": [
+    "Can AI agents use this? \u2014 Yes, API is minimal and stable for automation",
+    "Does it support multiple clients/tenants? \u2014 Yes, isolated orgs with membership access control",
+    "Can I self-host? \u2014 Yes, Nuxt + Postgres with portable deploy primitives",
+    "Is there a free tier? \u2014 Yes, up to 3 users"
+  ],
+  "missing_or_weak": [
+    "Zero social proof \u2014 no customer logos, testimonials, or user counts",
+    "No press mentions or third-party validation",
+    "No specifics on 'Built for teams and agents' \u2014 agent ecosystem examples are vague",
+    "No screenshots or product demo beyond a text-based card count widget",
+    "No comparison table vs Trello or Linear despite explicitly invoking both",
+    "No case studies or use-case stories",
+    "Trust signals entirely absent \u2014 no security certs, uptime SLA, data residency info",
+    "'Talk to sales' CTA for Scale tier with no sales contact detail or calendar link visible",
+    "Superuser admin feature listed without explanation of what governance means in practice"
+  ],
+  "standout_elements": [
+    "Sharp, memorable positioning: 'Trello-simple, Linear-level structure' in one sentence",
+    "Agent-first messaging is differentiated and timely \u2014 most PM tools treat automation as an afterthought",
+    "FAQ section directly neutralizes four common purchase blockers",
+    "Pricing is transparent, self-serve, and cleanly tiered without feature-gating confusion",
+    "Self-hosting path explicitly called out \u2014 appeals to technical buyers",
+    "Live snapshot with 'Agent flow updated 7 tickets from QA failures' is a creative, concrete demo moment"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 3,
+    "conversion_focus": 7,
+    "differentiation": 7,
+    "overall": 6
+  },
+  "analyzed_at": "2026-05-01T00:12:29.688470"
+}

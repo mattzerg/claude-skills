@@ -1,0 +1,128 @@
+{
+  "url": "https://cursor.com",
+  "company": "Cursor (by Anysphere)",
+  "tagline": "Built to make you extraordinarily productive, Cursor is the best way to code with AI.",
+  "subheadline": "The best way to code with AI.",
+  "value_proposition": "An AI-powered code editor that autonomously builds, tests, and reviews software so developers can focus on decisions rather than implementation.",
+  "target_audience": "Professional software engineers and enterprise development teams who want AI-accelerated coding",
+  "primary_cta": {
+    "text": "Download for macOS",
+    "placement": "hero"
+  },
+  "secondary_cta": {
+    "text": "Try mobile agent",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [
+      "It was night and day from one batch to another, adoption went from single digits to over 80%. It just spread like wildfire, all the best builders were using Cursor. \u2014 Diana Hu, General Partner, Y Combinator",
+      "My favorite enterprise AI service is Cursor. Every one of our engineers, some 40,000, are now assisted by AI and our productivity has gone up incredibly. \u2014 Jensen Huang, President & CEO, NVIDIA",
+      "The most useful AI tool that I currently pay for, hands down, is Cursor. \u2014 shadcn, Creator of shadcn/ui",
+      "Cursor quickly grew from hundreds to thousands of extremely enthusiastic Stripe employees. \u2014 Patrick Collison, Co-Founder & CEO, Stripe",
+      "The best LLM applications have an autonomy slider... \u2014 Andrej Karpathy, CEO, Eureka Labs",
+      "It's definitely becoming more fun to be a programmer. \u2014 Greg Brockman, President, OpenAI"
+    ],
+    "metrics": [
+      "Over half of the Fortune 500",
+      "40,000 NVIDIA engineers using Cursor",
+      "Adoption went from single digits to over 80% at YC"
+    ],
+    "press": []
+  },
+  "pricing": {
+    "model": "self-serve with enterprise contact-sales",
+    "tiers": [
+      "Pricing page linked but not detailed on homepage"
+    ],
+    "price_anchoring": "ROI framed through massive enterprise adoption (NVIDIA 40k engineers, Fortune 500) and productivity gains rather than explicit price points"
+  },
+  "features": [
+    "Agentic development: autonomous agents that build, test, and demo features end-to-end",
+    "Tab autocomplete: specialized model for magically accurate next-action prediction",
+    "Cloud agents: run in parallel on their own computers, accessible via cursor.com/agent",
+    "Multi-environment presence: IDE, CLI, Slack integration, GitHub PR review",
+    "Complete codebase understanding: indexes entire codebase regardless of scale"
+  ],
+  "differentiators": [
+    "Best way to code with AI (explicit superlative claim)",
+    "Specialized Tab model for autocomplete accuracy and speed",
+    "Autonomy slider concept: from Tab completion to full agentic mode",
+    "Cloud agents that work in parallel and use their own computers",
+    "Supports every cutting-edge model (OpenAI, Anthropic, Gemini, xAI, Cursor)",
+    "SOC 2 Certified \u2014 enterprise security at scale",
+    "Works across IDE, CLI, Slack, and GitHub"
+  ],
+  "trust_signals": [
+    "SOC 2 Certified badge",
+    "Trusted by over half of the Fortune 500",
+    "Testimonials from Jensen Huang (NVIDIA), Patrick Collison (Stripe), Andrej Karpathy, Greg Brockman (OpenAI), Diana Hu (YC)",
+    "Named by shadcn, widely trusted open-source creator"
+  ],
+  "navigation": [
+    "Product",
+    "Agents",
+    "Code Review",
+    "Cloud",
+    "Tab",
+    "CLI",
+    "Marketplace",
+    "Enterprise",
+    "Pricing",
+    "Resources",
+    "Changelog",
+    "Blog",
+    "Docs",
+    "Community",
+    "Help",
+    "Workshops",
+    "Forum",
+    "Careers"
+  ],
+  "design_patterns": {
+    "layout": "Full-width hero with interactive demo, followed by feature sections each anchored by an interactive demo, social proof strip with testimonials, then changelog/blog footer",
+    "color_scheme": "Dark background with high-contrast white text; subtle brand-colored gradients behind demos; minimal accent color usage",
+    "typography": "Clean sans-serif, large hero text, strong hierarchy with tight subheadlines",
+    "visual_style": "Technical, minimal, premium \u2014 dark-mode aesthetic with cinematic demo overlays",
+    "notable_patterns": [
+      "Interactive in-page product demos (not screenshots) for each feature",
+      "Spring-based animation implied in copy",
+      "Testimonial carousel with executive headshots and attributions",
+      "Feature sections structured as: headline \u2192 learn-more link \u2192 interactive demo",
+      "Changelog section signals active development velocity"
+    ]
+  },
+  "emotional_tone": "confident and aspirational \u2014 positions Cursor as inevitable future of software creation",
+  "key_objections_addressed": [
+    "Is it secure enough for enterprise? (SOC 2 certification, Fortune 500 adoption)",
+    "Will AI take over too much? (autonomy slider framing \u2014 you control how much independence to give AI)",
+    "Does it work at scale? (NVIDIA 40k engineers, Fortune 500 claim, codebase indexing at any scale)",
+    "Is it just another autocomplete? (clear distinction between Tab, Agent, Cloud Agent modes)",
+    "Which AI model should I use? (bring-your-own-model + all frontier models supported)"
+  ],
+  "missing_or_weak": [
+    "No pricing details visible on homepage \u2014 friction for self-serve buyers",
+    "No free tier or trial CTA prominently featured (only Download)",
+    "No logos strip / logo wall of known customers despite Fortune 500 claim",
+    "No explicit comparison to VS Code, GitHub Copilot, or other direct competitors",
+    "No specific metric quantifying productivity gains (e.g., '2x faster', 'saves X hours/week')",
+    "Mobile experience and Windows/Linux download options not prominent in hero",
+    "No video walkthrough or explainer for users unfamiliar with agentic coding"
+  ],
+  "standout_elements": [
+    "Interactive live product demos embedded inline \u2014 far more convincing than static screenshots",
+    "Testimonial quality is exceptional: CEO of NVIDIA, OpenAI President, Stripe CEO, YC GP \u2014 extremely high-authority social proof",
+    "Autonomy slider concept (Tab \u2192 Cmd+K \u2192 full agent) elegantly explains the product spectrum",
+    "Changelog section on homepage signals rapid shipping cadence and builds confidence",
+    "Multi-surface framing (IDE + CLI + Slack + GitHub) positions Cursor as ambient dev infrastructure, not just a tool",
+    "Copy quality is unusually strong \u2014 'The new way to build software' and 'Software creation is changing' feel earned given the testimonials"
+  ],
+  "score": {
+    "clarity": 9,
+    "credibility": 10,
+    "conversion_focus": 7,
+    "differentiation": 8,
+    "overall": 9
+  },
+  "analyzed_at": "2026-04-30T14:53:41.733742"
+}

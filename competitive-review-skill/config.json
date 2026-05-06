@@ -1,0 +1,129 @@
+{
+  "_schema_version": 1,
+  "_updated": "2026-05-02",
+  "stage_1_strategy": {
+    "horizon": "next_quarter_3mo",
+    "stance": "close_table_stakes_fast",
+    "q_priority_products": [
+      "Zergboard",
+      "Zerglytics",
+      "Zergwallet",
+      "ZergCRM",
+      "ZergChat",
+      "ZergMail",
+      "ZergCal",
+      "ZergMeeting",
+      "ZergBox",
+      "ZMsg"
+    ],
+    "success_definition": "multiple_products_live_even_if_rough",
+    "_implications": [
+      "Ranking favors high-frequency table-stakes with S/M build cost",
+      "Discount L-cost gaps unless they're literal deal-blockers",
+      "Push card creation across all 8+ products, not concentrate on Zergboard",
+      "Positioning briefs should emphasize the unified Zstack narrative since breadth > depth",
+      "Zerglytics is the next live target \u2014 its review should drive concrete website + product cards"
+    ]
+  },
+  "stage_2_ranking": {
+    "table_stakes_threshold_pct": 75,
+    "differentiator_parity_lower_pct": 25,
+    "l_cost_cap": "hard_no_top10",
+    "partial_presence_weight": 0.5,
+    "enterprise_gated_treatment": "partial",
+    "batch_default_fit": 4,
+    "batch_default_cost": "M",
+    "_implications": [
+      "Bucket calc uses 0.75 / 0.25 thresholds instead of 0.60 / 0.25",
+      "Frequency: yes=1.0, partial=0.5 (currently both count as 1.0)",
+      "cards.py drops any L-cost item before slicing top_n",
+      "rank.py defaults change from fit=3,cost=M to fit=4,cost=M"
+    ]
+  },
+  "stage_3_report": {
+    "positioning_format": "two_files_short_and_deep",
+    "positioning_short_filename": "positioning.md",
+    "positioning_deep_filename": "positioning-deep.md",
+    "per_competitor_notes": "keep_all",
+    "index_lead_section": "top10_ranked_gaps_table",
+    "pricing_handling": "tier_prices_table_plus_per_competitor_sections",
+    "pricing_focus": "tier_prices_not_feature_gating",
+    "_implications": [
+      "positioning.md = ~10 lines: elevator + 5 differentiator one-liners + 3 headlines",
+      "positioning-deep.md = full ~60 lines with pillars, anti-pitch, objection handling",
+      "New pricing.md with table: rows=competitors, cols=free-tier-limits, cheapest paid $/seat, mid $/seat, enterprise",
+      "Each competitors/<name>.md gets a Pricing section with their own tier prices + free-tier limits",
+      "Pricing pages still scraped, but the LLM extracts dollar amounts and seat caps, not which features are gated where",
+      "index.md leads with top-10 ranked gaps table, then counts/diff/links below"
+    ]
+  },
+  "stage_4_sources": {
+    "conflict_resolution": "flag_conflict_in_evidence",
+    "g2_complaint_weight": "medium",
+    "reddit_hn_handling": "keep_both_with_confidence_tags",
+    "changelog_handling": "momentum_top3_per_competitor_90d",
+    "_implications": [
+      "When sources disagree, mark feature as partial/unclear and cite each source in evidence column",
+      "Positioning brief mentions top complaints as context but builds differentiator angles primarily from what we have",
+      "Each Reddit/HN quote tagged [confidence: high/med/low] based on subreddit relevance + engagement",
+      "New \"Recent ships (last 90d)\" section in each competitors/<name>.md with top 3 changelog items",
+      "index.md gets a category-level momentum sentence: \"This quarter the category shipped X, Y, Z.\""
+    ]
+  },
+  "stage_5_delivery": {
+    "slack_digest_format": "counts_plus_top5_changes",
+    "card_creation_mode": "PAUSED_revisit_later",
+    "card_creation_when_resumed": {
+      "auto_create_buckets": [
+        "table_stakes",
+        "drift"
+      ],
+      "confirm_buckets": [
+        "differentiator_parity",
+        "whitespace",
+        "we_have_they_dont"
+      ]
+    },
+    "card_board": "DEFERRED_decide_later",
+    "drift_card_board": "DEFERRED_decide_later",
+    "_implications": [
+      "cards.py is effectively disabled in batch/cron flows until card-board decision is made",
+      "monthly_refresh.sh skips cards.py entirely (it already does \u2014 no change needed)",
+      "When card flow resumes: table-stakes + drift auto-create, others confirm, board logic per stage 5b",
+      "Slack digest stays as current shape: counts + top 5 changes per month"
+    ]
+  },
+  "stage_7_feedback": {
+    "feedback_home": "frontmatter_rating_and_feedback_fields",
+    "granularity": "per_section_thumbs_positioning_matrix_gaps_drift",
+    "feedback_use": "inject_into_claude_prompts_as_prior",
+    "prompt_mode": "after_every_interactive_run_ask_1to2_questions",
+    "_implications": [
+      "index.md frontmatter gets rating: 1-5 (or per-section: positioning_ok, matrix_ok, gaps_ok, drift_ok)",
+      "priors.py learns to read frontmatter ratings from prior archived runs",
+      "compare/report prompts get a USER PRIOR FEEDBACK section if any past feedback exists",
+      "Claude (me) ask 1-2 follow-up questions after any interactive run completes",
+      "Slack monthly digest does NOT prompt for feedback (per Stage 7)"
+    ]
+  },
+  "stage_6_seeds": {
+    "status": "DEFERRED",
+    "note": "Will review the 18 hardcoded seed lists in run_queue.py after seeing tonight queue results in the morning. Bad seeds are easier to fix with real data."
+  },
+  "_summary_changes_vs_baseline": [
+    "Bucket thresholds tightened: table-stakes 60% \u2192 75%",
+    "Partial presence weight 1.0 \u2192 0.5 (enterprise-only features count half)",
+    "Hard cap on L-cost gaps from top-10 cards",
+    "Batch rank defaults: fit=3 \u2192 fit=4 (lean toward act)",
+    "Positioning split into positioning.md (short) + positioning-deep.md (full)",
+    "New pricing.md with TIER PRICES table + per-competitor pricing sections",
+    "index.md leads with top-10 ranked gaps table (was at-a-glance counts)",
+    "Source conflicts flagged in evidence column rather than picking a winner",
+    "G2 complaints feed positioning at medium weight (was heavy)",
+    "Reddit/HN quotes get [confidence: high/med/low] tags",
+    "New \"Recent ships (last 90d)\" section per competitor",
+    "index.md gets a category momentum sentence",
+    "Card creation PAUSED \u2014 cards.py gated until board decision",
+    "Feedback loop: rating + feedback frontmatter fields, injected into next-run prompts"
+  ]
+}

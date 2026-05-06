@@ -1,0 +1,483 @@
+{
+  "name": "Whereby",
+  "url": "https://whereby.com",
+  "domain": "hereby.com",
+  "scanned_at": "2026-05-02T22:26:32.581761",
+  "sources": {
+    "landing": {
+      "url": "https://whereby.com",
+      "title": "Secure, customizable & reliable WebRTC Video Calls| Whereby",
+      "text": "Secure, customizable & reliable WebRTC Video Calls| Whereby\nProducts\nPricing\nDevelopers\nResources\nLog in\nSign up\nSecure video calls. Zero hassle\nEuropean owned and privacy-first by design, Whereby delivers reliable, user-friendly video calling for individuals, teams and enterprise platforms.\nGet started\nTrusted by leading companies like\nVideo calls for every use case\nProduct select\nmeetings\nFor individuals and teams\nInstant video calls\nPermanent room links\nEssential features\nBasic customization\nExplore Meetings\n<> embedded\nFor product builders\nAPI integration & SDK tooling\nProgrammatic room creation\nExtensive features\nAdvanced customization\nExplore Embedded\n\"Seeing 90% of our video calls rated 4 or 5 stars for quality shows us how Whereby has proven to be a dependable part of the telehealth experience for our customers and the people they serve\"\nKatrina Baxter-Moore\nSenior Product Manager\nWhereby for\nTelehealth\nConnecting practitioners & patients anywhere, anytime.\nLearn more\nWhereby for\neLearning\nEngaging virtual classroom experiences for teachers, coaches and their students.\nLearn more\nWhy  Whereby?\nPrivate & secure\nPrivacy, confidentiality and security are very important to us. Built in Europe, our products are GDPR and HIPAA compliant, and ISO 27001 certified.\nReliable & scalable\nOur infrastructure is scalable and offers a consistently high quality video call experience, including in low bandwidth scenarios and on mobile devices.\nUnrivaled support\nFrom our developer docs to our dedicated Success team, we\u2019re here to help. At no extra cost.\nUser-friendly\nOur UI is built with human experience in mind to reduce tech fatigue and increase engagement through intuitive design and straight-forward usability.\nPowerful features ready to go\nScreen sharing\nFile sharing\nChat\nTranscriptions\nVirtual whiteboard\nCustom branding\nExplore features\nExplore our customer stories\nHow DrDoctor is powering hybrid healthcare for the NHS\nRead the story\nHow Oh My Mood is Boosting Therapist Job Satisfaction\nRead the story\nWhy our API is trusted by leading Telehealth platforms\nRead the story\nFrequently asked questions\nCan I try it for free?\nWhat is the difference between Meetings and Embedded?\nDo you support other industries?\nYou\u2019ve made it this far! Get started with Whereby today\nSign up\nSee pricing\nFooter\nAbout\nAbout us\nOur vision\nPartnerships\nPress\nCareers\nProduct\nEmbedded\nMeetings\nWhat's New\nStatus\nDeveloper docs\nPricing\nFor Embedded\nFor Meetings\nConnect\nBlog\nLinkedIn\nDev Community\nGithub\nInstagram\nSupport\nSupport Center\nPrivacy Policy\nTerms of Service\nCookie Policy\nCookie Settings\nGDPR Statement\nSecurity\nSitemap\nComparisons\nWhereby vs Twilio\nWhereby vs Zoom SDK\nWhereby vs Jitsi\nEuropean Alternative",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://whereby.com/information/pricing/",
+      "title": "Meetings & Embedded pricing | Whereby",
+      "text": "Meetings & Embedded pricing | Whereby\nProducts\nPricing\nDevelopers\nResources\nLog in\nSign up\nExplore pricing for Whereby\nSelect the product you are interested in to discover the full pricing options.\nmeetings\nFor individuals and teams\nCharged per user license\nInstant video calls\nPermanent room links\nBasic customization & features\nSee Meetings pricing\n<> embedded\nFor product builders\nCharged by usage\nAPI integration & SDK tooling\nProgrammatic room creation\nExtensive features & customization\nSee Embedded pricing\nUnsure which product is right for you?\nSee a comparison of the main differences here:\nCompare products\nFrequently asked questions\nWhat is the difference between Meetings & Embedded\nWhy are they charged differently?\nDo you have a free plan?\nCan I access the API using a Meetings plan?\nReady to get started?\nMeetings pricing\nEmbedded pricing\nFooter\nAbout\nAbout us\nOur vision\nPartnerships\nPress\nCareers\nProduct\nEmbedded\nMeetings\nWhat's New\nStatus\nDeveloper docs\nPricing\nFor Embedded\nFor Meetings\nConnect\nBlog\nLinkedIn\nDev Community\nGithub\nInstagram\nSupport\nSupport Center\nPrivacy Policy\nTerms of Service\nCookie Policy\nCookie Settings\nGDPR Statement\nSecurity\nSitemap\nComparisons\nWhereby vs Twilio\nWhereby vs Zoom SDK\nWhereby vs Jitsi\nEuropean Alternative",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://docs.whereby.com",
+      "title": "Welcome to Whereby Embedded | Whereby",
+      "text": "Welcome to Whereby Embedded | Whereby\nbars\nsearch\ncircle-xmark\n\u2318\nCtrl\nk\nWhereby\nchevron-down\nStatus\nCommunity\nchevron-down\nMore\nellipsis\nchevron-down\nGetting started\nchevron-right\nWelcome to Whereby Embedded\nOverview of Whereby Embedded\nchevron-right\nWhereby for web browser\nchevron-right\nPre-built UI vs. React-based Browser SDK\nWeb component & pre-built UI\nchevron-right\nReact-based Browser SDK\nchevron-right\nWhereby in Next.js\nWhereby for Mobile Development\nchevron-right\nWhereby for iOS\nchevron-right\nWhereby for Android\nchevron-right\nWhereby in React Native\nchevron-right\nWhereby with Flutter\nWhereby for Server\nchevron-right\nCore SDK Reference\nIntegrating Whereby in specific environments\nchevron-right\nEmbedding in Squarespace or Wordpress\nNo code video conferencing in Bubble\nMeeting scheduling with Cronofy\nWhereby product features\nchevron-right\nRoom creation\nchevron-right\nAssistants\nBranding elements\nBreakout groups\nDial-In\nFile sharing\nLive Captions\nLive Streaming via RTMP\nQuality Insights\nchevron-right\nRecording\nchevron-right\nScreen Sharing Setup & Usage\nSecure Authentication for S3 Storage\nchevron-right\nTracking Customer Usage\nTranscribing\nchevron-right\nUser roles & meeting permissions\nWaiting Rooms\nGlobal room customizations\nchevron-right\nTelehealth industry solutions\nchevron-right\nBuilding secure telehealth applications: implementation guide\nHIPAA compliant setup\nCase Study: Using Whereby's Browser SDK with React Hooks to Build a Telehealth App\n\ud83d\udda5\ufe0f\nReference\nchevron-right\nREST API Reference\nchevron-right\nWeb Component Reference\nCore SDK Reference\nchevron-right\nAssistant SDK Reference\nchevron-right\nReact SDK Reference\nchevron-right\nReact Native Reference\nchevron-right\nCamera Effects Reference\nchevron-right\nWebhooks Reference\nFurther resources\nchevron-right\nFAQ\nchevron-right\nPostman collection\nMigrating from Twilio\nchevron-right\nExamples library\n\ud83e\udd37\nEnd User\nchevron-right\nEnd User Support Guides\nchevron-right\nchevron-up\nchevron-down\ngitbook\nPowered by GitBook\ngitbook\nxmark\nblock-quote\nOn this page\nxmark\nCreate your video experience\nFurther resources\nWas this helpful?\nsun-bright\ndesktop\nmoon\nxmark\ngithub\nEdit\nchevron-down\nblock-quote\nOn this page\nblock-quote\nGetting started\nWelcome to Whereby Embedded\nWhereby Embedded is the easiest way to add video calls to your web page or mobile app. Get up and running in minutes, not months, so you're free to focus on what you do best \u2014 your business.\nhashtag\nCreate your video experience\n\ud83d\ude80 Start here\nOverview of Whereby Embedded\nSet up your Embedded account\n\ud83c\udf10 Build for web\nWeb component & Pre-built UI\nWeb app quickstart\n\ud83d\udcf1 Mobile app integration\nAndroid\niOS\n\u2699\ufe0f Advanced / custom setups\nReact-based Browser SDK\nWhereby Core SDK\nhashtag\nFurther resources\nJoin our\nDiscord developer community\narrow-up-right\nto collaborate and find answers.\n\ufeff\ufeffDesign a better, faster video call experience with our\nFigma Video Call Ul Kit\narrow-up-right\n.\n\ufeff\ufeffConsult our\nEnd User Support Center\nfor product help.\nLast updated\n1 month ago\nWas this helpful?\nsun-bright\ndesktop\nmoon\nThis site uses cookies to deliver its service and to analyze traffic. By browsing this site, you accept the\nprivacy policy\n.\nclose\nAccept\nReject",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://whereby.com/information/embedded/integrations/",
+      "title": "Video Calling API for Web and App Developers | Whereby",
+      "text": "Video Calling API for Web and App Developers | Whereby\nProducts\nPricing\nDevelopers\nResources\nLog in\nTry for free\nNot found\nYou just hit a route that doesn\u2019t exist\nTake me home\nFooter\nAbout\nAbout us\nOur vision\nPartnerships\nPress\nCareers\nProduct\nEmbedded\nMeetings\nWhat's New\nStatus\nDeveloper docs\nPricing\nFor Embedded\nFor Meetings\nConnect\nBlog\nLinkedIn\nDev Community\nGithub\nInstagram\nSupport\nSupport Center\nPrivacy Policy\nTerms of Service\nCookie Policy\nCookie Settings\nGDPR Statement\nSecurity\nSitemap\nComparisons\nWhereby vs Twilio\nWhereby vs Zoom SDK\nWhereby vs Jitsi\nEuropean Alternative",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/whereby/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Scientists narrow down the mechanism whereby cancer cells metabolise sugar",
+          "url": "https://www.sciencealert.com/a-nine-year-study-has-just-shown-how-sugar-exacerbates-cancer",
+          "points": 105,
+          "num_comments": 39,
+          "created_at": "2017-10-17T02:51:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=15488297"
+        },
+        {
+          "title": "Comprehensive Comparison of Zoom Alternatives Jitsi Meet and Whereby",
+          "url": "https://freshvanroot.com/blog/2020/jitsimeet-vs-whereby/",
+          "points": 6,
+          "num_comments": 0,
+          "created_at": "2020-04-23T15:49:13Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22957252"
+        },
+        {
+          "title": "Whereby Statistics Improves Your Dart Game",
+          "url": "http://www.wired.com/magazine/2009/11/st_darts/",
+          "points": 3,
+          "num_comments": 1,
+          "created_at": "2009-12-20T22:41:31Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1006711"
+        },
+        {
+          "title": "Whereby launches new Hybrid Meetings feature",
+          "url": "https://whereby.com/information/meetings/hybrid-meetings/",
+          "points": 2,
+          "num_comments": 1,
+          "created_at": "2022-12-07T11:33:22Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33893220"
+        },
+        {
+          "title": "Appear.in Changes Name to Whereby",
+          "url": "https://whereby.com/information/brand",
+          "points": 2,
+          "num_comments": 1,
+          "created_at": "2019-08-14T14:57:26Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20696194"
+        },
+        {
+          "title": "Secure, Customizable and Reliable WebRTC Video Calls| Whereby",
+          "url": "https://whereby.com/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2026-01-29T16:55:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=46812817"
+        },
+        {
+          "title": "Whereby: Secure video calls. Zero hassle",
+          "url": "https://whereby.com/",
+          "points": 1,
+          "num_comments": 1,
+          "created_at": "2025-11-06T09:52:17Z",
+          "hn_url": "https://news.ycombinator.com/item?id=45833360"
+        },
+        {
+          "title": "Whereby Cookie Policy",
+          "url": "https://whereby.com/information/tos/cookie-policy/",
+          "points": 1,
+          "num_comments": 1,
+          "created_at": "2022-05-05T21:09:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=31278438"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Jungian Perspective on Artificial Intelligence",
+          "subreddit": "Jung",
+          "score": 458,
+          "num_comments": 91,
+          "permalink": "https://reddit.com/r/Jung/comments/1pha62s/jungian_perspective_on_artificial_intelligence/",
+          "selftext": "I am very curious to hear what all of you have to say about artificial intelligence from a Jungian perspective. This is a very rich subject, so I would like to begin with my personal reflections below.\n\n\u00a0If Jung encountered AI in its current state, he would certainly not understand it as a mere 'technological tool'. Evidently, he would see it as a projection screen for the collective unconscious. Just as ancient humans projected instinctual forces onto serpent Gods, modern man projects his disow"
+        },
+        {
+          "title": "Council Want to Get Rid of Free Visitor Permits",
+          "subreddit": "bristol",
+          "score": 82,
+          "num_comments": 123,
+          "permalink": "https://reddit.com/r/bristol/comments/1po00z1/council_want_to_get_rid_of_free_visitor_permits/",
+          "selftext": "The council have put out plans to get rid of free visitor parking permits, reduce the number you can have, and make you buy them in blocks of 10.\n\nhttps://www.bristol.gov.uk/residents/streets-travel/make-a-comment-on-traffic-regulation-orders-tros\n"
+        },
+        {
+          "title": "Recognitions and Congratulations to H.H. Dorje Chang Buddha III from Master of the Dalai Lama: H.H. Dharma King Trulshik",
+          "subreddit": "DorjeChangBuddhaIII__",
+          "score": 81,
+          "num_comments": 91,
+          "permalink": "https://reddit.com/r/DorjeChangBuddhaIII__/comments/1os3fs6/recognitions_and_congratulations_to_hh_dorje/",
+          "selftext": "[Recognitions and Congratulations to H.H. Dorje Chang Buddha III from Master of the Dalai Lama: H.H. Dharma King Trulshik](https://preview.redd.it/r0h5v73g740g1.png?width=1600&amp;format=png&amp;auto=webp&amp;s=7aad4c20b9cdca352c98b47a48db34beba1f36c2)\n\n# Recognitions &amp; Congratulations to H.H.\u00a0[Dorje Chang Buddha III](https://www.usatoday.com/story/special/contributor-content/2023/07/25/assembly-held-to-honor-the-birthday-of-h-h-dorje-chang-buddha-iii/70462586007/)\n\nhttps://preview.redd.it/n"
+        },
+        {
+          "title": "Leslie Sloane Series Part I: Wayfarer Parties allegations against Leslie Sloane (Lively v. Wayfarer Studios LLC)",
+          "subreddit": "ItEndsWithLawsuits",
+          "score": 75,
+          "num_comments": 16,
+          "permalink": "https://reddit.com/r/ItEndsWithLawsuits/comments/1mxoa1x/leslie_sloane_series_part_i_wayfarer_parties/",
+          "selftext": "Due to James Vituscka's recent declaration, Leslie's newest letter to the judge, and the rampant misinformation being spread that the Wayfarer Parties' entire case/claim against Leslie is only about Freedman's misinterpretation of Vituscka's sexual harassment versus sexual assault statement, I think it's best we return to the FAC. But there's a lot to say on the matter. As such, I decided it's best to break this into a series. This post, the first in the Leslie Sloane Series, is simply a compila"
+        },
+        {
+          "title": "(SV) The Children of Duty Chapter 13: Officers (1/2)",
+          "subreddit": "HFY",
+          "score": 52,
+          "num_comments": 8,
+          "permalink": "https://reddit.com/r/HFY/comments/1skdrga/sv_the_children_of_duty_chapter_13_officers_12/",
+          "selftext": "[First](https://www.reddit.com/r/HFY/comments/1qaxa0z/sneakyverse_the_children_of_duty_prologue_13/) | [Previous](https://www.reddit.com/r/HFY/comments/1se49fv/sv_the_children_of_duty_chapter_12_remember/) | [Next](https://www.reddit.com/r/HFY/comments/1skdsey/sv_the_children_of_duty_chapter_13_officers_22/)\n\nThe *Mister Smee* rumbled below at fourteen-hundred hours, Navy Standard Time, on February the Second as First Lieutenant Jason George stood at attention and held a salute.  He wore his dut"
+        },
+        {
+          "title": "A message from Kadri Daraghma to the Israeli Government and the people of Israel | Eyn el-Hilweh, North Jordan Valley",
+          "subreddit": "JewsOfConscience",
+          "score": 25,
+          "num_comments": 3,
+          "permalink": "https://reddit.com/r/JewsOfConscience/comments/1ndjj03/a_message_from_kadri_daraghma_to_the_israeli/",
+          "selftext": "Jordan Valley Activists on Instagram: \"On August 21 , the community of Eyn el-Hilweh experienced a campaign of violent destruction by the Israeli Civil Administration and army. The entire compound of Kadri Daraghma's family was destroyed by bulldozers. Fatmeh Daraghma's house was demolished too. As a result, an urgent petition was filed with the Supreme Court while the family holds to its' land.\n\n\nThe text if the message is as follows. \n\n\"For those who think that there is still a place for justi"
+        },
+        {
+          "title": "Hellsing Organization is hiring.",
+          "subreddit": "MurderDronesOfficial",
+          "score": 22,
+          "num_comments": 38,
+          "permalink": "https://reddit.com/r/MurderDronesOfficial/comments/1kyypl0/hellsing_organization_is_hiring/",
+          "selftext": "**the advantages included in the contract:**  \n**-Free 24/7 access to any gunsmith and every weapon will be free**  \n**-Free Drone Fucker License (if already owned then it does not stack or upgrade)**  \n**-Free Drone Ownership License**\n\n**WAR ON KCKENSON!**"
+        },
+        {
+          "title": "DMD Land 3 FULL Live Stream Song Posts Reminder",
+          "subreddit": "Domundi",
+          "score": 20,
+          "num_comments": 0,
+          "permalink": "https://reddit.com/r/Domundi/comments/1t1udsd/dmd_land_3_full_live_stream_song_posts_reminder/",
+          "selftext": "Hey everyone,\n\nFriendly reminder FULL song clips from the live stream are not allowed  in the sub per DMD's statement.\n\nShort clips from the live stream, fan videos from the event, etc are fine. Full songs from the live stream will be removed.  Anything that the DMD socials post is also fine.\n\nWe get it. It's fun. We love the event too, but we want to be respectful of the companies wishes.\n\n***ie this is mainly talking about YouTube videos where the account has uploaded the full performance***."
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://whereby.com/information/pricing/",
+    "changelog": null,
+    "docs": "https://docs.whereby.com",
+    "integrations": "https://whereby.com/information/embedded/integrations/",
+    "g2": "https://www.g2.com/products/whereby/reviews"
+  },
+  "analysis": {
+    "name": "Whereby",
+    "url": "https://whereby.com",
+    "tagline": "Secure video calls. Zero hassle",
+    "value_proposition": "European-owned, privacy-first WebRTC video calling for individuals, teams, and product builders who need reliable embedded or hosted video without downloads or setup friction.",
+    "target_segment": "SMB / dev / enterprise",
+    "ideal_customer": "Product builders embedding video into telehealth or eLearning apps, and small-to-mid teams wanting browser-based video without IT overhead",
+    "features": [
+      {
+        "name": "screen sharing",
+        "description": "Share your screen during video calls",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "file sharing",
+        "description": "Share files with participants during a meeting",
+        "evidence_source": "landing|docs",
+        "tier": "all"
+      },
+      {
+        "name": "chat",
+        "description": "In-meeting text chat between participants",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "transcriptions",
+        "description": "Automatic meeting transcription",
+        "evidence_source": "landing|docs",
+        "tier": "paid"
+      },
+      {
+        "name": "virtual whiteboard",
+        "description": "Collaborative whiteboard inside the meeting room",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "custom branding",
+        "description": "Apply custom colors, logos, and branding elements to meeting rooms",
+        "evidence_source": "landing|docs",
+        "tier": "paid"
+      },
+      {
+        "name": "recording",
+        "description": "Record meetings for later playback or storage",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "breakout groups",
+        "description": "Split participants into smaller sub-rooms during a meeting",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "dial-in",
+        "description": "Join meetings via phone dial-in (PSTN access)",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "live captions",
+        "description": "Real-time auto-generated captions during video calls",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "live streaming via rtmp",
+        "description": "Stream meetings to external platforms via RTMP protocol",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "quality insights",
+        "description": "Analytics and diagnostics on call quality metrics",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "waiting rooms",
+        "description": "Hold participants in a lobby before admitting them to the meeting",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "user roles & meeting permissions",
+        "description": "Assign host, co-host, and participant roles with configurable permissions",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "programmatic room creation",
+        "description": "Create and manage meeting rooms via REST API",
+        "evidence_source": "landing|pricing|docs",
+        "tier": "paid"
+      },
+      {
+        "name": "permanent room links",
+        "description": "Persistent, reusable meeting room URLs that never expire",
+        "evidence_source": "landing|pricing",
+        "tier": "all"
+      },
+      {
+        "name": "meeting assistants",
+        "description": "AI-powered or automated assistants that can join and operate in meeting rooms",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "camera effects",
+        "description": "Background blur, virtual backgrounds, or other camera-level visual effects",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "webhooks",
+        "description": "Event-driven webhooks for meeting lifecycle events (join, leave, end, etc.)",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "rest api",
+        "description": "Full REST API for room management, participant control, and configuration",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "web component & pre-built ui",
+        "description": "Drop-in HTML web component for embedding video with minimal code",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "react browser sdk",
+        "description": "React-based SDK for building fully custom video call UI in web apps",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "ios sdk",
+        "description": "Native iOS SDK for embedding video into iOS mobile apps",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "android sdk",
+        "description": "Native Android SDK for embedding video into Android mobile apps",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "react native sdk",
+        "description": "SDK for embedding video in cross-platform React Native apps",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "flutter sdk",
+        "description": "SDK for embedding video in Flutter mobile applications",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "secure s3 authentication",
+        "description": "Signed/authenticated S3 storage for recording files",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "usage tracking",
+        "description": "Track per-customer or per-room video usage programmatically",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "global room customizations",
+        "description": "Account-level defaults for room appearance and behavior applied across all rooms",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "no-code embedding (squarespace/wordpress/bubble)",
+        "description": "Embed video rooms into no-code platforms without writing custom code",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "meeting scheduling integration",
+        "description": "Calendar-based meeting scheduling via Cronofy integration",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "gdpr compliance",
+        "description": "Data processing and storage practices compliant with EU GDPR",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "hipaa compliance",
+        "description": "HIPAA-compliant configuration for healthcare and telehealth use cases",
+        "evidence_source": "landing|docs",
+        "tier": "paid"
+      },
+      {
+        "name": "iso 27001 certification",
+        "description": "Information security management certified to ISO 27001 standard",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "hybrid meetings",
+        "description": "Support for mixed in-person and remote participants in a single session",
+        "evidence_source": "other",
+        "tier": "unknown"
+      },
+      {
+        "name": "low bandwidth optimization",
+        "description": "Maintains call quality in low-bandwidth network conditions",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "mobile web support",
+        "description": "Video calls work on mobile devices without requiring a native app download",
+        "evidence_source": "landing",
+        "tier": "all"
+      },
+      {
+        "name": "telehealth vertical features",
+        "description": "HIPAA setup guides, practitioner/patient room flows, and telehealth implementation patterns",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "figma ui kit",
+        "description": "Figma component kit for designing custom video call interfaces",
+        "evidence_source": "docs",
+        "tier": "free"
+      },
+      {
+        "name": "postman collection",
+        "description": "Pre-built Postman collection for testing and exploring the REST API",
+        "evidence_source": "docs",
+        "tier": "free"
+      }
+    ],
+    "integrations": [
+      "Cronofy",
+      "Squarespace",
+      "WordPress",
+      "Bubble",
+      "Amazon S3",
+      "React",
+      "Next.js",
+      "React Native",
+      "Flutter"
+    ],
+    "differentiators": [
+      "European-owned and privacy-first by design",
+      "GDPR, HIPAA, and ISO 27001 compliant out of the box",
+      "No download required for end users \u2014 fully browser-based",
+      "Get up and running in minutes, not months (Embedded product)",
+      "Permanent room links (no scheduling required)",
+      "Dedicated telehealth vertical with HIPAA implementation guides",
+      "Unrivaled support at no extra cost including dedicated Success team",
+      "Operates in low-bandwidth scenarios"
+    ],
+    "recent_ships": [
+      {
+        "date": "unknown",
+        "what": "Hybrid Meetings feature launched",
+        "source": "HN: 'Whereby launches new Hybrid Meetings feature'"
+      },
+      {
+        "date": "unknown",
+        "what": "Rebranded from Appear.in to Whereby",
+        "source": "HN: 'Appear.in Changes Name to Whereby'"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "90% of video calls rated 4 or 5 stars for quality in telehealth deployments (Katrina Baxter-Moore, Senior Product Manager, DrDoctor)"
+      ],
+      "complaints": [],
+      "sources": [
+        "landing page testimonial"
+      ]
+    },
+    "pricing_signal": {
+      "model": "freemium",
+      "tier_count": 2,
+      "lowest_paid_seat": null,
+      "free_tier": "Free plan exists; Meetings product has at least one free tier with instant video calls and permanent room links; Embedded has usage-based pricing with implied free/trial entry point"
+    }
+  }
+}

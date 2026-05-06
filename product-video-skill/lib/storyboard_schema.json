@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Product video storyboard",
+  "type": "object",
+  "required": ["slug", "core_message", "audience", "channels", "length_s", "tone", "beats", "end_card"],
+  "properties": {
+    "slug": { "type": "string", "description": "kebab-case identifier, used for filenames" },
+    "title": { "type": "string", "description": "human title (used in brief header)" },
+    "core_message": { "type": "string", "description": "single sentence — what the viewer should walk away knowing" },
+    "audience": { "type": "string" },
+    "channels": { "type": "array", "items": { "type": "string", "enum": ["site-hero", "twitter", "linkedin", "youtube", "product-hunt", "blog-embed"] } },
+    "length_s": { "type": "number", "description": "target runtime in seconds" },
+    "tone": { "type": "string", "description": "voice register — straightforward / cocky / playful / technical / etc." },
+    "aspects": { "type": "array", "items": { "type": "string", "enum": ["16:9", "1:1", "9:16"] }, "default": ["16:9"] },
+    "audio": {
+      "type": "object",
+      "properties": {
+        "mode": { "type": "string", "enum": ["silent", "music", "vo", "music+vo"] },
+        "music_prompt": { "type": "string", "description": "FAL Stable Audio prompt if mode includes music" },
+        "music_file": { "type": "string", "description": "path to existing music file, if generated separately" },
+        "vo_lines": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["mode"]
+    },
+    "beats": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["start_s", "duration_s", "visual", "caption"],
+        "properties": {
+          "start_s": { "type": "number" },
+          "duration_s": { "type": "number" },
+          "label": { "type": "string", "description": "short label e.g. 'Hook', 'Setup', 'Action 1', 'Payoff'" },
+          "visual": { "type": "string", "description": "what's on screen this beat — 1–2 sentences" },
+          "caption": { "type": "string", "description": "on-screen text for this beat. Empty string for no caption." },
+          "action": { "type": "string", "description": "what the user/cursor/agent does, if anything" },
+          "audio_note": { "type": "string", "description": "optional: how audio shifts this beat (e.g. 'music swells', 'VO line: …')" }
+        }
+      }
+    },
+    "end_card": {
+      "type": "object",
+      "required": ["headline", "cta", "url"],
+      "properties": {
+        "brand_mark": { "type": "string", "description": "brand mark slug, e.g. 'zergboard'" },
+        "headline": { "type": "string", "description": "one-line, what shipped" },
+        "cta": { "type": "string", "description": "verb-led, 2–4 words" },
+        "url": { "type": "string" },
+        "hold_s": { "type": "number", "default": 3.5, "description": "3–5s typical" }
+      }
+    }
+  }
+}

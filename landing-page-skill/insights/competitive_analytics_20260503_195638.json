@@ -1,0 +1,2082 @@
+{
+  "type": "competitive_review_handoff",
+  "category": "analytics",
+  "product": "Zergalytics",
+  "generated_at": "2026-05-03T19:56:38.779251",
+  "competitor_urls": [
+    "https://analytics.google.com",
+    "https://mixpanel.com",
+    "https://amplitude.com",
+    "https://posthog.com",
+    "https://june.so",
+    "https://plausible.io",
+    "https://heap.io",
+    "https://pendo.io",
+    "https://hotjar.com",
+    "https://matomo.org"
+  ],
+  "matrix": [
+    {
+      "feature": "web analytics",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "partial",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.5,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile analytics",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "event tracking",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "frequency_weighted": 8.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "autocapture",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "partial",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "real-time reporting",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "unknown",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "unknown",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "funnel analysis",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "frequency_weighted": 7.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "retention analysis",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "cohort analysis",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "segmentation",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "frequency_weighted": 8.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "user profiles",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.5,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "conversion tracking",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "no",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "ecommerce tracking",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "session replay",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "heatmaps",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "no",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "paths and user flows analysis",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "account-level analytics",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "a/b testing",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "utm and campaign tracking",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "revenue tracking",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "custom events and properties",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "frequency_weighted": 8.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "multi-touch attribution",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "no",
+        "heap.io": "partial",
+        "pendo.io": "unknown",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "roll-up reporting",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "partial",
+        "june.so": "unknown",
+        "plausible.io": "partial",
+        "heap.io": "unknown",
+        "pendo.io": "partial",
+        "hotjar.com": "unknown",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "feature flags",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "error and crash analytics",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "partial",
+        "heap.io": "yes",
+        "pendo.io": "partial",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "form analytics",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "partial",
+        "heap.io": "partial",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "geo-location analytics",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "unknown",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "site search analytics",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "unknown",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "scroll depth tracking",
+      "category": "core",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "partial",
+        "pendo.io": "unknown",
+        "hotjar.com": "partial",
+        "matomo.org": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "google ads integration",
+      "category": "integrations",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "google tag manager integration",
+      "category": "integrations",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "yes",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "google search console integration",
+      "category": "integrations",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "salesforce integration",
+      "category": "integrations",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "no",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "hubspot integration",
+      "category": "integrations",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "yes",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "data warehouse connectors",
+      "category": "integrations",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "no",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "webhooks",
+      "category": "integrations",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mcp server",
+      "category": "integrations",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "csv import and export",
+      "category": "integrations",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "no",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "crm and cdp sync",
+      "category": "integrations",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "no",
+        "heap.io": "unknown",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai query builder",
+      "category": "ai",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai-generated insights",
+      "category": "ai",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "ai chat assistant",
+      "category": "ai",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "anomaly detection",
+      "category": "ai",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "root cause analysis",
+      "category": "ai",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "churn prediction",
+      "category": "ai",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sentiment analysis",
+      "category": "ai",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "llm and ai traffic detection",
+      "category": "ai",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sso",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 4.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "two-factor authentication",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "user roles and permissions",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "unknown",
+        "hotjar.com": "partial",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "gdpr and ccpa compliance",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "unknown",
+        "june.so": "yes",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.5,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "soc 2 type ii",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "unknown",
+        "heap.io": "unknown",
+        "pendo.io": "yes",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "hipaa compliance",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "unknown",
+        "heap.io": "unknown",
+        "pendo.io": "yes",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "white label and oem",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "region-specific data hosting",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "data governance",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "unknown",
+        "heap.io": "yes",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "multi-site and multi-app support",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "partial",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.5,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "cookieless tracking",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "api access",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "unknown",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "frequency_weighted": 7.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "agency and multi-client management",
+      "category": "admin",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 1.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "customizable dashboard",
+      "category": "ux",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "partial",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "partial",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.5,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "dashboard templates",
+      "category": "ux",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "dashboard embedding",
+      "category": "ux",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "partial",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "chart customization",
+      "category": "ux",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "public and shared dashboards",
+      "category": "ux",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "partial",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "partial",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "saved metrics and formulas",
+      "category": "ux",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "no",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 1.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "period comparison",
+      "category": "ux",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "filters and segments ui",
+      "category": "ux",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "partial",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "partial",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "frequency_weighted": 7.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "monitoring and alerts",
+      "category": "automation",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "partial",
+        "heap.io": "yes",
+        "pendo.io": "partial",
+        "hotjar.com": "partial",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "scheduled exports",
+      "category": "automation",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "partial",
+        "pendo.io": "unknown",
+        "hotjar.com": "partial",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "email and slack reports",
+      "category": "automation",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "cohort and audience sync",
+      "category": "automation",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "no",
+        "heap.io": "unknown",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "traffic spike notifications",
+      "category": "automation",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "partial",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "behavioral targeting",
+      "category": "automation",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "partial",
+        "june.so": "unknown",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "partial",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "frequency_weighted": 3.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "comments",
+      "category": "collaboration",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "unknown",
+        "hotjar.com": "partial",
+        "matomo.org": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "annotations",
+      "category": "collaboration",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "highlights and clips",
+      "category": "collaboration",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "shared links",
+      "category": "collaboration",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "partial",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "user interview scheduling",
+      "category": "collaboration",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "custom reports",
+      "category": "reporting",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "yes",
+        "june.so": "partial",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 5,
+      "frequency_weighted": 5.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "exploration reports",
+      "category": "reporting",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "experiment reporting",
+      "category": "reporting",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 1.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "statistical significance testing",
+      "category": "reporting",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 1.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sql and raw data access",
+      "category": "reporting",
+      "presence": {
+        "analytics.google.com": "partial",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "partial",
+        "heap.io": "partial",
+        "pendo.io": "partial",
+        "hotjar.com": "partial",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "frequency_weighted": 5.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "log analytics",
+      "category": "reporting",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile sdk",
+      "category": "mobile",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 6,
+      "frequency_weighted": 6.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "javascript and browser sdk",
+      "category": "mobile",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "yes",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 8,
+      "frequency_weighted": 8.0,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "server-side sdk",
+      "category": "mobile",
+      "presence": {
+        "analytics.google.com": "yes",
+        "mixpanel.com": "unknown",
+        "june.so": "yes",
+        "plausible.io": "no",
+        "heap.io": "partial",
+        "pendo.io": "unknown",
+        "hotjar.com": "partial",
+        "matomo.org": "partial",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 4,
+      "frequency_weighted": 3.5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "open source",
+      "category": "other",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "self-hosting",
+      "category": "other",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "yes",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "unknown"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "bot filtering",
+      "category": "other",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "yes",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "in-app guides and walkthroughs",
+      "category": "other",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "yes",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "in-app surveys and feedback widget",
+      "category": "other",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "yes",
+        "hotjar.com": "yes",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "computed properties and traits",
+      "category": "other",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "yes",
+        "june.so": "yes",
+        "plausible.io": "no",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "frequency_weighted": 2.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "metric trees",
+      "category": "other",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "yes",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "no",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "pixel tracking",
+      "category": "other",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "unknown",
+        "june.so": "unknown",
+        "plausible.io": "unknown",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "lookup tables",
+      "category": "other",
+      "presence": {
+        "analytics.google.com": "unknown",
+        "mixpanel.com": "yes",
+        "june.so": "unknown",
+        "plausible.io": "no",
+        "heap.io": "unknown",
+        "pendo.io": "unknown",
+        "hotjar.com": "unknown",
+        "matomo.org": "unknown",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "roadmaps integration",
+      "category": "other",
+      "presence": {
+        "analytics.google.com": "no",
+        "mixpanel.com": "no",
+        "june.so": "no",
+        "plausible.io": "no",
+        "heap.io": "no",
+        "pendo.io": "yes",
+        "hotjar.com": "no",
+        "matomo.org": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "frequency_weighted": 1.0,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "session replay ai summary",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "frequency_weighted": 0.0,
+      "bucket": "whitespace",
+      "evidence": ""
+    }
+  ],
+  "rankings": [
+    {
+      "feature": "event tracking",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 4,
+      "cost": "M",
+      "score": 10.67,
+      "evidence": ""
+    },
+    {
+      "feature": "segmentation",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 4,
+      "cost": "M",
+      "score": 10.67,
+      "evidence": ""
+    },
+    {
+      "feature": "custom events and properties",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 4,
+      "cost": "M",
+      "score": 10.67,
+      "evidence": ""
+    },
+    {
+      "feature": "javascript and browser sdk",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 4,
+      "cost": "M",
+      "score": 10.67,
+      "evidence": ""
+    },
+    {
+      "feature": "funnel analysis",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 4,
+      "cost": "M",
+      "score": 9.33,
+      "evidence": ""
+    },
+    {
+      "feature": "api access",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 4,
+      "cost": "M",
+      "score": 9.33,
+      "evidence": ""
+    },
+    {
+      "feature": "filters and segments ui",
+      "bucket": "table_stakes",
+      "frequency": 7,
+      "fit": 4,
+      "cost": "M",
+      "score": 9.33,
+      "evidence": ""
+    },
+    {
+      "feature": "web analytics",
+      "bucket": "table_stakes",
+      "frequency": 6,
+      "fit": 4,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    },
+    {
+      "feature": "mobile analytics",
+      "bucket": "table_stakes",
+      "frequency": 6,
+      "fit": 4,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    },
+    {
+      "feature": "user profiles",
+      "bucket": "table_stakes",
+      "frequency": 6,
+      "fit": 4,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    }
+  ],
+  "drift": [
+    {
+      "feature": "live product existence",
+      "spec_says": "no",
+      "live_says": "partial",
+      "note": "spec aspiration \u2014 spec explicitly marks zergalytics as a placeholder with no repo or roadmap entry, but a live scrape URL (zerglytics.fly.dev) exists per memory, implying something is deployed"
+    }
+  ],
+  "summary": {
+    "n_features": 98,
+    "table_stakes_count": 18,
+    "differentiator_parity_count": 79,
+    "whitespace_count": 1,
+    "we_have_they_dont_count": 0,
+    "drift_count": 1,
+    "_thresholds": {
+      "table_stakes": 0.75,
+      "parity_lower": 0.25,
+      "partial_weight": 0.5
+    }
+  }
+}

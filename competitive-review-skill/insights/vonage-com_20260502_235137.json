@@ -1,0 +1,525 @@
+{
+  "name": "Vonage",
+  "url": "https://vonage.com",
+  "domain": "vonage.com",
+  "scanned_at": "2026-05-02T23:49:41.024235",
+  "sources": {
+    "landing": {
+      "url": "https://vonage.com",
+      "title": "vonage.com",
+      "text": "vonage.com",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.vonage.com/unified-communications/pricing/",
+      "title": "vonage.com",
+      "text": "vonage.com",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://developer.vonage.com/en/documentation",
+      "title": "Documentation",
+      "text": "Documentation\nSkip to Main Content\nAskAI\nDocumentation\nStartups\nBlog\nCode Hub\nAPI Dashboard\nVonage.com\nPricing\nSupport\nDo Not Sell My Personal Information\nEnglish\n\u65e5\u672c\u8a9e\nDeutsch\nEspa\u00f1ol\nFran\u00e7ais\nMy profile\nMy dashboard\nLog out\nAPI Dashboard\nVonage.com\nPricing\nSupport\nLegal & Privacy\nDo Not Sell My Personal Information\nen\nDocumentation\nSDKs & Tools\nCommunity\nStartups\nBlog\nCode Hub\nAskAI\nHome\nDocumentation\nBack to Home\nVonage Documentation\nWelcome to Vonage API Developer Portal. Here you can find all the technical documentation for the APIs available as part of the Vonage Communication APIs Platform. Be sure to checkout our\nsteps to get started with Vonage APIs\nsection!\nFeatured products\nIdentity Insights\nProvides real-time access to a broad range of attributes related to the carrier, subscriber, or device associated with a phone number.\nRCS Messaging\nThe Messages API RCS channel supports both outbound messaging (messages sent from the business to the customer) and inbound messaging (messages sent from the customer to the business, in response to an outbound message).\nVerify API\nAuthenticate your users and prevent fraud with our simple, easy-to-use API that removes the complexity of 2FA at a global scale.\nVideo API Unified\nBuild a custom video experience using advanced features.\nAll Vonage APIs and products\nJump to:\nIdentity Insights\nNetwork Features\nMessaging\nVoice Calls\nVideo\nVerify Identity\nLow Code/No Code\nAccount Management\nProduct Enablement\nAI Tools\nIdentity Insights\nSIM Swap\nDetermine whether and when a SIM swap was last performed on an individual mobile phone number.\nDevice Swap\nRetrieve information on any recent device change for a SIM paired to a mobile phone\nSubscriber Match\nCompare end-user data for a phone number with that on file with a network operator.\nLocation Verification\nVerify the location of an end-user using cellular network positioning.\nFormat\nValidation of a phone number's format and retrieval of information derived from it.\nOriginal Carrier\nInformation about the network was initially assigned. Information based on the numbering plan prefix.\nCurrent Carrier\nInformation about the network the number is currently assigned.\nRoaming\nCheck the roaming status and country for a given device on a mobile network.\nReachability\nCheck the connectivity status for a given device, including if it is connected to the network for data, SMS, or both.\nAccount Management\nApplication API\nCreate a record for your application and configure authentication, callbacks, and settings.\nNumbers API\nProvision\nvirtual numbers\naround the globe to send or receive text messages and phone calls.\nReports API\nFind\nhistorical records\nand messages by originating or destination phone number, dates and more.\nRedact API\nDelete data\nfrom the Vonage platform.\nNetwork Features\nDevice Location Retrieval\nRetrieve the last known location of a SIM enabled device using cellular network positioning.\nVoice Calls\nVoice API\nCreate calls\n, control calls in-progress, get information about previous calls.\nIn-app Voice\nBuild live voice communications into your\napplication.\nSIP Trunking\nConnect\nto existing endpoints via the phone network and in-app voice.\nVideo\nVonage Video API Unified (New)\nBuild a\ncustom video\nexperience using advanced features.\nVideo API (Tokbox Portal)\nEmbed high-quality video functionality into your web and mobile applications.\nVerify Identity\nVerify API\nEnable your applications with two-factor\nauthentication\n.\nProduct Enablement\nAccount & Subaccounts\nCreate a record for your application and configure authentication, callbacks, and settings.\nConversations API\nStitch conversations from\nmultiple communications channels\ninto a single thread.\nAudit API\nGet information about your Vonage\naccount activity\n.\nFraud Defender\nSecure your application against\nfraudulent\ntraffic\nOpt-Out Assist\nEasily manage all facets of\nopt-out compliance\nfor SMS and MMS traffic\nMessaging\nMessages API\nMulti-channel\nmessaging that integrates with:\nSMS\nWhatsapp\nMessenger\nViber\nMMS\nRCS\nIn-app messaging\nBuild\nchat messaging into your application.\nSMS API\nProgrammatically send and receive\nSMS\nmessages.\n10 DLC Support\n10DLC APIs allow you to register your brand, register a campaign and many more.\nTFN Registration\nProgrammatically register and manage toll-free numbers.\nChannel Manager\nManage various aspects of the messaging channels supported by the Vonage Messages API.\nLow Code/No Code\nVonage Business Cloud\nProgrammatically access data and manage features on your Vonage Business Communications (VBC) account.\nAI Studio\nBuild complex\nconversational flows\nvia a drag-and-drop interface.\nVonage Conversational Commerce, powered by Jumper.ai\nVonage Conversational Commerce, powered by Jumper.ai, brings AI-powered features to drive product consideration, convert sales, and increase revenue.\nAI Tools\nMCP Server\nCommunicate with tools through a standardized interface that lets AI agents safely use external APIs and capabilities.\nReady to start building?\nExperience seamless connectivity, real-time messaging, and crystal-clear voice and video calls\u2014all at your fingertips.\nSDK & Tools\nClient SDKs\nServer SDKs\nVonage CLI\nFramework Libraries\nExtend\nPlugins for partner applications\nView More\nSDK & Tools\nClient SDKs\nServer SDKs\nVonage CLI\nFramework Libraries\nExtend\nPlugins for partner applications\nView More\nAPI Status\nPartially Degraded Service\nDocumentation\nDocumentation\nVonage Business Cloud\nVonage Contact Center\nTechnical References\nDocumentation\nSDK & Tools\nCommunity\nCommunity Hub\nTeam\nCareers\nNewsletter\nSupport\nKnowledgebase\nChangelogs\nWe would like to store cookies on your device to enhance site functionality, analyze site usage, and assist in our marketing efforts. Please use the buttons below to accept or reject all optional cookies, or click \u201cDo Not Sell My Personal Information\u201d to opt out of targeted advertising or to customize the purposes for which we may store these cookies.\nDo Not Sell My Personal Information\nReject Optional Cookies\nAccept All Cookies\nYour Opt Out Preference Signal is Honored\nPrivacy Preferences\nThis site uses cookies and similar tools, some of which are provided by third parties, to operate and improve our site, enable social media and other features, support our advertising and marketing, collect user data, IP address and online identifiers, referring URLs and other browsing information, and record user sessions. We and these third parties use this information to analyze and improve performance and usage, understand more about users, provide personalized experiences, and reach users with more relevant content and ads on this site and third-party sites. For more information, please see our privacy policy.\nVonage Privacy Policy\nAllow All\nManage Consent Preferences\nStrictly Necessary Cookies\nAlways Active\nThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to your actions which amount to a request for services, such as setting your privacy preferences, logging in, or filling in forms. You can set your browser to block or alert you about these cookies, but then, some parts of the site will not work.\nCookies Details\nFunctional Cookies\nFunctional Cookies\nThese cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third-party providers whose services we have added to our pages. If you do not allow these cookies, some or all of these services may not function properly.\nCookies Details\nAnalytics Cookies\nAnalytics Cookies\nThese cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is provided to us in an aggregated, anonymous format. If you do not allow these cookies, we will not know when you have visited our site and will not be able to monitor its performance.\nCookies Details\nSale or Share of Personal Information\nSale or Share of Personal Information\nUnder various U.S. state privacy laws, you have the right to opt out of the sale or sharing of your personal information for targeted advertising. You may exercise your right to opt out of the sale of personal information by disabling the \"Sale or Share of Personal Information\" toggle switch. Alternatively, if you have enabled Global Privacy Control signals through your browser or a plugin, we will interpret that as a valid request to opt out of the sale of your personal information. If you opt out, we will not be able to offer you personalized ads and will not disclose your personal information to third parties for targeted advertising purposes.\nCookies Details\nBack Button\nCookie List\nSearch Icon\nFilter Icon\nClear\ncheckbox label\nlabel\nApply\nCancel\nConsent\nLeg.Interest\ncheckbox label\nlabel\ncheckbox label\nlabel\ncheckbox label\nlabel\nReject Optional Cookies\nConfirm my choices",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.vonage.com/unified-communications/integrations/",
+      "title": "vonage.com",
+      "text": "vonage.com",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/vonage-business-communications/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "New Vonage app to directly challenge Skype",
+          "url": "http://phandroid.com/2012/02/08/new-vonage-app-to-directly-challenge-skype/",
+          "points": 8,
+          "num_comments": 0,
+          "created_at": "2012-02-08T15:04:30Z",
+          "hn_url": "https://news.ycombinator.com/item?id=3566773"
+        },
+        {
+          "title": "Vonage: \"Unlimited\" minutes capped at 3000 minutes.",
+          "url": "",
+          "points": 5,
+          "num_comments": 2,
+          "created_at": "2013-05-24T16:17:24Z",
+          "hn_url": "https://news.ycombinator.com/item?id=5763792"
+        },
+        {
+          "title": "Hackers: 'Your Vonage Call is Owned'",
+          "url": "http://www.news.com/Security-firm-Hackers-can-divert-Vonage-calls/2110-7349_3-6215259.html",
+          "points": 5,
+          "num_comments": 0,
+          "created_at": "2007-10-26T03:19:30Z",
+          "hn_url": "https://news.ycombinator.com/item?id=72780"
+        },
+        {
+          "title": "Ericsson/Vonage: counting the cost of a poor call",
+          "url": "https://www.ft.com/content/420b28ad-6ca0-48c4-a420-373c15711293",
+          "points": 3,
+          "num_comments": 1,
+          "created_at": "2023-10-17T12:16:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=37913803"
+        },
+        {
+          "title": "Things get worse for Vonage",
+          "url": "http://gigaom.com/2007/05/10/vonage-1q-2007/",
+          "points": 3,
+          "num_comments": 1,
+          "created_at": "2007-05-10T16:21:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21084"
+        },
+        {
+          "title": "Ericsson Completes Acquisition of Vonage",
+          "url": "https://www.ericsson.com/en/press-releases/2022/7/ericsson-completes-acquisition-of-vonage",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2022-07-21T15:49:51Z",
+          "hn_url": "https://news.ycombinator.com/item?id=32180823"
+        },
+        {
+          "title": "Vonage acquires Nexmo",
+          "url": "http://www.nojitter.com/post/240171637/vonage-acquires-nexmo-jumps-into-cpaas",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2016-05-05T17:13:20Z",
+          "hn_url": "https://news.ycombinator.com/item?id=11637953"
+        },
+        {
+          "title": "Jajah buys Vonage",
+          "url": "http://redcouch.typepad.com/weblog/2007/03/jajah_buys_vona.html",
+          "points": 2,
+          "num_comments": 3,
+          "created_at": "2007-04-01T03:12:25Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7934"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Crowdstrike Packages Infected with Malware (and other 167 packages infected as well)",
+          "subreddit": "programming",
+          "score": 1200,
+          "num_comments": 212,
+          "permalink": "https://reddit.com/r/programming/comments/1nihrpt/crowdstrike_packages_infected_with_malware_and/",
+          "selftext": "sigh.... Kinda getting sick of writing these, absolutely insane the pace of supply chain attacks anyway...  \nThe same ThreatActors behind the NX S1ngularity attack have launched a self-replicating worm, it's infected 187 packages and its terrifying.\n\nYesterday a software developer  [Daniel Pereira ](https://www.linkedin.com/in/daniel-pereira-b17a27160/)noticed a weird repo being created.... when he looked into it he was the first to realize that actually [tinycolor ](https://www.npmjs.com/packag"
+        },
+        {
+          "title": "Fax is killing me",
+          "subreddit": "sysadmin",
+          "score": 44,
+          "num_comments": 65,
+          "permalink": "https://reddit.com/r/sysadmin/comments/1swri5e/fax_is_killing_me/",
+          "selftext": "Vonage customer and I gotta say fax machines are killing me.  I\u2019ve got a situation where fax to some numbers work and others don\u2019t.  I have to be able to fax from a physical machine and have a Grandstream ATA on the fax machine.  Vonage says it\u2019s not their problem.   Printer/MFA company says it\u2019s not theirs.   What would you do?   "
+        },
+        {
+          "title": "Another day, another huge Vonage outage",
+          "subreddit": "sysadmin",
+          "score": 34,
+          "num_comments": 61,
+          "permalink": "https://reddit.com/r/sysadmin/comments/1o7guq8/another_day_another_huge_vonage_outage/",
+          "selftext": "So who's everyone using for their VOIP and call center systems these days? Because Vonage is apparently *not* the one to use."
+        },
+        {
+          "title": "20 Crowdstrike packages infected with malware as S1ngularity attackers stike again",
+          "subreddit": "cybersecurity",
+          "score": 635,
+          "num_comments": 62,
+          "permalink": "https://reddit.com/r/cybersecurity/comments/1nihyik/20_crowdstrike_packages_infected_with_malware_as/",
+          "selftext": "sigh.... Kinda getting sick of writing these, absolutely insane the pace of supply chain attacks anyway...  \nThe same ThreatActors behind the NX S1ngularity attack have launched a self-replicating worm, it's infected 187 packages and its terrifying.\n\nYesterday a software developer  [Daniel Pereira ](https://www.linkedin.com/in/daniel-pereira-b17a27160/)noticed a weird repo being created.... when he looked into it he was the first to realize that actually [tinycolor ](https://www.npmjs.com/packag"
+        },
+        {
+          "title": "Cleaned up my Desk",
+          "subreddit": "homelab",
+          "score": 263,
+          "num_comments": 21,
+          "permalink": "https://reddit.com/r/homelab/comments/1q193s8/cleaned_up_my_desk/",
+          "selftext": "Two DeskPi racks.  4 mini pcs, Vonage, Arlo, weather station and Apple TV. \n\nRequest for rear pics will be nixed. "
+        },
+        {
+          "title": "Custom RG35XX SP",
+          "subreddit": "ANBERNIC",
+          "score": 261,
+          "num_comments": 14,
+          "permalink": "https://reddit.com/r/ANBERNIC/comments/1n71xwu/custom_rg35xx_sp/",
+          "selftext": "Definitely my favorite retro handheld in my collection. Can't believe how unbelievable gorgeous this turned out. UV printed artwork onto an Anbernic RG35xx SP. Giving that pokemon flavor this handheld so deserves."
+        },
+        {
+          "title": "Weekly Earnings Thread 11/10 - 11/14",
+          "subreddit": "wallstreetbets",
+          "score": 254,
+          "num_comments": 1570,
+          "permalink": "https://reddit.com/r/wallstreetbets/comments/1oqwls8/weekly_earnings_thread_1110_1114/",
+          "selftext": ""
+        },
+        {
+          "title": "Das wichtigste zusammengefasst f\u00fcr heute",
+          "subreddit": "wallstreetbetsGER",
+          "score": 181,
+          "num_comments": 10,
+          "permalink": "https://reddit.com/r/wallstreetbetsGER/comments/1o5dhuk/das_wichtigste_zusammengefasst_f\u00fcr_heute/",
+          "selftext": "**WICHTIGE NACHRICHTEN**\n\n* **USA:** Die S&amp;P 500-Futures bleiben stabil bei gemischten Erwartungen f\u00fcr die Quartalszahlen und dem anhaltenden Regierungsstillstand. Das Verbrauchervertrauen h\u00e4lt sich trotz Sorgen \u00fcber den Arbeitsmarkt (Bloomberg, Reuters).\n* **Global:** Die Handelskonflikte zwischen den USA und China versch\u00e4rfen sich durch neue Zolldrohungen und Exportkontrollen f\u00fcr Seltene Erden aus China. Dies sorgt f\u00fcr Volatilit\u00e4t an den M\u00e4rkten im Asien-Pazifik-Raum und stellt Chinas Akti"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.vonage.com/unified-communications/pricing/",
+    "changelog": null,
+    "docs": "https://developer.vonage.com/en/documentation",
+    "integrations": "https://www.vonage.com/unified-communications/integrations/",
+    "g2": "https://www.g2.com/products/vonage-business-communications/reviews"
+  },
+  "analysis": {
+    "name": "Vonage",
+    "url": "https://vonage.com",
+    "tagline": "Communications APIs Platform",
+    "value_proposition": "Developer-first CPaaS platform providing programmable voice, messaging, video, and identity APIs for building global communication workflows.",
+    "target_segment": "enterprise / dev",
+    "ideal_customer": "Developers and enterprise engineering teams building embedded communications (2FA, notifications, video, voice) into applications at global scale",
+    "features": [
+      {
+        "name": "sms api",
+        "description": "Programmatically send and receive SMS messages globally",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "messages api",
+        "description": "Multi-channel messaging API supporting SMS, WhatsApp, Messenger, Viber, MMS, and RCS from a single integration",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "rcs messaging",
+        "description": "Outbound and inbound RCS messaging between businesses and customers",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "whatsapp messaging",
+        "description": "Send and receive WhatsApp messages via the Messages API",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "facebook messenger integration",
+        "description": "Send and receive messages via Facebook Messenger through the Messages API",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "viber messaging",
+        "description": "Send and receive messages via Viber through the Messages API",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "mms messaging",
+        "description": "Send multimedia messages via the Messages API",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "in-app messaging",
+        "description": "Embed chat messaging directly into web or mobile applications",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "voice api",
+        "description": "Programmatically create, control, and retrieve information about calls",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "in-app voice",
+        "description": "Embed live voice communications into web and mobile applications",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "sip trunking",
+        "description": "Connect to existing telephony endpoints via SIP and the PSTN",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "video api",
+        "description": "Build custom video experiences with advanced features (unified new platform)",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "video api (tokbox legacy)",
+        "description": "Embed high-quality video into web and mobile apps via legacy TokBox portal",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "verify api",
+        "description": "Two-factor authentication API for user verification and fraud prevention at global scale",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "sim swap detection",
+        "description": "Determine whether and when a SIM swap was last performed on a phone number",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "device swap detection",
+        "description": "Retrieve information on recent device changes for a SIM paired to a mobile phone",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "subscriber match",
+        "description": "Compare end-user data for a phone number against data on file with the network operator",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "location verification",
+        "description": "Verify end-user location using cellular network positioning",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "phone number format validation",
+        "description": "Validate phone number format and retrieve information derived from it",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "original carrier lookup",
+        "description": "Look up the network originally assigned to a phone number based on numbering plan prefix",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "current carrier lookup",
+        "description": "Look up the network a phone number is currently assigned to",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "roaming status check",
+        "description": "Check roaming status and country for a given device on a mobile network",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "reachability check",
+        "description": "Check connectivity status for a device including data and SMS network availability",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "device location retrieval",
+        "description": "Retrieve the last known location of a SIM-enabled device using cellular network positioning",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "numbers api",
+        "description": "Provision virtual phone numbers globally for sending and receiving calls and SMS",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "reports api",
+        "description": "Find historical records and messages by phone number, date, and other filters",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "redact api",
+        "description": "Delete personal data from the Vonage platform for compliance",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "application api",
+        "description": "Create and configure application records including authentication, callbacks, and settings",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "conversations api",
+        "description": "Stitch conversations from multiple channels into a single unified thread",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "audit api",
+        "description": "Retrieve logs of Vonage account activity for compliance and monitoring",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "fraud defender",
+        "description": "Protect applications against fraudulent traffic",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "opt-out assist",
+        "description": "Manage opt-out compliance for SMS and MMS traffic",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "account & subaccounts management",
+        "description": "Create and configure accounts and subaccounts for multi-tenant or reseller use cases",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "10dlc support",
+        "description": "APIs to register brands and campaigns for 10-Digit Long Code SMS compliance in the US",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "tfn registration",
+        "description": "Programmatically register and manage toll-free numbers",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "channel manager",
+        "description": "Manage configuration of messaging channels supported by the Messages API",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "ai studio",
+        "description": "Build complex conversational flows via a drag-and-drop no-code interface",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "conversational commerce",
+        "description": "AI-powered commerce flows to drive product consideration, sales conversion, and revenue (powered by Jumper.ai)",
+        "evidence_source": "docs",
+        "tier": "enterprise"
+      },
+      {
+        "name": "vonage business cloud api",
+        "description": "Programmatic access to data and feature management for Vonage Business Communications (UCaaS) accounts",
+        "evidence_source": "docs",
+        "tier": "paid"
+      },
+      {
+        "name": "mcp server",
+        "description": "Standardized interface for AI agents to safely access Vonage APIs and capabilities",
+        "evidence_source": "docs",
+        "tier": "unknown"
+      },
+      {
+        "name": "client sdks",
+        "description": "Mobile and web client SDKs for embedding in-app voice, video, and messaging",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "server sdks",
+        "description": "Server-side SDKs for multiple languages to interact with Vonage APIs",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "vonage cli",
+        "description": "Command-line interface for managing Vonage API resources and development workflows",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "framework libraries",
+        "description": "Framework-specific libraries to accelerate Vonage API integration",
+        "evidence_source": "docs",
+        "tier": "all"
+      },
+      {
+        "name": "identity insights platform",
+        "description": "Real-time access to carrier, subscriber, and device attributes for a phone number",
+        "evidence_source": "docs",
+        "tier": "paid"
+      }
+    ],
+    "integrations": [
+      "WhatsApp",
+      "Facebook Messenger",
+      "Viber",
+      "RCS (carrier network)",
+      "SIP endpoints",
+      "TokBox (legacy video)"
+    ],
+    "differentiators": [
+      "Network-native identity insights (SIM swap, device swap, location verification) sourced directly from carriers",
+      "Single Messages API covering SMS, WhatsApp, Messenger, Viber, MMS, and RCS",
+      "Conversations API for cross-channel thread stitching",
+      "Ericsson-backed global network reach",
+      "MCP server for AI agent interoperability",
+      "Fraud Defender built into the platform"
+    ],
+    "recent_ships": [
+      {
+        "date": "2024",
+        "what": "Vonage Video API Unified \u2014 new unified video platform replacing legacy TokBox portal",
+        "source": "docs: 'Vonage Video API Unified (New)'"
+      },
+      {
+        "date": "2024",
+        "what": "RCS Messaging support added to Messages API",
+        "source": "docs: featured product \u2014 'RCS Messaging'"
+      },
+      {
+        "date": "2024",
+        "what": "MCP Server for AI agent access to Vonage APIs",
+        "source": "docs: AI Tools section"
+      },
+      {
+        "date": "2022",
+        "what": "Ericsson acquisition of Vonage completed",
+        "source": "hn: 'Ericsson Completes Acquisition of Vonage'"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Developer-friendly API documentation and SDK coverage",
+        "Broad multi-channel messaging support under a single API"
+      ],
+      "complaints": [
+        "'Unlimited' minutes plan actually capped at 3000 minutes \u2014 misleading marketing",
+        "'Another day, another huge Vonage outage' \u2014 repeated reliability/uptime issues cited in sysadmin community",
+        "'Hackers: Your Vonage Call is Owned' \u2014 historical security vulnerability exposure",
+        "Ericsson acquisition perceived negatively: 'counting the cost of a poor call'"
+      ],
+      "sources": [
+        "hn",
+        "reddit"
+      ]
+    },
+    "pricing_signal": {
+      "model": "self-serve",
+      "tier_count": 0,
+      "lowest_paid_seat": null,
+      "free_tier": null
+    }
+  }
+}

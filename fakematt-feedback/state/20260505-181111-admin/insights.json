@@ -1,0 +1,322 @@
+{
+  "target": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+  "kind": "live_url",
+  "captures": [
+    {
+      "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+      "final_url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+      "title": "Zerglytics — Dashboard",
+      "h1": "Visitor analytics",
+      "headings": [
+        "Visitor analytics",
+        "All properties\n— LAST 30 DAYS",
+        "What changed AI summary — vs prior period",
+        "Visitors over time\n      distinct visitors per bucket — prior period",
+        "Top pages by visitors",
+        "Top sources referrer host",
+        "Top countries via edge geo",
+        "Devices, browsers & OS share of visitors",
+        "Devices",
+        "Browsers",
+        "OS",
+        "Top campaigns utm_source",
+        "Campaign matrix campaign — medium — source — visitors driven",
+        "Goals conversion events — % of visitors",
+        "Funnel configured per site",
+        "Deploys & previews CI events from GitHub Actions"
+      ],
+      "primary_cta": "30 DAYS",
+      "forms": [],
+      "links_sample": [
+        "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/api/export.csv?domain=__rollup__&period=30d"
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "rollup fetch failed TypeError: Failed to execute 'fetch' on 'Window': Request cannot be constructed from a URL that includes credentials: /api/org/zerg/rollup?period=30d\n    at loadRollup (https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/static/app.js:151:24)\n    at"
+        }
+      ],
+      "network_errors": [],
+      "axe_violations": [],
+      "perf": {
+        "dom_content_loaded_ms": 364,
+        "load_event_ms": 364,
+        "transfer_size_kb": 3,
+        "encoded_body_size_kb": 3
+      },
+      "text_excerpt": "ZERGLYTICS\nPRIVACY-FIRST — NO COOKIES — DAILY-ROTATED HASHES\n\nZERG — ANALYTICS\n\nVisitor analytics\n\nPageviews and visitors across all 0 properties — without tracking anyone.\n\n24H\n7 DAYS\n30 DAYS\n6 MO\n12 MO\nAUTO-REFRESH: OFF\nAll properties\n— LAST 30 DAYS\nPROPERTY\tPRODUCT\tSURFACE\tVISITORS\tPAGEVIEWS\tTREND 7D\tLAST SEEN\n\nPrivacy posture. No cookies on the visitor side. No raw IP or user-agent stored. Visitor identity is SHA256(daily_salt + ip + ua + domain), truncated to 16 chars; the salt rotates every UTC day, so the same person tomorrow is counted as a new visitor. Referrers are reduced to hostname only. URLs strip query strings before storage. Country comes from the edge (CF or Vercel headers) — no geoip lookup, no IP retention.",
+      "screenshot_desktop": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png",
+      "screenshot_mobile": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_mobile.png",
+      "screenshots": {
+        "desktop": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png",
+        "small_desktop": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_small_desktop.png",
+        "tablet": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_tablet.png",
+        "mobile": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_mobile.png"
+      },
+      "interactions": [
+        {
+          "kind": "button",
+          "label": "24H",
+          "selector": "button",
+          "before": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/interactions/home_int0_before.png",
+          "after": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/interactions/home_int0_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "7 DAYS",
+          "selector": "button",
+          "before": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/interactions/home_int1_before.png",
+          "after": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/interactions/home_int1_after.png"
+        },
+        {
+          "kind": "button",
+          "label": "30 DAYS",
+          "selector": "button.active",
+          "before": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/interactions/home_int2_before.png",
+          "after": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/interactions/home_int2_after.png"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "f-0001",
+      "severity": "P0",
+      "category": "technical",
+      "mode": "broken",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": "console error",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "Console error shows rollup fetch is failing due to credentials in URL. The error message reads 'Request cannot be constructed from a URL that includes credentials: /api/org/zerg/rollup?period=30d'. This blocks the primary data-loading path for the dashboard, meaning the analytics table remains empty and the page is non-functional for its core use case.",
+      "suggested_fix": "Remove credentials from the fetch URL construction in loadRollup() function at app.js:151. Use credential-free paths and rely on session-based auth or separate authorization headers instead of embedding credentials in the request URL.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "target_kind_relevance": "Critical for dashboard functionality; blocks all data display.",
+      "role_assumption": "Applies to all users; admin credentials present in URL suggest this is an admin view but the error affects core feature."
+    },
+    {
+      "finding_id": "f-0002",
+      "severity": "P1",
+      "category": "empty_state",
+      "mode": "broken",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": ".table-container",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "The 'All properties' table is completely empty with only column headers visible (PROPERTY, PRODUCT, SURFACE, VISITORS, PAGEVIEWS, TREND 7D, LAST SEEN). The descriptor text says 'across all 0 properties' which confirms zero state, but no guidance is provided on what to do next or why the table is empty. Users landing here for the first time have no actionable path forward.",
+      "suggested_fix": "Add an empty state component inside the table area with centered content: (1) explanatory heading 'No properties tracked yet', (2) brief copy explaining how properties get added or why none exist, (3) if user can add properties, a primary CTA button 'Add your first property'; if not, copy like 'Properties will appear here once your team adds tracking to a site.'",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106",
+        "p-0107"
+      ],
+      "target_kind_relevance": "Internal tool; empty states should teach or guide next action.",
+      "role_assumption": "Applies to all roles; if only admins can add properties, copy should indicate this."
+    },
+    {
+      "finding_id": "f-0003",
+      "severity": "P1",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": "h1 + p",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "The subtitle 'Pageviews and visitors across all 0 properties — without tracking anyone' contains a misleading contradiction. It says 'without tracking anyone' immediately after describing visitor analytics, which creates confusion about what the product actually does. The phrase likely intends to highlight privacy-first methodology but reads as a negation of the product's value proposition.",
+      "suggested_fix": "Rewrite to clarify the privacy mechanism without undermining the core function. Suggested: 'Pageviews and visitors across all 0 properties — privacy-first, no cookies, no personal data stored.' This retains the privacy claim while making it clear the product does track visits, just not individuals.",
+      "voice_provenance": "q-0007",
+      "principle_provenance": [
+        "p-0107",
+        "p-0029"
+      ],
+      "target_kind_relevance": "Internal tool; clarity matters more than marketing spin.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0005",
+      "severity": "P1",
+      "category": "interaction",
+      "mode": "broken",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": ".table thead th",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "Table column headers (PROPERTY, PRODUCT, SURFACE, VISITORS, PAGEVIEWS, TREND 7D, LAST SEEN) have no visual affordance indicating whether they are sortable. No sort icons, no hover state change visible, and no cursor change is evident. Users cannot tell if clicking a header will sort the data or do nothing.",
+      "suggested_fix": "Add sort affordance to all sortable columns: (1) append a ↕ icon to each sortable header label, (2) on hover, change cursor to pointer and apply subtle highlight, (3) when a column is actively sorted, replace ↕ with ↑ or ↓ and visually emphasize the active column header. If columns are not sortable, this is a missing feature (see f-0006).",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0107"
+      ],
+      "target_kind_relevance": "Internal tool; sortable tables are baseline functionality for data dashboards.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0006",
+      "severity": "P1",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": ".table thead",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "The properties table lacks column sorting functionality. Competing analytics dashboards (Google Analytics, Plausible, Fathom) allow users to sort by pageviews, visitors, or last-seen date to quickly identify top performers or recently active properties. Without sorting, users with more than a few properties will struggle to find the data they need.",
+      "suggested_fix": "Implement client-side or server-side column sorting. Allow users to click any column header to sort ascending/descending. Default sort should be by VISITORS descending (most-visited properties first) or LAST SEEN descending (most recently active first) to surface the most relevant data immediately.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0101"
+      ],
+      "target_kind_relevance": "Internal tool; sorting is table stakes for analytics dashboards.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0008",
+      "severity": "P1",
+      "category": "ia",
+      "mode": "broken",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": ".card-header",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "The 'All properties' card header shows '— LAST 30 DAYS' as the active filter, but this label does not update to reflect the actual selected time range when users switch to 24H, 7 DAYS, 6 MO, or 12 MO. The interaction screenshots show the time-range button changing state but the card header remaining static at '30 DAYS'. This creates a visibility-of-system-status failure where users cannot confirm their filter selection.",
+      "suggested_fix": "Bind the card header subtitle to the active time range state. When a user clicks '24H', update the subtitle to read '— LAST 24 HOURS'. When '7 DAYS' is clicked, change to '— LAST 7 DAYS', etc. Ensure this updates synchronously with the button state change so users see immediate confirmation.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0106"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0010",
+      "severity": "P1",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": ".dropdown-placeholder",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "A dropdown control appears to the left of the time-range buttons but has no visible label or selected value, making it impossible to know what it filters or controls. Unlabeled dropdowns force users to click and explore to understand their function, which increases cognitive load and error probability.",
+      "suggested_fix": "Add a visible label to the dropdown: either a persistent label to its left ('Property:' or 'Filter:') or ensure the dropdown's selected value is always visible (e.g. 'All properties' or a specific property name). If the dropdown is for property selection, the label should read 'Property:' and default selection should read 'All properties (rollup)' to match the table header.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0110"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0004",
+      "severity": "P2",
+      "category": "consistency",
+      "mode": "broken",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": ".time-range-buttons",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "Time range button labels use inconsistent formatting: '24H' and '7 DAYS' follow different conventions (one uses H suffix, the other spells out 'DAYS'), while '6 MO' and '12 MO' introduce a third abbreviation style. This creates visual inconsistency and forces users to parse three different label patterns for a single control group.",
+      "suggested_fix": "Standardize all button labels to a single convention. Recommended: '24H', '7D', '30D', '6M', '12M' (consistent single-letter suffixes) or spell everything out: '24 Hours', '7 Days', '30 Days', '6 Months', '12 Months'. The abbreviated form is preferred for compact UI.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0107",
+        "p-0096"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0007",
+      "severity": "P2",
+      "category": "typography",
+      "mode": "broken",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": ".privacy-posture",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "The 'Privacy posture' paragraph contains inline code-style formatting for the hash algorithm 'SHA256(daily_salt + ip + ua + domain)' which breaks the reading flow and is inconsistent with the surrounding plain text. The technical detail is important but the visual treatment makes the paragraph harder to scan.",
+      "suggested_fix": "Either remove the code formatting and render the hash formula in plain text with the same font as the rest of the paragraph, or move the technical implementation details to a collapsible 'Technical details' disclosure below the summary. Preferred: summary sentence 'Visitor identity uses a daily-rotated hash; no raw IPs or user-agents are stored' with optional expandable section for engineers who want the formula.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0085",
+        "p-0086"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0009",
+      "severity": "P2",
+      "category": "responsive",
+      "mode": "broken",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": ".time-range-buttons",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_mobile.png"
+      },
+      "finding": "On tablet view (768px), the time-range button group maintains desktop horizontal layout but buttons appear slightly cramped. At probable mobile widths (≤375px), this row of 5 buttons plus checkbox will either force horizontal scroll or compress buttons to illegibility. The 'AUTO-REFRESH: OFF' checkbox compounds the width problem.",
+      "suggested_fix": "At breakpoints ≤768px, stack the time-range controls: place the 5 time buttons in a single row that wraps or scrolls horizontally (with scroll-snap if needed), and move the 'AUTO-REFRESH' toggle to a second row below. At ≤480px, consider converting the button group to a native select dropdown to save space.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0010",
+        "p-0058"
+      ],
+      "target_kind_relevance": null,
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0011",
+      "severity": "P2",
+      "category": "copy",
+      "mode": "broken",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": ".privacy-posture",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "The 'Privacy posture' paragraph uses passive, technical language ('Referrers are reduced to hostname only. URLs strip query strings before storage.') that obscures the user benefit. Engineers understand these details but non-technical stakeholders need to know what this means for compliance and user privacy.",
+      "suggested_fix": "Rewrite the paragraph to lead with outcome, then provide technical details for engineers. Example: 'Privacy posture: This dashboard is GDPR-compliant and requires no cookie banners. Visitor identity is hashed daily (no IP retention), referrers show only domain (no full URLs), and query parameters are stripped before storage. Technical details: SHA256(daily_salt + ip + ua + domain) truncated to 16 chars; salt rotates every UTC day.'",
+      "voice_provenance": "q-0003",
+      "principle_provenance": [
+        "p-0043",
+        "p-0107"
+      ],
+      "target_kind_relevance": "Internal tool; clarity for non-technical stakeholders (legal, compliance, product) matters.",
+      "role_assumption": null
+    },
+    {
+      "finding_id": "f-0012",
+      "severity": "P2",
+      "category": "additive_feature",
+      "mode": "additive",
+      "location": {
+        "url": "https://admin:8FBYgxNGAjeQEWFvTEEoVufWZ9dK7aT_CQt_mBKjmoM@zerglytics-epoch.fly.dev/",
+        "selector": ".table-container",
+        "screenshot": "/Users/mattheweisner/.claude/skills-matt/fakematt-feedback/state/20260505-181111-admin/screenshots/home_desktop.png"
+      },
+      "finding": "The properties table shows 7 columns but has no pagination, search, or filter controls visible. Once the user has more than ~20 properties, they will need to scroll through a long table or use browser search to find a specific property. Competing tools (Plausible, Fathom) provide at minimum a search box above the table.",
+      "suggested_fix": "Add a search input field above the table with placeholder text 'Search properties by name or domain'. Implement client-side filtering that narrows the table rows as the user types. If server-side pagination is implemented, include page controls (Previous/Next, or page numbers) below the table and show 'Showing X–Y of Z properties' status text.",
+      "voice_provenance": null,
+      "principle_provenance": [
+        "p-0110",
+        "p-0101"
+      ],
+      "target_kind_relevance": "Internal tool; search is baseline for any table with >10 rows.",
+      "role_assumption": null
+    }
+  ],
+  "rejected": []
+}

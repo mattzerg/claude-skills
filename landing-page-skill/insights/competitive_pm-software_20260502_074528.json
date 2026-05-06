@@ -1,0 +1,1551 @@
+{
+  "type": "competitive_review_handoff",
+  "category": "pm-software",
+  "product": "Zergboard",
+  "generated_at": "2026-05-02T07:45:28.456491",
+  "competitor_urls": [
+    "https://linear.app",
+    "https://asana.com",
+    "https://www.atlassian.com/software/jira",
+    "https://monday.com",
+    "https://clickup.com",
+    "https://www.notion.so",
+    "https://shortcut.com",
+    "https://github.com/features/project-management",
+    "https://trello.com"
+  ],
+  "matrix": [
+    {
+      "feature": "issues",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "yes",
+        "us_spec": "yes",
+        "us_live": "yes"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "issue relations",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "partial",
+        "us_spec": "yes",
+        "us_live": "yes"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "issue templates",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "custom fields",
+      "category": "core",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "custom task statuses",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "no",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "priority levels",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "partial",
+        "shortcut.com": "yes",
+        "github.com": "no",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "labels",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "yes",
+        "us_spec": "yes",
+        "us_live": "yes"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sprints",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "partial",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "milestones",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "partial",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "epics",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "partial",
+        "shortcut.com": "yes",
+        "github.com": "partial",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "goals & okrs",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "partial",
+        "shortcut.com": "yes",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "portfolios",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "partial",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "partial",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "roadmaps",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "triage",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "partial",
+        "atlassian.com": "partial",
+        "monday.com": "partial",
+        "clickup.com": "partial",
+        "notion.so": "no",
+        "shortcut.com": "partial",
+        "github.com": "partial",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "releases",
+      "category": "core",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "no",
+        "atlassian.com": "no",
+        "monday.com": "no",
+        "clickup.com": "no",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "yes",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "time tracking",
+      "category": "core",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "partial",
+        "atlassian.com": "partial",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "no",
+        "shortcut.com": "partial",
+        "github.com": "no",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "resource management",
+      "category": "core",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "yes",
+        "atlassian.com": "no",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "wip limits",
+      "category": "core",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "no",
+        "atlassian.com": "no",
+        "monday.com": "no",
+        "clickup.com": "no",
+        "notion.so": "no",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "github integration",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "no",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "slack integration",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "google drive integration",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "yes",
+        "atlassian.com": "no",
+        "monday.com": "no",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "figma integration",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "no",
+        "atlassian.com": "no",
+        "monday.com": "no",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "microsoft teams integration",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "no",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "api access",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "yes",
+        "us_spec": "yes",
+        "us_live": "yes"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "webhooks",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "no",
+        "atlassian.com": "no",
+        "monday.com": "no",
+        "clickup.com": "no",
+        "notion.so": "no",
+        "shortcut.com": "yes",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "partial",
+        "us_live": "partial"
+      },
+      "frequency": 2,
+      "bucket": "we_have_they_dont",
+      "evidence": ""
+    },
+    {
+      "feature": "app marketplace",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "no",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "no",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mcp server",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "no",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "no",
+        "shortcut.com": "yes",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "import & export",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "no",
+        "atlassian.com": "no",
+        "monday.com": "no",
+        "clickup.com": "no",
+        "notion.so": "no",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "data warehouse integration",
+      "category": "integrations",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "partial",
+        "atlassian.com": "yes",
+        "monday.com": "no",
+        "clickup.com": "no",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai agents",
+      "category": "ai",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "yes",
+        "us_live": "partial"
+      },
+      "frequency": 7,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai automations",
+      "category": "ai",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "partial",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "partial",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai work breakdown",
+      "category": "ai",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "partial",
+        "atlassian.com": "yes",
+        "monday.com": "partial",
+        "clickup.com": "partial",
+        "notion.so": "partial",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "ai issue summarization",
+      "category": "ai",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "partial",
+        "atlassian.com": "yes",
+        "monday.com": "partial",
+        "clickup.com": "partial",
+        "notion.so": "partial",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "ai release notes generation",
+      "category": "ai",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "no",
+        "atlassian.com": "partial",
+        "monday.com": "no",
+        "clickup.com": "no",
+        "notion.so": "partial",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "meeting transcription to tasks",
+      "category": "ai",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "yes",
+        "atlassian.com": "partial",
+        "monday.com": "partial",
+        "clickup.com": "partial",
+        "notion.so": "partial",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sso",
+      "category": "admin",
+      "presence": {
+        "linear.app": "partial",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "partial",
+        "shortcut.com": "yes",
+        "github.com": "partial",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "scim provisioning",
+      "category": "admin",
+      "presence": {
+        "linear.app": "partial",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "partial",
+        "clickup.com": "partial",
+        "notion.so": "partial",
+        "shortcut.com": "yes",
+        "github.com": "partial",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "audit log",
+      "category": "admin",
+      "presence": {
+        "linear.app": "partial",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "partial",
+        "clickup.com": "partial",
+        "notion.so": "partial",
+        "shortcut.com": "no",
+        "github.com": "partial",
+        "trello.com": "no",
+        "us_spec": "yes",
+        "us_live": "partial"
+      },
+      "frequency": 7,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "role-based permissions",
+      "category": "admin",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "partial",
+        "us_spec": "yes",
+        "us_live": "partial"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "guest access",
+      "category": "admin",
+      "presence": {
+        "linear.app": "partial",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "partial",
+        "github.com": "partial",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "data residency",
+      "category": "admin",
+      "presence": {
+        "linear.app": "unknown",
+        "asana.com": "partial",
+        "atlassian.com": "yes",
+        "monday.com": "partial",
+        "clickup.com": "partial",
+        "notion.so": "partial",
+        "shortcut.com": "no",
+        "github.com": "partial",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "kanban view",
+      "category": "ux",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "yes",
+        "us_spec": "yes",
+        "us_live": "yes"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "list view",
+      "category": "ux",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "partial",
+        "github.com": "yes",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 9,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "timeline view",
+      "category": "ux",
+      "presence": {
+        "linear.app": "unknown",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "calendar view",
+      "category": "ux",
+      "presence": {
+        "linear.app": "unknown",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "table view",
+      "category": "ux",
+      "presence": {
+        "linear.app": "unknown",
+        "asana.com": "unknown",
+        "atlassian.com": "yes",
+        "monday.com": "unknown",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "no",
+        "github.com": "yes",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "gantt view",
+      "category": "ux",
+      "presence": {
+        "linear.app": "unknown",
+        "asana.com": "yes",
+        "atlassian.com": "unknown",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "roadmap view",
+      "category": "ux",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "unknown",
+        "atlassian.com": "unknown",
+        "monday.com": "unknown",
+        "clickup.com": "yes",
+        "notion.so": "unknown",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "whiteboards",
+      "category": "ux",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "no",
+        "atlassian.com": "no",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "block-based editor",
+      "category": "ux",
+      "presence": {
+        "linear.app": "unknown",
+        "asana.com": "unknown",
+        "atlassian.com": "unknown",
+        "monday.com": "yes",
+        "clickup.com": "unknown",
+        "notion.so": "yes",
+        "shortcut.com": "unknown",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "saved views",
+      "category": "ux",
+      "presence": {
+        "linear.app": "unknown",
+        "asana.com": "unknown",
+        "atlassian.com": "unknown",
+        "monday.com": "unknown",
+        "clickup.com": "unknown",
+        "notion.so": "unknown",
+        "shortcut.com": "unknown",
+        "github.com": "yes",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 1,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "workflow automation",
+      "category": "automation",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "unknown",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "yes",
+        "us_spec": "partial",
+        "us_live": "partial"
+      },
+      "frequency": 8,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "git automations",
+      "category": "automation",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "no",
+        "atlassian.com": "yes",
+        "monday.com": "partial",
+        "clickup.com": "partial",
+        "notion.so": "no",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 6,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "comments & mentions",
+      "category": "collaboration",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "yes",
+        "us_spec": "yes",
+        "us_live": "yes"
+      },
+      "frequency": 9,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "documents & wikis",
+      "category": "collaboration",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "unknown",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "yes",
+        "github.com": "partial",
+        "trello.com": "partial",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "chat",
+      "category": "collaboration",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "no",
+        "atlassian.com": "yes",
+        "monday.com": "no",
+        "clickup.com": "yes",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "notifications & inbox",
+      "category": "collaboration",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "unknown",
+        "monday.com": "unknown",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "unknown",
+        "github.com": "unknown",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 5,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "customer request intake",
+      "category": "collaboration",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "no",
+        "monday.com": "no",
+        "clickup.com": "no",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "status updates",
+      "category": "collaboration",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "no",
+        "monday.com": "no",
+        "clickup.com": "no",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 2,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "forms",
+      "category": "collaboration",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "approvals & proofing",
+      "category": "collaboration",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "no",
+        "clickup.com": "yes",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "dashboards",
+      "category": "reporting",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "insights & analytics",
+      "category": "reporting",
+      "presence": {
+        "linear.app": "yes",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "partial",
+        "shortcut.com": "yes",
+        "github.com": "yes",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 8,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "configurable charts",
+      "category": "reporting",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "yes",
+        "shortcut.com": "no",
+        "github.com": "yes",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 7,
+      "bucket": "table_stakes",
+      "evidence": ""
+    },
+    {
+      "feature": "workload reporting",
+      "category": "reporting",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "yes",
+        "atlassian.com": "no",
+        "monday.com": "yes",
+        "clickup.com": "yes",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 4,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "mobile apps",
+      "category": "mobile",
+      "presence": {
+        "linear.app": "unknown",
+        "asana.com": "yes",
+        "atlassian.com": "unknown",
+        "monday.com": "yes",
+        "clickup.com": "unknown",
+        "notion.so": "unknown",
+        "shortcut.com": "unknown",
+        "github.com": "unknown",
+        "trello.com": "yes",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "file storage",
+      "category": "other",
+      "presence": {
+        "linear.app": "no",
+        "asana.com": "yes",
+        "atlassian.com": "yes",
+        "monday.com": "yes",
+        "clickup.com": "no",
+        "notion.so": "no",
+        "shortcut.com": "no",
+        "github.com": "no",
+        "trello.com": "no",
+        "us_spec": "no",
+        "us_live": "no"
+      },
+      "frequency": 3,
+      "bucket": "differentiator_parity",
+      "evidence": ""
+    },
+    {
+      "feature": "sub-issues",
+      "category": "core",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "ai triage",
+      "category": "ai",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    },
+    {
+      "feature": "triage rules",
+      "category": "automation",
+      "presence": {},
+      "frequency": 0,
+      "bucket": "whitespace",
+      "evidence": ""
+    }
+  ],
+  "rankings": [
+    {
+      "feature": "issue templates",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "sprints",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "milestones",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "epics",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "roadmaps",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "sso",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "guest access",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "list view",
+      "bucket": "table_stakes",
+      "frequency": 9,
+      "fit": 3,
+      "cost": "M",
+      "score": 9.0,
+      "evidence": ""
+    },
+    {
+      "feature": "custom fields",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 3,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    },
+    {
+      "feature": "custom task statuses",
+      "bucket": "table_stakes",
+      "frequency": 8,
+      "fit": 3,
+      "cost": "M",
+      "score": 8.0,
+      "evidence": ""
+    }
+  ],
+  "drift": [
+    {
+      "feature": "admin / superuser panel",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 live site surfaces an admin controls feature not mentioned anywhere in the spec"
+    },
+    {
+      "feature": "basic automation rules",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 Core tier advertises 'basic automation rules'; spec only mentions agent/API flows, never rule-based automation"
+    },
+    {
+      "feature": "webhooks",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 Growth tier lists 'Webhooks + API tokens'; spec mentions only API tokens and explicitly frames webhooks as what competitors do"
+    },
+    {
+      "feature": "audit exports",
+      "spec_says": "no",
+      "live_says": "yes",
+      "note": "marketing gap \u2014 Scale tier lists audit exports; not mentioned in spec features or open bugs"
+    },
+    {
+      "feature": "self-hosting",
+      "spec_says": "partial",
+      "live_says": "yes",
+      "note": "description mismatch \u2014 spec says Fly.io deployment-ready (hosted); FAQ says self-host later is possible with Nuxt+Postgres portability, implying broader deployment than spec surfaces"
+    },
+    {
+      "feature": "card labels, comments, subtasks, dependencies",
+      "spec_says": "yes",
+      "live_says": "no",
+      "note": "marketing gap \u2014 spec lists these as shipped features but the live site feature list omits them entirely"
+    },
+    {
+      "feature": "scoped api-token auth for cli/automation",
+      "spec_says": "yes",
+      "live_says": "partial",
+      "note": "marketing gap \u2014 spec treats scoped API tokens as a top-level differentiator; live site buries them in Growth tier as 'Webhooks + API tokens' without calling out the scoping/blast-radius safety angle"
+    },
+    {
+      "feature": "closable board status",
+      "spec_says": "yes",
+      "live_says": "no",
+      "note": "marketing gap \u2014 spec lists closable board status as a shipped feature; not surfaced on the live site"
+    },
+    {
+      "feature": "mfa",
+      "spec_says": "partial",
+      "live_says": "no",
+      "note": "spec aspiration \u2014 ZER-1 is an open bug meaning MFA is not shipped; live site makes no claim about it either, but spec flags it as a known gap"
+    },
+    {
+      "feature": "agent-native positioning / first-class agent teammates",
+      "spec_says": "yes",
+      "live_says": "partial",
+      "note": "marketing gap \u2014 spec's primary differentiator is 'agents as first-class teammates, not webhooks'; live site leads with 'API-first core so your agent flows can\u2026' which is weaker and frames it as automation rather than the native-agent angle"
+    },
+    {
+      "feature": "proof / named customer references",
+      "spec_says": "yes",
+      "live_says": "no",
+      "note": "marketing gap \u2014 spec cites CesiumAstro and DCAIG/Andesite as live proof points; live site shows no social proof or customer references"
+    }
+  ],
+  "summary": {
+    "n_features": 70,
+    "table_stakes_count": 29,
+    "differentiator_parity_count": 37,
+    "whitespace_count": 3,
+    "we_have_they_dont_count": 1,
+    "drift_count": 11
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "executive_summary": "Zerg AI has a genuinely differentiated positioning \u2014 hardware-in-the-loop validation, continuous operating loops, and real-signal correctness for mission-critical systems \u2014 that no competitor owns. However, the landing page fails to convert on that differentiation: zero social proof, a high-friction primary CTA ('Talk to us'), and a subheadline requiring multiple careful readings to parse leave Zerg looking nascent next to competitors like Devin and Cursor who lead with named enterprise logos, quantified outcomes, and trusted executive testimonials. The technical substance is there; the page architecture and proof infrastructure are not.",
+  "competitive_landscape": {
+    "patterns_across_competitors": [
+      "Dark background hero sections \u2014 universal across Cursor, Windsurf, Aider, Factory, Anthropic, Sourcegraph, GitHub Copilot, and Devin",
+      "Dual CTAs with a clear primary (self-serve/download) and secondary (contact sales/docs) \u2014 present on Cursor, Anthropic, Devin, Factory, Windsurf, and GitHub Copilot",
+      "Named enterprise customer logos in the hero or directly below \u2014 Devin (Nubank, Stripe, Airtable), GitHub (Shopify, Stripe, GM, Coca-Cola), Replit (Databricks, Zillow, Gusto), Factory (Podium, Groq, Chainguard), Windsurf (Reply), Sourcegraph (Stripe)",
+      "Quantified productivity/outcome metrics displayed prominently \u2014 Cursor ('40,000 NVIDIA engineers'), GitHub ('55% more productive'), Devin ('8x efficiency, 20x cost savings'), Windsurf ('94% of code written by AI'), Sourcegraph ('30% cost/task reduction')",
+      "Named executive testimonials with title and company attribution \u2014 Cursor (Jensen Huang/NVIDIA, Patrick Collison/Stripe, Greg Brockman/OpenAI), Windsurf (Garry Tan/YC), Replit (Ali Ghodsi/Databricks)",
+      "A 'how it works' or product feature showcase section with visual treatment \u2014 Factory (tabbed 01\u201305 workflow), Replit (Parallel Agents + Infinite Canvas), Windsurf (Cascade + Devin + Tab breakdown)",
+      "Explicit docs or getting-started navigation item \u2014 Aider, Anthropic, Factory, GitHub Copilot all surface documentation as a trust and activation signal",
+      "Funding or analyst credibility signals for enterprise trust \u2014 Factory ($150M Series C, $1.5B valuation, Sequoia/Khosla), Sourcegraph (SOC2 Type II + ISO27001), GitHub Copilot (Trust Center link)"
+    ],
+    "best_in_class": [
+      {
+        "element": "Enterprise social proof with named outcomes",
+        "source": "Devin (devin.ai)",
+        "description": "Devin leads with a detailed Nubank case study featuring Jose Carlos Castro by name and title, with verified quantitative outcomes: '8x engineering time efficiency gain', '20x cost savings', '6 million lines of code migrated', '40 minutes per sub-task dropped to 10 after fine-tuning'. This is more credible than generic logo stacks because it names the task, the person, and the measurable result \u2014 exactly the format enterprise buyers need to build an internal business case."
+      },
+      {
+        "element": "High-credibility executive testimonials",
+        "source": "Cursor (cursor.com)",
+        "description": "Cursor has testimonials from Jensen Huang ('every one of our engineers, some 40,000, are now assisted by AI'), Patrick Collison ('quickly grew from hundreds to thousands of extremely enthusiastic Stripe employees'), Greg Brockman, and Andrej Karpathy. Each is attributed with full name, title, and company. The social proof stack communicates 'this is what the most credible technical leaders in the world are using' without Cursor making that claim directly."
+      },
+      {
+        "element": "Competitive differentiation framing",
+        "source": "Factory (factory.ai)",
+        "description": "Factory's hero explicitly claims 'The only software development agents that work everywhere you do' and positions around 'without changing your tools, models, or workflow' \u2014 this directly counters the objection that adopting a new AI tool disrupts existing engineering culture. They also use a CLI install command as the primary CTA ('curl -fsSL https://app.factory.ai/cli | sh'), which is a trust signal for engineers and reduces signup friction to zero."
+      },
+      {
+        "element": "Outcome-framed pricing anchoring",
+        "source": "Devin (devin.ai)",
+        "description": "Devin frames cost as '20x cheaper than human engineer hourly rates' and 'completing projects months ahead of schedule' \u2014 this is ROI language that makes enterprise budget conversations easy. No Zerg competitor uses actual price points on the hero; they all anchor to the cost of NOT having the tool."
+      }
+    ],
+    "market_gaps": [
+      "Hardware-in-the-loop validation: No competitor \u2014 not Cursor, not Devin, not Factory \u2014 explicitly targets engineering teams whose correctness requirements involve physical devices, simulators, or real production signals. Zerg uniquely owns this and no competitor is building toward it.",
+      "The 'AI that doesn't stop at code generation' positioning: Every competitor either positions as 'autocomplete+' (Cursor, Copilot) or 'app builder' (Bolt, Replit, Lovable). Zerg's Map\u2192Build\u2192Prove\u2192Run loop \u2014 especially the Prove and Run phases \u2014 is uncontested positioning if surfaced aggressively on the page.",
+      "Mission-critical domain specialization: Aider targets terminal users, Bolt/Replit/Lovable target non-coders, Cursor/Windsurf target general engineers. No competitor explicitly names hardware, simulations, control planes, COBOL/legacy migrations, or CVE remediation as their core domain. Zerg's subheadline lists all of these but buries them.",
+      "Continuous post-delivery monitoring and drift correction: Devin and Factory focus on task completion. Zerg's 'Run' phase \u2014 autonomous monitoring for API drift, dependency changes, and requirement changes with autonomous follow-on fixes \u2014 has no clear competitor analogue and is a major enterprise retention/stickiness story.",
+      "Connector-first architecture for vendor-integrated systems: Sourcegraph owns code intelligence; no one owns the problem of AI that understands third-party APIs, hardware protocols, and legacy vendor integrations as first-class inputs to code generation."
+    ]
+  },
+  "zerg_assessment": {
+    "strengths": [
+      "The tagline 'AI systems for mission-critical work' is clean, confident, and differentiating \u2014 it signals premium without being vague in the way 'AI pair programming' (Aider) or 'What will you build today?' (Bolt) are",
+      "The Map\u2192Build\u2192Prove\u2192Run loop is a genuinely differentiated framework that no competitor has \u2014 it positions Zerg as a system rather than a tool, which is exactly the right framing for enterprise buyers",
+      "The explicit rejection of 'another chat box' and 'we do not stop at prompt-to-code' is strong competitive positioning that Devin and Factory only gesture toward",
+      "Specific, credible metrics (24-day JS-to-TS migration, 2-3 production integrations/week, 24/7 continuous runtime) are more operationally specific than most competitor claims \u2014 they feel like real customer outcomes, not marketing assertions",
+      "The product surface area (ZDE + ZTC + Zergboard + Zerg Cloud) signals platform depth rather than single-tool risk, which matters for enterprise procurement"
+    ],
+    "gaps": [
+      "Zero customer logos, zero testimonials, zero press mentions \u2014 every competitor from Aider (Reddit/HN quotes) to Cursor (Fortune 500 CEOs) has social proof infrastructure; Zerg has none, which triggers enterprise buyer risk aversion",
+      "Primary CTA is 'Talk to us' \u2014 the highest-friction entry point possible; Cursor, Aider, Factory, Windsurf all offer immediate self-serve access; even Devin and Cognition (enterprise-first) have 'Try Devin' CTAs before 'Contact Sales'",
+      "No visible trust or compliance signals \u2014 SOC2, security page, data retention policy \u2014 while Sourcegraph (SOC2 + ISO27001), GitHub Copilot (Trust Center), Devin (named enterprise tier), and Replit (SOC2 + SSO/SAML) all prominently surface these for enterprise buyers",
+      "No visual demos, screenshots, or video \u2014 Aider has an embedded video in the hero, Cursor shows IDE screenshots, Factory has a tabbed product showcase; Zerg is all prose",
+      "The subheadline ('Zerg works with teams whose products depend on hard technical systems: hardware, simulations, data and control planes, vendor integrations, migrations, and production workflows') requires deliberate reading to parse \u2014 it's a list, not a claim",
+      "No pricing signal or self-serve entry point \u2014 even contact-sales-first competitors like Devin and Factory offer a free tier or self-serve CLI to capture demand before the sales conversation; Zerg has a waitlist with no trial path",
+      "No 'how it works' visual \u2014 the Map/Build/Prove/Run steps are described in prose but no competitor relies on prose alone for product education; Factory uses numbered tabs, Replit uses a workflow diagram, Devin uses metric-anchored feature blocks",
+      "Documentation is not surfaced in navigation \u2014 Aider, Anthropic, Factory, GitHub all make docs a nav-level item, which signals product maturity and lets technical evaluators self-qualify"
+    ],
+    "positioning_clarity": "Zerg's positioning is intellectually clear to someone who reads the full subheadline carefully, but it does not communicate fast. The value proposition \u2014 'we build and continuously operate software for systems where correctness requires real signals, not just tests' \u2014 requires 3-4 sentences to extract from the current page. Competitors communicate their core claim in 6 words (Factory: 'Agent-Native Software Development') or 8 words (Cursor: 'The best way to code with AI'). Zerg's tagline ('AI systems for mission-critical work') is strong but the subheadline does not accelerate understanding \u2014 it expands the problem surface area in a way that diffuses focus rather than sharpening it.",
+    "conversion_bottlenecks": [
+      "'Talk to us' as primary CTA \u2014 enterprise buyers at exploratory stage will not convert on this; they need a self-serve signal (demo, trial, interactive product) before they will schedule a sales call",
+      "No social proof above the fold \u2014 buyers arriving from outbound or paid channels have no immediate anchor of 'companies like mine use this'; the absence of logos triggers the first objection ('are they real?') before the visitor reads the value prop",
+      "Subheadline length \u2014 the current subheadline is 52 words; Cursor's is 12, Windsurf's is 9, Factory's is 30 with a clear benefit per clause; a 52-word subheadline increases cognitive load at exactly the moment when the visitor is deciding whether to keep reading",
+      "No proof section for the 24-day migration claim \u2014 this is Zerg's Nubank moment (Devin's best conversion asset) but it is presented as a bare metric, not a story with a company name, a problem statement, and a reviewable outcome",
+      "Waitlist/contact-only model with no visible self-serve path \u2014 buyers who want to evaluate technically before engaging sales cannot do so, and Zerg Cloud is listed as a secondary CTA without any description of what it is or what the entry point looks like"
+    ]
+  },
+  "recommendations": [
+    {
+      "priority": 1,
+      "category": "social_proof",
+      "title": "Add a named enterprise case study with quantified outcomes above the fold",
+      "current_state": "Zerg has three bare metrics (24 days, 2-3/week, 24/7) with no company name, no human name, no problem context, and no story",
+      "recommendation": "Develop one full named case study in the format Devin uses for Nubank: company name + named spokesperson + title + specific problem + specific outcome metrics + a quote. Place it directly below the hero, not in a buried proof section. If a customer cannot be named publicly yet, use anonymized industry + metric ('A Fortune 500 infrastructure team migrated 6M lines of legacy Java in 24 days with reviewable checkpoints') \u2014 still more credible than bare numbers.",
+      "rationale": "Devin's Nubank case study ('8x engineering time efficiency gain, 20x cost savings, 6M lines migrated, Jose Carlos Castro, Senior PM, Nubank') is the single highest-credibility element on their page. Enterprise buyers constructing an internal business case need a reference point \u2014 ideally a named peer. Zerg's existing metrics are operationally specific enough to be credible; they just lack the attribution that triggers trust.",
+      "effort": "medium",
+      "impact": "high"
+    },
+    {
+      "priority": 2,
+      "category": "cta",
+      "title": "Replace 'Talk to us' primary CTA with a low-friction self-serve entry point",
+      "current_state": "'Talk to us' is the primary hero CTA \u2014 the highest-friction conversion action possible for a technical product",
+      "recommendation": "Make 'Try Zerg Cloud' the primary CTA with a secondary 'Talk to us / Contact sales'. If Zerg Cloud has a working trial or sandbox, surface that. If not, implement a Calendly-style 'Book a 20-min demo' that pre-qualifies and schedules rather than asking for a cold conversation. Alternatively, follow Factory's model and expose a CLI install command as the hero CTA ('curl -fsSL install.zergai.com | sh') \u2014 this is a zero-friction, high-trust signal for the target engineering audience.",
+      "rationale": "Every competitor except Devin (enterprise-first, $500M+ valuations) leads with a self-serve or low-friction entry. Factory uses a CLI install command. Aider uses 'Get Started'. Windsurf uses 'Download for macOS'. Even Cognition uses 'Try Devin' before 'Contact Sales'. 'Talk to us' positions Zerg as a pre-product consultancy, not a platform \u2014 and repels the technical evaluators who would become internal champions.",
+      "effort": "low",
+      "impact": "high"
+    },
+    {
+      "priority": 3,
+      "category": "copy",
+      "title": "Rewrite the subheadline to lead with the claim, not the problem surface",
+      "current_state": "'Zerg works with teams whose products depend on hard technical systems: hardware, simulations, data and control planes, vendor integrations, migrations, and production workflows. We model the environment, build the software, validate against real signals, and keep it operating as the system changes.' \u2014 52 words, list-forward",
+      "recommendation": "Reduce to a single sentence that leads with the differentiated claim and ends with the audience: 'Zerg generates, validates, and continuously operates software for systems where correctness requires real signals \u2014 not just tests.' Then add a second sentence that names the domains: 'Built for teams running hardware integrations, legacy migrations, data pipelines, and production control systems.' This is ~30 words total, front-loads the differentiator (real signal validation), and names the target audience without requiring the reader to infer it from a list.",
+      "rationale": "Cursor's subheadline ('Built to make you extraordinarily productive, Cursor is the best way to code with AI') is 15 words and communicates a single claim. Factory's ('The only software development agents that work everywhere you do') is 14 words with a superlative anchor. At 52 words with a comma-separated list structure, Zerg's subheadline fails at its primary job: sustaining scroll momentum from the headline.",
+      "effort": "low",
+      "impact": "high"
+    },
+    {
+      "priority": 4,
+      "category": "trust",
+      "title": "Add a logo bar with customer or integration logos",
+      "current_state": "No logos on the page \u2014 not customers, not integration partners, not press",
+      "recommendation": "Add a 'Trusted by' or 'Works with' logo bar directly below the hero CTA section. If no named customers are available yet, use integration/technology logos: AWS, GitHub, PostgreSQL, Datadog, Slack, and any hardware/industrial partners. Factory does this with Khosla/Sequoia/Blackstone funding logos when customer logos aren't dominant. A technology logo bar signals ecosystem depth and reduces the 'are they real?' objection for enterprise buyers.",
+      "rationale": "Of the 13 competitors analyzed, 10 have visible logo bars or named social proof in the hero area. The only exception is Aider (which compensates with 44K GitHub stars and 6.8M installs). The absence of logos is the fastest trust-disqualifier in B2B SaaS \u2014 enterprise buyers pattern-match on 'do companies like mine use this' before they read the value prop.",
+      "effort": "low",
+      "impact": "high"
+    },
+    {
+      "priority": 5,
+      "category": "structure",
+      "title": "Add a visual 'How it works' section for the Map\u2192Build\u2192Prove\u2192Run loop",
+      "current_state": "The four-phase loop is described in prose feature bullets \u2014 no visual hierarchy, no diagram, no numbered flow",
+      "recommendation": "Build a numbered four-step horizontal or vertical flow section: [1] Map \u2014 model your environment [2] Build \u2014 generate to spec [3] Prove \u2014 validate against live signals [4] Run \u2014 monitor and self-correct. Each step gets a 1-sentence description and an icon or micro-diagram. This is exactly the format Factory uses for their 01\u201305 product flow and Replit uses for their Parallel Agents section. Make 'Prove' and 'Run' visually prominent \u2014 they are the most differentiated phases and currently receive equal visual weight to 'Map' and 'Build'.",
+      "rationale": "The Map\u2192Build\u2192Prove\u2192Run framework is Zerg's core differentiator against every competitor. But in prose format it reads like a feature list. Devin's 'fleet of agents', Replit's 'Parallel Agents', and Factory's tabbed workflow sections all use visual treatment to make the product model memorable. A visitor who leaves Zerg's page should be able to recall the four phases \u2014 that requires visual encoding, not text scanning.",
+      "effort": "medium",
+      "impact": "high"
+    },
+    {
+      "priority": 6,
+      "category": "copy",
+      "title": "Surface a direct competitive comparison statement against 'AI code assistants'",
+      "current_state": "Zerg says 'we do not stop at prompt-to-code' but this is in body copy \u2014 the contrast with Cursor/Copilot/Aider is implicit, not explicit",
+      "recommendation": "Add a one-section explicit differentiation block: 'Most AI coding tools stop when the code is written. Zerg doesn't.' Follow with a two-column or three-row comparison: [Other tools] Generates code on request | [Zerg] Validates against live systems. [Other tools] Works in your IDE | [Zerg] Runs 24/7 in production. [Other tools] You own correctness | [Zerg] We monitor and fix drift autonomously. This is the format Windsurf uses to contrast with Cursor and Factory uses to contrast with autocomplete tools.",
+      "rationale": "Every enterprise buyer evaluating Zerg has already tried or is currently using Cursor, Copilot, or Devin. The unsaid objection is 'how is this different from what I already have?' Zerg's positioning \u2014 continuous operation + real signal validation \u2014 directly answers this, but only if stated explicitly. Anthropic's 'Built for hackers' differentiates from GUI-first tools in a single phrase; Zerg needs the equivalent clarity.",
+      "effort": "low",
+      "impact": "medium"
+    },
+    {
+      "priority": 7,
+      "category": "trust",
+      "title": "Add a security and compliance section or footer trust signal",
+      "current_state": "No SOC2, no data retention policy, no security page, no compliance mention anywhere on the page",
+      "recommendation": "Add a footer trust band with: 'SOC 2 Type II Certified | Zero data retention | Enterprise SSO | Private deployment available' \u2014 even as aspirational copy that links to a security page. If SOC2 is in progress, say 'SOC 2 audit in progress'. At minimum, create a /security page linked from the footer and nav, and include 1-2 trust signals in the hero (Sourcegraph's 'Zero data retention' claim and GitHub's 'Trust Center' link are both conversion-positive for enterprise).",
+      "rationale": "Sourcegraph, GitHub Copilot, Replit, and Windsurf all make compliance/security a visible signal. For mission-critical engineering teams \u2014 Zerg's stated target \u2014 security and data handling are procurement blockers, not nice-to-haves. The absence of any compliance signal on a page targeting 'mission-critical' systems creates cognitive dissonance that will stop enterprise procurement conversations before they start.",
+      "effort": "medium",
+      "impact": "high"
+    },
+    {
+      "priority": 8,
+      "category": "social_proof",
+      "title": "Add a metrics bar to the hero with Zerg's existing operational numbers",
+      "current_state": "Metrics (2-3/week integrations, 24 days for migration, 24/7 runtime) are buried in body copy with no visual prominence",
+      "recommendation": "Add a stats bar directly below or above the hero CTA buttons \u2014 3-4 stats in the format Aider uses ('44K GitHub Stars | 6.8M Installs | 15B Tokens/week'). For Zerg: '2\u20133 production integrations shipped per week | 24-day large-scale migration | 24/7 autonomous runtime | Real signal validation'. These are already on the page; they need to be elevated to the social proof position where buyers scan for credibility signals before investing attention in the copy.",
+      "rationale": "Aider converts with community metrics because the numbers are prominent and specific. Devin converts with outcome metrics because they are attributed. Zerg has outcome metrics that are more operationally credible than Aider's community numbers \u2014 '24 days for a large JS-to-TypeScript migration' is a falsifiable, enterprise-relevant claim. The problem is placement: metrics in body copy are not processed as trust signals; metrics in a hero stat bar are.",
+      "effort": "low",
+      "impact": "medium"
+    },
+    {
+      "priority": 9,
+      "category": "structure",
+      "title": "Add use case segmentation section for different buyer personas",
+      "current_state": "Zerg lists use case types in the subheadline (hardware, simulations, migrations, etc.) but has no dedicated use case section with buyer-type framing",
+      "recommendation": "Add a 'Built for teams running...' section with 4-6 named use cases as cards or tabs: [Legacy Migrations] [Hardware Integrations] [CVE Remediation] [Data Pipeline Operations] [Vendor API Platforms] [Production Control Systems]. Each card links to a use case page or expands with a 2-sentence description and a metric. Factory does this with their tabbed feature flow. Bolt does it with role-based cards (PM, Entrepreneur, Marketer). Devin does it with fleet-based use case descriptions.",
+      "rationale": "Zerg's target market is highly heterogeneous \u2014 a hardware startup and a bank running COBOL migrations are both in scope. Use case segmentation lets each buyer quickly self-identify and read the content most relevant to their situation. It also provides internal SEO surface area and makes sales conversations easier when the prospect has already read the relevant use case.",
+      "effort": "medium",
+      "impact": "medium"
+    },
+    {
+      "priority": 10,
+      "category": "design",
+      "title": "Embed a product demo or screen recording in the hero",
+      "current_state": "No visual product demo anywhere on the page \u2014 entirely text and prose",
+      "recommendation": "Add a short (60\u201390 second) screen recording or animated gif in the hero showing: the Zerg interface receiving a task, the Prove phase running against a live service, and the Run phase detecting drift and creating a follow-on fix. Aider's embedded video demo is their most effective trust signal because it answers 'does this actually work?' before the visitor reads any copy. Even a static UI screenshot showing the Zergboard + ZDE interface is materially better than no visual.",
+      "rationale": "Among the 13 competitors analyzed, only Zerg has no visual product representation on its landing page. Cursor has IDE screenshots. Windsurf has IDE + agent console screenshots. Factory has a CLI demo. Aider has a video. For a product claiming to operate mission-critical software autonomously, the absence of any visible product is the strongest possible trust deficit \u2014 it suggests either early-stage or deliberately hidden, neither of which helps enterprise conversion.",
+      "effort": "medium",
+      "impact": "high"
+    }
+  ],
+  "quick_wins": [
+    "Promote the 24-day migration and 2-3/week integrations metrics into a hero stats bar \u2014 they are already on the page, just in the wrong position; this is a copy-paste operation with high social proof impact",
+    "Change primary CTA from 'Talk to us' to 'Book a 20-min demo' or 'Try Zerg Cloud' \u2014 one word/link change that reduces friction for the exploratory buyer segment and doesn't require any product changes",
+    "Add a 'Works with' technology logo bar using integration logos (AWS, GitHub, PostgreSQL, Datadog, Slack) \u2014 no customer approval needed, signals ecosystem maturity, takes 2 hours to design",
+    "Rewrite the subheadline from 52 words to 15-20 words leading with 'validates against real signals' \u2014 the core differentiator is buried at the end of the current subheadline; moving it to position 1 costs nothing",
+    "Add a security/compliance footer band with 3-4 trust signals (SOC2 status, data retention policy, private deployment option) \u2014 mission-critical buyers are disqualifying on compliance before they reach the features section"
+  ],
+  "copy_rewrites": [
+    {
+      "element": "H1 / Tagline",
+      "current": "AI systems for mission-critical work.",
+      "suggested": "The AI engineering platform for systems that can't be wrong.",
+      "why": "Current tagline is good but passive \u2014 'for mission-critical work' describes a domain, not a claim. 'Systems that can't be wrong' is active, stakes-raising, and directly names the buyer's actual fear (correctness failures in production). It creates immediate contrast with 'AI coding tools' that trade correctness for speed."
+    },
+    {
+      "element": "Subheadline",
+      "current": "Zerg works with teams whose products depend on hard technical systems: hardware, simulations, data and control planes, vendor integrations, migrations, and production workflows. We model the environment, build the software, validate against real signals, and keep it operating as the system changes.",
+      "suggested": "Zerg generates, validates against live signals, and continuously operates software for complex technical systems \u2014 hardware integrations, legacy migrations, data pipelines, and production control planes. We don't stop when the code ships.",
+      "why": "Lead with the differentiated capability (real signal validation + continuous operation) before naming the domains. End with the direct competitor contrast ('We don't stop when the code ships') that Factory and Devin gesture at but don't say plainly. Reduces from 52 to 35 words while preserving all domain specificity."
+    },
+    {
+      "element": "Primary CTA",
+      "current": "Talk to us",
+      "suggested": "Book a 20-min demo",
+      "why": "'Talk to us' is ambiguous, informal, and high-commitment. 'Book a 20-min demo' is specific about the time investment, implies a structured conversation with an outcome, and signals confidence. It converts exploratory buyers who won't fill out a contact form but will put 20 minutes on a calendar."
+    },
+    {
+      "element": "Secondary CTA",
+      "current": "Try Zerg Cloud",
+      "suggested": "Start with Zerg Cloud \u2192",
+      "why": "Adding a directional arrow and 'Start with' communicates forward momentum and that there is an onboarding experience waiting \u2014 not just a landing page. Small change, meaningfully higher click intent signal."
+    },
+    {
+      "element": "Prove phase description",
+      "current": "Validates against live services, simulators, devices, and production signals beyond unit tests",
+      "suggested": "Validates correctness against live systems \u2014 not mocks, not unit tests, not synthetic data. Real signals from real environments.",
+      "why": "The current copy lists validation surfaces. The rewrite names what other tools do (mocks, unit tests, synthetic data) and explicitly rejects them \u2014 this is the 'Built for hackers' move Anthropic makes. It sharpens differentiation by defining the category Zerg is not in, not just the category it is in."
+    },
+    {
+      "element": "Run phase description",
+      "current": "Monitors for drift in requirements, APIs, or dependencies and creates follow-on fixes autonomously",
+      "suggested": "Watches for drift in APIs, requirements, and dependencies \u2014 and ships the fix without waiting to be asked.",
+      "why": "'Without waiting to be asked' is the emotional payoff of the Run phase and the clearest contrast with every competitor who waits for a human prompt. The current copy is technically accurate; the rewrite makes the implication explicit and memorable."
+    },
+    {
+      "element": "Hero competitive contrast (new copy, not current)",
+      "current": "N/A \u2014 no explicit competitive contrast exists on page",
+      "suggested": "Most AI coding tools stop when the code ships. Zerg doesn't. We validate against your live systems and keep the software running as the world around it changes.",
+      "why": "Every enterprise buyer has used or evaluated Cursor, Copilot, or Devin. This copy acknowledges that context and positions Zerg's Run+Prove phases as the answer to the limitation buyers have already experienced. Factory uses 'without changing your tools'; Anthropic uses 'Built for hackers'; Zerg needs the equivalent implicit contrast statement."
+    }
+  ],
+  "new_sections_to_add": [
+    {
+      "section": "Named case study / proof of work",
+      "rationale": "Devin's Nubank case study with Jose Carlos Castro, 8x efficiency, 20x cost savings, and 6M migrated lines is their single highest-conversion page element. Zerg has the raw material (24-day migration, 2-3/week integrations) but no attribution, no story, and no human name. Every enterprise competitor has at least one named customer outcome; Zerg has zero.",
+      "content_guidance": "Format: Company name (or anonymized '[Fortune 500 infrastructure team]') \u2192 Problem (e.g., '6M lines of legacy JavaScript to TypeScript, no dedicated migration team') \u2192 Zerg approach (Map phase: 3 days to model codebase. Build + Prove: 21 days of validated, reviewable checkpoints.) \u2192 Outcome: metrics. Include a named quote if possible. Link to a full case study page. Place this section directly below the hero, above the product feature description."
+    },
+    {
+      "section": "Competitive contrast block",
+      "rationale": "Factory, Windsurf, and Anthropic all use implicit or explicit contrast against 'autocomplete tools' or 'GUI-first AI'. Zerg's 'we do not stop at prompt-to-code' is the right instinct but it is a single sentence in body copy \u2014 it needs to be a section. Every enterprise buyer has Cursor/Copilot already deployed; they need to understand why Zerg is additive, not redundant.",
+      "content_guidance": "Two-column or three-row table: left column 'AI coding assistants', right column 'Zerg AI'. Rows: [Trigger] On demand \u2192 Continuous. [Validation] Unit tests and mocks \u2192 Live signals and real environments. [Delivery] Code generated \u2192 Software operating. [Drift handling] Manual re-prompt \u2192 Autonomous follow-on fixes. Keep it factual and non-disparaging \u2014 frame it as 'different job to be done', not 'we are better'. Title: 'Built for systems that need more than code generation.'"
+    },
+    {
+      "section": "Use case cards",
+      "rationale": "Zerg's target market spans hardware startups (IoT control planes), financial infrastructure (migrations, CVE remediation), platform teams (data pipelines, vendor integrations), and enterprise IT (legacy modernization). No single buyer reads the subheadline list and thinks 'that's me'. Bolt's role-based cards (PM, Entrepreneur, Marketer) and Devin's use case descriptions (COBOL modernization, Nubank migration) both convert better than generic product descriptions because they trigger self-identification.",
+      "content_guidance": "6 cards with icon, 4-word label, and 1-sentence description: [Hardware Integrations] \u2192 'Connects AI-generated code to real device signals for validation'. [Legacy Migrations] \u2192 'Migrates large codebases with reviewable checkpoints and real-environment testing'. [Vendor API Platforms] \u2192 'Ships and maintains third-party integrations at 2-3x human team cadence'. [CVE Remediation] \u2192 'Identifies, patches, and validates security fixes across production codebases'. [Data Pipeline Operations] \u2192 'Builds and monitors ETL/ELT systems against live data sources'. [Production Control Systems] \u2192 'Generates and operates software where hardware signals define correctness'. Each card links to a dedicated use case landing page or section."
+    },
+    {
+      "section": "How Zerg works \u2014 visual Map\u2192Build\u2192Prove\u2192Run flow",
+      "rationale": "Factory's tabbed 01-05 product flow, Replit's three-step visual onboarding, and Devin's metric-anchored feature blocks all outperform prose feature lists for product comprehension. Zerg's four-phase loop is the core intellectual differentiator but is currently only communicated in text bullets. A visual treatment makes it memorable (buyers should leave able to recite the four phases) and surfaces Prove and Run \u2014 the most differentiated phases \u2014 with appropriate visual weight.",
+      "content_guidance": "Horizontal four-step flow with connecting arrows: [1 Map] icon: grid/network \u2192 'Models your codebase, APIs, hardware, and production rules' [2 Build] icon: code bracket \u2192 'Generates integrations, migrations, and operational software to spec' [3 Prove] icon: checkmark/signal \u2192 'Validates against live services, simulators, and real hardware signals \u2014 not mocks' [4 Run] icon: refresh/loop \u2192 'Monitors for drift and ships autonomous follow-on fixes 24/7'. Use accent color (cream/beige on dark) for Prove and Run to signal they are the differentiating phases. Add a one-line below the flow: 'Most tools stop at step 2. Zerg doesn't.'"
+    },
+    {
+      "section": "Trust and security band",
+      "rationale": "Sourcegraph (SOC2 + ISO27001), GitHub Copilot (Trust Center + IP indemnity), Replit (SOC2 + SSO/SAML), and Windsurf (enterprise security) all surface compliance signals. Zerg targets mission-critical systems \u2014 the exact buyer segment with the most rigorous security procurement requirements. The complete absence of compliance signals is a conversion-stopper for enterprise security reviews.",
+      "content_guidance": "Minimal footer-adjacent band with 4 badges/labels: [SOC 2 Type II] (or 'Audit in progress' if not yet certified) | [Zero data retention \u2014 code never stored or shared] | [Private cloud deployment available] | [Enterprise SSO + RBAC]. Link to a /security page. Optional: add 'Enterprise terms and DPA available' for procurement teams. Tone: factual, not marketing-heavy \u2014 engineers and security reviewers are reading this, not buyers."
+    }
+  ]
+}

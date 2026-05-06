@@ -1,0 +1,105 @@
+{
+  "url": "https://zergboard.com",
+  "company": "Zergboard",
+  "tagline": "Project boards without enterprise bloat",
+  "subheadline": "Zergboard gives you a Trello-simple interface with Linear-level structure, multi-tenant workspaces, and an API-first core so your agent flows can create, update, and resolve work automatically.",
+  "value_proposition": "A kanban project board that sits between Trello's simplicity and Linear's structure, with an API-first design built for both human teams and AI agent automation.",
+  "target_audience": "Small-to-mid-size product and engineering teams \u2014 including AI/agent developers \u2014 who want structured project management without the overhead of enterprise tools.",
+  "primary_cta": {
+    "text": "Start free",
+    "placement": "hero and nav"
+  },
+  "secondary_cta": {
+    "text": "View pricing",
+    "placement": "hero"
+  },
+  "social_proof": {
+    "logos": [],
+    "testimonials": [],
+    "metrics": [],
+    "press": []
+  },
+  "pricing": {
+    "model": "freemium self-serve",
+    "tiers": [
+      "Free ($0, up to 3 users)",
+      "Core ($12/seat/mo)",
+      "Growth ($39/seat/mo)",
+      "Scale ($149/seat/mo)"
+    ],
+    "price_anchoring": "Anchored against implicit waste of enterprise tools; 'Start free, upgrade only when you grow' and 'Annual billing saves roughly 15%' reduce commitment anxiety."
+  },
+  "features": [
+    "Kanban cards and columns with fast drag-and-drop updates",
+    "Multi-tenant workspaces with organization-level isolation and membership controls",
+    "API-first architecture for agent flows, bots, and automation",
+    "Webhooks and API tokens for event-driven integrations",
+    "Superuser admin panel for platform-level metrics and governance"
+  ],
+  "differentiators": [
+    "Explicit positioning between Trello (simple) and Linear (structured): 'Trello-simple interface with Linear-level structure'",
+    "Agent/AI workflow as a first-class use case: 'your agent flows can create, update, and resolve work automatically'",
+    "Multi-tenant by default \u2014 not bolted on",
+    "Self-hostable on Fly.io with portable deployment primitives",
+    "'API-first core' framing vs. API as an afterthought"
+  ],
+  "trust_signals": [
+    "SLA-backed support on Scale tier",
+    "Self-hosting option signals openness and portability",
+    "Docs availability as static pages signals maturity"
+  ],
+  "navigation": [
+    "Features",
+    "Pricing",
+    "FAQ",
+    "Docs",
+    "Log in",
+    "Start free"
+  ],
+  "design_patterns": {
+    "layout": "Standard top-nav landing page: hero with subheadline and CTAs, live product preview snapshot, feature grid (4 cards), pricing table with monthly/yearly toggle, FAQ accordion",
+    "color_scheme": "Cannot fully determine from text, but technical/dark aesthetic implied by product category and naming conventions",
+    "typography": "Clean, functional \u2014 implied by minimal prose and short declarative copy",
+    "visual_style": "Minimal and technical",
+    "notable_patterns": [
+      "Live kanban snapshot in hero simulating real-time board activity",
+      "Agent-generated activity blurb ('Agent flow updated 7 tickets from QA failures') as social proof substitute",
+      "Monthly/yearly pricing toggle",
+      "FAQ accordion for objection handling",
+      "Feature grid with icon-style cards"
+    ]
+  },
+  "emotional_tone": "Confident and pragmatic \u2014 appeals to builders who are tired of bloated tools, not aspirational or warm",
+  "key_objections_addressed": [
+    "Can AI agents actually use this? \u2014 Yes, API is 'intentionally minimal, stable, and built for automation-driven ticket flows'",
+    "Does it handle multiple clients or tenants? \u2014 Yes, isolated per organization with membership access control",
+    "Am I locked in? Can I self-host? \u2014 Yes, portable stack on Nuxt + Postgres",
+    "Is there a free option before I commit? \u2014 Yes, up to 3 users free"
+  ],
+  "missing_or_weak": [
+    "Zero social proof: no customer logos, testimonials, user counts, or press mentions \u2014 the single biggest credibility gap",
+    "No named customers or case studies showing agent workflows in production",
+    "Live board snapshot metrics (12 backlog, 6 in progress, 34 done) appear illustrative rather than real platform data \u2014 missed opportunity for authentic proof",
+    "No founder or team credibility signals (who built this, why trust it)",
+    "No security or compliance mentions (SOC 2, encryption, data residency) \u2014 likely a blocker for enterprise evaluation",
+    "The 'Built for teams and agents' superheadline is vague and undersells the agent-first angle",
+    "No integration ecosystem shown (GitHub, Slack, Jira, etc.) \u2014 limits perceived extensibility",
+    "Scale tier says 'Talk to sales' but no indication of what 'dedicated onboarding' or 'audit exports' actually means"
+  ],
+  "standout_elements": [
+    "Trello vs. Linear positioning is immediately legible and resonant for the target audience",
+    "Agent-first framing is genuinely differentiated \u2014 most PM tools treat automation as secondary",
+    "FAQ directly neutralizes the four most likely objections before they become drop-off",
+    "Pricing is transparent, ungated, and structured with a low-friction free entry point",
+    "Self-hosting mention earns trust with developer/infra-conscious buyers",
+    "Compact, scannable copy \u2014 no filler, high information density"
+  ],
+  "score": {
+    "clarity": 8,
+    "credibility": 3,
+    "conversion_focus": 7,
+    "differentiation": 7,
+    "overall": 6
+  },
+  "analyzed_at": "2026-04-30T15:31:45.064795"
+}

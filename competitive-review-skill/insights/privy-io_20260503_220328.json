@@ -1,0 +1,784 @@
+{
+  "name": "Privy",
+  "url": "https://privy.io",
+  "domain": "privy.io",
+  "scanned_at": "2026-05-03T21:58:34.923879",
+  "sources": {
+    "landing": {
+      "url": "https://privy.io",
+      "title": "Privy \u2013 Wallet infrastructure, built for scale.",
+      "text": "Privy \u2013 Wallet infrastructure, built for scale.\nPrivy is joining\n.\nSame product, same team\u2014moving faster, shipping more.\nLearn more\nProduct\nSolutions\nPricing\nAbout\nDocs\nDemo\nLog in\nWallet\ninfrastructure,\nfor every\nuser.\napp.\nbank.\nagent.\nuser.\nPrivy powers the complete wallet stack \u2014 from key management to user onboarding.\nSpin up whitelabel wallets, sign transactions, and automate onchain actions through one secure, programmable API.\nGet started\nTalk to sales\nPowering 120M+ accounts for 2,000+ teams.\nUnlock crypto rails.\nWhether you\u2019re building in-app wallets or orchestrating them from the key layer, Privy\u2019s infrastructure lets you manage keys, enforce policy, and scale secure wallets everywhere users go.\nGet setup in 9 minutes\nSecure by design\nPrivy combines TEEs and key sharding to secure every wallet.\nWhitelabel and modular\nFrom low-level APIs to SDKs, Privy lets you build your way.\nScales as you grow\nOne scalable stack for wallets, policies, and custody.\nLow-level key management.\nRun secure wallets within hardware-isolated TEEs. Define granular signing policies, coordinate multi-approver quorums, and automate onchain actions programmatically through Privy's low-level APIs.\nHardware-isolated TEEs\nMulti-approver quorums\nGranular policy engine\nWebhooks and indexing\nLearn more\nPowerful embedded wallets.\nPrivy powers hardware-secured, SOC 2\u2011compliant wallets for any user\u2014across EVM, Solana, Bitcoin, and more. Built on TEEs and distributed key sharding, with passkey and hardware token support for iron\u2011clad wallets.\nGas sponsorship\nGlobal user accounts\nServer-side sessions\nWallet and transaction analytics\nLearn more\nUser onboarding.\nSign up any user in seconds with email, SMS, social, passkey, or wallet\u2014improving conversion for crypto experts and newcomers alike.\nProgressive authentication\nRobust wallet connectors\nHardware-backed login and MFA\nModular UI components\nLearn more\nProgrammable integrations.\nPrivy integrates with the best onchain tools to make money move. Easily integrate swaps, bridges, gas sponsorship and more.\nFiat-to-crypto rails\nAutomated bridging\nSmart wallet signers\nLearn more\nEnterprise-grade security.\nSecurity is the backbone across Privy\u2019s team, architecture, and workflows. All engineering is security engineering.\nLearn more\nHardware\u2011isolated self custody\nKeys are sharded, end-to-end encrypted, and distributed across isolated services. Wallets are only reconstructed in secure hardware environments, ensuring only owners can access their assets.\nDefense in depth\nSecure enclaves protect keys, encrypted networks safeguard data, and RBAC with micro-segmentation enforces least privilege. Privy\u2019s defense-in-depth ensures no single point of failure.\nBattle-tested at scale\nOur open source cryptography libraries are widely used and audited. Our security team is publicly known and heavily involved in whitehat defense of the blockchain ecosystem.\nFriction where it matters\nPrivy enables you to layer on defenses like passkey signing, wallet policies, transaction MFA, multisigs and more to create layers of security for your users and their funds.\nCompleted audits\nCure 53\nFebruary 2023\nZellic\nJune 2023\nSwordBytes\nDecember 2023\nDoyensec\nFebruary 2024\nSOC 2 Type II\nDecember 2024\nBorg Security\nJune 2025\nHackerone\nBug bounty program\nGet started in minutes. Go live in hours.\nGet started\nTalk to sales\nTalk to us.\nTell us what you're building. We'll show you how to bring it onchain with secure, compliant wallet infrastructure.\nStay in the know.\nSubscribe to the Privy monthly newsletter for the latest updates.\nSubscribe\nProduct\nWallet infrastructure\nOnboarding\nKey management\nIntegrations\nDocs\nDemo\nSolutions\nFintech + payments\nDefi + trading\nAI agents\nConsumer\nGaming\nCompany\nCareers\nSecurity\nBlog\nCustomer love\nBrand guidelines\nCookie preferences\nResources\nStatus\nSupport\nGuides\nPrivacy policy\nAcceptable use policy\nUser terms of service\nDev terms of service\nBug bounty\nTechnical decisions are moral decisions.\n\u00a92025 Horkos, Inc.\nSelect language\nwe value your privacy\nThis site uses cookies and related technologies, as described in our privacy policy, for purposes that may include site operation, analytics, enhanced user experience, or advertising. You may choose to consent to our use of these technologies, or manage your own preferences.\nManage choices\nAgree & proceed\nReject all\nPrivacy Policy\nTracker Details\nPowered by:\nSelect language\nwe value your privacy\nThis site uses cookies and related technologies, as described in our privacy policy, for purposes that may include site operation, analytics, enhanced user experience, or advertising. You may choose to consent to our use of these technologies, or manage your own preferences.\nManage choices\nAgree & proceed\nReject all\nPrivacy Policy\nTracker Details\nPowered by:",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.privy.com/pricing",
+      "title": "Privy | Pricing",
+      "text": "Privy | Pricing\nBook a Demo\nTry Free\nGet started\nFeatures\nResources\nPricing\nCustomers\nLogin\nBook a Demo\nTry Free\nPricing\nStarts at $30/month with 250 free SMS credits included\nPrivy grows your online sales without email sending limits, annual contracts, or hidden fees.\nEmail\nMailable contacts:\n0 - 1,500\n$30\nper month\nOnly pay for mailable contacts\nSend unlimited emails\nSMS Add-on\nMonthly credits:\n250\nHow many do I need?\n$\n0\nper month\nCredits rollover to next billing period\nTotal\n15-day free trial\nNo credit card required\n$30\nper month\nGet started\nEverything you need in one place\nEmail and SMS campaigns\nAdvanced pop-up design and targeting\nEmail & live chat support\nEmail and SMS automations\nAdvanced targeting and segmentation\n3rd-party integrations\nUnlimited email sends\nAdvanced reporting\nSMS only\nSegment price\n* Plus Carrier fees at cost\n$0.007/SMS*\n* Plus Carrier fees at cost\n$0.024/MMS*\nOptional Short Code\n$500/mo\n* Rates depicted above are for single segment sends to US recipients\nStarting at $\n199\nper month\nTalk to sales\nFlow builder with templates\nSegmentation powered by ecommerce and third-party integrations\nDedicated toll-free number\nMigration & launch support\nDedicated copywriting & strategist\nPop-ups & Displays only\nPricing based on monthly page views\nUp to 10,000\nCollected contacts automatically sync to your Shopify, BigCommerce or Wix account, and select third-party platforms including Klaviyo.\nStarting at $\n24\nper month\nGet started\nExtensive template library\nLanding pages\nEmbedded forms\nA/B testing\nSpin-to-Win\nCart savers and cross-sell pop-ups\nMulti-Step and Quizzes\nExit intent pop-ups\nFrequently Asked Questions\nDo you offer a free trial?\nWhat's a mailable contact?\nDoes Privy limit the number of emails I can send each month?\nWhat happens after I hit my contact limit?\nWhat is an SMS credit?\nGet started with Privy\nStart 15-day Free Trial\nGet Started\nFor Shopify stores\nGet a dedicated expert\nTalk to sales\nFeatures\nProduct overview\nOmnichannel campaigns\nMarketing automation\nDisplays\nEmail marketing\nSMS marketing\nReporting\nSegmentation\nResources\nDocumentation\nExamples\nNews\nPress Kit\nIntegrations\nLearn\nCompare\nPrivy vs Klaviyo\nPrivy vs Mailchimp\nPrivy vs. Omnisend\nPrivy vs. Flodesk\nConnect\nSchedule a demo\nBecome a partner\nAbout Privy\nCareers\nContact Support\nPlatforms\nBigCommerce\nShopify\nSquarespace\nWeebly\nWix\nWoocommerce\nTools\nCampaign Calendar\nAI Marketing Assistant\nEcommerce Benchmark Tool\nROI Calculator\nSMS Copy Generator\nFacebook\nInstagram\nLinkedIn\nTwitter X\nYoutube\nPrivacy policy\nTerms of service\nData processing addendum\nAcceptable use policy\nPartner program agreement\nConsent preferences\n\u00a9 2026 Privy - All rights reserved",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://privy.io/changelog",
+      "title": "Privy \u2013 404",
+      "text": "Privy \u2013 404\nProduct\nSolutions\nPricing\nAbout\nDocs\nDemo\nLog in\n404\nPage not found.\nThe page you are looking for does not exist or it has been deleted. Please proceed to home.\nGo to home\nProduct\nWallet infrastructure\nOnboarding\nKey management\nIntegrations\nDocs\nDemo\nSolutions\nFintech + payments\nDefi + trading\nAI agents\nConsumer\nGaming\nCompany\nCareers\nSecurity\nBlog\nCustomer love\nBrand guidelines\nCookie preferences\nResources\nStatus\nSupport\nGuides\nPrivacy policy\nAcceptable use policy\nUser terms of service\nDev terms of service\nBug bounty\nTechnical decisions are moral decisions.\n\u00a92025 Horkos, Inc.\nSelect language\nwe value your privacy\nThis site uses cookies and related technologies, as described in our privacy policy, for purposes that may include site operation, analytics, enhanced user experience, or advertising. You may choose to consent to our use of these technologies, or manage your own preferences.\nManage choices\nAgree & proceed\nReject all\nPrivacy Policy\nTracker Details\nPowered by:\nSelect language\nwe value your privacy\nThis site uses cookies and related technologies, as described in our privacy policy, for purposes that may include site operation, analytics, enhanced user experience, or advertising. You may choose to consent to our use of these technologies, or manage your own preferences.\nManage choices\nAgree & proceed\nReject all\nPrivacy Policy\nTracker Details\nPowered by:",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://help.privy.com",
+      "title": "Welcome to Privy - Privy Knowledge Base",
+      "text": "Welcome to Privy - Privy Knowledge Base\nSkip to main content\nPrivy Knowledge Base\nhome page\nSearch...\n\u2318\nK\nAsk AI\nPricing\nContact Support\nLogin\nLogin\nSearch...\nNavigation\nGetting Started\nWelcome to Privy\nLearn\nDeveloper\nGetting Started\nWelcome to Privy\nQuickstart\nLearn\nDisplays\nFlows\nEmail Campaigns\nSMS Campaigns\nContent\nContacts\nDeliverability\nCompliance\nIntegrations\nAccount + Billing\nStrategy Guides\nList Growth\nFlows\nCampaigns\nSegmentation\nDeliverability\nOn this page\nGet Started\nPopular articles\nExplore our features\nLearn more\nStrategy Guides\nAdditional Support\nGetting Started\nWelcome to Privy\nYour all-in-one e-commerce marketing platform.\nDocumentation Index\nFetch the complete documentation index at:\nhttps://help.privy.com/llms.txt\nUse this file to discover all available pages before exploring further.\n\u200b\nGet Started\nNew to Privy? Let\u2019s get you set up for success.\nQuickstart\nEverything you need to set up your account and start driving revenue right away.\n\u200b\nPopular articles\nBilling, Payments, and Refunds\nDisplay Targeting + Settings\nTips to Improve Deliverability\nCoupon Codes\nEmail Authentication\nSegments 101\n\u200b\nExplore our features\nDiscover user-friendly + effective tools built to grow your business.\nGrow your list\nCreate & launch eye-catching displays to convert your site visitors into subscribers.\nAutomate your email strategy\nBuild flows that trigger personalized email and SMS based on your subscribers\u2019 behavior.\nSend personalized emails\nCreate & send emails to engage with your audience and drive revenue for your store.\nDrive revenue with SMS\nSend text messages to notify your most engaged customers about deals + drops.\n\u200b\nLearn more\nContent\nContacts\nDeliverability\nCompliance\nIntegrations\nAccount + Billing\n\u200b\nStrategy Guides\nLook no further for inspiration, ideas, and guidance on proven best practices.\nList Growth\nFlows\nCampaigns\nSegmentation\nDeliverability\n\u200b\nAdditional Support\nStill have questions? For assistance with your account, send our Support Team an\nemail\nor send us a Live Chat from your\ndashboard\n.\nWas this page helpful?\nYes\nNo\nQuickstart\n\u2318\nI\nx\nlinkedin\nAssistant\nResponses are generated using AI and may contain mistakes.",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.privy.com/integrations",
+      "title": "Privy | Integrations",
+      "text": "Privy | Integrations\nBook a Demo\nTry Free\nGet started\nFeatures\nResources\nPricing\nCustomers\nLogin\nBook a Demo\nTry Free\nIntegrations\nGrow Smarter With Privy + Your Favorite Apps\nExtend the power of your Email and SMS marketing with out-of-the-box connectivity to Shopify, BigCommerce, Wix and other ecosystem tools.\nPrivy makes it easy to connect your favorite marketing, ecommerce, and analytics tools so you can automate your workflows, grow your list, and drive more sales \u2014 all from one simple platform.\nWhether you\u2019re using Shopify, Klaviyo, Mailchimp, or Squarespace, Privy fits right into your existing stack.\nIntegrations\nExplore our collection of integrations that help extend and enhance your workflow. Connect with popular ecommerce platforms and tools to streamline your marketing.\nAds and Analytics\nGoogle Analytics\nIntegrate Privy with Google Analytics to track new sign ups and display views.\nLearn More\nEcommerce Platforms\nBigCommerce\nFull integration of your BigCommerce store with Privy to power your email and SMS marketing.\nLearn More\nShopify\nFull integration of your Shopify or Shopify Plus store with Privy power your email and SMS marketing\nLearn More\nSquarespace\nStart growing your list with Privy displays and forms on your Squarespace site\nLearn More\nWeebly\nStart growing your list with Privy displays and forms on your Weebly site\nLearn More\nWix\nFull integration of your Wix store with Privy to power your email and SMS marketing\nLearn More\nWordPress\nStart growing your list with Privy displays and forms on your WordPress site\nLearn More\nEmail Service Providers\nKlaviyo\nCollect email addresses, phone numbers and custom properties using Privy and sync those to Klaviyo.\nLearn More\nMailchimp\nCollect email addresses and phone numbers using Privy and sync those to Mailchimp.\nLearn More\nRewards and Loyalty\nSmile\nConnect Privy to Smile.io to reward members for on-site sign-ups, segment campaigns using loyalty data, and more\nLearn More\nYotpo\nSupercharge your ecommerce growth by combining Privy\u2019s email, SMS, and popup marketing tools with Yotpo\u2019s review, ratings, and loyalty platform. This integration helps online stores capture more leads, recover abandoned carts, and leverage customer reviews to boost trust and conversions.\nLearn More\nSMS Marketing\nEmotive\nCollect phone numbers using Privy and sync those to Emotive to use in your SMS marketing.\nLearn More\nPostscript\nCollect phone numbers using Privy and sync those to Postscript to use in your SMS marketing.\nLearn More\nGet Started\nFor Shopify stores\nGet a dedicated expert\nTalk to sales\nFeatures\nProduct overview\nOmnichannel campaigns\nMarketing automation\nDisplays\nEmail marketing\nSMS marketing\nReporting\nSegmentation\nResources\nDocumentation\nExamples\nNews\nPress Kit\nIntegrations\nLearn\nCompare\nPrivy vs Klaviyo\nPrivy vs Mailchimp\nPrivy vs. Omnisend\nPrivy vs. Flodesk\nConnect\nSchedule a demo\nBecome a partner\nAbout Privy\nCareers\nContact Support\nPlatforms\nBigCommerce\nShopify\nSquarespace\nWeebly\nWix\nWoocommerce\nTools\nCampaign Calendar\nAI Marketing Assistant\nEcommerce Benchmark Tool\nROI Calculator\nSMS Copy Generator\nFacebook\nInstagram\nLinkedIn\nTwitter X\nYoutube\nPrivacy policy\nTerms of service\nData processing addendum\nAcceptable use policy\nPartner program agreement\nConsent preferences\n\u00a9 2026 Privy - All rights reserved",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/privy/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Show HN: Privy - Open-source, privacy oriented alternative to GitHub Copilot",
+          "url": "https://github.com/srikanth235/privy",
+          "points": 111,
+          "num_comments": 48,
+          "created_at": "2024-01-17T16:48:00Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39030170"
+        },
+        {
+          "title": "The Cincinnati Privy Disaster of 1904 (2014)",
+          "url": "https://beltmag.com/cincinnati-privy-disaster-1904/",
+          "points": 44,
+          "num_comments": 4,
+          "created_at": "2020-07-24T09:55:49Z",
+          "hn_url": "https://news.ycombinator.com/item?id=23937610"
+        },
+        {
+          "title": "Show HN: Privy \u2013 An easy, fast lib to password-protect your data in Python",
+          "url": "https://github.com/ofek/privy",
+          "points": 9,
+          "num_comments": 0,
+          "created_at": "2017-09-05T08:10:35Z",
+          "hn_url": "https://news.ycombinator.com/item?id=15173335"
+        },
+        {
+          "title": "Stripe to Acquire Crypto Wallet Provider Privy",
+          "url": "https://www.bloomberg.com/news/articles/2025-06-11/payment-company-stripe-to-acquire-crypto-wallet-provider-privy",
+          "points": 7,
+          "num_comments": 2,
+          "created_at": "2025-06-11T15:19:57Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44248585"
+        },
+        {
+          "title": "Stripe acquires Privy",
+          "url": "https://privy.io/blog/announcing-our-acquisition-by-stripe",
+          "points": 7,
+          "num_comments": 0,
+          "created_at": "2025-06-11T15:12:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44248512"
+        },
+        {
+          "title": "A great pivot success story \u2013 Ben Jabbawy and Privy [audio]",
+          "url": "https://venturefizz.com/stories/boston/venturefizz-podcast-ben-jabbawy-founder-ceo-privy",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2020-01-27T14:24:50Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22159471"
+        },
+        {
+          "title": "Show HN: Privy \u2013 Password-protected secrets made easy in Python",
+          "url": "https://github.com/ofek/privy",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2017-02-14T21:23:55Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13647332"
+        },
+        {
+          "title": "Show HN: Privy Beta \u2013 Professional Marketing Tools for All",
+          "url": "http://privy.com/beta",
+          "points": 2,
+          "num_comments": 1,
+          "created_at": "2014-12-09T21:18:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=8725827"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "DHS subpoenas Social media companies to reveal identities of Americans who criticize ICE. Requested information includes names, email addresses, phone numbers.",
+          "subreddit": "Fauxmoi",
+          "score": 16937,
+          "num_comments": 1578,
+          "permalink": "https://reddit.com/r/Fauxmoi/comments/1r4b8jr/dhs_subpoenas_social_media_companies_to_reveal/",
+          "selftext": "The Department of Homeland Security is expanding its efforts to identify Americans who oppose Immigration and Customs Enforcement by sending tech companies legal requests for the names, email addresses, telephone numbers and other identifying data behind social media accounts that track or criticize the agency.\n\nIn recent months, Google, Reddit, Discord and Meta, which owns Facebook and Instagram, have received hundreds of administrative subpoenas from the Department of Homeland Security, accord"
+        },
+        {
+          "title": "I think my kids school lied about calling CPS rather than calling my husband to pick her up",
+          "subreddit": "BestofRedditorUpdates",
+          "score": 8841,
+          "num_comments": 675,
+          "permalink": "https://reddit.com/r/BestofRedditorUpdates/comments/1npwz83/i_think_my_kids_school_lied_about_calling_cps/",
+          "selftext": "**I am NOT the Original Poster. That is** [Less\\_Roll4824](https://www.reddit.com/user/Less_Roll4824/)**.** She posted in r/TrueOffMyChest\n\nThanks to u/BakingGiraffeBakes for the rec!\n\n# Do NOT comment on Original Posts. Latest update is 7 days old.\n\n**Trigger Warning:** &gt;!threatening to call CPS for unfounded reasons; misogyny !&lt;\n\n**Mood Spoiler:** &gt;!good ending!&lt;\n\n**Original** [Post](https://www.reddit.com/r/TrueOffMyChest/comments/1nenudc/i_think_my_kids_school_lied_about_calling_"
+        },
+        {
+          "title": "[FO] Made this to spite a racist thief",
+          "subreddit": "CrossStitch",
+          "score": 8307,
+          "num_comments": 52,
+          "permalink": "https://reddit.com/r/CrossStitch/comments/1lqvper/fo_made_this_to_spite_a_racist_thief/",
+          "selftext": "I recently started a new job and have only been here for two months, building rapport with folks and generally sticking to my work. I wanted to wait a while before I hung the very first kuffiyeh I got ~11 years ago inside of my cubicle wall at 5pm\u2026and it was gone by 9am the next day. No one is privy to my political views/beliefs so it was totally targeted\u2014 a theft driven by simply having seen something Palestinian.\n\nTotally heartbroken and equally enraged about the loss (lots of support from my "
+        },
+        {
+          "title": "A tzeentchian ploy",
+          "subreddit": "tumblr",
+          "score": 6705,
+          "num_comments": 68,
+          "permalink": "https://reddit.com/r/tumblr/comments/1nmurj9/a_tzeentchian_ploy/",
+          "selftext": ""
+        },
+        {
+          "title": "As a blue collar woman, listening to my male coworkers talk about their spouses makes me want to commit violence",
+          "subreddit": "TwoXChromosomes",
+          "score": 6535,
+          "num_comments": 286,
+          "permalink": "https://reddit.com/r/TwoXChromosomes/comments/1rkg4s2/as_a_blue_collar_woman_listening_to_my_male/",
+          "selftext": "I have a trade where it is very rare that I have a female coworker. It's been almost two decades and I have had two female coworkers in total. So as a result I am sometimes privy to stupid ass man logic.\n\nMy coworkers are constantly talking shit about their wives. And their kids. They are too tired to do the dishes. Too tired to do daycare pickup. Ooohhhhhhh My Gawd my wife told me to stop throwing my drawers on the bathroom floor. Doesn't she understand how hard my job is??\n\nAnd I'm sitting the"
+        },
+        {
+          "title": "[Loved Trope] A story about a real-world profession depicts that profession as an entire secret parallel society alongside the regular world, with its own laws and culture",
+          "subreddit": "TopCharacterTropes",
+          "score": 6085,
+          "num_comments": 358,
+          "permalink": "https://reddit.com/r/TopCharacterTropes/comments/1rmmix4/loved_trope_a_story_about_a_realworld_profession/",
+          "selftext": "This isn't a super common trope but I love it whenever it crops up, especially when you have properly in-depth worldbuilding and end up with effectively a genre flip into speculative urban fantasy.\n\n**Community**: The Greendale Air Conditioning Repair Annex. Troy takes a course in air conditioning repair. It turns out the Air Conditioning Repair Annex (led by one of my favourite John Goodman performances) is not only providing most of Greendale's funding, it's an incredibly powerful masonic-styl"
+        },
+        {
+          "title": "Behold the metatron, the voice of god",
+          "subreddit": "CuratedTumblr",
+          "score": 5813,
+          "num_comments": 210,
+          "permalink": "https://reddit.com/r/CuratedTumblr/comments/1l330ga/behold_the_metatron_the_voice_of_god/",
+          "selftext": ""
+        },
+        {
+          "title": "My first quilt exhibition: Festival of Quilts Birmingham",
+          "subreddit": "quilting",
+          "score": 5786,
+          "num_comments": 124,
+          "permalink": "https://reddit.com/r/quilting/comments/1mfx3h1/my_first_quilt_exhibition_festival_of_quilts/",
+          "selftext": "I was in awe of the skill and artistry of all the quilts I saw today, but these are some of the quilts that I\u2019ll be thinking about for weeks to come or drawing on for my next projects!"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.privy.com/pricing",
+    "changelog": null,
+    "docs": "https://help.privy.com",
+    "integrations": "https://www.privy.com/integrations",
+    "g2": "https://www.g2.com/products/privy/reviews"
+  },
+  "analysis": {
+    "name": "Privy",
+    "url": "https://privy.io",
+    "tagline": "Wallet infrastructure, built for scale.",
+    "value_proposition": "Privy powers the complete crypto wallet stack\u2014from hardware-isolated key management to user onboarding\u2014through one secure, programmable API for apps, fintechs, and AI agents.",
+    "target_segment": "dev / enterprise",
+    "ideal_customer": "Web3 developers, fintechs, and AI agent builders needing embedded wallet infrastructure with enterprise-grade security and programmable key management at scale",
+    "features": [
+      {
+        "name": "hardware-isolated tees",
+        "description": "Wallet keys run inside Trusted Execution Environments, never exposed outside secure hardware",
+        "evidence_source": "landing",
+        "evidence_quote": "Run secure wallets within hardware-isolated TEEs.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "key sharding",
+        "description": "Keys split and distributed across isolated services; only reconstructed in secure hardware",
+        "evidence_source": "landing",
+        "evidence_quote": "Keys are sharded, end-to-end encrypted, and distributed across isolated services.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-approver quorums",
+        "description": "Require multiple approvers to authorize signing operations",
+        "evidence_source": "landing",
+        "evidence_quote": "coordinate multi-approver quorums",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "granular policy engine",
+        "description": "Define granular signing policies controlling which transactions can be signed automatically",
+        "evidence_source": "landing",
+        "evidence_quote": "Define granular signing policies",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "webhooks and indexing",
+        "description": "Real-time webhook notifications and onchain data indexing",
+        "evidence_source": "landing",
+        "evidence_quote": "Webhooks and indexing",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "gas sponsorship",
+        "description": "Sponsor gas fees for users so they don't need to hold native tokens",
+        "evidence_source": "landing",
+        "evidence_quote": "Gas sponsorship",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "global user accounts",
+        "description": "Unified user accounts across applications and chains",
+        "evidence_source": "landing",
+        "evidence_quote": "Global user accounts",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "server-side sessions",
+        "description": "Server-managed wallet sessions for automated or backend-triggered operations",
+        "evidence_source": "landing",
+        "evidence_quote": "Server-side sessions",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "wallet and transaction analytics",
+        "description": "Built-in analytics on wallet activity and transaction history",
+        "evidence_source": "landing",
+        "evidence_quote": "Wallet and transaction analytics",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "progressive authentication",
+        "description": "Users can sign up gradually, upgrading auth factors over time",
+        "evidence_source": "landing",
+        "evidence_quote": "Progressive authentication",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "wallet connectors",
+        "description": "Robust connectors for existing external wallets alongside embedded wallets",
+        "evidence_source": "landing",
+        "evidence_quote": "Robust wallet connectors",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "hardware-backed login and mfa",
+        "description": "Login and MFA secured by passkeys or hardware security keys",
+        "evidence_source": "landing",
+        "evidence_quote": "Hardware-backed login and MFA",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "modular ui components",
+        "description": "Pre-built, customizable UI components for onboarding and wallet interactions",
+        "evidence_source": "landing",
+        "evidence_quote": "Modular UI components",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "fiat-to-crypto rails",
+        "description": "Integrated fiat on-ramp so users can purchase crypto within the app",
+        "evidence_source": "landing",
+        "evidence_quote": "Fiat-to-crypto rails",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "automated bridging",
+        "description": "Programmatic cross-chain asset bridging",
+        "evidence_source": "landing",
+        "evidence_quote": "Automated bridging",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "smart wallet signers",
+        "description": "Use Privy wallets as signers for smart contract accounts",
+        "evidence_source": "landing",
+        "evidence_quote": "Smart wallet signers",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "evm support",
+        "description": "Full support for Ethereum and EVM-compatible chains",
+        "evidence_source": "landing",
+        "evidence_quote": "across EVM, Solana, Bitcoin, and more",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "solana support",
+        "description": "Native Solana wallet and signing support",
+        "evidence_source": "landing",
+        "evidence_quote": "across EVM, Solana, Bitcoin, and more",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bitcoin support",
+        "description": "Native Bitcoin wallet and signing support",
+        "evidence_source": "landing",
+        "evidence_quote": "across EVM, Solana, Bitcoin, and more",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "soc 2 type ii compliance",
+        "description": "SOC 2 Type II certified as of December 2024",
+        "evidence_source": "landing",
+        "evidence_quote": "SOC 2 Type II December 2024",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rbac with micro-segmentation",
+        "description": "Role-based access control with micro-segmented network policies for least-privilege",
+        "evidence_source": "landing",
+        "evidence_quote": "RBAC with micro-segmentation enforces least privilege",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "passkey support",
+        "description": "Passkey-based authentication and signing for passwordless security",
+        "evidence_source": "landing",
+        "evidence_quote": "passkey and hardware token support for iron-clad wallets",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "social login",
+        "description": "Sign up users with email, SMS, or social OAuth providers",
+        "evidence_source": "landing",
+        "evidence_quote": "email, SMS, social, passkey, or wallet",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "whitelabel wallets",
+        "description": "Fully branded wallet experience with no Privy branding",
+        "evidence_source": "landing",
+        "evidence_quote": "Spin up whitelabel wallets",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "programmable api",
+        "description": "Low-level REST API to manage keys, sign transactions, and automate onchain actions",
+        "evidence_source": "landing",
+        "evidence_quote": "automate onchain actions through one secure, programmable API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "security audits",
+        "description": "Multiple third-party audits completed by Cure53, Zellic, SwordBytes, Doyensec, Borg Security",
+        "evidence_source": "landing",
+        "evidence_quote": "Cure 53 February 2023 / Zellic June 2023 / Doyensec February 2024",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bug bounty program",
+        "description": "Public HackerOne bug bounty program",
+        "evidence_source": "landing",
+        "evidence_quote": "Hackerone Bug bounty program",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "open source cryptography",
+        "description": "Open source, publicly audited cryptographic libraries",
+        "evidence_source": "landing",
+        "evidence_quote": "Our open source cryptography libraries are widely used and audited.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "transaction mfa",
+        "description": "Require additional MFA confirmation before signing high-value transactions",
+        "evidence_source": "landing",
+        "evidence_quote": "transaction MFA",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "multisig support",
+        "description": "Support for multi-signature wallet setups",
+        "evidence_source": "landing",
+        "evidence_quote": "multisigs",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "email marketing",
+        "description": "Send unlimited email campaigns to segmented contact lists",
+        "evidence_source": "pricing",
+        "evidence_quote": "Send unlimited emails",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sms marketing",
+        "description": "Send SMS/MMS campaigns with credit-based billing and carrier fee pass-through",
+        "evidence_source": "pricing",
+        "evidence_quote": "Drive revenue with SMS",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "popup displays",
+        "description": "Customizable on-site popups with advanced design and targeting options",
+        "evidence_source": "pricing",
+        "evidence_quote": "Advanced pop-up design and targeting",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "email automations",
+        "description": "Triggered email workflows based on subscriber behavior",
+        "evidence_source": "pricing",
+        "evidence_quote": "Email and SMS automations",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sms automations",
+        "description": "Triggered SMS workflows based on subscriber behavior",
+        "evidence_source": "pricing",
+        "evidence_quote": "Email and SMS automations",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "flow builder",
+        "description": "Visual flow builder with templates for automation sequences",
+        "evidence_source": "pricing",
+        "evidence_quote": "Flow builder with templates",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "landing pages",
+        "description": "Standalone landing pages for lead capture",
+        "evidence_source": "pricing",
+        "evidence_quote": "Landing pages",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "embedded forms",
+        "description": "Embeddable signup forms for websites",
+        "evidence_source": "pricing",
+        "evidence_quote": "Embedded forms",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "a/b testing",
+        "description": "A/B test popup and display variants",
+        "evidence_source": "pricing",
+        "evidence_quote": "A/B testing",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "advanced segmentation",
+        "description": "Segment contacts using ecommerce and third-party integration data",
+        "evidence_source": "pricing",
+        "evidence_quote": "Advanced targeting and segmentation",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "advanced reporting",
+        "description": "Campaign performance reporting and analytics",
+        "evidence_source": "pricing",
+        "evidence_quote": "Advanced reporting",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "coupon codes",
+        "description": "Generate and distribute discount coupon codes via displays and emails",
+        "evidence_source": "docs",
+        "evidence_quote": "Coupon Codes",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "exit intent popups",
+        "description": "Trigger popups when a visitor is about to leave the page",
+        "evidence_source": "pricing",
+        "evidence_quote": "Exit intent pop-ups",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "spin-to-win",
+        "description": "Gamified spin-the-wheel popup for lead capture",
+        "evidence_source": "pricing",
+        "evidence_quote": "Spin-to-Win",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "cart savers",
+        "description": "Popups triggered to recover abandoning shoppers with targeted offers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Cart savers and cross-sell pop-ups",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "cross-sell popups",
+        "description": "Recommend related products to increase average order value",
+        "evidence_source": "pricing",
+        "evidence_quote": "Cart savers and cross-sell pop-ups",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-step forms",
+        "description": "Multi-step and quiz-style lead capture forms",
+        "evidence_source": "pricing",
+        "evidence_quote": "Multi-Step and Quizzes",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "contact management",
+        "description": "Manage subscriber lists and contact properties",
+        "evidence_source": "docs",
+        "evidence_quote": "Contacts",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "deliverability tools",
+        "description": "Email authentication setup and deliverability optimization",
+        "evidence_source": "docs",
+        "evidence_quote": "Tips to Improve Deliverability / Email Authentication",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "compliance tools",
+        "description": "GDPR/TCPA compliance tools for email and SMS",
+        "evidence_source": "docs",
+        "evidence_quote": "Compliance",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated toll-free number",
+        "description": "Dedicated toll-free SMS number for managed/enterprise customers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated toll-free number",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "short code",
+        "description": "Optional dedicated SMS short code for high-volume sending",
+        "evidence_source": "pricing",
+        "evidence_quote": "Optional Short Code $500/mo",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "migration and launch support",
+        "description": "Concierge migration and onboarding support from Privy team",
+        "evidence_source": "pricing",
+        "evidence_quote": "Migration & launch support",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated copywriting and strategist",
+        "description": "Dedicated email/SMS copywriter and marketing strategist for managed accounts",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated copywriting & strategist",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ai marketing assistant",
+        "description": "AI-powered assistant for campaign ideation and copy generation",
+        "evidence_source": "integrations",
+        "evidence_quote": "AI Marketing Assistant",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "campaign calendar",
+        "description": "Visual marketing campaign planning calendar",
+        "evidence_source": "integrations",
+        "evidence_quote": "Campaign Calendar",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "ecommerce benchmark tool",
+        "description": "Compare store performance metrics against industry benchmarks",
+        "evidence_source": "integrations",
+        "evidence_quote": "Ecommerce Benchmark Tool",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "roi calculator",
+        "description": "Calculate expected revenue impact from email/SMS campaigns",
+        "evidence_source": "integrations",
+        "evidence_quote": "ROI Calculator",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "sms copy generator",
+        "description": "AI-powered SMS message copy generator tool",
+        "evidence_source": "integrations",
+        "evidence_quote": "SMS Copy Generator",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "contact sync to ecommerce platforms",
+        "description": "Collected contacts automatically sync to Shopify, BigCommerce, Wix, and Klaviyo",
+        "evidence_source": "pricing",
+        "evidence_quote": "Collected contacts automatically sync to your Shopify, BigCommerce or Wix account",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "live chat support",
+        "description": "Live chat support accessible directly from the dashboard",
+        "evidence_source": "docs",
+        "evidence_quote": "send us a Live Chat from your dashboard",
+        "tier": "paid",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Google Analytics",
+      "Shopify",
+      "Shopify Plus",
+      "BigCommerce",
+      "Squarespace",
+      "Weebly",
+      "Wix",
+      "WordPress",
+      "WooCommerce",
+      "Klaviyo",
+      "Mailchimp",
+      "Smile.io",
+      "Yotpo",
+      "Emotive",
+      "Postscript"
+    ],
+    "differentiators": [
+      "No email sending limits",
+      "No annual contracts",
+      "No hidden fees",
+      "Hardware-isolated TEEs for wallet key security \u2014 keys never exposed outside secure hardware",
+      "Powering 120M+ accounts for 2,000+ teams",
+      "Get setup in 9 minutes",
+      "SOC 2 Type II certified (December 2024)",
+      "Multiple independent security audits: Cure53, Zellic, SwordBytes, Doyensec, Borg Security",
+      "Open source, publicly audited cryptography libraries",
+      "HackerOne public bug bounty program",
+      "Whitelabel and fully modular \u2014 from low-level APIs to SDKs",
+      "Joining Stripe (announced on landing page \u2014 same product, same team)"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "15-day free trial; no credit card required"
+      },
+      "tiers": [
+        {
+          "name": "Email",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$30",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Up to 1,500 mailable contacts, unlimited emails, email+SMS campaigns, automations, advanced reporting"
+        },
+        {
+          "name": "Displays Only",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$24",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Pop-ups and displays only; up to 10,000 page views; A/B testing, spin-to-win, exit intent, quizzes"
+        },
+        {
+          "name": "Managed / Expert",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$199",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Flow builder, dedicated toll-free number, migration & launch support, dedicated copywriter and strategist"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "SMS is a usage-based add-on billed separately: $0.007/SMS + carrier fees, $0.024/MMS + carrier fees; 250 free SMS credits included with trial; credits roll over monthly. Optional dedicated short code $500/month extra. Email tier price scales with mailable contact count beyond 1,500. IMPORTANT: sources cover two distinct products \u2014 privy.io is a crypto wallet infrastructure company (being acquired by Stripe); privy.com is a separate ecommerce email/SMS marketing SaaS. Pricing and integrations data are from privy.com; landing page and wallet features are from privy.io. Changelog returned 404. G2 and Reddit yielded no usable Privy-specific sentiment data."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Show HN: StarkZap \u2013 Gasless Bitcoin Payments SDK for TypeScript",
+        "url": "https://github.com/keep-starknet-strange/starkzap",
+        "points": 6,
+        "comments": 21,
+        "age_days": 68,
+        "hn_url": "https://news.ycombinator.com/item?id=47137736"
+      },
+      {
+        "title": "Show HN: TurbineFi \u2013 Build, Backtest, Deploy Prediction Market Strategies",
+        "url": "https://www.turbinefi.com",
+        "points": 4,
+        "comments": 0,
+        "age_days": 9,
+        "hn_url": "https://news.ycombinator.com/item?id=47891447"
+      },
+      {
+        "title": "Show HN: Gauntlet\u2013Challenge friends to Strava activities with real money (USDC)",
+        "url": "https://gauntlet.bet",
+        "points": 1,
+        "comments": 1,
+        "age_days": 76,
+        "hn_url": "https://news.ycombinator.com/item?id=47032040"
+      }
+    ]
+  }
+}
