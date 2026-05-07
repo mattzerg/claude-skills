@@ -1,0 +1,262 @@
+/* zerg-default — actual Zerg brand
+ * v4 2026-05-06. Pulled from ~/zerg/web/src/pages/index.vue (the live marketing site, not main.css).
+ * Cream paper #f4f0e7, charcoal #111514, burnt-orange #b3662f primary accent, green #6FBE31 secondary.
+ * Font: Space Grotesk.
+ */
+
+:root {
+  --accent: #b3662f;                 /* burnt orange — used in eyebrows on live site */
+  --accent-bright: #d57a32;          /* brighter burnt orange — proof-point numerics on live site */
+  --accent-soft: rgba(179, 102, 47, 0.08);
+  --accent-secondary: #6FBE31;       /* Zerg brand green from tailwind.colors.js */
+  --accent-secondary-soft: rgba(111, 190, 49, 0.10);
+  --charcoal: #111514;
+  --mid-gray: #52605c;
+  --rule-gray: #dad6cb;              /* ~rgba(17,21,20,0.15) on cream */
+  --paper: #f4f0e7;                  /* cream — live site bg */
+}
+
+@page { size: Letter; margin: 0; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 8.75pt;
+  line-height: 1.36;
+  color: var(--charcoal);
+  background: var(--paper);
+  letter-spacing: -0.005em;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  width: 8.5in;
+  min-height: 11in;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  /* zones: header / hero / body / chips / footer */
+}
+
+/* ============ HEADER BAND ============ */
+.header-band {
+  padding: 0.32in 0.45in 0.14in 0.45in;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1.5pt solid var(--accent);
+}
+.header-band .wordmark {
+  font-size: 14pt;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--charcoal);
+}
+.header-band .wordmark a {
+  color: var(--charcoal);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8pt;
+}
+.header-band .wordmark svg {
+  height: 18pt;
+  width: auto;
+  display: block;
+}
+.header-band .wordmark .product-tag {
+  font-size: 11pt;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.005em;
+  border-left: 1pt solid var(--rule-gray);
+  padding-left: 8pt;
+}
+.header-band .wordmark .accent { color: var(--accent); }
+.header-band .brand-meta {
+  font-size: 8pt;
+  font-weight: 500;
+  color: var(--mid-gray);
+  letter-spacing: 0.02em;
+  text-align: right;
+}
+.header-band .brand-meta .sep { margin: 0 5pt; color: var(--rule-gray); }
+
+/* ============ HERO LEAD ============ */
+.hero {
+  padding: 0.14in 0.45in 0.08in 0.45in;
+}
+.hero .eyebrow {
+  font-size: 7pt;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 4pt 0;
+}
+.hero h1 {
+  font-size: 20pt;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--charcoal);
+  margin: 0 0 3pt 0;
+  line-height: 1.08;
+}
+.hero .dek {
+  font-size: 10.5pt;
+  font-weight: 400;
+  color: var(--mid-gray);
+  line-height: 1.32;
+  margin: 3pt 0 0 0;
+  font-style: normal;
+  max-width: 7in;
+}
+
+/* ============ BODY ============ */
+.body {
+  padding: 0.06in 0.45in 0.1in 0.45in;
+  flex: 1 1 auto;
+}
+
+.body h2 {
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 7pt 0 2pt 0;
+  padding: 0 0 1pt 0;
+  border-bottom: 0.5pt solid var(--rule-gray);
+}
+.body h2:first-child { margin-top: 2pt; }
+
+.body h3 {
+  font-size: 9.5pt;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin: 4pt 0 1pt 0;
+}
+
+.body p {
+  margin: 0 0 2.5pt 0;
+}
+
+.body strong { color: var(--charcoal); font-weight: 600; }
+.body em { color: var(--mid-gray); font-style: italic; }
+.body a { color: var(--accent); text-decoration: none; font-weight: 500; }
+.body code {
+  font-family: 'Space Mono', 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 8.5pt;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 0 3pt;
+  border-radius: 2pt;
+}
+
+.body ul, .body ol {
+  margin: 2pt 0 6pt 0;
+  padding-left: 16pt;
+}
+.body li { margin: 1pt 0; }
+.body li::marker { color: var(--accent); }
+
+.body blockquote {
+  margin: 3pt 0 5pt 0;
+  padding: 4pt 8pt;
+  border-left: 2.5pt solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--charcoal);
+  font-size: 9pt;
+  font-style: normal;
+}
+.body blockquote p { margin: 0; }
+.body blockquote p:not(:last-child) { margin-bottom: 3pt; }
+
+.body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 2pt 0 3pt 0;
+  font-size: 8pt;
+  line-height: 1.28;
+}
+.body th, .body td {
+  border-bottom: 0.4pt solid var(--rule-gray);
+  padding: 1.5pt 6pt 1.5pt 0;
+  text-align: left;
+  vertical-align: top;
+}
+.body th {
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 0.8pt solid var(--accent);
+  padding-bottom: 3pt;
+}
+/* Empty header cells — never render an orphan accent underline.
+   Markdown like `| | |` (header-suppression idiom) produces empty <th>s; we
+   collapse them so the table reads as headerless, no floating accent rule. */
+.body th:empty {
+  border: none;
+  padding: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+}
+.body thead:has(> tr > th:empty:only-of-type),
+.body thead:has(> tr:not(:has(th:not(:empty)))) {
+  display: none;
+}
+.body td:first-child, .body th:first-child { padding-left: 0; }
+
+.body hr {
+  border: none;
+  border-top: 0.5pt solid var(--rule-gray);
+  margin: 8pt 0;
+}
+
+.body .diagram {
+  margin: 2pt 0 5pt 0;
+}
+.body .diagram svg {
+  width: 100%;
+  height: auto;
+  max-height: 90pt;
+}
+
+/* ============ CHIP STRIP ============ */
+.chip-strip {
+  padding: 6pt 0.45in;
+  display: flex;
+  gap: 5pt;
+  flex-wrap: wrap;
+  border-top: 0.5pt solid var(--rule-gray);
+}
+.chip {
+  font-size: 7.5pt;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: var(--accent-secondary);
+  color: #fff;
+  padding: 3pt 8pt;
+  border-radius: 2pt;
+  white-space: nowrap;
+}
+
+/* ============ FOOTER BAND ============ */
+.footer-band {
+  padding: 5pt 0.45in 0.22in 0.45in;
+  border-top: 1pt solid var(--accent-secondary);
+  text-align: center;
+  font-size: 7pt;
+  font-weight: 500;
+  color: var(--mid-gray);
+  letter-spacing: 0.04em;
+}
+.footer-band a {
+  color: var(--mid-gray);
+  text-decoration: none;
+}
+.footer-band .sep { margin: 0 6pt; color: var(--rule-gray); }

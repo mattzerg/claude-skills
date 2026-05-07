@@ -1,0 +1,9 @@
+/* zerg-navy — deep navy alt theme
+ * Inherits zerg-default; overrides accent + accent-soft only.
+ */
+@import url("zerg-default.css");
+
+:root {
+  --accent: #1F3A5F;
+  --accent-soft: rgba(31, 58, 95, 0.06);
+}

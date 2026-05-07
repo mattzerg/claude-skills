@@ -65,6 +65,19 @@ Plus a Slack self-DM to `D0B109RDJQ6` with the top 5 findings + Obsidian deep-li
 - Voice corpus loaded from `~/.claude/feedback-corpus/voice/`
 - Principles corpus loaded from `~/.claude/feedback-corpus/principles/`
 
+## Graphic / image-asset checks (mandatory at HIGH confidence)
+
+When the target includes any rendered image asset (blog hero, body figure, share variant, annotated screenshot, GIF frame, one-pager PDF page, slide), inspect each PNG/PDF page directly and run the six-rule check from `feedback_graphic_basics.md`. These are HIGH-confidence findings on par with voice anti-patterns in prose:
+
+1. **Edge clip** — any text/badge within 60px of an edge, or any element clipped at the boundary
+2. **Top/bottom strip balance** — top and bottom paddings within 1.5× of each other; no continuous empty horizontal strip >150px
+3. **Title casing** on titles, section headers, structural labels
+4. **Density floor** — ≥4 distinct ideas per body figure; flag minimalist/sparse compositions
+5. **Label/connector overlap** — no text sitting on a connector line, on top of another text element, or on top of a UI primitive it labels
+6. **Same-image-twice** — body figures must read as visually distinct from hero/share variants; same scene with minor variation = repetitive
+
+Per-finding format: cite `feedback_graphic_basics.md` rule N as the principle, attach the rendered image excerpt or coordinate where the violation lives. Matt has called these out 3× now (AdaExplore body-2 2026-05-04, Zergboard body-2 v1 2026-05-06, Zergboard body-2 v4 2026-05-06) — treat as basic, non-negotiable.
+
 ## Requirements
 
 - `pip install playwright pyyaml requests slack_sdk beautifulsoup4 anthropic`

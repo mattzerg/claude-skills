@@ -18,7 +18,46 @@ A skill for producing short software product launch / feature demo videos that d
 6. **End card is disciplined.** Brand mark + one-line headline + one verb-led CTA + URL, held 3–5s. No pricing unless price is the news.
 7. **Silent-first.** The master cut plays meaningfully muted. Sound is bonus, never load-bearing.
 
-The full reasoning + exemplar catalog (Linear, Cursor, Granola, Notion Calendar, Vercel, Replit, Figma, etc.) lives in `best-practices.md` in this skill directory. Read it once when first using this skill; revisit when in doubt.
+## Catalogs (the measured truth — read before iterating)
+
+The skill is anchored on three documents in this directory. Read them BEFORE designing a new video:
+
+1. **`techniques.md`** — frame-by-frame measurements from 10 launch videos (Linear, Cursor, Stripe, Notion Calendar, Replit, Figma, Vercel, Raycast, Lex). Every recipe has measured numbers. §8 has 3 ready-to-execute templates ("Linear Releases mode," "Cursor mode," "Linear Agent mode"). §10 is the recipe priority list.
+2. **`pm_tools_density.md`** — interaction-density measurements from 10 PM-tool demos (Asana, monday.com, Height, Linear Insights, ClickUp, Notion, Trello, Coda). §6 has the "v14 interaction packing" recipe. Targets: 0.5 events/sec on demo content, 6+ distinct verb types.
+3. **`best-practices.md`** — older general-launch-video research. Superseded by techniques.md; kept for the 15-item pre-publish checklist.
+
+## Library (composable primitives — use these, don't roll your own)
+
+`lib/motion_recipes.py` — measured ffmpeg primitives. Use these instead of writing ad-hoc filters:
+- `linear_push_in(scale=1.00→1.04, 2.5s, linear)` — used in 6/10 reference videos. The default UI hold motion.
+- `crash_cut_to_title(text, 1.7s)` — Linear-style mono caps for INTERNAL section breaks. NOT bookends.
+- `title_card_branded(headline, subtitle, hold=1.5s)` — Zerg-branded opening title card with logo + amber accent. USE FOR BOOKEND OPENERS.
+- `logo_card_silence(headline, cta, url, hold=4.0s)` — branded end card paired with music-out. USE FOR BOOKEND CLOSERS.
+- `typewriter_punctual(text, 11ch/s, 2Hz blink)` — Linear's signature pre-logo beat.
+- `kenburns_macro(scale=1.00→1.10, 3.5s)` — B-roll motion. Min 3.5s or it twitches.
+- `mix_music(silent, music, music_out_at_s=duration-3, fade_out=2)` — pairs with `logo_card_silence` so logo holds in silence (most consistent technique across the dataset).
+
+`lib/smooth_record.py` — Playwright helpers for in-browser CSS-driven motion DURING recording. Use these instead of post-production zoompan (which produces visible jitter at slow rates):
+- `setup_smooth_record(page)` — call once after page load.
+- `smooth_zoom(page, scale=1.04, duration_s=2.5, easing="linear")`
+- `smooth_pan_to(page, x_px=-200, duration_s=1.5)`
+- `smooth_zoom_pan(page, scale, x, y, duration)`
+- Browser compositor handles sub-pixel interpolation — no shake.
+
+`lib/end_card.py` — render branded title or end card PNGs (used by the recipes above).
+`lib/caption_overlay.js` — canonical caption styling for in-page captions (only when not using post-production text overlay).
+`lib/checklist.py` — 13-item pre-publish gate (subset of the new video-review skill).
+`lib/storyboard_schema.json` — JSON schema for storyboards.
+
+## Sibling skill: `video-review`
+
+After ANY new video render, run `~/.claude/skills/video-review/run.py <video.mp4>` BEFORE showing Matt. It runs 10 deterministic auto-checks (codec, fps, faststart, duration, cut cadence, hook timing, end-silence, motion jitter, end-card hold) and prompts the 15-item human checklist. **This is the gate that catches regressions** — v11/v12/v13 would all have flagged structural issues here.
+
+## Failure modes captured in memory
+
+- `feedback_video_motion_pitfalls.md` — three concrete pitfalls from v8–v13 iterations: ffmpeg zoompan creates shake at low rates (use smooth_record instead); title/end cards must carry brand identity (not Linear-clone mono caps); demos need ≥1 UI event per 1.5–2s.
+- `feedback_internal_review_pack_format.md` — review pack format for sharing drafts.
+- `project_zergboard_video_brief.md` — standing brief for Zergboard demo videos.
 
 ## Workflow
 

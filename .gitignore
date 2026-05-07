@@ -112,3 +112,41 @@ scansnap-bridge/com.idanbeck.scansnap-bridge.plist
 
 # Zergboard skill (sensitive)
 zergboard-skill/config.json
+
+# Voice-skill self-improvement loop run artifacts (PII: captured product reviews,
+# email drafts, copyedit findings). Re-creatable; never commit.
+fakematt-feedback/state/
+fakematt-feedback/logs/
+fakematt-feedback/sent-log.jsonl
+fakematt-feedback/corrections.md
+fakematt-copyedit/logs/
+fakematt-copyedit/sent-log.jsonl
+fakematt-copyedit/corrections.md
+fakematt-email/logs/
+fakematt-email/sent-log.jsonl
+fakematt-email/corrections.md
+fakematt-personal/logs/
+fakematt-personal/sent-log.jsonl
+fakematt-personal/corrections.md
+launch-announcement/logs/
+launch-announcement/sent-log.jsonl
+launch-announcement/corrections.md
+fakeidan/logs/
+fakeidan/sent-log.jsonl
+fakeidan/corrections.md
+
+# pr-gate run logs (force-push events, gate decisions)
+pr-gate/logs/
+pr-gate/state/
+
+# pr-gate review artifact (transient — written by run.py per invocation)
+.pr-gate-review.md
+
+# Generic catchall for any future voice-skill artifacts
+**/state/202[6-9]*/
+**/sent-log.jsonl
+**/corrections.md
+
+# Landing-page-skill insight scrapes (timestamped run artifacts)
+landing-page-skill/insights/*_202[6-9]*.json
+landing-page-skill/insights/*_202[6-9]*.png

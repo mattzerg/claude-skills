@@ -66,7 +66,12 @@ def mono(size):
     return font(size)
 
 
-def render(*, headline, cta, url, brand, aspect, out_path, accent=None):
+def render(*, headline, cta, url, brand, aspect, out_path, accent=None, subtitle="", show_cta=True, show_url=True):
+    """Render an end card or title card.
+
+    For end cards: pass headline + cta + url (default).
+    For title cards: pass show_cta=False, show_url=False (just brand + headline + subtitle).
+    """
     if aspect not in ASPECTS:
         raise ValueError(f"Aspect must be one of {list(ASPECTS)}; got {aspect}")
     if accent is None:
@@ -113,63 +118,82 @@ def render(*, headline, cta, url, brand, aspect, out_path, accent=None):
         fill=TEXT,
     )
 
-    # Accent underline below headline
+    # Subtitle (if provided) — below headline, smaller, muted
+    subtitle_bottom_y = headline_y + headline_h
+    if subtitle:
+        subtitle_size = int(h * 0.030)
+        subtitle_font = font(subtitle_size, bold=False)
+        sub_bbox = d.textbbox((0, 0), subtitle, font=subtitle_font)
+        sub_w = sub_bbox[2] - sub_bbox[0]
+        sub_h = sub_bbox[3] - sub_bbox[1]
+        sub_y = headline_y + headline_h + int(h * 0.025)
+        d.text(
+            ((w - sub_w) // 2, sub_y),
+            subtitle,
+            font=subtitle_font,
+            fill=MUTED,
+        )
+        subtitle_bottom_y = sub_y + sub_h
+
+    # Accent underline below headline (or subtitle if present)
     underline_w = int(w * 0.08)
-    underline_y = headline_y + headline_h + int(h * 0.025)
+    underline_y = subtitle_bottom_y + int(h * 0.025)
     d.rectangle(
         [(w - underline_w) // 2, underline_y, (w + underline_w) // 2, underline_y + 6],
         fill=accent,
     )
 
-    # CTA — slight offset below the underline
-    cta_size = int(h * 0.040)
-    cta_font = font(cta_size, bold=True)
-    bbox = d.textbbox((0, 0), cta, font=cta_font)
-    cta_w = bbox[2] - bbox[0]
-    cta_y = underline_y + int(h * 0.06)
+    # CTA pill (skipped on title cards)
+    pill_y1 = underline_y  # default fallback for URL positioning if no CTA
+    if show_cta and cta:
+        cta_size = int(h * 0.040)
+        cta_font = font(cta_size, bold=True)
+        bbox = d.textbbox((0, 0), cta, font=cta_font)
+        cta_w = bbox[2] - bbox[0]
+        cta_y = underline_y + int(h * 0.06)
 
-    # CTA pill background
-    pill_pad_x, pill_pad_y = 26, 14
-    pill_x0 = (w - cta_w) // 2 - pill_pad_x
-    pill_x1 = (w + cta_w) // 2 + pill_pad_x
-    pill_y0 = cta_y - pill_pad_y
-    pill_y1 = cta_y + bbox[3] - bbox[1] + pill_pad_y
-    d.rounded_rectangle(
-        [pill_x0, pill_y0, pill_x1, pill_y1],
-        radius=12,
-        fill=accent,
-    )
-    d.text(
-        ((w - cta_w) // 2, cta_y),
-        cta,
-        font=cta_font,
-        fill=BG,
-    )
+        pill_pad_x, pill_pad_y = 26, 14
+        pill_x0 = (w - cta_w) // 2 - pill_pad_x
+        pill_x1 = (w + cta_w) // 2 + pill_pad_x
+        pill_y0 = cta_y - pill_pad_y
+        pill_y1 = cta_y + bbox[3] - bbox[1] + pill_pad_y
+        d.rounded_rectangle(
+            [pill_x0, pill_y0, pill_x1, pill_y1],
+            radius=12,
+            fill=accent,
+        )
+        d.text(
+            ((w - cta_w) // 2, cta_y),
+            cta,
+            font=cta_font,
+            fill=BG,
+        )
 
-    # Arrow after CTA — small chevron
-    arrow_x = pill_x1 + 24
-    arrow_y_center = (pill_y0 + pill_y1) // 2
-    arrow_size = 12
-    d.polygon(
-        [
-            (arrow_x, arrow_y_center - arrow_size),
-            (arrow_x + arrow_size * 1.4, arrow_y_center),
-            (arrow_x, arrow_y_center + arrow_size),
-        ],
-        fill=accent,
-    )
+        # Arrow after CTA
+        arrow_x = pill_x1 + 24
+        arrow_y_center = (pill_y0 + pill_y1) // 2
+        arrow_size = 12
+        d.polygon(
+            [
+                (arrow_x, arrow_y_center - arrow_size),
+                (arrow_x + arrow_size * 1.4, arrow_y_center),
+                (arrow_x, arrow_y_center + arrow_size),
+            ],
+            fill=accent,
+        )
 
-    # URL — small, muted, below CTA
-    url_size = int(h * 0.025)
-    url_font = mono(url_size)
-    bbox = d.textbbox((0, 0), url, font=url_font)
-    url_w = bbox[2] - bbox[0]
-    d.text(
-        ((w - url_w) // 2, pill_y1 + int(h * 0.04)),
-        url,
-        font=url_font,
-        fill=MUTED,
-    )
+    # URL (skipped on title cards)
+    if show_url and url:
+        url_size = int(h * 0.025)
+        url_font = mono(url_size)
+        bbox = d.textbbox((0, 0), url, font=url_font)
+        url_w = bbox[2] - bbox[0]
+        d.text(
+            ((w - url_w) // 2, pill_y1 + int(h * 0.04)),
+            url,
+            font=url_font,
+            fill=MUTED,
+        )
 
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -178,25 +202,31 @@ def render(*, headline, cta, url, brand, aspect, out_path, accent=None):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Generate an end-card PNG for a product video.")
-    ap.add_argument("--headline", required=True, help="One line, what shipped")
-    ap.add_argument("--cta", required=True, help="Verb-led 2–4 word CTA")
-    ap.add_argument("--url", required=True)
+    ap = argparse.ArgumentParser(description="Generate an end-card or title-card PNG for a product video.")
+    ap.add_argument("--headline", required=True, help="One line, what shipped or product name")
+    ap.add_argument("--subtitle", default="", help="Optional subtitle below headline")
+    ap.add_argument("--cta", default="", help="Verb-led 2–4 word CTA (omit on title cards)")
+    ap.add_argument("--url", default="", help="URL (omit on title cards)")
     ap.add_argument("--brand", default="", help="Brand slug (e.g. zergboard)")
     ap.add_argument("--aspect", default="16:9", choices=list(ASPECTS))
     ap.add_argument("--accent", default="amber", choices=["amber", "blue"], help="Brand accent color")
+    ap.add_argument("--no-cta", action="store_true", help="Hide CTA pill (title-card mode)")
+    ap.add_argument("--no-url", action="store_true", help="Hide URL line (title-card mode)")
     ap.add_argument("--out", required=True, help="Output PNG path")
     args = ap.parse_args()
 
     accent = ACCENT_BLUE if args.accent == "blue" else ACCENT
     out = render(
         headline=args.headline,
+        subtitle=args.subtitle,
         cta=args.cta,
         url=args.url,
         brand=args.brand,
         aspect=args.aspect,
         out_path=args.out,
         accent=accent,
+        show_cta=not args.no_cta,
+        show_url=not args.no_url,
     )
     print(f"Wrote {out} ({out.stat().st_size:,} bytes)")
 

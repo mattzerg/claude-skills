@@ -37,6 +37,34 @@ from lib.voice import (
 
 SKILL_ROOT = Path(__file__).resolve().parent
 STATE_ROOT = SKILL_ROOT / "state"
+SENT_LOG = SKILL_ROOT / "sent-log.jsonl"
+
+# Owned-domain whitelist — only these get learn-loop tracking.
+# Other targets (CesiumAstro, Michael's zergboard-preview, competitors) are reference-only
+# per memory: feedback_fakematt_scope.md.
+OWNED_DOMAINS = (
+    "zergai.com", "zerg.ai",
+    "zergboard-preview.pages.dev",
+    "zerglytics.fly.dev",
+    "localhost", "127.0.0.1",
+)
+
+
+def _is_owned(target_url: str) -> bool:
+    from urllib.parse import urlparse
+    try:
+        host = (urlparse(target_url).hostname or "").lower()
+    except Exception:
+        return False
+    return any(host == d or host.endswith("." + d) or host.startswith(d) for d in OWNED_DOMAINS)
+
+
+def _log_sent_attempt(record: dict) -> None:
+    try:
+        with open(SENT_LOG, "a") as f:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    except Exception as e:
+        print(f"[sent-log] {e}", file=sys.stderr)
 
 
 def _load_id_set(path: Path, key: str) -> set[str]:
@@ -271,6 +299,30 @@ def main(argv=None) -> int:
                 print(f"[slack] self-DM posted ts={slack_res['ts']}")
             else:
                 print(f"[slack] skipped: {slack_res.get('_error', 'unknown')}")
+
+    # Learning loop instrumentation — log per-page snapshots only for owned targets.
+    if _is_owned(target.canonical):
+        page_snapshots = []
+        for cap in captures:
+            payload = cap.to_payload()
+            text = (payload.get("body_text") or payload.get("text") or "")[:6000]
+            page_snapshots.append({
+                "url": cap.final_url,
+                "text_hash": hash(text) & 0xffffffff,
+                "text_snippet": text,
+            })
+        _log_sent_attempt({
+            "ts": dt.datetime.now().strftime("%Y%m%dT%H%M%S"),
+            "run_id": run_id,
+            "target": target.canonical,
+            "owned": True,
+            "finding_count": len(all_findings),
+            "page_snapshots": page_snapshots,
+            "checked": False,
+        })
+        print(f"[sent-log] tracked {len(page_snapshots)} page snapshots (target is owned)")
+    else:
+        print(f"[sent-log] {target.canonical} is not owned — skipping learning loop")
     return 0
 
 

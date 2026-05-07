@@ -100,6 +100,7 @@ Replit's "Vibe Code Videos" post (their internal motion-design playbook) is a us
 - **Synthetic cursor moves**: ScreenStudio (and now Rapidemo, Tella, Arcade) auto-smooth cursor paths and add inertia. Use synthetic cursor any time the video is for marketing rather than tutorial; raw cursors look amateur.
 - **Zoom-into-detail beats**: 1.0x → 1.4–1.8x zoom on the moment of interaction, held for ~1.5s, then zoom back out. ScreenStudio does this automatically on click. Don't over-zoom — past 2.0x you lose the surrounding context.
 - **Keystroke HUD overlays**: Raycast videos use these. Useful when the *shortcut itself* is the news. Skip if the action is mouse-only.
+- **Active-element-in-frame rule**: when the action happens in a sub-region of a wider canvas (a kanban column inside a board, a row inside a long table), zoom + pan so the element being narrated is centered, not cropped off. Failure case 2026-05-05 v10–v11 of the Zergboard demo: the static wide crop showed three columns, but adding a card to "Backlog" pushed the new card below the visible frame — viewer couldn't see the action the caption was describing. Per-beat crop with a short pan (0.4–0.6s ease-in-out) toward the active column is the fix; static wide framing only works when every beat's action is already inside it.
 
 ### Aspect ratios and safe areas
 - **16:9** — site hero embed, YouTube, X landscape autoplay. Use when the UI is genuinely wide (IDE, dashboard, calendar grid).
