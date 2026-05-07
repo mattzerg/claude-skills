@@ -1,0 +1,11 @@
+/* zerg-warm — rust orange on warm paper, editorial feel
+ * Inherits zerg-default; overrides accent + paper.
+ */
+@import url("zerg-default.css");
+
+:root {
+  --accent: #D97757;
+  --accent-soft: rgba(217, 119, 87, 0.07);
+  --paper: #FAF9F5;
+}
+body { background: var(--paper); }

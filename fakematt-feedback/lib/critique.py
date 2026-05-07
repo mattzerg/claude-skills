@@ -201,7 +201,10 @@ def critique_page(
     if SDK not available or ANTHROPIC_API_KEY is missing.
     """
     try:
-        from anthropic import Anthropic
+        import sys as _sys
+        from pathlib import Path as _Path
+        _sys.path.insert(0, str(_Path.home() / ".config" / "zerg"))
+        from anthropic_client import make_client
     except ImportError:
         return _critique_via_cli_fallback(voice_block, principles_block, page_payload, model=model, timeout=timeout, persona=persona, target_kind=target_kind)
 
@@ -260,7 +263,7 @@ def critique_page(
     })
 
     try:
-        client = Anthropic(api_key=api_key, timeout=timeout)
+        client = make_client(api_key=api_key, timeout=timeout, source="fakematt-feedback")
         resp = client.messages.create(
             model=model,
             max_tokens=DEFAULT_MAX_TOKENS,

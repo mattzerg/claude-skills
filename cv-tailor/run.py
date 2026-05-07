@@ -20,12 +20,12 @@ OUT_BASE = Path('/tmp/cv-tailor')
 
 SOURCE_FILES = [
     ('Best variant (default starting point)', CAREER / 'CV Versions' / 'extracts' / 'Matthew Eisner CV - Nov 2025 (Best).md'),
-    ('Diff Matrix (variant comparison)', CAREER / 'CV Diff Matrix.md'),
-    ('Career Narrative (arc + patterns)', CAREER / 'Narrative.md'),
-    ('Skills Evolution (skills × CV history)', CAREER / 'Skills Evolution.md'),
-    ('Recommendations Received', CAREER / 'Recommendations Received.md'),
-    ('Honors', CAREER / 'Honors.md'),
-    ('Publications', CAREER / 'Publications.md'),
+    ('Diff Matrix (variant comparison)', CAREER / 'Synthesis' / 'CV Diff Matrix.md'),
+    ('Career Narrative (arc + patterns)', CAREER / 'Synthesis' / 'Narrative.md'),
+    ('Skills Evolution (skills × CV history)', CAREER / 'Synthesis' / 'Skills Evolution.md'),
+    ('Recommendations Received', CAREER / 'LinkedIn' / 'Recommendations Received.md'),
+    ('Honors', CAREER / 'LinkedIn' / 'Honors.md'),
+    ('Publications', CAREER / 'LinkedIn' / 'Publications.md'),
     ('Vang Capital Portfolio', CAREER / 'Vang Capital' / 'Portfolio.md'),
     ('Vang Advisory Completed Projects', CAREER / 'Vang Advisory' / 'Completed Projects.md'),
 ]
@@ -158,11 +158,11 @@ def cmd_review(args):
              '', '---', '',
              '## Reference: Skills Evolution',
              '',
-             load(CAREER / 'Skills Evolution.md'),
+             load(CAREER / 'Synthesis' / 'Skills Evolution.md'),
              '', '---', '',
              '## Reference: Diff Matrix',
              '',
-             load(CAREER / 'CV Diff Matrix.md')]
+             load(CAREER / 'Synthesis' / 'CV Diff Matrix.md')]
 
     (out_dir / 'brief.md').write_text('\n'.join(brief), encoding='utf-8')
     print(f'Review brief written: {out_dir / "brief.md"}')

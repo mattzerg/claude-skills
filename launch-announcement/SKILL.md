@@ -1,6 +1,6 @@
 ---
 name: launch-announcement
-description: Review or scaffold a launch announcement blog post (product, feature, funding, milestone) against a 15-post corpus from Stripe, Linear, Anthropic, OpenAI, Vercel, Cloudflare, Plaid, Resend, Supabase, Modal, Replit, Notion, Figma, GitHub, and Mercury. Two modes — `review` (audit a draft for missing structural beats, voice drift, anti-patterns) and `scaffold` (generate a draft skeleton from a product brief). Anchored on `MattZerg/launch_announcement_style.md` + the corpus exemplars. Output is professional/structured with citations to the rule or pattern; never auto-posts. USE PROACTIVELY when Matt drafts or is about to draft a launch announcement, OR before any launch post leaves the vault.
+description: Review or scaffold a launch announcement blog post (product, feature, funding, milestone) against a 15-post corpus from Stripe, Linear, Anthropic, OpenAI, Vercel, Cloudflare, Plaid, Resend, Supabase, Modal, Replit, Notion, Figma, GitHub, and Mercury. Two modes — `review` (audit a draft for missing structural beats, voice drift, anti-patterns) and `scaffold` (generate a draft skeleton from a product brief). Anchored on `MattZerg/_style/launch_announcement_style.md` + the corpus exemplars. Output is professional/structured with citations to the rule or pattern; never auto-posts. USE PROACTIVELY when Matt drafts or is about to draft a launch announcement, OR before any launch post leaves the vault.
 allowed-tools: Bash, Read, Write
 ---
 
@@ -72,8 +72,8 @@ Writes:
 
 ## Anchors loaded each run
 
-1. `MattZerg/launch_announcement_style.md` — primary genre guide (default shape, what works, what hurts, voice rules, pre-publish test)
-2. `MattZerg/writing_style.md` — sentence-level voice + AI tells (loaded for context; copyedit-skill is the primary catcher)
+1. `MattZerg/_style/launch_announcement_style.md` — primary genre guide (default shape, what works, what hurts, voice rules, pre-publish test)
+2. `MattZerg/_style/writing_style.md` — sentence-level voice + AI tells (loaded for context; copyedit-skill is the primary catcher)
 3. `~/.claude/skills/launch-announcement/corpus/launch-announcement-corpus.md` — full 15-post analysis (per-post breakdown + synthesis), used as ground truth for "X company does this"
 
 ## What this skill is NOT

@@ -1,0 +1,74 @@
+name: PR Gate (fakeidan + fakematt review)
+
+# Mirrors the local ~/.claude/skills/pr-gate/ skill but runs in CI so the gate
+# fires regardless of how the PR was opened (UI, gh CLI, or someone else).
+#
+# Posts the review as a PR comment and fails the check if HIGH findings appear.
+# Override: add label `skip-pr-gate` to the PR.
+#
+# Required repo secret: ANTHROPIC_API_KEY (soft-passes if missing)
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, reopened, edited]
+
+permissions:
+  contents: read
+  pull-requests: write   # to post comments
+
+jobs:
+  gate:
+    if: ${{ !contains(github.event.pull_request.labels.*.name, 'skip-pr-gate') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Check out PR
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Anthropic SDK
+        run: pip install --quiet anthropic
+
+      - name: Compute diff vs base
+        id: diff
+        run: |
+          BASE_SHA="${{ github.event.pull_request.base.sha }}"
+          HEAD_SHA="${{ github.event.pull_request.head.sha }}"
+          echo "base_sha=$BASE_SHA" >> $GITHUB_OUTPUT
+          echo "head_sha=$HEAD_SHA" >> $GITHUB_OUTPUT
+          git diff --name-only "$BASE_SHA" "$HEAD_SHA" > .pr-gate-files.txt
+          git diff "$BASE_SHA" "$HEAD_SHA" > .pr-gate-diff.patch
+          echo "Changed files:"; cat .pr-gate-files.txt
+          echo "Diff size: $(wc -c < .pr-gate-diff.patch) bytes"
+
+      - name: Run pr-gate review
+        id: review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_REPO: ${{ github.repository }}
+        run: python3 .github/scripts/pr_gate_ci.py
+
+      - name: Post / update PR comment
+        if: always() && hashFiles('.pr-gate-review.md') != ''
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: pr-gate
+          path: .pr-gate-review.md
+
+      - name: Fail check if HIGH findings
+        if: steps.review.outputs.high_count != '0'
+        run: |
+          echo "::error::PR Gate found ${{ steps.review.outputs.high_count }} HIGH findings"
+          exit 1

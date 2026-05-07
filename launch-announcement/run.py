@@ -42,13 +42,26 @@ CORPUS_FILE = SKILL_ROOT / "corpus" / "launch-announcement-corpus.md"
 VAULT_ROOT = Path(
     "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
 )
-GENRE_GUIDE = VAULT_ROOT / "launch_announcement_style.md"
-WRITING_STYLE = VAULT_ROOT / "writing_style.md"
+GENRE_GUIDE = VAULT_ROOT / "_style" / "launch_announcement_style.md"
+if not GENRE_GUIDE.exists():
+    GENRE_GUIDE = VAULT_ROOT / "launch_announcement_style.md"  # legacy fallback
+WRITING_STYLE = VAULT_ROOT / "_style" / "writing_style.md"
+if not WRITING_STYLE.exists():
+    WRITING_STYLE = VAULT_ROOT / "writing_style.md"  # legacy fallback
+VOICE_UNIVERSALS = VAULT_ROOT / "_style" / "voice_universals.md"
+LEARNED_PATTERNS = VAULT_ROOT / "_style" / "learned_patterns.md"
+LAUNCH_CORRECTIONS = Path(__file__).parent / "corrections.md"
 PDF_SCRIPT = Path("/tmp/md_to_pdf.py")
 
 
 def load_anchors(quick: bool = False) -> str:
     parts = []
+    if VOICE_UNIVERSALS.exists():
+        parts.append(f"# VOICE UNIVERSALS (cross-surface — applies always)\n\n{VOICE_UNIVERSALS.read_text()}")
+    if LEARNED_PATTERNS.exists() and LEARNED_PATTERNS.stat().st_size > 200:
+        parts.append(f"# LEARNED PATTERNS (auto-promoted from Matt's edits)\n\n{LEARNED_PATTERNS.read_text()}")
+    if LAUNCH_CORRECTIONS.exists() and LAUNCH_CORRECTIONS.stat().st_size > 0:
+        parts.append(f"# LAUNCH-ANNOUNCEMENT CORRECTIONS (recent diffs)\n\n{LAUNCH_CORRECTIONS.read_text()}")
     if GENRE_GUIDE.exists():
         parts.append(f"# LAUNCH ANNOUNCEMENT GENRE GUIDE (canonical)\n\n{GENRE_GUIDE.read_text()}")
     else:
@@ -261,18 +274,38 @@ def cmd_review(args) -> int:
     started = time.time()
     anchors = load_anchors(quick=args.quick)
     results = []
+    sent_log = Path(__file__).parent / "sent-log.jsonl"
     for raw in args.drafts:
         path = Path(raw)
         if not path.exists():
             print(f"MISSING: {path}", file=sys.stderr)
             continue
         print(f"[launch-announcement review] {path.name}…", file=sys.stderr)
+        # Snapshot input content BEFORE review for the learning loop
+        try:
+            input_content = path.read_text()
+        except Exception:
+            input_content = ""
         review_md = review_one(path, anchors, args.model)
         review_path, interview_path = write_review(out_dir, path, review_md)
         results.append({"draft": path, "review": review_path, "interview": interview_path})
         print(f"  → {review_path}", file=sys.stderr)
         if interview_path:
             print(f"  → {interview_path}  (LOW-confidence items)", file=sys.stderr)
+        # Log for learn.py — track if Matt edits the input draft after seeing the review
+        try:
+            import json as _json
+            with open(sent_log, "a") as f:
+                f.write(_json.dumps({
+                    "ts": dt.datetime.now().strftime("%Y%m%dT%H%M%S"),
+                    "input_path": str(path.resolve()),
+                    "input_content_at_review": input_content,
+                    "review_path": str(review_path),
+                    "model": args.model,
+                    "checked": False,
+                }) + "\n")
+        except Exception as e:
+            print(f"[sent-log] {e}", file=sys.stderr)
     if not results:
         print("No reviews produced.", file=sys.stderr)
         return 1

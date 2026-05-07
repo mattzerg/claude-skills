@@ -1,0 +1,111 @@
+{
+  "_comment": "Recipient email → register classification. A=Formal-Warm, B=Mid-Casual, C=Casual-Pro. Lowercase keys.",
+  "_updated": "2026-05-05",
+
+  "A": {
+    "_label": "Formal-Warm — accountants/lawyers/fund/hiring",
+    "members": [
+      "bleidel@kbgrp.com",
+      "shane@shieldaccountancy.co.uk",
+      "teamalpha@shieldaccountancy.co.uk",
+      "kevin@shieldaccountancy.co.uk",
+      "tom.bell@shieldaccountancy.co.uk",
+      "finance@shieldaccountancy.co.uk",
+      "amelia@80twenty.com",
+      "marc@venturerock.com",
+      "ryann@plumenetwork.xyz",
+      "will@brooktreefund.com",
+      "emilybattiato@montagwealth.com",
+      "zacharyjurich@montagwealth.com",
+      "johnmontag@montagwealth.com",
+      "jillbourland@montagwealth.com",
+      "jmcnett@teamschostak.com",
+      "mschostak@schostak.com",
+      "alex.arnold@truist.com",
+      "eellis@ibcp.com",
+      "jlockwood@ibcp.com",
+      "jesse@startco.com",
+      "noah@adamantum.com",
+      "marketing@realvision.com"
+    ]
+  },
+
+  "B": {
+    "_label": "Mid-Casual — warm biz peers, established relationships",
+    "members": [
+      "inchausn@gmail.com",
+      "julian_d@hotmail.co.uk",
+      "jonathan@anyroad.com",
+      "kburson@umich.edu",
+      "gobesmichael@gethamiltonsquareinvestments.info",
+      "pawel@techtree.dev",
+      "josh@jta-ventures.com",
+      "michael.zolla@gmail.com",
+      "evanzin@gmail.com",
+      "matthewbowenesq@gmail.com",
+      "nektarios@radish.credit",
+      "nektarios@startupbootcamp.org",
+      "nassim@eternacapital.com",
+      "fmemoria@cryptocompare.com",
+      "skaushal@eteaminc.com",
+      "mark@mecka.ai",
+      "stonemiller.dylan@gmail.com",
+      "jelmerposthumus@hotmail.com",
+      "nick@gringaming.co",
+      "interoperabletalent@gmail.com",
+      "qomooatomsa@gmail.com",
+      "julie@blockworks.co",
+      "jeng.yang.chia@panteracapital.com",
+      "jesse@start.coop",
+      "helen.partz@cointelegraph.com",
+      "info@williamwongdds.com",
+      "matt@dinari.com",
+      "gabe@dinari.com",
+      "matthew.eisner@samba.tv",
+      "pmanchan@umich.edu",
+      "adriankpang@gmail.com"
+    ]
+  },
+
+  "C": {
+    "_label": "Casual-Pro — close colleagues, peer founders, met-IRL friends",
+    "members": [
+      "josh@stride-studios.com",
+      "ethan@glystn.com",
+      "ethan.fassett@gmail.com",
+      "evan@lazertechnologies.com",
+      "gb@copernicspace.com",
+      "byronalsberg@gmail.com",
+      "byron@prod-ind.com",
+      "jake.a.timothy@gmail.com",
+      "idanbeck@gmail.com",
+      "idan@epochml.com",
+      "austin.shea@cesiumastro.com",
+      "joe.ellis@cesiumastro.com",
+      "ssoleima92@gmail.com",
+      "amanda@oconnordetroit.com",
+      "troy.jackson@detroitmi.gov",
+      "wyatt@realitynet.io",
+      "jessica@oliverandvine.com",
+      "leslie@example.com",
+      "leutholdleslie@gmail.com",
+      "shah.m.neal@gmail.com",
+      "jelmer posthumus_personal"
+    ]
+  },
+
+  "_excluded": {
+    "_label": "Personal/family — DO NOT use professional voice",
+    "members": [
+      "jens.arne.hartwig@gmail.com",
+      "dean.eisner@gmail.com",
+      "ce3136@gmail.com",
+      "christine@fromhopetohomefilm.com",
+      "leutholdcat@hotmail.com",
+      "seisner1234@gmail.com",
+      "matteisn@gmail.com"
+    ]
+  },
+
+  "_fallback_rule": "If recipient not in any register: classify by domain + prior-thread tone. Default to B (mid-casual) if unclear. Personal Gmail addresses (gmail.com, hotmail.com) without prior thread → B. Corporate domains without prior thread → A."
+}

@@ -75,9 +75,12 @@ def _call_sdk(prompt: str, system: Optional[str], model: str, timeout: int) -> s
     (e.g. "you are a competitive intelligence analyst extracting…"). User prompts
     vary per call so are not cached.
     """
-    import anthropic
+    import sys as _sys
+    from pathlib import Path as _Path
+    _sys.path.insert(0, str(_Path.home() / ".config" / "zerg"))
+    from anthropic_client import make_client
 
-    client = anthropic.Anthropic(timeout=timeout)
+    client = make_client(timeout=timeout, source="competitive-review")
     kwargs: dict = {
         "model": model,
         "max_tokens": 8192,
