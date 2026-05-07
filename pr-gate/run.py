@@ -115,7 +115,14 @@ def classify(files: list[str]) -> dict:
 
 
 def has_high_findings(text: str) -> tuple[bool, list[str]]:
-    """Heuristic: look for 'HIGH' confidence/severity markers in review output."""
+    """Heuristic: look for 'HIGH' confidence/severity markers in review output.
+
+    Also fail-closed on tooling failures: if a fake-skill timed out or crashed
+    we must NOT count that as "0 HIGH" — silence isn't success. Treat any
+    timeout/crash sentinel as a synthetic HIGH so the gate blocks.
+    """
+    if re.search(r"timeout — gate FAIL-CLOSED|FAIL-CLOSED|timeout\)$", text, re.M):
+        return (True, ["**HIGH** (gate fail-closed: review tool timed out — re-run with longer timeout or split the diff)"])
     lines = text.splitlines()
     high_lines = []
     for i, line in enumerate(lines):

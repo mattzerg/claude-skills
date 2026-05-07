@@ -139,6 +139,9 @@ fakeidan/corrections.md
 pr-gate/logs/
 pr-gate/state/
 
+# pr-gate review artifact (transient — written by run.py per invocation)
+.pr-gate-review.md
+
 # Generic catchall for any future voice-skill artifacts
 **/state/202[6-9]*/
 **/sent-log.jsonl
