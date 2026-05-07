@@ -102,7 +102,7 @@ zerg.ai  ·  contact@zergai.com  ·  2026
 ```
 
 ### Callout / sidebar block
-Bordered or tinted block (left-border 3pt accent OR background `rgba(C0392B,0.05)`). Used for pricing tier card, key facts rail, or "what's included" highlight.
+Bordered or tinted block (left-border 3pt accent OR background `rgba(179,102,47,0.08)`). Used for pricing tier card, key facts rail, or "what's included" highlight.
 
 ## Recurring visual moves (steal from corpus)
 

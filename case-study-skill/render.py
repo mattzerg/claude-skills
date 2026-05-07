@@ -52,16 +52,16 @@ CSS = r"""
   @page { size: Letter; margin: 0.4in 0.6in 0.5in 0.6in; }
 
   :root {
-    --ink:        #1A1A1A;       /* Zerg charcoal */
-    --ink-soft:   #2c2c2c;
-    --ink-medium: #3f3f3f;
-    --muted:      #5A5A5A;       /* Zerg mid-gray */
-    --rule:       #D8D8D8;       /* Zerg rule-gray */
+    --ink:        #111514;       /* Zerg charcoal (live-site) */
+    --ink-soft:   #1f2522;
+    --ink-medium: #41504c;
+    --muted:      #52605c;       /* Zerg mid-gray (live-site) */
+    --rule:       #dad6cb;       /* Zerg rule-gray (~rgba(17,21,20,0.15) on cream) */
     --rule-soft:  #ECECEC;
-    --accent:     #C0392B;       /* Zerg brick red */
-    --accent-2:   #8E2A20;       /* darker brick */
-    --accent-bg:  #fbeeec;       /* 6% accent tint */
-    --soft-bg:    #FAFAF8;
+    --accent:     #b3662f;       /* Zerg burnt orange (live-site primary) */
+    --accent-2:   #8a4a1f;       /* darker burnt rust (AA-contrast on cream) */
+    --accent-bg:  rgba(179,102,47,0.08);
+    --soft-bg:    #f4f0e7;       /* Zerg cream paper (live-site bg) */
     --warn-bg:    #fff8e1;
     --warn-ink:   #8a6d00;
     --warn-rule:  #f0e0a0;
@@ -70,7 +70,7 @@ CSS = r"""
   * { box-sizing: border-box; }
 
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
     font-size: 10.5pt;
     line-height: 1.6;
     color: var(--ink-soft);
