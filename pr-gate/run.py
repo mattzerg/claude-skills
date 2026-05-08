@@ -87,6 +87,10 @@ def parse_args():
     parser.add_argument("--base", default=None)
     parser.add_argument("--skip-copyedit", action="store_true")
     parser.add_argument("--skip-fakeidan", action="store_true")
+    parser.add_argument("--fast", action="store_true",
+                        help="fast-path mode: identity + cap + AI-coauthor scrub + launch-premise only. "
+                             "Skips fakeidan + fakematt-copyedit + launch-announcement (LLM calls). "
+                             "Use in pre-push hook to avoid SSH idle-timeout dropping the connection.")
     parser.add_argument("--urgent", action="store_true",
                         help="raise open-PR cap from 2 to 3 (logged)")
     parser.add_argument("--force", action="store_true")
@@ -311,7 +315,7 @@ def run_fakeidan(base: str, classification: dict, out_dir: Path, model: str = "c
         r = subprocess.run(
             ["python3", str(FAKEIDAN), str(diff_file),
              "--mode", mode, "--out-dir", str(out_dir), "--model", model],
-            capture_output=True, text=True, timeout=300,
+            capture_output=True, text=True, timeout=600,
         )
         # fakeidan writes a review file; capture stdout as a fallback
         review_files = list(out_dir.glob("*review*.md"))
@@ -334,7 +338,7 @@ def run_copyedit(prose_files: list[str], out_dir: Path, model: str = "claude-opu
             ["python3", str(FAKEMATT_COPYEDIT)] + [str(p) for p in existing] + [
                 "--out-dir", str(out_dir), "--model", model, "--no-pdf",
             ],
-            capture_output=True, text=True, timeout=300,
+            capture_output=True, text=True, timeout=600,
         )
         review_files = list(out_dir.glob("*.review.md"))
         text = "\n\n---\n\n".join(p.read_text() for p in review_files) if review_files else r.stdout
@@ -356,7 +360,7 @@ def run_launch_review(launch_files: list[str], out_dir: Path, model: str = "clau
             ["python3", str(LAUNCH_ANNOUNCEMENT), "review"] + [str(p) for p in existing] + [
                 "--out-dir", str(out_dir), "--model", model, "--no-pdf",
             ],
-            capture_output=True, text=True, timeout=300,
+            capture_output=True, text=True, timeout=600,
         )
         review_files = list(out_dir.glob("*.review.md"))
         text = "\n\n---\n\n".join(p.read_text() for p in review_files) if review_files else r.stdout
@@ -936,34 +940,44 @@ def main() -> int:
             print("[pr-gate] FORCED past launch-premise gate (logged)", file=sys.stderr)
 
     sections = []
-    with tempfile.TemporaryDirectory() as tmpd:
-        out_dir = Path(tmpd)
+    if args.fast:
+        # Fast-path: identity + cap + AI-coauthor + launch-premise + asset previews
+        # have already run above. Skip the LLM reviews — they're the part that
+        # makes the pre-push hook long enough for GitHub to drop the SSH
+        # connection mid-hook. Full LLM gate runs at `gh pr create` time and in
+        # the GitHub Action.
+        print("[pr-gate] --fast: skipping LLM reviews (fakeidan, copyedit, launch-announcement)", file=sys.stderr)
+        gate_review = None
+    else:
+        with tempfile.TemporaryDirectory() as tmpd:
+            out_dir = Path(tmpd)
 
-        # Run fakeidan
-        if not args.skip_fakeidan and FAKEIDAN.exists():
-            print("[pr-gate] running fakeidan…", file=sys.stderr)
-            _, idan_text = run_fakeidan(base, classification, out_dir / "fakeidan")
-            high, lines = has_high_findings(idan_text)
-            sections.append(("fakeidan", idan_text, lines))
+            # Run fakeidan
+            if not args.skip_fakeidan and FAKEIDAN.exists():
+                print("[pr-gate] running fakeidan…", file=sys.stderr)
+                _, idan_text = run_fakeidan(base, classification, out_dir / "fakeidan")
+                high, lines = has_high_findings(idan_text)
+                sections.append(("fakeidan", idan_text, lines))
 
-        # Run fakematt-copyedit on prose
-        if not args.skip_copyedit and classification["prose"] and FAKEMATT_COPYEDIT.exists():
-            print(f"[pr-gate] running fakematt-copyedit on {len(classification['prose'])} prose file(s)…", file=sys.stderr)
-            _, copy_text = run_copyedit(classification["prose"], out_dir / "copyedit")
-            high, lines = has_high_findings(copy_text)
-            sections.append(("fakematt-copyedit", copy_text, lines))
+            # Run fakematt-copyedit on prose
+            if not args.skip_copyedit and classification["prose"] and FAKEMATT_COPYEDIT.exists():
+                print(f"[pr-gate] running fakematt-copyedit on {len(classification['prose'])} prose file(s)…", file=sys.stderr)
+                _, copy_text = run_copyedit(classification["prose"], out_dir / "copyedit")
+                high, lines = has_high_findings(copy_text)
+                sections.append(("fakematt-copyedit", copy_text, lines))
 
-        # Run launch-announcement review on launch posts
-        if classification["launch"] and LAUNCH_ANNOUNCEMENT.exists():
-            print(f"[pr-gate] running launch-announcement review on {len(classification['launch'])} launch file(s)…", file=sys.stderr)
-            _, launch_text = run_launch_review(classification["launch"], out_dir / "launch")
-            high, lines = has_high_findings(launch_text)
-            sections.append(("launch-announcement", launch_text, lines))
+            # Run launch-announcement review on launch posts
+            if classification["launch"] and LAUNCH_ANNOUNCEMENT.exists():
+                print(f"[pr-gate] running launch-announcement review on {len(classification['launch'])} launch file(s)…", file=sys.stderr)
+                _, launch_text = run_launch_review(classification["launch"], out_dir / "launch")
+                high, lines = has_high_findings(launch_text)
+                sections.append(("launch-announcement", launch_text, lines))
 
-        gate_review = write_gate_review(repo_root, sections)
+            gate_review = write_gate_review(repo_root, sections)
 
     total_high = sum(len(lines) for _, _, lines in sections)
-    print(f"[pr-gate] review written to {gate_review}", file=sys.stderr)
+    if gate_review is not None:
+        print(f"[pr-gate] review written to {gate_review}", file=sys.stderr)
     print(f"[pr-gate] total HIGH findings: {total_high}", file=sys.stderr)
 
     if total_high > 0 and not args.force:

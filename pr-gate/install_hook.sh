@@ -34,6 +34,10 @@ write_hook() {
 # pre-push hook — runs pr-gate before push to feature branches.
 # Skips main/development/master pushes (those don't go through PR review).
 # Override: git push --no-verify
+# Optional repo config:
+#   git config pr-gate.identity matt-personal  # passes --matt-personal
+#   git config pr-gate.identity matt-led       # passes --matt-led
+#   git config pr-gate.identity ai-led         # passes --ai-led
 # Source: ~/.claude/skills/pr-gate/install_hook.sh
 
 set -e
@@ -63,7 +67,21 @@ echo "[pre-push] running pr-gate on $gate_branch …"
 echo "[pre-push] (skip with: git push --no-verify)"
 echo
 
-if /usr/bin/python3 "$PR_GATE" --dry-run; then
+identity=$(git config --get pr-gate.identity || true)
+identity_flag=""
+case "$identity" in
+    matt-personal) identity_flag="--matt-personal" ;;
+    matt-led) identity_flag="--matt-led" ;;
+    ai-led) identity_flag="--ai-led" ;;
+    "") ;;
+    *)
+        echo "[pre-push] invalid pr-gate.identity=$identity"
+        echo "[pre-push] expected one of: matt-personal, matt-led, ai-led"
+        exit 2
+        ;;
+esac
+
+if /usr/bin/python3 "$PR_GATE" --dry-run --fast $identity_flag; then
     echo
     echo "[pre-push] gate passed — push proceeding."
     exit 0
@@ -114,7 +132,11 @@ if [ ${#TARGETS[@]} -eq 0 ]; then
     exit 2
 fi
 
-echo "Installing pre-push hook${INSTALL_ACTION:+ + GitHub Action} in ${#TARGETS[@]} repo(s):"
+action_label=""
+if [ "$INSTALL_ACTION" -eq 1 ]; then
+    action_label=" + GitHub Action"
+fi
+echo "Installing pre-push hook${action_label} in ${#TARGETS[@]} repo(s):"
 for repo in "${TARGETS[@]}"; do
     echo "[$repo]"
     write_hook "$repo"
