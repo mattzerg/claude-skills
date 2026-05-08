@@ -12,6 +12,7 @@ Optional env (passed by workflow):
     PR_BODY    — current PR body (scanned for AI-coauthor lines)
     PR_NUMBER  — current PR number (excluded from backlog count)
     PR_REPO    — current repo nameWithOwner
+    PR_GATE_IDENTITY — optional: matt-personal | matt-led | ai-led
 """
 from __future__ import annotations
 
@@ -36,6 +37,9 @@ MAX_DIFF_CHARS = 80_000
 
 OPEN_PR_CAP_DEFAULT = 2
 OPEN_PR_CAP_URGENT = 3
+GITHUB_PERSONAL_ACCOUNT = "matteisn"
+GITHUB_AI_ACCOUNT = "mattzerg"
+PERSONAL_GITHUB_OWNERS = {"matteisn", "mattheweisner"}
 
 PROSE_PATTERNS = (re.compile(r"\.md$"), re.compile(r"\.mdx$"), re.compile(r"\.txt$"))
 CODE_EXTS = (".py", ".ts", ".tsx", ".js", ".jsx", ".vue", ".rs", ".go", ".java", ".rb", ".sql")
@@ -46,6 +50,23 @@ LAUNCH_FILE_PATTERNS = (
     re.compile(r"Writing/[^/]*[Ll]aunch", re.I),
     re.compile(r"_announcement", re.I),
 )
+
+# Asset-preview detection — for PRs that touch content/blog/copy/video/landing,
+# the local pr-gate prepends a `<details>` preview block to the PR body. If a
+# PR opened without going through pr-gate (or with --no-asset-previews), flag
+# as MEDIUM so the reviewer at least sees what's changing visually.
+ASSET_IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".avif")
+ASSET_VIDEO_EXTS = (".mp4", ".mov", ".webm", ".m4v")
+ASSET_BLOG_PATTERNS = (
+    re.compile(r"(^|/)content/blog/.+\.mdx?$", re.I),
+    re.compile(r"(^|/)blog/[^/]+\.mdx?$", re.I),
+)
+ASSET_LANDING_PATTERNS = (
+    re.compile(r"web/src/pages/.+\.vue$"),
+    re.compile(r"(^|/)pages/.*landing.*\.(vue|tsx|jsx|html)$", re.I),
+    re.compile(r"(^|/)landing-?page", re.I),
+)
+ASSET_PREVIEW_BODY_MARKERS = ("📎 Asset previews", ".pr-gate-asset-previews.md")
 
 AI_COAUTHOR_PATTERNS = (
     re.compile(r"^\s*Co-?[Aa]uthored-?[Bb]y:\s*Claude\b.*$", re.M),
@@ -130,6 +151,36 @@ def classify(files: list[str]) -> dict:
     return out
 
 
+def count_preview_assets(files: list[str]) -> dict:
+    """How many image/video/blog/landing/copy files are in the diff?
+
+    Used to detect PRs that should have an asset-preview block in the body.
+    Mirrors classify_assets() in ~/.claude/skills/pr-gate/run.py but without
+    needing the per-file status (CI doesn't easily separate add/modify/delete
+    here, and a deleted file just won't render — soft check is fine).
+    """
+    out = {"images": 0, "videos": 0, "blog": 0, "landing": 0, "copy": 0}
+    for f in files:
+        lf = f.lower()
+        if any(lf.endswith(e) for e in ASSET_IMAGE_EXTS):
+            out["images"] += 1
+        elif any(lf.endswith(e) for e in ASSET_VIDEO_EXTS):
+            out["videos"] += 1
+        elif any(p.search(f) for p in ASSET_BLOG_PATTERNS):
+            out["blog"] += 1
+        elif any(p.search(f) for p in ASSET_LANDING_PATTERNS):
+            out["landing"] += 1
+        elif lf.endswith(".md") or lf.endswith(".mdx"):
+            out["copy"] += 1
+    return out
+
+
+def body_has_preview_block(body: str) -> bool:
+    if not body:
+        return False
+    return any(marker in body for marker in ASSET_PREVIEW_BODY_MARKERS)
+
+
 def open_pr_count(author: str | None, exclude_pr_number: int | None) -> tuple[int, list[dict]]:
     """Query gh for Matt's open PRs across all repos. Excludes the current PR."""
     if not author:
@@ -171,6 +222,21 @@ def scan_ai_coauthor(text: str) -> int:
     return n
 
 
+def required_pr_author(repo: str, identity: str | None) -> tuple[str | None, str | None]:
+    """Return (required_author, reason). None means CI cannot infer authorship safely."""
+    owner = repo.split("/", 1)[0] if "/" in repo else ""
+    normalized = (identity or "").strip().lower()
+    if normalized and normalized not in {"matt-personal", "matt-led", "ai-led"}:
+        return "__invalid__", f"invalid PR_GATE_IDENTITY={identity}"
+    if owner in PERSONAL_GITHUB_OWNERS or normalized == "matt-personal":
+        return GITHUB_PERSONAL_ACCOUNT, "Matt personal project"
+    if normalized == "matt-led":
+        return GITHUB_PERSONAL_ACCOUNT, "Matt-led/heavily supervised PR"
+    if normalized == "ai-led":
+        return GITHUB_AI_ACCOUNT, "AI/Fake Matt-led PR"
+    return None, None
+
+
 def main() -> int:
     if not DIFF_FILE.exists():
         print("[pr-gate-ci] no diff file — skipping")
@@ -187,6 +253,8 @@ def main() -> int:
 
     pr_author = os.environ.get("PR_AUTHOR", "").strip()
     pr_body = os.environ.get("PR_BODY", "")
+    pr_repo = os.environ.get("PR_REPO", "").strip()
+    pr_gate_identity = os.environ.get("PR_GATE_IDENTITY", "").strip()
     pr_number_raw = os.environ.get("PR_NUMBER", "").strip()
     try:
         pr_number = int(pr_number_raw) if pr_number_raw else None
@@ -201,6 +269,25 @@ def main() -> int:
         print(f"[pr-gate-ci] PR body has {coauthor_count} AI-coauthor line(s) — flagging")
 
     pre_findings: list[str] = []
+    required_author, identity_reason = required_pr_author(pr_repo, pr_gate_identity)
+    if required_author == "__invalid__":
+        pre_findings.append(
+            f"### [HIGH] — Invalid PR identity configuration\n"
+            f"**Reviewer:** pr-gate (identity)\n"
+            f"**Finding:** {identity_reason}. Expected one of: `matt-personal`, `matt-led`, `ai-led`.\n"
+            f"**Fix:** Update the repository variable `PR_GATE_IDENTITY` or remove it."
+        )
+    elif required_author and pr_author != required_author:
+        pre_findings.append(
+            f"### [HIGH] — PR opened by wrong GitHub account\n"
+            f"**Reviewer:** pr-gate (identity)\n"
+            f"**Finding:** This PR is classified as `{identity_reason}` and must be opened by `{required_author}`, "
+            f"but the PR author is `{pr_author or 'unknown'}`.\n"
+            f"**Fix:** Close and reopen the PR from `{required_author}`. `skip-pr-gate` should not be used for identity routing."
+        )
+    elif required_author:
+        print(f"[pr-gate-ci] identity OK: {pr_author} ({identity_reason})")
+
     if backlog_count >= OPEN_PR_CAP_DEFAULT:
         pre_findings.append(
             f"### [MEDIUM] — {backlog_count} other open PRs (cap is {OPEN_PR_CAP_DEFAULT}, {OPEN_PR_CAP_URGENT} with `--urgent`)\n"
@@ -226,6 +313,23 @@ def main() -> int:
             f"**Finding:** Launch-publish PRs require a fresh in-session confirm token (local check, can't run in CI). "
             f"Confirm the launch is current before merge — `feedback_reconfirm_launch_plans.md` from memory.\n"
             f"**Fix:** Verify with Matt that this launch is the current week's plan, not a stale-memory ship."
+        )
+
+    asset_counts = count_preview_assets(files)
+    n_assets = sum(asset_counts.values())
+    if n_assets > 0 and not body_has_preview_block(pr_body):
+        breakdown = ", ".join(
+            f"{k}={v}" for k, v in asset_counts.items() if v > 0
+        )
+        pre_findings.append(
+            f"### [MEDIUM] — {n_assets} content/asset file(s) without preview block in PR body\n"
+            f"**Reviewer:** pr-gate (asset-previews)\n"
+            f"**Finding:** This PR touches {breakdown} but the body has no asset-preview block. "
+            f"Reviewers can't see the visual diff without clicking through every file. "
+            f"`pr-gate` injects this block automatically when used to open PRs.\n"
+            f"**Fix:** Re-open via `python3 ~/.claude/skills/pr-gate/run.py …`, "
+            f"or run pr-gate locally (`--dry-run`) and paste `.pr-gate-asset-previews.md` "
+            f"into the body via `gh pr edit {pr_number or '<number>'} --body-file …`."
         )
 
     if not diff.strip():

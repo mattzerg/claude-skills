@@ -11,10 +11,15 @@ Gate flags (all optional):
     --urgent             raise the open-PR cap from 2 to 3 for this open (logged)
     --force              override HIGH findings or backlog cap (logged)
     --dry-run            run gate + print verdict, don't actually open
+    --matt-personal      route this PR through matteisn
+    --matt-led           route this PR through matteisn
+    --ai-led             route this PR through mattzerg unless personal
 
 All other args are forwarded to `gh pr create` verbatim.
 
 Two enforced rules beyond fake-skill reviews:
+  - GitHub identity routing: Matt personal projects and Matt-led/heavily supervised
+    PRs use matteisn; AI/Fake Matt-led Zerg/company PRs use mattzerg.
   - Open-PR cap: max 2 open PRs by Matt at once across all repos (3 with --urgent).
     Bundle into an existing PR; don't multiply Idan's review queue.
   - No AI coauthors: `Co-Authored-By: Claude` lines and "Generated with Claude
@@ -40,6 +45,10 @@ FAKEIDAN = Path.home() / ".claude" / "skills" / "fakeidan" / "run.py"
 FAKEMATT_COPYEDIT = Path.home() / ".claude" / "skills" / "fakematt-copyedit" / "run.py"
 LAUNCH_ANNOUNCEMENT = Path.home() / ".claude" / "skills" / "launch-announcement" / "run.py"
 LAUNCH_PREMISE = SKILL_DIR / "launch_premise.py"
+GITHUB_PERSONAL_ACCOUNT = "matteisn"
+GITHUB_AI_ACCOUNT = "mattzerg"
+PERSONAL_GITHUB_OWNERS = {"matteisn", "mattheweisner"}
+MATTZERG_TOKEN_FILE = Path.home() / ".config" / "zerg" / "gh_token"
 
 # Path patterns that indicate prose vs code
 PROSE_PATTERNS = (
@@ -54,6 +63,23 @@ LAUNCH_POST_PATTERNS = (
 )
 CODE_EXTS = (".py", ".ts", ".tsx", ".js", ".jsx", ".vue", ".rs", ".go", ".java", ".rb", ".c", ".cpp", ".h", ".sql")
 
+# Asset preview classification — independent from prose/code classification.
+# A blog markdown file is BOTH "prose" (triggers fakematt-copyedit) AND "blog"
+# (triggers a preview block in the PR body). Same file, two purposes.
+ASSET_IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".avif")
+ASSET_VIDEO_EXTS = (".mp4", ".mov", ".webm", ".m4v")
+BLOG_PATH_PATTERNS = (
+    re.compile(r"(^|/)content/blog/.+\.mdx?$", re.I),
+    re.compile(r"MattZerg/Writing/.+\.mdx?$", re.I),
+    re.compile(r"(^|/)blog/[^/]+\.mdx?$", re.I),
+)
+LANDING_PATH_PATTERNS = (
+    re.compile(r"web/src/pages/.+\.vue$"),
+    re.compile(r"(^|/)pages/.*landing.*\.(vue|tsx|jsx|html)$", re.I),
+    re.compile(r"(^|/)landing-?page", re.I),
+)
+ASSET_PREVIEW_FILE = ".pr-gate-asset-previews.md"
+
 
 def parse_args():
     """Split argv into gate flags + gh-pr-create passthrough."""
@@ -65,6 +91,14 @@ def parse_args():
                         help="raise open-PR cap from 2 to 3 (logged)")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--matt-personal", action="store_true",
+                        help="mark repo/project as Matt personal work; requires matteisn")
+    parser.add_argument("--matt-led", action="store_true",
+                        help="mark PR as Matt-led or heavily supervised; requires matteisn")
+    parser.add_argument("--ai-led", action="store_true",
+                        help="mark PR as AI/Fake Matt-led; requires mattzerg unless personal")
+    parser.add_argument("--no-asset-previews", action="store_true",
+                        help="suppress auto-generated asset preview block in PR body")
     parser.add_argument("--gate-help", action="store_true",
                         help="show gate-specific help, then exit (--help passes to gh pr create)")
     args, passthrough = parser.parse_known_args()
@@ -82,6 +116,124 @@ def detect_base() -> str:
         if r.returncode == 0:
             return cand
     return "main"
+
+
+def github_remote_owner() -> str | None:
+    """Infer the GitHub remote owner from origin, if this is a GitHub repo."""
+    r = subprocess.run(["git", "remote", "get-url", "origin"], capture_output=True, text=True)
+    if r.returncode != 0:
+        return None
+    url = r.stdout.strip()
+    patterns = (
+        r"github\.com[:/]([^/]+)/[^/]+(?:\.git)?$",
+        r"github\.com/([^/]+)/[^/]+(?:\.git)?$",
+    )
+    for pat in patterns:
+        m = re.search(pat, url)
+        if m:
+            return m.group(1)
+    return None
+
+
+def _parse_gh_auth_account(text: str, returncode: int) -> str | None:
+    """Parse a usable active account from `gh auth status` output."""
+    active_blocks = re.findall(
+        r"✓ Logged in to github\.com account\s+([^\s()]+).*?(?=\n\s*[✓X]|\Z)",
+        text,
+        flags=re.S,
+    )
+    for block in re.finditer(
+        r"✓ Logged in to github\.com account\s+([^\s()]+).*?(?=\n\s*[✓X]|\Z)",
+        text,
+        flags=re.S,
+    ):
+        if "Active account: true" in block.group(0):
+            return block.group(1)
+    if returncode == 0 and active_blocks:
+        return active_blocks[0]
+    m = re.search(r"Logged in to github\.com account\s+([^\s()]+)", text)
+    if returncode == 0 and m:
+        return m.group(1)
+    m = re.search(r"account\s+([A-Za-z0-9-]+)", text)
+    if returncode == 0 and m:
+        return m.group(1)
+    return None
+
+
+def active_github_account(required_account: str | None = None) -> tuple[str | None, str]:
+    """Return (account, raw_status) from gh auth status."""
+    try:
+        r = subprocess.run(["gh", "auth", "status"], capture_output=True, text=True, timeout=15)
+    except (FileNotFoundError, subprocess.TimeoutExpired) as e:
+        return None, str(e)
+    text = (r.stdout or "") + "\n" + (r.stderr or "")
+    parsed = _parse_gh_auth_account(text, r.returncode)
+    if parsed:
+        return parsed, text
+
+    env = os.environ.copy()
+    should_try_mattzerg_fallback = (
+        required_account == GITHUB_AI_ACCOUNT
+        and "GH_TOKEN" not in env
+        and "GITHUB_TOKEN" not in env
+        and MATTZERG_TOKEN_FILE.exists()
+    )
+    if should_try_mattzerg_fallback:
+        try:
+            env["GH_TOKEN"] = MATTZERG_TOKEN_FILE.read_text().strip()
+        except OSError:
+            return None, text
+        try:
+            status = subprocess.run(
+                ["gh", "auth", "status"], capture_output=True, text=True, timeout=15, env=env
+            )
+        except (FileNotFoundError, subprocess.TimeoutExpired) as e:
+            return None, text + "\n" + str(e)
+        fallback_text = (status.stdout or "") + "\n" + (status.stderr or "")
+        parsed = _parse_gh_auth_account(fallback_text, status.returncode)
+        if parsed:
+            return parsed, fallback_text
+        try:
+            api = subprocess.run(
+                ["gh", "api", "user", "--jq", ".login"],
+                capture_output=True, text=True, timeout=15, env=env,
+            )
+        except (FileNotFoundError, subprocess.TimeoutExpired) as e:
+            return None, text + "\n" + str(e)
+        if api.returncode == 0 and api.stdout.strip():
+            return api.stdout.strip(), fallback_text
+        text += "\n" + fallback_text + "\n" + (api.stderr or api.stdout or "")
+    return None, text
+
+
+def required_github_account(args) -> tuple[str, str]:
+    """Decide which GitHub account must be active before PR operations."""
+    owner = github_remote_owner()
+    is_personal = args.matt_personal or (owner in PERSONAL_GITHUB_OWNERS)
+    if is_personal:
+        return GITHUB_PERSONAL_ACCOUNT, "Matt personal project"
+    if args.matt_led:
+        return GITHUB_PERSONAL_ACCOUNT, "Matt-led/heavily supervised PR"
+    if args.ai_led:
+        return GITHUB_AI_ACCOUNT, "AI/Fake Matt-led PR"
+    # pr-gate is normally run by agents; default non-personal agent-led work to mattzerg.
+    return GITHUB_AI_ACCOUNT, "default agent-led non-personal PR"
+
+
+def verify_github_identity(args) -> bool:
+    required, reason = required_github_account(args)
+    active, status = active_github_account(required)
+    if active == required:
+        print(f"[pr-gate] GitHub identity OK: {active} ({reason})", file=sys.stderr)
+        return True
+    print("[pr-gate] BLOCKED — wrong GitHub account for this PR context.", file=sys.stderr)
+    print(f"[pr-gate] Required: {required} ({reason})", file=sys.stderr)
+    print(f"[pr-gate] Active: {active or 'unknown'}", file=sys.stderr)
+    print("[pr-gate] Switch accounts first, e.g. `gh auth switch --user "
+          f"{required}`, then rerun pr-gate.", file=sys.stderr)
+    if not active:
+        print(f"[pr-gate] gh auth status output:\n{status[:1000]}", file=sys.stderr)
+    return False
 
 
 def changed_files(base: str) -> list[str]:
@@ -125,11 +277,20 @@ def has_high_findings(text: str) -> tuple[bool, list[str]]:
         return (True, ["**HIGH** (gate fail-closed: review tool timed out — re-run with longer timeout or split the diff)"])
     lines = text.splitlines()
     high_lines = []
-    for i, line in enumerate(lines):
-        # Common patterns the fake-skills emit
-        if re.search(r"\*\*Confidence:\*\*\s*HIGH\b", line):
-            high_lines.append(line)
-        elif re.search(r"\bC1\b|\bC2\b|\bC3\b|\bC4\b|\bC5\b", line) and re.search(r"^###\s", line):
+    in_explicit_high_block = False
+    for line in lines:
+        if re.search(r"^\*\*HIGH findings \(\d+\):\*\*$", line):
+            in_explicit_high_block = True
+            continue
+        if in_explicit_high_block:
+            if not line.strip():
+                break
+            if line.startswith("- "):
+                high_lines.append(line)
+                continue
+            if line.startswith("<details>"):
+                break
+        if re.search(r"\bC1\b|\bC2\b|\bC3\b|\bC4\b|\bC5\b", line) and re.search(r"^###\s", line):
             # fakeidan's pre-merge ask numbering — C-prefixed = required-before-merge
             high_lines.append(line)
         elif re.search(r"^- \*\*HIGH\*\*", line):
@@ -202,6 +363,278 @@ def run_launch_review(launch_files: list[str], out_dir: Path, model: str = "clau
         return review_files, text
     except subprocess.TimeoutExpired:
         return [], "(launch review timeout — gate FAIL-CLOSED)"
+
+
+def file_status_map(base: str) -> dict[str, str]:
+    """Map changed-file path → status letter (M/A/D/R/...) vs origin/<base>.
+
+    Used to skip deleted files when building previews — embedding a raw URL for
+    a file that no longer exists on the branch is just a 404 in the PR body.
+    """
+    r = subprocess.run(["git", "diff", "--name-status", f"origin/{base}...HEAD"],
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        return {}
+    out: dict[str, str] = {}
+    for line in r.stdout.splitlines():
+        parts = line.split("\t")
+        if len(parts) >= 2:
+            out[parts[-1]] = parts[0][0]
+    return out
+
+
+def classify_assets(files: list[str], status: dict[str, str]) -> dict:
+    """Bucket changed files into preview-worthy categories.
+
+    Independent of classify(): a blog .md is BOTH "prose" (fakematt-copyedit)
+    and "blog" (preview block). Deleted files are dropped.
+    """
+    out: dict[str, list[str]] = {"images": [], "videos": [], "blog": [], "landing": [], "copy": []}
+    for f in files:
+        if status.get(f) == "D":
+            continue
+        lf = f.lower()
+        if any(lf.endswith(e) for e in ASSET_IMAGE_EXTS):
+            out["images"].append(f)
+        elif any(lf.endswith(e) for e in ASSET_VIDEO_EXTS):
+            out["videos"].append(f)
+        elif any(p.search(f) for p in BLOG_PATH_PATTERNS):
+            out["blog"].append(f)
+        elif any(p.search(f) for p in LANDING_PATH_PATTERNS):
+            out["landing"].append(f)
+        elif lf.endswith(".md") or lf.endswith(".mdx"):
+            out["copy"].append(f)
+    return out
+
+
+def repo_owner_name() -> tuple[str | None, str | None]:
+    r = subprocess.run(["git", "remote", "get-url", "origin"], capture_output=True, text=True)
+    if r.returncode != 0:
+        return None, None
+    url = r.stdout.strip()
+    m = re.search(r"github\.com[:/]([^/]+)/([^/]+?)(?:\.git)?$", url)
+    if m:
+        return m.group(1), m.group(2)
+    return None, None
+
+
+def current_branch_name() -> str | None:
+    r = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"], capture_output=True, text=True)
+    if r.returncode == 0 and r.stdout.strip() and r.stdout.strip() != "HEAD":
+        return r.stdout.strip()
+    return None
+
+
+def parse_frontmatter(text: str) -> tuple[dict, str]:
+    """Tiny YAML frontmatter parser. Handles flat key: value pairs only.
+
+    Anything more structured (lists, nested maps) is left to the body — the
+    preview only needs title/description/hero, all of which are flat strings.
+    """
+    if not text.startswith("---"):
+        return {}, text
+    end = text.find("\n---", 3)
+    if end == -1:
+        return {}, text
+    fm_lines = text[3:end].strip().splitlines()
+    body = text[end + 4:].lstrip("\n")
+    fm: dict[str, str] = {}
+    for line in fm_lines:
+        if ":" not in line or line.startswith((" ", "\t", "-", "#")):
+            continue
+        k, _, v = line.partition(":")
+        fm[k.strip()] = v.strip().strip('"').strip("'")
+    return fm, body
+
+
+def first_words(text: str, n: int = 80) -> str:
+    plain = re.sub(r"`[^`]+`", " ", text)
+    plain = re.sub(r"[*_\[\]()#>]", " ", plain)
+    words = re.sub(r"\s+", " ", plain).strip().split()
+    return " ".join(words[:n]) + ("…" if len(words) > n else "")
+
+
+def _url_quote_path(p: str) -> str:
+    import urllib.parse
+    return "/".join(urllib.parse.quote(seg) for seg in p.split("/"))
+
+
+def build_asset_previews(
+    repo_root: Path,
+    base: str,
+    assets: dict,
+    owner: str | None,
+    repo: str | None,
+    branch: str | None,
+) -> str | None:
+    """Render a `<details>`-wrapped preview block for content/blog/copy/video assets.
+
+    Returns None if no assets in scope. URLs use raw.githubusercontent.com so
+    images render inline once the branch is on origin (gh pr create pushes
+    automatically). For dry-run, branch may not be pushed yet — links 404 until
+    push, but the markdown still previews structurally.
+    """
+    raw_base = (
+        f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}"
+        if owner and repo and branch else None
+    )
+    blob_base = (
+        f"https://github.com/{owner}/{repo}/blob/{branch}"
+        if owner and repo and branch else None
+    )
+
+    parts: list[str] = []
+    total = sum(len(v) for v in assets.values())
+    if total == 0:
+        return None
+
+    if assets["images"]:
+        rows = []
+        for img in assets["images"][:12]:
+            url = f"{raw_base}/{_url_quote_path(img)}" if raw_base else img
+            rows.append(
+                f'<a href="{url}"><img src="{url}" alt="{Path(img).name}" width="240"></a>'
+                f'<br><sub><code>{img}</code></sub>'
+            )
+        more = ""
+        if len(assets["images"]) > 12:
+            more = f"\n\n_+{len(assets['images']) - 12} more image(s) not shown_"
+        parts.append(f"### Images ({len(assets['images'])})\n\n" + " &nbsp; ".join(rows) + more)
+
+    if assets["videos"]:
+        rows = []
+        for v in assets["videos"]:
+            url = (
+                f"https://github.com/{owner}/{repo}/raw/{branch}/{_url_quote_path(v)}"
+                if owner and repo and branch else v
+            )
+            rows.append(f"- [`{Path(v).name}`]({url}) — `{v}`")
+        parts.append(
+            f"### Videos ({len(assets['videos'])})\n\n"
+            "Click to open the inline player on GitHub.\n\n" + "\n".join(rows)
+        )
+
+    if assets["blog"]:
+        for b in assets["blog"][:4]:
+            p = repo_root / b
+            if not p.exists():
+                continue
+            try:
+                text = p.read_text(errors="replace")
+            except OSError:
+                continue
+            fm, body = parse_frontmatter(text)
+            title = fm.get("title", Path(b).stem)
+            desc = fm.get("description") or fm.get("summary") or ""
+            hero = (
+                fm.get("hero") or fm.get("image")
+                or fm.get("ogImage") or fm.get("heroImage")
+            )
+            block = [f"### Blog: {title}", "", f"`{b}`"]
+            if hero and raw_base:
+                hero_url = (
+                    hero if hero.startswith("http")
+                    else f"{raw_base}/{_url_quote_path(hero.lstrip('/'))}"
+                )
+                block.append("")
+                block.append(f'<img src="{hero_url}" alt="hero" width="480">')
+            if desc:
+                block.append("")
+                block.append(f"> {desc}")
+            block.append("")
+            block.append(first_words(body, 80))
+            parts.append("\n".join(block))
+        if len(assets["blog"]) > 4:
+            parts.append(f"_+{len(assets['blog']) - 4} more blog file(s) not shown_")
+
+    if assets["landing"]:
+        rows = []
+        for f in assets["landing"][:10]:
+            url = f"{blob_base}/{_url_quote_path(f)}" if blob_base else f
+            rows.append(f"- [`{f}`]({url})")
+        parts.append(
+            f"### Landing pages ({len(assets['landing'])})\n\n"
+            "Verify on the deploy preview before merging.\n\n" + "\n".join(rows)
+        )
+
+    if assets["copy"]:
+        rows = []
+        for f in assets["copy"][:4]:
+            d = subprocess.run(
+                ["git", "diff", f"origin/{base}...HEAD", "--unified=2", "--", f],
+                capture_output=True, text=True,
+            ).stdout
+            hunk_lines = [
+                ln for ln in d.splitlines()
+                if ln.startswith(("@@", "+", "-")) and not ln.startswith(("+++", "---"))
+            ]
+            if not hunk_lines:
+                continue
+            shown = "\n".join(hunk_lines[:40])
+            more = "" if len(hunk_lines) <= 40 else f"\n… (+{len(hunk_lines) - 40} more lines)"
+            rows.append(
+                f"<details><summary><code>{f}</code></summary>\n\n"
+                f"```diff\n{shown}{more}\n```\n\n</details>"
+            )
+        if rows:
+            parts.append(f"### Copy ({len(assets['copy'])})\n\n" + "\n\n".join(rows))
+
+    if not parts:
+        return None
+
+    return (
+        "<details>\n"
+        f"<summary>📎 Asset previews — {total} file(s) (click to expand)</summary>\n\n"
+        + "\n\n".join(parts)
+        + "\n\n</details>\n"
+    )
+
+
+def inject_asset_previews(passthrough: list[str], previews: str, tmp_dir: Path) -> tuple[list[str], bool]:
+    """Prepend `previews` to whatever --body / --body-file is in passthrough.
+
+    Returns (new_passthrough, injected). When neither flag is present (gh would
+    open $EDITOR), returns (passthrough, False) — caller writes the previews to
+    a sibling file and tells the user where it is.
+    """
+    out = list(passthrough)
+    i = 0
+    while i < len(out):
+        a = out[i]
+        if a == "--body" and i + 1 < len(out):
+            out[i + 1] = previews + "\n" + out[i + 1]
+            return out, True
+        if a.startswith("--body="):
+            out[i] = "--body=" + previews + "\n" + a[len("--body="):]
+            return out, True
+        if a == "--body-file" and i + 1 < len(out):
+            src = Path(out[i + 1])
+            if not src.exists():
+                return out, False
+            try:
+                original = src.read_text()
+            except OSError:
+                return out, False
+            tmp_dir.mkdir(parents=True, exist_ok=True)
+            tmp = tmp_dir / f"body-with-previews-{src.name}"
+            tmp.write_text(previews + "\n" + original)
+            out[i + 1] = str(tmp)
+            return out, True
+        if a.startswith("--body-file="):
+            src = Path(a[len("--body-file="):])
+            if not src.exists():
+                return out, False
+            try:
+                original = src.read_text()
+            except OSError:
+                return out, False
+            tmp_dir.mkdir(parents=True, exist_ok=True)
+            tmp = tmp_dir / f"body-with-previews-{src.name}"
+            tmp.write_text(previews + "\n" + original)
+            out[i] = "--body-file=" + str(tmp)
+            return out, True
+        i += 1
+    return out, False
 
 
 def write_gate_review(repo_root: Path, sections: list[tuple[str, str, list[str]]]) -> Path:
@@ -415,6 +848,9 @@ def main() -> int:
 
     print(f"[pr-gate] base=origin/{base}", file=sys.stderr)
 
+    if not verify_github_identity(args):
+        return 1
+
     # Open-PR cap — block before doing any expensive review work.
     # Exclude the current branch's existing PR (if any) so re-pushing to an
     # in-flight PR doesn't trip the cap.
@@ -456,6 +892,32 @@ def main() -> int:
 
     classification = classify(files)
     print(f"[pr-gate] {len(files)} changed files: code={len(classification['code'])} prose={len(classification['prose'])} launch={len(classification['launch'])}", file=sys.stderr)
+
+    # Auto-asset-preview block: scan diff for content/blog/copy/video/landing/image
+    # changes and build a collapsible markdown block that gets prepended to the
+    # PR body. Suppressed by --no-asset-previews; otherwise opt-out via the diff
+    # itself (no assets → no block).
+    asset_preview_md: str | None = None
+    if not args.no_asset_previews:
+        status = file_status_map(base)
+        assets = classify_assets(files, status)
+        n_assets = sum(len(v) for v in assets.values())
+        if n_assets > 0:
+            owner, repo_name = repo_owner_name()
+            branch = current_branch_name()
+            asset_preview_md = build_asset_previews(
+                repo_root, base, assets, owner, repo_name, branch,
+            )
+            if asset_preview_md:
+                print(
+                    f"[pr-gate] asset previews: images={len(assets['images'])} "
+                    f"videos={len(assets['videos'])} blog={len(assets['blog'])} "
+                    f"landing={len(assets['landing'])} copy={len(assets['copy'])}",
+                    file=sys.stderr,
+                )
+                preview_path = repo_root / ASSET_PREVIEW_FILE
+                preview_path.write_text(asset_preview_md)
+                print(f"[pr-gate] asset preview block written to {preview_path}", file=sys.stderr)
 
     # Launch-premise gate: hard-block PRs that publish new launch content without a fresh confirm token.
     # Runs FIRST, fail-closed, before fake-skill reviews. Cheap (no API calls).
@@ -516,11 +978,31 @@ def main() -> int:
 
     if args.dry_run:
         print("[pr-gate] --dry-run: not opening PR", file=sys.stderr)
+        if asset_preview_md:
+            print(
+                f"[pr-gate] asset preview block ready at {repo_root / ASSET_PREVIEW_FILE} "
+                "(would be prepended to --body / --body-file on real run)",
+                file=sys.stderr,
+            )
         return 0
 
     print("[pr-gate] gate passed — calling gh pr create", file=sys.stderr)
-    with tempfile.TemporaryDirectory() as scrub_tmp:
-        scrubbed, n = scrub_passthrough_body(passthrough, Path(scrub_tmp))
+    with tempfile.TemporaryDirectory() as work_tmp:
+        work = Path(work_tmp)
+        passthrough_in = passthrough
+        if asset_preview_md:
+            passthrough_in, injected = inject_asset_previews(
+                passthrough_in, asset_preview_md, work / "body-with-previews",
+            )
+            if injected:
+                print("[pr-gate] asset preview block prepended to PR body", file=sys.stderr)
+            else:
+                print(
+                    "[pr-gate] no --body/--body-file to prepend into; "
+                    f"editor will open. Paste from {repo_root / ASSET_PREVIEW_FILE} if you want previews.",
+                    file=sys.stderr,
+                )
+        scrubbed, n = scrub_passthrough_body(passthrough_in, work / "scrub")
         if n:
             print(f"[pr-gate] stripped {n} AI-coauthor line(s) from PR body", file=sys.stderr)
         return subprocess.call(["gh", "pr", "create"] + scrubbed)
