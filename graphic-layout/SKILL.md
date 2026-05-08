@@ -1,6 +1,6 @@
 ---
 name: graphic-layout
-description: Composition + balance review for any rendered image asset Matt or Claude builds — blog hero, body figure, share variant, GIF frame, one-pager page, slide. Sibling to fakematt-feedback (UX) and fakematt-copyedit (prose). Anchored on `MattZerg/_style/graphic_layout.md` (templates) + `feedback_graphic_basics.md` (memory rules). Two modes — `review` (audit a rendered PNG/PDF for layout failures) and `template` (return the canonical composition for a target intent: hero / split-comparison / stat-strip / step-sequence / title-card / annotated-screenshot). Output is a structured findings list with cited rules + suggested fixes; never modifies source files. USE PROACTIVELY whenever Matt or Claude renders a graphic, before declaring it done; whenever building a multi-frame GIF/video so each frame's composition is intentional; whenever an asset feels "weird" (left-heavy, dead space, generic eyebrow noise) so the issue gets named instead of guessed at. Hard rule: graphic shipping requires this check to pass.
+description: Composition + balance review for any rendered image asset Matt or Claude builds — blog hero, body figure, share variant, GIF frame, one-pager page, slide. Sibling to fakematt-feedback (UX) and fakematt-copyedit (prose). Anchored on `references/graphic_layout_patterns.md` (templates) + `feedback_graphic_basics.md` (memory rules). Different from blog-imagery (which GENERATES new image sets — hero + body + share variants) — graphic-layout REVIEWS already-rendered assets for composition. Two modes — `review` (audit a rendered PNG/PDF for layout failures) and `template` (return the canonical composition for a target intent: hero / split-comparison / stat-strip / step-sequence / title-card / annotated-screenshot). Output is a structured findings list with cited rules + suggested fixes; never modifies source files. USE PROACTIVELY whenever Matt or Claude renders a graphic, before declaring it done; whenever building a multi-frame GIF/video so each frame's composition is intentional; whenever an asset feels "weird" (left-heavy, dead space, generic eyebrow noise) so the issue gets named instead of guessed at. Hard rule: graphic shipping requires this check to pass.
 ---
 
 # Graphic Layout Skill
@@ -55,7 +55,7 @@ Returns a markdown spec with:
 
 ## Composition rules (the layer this skill enforces)
 
-These are anchored in `MattZerg/_style/graphic_layout.md` and `feedback_graphic_basics.md` (memory). Quick reference:
+These are anchored in `references/graphic_layout_patterns.md` and `feedback_graphic_basics.md` (memory). Quick reference:
 
 ### 1. Top/bottom balance (already in graphic_basics rule 5)
 Top padding ≥40px above first element; bottom padding within 1.5× of top; no continuous empty strip >150px at either end. **Size canvas to longest content + ~80px total padding** — don't ship a 1000px-tall canvas with content filling 600px.
@@ -85,7 +85,16 @@ For multi-frame GIFs / carousels: pick a fixed anchor point (e.g., headline alwa
 ### 6. White space is a design element, not leftover
 Empty regions should feel intentional. If 40% of the canvas is empty dark space and the empty region has no compositional purpose (breathing for an off-center anchor; framing the hero), shrink the canvas. Don't fill empty space with token decoration (random particles, decorative dots, repeated words) — that's worse than the empty space.
 
-### 7. Composition templates by intent
+### 7. Text must fit inside panels
+Any rendered text inside a bordered/card/panel region must fit within that region with visible padding. For SVG assets, measure actual browser `getBBox()` bounds against containing rectangles; do not rely on visual guesswork. This catches easy failures like oversized product names overrunning comparison boxes.
+
+For the Zerg brand kit specifically, run this deterministic guard before accepting SVG marketing assets:
+
+```bash
+python3 MattZerg/Brand/scripts/check_svg_text_fit.py MattZerg/Brand/assets/marketing
+```
+
+### 8. Composition templates by intent
 
 | Intent | Template | Canvas | Notes |
 |---|---|---|---|
@@ -101,13 +110,13 @@ Empty regions should feel intentional. If 40% of the canvas is empty dark space 
 ## Output register
 
 Findings are professional/structured (not Matt-voice cosplay). Each cites:
-- **Rule:** which composition rule (1–6 above) or which `feedback_graphic_basics.md` rule (1–6)
+- **Rule:** which composition rule (1–7 above) or which `feedback_graphic_basics.md` rule (1–6)
 - **Confidence:** HIGH (clear violation) / MEDIUM (judgment call) / LOW (style preference)
 - **Suggested fix:** specific (move element X to coord Y; shrink canvas to H×W; cut element Z)
 
 ## Anchors loaded each run
 
-- `MattZerg/_style/graphic_layout.md` — canonical composition templates with pixel specs
+- `references/graphic_layout_patterns.md` — canonical composition templates with pixel specs
 - `feedback_graphic_basics.md` (memory) — the 6 generation-time rules + 6-point self-check
 - `feedback_internal_review_pack_format.md` (memory) — required asset set for launch packs
 - `feedback_blog_imagery_coherence.md` (memory) — visual coherence across an asset campaign
