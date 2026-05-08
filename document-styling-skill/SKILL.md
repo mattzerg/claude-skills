@@ -1,8 +1,9 @@
 ---
 name: document-styling-skill
-description: Render markdown documents to branded PDF using Zerg's visual template system. Owns the brand palette, type system, and layout zones (header band, hero, body, optional sidebar/chip strip, footer). The `zerg-default` theme is the canonical Zerg brand — cream paper `#f4f0e7`, charcoal `#111514` text, burnt-orange `#b3662f` primary, brand-green `#6FBE31` secondary, Space Grotesk type — pulled from the live site (`~/zerg/web/src/pages/index.vue`), NOT `main.css`. Designed for one-pagers but reusable for any single-page or short-document collateral. Pairs with `one-pager-skill` (which scaffolds content) — content lives there, visual treatment lives here. Never auto-publishes; writes PDF + HTML next to source. USE PROACTIVELY when Matt asks for a branded / designed / styled PDF, or wants to swap visual treatment on an existing one-pager / brief.
+description: Render markdown documents to branded PDF using Zerg's visual template system. Owns the brand palette, type system, and layout zones (header band, hero, body, optional sidebar/chip strip, footer). Two canonical Zerg themes per the dual-palette routing rule — `zerg-default` (cream paper, Zstack/non-technical audiences) and `zerg-dark` (charcoal paper, Zerg-parent / heavy-technical content). Both pull from the live site (`~/zerg/web/src/pages/index.vue`), NOT `main.css`. Designed for one-pagers but reusable for any single-page or short-document collateral. Pairs with `one-pager-skill` (which scaffolds content) — content lives there, visual treatment lives here. Never auto-publishes; writes PDF + HTML next to source. USE PROACTIVELY when Matt asks for a branded / designed / styled PDF, or wants to swap visual treatment on an existing one-pager / brief.
 allowed-tools: Bash, Read, Write
 ---
+
 
 # Document Styling Skill
 
@@ -19,13 +20,16 @@ Built from research across the 10-doc Drive corpus (Hoy Health, Joi, Intercept T
 
 ## Themes shipped
 
+Per the **dual-palette routing** rule (`feedback_zerg_brand.md`, locked 2026-05-08), Zerg has TWO valid surfaces — cream paper (default, Zstack/non-technical/buyer audiences) and charcoal dark (Zerg-parent / heavy-technical / dev / MCP-API / research-genre). Pick by audience + product context, not preference.
+
 | Theme | Paper + accent | Type | Vibe | When to use |
 |---|---|---|---|---|
-| **zerg-default** | Cream `#f4f0e7` + burnt-orange `#b3662f` (with `#8a4a1f` for AA-contrast labels on cream) + brand-green `#6FBE31` secondary | Space Grotesk | Matches the live marketing site exactly | Default for ZergStack + Solutions + Zerg company collateral |
+| **zerg-default** | Cream `#f4f0e7` + burnt-orange `#b3662f` (with `#8a4a1f` for AA-contrast labels on cream) + brand-green `#6FBE31` secondary | Space Grotesk | Matches the live marketing site exactly | Default for **Zstack products + non-technical audiences** (buyers, marketing, ops, sales personas, comparison pages, pricing pages, one-pagers, leave-behinds) |
+| **zerg-dark** | Charcoal `#111514` paper + cream `#f4f0e7` text + burnt-orange `#d57a32` (bright variant works on dark) + brand-green `#6FBE31` secondary | Space Grotesk | Brand-correct dark — Zerg-parent register | **Zerg parent brand + heavy-technical content** (research posts, integration pages targeting devs, MCP/API docs, architecture explainers, founder-voice / Idan-genre) |
 | **zerg-navy** | White paper + `#1F3A5F` deep navy | Inter | Enterprise-grade, conservative | Investor briefs, enterprise sales contexts where the burnt-orange feels too warm |
 | **zerg-warm** | Warm paper `#FAF9F5` + `#D97757` rust orange | Inter | Editorial, Anthropic-style warmth | Partner briefs, network leave-behinds, anything that should feel less "deck" and more "thoughtful" |
 
-The default theme is the canonical Zerg brand. Alternates exist for context-specific overrides — start with default unless user explicitly asks otherwise. Switch by passing `--theme <name>` to `render.py`.
+`zerg-default` and `zerg-dark` are the two canonical Zerg-brand surfaces. `zerg-navy` and `zerg-warm` are context-specific overrides for non-Zerg-default genres. Switch by passing `--theme <name>` to `render.py`.
 
 ## Visual template — five zones
 

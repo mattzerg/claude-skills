@@ -1,11 +1,23 @@
 # Zerg Brand Reference
 
-Updated 2026-05-07. Source of truth: the live marketing site (`~/zerg/web/src/pages/index.vue`). Earlier brick-red `#C0392B` and gold `#d4a000` palettes are deprecated — both were wrong and were corrected during the 2026-05-06 one-pager build.
+Updated 2026-05-08. Source of truth: the live marketing site (`~/zerg/web/src/pages/index.vue`). Earlier brick-red `#C0392B` and gold `#d4a000` palettes are deprecated — both were wrong and were corrected during the 2026-05-06 one-pager build.
+
+## Dual-palette routing (2026-05-08)
+
+Zerg has **two valid surfaces**, not one. Route by audience + product context, not personal preference.
+
+| Mode | Use for | Theme | Paper | Text | Accent |
+|---|---|---|---|---|---|
+| **Cream paper** (default) | Zstack products + non-technical audiences (buyers, marketing, ops, sales personas, comparison pages, pricing pages, one-pagers, leave-behinds) | `zerg-default` | `#f4f0e7` | `#111514` | `#b3662f` (`#8a4a1f` for AA-on-cream small caps) |
+| **Charcoal dark** | Zerg parent brand + heavy-technical content (research posts, integration pages targeting devs, MCP/API docs, architecture explainers, founder-voice / Idan-genre) | `zerg-dark` | `#111514` | `#f4f0e7` | `#d57a32` (bright variant works on dark) |
+
+Both modes share the same Zerg brand green (`#6FBE31`) as secondary accent. The discipline rule (two-accent system, no third color, no gradients) holds across both.
 
 ## Color palette
 
 ### Paper
-- **`#f4f0e7` Cream Paper** — live-site bg. Default for all Zerg-themed renders.
+- **`#f4f0e7` Cream Paper** — live-site bg. Default for Zstack/non-technical surfaces.
+- **`#111514` Charcoal Paper** — dark surface for Zerg-parent / heavy-technical content.
 
 ### Primary accent
 - **`#b3662f` Burnt Orange** — eyebrow labels on dark sections, callout borders, dividers, anchor color.
@@ -28,8 +40,10 @@ Updated 2026-05-07. Source of truth: the live marketing site (`~/zerg/web/src/pa
 ## Typography
 
 ### Font family
-- **Display + body: Inter** (Google Fonts, weights 400/500/600/700)
-- **Optional mono accent: JetBrains Mono** for monospace eyebrow labels (Vercel-style — reserved for `product` and `consulting` variants)
+- **Display + body: Space Grotesk** (Google Fonts, weights 300/400/500/600/700/900) — the live-site display face. Local fallbacks at `~/zerg/web/src/assets/fonts/SpaceGrotesk-*.ttf`.
+- **Mono / eyebrow: Space Mono** (Regular/Bold) — used for ALL-CAPS tracked eyebrow labels.
+- **Display tracking:** `-0.035em` to `-0.04em` on big uppercase headings (live site uses `tracking-[-0.035em]`).
+- **System fallback:** sans-serif if Space Grotesk fails to load — flag as a soft rendering failure, not silent.
 
 ### Type scale
 | Element | Size | Weight | Tracking | Color |
@@ -128,8 +142,8 @@ Bordered or tinted block (left-border 3pt accent OR background `rgba(179,102,47,
 
 ## Loading and rendering notes
 
-- Fonts loaded via `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">` with `--virtual-time-budget=2000` Chrome flag so fonts paint before PDF capture
-- For offline reliability, self-host Inter as woff2 in `~/.claude/skills/document-styling-skill/assets/` and `@font-face` from `file://` URL — Phase 2
+- Fonts loaded via `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap">` with `--virtual-time-budget=2000` Chrome flag so fonts paint before PDF capture
+- For offline reliability, self-host Space Grotesk + Space Mono as woff2 in `~/.claude/skills/document-styling-skill/assets/` and `@font-face` from `file://` URL — Phase 2
 - SVG for chips/diagrams (not HTML divs) — print rendering of `border-radius` + `background` on inline-block can be inconsistent
 - Inline base64 data-URIs for any embedded images so file:// resolution doesn't break
 
