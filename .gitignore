@@ -150,3 +150,6 @@ pr-gate/state/
 # Landing-page-skill insight scrapes (timestamped run artifacts)
 landing-page-skill/insights/*_202[6-9]*.json
 landing-page-skill/insights/*_202[6-9]*.png
+fal-image-skill/config.json
+fal-music-skill/config.json
+nano-banana-pro/config.json
