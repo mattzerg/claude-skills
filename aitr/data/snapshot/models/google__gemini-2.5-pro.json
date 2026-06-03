@@ -1,0 +1,26 @@
+{
+  "id": "google__gemini-2.5-pro",
+  "name": "Gemini 2.5 Pro",
+  "provider": "google",
+  "model_class": "gemini-pro",
+  "released": "2025-06-17",
+  "status": "deprecated",
+  "context_window": 1048576,
+  "output_window": 65536,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "pricing": {
+    "input_per_mtok": 1.25,
+    "output_per_mtok": 10,
+    "as_of": "2026-05-09"
+  },
+  "tags": [
+    "instruction-following",
+    "writing"
+  ],
+  "benchmarks": {}
+}

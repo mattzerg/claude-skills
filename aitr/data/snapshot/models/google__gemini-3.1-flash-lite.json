@@ -1,0 +1,28 @@
+{
+  "id": "google__gemini-3.1-flash-lite",
+  "name": "Gemini 3.1 Flash-Lite",
+  "provider": "google",
+  "model_class": "gemini-flash-lite",
+  "released": "2026-05-07",
+  "status": "ga",
+  "context_window": 1048576,
+  "output_window": 65536,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.25,
+    "output_per_mtok": 1.5,
+    "as_of": "2026-05-09"
+  },
+  "tags": [
+    "fast",
+    "instruction-following",
+    "json-mode",
+    "small-model"
+  ],
+  "benchmarks": {}
+}

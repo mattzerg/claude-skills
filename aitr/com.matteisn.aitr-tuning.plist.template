@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  aitr weekly tuning report — launchd template.
+
+  NOT auto-installed. To enable the Friday 4:15 PM PT cron:
+
+    cp ~/.claude/skills/aitr/com.matteisn.aitr-tuning.plist.template \
+       ~/Library/LaunchAgents/com.matteisn.aitr-tuning.plist
+    launchctl load ~/Library/LaunchAgents/com.matteisn.aitr-tuning.plist
+
+  To run manually instead:
+    python3 ~/.claude/skills/aitr/scripts/weekly_report.py --days 7          # print only
+    python3 ~/.claude/skills/aitr/scripts/weekly_report.py --days 7 --post  # + post to Fake Matt DM
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.matteisn.aitr-tuning</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/mattheweisner/.claude/skills/aitr/scripts/weekly_report.py</string>
+    <string>--days</string>
+    <string>7</string>
+    <string>--post</string>
+  </array>
+
+  <!-- Friday 4:15 PM PT — 15 minutes after the llm-feedback digest so the week's
+       wrong-model-picked corrections are already in the ledger when this reads it. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key>
+    <integer>5</integer>
+    <key>Hour</key>
+    <integer>16</integer>
+    <key>Minute</key>
+    <integer>15</integer>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/mattheweisner/.cache/zerg/aitr/cron-tuning.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/mattheweisner/.cache/zerg/aitr/cron-tuning.log</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/usr/bin:/bin:/Users/mattheweisner/.local/bin</string>
+  </dict>
+</dict>
+</plist>

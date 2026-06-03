@@ -1,0 +1,23 @@
+{
+  "id": "mistral__mistral-medium-3.1",
+  "name": "Mistral Medium 3.1",
+  "provider": "mistral",
+  "model_class": "mistral",
+  "released": "2025-08-13",
+  "status": "deprecated",
+  "context_window": 131072,
+  "output_window": null,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.4,
+    "output_per_mtok": 2,
+    "as_of": "2026-05-11"
+  },
+  "tags": [
+    "instruction-following",
+    "writing"
+  ],
+  "benchmarks": {}
+}

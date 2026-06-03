@@ -1,0 +1,23 @@
+{
+  "id": "cohere__command-r-plus-08-2024",
+  "name": "Command R+ (08-2024)",
+  "provider": "cohere",
+  "model_class": "command",
+  "released": "2024-08-30",
+  "status": "ga",
+  "context_window": 128000,
+  "output_window": 4000,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 2.5,
+    "output_per_mtok": 10,
+    "as_of": "2026-05-10"
+  },
+  "tags": [
+    "citations",
+    "instruction-following"
+  ],
+  "benchmarks": {}
+}

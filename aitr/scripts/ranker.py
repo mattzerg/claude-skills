@@ -1,0 +1,329 @@
+"""Pure ranker for aitr.
+
+`rank(signal, catalog, routing_table) -> List[Candidate]`
+
+No I/O, no dependencies beyond stdlib. The CLI (pick.py) loads catalog +
+routing_table from disk/HTTP and passes them in. Tests stub both.
+
+Catalog shape (from snapshot/search.json or live /api/search.json):
+  { "models": [ <model record>, ... ] }
+
+Model record (minimum fields used here):
+  id, name, provider, model_class, released (ISO date)
+  status (must be "ga" to be considered)
+  context_window (int), output_window (int)
+  modalities (list[str])
+  pricing.{input_per_mtok, output_per_mtok}  (USD per million tokens)
+  tags (list[str])
+  benchmarks (optional dict[str, float] — 0..1)
+
+Routing table shape (from routing_table.yaml):
+  composite_weights: { capability, cost, latency }
+  quality_floors: { cheap-ok, medium, high-stakes }   # capability thresholds
+  high_stakes_whitelist: [model_class, ...]
+  task_kinds:
+    <task_kind>:
+      preferred_tags: [str, ...]
+      min_context: int
+      latency_class: fast|medium|slow
+      benchmark_key: str  (optional)
+      opposite_provider: bool  (optional)
+      delegate_to: str  (optional — caller should route OUT)
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass, asdict
+from typing import Dict, List, Optional
+
+
+@dataclass(frozen=True)
+class Candidate:
+    model: str
+    provider: str
+    model_class: str
+    score: float
+    capability: float
+    cost: float
+    latency: float
+    estimated_cost_usd: float
+    context_window: int
+    reason: str
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+
+class RankerError(Exception):
+    """Raised when the ranker cannot proceed (e.g., empty catalog)."""
+
+
+# ---- Scoring helpers -------------------------------------------------------
+
+LATENCY_CLASS_TARGETS = {"fast": 5, "medium": 30, "slow": 120}  # seconds, rough
+LATENCY_TAG_BIAS = {
+    "fast": 1.0,
+    "small-model": 1.0,
+    "extended-thinking": 0.3,
+    "reasoning": 0.5,
+}
+
+
+def _jaccard(a: set, b: set) -> float:
+    if not a and not b:
+        return 0.0
+    union = a | b
+    if not union:
+        return 0.0
+    return len(a & b) / len(union)
+
+
+def capability_score(model: dict, rules: dict) -> float:
+    """Tag-overlap score with optional benchmark boost. Range [0, 1]."""
+    model_tags = set(model.get("tags") or [])
+    preferred = set(rules.get("preferred_tags") or [])
+    base = _jaccard(model_tags, preferred)
+    bm_key = rules.get("benchmark_key")
+    bm_val = (model.get("benchmarks") or {}).get(bm_key) if bm_key else None
+    if isinstance(bm_val, (int, float)) and 0.0 <= bm_val <= 1.0:
+        return min(1.0, 0.6 * base + 0.4 * float(bm_val))
+    return base
+
+
+def estimated_cost_usd(model: dict, artifact_size_tokens: int, output_estimate: int = 2000) -> float:
+    pricing = model.get("pricing") or {}
+    in_rate = float(pricing.get("input_per_mtok") or 0.0)
+    out_rate = float(pricing.get("output_per_mtok") or 0.0)
+    return (artifact_size_tokens * in_rate + output_estimate * out_rate) / 1_000_000.0
+
+
+def cost_score(cost_usd: float, budget: Optional[float], cheapest_cost: float) -> float:
+    """Lower cost = higher score. If budget set, hard floor + linear within budget.
+    Otherwise compare to cheapest candidate (log-friendly normalization)."""
+    if cost_usd <= 0:
+        return 1.0
+    if budget is not None and budget > 0:
+        if cost_usd > budget:
+            return 0.0
+        return 1.0 - (cost_usd / budget)
+    if cheapest_cost <= 0:
+        return 1.0
+    ratio = cheapest_cost / cost_usd
+    return max(0.0, min(1.0, ratio))
+
+
+def latency_score(model: dict, latency_class: str, budget_seconds: Optional[int]) -> float:
+    """Tag-based; budget only enforces hard floor when set."""
+    tags = set(model.get("tags") or [])
+    bias_terms = [LATENCY_TAG_BIAS[t] for t in tags if t in LATENCY_TAG_BIAS]
+    base = sum(bias_terms) / len(bias_terms) if bias_terms else 0.5
+    # Bias by requested latency class
+    class_target = LATENCY_CLASS_TARGETS.get(latency_class, 30)
+    if class_target <= 10:
+        base = min(1.0, base + 0.1)
+    elif class_target >= 60:
+        base = max(0.0, base - 0.1)
+    if budget_seconds is not None and budget_seconds < 10 and base < 0.5:
+        # caller demanded fast but model leans slow — penalize hard
+        return 0.0
+    return max(0.0, min(1.0, base))
+
+
+# ---- Filtering -------------------------------------------------------------
+
+
+def _provider_allowed(provider: str, constraint: str, active_provider: Optional[str]) -> bool:
+    if constraint == "anthropic-only":
+        return provider == "anthropic"
+    if constraint == "openai-only":
+        return provider == "openai"
+    if constraint == "google-only":
+        return provider == "google"
+    return True
+
+
+def _hard_filter(
+    model: dict,
+    signal_dict: dict,
+    rules: dict,
+    active_provider: Optional[str],
+) -> Optional[str]:
+    """Return None to keep the model, or a rejection reason string to drop it."""
+    if model.get("status") != "ga":
+        return f"status={model.get('status')!r} (not ga)"
+
+    modalities = set(model.get("modalities") or [])
+    required_modality = signal_dict.get("modality_required")
+    if required_modality and required_modality not in modalities:
+        return f"missing modality {required_modality!r}"
+
+    provider = model.get("provider", "")
+    constraint = signal_dict.get("provider_constraint", "any")
+    if not _provider_allowed(provider, constraint, active_provider):
+        return f"provider {provider!r} violates constraint {constraint!r}"
+
+    # Opposite-provider hint: if active_provider known and rules ask for opposite,
+    # drop models that match the active provider.
+    if rules.get("opposite_provider") and active_provider and provider == active_provider:
+        return f"opposite_provider required; {provider!r} matches active session"
+
+    ctx = int(model.get("context_window") or 0)
+    artifact = int(signal_dict.get("artifact_size_tokens") or 0)
+    min_required = max(int(rules.get("min_context") or 0), int(artifact * 1.3))
+    if ctx < min_required:
+        return f"context_window {ctx} < required {min_required}"
+
+    return None
+
+
+# ---- Public API ------------------------------------------------------------
+
+
+def rank(
+    signal_dict: dict,
+    catalog: dict,
+    routing_table: dict,
+    *,
+    active_provider: Optional[str] = None,
+    top_n: int = 5,
+    penalties: Optional[Dict[tuple, float]] = None,
+) -> List[Candidate]:
+    """Score and rank all candidate models against the signal.
+
+    `signal_dict` may be either a Signal.to_dict() or a plain dict. Required keys:
+    task_kind, caller. Optional: artifact_size_tokens, latency_budget_seconds,
+    cost_budget_usd, quality_floor, provider_constraint, modality_required.
+
+    `active_provider` is the currently-active session provider (e.g. "anthropic"),
+    used by the opposite_provider hint in routing rules and by caller-side
+    diversification.
+
+    `penalties` is an optional {(caller, task_kind, model_id): negative_float} map
+    from feedback corrections (see penalties.py). Applied to the composite score.
+
+    Returns Candidates sorted by composite score, descending.
+    Raises RankerError if no candidates survive hard filters.
+    """
+    models = list(catalog.get("models") or [])
+    if not models:
+        raise RankerError("catalog has zero models")
+
+    task_kind = signal_dict.get("task_kind")
+    task_rules = ((routing_table.get("task_kinds") or {}).get(task_kind) or {})
+    weights = (routing_table.get("composite_weights") or {})
+    w_cap = float(weights.get("capability", 0.5))
+    w_cost = float(weights.get("cost", 0.3))
+    w_lat = float(weights.get("latency", 0.2))
+    weights_sum = max(w_cap + w_cost + w_lat, 1e-6)
+
+    quality_floor = signal_dict.get("quality_floor") or "medium"
+    floors = routing_table.get("quality_floors") or {}
+    capability_floor = float(floors.get(quality_floor, 0.5))
+    high_stakes_whitelist = set(routing_table.get("high_stakes_whitelist") or [])
+
+    artifact = int(signal_dict.get("artifact_size_tokens") or 4000)
+    cost_budget = signal_dict.get("cost_budget_usd")
+    latency_budget = signal_dict.get("latency_budget_seconds")
+    latency_class = task_rules.get("latency_class", "medium")
+
+    survivors: List[tuple[dict, float, str]] = []  # (model, cost, reject_reason)
+    dropped: List[tuple[str, str]] = []
+    for m in models:
+        reject = _hard_filter(m, signal_dict, task_rules, active_provider)
+        if reject:
+            dropped.append((m.get("id", "?"), reject))
+            continue
+        cost = estimated_cost_usd(m, artifact)
+        survivors.append((m, cost, ""))
+
+    if not survivors:
+        raise RankerError(
+            "no candidate survives hard filters; reasons: "
+            + ", ".join(f"{i}:{r}" for i, r in dropped[:8])
+        )
+
+    cheapest_cost = min((c for _, c, _ in survivors if c > 0), default=0.0)
+
+    candidates: List[Candidate] = []
+    for m, cost, _ in survivors:
+        cap = capability_score(m, task_rules)
+        # Quality-floor gate
+        model_class = m.get("model_class", "")
+        if quality_floor == "high-stakes" and cap < capability_floor:
+            if model_class not in high_stakes_whitelist:
+                continue
+        elif cap < capability_floor:
+            continue
+        c_score = cost_score(cost, cost_budget if isinstance(cost_budget, (int, float)) else None, cheapest_cost)
+        l_score = latency_score(m, latency_class, latency_budget)
+        composite = (w_cap * cap + w_cost * c_score + w_lat * l_score) / weights_sum
+
+        # Feedback penalty: corrections filed via llm-feedback (wrong-model-picked)
+        # against this exact (caller, task_kind, model) push it down the ranking.
+        feedback_penalty = 0.0
+        if penalties:
+            feedback_penalty = penalties.get(
+                (signal_dict.get("caller", ""), task_kind, m.get("id", "")), 0.0
+            )
+            composite = max(0.0, composite + feedback_penalty)
+
+        # Build a one-line reason
+        reasons = []
+        if feedback_penalty < 0:
+            reasons.append(f"feedback penalty {feedback_penalty:.2f}")
+        if cap >= 0.75:
+            reasons.append("strong tag fit")
+        elif cap >= 0.5:
+            reasons.append("ok tag fit")
+        else:
+            reasons.append("weak tag fit, allowed by floor")
+        if cost_budget and cost <= cost_budget:
+            reasons.append(f"within ${cost_budget:.2f} budget at ${cost:.3f}")
+        else:
+            reasons.append(f"~${cost:.3f} estimated")
+        if l_score >= 0.8:
+            reasons.append("low-latency tags")
+        elif l_score <= 0.3:
+            reasons.append("higher-latency tags")
+        reason = ", ".join(reasons)
+
+        candidates.append(
+            Candidate(
+                model=m.get("id", ""),
+                provider=m.get("provider", ""),
+                model_class=model_class,
+                score=round(composite, 4),
+                capability=round(cap, 4),
+                cost=round(c_score, 4),
+                latency=round(l_score, 4),
+                estimated_cost_usd=round(cost, 5),
+                context_window=int(m.get("context_window") or 0),
+                reason=reason,
+            )
+        )
+
+    if not candidates:
+        raise RankerError(
+            f"all survivors blocked by quality_floor={quality_floor!r} "
+            f"(capability_floor={capability_floor})"
+        )
+
+    # Sort by composite desc, tie-break by cheaper cost then most-recent release
+    def _sort_key(cand: Candidate) -> tuple:
+        # Find the model record for tie-breaking
+        m_rec = next((x for x in models if x.get("id") == cand.model), {})
+        released = m_rec.get("released", "")
+        return (-cand.score, cand.estimated_cost_usd, -_release_sort(released))
+
+    candidates.sort(key=_sort_key)
+    return candidates[:top_n]
+
+
+def _release_sort(released: str) -> int:
+    """Convert ISO date to a sortable int. Empty/invalid → 0."""
+    if not released:
+        return 0
+    digits = released.replace("-", "")
+    try:
+        return int(digits[:8])
+    except ValueError:
+        return 0

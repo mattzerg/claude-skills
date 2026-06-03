@@ -1,0 +1,25 @@
+{
+  "id": "alibaba__qwen3.5-plus-20260420",
+  "name": "Qwen3.5 Plus",
+  "provider": "alibaba",
+  "model_class": "qwen",
+  "released": "2026-04-27",
+  "status": "ga",
+  "context_window": 1000000,
+  "output_window": 65536,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.4,
+    "output_per_mtok": 2.4,
+    "as_of": "2026-05-11"
+  },
+  "tags": [
+    "instruction-following"
+  ],
+  "benchmarks": {
+    "gpqa_diamond": 0.884,
+    "aime_2025": 0.913
+  }
+}

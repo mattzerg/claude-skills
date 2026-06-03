@@ -1,0 +1,24 @@
+{
+  "id": "mistral__codestral-2508",
+  "name": "Codestral 2508",
+  "provider": "mistral",
+  "model_class": "codestral",
+  "released": "2025-08-01",
+  "status": "ga",
+  "context_window": 256000,
+  "output_window": null,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.3,
+    "output_per_mtok": 0.9,
+    "as_of": "2026-05-11"
+  },
+  "tags": [
+    "code",
+    "instruction-following",
+    "sql"
+  ],
+  "benchmarks": {}
+}

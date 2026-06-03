@@ -1,0 +1,22 @@
+{
+  "id": "meta__llama-3.3-70b-instruct",
+  "name": "Llama 3.3 70B Instruct",
+  "provider": "meta",
+  "model_class": "llama",
+  "released": "2024-12-06",
+  "status": "ga",
+  "context_window": 131072,
+  "output_window": 16384,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.1,
+    "output_per_mtok": 0.32,
+    "as_of": "2026-05-11"
+  },
+  "tags": [
+    "instruction-following"
+  ],
+  "benchmarks": {}
+}
