@@ -1,7 +1,8 @@
 {
   "_doc": "Canonical signals × expected model_class. Used by test_golden_routing.py to detect drift in routing behavior. Pass threshold: >= 0.80 of cases must match. Update intentionally when ranker or routing_table changes.",
   "_changelog": [
-    "2026-06-03: Catalog source switched from the hand-made 12-model snapshot to the full ai-tracker export (44 models, current pricing, real benchmarks). Expected classes widened where the richer catalog makes cheaper capable models legitimate winners: deepseek-v4-flash / gemini-3.5-flash / codestral / llama-3.2 now win cost-weighted picks they couldn't before (they weren't in the old snapshot). All high-stakes + provider-constrained production cases (pr-gate, cross-model-check, fakematt-copyedit) still pick opus/gpt-5.5-pro unchanged. OPEN DESIGN QUESTION flagged for Matt: at high-stakes with no provider constraint, perfect-tag-fit cheap reasoners (deepseek-r1) can outscore whitelisted frontier models because cost carries 30% of the composite — should high-stakes re-weight toward capability, or restrict to the whitelist?"
+    "2026-06-03: Catalog source switched from the hand-made 12-model snapshot to the full ai-tracker export (44 models, current pricing, real benchmarks). Expected classes widened where the richer catalog makes cheaper capable models legitimate winners: deepseek-v4-flash / gemini-3.5-flash / codestral / llama-3.2 now win cost-weighted picks they couldn't before (they weren't in the old snapshot). All high-stakes + provider-constrained production cases (pr-gate, cross-model-check, fakematt-copyedit) still pick opus/gpt-5.5-pro unchanged.",
+    "2026-06-03 (later, Matt approved): DESIGN DECISION RESOLVED — high-stakes is now whitelist-FIRST in ranker.py. When any whitelisted-class model (opus / gpt-5.5-pro / gpt-5-pro) survives hard filters, only whitelisted models compete at high-stakes; cheap perfect-tag-fit reasoners (deepseek-r1) no longer win on cost. Falls back to the open field when provider constraints exclude every whitelisted class. The brainstorm-high-stakes case reverted to expecting opus/gpt-5.5-pro."
   ],
   "threshold": 0.80,
   "cases": [
@@ -41,8 +42,8 @@
       "name": "consultant-engagement brainstorm high-stakes",
       "signal": { "task_kind": "brainstorm", "caller": "consultant-engagement", "quality_floor": "high-stakes", "artifact_size_tokens": 12000 },
       "active_provider": null,
-      "expected_classes": ["opus", "gpt-5.5-pro", "gpt-5", "deepseek-r1"],
-      "_why_widened": "2026-06-03: deepseek-r1 has a perfect reasoning tag fit (1.0 Jaccard) + low cost, outscoring whitelisted classes whose capability is diluted across more tags. Defensible under current ranker semantics; flagged in _changelog as an open design question (high-stakes cost weighting)."
+      "expected_classes": ["opus", "gpt-5.5-pro"],
+      "_note": "2026-06-03: whitelist-first at high-stakes — only opus/gpt-5.5-pro compete here."
     },
     {
       "name": "content-production structured-extract cheap-ok",

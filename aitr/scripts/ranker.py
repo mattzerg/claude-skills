@@ -241,6 +241,19 @@ def rank(
             + ", ".join(f"{i}:{r}" for i, r in dropped[:8])
         )
 
+    # High-stakes is whitelist-FIRST (decision 2026-06-03): when any whitelisted-class
+    # model survives the hard filters, only whitelisted models compete. This stops
+    # perfect-tag-fit cheap reasoners (e.g. deepseek-r1) from outscoring frontier
+    # models on cost at high stakes. When a provider constraint excludes every
+    # whitelisted class (e.g. google-only), fall back to the open field so
+    # constrained picks still resolve.
+    if quality_floor == "high-stakes" and high_stakes_whitelist:
+        whitelisted_survivors = [
+            s for s in survivors if s[0].get("model_class", "") in high_stakes_whitelist
+        ]
+        if whitelisted_survivors:
+            survivors = whitelisted_survivors
+
     cheapest_cost = min((c for _, c, _ in survivors if c > 0), default=0.0)
 
     candidates: List[Candidate] = []

@@ -215,14 +215,62 @@ class TestRankHardFilters:
 class TestRankQualityFloor:
     def test_high_stakes_whitelist_bypass(self):
         # High-stakes whitelist allows opus even when capability score is low.
-        # The full catalog has several perfect-fit SQL specialists (codestral,
-        # qwen-coder, codex), so opus won't crack the default top-5 — but the
-        # whitelist must keep it in the candidate pool rather than dropping it.
         sig = make_signal(task_kind="sql", quality_floor="high-stakes",
                           artifact_size_tokens=4000)
         out = rank(sig, SNAPSHOT, ROUTING_TABLE, top_n=50)
         # Opus doesn't have "sql" tag but should be in results via whitelist
         assert any("opus" in c.model for c in out)
+
+
+class TestHighStakesWhitelistRestriction:
+    """2026-06-03 decision: high-stakes is whitelist-FIRST. When whitelisted-class
+    models survive hard filters, only they compete — cheap perfect-tag-fit models
+    can't win high-stakes work on cost."""
+
+    def test_unconstrained_high_stakes_excludes_non_whitelisted(self):
+        whitelist = set(ROUTING_TABLE["high_stakes_whitelist"])
+        sig = make_signal(task_kind="brainstorm", quality_floor="high-stakes",
+                          artifact_size_tokens=12000)
+        out = rank(sig, SNAPSHOT, ROUTING_TABLE, top_n=50)
+        # Every candidate must be a whitelisted class — deepseek-r1 (perfect
+        # reasoning tag fit, cheap) must NOT appear.
+        assert out, "high-stakes brainstorm must produce candidates"
+        for c in out:
+            assert c.model_class in whitelist, f"{c.model} ({c.model_class}) not whitelisted"
+
+    def test_high_stakes_winner_is_frontier_class(self):
+        sig = make_signal(task_kind="brainstorm", quality_floor="high-stakes",
+                          artifact_size_tokens=12000)
+        out = rank(sig, SNAPSHOT, ROUTING_TABLE)
+        assert out[0].model_class in ("opus", "gpt-5.5-pro")
+
+    def test_constraint_excluding_whitelist_falls_back(self):
+        # google-only excludes every whitelisted class (opus/gpt-5.5-pro are
+        # anthropic/openai). The restriction must NOT fire — the open field
+        # competes, and whether anything clears the capability floor is up to
+        # the normal floor logic.
+        sig = make_signal(task_kind="summarize", quality_floor="high-stakes",
+                          provider_constraint="google-only",
+                          artifact_size_tokens=4000)
+        try:
+            out = rank(sig, SNAPSHOT, ROUTING_TABLE, top_n=50)
+            # If candidates exist, none can be whitelisted (google has none) —
+            # proving the fallback path ran rather than erroring on the restriction.
+            whitelist = set(ROUTING_TABLE["high_stakes_whitelist"])
+            for c in out:
+                assert c.model_class not in whitelist
+        except RankerError:
+            # Acceptable: no google model clears the high-stakes capability floor.
+            # The point is the restriction itself didn't preempt the attempt.
+            pass
+
+    def test_medium_floor_unaffected_by_whitelist(self):
+        # The restriction only applies at high-stakes; medium keeps the open field.
+        sig = make_signal(task_kind="summarize", quality_floor="medium",
+                          artifact_size_tokens=4000)
+        out = rank(sig, SNAPSHOT, ROUTING_TABLE, top_n=50)
+        whitelist = set(ROUTING_TABLE["high_stakes_whitelist"])
+        assert any(c.model_class not in whitelist for c in out)
 
 
 class TestRankBenchmarks:
