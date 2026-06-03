@@ -37,6 +37,91 @@ from penalties import (  # noqa: E402
 )
 
 
+def _baseline_pricing(catalog_body: dict | None, baseline_id: str) -> dict | None:
+    """Pricing record for the baseline model, or None when unavailable."""
+    if not catalog_body:
+        return None
+    record = next(
+        (m for m in (catalog_body.get("models") or []) if m.get("id") == baseline_id),
+        None,
+    )
+    return (record or {}).get("pricing") or None
+
+
+def _cost_at_current_pricing(catalog_body: dict | None, model_id: str, artifact: int) -> float | None:
+    """Estimated cost of `artifact` input tokens (+2000 output) on `model_id` at the
+    catalog's CURRENT pricing. None when the model/pricing isn't in the catalog."""
+    pricing = _baseline_pricing(catalog_body, model_id)
+    if not pricing:
+        return None
+    in_rate = float(pricing.get("input_per_mtok") or 0.0)
+    out_rate = float(pricing.get("output_per_mtok") or 0.0)
+    return (artifact * in_rate + 2000 * out_rate) / 1_000_000.0
+
+
+def compute_savings(
+    decisions: list[dict],
+    *,
+    catalog_body: dict | None = None,
+    baseline_id: str = "anthropic__claude-opus-4-8",
+) -> dict:
+    """Aggregate savings vs the no-router baseline.
+
+    Decisions logged after 2026-06-03 carry native baseline_cost_usd/savings_usd
+    fields and are summed as recorded. Older (legacy) records pre-date both the
+    baseline fields AND the corrected catalog pricing, so BOTH sides are recomputed
+    from current pricing: "at today's prices, what would the routed model mix have
+    cost vs running everything on the baseline?" A legacy pick of the baseline model
+    itself therefore counts as exactly $0 savings (same model, same price).
+    """
+    native_savings = 0.0
+    native_count = 0
+    retro_savings = 0.0
+    retro_count = 0
+    total_spend = 0.0
+    baseline_spend = 0.0
+    uncounted = 0
+
+    for d in decisions:
+        if d.get("verb") == "delegate":
+            continue
+
+        if "savings_usd" in d:
+            actual = float(d.get("estimated_cost_usd") or 0.0)
+            total_spend += actual
+            native_savings += float(d.get("savings_usd") or 0.0)
+            baseline_spend += float(d.get("baseline_cost_usd") or 0.0)
+            native_count += 1
+            continue
+
+        # Legacy record: recompute both sides at current catalog pricing
+        signal = d.get("signal") or {}
+        artifact = int(signal.get("artifact_size_tokens") or 4000)
+        baseline_cost = _cost_at_current_pricing(catalog_body, baseline_id, artifact)
+        if baseline_cost is None:
+            uncounted += 1
+            continue
+        actual_cost = _cost_at_current_pricing(catalog_body, d.get("model", ""), artifact)
+        if actual_cost is None:
+            # Picked model no longer in catalog (e.g. old snapshot id style) —
+            # fall back to the recorded cost, which may reflect stale pricing
+            actual_cost = float(d.get("estimated_cost_usd") or 0.0)
+        total_spend += actual_cost
+        baseline_spend += baseline_cost
+        retro_savings += baseline_cost - actual_cost
+        retro_count += 1
+
+    return {
+        "baseline_model": baseline_id,
+        "total_spend_usd": total_spend,
+        "baseline_spend_usd": baseline_spend,
+        "total_savings_usd": native_savings + retro_savings,
+        "native_count": native_count,
+        "retro_count": retro_count,
+        "uncounted": uncounted,
+    }
+
+
 def _parse_ts(value: str) -> datetime | None:
     try:
         dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
@@ -111,6 +196,42 @@ def build_report(
         lines.append(f"- {model}: {count} picks (~${est:.2f} estimated input+output)")
     if delegations:
         lines.append(f"- (delegated out: {delegations})")
+
+    # --- Savings vs baseline -------------------------------------------------
+    try:
+        from catalog import load_catalog  # noqa: PLC0415 — local import keeps report usable offline
+        catalog_body = load_catalog(offline=True).body
+    except Exception:
+        catalog_body = None
+    try:
+        from pick import resolve_baseline_model  # noqa: PLC0415
+        baseline_id = resolve_baseline_model()
+    except Exception:
+        baseline_id = "anthropic__claude-opus-4-8"
+
+    savings = compute_savings(window_decisions, catalog_body=catalog_body, baseline_id=baseline_id)
+    lines += ["", "## Savings vs baseline", ""]
+    lines += [
+        f"Baseline (no-router default): `{savings['baseline_model']}`",
+        "",
+        f"- Routed spend (estimated): ${savings['total_spend_usd']:.2f}",
+        f"- Same work on baseline: ${savings['baseline_spend_usd']:.2f}",
+        f"- **Estimated savings: ${savings['total_savings_usd']:.2f}**"
+        + (
+            f" ({savings['total_savings_usd'] / savings['baseline_spend_usd'] * 100:.0f}% of baseline)"
+            if savings["baseline_spend_usd"] > 0
+            else ""
+        ),
+    ]
+    if savings["retro_count"]:
+        lines.append(
+            f"- ({savings['retro_count']} legacy picks estimated retroactively from current "
+            f"baseline pricing; {savings['native_count']} picks carry native savings fields)"
+        )
+    if savings["uncounted"]:
+        lines.append(
+            f"- ({savings['uncounted']} picks uncounted — baseline model not found in catalog)"
+        )
 
     # --- Corrections + active penalties ------------------------------------
     feedback = load_wrong_model_feedback(feedback_dirs)

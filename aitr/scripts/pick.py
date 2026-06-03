@@ -39,14 +39,42 @@ from task_signal import (  # noqa: E402
 )
 from catalog import (  # noqa: E402
     CatalogUnavailable,
+    _load_config,
     load_catalog,
     load_routing_table,
 )
 from penalties import load_penalties  # noqa: E402
-from ranker import Candidate, RankerError, rank  # noqa: E402
+from ranker import Candidate, RankerError, estimated_cost_usd, rank  # noqa: E402
 
 
 DEFAULT_DECISIONS_LOG = Path.home() / ".local" / "state" / "zerg" / "aitr" / "decisions.log"
+
+# The model every task would run on if aitr didn't exist (the session default).
+# Overridable via `baseline_model` in ~/.config/zerg/aitr.toml. Savings per
+# decision = baseline cost - picked-model cost; weekly_report.py aggregates it.
+DEFAULT_BASELINE_MODEL = "anthropic__claude-opus-4-8"
+
+
+def resolve_baseline_model() -> str:
+    cfg = _load_config()
+    return str(cfg.get("baseline_model") or DEFAULT_BASELINE_MODEL)
+
+
+def compute_baseline(catalog_body: dict, signal_dict: dict) -> dict:
+    """Return {baseline_model, baseline_cost_usd} for the signal, or {} when the
+    baseline model isn't in the catalog (never fatal — savings are best-effort)."""
+    baseline_id = resolve_baseline_model()
+    record = next(
+        (m for m in (catalog_body.get("models") or []) if m.get("id") == baseline_id),
+        None,
+    )
+    if not record:
+        return {}
+    artifact = int(signal_dict.get("artifact_size_tokens") or 4000)
+    return {
+        "baseline_model": baseline_id,
+        "baseline_cost_usd": round(estimated_cost_usd(record, artifact), 5),
+    }
 
 
 def _detect_active_provider() -> str | None:
@@ -168,6 +196,12 @@ def _cmd_pick(args: argparse.Namespace, *, explain: bool = False) -> int:
         "active_provider": active_provider,
         "signal": signal.to_dict(),
     }
+
+    # Baseline + savings: what would this task have cost on the no-router default?
+    baseline = compute_baseline(catalog_src.body, signal.to_dict())
+    if baseline:
+        out.update(baseline)
+        out["savings_usd"] = round(baseline["baseline_cost_usd"] - top.estimated_cost_usd, 5)
     if explain:
         out["alternatives"] = [_candidate_to_summary(c) for c in candidates[1:]]
         out["routing_rules"] = task_rules
