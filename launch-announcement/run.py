@@ -7,13 +7,13 @@ Usage:
 
 Review flags:
     --out-dir DIR     where to write reviews (default: /tmp/launch-announcement/)
-    --model MODEL     Claude model id (default: claude-opus-4-7)
+    --model MODEL     Claude model id (default: routed via aitr; fallback claude-opus-4-8)
     --no-pdf          skip PDF conversion + Preview open
     --quick           drop the full corpus from anchors (style guide only)
 
 Scaffold flags:
     --out-dir DIR     where to write scaffolds (default: /tmp/launch-announcement/)
-    --model MODEL     Claude model id (default: claude-opus-4-7)
+    --model MODEL     Claude model id (default: routed via aitr; fallback claude-opus-4-8)
     --length WORDS    target word count (default: 1500)
     --audience X      infra-engineer (default) | designer | fintech-buyer | general-tech
     --cta X           try (default) | waitlist | docs | sales | none
@@ -33,7 +33,26 @@ from pathlib import Path
 sys.path.insert(0, str(Path.home() / ".claude" / "feedback-corpus"))
 from lib.claude import call_claude  # type: ignore
 
-DEFAULT_MODEL = "claude-opus-4-7"
+# Fallback when aitr (the internal model router) is unavailable. Explicit --model
+# always wins; otherwise the model is routed per-run (draft-prose / high-stakes).
+DEFAULT_MODEL = "claude-opus-4-8"
+
+_AITR_SCRIPTS = Path.home() / ".claude" / "skills" / "aitr" / "scripts"
+
+
+def _routed_default_model() -> str:
+    if str(_AITR_SCRIPTS) not in sys.path:
+        sys.path.insert(0, str(_AITR_SCRIPTS))
+    try:
+        from skill_default import aitr_model_or
+        return aitr_model_or(
+            DEFAULT_MODEL,
+            task_kind="draft-prose",
+            caller="launch-announcement",
+            quality_floor="high-stakes",
+        )
+    except ImportError:
+        return DEFAULT_MODEL
 DEFAULT_OUT = Path("/tmp/launch-announcement")
 SKILL_ROOT = Path.home() / ".claude" / "skills" / "launch-announcement"
 PROMPTS_DIR = SKILL_ROOT / "prompts"
@@ -321,7 +340,15 @@ def cmd_review(args) -> int:
 
 
 def cmd_scaffold(args) -> int:
-    out_dir = Path(args.out_dir)
+    canonical_path: Path | None = None
+    if getattr(args, "out", None):
+        canonical_path = Path(args.out)
+        out_dir = canonical_path.parent
+    elif getattr(args, "product", None):
+        canonical_path = VAULT_ROOT / "Projects" / "Zstack" / "Growth" / "launches" / args.product / "announcement.md"
+        out_dir = canonical_path.parent
+    else:
+        out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     started = time.time()
     if args.length < 600 or args.length > 3000:
@@ -331,6 +358,9 @@ def cmd_scaffold(args) -> int:
     print(f"[launch-announcement scaffold] {args.brief[:80]}…", file=sys.stderr)
     md = scaffold_one(args.brief, anchors, args.model, args.length, args.audience, args.cta, args.companion)
     draft_path, checklist_path = write_scaffold(out_dir, args.brief, md)
+    if canonical_path is not None:
+        canonical_path.write_text(draft_path.read_text())
+        print(f"  → {canonical_path} (canonical)", file=sys.stderr)
     print(f"  → {draft_path}", file=sys.stderr)
     print(f"  → {checklist_path}", file=sys.stderr)
     summary = write_session_summary(
@@ -350,7 +380,7 @@ def main() -> int:
     r = sub.add_parser("review", help="Audit one or more existing drafts")
     r.add_argument("drafts", nargs="+")
     r.add_argument("--out-dir", default=str(DEFAULT_OUT))
-    r.add_argument("--model", default=DEFAULT_MODEL)
+    r.add_argument("--model", default=None)
     r.add_argument("--no-pdf", action="store_true")
     r.add_argument("--quick", action="store_true")
     r.set_defaults(fn=cmd_review)
@@ -358,7 +388,9 @@ def main() -> int:
     s = sub.add_parser("scaffold", help="Generate a draft skeleton from a product brief")
     s.add_argument("brief")
     s.add_argument("--out-dir", default=str(DEFAULT_OUT))
-    s.add_argument("--model", default=DEFAULT_MODEL)
+    s.add_argument("--out", help="explicit output path (overrides --out-dir/--product); canonical = Growth/launches/<slug>/announcement.md")
+    s.add_argument("--product", help="product slug — writes canonical Growth/launches/<slug>/announcement.md")
+    s.add_argument("--model", default=None)
     s.add_argument("--length", type=int, default=1500)
     s.add_argument("--audience", default="infra-engineer", choices=["infra-engineer", "designer", "fintech-buyer", "general-tech"])
     s.add_argument("--cta", default="try", choices=["try", "waitlist", "docs", "sales", "none"])
@@ -367,6 +399,9 @@ def main() -> int:
     s.set_defaults(fn=cmd_scaffold)
 
     args = p.parse_args()
+    # Explicit --model wins; otherwise route via aitr (loud fallback to DEFAULT_MODEL).
+    if getattr(args, "model", None) is None and hasattr(args, "model"):
+        args.model = _routed_default_model()
     return args.fn(args)
 
 

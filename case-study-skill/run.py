@@ -10,19 +10,19 @@ Capture flags:
     --project SLUG    optional project slug; auto-derived from client+kind otherwise
     --kind X          delivery (default) | advisory
     --out-dir DIR     where to write the brief (default: skill state/briefs/)
-    --model MODEL     Claude model id (default: claude-opus-4-7)
+    --model MODEL     Claude model id (default: routed via aitr; fallback claude-opus-4-8)
     --no-pdf          skip PDF + Preview open
 
 Scaffold flags:
     --cleared-for-publication   override nda_status:unknown; refused for nda_status:restricted
     --out-dir DIR     where to write drafts (default: vault MattZerg/CaseStudies/<client>/)
-    --model MODEL     Claude model id (default: claude-opus-4-7)
+    --model MODEL     Claude model id (default: routed via aitr; fallback claude-opus-4-8)
     --length WORDS    target word count (default: 1500; band 1,200-2,000)
     --no-pdf          skip PDF + Preview open
 
 Review flags:
     --out-dir DIR     where to write reviews (default: /tmp/case-study/)
-    --model MODEL     Claude model id (default: claude-opus-4-7)
+    --model MODEL     Claude model id (default: routed via aitr; fallback claude-opus-4-8)
     --no-pdf          skip PDF conversion + Preview open
     --quick           drop the full corpus from anchors (style guide only)
 """
@@ -44,7 +44,26 @@ from lib.claude import call_claude  # type: ignore
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from cs_helpers.sources import gather_evidence, slugify  # type: ignore
 
-DEFAULT_MODEL = "claude-opus-4-7"
+# Fallback when aitr (the internal model router) is unavailable. Explicit --model
+# always wins; otherwise the model is routed per-run (draft-prose / high-stakes).
+DEFAULT_MODEL = "claude-opus-4-8"
+
+_AITR_SCRIPTS = Path.home() / ".claude" / "skills" / "aitr" / "scripts"
+
+
+def _routed_default_model() -> str:
+    if str(_AITR_SCRIPTS) not in sys.path:
+        sys.path.insert(0, str(_AITR_SCRIPTS))
+    try:
+        from skill_default import aitr_model_or
+        return aitr_model_or(
+            DEFAULT_MODEL,
+            task_kind="draft-prose",
+            caller="case-study-skill",
+            quality_floor="high-stakes",
+        )
+    except ImportError:
+        return DEFAULT_MODEL
 SKILL_ROOT = Path(__file__).resolve().parent
 PROMPTS_DIR = SKILL_ROOT / "prompts"
 CORPUS_FILE = SKILL_ROOT / "corpus" / "case-study-corpus.md"
@@ -496,7 +515,7 @@ def main() -> int:
     c.add_argument("--project", default=None)
     c.add_argument("--kind", default="delivery", choices=["delivery", "advisory"])
     c.add_argument("--out-dir", default=None)
-    c.add_argument("--model", default=DEFAULT_MODEL)
+    c.add_argument("--model", default=None)
     c.add_argument("--no-pdf", action="store_true", help="Deprecated; default is no-open. Kept for backward compat.")
     c.add_argument("--open", action="store_true", help="Open session-summary + brief in Preview/default app (off by default).")
     c.set_defaults(fn=cmd_capture)
@@ -505,7 +524,7 @@ def main() -> int:
     s.add_argument("brief")
     s.add_argument("--cleared-for-publication", action="store_true")
     s.add_argument("--out-dir", default=None)
-    s.add_argument("--model", default=DEFAULT_MODEL)
+    s.add_argument("--model", default=None)
     s.add_argument("--length", type=int, default=1500)
     s.add_argument("--no-pdf", action="store_true", help="Deprecated; default is no-open. Kept for backward compat.")
     s.add_argument("--open", action="store_true", help="Open session-summary + draft + checklist in Preview/default app (off by default).")
@@ -514,7 +533,7 @@ def main() -> int:
     r = sub.add_parser("review", help="Audit one or more existing drafts")
     r.add_argument("drafts", nargs="+")
     r.add_argument("--out-dir", default=str(DEFAULT_REVIEW_OUT))
-    r.add_argument("--model", default=DEFAULT_MODEL)
+    r.add_argument("--model", default=None)
     r.add_argument("--no-pdf", action="store_true", help="Deprecated; default is no-open. Kept for backward compat.")
     r.add_argument("--open", action="store_true", help="Open session-summary + review.md + interview.md in Preview/default app (off by default — Matt does NOT want these auto-opened).")
     r.add_argument("--quick", action="store_true")
@@ -530,6 +549,9 @@ def main() -> int:
     rd.set_defaults(fn=cmd_render)
 
     args = p.parse_args()
+    # Explicit --model wins; otherwise route via aitr (loud fallback to DEFAULT_MODEL).
+    if getattr(args, "model", None) is None and hasattr(args, "model"):
+        args.model = _routed_default_model()
     return args.fn(args)
 
 

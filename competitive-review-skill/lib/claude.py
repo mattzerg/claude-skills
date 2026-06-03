@@ -32,7 +32,31 @@ from pathlib import Path
 from typing import Optional
 
 CLAUDE_BIN = str(Path.home() / ".local" / "bin" / "claude")
+# Fallback when aitr (the internal model router) is unavailable. Callers that pass
+# an explicit model= always win; otherwise calls route via aitr (research / medium).
 DEFAULT_MODEL = "claude-sonnet-4-6"
+
+_AITR_SCRIPTS = Path.home() / ".claude" / "skills" / "aitr" / "scripts"
+_routed_model_cache: Optional[str] = None
+
+
+def _routed_default_model() -> str:
+    """aitr-routed model for competitive-review calls; loud fallback to DEFAULT_MODEL."""
+    global _routed_model_cache
+    if _routed_model_cache is None:
+        if str(_AITR_SCRIPTS) not in sys.path:
+            sys.path.insert(0, str(_AITR_SCRIPTS))
+        try:
+            from skill_default import aitr_model_or
+            _routed_model_cache = aitr_model_or(
+                DEFAULT_MODEL,
+                task_kind="research",
+                caller="competitive-review-skill",
+                quality_floor="medium",
+            )
+        except ImportError:
+            _routed_model_cache = DEFAULT_MODEL
+    return _routed_model_cache
 
 # Tunables
 MAX_RETRIES = 3
@@ -141,14 +165,16 @@ def call_claude(
     prompt: str,
     *,
     system: Optional[str] = None,
-    model: str = DEFAULT_MODEL,
+    model: Optional[str] = None,
     timeout: int = 600,
 ) -> str:
     """Public API. Routes to SDK or CLI based on env. Retries on transient failures.
 
+    `model=None` (default) routes via aitr; pass an explicit model to override.
     `timeout` is the OUTER budget. Each attempt is bounded to min(timeout, 300s);
     we retry up to MAX_RETRIES times within the outer budget.
     """
+    model = model or _routed_default_model()
     use_sdk = _sdk_available()
     deadline = time.monotonic() + timeout
     last_err: Optional[Exception] = None
@@ -185,7 +211,7 @@ def call_claude_json(
     prompt: str,
     *,
     system: Optional[str] = None,
-    model: str = DEFAULT_MODEL,
+    model: Optional[str] = None,
     timeout: int = 600,
 ) -> dict | list:
     """Call Claude and parse JSON from the response. Raises if no JSON extractable."""
