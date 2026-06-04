@@ -118,6 +118,40 @@ class TestComputeSavings:
         assert out["retro_count"] == 0
         assert out["uncounted"] == 1
 
+    def _metered(self, actual, baseline):
+        d = self._native_decision(actual, baseline)
+        d["signal"]["billing_mode"] = "metered"
+        return d
+
+    def _flat(self, actual, baseline):
+        d = self._native_decision(actual, baseline)
+        d["signal"]["billing_mode"] = "flat"
+        return d
+
+    def test_only_metered_savings_count_as_dollars(self):
+        # One metered pick (real $0.05 saved) + one flat pick (also nominally
+        # $0.05 but $0 marginal on Max-OAuth) → real dollar savings = 0.05 only.
+        decisions = [self._metered(0.02, 0.07), self._flat(0.02, 0.07)]
+        out = compute_savings(decisions, catalog_body=SNAPSHOT)
+        assert out["metered_count"] == 1
+        assert out["flat_count"] == 1
+        assert out["metered_savings_usd"] == pytest.approx(0.05)
+        # Notional total still sums both (for reference), but it's not the headline
+        assert out["total_savings_usd"] == pytest.approx(0.10)
+
+    def test_all_flat_means_zero_real_dollars(self):
+        decisions = [self._flat(0.02, 0.07), self._flat(0.01, 0.07)]
+        out = compute_savings(decisions, catalog_body=SNAPSHOT)
+        assert out["metered_savings_usd"] == 0.0
+        assert out["flat_count"] == 2
+        assert out["metered_count"] == 0
+
+    def test_untagged_records_count_as_unknown(self):
+        decisions = [self._native_decision(0.02, 0.07)]  # no billing_mode in signal
+        out = compute_savings(decisions, catalog_body=SNAPSHOT)
+        assert out["unknown_count"] == 1
+        assert out["metered_savings_usd"] == 0.0
+
 
 class TestReportRendersSavings:
     def test_savings_section_in_report(self, tmp_path):
@@ -157,6 +191,8 @@ class TestReportRendersSavings:
             now=datetime(2026, 6, 3, 12, 0, tzinfo=timezone.utc),
         )
         assert "## Savings vs baseline" in report
-        assert "Estimated savings" in report
-        # Native record's savings must be present (0.05) plus legacy retro (~0.00 for opus pick)
-        assert "$0.05" in report or "$0.0" in report
+        assert "Real dollar savings" in report
+        # Neither record carries billing_mode → both report as headroom, not dollars
+        assert "pre-date billing-mode tagging" in report
+        # The notional reference line still shows the underlying numbers
+        assert "notional" in report

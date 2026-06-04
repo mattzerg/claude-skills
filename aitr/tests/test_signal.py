@@ -80,7 +80,16 @@ class TestSignalDataclass:
             "artifact_size_tokens": 4000,
             "quality_floor": "medium",
             "provider_constraint": "any",
+            "billing_mode": "unknown",
         }
+
+    def test_unknown_billing_mode(self):
+        with pytest.raises(SignalError, match="billing_mode"):
+            Signal(task_kind="code-review", caller="x", billing_mode="prepaid")
+
+    def test_billing_mode_passthrough(self):
+        s = Signal(task_kind="classify", caller="x", billing_mode="metered")
+        assert s.to_dict()["billing_mode"] == "metered"
 
 
 class TestParseKvArgs:

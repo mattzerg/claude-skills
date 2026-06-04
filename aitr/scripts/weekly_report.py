@@ -82,34 +82,52 @@ def compute_savings(
     baseline_spend = 0.0
     uncounted = 0
 
+    # Billing-mode split: dollar savings are only REAL for metered (per-token API)
+    # callers. flat (Max-plan OAuth) callers cost $0 marginal regardless of model —
+    # their "savings" is rate-limit/latency headroom, reported separately so it's
+    # never double-counted as real dollars. unknown = pre-billing-mode legacy.
+    metered_savings = 0.0
+    metered_count = 0
+    flat_count = 0
+    unknown_count = 0
+
     for d in decisions:
         if d.get("verb") == "delegate":
             continue
 
+        signal = d.get("signal") or {}
+        billing = signal.get("billing_mode", "unknown")
+
         if "savings_usd" in d:
             actual = float(d.get("estimated_cost_usd") or 0.0)
+            sav = float(d.get("savings_usd") or 0.0)
             total_spend += actual
-            native_savings += float(d.get("savings_usd") or 0.0)
+            native_savings += sav
             baseline_spend += float(d.get("baseline_cost_usd") or 0.0)
             native_count += 1
-            continue
+        else:
+            # Legacy record: recompute both sides at current catalog pricing
+            artifact = int(signal.get("artifact_size_tokens") or 4000)
+            baseline_cost = _cost_at_current_pricing(catalog_body, baseline_id, artifact)
+            if baseline_cost is None:
+                uncounted += 1
+                continue
+            actual_cost = _cost_at_current_pricing(catalog_body, d.get("model", ""), artifact)
+            if actual_cost is None:
+                actual_cost = float(d.get("estimated_cost_usd") or 0.0)
+            sav = baseline_cost - actual_cost
+            total_spend += actual_cost
+            baseline_spend += baseline_cost
+            retro_savings += sav
+            retro_count += 1
 
-        # Legacy record: recompute both sides at current catalog pricing
-        signal = d.get("signal") or {}
-        artifact = int(signal.get("artifact_size_tokens") or 4000)
-        baseline_cost = _cost_at_current_pricing(catalog_body, baseline_id, artifact)
-        if baseline_cost is None:
-            uncounted += 1
-            continue
-        actual_cost = _cost_at_current_pricing(catalog_body, d.get("model", ""), artifact)
-        if actual_cost is None:
-            # Picked model no longer in catalog (e.g. old snapshot id style) —
-            # fall back to the recorded cost, which may reflect stale pricing
-            actual_cost = float(d.get("estimated_cost_usd") or 0.0)
-        total_spend += actual_cost
-        baseline_spend += baseline_cost
-        retro_savings += baseline_cost - actual_cost
-        retro_count += 1
+        if billing == "metered":
+            metered_savings += sav
+            metered_count += 1
+        elif billing == "flat":
+            flat_count += 1
+        else:
+            unknown_count += 1
 
     return {
         "baseline_model": baseline_id,
@@ -119,6 +137,11 @@ def compute_savings(
         "native_count": native_count,
         "retro_count": retro_count,
         "uncounted": uncounted,
+        # Billing-mode breakdown — only metered_savings is real dollars
+        "metered_savings_usd": metered_savings,
+        "metered_count": metered_count,
+        "flat_count": flat_count,
+        "unknown_count": unknown_count,
     }
 
 
@@ -214,23 +237,32 @@ def build_report(
     lines += [
         f"Baseline (no-router default): `{savings['baseline_model']}`",
         "",
-        f"- Routed spend (estimated): ${savings['total_spend_usd']:.2f}",
-        f"- Same work on baseline: ${savings['baseline_spend_usd']:.2f}",
-        f"- **Estimated savings: ${savings['total_savings_usd']:.2f}**"
-        + (
-            f" ({savings['total_savings_usd'] / savings['baseline_spend_usd'] * 100:.0f}% of baseline)"
-            if savings["baseline_spend_usd"] > 0
-            else ""
-        ),
+        f"- **Real dollar savings (metered callers only): ${savings['metered_savings_usd']:.2f}** "
+        f"across {savings['metered_count']} per-token API picks",
+    ]
+    # Flat / unknown callers: model choice has $0 marginal cost on Max-plan OAuth,
+    # so their "savings" is rate-limit/latency headroom, not dollars. Reported but
+    # never summed into the dollar figure.
+    if savings["flat_count"]:
+        lines.append(
+            f"- {savings['flat_count']} flat (Max-plan OAuth) picks — $0 marginal cost; "
+            f"routing here buys rate-limit + latency headroom, not dollars"
+        )
+    if savings["unknown_count"]:
+        lines.append(
+            f"- {savings['unknown_count']} picks pre-date billing-mode tagging "
+            f"(counted as headroom, not dollars)"
+        )
+    lines += [
+        "",
+        "_Reference (all callers, assuming hypothetical metered billing):_ "
+        f"routed ${savings['total_spend_usd']:.2f} vs ${savings['baseline_spend_usd']:.2f} on baseline "
+        f"= ${savings['total_savings_usd']:.2f} notional.",
     ]
     if savings["retro_count"]:
         lines.append(
-            f"- ({savings['retro_count']} legacy picks estimated retroactively from current "
-            f"baseline pricing; {savings['native_count']} picks carry native savings fields)"
-        )
-    if savings["uncounted"]:
-        lines.append(
-            f"- ({savings['uncounted']} picks uncounted — baseline model not found in catalog)"
+            f"_({savings['retro_count']} legacy picks estimated retroactively; "
+            f"{savings['native_count']} carry native savings fields.)_"
         )
 
     # --- Corrections + active penalties ------------------------------------

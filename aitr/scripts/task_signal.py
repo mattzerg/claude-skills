@@ -29,6 +29,11 @@ TASK_KINDS: Tuple[str, ...] = (
 QUALITY_FLOORS: Tuple[str, ...] = ("cheap-ok", "medium", "high-stakes")
 PROVIDER_CONSTRAINTS: Tuple[str, ...] = ("any", "anthropic-only", "openai-only", "google-only")
 MODALITIES: Tuple[str, ...] = ("vision", "tools", "extended-thinking", "audio")
+# How the caller is billed. Drives whether savings vs baseline are real DOLLARS
+# (metered API key — per-token) or RATE-LIMIT/LATENCY headroom only (flat Max-plan
+# OAuth subscription, where model choice has $0 marginal cost). "unknown" callers
+# are reported separately so their savings aren't double-counted as real dollars.
+BILLING_MODES: Tuple[str, ...] = ("metered", "flat", "unknown")
 
 
 class SignalError(ValueError):
@@ -45,6 +50,9 @@ class Signal:
     quality_floor: str = "medium"
     provider_constraint: str = "any"
     modality_required: Optional[str] = None
+    # Billing mode of the caller's executor. Not used by the ranker — recorded on
+    # the decision so weekly_report can credit dollar savings only to metered callers.
+    billing_mode: str = "unknown"
     # Free-form context for the decision log. Not used by the ranker.
     notes: Optional[str] = None
 
@@ -74,6 +82,10 @@ class Signal:
         if self.modality_required is not None and self.modality_required not in MODALITIES:
             raise SignalError(
                 f"unknown modality_required: {self.modality_required!r} (expected one of {MODALITIES})"
+            )
+        if self.billing_mode not in BILLING_MODES:
+            raise SignalError(
+                f"unknown billing_mode: {self.billing_mode!r} (expected one of {BILLING_MODES})"
             )
 
     def to_dict(self) -> dict:
@@ -122,6 +134,7 @@ def signal_from_kv(kv: dict) -> Signal:
         "quality_floor",
         "provider_constraint",
         "modality_required",
+        "billing_mode",
         "notes",
     }
     unknown = set(kv.keys()) - known
@@ -147,6 +160,7 @@ def signal_from_kv(kv: dict) -> Signal:
         quality_floor=kv.get("quality_floor", "medium"),
         provider_constraint=kv.get("provider_constraint", "any"),
         modality_required=kv.get("modality_required") or None,
+        billing_mode=kv.get("billing_mode") or "unknown",
         notes=kv.get("notes") or None,
     )
 
@@ -173,5 +187,6 @@ def signal_from_json(payload: str) -> Signal:
         quality_floor=obj.get("quality_floor", "medium"),
         provider_constraint=obj.get("provider_constraint", "any"),
         modality_required=obj.get("modality_required"),
+        billing_mode=obj.get("billing_mode") or "unknown",
         notes=obj.get("notes"),
     )

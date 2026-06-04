@@ -54,13 +54,17 @@ def aitr_model_or(
     quality_floor: str = "medium",
     artifact_size_tokens: Optional[int] = None,
     modality_required: Optional[str] = None,
+    billing_mode: str = "flat",
     timeout: int = 30,
     runner=None,
 ) -> str:
     """Return aitr's picked claude model name, or `fallback` (loudly) on any failure.
 
-    Always constrains to anthropic-only since callers execute via the claude CLI.
-    `runner` injects a fake subprocess.run for tests.
+    Always constrains to anthropic-only since callers execute via the claude CLI
+    (Max-plan OAuth) — hence `billing_mode` defaults to "flat": model choice here
+    saves rate-limit/latency headroom, not dollars. Pass billing_mode="metered"
+    from callers that execute on a per-token API key so the weekly report credits
+    their dollar savings. `runner` injects a fake subprocess.run for tests.
     """
     run = runner or subprocess.run
 
@@ -73,6 +77,7 @@ def aitr_model_or(
         f"task_kind={task_kind}",
         f"caller={caller}",
         f"quality_floor={quality_floor}",
+        f"billing_mode={billing_mode}",
         "provider_constraint=anthropic-only",
         "--format", "json",
     ]
