@@ -152,6 +152,32 @@ class TestComputeSavings:
         assert out["unknown_count"] == 1
         assert out["metered_savings_usd"] == 0.0
 
+    def test_metered_actuals_override_estimates(self):
+        # A metered pick with logged ACTUAL usage: dollars come from real token
+        # counts, not the estimate. Haiku actual = 1M in @ $1 = $1.00; baseline
+        # opus for 4000 tok = 0.07. Savings = 0.07 - 1.00 = -0.93 (real).
+        decision = {
+            "decision_id": "aitr-actual-1",
+            "model": "anthropic__claude-haiku-4-5",
+            "estimated_cost_usd": 0.014,  # estimate — should be IGNORED
+            "signal": {"task_kind": "summarize", "caller": "metered-test",
+                       "artifact_size_tokens": 4000, "billing_mode": "metered"},
+        }
+        actuals = {"aitr-actual-1": {"decision_id": "aitr-actual-1",
+                                     "actual_cost_usd": 1.00, "input_tokens": 1_000_000,
+                                     "output_tokens": 0}}
+        out = compute_savings([decision], catalog_body=SNAPSHOT, actuals=actuals)
+        assert out["metered_actual_count"] == 1
+        assert out["total_spend_usd"] == pytest.approx(1.00)  # actual, not 0.014
+        assert out["metered_savings_usd"] == pytest.approx(0.07 - 1.00, rel=1e-3)
+
+    def test_no_actuals_falls_back_to_estimate(self):
+        decision = self._metered(0.02, 0.07)
+        decision["decision_id"] = "aitr-noactual"
+        out = compute_savings([decision], catalog_body=SNAPSHOT, actuals={})
+        assert out["metered_actual_count"] == 0
+        assert out["metered_savings_usd"] == pytest.approx(0.05)
+
 
 class TestReportRendersSavings:
     def test_savings_section_in_report(self, tmp_path):

@@ -59,11 +59,31 @@ def _cost_at_current_pricing(catalog_body: dict | None, model_id: str, artifact:
     return (artifact * in_rate + 2000 * out_rate) / 1_000_000.0
 
 
+def load_actuals(actuals_log: Path | None = None) -> dict:
+    """decision_id → actual usage record (from aitr_exec). Empty when none logged."""
+    path = actuals_log or (Path.home() / ".local" / "state" / "zerg" / "aitr" / "actuals.log")
+    out: dict = {}
+    if not path.exists():
+        return out
+    try:
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            rec = json.loads(line)
+            did = rec.get("decision_id")
+            if did:
+                out[did] = rec  # last write wins
+    except (OSError, json.JSONDecodeError):
+        pass
+    return out
+
+
 def compute_savings(
     decisions: list[dict],
     *,
     catalog_body: dict | None = None,
     baseline_id: str = "anthropic__claude-opus-4-8",
+    actuals: dict | None = None,
 ) -> dict:
     """Aggregate savings vs the no-router baseline.
 
@@ -90,6 +110,8 @@ def compute_savings(
     metered_count = 0
     flat_count = 0
     unknown_count = 0
+    actuals = actuals if actuals is not None else load_actuals()
+    metered_actual_count = 0  # metered picks whose dollars come from REAL token counts
 
     for d in decisions:
         if d.get("verb") == "delegate":
@@ -97,6 +119,23 @@ def compute_savings(
 
         signal = d.get("signal") or {}
         billing = signal.get("billing_mode", "unknown")
+        actual_rec = actuals.get(d.get("decision_id", ""))
+
+        # Metered pick with logged actual usage: dollars are REAL, not estimated.
+        # baseline cost still estimated (we never ran the baseline), but the
+        # routed-spend side is metered truth.
+        if billing == "metered" and actual_rec and actual_rec.get("actual_cost_usd") is not None:
+            actual = float(actual_rec["actual_cost_usd"])
+            artifact = int(signal.get("artifact_size_tokens") or 4000)
+            baseline_cost = _cost_at_current_pricing(catalog_body, baseline_id, artifact)
+            baseline_cost = baseline_cost if baseline_cost is not None else float(d.get("baseline_cost_usd") or 0.0)
+            sav = baseline_cost - actual
+            total_spend += actual
+            baseline_spend += baseline_cost
+            metered_savings += sav
+            metered_count += 1
+            metered_actual_count += 1
+            continue
 
         if "savings_usd" in d:
             actual = float(d.get("estimated_cost_usd") or 0.0)
@@ -140,6 +179,7 @@ def compute_savings(
         # Billing-mode breakdown — only metered_savings is real dollars
         "metered_savings_usd": metered_savings,
         "metered_count": metered_count,
+        "metered_actual_count": metered_actual_count,
         "flat_count": flat_count,
         "unknown_count": unknown_count,
     }
@@ -238,7 +278,12 @@ def build_report(
         f"Baseline (no-router default): `{savings['baseline_model']}`",
         "",
         f"- **Real dollar savings (metered callers only): ${savings['metered_savings_usd']:.2f}** "
-        f"across {savings['metered_count']} per-token API picks",
+        f"across {savings['metered_count']} per-token API picks"
+        + (
+            f" ({savings.get('metered_actual_count', 0)} from metered token counts)"
+            if savings.get("metered_actual_count")
+            else ""
+        ),
     ]
     # Flat / unknown callers: model choice has $0 marginal cost on Max-plan OAuth,
     # so their "savings" is rate-limit/latency headroom, not dollars. Reported but
