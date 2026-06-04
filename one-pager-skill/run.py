@@ -23,7 +23,24 @@ from pathlib import Path
 sys.path.insert(0, str(Path.home() / ".claude" / "feedback-corpus"))
 from lib.claude import call_claude  # type: ignore
 
-DEFAULT_MODEL = "claude-opus-4-7"
+# Fallback when aitr is unavailable; explicit --model wins, else routed per-run.
+DEFAULT_MODEL = "claude-opus-4-8"
+_AITR_SCRIPTS = Path.home() / ".claude" / "skills" / "aitr" / "scripts"
+
+
+def _routed_default_model() -> str:
+    if str(_AITR_SCRIPTS) not in sys.path:
+        sys.path.insert(0, str(_AITR_SCRIPTS))
+    try:
+        from skill_default import aitr_model_or
+        return aitr_model_or(
+            DEFAULT_MODEL,
+            task_kind="draft-prose",
+            caller="one-pager-skill",
+            quality_floor="high-stakes",
+        )
+    except ImportError:
+        return DEFAULT_MODEL
 DEFAULT_OUT = Path("/tmp/one-pager")
 SKILL_ROOT = Path.home() / ".claude" / "skills" / "one-pager-skill"
 PROMPTS_DIR = SKILL_ROOT / "prompts"
@@ -447,7 +464,7 @@ def main() -> int:
     r = sub.add_parser("review", help="Audit one or more existing drafts")
     r.add_argument("drafts", nargs="+")
     r.add_argument("--out-dir", default=str(DEFAULT_OUT))
-    r.add_argument("--model", default=DEFAULT_MODEL)
+    r.add_argument("--model", default=None)
     r.add_argument("--no-pdf", action="store_true")
     r.add_argument("--quick", action="store_true")
     r.set_defaults(fn=cmd_review)
@@ -461,7 +478,7 @@ def main() -> int:
     s.add_argument("--vault", action="store_true", help="write to vault destination per variant")
     s.add_argument("--vault-dir", default=None, help="explicit vault destination override")
     s.add_argument("--slug", default=None)
-    s.add_argument("--model", default=DEFAULT_MODEL)
+    s.add_argument("--model", default=None)
     s.add_argument("--length", type=int, default=380)
     s.add_argument(
         "--audience",
@@ -484,6 +501,8 @@ def main() -> int:
     s.set_defaults(fn=cmd_scaffold)
 
     args = p.parse_args()
+    if getattr(args, "model", None) is None and hasattr(args, "model"):
+        args.model = _routed_default_model()
     return args.fn(args)
 
 

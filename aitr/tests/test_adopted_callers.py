@@ -53,6 +53,14 @@ ADOPTED = [
     ("draft-prose", "launch-announcement", "high-stakes", None, {"opus"}),
     ("research", "competitive-review-skill", "medium", None, {"opus", "sonnet"}),
     ("prose-review", "webpage-layout", "medium", "vision", {"sonnet", "opus"}),
+    # Second adoption tier (2026-06-04)
+    ("draft-prose", "one-pager-skill", "high-stakes", None, {"opus"}),
+    ("prose-review", "fakeidan", "high-stakes", None, {"opus"}),
+    ("code-review", "fakeidan", "high-stakes", None, {"opus"}),
+    ("prose-review", "fakematt-feedback", "medium", "vision", {"sonnet", "opus"}),
+    ("prose-review", "landing-page-analyze", "medium", "vision", {"sonnet", "opus"}),
+    ("prose-review", "landing-page-audit", "medium", None, {"sonnet", "opus"}),
+    ("draft-prose", "landing-page-build", "medium", None, {"sonnet", "opus"}),
 ]
 
 

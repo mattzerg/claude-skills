@@ -29,6 +29,28 @@ SKILL_DIR = Path(__file__).parent
 INSIGHTS_DIR = SKILL_DIR / "insights"
 CLAUDE_BIN = str(Path.home() / ".local" / "bin" / "claude")
 
+_AITR_SCRIPTS = Path.home() / ".claude" / "skills" / "aitr" / "scripts"
+_ROUTED_MODEL = None
+
+
+def _routed_model() -> str:
+    """aitr-routed CLI model (flat Max-plan); loud fallback to sonnet-4-6. Memoized."""
+    global _ROUTED_MODEL
+    if _ROUTED_MODEL is None:
+        if str(_AITR_SCRIPTS) not in sys.path:
+            sys.path.insert(0, str(_AITR_SCRIPTS))
+        try:
+            from skill_default import aitr_model_or
+            _ROUTED_MODEL = aitr_model_or(
+                "claude-sonnet-4-6", task_kind="prose-review", caller="landing-page-analyze",
+                quality_floor="medium",
+            modality_required="vision",
+            )
+        except ImportError:
+            _ROUTED_MODEL = "claude-sonnet-4-6"
+    return _ROUTED_MODEL
+
+
 ANALYSIS_PROMPT = """You are a conversion-focused landing page analyst. Analyze this landing page and return a JSON object with the following structure. Be specific and quote actual text from the page where relevant.
 
 {
@@ -152,7 +174,7 @@ def screenshot_and_scrape(url: str, save_dir: Path = None) -> tuple:
 
 def call_claude(prompt: str, image_path: Path = None) -> str:
     """Call Claude CLI, optionally with an image attachment."""
-    cmd = [CLAUDE_BIN, "--print", "--model", "claude-sonnet-4-6"]
+    cmd = [CLAUDE_BIN, "--print", "--model", _routed_model()]
 
     if image_path and image_path.exists():
         # Embed image as base64 in prompt

@@ -31,6 +31,27 @@ SKILL_DIR = Path(__file__).parent
 ZERG_WEB = Path.home() / "zerg" / "web" / "src" / "pages"
 CLAUDE_BIN = str(Path.home() / ".local" / "bin" / "claude")
 
+_AITR_SCRIPTS = Path.home() / ".claude" / "skills" / "aitr" / "scripts"
+_ROUTED_MODEL = None
+
+
+def _routed_model() -> str:
+    """aitr-routed CLI model (flat Max-plan); loud fallback to sonnet-4-6. Memoized."""
+    global _ROUTED_MODEL
+    if _ROUTED_MODEL is None:
+        if str(_AITR_SCRIPTS) not in sys.path:
+            sys.path.insert(0, str(_AITR_SCRIPTS))
+        try:
+            from skill_default import aitr_model_or
+            _ROUTED_MODEL = aitr_model_or(
+                "claude-sonnet-4-6", task_kind="draft-prose", caller="landing-page-build",
+                quality_floor="medium",
+            )
+        except ImportError:
+            _ROUTED_MODEL = "claude-sonnet-4-6"
+    return _ROUTED_MODEL
+
+
 ZERG_DESIGN_SYSTEM = """
 ## Zerg Design System
 
@@ -127,7 +148,7 @@ Return ONLY the HTML file content. No explanation, no markdown fences."""
 
 def call_claude(prompt: str) -> str:
     result = subprocess.run(
-        [CLAUDE_BIN, "--print", "--model", "claude-sonnet-4-6", "--tools", ""],
+        [CLAUDE_BIN, "--print", "--model", _routed_model(), "--tools", ""],
         input=prompt,
         capture_output=True,
         text=True,
