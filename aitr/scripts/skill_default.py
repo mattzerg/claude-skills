@@ -63,7 +63,7 @@ def _to_claude_model_name(aitr_model_id: str) -> Optional[str]:
     return None
 
 
-def aitr_model_or(
+def aitr_pick_or(
     fallback: str,
     *,
     task_kind: str,
@@ -74,8 +74,8 @@ def aitr_model_or(
     billing_mode: str = "flat",
     timeout: int = 30,
     runner=None,
-) -> str:
-    """Return aitr's picked claude model name, or `fallback` (loudly) on any failure.
+) -> tuple:
+    """Return (picked claude model name, decision_id), or (`fallback`, None) loudly on any failure.
 
     Always constrains to anthropic-only since callers execute via the claude CLI
     (Max-plan OAuth) — hence `billing_mode` defaults to "flat": model choice here
@@ -87,7 +87,7 @@ def aitr_model_or(
 
     if not AITR_PICK.exists():
         print(f"[aitr] not installed — using fallback model {fallback}", file=sys.stderr)
-        return fallback
+        return fallback, None
 
     cmd = [
         sys.executable or "python3", str(AITR_PICK), "pick",
@@ -107,23 +107,23 @@ def aitr_model_or(
         proc = run(cmd, capture_output=True, text=True, timeout=timeout)
     except subprocess.TimeoutExpired:
         print(f"[aitr] timed out after {timeout}s — using fallback model {fallback} (LOUD)", file=sys.stderr)
-        return fallback
+        return fallback, None
     except OSError as exc:
         print(f"[aitr] failed to launch ({exc}) — using fallback model {fallback} (LOUD)", file=sys.stderr)
-        return fallback
+        return fallback, None
 
     if proc.returncode != 0:
         print(
             f"[aitr] exit {proc.returncode} — using fallback model {fallback} (LOUD: routing not optimized)",
             file=sys.stderr,
         )
-        return fallback
+        return fallback, None
 
     try:
         pick = json.loads(proc.stdout)
     except json.JSONDecodeError:
         print(f"[aitr] unparseable output — using fallback model {fallback}", file=sys.stderr)
-        return fallback
+        return fallback, None
 
     model_id = pick.get("model", "")
     claude_name = _to_claude_model_name(model_id)
@@ -133,9 +133,16 @@ def aitr_model_or(
             f"using fallback model {fallback}",
             file=sys.stderr,
         )
-        return fallback
+        return fallback, None
 
     reason = pick.get("reason", "")
     decision_id = pick.get("decision_id", "")
     print(f"[aitr] {caller}: {claude_name} ({reason}) [decision: {decision_id}]", file=sys.stderr)
-    return claude_name
+    return claude_name, decision_id
+
+
+def aitr_model_or(fallback: str, **kwargs) -> str:
+    """Backward-compatible wrapper: returns just the model name.
+    Use aitr_pick_or when you also need the decision_id (e.g. to record a
+    realized-quality outcome against the pick)."""
+    return aitr_pick_or(fallback, **kwargs)[0]
