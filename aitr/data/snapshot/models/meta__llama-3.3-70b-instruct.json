@@ -18,5 +18,8 @@
   "tags": [
     "instruction-following"
   ],
-  "benchmarks": {}
+  "benchmarks": {
+    "mmlu_pro": 0.689,
+    "gpqa_diamond": 0.505
+  }
 }
