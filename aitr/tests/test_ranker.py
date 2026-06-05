@@ -115,8 +115,30 @@ class TestCapabilityScore:
     def test_benchmark_boost(self):
         m = {"tags": ["code"], "benchmarks": {"humaneval": 0.95}}
         rules = {"preferred_tags": ["code", "reasoning"], "benchmark_key": "humaneval"}
-        # base = 1/2 = 0.5; boosted = 0.6*0.5 + 0.4*0.95 = 0.68
-        assert capability_score(m, rules) == pytest.approx(0.68)
+        # base = 1/2 = 0.5; blended = 0.5*0.5 + 0.5*0.95 = 0.725 (50/50 tag/benchmark)
+        assert capability_score(m, rules) == pytest.approx(0.725)
+
+    def test_benchmark_profile_weighted_average(self):
+        # Multi-benchmark profile: weighted avg of the scores the model publishes.
+        m = {"tags": ["code"], "benchmarks": {"swe_bench_verified": 0.9, "terminal_bench": 0.5}}
+        rules = {"preferred_tags": ["code"], "benchmark_profile": {"swe_bench_verified": 0.5, "terminal_bench": 0.5}}
+        # base = jaccard({code},{code}) = 1.0; bench = (0.9+0.5)/2 = 0.7
+        # blended = 0.5*1.0 + 0.5*0.7 = 0.85
+        assert capability_score(m, rules) == pytest.approx(0.85)
+
+    def test_profile_falls_back_to_tags_when_no_benchmarks(self):
+        m = {"tags": ["code"], "benchmarks": {}}
+        rules = {"preferred_tags": ["code", "reasoning"], "benchmark_profile": {"swe_bench_verified": 1.0}}
+        # No profile benchmark present → tag-only, no penalty
+        assert capability_score(m, rules) == pytest.approx(0.5)
+
+    def test_elo_normalized_against_catalog(self):
+        # Arena Elo (>1) normalized via min-max range; 1500 with range (1400,1500) → 1.0
+        m = {"tags": [], "benchmarks": {"arena_elo": 1500}}
+        rules = {"preferred_tags": [], "benchmark_profile": {"arena_elo": 1.0}}
+        norm = {"arena_elo": (1400.0, 1500.0)}
+        # base = 0 (no tags); bench = 1.0; blended = 0.5*0 + 0.5*1.0 = 0.5
+        assert capability_score(m, rules, benchmark_norm=norm) == pytest.approx(0.5)
 
 
 # ---- End-to-end rank() tests against the bundled snapshot ------------------
@@ -128,14 +150,19 @@ class TestRankCodeReview:
         out = rank(sig, SNAPSHOT, ROUTING_TABLE)
         assert out[0].model_class in {"opus", "gpt-5.5-pro"}
 
-    def test_cheap_ok_can_pick_smaller(self):
-        sig = make_signal(task_kind="code-review", quality_floor="cheap-ok",
-                          artifact_size_tokens=4000)
-        out = rank(sig, SNAPSHOT, ROUTING_TABLE)
-        # First result still has tag fit; cheap model should at least appear in top-3
-        top3_ids = {c.model for c in out[:3]}
-        assert any("haiku" in mid or "mini" in mid or "nano" in mid or "flash" in mid
-                   for mid in top3_ids)
+    def test_cheap_ok_prefers_cost_efficient_capable_model(self):
+        # Quality-led code-review (capability-weighted, benchmark-grounded) doesn't
+        # force a tiny model at cheap-ok — but relaxing the floor must admit a
+        # cheaper pick than high-stakes does. The real invariant: cheap-ok's
+        # winner costs <= the high-stakes winner (a cost-efficient yet capable
+        # model like deepseek-v4 wins, not the frontier whitelist lock).
+        cheap = rank(make_signal(task_kind="code-review", quality_floor="cheap-ok"),
+                     SNAPSHOT, ROUTING_TABLE)
+        hs = rank(make_signal(task_kind="code-review", quality_floor="high-stakes"),
+                  SNAPSHOT, ROUTING_TABLE)
+        assert cheap[0].estimated_cost_usd <= hs[0].estimated_cost_usd
+        # And the cheap-ok winner is still genuinely capable (benchmark-backed)
+        assert cheap[0].capability >= 0.5
 
 
 class TestRankProseReview:

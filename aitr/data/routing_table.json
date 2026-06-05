@@ -1,5 +1,6 @@
 {
   "_doc": "aitr routing table — task_kind -> model fit rules. Edit to tune routing without touching Python. Composite weights are summed and normalized by the ranker.",
+  "_quality_note": "2026-06-04: capability = 50% tag fit + 50% weighted benchmark PROFILE (real evals), not tags alone. Profiles list the benchmarks that signal quality for each task, weighted; a model is scored on whichever it publishes (missing data → tag-only fallback, no penalty). Non-fraction scores (arena_elo) are min-max normalized across the catalog. Per-task `weights` let quality lead on critical tasks by down-weighting cost.",
 
   "composite_weights": { "capability": 0.50, "cost": 0.30, "latency": 0.20 },
 
@@ -12,22 +13,28 @@
       "preferred_tags": ["code", "reasoning", "extended-thinking"],
       "min_context": 32000,
       "latency_class": "medium",
-      "benchmark_key": "swe_bench_verified"
+      "benchmark_profile": { "swe_bench_verified": 0.5, "swe_bench_pro": 0.3, "terminal_bench": 0.2 },
+      "weights": { "capability": 0.65, "cost": 0.15, "latency": 0.20 }
     },
     "prose-review": {
       "preferred_tags": ["writing", "instruction-following", "voice"],
       "min_context": 16000,
-      "latency_class": "medium"
+      "latency_class": "medium",
+      "benchmark_profile": { "arena_elo": 1.0 },
+      "weights": { "capability": 0.60, "cost": 0.20, "latency": 0.20 }
     },
     "brainstorm": {
       "preferred_tags": ["reasoning", "extended-thinking", "instruction-following"],
       "min_context": 32000,
-      "latency_class": "slow"
+      "latency_class": "slow",
+      "benchmark_profile": { "gpqa_diamond": 0.5, "aime_2025": 0.3, "arc_agi_2": 0.2 },
+      "weights": { "capability": 0.65, "cost": 0.15, "latency": 0.20 }
     },
     "draft-prose": {
       "preferred_tags": ["writing", "instruction-following", "voice"],
       "min_context": 16000,
-      "latency_class": "medium"
+      "latency_class": "medium",
+      "benchmark_profile": { "arena_elo": 1.0 }
     },
     "structured-extract": {
       "preferred_tags": ["fast", "small-model", "instruction-following", "json-mode"],
@@ -37,7 +44,8 @@
     "sql": {
       "preferred_tags": ["code", "sql", "instruction-following"],
       "min_context": 16000,
-      "latency_class": "fast"
+      "latency_class": "fast",
+      "benchmark_profile": { "swe_bench_verified": 0.6, "terminal_bench": 0.4 }
     },
     "image-gen": {
       "preferred_tags": ["image", "vision"],
@@ -55,13 +63,14 @@
       "min_context": 32000,
       "latency_class": "medium",
       "opposite_provider": true,
-      "benchmark_key": "gpqa_diamond"
+      "benchmark_profile": { "gpqa_diamond": 0.6, "hle": 0.4 }
     },
     "research": {
       "preferred_tags": ["reasoning", "extended-thinking", "citations"],
       "min_context": 64000,
       "latency_class": "slow",
-      "benchmark_key": "gpqa_diamond"
+      "benchmark_profile": { "gpqa_diamond": 0.5, "hle": 0.3, "aime_2025": 0.2 },
+      "weights": { "capability": 0.65, "cost": 0.15, "latency": 0.20 }
     },
     "classify": {
       "preferred_tags": ["fast", "small-model", "instruction-following"],

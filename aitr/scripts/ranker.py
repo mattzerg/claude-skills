@@ -77,15 +77,63 @@ def _jaccard(a: set, b: set) -> float:
     return len(a & b) / len(union)
 
 
-def capability_score(model: dict, rules: dict) -> float:
-    """Tag-overlap score with optional benchmark boost. Range [0, 1]."""
+def benchmark_ranges(models: list[dict]) -> Dict[str, tuple]:
+    """(min, max) per benchmark across the catalog, for normalizing non-fraction
+    scores (e.g. Arena Elo ~1200-1500) to [0,1]. Fractions (≤1) skip this."""
+    from collections import defaultdict
+    vals: Dict[str, list] = defaultdict(list)
+    for m in models:
+        for k, v in (m.get("benchmarks") or {}).items():
+            if isinstance(v, (int, float)) and v > 1.0:
+                vals[k].append(float(v))
+    return {k: (min(xs), max(xs)) for k, xs in vals.items() if xs}
+
+
+def _normalize_benchmark(value, bench: str, norm: Dict[str, tuple]) -> Optional[float]:
+    """Benchmark value → [0,1]. Fractions pass through; >1 scores (Elo) min-max
+    normalized against the catalog range. None when unscoreable."""
+    if not isinstance(value, (int, float)):
+        return None
+    v = float(value)
+    if 0.0 <= v <= 1.0:
+        return v
+    rng = norm.get(bench)
+    if not rng:
+        return None
+    lo, hi = rng
+    if hi <= lo:
+        return None
+    return max(0.0, min(1.0, (v - lo) / (hi - lo)))
+
+
+def capability_score(model: dict, rules: dict, *, benchmark_norm: Optional[Dict[str, tuple]] = None) -> float:
+    """Quality score in [0,1]: tag fit blended with a real benchmark PROFILE.
+
+    Tags alone are a coarse proxy. When a task defines a `benchmark_profile`
+    (weighted set of evals — e.g. code-review = swe_bench_verified + swe_bench_pro
+    + terminal_bench), capability becomes 50% tag fit + 50% the model's
+    weighted-average score on whichever profile benchmarks it actually publishes.
+    Models with no profile data fall back to tag-only (no penalty for missing
+    evals). `benchmark_key` (single) is still honored as a one-entry profile.
+    """
+    benchmark_norm = benchmark_norm or {}
     model_tags = set(model.get("tags") or [])
     preferred = set(rules.get("preferred_tags") or [])
     base = _jaccard(model_tags, preferred)
-    bm_key = rules.get("benchmark_key")
-    bm_val = (model.get("benchmarks") or {}).get(bm_key) if bm_key else None
-    if isinstance(bm_val, (int, float)) and 0.0 <= bm_val <= 1.0:
-        return min(1.0, 0.6 * base + 0.4 * float(bm_val))
+
+    profile = rules.get("benchmark_profile")
+    if not profile and rules.get("benchmark_key"):
+        profile = {rules["benchmark_key"]: 1.0}
+    if profile:
+        bms = model.get("benchmarks") or {}
+        num = wsum = 0.0
+        for bench, weight in profile.items():
+            nv = _normalize_benchmark(bms.get(bench), bench, benchmark_norm)
+            if nv is not None:
+                num += float(weight) * nv
+                wsum += float(weight)
+        if wsum > 0:
+            return min(1.0, 0.5 * base + 0.5 * (num / wsum))
     return base
 
 
@@ -209,11 +257,16 @@ def rank(
 
     task_kind = signal_dict.get("task_kind")
     task_rules = ((routing_table.get("task_kinds") or {}).get(task_kind) or {})
-    weights = (routing_table.get("composite_weights") or {})
+    # Per-task weight override beats the global default, so quality-critical tasks
+    # (code-review, research) can down-weight cost and let quality lead.
+    weights = task_rules.get("weights") or (routing_table.get("composite_weights") or {})
     w_cap = float(weights.get("capability", 0.5))
     w_cost = float(weights.get("cost", 0.3))
     w_lat = float(weights.get("latency", 0.2))
     weights_sum = max(w_cap + w_cost + w_lat, 1e-6)
+
+    # Catalog-wide benchmark ranges, for normalizing non-fraction scores (Elo).
+    benchmark_norm = benchmark_ranges(models)
 
     quality_floor = signal_dict.get("quality_floor") or "medium"
     floors = routing_table.get("quality_floors") or {}
@@ -258,7 +311,7 @@ def rank(
 
     candidates: List[Candidate] = []
     for m, cost, _ in survivors:
-        cap = capability_score(m, task_rules)
+        cap = capability_score(m, task_rules, benchmark_norm=benchmark_norm)
         # Quality-floor gate
         model_class = m.get("model_class", "")
         if quality_floor == "high-stakes" and cap < capability_floor:
