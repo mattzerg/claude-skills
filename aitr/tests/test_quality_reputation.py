@@ -141,3 +141,50 @@ class TestLoadReputationSafety:
     def test_missing_logs_return_empty(self, tmp_path, monkeypatch):
         monkeypatch.setattr(quality, "DEFAULT_DECISIONS_LOG", tmp_path / "none.log")
         assert quality.load_reputation(quality_log=tmp_path / "none2.log") == {}
+
+
+class TestReputationCli:
+    def test_reputation_verb_outputs_sorted_priors(self, tmp_path, monkeypatch, capsys):
+        import pick
+        decisions = tmp_path / "decisions.log"
+        decisions.write_text(json.dumps({
+            "decision_id": "d1", "caller": "competitive-review-skill",
+            "model": "anthropic__claude-opus-4-8",
+            "signal": {"caller": "competitive-review-skill", "task_kind": "research"},
+        }) + "\n")
+        qlog = tmp_path / "quality.log"
+        monkeypatch.setattr(quality, "DEFAULT_DECISIONS_LOG", decisions)
+        monkeypatch.setattr(quality, "DEFAULT_QUALITY_LOG", qlog)
+        quality.record_quality("d1", "good", source="competitive-review-skill",
+                               log_path=qlog, now=NOW)
+        # pick._cmd_reputation calls load_reputation() with defaults → patched above
+        monkeypatch.setattr(pick, "load_reputation",
+                            lambda: quality.load_reputation(decisions_log=decisions, quality_log=qlog, now=NOW))
+        rc = pick._cmd_reputation(object())
+        out = json.loads(capsys.readouterr().out)
+        assert rc == 0
+        assert out["count"] == 1
+        assert out["reputation"][0]["caller"] == "competitive-review-skill"
+        assert out["reputation"][0]["reputation"] > 0
+
+
+class TestReputationInReport:
+    def test_report_shows_learned_priors(self, tmp_path, monkeypatch):
+        from datetime import datetime, timezone
+        from weekly_report import build_report
+        decisions = tmp_path / "decisions.log"
+        decisions.write_text(json.dumps({
+            "decision_id": "d1", "caller": "competitive-review-skill",
+            "model": "anthropic__claude-opus-4-8", "capability": 0.8,
+            "catalog_source": "live", "ts": "2026-06-04T00:00:00+00:00",
+            "signal": {"caller": "competitive-review-skill", "task_kind": "research"},
+        }) + "\n")
+        qlog = tmp_path / "quality.log"
+        monkeypatch.setattr(quality, "DEFAULT_DECISIONS_LOG", decisions)
+        monkeypatch.setattr(quality, "DEFAULT_QUALITY_LOG", qlog)
+        quality.record_quality("d1", "good", source="competitive-review-skill",
+                               log_path=qlog, now=NOW)
+        report = build_report(decisions_log=decisions, feedback_dirs=[tmp_path / "nf"],
+                              days=365, now=datetime(2026, 6, 4, 12, 0, tzinfo=timezone.utc))
+        assert "Learned reputation priors" in report
+        assert "competitive-review-skill / research" in report

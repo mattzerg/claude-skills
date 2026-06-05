@@ -48,6 +48,7 @@ list-models    # print the current catalog with key fields
 replay <id>    # print the decision recorded for a prior pick (by decision_id)
 record-quality <decision_id> <good|bad|mixed> [--source X --score 0..1 --note Y]
                # log a realized-quality outcome → feeds the reputation prior
+reputation     # print learned realized-quality priors per (caller, task, model)
 ```
 
 ### Two feedback signals

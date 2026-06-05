@@ -301,6 +301,19 @@ def build_report(
             lines += ["", "**Realized quality (observed outcomes):**",
                       f"- {good} good · {bad} bad · {mixed} mixed "
                       f"({len(window_events)} outcomes recorded)"]
+
+        # Learned reputation priors (what the loop has converged on so far)
+        try:
+            from quality import load_reputation  # noqa: PLC0415
+            rep = load_reputation()
+        except Exception:
+            rep = {}
+        if rep:
+            ranked = sorted(rep.items(), key=lambda kv: -abs(kv[1]))[:8]
+            lines += ["", "**Learned reputation priors (caller / task / model → adj):**"]
+            for (caller, tk, model), val in ranked:
+                sign = "+" if val >= 0 else ""
+                lines.append(f"- {caller} / {tk} / {model}: {sign}{val:.3f}")
     else:
         lines += ["", "## Quality of picks", "",
                   "_No capability data in window (decisions pre-date quality sub-score logging)._"]

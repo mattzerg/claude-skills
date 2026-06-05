@@ -226,6 +226,20 @@ def _cmd_pick(args: argparse.Namespace, *, explain: bool = False) -> int:
     return 0
 
 
+def _cmd_reputation(args: argparse.Namespace) -> int:
+    """Print the learned realized-quality reputation priors (sorted by magnitude)."""
+    rep = load_reputation()
+    rows = [
+        {"caller": k[0], "task_kind": k[1], "model": k[2], "reputation": round(v, 4)}
+        for k, v in sorted(rep.items(), key=lambda kv: -abs(kv[1]))
+    ]
+    print(json.dumps({"count": len(rows), "reputation": rows}, indent=2))
+    if not rows:
+        print("aitr: no realized-quality outcomes recorded yet "
+              "(producers: competitive-review, aitr_exec, or `record-quality`)", file=sys.stderr)
+    return 0
+
+
 def _cmd_record_quality(args: argparse.Namespace) -> int:
     """Record a realized-quality outcome for a prior decision (feeds reputation)."""
     if args.outcome not in ("good", "bad", "mixed"):
@@ -340,6 +354,8 @@ def build_argparser() -> argparse.ArgumentParser:
     sub_rq.add_argument("--source", help="who observed it (e.g. pr-gate, fakeidan, matt)")
     sub_rq.add_argument("--score", type=float, help="explicit quality score 0..1 (overrides outcome sign)")
     sub_rq.add_argument("--note", help="freeform context")
+    subs.add_parser("reputation", parents=[global_parser],
+                    help="Print learned realized-quality priors per (caller, task, model).")
 
     return p
 
@@ -348,7 +364,8 @@ def main(argv: list[str] | None = None) -> int:
     parser = build_argparser()
     # Default to `pick` if no verb given but kv args are present.
     args_in = list(sys.argv[1:] if argv is None else argv)
-    _verbs = {"pick", "explain", "refresh-cache", "list-models", "replay", "record-quality"}
+    _verbs = {"pick", "explain", "refresh-cache", "list-models", "replay",
+              "record-quality", "reputation"}
     if args_in and args_in[0] not in _verbs and not args_in[0].startswith("-"):
         args_in.insert(0, "pick")
     elif not args_in:
@@ -365,6 +382,8 @@ def main(argv: list[str] | None = None) -> int:
         return _cmd_replay(args)
     if args.verb == "record-quality":
         return _cmd_record_quality(args)
+    if args.verb == "reputation":
+        return _cmd_reputation(args)
     # default: pick
     return _cmd_pick(args, explain=False)
 
