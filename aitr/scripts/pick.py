@@ -44,6 +44,7 @@ from catalog import (  # noqa: E402
     load_routing_table,
 )
 from penalties import load_penalties  # noqa: E402
+from quality import load_reputation, record_quality  # noqa: E402
 from ranker import Candidate, RankerError, estimated_cost_usd, rank  # noqa: E402
 
 
@@ -167,6 +168,8 @@ def _cmd_pick(args: argparse.Namespace, *, explain: bool = False) -> int:
     # Feedback corrections (wrong-model-picked) bias future picks away from
     # corrected models. Never fatal — empty dict on any failure.
     penalties = load_penalties()
+    # Realized-quality reputation from observed outcomes (gentle two-sided prior).
+    reputation = load_reputation()
 
     try:
         candidates = rank(
@@ -176,6 +179,7 @@ def _cmd_pick(args: argparse.Namespace, *, explain: bool = False) -> int:
             active_provider=active_provider,
             top_n=5,
             penalties=penalties,
+            reputation=reputation,
         )
     except RankerError as exc:
         print(f"aitr: {exc}", file=sys.stderr)
@@ -219,6 +223,20 @@ def _cmd_pick(args: argparse.Namespace, *, explain: bool = False) -> int:
         }
     )
     _emit(out, fmt=args.format)
+    return 0
+
+
+def _cmd_record_quality(args: argparse.Namespace) -> int:
+    """Record a realized-quality outcome for a prior decision (feeds reputation)."""
+    if args.outcome not in ("good", "bad", "mixed"):
+        print(f"aitr: outcome must be good|bad|mixed, got {args.outcome!r}", file=sys.stderr)
+        return 1
+    rec = record_quality(
+        args.decision_id, args.outcome,
+        source=args.source or "manual",
+        score=args.score, note=args.note,
+    )
+    print(json.dumps(rec, indent=2))
     return 0
 
 
@@ -315,6 +333,13 @@ def build_argparser() -> argparse.ArgumentParser:
     sub_replay = subs.add_parser("replay", parents=[global_parser],
                                  help="Print a prior decision by decision_id.")
     sub_replay.add_argument("decision_id")
+    sub_rq = subs.add_parser("record-quality", parents=[global_parser],
+                             help="Record a realized-quality outcome for a decision.")
+    sub_rq.add_argument("decision_id")
+    sub_rq.add_argument("outcome", help="good | bad | mixed")
+    sub_rq.add_argument("--source", help="who observed it (e.g. pr-gate, fakeidan, matt)")
+    sub_rq.add_argument("--score", type=float, help="explicit quality score 0..1 (overrides outcome sign)")
+    sub_rq.add_argument("--note", help="freeform context")
 
     return p
 
@@ -323,8 +348,8 @@ def main(argv: list[str] | None = None) -> int:
     parser = build_argparser()
     # Default to `pick` if no verb given but kv args are present.
     args_in = list(sys.argv[1:] if argv is None else argv)
-    if args_in and args_in[0] not in {"pick", "explain", "refresh-cache", "list-models", "replay"} \
-            and not args_in[0].startswith("-"):
+    _verbs = {"pick", "explain", "refresh-cache", "list-models", "replay", "record-quality"}
+    if args_in and args_in[0] not in _verbs and not args_in[0].startswith("-"):
         args_in.insert(0, "pick")
     elif not args_in:
         args_in = ["pick"]
@@ -338,6 +363,8 @@ def main(argv: list[str] | None = None) -> int:
         return _cmd_list_models(args)
     if args.verb == "replay":
         return _cmd_replay(args)
+    if args.verb == "record-quality":
+        return _cmd_record_quality(args)
     # default: pick
     return _cmd_pick(args, explain=False)
 

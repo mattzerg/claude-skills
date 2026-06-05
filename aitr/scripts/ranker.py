@@ -234,6 +234,7 @@ def rank(
     active_provider: Optional[str] = None,
     top_n: int = 5,
     penalties: Optional[Dict[tuple, float]] = None,
+    reputation: Optional[Dict[tuple, float]] = None,
 ) -> List[Candidate]:
     """Score and rank all candidate models against the signal.
 
@@ -246,7 +247,11 @@ def rank(
     diversification.
 
     `penalties` is an optional {(caller, task_kind, model_id): negative_float} map
-    from feedback corrections (see penalties.py). Applied to the composite score.
+    from explicit wrong-model-picked corrections (penalties.py) — sharp negative.
+
+    `reputation` is an optional {(caller, task_kind, model_id): float} map of
+    realized-quality priors from observed outcomes (quality.py) — gentle two-sided,
+    bounded ±0.15 so it nudges below the penalty floor. Applied after penalty.
 
     Returns Candidates sorted by composite score, descending.
     Raises RankerError if no candidates survive hard filters.
@@ -325,17 +330,27 @@ def rank(
 
         # Feedback penalty: corrections filed via llm-feedback (wrong-model-picked)
         # against this exact (caller, task_kind, model) push it down the ranking.
+        rep_key = (signal_dict.get("caller", ""), task_kind, m.get("id", ""))
         feedback_penalty = 0.0
         if penalties:
-            feedback_penalty = penalties.get(
-                (signal_dict.get("caller", ""), task_kind, m.get("id", "")), 0.0
-            )
+            feedback_penalty = penalties.get(rep_key, 0.0)
             composite = max(0.0, composite + feedback_penalty)
+
+        # Realized-quality reputation: gentle two-sided prior from observed
+        # outcomes (quality.py). Applied after penalty; bounded ±0.15.
+        rep_adj = 0.0
+        if reputation:
+            rep_adj = reputation.get(rep_key, 0.0)
+            composite = max(0.0, composite + rep_adj)
 
         # Build a one-line reason
         reasons = []
         if feedback_penalty < 0:
             reasons.append(f"feedback penalty {feedback_penalty:.2f}")
+        if rep_adj > 0:
+            reasons.append(f"+{rep_adj:.2f} quality reputation")
+        elif rep_adj < 0:
+            reasons.append(f"{rep_adj:.2f} quality reputation")
         if cap >= 0.75:
             reasons.append("strong tag fit")
         elif cap >= 0.5:

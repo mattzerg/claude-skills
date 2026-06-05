@@ -46,7 +46,19 @@ explain        # return top-3 with rationale paragraph
 refresh-cache  # force-refresh the local catalog cache
 list-models    # print the current catalog with key fields
 replay <id>    # print the decision recorded for a prior pick (by decision_id)
+record-quality <decision_id> <good|bad|mixed> [--source X --score 0..1 --note Y]
+               # log a realized-quality outcome → feeds the reputation prior
 ```
+
+### Two feedback signals
+
+aitr learns from results, not just spec sheets:
+- **Penalty** (sharp, negative): an explicit `wrong-model-picked` correction via
+  llm-feedback → strong push away from that exact pick (cap −0.30, 60-day decay).
+- **Reputation** (gentle, two-sided): observed outcomes recorded via
+  `record-quality` → soft per-(caller, task_kind, model) prior (cap ±0.15, 90-day
+  decay). A gate that passes/fails, output accepted/flagged. Emit one signal per
+  observation, never both.
 
 ### Signal
 

@@ -285,6 +285,22 @@ def build_report(
                       "medium floor — usually a constraint forcing a weak-fit model):"]
             for caller, tk, model, cap in low_quality[:8]:
                 lines.append(f"- {caller} / {tk}: {model} (capability {cap:.2f})")
+
+        # Realized quality: observed outcomes (quality.log) vs the predicted
+        # capability above. This is the loop closing — did picks actually deliver?
+        try:
+            from quality import load_quality_events  # noqa: PLC0415
+            events = load_quality_events()
+        except Exception:
+            events = []
+        window_events = [e for e in events if (_parse_ts(e.get("ts", "")) or cutoff) >= cutoff]
+        if window_events:
+            good = sum(1 for e in window_events if e.get("outcome") == "good")
+            bad = sum(1 for e in window_events if e.get("outcome") == "bad")
+            mixed = sum(1 for e in window_events if e.get("outcome") == "mixed")
+            lines += ["", "**Realized quality (observed outcomes):**",
+                      f"- {good} good · {bad} bad · {mixed} mixed "
+                      f"({len(window_events)} outcomes recorded)"]
     else:
         lines += ["", "## Quality of picks", "",
                   "_No capability data in window (decisions pre-date quality sub-score logging)._"]
