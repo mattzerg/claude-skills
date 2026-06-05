@@ -32,6 +32,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable, Optional
 
+from quality import record_quality
+
 SKILL_DIR = Path(__file__).resolve().parent
 ACTUALS_LOG = Path.home() / ".local" / "state" / "zerg" / "aitr" / "actuals.log"
 # Explicit id → OpenRouter slug map. Empty until cross-provider is activated.
@@ -214,16 +216,35 @@ def complete(
         if anthropic_executor is None:
             raise ValueError("anthropic_executor is required for anthropic picks")
         claude_name = model_id[len("anthropic__"):]
-        text, in_tok, out_tok = anthropic_executor(claude_name, prompt, system, max_tokens)
     else:
         key = openrouter_key or resolve_openrouter_key()
         slug = openrouter_slug(model_id)
         if not key or not slug:
+            # Not an operational failure of the picked model — it's a config gap.
+            # Don't record a reliability outcome; let the caller re-pick.
             raise CrossProviderUnavailable(
                 f"pick {model_id!r} is non-Anthropic but "
                 f"{'no OpenRouter key' if not key else 'no slug mapping'}; caller should re-pick anthropic-only"
             )
-        text, in_tok, out_tok = _openrouter_complete(slug, prompt, system, max_tokens, key)
+
+    # Operational realized-quality: a model that completes cleanly is more
+    # reliable than one that times out / errors / returns nothing. Record both
+    # sides (source=aitr-exec) so reputation reflects reliability — bounded and
+    # decaying, so a steady baseline is mild but flakiness erodes it fast.
+    try:
+        if provider == "anthropic":
+            text, in_tok, out_tok = anthropic_executor(claude_name, prompt, system, max_tokens)
+        else:
+            text, in_tok, out_tok = _openrouter_complete(slug, prompt, system, max_tokens, key)
+    except Exception as exc:
+        if decision_id:
+            record_quality(decision_id, "bad", source="aitr-exec",
+                           note=f"execution failed: {type(exc).__name__}")
+        raise
+    if decision_id:
+        outcome = "good" if (text and text.strip()) else "bad"
+        record_quality(decision_id, outcome, source="aitr-exec",
+                       note="clean execution" if outcome == "good" else "empty output")
 
     cost = actual_cost(model_id, in_tok, out_tok)
     log_actuals({

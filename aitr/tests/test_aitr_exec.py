@@ -34,7 +34,15 @@ def deepseek_pick(monkeypatch):
 def actuals_to_tmp(monkeypatch, tmp_path):
     log = tmp_path / "actuals.log"
     monkeypatch.setattr(aitr_exec, "ACTUALS_LOG", log)
+    # Operational realized-quality auto-records via record_quality → isolate it too
+    import quality
+    monkeypatch.setattr(quality, "DEFAULT_QUALITY_LOG", tmp_path / "quality.log")
     return log
+
+
+@pytest.fixture
+def quality_log(tmp_path):
+    return tmp_path / "quality.log"
 
 
 class TestAnthropicExecution:
@@ -65,6 +73,58 @@ class TestAnthropicExecution:
     def test_anthropic_requires_executor(self, anthropic_pick, actuals_to_tmp):
         with pytest.raises(ValueError, match="anthropic_executor is required"):
             complete("x", task_kind="summarize", caller="test")
+
+
+class TestOperationalReputation:
+    """aitr_exec auto-records realized-quality from execution reliability."""
+
+    def test_clean_execution_records_good(self, anthropic_pick, actuals_to_tmp, monkeypatch, tmp_path):
+        import quality
+        qlog = tmp_path / "quality.log"
+        monkeypatch.setattr(quality, "DEFAULT_QUALITY_LOG", qlog)
+        complete("x", task_kind="summarize", caller="test", quality_floor="cheap-ok",
+                 anthropic_executor=lambda *a: ("good answer", 100, 50))
+        events = quality.load_quality_events(qlog)
+        assert len(events) == 1
+        assert events[0]["outcome"] == "good"
+        assert events[0]["source"] == "aitr-exec"
+        assert events[0]["decision_id"] == "aitr-test-anth"
+
+    def test_empty_output_records_bad(self, anthropic_pick, actuals_to_tmp, monkeypatch, tmp_path):
+        import quality
+        qlog = tmp_path / "quality.log"
+        monkeypatch.setattr(quality, "DEFAULT_QUALITY_LOG", qlog)
+        complete("x", task_kind="summarize", caller="test", quality_floor="cheap-ok",
+                 anthropic_executor=lambda *a: ("   ", 100, 0))
+        events = quality.load_quality_events(qlog)
+        assert events[0]["outcome"] == "bad"
+
+    def test_execution_failure_records_bad_then_raises(self, anthropic_pick, actuals_to_tmp, monkeypatch, tmp_path):
+        import quality
+        qlog = tmp_path / "quality.log"
+        monkeypatch.setattr(quality, "DEFAULT_QUALITY_LOG", qlog)
+
+        def boom(*a):
+            raise TimeoutError("model timed out")
+
+        with pytest.raises(TimeoutError):
+            complete("x", task_kind="summarize", caller="test", quality_floor="cheap-ok",
+                     anthropic_executor=boom)
+        events = quality.load_quality_events(qlog)
+        assert events[0]["outcome"] == "bad"
+        assert "TimeoutError" in events[0]["note"]
+
+    def test_config_gap_does_not_record_outcome(self, deepseek_pick, actuals_to_tmp, monkeypatch, tmp_path):
+        # CrossProviderUnavailable is a config gap, not a model failure — no outcome
+        import quality
+        qlog = tmp_path / "quality.log"
+        monkeypatch.setattr(quality, "DEFAULT_QUALITY_LOG", qlog)
+        monkeypatch.setattr(aitr_exec, "resolve_openrouter_key", lambda: None)
+        monkeypatch.setattr(aitr_exec, "openrouter_slug", lambda mid: None)
+        with pytest.raises(CrossProviderUnavailable):
+            complete("x", task_kind="summarize", caller="test",
+                     anthropic_executor=lambda *a: ("", 0, 0))
+        assert quality.load_quality_events(qlog) == []
 
 
 class TestCrossProviderGate:
