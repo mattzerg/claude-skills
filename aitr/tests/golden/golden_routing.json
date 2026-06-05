@@ -109,8 +109,8 @@
       "name": "brainstorm cheap-ok",
       "signal": { "task_kind": "brainstorm", "caller": "idea-backlog", "quality_floor": "cheap-ok", "artifact_size_tokens": 4000 },
       "active_provider": null,
-      "expected_classes": ["sonnet", "gpt-5", "opus", "gpt-5.5-pro", "gemini-pro", "deepseek-v4", "deepseek-r1"],
-      "_why_widened": "2026-06-03: deepseek-r1 (pure reasoning specialist, cheap) is the textbook cheap-ok brainstorm pick."
+      "expected_classes": ["sonnet", "gpt-5", "opus", "gpt-5.5-pro", "gemini-pro", "deepseek-v4", "deepseek-r1", "grok"],
+      "_why_widened": "2026-06-03: deepseek-r1 (pure reasoning specialist, cheap) is the textbook cheap-ok brainstorm pick. 2026-06-05: grok-4.20 (reasoning + long-context, cheap) is a valid cheap-ok winner too after the data refresh."
     },
     {
       "name": "image-gen delegates out",
