@@ -191,6 +191,11 @@ def _cmd_pick(args: argparse.Namespace, *, explain: bool = False) -> int:
         "estimated_cost_usd": top.estimated_cost_usd,
         "reason": top.reason,
         "score": top.score,
+        # Sub-scores so the quality dimension is legible in the log/report, not
+        # just the blended composite. capability = the benchmark-grounded quality.
+        "capability": top.capability,
+        "cost_score": top.cost,
+        "latency_score": top.latency,
         "context_window": top.context_window,
         "catalog_source": catalog_src.source,
         "active_provider": active_provider,

@@ -222,3 +222,25 @@ class TestReportRendersSavings:
         assert "pre-date billing-mode tagging" in report
         # The notional reference line still shows the underlying numbers
         assert "notional" in report
+
+    def test_quality_section_renders_capability(self, tmp_path):
+        from datetime import datetime, timezone
+        log = tmp_path / "decisions.log"
+        records = [
+            {"decision_id": "q1", "model": "anthropic__claude-opus-4-8",
+             "estimated_cost_usd": 0.07, "capability": 0.82, "catalog_source": "live",
+             "signal": {"task_kind": "code-review", "caller": "t"},
+             "caller": "t", "ts": "2026-06-04T00:00:00+00:00"},
+            {"decision_id": "q2", "model": "anthropic__claude-haiku-4-5",
+             "estimated_cost_usd": 0.01, "capability": 0.30, "catalog_source": "live",
+             "signal": {"task_kind": "sql", "caller": "t"},
+             "caller": "t", "ts": "2026-06-04T00:00:00+00:00"},
+        ]
+        log.write_text("\n".join(json.dumps(r) for r in records) + "\n")
+        report = build_report(decisions_log=log, feedback_dirs=[tmp_path / "nf"],
+                              days=365, now=datetime(2026, 6, 4, 12, 0, tzinfo=timezone.utc))
+        assert "## Quality of picks" in report
+        assert "code-review: 0.82 avg" in report
+        # The 0.30 sql pick is below the medium floor → flagged as compromised
+        assert "Quality-compromised picks" in report
+        assert "capability 0.30" in report

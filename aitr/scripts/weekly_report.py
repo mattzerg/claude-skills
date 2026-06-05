@@ -260,6 +260,35 @@ def build_report(
     if delegations:
         lines.append(f"- (delegated out: {delegations})")
 
+    # --- Quality of picks ----------------------------------------------------
+    # capability is the benchmark-grounded quality sub-score [0,1]. Surfacing it
+    # per task_kind makes the quality dimension legible alongside cost, and flags
+    # where routing had to compromise quality (capability below the medium floor).
+    cap_by_task: defaultdict = defaultdict(list)
+    low_quality: list = []
+    for d in window_decisions:
+        if d.get("verb") == "delegate" or "capability" not in d:
+            continue
+        cap = float(d.get("capability") or 0.0)
+        tk = (d.get("signal") or {}).get("task_kind", "?")
+        cap_by_task[tk].append(cap)
+        if cap < 0.5:
+            low_quality.append((d.get("caller") or "?", tk, d.get("model", "?"), cap))
+    if cap_by_task:
+        lines += ["", "## Quality of picks", "",
+                  "Mean capability (benchmark-grounded quality, 0–1) by task kind:", ""]
+        for tk in sorted(cap_by_task, key=lambda k: -sum(cap_by_task[k]) / len(cap_by_task[k])):
+            xs = cap_by_task[tk]
+            lines.append(f"- {tk}: {sum(xs)/len(xs):.2f} avg ({len(xs)} picks)")
+        if low_quality:
+            lines += ["", f"**Quality-compromised picks ({len(low_quality)}** below the "
+                      "medium floor — usually a constraint forcing a weak-fit model):"]
+            for caller, tk, model, cap in low_quality[:8]:
+                lines.append(f"- {caller} / {tk}: {model} (capability {cap:.2f})")
+    else:
+        lines += ["", "## Quality of picks", "",
+                  "_No capability data in window (decisions pre-date quality sub-score logging)._"]
+
     # --- Savings vs baseline -------------------------------------------------
     try:
         from catalog import load_catalog  # noqa: PLC0415 — local import keeps report usable offline
