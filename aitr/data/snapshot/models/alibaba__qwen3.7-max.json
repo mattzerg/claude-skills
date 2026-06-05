@@ -11,9 +11,9 @@
     "text"
   ],
   "pricing": {
-    "input_per_mtok": 2.5,
-    "output_per_mtok": 7.5,
-    "as_of": "2026-06-02"
+    "input_per_mtok": 1.25,
+    "output_per_mtok": 3.75,
+    "as_of": "2026-06-05"
   },
   "tags": [
     "code",
