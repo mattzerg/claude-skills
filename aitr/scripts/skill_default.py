@@ -28,12 +28,29 @@ returned with a loud stderr warning.
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
 from typing import Optional
 
 AITR_PICK = Path(__file__).resolve().parent / "pick.py"
+
+
+def detect_billing_mode() -> str:
+    """Best-effort billing mode for the CURRENT process.
+
+    "metered" when a per-token Anthropic API key is present in the environment
+    (the SDK path callers like competitive-review / fakematt-feedback take when
+    keyed) — model choice then saves real dollars. Otherwise "flat": Max-plan
+    OAuth / CLI / Codex subscription, where model choice is $0 marginal.
+
+    Note: this is a PROXY. Callers that always use Max-OAuth (max_client) should
+    pass billing_mode="flat" explicitly rather than rely on this — a globally-set
+    ANTHROPIC_API_KEY would otherwise mislabel them. Use this only in callers
+    whose executor actually keys off the same env var.
+    """
+    return "metered" if os.environ.get("ANTHROPIC_API_KEY") else "flat"
 
 
 def _to_claude_model_name(aitr_model_id: str) -> Optional[str]:

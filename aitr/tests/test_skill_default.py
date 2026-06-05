@@ -66,6 +66,29 @@ class TestAitrModelOr:
         assert "caller=fakematt-copyedit" in cmd
         assert "quality_floor=high-stakes" in cmd
 
+    def test_billing_mode_defaults_flat_and_passes_through(self):
+        captured = []
+        runner = make_runner(stdout=pick_json(), capture=captured)
+        aitr_model_or("fb", task_kind="classify", caller="t", runner=runner)
+        assert "billing_mode=flat" in captured[0]
+
+    def test_billing_mode_metered_passed(self):
+        captured = []
+        runner = make_runner(stdout=pick_json(), capture=captured)
+        aitr_model_or("fb", task_kind="classify", caller="t",
+                      billing_mode="metered", runner=runner)
+        assert "billing_mode=metered" in captured[0]
+
+
+class TestDetectBillingMode:
+    def test_metered_when_api_key_set(self, monkeypatch):
+        monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-test")
+        assert skill_default.detect_billing_mode() == "metered"
+
+    def test_flat_when_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+        assert skill_default.detect_billing_mode() == "flat"
+
     def test_artifact_size_included_when_given(self):
         captured = []
         runner = make_runner(stdout=pick_json(), capture=captured)

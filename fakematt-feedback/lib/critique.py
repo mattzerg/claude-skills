@@ -40,9 +40,14 @@ def _routed_default_model() -> str:
             sys.path.insert(0, str(_AITR_SCRIPTS))
         try:
             from skill_default import aitr_model_or
+            # Metered iff this run will take the SDK path (same key check the
+            # executor uses below) — else flat CLI fallback.
+            import os as _os
+            keyed = bool(_os.environ.get("ANTHROPIC_API_KEY") or _read_api_key_from_config())
             _routed_model_cache = aitr_model_or(
                 DEFAULT_MODEL, task_kind="prose-review", caller="fakematt-feedback",
                 quality_floor="medium", modality_required="vision",
+                billing_mode="metered" if keyed else "flat",
             )
         except ImportError:
             _routed_model_cache = DEFAULT_MODEL

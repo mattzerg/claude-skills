@@ -47,12 +47,15 @@ def _routed_default_model() -> str:
         if str(_AITR_SCRIPTS) not in sys.path:
             sys.path.insert(0, str(_AITR_SCRIPTS))
         try:
-            from skill_default import aitr_model_or
+            from skill_default import aitr_model_or, detect_billing_mode
+            # This lib uses the metered SDK iff ANTHROPIC_API_KEY is set (_sdk_available);
+            # report the same billing mode so savings are credited only when real.
             _routed_model_cache = aitr_model_or(
                 DEFAULT_MODEL,
                 task_kind="research",
                 caller="competitive-review-skill",
                 quality_floor="medium",
+                billing_mode="metered" if _sdk_available() else "flat",
             )
         except ImportError:
             _routed_model_cache = DEFAULT_MODEL
