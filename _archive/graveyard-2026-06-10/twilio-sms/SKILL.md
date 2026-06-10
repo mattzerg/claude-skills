@@ -1,3 +1,8 @@
+---
+name: twilio-sms
+description: Send and receive SMS/MMS through Twilio with Claude Code auto-response workflows. Use when Matt asks to text someone, send a one-off SMS, set up an inbound-SMS bot, MMS a photo, or wire a Twilio-backed text alert. Different from imessage-skill (Apple iMessage on Matt's phone) and whatsapp-skill (WhatsApp). Pairs with fakematt-personal (voice for close-contact SMS drafts).
+---
+
 # Twilio SMS Skill - Text Message Bridge for Claude Code
 
 Send and receive SMS/MMS messages through Twilio, with auto-response via Claude Code.

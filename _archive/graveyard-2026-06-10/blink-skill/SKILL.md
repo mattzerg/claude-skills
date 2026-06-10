@@ -1,3 +1,9 @@
+---
+name: blink-skill
+description: Control and monitor Blink cameras, snapshots, motion events, arm/disarm
+  state, and video clips.
+---
+
 # Blink Camera Skill
 
 Control and monitor Blink cameras. View snapshots, check motion events, arm/disarm systems, and download video clips.

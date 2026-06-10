@@ -4,6 +4,7 @@ description: Read Notion databases and pages. Use when the user asks to pull dat
 allowed-tools: Bash, Read, Write
 ---
 
+
 # Notion Skill - Database & Page Access
 
 Read and query Notion databases and pages. Supports multiple workspaces. Useful for data migration and export.

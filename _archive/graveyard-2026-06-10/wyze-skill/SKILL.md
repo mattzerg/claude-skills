@@ -1,3 +1,8 @@
+---
+name: wyze-skill
+description: Control and monitor Wyze cameras, view motion events, check camera status, turn cameras on/off, and download event clips. Use when Matt asks to check the cameras, pull recent motion events, arm/disarm a camera, grab a clip from a Wyze cam, or check whether something happened at home/office. Sibling to blink-skill (same surface for Blink cameras).
+---
+
 # Wyze Camera Skill
 
 Control and monitor Wyze cameras. View events, check status, turn cameras on/off, and download event clips.

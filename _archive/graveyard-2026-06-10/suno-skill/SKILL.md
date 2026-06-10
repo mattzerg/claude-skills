@@ -1,3 +1,8 @@
+---
+name: suno-skill
+description: Generate full songs (vocals + instrumentals) through Suno via Playwright browser automation. Use when Matt asks to make a song, generate a jingle, write a custom track for a video/launch/birthday, or needs full vocals-plus-instruments output (not just instrumentals). Different from fal-music-skill (instrumental-only via FAL providers) and eleven-labs-skill (voice/SFX only, no music). Pairs with video-production-planner / product-launch-video.
+---
+
 # Suno Music Skill - AI Music Generation via Browser Automation
 
 Generate full songs (vocals + instrumentals) using Suno.com via Playwright browser automation.
@@ -6,25 +11,25 @@ Generate full songs (vocals + instrumentals) using Suno.com via Playwright brows
 
 ```bash
 # 1. Log in to Suno visibly (one-time)
-python3 ~/.claude/skills/suno-skill/suno_skill.py login
+/usr/bin/python3 ~/.claude/skills/suno-skill/suno_skill.py login
 
 # This opens a visible browser. Log in with your Google/Discord/Apple account.
 # Once logged in, close the browser — session is saved.
 
 # 2. Verify it works
-python3 ~/.claude/skills/suno-skill/suno_skill.py create "upbeat indie rock song about coding at 3am"
+/usr/bin/python3 ~/.claude/skills/suno-skill/suno_skill.py create "upbeat indie rock song about coding at 3am"
 ```
 
 ## Commands
 
 ### Login (one-time, visible browser)
 ```bash
-python3 ~/.claude/skills/suno-skill/suno_skill.py login
+/usr/bin/python3 ~/.claude/skills/suno-skill/suno_skill.py login
 ```
 
 ### Create a Song
 ```bash
-python3 ~/.claude/skills/suno-skill/suno_skill.py create "PROMPT" [--style "STYLE"] [--instrumental] [--output DIR]
+/usr/bin/python3 ~/.claude/skills/suno-skill/suno_skill.py create "PROMPT" [--style "STYLE"] [--instrumental] [--output DIR]
 ```
 
 **Arguments:**
@@ -36,29 +41,29 @@ python3 ~/.claude/skills/suno-skill/suno_skill.py create "PROMPT" [--style "STYL
 
 ### Download a Song by URL
 ```bash
-python3 ~/.claude/skills/suno-skill/suno_skill.py download "https://suno.com/song/SONG_ID" [--output DIR]
+/usr/bin/python3 ~/.claude/skills/suno-skill/suno_skill.py download "https://suno.com/song/SONG_ID" [--output DIR]
 ```
 
 ### List Recent Creations
 ```bash
-python3 ~/.claude/skills/suno-skill/suno_skill.py list [--limit 10]
+/usr/bin/python3 ~/.claude/skills/suno-skill/suno_skill.py list [--limit 10]
 ```
 
 ## Examples
 
 ```bash
 # Generate a kawaii metal track
-python3 ~/.claude/skills/suno-skill/suno_skill.py create \
+/usr/bin/python3 ~/.claude/skills/suno-skill/suno_skill.py create \
   "aggressive kawaii metal song about fighting robots in Tokyo" \
   --style "kawaii metal, japanese, heavy guitar"
 
 # Generate an instrumental lo-fi beat
-python3 ~/.claude/skills/suno-skill/suno_skill.py create \
+/usr/bin/python3 ~/.claude/skills/suno-skill/suno_skill.py create \
   "chill lo-fi study beat with rain sounds and soft piano" \
   --instrumental --style "lo-fi hip hop, chill, ambient"
 
 # Generate with full lyrics
-python3 ~/.claude/skills/suno-skill/suno_skill.py create \
+/usr/bin/python3 ~/.claude/skills/suno-skill/suno_skill.py create \
   "[Verse 1]\nWaking up at 3am\nScreen light in my eyes again\n[Chorus]\nWe're building something new tonight" \
   --style "indie rock, upbeat"
 ```

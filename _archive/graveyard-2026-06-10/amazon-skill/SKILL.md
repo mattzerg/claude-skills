@@ -4,6 +4,7 @@ description: Search Amazon products, check prices, build multi-item carts, and m
 allowed-tools: Bash, Read
 ---
 
+
 # Amazon Skill
 
 Search products, check prices, build carts, and manage shopping lists on Amazon.

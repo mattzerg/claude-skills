@@ -4,6 +4,7 @@ description: Generate music and audio using AI. Use when the user asks to create
 allowed-tools: Bash, Read, Write
 ---
 
+
 # FAL Music - AI Music Generation
 
 Generate music using FAL.ai — access to Stable Audio Open, Stable Audio 2.5, and Beatoven Maestro through a single API.
