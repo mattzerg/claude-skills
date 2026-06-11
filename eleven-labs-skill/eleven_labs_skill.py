@@ -130,9 +130,10 @@ def cmd_speak(args):
         return
 
     try:
-        # Find voice by name or use voice_id directly
+        # Find voice by name or use voice_id directly (real IDs are ~20+ alphanumeric chars)
+        import re as _re
         voice_id = args.voice
-        if args.voice and not args.voice.startswith("EXA"):  # Not already a voice ID
+        if args.voice and not _re.fullmatch(r"[A-Za-z0-9]{20,}", args.voice):
             response = client.voices.get_all()
             for v in response.voices:
                 if args.voice.lower() in v.name.lower():
@@ -143,12 +144,20 @@ def cmd_speak(args):
         if not voice_id:
             voice_id = "21m00Tcm4TlvDq8ikWAM"  # Rachel
 
-        # Generate audio
-        audio = client.generate(
-            text=args.text,
-            voice=voice_id,
-            model=args.model or "eleven_monolingual_v1"
-        )
+        # Generate audio (SDK v1+ removed client.generate; convert returns a bytes iterator)
+        if hasattr(client, "text_to_speech"):
+            audio = client.text_to_speech.convert(
+                voice_id=voice_id,
+                text=args.text,
+                model_id=args.model or "eleven_multilingual_v2",
+                output_format="mp3_44100_128",
+            )
+        else:  # legacy SDK (<1.0)
+            audio = client.generate(
+                text=args.text,
+                voice=voice_id,
+                model=args.model or "eleven_monolingual_v1"
+            )
 
         # Save to file
         OUTPUT_DIR.mkdir(exist_ok=True)
@@ -313,6 +322,209 @@ def cmd_history(args):
         output({"error": f"Failed to get history: {str(e)}"})
 
 
+def cmd_sync(args):
+    """
+    Parse a shot-list markdown file, extract per-cut VO lines, synthesize
+    each to MP3, emit timing.json + timing.srt aligned to the cut schedule.
+    """
+    import re
+    import subprocess as _subp
+    from pathlib import Path as _Path
+
+    VOICE_PRESETS = {
+        # Male
+        "adam": "pNInz6obpgDQGcFmaJgB",
+        "daniel": "onwK4e9ZLuTAKqWW03F9",
+        "antoni": "ErXwobaYiN019PkySvjV",
+        "josh": "TxGEqnHWrfWFTfGW9XjX",
+        # Female
+        "rachel": "21m00Tcm4TlvDq8ikWAM",
+        "jessica": "cgSgspJ2msm6clMCkdW9",   # TikTok-style young female narrator
+        "bella": "EXAVITQu4vr4xnSDxMaC",
+        "domi": "AZnzlk1XvdvUeBnXmlld",
+        # Tagged aliases for clarity
+        "tiktok-female": "cgSgspJ2msm6clMCkdW9",  # alias → jessica
+        "matt-clone": None,
+    }
+
+    if not args.shotlist:
+        output({"error": "shotlist path required", "usage": "sync --shotlist path.md --voice adam --out path/"})
+        return
+
+    shotlist_path = _Path(args.shotlist).expanduser()
+    if not shotlist_path.exists():
+        output({"error": f"shotlist not found: {shotlist_path}"})
+        return
+
+    md = shotlist_path.read_text()
+
+    cuts = []
+    in_table = False
+    header_cols = []
+
+    for raw_line in md.splitlines():
+        line = raw_line.strip()
+        if not line.startswith("|"):
+            in_table = False
+            header_cols = []
+            continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if all(set(c) <= {"-", ":", " "} for c in cells if c):
+            in_table = True
+            continue
+        if not in_table or not header_cols:
+            if any("vo" in c.lower() or "caption" in c.lower() for c in cells):
+                header_cols = [c.lower() for c in cells]
+            continue
+        if len(cells) < len(header_cols):
+            continue
+
+        row = dict(zip(header_cols, cells))
+        cut_id = row.get("#") or row.get("id") or cells[0]
+        time_col = row.get("time", "")
+        dur_col = row.get("dur", "") or row.get("duration", "")
+        vo_cell = None
+        for k, v in row.items():
+            if "vo" in k or "caption" in k:
+                vo_cell = v
+                break
+        if vo_cell is None:
+            continue
+
+        vo_match = re.search(r'VO:\s*\*?["“]([^"”]+)["”]\*?', vo_cell)
+        vo_text = vo_match.group(1) if vo_match else ""
+        if not vo_text:
+            vo_match2 = re.search(r"VO:\s*\*?([^*\n]+?)(?:\s*CAP:|$)", vo_cell)
+            if vo_match2:
+                vo_text = vo_match2.group(1).strip().strip('"“”\' ')
+        cap_match = re.search(r"CAP:\s*`([^`]+)`", vo_cell)
+        cap_text = cap_match.group(1) if cap_match else ""
+        dur_match = re.match(r"([\d.]+)\s*s", dur_col)
+        dur_expected = float(dur_match.group(1)) if dur_match else 0.0
+
+        if vo_text or cap_text:
+            cuts.append({
+                "cut_id": cut_id,
+                "time": time_col,
+                "dur_expected": dur_expected,
+                "vo_text": vo_text,
+                "cap_text": cap_text,
+            })
+
+    vo_cuts = [c for c in cuts if c["vo_text"]]
+
+    if args.dry_run:
+        output({
+            "shotlist": str(shotlist_path),
+            "total_cuts_found": len(cuts),
+            "vo_cuts": len(vo_cuts),
+            "vo_lines": [{"cut_id": c["cut_id"], "dur_expected": c["dur_expected"], "vo_text": c["vo_text"]} for c in vo_cuts],
+            "captions_only": [{"cut_id": c["cut_id"], "cap_text": c["cap_text"]} for c in cuts if not c["vo_text"] and c["cap_text"]],
+        })
+        return
+
+    voice_arg = (args.voice or "adam").lower()
+    voice_id = VOICE_PRESETS.get(voice_arg, voice_arg)
+    if voice_id is None:
+        output({"error": f"voice preset '{voice_arg}' not configured; use adam|daniel|rachel|antoni"})
+        return
+
+    out_dir = _Path(args.out).expanduser() if args.out else _Path.home() / "Downloads" / "eleven-labs-sync" / shotlist_path.stem
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    client, err = get_client()
+    if err:
+        output({"error": err})
+        return
+
+    timing = []
+    srt_entries = []
+    cumulative_t = 0.0
+    srt_idx = 1
+
+    for cut in cuts:
+        cut_id = cut["cut_id"]
+        dur_expected = cut["dur_expected"]
+        vo_text = cut["vo_text"]
+        cap_text = cut["cap_text"]
+        start_t = cumulative_t
+        end_t = cumulative_t + dur_expected
+
+        mp3_path = None
+        dur_actual = 0.0
+        overflow = False
+
+        if vo_text:
+            mp3_path = out_dir / f"cut-{cut_id}.mp3"
+            try:
+                audio = client.text_to_speech.convert(
+                    text=vo_text,
+                    voice_id=voice_id,
+                    model_id=args.model or "eleven_multilingual_v2",
+                    output_format="mp3_44100_128",
+                )
+                with open(mp3_path, "wb") as f:
+                    for chunk in audio:
+                        f.write(chunk)
+                try:
+                    res = _subp.run(
+                        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                         "-of", "default=noprint_wrappers=1:nokey=1", str(mp3_path)],
+                        capture_output=True, text=True, check=True,
+                    )
+                    dur_actual = float(res.stdout.strip())
+                except Exception:
+                    dur_actual = 0.0
+                overflow = dur_actual > dur_expected + 0.2
+            except Exception as e:
+                output({"error": f"VO synthesis failed for cut {cut_id}: {e}"})
+                return
+
+        srt_text = vo_text or cap_text
+        if srt_text and dur_expected > 0:
+            def _ts(t):
+                h, rem = divmod(t, 3600)
+                m, s = divmod(rem, 60)
+                ms = int((s - int(s)) * 1000)
+                return f"{int(h):02d}:{int(m):02d}:{int(s):02d},{ms:03d}"
+            srt_entries.append(f"{srt_idx}\n{_ts(start_t)} --> {_ts(end_t)}\n{srt_text}\n")
+            srt_idx += 1
+
+        timing.append({
+            "cut_id": cut_id,
+            "start": start_t,
+            "end": end_t,
+            "dur_expected": dur_expected,
+            "dur_actual": dur_actual,
+            "overflow_warn": overflow,
+            "mp3": str(mp3_path) if mp3_path else None,
+            "vo_text": vo_text,
+            "cap_text": cap_text,
+        })
+        cumulative_t = end_t
+
+    (out_dir / "timing.json").write_text(json.dumps({
+        "shotlist": str(shotlist_path),
+        "voice": voice_arg,
+        "voice_id": voice_id,
+        "total_duration": cumulative_t,
+        "vo_count": sum(1 for t in timing if t["mp3"]),
+        "caption_count": sum(1 for t in timing if t["cap_text"]),
+        "overflow_count": sum(1 for t in timing if t["overflow_warn"]),
+        "cuts": timing,
+    }, indent=2))
+    (out_dir / "timing.srt").write_text("\n".join(srt_entries))
+
+    output({
+        "status": "success",
+        "out_dir": str(out_dir),
+        "vo_count": sum(1 for t in timing if t['mp3']),
+        "caption_count": sum(1 for t in timing if t['cap_text']),
+        "overflow_count": sum(1 for t in timing if t['overflow_warn']),
+        "total_duration": cumulative_t,
+    })
+
+
 def cmd_delete_voice(args):
     """Delete a cloned voice."""
     client, error = get_client()
@@ -372,6 +584,14 @@ def main():
     delete_parser = subparsers.add_parser("delete-voice", help="Delete a cloned voice")
     delete_parser.add_argument("voice_id", nargs="?", help="Voice ID to delete")
 
+    # Sync: shot-list → VO MP3s + SRT
+    sync_parser = subparsers.add_parser("sync", help="Parse shot-list MD → per-cut MP3s + timing.srt")
+    sync_parser.add_argument("--shotlist", required=False, help="Path to shot-list markdown")
+    sync_parser.add_argument("--voice", default="adam", help="Voice preset (adam|daniel|rachel|antoni) or raw voice_id")
+    sync_parser.add_argument("--model", default="eleven_multilingual_v2", help="ElevenLabs model")
+    sync_parser.add_argument("--out", help="Output dir (default ~/Downloads/eleven-labs-sync/<basename>/)")
+    sync_parser.add_argument("--dry-run", action="store_true", help="Parse only; don't synthesize")
+
     args = parser.parse_args()
 
     if not args.command:
@@ -387,6 +607,7 @@ def main():
         "models": cmd_models,
         "history": cmd_history,
         "delete-voice": cmd_delete_voice,
+        "sync": cmd_sync,
     }
 
     commands[args.command](args)

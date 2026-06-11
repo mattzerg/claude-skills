@@ -1,0 +1,24 @@
+{
+  "_comment": "Omphalos reel spec template — new_reel.py scaffold generates this with absolute paths filled. Kept here as the reference shape. clock block is consumed by clock_overlay.py, ignored by reel_build.py.",
+  "name": "<slug>",
+  "out": "<dir>/omphalos-<slug>-draft-v1-<date>.mp4",
+  "frames": ["<dir>/<prefix>1-<shot>.png", "… x6"],
+  "vo": ["<dir>/<prefix>-1.mp3", "… x6"],
+  "handles": [0.6, 0.6, 0.6, 0.6, 0.6, 2.0],
+  "score": "<assets/music/<mood>/<track>.mp3 — note CC-BY attribution in captions pack>",
+  "title": "<_pipeline>/title-futura-v2.png",
+  "hero": [],
+  "motion": ["drift-up", "drift-right", "push", "drift-left", "still", "drift-down"],
+  "i2v_prompts": ["", "subtle motion only, no zoom, locked-off", "", "", "", ""],
+  "text": [
+    {"png": "<overlay png — 841 / concord glyphs / clock plate>", "w": 240, "gravity": "center|tl|tr|bl|br", "geom": "+0+0", "start": 0, "end": 999, "blend": "overlay"}
+  ],
+  "clock": {"surface": "folk|official|vo|none", "sign": null},
+  "frames_gen": {
+    "dir": "<dir>",
+    "negative": "numbers, digits, text, letters, words, signage lettering, writing, fantasy, painting, illustration, concept art, gold filigree, medieval, cartoon, anime, deformed hands, low detail",
+    "shots": [
+      {"file": "<prefix>1-<shot>.png", "prompt": "Photorealistic cinematic film still, <dense scene — props, depth, foreground elements, tonal dial per location>, anamorphic, ARRI Alexa, 35mm film grain, teal-amber grade, grounded science fiction"}
+    ]
+  }
+}
