@@ -169,10 +169,12 @@ function buildCard(item, depth) {
     ${item.raw && item.raw.context_block ? `<div class=ctx style="white-space:pre-line">${escapeHTML(item.raw.context_block)}</div>` : ''}
     <div class=why><b>why:</b> ${escapeHTML(item.why)}</div>
     <div class=path>${escapeHTML(item.entity_path || '')}</div>
-    <div class=footer>${escapeHTML((item.choices || []).join(' • '))} • default: <b>${item.suggested_default}</b></div>
-    <div class="hint yes">YES</div>
-    <div class="hint no">NO</div>
-    <div class="hint defer">DEFER</div>
+    <div class=footer>${item.raw && item.raw.swipe_map
+      ? `→ ${escapeHTML(item.raw.swipe_map.yes)} · ← ${escapeHTML(item.raw.swipe_map.no)} · ↑ ${escapeHTML(item.raw.swipe_map.defer)} · ↓ details · suggested: <b>${escapeHTML(item.suggested_default)}</b>`
+      : `${escapeHTML((item.choices || []).join(' • '))} • default: <b>${item.suggested_default}</b>`}</div>
+    <div class="hint yes">${(item.raw && item.raw.swipe_map && item.raw.swipe_map.yes || 'YES').toUpperCase()}</div>
+    <div class="hint no">${(item.raw && item.raw.swipe_map && item.raw.swipe_map.no || 'NO').toUpperCase()}</div>
+    <div class="hint defer">${(item.raw && item.raw.swipe_map && item.raw.swipe_map.defer || 'DEFER').toUpperCase()}</div>
     <div class="hint details">DETAILS</div>
   `;
   return c;
@@ -240,15 +242,24 @@ function flyOut(answer) {
   setTimeout(() => sendAnswer(answer), 200);
 }
 
+function mapAnswer(item, a) {
+  const m = item && item.raw && item.raw.swipe_map;
+  if (!m) return a;
+  if (a === 'yes') return m.yes || a;
+  if (a === 'no') return m.no || a;
+  if (a.startsWith('defer')) return m.defer || a;
+  return a;
+}
+
 async function sendAnswer(answer) {
   const item = queue[idx];
   if (!item) return;
   try {
     const r = await fetch('/api/decide', {
       method: 'POST', headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({id: item.id, answer, channel: 'swipe'})
+      body: JSON.stringify({id: item.id, answer: mapAnswer(item, answer), channel: 'swipe'})
     });
-    if (r.ok) toast(`✓ ${answer}`); else toast('error');
+    if (r.ok) toast(`✓ ${mapAnswer(item, answer)}`); else toast('error');
   } catch (e) { toast('offline'); }
   idx += 1;
   renderTop();
