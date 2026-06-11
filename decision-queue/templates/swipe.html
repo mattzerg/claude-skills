@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Decision Queue — swipe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style>
+  :root {
+    --bg: #0e0e10;
+    --card: #1c1c20;
+    --text: #f2f2f2;
+    --muted: #888;
+    --yes: #38b46e;
+    --no: #e3504a;
+    --defer: #d6a734;
+    --details: #4a78e3;
+    --accent: #c8c5ff;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+    overflow: hidden; display: flex; flex-direction: column; touch-action: none;
+  }
+  header { padding: 14px 20px; display: flex; justify-content: space-between; align-items: center;
+           border-bottom: 1px solid #2a2a30; }
+  header h1 { font-size: 16px; margin: 0; font-weight: 700; }
+  header .meta { font-size: 13px; color: var(--muted); }
+  header button {
+    background: transparent; color: var(--muted); border: 1px solid #2a2a30;
+    padding: 5px 10px; border-radius: 6px; font-size: 12px; cursor: pointer;
+  }
+  main { flex: 1; position: relative; overflow: hidden; }
+  .stage { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 16px; }
+  .card {
+    position: absolute; width: min(94%, 480px); height: min(76%, 620px);
+    background: var(--card); border-radius: 24px; padding: 24px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.55); display: flex; flex-direction: column;
+    will-change: transform; transition: transform 0.18s ease;
+  }
+  .card.dismissing { transition: transform 0.45s cubic-bezier(.22,.61,.36,1), opacity 0.4s ease; }
+  .card .src { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .card h2 { margin: 0 0 8px 0; font-size: 22px; line-height: 1.25; }
+  .card .ctx { font-size: 16px; color: var(--text); margin: 0 0 10px 0; line-height: 1.35; }
+  .card .meta { font-size: 13px; color: var(--muted); margin-bottom: 16px; }
+  .card .why { background: #25252b; border-left: 3px solid var(--accent); padding: 10px 14px; border-radius: 6px;
+               font-size: 13px; color: #e5e5e5; margin-bottom: 14px; line-height: 1.45; }
+  .card .path { font-size: 11px; color: #666; font-family: ui-monospace, "SF Mono", monospace; margin-bottom: 6px;
+                word-break: break-all; }
+  .card .deadline { font-size: 13px; color: var(--defer); margin-bottom: 8px; }
+  .card .priority { position: absolute; top: 20px; right: 22px; font-size: 11px; color: var(--muted); }
+  .card .hint {
+    position: absolute; top: 30px; padding: 6px 12px; border-radius: 6px;
+    font-weight: 700; font-size: 14px; opacity: 0;
+    border: 2px solid currentColor;
+  }
+  .card .hint.yes { left: 26px; color: var(--yes); transform: rotate(-12deg); }
+  .card .hint.no { right: 26px; color: var(--no); transform: rotate(12deg); }
+  .card .hint.defer { top: 14px; left: 50%; transform: translateX(-50%); color: var(--defer); }
+  .card .hint.details { bottom: 28px; left: 50%; transform: translateX(-50%); top: auto; color: var(--details); }
+  .card .footer { margin-top: auto; font-size: 12px; color: var(--muted); }
+
+  .controls { position: absolute; bottom: 18px; left: 0; right: 0;
+              display: flex; justify-content: center; gap: 14px; padding: 0 16px; }
+  .controls button {
+    width: 60px; height: 60px; border-radius: 50%; border: none; font-size: 22px; cursor: pointer;
+    color: white; box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+  }
+  .controls .yes { background: var(--yes); }
+  .controls .no { background: var(--no); }
+  .controls .defer { background: var(--defer); }
+  .controls .details { background: var(--details); }
+
+  .empty { text-align: center; color: var(--muted); font-size: 18px; padding: 60px 30px; }
+  .empty .icon { font-size: 48px; margin-bottom: 16px; }
+  .toast {
+    position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);
+    background: var(--accent); color: #0e0e10; padding: 10px 18px; border-radius: 24px;
+    font-weight: 600; font-size: 14px; opacity: 0; transition: opacity 0.25s; z-index: 10;
+  }
+  .toast.show { opacity: 1; }
+  .details-modal {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.75); display: none;
+    align-items: center; justify-content: center; padding: 20px; z-index: 20;
+  }
+  .details-modal.show { display: flex; }
+  .details-modal .inner {
+    background: var(--card); border-radius: 16px; padding: 24px; max-width: 560px; width: 100%;
+    max-height: 80vh; overflow-y: auto;
+  }
+  .details-modal pre { background: #0e0e10; padding: 12px; border-radius: 8px; font-size: 11px;
+                       overflow-x: auto; color: #ddd; }
+  .details-modal button { margin-top: 14px; padding: 10px 18px; border-radius: 8px; border: none;
+                          background: var(--accent); cursor: pointer; font-weight: 600; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Decisions <span id=count style="color:var(--accent)">—</span></h1>
+  <div class=meta>
+    <button onclick="regen()">↻ refresh</button>
+  </div>
+</header>
+<main>
+  <div class=stage id=stage></div>
+  <div class=controls id=controls style="display:none">
+    <button class=no title="no / skip" onclick="answer('no')">✕</button>
+    <button class=defer title="defer 1d" onclick="answer('defer-1d')">⏸</button>
+    <button class=details title="details" onclick="showDetails()">ⓘ</button>
+    <button class=yes title="yes / approve" onclick="answer('yes')">✓</button>
+  </div>
+</main>
+<div class=toast id=toast></div>
+<div class=details-modal id=details>
+  <div class=inner>
+    <h3 id=details-title>Details</h3>
+    <div id=details-body></div>
+    <pre id=details-raw></pre>
+    <button onclick="hideDetails()">Close</button>
+  </div>
+</div>
+<script>
+const stage = document.getElementById('stage');
+const ctlsEl = document.getElementById('controls');
+const toastEl = document.getElementById('toast');
+const detailsEl = document.getElementById('details');
+let queue = []; let idx = 0; let currentCard = null;
+
+function toast(msg) {
+  toastEl.textContent = msg; toastEl.classList.add('show');
+  setTimeout(() => toastEl.classList.remove('show'), 1400);
+}
+
+async function loadQueue() {
+  const r = await fetch('/api/queue'); const j = await r.json();
+  queue = j.items || []; idx = 0;
+  document.getElementById('count').textContent = queue.length;
+  renderTop();
+}
+
+function renderTop() {
+  stage.innerHTML = '';
+  if (idx >= queue.length) {
+    ctlsEl.style.display = 'none';
+    stage.innerHTML = '<div class=empty><div class=icon>✓</div><div>All clear.</div><div style="font-size:13px;margin-top:12px">Autonomous lanes proceeding. Refresh to recheck.</div></div>';
+    return;
+  }
+  ctlsEl.style.display = 'flex';
+  // Render up to 3 cards stacked
+  for (let i = Math.min(queue.length - 1, idx + 2); i >= idx; i--) {
+    stage.appendChild(buildCard(queue[i], i - idx));
+  }
+  currentCard = stage.lastElementChild;
+  attachSwipe(currentCard);
+}
+
+function buildCard(item, depth) {
+  const c = document.createElement('div');
+  c.className = 'card';
+  const scale = 1 - depth * 0.04; const yoff = depth * 12;
+  c.style.transform = `translate(0, ${yoff}px) scale(${scale})`;
+  c.style.zIndex = 100 - depth;
+  c.innerHTML = `
+    <div class=src>${item.source} • ${item.autonomy_class || '—'} • ${item.age_human}</div>
+    <span class=priority>p${item.priority}</span>
+    <h2>${escapeHTML(item.context_one_line)}</h2>
+    ${item.deadline ? `<div class=deadline>⏰ ${item.deadline}</div>` : ''}
+    ${item.raw && item.raw.context_block ? `<div class=ctx style="white-space:pre-line">${escapeHTML(item.raw.context_block)}</div>` : ''}
+    <div class=why><b>why:</b> ${escapeHTML(item.why)}</div>
+    <div class=path>${escapeHTML(item.entity_path || '')}</div>
+    <div class=footer>${escapeHTML((item.choices || []).join(' • '))} • default: <b>${item.suggested_default}</b></div>
+    <div class="hint yes">YES</div>
+    <div class="hint no">NO</div>
+    <div class="hint defer">DEFER</div>
+    <div class="hint details">DETAILS</div>
+  `;
+  return c;
+}
+
+function escapeHTML(s) {
+  return (s == null ? '' : String(s))
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function attachSwipe(card) {
+  let startX = 0, startY = 0, dx = 0, dy = 0, dragging = false;
+  function onStart(e) {
+    dragging = true; const p = e.touches ? e.touches[0] : e;
+    startX = p.clientX; startY = p.clientY;
+    card.style.transition = 'none';
+  }
+  function onMove(e) {
+    if (!dragging) return;
+    const p = e.touches ? e.touches[0] : e;
+    dx = p.clientX - startX; dy = p.clientY - startY;
+    const rot = dx * 0.05;
+    card.style.transform = `translate(${dx}px, ${dy}px) rotate(${rot}deg)`;
+    const yes = Math.max(0, dx / 120);
+    const no = Math.max(0, -dx / 120);
+    const def = Math.max(0, -dy / 100);
+    const det = Math.max(0, dy / 100);
+    card.querySelector('.hint.yes').style.opacity = Math.min(1, yes);
+    card.querySelector('.hint.no').style.opacity = Math.min(1, no);
+    card.querySelector('.hint.defer').style.opacity = Math.min(1, def);
+    card.querySelector('.hint.details').style.opacity = Math.min(1, det);
+  }
+  function onEnd() {
+    if (!dragging) return; dragging = false;
+    card.style.transition = '';
+    const ax = Math.abs(dx), ay = Math.abs(dy);
+    const threshold = 110;
+    if (ax > threshold && ax > ay) {
+      flyOut(dx > 0 ? 'yes' : 'no');
+    } else if (ay > threshold && ay > ax) {
+      if (dy < 0) flyOut('defer-1d'); else showDetails();
+    } else {
+      card.style.transform = 'translate(0,0) rotate(0)';
+      ['yes','no','defer','details'].forEach(h => card.querySelector('.hint.' + h).style.opacity = 0);
+    }
+    dx = 0; dy = 0;
+  }
+  card.addEventListener('mousedown', onStart);
+  card.addEventListener('mousemove', onMove);
+  card.addEventListener('mouseup', onEnd);
+  card.addEventListener('mouseleave', onEnd);
+  card.addEventListener('touchstart', onStart, {passive: true});
+  card.addEventListener('touchmove', onMove, {passive: true});
+  card.addEventListener('touchend', onEnd);
+}
+
+function flyOut(answer) {
+  if (!currentCard) return;
+  const xoff = answer === 'yes' ? 800 : answer === 'no' ? -800 : 0;
+  const yoff = answer.startsWith('defer') ? -800 : 0;
+  currentCard.classList.add('dismissing');
+  currentCard.style.transform = `translate(${xoff}px, ${yoff}px) rotate(${xoff*0.05}deg)`;
+  currentCard.style.opacity = 0;
+  setTimeout(() => sendAnswer(answer), 200);
+}
+
+async function sendAnswer(answer) {
+  const item = queue[idx];
+  if (!item) return;
+  try {
+    const r = await fetch('/api/decide', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({id: item.id, answer, channel: 'swipe'})
+    });
+    if (r.ok) toast(`✓ ${answer}`); else toast('error');
+  } catch (e) { toast('offline'); }
+  idx += 1;
+  renderTop();
+}
+
+function answer(a) { flyOut(a); }
+
+function showDetails() {
+  const item = queue[idx];
+  if (!item) return;
+  document.getElementById('details-title').textContent = item.context_one_line;
+  document.getElementById('details-body').innerHTML = `
+    <p><b>Source:</b> ${escapeHTML(item.source)} • <b>Class:</b> ${escapeHTML(item.autonomy_class || '—')}</p>
+    <p><b>Verdict:</b> ${escapeHTML(item.autonomy_verdict)} (${escapeHTML(item.verdict_source)})</p>
+    <p><b>Why:</b> ${escapeHTML(item.why)}</p>
+    <p><b>Entity:</b> <code>${escapeHTML(item.entity_path || '')}</code></p>
+    ${item.deadline ? `<p><b>Deadline:</b> ${escapeHTML(item.deadline)}</p>` : ''}
+  `;
+  document.getElementById('details-raw').textContent = JSON.stringify(item.raw || {}, null, 2);
+  detailsEl.classList.add('show');
+}
+function hideDetails() { detailsEl.classList.remove('show'); }
+
+async function regen() {
+  toast('regenerating…');
+  await fetch('/api/regen', {method: 'POST'});
+  await loadQueue();
+}
+
+document.addEventListener('keydown', e => {
+  if (detailsEl.classList.contains('show')) {
+    if (e.key === 'Escape') hideDetails();
+    return;
+  }
+  if (e.key === 'ArrowRight' || e.key === 'y') answer('yes');
+  else if (e.key === 'ArrowLeft' || e.key === 'n') answer('no');
+  else if (e.key === 'ArrowUp' || e.key === 'd') answer('defer-1d');
+  else if (e.key === 'ArrowDown' || e.key === '?') showDetails();
+  else if (e.key === 'r') regen();
+});
+
+loadQueue();
+</script>
+</body>
+</html>

@@ -416,7 +416,7 @@ def from_zhub_sweep():
         yield DecisionItem(
             id=sid,
             source="zhub-sweep",
-            entity_path="http://127.0.0.1:7777/feed?lens=stale",
+            entity_path=d.get("drill") or "http://127.0.0.1:7777/feed?lens=stale",
             entity_id=d.get("entity_id", ""),
             age_days=age,
             age_human=_age_human(age),
@@ -425,7 +425,7 @@ def from_zhub_sweep():
             verdict_source="zhub-sweep",
             why=f"suggests {suggested}: " + _truncate(d.get("why", ""), 120),
             context_one_line=_truncate(
-                f"[{task_age:.0f}d stale] {d.get('title', '')}" if task_age is not None else d.get("title", "")
+                f"[{d['touch_label']}] {d.get('title', '')}" if d.get("touch_label") else d.get("title", "")
             ),
             choices=["drop", "park-30d", "keep"],
             suggested_default=suggested if suggested in ("drop", "keep") else "park-30d",
