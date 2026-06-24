@@ -108,7 +108,8 @@ doc = f"""<!doctype html><html><head><meta charset="utf-8"><title>{title}</title
 @page {{ size: A4; margin: 16mm 14mm; }}
 * {{ box-sizing: border-box; }}
 body {{ font-family: -apple-system, "Inter", "Segoe UI", Helvetica, Arial, sans-serif; color:#1a1a1a; font-size:10.5px; line-height:1.5; }}
-h1 {{ font-size:20px; color:#C0392B; border-bottom:3px solid #C0392B; padding-bottom:6px; margin:18px 0 10px; }}
+h1 {{ font-size:20px; color:#C0392B; border-bottom:3px solid #C0392B; padding-bottom:6px; margin:18px 0 10px; page-break-before: always; }}
+h1:first-of-type {{ page-break-before: avoid; }}
 h2 {{ font-size:14px; color:#922b21; margin:18px 0 6px; border-bottom:1px solid #e3c4bf; padding-bottom:3px; }}
 h3 {{ font-size:11.5px; color:#7a2018; margin:12px 0 4px; }}
 p {{ margin:5px 0; }}
