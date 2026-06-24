@@ -6,6 +6,12 @@ allowed-tools: Bash, Read, Write
 
 # Fake Matt Feedback Skill
 
+> **Front door:** for a UX/UI audit, prefer the `product-ux-review` skill — it's the runs-anywhere entry
+> point (drives chrome-devtools MCP + adversarial subagents, no corpus/SDK/pip deps, works on the stopgap
+> Mac). This `fakematt-feedback` `run.py` is its **optional accelerated backend** on the main Mac, where the
+> feedback-corpus + `ANTHROPIC_API_KEY` + python `playwright`/`anthropic` exist (it adds the SDK-cached
+> Matt-voice critique + auto axe pass + self-DM digest). If those prereqs are absent, use `product-ux-review`.
+
 Sibling to `landing-page-skill` (single-page audit) and `competitive-review-skill` (category-level review). This one is the **product feedback** counterpart: walks the whole product, exercises flows, screenshots everything, and writes Matt-voice critique grounded in research.
 
 ## When to invoke

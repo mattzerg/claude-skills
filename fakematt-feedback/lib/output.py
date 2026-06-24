@@ -12,9 +12,20 @@ import shutil
 from pathlib import Path
 from typing import Any
 
-VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
-)
+def _resolve_vault_root() -> Path:
+    """Live vault is ~/Obsidian/Zerg/MattZerg; the iCloud path was retired 2026-06-24.
+    Prefer the live path, fall back to the legacy iCloud path only if it still exists."""
+    primary = Path.home() / "Obsidian" / "Zerg" / "MattZerg"
+    if primary.exists():
+        return primary
+    legacy = (
+        Path.home()
+        / "Library" / "Mobile Documents" / "iCloud~md~obsidian" / "Documents" / "Zerg" / "MattZerg"
+    )
+    return legacy if legacy.exists() else primary
+
+
+VAULT_ROOT = _resolve_vault_root()
 FEEDBACK_DIR = VAULT_ROOT / "Feedback"
 SCREENSHOT_DIR = FEEDBACK_DIR / "_screenshots"
 
