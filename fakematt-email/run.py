@@ -32,12 +32,21 @@ from lib.claude import call_claude  # type: ignore
 DEFAULT_MODEL = "claude-opus-4-7"
 DEFAULT_OUT = Path("/tmp/fakematt-email")
 
-VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
-)
-MHE_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE"
-)
+def _resolve_vault_root(sub: str) -> Path:
+    """Live vault is ~/Obsidian/<sub>; the iCloud path was retired 2026-06-24.
+    Prefer the live path, fall back to the legacy iCloud path only if it still exists."""
+    primary = Path.home() / "Obsidian" / sub
+    if primary.exists():
+        return primary
+    legacy = (
+        Path.home()
+        / "Library" / "Mobile Documents" / "iCloud~md~obsidian" / "Documents" / sub
+    )
+    return legacy if legacy.exists() else primary
+
+
+VAULT_ROOT = _resolve_vault_root("Zerg/MattZerg")
+MHE_ROOT = _resolve_vault_root("MHE")
 VOICE_UNIVERSALS = VAULT_ROOT / "_style" / "voice_universals.md"
 LEARNED_PATTERNS = VAULT_ROOT / "_style" / "learned_patterns.md"
 VOICE_DOC = VAULT_ROOT / "_style" / "professional_voice.md"

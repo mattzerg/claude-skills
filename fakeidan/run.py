@@ -46,7 +46,23 @@ DEFAULT_OUT = Path("/tmp/fakeidan")
 
 ANCHOR_PATH = Path.home() / ".claude/skills/fakeidan/anchors/idan_review_voice.md"
 MEMORY_DIR = Path.home() / ".claude/projects/-Users-mattheweisner-Library-Mobile-Documents-iCloud-md-obsidian-Documents-Zerg/memory"
-PR_BAR_MEMORY = MEMORY_DIR / "feedback_idan_pr_review_bar.md"
+
+
+def _resolve_pr_bar_memory() -> Path:
+    """The Idan PR-bar anchor lives in the live vault _style/ folder; an older copy
+    lived under the iCloud-encoded projects memory dir (retired 2026-06-24).
+    Prefer the live vault path, fall back to the legacy encoded path."""
+    live = Path.home() / "Obsidian" / "Zerg" / "MattZerg" / "_style" / "feedback_idan_pr_review_bar.md"
+    if live.exists():
+        return live
+    legacy = (
+        Path.home()
+        / ".claude/projects/-Users-mattheweisner-Library-Mobile-Documents-iCloud-md-obsidian-Documents-Zerg/memory/feedback_idan_pr_review_bar.md"
+    )
+    return legacy
+
+
+PR_BAR_MEMORY = _resolve_pr_bar_memory()
 
 PRODUCT_VIDEO_SKILL_DIR = Path.home() / ".claude/skills/product-video-skill"
 
