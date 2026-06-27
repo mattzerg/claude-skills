@@ -62,4 +62,4 @@ python3 ~/.claude/skills/send-gate/run.py [gmail-skill-send-args...] [gate-flags
 
 - `feedback_gate_thresholds.md` — why this gate is lighter than pr-gate
 - `feedback_email_reply_voice.md` — Matt's reply voice patterns
-- `MattZerg/_style/voice_universals.md` — anti-patterns this scans for
+- `~/Obsidian/Zerg/MattZerg/_style/voice_universals.md` — anti-patterns this scans for

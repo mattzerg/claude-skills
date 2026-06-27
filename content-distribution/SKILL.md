@@ -54,7 +54,7 @@ Every external link in every variant draft MUST route through `utm-attribution` 
 
 ## Voice + style
 
-Each variant invokes `fakematt-copyedit` in review mode against `MattZerg/_style/writing_style.md` voice fingerprint before writing the draft. Threads obey "no double-posting" rule (per memory `feedback_fakematt_no_double_post.md`); LinkedIn follows "blog→social quote reuse" rule (per memory `feedback_blog_to_social_quote_reuse.md` — verbatim quote max twice per thread).
+Each variant invokes `fakematt-copyedit` in review mode against `~/Obsidian/Zerg/MattZerg/_style/writing_style.md` voice fingerprint before writing the draft. Threads obey "no double-posting" rule (per memory `feedback_fakematt_no_double_post.md`); LinkedIn follows "blog→social quote reuse" rule (per memory `feedback_blog_to_social_quote_reuse.md` — verbatim quote max twice per thread).
 
 ## Build phases
 

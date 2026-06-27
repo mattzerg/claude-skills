@@ -27,9 +27,20 @@ from googleapiclient.discovery import build
 import warnings
 warnings.filterwarnings("ignore")
 
-VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
-)
+def _resolve_vault_root(sub: str = "Zerg/MattZerg") -> Path:
+    """Live vault is ~/Obsidian/<sub>; the iCloud path was retired 2026-06-24.
+    Prefer the live path, fall back to the legacy iCloud path only if it still exists."""
+    primary = Path.home() / "Obsidian" / sub
+    if primary.exists():
+        return primary
+    legacy = (
+        Path.home()
+        / "Library" / "Mobile Documents" / "iCloud~md~obsidian" / "Documents" / sub
+    )
+    return legacy if legacy.exists() else primary
+
+
+VAULT_ROOT = _resolve_vault_root("Zerg/MattZerg")
 CORPUS = VAULT_ROOT / "_style" / "professional_voice_corpus.md"
 TIER_MAP = Path(__file__).parent / "tier_map.json"
 TOKENS = Path.home() / ".claude" / "skills" / "gmail-skill" / "tokens"

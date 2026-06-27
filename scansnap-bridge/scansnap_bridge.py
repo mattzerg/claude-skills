@@ -44,7 +44,20 @@ HOME = Path.home()
 INBOX = HOME / "scansnap-inbox"
 NEEDS_REVIEW = INBOX / "_needs_review"
 ARCHIVE_ROOT = HOME / "ScanArchive"
-VAULT_ROOT = HOME / "Library" / "Mobile Documents" / "iCloud~md~obsidian" / "Documents" / "idanbeck"
+def _resolve_vault_root(sub: str = "Zerg/MattZerg") -> Path:
+    """Live vault is ~/Obsidian/<sub>; the iCloud path was retired 2026-06-24.
+    Prefer the live path, fall back to the legacy iCloud path only if it still exists."""
+    primary = Path.home() / "Obsidian" / sub
+    if primary.exists():
+        return primary
+    legacy = (
+        Path.home()
+        / "Library" / "Mobile Documents" / "iCloud~md~obsidian" / "Documents" / sub
+    )
+    return legacy if legacy.exists() else primary
+
+
+VAULT_ROOT = _resolve_vault_root("idanbeck")
 
 CLAUDE_BIN = shutil.which("claude") or "/Users/idanbeck/.local/bin/claude"
 SLACK_SKILL = HOME / ".claude" / "skills" / "slack-skill" / "slack_skill.py"

@@ -1,6 +1,6 @@
 ---
 name: programmatic-seo
-description: Generate programmatic SEO content for Zerg's content engine — comparison pages (Linear vs Zergboard, Slack vs ZergChat, Calendly vs ZergCal, Otter vs ZergMeeting, Front vs ZergMail), GEO-optimized canonical explainers (what is X, how does Y work), and integration pages (Zerg + <partner>). Reads MattZerg/Competitive/<category>/positioning.md + competitor matrices to source claims; writes draft Markdown blog posts to ~/zerg/web/src/public/content/blog/<slug>.md with full SEO frontmatter (canonical URL, meta description, structured data). Pairs with blog-imagery (auto-generates hero) and fakematt-copyedit (voice review). Phase 2 build (Day 31–60), L effort. Pair with experiments #3 (comparison pages) + #4 (GEO explainers). USE PROACTIVELY when Matt mentions SEO, comparison pages, integration pages, "Linear vs us", AI-citation traffic, or programmatic content.
+description: Generate programmatic SEO content for Zerg's content engine — comparison pages (Linear vs Zergboard, Slack vs ZergChat, Calendly vs ZergCal, Otter vs ZergMeeting, Front vs ZergMail), GEO-optimized canonical explainers (what is X, how does Y work), and integration pages (Zerg + <partner>). Reads ~/Obsidian/Zerg/MattZerg/Competitive/<category>/positioning.md + competitor matrices to source claims; writes draft Markdown blog posts to ~/zerg/web/src/public/content/blog/<slug>.md with full SEO frontmatter (canonical URL, meta description, structured data). Pairs with blog-imagery (auto-generates hero) and fakematt-copyedit (voice review). Phase 2 build (Day 31–60), L effort. Pair with experiments #3 (comparison pages) + #4 (GEO explainers). USE PROACTIVELY when Matt mentions SEO, comparison pages, integration pages, "Linear vs us", AI-citation traffic, or programmatic content.
 allowed-tools: Bash, Read, Write
 ---
 
@@ -21,7 +21,7 @@ python3 ~/.claude/skills/programmatic-seo/run.py comparison \\
   --competitor linear --zerg-product zergboard
 ```
 
-Reads `MattZerg/Competitive/pm-software/positioning.md` + `differentiation-opportunities.md` for source claims. Outputs `~/zerg/web/src/public/content/blog/linear-vs-zergboard.md` with:
+Reads `~/Obsidian/Zerg/MattZerg/Competitive/pm-software/positioning.md` + `differentiation-opportunities.md` for source claims. Outputs `~/zerg/web/src/public/content/blog/linear-vs-zergboard.md` with:
 - H1: "Linear vs Zergboard" (target keyword)
 - Honest tradeoffs section (per `feedback_idan_pr_review_bar.md` — show where competitor wins)
 - Pricing comparison table

@@ -1,6 +1,6 @@
 ---
 name: graphic-layout
-description: Composition + balance review for any rendered image asset Matt or Claude builds — blog hero, body figure, share variant, GIF frame, one-pager page, slide. Sibling to fakematt-feedback (UX) and fakematt-copyedit (prose). Anchored on `MattZerg/_style/graphic_layout.md` (templates) + `feedback_graphic_basics.md` (memory rules). Two modes — `review` (audit a rendered PNG/PDF for layout failures) and `template` (return the canonical composition for a target intent: hero / split-comparison / stat-strip / step-sequence / title-card / annotated-screenshot). Output is a structured findings list with cited rules + suggested fixes; never modifies source files. USE PROACTIVELY whenever Matt or Claude renders a graphic, before declaring it done; whenever building a multi-frame GIF/video so each frame's composition is intentional; whenever an asset feels "weird" (left-heavy, dead space, generic eyebrow noise) so the issue gets named instead of guessed at. Hard rule: graphic shipping requires this check to pass.
+description: Composition + balance review for any rendered image asset Matt or Claude builds — blog hero, body figure, share variant, GIF frame, one-pager page, slide. Sibling to fakematt-feedback (UX) and fakematt-copyedit (prose). Anchored on `~/Obsidian/Zerg/MattZerg/_style/graphic_layout.md` (templates) + `feedback_graphic_basics.md` (memory rules). Two modes — `review` (audit a rendered PNG/PDF for layout failures) and `template` (return the canonical composition for a target intent: hero / split-comparison / stat-strip / step-sequence / title-card / annotated-screenshot). Output is a structured findings list with cited rules + suggested fixes; never modifies source files. USE PROACTIVELY whenever Matt or Claude renders a graphic, before declaring it done; whenever building a multi-frame GIF/video so each frame's composition is intentional; whenever an asset feels "weird" (left-heavy, dead space, generic eyebrow noise) so the issue gets named instead of guessed at. Hard rule: graphic shipping requires this check to pass.
 ---
 
 # Graphic Layout Skill
@@ -55,7 +55,7 @@ Returns a markdown spec with:
 
 ## Composition rules (the layer this skill enforces)
 
-These are anchored in `MattZerg/_style/graphic_layout.md` and `feedback_graphic_basics.md` (memory). Quick reference:
+These are anchored in `~/Obsidian/Zerg/MattZerg/_style/graphic_layout.md` and `feedback_graphic_basics.md` (memory). Quick reference:
 
 ### 1. Top/bottom balance (already in graphic_basics rule 5)
 Top padding ≥40px above first element; bottom padding within 1.5× of top; no continuous empty strip >150px at either end. **Size canvas to longest content + ~80px total padding** — don't ship a 1000px-tall canvas with content filling 600px.
@@ -107,7 +107,7 @@ Findings are professional/structured (not Matt-voice cosplay). Each cites:
 
 ## Anchors loaded each run
 
-- `MattZerg/_style/graphic_layout.md` — canonical composition templates with pixel specs
+- `~/Obsidian/Zerg/MattZerg/_style/graphic_layout.md` — canonical composition templates with pixel specs
 - `feedback_graphic_basics.md` (memory) — the 6 generation-time rules + 6-point self-check
 - `feedback_internal_review_pack_format.md` (memory) — required asset set for launch packs
 - `feedback_blog_imagery_coherence.md` (memory) — visual coherence across an asset campaign

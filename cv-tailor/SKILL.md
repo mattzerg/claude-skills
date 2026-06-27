@@ -17,7 +17,7 @@ Builds tailored CV drafts for specific job applications by composing from Matt's
 
 ## Inputs
 
-The skill reads from `MattZerg/Career/` in Matt's Obsidian vault:
+The skill reads from `~/Obsidian/Zerg/MattZerg/Career/` in Matt's Obsidian vault:
 
 | File | Purpose |
 |---|---|

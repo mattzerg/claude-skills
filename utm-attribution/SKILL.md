@@ -1,6 +1,6 @@
 ---
 name: utm-attribution
-description: Build UTM-instrumented links and validate them against MattZerg/Projects/Zstack/Growth/utm-convention.md. Every link Matt or Claude posts to any external surface (Twitter, LinkedIn, Reddit, Gmail, Discord, etc.) MUST be routed through this skill. Channel-skills hard-fail on raw links once this is wired. Logs every generated link to MattZerg/Projects/Zstack/Growth/links.md as the canonical UTM ledger. Validates utm_source/utm_medium/utm_campaign against the campaign catalog; rejects raw links and PII-bearing params. USE PROACTIVELY whenever building any external link to a Zerg property — landing page, blog post, Solutions offer, case study, signup CTA. Never pre-shortens (use bit.ly/zergai short links separately if needed).
+description: Build UTM-instrumented links and validate them against ~/Obsidian/Zerg/MattZerg/Projects/Zstack/Growth/utm-convention.md. Every link Matt or Claude posts to any external surface (Twitter, LinkedIn, Reddit, Gmail, Discord, etc.) MUST be routed through this skill. Channel-skills hard-fail on raw links once this is wired. Logs every generated link to ~/Obsidian/Zerg/MattZerg/Projects/Zstack/Growth/links.md as the canonical UTM ledger. Validates utm_source/utm_medium/utm_campaign against the campaign catalog; rejects raw links and PII-bearing params. USE PROACTIVELY whenever building any external link to a Zerg property — landing page, blog post, Solutions offer, case study, signup CTA. Never pre-shortens (use bit.ly/zergai short links separately if needed).
 allowed-tools: Bash, Read, Write
 ---
 
@@ -14,7 +14,7 @@ The "without it the dashboard lies" skill. Plan: `~/.claude/plans/i-am-planning-
 
 ## What it does
 
-Builds and validates UTM-instrumented links against the convention at `MattZerg/Projects/Zstack/Growth/utm-convention.md`.
+Builds and validates UTM-instrumented links against the convention at `~/Obsidian/Zerg/MattZerg/Projects/Zstack/Growth/utm-convention.md`.
 
 ```bash
 python3 ~/.claude/skills/utm-attribution/run.py build \
@@ -65,7 +65,7 @@ This is the anti-drift guardrail. Without enforcement, dashboards lie.
 ## Output destinations
 
 - **Stdout**: the UTM link, ready to copy-paste
-- **Append**: `MattZerg/Projects/Zstack/Growth/links.md` (canonical ledger)
+- **Append**: `~/Obsidian/Zerg/MattZerg/Projects/Zstack/Growth/links.md` (canonical ledger)
 
 ## Build phases
 

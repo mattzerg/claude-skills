@@ -1,6 +1,6 @@
 ---
 name: fakematt-email
-description: Draft or revise professional emails in Matt's voice. Reads recipient address (or context) + your draft (or task description), pulls the right register from `MattZerg/_style/professional_voice.md` (formal-warm / mid-casual / casual-pro), grounds output in `MattZerg/_style/professional_voice_corpus.md` (55 real outgoing samples), and emits a Matt-voice draft + register classification + voice-tells used + anti-pattern check. Sibling to `fakematt-copyedit` (prose review) and `fakematt-feedback` (product review). USE PROACTIVELY when Matt asks "draft an email to X", "reply to this for me", "what would I say to Y", or before any external email leaves Matt's hand. Never auto-sends — outputs draft text + creates a Gmail draft only on explicit user confirmation.
+description: Draft or revise professional emails in Matt's voice. Reads recipient address (or context) + your draft (or task description), pulls the right register from `~/Obsidian/Zerg/MattZerg/_style/professional_voice.md` (formal-warm / mid-casual / casual-pro), grounds output in `~/Obsidian/Zerg/MattZerg/_style/professional_voice_corpus.md` (55 real outgoing samples), and emits a Matt-voice draft + register classification + voice-tells used + anti-pattern check. Sibling to `fakematt-copyedit` (prose review) and `fakematt-feedback` (product review). USE PROACTIVELY when Matt asks "draft an email to X", "reply to this for me", "what would I say to Y", or before any external email leaves Matt's hand. Never auto-sends — outputs draft text + creates a Gmail draft only on explicit user confirmation.
 allowed-tools: Bash, Read, Write
 ---
 
@@ -53,11 +53,11 @@ Skill auto-classifies via `tier_map.json` (recipient email → register) with fa
 
 ## Anchors used
 
-- `MattZerg/_style/professional_voice.md` — distilled rules, registers, templates, anti-patterns
-- `MattZerg/_style/professional_voice_corpus.md` — raw outgoing samples (grounding; refreshed weekly)
+- `~/Obsidian/Zerg/MattZerg/_style/professional_voice.md` — distilled rules, registers, templates, anti-patterns
+- `~/Obsidian/Zerg/MattZerg/_style/professional_voice_corpus.md` — raw outgoing samples (grounding; refreshed weekly)
 - `tier_map.json` — recipient → register lookup (auto-populated as new contacts emerge)
 - `corrections.md` — diff log of Matt's edits to prior drafts (auto-populated daily)
-- **Vault context** — `MattZerg/People/<name>.md`, `MHE/People/<name>.md`, `Companies/`, `Firms/` files matching the recipient by `email:` frontmatter or filename are automatically injected
+- **Vault context** — `~/Obsidian/Zerg/MattZerg/People/<name>.md`, `MHE/People/<name>.md`, `Companies/`, `Firms/` files matching the recipient by `email:` frontmatter or filename are automatically injected
 - `feedback_email_reply_voice.md` (memory) — catch-up email patterns (calendly fallback)
 
 ## Self-improvement loops
@@ -85,8 +85,8 @@ python3 ~/.claude/skills/fakematt-email/refresh.py
 
 - Pulls last 7 days of sent mail from both accounts (matteisn@gmail.com, matthew@zergai.com)
 - Strips quoted threads + signatures
-- Appends new outgoing samples to `MattZerg/_style/professional_voice_corpus.md`
-- Recomputes voice fingerprint stats in `MattZerg/_style/professional_voice.md`
+- Appends new outgoing samples to `~/Obsidian/Zerg/MattZerg/_style/professional_voice_corpus.md`
+- Recomputes voice fingerprint stats in `~/Obsidian/Zerg/MattZerg/_style/professional_voice.md`
 
 Recommended cron: weekly, Sundays at 4am. Add via `~/.claude/fakematt-today/` cron pattern.
 

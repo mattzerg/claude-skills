@@ -1,6 +1,6 @@
 ---
 name: email-drip
-description: Sequence-based email drip + broadcast newsletter sender for Zerg's email marketing program. Reads YAML campaign files at MattZerg/Marketing/Email/<campaign>.yaml (trigger → delay → template per step) and dispatches via Resend (Phase 2) → ZergMail (Phase 3 when product-ready). Two streams — `lifecycle` (transactional drips: welcome, trial-day-N, "you reached limit", post-Pro) and `broadcast` (bi-weekly newsletter with optional segmentation). UTM-instruments every link via utm-attribution skill (hard-fails on raw links). Logs every send to MattZerg/Marketing/Email/sent-log.md. Phase 1 uses gmail-skill manual sequences for welcome drip — this skill is the Phase 2 upgrade once list ≥200. USE PROACTIVELY when Matt mentions sending a sequence, drip, broadcast, newsletter, or "follow-up email N days after X."
+description: Sequence-based email drip + broadcast newsletter sender for Zerg's email marketing program. Reads YAML campaign files at ~/Obsidian/Zerg/MattZerg/Marketing/Email/<campaign>.yaml (trigger → delay → template per step) and dispatches via Resend (Phase 2) → ZergMail (Phase 3 when product-ready). Two streams — `lifecycle` (transactional drips: welcome, trial-day-N, "you reached limit", post-Pro) and `broadcast` (bi-weekly newsletter with optional segmentation). UTM-instruments every link via utm-attribution skill (hard-fails on raw links). Logs every send to ~/Obsidian/Zerg/MattZerg/Marketing/Email/sent-log.md. Phase 1 uses gmail-skill manual sequences for welcome drip — this skill is the Phase 2 upgrade once list ≥200. USE PROACTIVELY when Matt mentions sending a sequence, drip, broadcast, newsletter, or "follow-up email N days after X."
 allowed-tools: Bash, Read, Write
 ---
 
@@ -39,7 +39,7 @@ python3 ~/.claude/skills/email-drip/run.py broadcast send \\
   --segment all  # or zstack-users | solutions-prospects | newsletter-only
 ```
 
-Each issue is a Markdown file at `MattZerg/Marketing/Email/Newsletters/issue-NNN.md` with frontmatter:
+Each issue is a Markdown file at `~/Obsidian/Zerg/MattZerg/Marketing/Email/Newsletters/issue-NNN.md` with frontmatter:
 ```yaml
 ---
 issue: NNN
@@ -69,7 +69,7 @@ Every link in every email body MUST be routed through `utm-attribution` (campaig
 ## Output destinations
 
 - Sent emails via ESP API
-- Send log: `MattZerg/Marketing/Email/sent-log.md` (date, recipient, sequence, subject, link clicks)
+- Send log: `~/Obsidian/Zerg/MattZerg/Marketing/Email/sent-log.md` (date, recipient, sequence, subject, link clicks)
 - Dashboard line #9 (email program health) reads from this log
 
 ## Build phases
@@ -82,5 +82,5 @@ Every link in every email body MUST be routed through `utm-attribution` (campaig
 ## Implementation notes
 
 - File-based campaigns (YAML); no DB required Phase 2
-- List management via Markdown DB `MattZerg/Marketing/Email/list.md` (Phase 2) → graduate to ESP-managed list Phase 3
+- List management via Markdown DB `~/Obsidian/Zerg/MattZerg/Marketing/Email/list.md` (Phase 2) → graduate to ESP-managed list Phase 3
 - Test mode: `--dry-run` flag prints what would send, doesn't dispatch

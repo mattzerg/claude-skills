@@ -1,6 +1,6 @@
 ---
 name: fakematt-copyedit
-description: Run a Fake Matt copyediting pass on prose drafts (blog posts, thought pieces, launch announcements, social copy). Reads one or more markdown files, anchors against `MattZerg/_style/writing_style.md` + voice fingerprint, and emits an annotated review with inline comments + a separate interview file listing items where uncertainty is high enough to warrant a live discussion. Output is professional/structured (not Matt-voice cosplay) — comments cite the writing-style rule or voice principle they reference. USE PROACTIVELY when Matt asks for a copyedit, "review this draft", "have Fake Matt look at this", or before any prose ships externally. Never auto-posts to shared channels — writes to disk + Fake Matt self-DM only when explicitly asked.
+description: Run a Fake Matt copyediting pass on prose drafts (blog posts, thought pieces, launch announcements, social copy). Reads one or more markdown files, anchors against `~/Obsidian/Zerg/MattZerg/_style/writing_style.md` + voice fingerprint, and emits an annotated review with inline comments + a separate interview file listing items where uncertainty is high enough to warrant a live discussion. Output is professional/structured (not Matt-voice cosplay) — comments cite the writing-style rule or voice principle they reference. USE PROACTIVELY when Matt asks for a copyedit, "review this draft", "have Fake Matt look at this", or before any prose ships externally. Never auto-posts to shared channels — writes to disk + Fake Matt self-DM only when explicitly asked.
 allowed-tools: Bash, Read, Write
 ---
 
@@ -54,8 +54,8 @@ When `--no-pdf` is not set, the script also runs the same PDF conversion as `/tm
 
 ## Anchors used
 
-- `MattZerg/_style/writing_style.md` — primary style bible (Scott Adams principles, AI-tells, Idan's voice patterns)
-- `MattZerg/CLAUDE.md` "AI Writing Cleanup" section — punctuation + structure + rhetorical patterns to fix
+- `~/Obsidian/Zerg/MattZerg/_style/writing_style.md` — primary style bible (Scott Adams principles, AI-tells, Idan's voice patterns)
+- `~/Obsidian/Zerg/MattZerg/CLAUDE.md` "AI Writing Cleanup" section — punctuation + structure + rhetorical patterns to fix
 - `~/.claude/feedback-corpus/voice/fingerprint.md` — Matt's positioning instincts (relevant for launch posts that double as marketing)
 - Reference pieces named in writing_style.md (Idan's published Substack + Zerg blog posts) for voice calibration
 

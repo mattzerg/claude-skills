@@ -1,6 +1,6 @@
 ---
 name: one-pager-skill
-description: Scaffold or review a single-page sales/marketing collateral sheet — a one-pager — for Zerg, Zerg Solutions (consulting), ZergStack, an individual microproduct, or a custom client brief. Three variants — `company` (multi-use leave-behind, RELAYTO/Hoy Health hybrid), `consulting` (services prospects, Algorand/Pento/Quit Genius brief shape Matt authored at Vang), `product` (product prospect overview w/ pricing + integration story). Anchored on `MattZerg/_style/one_pager_style.md` + a 10-exemplar Drive corpus. Two modes — `scaffold` (generate a draft skeleton from a brief) and `review` (audit a draft for missing beats, voice drift, anti-patterns). Output is professional/structured with citations to the rule or pattern; never auto-posts. USE PROACTIVELY when Matt asks for a one-pager / sell sheet / leave-behind / fact sheet / company overview / services brief, OR before any one-pager leaves the vault.
+description: Scaffold or review a single-page sales/marketing collateral sheet — a one-pager — for Zerg, Zerg Solutions (consulting), ZergStack, an individual microproduct, or a custom client brief. Three variants — `company` (multi-use leave-behind, RELAYTO/Hoy Health hybrid), `consulting` (services prospects, Algorand/Pento/Quit Genius brief shape Matt authored at Vang), `product` (product prospect overview w/ pricing + integration story). Anchored on `~/Obsidian/Zerg/MattZerg/_style/one_pager_style.md` + a 10-exemplar Drive corpus. Two modes — `scaffold` (generate a draft skeleton from a brief) and `review` (audit a draft for missing beats, voice drift, anti-patterns). Output is professional/structured with citations to the rule or pattern; never auto-posts. USE PROACTIVELY when Matt asks for a one-pager / sell sheet / leave-behind / fact sheet / company overview / services brief, OR before any one-pager leaves the vault.
 allowed-tools: Bash, Read, Write
 ---
 
@@ -43,7 +43,7 @@ The brief is a free-text description. Examples:
 
 Flags:
 - `--out-dir DIR` — default: `/tmp/one-pager/`
-- `--vault` — write directly to the vault (default: `/tmp/one-pager/`). Routes by variant: `company`→`MattZerg/Zerg/`, `consulting`→`MattZerg/Consulting/`, `product`→`MattZerg/Projects/Zstack/` (override with `--vault-dir DIR`).
+- `--vault` — write directly to the vault (default: `/tmp/one-pager/`). Routes by variant: `company`→`~/Obsidian/Zerg/MattZerg/Zerg/`, `consulting`→`~/Obsidian/Zerg/MattZerg/Consulting/`, `product`→`~/Obsidian/Zerg/MattZerg/Projects/Zstack/` (override with `--vault-dir DIR`).
 - `--vault-dir DIR` — explicit vault destination, overrides the variant routing
 - `--slug SLUG` — file slug (default: derived from brief)
 - `--audience X` — `enterprise-sales` | `reseller-enablement` | `services-prospect` | `product-prospect` | `network-leave-behind` | `investor` (default per variant)
@@ -83,13 +83,13 @@ Per draft, writes:
 
 ## Anchors loaded each run
 
-1. `MattZerg/_style/one_pager_style.md` — primary genre guide (variant-specific beat sequences, voice rules, anti-patterns, pre-publish test, page-fit rules)
-2. `MattZerg/_style/writing_style.md` — sentence-level voice + AI tells (loaded for context; copyedit-skill is the primary catcher)
+1. `~/Obsidian/Zerg/MattZerg/_style/one_pager_style.md` — primary genre guide (variant-specific beat sequences, voice rules, anti-patterns, pre-publish test, page-fit rules)
+2. `~/Obsidian/Zerg/MattZerg/_style/writing_style.md` — sentence-level voice + AI tells (loaded for context; copyedit-skill is the primary catcher)
 3. `~/.claude/skills/one-pager-skill/corpus/one-pager-corpus.md` — 10 Drive exemplar analysis (Hoy Health B2B/B2C, Joi, Econometrics, Intercept TeleMed, RELAYTO, Algorand, Quit Genius, Pento, eHubCo)
 4. **Variant-specific positioning** (loaded only when relevant):
-   - `company` → `MattZerg/Zerg/positioning.md` (if exists)
-   - `consulting` → `MattZerg/Consulting/positioning.md` (if exists)
-   - `product` → `MattZerg/Projects/Zstack/Zstack.md` + `Pricing-Snapshot.md` + `Integration.md`
+   - `company` → `~/Obsidian/Zerg/MattZerg/Zerg/positioning.md` (if exists)
+   - `consulting` → `~/Obsidian/Zerg/MattZerg/Consulting/positioning.md` (if exists)
+   - `product` → `~/Obsidian/Zerg/MattZerg/Projects/Zstack/Zstack.md` + `Pricing-Snapshot.md` + `Integration.md`
 
 ## What this skill is NOT
 

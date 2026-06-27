@@ -1,6 +1,6 @@
 ---
 name: case-study-skill
-description: Capture, scaffold, and review Zerg AI client case studies (CesiumAstro, Andesite, Durable, etc.) against a 12-exemplar corpus from McKinsey, BCG, Thoughtworks, Anthropic, OpenAI, Glean, Stripe, Vercel, Snowflake, Pivotal, Modal. Three modes — `capture` (pull raw evidence from vault + Linear + Zergboard + Conversations into a structured brief), `scaffold` (generate a draft from the brief), and `review` (audit a draft for fabricated metrics, NDA leakage, voice drift, missing structural beats). Anchored on `MattZerg/_style/case_study_style.md` + the corpus exemplars. Output is professional/structured with citations to the rule or pattern; never auto-posts; hard-refuses scaffolding without NDA clearance. USE PROACTIVELY when Matt or Idan mentions a Zerg client win, asks "let's draft a case study for [client]", or before any case study leaves the vault.
+description: Capture, scaffold, and review Zerg AI client case studies (CesiumAstro, Andesite, Durable, etc.) against a 12-exemplar corpus from McKinsey, BCG, Thoughtworks, Anthropic, OpenAI, Glean, Stripe, Vercel, Snowflake, Pivotal, Modal. Three modes — `capture` (pull raw evidence from vault + Linear + Zergboard + Conversations into a structured brief), `scaffold` (generate a draft from the brief), and `review` (audit a draft for fabricated metrics, NDA leakage, voice drift, missing structural beats). Anchored on `~/Obsidian/Zerg/MattZerg/_style/case_study_style.md` + the corpus exemplars. Output is professional/structured with citations to the rule or pattern; never auto-posts; hard-refuses scaffolding without NDA clearance. USE PROACTIVELY when Matt or Idan mentions a Zerg client win, asks "let's draft a case study for [client]", or before any case study leaves the vault.
 allowed-tools: Bash, Read, Write
 ---
 
@@ -28,13 +28,13 @@ python3 ~/.claude/skills/case-study-skill/run.py capture <client> [--project <sl
 
 Searches in priority order, with provenance tagged on every snippet:
 
-1. `MattZerg/Companies/<client>.md` — CRM stub, sets identity (HIGH weight)
-2. `MattZerg/Epoch/Projects/Client Pipeline.md` — primary source for active engagements (HIGH)
-3. `MattZerg/Epoch/Projects/Product Glossary.md` — what Zerg products were used (HIGH)
-4. `MattZerg/Conversations/Claude/` grep — task narrative (MEDIUM)
-5. `MattZerg/Conversations/Slack/<channel>/` grep, incl. `#standup` — decision history (MEDIUM)
-6. `MattZerg/Roadmap/*.md` — recent roadmap docs (MEDIUM)
-7. `MattZerg/Notes/Testimonials.md` — candidate quotes (HIGH for verbatim quotes)
+1. `~/Obsidian/Zerg/MattZerg/Companies/<client>.md` — CRM stub, sets identity (HIGH weight)
+2. `~/Obsidian/Zerg/MattZerg/Epoch/Projects/Client Pipeline.md` — primary source for active engagements (HIGH)
+3. `~/Obsidian/Zerg/MattZerg/Epoch/Projects/Product Glossary.md` — what Zerg products were used (HIGH)
+4. `~/Obsidian/Zerg/MattZerg/Conversations/Claude/` grep — task narrative (MEDIUM)
+5. `~/Obsidian/Zerg/MattZerg/Conversations/Slack/<channel>/` grep, incl. `#standup` — decision history (MEDIUM)
+6. `~/Obsidian/Zerg/MattZerg/Roadmap/*.md` — recent roadmap docs (MEDIUM)
+7. `~/Obsidian/Zerg/MattZerg/Notes/Testimonials.md` — candidate quotes (HIGH for verbatim quotes)
 
 Linear and Zergboard pulls are deferred to live skill calls when the user asks the agent to enrich the brief — the capture script writes a brief skeleton + identifies which trackers should be queried, but doesn't shell out itself.
 
@@ -47,7 +47,7 @@ python3 ~/.claude/skills/case-study-skill/run.py scaffold <brief-path> [flags]
 ```
 
 Flags:
-- `--out-dir DIR` — default: `MattZerg/CaseStudies/<client-slug>/`
+- `--out-dir DIR` — default: `~/Obsidian/Zerg/MattZerg/CaseStudies/<client-slug>/`
 - `--model MODEL` — default: `claude-opus-4-7`
 - `--length WORDS` — target word count (default: 1500; band: 1,200–2,000)
 - `--cleared-for-publication` — explicit override of `nda_status: unknown`. Logs `nda_override_at` + `nda_override_by` into the case-study frontmatter. **Hard-refused** if brief says `nda_status: restricted`.
@@ -56,8 +56,8 @@ Flags:
 Beat sequence (from style guide): Headline → Dek → Challenge → Why Zerg → Approach → Solution → Results → Quote → What's next → CTA.
 
 Writes:
-- `MattZerg/CaseStudies/<client-slug>/<project-slug>.md` — durable draft
-- `MattZerg/CaseStudies/<client-slug>/<project-slug>.checklist.md` — pre-publish gates auto-filled
+- `~/Obsidian/Zerg/MattZerg/CaseStudies/<client-slug>/<project-slug>.md` — durable draft
+- `~/Obsidian/Zerg/MattZerg/CaseStudies/<client-slug>/<project-slug>.checklist.md` — pre-publish gates auto-filled
 
 ### review — audit a draft against the corpus + style guide
 
@@ -108,8 +108,8 @@ When `--cleared-for-publication` is used, scaffold logs override metadata into t
 
 ## Anchors loaded each run
 
-1. `MattZerg/_style/case_study_style.md` — primary genre guide (default shape, voice rules, anti-patterns, pre-publish gates)
-2. `MattZerg/_style/writing_style.md` — sentence-level voice (loaded for context; copyedit-skill is the primary catcher)
+1. `~/Obsidian/Zerg/MattZerg/_style/case_study_style.md` — primary genre guide (default shape, voice rules, anti-patterns, pre-publish gates)
+2. `~/Obsidian/Zerg/MattZerg/_style/writing_style.md` — sentence-level voice (loaded for context; copyedit-skill is the primary catcher)
 3. `~/.claude/skills/case-study-skill/corpus/case-study-corpus.md` — 12-exemplar analysis (skipped with `--quick`)
 
 ## Publish workflow (staged trust)

@@ -71,7 +71,7 @@ error states by killing the server, console during real actions). De-dupe, sever
 **triage table** (`ID | sev | area | file:line | bug | one-line fix`) + per-bug repro below + the refuted list.
 
 ## Deliverable
-Write to `MattZerg/Feedback/<slug>-<lane>-FINDINGS-v<N>-YYYY-MM-DD.md` (audit) or
+Write to `~/Obsidian/Zerg/MattZerg/Feedback/<slug>-<lane>-FINDINGS-v<N>-YYYY-MM-DD.md` (audit) or
 `<slug>-adversarial-bug-review-v<N>-YYYY-MM-DD.md` (bug-sweep), plus an evidence dir. Render a desktop/vault
 PDF with `python3 ~/.claude/skills/product-ux-review/scripts/md2pdf.py <md> <out.pdf>` (headless Chrome,
 stdlib-only — handles tables + fenced ASCII/code blocks; Zerg-branded). Report structure (the bar) is in

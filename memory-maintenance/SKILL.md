@@ -1,13 +1,13 @@
 ---
 name: memory-maintenance
-description: Hygiene scan of Matt's 3 memory lanes (env/dotfiles, MHE-personal, Zerg-work) plus the CLAUDE.md files — flags index bloat, orphaned memory files (exist but not in MEMORY.md), dangling index entries (point to missing files), oversized single memories, stale/long-untouched files, and broken [[wikilinks]]. Advisory only: proposes prunes/merges/fixes for confirmation, never auto-deletes. Use when Matt says "check my memory", "is my memory getting bloated", "audit/prune memory", "clean up MEMORY.md", or on a periodic cadence. Lane-aware (Obsidian wikilinks resolve vault-wide; the Zerg index legitimately projects MattZerg/_agent_memory).
+description: Hygiene scan of Matt's 3 memory lanes (env/dotfiles, MHE-personal, Zerg-work) plus the CLAUDE.md files — flags index bloat, orphaned memory files (exist but not in MEMORY.md), dangling index entries (point to missing files), oversized single memories, stale/long-untouched files, and broken [[wikilinks]]. Advisory only: proposes prunes/merges/fixes for confirmation, never auto-deletes. Use when Matt says "check my memory", "is my memory getting bloated", "audit/prune memory", "clean up MEMORY.md", or on a periodic cadence. Lane-aware (Obsidian wikilinks resolve vault-wide; the Zerg index legitimately projects ~/Obsidian/Zerg/MattZerg/_agent_memory).
 ---
 
 # memory-maintenance
 
 Keeps the 3-lane markdown memory system lean and self-consistent. Complements (does not replace)
 the **memory-triage** agent — triage handles cross-runtime Claude/Codex promotion vs
-`MattZerg/_agent_memory`; this skill is narrow hygiene on the markdown lanes themselves.
+`~/Obsidian/Zerg/MattZerg/_agent_memory`; this skill is narrow hygiene on the markdown lanes themselves.
 
 ## Procedure
 
@@ -42,5 +42,5 @@ the **memory-triage** agent — triage handles cross-runtime Claude/Codex promot
 ## Notes
 - Thresholds live at the top of `check.py` (idx ≤90 lines, memory ≤6KB, stale 180d) — tune there.
 - Lane-aware: it resolves Obsidian wikilinks vault-wide and treats the Zerg index's
-  `MattZerg/_agent_memory` projections as valid, so it won't false-flag those.
+  `~/Obsidian/Zerg/MattZerg/_agent_memory` projections as valid, so it won't false-flag those.
 - Safe to run anytime; read-only until you choose to apply a fix.

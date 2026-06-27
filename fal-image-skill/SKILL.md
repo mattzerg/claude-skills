@@ -79,12 +79,12 @@ python3 fal_image_skill.py config YOUR_KEY   # save key
 
 ## Meme workflow
 
-For the meme archive at `MattZerg/Memes/`:
+For the meme archive at `~/Obsidian/Zerg/MattZerg/Memes/`:
 
 1. Generate base with **`flux-pro`** and `NO TEXT` in the prompt (diffusion mangles captions).
-2. Save to `MattZerg/Memes/sources/<slug>_base.jpg`.
+2. Save to `~/Obsidian/Zerg/MattZerg/Memes/sources/<slug>_base.jpg`.
 3. Composite the caption with PIL using Impact font + black stroke.
-4. Save final to `MattZerg/Memes/<slug>.jpg`.
-5. Append entry to `MattZerg/Memes/Memes.md`.
+4. Save final to `~/Obsidian/Zerg/MattZerg/Memes/<slug>.jpg`.
+5. Append entry to `~/Obsidian/Zerg/MattZerg/Memes/Memes.md`.
 
 Priority order if generation fails: `nano-banana-pro` → this skill (`flux-pro`) → Pollinations.ai (curl, free fallback).

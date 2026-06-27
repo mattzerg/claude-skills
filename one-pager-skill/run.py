@@ -30,9 +30,20 @@ PROMPTS_DIR = SKILL_ROOT / "prompts"
 CORPUS_FILE = SKILL_ROOT / "corpus" / "one-pager-corpus.md"
 TEMPLATES_DIR = SKILL_ROOT / "templates"
 
-VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
-)
+def _resolve_vault_root(sub: str = "Zerg/MattZerg") -> Path:
+    """Live vault is ~/Obsidian/<sub>; the iCloud path was retired 2026-06-24.
+    Prefer the live path, fall back to the legacy iCloud path only if it still exists."""
+    primary = Path.home() / "Obsidian" / sub
+    if primary.exists():
+        return primary
+    legacy = (
+        Path.home()
+        / "Library" / "Mobile Documents" / "iCloud~md~obsidian" / "Documents" / sub
+    )
+    return legacy if legacy.exists() else primary
+
+
+VAULT_ROOT = _resolve_vault_root("Zerg/MattZerg")
 GENRE_GUIDE = VAULT_ROOT / "_style" / "one_pager_style.md"
 WRITING_STYLE = VAULT_ROOT / "_style" / "writing_style.md"
 PDF_SCRIPT = SKILL_ROOT / "render_pdf.py"

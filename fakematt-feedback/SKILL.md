@@ -30,7 +30,7 @@ When in doubt, suggest running it. Always confirm the flow list before exercisin
 3. **capture** — for each page + each flow step: full-page screenshot, DOM snapshot, console+network errors, axe-core a11y scan, mobile viewport pass.
 4. **critique** — Claude call with two cached prompts (voice + principles). Emit structured findings with `voice_provenance` + `principle_provenance`.
 5. **validate** — reject findings missing both provenance fields; flag voice-only as "opinion only".
-6. **vault write** — show finding count + severity breakdown, **STOP, await confirmation**, then write to `MattZerg/Feedback/YYYY-MM-DD-<product>.md` with screenshots embedded.
+6. **vault write** — show finding count + severity breakdown, **STOP, await confirmation**, then write to `~/Obsidian/Zerg/MattZerg/Feedback/YYYY-MM-DD-<product>.md` with screenshots embedded.
 7. **slack draft** — top-5 P0/P1 findings to Fake Matt's self-DM (`D0B109RDJQ6`). Never to a shared channel.
 
 ## Default invocation
@@ -44,7 +44,7 @@ python3 ~/.claude/skills/fakematt-feedback/run.py <target> [flags]
 #   --persona ROLE         super-admin | admin | end-user | external-viewer
 #   --target-kind KIND     marketing-page | internal-tool | b2b-saas-product | client-deliverable | dashboard
 #   --no-confirm           skip gates (for scheduled/loop contexts)
-#   --no-vault             skip writing to MattZerg/Feedback/
+#   --no-vault             skip writing to ~/Obsidian/Zerg/MattZerg/Feedback/
 #   --no-slack             skip self-DM digest
 ```
 
@@ -53,7 +53,7 @@ For auth-walled internal tools, set up the session once with playwright-skill `-
 ## Output
 
 ```
-MattZerg/Feedback/
+~/Obsidian/Zerg/MattZerg/Feedback/
   YYYY-MM-DD-<product>.md           # the review
   _screenshots/<run-id>/             # full-page + per-step PNGs
 ~/.claude/skills/fakematt-feedback/state/<run-id>/
@@ -65,7 +65,7 @@ Plus a Slack self-DM to `D0B109RDJQ6` with the top 5 findings + Obsidian deep-li
 
 ## Conventions
 
-- Vault root: `/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg`
+- Vault root: `~/Obsidian/Zerg/MattZerg`
 - Self-DM channel: `D0B109RDJQ6` (Fake Matt's bot, per `project_slack_identity.md`)
 - **Never** auto-post to shared channels (per `feedback_fakematt_no_autopost.md`)
 - Voice corpus loaded from `~/.claude/feedback-corpus/voice/`

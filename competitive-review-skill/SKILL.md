@@ -23,12 +23,12 @@ When in doubt, suggest running it — Matt can decline.
 ## Phase flow (with confirmation gates)
 
 1. **discover** — find candidate competitors for the category, merge with any user-supplied seeds, present list. **STOP, await confirmation.** User can add/remove.
-2. **priors** — auto-detect prior competitive audits in `MattZerg/Conversations/Claude/` matching category or competitors; summarize as priors.
+2. **priors** — auto-detect prior competitive audits in `~/Obsidian/Zerg/MattZerg/Conversations/Claude/` matching category or competitors; summarize as priors.
 3. **scan** — for each confirmed competitor, scrape 6 source types (landing, pricing, changelog, docs/integrations, G2/Capterra, Reddit/HN). Save raw JSON to `insights/`.
-4. **compare** — read `MattZerg/Projects/Zstack/<Product>.md` AND scrape its live URL. Reconcile into Us(spec)+Us(live) columns. Build feature matrix. Classify each gap into 4 buckets.
+4. **compare** — read `~/Obsidian/Zerg/MattZerg/Projects/Zstack/<Product>.md` AND scrape its live URL. Reconcile into Us(spec)+Us(live) columns. Build feature matrix. Classify each gap into 4 buckets.
 5. **rank** — present top-10 gaps; ask user to tag strategic fit (1–5) and rough cost (S/M/L). Compute `freq × fit ÷ cost`, sort.
 6. **drift** — diff Us(spec) vs Us(live); list mismatches.
-7. **report** — write all outputs to `MattZerg/Competitive/<category>/`. Emit `landing-page-skill/insights/competitive_<category>_<ts>.json` handoff.
+7. **report** — write all outputs to `~/Obsidian/Zerg/MattZerg/Competitive/<category>/`. Emit `landing-page-skill/insights/competitive_<category>_<ts>.json` handoff.
 8. **diff** — if `archive/` has a prior run, compute "what changed" header.
 9. **cards** — propose Zergboard cards for top-N gaps + drift. **STOP, await per-card or batch confirmation.** Create via zergboard-skill CLI with bracketed lane prefixes.
 
@@ -53,7 +53,7 @@ python3 ~/.claude/skills/competitive-review-skill/cards.py <category> [--board U
 ## Output
 
 ```
-MattZerg/Competitive/<category>/
+~/Obsidian/Zerg/MattZerg/Competitive/<category>/
   index.md         # YAML frontmatter + "What changed" + top findings + links
   matrix.md        # full feature matrix (markdown table)
   gaps.md          # 4-bucket gap analysis, top-10 ranked with fit/cost
@@ -69,7 +69,7 @@ Plus:
 
 ## Conventions
 
-- Vault root: `/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg`
+- Vault root: `~/Obsidian/Zerg/MattZerg`
 - Product specs: `Projects/Zstack/<Product>.md` (frontmatter has `fly_app` → live URL is `https://<fly_app>.fly.dev`)
 - Marketing board UUID: `7bf7ab2a-ac70-4b29-85bf-74a6db6a0760` (fallback for gap cards if product lacks own board)
 - Website board UUID: `8ef863c1-765f-493e-8622-2e65b4d2ca61`

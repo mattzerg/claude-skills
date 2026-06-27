@@ -1,6 +1,6 @@
 ---
 name: bd-tracker
-description: Track Product BD partner conversations + Solutions referrer pipeline. Thin Zergboard-board template + skill that logs partner status (planned / outreach / engaged / paused / closed-won / closed-lost), next-touch dates, owner, conversation threads. Reads MattZerg/Projects/Zstack/Growth/bd-targets.md (canonical 25-target list). Posts stale-card alerts to Slack DM for cards untouched >14 days. Sister to network-reach (warm prospecting) and prospects.md (Solutions deal pipeline). Phase 2 build (Day 31–60), small effort. USE PROACTIVELY when Matt mentions a partner conversation, integration discussion, podcast pitch, ecosystem listing, or co-marketing opportunity.
+description: Track Product BD partner conversations + Solutions referrer pipeline. Thin Zergboard-board template + skill that logs partner status (planned / outreach / engaged / paused / closed-won / closed-lost), next-touch dates, owner, conversation threads. Reads ~/Obsidian/Zerg/MattZerg/Projects/Zstack/Growth/bd-targets.md (canonical 25-target list). Posts stale-card alerts to Slack DM for cards untouched >14 days. Sister to network-reach (warm prospecting) and prospects.md (Solutions deal pipeline). Phase 2 build (Day 31–60), small effort. USE PROACTIVELY when Matt mentions a partner conversation, integration discussion, podcast pitch, ecosystem listing, or co-marketing opportunity.
 allowed-tools: Bash, Read, Write
 ---
 
@@ -14,7 +14,7 @@ Plan: `~/.claude/plans/i-am-planning-growth-splendid-bee.md`. Dogfood pattern: Z
 
 ## What it does
 
-Two-way sync between `MattZerg/Projects/Zstack/Growth/bd-targets.md` and a Zergboard "BD" board.
+Two-way sync between `~/Obsidian/Zerg/MattZerg/Projects/Zstack/Growth/bd-targets.md` and a Zergboard "BD" board.
 
 ```bash
 python3 ~/.claude/skills/bd-tracker/run.py sync           # bd-targets.md → Zergboard cards

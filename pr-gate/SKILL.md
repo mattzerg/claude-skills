@@ -54,8 +54,8 @@ python3 ~/.claude/skills/pr-gate/run.py \
 3. Compute diff: `git diff <base>...HEAD --name-only` + full diff content
 4. Classify changed files (code / prose / config / other)
 5. Run fakeidan on the diff (mode auto-picked: `code` if any code files, else `prose`)
-6. Run fakematt-copyedit on changed prose files (`*.md` in `Writing/`, `MattZerg/`, `web/src/public/content/`)
-7. If any launch-post files touched (`MattZerg/Writing/Launch*` or similar), run launch-announcement review
+6. Run fakematt-copyedit on changed prose files (`*.md` in `Writing/`, `~/Obsidian/Zerg/MattZerg/`, `web/src/public/content/`)
+7. If any launch-post files touched (`~/Obsidian/Zerg/MattZerg/Writing/Launch*` or similar), run launch-announcement review
 8. Parse outputs for HIGH findings (regex scan)
 9. If any HIGH → write `.pr-gate-review.md`, exit 1 (unless `--force`)
 10. On pass: scrub `--body` / `--body-file` for AI-coauthor lines, then invoke `gh pr create`

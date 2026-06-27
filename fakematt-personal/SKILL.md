@@ -1,6 +1,6 @@
 ---
 name: fakematt-personal
-description: Draft or revise PERSONAL/family emails in Matt's voice — separate from professional emails (which use fakematt-email). Anchored on `MattZerg/_style/personal_voice.md` + 29 raw samples in `personal_voice_corpus.md`. Differs from fakematt-email by dropping the formal register (no "Best, Matthew" closer for family), allowing dive-in (no greeting) for ongoing threads, and supporting "Lots of love <3" closes. USE PROACTIVELY when Matt asks to draft an email to family (Dean, Christine, Catherine, Sarah, Leslie) or close personal friends (Jens, etc.). Hard-rejects EXCLUDED-list addresses going through fakematt-email — those should be routed here. Never auto-sends.
+description: Draft or revise PERSONAL/family emails in Matt's voice — separate from professional emails (which use fakematt-email). Anchored on `~/Obsidian/Zerg/MattZerg/_style/personal_voice.md` + 29 raw samples in `personal_voice_corpus.md`. Differs from fakematt-email by dropping the formal register (no "Best, Matthew" closer for family), allowing dive-in (no greeting) for ongoing threads, and supporting "Lots of love <3" closes. USE PROACTIVELY when Matt asks to draft an email to family (Dean, Christine, Catherine, Sarah, Leslie) or close personal friends (Jens, etc.). Hard-rejects EXCLUDED-list addresses going through fakematt-email — those should be routed here. Never auto-sends.
 allowed-tools: Bash, Read, Write
 ---
 
@@ -46,9 +46,9 @@ Auto-picked from prior-thread tone unless `--tone` is set.
 
 ## Anchors
 
-- `MattZerg/_style/personal_voice.md` — distilled rules + tones + sample textures
-- `MattZerg/_style/personal_voice_corpus.md` — 29 raw outgoing samples (excludes Jens technical-paste threads)
-- `MattZerg/People/<name>.md`, `MHE/People/<name>.md` — vault context auto-injected
+- `~/Obsidian/Zerg/MattZerg/_style/personal_voice.md` — distilled rules + tones + sample textures
+- `~/Obsidian/Zerg/MattZerg/_style/personal_voice_corpus.md` — 29 raw outgoing samples (excludes Jens technical-paste threads)
+- `~/Obsidian/Zerg/MattZerg/People/<name>.md`, `MHE/People/<name>.md` — vault context auto-injected
 
 ## Hard rules
 

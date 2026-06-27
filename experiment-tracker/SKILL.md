@@ -1,6 +1,6 @@
 ---
 name: experiment-tracker
-description: Register, track, and adjudicate growth experiments + A/B tests for the Zerg growth program. Refuses to register an experiment without kill_date + kill_threshold + success_metric (anti-drift guardrail). Reads/writes MattZerg/Projects/Zstack/Growth/experiments.md (top ledger) + Growth/experiments/<id>.md (per-experiment YAML-frontmatter spec). Posts kill-decision prompts to Slack DM at kill_date − 2 ("Kill / scale-A / scale-B / extend? Reply 48h or auto-kill."). Inaction = kill, not extend. Generates RICE-scored backlog from positioning briefs + competitive matrix when asked. USE PROACTIVELY whenever Matt mentions starting an experiment, A/B test, hypothesis test, or "let's try X and see if it works" — and at every Monday RICE prioritization session.
+description: Register, track, and adjudicate growth experiments + A/B tests for the Zerg growth program. Refuses to register an experiment without kill_date + kill_threshold + success_metric (anti-drift guardrail). Reads/writes ~/Obsidian/Zerg/MattZerg/Projects/Zstack/Growth/experiments.md (top ledger) + Growth/experiments/<id>.md (per-experiment YAML-frontmatter spec). Posts kill-decision prompts to Slack DM at kill_date − 2 ("Kill / scale-A / scale-B / extend? Reply 48h or auto-kill."). Inaction = kill, not extend. Generates RICE-scored backlog from positioning briefs + competitive matrix when asked. USE PROACTIVELY whenever Matt mentions starting an experiment, A/B test, hypothesis test, or "let's try X and see if it works" — and at every Monday RICE prioritization session.
 allowed-tools: Bash, Read, Write
 ---
 
@@ -37,7 +37,7 @@ python3 ~/.claude/skills/experiment-tracker/run.py register \
 
 **Hard-fails** without `success_metric`, `success_threshold`, `kill_threshold`, `kill_date`. The discipline IS the value.
 
-Writes `MattZerg/Projects/Zstack/Growth/experiments/exp-NNN.md` with YAML frontmatter + decision_log section. Appends row to top-level `experiments.md`.
+Writes `~/Obsidian/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-NNN.md` with YAML frontmatter + decision_log section. Appends row to top-level `experiments.md`.
 
 ### read — show current experiment state
 

@@ -20,12 +20,12 @@ Sibling to `cv-tailor`. Where cv-tailor handles _inbound_ ("I have a JD, build m
 
 | File | Purpose |
 |---|---|
-| `MattZerg/People/CRM/*.md` (~2170 files) | Bulk CRM, frontmatter has tier/score/priority/flags/last_contact/days_since/relationship/role/company |
-| `MattZerg/People/*.md` (~26 curated) | Hand-curated tier-1 contacts |
+| `~/Obsidian/Zerg/MattZerg/People/CRM/*.md` (~2170 files) | Bulk CRM, frontmatter has tier/score/priority/flags/last_contact/days_since/relationship/role/company |
+| `~/Obsidian/Zerg/MattZerg/People/*.md` (~26 curated) | Hand-curated tier-1 contacts |
 | `MHE/People/CRM/*.md` (~9 family/personal) | Personal contacts |
-| `MattZerg/Career/Vang Capital/Portfolio Contacts.md` | 74 portfolio-company contacts (cross-referenced) |
-| `MattZerg/Career/Vang Capital/LP Outreach.md` | 145 LP candidates Matt's already approached |
-| `MattZerg/Career/Experience by Company.md` | 310 unique companies × 22 multi-relationship |
+| `~/Obsidian/Zerg/MattZerg/Career/Vang Capital/Portfolio Contacts.md` | 74 portfolio-company contacts (cross-referenced) |
+| `~/Obsidian/Zerg/MattZerg/Career/Vang Capital/LP Outreach.md` | 145 LP candidates Matt's already approached |
+| `~/Obsidian/Zerg/MattZerg/Career/Experience by Company.md` | 310 unique companies × 22 multi-relationship |
 
 ## Modes
 
