@@ -1,5 +1,5 @@
 ---
-name: fal-music
+name: fal-music-skill
 description: Generate music and audio using AI. Use when the user asks to create, generate, or make music, songs, audio, melodies, tracks, or beats. Supports text-to-music with multiple models (Stable Audio, Beatoven).
 allowed-tools: Bash, Read, Write
 ---

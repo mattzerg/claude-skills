@@ -1,3 +1,8 @@
+---
+name: scansnap-bridge
+description: Auto-process paper scans from the Fujitsu ScanSnap iX1500 into the Obsidian vault via a Claude Code subprocess. Use when the user mentions scanning documents or processing the ScanSnap inbox.
+---
+
 # ScanSnap Bridge
 
 Auto-process paper scans from the Fujitsu ScanSnap iX1500 into Idan's Obsidian vault via a Claude Code subprocess.

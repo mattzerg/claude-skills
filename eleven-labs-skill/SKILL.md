@@ -1,3 +1,8 @@
+---
+name: eleven-labs-skill
+description: AI voice generation, voice cloning, and sound effects via ElevenLabs. Use when the user asks to generate speech/voiceover, clone a voice, or create sound effects.
+---
+
 # Eleven Labs Skill
 
 AI-powered voice generation, voice cloning, and sound effects using Eleven Labs.

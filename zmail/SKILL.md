@@ -1,3 +1,8 @@
+---
+name: zmail
+description: Read and send email through the Zmail server at mail.zergai.com. Use when the user asks to read or send email via Zmail or the agent mail server.
+---
+
 # Zmail Skill - Custom Email for Agents
 
 Read and send email through the Zmail server at mail.zergai.com.

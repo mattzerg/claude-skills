@@ -1,3 +1,8 @@
+---
+name: wyze-skill
+description: Control and monitor Wyze cameras: view events, check status, turn cameras on/off, download event clips. Use when the user asks about Wyze cameras or home camera events.
+---
+
 # Wyze Camera Skill
 
 Control and monitor Wyze cameras. View events, check status, turn cameras on/off, and download event clips.

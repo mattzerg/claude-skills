@@ -19,7 +19,7 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
-VAULT = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
+VAULT = Path.home() / "Obsidian" / "Zerg" / "MattZerg"
 SLACK_BRIDGE = Path.home() / ".claude/skills/slack-skill/slack_bridge.py"
 GMAIL_SKILL = Path.home() / ".claude/skills/gmail-skill/gmail_skill.py"
 
