@@ -1,3 +1,8 @@
+---
+name: film-maker-skill
+description: Orchestrate AI film production across Nano Banana (images), ElevenLabs (audio), FAL (video), and FFmpeg (assembly). Use when the user asks to produce a short film or multi-shot video end-to-end.
+---
+
 # Film Maker Skill
 
 Orchestrate AI film production using Nano Banana (images), Eleven Labs (audio), FAL (video), and FFmpeg (assembly).

@@ -1,3 +1,8 @@
+---
+name: twilio-sms
+description: Send and receive SMS/MMS messages through Twilio, with auto-response via Claude Code. Use when the user asks to send a text message or set up an SMS bridge.
+---
+
 # Twilio SMS Skill - Text Message Bridge for Claude Code
 
 Send and receive SMS/MMS messages through Twilio, with auto-response via Claude Code.

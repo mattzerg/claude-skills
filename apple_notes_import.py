@@ -13,7 +13,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-VAULT = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
+VAULT = Path.home() / "Obsidian" / "Zerg" / "MattZerg"
 IMPORT_DIR = VAULT / "Notes" / "Apple Notes"
 TODAY = datetime.now().strftime("%Y-%m-%d")
 

@@ -1,3 +1,8 @@
+---
+name: alexa-skill
+description: Control Amazon Echo devices, smart home, and routines; send announcements and notifications. Use when the user asks to control Alexa/Echo, send an announcement to a device, or manage smart-home routines.
+---
+
 # Alexa Skill - Control Amazon Echo Devices
 
 Control your Amazon Echo devices, smart home, and routines. Send announcements, notifications, and more.

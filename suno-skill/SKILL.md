@@ -1,3 +1,8 @@
+---
+name: suno-skill
+description: Generate full songs (vocals + instrumentals) using Suno.com via Playwright browser automation. Use when the user asks to create a song or music with vocals.
+---
+
 # Suno Music Skill - AI Music Generation via Browser Automation
 
 Generate full songs (vocals + instrumentals) using Suno.com via Playwright browser automation.
