@@ -153,3 +153,7 @@ landing-page-skill/insights/*_202[6-9]*.png
 fal-image-skill/config.json
 fal-music-skill/config.json
 nano-banana-pro/config.json
+
+# Competitive-review-skill runtime cache (regenerated per run; self-corrects vault paths) — untracked 2026-06-28
+competitive-review-skill/insights/state/
+competitive-review-skill/insights/queue.log
