@@ -363,6 +363,7 @@ class GmailTransport:
             try:
                 r = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
             except subprocess.TimeoutExpired:
+                r = None  # don't let a prior attempt's result mask this timeout
                 last_err = "gmail-skill list timed out after 120s"
                 continue
             if r.returncode == 0:
