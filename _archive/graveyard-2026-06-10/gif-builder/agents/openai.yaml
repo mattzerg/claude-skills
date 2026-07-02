@@ -1,0 +1,4 @@
+interface:
+  display_name: "GIF Builder"
+  short_description: "Build small optimized animated GIFs"
+  default_prompt: "Create a small animated logo GIF."

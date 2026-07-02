@@ -1,0 +1,25 @@
+{
+  "id": "cohere__command-a",
+  "name": "Command A",
+  "provider": "cohere",
+  "model_class": "command",
+  "released": "2025-03-13",
+  "status": "ga",
+  "context_window": 256000,
+  "output_window": 8192,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 2.5,
+    "output_per_mtok": 10,
+    "as_of": "2026-05-10"
+  },
+  "tags": [
+    "instruction-following"
+  ],
+  "benchmarks": {
+    "mmlu": 0.855,
+    "mmlu_pro": 0.712
+  }
+}

@@ -1,6 +1,6 @@
 ---
 name: landing-page-skill
-description: Analyze competitor/reference landing pages, audit Zerg pages against them, and generate new landing pages matching Zerg's design system.
+description: Analyze competitor/reference landing pages, audit Zerg pages against them, and generate new landing pages matching Zerg's design system. Different from webpage-layout (data-driven 6-axis SCORING of personal/agency/fund/product sites) — landing-page-skill is for analyzing references + auditing + GENERATING Zerg's own marketing pages.
 commands:
   - analyze
   - audit

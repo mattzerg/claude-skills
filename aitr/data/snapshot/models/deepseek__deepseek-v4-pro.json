@@ -1,0 +1,30 @@
+{
+  "id": "deepseek__deepseek-v4-pro",
+  "name": "DeepSeek V4 Pro",
+  "provider": "deepseek",
+  "model_class": "deepseek-v4",
+  "released": "2026-04-24",
+  "status": "ga",
+  "context_window": 1048576,
+  "output_window": 384000,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.435,
+    "output_per_mtok": 0.87,
+    "as_of": "2026-05-09"
+  },
+  "tags": [
+    "code",
+    "extended-thinking",
+    "instruction-following",
+    "reasoning",
+    "sql"
+  ],
+  "benchmarks": {
+    "swe_bench_verified": 0.806,
+    "gpqa_diamond": 0.901,
+    "arena_elo": 1467
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "_doc": "Canonical signals × expected model_class. Used by test_golden_routing.py to detect drift in routing behavior. Pass threshold: >= 0.80 of cases must match. Update intentionally when ranker or routing_table changes.",
+  "_changelog": [
+    "2026-06-03: Catalog source switched from the hand-made 12-model snapshot to the full ai-tracker export (44 models, current pricing, real benchmarks). Expected classes widened where the richer catalog makes cheaper capable models legitimate winners: deepseek-v4-flash / gemini-3.5-flash / codestral / llama-3.2 now win cost-weighted picks they couldn't before (they weren't in the old snapshot). All high-stakes + provider-constrained production cases (pr-gate, cross-model-check, fakematt-copyedit) still pick opus/gpt-5.5-pro unchanged.",
+    "2026-06-03 (later, Matt approved): DESIGN DECISION RESOLVED — high-stakes is now whitelist-FIRST in ranker.py. When any whitelisted-class model (opus / gpt-5.5-pro / gpt-5-pro) survives hard filters, only whitelisted models compete at high-stakes; cheap perfect-tag-fit reasoners (deepseek-r1) no longer win on cost. Falls back to the open field when provider constraints exclude every whitelisted class. The brainstorm-high-stakes case reverted to expecting opus/gpt-5.5-pro."
+  ],
+  "threshold": 0.80,
+  "cases": [
+    {
+      "name": "pr-gate code-review high-stakes",
+      "signal": { "task_kind": "code-review", "caller": "pr-gate", "quality_floor": "high-stakes", "artifact_size_tokens": 8000 },
+      "active_provider": "anthropic",
+      "expected_classes": ["opus", "gpt-5.5-pro", "gpt-5"]
+    },
+    {
+      "name": "cross-model-check refute openai-active",
+      "signal": { "task_kind": "refute", "caller": "cross-model-check", "provider_constraint": "anthropic-only", "quality_floor": "high-stakes", "artifact_size_tokens": 4000 },
+      "active_provider": "openai",
+      "expected_classes": ["opus", "sonnet"]
+    },
+    {
+      "name": "fakematt-copyedit prose-review",
+      "signal": { "task_kind": "prose-review", "caller": "fakematt-copyedit", "quality_floor": "high-stakes", "artifact_size_tokens": 6000 },
+      "active_provider": null,
+      "expected_classes": ["opus", "sonnet"]
+    },
+    {
+      "name": "fakematt-email draft-prose medium",
+      "signal": { "task_kind": "draft-prose", "caller": "fakematt-email", "quality_floor": "medium", "artifact_size_tokens": 2000 },
+      "active_provider": null,
+      "expected_classes": ["sonnet", "opus", "gpt-5", "gemini-flash"],
+      "_why_widened": "2026-06-03: gemini-3.5-flash (balanced + cheap + fast) is a correct cost-optimized pick at medium floor. Production email drafting uses high-stakes + anthropic-only and is unaffected."
+    },
+    {
+      "name": "fakematt-slack draft-prose cheap-ok",
+      "signal": { "task_kind": "draft-prose", "caller": "fakematt-slack", "quality_floor": "cheap-ok", "artifact_size_tokens": 1000 },
+      "active_provider": null,
+      "expected_classes": ["sonnet", "haiku", "gpt-5-mini", "gpt-5-nano", "gemini-flash", "gemini-flash-lite", "deepseek-v4"],
+      "_why_widened": "2026-06-03: deepseek-v4-flash ($0.14/$0.28 per Mtok) is the cheapest capable pick — correct at cheap-ok."
+    },
+    {
+      "name": "consultant-engagement brainstorm high-stakes",
+      "signal": { "task_kind": "brainstorm", "caller": "consultant-engagement", "quality_floor": "high-stakes", "artifact_size_tokens": 12000 },
+      "active_provider": null,
+      "expected_classes": ["opus", "gpt-5.5-pro"],
+      "_note": "2026-06-03: whitelist-first at high-stakes — only opus/gpt-5.5-pro compete here."
+    },
+    {
+      "name": "content-production structured-extract cheap-ok",
+      "signal": { "task_kind": "structured-extract", "caller": "content-production", "quality_floor": "cheap-ok", "artifact_size_tokens": 4000 },
+      "active_provider": null,
+      "expected_classes": ["haiku", "gpt-5-mini", "gpt-5-nano", "gemini-flash", "gemini-flash-lite", "deepseek-v4"],
+      "_why_widened": "2026-06-03: deepseek-v4-flash matches all structured-extract tags and is cheapest."
+    },
+    {
+      "name": "research with long context",
+      "signal": { "task_kind": "research", "caller": "deep-research", "quality_floor": "high-stakes", "artifact_size_tokens": 60000 },
+      "active_provider": null,
+      "expected_classes": ["opus", "gpt-5.5-pro", "gpt-5", "gemini-pro"]
+    },
+    {
+      "name": "summarize large doc",
+      "signal": { "task_kind": "summarize", "caller": "compact-session", "quality_floor": "cheap-ok", "artifact_size_tokens": 40000 },
+      "active_provider": null,
+      "expected_classes": ["haiku", "gpt-5-mini", "gpt-5-nano", "gemini-flash", "gemini-flash-lite", "deepseek-v4"],
+      "_why_widened": "2026-06-03: deepseek-v4-flash is the cheapest long-context summarizer."
+    },
+    {
+      "name": "classify small input",
+      "signal": { "task_kind": "classify", "caller": "llm-feedback", "quality_floor": "cheap-ok", "artifact_size_tokens": 500 },
+      "active_provider": null,
+      "expected_classes": ["haiku", "gpt-5-mini", "gpt-5-nano", "gemini-flash", "gemini-flash-lite", "deepseek-v4", "llama"],
+      "_why_widened": "2026-06-03: hosted llama-3.2-11b is a legitimate bottom-dollar classify pick at cheap-ok."
+    },
+    {
+      "name": "sql query construction",
+      "signal": { "task_kind": "sql", "caller": "data-pipeline", "quality_floor": "medium", "artifact_size_tokens": 2000 },
+      "active_provider": null,
+      "expected_classes": ["deepseek-v4", "gpt-5", "opus", "sonnet", "gpt-5-mini", "codestral", "qwen-coder", "gpt-5-codex"],
+      "_why_widened": "2026-06-03: codestral/qwen-coder/codex are true code-SQL specialists (perfect tag fit) the old snapshot didn't have. Better routing than before."
+    },
+    {
+      "name": "qa-gate code-review",
+      "signal": { "task_kind": "code-review", "caller": "qa-gate", "quality_floor": "high-stakes", "artifact_size_tokens": 16000 },
+      "active_provider": "anthropic",
+      "expected_classes": ["opus", "gpt-5.5-pro"]
+    },
+    {
+      "name": "draft-prose with cost budget forces cheaper",
+      "signal": { "task_kind": "draft-prose", "caller": "social-distribution", "quality_floor": "medium", "artifact_size_tokens": 1500, "cost_budget_usd": 0.005 },
+      "active_provider": null,
+      "expected_classes": ["sonnet", "gpt-5", "haiku", "gemini-pro", "gemini-flash"],
+      "_why_widened": "2026-06-03: gemini-3.5-flash fits the $0.005 budget with writing capability."
+    },
+    {
+      "name": "vision-required modality",
+      "signal": { "task_kind": "prose-review", "caller": "design-review", "quality_floor": "medium", "artifact_size_tokens": 4000, "modality_required": "vision" },
+      "active_provider": null,
+      "expected_classes": ["opus", "sonnet", "gemini-pro", "gpt-5", "gemini-flash"],
+      "_why_widened": "2026-06-03: gemini-3.5-flash is the multimodal value pick at medium floor."
+    },
+    {
+      "name": "refute with anthropic active prefers openai/google",
+      "signal": { "task_kind": "refute", "caller": "cross-model-check", "quality_floor": "high-stakes", "artifact_size_tokens": 4000 },
+      "active_provider": "anthropic",
+      "expected_classes": ["gpt-5.5-pro", "gpt-5", "gemini-pro"]
+    },
+    {
+      "name": "brainstorm cheap-ok",
+      "signal": { "task_kind": "brainstorm", "caller": "idea-backlog", "quality_floor": "cheap-ok", "artifact_size_tokens": 4000 },
+      "active_provider": null,
+      "expected_classes": ["sonnet", "gpt-5", "opus", "gpt-5.5-pro", "gemini-pro", "deepseek-v4", "deepseek-r1", "grok"],
+      "_why_widened": "2026-06-03: deepseek-r1 (pure reasoning specialist, cheap) is the textbook cheap-ok brainstorm pick. 2026-06-05: grok-4.20 (reasoning + long-context, cheap) is a valid cheap-ok winner too after the data refresh."
+    },
+    {
+      "name": "image-gen delegates out",
+      "signal": { "task_kind": "image-gen", "caller": "blog-imagery", "quality_floor": "medium", "artifact_size_tokens": 500 },
+      "active_provider": null,
+      "expected_classes": ["_delegate_"]
+    },
+    {
+      "name": "draft-prose openai-only constraint",
+      "signal": { "task_kind": "draft-prose", "caller": "content-production", "quality_floor": "medium", "provider_constraint": "openai-only", "artifact_size_tokens": 3000 },
+      "active_provider": null,
+      "expected_classes": ["gpt-5", "gpt-5.5-pro", "gpt-5-mini"]
+    },
+    {
+      "name": "code-review cheap-ok small",
+      "signal": { "task_kind": "code-review", "caller": "pr-stage", "quality_floor": "cheap-ok", "artifact_size_tokens": 2000 },
+      "active_provider": null,
+      "expected_classes": ["sonnet", "deepseek-v4", "opus", "gpt-5", "gpt-5.5-pro", "deepseek-r1"]
+    },
+    {
+      "name": "code-review medium gpt-5 friendly",
+      "signal": { "task_kind": "code-review", "caller": "ad-hoc", "quality_floor": "medium", "artifact_size_tokens": 12000 },
+      "active_provider": "openai",
+      "expected_classes": ["opus", "sonnet", "gemini-pro", "deepseek-v4", "deepseek-r1", "qwen"]
+    }
+  ]
+}

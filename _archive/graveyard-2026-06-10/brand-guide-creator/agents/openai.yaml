@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brand Guide Creator"
+  short_description: "Create practical brand guides"
+  default_prompt: "Update the Zerg brand guide."

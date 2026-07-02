@@ -1,0 +1,22 @@
+{
+  "id": "xai__grok-4-fast",
+  "name": "xAI: Grok 4 Fast",
+  "provider": "xai",
+  "model_class": "grok",
+  "released": "2025-09-19",
+  "status": "retired",
+  "context_window": 2000000,
+  "output_window": 30000,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.19999999999999998,
+    "output_per_mtok": 0.5,
+    "as_of": "2026-05-10"
+  },
+  "tags": [
+    "instruction-following"
+  ],
+  "benchmarks": {}
+}

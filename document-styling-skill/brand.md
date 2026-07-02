@@ -1,31 +1,49 @@
 # Zerg Brand Reference
 
-Captured 2026-05-06 from visual research across the 10-doc Drive corpus + public B2B SaaS exemplars (Stripe, Linear, Vercel, Anthropic). This is the canonical brand reference for all printed Zerg collateral until Idan locks an official brand system.
+Updated 2026-05-08. Source of truth: the live marketing site (`~/zerg/web/src/pages/index.vue`). Earlier brick-red `#C0392B` and gold `#d4a000` palettes are deprecated — both were wrong and were corrected during the 2026-05-06 one-pager build.
+
+## Dual-palette routing (2026-05-08)
+
+Zerg has **two valid surfaces**, not one. Route by audience + product context, not personal preference.
+
+| Mode | Use for | Theme | Paper | Text | Accent |
+|---|---|---|---|---|---|
+| **Cream paper** (default) | Zstack products + non-technical audiences (buyers, marketing, ops, sales personas, comparison pages, pricing pages, one-pagers, leave-behinds) | `zerg-default` | `#f4f0e7` | `#111514` | `#b3662f` (`#8a4a1f` for AA-on-cream small caps) |
+| **Charcoal dark** | Zerg parent brand + heavy-technical content (research posts, integration pages targeting devs, MCP/API docs, architecture explainers, founder-voice / Idan-genre) | `zerg-dark` | `#111514` | `#f4f0e7` | `#d57a32` (bright variant works on dark) |
+
+Both modes share the same Zerg brand green (`#6FBE31`) as secondary accent. The discipline rule (two-accent system, no third color, no gradients) holds across both.
 
 ## Color palette
 
-### Primary accent
-- **`#C0392B` Brick Red** — controlled, slightly desaturated. Single accent across the page: wordmark, eyebrow labels, links, callout borders, chip backgrounds.
-- **Why red:** B2B SaaS in 2026 sits in the blue/navy/black neutral zone (Linear, Stripe, Vercel, Plaid). Red differentiates without being childish (the Hoy Health red works because it's confident, not bright).
+### Paper
+- **`#f4f0e7` Cream Paper** — live-site bg. Default for Zstack/non-technical surfaces.
+- **`#111514` Charcoal Paper** — dark surface for Zerg-parent / heavy-technical content.
 
-### Alternates (theme overrides)
-- **`#1F3A5F` Deep Navy** — when red feels too punchy (investor briefs, conservative enterprise contexts)
-- **`#D97757` Rust Orange** — when warmth wins (Anthropic-style editorial; pairs with warm paper)
+### Primary accent
+- **`#b3662f` Burnt Orange** — eyebrow labels on dark sections, callout borders, dividers, anchor color.
+- **`#8a4a1f` Burnt Rust** — darker variant for small uppercase labels on cream (passes WCAG AA contrast on `#f4f0e7`).
+- **`#d57a32` Bright Burnt Orange** — proof-point numerics, hover states, accents on charcoal `#111514` bg.
+
+### Secondary accent
+- **`#6FBE31` Brand Green** — chip strips, footer rules, accent counterweight (from `~/zerg/web/tailwind.colors.js`).
+- **`#0a4d33` Deep Forest Green** — status pills ("Open", "Live") on cream — passes WCAG AAA.
 
 ### Neutrals
-- **`#1A1A1A` Charcoal** — display type, H1, primary body
-- **`#5A5A5A` Mid-Gray** — secondary body, metadata, captions
-- **`#D8D8D8` Rule Gray** — table borders, section dividers
-- **`#FFFFFF` Paper** (default) or **`#FAF9F5` Warm Paper** (for `zerg-warm` theme)
+- **`#111514` Charcoal** — display type, H1, primary body, dark CTA fill.
+- **`#52605c` / `#41504c` Mid-Gray** — dek copy, captions, secondary body.
+- **`#c5cec9` / `#9aa39d` Light Gray** — de-emphasis on charcoal bg.
+- **`#dad6cb` Rule Gray** (~rgba(17,21,20,0.15)) — divider on cream.
 
 ### Discipline rule
-**Single accent, four jobs:** wordmark/header band, section eyebrow labels, links/CTAs, callout backgrounds. Never introduce a second accent. Gradients are forbidden. The discipline is the brand.
+**Two-accent system:** burnt orange (primary) + brand green (secondary). Never introduce a third accent. Gradients are forbidden. The discipline is the brand.
 
 ## Typography
 
 ### Font family
-- **Display + body: Inter** (Google Fonts, weights 400/500/600/700)
-- **Optional mono accent: JetBrains Mono** for monospace eyebrow labels (Vercel-style — reserved for `product` and `consulting` variants)
+- **Display + body: Space Grotesk** (Google Fonts, weights 300/400/500/600/700/900) — the live-site display face. Local fallbacks at `~/zerg/web/src/assets/fonts/SpaceGrotesk-*.ttf`.
+- **Mono / eyebrow: Space Mono** (Regular/Bold) — used for ALL-CAPS tracked eyebrow labels.
+- **Display tracking:** `-0.035em` to `-0.04em` on big uppercase headings (live site uses `tracking-[-0.035em]`).
+- **System fallback:** sans-serif if Space Grotesk fails to load — flag as a soft rendering failure, not silent.
 
 ### Type scale
 | Element | Size | Weight | Tracking | Color |
@@ -98,7 +116,7 @@ zerg.ai  ·  contact@zergai.com  ·  2026
 ```
 
 ### Callout / sidebar block
-Bordered or tinted block (left-border 3pt accent OR background `rgba(C0392B,0.05)`). Used for pricing tier card, key facts rail, or "what's included" highlight.
+Bordered or tinted block (left-border 3pt accent OR background `rgba(179,102,47,0.08)`). Used for pricing tier card, key facts rail, or "what's included" highlight.
 
 ## Recurring visual moves (steal from corpus)
 
@@ -124,8 +142,8 @@ Bordered or tinted block (left-border 3pt accent OR background `rgba(C0392B,0.05
 
 ## Loading and rendering notes
 
-- Fonts loaded via `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">` with `--virtual-time-budget=2000` Chrome flag so fonts paint before PDF capture
-- For offline reliability, self-host Inter as woff2 in `~/.claude/skills/document-styling-skill/assets/` and `@font-face` from `file://` URL — Phase 2
+- Fonts loaded via `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap">` with `--virtual-time-budget=2000` Chrome flag so fonts paint before PDF capture
+- For offline reliability, self-host Space Grotesk + Space Mono as woff2 in `~/.claude/skills/document-styling-skill/assets/` and `@font-face` from `file://` URL — Phase 2
 - SVG for chips/diagrams (not HTML divs) — print rendering of `border-radius` + `background` on inline-block can be inconsistent
 - Inline base64 data-URIs for any embedded images so file:// resolution doesn't break
 

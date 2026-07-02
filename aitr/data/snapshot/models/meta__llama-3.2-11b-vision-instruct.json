@@ -1,0 +1,26 @@
+{
+  "id": "meta__llama-3.2-11b-vision-instruct",
+  "name": "Llama 3.2 11B Vision Instruct",
+  "provider": "meta",
+  "model_class": "llama",
+  "released": "2024-09-25",
+  "status": "ga",
+  "context_window": 131072,
+  "output_window": 16384,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.245,
+    "output_per_mtok": 0.245,
+    "as_of": "2026-05-10"
+  },
+  "tags": [
+    "fast",
+    "instruction-following",
+    "json-mode",
+    "small-model"
+  ],
+  "benchmarks": {}
+}

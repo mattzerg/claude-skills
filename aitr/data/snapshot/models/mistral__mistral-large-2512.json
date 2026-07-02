@@ -1,0 +1,28 @@
+{
+  "id": "mistral__mistral-large-2512",
+  "name": "Mistral Large 3 2512",
+  "provider": "mistral",
+  "model_class": "mistral",
+  "released": "2025-12-01",
+  "status": "ga",
+  "context_window": 262144,
+  "output_window": null,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.5,
+    "output_per_mtok": 1.5,
+    "as_of": "2026-05-10"
+  },
+  "tags": [
+    "code",
+    "extended-thinking",
+    "instruction-following",
+    "reasoning",
+    "writing"
+  ],
+  "benchmarks": {
+    "gpqa_diamond": 0.439
+  }
+}

@@ -1,0 +1,15 @@
+# aitr — sample config. Copy to ~/.config/zerg/aitr.toml to override defaults.
+
+# Where aitr fetches /api/search.json from. If unset, falls back to TRACKER_ORIGIN
+# env var, then to the proxied zergai.com endpoint.
+tracker_origin = "https://zergai.com/resources/ai-tool-tracker"
+
+# Local cache root. Catalog cached at <cache_dir>/search.json (1h TTL by default).
+cache_dir = "~/.cache/zerg/aitr"
+
+# Append-only decision log. Every `aitr pick` writes a JSONL line here for replay
+# and weekly tuning.
+decisions_log = "~/.local/state/zerg/aitr/decisions.log"
+
+# Where the Friday weekly tuning report posts (Phase B6).
+weekly_report_target = "fakematt"

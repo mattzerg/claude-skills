@@ -1,0 +1,26 @@
+{
+  "id": "alibaba__qwen3-max",
+  "name": "Qwen3 Max",
+  "provider": "alibaba",
+  "model_class": "qwen",
+  "released": "2025-09-23",
+  "status": "ga",
+  "context_window": 262144,
+  "output_window": 32768,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.78,
+    "output_per_mtok": 3.9,
+    "as_of": "2026-05-10"
+  },
+  "tags": [
+    "code",
+    "extended-thinking",
+    "instruction-following",
+    "reasoning",
+    "writing"
+  ],
+  "benchmarks": {}
+}

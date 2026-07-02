@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
-"""Blog Imagery Skill orchestrator. See SKILL.md for the contract."""
+"""Blog Imagery Skill orchestrator. See SKILL.md for the contract.
+
+Each successful generation appends a record to `sent-log.jsonl` (slug + label
++ asset path + sha256 + provider + ts). `learn.py` later detects whether
+the asset has been replaced (different sha256) since the generation and
+records that as a "regenerated post-imagery" signal in `corrections.md`.
+"""
 from __future__ import annotations
 
 import argparse
+import hashlib
+import json
 import sys
 import re
+from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent / "lib"))
@@ -14,6 +23,25 @@ from brand_palette import wrap_prompt  # type: ignore
 DEFAULT_OUT_DIR = Path.home() / "zerg" / "web" / "src" / "public" / "images" / "blog"
 PLAN_DIR = Path("/tmp/blog-imagery")
 PLAN_DIR.mkdir(parents=True, exist_ok=True)
+
+SKILL_DIR = Path(__file__).parent
+SENT_LOG = SKILL_DIR / "sent-log.jsonl"
+
+
+def sha256_file(path: Path) -> str:
+    if not path.exists():
+        return ""
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def append_sent_log(record: dict) -> None:
+    SENT_LOG.parent.mkdir(parents=True, exist_ok=True)
+    with open(SENT_LOG, "a") as f:
+        f.write(json.dumps(record) + "\n")
 
 
 def parse_blog(md_path: Path) -> dict:
@@ -302,6 +330,16 @@ def main() -> int:
         }
         if result.success:
             print(f"    ✓ {result.path} ({result.provider})", file=sys.stderr)
+            asset_path = Path(result.path) if result.path else target
+            append_sent_log({
+                "ts": datetime.now().isoformat(timespec="seconds"),
+                "slug": slug,
+                "label": label,
+                "aspect": aspect,
+                "asset_path": str(asset_path),
+                "asset_sha256": sha256_file(asset_path),
+                "provider": result.provider,
+            })
         else:
             print(f"    ✗ all providers failed: {result.error}", file=sys.stderr)
 

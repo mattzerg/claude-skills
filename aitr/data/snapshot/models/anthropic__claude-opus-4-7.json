@@ -1,0 +1,36 @@
+{
+  "id": "anthropic__claude-opus-4-7",
+  "name": "Claude Opus 4.7",
+  "provider": "anthropic",
+  "model_class": "opus",
+  "released": "2026-04-16",
+  "status": "ga",
+  "context_window": 1000000,
+  "output_window": 128000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "pricing": {
+    "input_per_mtok": 5,
+    "output_per_mtok": 25,
+    "as_of": "2026-05-09"
+  },
+  "tags": [
+    "citations",
+    "code",
+    "extended-thinking",
+    "instruction-following",
+    "reasoning",
+    "voice",
+    "writing"
+  ],
+  "benchmarks": {
+    "swe_bench_verified": 0.876,
+    "gpqa_diamond": 0.942,
+    "terminal_bench": 0.694,
+    "swe_bench_pro": 0.643,
+    "osworld": 0.78,
+    "arena_elo": 1505
+  }
+}

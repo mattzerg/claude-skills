@@ -1,0 +1,25 @@
+{
+  "id": "deepseek__deepseek-v4-flash",
+  "name": "DeepSeek V4 Flash",
+  "provider": "deepseek",
+  "model_class": "deepseek-v4",
+  "released": "2026-04-24",
+  "status": "ga",
+  "context_window": 1048576,
+  "output_window": 384000,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.14,
+    "output_per_mtok": 0.28,
+    "as_of": "2026-05-09"
+  },
+  "tags": [
+    "fast",
+    "instruction-following",
+    "json-mode",
+    "small-model"
+  ],
+  "benchmarks": {}
+}
