@@ -11,13 +11,17 @@ SRC="${1:?need url-or-file}"
 OUT="${2:?need outdir}"
 VENV="$HOME/.claude/skills/self-email-miner/.venv"
 WHISPER_MODEL="${WHISPER_MODEL:-mlx-community/whisper-base-mlx}"
+# IG / logged-in hosts require auth cookies to download (unauthed → "no-video").
+# Mirror the carousel path (SKILL.md: gallery-dl --cookies-from-browser chrome:Default).
+# Override for headless/cron with YTDLP_COOKIES="--cookies /abs/cookies.txt".
+COOKIES="${YTDLP_COOKIES:---cookies-from-browser chrome:Default}"
 mkdir -p "$OUT/frames"
 cd "$OUT" || exit 1
 
 VIDEO=""
 if [[ "$SRC" =~ ^https?:// ]]; then
   # Fetch caption/metadata even if the video download fails.
-  yt-dlp --no-warnings --skip-download --write-info-json -o "meta" "$SRC" >/dev/null 2>&1
+  yt-dlp --no-warnings $COOKIES --skip-download --write-info-json -o "meta" "$SRC" >/dev/null 2>&1
   if [ -f meta.info.json ]; then
     "$VENV/bin/python" - "$SRC" <<'PY' > caption.txt 2>/dev/null
 import json, glob, sys
@@ -31,7 +35,7 @@ print("CAPTION/DESCRIPTION:")
 print((d.get('description') or '').strip())
 PY
   fi
-  yt-dlp --no-warnings --socket-timeout 30 -f "mp4/bestvideo+bestaudio/best" \
+  yt-dlp --no-warnings $COOKIES --socket-timeout 30 -f "mp4/bestvideo+bestaudio/best" \
     -o "video.%(ext)s" "$SRC" >/dev/null 2>&1
   VIDEO="$(ls video.* 2>/dev/null | grep -Ev '\.info\.json$' | head -1)"
 else
