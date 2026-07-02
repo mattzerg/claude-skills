@@ -15,7 +15,13 @@ import json, os, re, subprocess, sys, argparse, datetime
 
 HOME = os.path.expanduser("~")
 GS = os.path.join(HOME, ".claude/skills/gmail-skill")
-GS_PY = os.path.join(GS, ".venv/bin/python")
+# gmail-skill needs a Python with google-auth deps. The old value pointed at
+# gmail-skill's own .venv (which doesn't exist) — and a prior local variant used
+# sys.executable (this miner's .venv, which also lacks the deps). Either way every
+# `harvest` failed with an empty-stdout JSON error, so the cursor was never created.
+# Resolve a system python3 (which carries the deps) for the gmail-skill subprocess.
+import shutil as _shutil
+GS_PY = _shutil.which("python3") or "/opt/homebrew/bin/python3"
 ACCOUNT = "matthew@zergai.com"
 STATE = os.path.join(HOME, ".claude/state/self-email-miner")
 CURSOR = os.path.join(STATE, "cursor.json")
