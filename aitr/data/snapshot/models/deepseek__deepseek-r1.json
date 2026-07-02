@@ -1,0 +1,30 @@
+{
+  "id": "deepseek__deepseek-r1",
+  "name": "R1",
+  "provider": "deepseek",
+  "model_class": "deepseek-r1",
+  "released": "2025-01-20",
+  "status": "ga",
+  "context_window": 64000,
+  "output_window": 16000,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.7,
+    "output_per_mtok": 2.5,
+    "as_of": "2026-05-10"
+  },
+  "tags": [
+    "code",
+    "extended-thinking",
+    "instruction-following",
+    "reasoning",
+    "sql"
+  ],
+  "benchmarks": {
+    "swe_bench_verified": 0.492,
+    "gpqa_diamond": 0.715,
+    "mmlu_pro": 0.84
+  }
+}

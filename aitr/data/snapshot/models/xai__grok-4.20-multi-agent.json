@@ -1,0 +1,23 @@
+{
+  "id": "xai__grok-4.20-multi-agent",
+  "name": "Grok 4.20 Multi-Agent",
+  "provider": "xai",
+  "model_class": "grok",
+  "released": "2026-03-31",
+  "status": "ga",
+  "context_window": 2000000,
+  "output_window": null,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 2,
+    "output_per_mtok": 6,
+    "as_of": "2026-05-09"
+  },
+  "tags": [
+    "code",
+    "instruction-following"
+  ],
+  "benchmarks": {}
+}

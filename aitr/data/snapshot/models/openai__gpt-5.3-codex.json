@@ -1,0 +1,30 @@
+{
+  "id": "openai__gpt-5.3-codex",
+  "name": "GPT-5.3 Codex",
+  "provider": "openai",
+  "model_class": "gpt-5-codex",
+  "released": "2026-02-24",
+  "status": "ga",
+  "context_window": 400000,
+  "output_window": 128000,
+  "modalities": [
+    "text",
+    "code"
+  ],
+  "pricing": {
+    "input_per_mtok": 1.75,
+    "output_per_mtok": 14,
+    "as_of": "2026-05-09"
+  },
+  "tags": [
+    "code",
+    "instruction-following",
+    "sql"
+  ],
+  "benchmarks": {
+    "swe_bench_verified": 0.8,
+    "swe_bench_pro": 0.568,
+    "terminal_bench": 0.773,
+    "osworld": 0.647
+  }
+}

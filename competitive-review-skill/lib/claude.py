@@ -31,8 +31,58 @@ import time
 from pathlib import Path
 from typing import Optional
 
-CLAUDE_BIN = str(Path.home() / ".local" / "bin" / "claude")
+CLAUDE_REAL = Path.home() / ".local" / "bin" / "claude-real"
+CLAUDE_BIN = str(CLAUDE_REAL if CLAUDE_REAL.exists() else Path.home() / ".local" / "bin" / "claude")
+# Fallback when aitr (the internal model router) is unavailable. Callers that pass
+# an explicit model= always win; otherwise calls route via aitr (research / medium).
 DEFAULT_MODEL = "claude-sonnet-4-6"
+
+_AITR_SCRIPTS = Path.home() / ".claude" / "skills" / "aitr" / "scripts"
+def _routed_default_choice() -> tuple[str, Optional[str]]:
+    """Return one aitr-routed model choice and its decision id.
+
+    The decision id is deliberately scoped to one call. Reusing a cached id
+    would make later outcomes look like quality feedback for the first pick.
+    """
+    if str(_AITR_SCRIPTS) not in sys.path:
+        sys.path.insert(0, str(_AITR_SCRIPTS))
+    try:
+        from skill_default import aitr_pick_or
+        # This lib uses the metered SDK iff ANTHROPIC_API_KEY is set (_sdk_available);
+        # report the same billing mode so savings are credited only when real.
+        return aitr_pick_or(
+            DEFAULT_MODEL,
+            task_kind="research",
+            caller="competitive-review-skill",
+            quality_floor="medium",
+            billing_mode="metered" if _sdk_available() else "flat",
+        )
+    except Exception as exc:
+        print(
+            f"[competitive-review] aitr default unavailable ({exc}); "
+            f"falling back to {DEFAULT_MODEL}",
+            file=sys.stderr,
+        )
+        return DEFAULT_MODEL, None
+
+
+def _routed_default_model() -> str:
+    """Back-compat helper for callers that only need the routed model."""
+    model, _ = _routed_default_choice()
+    return model
+
+
+def _record_outcome(decision_id: Optional[str], outcome: str, note: str) -> None:
+    """Record a realized-quality outcome against an aitr pick (best-effort)."""
+    if not decision_id:
+        return
+    try:
+        if str(_AITR_SCRIPTS) not in sys.path:
+            sys.path.insert(0, str(_AITR_SCRIPTS))
+        from quality import record_quality
+        record_quality(decision_id, outcome, source="competitive-review-skill", note=note)
+    except Exception:
+        pass  # reputation is an enhancement, never fatal
 
 # Tunables
 MAX_RETRIES = 3
@@ -141,14 +191,18 @@ def call_claude(
     prompt: str,
     *,
     system: Optional[str] = None,
-    model: str = DEFAULT_MODEL,
+    model: Optional[str] = None,
     timeout: int = 600,
 ) -> str:
     """Public API. Routes to SDK or CLI based on env. Retries on transient failures.
 
+    `model=None` (default) routes via aitr; pass an explicit model to override.
     `timeout` is the OUTER budget. Each attempt is bounded to min(timeout, 300s);
     we retry up to MAX_RETRIES times within the outer budget.
     """
+    routed_decision_id: Optional[str] = None
+    if model is None:
+        model, routed_decision_id = _routed_default_choice()
     use_sdk = _sdk_available()
     deadline = time.monotonic() + timeout
     last_err: Optional[Exception] = None
@@ -157,9 +211,17 @@ def call_claude(
         remaining = max(30, deadline - time.monotonic())
         per_attempt = int(min(remaining, PER_ATTEMPT_TIMEOUT_CAP))
         try:
-            if use_sdk:
-                return _call_sdk(prompt, system, model, per_attempt)
-            return _call_cli(prompt, system, model, per_attempt)
+            out = _call_sdk(prompt, system, model, per_attempt) if use_sdk \
+                else _call_cli(prompt, system, model, per_attempt)
+            # Realized-quality: the routed model completed. Empty output is a
+            # weak failure; non-empty is a reliability success.
+            if routed_decision_id:
+                _record_outcome(
+                    routed_decision_id,
+                    "good" if (out and out.strip()) else "bad",
+                    "completed" if (out and out.strip()) else "empty output",
+                )
+            return out
         except subprocess.TimeoutExpired as e:
             last_err = e
             print(
@@ -178,6 +240,9 @@ def call_claude(
             if sleep_for > 0:
                 time.sleep(sleep_for)
 
+    # All attempts exhausted — the routed model was operationally unreliable here.
+    if routed_decision_id:
+        _record_outcome(routed_decision_id, "bad", f"failed after {MAX_RETRIES} attempts: {str(last_err)[:120]}")
     raise RuntimeError(f"Claude CLI failed after {MAX_RETRIES} attempts: {last_err}")
 
 
@@ -185,7 +250,7 @@ def call_claude_json(
     prompt: str,
     *,
     system: Optional[str] = None,
-    model: str = DEFAULT_MODEL,
+    model: Optional[str] = None,
     timeout: int = 600,
 ) -> dict | list:
     """Call Claude and parse JSON from the response. Raises if no JSON extractable."""

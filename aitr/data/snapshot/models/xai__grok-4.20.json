@@ -1,0 +1,26 @@
+{
+  "id": "xai__grok-4.20",
+  "name": "Grok 4.20",
+  "provider": "xai",
+  "model_class": "grok",
+  "released": "2026-03-31",
+  "status": "ga",
+  "context_window": 2000000,
+  "output_window": null,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 1.25,
+    "output_per_mtok": 2.5,
+    "as_of": "2026-05-09"
+  },
+  "tags": [
+    "extended-thinking",
+    "instruction-following",
+    "reasoning"
+  ],
+  "benchmarks": {
+    "arena_elo": 1496
+  }
+}

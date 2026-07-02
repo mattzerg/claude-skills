@@ -1,0 +1,26 @@
+{
+  "id": "meta__llama-4-scout",
+  "name": "Llama 4 Scout",
+  "provider": "meta",
+  "model_class": "llama",
+  "released": "2025-04-05",
+  "status": "ga",
+  "context_window": 10000000,
+  "output_window": 16384,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.08,
+    "output_per_mtok": 0.3,
+    "as_of": "2026-05-11"
+  },
+  "tags": [
+    "instruction-following"
+  ],
+  "benchmarks": {
+    "mmlu_pro": 0.743,
+    "gpqa_diamond": 0.572
+  }
+}

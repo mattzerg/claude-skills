@@ -1,0 +1,22 @@
+{
+  "id": "xai__grok-code-fast-1",
+  "name": "xAI: Grok Code Fast 1",
+  "provider": "xai",
+  "model_class": "grok",
+  "released": "2025-08-26",
+  "status": "retired",
+  "context_window": 256000,
+  "output_window": 10000,
+  "modalities": [
+    "text"
+  ],
+  "pricing": {
+    "input_per_mtok": 0.19999999999999998,
+    "output_per_mtok": 1.5,
+    "as_of": "2026-05-10"
+  },
+  "tags": [
+    "instruction-following"
+  ],
+  "benchmarks": {}
+}

@@ -24,18 +24,51 @@ import os
 from pathlib import Path
 from typing import Any
 
-DEFAULT_MODEL = "claude-sonnet-4-5"
+DEFAULT_MODEL = "claude-sonnet-4-5"  # loud fallback when aitr unavailable
 DEFAULT_MAX_TOKENS = 8000  # was 4000; observed truncation mid-finding on rich pages
+
+_AITR_SCRIPTS = Path.home() / ".claude" / "skills" / "aitr" / "scripts"
+_routed_model_cache: str | None = None
+
+
+def _routed_default_model() -> str:
+    """UX critique sends page screenshots → needs vision. prose-review/medium.
+    Loud fallback to DEFAULT_MODEL; memoized for multi-page runs."""
+    global _routed_model_cache
+    if _routed_model_cache is None:
+        if str(_AITR_SCRIPTS) not in sys.path:
+            sys.path.insert(0, str(_AITR_SCRIPTS))
+        try:
+            from skill_default import aitr_model_or
+            # Metered iff this run will take the SDK path (same key check the
+            # executor uses below) — else flat CLI fallback.
+            import os as _os
+            keyed = bool(_os.environ.get("ANTHROPIC_API_KEY") or _read_api_key_from_config())
+            _routed_model_cache = aitr_model_or(
+                DEFAULT_MODEL, task_kind="prose-review", caller="fakematt-feedback",
+                quality_floor="medium", modality_required="vision",
+                billing_mode="metered" if keyed else "flat",
+            )
+        except ImportError:
+            _routed_model_cache = DEFAULT_MODEL
+    return _routed_model_cache
 
 # Token budget: each PNG screenshot is ~1.5K tokens. We send up to 4 images
 # per page (desktop, tablet, +1 interaction before/after pair). At 8 pages
 # that's ~48K tokens of images per run. Acceptable.
-MAX_IMAGE_BYTES = 1_500_000  # 1.5MB cap per image; downscale if larger
+MAX_IMAGE_BYTES = 5_000_000  # 5MB cap (post-downscale); Anthropic limit is 5MB
+MAX_IMAGE_DIMENSION = 7500    # Anthropic vision rejects >8000px; leave headroom
 
 
 def _image_block(path: str | None) -> dict | None:
     """Return an Anthropic content block for an image file, or None if the
-    file doesn't exist / is too big / fails to read.
+    file doesn't exist / fails to read.
+
+    Auto-downscales images that exceed Anthropic's 8000px dimension limit
+    (full-page screenshots of long pages frequently bust this). Re-encodes as
+    PNG bytes only if the source needed resizing — small images pass through
+    untouched at byte-level fidelity. Fixes the "image dimensions exceed max
+    allowed size: 8000 pixels" 400 error observed on matteisn.com 2026-05-09.
     """
     if not path:
         return None
@@ -43,14 +76,71 @@ def _image_block(path: str | None) -> dict | None:
     if not p.exists() or not p.is_file():
         return None
     try:
-        size = p.stat().st_size
-        if size > MAX_IMAGE_BYTES:
-            return None  # Skip oversized — could downscale here later
-        data = base64.b64encode(p.read_bytes()).decode("ascii")
-        return {
-            "type": "image",
-            "source": {"type": "base64", "media_type": "image/png", "data": data},
-        }
+        # Cheap dimension peek — if both axes are within bounds, raw bytes pass through.
+        from PIL import Image  # lazy import — only loaded when an image is processed
+        with Image.open(p) as im:
+            w, h = im.size
+            needs_resize = w > MAX_IMAGE_DIMENSION or h > MAX_IMAGE_DIMENSION
+
+            if not needs_resize:
+                size = p.stat().st_size
+                if size <= MAX_IMAGE_BYTES:
+                    data = base64.b64encode(p.read_bytes()).decode("ascii")
+                    return {
+                        "type": "image",
+                        "source": {"type": "base64", "media_type": "image/png", "data": data},
+                    }
+                # Fallthrough to re-encode + downscale path
+
+            # Compute target dims preserving aspect ratio
+            scale = min(MAX_IMAGE_DIMENSION / w, MAX_IMAGE_DIMENSION / h, 1.0)
+            new_w = int(w * scale)
+            new_h = int(h * scale)
+            resized = im.resize((new_w, new_h), Image.LANCZOS) if scale < 1.0 else im.copy()
+
+            # Encode to PNG buffer — try progressively heavier compression if still over byte cap
+            import io
+            buf = io.BytesIO()
+            if resized.mode not in ("RGB", "RGBA"):
+                resized = resized.convert("RGB")
+            resized.save(buf, "PNG", optimize=True)
+            png_bytes = buf.getvalue()
+
+            # If PNG still too big, fall back to JPEG (loses transparency but fine for screenshots)
+            media_type = "image/png"
+            if len(png_bytes) > MAX_IMAGE_BYTES:
+                buf = io.BytesIO()
+                rgb = resized.convert("RGB") if resized.mode != "RGB" else resized
+                rgb.save(buf, "JPEG", quality=85, optimize=True)
+                png_bytes = buf.getvalue()
+                media_type = "image/jpeg"
+                # If still too big, drop quality further
+                if len(png_bytes) > MAX_IMAGE_BYTES:
+                    buf = io.BytesIO()
+                    rgb.save(buf, "JPEG", quality=70, optimize=True)
+                    png_bytes = buf.getvalue()
+                if len(png_bytes) > MAX_IMAGE_BYTES:
+                    return None  # give up — caller treats as "no image"
+
+            data = base64.b64encode(png_bytes).decode("ascii")
+            return {
+                "type": "image",
+                "source": {"type": "base64", "media_type": media_type, "data": data},
+            }
+    except ImportError:
+        # Pillow not available — fall back to raw byte path with size check only.
+        # Will fail loudly on >8000px images, but that's same as before this fix.
+        try:
+            size = p.stat().st_size
+            if size > MAX_IMAGE_BYTES:
+                return None
+            data = base64.b64encode(p.read_bytes()).decode("ascii")
+            return {
+                "type": "image",
+                "source": {"type": "base64", "media_type": "image/png", "data": data},
+            }
+        except Exception:
+            return None
     except Exception:
         return None
 
@@ -190,7 +280,7 @@ def critique_page(
     principles_block: str,
     page_payload: dict,
     *,
-    model: str = DEFAULT_MODEL,
+    model: str | None = None,
     timeout: int = 180,
     persona: str | None = None,
     target_kind: str | None = None,
@@ -200,6 +290,8 @@ def critique_page(
     Uses Anthropic SDK with prompt caching. Falls back to subprocess CLI
     if SDK not available or ANTHROPIC_API_KEY is missing.
     """
+    if model is None:
+        model = _routed_default_model()
     try:
         import sys as _sys
         from pathlib import Path as _Path
@@ -262,14 +354,55 @@ def critique_page(
         ),
     })
 
+    # 429-aware retry with exponential backoff + jitter. Skip-mode
+    # (ANTHROPIC_429_SKIP_MODE=1) returns a sentinel finding instead of
+    # crashing the per-page critique loop — `validate_findings` already
+    # routes `_error` items to the rejected list, so the marker flows
+    # through to the report without poisoning kept findings. See
+    # ~/.config/zerg/anthropic_retry.py + feedback_429_skill_hardening.md.
     try:
-        client = make_client(api_key=api_key, timeout=timeout, source="fakematt-feedback")
-        resp = client.messages.create(
-            model=model,
-            max_tokens=DEFAULT_MAX_TOKENS,
-            system=system_blocks,
-            messages=[{"role": "user", "content": content}],
-        )
+        import sys as _sys
+        from pathlib import Path as _Path
+        _sys.path.insert(0, str(_Path.home() / ".config" / "zerg"))
+        from anthropic_retry import call_with_429_retry, is_429_skip_sentinel, SKIP_MARKER_TEXT
+    except ImportError:
+        call_with_429_retry = None  # type: ignore[assignment]
+        is_429_skip_sentinel = None  # type: ignore[assignment]
+        SKIP_MARKER_TEXT = "[SKIPPED 429 after {attempts} retries]"
+
+    try:
+        # `anthropic_client.make_client` only accepts `source`; older callers
+        # passed api_key/timeout but the reconstructed-2026-05-12 module
+        # doesn't accept them. Pass only `source` and set timeout via
+        # client.with_options() if needed. api_key is honored via env var
+        # (already loaded above) for the API-key fallback path.
+        client = make_client(source="fakematt-feedback")
+        if timeout:
+            try:
+                client = client.with_options(timeout=timeout)
+            except Exception:
+                pass  # SDK version without with_options — request-level timeout fallback below
+
+        def _do_call():
+            return client.messages.create(
+                model=model,
+                max_tokens=DEFAULT_MAX_TOKENS,
+                system=system_blocks,
+                messages=[{"role": "user", "content": content}],
+            )
+
+        if call_with_429_retry is not None:
+            resp = call_with_429_retry(_do_call, source="fakematt-feedback/critique", max_attempts=4)
+            if is_429_skip_sentinel is not None and is_429_skip_sentinel(resp):
+                attempts = resp.get("_attempts", 4)
+                return [{
+                    "_error": SKIP_MARKER_TEXT.format(attempts=attempts),
+                    "_429_skipped": True,
+                    "_attempts": attempts,
+                }]
+        else:
+            resp = _do_call()
+
         text = "".join(b.text for b in resp.content if hasattr(b, "text"))
         return _extract_json_array(text)
     except Exception as exc:

@@ -1,0 +1,33 @@
+{
+  "id": "google__gemini-3.1-pro",
+  "name": "Gemini 3.1 Pro",
+  "provider": "google",
+  "model_class": "gemini-pro",
+  "released": "2026-02-19",
+  "status": "preview",
+  "context_window": 1048576,
+  "output_window": 65536,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "pricing": {
+    "input_per_mtok": 2,
+    "output_per_mtok": 12,
+    "as_of": "2026-05-09"
+  },
+  "tags": [
+    "code",
+    "extended-thinking",
+    "instruction-following",
+    "reasoning",
+    "writing"
+  ],
+  "benchmarks": {
+    "gpqa_diamond": 0.943,
+    "swe_bench_pro": 0.542,
+    "arena_elo": 1505
+  }
+}
