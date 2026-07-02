@@ -30,6 +30,24 @@ import threading
 import secrets
 from zoneinfo import ZoneInfo
 
+# Background launch agents use these skills for polling. They must never open
+# OAuth browser windows unattended; explicit auth commands still work in a TTY.
+def ensure_interactive_auth_allowed(auth_url: Optional[str] = None) -> None:
+    if os.environ.get("GOOGLE_OAUTH_ALLOW_BROWSER") == "1":
+        return
+    if sys.stdin.isatty() and sys.stdout.isatty():
+        return
+    print(
+        json.dumps(
+            {
+                "error": "google_oauth_interactive_required",
+                "message": "Google OAuth needs an interactive terminal; refusing to open a browser from a background job.",
+                "auth_url": auth_url,
+            }
+        )
+    )
+    sys.exit(2)
+
 # Check for required libraries
 try:
     from google.auth.transport.requests import Request
@@ -136,6 +154,8 @@ class OAuthCallbackHandler(BaseHTTPRequestHandler):
 
 def oauth_flow(target_email: Optional[str] = None) -> Credentials:
     """Run OAuth flow with browser."""
+    ensure_interactive_auth_allowed()
+
     config = get_client_config()
     client_config = config.get("installed", config.get("web", {}))
     client_id = client_config["client_id"]
@@ -167,6 +187,7 @@ def oauth_flow(target_email: Optional[str] = None) -> Credentials:
     print(f"\nOpening browser for authentication...")
     if target_email:
         print(f"Please sign in with: {target_email}")
+    ensure_interactive_auth_allowed(auth_url)
     webbrowser.open(auth_url)
 
     # Wait for callback
@@ -212,6 +233,7 @@ def oauth_flow(target_email: Optional[str] = None) -> Credentials:
     }
     with open(token_file, "w") as f:
         json.dump(token_info, f, indent=2)
+    token_file.chmod(0o600)
 
     # Update accounts metadata
     accounts = {}
@@ -270,6 +292,7 @@ def get_credentials(account: Optional[str] = None) -> tuple[Credentials, str]:
             token_info["token"] = creds.token
             with open(token_file, "w") as f:
                 json.dump(token_info, f, indent=2)
+            token_file.chmod(0o600)
         except Exception as e:
             print(f"Token refresh failed: {e}")
             print("Re-authenticating...")

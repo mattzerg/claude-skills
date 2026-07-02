@@ -4,6 +4,7 @@ description: Manage Namecheap domains via the Namecheap public API. Set nameserv
 allowed-tools: Bash, Read
 ---
 
+
 # Namecheap Skill — Domain & DNS Management
 
 Manage Namecheap domains via their public REST API. **No browser UI** — defeats the Cloudflare bot challenge that blocks Namecheap's web admin under Playwright.

@@ -4,6 +4,7 @@ description: Mine Matt's Obsidian CRM (~2200 People/CRM/ contacts + ~30 curated 
 allowed-tools: Bash, Read, Write
 ---
 
+
 # Network Reach Skill
 
 Sibling to `cv-tailor`. Where cv-tailor handles _inbound_ ("I have a JD, build me a CV"), this skill handles _outbound_ ("I want to reach this company/person, who in my network can help").

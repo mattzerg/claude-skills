@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ship Gate"
+  short_description: "Block or clear artifacts for shipment"
+  default_prompt: "Use $ship-gate to make the final go / no-go call and name the blockers to green."
+
+policy:
+  allow_implicit_invocation: true

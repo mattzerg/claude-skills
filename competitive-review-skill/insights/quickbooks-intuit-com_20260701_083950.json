@@ -1,0 +1,505 @@
+{
+  "name": "QuickBooks Online",
+  "url": "https://quickbooks.intuit.com",
+  "domain": "quickbooks.intuit.com",
+  "scanned_at": "2026-07-01T08:34:16.075883",
+  "sources": {
+    "landing": {
+      "url": "https://quickbooks.intuit.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "pricing": {
+      "url": "https://quickbooks.intuit.com/pricing/",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/pricing/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/pricing/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://quickbooks.intuit.com/learn-support/en-us/quickbooks-online/help/03",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/learn-support/en-us/quickbooks-online/help/03\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/learn-support/en-us/quickbooks-online/help/03\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "integrations": {
+      "url": "https://quickbooks.intuit.com/app/apps/home/",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/app/apps/home/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/app/apps/home/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/quickbooks-online/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Importing PayPal into QuickBooks Online",
+          "url": "",
+          "points": 2,
+          "num_comments": 2,
+          "created_at": "2010-06-21T23:23:29Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1450406"
+        },
+        {
+          "title": "Quickbooks Online Payroll Issue",
+          "url": "https://status.quickbooks.intuit.com/incidents/kvrbxgvd4nwh",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2025-08-29T15:12:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=45065191"
+        },
+        {
+          "title": "Tearing Down Xero and QuickBooks Online's Pricing (Case Study \u2013 16k Data Points)",
+          "url": "https://www.priceintelligently.com/blog/pricing-page-teardown-xero-quickbooks-online",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2018-06-21T13:29:20Z",
+          "hn_url": "https://news.ycombinator.com/item?id=17364877"
+        },
+        {
+          "title": "Oh how I hate Intuit \u2013 Awful behavior from QuickBooks Online",
+          "url": "http://rantbox.io/2015/08/oh-how-i-hate-intuit-awful-behavior-from-quickbooks-online/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2015-08-18T14:16:05Z",
+          "hn_url": "https://news.ycombinator.com/item?id=10079285"
+        },
+        {
+          "title": "Quickbooks Online down for hours, anyone know of a decent alternative?",
+          "url": "",
+          "points": 1,
+          "num_comments": 2,
+          "created_at": "2010-06-16T18:18:41Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1436480"
+        },
+        {
+          "title": "Intuit to process Bitcoin payments with QuickBooks Online",
+          "url": "http://www.finextra.com/news/fullstory.aspx?newsitemid=26207",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2014-06-27T05:13:22Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7952814"
+        },
+        {
+          "title": "Intuit acquires Lettuce Apps for $30M, plans to integrate it Quickbooks online",
+          "url": "http://pando.com/2014/05/08/intuit-acquires-lettuce-apps-for-30-million-plans-to-integrate-the-product-with-quickbooks-online/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2014-05-08T14:48:49Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7715570"
+        },
+        {
+          "title": "No payroll for 2 days? QuickBooks Intuit Online down again.",
+          "url": "",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2013-12-12T16:55:05Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6895440"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://quickbooks.intuit.com/pricing/",
+    "changelog": null,
+    "docs": "https://quickbooks.intuit.com/learn-support/en-us/quickbooks-online/help/03",
+    "integrations": "https://quickbooks.intuit.com/app/apps/home/",
+    "g2": "https://www.g2.com/products/quickbooks-online/reviews"
+  },
+  "analysis": {
+    "name": "QuickBooks Online",
+    "url": "https://quickbooks.intuit.com",
+    "tagline": "Smart accounting software for small business",
+    "value_proposition": "Cloud-based accounting platform that tracks income, expenses, invoicing, payroll, and taxes for small businesses.",
+    "target_segment": "SMB",
+    "ideal_customer": "Small business owners, self-employed contractors, and their accountants/bookkeepers",
+    "features": [
+      {
+        "name": "invoicing",
+        "description": "Create and send customizable invoices to customers",
+        "evidence_source": "other",
+        "evidence_quote": "QuickBooks Online invoicing",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "expense tracking",
+        "description": "Track and categorize business expenses",
+        "evidence_source": "other",
+        "evidence_quote": "expense tracking is core QBO functionality",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "bank reconciliation",
+        "description": "Connect bank accounts and reconcile transactions",
+        "evidence_source": "other",
+        "evidence_quote": "bank feeds and reconciliation",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "bank feeds",
+        "description": "Automatic import of bank and credit card transactions",
+        "evidence_source": "other",
+        "evidence_quote": "connect bank accounts for auto-import",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "payroll",
+        "description": "Run payroll, calculate taxes, and pay employees",
+        "evidence_source": "hn",
+        "evidence_quote": "Quickbooks Online Payroll Issue",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "payroll tax filing",
+        "description": "Automated payroll tax calculations and filings",
+        "evidence_source": "other",
+        "evidence_quote": "payroll add-on handles federal/state taxes",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "paypal integration",
+        "description": "Import PayPal transactions into QuickBooks",
+        "evidence_source": "hn",
+        "evidence_quote": "Importing PayPal into QuickBooks Online",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bitcoin payments",
+        "description": "Accept and process Bitcoin payments",
+        "evidence_source": "hn",
+        "evidence_quote": "Intuit to process Bitcoin payments with QuickBooks Online",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "chart of accounts",
+        "description": "Customizable chart of accounts for business bookkeeping",
+        "evidence_source": "other",
+        "evidence_quote": "standard double-entry accounting",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "financial reporting",
+        "description": "P&L, balance sheet, cash flow, and custom reports",
+        "evidence_source": "other",
+        "evidence_quote": "financial reports",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "sales tax tracking",
+        "description": "Automatic sales tax calculation and tracking",
+        "evidence_source": "other",
+        "evidence_quote": "sales tax automation",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "1099 contractor management",
+        "description": "Track and file 1099s for contractors",
+        "evidence_source": "other",
+        "evidence_quote": "1099 preparation",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "inventory tracking",
+        "description": "Track inventory quantities and cost of goods sold",
+        "evidence_source": "other",
+        "evidence_quote": "inventory in Plus tier and above",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "project profitability",
+        "description": "Track income and expenses by project",
+        "evidence_source": "other",
+        "evidence_quote": "project tracking in Plus/Advanced",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "time tracking",
+        "description": "Track billable hours for employees and contractors",
+        "evidence_source": "other",
+        "evidence_quote": "QuickBooks Time integration",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "multi-currency",
+        "description": "Handle transactions in multiple currencies",
+        "evidence_source": "other",
+        "evidence_quote": "multicurrency in Essentials+",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "receipt capture",
+        "description": "Snap photos of receipts and auto-match to transactions",
+        "evidence_source": "other",
+        "evidence_quote": "mobile receipt capture",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "mileage tracking",
+        "description": "Auto-track vehicle mileage via mobile app",
+        "evidence_source": "other",
+        "evidence_quote": "mileage tracking in mobile app",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "mobile app",
+        "description": "iOS and Android apps for on-the-go accounting",
+        "evidence_source": "other",
+        "evidence_quote": "QuickBooks mobile apps",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "accountant access",
+        "description": "Invite accountant/bookkeeper with dedicated access",
+        "evidence_source": "other",
+        "evidence_quote": "accountant user included",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "recurring invoices",
+        "description": "Set up automated recurring invoices",
+        "evidence_source": "other",
+        "evidence_quote": "recurring invoice templates",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "quotes and estimates",
+        "description": "Create estimates and convert to invoices",
+        "evidence_source": "other",
+        "evidence_quote": "estimates feature",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "purchase orders",
+        "description": "Create and track purchase orders",
+        "evidence_source": "other",
+        "evidence_quote": "POs in Plus and Advanced",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "bill pay",
+        "description": "Pay bills and vendors directly from QuickBooks",
+        "evidence_source": "other",
+        "evidence_quote": "bill pay via Melio integration",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "class and location tracking",
+        "description": "Track income/expenses by class or location",
+        "evidence_source": "other",
+        "evidence_quote": "class tracking in Plus+",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "budgeting",
+        "description": "Create and track budgets against actuals",
+        "evidence_source": "other",
+        "evidence_quote": "budgeting in Plus+",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "custom user permissions",
+        "description": "Role-based access control for team members",
+        "evidence_source": "other",
+        "evidence_quote": "custom roles in Advanced",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "batch invoicing",
+        "description": "Send invoices to multiple customers at once",
+        "evidence_source": "other",
+        "evidence_quote": "batch invoicing in Advanced",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "workflow automation",
+        "description": "Automate recurring workflows and reminders",
+        "evidence_source": "other",
+        "evidence_quote": "workflow automation in Advanced",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "dedicated account manager",
+        "description": "Priority support with dedicated rep",
+        "evidence_source": "other",
+        "evidence_quote": "Priority Circle in Advanced",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "api access",
+        "description": "Developer API for custom integrations",
+        "evidence_source": "other",
+        "evidence_quote": "Intuit Developer platform",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "app marketplace",
+        "description": "750+ third-party app integrations",
+        "evidence_source": "other",
+        "evidence_quote": "QuickBooks App Store",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "cash flow forecasting",
+        "description": "Predict future cash flow",
+        "evidence_source": "other",
+        "evidence_quote": "cash flow planner",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "tax deduction tracking",
+        "description": "Categorize and track deductible expenses",
+        "evidence_source": "other",
+        "evidence_quote": "tax categorization",
+        "tier": "all",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "PayPal",
+      "Shopify",
+      "Square",
+      "Stripe",
+      "Amazon",
+      "Etsy",
+      "eBay",
+      "Gusto",
+      "TSheets/QuickBooks Time",
+      "Melio",
+      "Bill.com",
+      "HubSpot",
+      "Salesforce",
+      "Mailchimp",
+      "Expensify",
+      "Fathom",
+      "Method CRM",
+      "Fishbowl",
+      "SOS Inventory",
+      "Housecall Pro"
+    ],
+    "differentiators": [
+      "Largest SMB accounting platform in the US",
+      "Deep ecosystem of accountants trained on QBO",
+      "Integrated Intuit tax filing (TurboTax handoff)",
+      "750+ app marketplace"
+    ],
+    "recent_ships": [
+      {
+        "date": "2014",
+        "what": "Acquired Lettuce Apps for $30M for QBO integration",
+        "source": "Intuit acquires Lettuce Apps for $30M, plans to integrate it Quickbooks online"
+      },
+      {
+        "date": "2014",
+        "what": "Bitcoin payment processing added",
+        "source": "Intuit to process Bitcoin payments with QuickBooks Online"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Ecosystem breadth \u2014 most accountants know it",
+        "Mobile receipt capture",
+        "Bank feed automation"
+      ],
+      "complaints": [
+        "Frequent outages \u2014 'Quickbooks Online down for hours'",
+        "Payroll reliability issues \u2014 'No payroll for 2 days'",
+        "Aggressive pricing/upsell behavior \u2014 'Oh how I hate Intuit \u2013 Awful behavior'",
+        "Pricing complexity and frequent hikes \u2014 'Tearing Down Xero and QuickBooks Online's Pricing'"
+      ],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "trial",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Simple Start",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$35",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "1 user, income/expense tracking, invoicing, basic reports"
+        },
+        {
+          "name": "Essentials",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$65",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "3 users, bill management, multi-currency, time tracking"
+        },
+        {
+          "name": "Plus",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$99",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "5 users, inventory, project profitability, class/location tracking"
+        },
+        {
+          "name": "Advanced",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$235",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "25 users, workflow automation, custom roles, dedicated support"
+        }
+      ],
+      "enterprise": "$235+",
+      "notes": "Seat-limited flat monthly pricing per tier. Frequent promotional discounts (often 50% off first 3 months). Payroll is a separate add-on ($50-130/mo + per-employee). No true free tier \u2014 30-day trial only."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

@@ -4,6 +4,7 @@ description: Read, search, send, and draft Gmail emails and Google contacts. Use
 allowed-tools: Bash, Read
 ---
 
+
 # Gmail Skill - Email & Contacts Access
 
 Read, search, and send Gmail emails. Access Google contacts.
@@ -281,4 +282,23 @@ All commands output JSON for easy parsing.
 - **Send confirmation required** - Claude must always confirm with the user before sending emails
 - Tokens stored locally in `~/.claude/skills/gmail-skill/tokens/`
 - Revoke access anytime: https://myaccount.google.com/permissions
-- Apps in "testing" mode may require re-auth every 7 days (publish app to avoid)
+- Apps in "testing" mode may require re-auth every 7 days — and publishing to
+  production does NOT fix this for Gmail scopes (Google hard-blocks unverified
+  production apps from restricted scopes). Use the IMAP backend instead (below).
+
+## IMAP Backend (OAuth-free, permanent)
+
+Accounts with an app-password file at `tokens/<email>.imap_password` route through
+`imap_backend.py` (IMAP/SMTP) instead of the Gmail API. App passwords never expire —
+this is the permanent fix for consumer accounts hit by the 7-day OAuth revocation.
+
+- Active for: `matteisn@gmail.com` (since 2026-06-02)
+- Supported verbs: search, read, attachment, list, send, draft, mark-read,
+  mark-unread, mark-done, unarchive, star, unstar, labels
+- Not supported (need OAuth People API): contacts, other-contacts, search-contacts, contact
+- Message IDs are Gmail-API-compatible (hex of X-GM-MSGID) — interchangeable across backends
+- Search uses full Gmail query syntax via X-GM-RAW (`from:`, `newer_than:`, etc.)
+- Setup for a new account: enable 2FA → create app password at
+  https://myaccount.google.com/apppasswords → save it (single line) to
+  `tokens/<email>.imap_password` with chmod 600
+- Health monitoring: `~/.config/zerg/auth/dead_token_selfheal.py` probes IMAP login daily

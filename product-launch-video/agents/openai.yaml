@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Launch Video"
+  short_description: "Plan launch videos from brief to edit."
+  default_prompt: "Use $product-launch-video to develop a launch video concept, script, shot plan, and edit direction from this product brief."

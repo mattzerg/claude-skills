@@ -4,6 +4,7 @@ description: Post, comment, and react on LinkedIn profiles and company pages. Us
 allowed-tools: Bash, Read
 ---
 
+
 # LinkedIn Skill - Post, Comment, and React
 
 Create posts, add comments, and react to content on LinkedIn personal profiles and company pages.
@@ -92,8 +93,16 @@ python3 ~/.claude/skills/linkedin-skill/linkedin_skill.py post --text "Your post
 # List your posts
 python3 ~/.claude/skills/linkedin-skill/linkedin_skill.py list-posts [--author URN] [--count N] [--account LABEL]
 
-# Get a specific post
+# Get a specific post (REST path — needs partner-API scope, else 403 ACCESS_DENIED)
 python3 ~/.claude/skills/linkedin-skill/linkedin_skill.py get-post POST_URN [--account LABEL]
+
+# Get a specific post via chrome-devtools-mcp fallback (Claude-session only).
+# Emits a handshake JSON instructing the assistant to drive an authed Chrome
+# session via chrome-devtools-mcp, capture the rendered post body + counts,
+# write JSON to the suggested path, then re-invoke with --scraped-from.
+# Exit codes: 0 = REST hit, 1 = REST error, 2 = handshake printed, scrape needed.
+python3 ~/.claude/skills/linkedin-skill/linkedin_skill.py get-post POST_URN --via chrome-devtools
+python3 ~/.claude/skills/linkedin-skill/linkedin_skill.py get-post POST_URN --scraped-from /path/to/scraped.json
 
 # Edit a post's text
 python3 ~/.claude/skills/linkedin-skill/linkedin_skill.py edit-post POST_URN --text "New content" [--account LABEL]
@@ -219,6 +228,7 @@ LinkedIn uses URNs (Uniform Resource Names) to identify entities:
 - **Organization posting:** Requires Marketing Platform approval for `w_organization_social` scope.
 - **Token expiry:** LinkedIn access tokens expire after 60 days. Re-authenticate when needed.
 - **No refresh tokens:** Most LinkedIn apps don't get refresh tokens - you'll need to re-auth periodically.
+- **get-post requires partner-API scope:** `/rest/posts/{urn}` returns 403 `ACCESS_DENIED` on `partnerApiPostsExternal.GET` for apps without LinkedIn's partner Posts API. Use the `--via chrome-devtools` fallback from a Claude session with chrome-devtools-mcp + an authed LinkedIn browser tab; the skill emits a handshake JSON and re-accepts the captured payload via `--scraped-from`. Pattern mirrors `~/.claude/skills/content-release/run.py:scrape_live`.
 
 ## Security Notes
 

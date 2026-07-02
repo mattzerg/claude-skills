@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 
 VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
+    "/Users/mattheweisner/Obsidian/Zerg/MattZerg"
 )
 FEEDBACK_DIR = VAULT_ROOT / "Feedback"
 SCREENSHOT_DIR = FEEDBACK_DIR / "_screenshots"

@@ -1,0 +1,409 @@
+{
+  "name": "Jitsi Meet",
+  "url": "https://jitsi.org",
+  "domain": "jitsi.org",
+  "scanned_at": "2026-06-01T06:31:06.805665",
+  "sources": {
+    "landing": {
+      "url": "https://jitsi.org",
+      "title": "Free Video Conferencing Software for Web & Mobile | Jitsi",
+      "text": "\u00ad\nFree Video Conferencing Software for Web & Mobile | Jitsi\nJaaS: the Team that Builds Jitsi Can Now Also Run it for You!\nStart now\nJaaS: the Team that Builds Jitsi Can Now Also Run it for You!\nStart now\nDocs\nProjects\nBlog\nCommunity\nAbout\nAbout\nPowered by Jitsi\u2122\nPartners\nJitsi in the News\nUser FAQ\nDownload\nMore secure, more flexible, and\ncompletely free video conferencing\nLearn more\nSee it in Action! Start a Meeting\nIntroducing Receiver Audio Subscriptions\nOctober 1, 2025\nJitsi Meet has had support for ReceiverConstraints for video for a long time. Receivers can specify which streams they wish to receive, and at what resolutions, and the backend will attempt to satisfy these constraints [\u2026]\nRead more\nGSoC 2025, let\u2019s do this!\nFebruary 28, 2025\nWe\u2019re excited to share that Jitsi has been accepted into Google Summer of Code 2025! This is a great opportunity to get hands-on experience, collaborate with our awesome community, and contribute to the Jitsi open-source [\u2026]\nRead more\nConnecting anything to everything via SIP\nMay 21, 2024\nIn the evolving landscape of virtual meetings, seamless connectivity remains paramount. SIP integration enables participants to join meetings from various devices, including hardware phones or softphones such as Bria, video conferencing systems such as Zoom, [\u2026]\nRead more\nRead all Blog articles\nThe Tor Project\n@torproject\nIf you want an alternative to Zoom: try Jitsi Meet. It\u2019s encrypted, open source, and you don\u2019t need an account.\nMeet Jitsi\n.\ntmcnet.com\n@tmcnet\nItalian Schools Using WeSchool Platform Based on 8\u00d78\u2019s Jitsi for Distance Learning.\nLangSciPress\n@LangSciPress\nSomewhat unexpected, but we now run our own videoconferencing software,\n#Jitsi\nIt is 100% privacy friendly, 100% open source and runs on our own servers.\nWho is using Jitsi?\nDownload Jitsi today.\nApp Store\nGoogle Play\nF-Droid\nFrequently Asked Questions\nRead More\nAsk the Community\nCheck It Out\nJitsi is a trademark of \u00a9 8x8, Inc.\nAll Rights Reserved.",
+      "source": "playwright"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "url": "https://github.com/jitsi/jitsi-meet/releases",
+      "title": "Releases \u00b7 jitsi/jitsi-meet",
+      "text": "Releases \u00b7 jitsi/jitsi-meet\nSkip to content\nNavigation Menu\nToggle navigation\nSign in\nAppearance settings\nPlatform\nAI CODE CREATION\nGitHub Copilot\nWrite better code with AI\nGitHub Spark\nBuild and deploy intelligent apps\nGitHub Models\nManage and compare prompts\nMCP Registry\nNew\nIntegrate external tools\nDEVELOPER WORKFLOWS\nActions\nAutomate any workflow\nCodespaces\nInstant dev environments\nIssues\nPlan and track work\nCode Review\nManage code changes\nAPPLICATION SECURITY\nGitHub Advanced Security\nFind and fix vulnerabilities\nCode security\nSecure your code as you build\nSecret protection\nStop leaks before they start\nEXPLORE\nWhy GitHub\nDocumentation\nBlog\nChangelog\nMarketplace\nView all features\nSolutions\nBY COMPANY SIZE\nEnterprises\nSmall and medium teams\nStartups\nNonprofits\nBY USE CASE\nApp Modernization\nDevSecOps\nDevOps\nCI/CD\nView all use cases\nBY INDUSTRY\nHealthcare\nFinancial services\nManufacturing\nGovernment\nView all industries\nView all solutions\nResources\nEXPLORE BY TOPIC\nAI\nSoftware Development\nDevOps\nSecurity\nView all topics\nEXPLORE BY TYPE\nCustomer stories\nEvents & webinars\nEbooks & reports\nBusiness insights\nGitHub Skills\nSUPPORT & SERVICES\nDocumentation\nCustomer support\nCommunity forum\nTrust center\nPartners\nView all resources\nOpen Source\nCOMMUNITY\nGitHub Sponsors\nFund open source developers\nPROGRAMS\nSecurity Lab\nMaintainer Community\nAccelerator\nGitHub Stars\nArchive Program\nREPOSITORIES\nTopics\nTrending\nCollections\nEnterprise\nENTERPRISE SOLUTIONS\nEnterprise platform\nAI-powered developer platform\nAVAILABLE ADD-ONS\nGitHub Advanced Security\nEnterprise-grade security features\nCopilot for Business\nEnterprise-grade AI features\nPremium Support\nEnterprise-grade 24/7 support\nPricing\nSearch or jump to...\nSearch code, repositories, users, issues, pull requests...\nSearch\nClear\nSearch syntax tips\nProvide feedback\nWe read every piece of feedback, and take your input very seriously.\nInclude my email address so I can be contacted\nCancel\nSubmit feedback\nSaved searches\nUse saved searches to filter your results more quickly\nName\nQuery\nTo see all available qualifiers, see our\ndocumentation\n.\nCancel\nCreate saved search\nSign in\nSign up\nAppearance settings\nResetting focus\nYou signed in with another tab or window.\nReload\nto refresh your session.\nYou signed out in another tab or window.\nReload\nto refresh your session.\nYou switched accounts on another tab or window.\nReload\nto refresh your session.\nDismiss alert\njitsi\n/\njitsi-meet\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n7.9k\nStar\n29.4k\nCode\nIssues\n104\nPull requests\n120\nActions\nSecurity and quality\n5\nInsights\nAdditional navigation options\nCode\nIssues\nPull requests\nActions\nSecurity and quality\nInsights\nReleases: jitsi/jitsi-meet\nReleases\nTags\nReleases \u00b7 jitsi/jitsi-meet\n2.0.10978\n20 May 20:51\njitsi-jenkins\nstable/jitsi-meet_10978\nb584e55\nThis commit was created on GitHub.com and signed with GitHub\u2019s\nverified signature\n.\nGPG key ID:\nB5690EEEBB952194\nVerified\nLearn about vigilant mode\n.\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nNo results found\nView all tags\n2.0.10978\nLatest\nLatest\nstable/jitsi-meet_10978\n\nTagged automatically by Jenkins\nAssets\n3\njitsi-meet_1.0.9222_CHANGELOG.txt\nsha256:41f81c644cba38e07e56f5b57b714db2581e9950ddbce637df94e54685a157f5\n6.9 KB\n2026-05-20T20:51:03Z\nSource code\n(zip)\n2026-05-20T20:50:59Z\nSource code\n(tar.gz)\n2026-05-20T20:50:59Z\n\ud83c\udf89\n5\ndjbased, harriebird, Ankitgkp, yGhouar-GitHub, and dkomarov reacted with hooray emoji\nAll reactions\n\ud83c\udf89\n5 reactions\n5 people reacted\n2.0.10888\n30 Mar 14:47\njitsi-jenkins\nstable/jitsi-meet_10888\ne9daf43\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nNo results found\nView all tags\n2.0.10888\nstable/jitsi-meet_10888\n\nTagged automatically by Jenkins\nAssets\n3\nLoading\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\n\ud83d\udc4d\n6\nyGhouar-GitHub, alex-rogon, obervinov, holger-ubivent, piresjms25, and amiralisaleh reacted with thumbs up emoji\n\ud83d\ude04\n1\nyGhouar-GitHub reacted with laugh emoji\n\ud83c\udf89\n3\nyGhouar-GitHub, djbased, and Ai686Leo reacted with hooray emoji\n\u2764\ufe0f\n1\nNPMinhQuan1506 reacted with heart emoji\n\ud83d\ude80\n2\nyGhouar-GitHub and dkomarov reacted with rocket emoji\n\ud83d\udc40\n1\nyGhouar-GitHub reacted with eyes emoji\nAll reactions\n\ud83d\udc4d\n6 reactions\n\ud83d\ude04\n1 reaction\n\ud83c\udf89\n3 reactions\n\u2764\ufe0f\n1 reaction\n\ud83d\ude80\n2 reactions\n\ud83d\udc40\n1 reaction\n10 people reacted\n2.0.10741\n02 Feb 17:08\njitsi-jenkins\nstable/jitsi-meet_10741\n2c6ccd7\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nNo results found\nView all tags\n2.0.10741\nstable/jitsi-meet_10741\n\nTagged automatically by Jenkins\nAssets\n3\nLoading\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\n\ud83c\udf89\n7\ndjbased, NonlinearFruit, JanMarvin, btrd, felipepiorini, yGhouar-GitHub, and Pie-D reacted with hooray emoji\n\u2764\ufe0f\n3\nnabbisen, Danny3, and Pie-D reacted with heart emoji\nAll reactions\n\ud83c\udf89\n7 reactions\n\u2764\ufe0f\n3 reactions\n9 people reacted\n2.0.10710\n14 Jan 00:23\njitsi-jenkins\nstable/jitsi-meet_10710\n609eab5\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nNo results found\nView all tags\n2.0.10710\nstable/jitsi-meet_10710\n\nTagged automatically by Jenkins\nAssets\n3\nLoading\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\n\ud83d\udc4d\n4\nyGhouar-GitHub, dkomarov, felipepiorini, and bypasslibrary reacted with thumbs up emoji\n\ud83d\ude04\n1\nyGhouar-GitHub reacted with laugh emoji\n\ud83c\udf89\n3\nyGhouar-GitHub, catFurr, and djbased reacted with hooray emoji\n\u2764\ufe0f\n1\nDanny3 reacted with heart emoji\n\ud83d\ude80\n1\nyGhouar-GitHub reacted with rocket emoji\n\ud83d\udc40\n1\nyGhouar-GitHub reacted with eyes emoji\nAll reactions\n\ud83d\udc4d\n4 reactions\n\ud83d\ude04\n1 reaction\n\ud83c\udf89\n3 reactions\n\u2764\ufe0f\n1 reaction\n\ud83d\ude80\n1 reaction\n\ud83d\udc40\n1 reaction\n7 people reacted\n2.0.10655\n24 Nov 16:54\njitsi-jenkins\nstable/jitsi-meet_10655\n40c240c\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nNo results found\nView all tags\n2.0.10655\nstable/jitsi-meet_10655\n\nTagged automatically by Jenkins\nAssets\n3\nLoading\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\n\ud83d\udc4d\n8\nJonnyTech, yGhouar-GitHub, emrahcom, seanm, Danny3, rasos, Wahaze, and bypasslibrary reacted with thumbs up emoji\n\ud83d\ude04\n1\nyGhouar-GitHub reacted with laugh emoji\n\ud83c\udf89\n5\ndjbased, navferty, NonlinearFruit, catFurr, and yGhouar-GitHub reacted with hooray emoji\n\ud83d\ude80\n4\nfelipepiorini, navferty, lameritos, and yGhouar-GitHub reacted with rocket emoji\n\ud83d\udc40\n2\nyGhouar-GitHub and vasvladal reacted with eyes emoji\nAll reactions\n\ud83d\udc4d\n8 reactions\n\ud83d\ude04\n1 reaction\n\ud83c\udf89\n5 reactions\n\ud83d\ude80\n4 reactions\n\ud83d\udc40\n2 reactions\n15 people reacted\n2.0.10590\n20 Oct 14:57\njitsi-jenkins\nstable/jitsi-meet_10590\n9309d61\nThis commit was created on GitHub.com and signed with GitHub\u2019s\nverified signature\n.\nGPG key ID:\nB5690EEEBB952194\nVerified\nLearn about vigilant mode\n.\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nNo results found\nView all tags\n2.0.10590\nstable/jitsi-meet_10590\n\nTagged automatically by Jenkins\nAssets\n3\nLoading\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\n\ud83d\udc4d\n3\nAi686Leo, yGhouar-GitHub, and BlackoJack reacted with thumbs up emoji\n\ud83d\ude04\n2\nAi686Leo and yGhouar-GitHub reacted with laugh emoji\n\ud83c\udf89\n5\nAi686Leo, Ankitgkp, djbased, yGhouar-GitHub, and cliffamadeus reacted with hooray emoji\n\u2764\ufe0f\n2\nAi686Leo and nabbisen reacted with heart emoji\n\ud83d\ude80\n3\nAi686Leo, BreadGenie, and yGhouar-GitHub reacted with rocket emoji\n\ud83d\udc40\n3\nAi686Leo, yGhouar-GitHub, and manojv022 reacted with eyes emoji\nAll reactions\n\ud83d\udc4d\n3 reactions\n\ud83d\ude04\n2 reactions\n\ud83c\udf89\n5 reactions\n\u2764\ufe0f\n2 reactions\n\ud83d\ude80\n3 reactions\n\ud83d\udc40\n3 reactions\n9 people reacted\n2.0.10532\n29 Sep 14:56\njitsi-jenkins\nstable/jitsi-meet_10532\n566b3ba\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nNo results found\nView all tags\n2.0.10532\nstable/jitsi-meet_10532\n\nTagged automatically by Jenkins\nAssets\n3\nLoading\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\n\ud83d\udc4d\n3\nyGhouar-GitHub, obervinov, and AlexInn reacted with thumbs up emoji\n\ud83d\ude04\n1\nyGhouar-GitHub reacted with laugh emoji\n\ud83c\udf89\n4\ndjbased, amsnek, catFurr, and yGhouar-GitHub reacted with hooray emoji\n\ud83d\ude80\n1\nyGhouar-GitHub reacted with rocket emoji\n\ud83d\udc40\n1\nyGhouar-GitHub reacted with eyes emoji\nAll reactions\n\ud83d\udc4d\n3 reactions\n\ud83d\ude04\n1 reaction\n\ud83c\udf89\n4 reactions\n\ud83d\ude80\n1 reaction\n\ud83d\udc40\n1 reaction\n6 people reacted\n2.0.10431\n24 Jul 15:25\njitsi-jenkins\nstable/jitsi-meet_10431\nb050e5f\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nNo results found\nView all tags\n2.0.10431\nstable/jitsi-meet_10431\n\nTagged automatically by Jenkins\nAssets\n3\nLoading\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\n\ud83d\udc4d\n10\nJanMarvin, Ai686Leo, Iskandar1211, yGhouar-GitHub, dkomarov, chagai95, MohaX455, HeiSir2014, keirado, and MadTooth reacted with thumbs up emoji\n\ud83d\ude04\n1\nMadTooth reacted with laugh emoji\n\ud83c\udf89\n7\ndjbased, NonlinearFruit, Ai686Leo, yGhouar-GitHub, catFurr, chagai95, and MadTooth reacted with hooray emoji\n\u2764\ufe0f\n3\nnabbisen, Ai686Leo, and MadTooth reacted with heart emoji\n\ud83d\ude80\n1\nMadTooth reacted with rocket emoji\n\ud83d\udc40\n1\nMadTooth reacted with eyes emoji\nAll reactions\n\ud83d\udc4d\n10 reactions\n\ud83d\ude04\n1 reaction\n\ud83c\udf89\n7 reactions\n\u2764\ufe0f\n3 reactions\n\ud83d\ude80\n1 reaction\n\ud83d\udc40\n1 reaction\n14 people reacted\n2.0.10314\n05 Jun 16:45\njitsi-jenkins\nstable/jitsi-meet_10314\n293b6fa\nThis commit was created on GitHub.com and signed with GitHub\u2019s\nverified signature\n.\nGPG key ID:\nB5690EEEBB952194\nVerified\nLearn about vigilant mode\n.\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nNo results found\nView all tags\n2.0.10314\nstable/jitsi-meet_10314\n\nTagged automatically by Jenkins\nAssets\n3\nLoading\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\n\ud83d\udc4d\n9\nyGhouar-GitHub, djbased, imedia3, amsnek, felipepiorini, rchaconmolero, mmdai, ahmeedev, and dkomarov reacted with thumbs up emoji\n\ud83d\ude04\n3\nyGhouar-GitHub, djbased, and ahmeedev reacted with laugh emoji\n\ud83c\udf89\n6\nyGhouar-GitHub, djbased, NonlinearFruit, catFurr, ahmeedev, and francksefu reacted with hooray emoji\n\u2764\ufe0f\n2\nnabbisen and ahmeedev reacted with heart emoji\n\ud83d\ude80\n4\nyGhouar-GitHub, djbased, ahmeedev, and toddzi reacted with rocket emoji\n\ud83d\udc40\n3\nyGhouar-GitHub, djbased, and ahmeedev reacted with eyes emoji\nAll reactions\n\ud83d\udc4d\n9 reactions\n\ud83d\ude04\n3 reactions\n\ud83c\udf89\n6 reactions\n\u2764\ufe0f\n2 reactions\n\ud83d\ude80\n4 reactions\n\ud83d\udc40\n3 reactions\n14 people reacted\n2.0.10184\n10 Apr 21:32\njitsi-jenkins\nstable/jitsi-meet_10184\nb48772f\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nNo results found\nView all tags\n2.0.10184\nstable/jitsi-meet_10184\n\nTagged automatically by Jenkins\nAssets\n3\nLoading\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\n\ud83d\udc4d\n3\nyGhouar-GitHub, dkomarov, and imedia3 reacted with thumbs up emoji\n\ud83d\ude04\n1\nyGhouar-GitHub reacted with laugh emoji\n\ud83c\udf89\n1\nyGhouar-GitHub reacted with hooray emoji\n\u2764\ufe0f\n4\nnabbisen, IshmamAbir, rifkiaz, and aoshen01 reacted with heart emoji\n\ud83d\ude80\n1\nyGhouar-GitHub reacted with rocket emoji\n\ud83d\udc40\n1\nyGhouar-GitHub reacted with eyes emoji\nAll reactions\n\ud83d\udc4d\n3 reactions\n\ud83d\ude04\n1 reaction\n\ud83c\udf89\n1 reaction\n\u2764\ufe0f\n4 reactions\n\ud83d\ude80\n1 reaction\n\ud83d\udc40\n1 reaction\n7 people reacted\nPrevious\n1\n2\n3\n4\n5\n\u2026\n8\n9\nNext\nPrevious\nNext\nFooter\n\u00a9 2026 GitHub,\u00a0Inc.\nFooter navigation\nTerms\nPrivacy\nSecurity\nStatus\nCommunity\nDocs\nContact\nManage cookies\nDo not share my personal information\nYou can\u2019t perform that action at this time.",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://jitsi.github.io/handbook/",
+      "title": "Jitsi Meet | Jitsi Meet",
+      "text": "Jitsi Meet | Jitsi Meet\nSkip to main content\nJitsi Meet Handbook\nDocs\nSDKs\nReleases\nCommunity\nJaaS\nSearch\n\u2318\nK\nJitsi Meet\nState-of-the-art video conferencing you can self-host.\nGet started!\nWhat is Jitsi?\nHey there Fellow Jitster!\nJitsi Meet is a set of Open Source projects which empower users to deploy secure, scalable and easy to use video conferencing platforms with state-of-the-art video quality and features.\nOn This site you'll find documentation for all your Jitsi needs.\nGet started\nhere\n.\nBatteries included\nJitsi Meet supports all common browsers and also mobile devices.\nOur APIs allow developers to easily integrate Jitsi Meet into existing applications, whether those are web based or native mobile apps.\nYou can use our freely available instance at\nmeet.jit.si\nor self-host it yourself using our readily available Debian packages or comprehensive Docker setup.\nJaaS: Jitsi as a Service\nLooking for configuration flexibility without the complexity of self-hosting and scalability management?\nLook no further than JaaS. 8x8 Jitsi as a Service (JaaS) is an enterprise-ready video meeting platform that allows developers, organizations and businesses to easily build and deploy video solutions. With Jitsi as a Service we now give you all the power of Jitsi running on our global platform so you can focus on building secure and branded video experiences.\nCheck JaaS out\nhere\n.\nDocs\nIntroduction\nUser Guide\nDeveloper Guide\nSelf-Hosting Guide\nCommunity\nForum\nTwitter\nMore\nBlog\nGitHub\nJaaS: Jitsi as a Service\nCopyright \u00a9 8x8, Inc.",
+      "source": "playwright"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/jitsi-meet/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Jitsi Meet: An open source alternative to Zoom",
+          "url": "https://meet.jit.si",
+          "points": 897,
+          "num_comments": 285,
+          "created_at": "2020-03-23T23:22:16Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22669968"
+        },
+        {
+          "title": "Jitsi Meet features update",
+          "url": "https://jitsi.org/news/features-update-april-2020/",
+          "points": 628,
+          "num_comments": 196,
+          "created_at": "2020-04-08T15:04:16Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22813565"
+        },
+        {
+          "title": "Proof of concept: end-to-end encryption in Jitsi Meet",
+          "url": "https://jitsi.org/news/e2ee/",
+          "points": 617,
+          "num_comments": 155,
+          "created_at": "2020-04-13T12:55:23Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22855407"
+        },
+        {
+          "title": "Jitsi Meet \u2013 Improving Scale and Media Quality with Cascading SFUs (2018)",
+          "url": "https://webrtchacks.com/sfu-cascading/",
+          "points": 333,
+          "num_comments": 116,
+          "created_at": "2020-04-02T12:09:20Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22758131"
+        },
+        {
+          "title": "Enhanced noise suppression in Jitsi Meet",
+          "url": "https://jitsi.org/blog/enhanced-noise-suppression-in-jitsi-meet/",
+          "points": 322,
+          "num_comments": 85,
+          "created_at": "2022-10-01T11:28:00Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33045763"
+        },
+        {
+          "title": "Jitsi Meet: open-source video conferencing",
+          "url": "https://meet.jit.si/",
+          "points": 280,
+          "num_comments": 95,
+          "created_at": "2020-03-03T19:17:29Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22477785"
+        },
+        {
+          "title": "Jitsi Meet Electron 2.0",
+          "url": "https://github.com/jitsi/jitsi-meet-electron/releases",
+          "points": 213,
+          "num_comments": 163,
+          "created_at": "2020-04-10T07:37:27Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22830846"
+        },
+        {
+          "title": "Calla \u2013 spatial video conferencing software based on Jitsi Meet",
+          "url": "https://github.com/capnmidnight/Calla",
+          "points": 200,
+          "num_comments": 85,
+          "created_at": "2020-10-07T18:07:18Z",
+          "hn_url": "https://news.ycombinator.com/item?id=24710948"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": "https://github.com/jitsi/jitsi-meet/releases",
+    "docs": "https://jitsi.github.io/handbook/",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/jitsi-meet/reviews"
+  },
+  "analysis": {
+    "name": "Jitsi Meet",
+    "url": "https://jitsi.org",
+    "tagline": "More secure, more flexible, and completely free video conferencing",
+    "value_proposition": "Open-source, self-hostable video conferencing that requires no account, supports E2EE, and runs on web and mobile.",
+    "target_segment": "dev / SMB / enterprise / consumer",
+    "ideal_customer": "Privacy-conscious organizations and developers who want self-hosted or open-source video conferencing without vendor lock-in.",
+    "features": [
+      {
+        "name": "video conferencing",
+        "description": "Real-time multi-party video meetings via browser or native apps.",
+        "evidence_source": "landing",
+        "evidence_quote": "More secure, more flexible, and completely free video conferencing",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "open source",
+        "description": "Fully open-source codebase available on GitHub (29k+ stars).",
+        "evidence_source": "docs",
+        "evidence_quote": "Jitsi Meet is a set of Open Source projects which empower users to deploy secure, scalable and easy to use video conferencing",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "self-hosting",
+        "description": "Deploy on your own infrastructure using Debian packages or Docker.",
+        "evidence_source": "docs",
+        "evidence_quote": "self-host it yourself using our readily available Debian packages or comprehensive Docker setup",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "no account required",
+        "description": "Users can join and create meetings without registering an account.",
+        "evidence_source": "landing",
+        "evidence_quote": "It's encrypted, open source, and you don't need an account.",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "end-to-end encryption",
+        "description": "E2EE support for meeting content; proof-of-concept demonstrated publicly.",
+        "evidence_source": "hn",
+        "evidence_quote": "Proof of concept: end-to-end encryption in Jitsi Meet",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "web browser support",
+        "description": "Works in all common web browsers without plugins or downloads.",
+        "evidence_source": "docs",
+        "evidence_quote": "Jitsi Meet supports all common browsers and also mobile devices.",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile app (ios)",
+        "description": "Native iOS app available on the Apple App Store.",
+        "evidence_source": "landing",
+        "evidence_quote": "Download Jitsi today. App Store",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile app (android)",
+        "description": "Native Android app available on Google Play and F-Droid.",
+        "evidence_source": "landing",
+        "evidence_quote": "Download Jitsi today. Google Play F-Droid",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "f-droid distribution",
+        "description": "Android app distributed via F-Droid for fully open-source supply chain.",
+        "evidence_source": "landing",
+        "evidence_quote": "F-Droid",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "electron desktop app",
+        "description": "Native desktop application built on Electron for Windows/Mac/Linux.",
+        "evidence_source": "hn",
+        "evidence_quote": "Jitsi Meet Electron 2.0",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "developer api / sdk",
+        "description": "APIs and SDKs for embedding Jitsi Meet into web and native mobile apps.",
+        "evidence_source": "docs",
+        "evidence_quote": "Our APIs allow developers to easily integrate Jitsi Meet into existing applications, whether those are web based or native mobile apps.",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "sip integration",
+        "description": "Join meetings from SIP hardware phones, softphones (e.g. Bria), or third-party video systems.",
+        "evidence_source": "landing",
+        "evidence_quote": "SIP integration enables participants to join meetings from various devices, including hardware phones or softphones such as Bria",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "noise suppression",
+        "description": "Enhanced background noise suppression during meetings.",
+        "evidence_source": "hn",
+        "evidence_quote": "Enhanced noise suppression in Jitsi Meet",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "cascading sfus",
+        "description": "Scalable media routing via cascading Selective Forwarding Units for large meetings.",
+        "evidence_source": "hn",
+        "evidence_quote": "Improving Scale and Media Quality with Cascading SFUs",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "receiver video constraints",
+        "description": "Receivers can specify which video streams to receive and at what resolutions.",
+        "evidence_source": "landing",
+        "evidence_quote": "Jitsi Meet has had support for ReceiverConstraints for video for a long time.",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "receiver audio subscriptions",
+        "description": "Receivers can subscribe selectively to audio streams, introduced Oct 2025.",
+        "evidence_source": "landing",
+        "evidence_quote": "Introducing Receiver Audio Subscriptions \u2014 October 1, 2025",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "free public hosted instance",
+        "description": "Freely available hosted instance at meet.jit.si requiring no setup.",
+        "evidence_source": "docs",
+        "evidence_quote": "You can use our freely available instance at meet.jit.si",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "docker deployment",
+        "description": "Comprehensive Docker setup for containerized self-hosted deployments.",
+        "evidence_source": "docs",
+        "evidence_quote": "self-host it yourself using our readily available Debian packages or comprehensive Docker setup",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "debian package deployment",
+        "description": "Readily available Debian/Ubuntu packages for self-hosted installation.",
+        "evidence_source": "docs",
+        "evidence_quote": "readily available Debian packages",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "jaas (jitsi as a service)",
+        "description": "Managed, globally hosted Jitsi platform by 8x8 for organizations that don't want to self-host.",
+        "evidence_source": "docs",
+        "evidence_quote": "8x8 Jitsi as a Service (JaaS) is an enterprise-ready video meeting platform",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "branded video experiences",
+        "description": "White-label and customizable branding for video meetings via JaaS.",
+        "evidence_source": "docs",
+        "evidence_quote": "focus on building secure and branded video experiences",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "spatial video conferencing",
+        "description": "Spatial/positional audio video conferencing via Calla, a project built on Jitsi Meet.",
+        "evidence_source": "hn",
+        "evidence_quote": "Calla \u2013 spatial video conferencing software based on Jitsi Meet",
+        "tier": "free",
+        "confidence": "low"
+      },
+      {
+        "name": "privacy-first design",
+        "description": "No telemetry or account requirement; 100% privacy-friendly per self-hosting adopters.",
+        "evidence_source": "landing",
+        "evidence_quote": "It is 100% privacy friendly, 100% open source and runs on our own servers.",
+        "tier": "free",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "SIP (hardware phones, softphones)",
+      "Bria (SIP softphone)",
+      "Zoom (via SIP gateway)",
+      "Google Summer of Code",
+      "8x8 JaaS platform",
+      "F-Droid",
+      "Apple App Store",
+      "Google Play Store"
+    ],
+    "differentiators": [
+      "Fully open source with self-hosting option",
+      "No account required to start or join meetings",
+      "End-to-end encryption support",
+      "Available on F-Droid for fully open-source Android distribution",
+      "Cascading SFU architecture for scalable media quality",
+      "Free public hosted instance at meet.jit.si"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-05",
+        "what": "Release 2.0.10978 (stable)",
+        "source": "jitsi-meet_1.0.9222_CHANGELOG.txt \u2014 Tagged automatically by Jenkins"
+      },
+      {
+        "date": "2026-03",
+        "what": "Release 2.0.10888 (stable)",
+        "source": "stable/jitsi-meet_10888 \u2014 Tagged automatically by Jenkins"
+      },
+      {
+        "date": "2026-02",
+        "what": "Release 2.0.10741 (stable)",
+        "source": "stable/jitsi-meet_10741 \u2014 Tagged automatically by Jenkins"
+      },
+      {
+        "date": "2026-01",
+        "what": "Release 2.0.10710 (stable)",
+        "source": "stable/jitsi-meet_10710 \u2014 Tagged automatically by Jenkins"
+      },
+      {
+        "date": "2025-10",
+        "what": "Receiver Audio Subscriptions \u2014 selective audio stream subscription support",
+        "source": "Introducing Receiver Audio Subscriptions \u2014 October 1, 2025 (jitsi.org blog)"
+      },
+      {
+        "date": "2025-02",
+        "what": "Accepted into Google Summer of Code 2025",
+        "source": "GSoC 2025, let's do this! \u2014 February 28, 2025 (jitsi.org blog)"
+      },
+      {
+        "date": "2024-05",
+        "what": "SIP connectivity blog \u2014 connecting hardware phones, softphones, and video systems",
+        "source": "Connecting anything to everything via SIP \u2014 May 21, 2024 (jitsi.org blog)"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Encrypted, open source, and no account required (Tor Project: 'try Jitsi Meet. It's encrypted, open source, and you don't need an account.')",
+        "Privacy-friendly and self-hostable ('100% privacy friendly, 100% open source and runs on our own servers' \u2014 LangSciPress)",
+        "Viable open-source alternative to Zoom (HN: 897\u2191 'Jitsi Meet: An open source alternative to Zoom')",
+        "Active feature development appreciated by community (HN: 628\u2191 'Jitsi Meet features update')"
+      ],
+      "complaints": [],
+      "sources": [
+        "hn",
+        "landing"
+      ]
+    },
+    "pricing": {
+      "model": "open-source",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "No stated participant or time limits on meet.jit.si; self-hosting is unlimited by design"
+      },
+      "tiers": [
+        {
+          "name": "Self-Hosted / meet.jit.si",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$0",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Full open-source Jitsi Meet; free public instance at meet.jit.si or self-host"
+        },
+        {
+          "name": "JaaS (Jitsi as a Service)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Managed enterprise-grade hosted Jitsi by 8x8; global platform, branded video experiences"
+        }
+      ],
+      "enterprise": "null",
+      "notes": "JaaS pricing not detailed in available sources; likely usage-based or contact-sales. Open-source self-hosting has no cost beyond infrastructure. meet.jit.si free instance usage limits not published in sources."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

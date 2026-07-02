@@ -1,3 +1,8 @@
+---
+name: eleven-labs-skill
+description: Generate text-to-speech, voiceovers, voice clones, sound effects, and dubbing through ElevenLabs. Use when the user asks to narrate a video, generate a voiceover for a product demo, clone a voice for a Fake-Matt audio asset, create SFX for a sizzle reel, or convert script text into spoken audio. Pairs with video-production-planner / film-maker-skill / product-launch-video.
+---
+
 # Eleven Labs Skill
 
 AI-powered voice generation, voice cloning, and sound effects using Eleven Labs.

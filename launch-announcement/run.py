@@ -59,7 +59,7 @@ PROMPTS_DIR = SKILL_ROOT / "prompts"
 CORPUS_FILE = SKILL_ROOT / "corpus" / "launch-announcement-corpus.md"
 
 VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
+    "/Users/mattheweisner/Obsidian/Zerg/MattZerg"
 )
 GENRE_GUIDE = VAULT_ROOT / "_style" / "launch_announcement_style.md"
 if not GENRE_GUIDE.exists():
@@ -280,9 +280,27 @@ def maybe_pdf_and_open(files: list[Path], no_pdf: bool) -> None:
     if no_pdf:
         return
     if not PDF_SCRIPT.exists():
+        # M9 render-gate: this was silently degrading to "open the markdown, no
+        # PDF" whenever the ephemeral /tmp render script was absent (it usually
+        # is). Make the no-PDF outcome visible instead of invisible.
+        print(f"  RENDER-GATE: no PDF produced — render script absent ({PDF_SCRIPT}); "
+              f"opening markdown only", file=sys.stderr)
         subprocess.run(["open"] + [str(f) for f in files])
         return
-    subprocess.run(["python3", str(PDF_SCRIPT)] + [str(f) for f in files])
+    r = subprocess.run(["python3", str(PDF_SCRIPT)] + [str(f) for f in files])
+    # M9 render-gate: confirm the render actually emitted PDFs; warn loud if not.
+    try:
+        sys_path_zerg = "/Users/mattheweisner/.config/zerg"
+        if sys_path_zerg not in sys.path:
+            sys.path.insert(0, sys_path_zerg)
+        from render_gate import verify_pdf
+        missing = [str(f.with_suffix(".pdf")) for f in files
+                   if not verify_pdf(f.with_suffix(".pdf"))[0]]
+        if r.returncode != 0 or missing:
+            print(f"  RENDER-GATE FAIL: md_to_pdf rc={r.returncode}; "
+                  f"missing/broken PDFs: {missing}", file=sys.stderr)
+    except Exception as e:
+        print(f"  (render-gate skipped: {e})", file=sys.stderr)
 
 
 # ---------- CLI ----------
@@ -345,7 +363,7 @@ def cmd_scaffold(args) -> int:
         canonical_path = Path(args.out)
         out_dir = canonical_path.parent
     elif getattr(args, "product", None):
-        canonical_path = VAULT_ROOT / "Projects" / "Zstack" / "Growth" / "launches" / args.product / "announcement.md"
+        canonical_path = VAULT_ROOT / "Projects" / "Zerg-Production" / "Growth" / "launches" / args.product / "announcement.md"
         out_dir = canonical_path.parent
     else:
         out_dir = Path(args.out_dir)

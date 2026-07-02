@@ -1,23 +1,34 @@
 ---
 name: content-distribution
-description: Enforces Zerg's 14-surface content distribution playbook — given a published blog post file, generates platform variants (Twitter thread, LinkedIn long-form, Idan repost, Reddit, HN submission text, newsletter inclusion drafts, outbound snippet, sales-deck add, internal Slack post, repurpose-to-video brief, webinar topic candidate) and creates a Zergboard "Distribution checklist" card with each draft attached. The card refuses to close until every surface is checked. Hard rule: no blog publishes without this card filed. UTM-instruments every link via utm-attribution. Routes share-card variants through blog-imagery for X/LI dimensions. Pairs with launch-announcement (genre layer) + fakematt-copyedit (sentence layer) — runs AFTER both have passed. USE PROACTIVELY whenever Matt publishes a blog post, ships a launch announcement, or mentions distribution on a piece of content.
+description: Generate and track Zerg content distribution CHECKLISTS across launch and social surfaces. Sub-tool under zpub — for "content status" / pipeline-state questions use `zpub all` (hard rule 13); for the actual platform drafts use the social-distribution agent.
 allowed-tools: Bash, Read, Write
 ---
 
-# Content Distribution Skill (v0 stub — Phase 2 build)
 
-Plan: `~/.claude/plans/i-am-planning-growth-splendid-bee.md`. The hard rule: every blog publish triggers a 14-surface checklist that won't close until done.
+# Content Distribution Skill
 
-## Status
+Plan: `~/.claude/plans/i-am-planning-growth-splendid-bee.md`. The hard rule: every blog publish triggers a **17-surface** checklist that won't close until done (was 14; grew to 17 on 2026-05-27 after Gigacontext post-mortem — see `MattZerg/_style/launch_distribution_playbook.md`).
 
-**v0 stub — not yet implemented.** Phase 2 Day 31–60 build window.
+## Verbs
 
-## Invocation
+### `generate <slug>` — render the 17-surface distribution.md
 
 ```bash
-python3 ~/.claude/skills/content-distribution/run.py distribute \\
-  --post-file ~/zerg/web/src/public/content/blog/<slug>.md \\
-  [--campaign-slug <utm-campaign>] [--no-card]
+python3 ~/.claude/skills/content-distribution/run.py generate <slug> [--cards]
+```
+
+Reads `Growth/launches/<slug>/announcement.md` + `Growth/launches/<slug>.md` + `Growth/measurement/<slug>.yaml` (utm_allowlist). Writes `Growth/launches/<slug>/distribution.md` with per-surface copy + UTM-tagged links. With `--cards`, also files a Zergboard card per surface. Refuses to write if any surface's UTM tuple violates `utm_allowlist` (exit 3).
+
+### `cards <slug>` — create Zergboard cards for an existing distribution
+
+```bash
+python3 ~/.claude/skills/content-distribution/run.py cards <slug>
+```
+
+### `list` — print the 17 canonical surfaces + example UTM
+
+```bash
+python3 ~/.claude/skills/content-distribution/run.py list
 ```
 
 ## What it produces
@@ -38,13 +49,31 @@ For the input blog file:
 12. **Repurpose-to-video brief** (if signal strong, hand to `product-video-skill`) → `<slug>.video-brief.md`
 13. **Webinar topic candidate** (if 800+ engagement, schedule deep-dive) → `<slug>.webinar.md`
 14. **Hero/share-card images** (delegated to `blog-imagery` for X 1200x675 + LI 1200x1200 if not already done) → confirms imagery exists
+15. **Quote engineering (PRE-LAUNCH)** — 1–3 quotes from ≥5k-follower people locked into the post or share assets, with reposter DMs pre-drafted. Hard rule from memory `feedback_x_audience_too_small_engineer_quotes.md`. → `<slug>.quote-engineering.md`
+16. **Waitlist-share CTA** — if the product has a waitlist or free-credit tier, the share-to-move-up line is present in the post and all variants. Hard rule from memory `feedback_waitlist_share_to_move_up_mechanic.md`. → `<slug>.waitlist-share-cta.md`
+17. **Quote-post wave plan (Day-2)** — named: who quote-posts on Day-2 if Day-1 engagement clears threshold (LinkedIn ≥10 reactions in 4h), and what one sentence of POV each adds. NOT a plain repost — quote-posts compound. → `<slug>.quote-post-wave.md`
 
 ## Zergboard checklist card
 
 Files a Zergboard card on the Marketing or Website board with:
 - Title: `[Distribution] <post-title>`
-- Body: 14-item checklist with link to each draft file
+- Body: 17-item checklist with link to each draft file
 - Refuses to close until every checkbox is marked
+
+## Post-launch cadence (NEW 2026-05-27)
+
+Beyond surface generation, this skill is responsible for scheduling the post-launch operating cadence per `MattZerg/_style/launch_distribution_playbook.md`:
+
+| When | Action |
+|---|---|
+| T+0 publish | Fire DMs to quoted people; internal Slack amp; LinkedIn first-comment + Matt repost + Idan repost |
+| T+0 +4h | Check Day-1 engagement; if LinkedIn ≥10 reactions → trigger Day-2 quote-post wave |
+| T+1 | Pull Zerglytics + X + LI metrics into a status update (Matt-facing, not auto-Slacked) |
+| T+3 | 72h analytics pull; HN / Reddit / niche-community drop decision |
+| T+7 | 7-day analytics pull; post-mortem note if flagship |
+| T+30 | If top-5 referral driver → evergreen variants (video, newsletter inclusion, sales-deck slide) |
+
+The cadence runs **whether or not Matt feels ready to read the numbers** — same forcing-function logic as `growth-dashboard` skill.
 
 The skill itself doesn't enforce closure (that's Zergboard's contract) but the dashboard line #8 reads card completion to track distribution coverage.
 

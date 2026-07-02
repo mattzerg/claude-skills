@@ -4,6 +4,7 @@ description: Generate presentations, documents, webpages, and social content usi
 allowed-tools: Bash, Read
 ---
 
+
 # Gamma Skill - Presentation Generation (v2.0)
 
 Generate presentations, documents, webpages, and social content using Gamma's API v1.0.

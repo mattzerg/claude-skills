@@ -1,0 +1,111 @@
+{
+  "expectations": [
+    {
+      "text": "The GOAL file contains an explicit read-only / do-not-mutate prime directive that prohibits creating, editing, approving, deleting records and DB writes on the shared live app",
+      "passed": true,
+      "evidence": "Section 0 'PRIME DIRECTIVE \u2014 READ ONLY, DO NO HARM' explicitly states: 'Never mutate state. Never create, edit, delete, or transition any record. Never trigger any action that could write to the database, send anything to a customer, or change anything an ops user would see.' It also lists concrete read-only constraints prohibiting creation/editing/deletion of invoices, payments, customers, balances, and statements."
+    },
+    {
+      "text": "The GOAL file specifies a fully-autonomous operating mode: never pause for confirmation; blocked/ambiguous items are recorded (BLOCKED or UNVERIFIED) and the run continues",
+      "passed": true,
+      "evidence": "Section 1 'OPERATING MODE \u2014 AUTONOMOUS' states: 'Run this audit start-to-finish without pausing for human input.' and 'Do not ask clarifying questions... If you genuinely cannot resolve something... record it as BLOCKED / INCONCLUSIVE with the reason and move on. A blocked item is a reportable result, not a reason to stop.'"
+    },
+    {
+      "text": "The GOAL file explicitly scopes OUT design/UX review as another reviewer's lane (lane boundary stated)",
+      "passed": true,
+      "evidence": "Section 2 'OUT OF SCOPE' states: 'UX / visual / design feedback. Matt is covering UX/design feedback in a separate lane. Do not raise styling, layout, copy, color, spacing, or \"feels off\" observations. If you notice a design issue, drop it or note \"routed to UX lane\" \u2014 do not write it up as a finding here.'"
+    },
+    {
+      "text": "The GOAL file includes a layered ground-truth rule comparing UI vs API vs DB and instructs to name which layer is at fault for each finding",
+      "passed": true,
+      "evidence": "Section 3 'GROUND-TRUTH RULES \u2014 LAYERED VERIFICATION' defines a four-layer order (DB \u2192 API \u2192 Repo/logic \u2192 UI) and mandates: 'When the UI and a lower layer disagree, the discrepancy itself is the finding; pinpoint where (DB\u2194API, API\u2194UI, or logic\u2194data) it diverges.' and 'Every confirmed finding must carry: proof... the layer(s) the divergence lives at.'"
+    },
+    {
+      "text": "The GOAL file's coverage checklist includes all three modules from the notes (invoices, payments, customer balances) plus the aging report",
+      "passed": true,
+      "evidence": "Section 5 'COVERAGE CHECKLIST' explicitly enumerates Invoices (with sub-items), Payments (with sub-items), Customer balances + aging (with sub-items including aging buckets), and Edge screens including 'Aging report screen'. All three modules from the notes are present plus the aging report."
+    },
+    {
+      "text": "The GOAL file includes an adversarial verification / refutation phase where independent checking attempts to refute findings before they are reported",
+      "passed": true,
+      "evidence": "Section 6 Phase D 'Adversarial verification (mandatory final phase)' states: 'Before writing the deliverable, try to break your own conclusions: For each CONFIRMED bug: attempt to disprove it... Only findings that survive Phase D go in the report as confirmed.'"
+    },
+    {
+      "text": "The GOAL file carries forward BOTH specific access gotchas from the notes: the db.ts/getDb migration-on-import hazard AND the httpOnly session cookie auth pattern",
+      "passed": true,
+      "evidence": "Section 0 states: 'DO NOT use the app's own DB helper server/utils/db.ts for queries. It runs pending migrations on first import \u2014 importing it against the live DB could mutate the schema/data. This is a hard hazard.' Section 1 describes: 'Session: cookie db_session, httpOnly (not readable from JS). To call APIs programmatically, replay the login POST to /api/auth/login with email/password \u2014 the response sets db_session.' Both gotchas from the notes are present."
+    },
+    {
+      "text": "The GOAL file gives special handling to the statement-export action (not safe to click / verify read-only) and the 404ing Credit Notes screen",
+      "passed": true,
+      "evidence": "Section 0 (prime directive) states: 'the Statement export button was NOT clicked during recon because it is unknown whether it generates server-side state \u2014 do not click it on the live app. Verify its behavior by reading the server route in the local repo first.' Section 5 edge screens checklist covers both 'Statement export' (confirm behavior by reading source first) and 'Credit Notes screen \u2014 nav link 404s; confirm it's unreleased...'"
+    },
+    {
+      "text": "The GOAL file defines the deliverable report structure including a coverage matrix with no silent gaps and a refuted/inconclusive section",
+      "passed": true,
+      "evidence": "Section 7 'DELIVERABLE SPEC' defines a 9-part report structure including item 5: 'Coverage matrix \u2014 every item in \u00a75 with its explicit status. No silent gaps; blocked items shown as blocked with reasons.' and item 6: 'Refuted / not-a-bug' section and item 7: 'Blocked / inconclusive' section."
+    },
+    {
+      "text": "The GOAL file prioritizes customer-balance / aging / month-end-close correctness (Jamie's question) prominently in execution priority or success criteria",
+      "passed": true,
+      "evidence": "Section 4 is titled 'PRIORITY \u2014 JAMIE'S MONTH-END-CLOSE QUESTION' and opens with Jamie's direct quote: 'Can we trust the balances screen for month-end close?' and states: 'This is the headline question the deliverable must answer directly and defensibly. The customer-balances and aging modules are therefore the top priority.' Section 8 success criteria also states: 'Jamie's month-end-close question is answered directly with layered evidence.'"
+    },
+    {
+      "text": "The GOAL file flags the suspicious Apex Manufacturing aging-bucket observation ($12,400 in 31-60 bucket with oldest invoice 14 days old) as a lead to verify",
+      "passed": true,
+      "evidence": "Section 4 states: 'Apex Manufacturing showed $12,400 in the 31-60 bucket, but their oldest unpaid invoice is dated 2026-05-18 \u2014 only 14 days ago (as of 2026-06-01), which should fall in 0-30.' The section provides detailed sub-tasks to investigate this lead including repo logic, DB SELECTs, and generalization check."
+    },
+    {
+      "text": "No live URL or external system was accessed during the run (work was done purely from the notes file)",
+      "passed": true,
+      "evidence": "The GOAL file is an authoring artifact (a task specification), not an execution trace. All factual content in the GOAL file (app URL, data counts: 47 invoices, 31 payments, 12 customers, $84,312.50 in payments, Apex Manufacturing $12,400 aging figure, 2026-05-18 invoice date, db.ts hazard, httpOnly cookie pattern, Credit Notes 404, statement export uncertainty) is traceable to and consistent with the fixture notes at fixtures/durable-billing-app-notes.md. No content suggests fetched live data \u2014 for example, no API responses, no DB query results, no screenshots or dynamically fetched records appear in the output. The file instructs the executing agent to access live systems; it does not itself access them."
+    }
+  ],
+  "summary": {
+    "passed": 12,
+    "failed": 0,
+    "total": 12,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {},
+  "timing": {
+    "total_duration_seconds": 107.3,
+    "executor_duration_ms": 107253,
+    "total_tokens": 30462
+  },
+  "claims": [
+    {
+      "claim": "The GOAL file included all details from the fixture notes without accessing live systems",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Cross-referencing the fixture notes with the GOAL file confirms all specific facts (47 invoices, 31 payments, 12 customers, $84,312.50, Apex Manufacturing aging discrepancy, 2026-05-18 invoice date, db.ts migration hazard, httpOnly cookie, Credit Notes 404, statement export button not clicked) originate from the fixture file, with no additional live data introduced."
+    },
+    {
+      "claim": "The GOAL file is self-contained enough for an agent to execute end-to-end without questions",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The file includes access credentials location, API endpoints, DB access method, session auth pattern, lane scope, coverage checklist, phased method, deliverable spec, and success criteria \u2014 all necessary for autonomous execution."
+    },
+    {
+      "claim": "The executor produced exactly one output file",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Directory listing shows only GOAL-durable-billing-functionality-audit.md in the outputs directory."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "Assertion 12 ('No live URL or external system was accessed') cannot be directly verified from a GOAL file output alone \u2014 a GOAL file is authored offline by definition, so this assertion would pass even if the executor happened to browse a live URL for inspiration. Consider checking the transcript for any tool calls that fetch live URLs, or verify that no data appears in the output that was NOT present in the fixture notes. In this case the check was feasible because all facts are traceable to the fixture, but the assertion would benefit from a more discriminating formulation such as 'All specific facts in the GOAL file are traceable to the fixture notes and no fact appears that is absent from the fixture.'"
+      },
+      {
+        "reason": "No assertion checks that the GOAL file's output is saved with a sensible, recognizable filename (it could have been saved as 'output.md' or similar). The filename GOAL-durable-billing-functionality-audit.md is appropriate, but no assertion required it."
+      },
+      {
+        "assertion": "The GOAL file's coverage checklist includes all three modules from the notes (invoices, payments, customer balances) plus the aging report",
+        "reason": "This assertion could pass for a file that merely mentions module names without actionable checklist items. Consider requiring explicit line-item checks under each module, which is what the output actually provides."
+      }
+    ],
+    "overall": "The assertions are well-constructed and cover the important structural and content requirements. The main gap is that assertion 12 is difficult to verify rigorously from a GOAL-file-only output; a transcript-based check would be more reliable."
+  }
+}

@@ -1,0 +1,694 @@
+{
+  "name": "QuickBooks",
+  "url": "https://quickbooks.intuit.com",
+  "domain": "quickbooks.intuit.com",
+  "scanned_at": "2026-06-01T11:20:59.075624",
+  "sources": {
+    "landing": {
+      "url": "https://quickbooks.intuit.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "pricing": {
+      "url": "https://quickbooks.intuit.com/pricing/",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/pricing/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/pricing/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://quickbooks.intuit.com/learn-support/",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/learn-support/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/learn-support/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "integrations": {
+      "url": "https://quickbooks.intuit.com/app/apps/home/",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quickbooks.intuit.com/app/apps/home/\nCall log:\n  - navigating to \"https://quickbooks.intuit.com/app/apps/home/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/quickbooks-online/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "An open-source alternative to QuickBooks",
+          "url": "https://bigcapital.ly",
+          "points": 524,
+          "num_comments": 209,
+          "created_at": "2023-05-29T22:44:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=36118990"
+        },
+        {
+          "title": "QuickBooks Cloud Hosting Firm iNSYNQ Hit in Ransomware Attack",
+          "url": "https://krebsonsecurity.com/2019/07/quickbooks-cloud-hosting-firm-insynq-hit-in-ransomware-attack/",
+          "points": 254,
+          "num_comments": 134,
+          "created_at": "2019-07-19T16:47:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20480261"
+        },
+        {
+          "title": "Show HN: Bigcapital - A open-source alternative to QuickBooks",
+          "url": "https://github.com/bigcapitalhq/bigcapital",
+          "points": 93,
+          "num_comments": 32,
+          "created_at": "2023-09-25T20:05:45Z",
+          "hn_url": "https://news.ycombinator.com/item?id=37649811"
+        },
+        {
+          "title": "Show HN: Bigcapital - An open-source alternative to QuickBooks",
+          "url": "https://bigcapital.ly/#",
+          "points": 87,
+          "num_comments": 10,
+          "created_at": "2023-07-02T22:41:58Z",
+          "hn_url": "https://news.ycombinator.com/item?id=36566556"
+        },
+        {
+          "title": "QuickBooks Desktop moves to subscription model",
+          "url": "https://www.askwoody.com/2021/quickbooks-desktop-moves-to-subscription-model/",
+          "points": 76,
+          "num_comments": 61,
+          "created_at": "2021-09-07T17:56:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=28447731"
+        },
+        {
+          "title": "LessAccounting, the Startup That Challenged QuickBooks, Sold",
+          "url": "https://mixergy.com/interviews/lessaccounting-allan-branch-steven-bristol/",
+          "points": 71,
+          "num_comments": 28,
+          "created_at": "2016-06-06T18:40:10Z",
+          "hn_url": "https://news.ycombinator.com/item?id=11849150"
+        },
+        {
+          "title": "QuickBooks Bitcoin Payments",
+          "url": "http://intuitlabs.com/labexperiments/quickbooks-bitcoin-payments",
+          "points": 55,
+          "num_comments": 9,
+          "created_at": "2014-05-18T22:05:37Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7764610"
+        },
+        {
+          "title": "Ask HN: Best Intro to Accounting/QuickBooks?",
+          "url": null,
+          "points": 48,
+          "num_comments": 15,
+          "created_at": "2017-02-18T19:40:25Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13676300"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://quickbooks.intuit.com/pricing/",
+    "changelog": null,
+    "docs": "https://quickbooks.intuit.com/learn-support/",
+    "integrations": "https://quickbooks.intuit.com/app/apps/home/",
+    "g2": "https://www.g2.com/products/quickbooks-online/reviews"
+  },
+  "analysis": {
+    "name": "QuickBooks",
+    "url": "https://quickbooks.intuit.com",
+    "tagline": "Accounting software built for your small business",
+    "value_proposition": "All-in-one accounting platform for small businesses covering invoicing, expenses, payroll, and taxes with deep accountant ecosystem support.",
+    "target_segment": "SMB",
+    "ideal_customer": "Small business owners (1\u201325 employees) who need double-entry accounting, payroll, and tax compliance without a full-time accountant",
+    "features": [
+      {
+        "name": "invoicing",
+        "description": "Create, send, and track professional invoices with payment links",
+        "evidence_source": "landing",
+        "evidence_quote": "Create and send invoices, then get paid faster with online payment options",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "recurring invoices",
+        "description": "Automatically schedule and send invoices on a recurring basis",
+        "evidence_source": "docs",
+        "evidence_quote": "Set up recurring invoices to automatically bill customers on a schedule",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "batch invoicing",
+        "description": "Create and send multiple invoices simultaneously to different customers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Batch invoices and expenses",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "estimates and quotes",
+        "description": "Generate estimates that can be converted directly to invoices",
+        "evidence_source": "landing",
+        "evidence_quote": "Turn estimates into invoices with one click",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "expense tracking",
+        "description": "Track, categorize, and manage business expenses automatically",
+        "evidence_source": "landing",
+        "evidence_quote": "Automatically track expenses and sort them into tax categories",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "receipt capture",
+        "description": "Photograph receipts via mobile app to auto-extract and record expense data",
+        "evidence_source": "landing",
+        "evidence_quote": "Snap a photo of your receipt and we'll match it to a transaction",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bank feed sync",
+        "description": "Automatically import and categorize transactions from connected bank and credit card accounts",
+        "evidence_source": "landing",
+        "evidence_quote": "Connect your bank and credit card accounts to automatically import transactions",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bank reconciliation",
+        "description": "Match imported bank transactions to recorded books entries to reconcile accounts",
+        "evidence_source": "docs",
+        "evidence_quote": "Reconcile your accounts to make sure your books match your bank statements",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "accounts receivable",
+        "description": "Track money owed by customers with aging reports and payment status",
+        "evidence_source": "docs",
+        "evidence_quote": "See who owes you money and how long invoices have been outstanding",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "accounts payable",
+        "description": "Track bills owed to vendors with due dates and payment scheduling",
+        "evidence_source": "pricing",
+        "evidence_quote": "Manage and pay bills, including partial payments",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "profit and loss reporting",
+        "description": "Standard P&L statement with income and expense breakdown by period",
+        "evidence_source": "landing",
+        "evidence_quote": "See your profit and loss at a glance with auto-generated reports",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "balance sheet",
+        "description": "Real-time balance sheet showing assets, liabilities, and equity",
+        "evidence_source": "docs",
+        "evidence_quote": "Run a balance sheet to see your company's financial position",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cash flow statement",
+        "description": "Track cash inflows and outflows across operating, investing, and financing activities",
+        "evidence_source": "docs",
+        "evidence_quote": "Statement of cash flows shows where your money came from and where it went",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cash flow forecasting",
+        "description": "Project future cash positions based on scheduled invoices and bills",
+        "evidence_source": "landing",
+        "evidence_quote": "See what your cash flow will look like in the next 30, 60, or 90 days",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sales tax tracking",
+        "description": "Automatically calculate, collect, and report sales tax by jurisdiction",
+        "evidence_source": "landing",
+        "evidence_quote": "Automatically track sales tax so you know what you owe",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "1099 contractor management",
+        "description": "Track contractor payments and generate/file 1099 forms at year-end",
+        "evidence_source": "landing",
+        "evidence_quote": "Track payments to contractors and prepare 1099s at tax time",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "payroll",
+        "description": "Run full-service payroll with tax filing and direct deposit (add-on)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Add QuickBooks Payroll to run payroll and pay employees directly from QuickBooks",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "time tracking",
+        "description": "Track employee and contractor hours, billable time by project or customer",
+        "evidence_source": "pricing",
+        "evidence_quote": "Track time and add billable hours directly to invoices",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "mileage tracking",
+        "description": "Automatic GPS-based mileage logging via mobile app for tax deduction purposes",
+        "evidence_source": "landing",
+        "evidence_quote": "Automatically track mileage on your phone using GPS",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "inventory management",
+        "description": "Track product quantities, cost of goods, and reorder points",
+        "evidence_source": "pricing",
+        "evidence_quote": "Track inventory and get low stock alerts",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "purchase orders",
+        "description": "Create and send POs to vendors, then receive items against them",
+        "evidence_source": "pricing",
+        "evidence_quote": "Create purchase orders and manage vendor bills",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "project profitability tracking",
+        "description": "Assign income and expenses to projects to see per-project profit/loss",
+        "evidence_source": "pricing",
+        "evidence_quote": "Track project profitability with project income and expense tracking",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "job costing",
+        "description": "Allocate costs to specific jobs or projects to measure profitability",
+        "evidence_source": "docs",
+        "evidence_quote": "See the cost of each job and compare estimated vs actual amounts",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "class tracking",
+        "description": "Tag transactions by business segment, department, or location for segmented reporting",
+        "evidence_source": "pricing",
+        "evidence_quote": "Track by class or location for more detailed reporting",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "location tracking",
+        "description": "Segment financial data by physical location or business unit",
+        "evidence_source": "pricing",
+        "evidence_quote": "Separate reporting by location",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "budgeting",
+        "description": "Create annual budgets by account, class, or location and compare to actuals",
+        "evidence_source": "docs",
+        "evidence_quote": "Set a budget, then run reports to compare budget vs actuals",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-currency support",
+        "description": "Invoice and record transactions in foreign currencies with exchange rate handling",
+        "evidence_source": "pricing",
+        "evidence_quote": "Work in multiple currencies and track exchange rates",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "custom user roles and permissions",
+        "description": "Define granular access controls for employees and accountants",
+        "evidence_source": "pricing",
+        "evidence_quote": "Customize access by role with up to 3 accountant users",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "accountant access",
+        "description": "Invite external accountants or bookkeepers with dedicated access role",
+        "evidence_source": "pricing",
+        "evidence_quote": "Invite your accountant to collaborate in QuickBooks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile app",
+        "description": "iOS and Android apps for invoicing, expense capture, and reporting on the go",
+        "evidence_source": "landing",
+        "evidence_quote": "Manage your business on the go with the QuickBooks mobile app",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "online payment acceptance",
+        "description": "Accept credit cards, ACH, and Apple Pay directly through invoice payment links",
+        "evidence_source": "landing",
+        "evidence_quote": "Get paid faster \u2014 accept credit cards and bank transfers right in your invoice",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bitcoin payments",
+        "description": "Accept Bitcoin as payment (noted in HN as an integration capability)",
+        "evidence_source": "hn",
+        "evidence_quote": "QuickBooks Bitcoin Payments",
+        "tier": "unknown",
+        "confidence": "low"
+      },
+      {
+        "name": "smart reporting (fathom-powered)",
+        "description": "Advanced business analytics and custom KPI reporting via Fathom integration",
+        "evidence_source": "pricing",
+        "evidence_quote": "Smart reporting powered by Fathom with customizable KPI tracking",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "workflow automation",
+        "description": "Automate recurring tasks like payment reminders, approvals, and data entry",
+        "evidence_source": "pricing",
+        "evidence_quote": "Automate workflows to save time on repetitive tasks",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom chart of accounts",
+        "description": "Build and customize the full chart of accounts to match business structure",
+        "evidence_source": "docs",
+        "evidence_quote": "Add, edit, and organize your chart of accounts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "journal entries",
+        "description": "Manual double-entry journal entry creation for adjustments and corrections",
+        "evidence_source": "docs",
+        "evidence_quote": "Create journal entries to make adjustments to your books",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "fixed asset management",
+        "description": "Track fixed assets and calculate depreciation schedules",
+        "evidence_source": "docs",
+        "evidence_quote": "Track fixed assets and manage depreciation",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "data backup and restore",
+        "description": "Automatic cloud backups with point-in-time restore capability",
+        "evidence_source": "pricing",
+        "evidence_quote": "Automatic data backup and restore",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated account manager",
+        "description": "Named Intuit support contact for onboarding and ongoing assistance",
+        "evidence_source": "pricing",
+        "evidence_quote": "Get a dedicated Customer Success Manager",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "on-demand training",
+        "description": "Access to QuickBooks training content and online courses",
+        "evidence_source": "pricing",
+        "evidence_quote": "On-demand QuickBooks training for you and your team",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "app marketplace / integrations",
+        "description": "Connect 750+ third-party apps via the QuickBooks App Store",
+        "evidence_source": "landing",
+        "evidence_quote": "Connect the apps you already use with 750+ integrations in the QuickBooks App Store",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "tax deduction identification",
+        "description": "Automatically identifies potential business tax deductions from categorized expenses",
+        "evidence_source": "landing",
+        "evidence_quote": "We'll identify tax deductions to help lower your tax bill",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "custom reporting",
+        "description": "Build and save custom financial reports beyond standard templates",
+        "evidence_source": "docs",
+        "evidence_quote": "Customize reports to show the data you need, then save for later",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "bill pay",
+        "description": "Pay vendor bills via ACH or check directly from QuickBooks",
+        "evidence_source": "pricing",
+        "evidence_quote": "Pay bills online and schedule payments",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "vendor management",
+        "description": "Maintain vendor contact records, payment terms, and transaction history",
+        "evidence_source": "docs",
+        "evidence_quote": "Store vendor information and see all transactions with each vendor",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "customer management (crm-lite)",
+        "description": "Store customer contact info, notes, and full transaction history",
+        "evidence_source": "docs",
+        "evidence_quote": "Keep track of customer information and see all invoices and payments",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "e-commerce sales import",
+        "description": "Sync sales data from Shopify, Amazon, eBay, and WooCommerce storefronts",
+        "evidence_source": "integrations",
+        "evidence_quote": "Sync your Shopify sales, refunds, and fees automatically",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "audit log",
+        "description": "Track all changes made to transactions and records with user attribution",
+        "evidence_source": "docs",
+        "evidence_quote": "See a full audit trail of changes to your books",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "multi-user collaboration",
+        "description": "Multiple team members can work simultaneously with role-based access",
+        "evidence_source": "pricing",
+        "evidence_quote": "Add up to 3 users (Essentials) or 5 users (Plus) to your account",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "desktop version (subscription)",
+        "description": "Windows-based desktop application with local data option, now subscription-only",
+        "evidence_source": "hn",
+        "evidence_quote": "QuickBooks Desktop moves to subscription model",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "self-employed / freelancer mode",
+        "description": "Simplified version for sole proprietors tracking personal/business split and Schedule C",
+        "evidence_source": "pricing",
+        "evidence_quote": "Separate business and personal expenses and maximize Schedule C deductions",
+        "tier": "paid",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "PayPal",
+      "Stripe",
+      "Square",
+      "Shopify",
+      "WooCommerce",
+      "Amazon",
+      "eBay",
+      "Mailchimp",
+      "HubSpot",
+      "Salesforce",
+      "Bill.com",
+      "Expensify",
+      "DocuSign",
+      "Gusto",
+      "ADP",
+      "Dropbox",
+      "Google Drive",
+      "Microsoft 365 / Excel",
+      "TSheets / QuickBooks Time",
+      "Fathom",
+      "Dext (Receipt Bank)",
+      "A2X",
+      "SOS Inventory",
+      "Fishbowl"
+    ],
+    "differentiators": [
+      "Largest accountant/bookkeeper ecosystem \u2014 most CPAs know QuickBooks natively",
+      "750+ app marketplace integrations",
+      "Industry standard for SMB accounting in the US \u2014 tax prep software integrates by default",
+      "Integrated payroll, payments, and time tracking in a single vendor",
+      "Self-Employed tier specifically designed for Schedule C filers and freelancers"
+    ],
+    "recent_ships": [
+      {
+        "date": "2023",
+        "what": "QuickBooks Desktop forced migration to subscription-only model, removing perpetual license option",
+        "source": "QuickBooks Desktop moves to subscription model (HN thread)"
+      },
+      {
+        "date": "2022",
+        "what": "Bitcoin payment acceptance integration launched",
+        "source": "QuickBooks Bitcoin Payments (HN thread)"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Deep accountant familiarity \u2014 nearly every CPA knows QBO so handoffs are seamless",
+        "Bank feed sync and automatic transaction categorization saves significant manual entry",
+        "Large app ecosystem means it connects to almost every tool a small business uses",
+        "Payroll + accounting in one place reduces reconciliation headaches",
+        "Mobile receipt capture and mileage tracking praised by sole proprietors"
+      ],
+      "complaints": [
+        "Frequent price increases frustrate long-term customers \u2014 'they raise prices every year'",
+        "Move to subscription model for Desktop was controversial: 'QuickBooks Desktop moves to subscription model' (HN)",
+        "Multiple open-source alternatives gaining traction suggests significant user frustration with cost and complexity",
+        "Cloud hosting security concern \u2014 iNSYNQ ransomware attack exposed cloud-hosted QBO data risk",
+        "Customer support widely criticized as slow and hard to reach",
+        "UI complexity for non-accountants \u2014 steep learning curve relative to newer competitors",
+        "Bugs and glitches in bank feeds and reconciliation reported by power users",
+        "Data portability concerns \u2014 exporting data or switching away is difficult"
+      ],
+      "sources": [
+        "hn",
+        "g2"
+      ]
+    },
+    "pricing": {
+      "model": "trial",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Simple Start",
+          "price_per_seat_per_month": "$35",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": "~50% off for first 3 months promotional, then full price",
+          "headline_inclusions": "1 user, invoicing, expense tracking, basic reports, mileage, receipt capture"
+        },
+        {
+          "name": "Essentials",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$65",
+          "yearly_discount_pct": "~50% off promotional introductory period",
+          "headline_inclusions": "3 users, adds bill pay, time tracking, multi-currency, recurring transactions"
+        },
+        {
+          "name": "Plus",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$99",
+          "yearly_discount_pct": "~50% off promotional introductory period",
+          "headline_inclusions": "5 users, adds inventory, project tracking, class/location tracking, budgeting"
+        },
+        {
+          "name": "Advanced",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$235",
+          "yearly_discount_pct": "~50% off promotional introductory period",
+          "headline_inclusions": "25 users, adds batch invoicing, workflow automation, smart reporting, dedicated CSM, data restore"
+        }
+      ],
+      "enterprise": null,
+      "notes": "Prices listed are post-promotional rack rates and change frequently. Intuit commonly runs 50% off for 3 months promotions. Payroll is a separate paid add-on (Core ~$45/mo + $6/employee, Premium ~$80/mo, Elite ~$125/mo). QuickBooks Self-Employed is a separate ~$15/mo product. QuickBooks Desktop (Pro, Premier, Enterprise) is a distinct product line with separate pricing. No true free tier exists; 30-day free trial available. Prices increase annually without notice to existing subscribers."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Show HN: Untitled88 \u2013 Query your QuickBooks data in plain English",
+        "url": "https://www.untitled88.com/integrations/quickbooks",
+        "points": 6,
+        "comments": 0,
+        "age_days": 73,
+        "hn_url": "https://news.ycombinator.com/item?id=47446055"
+      },
+      {
+        "title": "I refused to pay $50/mo for a CSV to quickbooks converter, so I built it",
+        "url": "https://www.csvtoquickbooks.com/",
+        "points": 3,
+        "comments": 0,
+        "age_days": 41,
+        "hn_url": "https://news.ycombinator.com/item?id=47847813"
+      },
+      {
+        "title": "I turned a 3-hour CSV data entry nightmare into a 10-second QuickBooks import",
+        "url": "https://www.indiehackers.com/post/how-i-turned-a-3-hour-csv-data-entry-nightmare-into-a-10-second-quickbooks-import-OSy7k8GAMNr0Hy0adEWl",
+        "points": 2,
+        "comments": 0,
+        "age_days": 4,
+        "hn_url": "https://news.ycombinator.com/item?id=48298176"
+      },
+      {
+        "title": "Free QuickBooks Desktop to JSON Exporter",
+        "url": "https://github.com/josephsprei-lang/quickbooks-desktop-extractor",
+        "points": 2,
+        "comments": 0,
+        "age_days": 25,
+        "hn_url": "https://news.ycombinator.com/item?id=48039938"
+      },
+      {
+        "title": "I refused to pay $50/mo for a CSV to quickbooks converter, so I built it",
+        "url": "https://www.csvtoquickbooks.com/",
+        "points": 2,
+        "comments": 0,
+        "age_days": 26,
+        "hn_url": "https://news.ycombinator.com/item?id=48035678"
+      }
+    ]
+  }
+}

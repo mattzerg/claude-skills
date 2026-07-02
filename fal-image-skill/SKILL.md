@@ -1,7 +1,8 @@
 ---
 name: fal-image-skill
-description: Generate images using FAL.ai. Access Flux Pro/Dev/Schnell, Recraft v3, Ideogram v2, SDXL, and SD 3.5 through a single API. Use as the primary backup when nano-banana-pro is rate-limited.
+description: Generate images using FAL.ai. Access Flux Pro/Dev/Schnell, Recraft v3, Ideogram v2, SDXL, and SD 3.5 through a single API. Third in the image-gen chain (`chatgpt-image-skill` → `nano-banana-pro` → this skill) — use when both upstream generators are rate-limited or unavailable.
 ---
+
 
 # FAL Image Skill
 

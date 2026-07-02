@@ -4,6 +4,7 @@ description: Read and write Google Sheets. Use when the user asks to read spread
 allowed-tools: Bash, Read
 ---
 
+
 # Google Sheets Skill
 
 Read, write, and manage Google Sheets.

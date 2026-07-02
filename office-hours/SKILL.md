@@ -1,19 +1,14 @@
 ---
 name: office-hours
-preamble-tier: 3
-version: 2.0.0
 description: |
-  YC Office Hours — two modes. Startup mode: six forcing questions that expose
-  demand reality, status quo, desperate specificity, narrowest wedge, observation,
-  and future-fit. Builder mode: design thinking brainstorming for side projects,
-  hackathons, learning, and open source. Saves a design doc.
-  Use when asked to "brainstorm this", "I have an idea", "help me think through
-  this", "office hours", or "is this worth building".
-  Proactively invoke this skill (do NOT answer directly) when the user describes
-  a new product idea, asks whether something is worth building, wants to think
-  through design decisions for something that doesn't exist yet, or is exploring
-  a concept before any code is written.
-  Use before /plan-ceo-review or /plan-eng-review. (gstack)
+  Forcing-question brainstorm for new product ideas, side projects, hackathons,
+  and design decisions BEFORE any code is written. Two modes — `startup` (six
+  YC-style questions covering demand reality, status quo, desperate specificity,
+  narrowest wedge, observation, future-fit) and `builder` (design-thinking for
+  hackathons, learning, open source). Saves a design doc. USE PROACTIVELY (do
+  NOT answer directly) when the user describes a new product idea, asks "is this
+  worth building", says "I have an idea", "help me think through this", "office
+  hours", or "brainstorm this". Run before /plan-ceo-review or /plan-eng-review.
 allowed-tools:
   - Bash
   - Read
@@ -23,38 +18,54 @@ allowed-tools:
   - Edit
   - AskUserQuestion
   - WebSearch
-triggers:
+---
+
+## Skill Metadata (non-frontmatter)
+
+The fields below were previously declared in YAML frontmatter under custom keys
+(`preamble-tier`, `version`, `triggers`, `gbrain`). The Anthropic skill validator
+only accepts `name | description | license | allowed-tools | metadata |
+compatibility`, so they live here for human reference and are no longer parsed
+by any tool.
+
+- preamble-tier: 3
+- version: 2.0.0
+- triggers:
   - brainstorm this
   - is this worth building
   - help me think through
   - office hours
-gbrain:
-  schema: 1
-  context_queries:
-    - id: prior-sessions
-      kind: list
-      filter:
-        type: ceo-plan
-        tags_contains: "repo:{repo_slug}"
-      sort: updated_at_desc
-      limit: 5
-      render_as: "## Prior office-hours sessions in this repo"
-    - id: builder-profile
-      kind: filesystem
-      glob: "~/.gstack/builder-profile.jsonl"
-      tail: 1
-      render_as: "## Your builder profile snapshot"
-    - id: design-doc-history
-      kind: filesystem
-      glob: "~/.gstack/projects/{repo_slug}/*-design-*.md"
-      sort: mtime_desc
-      limit: 3
-      render_as: "## Recent design docs for this project"
-    - id: prior-eureka
-      kind: filesystem
-      glob: "~/.gstack/analytics/eureka.jsonl"
-      tail: 5
-      render_as: "## Recent eureka moments"
+
+### Legacy context-query manifest (was `gbrain:` block)
+
+```yaml
+schema: 1
+context_queries:
+  - id: prior-sessions
+    kind: list
+    filter:
+      type: ceo-plan
+      tags_contains: "repo:{repo_slug}"
+    sort: updated_at_desc
+    limit: 5
+    render_as: "## Prior office-hours sessions in this repo"
+  - id: builder-profile
+    kind: filesystem
+    glob: "~/.gstack/builder-profile.jsonl"
+    tail: 1
+    render_as: "## Your builder profile snapshot"
+  - id: design-doc-history
+    kind: filesystem
+    glob: "~/.gstack/projects/{repo_slug}/*-design-*.md"
+    sort: mtime_desc
+    limit: 3
+    render_as: "## Recent design docs for this project"
+  - id: prior-eureka
+    kind: filesystem
+    glob: "~/.gstack/analytics/eureka.jsonl"
+    tail: 5
+    render_as: "## Recent eureka moments"
+```
 ---
 <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
 <!-- Regenerate: bun run gen:skill-docs -->

@@ -1,0 +1,7 @@
+interface:
+  display_name: "CRO Auditor"
+  short_description: "Audit conversion surfaces and funnel friction"
+  default_prompt: "Use $cro-auditor to audit a landing page or signup funnel for conversion blockers, proof gaps, and test ideas."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,134 @@
+{
+  "expectations": [
+    {
+      "text": "The report contains a re-verification section that addresses ALL 5 prior findings by ID (ORD-01, ORD-02, ORD-03, FUL-01, FUL-02) \u2014 none silently dropped",
+      "passed": true,
+      "evidence": "Section 1 summary table lists all five by ID (ORD-01, ORD-02, FUL-01, ORD-03, FUL-02). Dedicated subsections appear in Sections 2 and 3 for each. None are omitted."
+    },
+    {
+      "text": "ORD-01 (discount drop) is marked Fixed/resolved with the evidence that all three layers now agree on $1,564.00",
+      "passed": true,
+      "evidence": "Section 2 ORD-01: 'All three layers agree at $1,564.00' \u2014 UI header ($1,564.00), API ({'total': 1564.00, 'lines': [1200.00, 640.00, -276.00]}), DB (SELECT SUM \u2192 1564.00). Verdict: 'Fixed.'"
+    },
+    {
+      "text": "ORD-02 (cancelled orders in Open Orders KPI) is marked Fixed/resolved, correctly handling that the count changed from 11 to 12 due to a new order (not flagging the different number as a failure)",
+      "passed": true,
+      "evidence": "Section 2 ORD-02: 'The count moved 11 \u2192 12 only because a genuine new order was created between runs \u2014 not a regression.' DB and API both show 12. Verdict: 'Fixed.'"
+    },
+    {
+      "text": "ORD-03 (date filter timezone) is marked Fixed/resolved with evidence",
+      "passed": true,
+      "evidence": "Section 2 ORD-03: returns 5 orders for 2026-05-28, DB confirms 5 with AT TIME ZONE 'America/New_York', spot-checked 2 more dates including one with an 11pm ET order. Verdict: 'Fixed.'"
+    },
+    {
+      "text": "FUL-01 (shipment delivered vs in-transit) is marked STILL BROKEN / not fixed \u2014 not marked as resolved",
+      "passed": true,
+      "evidence": "Section 3 FUL-01: labeled 'STILL PRESENT (unchanged from prior run)'. Verdict: 'NOT FIXED.' Cites 6 new mis-written carrier events since the prior run."
+    },
+    {
+      "text": "FUL-02 (tracking number whitespace) is marked blocked/not-verifiable because the fulfillment detail screen now 500s \u2014 it is NOT marked as fixed and NOT silently dropped",
+      "passed": true,
+      "evidence": "Section 3 FUL-02: 'Status UNKNOWN. Carry forward and re-verify once NEW-01 is fixed. Not marked resolved.' Also in Section 1 summary table as '\u26a0\ufe0f UNVERIFIABLE (blocked by NEW-01)'. Appears in Section 3 header: 'FUL-02 \u00b7 Fulfillment \u00b7 LOW \u00b7 UNVERIFIABLE THIS RUN (blocked by NEW-01)'."
+    },
+    {
+      "text": "The fulfillment detail screen 500 error (all 28 shipments) is reported as a NEW confirmed finding with High or Critical severity",
+      "passed": true,
+      "evidence": "Section 3 NEW-01: 'CRITICAL \u00b7 NEW REGRESSION \u2014 fulfillment detail screen 500s for every shipment'. Affects all 28 shipments. Section 1 summary table labels it Critical."
+    },
+    {
+      "text": "The negative available credit (\u2212$2,300.00, customer over limit) is NOT reported as a confirmed defect \u2014 it is treated as correct behavior, refuted, or at most a low-severity display/UX consideration",
+      "passed": true,
+      "evidence": "Section 4 NEG-CREDIT: 'Not a bug. The arithmetic (10000 \u2212 12300 = \u22122300) is correct \u2014 the customer is genuinely over their credit limit.' Only a parenthetical UX note is offered, with 'No functional finding raised.'"
+    },
+    {
+      "text": "The June payments $0.00 observation is NOT reported as a defect (correctly identified as accurate for June 1)",
+      "passed": true,
+      "evidence": "Section 4 JUNE-PAYMENTS: 'No payments have been recorded in June yet (today is June 1). $0.00 is genuinely correct. No finding raised.'"
+    },
+    {
+      "text": "The report includes a severity summary (counts by severity)",
+      "passed": true,
+      "evidence": "Section 1 headline: 'Net severity movement vs. prior run: Critical 1 \u2192 1 (the old one fixed, a new one introduced), High 2 \u2192 1, Medium 1 \u2192 0, Low 1 \u2192 0 (1 unverifiable).' This provides current severity counts by category. The Section 1 summary table also lists severity per finding."
+    },
+    {
+      "text": "The report includes a coverage matrix or explicit coverage statement showing what was checked vs blocked",
+      "passed": true,
+      "evidence": "Section 1 summary table lists all 5 prior findings with a 'Status in v7a91d03' column (RESOLVED / STILL PRESENT / UNVERIFIABLE), explicitly showing what was checked vs blocked. FUL-02 is called out as 'UNVERIFIABLE (blocked by NEW-01)'. Section 3 FUL-02 explains it could not be checked due to the 500 regression."
+    },
+    {
+      "text": "Each confirmed finding includes evidence/proof, repro steps, and the layer at fault",
+      "passed": false,
+      "evidence": "FUL-01 and NEW-01 are the active confirmed findings. Both include evidence and a layer at fault. However, neither has explicit repro steps. FUL-01 names the URL and evidence but omits a 'Repro:' block. NEW-01 describes the failure and scopes it (list works, detail 500s, API fine) but gives no step-by-step reproduction procedure. The prior findings format used explicit 'Repro:' sections; this report drops them for both confirmed findings."
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "failed": 1,
+    "total": 12,
+    "pass_rate": 0.92
+  },
+  "timing": {
+    "total_tokens": 28499,
+    "duration_ms": 70189,
+    "total_duration_seconds": 70.2
+  },
+  "claims": [
+    {
+      "claim": "All three layers agree at $1,564.00 for ORD-2241",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture acme-portal-new-build-observations.md: UI shows $1,564.00, API returns total 1564.00 with lines [1200.00, 640.00, -276.00], DB SUM \u2192 1564.00. Report faithfully reproduces all three."
+    },
+    {
+      "claim": "Count changed from 11 to 12 because a new order was created (not a regression)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture observations: 'one new order was created since last run; 3 cancelled still excluded.' Report correctly attributes the change to a new legitimate order."
+    },
+    {
+      "claim": "6 new carrier events mis-written since 05-25",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture: 'Webhook log: 6 new carrier events since 05-25, all written as status=delivered regardless of event type.' Report reproduces exactly."
+    },
+    {
+      "claim": "All 28 shipments are affected by the 500 error",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture: 'Affects all 28 shipments.' Report states 'all 28 shipments'."
+    },
+    {
+      "claim": "The API /api/fulfillment/SHP-0088 returns valid JSON \u2014 only the render crashes",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture: 'API /api/fulfillment/SHP-0088 returns valid JSON. So the list works, the detail render crashes.' Report scopes this accurately."
+    },
+    {
+      "claim": "Negative credit is correct behavior (10000 \u2212 12300 = \u22122300)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture: 'credit_limit = 10000.00, SUM(open order totals) = 12300.00. The math 10000 \u2212 12300 = \u22122300 is arithmetically correct.' Report matches."
+    },
+    {
+      "claim": "June $0.00 is correct because no payments have been recorded yet today (June 1)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture: 'no payments recorded in June yet \u2014 today is June 1.' Report matches and notes the date correctly."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Each confirmed finding includes evidence/proof, repro steps, and the layer at fault",
+        "reason": "The assertion as written is the right one to have, but 'repro steps' could be clarified. A minimal repro ('open /fulfillment/SHP-* in a browser') would satisfy most reviewers; the assertion should specify whether a numbered step sequence is required or whether a URL + description suffices. Without that definition, different graders may call this differently."
+      },
+      {
+        "reason": "No assertion checks that the report correctly attributes the ROOT CAUSE for NEW-01 (undefined 'carrier' read in the render layer). The report correctly names it, which is a significant quality signal \u2014 a weak output might only say '500 error' without diagnosing. Worth asserting."
+      },
+      {
+        "reason": "No assertion checks that FUL-02 is carried forward for future re-verification rather than silently closed or dropped. The current assertion (assertion 6) checks it isn't falsely marked fixed, but doesn't require the explicit carry-forward language ('re-verify once NEW-01 is fixed'). That distinction matters for client handoff quality."
+      }
+    ],
+    "overall": "The evals are well-constructed and discriminating. The repro-steps assertion caught a real gap. The two missing assertions (NEW-01 root cause attribution, FUL-02 carry-forward instruction) would strengthen the eval suite without adding noise."
+  }
+}

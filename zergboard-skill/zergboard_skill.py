@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import urllib.error
@@ -39,6 +40,20 @@ DEFAULT_BASE_URL = "https://zergboard.fly.dev"
 
 
 # ---------- Config & HTTP ----------
+
+
+def _load_zerg_secrets():
+    """Populate os.environ from ~/.config/zerg/secrets.env (gitignored, chmod 600). Fail-open."""
+    p = os.path.expanduser("~/.config/zerg/secrets.env")
+    try:
+        with open(p) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    except Exception:
+        pass
 
 
 def load_config() -> Dict[str, Any]:
@@ -64,8 +79,9 @@ def emit(payload: Any) -> None:
 
 
 def request(method: str, path: str, *, query: Optional[Dict[str, Any]] = None, body: Optional[Dict[str, Any]] = None) -> Any:
+    _load_zerg_secrets()
     cfg = load_config()
-    token = cfg.get("api_token")
+    token = cfg.get("api_token") or os.environ.get("ZERGBOARD_API_TOKEN")
     base = (cfg.get("base_url") or DEFAULT_BASE_URL).rstrip("/")
     if not token:
         emit({"error": "config.json is missing api_token"})
@@ -141,7 +157,13 @@ def resolve_workspace(identifier: Optional[str]) -> Dict[str, Any]:
 
 
 def resolve_board(identifier: str, workspace: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
-    """Resolve a board by UUID, exact name, or card prefix."""
+    """Resolve a board by UUID, exact name, or card prefix.
+
+    Names and card prefixes are only safe when they resolve to one board. The
+    Zerg workspace currently has multiple boards using the `ZER` prefix and
+    names that collide with personal board names, so silently picking the first
+    match can mutate the wrong board.
+    """
     if is_uuid(identifier):
         data = request("GET", f"/api/boards/{identifier}")
         return data["board"]
@@ -149,38 +171,57 @@ def resolve_board(identifier: str, workspace: Optional[Dict[str, Any]] = None) -
     if workspace is None:
         # Search across every workspace.
         orgs = request("GET", "/api/orgs").get("organizations", [])
+        matches: List[Dict[str, Any]] = []
         for org in orgs:
-            try:
-                board = _find_board_in_org(identifier, org["id"])
-                if board:
-                    return board
-            except SystemExit:
-                continue
+            matches.extend(_find_boards_in_org(identifier, org["id"]))
+        if len(matches) == 1:
+            return matches[0]
+        if len(matches) > 1:
+            emit({
+                "error": f"Ambiguous board identifier: {identifier}",
+                "instructions": "Use the board UUID, or pass a workspace when the command supports it.",
+                "matches": [{
+                    "id": b.get("id"),
+                    "name": b.get("name"),
+                    "workspace": b.get("organization_name"),
+                    "card_prefix": b.get("card_prefix"),
+                } for b in matches],
+            })
+            sys.exit(1)
         emit({"error": f"Board not found in any workspace: {identifier}"})
         sys.exit(1)
-    board = _find_board_in_org(identifier, workspace["id"])
-    if not board:
+    matches = _find_boards_in_org(identifier, workspace["id"])
+    if len(matches) == 1:
+        return matches[0]
+    if len(matches) > 1:
+        emit({
+            "error": f"Ambiguous board identifier in workspace {workspace['name']}: {identifier}",
+            "instructions": "Use the board UUID.",
+            "matches": [{
+                "id": b.get("id"),
+                "name": b.get("name"),
+                "card_prefix": b.get("card_prefix"),
+            } for b in matches],
+        })
+        sys.exit(1)
+    if not matches:
         emit({"error": f"Board not found in workspace {workspace['name']}: {identifier}"})
         sys.exit(1)
-    return board
 
 
-def _find_board_in_org(identifier: str, org_id: str) -> Optional[Dict[str, Any]]:
+def _find_boards_in_org(identifier: str, org_id: str) -> List[Dict[str, Any]]:
     data = request("GET", "/api/boards", query={"orgId": org_id})
     boards: List[Dict[str, Any]] = data.get("boards", [])
     ident_lower = identifier.lower()
-    for b in boards:
-        if b["name"].lower() == ident_lower:
-            return b
-    # Fallback: card prefix
-    for b in boards:
-        if str(b.get("card_prefix", "")).lower() == ident_lower:
-            return b
-    # Substring fallback
-    for b in boards:
-        if ident_lower in b["name"].lower():
-            return b
-    return None
+    exact = [b for b in boards if b["name"].lower() == ident_lower]
+    if exact:
+        return exact
+    # Fallback: card prefix.
+    prefix = [b for b in boards if str(b.get("card_prefix", "")).lower() == ident_lower]
+    if prefix:
+        return prefix
+    # Substring fallback.
+    return [b for b in boards if ident_lower in b["name"].lower()]
 
 
 def resolve_card(identifier: str) -> Dict[str, Any]:
@@ -193,6 +234,20 @@ def resolve_card(identifier: str) -> Dict[str, Any]:
         cards = [c for c in data.get("cards", []) if (c.get("external_id") or "").upper() == identifier.upper()]
         if not cards:
             emit({"error": f"No card with external id {identifier}"})
+            sys.exit(1)
+        if len(cards) > 1:
+            emit({
+                "error": f"Ambiguous card external id: {identifier}",
+                "instructions": "Use the full card UUID. External ids are not globally unique across boards.",
+                "matches": [{
+                    "id": c.get("id"),
+                    "external_id": c.get("external_id"),
+                    "title": c.get("title"),
+                    "board_id": c.get("board_id"),
+                    "board_name": c.get("board_name"),
+                    "organization_name": c.get("organization_name"),
+                } for c in cards],
+            })
             sys.exit(1)
         return _full_card(cards[0]["id"])
     emit({"error": f"Card identifier not recognized: {identifier} (expected UUID or e.g. CES-1)"})

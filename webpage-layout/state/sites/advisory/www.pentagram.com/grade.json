@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 7,
+    "hierarchy": 8,
+    "distinctiveness": 6,
+    "color": 8,
+    "density": 7,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Clean, professional system with good scale contrast. The headline 'Our Future is the Ultimate Project' has weight, but the overall system feels restrained rather than distinctive. Not Inter+Fraunces, but not memorable either.",
+    "hierarchy": "Strong hierarchical clarity \u2014 the hero statement dominates, black section creates clear visual break, project grid has clean precedence. One thing per screen principle mostly followed.",
+    "distinctiveness": "Generic consultancy language ('We design Brand Identity for Arts & Culture'). The climate change positioning is specific, but the visual execution could work for any design firm. Swap the words, still works.",
+    "color": "Disciplined palette. Pastels in hero are decorative but restrained. Black section provides strong contrast. Project colors come from work, not arbitrary decoration. Accent usage controlled.",
+    "density": "Confident breathing room in hero, good density in black section text block. Project grid has appropriate tightness. Not uniform padding everywhere \u2014 shows intentionality.",
+    "voice": "Classic consultancy structure: hero \u2192 manifesto \u2192 selected work \u2192 CTA. The climate change angle is substantive but the IA is still 'Currently/Selected/CTA' stencil. Doesn't reflect their partnership model or unique structure."
+  },
+  "winning_patterns": [
+    "Strong contrast between light hero and black manifesto section creates visual punctuation",
+    "Project grid lets work imagery do the talking without excessive chrome",
+    "Climate change positioning gives substantive mission beyond 'we make things pretty'",
+    "Restrained use of color \u2014 pastels as accent, not decoration"
+  ],
+  "anti_patterns": [
+    "Hero statement 'We design Brand Identity for Arts & Culture' is fill-in-the-blank consultancy language",
+    "IA follows standard agency template rather than reflecting Pentagram's unique partnership structure",
+    "Pastel squiggles in hero feel like decorative gestures without purpose",
+    "No typographic personality \u2014 could be any professional services firm"
+  ],
+  "one_word_personality": "professional",
+  "_url": "https://www.pentagram.com",
+  "_persona": "advisory",
+  "_note": "Case-study-led, premium",
+  "_graded_at": "2026-05-07T19:58:40.842555Z"
+}

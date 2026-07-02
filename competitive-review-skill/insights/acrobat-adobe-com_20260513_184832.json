@@ -1,0 +1,467 @@
+{
+  "name": "Adobe Acrobat",
+  "url": "https://acrobat.adobe.com",
+  "domain": "acrobat.adobe.com",
+  "scanned_at": "2026-05-13T18:45:41.201269",
+  "sources": {
+    "landing": {
+      "url": "https://acrobat.adobe.com",
+      "title": "Acrobat online sign in | Login to Acrobat | Adobe Acrobat",
+      "text": "Acrobat online sign in | Login to Acrobat | Adobe Acrobat\nAdobe Acrobat\nStart free trial\nWelcome to Adobe Acrobat\nEdit, sign, or convert your files\nSign in\nDrag and drop your file\nSelect a file\nBy uploading your files, you agree to Adobe's\nTerms of Use\nand\nPrivacy Policy\n.\nWhat do you want to do?\nTry PDF tools\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\nDiscover 25+ more PDF tools\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\n\u200c\nEnjoy next-level productivity with Acrobat Pro\nAdd comments, fill in forms, and sign PDFs for free. Unlock 70+ features and make work easy with Acrobat Pro.\nTop features\nFree Account\nCreate a free account\nNo credit card needed\nAcrobat Pro\nStart 7-day free trial\nCancel anytime before 7 days\nRead PDFs, highlight, and comment\nShare files and collect feedback\nFill, sign, and send forms\nEdit text and images right in PDF files\nConvert almost any file to and from PDF\nMerge files into one PDF and organize the pages\nCompress files, and add passwords to protect PDFs\nWork on your desktop, mobile device, or online\nAnywhere you need your files, we\u2019re there\nAdobe Acrobat Pro\nDrag and drop, or\nselect a file\nAdobe Acrobat Reader\nGet the free mobile app to comment on and share PDFs on the go\nGet app\nAdobe Scan\nScan documents, receipts, whiteboards, and more to PDF\nGet app\nAdobe Acrobat Sign\nSimple electronic signatures to help keep your business running\nGet app\nGoogle Chrome Extension\nAccess essential PDF tools directly in the Google Chrome browser\nDrag and drop, or\nselect a file\nSign up for free to get started\nYour free account lets you:\nTry 25+ PDF and e-signing tools\nEdit in Microsoft apps online\nFill, sign and comment on PDFs\nStore files online and share links\nLanguage:\nEnglish: US\nCopyright \u00a9 2026 Adobe. All rights reserved.\n/\nPrivacy\n/\nTerms of Use\n/\nCookie preferences\n/\nDo Not Sell Or Share My Personal Information\nGet access to more PDF tools \u2014 no credit card needed.\nCreate a free account",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://acrobat.adobe.com/us/en/acrobat/pricing.html",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://acrobat.adobe.com/us/en/acrobat/pricing.html\nCall log:\n  - navigating to \"https://acrobat.adobe.com/us/en/acrobat/pricing.html\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://helpx.adobe.com/acrobat/user-guide.html",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://helpx.adobe.com/acrobat/user-guide.html\nCall log:\n  - navigating to \"https://helpx.adobe.com/acrobat/user-guide.html\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "integrations": {
+      "url": "https://acrobat.adobe.com/us/en/integrations.html",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://acrobat.adobe.com/us/en/integrations.html\nCall log:\n  - navigating to \"https://acrobat.adobe.com/us/en/integrations.html\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/adobe-acrobat/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macOS Silently",
+          "url": "https://rekken.github.io/2020/05/14/Security-Flaws-in-Adobe-Acrobat-Reader-Allow-Malicious-Program-to-Gain-Root-on-macOS-Silently/",
+          "points": 871,
+          "num_comments": 418,
+          "created_at": "2020-05-14T15:50:25Z",
+          "hn_url": "https://news.ycombinator.com/item?id=23180975"
+        },
+        {
+          "title": "Show HN: I built a free alternative to Adobe Acrobat PDF viewer",
+          "url": "https://github.com/embedpdf/embed-pdf-viewer",
+          "points": 357,
+          "num_comments": 95,
+          "created_at": "2025-08-14T15:34:46Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44901683"
+        },
+        {
+          "title": "Crocodoc (YC W10) Sets Its Sights On Adobe Acrobat With New Update",
+          "url": "http://techcrunch.com/2010/03/19/crocodoc-edit-pdf/",
+          "points": 65,
+          "num_comments": 13,
+          "created_at": "2010-03-19T22:37:41Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1205469"
+        },
+        {
+          "title": "Why does Adobe Acrobat take 15 minutes to open a PDF?",
+          "url": null,
+          "points": 59,
+          "num_comments": 36,
+          "created_at": "2010-06-07T04:13:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1409837"
+        },
+        {
+          "title": "Microsoft to Replace Edge\u2019s PDF Reader with Adobe Acrobat",
+          "url": "https://www.theregister.com/2023/02/10/microsoft_edge_pdf_acrobat/",
+          "points": 33,
+          "num_comments": 56,
+          "created_at": "2023-02-13T07:30:56Z",
+          "hn_url": "https://news.ycombinator.com/item?id=34771043"
+        },
+        {
+          "title": "F-Secure says stop using Adobe Acrobat Reader",
+          "url": "http://news.cnet.com/8301-1009_3-10224449-83.html",
+          "points": 33,
+          "num_comments": 11,
+          "created_at": "2009-04-23T13:42:23Z",
+          "hn_url": "https://news.ycombinator.com/item?id=575566"
+        },
+        {
+          "title": "Adobe makes Acrobat.com a business with paid accounts ",
+          "url": "http://news.cnet.com/8301-17939_109-10264241-2.html?part=rss&tag=feed&subj=Webware",
+          "points": 11,
+          "num_comments": 3,
+          "created_at": "2009-06-15T04:17:49Z",
+          "hn_url": "https://news.ycombinator.com/item?id=657914"
+        },
+        {
+          "title": "Ask HN: Is there a good open-source alternative to Adobe Acrobat?",
+          "url": null,
+          "points": 9,
+          "num_comments": 9,
+          "created_at": "2026-01-26T12:01:15Z",
+          "hn_url": "https://news.ycombinator.com/item?id=46764607"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "My little sister threw a stone at my new ROG Strix OLED monitor.... gg",
+          "subreddit": "pcmasterrace",
+          "score": 23586,
+          "num_comments": 2293,
+          "permalink": "https://reddit.com/r/pcmasterrace/comments/1n1rluw/my_little_sister_threw_a_stone_at_my_new_rog/",
+          "selftext": ""
+        },
+        {
+          "title": "lmaoo",
+          "subreddit": "Piracy",
+          "score": 7635,
+          "num_comments": 161,
+          "permalink": "https://reddit.com/r/Piracy/comments/1o8vgj8/lmaoo/",
+          "selftext": "genuinely why would anyone want this?? what purpose does it serve to the user??"
+        },
+        {
+          "title": "The DOJ redacted the Epstein Files with Adobe Acrobat. Holy hell, they are stupid.",
+          "subreddit": "stevehofstetter",
+          "score": 7239,
+          "num_comments": 201,
+          "permalink": "https://reddit.com/r/stevehofstetter/comments/1ptwfym/the_doj_redacted_the_epstein_files_with_adobe/",
+          "selftext": "Shows announced in Detroit, Boston, Toronto, Denver, Seattle, and more. Tickets on my website, as always."
+        },
+        {
+          "title": "Rule.",
+          "subreddit": "196",
+          "score": 6762,
+          "num_comments": 95,
+          "permalink": "https://reddit.com/r/196/comments/1pvn3u1/rule/",
+          "selftext": ""
+        },
+        {
+          "title": "Why the f*ck is this the first option now?",
+          "subreddit": "mildlyinfuriating",
+          "score": 6138,
+          "num_comments": 271,
+          "permalink": "https://reddit.com/r/mildlyinfuriating/comments/1ko3axt/why_the_fck_is_this_the_first_option_now/",
+          "selftext": "So sick of companies peddling AI"
+        },
+        {
+          "title": "New Office update adds a CoPilot button at the bottom of the screen that cannot be removed and does distracting animations while I work.",
+          "subreddit": "mildlyinfuriating",
+          "score": 4015,
+          "num_comments": 123,
+          "permalink": "https://reddit.com/r/mildlyinfuriating/comments/1ppv6ou/new_office_update_adds_a_copilot_button_at_the/",
+          "selftext": "The thing i'm supposed to be working on specifically doesn't allow the use of AI at all. Feel like i've seen this somewhere before.  \n\nI have also uninstalled CoPilot from my computer multiple times but have given up as it always comes back. "
+        },
+        {
+          "title": "Some weird app on my PC",
+          "subreddit": "pchelp",
+          "score": 3728,
+          "num_comments": 335,
+          "permalink": "https://reddit.com/r/pchelp/comments/1kz79w2/some_weird_app_on_my_pc/",
+          "selftext": "This app on the top of my programs in a different language. I don't know what it is and I am unable to uninstall it, it just shows this message when I try to uninstall it. (Pic 2). For context, before this I was trying to install a cracked version of autodesk revit 2022. It had an elaborate process involving network license manager. I downloaded it from getintopc.\n\nPlease help I am afraid it might affect my pc negatively. Fear of th unknown."
+        },
+        {
+          "title": "I made a temu account to look at some presents for my little sister, I didn\u2019t buy anything, I went to Walmart and got it there. I haven\u2019t made ONE purchase on temu.",
+          "subreddit": "assholedesign",
+          "score": 3075,
+          "num_comments": 71,
+          "permalink": "https://reddit.com/r/assholedesign/comments/1qjq90o/i_made_a_temu_account_to_look_at_some_presents/",
+          "selftext": "This was all in barely a month fyi."
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://acrobat.adobe.com/us/en/acrobat/pricing.html",
+    "changelog": null,
+    "docs": "https://helpx.adobe.com/acrobat/user-guide.html",
+    "integrations": "https://acrobat.adobe.com/us/en/integrations.html",
+    "g2": "https://www.g2.com/products/adobe-acrobat/reviews"
+  },
+  "analysis": {
+    "name": "Adobe Acrobat",
+    "url": "https://acrobat.adobe.com",
+    "tagline": "Welcome to Adobe Acrobat \u2014 Edit, sign, or convert your files",
+    "value_proposition": "All-in-one PDF platform for editing, signing, converting, and collaborating on documents across desktop, mobile, and web.",
+    "target_segment": "enterprise / mid-market / SMB / consumer",
+    "ideal_customer": "Knowledge workers and organizations that generate, review, sign, and archive PDF documents at scale",
+    "features": [
+      {
+        "name": "pdf reading",
+        "description": "Open and read PDF files in browser, desktop app, or mobile",
+        "evidence_source": "landing",
+        "evidence_quote": "Read PDFs, highlight, and comment",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "highlighting",
+        "description": "Highlight text passages within PDF documents",
+        "evidence_source": "landing",
+        "evidence_quote": "Read PDFs, highlight, and comment",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "commenting",
+        "description": "Add inline comments and annotations to PDFs",
+        "evidence_source": "landing",
+        "evidence_quote": "Add comments, fill in forms, and sign PDFs for free",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "form filling",
+        "description": "Fill out PDF forms fields interactively",
+        "evidence_source": "landing",
+        "evidence_quote": "Fill, sign, and send forms",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "e-signature",
+        "description": "Electronically sign PDF documents",
+        "evidence_source": "landing",
+        "evidence_quote": "Fill, sign, and send forms",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "file sharing",
+        "description": "Share PDF files via links for review and download",
+        "evidence_source": "landing",
+        "evidence_quote": "Share files and collect feedback",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "feedback collection",
+        "description": "Collect reviewer comments and feedback on shared PDFs",
+        "evidence_source": "landing",
+        "evidence_quote": "Share files and collect feedback",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "online file storage",
+        "description": "Store PDF and document files in Adobe cloud storage",
+        "evidence_source": "landing",
+        "evidence_quote": "Store files online and share links",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "pdf text editing",
+        "description": "Edit text content directly inside existing PDF files",
+        "evidence_source": "landing",
+        "evidence_quote": "Edit text and images right in PDF files",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "pdf image editing",
+        "description": "Edit and replace images embedded in PDF documents",
+        "evidence_source": "landing",
+        "evidence_quote": "Edit text and images right in PDF files",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "file conversion",
+        "description": "Convert almost any file format to and from PDF",
+        "evidence_source": "landing",
+        "evidence_quote": "Convert almost any file to and from PDF",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "pdf merging",
+        "description": "Combine multiple files into a single PDF",
+        "evidence_source": "landing",
+        "evidence_quote": "Merge files into one PDF and organize the pages",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "page organization",
+        "description": "Reorder, rotate, delete, or rearrange pages within a PDF",
+        "evidence_source": "landing",
+        "evidence_quote": "Merge files into one PDF and organize the pages",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "pdf compression",
+        "description": "Reduce PDF file size for easier sharing and storage",
+        "evidence_source": "landing",
+        "evidence_quote": "Compress files, and add passwords to protect PDFs",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "password protection",
+        "description": "Add passwords to PDFs to restrict access or editing",
+        "evidence_source": "landing",
+        "evidence_quote": "Compress files, and add passwords to protect PDFs",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "cross-platform access",
+        "description": "Access and work on documents via desktop, mobile, and web browser",
+        "evidence_source": "landing",
+        "evidence_quote": "Work on your desktop, mobile device, or online",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft apps integration",
+        "description": "Edit and work with PDF content inside Microsoft 365 apps online",
+        "evidence_source": "landing",
+        "evidence_quote": "Edit in Microsoft apps online",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "mobile pdf reader app",
+        "description": "Free mobile app (Adobe Acrobat Reader) to comment on and share PDFs",
+        "evidence_source": "landing",
+        "evidence_quote": "Get the free mobile app to comment on and share PDFs on the go",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "document scanning",
+        "description": "Scan documents, receipts, and whiteboards to PDF via Adobe Scan mobile app",
+        "evidence_source": "landing",
+        "evidence_quote": "Scan documents, receipts, whiteboards, and more to PDF",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "electronic signature workflow",
+        "description": "Dedicated e-signature app (Adobe Acrobat Sign) for business signing flows",
+        "evidence_source": "landing",
+        "evidence_quote": "Simple electronic signatures to help keep your business running",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "chrome browser extension",
+        "description": "Google Chrome extension for accessing PDF tools directly in the browser",
+        "evidence_source": "landing",
+        "evidence_quote": "Access essential PDF tools directly in the Google Chrome browser",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "pdf redaction",
+        "description": "Permanently redact sensitive text and content from PDF documents",
+        "evidence_source": "reddit",
+        "evidence_quote": "The DOJ redacted the Epstein Files with Adobe Acrobat",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "drag-and-drop file upload",
+        "description": "Upload PDF files via drag-and-drop directly in the web interface",
+        "evidence_source": "landing",
+        "evidence_quote": "Drag and drop your file",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "25+ pdf tools",
+        "description": "Suite of 25+ distinct PDF manipulation and productivity tools",
+        "evidence_source": "landing",
+        "evidence_quote": "Discover 25+ more PDF tools",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "70+ pro features",
+        "description": "Extended suite of 70+ features unlocked in Acrobat Pro tier",
+        "evidence_source": "landing",
+        "evidence_quote": "Unlock 70+ features and make work easy with Acrobat Pro",
+        "tier": "paid",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Microsoft 365 (Word, Excel, PowerPoint online)",
+      "Google Chrome (browser extension)",
+      "Microsoft Edge (Adobe Acrobat PDF engine embedded in Edge)",
+      "Adobe Acrobat Reader (mobile)",
+      "Adobe Scan (mobile scanning)",
+      "Adobe Acrobat Sign (e-signature workflow)"
+    ],
+    "differentiators": [
+      "70+ Pro features vs free-tier PDF tools",
+      "Cross-platform continuity: desktop, mobile, and web with shared cloud storage",
+      "Adobe ecosystem integration (Reader, Scan, Sign as companion apps)",
+      "Native Microsoft Edge PDF engine partnership"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [
+        "Widely trusted for government and enterprise document workflows (DOJ usage noted on Reddit)"
+      ],
+      "complaints": [
+        "Performance: 'Why does Adobe Acrobat take 15 minutes to open a PDF?' (HN, 59\u2191)",
+        "Security vulnerabilities: 'Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macOS Silently' (HN, 871\u2191)",
+        "Security concerns: 'F-Secure says stop using Adobe Acrobat Reader' (HN, 33\u2191)",
+        "Alternatives actively being built: 'Show HN: I built a free alternative to Adobe Acrobat PDF viewer' (HN, 357\u2191)",
+        "Pricing/bloat driving users to seek open-source alternatives: 'Ask HN: Is there a good open-source alternative to Adobe Acrobat?' (HN)"
+      ],
+      "sources": [
+        "hn",
+        "reddit"
+      ]
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "25+ tools; fill/sign/comment; online storage included; no credit card required"
+      },
+      "tiers": [
+        {
+          "name": "Free Account",
+          "price_per_seat_per_month": "$0",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "25+ PDF/e-signing tools, fill/sign/comment, Microsoft app editing, online storage"
+        },
+        {
+          "name": "Acrobat Pro",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "70+ features: edit text/images, convert, merge, compress, password protect, cross-platform"
+        }
+      ],
+      "enterprise": "null",
+      "notes": "Acrobat Pro offers 7-day free trial, cancel anytime before 7 days. Exact Pro price not present in extracted source content. Free tier requires no credit card."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Show HN: Free PDF redactor that runs client-side",
+        "url": "https://redactpdf.net",
+        "points": 5,
+        "comments": 8,
+        "age_days": 24,
+        "hn_url": "https://news.ycombinator.com/item?id=47826529"
+      }
+    ]
+  }
+}

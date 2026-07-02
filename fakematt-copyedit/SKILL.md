@@ -1,8 +1,9 @@
 ---
 name: fakematt-copyedit
-description: Run a Fake Matt copyediting pass on prose drafts (blog posts, thought pieces, launch announcements, social copy). Reads one or more markdown files, anchors against `MattZerg/_style/writing_style.md` + voice fingerprint, and emits an annotated review with inline comments + a separate interview file listing items where uncertainty is high enough to warrant a live discussion. Output is professional/structured (not Matt-voice cosplay) — comments cite the writing-style rule or voice principle they reference. USE PROACTIVELY when Matt asks for a copyedit, "review this draft", "have Fake Matt look at this", or before any prose ships externally. Never auto-posts to shared channels — writes to disk + Fake Matt self-DM only when explicitly asked.
+description: Run a Fake Matt copyediting pass on prose drafts (blog posts, thought pieces, launch announcements, social copy). Reads one or more markdown files, anchors against `MattZerg/_style/writing_style.md` + voice fingerprint, and emits an annotated review with inline comments + a separate interview file listing items where uncertainty is high enough to warrant a live discussion. Output is professional/structured (not Matt-voice cosplay) — comments cite the writing-style rule or voice principle they reference. USE PROACTIVELY (mandatory entry-point — do NOT produce an edited rewrite directly) when Matt asks any of — "copyedit", "fakematt-copyedit", "run fakematt on this", "review this draft", "have Fake Matt look at this", "voice review", "flag the voice drift", "blocking publish", "what's wrong with this draft", or before ANY prose ships externally. Never auto-posts to shared channels — writes to disk + Fake Matt self-DM only when explicitly asked.
 allowed-tools: Bash, Read, Write
 ---
+
 
 # Fake Matt Copyedit Skill
 
@@ -21,14 +22,21 @@ When in doubt, suggest running it before pieces leave the vault.
 ## Default invocation
 
 ```bash
-python3 ~/.claude/skills/fakematt-copyedit/run.py <markdown_path> [<more_paths>...] [flags]
+/Library/Developer/CommandLineTools/usr/bin/python3 -c 'import sys; sys.argv=["run.py", *sys.argv[1:]]; sys.path.insert(0, "/Users/mattheweisner/.claude/skills/fakematt-copyedit"); import run; raise SystemExit(run.main())' <markdown_path> [<more_paths>...] [flags]
 
 # flags:
 #   --out-dir DIR        where to write reviews + interview file (default: /tmp/fakematt-copyedit/)
-#   --model MODEL        Claude model (default: claude-opus-4-7)
+#   --model MODEL        Claude model. When omitted, aitr (the internal model router)
+#                        picks one (task_kind=prose-review, quality_floor=high-stakes,
+#                        sized to the draft); falls back loudly to FAKEMATT_COPYEDIT_MODEL
+#                        env or claude-sonnet-4-6 if aitr is unavailable.
 #   --no-pdf             skip PDF conversion + Preview open
 #   --quick              shorter review (skip social-variant analysis)
 ```
+
+The chosen model and aitr's reason are printed to stderr (`[aitr] fakematt-copyedit: …`)
+and recorded in each review's sent-log entry — corrections later filed via llm-feedback
+can trace back to the routing decision.
 
 ## Output files (per invocation)
 
@@ -36,6 +44,7 @@ For each input file `<draft>.md`:
 
 - **`<draft>.review.md`** — annotated draft with inline comments. Each comment is a blockquote that cites a rule (writing_style.md section), confidence (HIGH / MEDIUM / LOW), and either a rewrite suggestion or a discussion question.
 - **`<draft>.interview.md`** — extracted list of LOW-confidence items requiring a live conversation with the author. Format: numbered items with the source quote, the concern, and the question to discuss.
+- **Scorecard** — every review includes a 100-point score, cap if applicable, dimension scores, top 3 score-impacting fixes, and learning tags from `MattZerg/_style/artifact_quality_rubric.md`.
 
 Plus one combined file:
 
@@ -57,9 +66,15 @@ When `--no-pdf` is not set, the script also runs the same PDF conversion as `/tm
 - `MattZerg/_style/writing_style.md` — primary style bible (Scott Adams principles, AI-tells, Idan's voice patterns)
 - `MattZerg/CLAUDE.md` "AI Writing Cleanup" section — punctuation + structure + rhetorical patterns to fix
 - `~/.claude/feedback-corpus/voice/fingerprint.md` — Matt's positioning instincts (relevant for launch posts that double as marketing)
+- `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/matt_considered_voice.md` — voice fingerprint for considered/structured prose review (the register copyedit output uses internally as a calibration source, not as cosplay)
+- `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/feedback_patterns_catalog.md` — pattern catalog (prose section); cite findings by slug
 - Reference pieces named in writing_style.md (Idan's published Substack + Zerg blog posts) for voice calibration
+- **Catalog patterns to cite by slug** (Section C Prose / writing): em-dash-budget, filler-word-sweep, pulp-caption-discipline, punchline-isolation, throat-clearing-preamble, body-caption-mismatch, cross-format-repetition, significance-announcement, single-cta
+- **Catalog patterns to cite by slug** (Section E CRO / marketing): shipped-vs-roadmap-visibility, capability-claim-unverified
 
 These are loaded as context for every run; cached if/when the skill moves to SDK-with-cache later.
+
+Read these BEFORE producing output. Cite prose-section patterns by slug from `feedback_patterns_catalog.md`.
 
 ## Output register
 

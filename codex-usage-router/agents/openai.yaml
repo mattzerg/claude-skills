@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Usage Router"
+  short_description: "Route Codex to the lowest-usage account"
+  default_prompt: "Use $codex-usage-router to check my Codex account usage and recommend the lowest-usage account."

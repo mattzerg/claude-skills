@@ -1,0 +1,7 @@
+interface:
+  display_name: "Launch Ops"
+  short_description: "Turn launches into executable runbooks"
+  default_prompt: "Use $launch-ops to turn a launch into an executable rollout plan with blockers, owners, and day-of sequencing."
+
+policy:
+  allow_implicit_invocation: true

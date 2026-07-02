@@ -1,0 +1,7 @@
+interface:
+  display_name: "Dashboard Spec"
+  short_description: "Define KPIs, charts, and instrumentation"
+  default_prompt: "Use $dashboard-spec to turn a business question into a concrete dashboard and measurement spec."
+
+policy:
+  allow_implicit_invocation: true

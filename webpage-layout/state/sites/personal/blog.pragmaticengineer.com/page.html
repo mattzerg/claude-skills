@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>The Pragmatic Engineer - The Pragmatic Engineer</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/size/w256h256/2024/06/The-Pragmatic-Engineer-Blog-Publication-Icon--Logo-.png">
+
+    <link rel="stylesheet" type="text/css" href="https://blog.pragmaticengineer.com/assets/css/screen.css?v=d5d40f0168" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <meta name="description" content="Observations across the software engineering industry.">
+    <link rel="icon" href="https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/size/w256h256/2024/06/The-Pragmatic-Engineer-Blog-Publication-Icon--Logo-.png" type="image/png">
+    <link rel="canonical" href="https://blog.pragmaticengineer.com/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="The Pragmatic Engineer">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Pragmatic Engineer">
+    <meta property="og:description" content="Observations across the software engineering industry.">
+    <meta property="og:url" content="https://blog.pragmaticengineer.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Pragmatic Engineer">
+    <meta name="twitter:description" content="Observations across the software engineering industry.">
+    <meta name="twitter:url" content="https://blog.pragmaticengineer.com/">
+    <meta name="twitter:image" content="https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/2023/05/Big-Tech---startups---from-the-inside.png">
+    <meta name="twitter:site" content="@GergelyOrosz">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "The Pragmatic Engineer",
+        "url": "https://blog.pragmaticengineer.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/2015/12/pragmatic-engineer-profile-image.png"
+        }
+    },
+    "url": "https://blog.pragmaticengineer.com/",
+    "name": "The Pragmatic Engineer",
+    "mainEntityOfPage": "https://blog.pragmaticengineer.com/",
+    "description": "Observations across the software engineering industry."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 6.36">
+    <link rel="alternate" type="application/rss+xml" title="The Pragmatic Engineer" href="https://blog.pragmaticengineer.com/rss/">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.68/umd/portal.min.js" data-i18n="true" data-ghost="https://blog.pragmaticengineer.com/" data-key="e19be39046770b14a9d5caceb0" data-api="https://pragmatic-engineer.ghost.io/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/sodo-search.min.js" data-key="e19be39046770b14a9d5caceb0" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/main.css" data-sodo-search="https://pragmatic-engineer.ghost.io/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://blog.pragmaticengineer.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=d5d40f0168"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=d5d40f0168">
+    <script defer src="/public/member-attribution.min.js?v=d5d40f0168"></script>
+    <script defer src="/public/ghost-stats.min.js?v=d5d40f0168" data-stringify-payload="false" data-datasource="analytics_events" data-storage="localStorage" data-host="https://blog.pragmaticengineer.com/.ghost/analytics/api/v1/page_hit"  tb_site_uuid="39f85cc7-8637-40fc-a57c-f45754453717" tb_post_uuid="undefined" tb_post_type="null" tb_member_uuid="undefined" tb_member_status="undefined"></script><style>:root {--ghost-accent-color: #15171A;}</style>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-numbers/prism-line-numbers.min.css" />
+<style>
+    pre[class*=language-] {
+        margin: 1.75em 0;
+    }
+</style>
+</head>
+<body class="home-template nav-closed">
+
+    <div class="nav mobile">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home nav-current elusive-icon Home" role="presentation"><a href="https://blog.pragmaticengineer.com/">Home</a></li>
+            <li class="nav-newsletter elusive-icon Newsletter" role="presentation"><a href="https://newsletter.pragmaticengineer.com/about">Newsletter</a></li>
+            <li class="nav-popular-articles elusive-icon Popular Articles" role="presentation"><a href="https://blog.pragmaticengineer.com/tag/popular/">Popular Articles</a></li>
+            <li class="nav-the-software-engineers-guidebook elusive-icon The Software Engineer&#x27;s Guidebook" role="presentation"><a href="https://www.engguidebook.com/">The Software Engineer&#x27;s Guidebook</a></li>
+            <li class="nav-my-books elusive-icon My Books" role="presentation"><a href="https://blog.pragmaticengineer.com/books/">My Books</a></li>
+            <li class="nav-early-trends elusive-icon Early trends" role="presentation"><a href="https://blog.pragmaticengineer.com/early-trends/">Early trends</a></li>
+            <li class="nav-reading-list elusive-icon Reading List" role="presentation"><a href="https://blog.pragmaticengineer.com/my-reading-list/">Reading List</a></li>
+            <li class="nav-ethics-statement elusive-icon Ethics statement" role="presentation"><a href="https://blog.pragmaticengineer.com/ethics-statement/">Ethics statement</a></li>
+            <li class="nav-write-a-guest-article elusive-icon Write a guest article" role="presentation"><a href="https://blog.pragmaticengineer.com/pragmatic-engineer-guest-article/">Write a guest article</a></li>
+            <li class="nav-sponsors elusive-icon Sponsors" role="presentation"><a href="https://blog.pragmaticengineer.com/podcast-sponsors/">Sponsors</a></li>
+            <li class="nav-investing elusive-icon Investing" role="presentation"><a href="https://blog.pragmaticengineer.com/investing/">Investing</a></li>
+            <li class="nav-now elusive-icon Now" role="presentation"><a href="https://blog.pragmaticengineer.com/now/">Now</a></li>
+            <li class="nav-contact-me elusive-icon Contact me" role="presentation"><a href="https://blog.pragmaticengineer.com/contact/">Contact me</a></li>
+            <li class="nav-about elusive-icon About" role="presentation"><a href="https://blog.pragmaticengineer.com/about/">About</a></li>
+            <li class="nav-rss-feed elusive-icon RSS Feed" role="presentation"><a href="https://blog.pragmaticengineer.com/feed/">RSS Feed</a></li>
+            <li class="nav-bluesky elusive-icon bluesky" role="presentation"><a href="https://bsky.app/profile/gergely.pragmaticengineer.com/">bluesky</a></li>
+            <li class="nav-twitter elusive-icon twitter" role="presentation"><a href="http://twitter.com/GergelyOrosz">twitter</a></li>
+            <li class="nav-youtube elusive-icon youtube" role="presentation"><a href="https://www.youtube.com/@pragmaticengineer">youtube</a></li>
+            <li class="nav-linkedin elusive-icon linkedin" role="presentation"><a href="http://www.linkedin.com/in/gergelyorosz">linkedin</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="https://blog.pragmaticengineer.com/rss/">Subscribe</a>
+</div>
+<span class="nav-cover mobile"></span>
+
+<div class="nav-desktop">
+  <ul class="sidebar-nav">
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/" class="elusive-icon Home" rel="me">Home</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://newsletter.pragmaticengineer.com/about" class="elusive-icon Newsletter" rel="me">Newsletter</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/tag/popular/" class="elusive-icon Popular Articles" rel="me">Popular Articles</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://www.engguidebook.com/" class="elusive-icon The Software Engineer&#x27;s Guidebook" rel="me">The Software Engineer&#x27;s Guidebook</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/books/" class="elusive-icon My Books" rel="me">My Books</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/early-trends/" class="elusive-icon Early trends" rel="me">Early trends</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/my-reading-list/" class="elusive-icon Reading List" rel="me">Reading List</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/ethics-statement/" class="elusive-icon Ethics statement" rel="me">Ethics statement</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/pragmatic-engineer-guest-article/" class="elusive-icon Write a guest article" rel="me">Write a guest article</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/podcast-sponsors/" class="elusive-icon Sponsors" rel="me">Sponsors</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/investing/" class="elusive-icon Investing" rel="me">Investing</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/now/" class="elusive-icon Now" rel="me">Now</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/contact/" class="elusive-icon Contact me" rel="me">Contact me</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/about/" class="elusive-icon About" rel="me">About</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/feed/" class="elusive-icon RSS Feed" rel="me">RSS Feed</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://bsky.app/profile/gergely.pragmaticengineer.com/" class="elusive-icon bluesky" rel="me">bluesky</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="http://twitter.com/GergelyOrosz" class="elusive-icon twitter" rel="me">twitter</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://www.youtube.com/@pragmaticengineer" class="elusive-icon youtube" rel="me">youtube</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="http://www.linkedin.com/in/gergelyorosz" class="elusive-icon linkedin" rel="me">linkedin</a>
+        </li>
+  </ul>
+
+</div>
+
+
+    <div class="site-wrapper">
+
+        
+<header class="main-header no-cover">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="https://blog.pragmaticengineer.com"><img src="https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/2015/12/pragmatic-engineer-profile-image.png" alt="The Pragmatic Engineer" /></a>
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">The Pragmatic Engineer</h1>
+            <!--<h2 class="page-description">Observations across the software engineering industry.</h2>-->
+            <h2 class="page-description">
+                <a href="https://newsletter.pragmaticengineer.com/about">Newsletter</a> | 
+                <a href="https://pragmaticpodcast.com">Podcast</a> |
+                <a href="https://www.engguidebook.com">The Software Engineer's Guidebook</a> | 
+                <a href="/books">Books</a>
+            </h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<main id="content" class="content" role="main">
+
+    <div class="extra-pagination inner">
+    <nav class="pagination">
+    <span class="page-number">Page 1 of 1</span>
+</nav>
+
+</div>
+
+<article class="post no-image">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/the-pulse-ai-load-breaks-github/">The Pulse: AI load breaks GitHub – why not other vendors?</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>GitHub’s leadership blames the 3.5x increase in service load as the cause of degradation – or it might be self-inflicted. <a class="read-more" href="/the-pulse-ai-load-breaks-github/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        <time class="post-date" datetime="2026-05-07">07 May 2026</time>
+    </footer>
+</article>
+<article class="post no-image">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/the-pulse-token-spend-breaks-budgets-what-next/">The Pulse: token spend breaks budgets – what next?</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>In the past 2-3 months, spending on AI agents has exploded at many tech companies, Details from 15 of them, including the different ways they are coping with this realization. <a class="read-more" href="/the-pulse-token-spend-breaks-budgets-what-next/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        <time class="post-date" datetime="2026-04-30">30 April 2026</time>
+    </footer>
+</article>
+<article class="post no-image">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/the-pulse-tokenmaxxing-as-a-weird-new-trend/">The Pulse: ‘Tokenmaxxing’ as a weird new trend</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>At Meta, Microsoft, Salesforce and other large companies, devs are purposefully burning tokens (and money!) to inflate their AI usage and hit AI usage metrics which they treat as targets. <a class="read-more" href="/the-pulse-tokenmaxxing-as-a-weird-new-trend/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        <time class="post-date" datetime="2026-04-23">23 April 2026</time>
+    </footer>
+</article>
+<article class="post no-image">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/the-pulse-is-github-still-best-for-ai-native-development/">The Pulse: is GitHub still best for AI-native development?</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>Availability has dropped to one nine (~90% – !!), partly due to not being able to handle increased traffic from AI coding agents. There’s also no CEO and an apparent lack of direction. <a class="read-more" href="/the-pulse-is-github-still-best-for-ai-native-development/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        <time class="post-date" datetime="2026-04-03">03 April 2026</time>
+    </footer>
+</article>
+
+<article class="post no-image page">
+  <header class="post-header">
+      <h2 class="post-title">Previous Articles</h2>
+  </header>
+  <ul class="previous-articles">
+    <li><a href="/is-the-fde-role-becoming-less-desirable/">Is the FDE role becoming less desirable?</a>
+    </li>
+    <li><a href="/the-pulse-cloudflare-rewrites-next-js-as-ai-rewrites-commercial-open-source/">The Pulse: Cloudflare rewrites Next.js as AI rewrites commercial open source</a>
+    </li>
+    <li><a href="/i-replaced-a-120-year-micro-saas-in-20-minutes-with-llm-generated-code/">I replaced a $120/year micro-SaaS in 20 minutes with LLM-generated code</a>
+    </li>
+    <li><a href="/the-grief-when-ai-writes-most-of-the-code/">The grief when AI writes most of the code</a>
+    </li>
+    <li><a href="/the-pulse-cloudflares-latest-outage/">The Pulse: Cloudflare’s latest outage proves dangers of global configuration changes (again)</a>
+    </li>
+    <li><a href="/the-pulse-could-a-5-day-rto-be-around-the-corner-for-big-tech/">The Pulse: Could a 5-day RTO be around the corner for Big Tech?</a>
+    </li>
+    <li><a href="/downdetector-and-the-real-cost-of-no-upstream-dependencies/">Downdetector and the real cost of no upstream dependencies</a>
+    </li>
+    <li><a href="/traveling-to-mongolia/">A startup in Mongolia translated my book</a>
+    </li>
+    <li><a href="/the-pulse-cloudflare-takes-down-half-the-internet/">The Pulse: Cloudflare takes down half the internet – but shares a great postmortem</a>
+    </li>
+    <li><a href="/four-years-on-writing-a-tech-book-pitching-to-a-publisher/">Four years on writing a tech book: pitching to a publisher</a>
+    </li>
+    <li><a href="/the-pulse-amazon-layoffs/">The Pulse: Amazon layoffs – AI or economy to blame?</a>
+    </li>
+    <li><a href="/comparing-interviews-at-8-large-tech-companies/">Comparing interviews at 8 large tech companies</a>
+    </li>
+    <li><a href="/new-trend-programming-by-kicking-off-parallel-ai-agents/">New trend: programming by kicking off parallel AI agents</a>
+    </li>
+    <li><a href="/aws-outage-us-east-1/">What caused the large AWS outage?</a>
+    </li>
+    <li><a href="/creative-ways-to-fund-open-source-projects/">Creative ways to fund open source projects</a>
+    </li>
+    <li><a href="/new-trend-extreme-hours-at-ai-startups/">New trend: extreme hours at AI startups</a>
+    </li>
+    <li><a href="/cursor-makes-developers-less-effective/">Cursor makes developers less effective?</a>
+    </li>
+    <li><a href="/the-pulse-section-174-is-reversed-mostly-that-is/">The Pulse: Section 174 is reversed! Mostly, that is</a>
+    </li>
+    <li><a href="/software-engineering-with-llms-in-2025/">Software engineering with LLMs in 2025: temperature check</a>
+    </li>
+    <li><a href="/builder-ai-did-not-fake-ai/">Builder.ai did not “fake AI with 700 engineers”</a>
+    </li>
+    <li><a href="/stack-overflow-is-almost-dead/">Stack overflow is almost dead</a>
+    </li>
+    <li><a href="/tech-hiring-is-this-an-inflection-point/">Tech hiring: is this an inflection point?</a>
+    </li>
+    <li><a href="/survey-whats-in-your-tech-stack/">Survey: What’s in your tech stack?</a>
+    </li>
+    <li><a href="/software-engineer-jobs-five-year-low/">Software engineering job openings hit five-year low?</a>
+    </li>
+    <li><a href="/where-did-tiktoks-software-engineers-go/">Where did TikTok’s software engineers go?</a>
+    </li>
+    <li><a href="/the-pragmatic-engineer-100k-giveaway/">The Pragmatic Engineer 100K Giveaway</a>
+    </li>
+    <li><a href="/are-llms-making-stackoverflow-irrelevant/">Are LLMs making StackOverflow irrelevant?</a>
+    </li>
+    <li><a href="/the-pragmatic-engineer-podcast/">Where to find to The Pragmatic Engineer Podcast</a>
+    </li>
+    <li><a href="/why-my-audibook-is-not-on-audible/">Why my new audiobook “The Software Engineer&#x27;s Guidebook” is everywhere except on Audible</a>
+    </li>
+    <li><a href="/the-pragmatic-engineer-cyber-monday-deals/">The Pragmatic Engineer: Cyber Monday Deals</a>
+    </li>
+    <li><a href="/the-pragmatic-engineer-in-2024/">The Pragmatic Engineer in 2024</a>
+    </li>
+    <li><a href="/ide-that-software-engineers-love/">Which IDEs do software engineers love, and why?</a>
+    </li>
+    <li><a href="/did-automattic-commit-open-source-theft/">Did Automattic commit open source theft?</a>
+    </li>
+    <li><a href="/spare-cores/">Interesting startup idea: benchmarking cloud platform pricing</a>
+    </li>
+    <li><a href="/wordpress-struggles/">Open source business model struggles at WordPress</a>
+    </li>
+    <li><a href="/paying-down-tech-debt-further-learnings/">Paying down tech debt: further learnings</a>
+    </li>
+    <li><a href="/speakers-for-eu-tech-events/">Speakers for Amsterdam / Netherlands Tech Events</a>
+    </li>
+    <li><a href="/klarnas-ai-chatbot/">Klarna’s AI chatbot: how revolutionary is it, really?</a>
+    </li>
+    <li><a href="/the-software-engineering-industry-in-2024/">The software engineering industry in 2024: what changed, why, and what is next</a>
+    </li>
+    <li><a href="/ai-developer-marketing-stunt/">Is the “AI developer”a threat to jobs – or a marketing stunt?</a>
+    </li>
+    <li><a href="/how-does-chatgpt-work/">How does ChatGPT work? As explained by the ChatGPT team.</a>
+    </li>
+    <li><a href="/italian-bank-outage/">Weekend maintenance kicks an Italian bank offline for days</a>
+    </li>
+    <li><a href="/tech-jobs-board/">Shutting Down My Job Board for Software Engineering Positions After 2.5 Years</a>
+    </li>
+    <li><a href="/the-ai-developer/">Is the “AI developer”a threat to jobs – or a marketing stunt?</a>
+    </li>
+    <li><a href="/the-10x-engineer-evolution/">The “10x engineer:&quot; 50 years ago and now</a>
+    </li>
+    <li><a href="/happy-leap-day/">Happy Leap Day!</a>
+    </li>
+    <li><a href="/section-174/">The Pulse: Will US companies hire fewer engineers due to Section 174?</a>
+    </li>
+    <li><a href="/2023-review/">The Pragmatic Engineer Newsletter in 2023</a>
+    </li>
+    <li><a href="/mentoring/">Mentoring software engineers or engineering leaders</a>
+    </li>
+    <li><a href="/devternity-fake-speakers/">The DevTernity Tech Conference Listed Fake Speakers for Years: I Accidentally Noticed</a>
+    </li>
+    <li><a href="/the-roots-of-modern-backend-engineering-practices/">The Roots of Today&#x27;s Modern Backend Engineering Practices</a>
+    </li>
+    <li><a href="/asked-to-do-something-illegal-at-work/">Asked to do something illegal at work? Here’s what these software engineers did</a>
+    </li>
+    <li><a href="/aws-azure-and-gcp-regional-outages/">Handling a Regional Outage: Comparing the Response From AWS, Azure and GCP</a>
+    </li>
+    <li><a href="/the-man-behind-the-big-tech-comics/">Code Review on Printed Paper: an Excerpt from the Twitoons Comic Book</a>
+    </li>
+    <li><a href="/chronosphere/">Going from Developer to CEO: Chronosphere</a>
+    </li>
+    <li><a href="/working-at-a-startup-vs-in-big-tech/">Working at a Startup vs in Big Tech</a>
+    </li>
+    <li><a href="/why-are-cloud-development-environments-spiking-in-popularity-now/">Why are Cloud Development Environments Spiking in Popularity, Now?</a>
+    </li>
+    <li><a href="/bun-lessons-from-disrupting/">Bun: lessons from disrupting a tech ecosystem</a>
+    </li>
+    <li><a href="/how-microsoft-does-qa/">How Microsoft does Quality Assurance (QA)</a>
+    </li>
+    <li><a href="/how-games-typically-get-built/">How Games Typically Get Built</a>
+    </li>
+    <li><a href="/a-senior-engineer-em-job-search-story/">A senior engineer/EM job search story</a>
+    </li>
+    <li><a href="/are-reports-of-stackoverflows-fall-exaggerated/">Are reports of StackOverflow’s fall greatly exaggerated?</a>
+    </li>
+    <li><a href="/google-shutting-down-firebase-dynamic-links/">Google Shutting down Firebase Dynamic Links</a>
+    </li>
+    <li><a href="/what-is-a-senior-software-engineer-at-wise-and-amazon/">What is a Senior Software Engineer at Wise and Amazon?</a>
+    </li>
+    <li><a href="/building-an-an-early-stage-startup/">Building an an Early Stage Startup: Lessons from Akita Software</a>
+    </li>
+    <li><a href="/the-pulse-vanmoof/">The Pulse: VanMoof files for bankruptcy protection</a>
+    </li>
+    <li><a href="/twitter-vs-instagram-threads/">Twitter vs Instagram Threads: two different approaches to throttling</a>
+    </li>
+    <li><a href="/domain-registrars-which-developers-recommend/">Domain Registrars which Developers Recommend</a>
+    </li>
+    <li><a href="/google-domains-to-shut-down/">Google Domains to shut down</a>
+    </li>
+    <li><a href="/ai-coding-tools-explosion/">An explosion in software engineers using AI coding tools?</a>
+    </li>
+    <li><a href="/inside-agodas-private-cloud/">Inside Agoda’s Private Cloud - Exclusive</a>
+    </li>
+    <li><a href="/should-you-optimize-for-all-cash-compensation/">Should you optimize for all-cash compensation, if possible?</a>
+    </li>
+    <li><a href="/an-educational-side-project/">An educational side project</a>
+    </li>
+    <li><a href="/layoffs-push-down-scores-on-glassdoor/">Layoffs push down scores on Glassdoor: this is how companies respond</a>
+    </li>
+    <li><a href="/github-copilot-alternatives/">Github Copilot and ChatGPT alternatives</a>
+    </li>
+    <li><a href="/pagerduty-alternatives/">PagerDuty (and OpsGenie) alternatives</a>
+    </li>
+    <li><a href="/datadog-65m-year-customer-mystery/">Datadog’s $65M/year customer mystery solved</a>
+    </li>
+    <li><a href="/compensation-at-tech-companies/">Compensation at Publicly Traded Tech Companies</a>
+    </li>
+    <li><a href="/uber-engineering-levels/">Uber’s engineering level changes</a>
+    </li>
+    <li><a href="/critical-thinking/">Is Critical Thinking the Most Important Skill for Software Engineers?</a>
+    </li>
+    <li><a href="/the-state-of-startup-funding/">The state of startup funding</a>
+    </li>
+    <li><a href="/the-scoop-salary-transparency/">Behind the Scenes with Two New Salary Transparency Websites</a>
+    </li>
+    <li><a href="/lyft-in-trouble/">Lyft in Trouble</a>
+    </li>
+    <li><a href="/is-there-a-drop-in-software-engineer-job-openings-globally/">Is there a drop in software engineer job openings, globally?</a>
+    </li>
+    <li><a href="/amazon-return-to-office/">Amazon doubling down on RTO (return to office) - exclusive</a>
+    </li>
+    <li><a href="/the-collapse-of-silicon-valley-bank/">The Collapse of Silicon Valley Bank</a>
+    </li>
+    <li><a href="/big-tech-job-switching-stats/">Big Tech job-switching stats - exclusive</a>
+    </li>
+    <li><a href="/google-coding-competitions/">Why did Google close its coding competitions after 20 years? Exclusive details.</a>
+    </li>
+    <li><a href="/the-job-market-for-new-grads-2023/">The job market for new grads: worse than in 2008, but better than 2002</a>
+    </li>
+    <li><a href="/the-scoop-apple-rto/">Apple cracking down to enforce its RTO policy - exclusive</a>
+    </li>
+    <li><a href="/apple-job-cuts-tide/">Apple: The Only Big Tech Giant Going Against the Job Cuts Tide</a>
+    </li>
+    <li><a href="/the-scoop-big-tech-layoffs/">What Big Tech layoffs suggest for the industry</a>
+    </li>
+    <li><a href="/pollen-salaries/">Inside Pollen&#x27;s Software Engineering Salaries - Exclusive</a>
+    </li>
+    <li><a href="/the-scoop-circleci/">CircleCI’s unnoticed holiday security breach</a>
+    </li>
+    <li><a href="/the-scoop-rto/">A Return to the Office (RTO) Wave?</a>
+    </li>
+    <li><a href="/twitter-cruel-treatment-of-software-engineers/">Twitter’s ongoing cruel treatment of software engineers</a>
+    </li>
+    <li><a href="/who-is-hiring-2022/">Who is Still Hiring Software Engineers and EMs?</a>
+    </li>
+    <li><a href="/layoffs-2022/">The Scoop: Tech Layoffs in 2022</a>
+    </li>
+    <li><a href="/cruel-changes-at-twitter/">Cruel Changes at Twitter</a>
+    </li>
+    <li><a href="/turmoil-at-twitter/">The Scoop: Turmoil at Twitter</a>
+    </li>
+    <li><a href="/big-tech-hiring-slowdown/">The Big Tech Hiring Slowdown Is Here and it will Hurt</a>
+    </li>
+    <li><a href="/the-scoop-pollen/">Pollen’s enormous debt left behind: exclusive details</a>
+    </li>
+    <li><a href="/strategy-of-joining-late-stage-startups/">Is the strategy of joining late-stage startups for the financial upside, a dead end?</a>
+    </li>
+    <li><a href="/meta-layoffs/">Will Facebook / Meta do engineering layoffs?</a>
+    </li>
+    <li><a href="/the-scoop-meta/">Meta’s historic growth challenge</a>
+    </li>
+    <li><a href="/resiliency-in-distributed-systems/">Resiliency in Distributed Systems</a>
+    </li>
+    <li><a href="/what-is-data-engineering-2/">What is Data Engineering: Part 2</a>
+    </li>
+    <li><a href="/pollen/">Inside Pollen’s Collapse: “$200M Raised” but Staff Unpaid - Exclusive</a>
+    </li>
+    <li><a href="/what-is-data-engineering/">What is Data Engineering?</a>
+    </li>
+    <li><a href="/zenly/">Inside the Shutdown of Zenly by Snap</a>
+    </li>
+    <li><a href="/netflix-levels/">The Scoop: Netflix’s historic introduction of levels for software engineers - exclusive</a>
+    </li>
+    <li><a href="/affiliates/">I removed all affiliate links from my blog: numbers</a>
+    </li>
+    <li><a href="/ads/">Three years of advertising on my blog: numbers</a>
+    </li>
+    <li><a href="/advice-for-junior-software-engineers/">Advice for Less Experienced Software Engineers in the Current Tech Market</a>
+    </li>
+    <li><a href="/oncall-compensation/">Oncall Compensation for Software Engineers</a>
+    </li>
+    <li><a href="/rfcs-and-design-docs/">Companies Using RFCs or Design Docs and Examples of These</a>
+    </li>
+    <li><a href="/shipping-to-production/">Shipping to Production</a>
+    </li>
+    <li><a href="/layoffs-at-klarna/">Inside the Layoffs at Klarna</a>
+    </li>
+    <li><a href="/job-ads-for-software-engineers/">Job Ads to Hire Software Engineers: My Advice</a>
+    </li>
+    <li><a href="/how-to-become-a-full-time-creator/">Becoming a Full-Time Creator as a Software Engineer: Controversial Advice</a>
+    </li>
+    <li><a href="/scaling-customer-support/">Big Tech and the reality of scaling customer support</a>
+    </li>
+    <li><a href="/typical-migration-approaches/">Migrations Done Well: Typical Migration Approaches</a>
+    </li>
+    <li><a href="/amazon-notable-systems/">Notable Internal Systems at Amazon</a>
+    </li>
+    <li><a href="/the-ukraine-crisis-impact-on-tech/">The Ukraine War - and Its Impact on the Tech Industry</a>
+    </li>
+    <li><a href="/what-do-tpms-do/">What TPMs Do and What Software Engineers Can Learn From Them</a>
+    </li>
+    <li><a href="/becoming-a-better-writer-in-tech/">Becoming a Better Writer as a Software Engineer</a>
+    </li>
+    <li><a href="/coaches-and-mentors-for-engineering-managers/">Coaches and Mentors for Engineering Managers and Engineering Leaders</a>
+    </li>
+    <li><a href="/holiday-tech-book-recommendations/">Holiday Book Recommendations for Software Engineers, Engineering Managers and Product Managers</a>
+    </li>
+    <li><a href="/hiring-a-diverse-engineering-team/">Hiring (and Retaining) a Diverse Engineering Team</a>
+    </li>
+    <li><a href="/off-cycle-compensation-adjustments-for-software-engineers-in-2021/">Exceptional Off-Cycle Compensation Adjustments for Software Engineers in 2021</a>
+    </li>
+    <li><a href="/platform-teams/">Platform Teams</a>
+    </li>
+    <li><a href="/writing-motivation/">How I Motivate Myself to Write</a>
+    </li>
+    <li><a href="/postmortem-best-practices/">Incident Review and Postmortem Best Practices</a>
+    </li>
+    <li><a href="/reverse-interviewing/">Reverse Interviewing Your Future Manager and Team</a>
+    </li>
+    <li><a href="/pragmatic-engineer-test/">The Pragmatic Engineer Test: 12 Questions on Engineering Culture</a>
+    </li>
+    <li><a href="/project-management-at-big-tech/">How Big Tech Runs Tech Projects and the Curious Absence of Scrum</a>
+    </li>
+    <li><a href="/advice-for-tech-workers-to-navigate-a-heated-job-market/">The Most Heated Tech Job Market in History: Advice for Software Engineers</a>
+    </li>
+    <li><a href="/the-seniority-roller-coaster/">The Seniority Roller Coaster and Down-Leveling in Tech</a>
+    </li>
+    <li><a href="/the-investment-mindset/">My &quot;Investment Mindset&quot;</a>
+    </li>
+    <li><a href="/quit-mentoring-at-plato/">Donating My Time to Grow a VC-Funded Company: Why I Quit Mentoring at Plato</a>
+    </li>
+    <li><a href="/ask-the-em-debrief-panel-rejected/">I Want to Hire Someone, But My Team Said No to on the Debrief: Ask the EM</a>
+    </li>
+    <li><a href="/advertising-book-to-ios-and-android-engineers/">I Spent $5,000 Advertising My Free Book to iOS and Android Engineers</a>
+    </li>
+    <li><a href="/uber-app-rewrite-yolo/">Uber&#x27;s Crazy YOLO App Rewrite, From the Front Seat</a>
+    </li>
+    <li><a href="/dependency-injection-in-ios-and-android-apps/">Dependency Injection in iOS and Android Apps</a>
+    </li>
+    <li><a href="/checklist-for-first-time-managers/">A Checklist For First-Time Engineering Managers</a>
+    </li>
+    <li><a href="/empowered-review/">EMPOWERED Review: I Needed This Book 4 Years Ago</a>
+    </li>
+    <li><a href="/software-engineering-salaries-in-the-netherlands-and-europe/">The Trimodal Nature of Software Engineering Salaries in the Netherlands and Europe</a>
+    </li>
+    <li><a href="/preparing-for-the-systems-design-and-coding-interviews/">Preparing for the Systems Design and Coding Interview</a>
+    </li>
+    <li><a href="/equity-for-software-engineers/">Equity 101 for Software Engineers at Big Tech and Startups</a>
+    </li>
+    <li><a href="/mobile-platform-teams/">Mobile Platform Teams</a>
+    </li>
+    <li><a href="/want-to-start-a-startup-sell-something-online/">Want to Learn about Entrepreneurship, as a Software Engineer? Sell Something Online.</a>
+    </li>
+    <li><a href="/10-engineering-challenges-due-to-the-nature-of-mobile-applications/">10 Engineering Challenges Due to the Nature of Mobile Applications</a>
+    </li>
+    <li><a href="/performance-self-review-for-software-engineers-with-an-example/">Writing a Performance Self Review for Software Engineers - With an Example</a>
+    </li>
+    <li><a href="/templates-as-inspiration-for-software-engineers/">Templates as Inspiration for Software Engineers and Engineering Managers</a>
+    </li>
+    <li><a href="/performance-review-biases/">Common Performance Review Biases: How to Spot and Counter Them</a>
+    </li>
+    <li><a href="/system-design-interview-an-insiders-guide-review/">System Design Interview Book Review: Finally, a Book for Getting Better at Architecting Systems</a>
+    </li>
+    <li><a href="/what-becoming-an-engineering-manager-is-like/">What Becoming an Engineering Manager Feels Like</a>
+    </li>
+    <li><a href="/what-silicon-valley-gets-right-on-software-engineers/">What Silicon Valley &quot;Gets&quot; about Software Engineers that Traditional Companies Do Not</a>
+    </li>
+    <li><a href="/my-unforgettable-uber-ride/">My Unforgettable Uber Ride</a>
+    </li>
+    <li><a href="/how-engineering-can-work-better-with-product-managers/">Ask the EM: How Can I work Better with My Product Manager, as an Engineering Lead?</a>
+    </li>
+    <li><a href="/advice-to-myself-when-starting-as-a-software-developer/">Advice to Myself When Starting Out as a Software Developer</a>
+    </li>
+    <li><a href="/data-structures-and-algorithms-i-actually-used-day-to-day/">Data Structures &amp; Algorithms I Used Working at Tech Companies</a>
+    </li>
+    <li><a href="/can-you-measure-developer-productivity/">Can You Really Measure Individual Developer Productivity? - Ask the EM</a>
+    </li>
+    <li><a href="/the-cheetah-software-engineer/">The Cheetah Software Engineer</a>
+    </li>
+    <li><a href="/become-and-effective-software-engineering-manager-my-book-review/">Become an Effective Software Engineering Manager: My Book Review and Notes</a>
+    </li>
+    <li><a href="/software-architecture-jams/">Architecture Jams: a Collaborative Way of Designing Software</a>
+    </li>
+    <li><a href="/surprising-things-about-working-at-tech-unicorns/">Surprising Things About Working at Well-Known Tech Unicorns</a>
+    </li>
+    <li><a href="/i-feel-stuck-as-a-staff-engineer-struggling-to-move-to-an-em-role/">I Feel Stuck as a Staff Engineer, Wanting to Move Into an EM Role - Ask the EM</a>
+    </li>
+    <li><a href="/the-developer-culture-test/">A Software Engineering Culture Test</a>
+    </li>
+    <li><a href="/paper-debugging/">Paper debugging</a>
+    </li>
+    <li><a href="/tech-debt/">Tech Debt and the Pragmatic Middle Ground</a>
+    </li>
+    <li><a href="/unit-testing-benefits-pyramid/">The Pyramid of Unit Testing Benefits</a>
+    </li>
+    <li><a href="/ask-the-em-acting-as-the-team-lead-but-not-actually-being-on/">I&#x27;m Acting as The Team&#x27;s Lead, But I&#x27;m Not Actually One - Ask the EM</a>
+    </li>
+    <li><a href="/refactoring-typescript-book-review/">Refactoring Typescript: My Book Review</a>
+    </li>
+    <li><a href="/how-to-to-become-an-engineering-manager/">How Can I Prepare to Eventually Move into Engineering Management? - Ask the EM</a>
+    </li>
+    <li><a href="/how-to-lead-a-project-in-software-development/">How to Lead a Project - as a Software Engineer</a>
+    </li>
+    <li><a href="/performance-reviews-for-software-engineers/">Performance Reviews for Software Developers – How I Do Them In a (Hopefully) Fair Way</a>
+    </li>
+    <li><a href="/the-decade-in-review-in-software-development/">The 2010s in Software Development</a>
+    </li>
+    <li><a href="/distributed-systems-learnings-in-2019/">Distributed systems learnings in 2019</a>
+    </li>
+    <li><a href="/readable-code/">Readable Code</a>
+    </li>
+    <li><a href="/im-writing-a-book/">I&#x27;m Writing a Book on Growing as a Software Developer</a>
+    </li>
+    <li><a href="/dont-work-alone/">Don&#x27;t Work Alone When You&#x27;re a New or Junior Engineer</a>
+    </li>
+    <li><a href="/a-team-where-everyone-is-a-leader/">An Engineering Team where Everyone is a Leader</a>
+    </li>
+    <li><a href="/a-philosophy-of-software-design-review/">A Philosophy of Software Design: My Take (and a Book Review)</a>
+    </li>
+    <li><a href="/working-at-silicon-valley-tech-companies-in-europe/">Working at Silicon Valley Companies - in Europe</a>
+    </li>
+    <li><a href="/stretching-executing-coasting/">Stretching, Executing, Coasting - and Pacing Yourself to Avoid Burnout</a>
+    </li>
+    <li><a href="/talk-first-code-later/">Talk First, Code Later</a>
+    </li>
+    <li><a href="/seniority-tech-talk/">Seniority for Software Engineers: a Tech Talk</a>
+    </li>
+    <li><a href="/yes-you-should-estimate/">Yes, You Should Estimate Software Projects</a>
+    </li>
+    <li><a href="/bad-code/">Stop Calling it Bad Code</a>
+    </li>
+    <li><a href="/software-engineering-promotions/">Software Developer Promotions: Advice to Get to That Next Level</a>
+    </li>
+    <li><a href="/software-architecture-is-overrated/">Software Architecture is Overrated, Clear and Simple Design is Underrated</a>
+    </li>
+    <li><a href="/growth-hacks-coffee-with-an-engineer/">Growth hacks: coffee with an experienced engineer you don’t know</a>
+    </li>
+    <li><a href="/the-product-minded-engineer/">The Product-Minded Software Engineer</a>
+    </li>
+    <li><a href="/developers-mentoring-other-developers/">Developers mentoring other developers: practices I&#x27;ve seen work well</a>
+    </li>
+    <li><a href="/an-elegant-puzzle-book-review/">An Elegant Puzzle Book Review: an Overdue Read for Software Engineering Leads</a>
+    </li>
+    <li><a href="/operating-a-high-scale-distributed-system/">Operating a Large, Distributed System in a Reliable Way: Practices I Learned</a>
+    </li>
+    <li><a href="/good-code-reviews-better-code-reviews/">Good Code Reviews, Better Code Reviews</a>
+    </li>
+    <li><a href="/on-writing-well/">Undervalued Software Engineering Skills: Writing Well</a>
+    </li>
+    <li><a href="/pull-request-or-diff-best-practices/">Pull request best practices</a>
+    </li>
+    <li><a href="/scaling-engineering-teams-via-writing-things-down-rfcs/">Scaling Engineering Teams via  RFCs: Writing Things Down</a>
+    </li>
+    <li><a href="/efficient-software-project-management-at-its-roots/">Efficient Software Project Management at its Roots</a>
+    </li>
+    <li><a href="/distributed-architecture-concepts-i-have-learned-while-building-payments-systems/">Distributed architecture concepts I learned while building a large payments system</a>
+    </li>
+    <li><a href="/things-that-helped-me-successfully-move-into-engineering-management/">Seven things that helped me move into engineering management</a>
+    </li>
+    <li><a href="/things-ive-learned-transitioning-from-engineer-to-engineering-manager/">Things I&#x27;ve learned transitioning from engineer to engineering manager</a>
+    </li>
+    <li><a href="/moving-from-objective-c-to-swift-unit-testing-done-right/">Transitioning From Objective C to Swift in 4 Steps - Without Rewriting The Existing Code</a>
+    </li>
+    <li><a href="/my-code-ended-up-running-an-oil-rig-this-is-what-i-learned/">My Code Ended Up Running an Oil Rig. These are the 5 Things I Learned.</a>
+    </li>
+    <li><a href="/what-agile-really-means/">What Agile Really Means</a>
+    </li>
+    <li><a href="/a-comment-is-an-invitation-for-refactoring/">A Comment Is An Invitation For Refactoring</a>
+    </li>
+    <li><a href="/the-startup-dilemma-move-slow-or-break-things/">The Software Development Dilemma: Move Fast without Breaking Things?</a>
+    </li>
+    <li><a href="/swift-the-only-modern-language-with-no-mocking-framework/">Swift: The Only Modern Language without Mocking Frameworks</a>
+    </li>
+    <li><a href="/getting-into-the-zone-with-a-single-pomodoro/">Getting Into the Zone with a Single Pomodoro</a>
+    </li>
+    <li><a href="/from-software-developer-to-software-engineer/">From Software Developer to Software Engineer</a>
+    </li>
+  </ul>
+</article>
+
+<nav class="pagination">
+    <span class="page-number">Page 1 of 1</span>
+</nav>
+
+
+</main>
+
+<aside class="sidebar">
+  <img class="profile-image" src="https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/2015/12/pragmatic-engineer-profile-image.png" alt="" />
+  <!--
+  // to display a custom image, copy the image into assets/img/profile-img.png and replace the previous line with this:
+  <img class="profile-image" src="https://blog.pragmaticengineer.com/assets/img/profile-image.png?v=d5d40f0168" alt="" />
+  -->
+
+  <section class="publisher">by <strong>Gergely Orosz</strong></section>
+
+  <div class="nav mobile">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home nav-current elusive-icon Home" role="presentation"><a href="https://blog.pragmaticengineer.com/">Home</a></li>
+            <li class="nav-newsletter elusive-icon Newsletter" role="presentation"><a href="https://newsletter.pragmaticengineer.com/about">Newsletter</a></li>
+            <li class="nav-popular-articles elusive-icon Popular Articles" role="presentation"><a href="https://blog.pragmaticengineer.com/tag/popular/">Popular Articles</a></li>
+            <li class="nav-the-software-engineers-guidebook elusive-icon The Software Engineer&#x27;s Guidebook" role="presentation"><a href="https://www.engguidebook.com/">The Software Engineer&#x27;s Guidebook</a></li>
+            <li class="nav-my-books elusive-icon My Books" role="presentation"><a href="https://blog.pragmaticengineer.com/books/">My Books</a></li>
+            <li class="nav-early-trends elusive-icon Early trends" role="presentation"><a href="https://blog.pragmaticengineer.com/early-trends/">Early trends</a></li>
+            <li class="nav-reading-list elusive-icon Reading List" role="presentation"><a href="https://blog.pragmaticengineer.com/my-reading-list/">Reading List</a></li>
+            <li class="nav-ethics-statement elusive-icon Ethics statement" role="presentation"><a href="https://blog.pragmaticengineer.com/ethics-statement/">Ethics statement</a></li>
+            <li class="nav-write-a-guest-article elusive-icon Write a guest article" role="presentation"><a href="https://blog.pragmaticengineer.com/pragmatic-engineer-guest-article/">Write a guest article</a></li>
+            <li class="nav-sponsors elusive-icon Sponsors" role="presentation"><a href="https://blog.pragmaticengineer.com/podcast-sponsors/">Sponsors</a></li>
+            <li class="nav-investing elusive-icon Investing" role="presentation"><a href="https://blog.pragmaticengineer.com/investing/">Investing</a></li>
+            <li class="nav-now elusive-icon Now" role="presentation"><a href="https://blog.pragmaticengineer.com/now/">Now</a></li>
+            <li class="nav-contact-me elusive-icon Contact me" role="presentation"><a href="https://blog.pragmaticengineer.com/contact/">Contact me</a></li>
+            <li class="nav-about elusive-icon About" role="presentation"><a href="https://blog.pragmaticengineer.com/about/">About</a></li>
+            <li class="nav-rss-feed elusive-icon RSS Feed" role="presentation"><a href="https://blog.pragmaticengineer.com/feed/">RSS Feed</a></li>
+            <li class="nav-bluesky elusive-icon bluesky" role="presentation"><a href="https://bsky.app/profile/gergely.pragmaticengineer.com/">bluesky</a></li>
+            <li class="nav-twitter elusive-icon twitter" role="presentation"><a href="http://twitter.com/GergelyOrosz">twitter</a></li>
+            <li class="nav-youtube elusive-icon youtube" role="presentation"><a href="https://www.youtube.com/@pragmaticengineer">youtube</a></li>
+            <li class="nav-linkedin elusive-icon linkedin" role="presentation"><a href="http://www.linkedin.com/in/gergelyorosz">linkedin</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="https://blog.pragmaticengineer.com/rss/">Subscribe</a>
+</div>
+<span class="nav-cover mobile"></span>
+
+<div class="nav-desktop">
+  <ul class="sidebar-nav">
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/" class="elusive-icon Home" rel="me">Home</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://newsletter.pragmaticengineer.com/about" class="elusive-icon Newsletter" rel="me">Newsletter</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/tag/popular/" class="elusive-icon Popular Articles" rel="me">Popular Articles</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://www.engguidebook.com/" class="elusive-icon The Software Engineer&#x27;s Guidebook" rel="me">The Software Engineer&#x27;s Guidebook</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/books/" class="elusive-icon My Books" rel="me">My Books</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/early-trends/" class="elusive-icon Early trends" rel="me">Early trends</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/my-reading-list/" class="elusive-icon Reading List" rel="me">Reading List</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/ethics-statement/" class="elusive-icon Ethics statement" rel="me">Ethics statement</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/pragmatic-engineer-guest-article/" class="elusive-icon Write a guest article" rel="me">Write a guest article</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/podcast-sponsors/" class="elusive-icon Sponsors" rel="me">Sponsors</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/investing/" class="elusive-icon Investing" rel="me">Investing</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/now/" class="elusive-icon Now" rel="me">Now</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/contact/" class="elusive-icon Contact me" rel="me">Contact me</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/about/" class="elusive-icon About" rel="me">About</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://blog.pragmaticengineer.com/feed/" class="elusive-icon RSS Feed" rel="me">RSS Feed</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://bsky.app/profile/gergely.pragmaticengineer.com/" class="elusive-icon bluesky" rel="me">bluesky</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="http://twitter.com/GergelyOrosz" class="elusive-icon twitter" rel="me">twitter</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="https://www.youtube.com/@pragmaticengineer" class="elusive-icon youtube" rel="me">youtube</a>
+        </li>
+        <li class="nav-desktop" role="presentation">
+          <a href="http://www.linkedin.com/in/gergelyorosz" class="elusive-icon linkedin" rel="me">linkedin</a>
+        </li>
+  </ul>
+
+</div>
+
+
+  
+<ul>
+  <li><a href="https://blog.pragmaticengineer.com/newsletter" class="elusive-icon email">Subscribe via email</a></li>
+  <li><a href="http://feeds.feedburner.com/ThePragmaticEngineer" class="elusive-icon rss">Subscribe in a reader</a></li>
+</ul>
+
+
+
+  <footer class="site-footer clearfix">
+      <section class="copyright"><a href="https://blog.pragmaticengineer.com">The Pragmatic Engineer</a> &copy; 2026</section>
+      <div class="gh-powered-by"><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+  </footer>
+
+</aside>
+
+    </div>
+
+    <!-- Geniuslink -->
+<!--
+<script type="text/javascript" src="//cdn.geni.us/snippet.min.js" defer></script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+var tsid =116191;
+Genius.amazon.addOnClickRedirect(tsid, false, "https://buy.geni.us"); });
+</script>-->
+
+<!-- Google Analytics -->
+<!--
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7745037-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+-->
+
+<!-- Plausible -->
+<script async defer data-domain="blog.pragmaticengineer.com" src="https://plausible.io/js/plausible.js"></script>
+
+<!-- Source code higlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-css.min.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://blog.pragmaticengineer.com/assets/js/jquery.fitvids.js?v=d5d40f0168"></script>
+    <script type="text/javascript" src="https://blog.pragmaticengineer.com/assets/js/index.js?v=d5d40f0168"></script>
+
+</body>
+</html>

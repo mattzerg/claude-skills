@@ -1,0 +1,21 @@
+{
+  "custom": {
+    "Paypal": {
+      "memo": "DeepSeek API credits — $50 top-up for model inference (Zerg product development)",
+      "receipt_pdf": "/Users/mattheweisner/.claude/skills/expense-skill/output/deepseek-paypal.pdf"
+    },
+    "Obsidian": {
+      "memo": "Obsidian — knowledge base / Sync subscription for Zerg ops",
+      "receipt_pdf": "/Users/mattheweisner/.claude/skills/expense-skill/output/obsidian.pdf"
+    }
+  },
+  "merchant_default_memo": {
+    "Anthropic": "Anthropic API credits — Claude usage for Zerg product development",
+    "OpenAI": "OpenAI API credits — model usage for Zerg product development",
+    "Fal": "fal.ai — model inference credits for Zerg content pipeline",
+    "Together": "Together AI — prepaid API credits for model inference (Zerg)",
+    "Google": "Google Cloud — API usage for Zerg product development",
+    "x.ai": "xAI (Grok) API credits for Zerg model experimentation",
+    "Udio": "Udio — audio generation credits for Zerg content"
+  }
+}

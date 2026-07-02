@@ -1,0 +1,15 @@
+# Golden cases for the `grill-me` skill (the frozen eval harness).
+# Under --runner echo these exercise the harness mechanics; under
+# --runner claude/zclaude they test whether grill-me actually behaves.
+cases:
+  - id: enumerates-branches
+    prompt: "grill-me on this plan: store API tokens in config.json. Map the decision tree."
+    expect: ["branch"]          # real grill-me enumerates decision branches
+
+  - id: refuses-open-branch
+    prompt: "grill-me: should we skip the migration backfill? We don't know the row count yet."
+    expect: ["open"]            # real grill-me flags the unresolved branch, won't conclude
+
+  - id: harness-sanity
+    prompt: "This prompt contains sentinel-token so echo-mode proves the scoring pipeline."
+    expect: ["sentinel-token"]  # passes under --runner echo (mechanics check)

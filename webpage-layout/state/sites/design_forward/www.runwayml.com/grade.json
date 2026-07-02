@@ -1,0 +1,38 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 6,
+    "color": 7,
+    "density": 6,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "ABC Normal + JHA Times Now is a disciplined, confident pairing \u2014 avoids Inter/Fraunces clich\u00e9. Display type does real work.",
+    "hierarchy": "Hero dominates well, but below-fold becomes generic card grid. Headline 'Building AI to Simulate the World' works hard visually.",
+    "distinctiveness": "The hero ocean/birds metaphor is specific, but swap 'Runway' for any AI-video competitor and the structure still fits. Cards are commodity.",
+    "color": "Deep teal dominant, white/black restrained. Accent usage disciplined. Not decorative, but also not adventurous \u2014 safe tech palette.",
+    "density": "Hero breathes well, partner logos have space. But the card grid below follows uniform padding religion \u2014 timid, not confident.",
+    "voice": "Opens strong with poetic positioning, then degrades into 'Here are our products' card grid. IA doesn't reflect the ambition \u2014 becomes feature catalog."
+  },
+  "winning_patterns": [
+    "Custom type pairing (ABC Normal + JHA Times Now) shows discipline",
+    "Hero visual metaphor (ocean depth, flying birds) connects to 'simulate world' theme",
+    "White-on-dark hero contrast creates focus without decoration",
+    "Restrained color system \u2014 doesn't spray gradients everywhere",
+    "Partner logos treated with appropriate neutrality"
+  ],
+  "anti_patterns": [
+    "Below-fold degrades into generic product card grid \u2014 could be any SaaS",
+    "The 'AI is changing...' preamble is motivational-poster generic",
+    "Uniform card padding/spacing \u2014 timid density choices",
+    "Navigation labels (RESEARCH/PRODUCT/SOLUTIONS) are commodity categories",
+    "IA structure doesn't support narrative \u2014 just product lineup",
+    "'Get Started' CTA is the least distinctive button copy possible"
+  ],
+  "one_word_personality": "cinematic",
+  "_url": "https://www.runwayml.com",
+  "_persona": "design_forward",
+  "_note": "Video-led hero, dramatic dark gradients",
+  "_graded_at": "2026-05-08T21:43:58.483130Z"
+}

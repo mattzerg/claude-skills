@@ -65,6 +65,22 @@ TOKENS_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
+def ensure_interactive_auth_allowed() -> None:
+    if os.environ.get("GOOGLE_OAUTH_ALLOW_BROWSER") == "1":
+        return
+    if sys.stdin.isatty() and sys.stdout.isatty():
+        return
+    print(json.dumps({
+        "ok": False,
+        "error": "reauth_required",
+        "provider": "google",
+        "surface": "docs",
+        "message": "Google Docs OAuth needs an interactive refresh; refusing to open a browser from a background job.",
+        "refresh_command": "zerg-auth refresh google --account matthew@zergai.com",
+    }))
+    sys.exit(2)
+
+
 # ---------------------------------------------------------------------------
 # Auth helpers
 # ---------------------------------------------------------------------------
@@ -116,10 +132,12 @@ def get_credentials(account: str = None):
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
+            ensure_interactive_auth_allowed()
             flow = InstalledAppFlow.from_client_secrets_file(str(creds_file), SCOPES)
             creds = flow.run_local_server(port=9996)
         with open(token_path, "w") as f:
             f.write(creds.to_json())
+        token_path.chmod(0o600)
 
     return creds
 

@@ -1,8 +1,9 @@
 ---
 name: programmatic-seo
-description: Generate programmatic SEO content for Zerg's content engine — comparison pages (Linear vs Zergboard, Slack vs ZergChat, Calendly vs ZergCal, Otter vs ZergMeeting, Front vs ZergMail), GEO-optimized canonical explainers (what is X, how does Y work), and integration pages (Zerg + <partner>). Reads MattZerg/Competitive/<category>/positioning.md + competitor matrices to source claims; writes draft Markdown blog posts to ~/zerg/web/src/public/content/blog/<slug>.md with full SEO frontmatter (canonical URL, meta description, structured data). Pairs with blog-imagery (auto-generates hero) and fakematt-copyedit (voice review). Phase 2 build (Day 31–60), L effort. Pair with experiments #3 (comparison pages) + #4 (GEO explainers). USE PROACTIVELY when Matt mentions SEO, comparison pages, integration pages, "Linear vs us", AI-citation traffic, or programmatic content.
+description: Generate programmatic SEO content for Zerg's content engine. Routes by SCOPE (see project_zerg_content_routing.md) — single-product comparison/integration pages go to the product site (`~/zerg/<product>/public/content/compare/<slug>.md` or `.../integrations/<slug>.md`); multi-product / category / brand explainers stay on zergai (`~/zerg/web/src/public/content/blog/<slug>.md`). Reads MattZerg/Competitive/<category>/positioning.md + competitor matrices to source claims. Pairs with blog-imagery (hero) and fakematt-copyedit (voice review). Phase 2 build (Day 31–60), L effort.
 allowed-tools: Bash, Read, Write
 ---
+
 
 # Programmatic SEO Skill (v0 stub — Phase 2 build, L effort)
 
@@ -14,19 +15,22 @@ Plan: `~/.claude/plans/i-am-planning-growth-splendid-bee.md`. High variance — 
 
 ## Three modes
 
-### comparison — generate "X vs Zerg" pages
+### comparison — generate "X vs <product>" pages (writes to PRODUCT site)
 
 ```bash
 python3 ~/.claude/skills/programmatic-seo/run.py comparison \\
   --competitor linear --zerg-product zergboard
 ```
 
-Reads `MattZerg/Competitive/pm-software/positioning.md` + `differentiation-opportunities.md` for source claims. Outputs `~/zerg/web/src/public/content/blog/linear-vs-zergboard.md` with:
-- H1: "Linear vs Zergboard" (target keyword)
+Reads `MattZerg/Competitive/pm-software/positioning.md` + `differentiation-opportunities.md` for source claims. Writes `~/zerg/zergboard/public/content/compare/linear.md` (slug is just the competitor — context comes from the `/compare/<slug>` route). Canonical URL: `https://zergboard.com/compare/linear`.
+
+Per the routing rule (`project_zerg_content_routing.md`): single-product content goes to the product site, NOT zergai. Comparison pages always sell ONE product, so they always route to that product. Each product has its own `compare/[slug]` route + `constants/compare/<slug>.ts` metadata file — Matt or Claude wires the metadata after scaffolding.
+
+Generated body includes:
 - Honest tradeoffs section (per `feedback_idan_pr_review_bar.md` — show where competitor wins)
 - Pricing comparison table
 - Migration guide section (CTA)
-- Schema.org markup for comparison content
+- FAQ section (FAQPage schema rendered by the route)
 
 Phase 2 deliverable: 5 comparison pages (Linear, Asana, Trello, Slack, Calendly).
 
@@ -45,13 +49,22 @@ Outputs `~/zerg/web/src/public/content/blog/<slug>.md` structured for AI assista
 
 Phase 2 deliverable: 5 GEO explainers ("what is X" / "how does Y work" topics from competitive matrix whitespace gaps).
 
-### integration — generate "Zerg + <partner>" pages
+### integration — generate partner integration pages (routes by scope)
 
 ```bash
+# Single-product integration → product site (e.g. Trello import on Zergboard).
+python3 ~/.claude/skills/programmatic-seo/run.py integration \\
+  --partner trello --zerg-product zergboard
+# → ~/zerg/zergboard/public/content/integrations/trello.md
+# → canonical https://zergboard.com/integrations/trello
+
+# Multi-product / brand-level integration → zergai blog (e.g. "Zerg + Anthropic" cross-stack story).
 python3 ~/.claude/skills/programmatic-seo/run.py integration --partner anthropic-claude-code
+# → ~/zerg/web/src/public/content/blog/zerg-and-anthropic-claude-code.md
+# → canonical https://zergai.com/blog/zerg-and-anthropic-claude-code
 ```
 
-For each BD partner (per `Growth/bd-targets.md`), generate a co-marketing-ready integration page. Phase 3 deliverable: 5 integration pages from converted partner conversations.
+Omit `--zerg-product` for multi-product / brand-level integration stories. Include it for single-product partner integration pages. For each BD partner (per `Growth/bd-targets.md`), generate a co-marketing-ready integration page. Phase 3 deliverable: 5 integration pages from converted partner conversations.
 
 ## SEO discipline
 
@@ -80,4 +93,5 @@ For each BD partner (per `Growth/bd-targets.md`), generate a co-marketing-ready 
 - Heavy use of Claude API (similar to `case-study-skill` `scaffold` mode) for content generation
 - Reads vault competitive briefs as ground truth; refuses claims not in source material
 - Routes through `content-distribution` for distribution after publish
-- File-based; output lands in `~/zerg/web/src/public/content/blog/`
+- File-based; output lands in `~/zerg/<product>/public/content/{compare,integrations}/<slug>.md` for single-product pages, or `~/zerg/web/src/public/content/blog/<slug>.md` for multi-product / category content. See `project_zerg_content_routing.md`.
+- After scaffolding a comparison/integration page on a product site, the metadata TS file (`constants/<compare|integrations>/<slug>.ts`) needs to be created and registered in `constants/<dir>/index.ts`. v0.1 will auto-emit this; for now do it by hand (mirror an existing entry like `zergboard/constants/compare/trello.ts`).

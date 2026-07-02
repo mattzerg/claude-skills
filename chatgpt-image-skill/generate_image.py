@@ -21,10 +21,14 @@ import urllib.error
 from pathlib import Path
 
 BRAND_PREFIX = (
-    "Dark navy background (#07111E), restrained data-forward composition, "
-    "electric blue and warm amber accent colors, system sans typography if any text, "
-    "abstract conceptual (NOT photorealistic), no embedded text/logos/Zerg marks, "
-    "safe area in centered 80% of frame. "
+    "Cream paper background (#f4f0e7), charcoal accents (#111514), "
+    "burnt-orange highlights (#b3662f), green secondary (#6FBE31). "
+    "Geometric flat-editorial illustration similar to Stripe blog illustrations. "
+    "Space Grotesk feel — geometric, technical, but warm. "
+    "No embedded text or logos. NOT cosmic, NOT space-themed, NOT circuit-board. "
+    "Safe area in centered 80% of frame. "
+    "Source: feedback_zerg_brand.md (live-site palette, ~/zerg/web/src/pages/index.vue). "
+    "For dark-paper variants pass --no-brand-prefix and supply explicit dark instructions."
 )
 
 
@@ -71,7 +75,18 @@ def generate(prompt, size, quality, n, output, no_brand_prefix):
             data = json.loads(resp.read())
     except urllib.error.HTTPError as e:
         err_body = e.read().decode(errors="ignore")
+        # Surface failure on STDOUT so callers piping through `tail` still see it.
+        print(f"FAILED: OpenAI API error {e.code} (output={output})")
         print(f"OpenAI API error {e.code}: {err_body}", file=sys.stderr)
+        sys.exit(2)
+    except urllib.error.URLError as e:
+        print(f"FAILED: network error (output={output}): {e.reason}")
+        print(f"Network error: {e.reason}", file=sys.stderr)
+        sys.exit(2)
+
+    if isinstance(data, dict) and data.get("error"):
+        print(f"FAILED: OpenAI returned 200 with error body (output={output})")
+        print(f"OpenAI error body: {json.dumps(data['error'])}", file=sys.stderr)
         sys.exit(2)
 
     output_paths = []
@@ -92,6 +107,7 @@ def generate(prompt, size, quality, n, output, no_brand_prefix):
         print(f"Wrote {out_path} ({out_path.stat().st_size:,} bytes)")
 
     if not output_paths:
+        print(f"FAILED: API returned no image data (output={output})")
         print("Error: API returned no image data.", file=sys.stderr)
         sys.exit(3)
 

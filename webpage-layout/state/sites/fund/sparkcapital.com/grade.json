@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 3,
+    "hierarchy": 2,
+    "distinctiveness": 2,
+    "color": 4,
+    "density": 2,
+    "voice": 2
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif system, zero typographic character. The wordmark is bold condensed caps but body copy appears to be standard weight with no distinctive voice or rhythm.",
+    "hierarchy": "Catastrophic failure \u2014 the homepage is a blank void with only a nav bar. No dominant element, no headline doing visual work, nothing for the eye to land on.",
+    "distinctiveness": "Completely generic VC stencil. 'ABOUT / TEAM / COMPANIES' nav could be literally any fund. The tagline 'products we love by creators we admire' is interchangeable boilerplate.",
+    "color": "Monochrome black/white with good restraint, though the nearly-invisible pale text ('We are a community...') shows poor contrast judgment. At least it's not busy.",
+    "density": "The homepage is almost entirely empty whitespace \u2014 not confident minimalism but rather content vacancy. Navigation alone doesn't constitute density strategy.",
+    "voice": "Textbook VC stencil IA: About/Team/Companies. Zero narrative structure, zero reflection of actual investment thesis or story. Could be any fund's wireframe."
+  },
+  "winning_patterns": [
+    "Clean monochrome palette shows some restraint",
+    "Strong logo/wordmark lockup in header has presence",
+    "Not over-designed or decorative \u2014 errs toward simplicity"
+  ],
+  "anti_patterns": [
+    "Homepage is essentially blank \u2014 catastrophic hierarchy failure",
+    "Generic VC navigation triad (About/Team/Companies) with zero personality",
+    "Pale ghost text is nearly illegible \u2014 accessibility fail",
+    "Could swap 'Spark Capital' for any fund name and nothing would feel wrong",
+    "No content density strategy \u2014 just void with nav",
+    "Zero typographic voice beyond bold caps wordmark"
+  ],
+  "one_word_personality": "vacant",
+  "_url": "https://sparkcapital.com",
+  "_persona": "fund",
+  "_note": "Restraint over pomp",
+  "_graded_at": "2026-05-07T19:57:12.107436Z"
+}

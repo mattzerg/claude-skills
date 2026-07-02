@@ -25,23 +25,47 @@ import re
 import sys
 from pathlib import Path
 
-VAULT = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
+VAULT = Path("/Users/mattheweisner/Obsidian/Zerg/MattZerg")
 COMP_DIR = VAULT / "Competitive"
-DEFAULT_OUT = Path.home() / "zerg" / "web" / "src" / "public" / "content" / "blog"
+
+# Single-product content (comparison/integration pages) goes to the PRODUCT site.
+# Multi-product / category / brand content (explainers) stays on zergai.
+# See memory: project_zerg_content_routing.md
+ZERGAI_BLOG = Path.home() / "zerg" / "web" / "src" / "public" / "content" / "blog"
 
 MIN_WORDS = 800
 
-# zerg-product → competitive category mapping
-PRODUCT_CATEGORY = {
-    "zergboard": "pm-software",
-    "zergchat": "internal-chat",
-    "zergcal": "calendar",
-    "zergmeeting": "video-meetings",
-    "zergmail": "workspace-email",
-    "zergcrm": "crm",
-    "zergalytics": "analytics",
-    "zergwallet": "personal-finance-managers",
+# zerg-product → (repo dir name, competitive category, public domain).
+# Repo dir under ~/zerg/. Domain is where the canonical URL points.
+PRODUCT_INFO = {
+    "zergboard":   ("zergboard",   "pm-software",                "zergboard.com"),
+    "zergchat":    ("zergchat",    "internal-chat",              "zergchat.com"),
+    "zergcal":     ("zergcal",     "calendar",                   "zergcal.com"),
+    "zergmeeting": ("zergmeeting", "video-meetings",             "zergmeeting.com"),
+    "zergmail":    ("zergmail",    "workspace-email",            "zergmail.com"),
+    "zergcrm":     ("zergcrm",     "crm",                        "zergcrm.com"),
+    "zergalytics": ("zergalytics", "analytics",                  "zergalytics.com"),
+    "zergwallet":  ("zergwallet",  "personal-finance-managers",  "zergwallet.com"),
 }
+
+# Backward-compat alias for any caller that imported the old name.
+PRODUCT_CATEGORY = {k: v[1] for k, v in PRODUCT_INFO.items()}
+
+
+def product_compare_dir(product: str) -> Path:
+    """Where comparison pages for <product> are written."""
+    repo, _, _ = PRODUCT_INFO[product]
+    return Path.home() / "zerg" / repo / "public" / "content" / "compare"
+
+
+def product_integration_dir(product: str) -> Path:
+    """Where integration pages for <product> are written."""
+    repo, _, _ = PRODUCT_INFO[product]
+    return Path.home() / "zerg" / repo / "public" / "content" / "integrations"
+
+
+def product_domain(product: str) -> str:
+    return PRODUCT_INFO[product][2]
 
 
 def slugify(s: str) -> str:
@@ -86,20 +110,21 @@ def write_page(path: Path, frontmatter: dict[str, str], body: str) -> None:
 def cmd_comparison(args: argparse.Namespace) -> int:
     comp = args.competitor.lower().strip()
     zerg = args.zerg_product.lower().strip()
-    if zerg not in PRODUCT_CATEGORY:
-        print(f"ERROR: unknown zerg-product {zerg!r}; known: {sorted(PRODUCT_CATEGORY)}", file=sys.stderr)
+    if zerg not in PRODUCT_INFO:
+        print(f"ERROR: unknown zerg-product {zerg!r}; known: {sorted(PRODUCT_INFO)}", file=sys.stderr)
         return 1
     category = PRODUCT_CATEGORY[zerg]
     pos = find_positioning_file(category)
     diff = find_diff_file(category)
-    slug = f"{comp}-vs-{zerg}"
+    # Slug is just the competitor — context is the /compare/<slug> route on the product site.
+    slug = slugify(comp)
     title = f"{comp.title()} vs {zerg.title()}"
 
-    out_dir = Path(args.out_dir) if args.out_dir else DEFAULT_OUT
+    out_dir = Path(args.out_dir) if args.out_dir else product_compare_dir(zerg)
     out = out_dir / f"{slug}.md"
 
     today = dt.date.today().isoformat()
-    canonical = f"https://zergai.com/blog/{slug}"
+    canonical = f"https://{product_domain(zerg)}/compare/{slug}"
     meta_desc = f"{comp.title()} vs {zerg.title()}: honest tradeoffs, pricing, and a migration path. Updated {today}."
 
     fm = {
@@ -171,7 +196,7 @@ def cmd_comparison(args: argparse.Namespace) -> int:
 def cmd_explainer(args: argparse.Namespace) -> int:
     topic = args.topic.strip()
     slug = slugify(topic)
-    out_dir = Path(args.out_dir) if args.out_dir else DEFAULT_OUT
+    out_dir = Path(args.out_dir) if args.out_dir else ZERGAI_BLOG
     out = out_dir / f"{slug}.md"
     today = dt.date.today().isoformat()
     canonical = f"https://zergai.com/blog/{slug}"
@@ -230,12 +255,23 @@ def cmd_explainer(args: argparse.Namespace) -> int:
 
 def cmd_integration(args: argparse.Namespace) -> int:
     partner = args.partner.lower().strip()
-    slug = f"zerg-and-{slugify(partner)}"
-    out_dir = Path(args.out_dir) if args.out_dir else DEFAULT_OUT
+    zerg = (args.zerg_product or "").lower().strip() if hasattr(args, "zerg_product") else ""
+    slug = slugify(partner)
+
+    # If --zerg-product is given AND it's a known single-product integration → product site.
+    # Otherwise (multi-product / brand-level integration story) → zergai blog.
+    if zerg and zerg in PRODUCT_INFO:
+        out_dir = Path(args.out_dir) if args.out_dir else product_integration_dir(zerg)
+        canonical = f"https://{product_domain(zerg)}/integrations/{slug}"
+        title = f"{partner.replace('-', ' ').title()} integration for {zerg.title()}"
+    else:
+        out_dir = Path(args.out_dir) if args.out_dir else ZERGAI_BLOG
+        canonical = f"https://zergai.com/blog/zerg-and-{slug}"
+        title = f"Zerg + {partner.replace('-', ' ').title()}: Integration Guide"
+        slug = f"zerg-and-{slug}"
+
     out = out_dir / f"{slug}.md"
     today = dt.date.today().isoformat()
-    canonical = f"https://zergai.com/blog/{slug}"
-    title = f"Zerg + {partner.replace('-', ' ').title()}: Integration Guide"
 
     fm = {
         "title": title,
@@ -269,7 +305,7 @@ def cmd_integration(args: argparse.Namespace) -> int:
         f"_(4–6 Q&As.)_\n\n"
         f"## Sources\n\n"
         f"- {partner.replace('-', ' ').title()} official docs\n"
-        f"- Zerg integration runbook: `MattZerg/Projects/Zstack/Integration.md`\n"
+        f"- Zerg integration runbook: `MattZerg/Projects/Zerg-Production/Zstack/Integration.md`\n"
     )
 
     write_page(out, fm, body)
@@ -316,22 +352,24 @@ def main() -> int:
     p = argparse.ArgumentParser(prog="programmatic-seo", description=__doc__)
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    pc = sub.add_parser("comparison", help="scaffold a 'X vs Zerg' comparison page")
+    pc = sub.add_parser("comparison", help="scaffold a single-product '<competitor> vs <product>' page (writes to product site)")
     pc.add_argument("--competitor", required=True, help="lowercase slug, e.g. linear, slack")
     pc.add_argument("--zerg-product", dest="zerg_product", required=True,
-                    help=f"one of: {sorted(PRODUCT_CATEGORY)}")
-    pc.add_argument("--out-dir", dest="out_dir", help=f"output directory (default: {DEFAULT_OUT})")
+                    help=f"one of: {sorted(PRODUCT_INFO)}")
+    pc.add_argument("--out-dir", dest="out_dir", help="override output directory (default: ~/zerg/<product>/public/content/compare/)")
     pc.set_defaults(func=cmd_comparison)
 
-    pe = sub.add_parser("explainer", help="scaffold a GEO-optimized canonical explainer")
+    pe = sub.add_parser("explainer", help="scaffold a multi-product / category explainer (writes to zergai blog)")
     pe.add_argument("--topic", required=True, help='e.g. "what is agent-native project management"')
     pe.add_argument("--target", default="ai-citation", help="distribution target (ai-citation | organic-search)")
-    pe.add_argument("--out-dir", dest="out_dir")
+    pe.add_argument("--out-dir", dest="out_dir", help=f"override output directory (default: {ZERGAI_BLOG})")
     pe.set_defaults(func=cmd_explainer)
 
-    pi = sub.add_parser("integration", help="scaffold a 'Zerg + Partner' integration page")
+    pi = sub.add_parser("integration", help="scaffold a 'Partner integration' page (single-product → product site, multi-product → zergai)")
     pi.add_argument("--partner", required=True, help='e.g. "anthropic-claude-code", "cursor", "fly"')
-    pi.add_argument("--out-dir", dest="out_dir")
+    pi.add_argument("--zerg-product", dest="zerg_product", default="",
+                    help=f"if set, write to that product's site. Omit for a multi-product / brand-level integration story (writes to zergai). Known: {sorted(PRODUCT_INFO)}")
+    pi.add_argument("--out-dir", dest="out_dir", help="override output directory")
     pi.set_defaults(func=cmd_integration)
 
     pv = sub.add_parser("validate", help="check a scaffold for required frontmatter + min word count")

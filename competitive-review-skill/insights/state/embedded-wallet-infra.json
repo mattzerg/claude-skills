@@ -7189,7 +7189,7 @@
     }
   },
   "spec": {
-    "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Zergwallet.md",
+    "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Projects/Zerg-Production/Zstack/Zergwallet.md",
     "frontmatter": {
       "created": "2026-05-01",
       "updated": "2026-05-03",
@@ -11534,7 +11534,7 @@
   "hunted_at": "2026-05-03T22:53:01.693684",
   "prior_audits": [
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-01-untitled-e9403552.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-01-untitled-e9403552.md",
       "filename": "2026-05-01-untitled-e9403552.md",
       "score": 18,
       "matched_terms": [
@@ -11550,7 +11550,7 @@
       "snippet": "d session  ## what was asked <system-reminder> the user named this session \"zergwallet\". this may indicate the session's focus or intent. </system-reminder>  ## how it closed vision saved. the competitive-review skill runs **one category at a time** (it scrapes deep + builds a feature matrix per run), so the right move is to split this into 7 reviews and prioritize. below is what i'd run, grouped "
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-map-airdrop-tools-across-finance-wallets-1dc5cdc1.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-map-airdrop-tools-across-finance-wallets-1dc5cdc1.md",
       "filename": "2026-05-03-map-airdrop-tools-across-finance-wallets-1dc5cdc1.md",
       "score": 12,
       "matched_terms": [
@@ -11562,7 +11562,7 @@
       "snippet": "mpetitive-review-skill branches: [main] ---  # map airdrop tools across finance wallets  ## what was asked you are filling in a feature presence matrix for the \"finance-and-wallets\" category.  for each canonical feature in the list below, mark presence in each source as one of: - \"yes\"     \u2014 clearly present, confirmed in source content - \"partial\" \u2014 limited form, gated to enterprise tier, or in be"
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallet-feature-presence-matrix-6b3d2603.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallet-feature-presence-matrix-6b3d2603.md",
       "filename": "2026-05-03-finance-wallet-feature-presence-matrix-6b3d2603.md",
       "score": 12,
       "matched_terms": [
@@ -11574,7 +11574,7 @@
       "snippet": "weisner/.claude/skills/competitive-review-skill branches: [main] ---  # finance wallet feature presence matrix  ## what was asked you are filling in a feature presence matrix for the \"finance-and-wallets\" category.  for each canonical feature in the list below, mark presence in each source as one of: - \"yes\"     \u2014 clearly present, confirmed in source content - \"partial\" \u2014 limited form, gated to en"
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-extract-crossmint-feature-inventory-a9f2ac3a.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-extract-crossmint-feature-inventory-a9f2ac3a.md",
       "filename": "2026-05-03-extract-crossmint-feature-inventory-a9f2ac3a.md",
       "score": 12,
       "matched_terms": [
@@ -11586,7 +11586,7 @@
       "snippet": "weisner/.claude/skills/competitive-review-skill branches: [main] ---  # extract crossmint feature inventory  ## what was asked you are a competitive intelligence analyst extracting a structured feature profile for \"crossmint\".  you have raw text from multiple sources for this product. extract the most complete possible feature inventory.  return json: {   \"name\": \"crossmint\",   \"url\": \"https://cro"
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-competitive-intelligence-analysis-for-privy-6d4d8c3a.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-competitive-intelligence-analysis-for-privy-6d4d8c3a.md",
       "filename": "2026-05-03-competitive-intelligence-analysis-for-privy-6d4d8c3a.md",
       "score": 12,
       "matched_terms": [
@@ -11598,7 +11598,7 @@
       "snippet": "tive-review-skill branches: [main] ---  # competitive intelligence analysis for privy  ## what was asked you are a competitive intelligence analyst extracting a structured feature profile for \"privy\".  you have raw text from multiple sources for this product. extract the most complete possible feature inventory.  return json: {   \"name\": \"privy\",   \"url\": \"https://privy.io\",   \"tagline\": \"their ma"
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-02-analyze-finance-wallets-competitive-landscape-vs-zergwallet-0e4e979c.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-02-analyze-finance-wallets-competitive-landscape-vs-zergwallet-0e4e979c.md",
       "filename": "2026-05-02-analyze-finance-wallets-competitive-landscape-vs-zergwallet-0e4e979c.md",
       "score": 12,
       "matched_terms": [
@@ -11609,7 +11609,7 @@
       "snippet": ".claude/skills/competitive-review-skill branches: [main] ---  # analyze finance-wallets competitive landscape vs zergwallet  ## what was asked you are a competitive intelligence analyst. the user is reviewing the \"finance-and-wallets\" product category against the zerg product 'zergwallet'.  user-supplied seed competitors: - https://metamask.io - https://rainbow.me - https://skyfire.xyz - https://c"
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallets-feature-matrix-assessment-1575309d.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallets-feature-matrix-assessment-1575309d.md",
       "filename": "2026-05-03-finance-wallets-feature-matrix-assessment-1575309d.md",
       "score": 10,
       "matched_terms": [
@@ -11620,7 +11620,7 @@
       "snippet": "weisner/.claude/skills/competitive-review-skill branches: [main] ---  # finance wallets feature matrix assessment  ## what was asked you are filling in a feature presence matrix for the \"finance-and-wallets\" category.  for each canonical feature in the list below, mark presence in each source as one of: - \"yes\"     \u2014 clearly present, confirmed in source content - \"partial\" \u2014 limited form, gated to"
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallet-features-comparison-matrix-172600dc.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallet-features-comparison-matrix-172600dc.md",
       "filename": "2026-05-03-finance-wallet-features-comparison-matrix-172600dc.md",
       "score": 10,
       "matched_terms": [

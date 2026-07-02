@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Shot Sequencer"
+  short_description: "Plan shots, beats, and visual order."
+  default_prompt: "Use $video-shot-sequencer to turn this video concept into a timed shot sequence."

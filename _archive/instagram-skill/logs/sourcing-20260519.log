@@ -1,0 +1,22 @@
+
+=== run 2026-05-19T02:03:00.056982 ===
+19hz: ok=True count=108
+merged items in window: 61
+
+=== run 2026-05-19T02:04:45.806316 ===
+ra: ok=False count=0
+merged items in window: 0
+
+=== run 2026-05-19T02:05:42.529633 ===
+19hz: ok=True count=262
+merged items in window: 182
+
+=== run 2026-05-19T02:06:15.603950 ===
+19hz: ok=True count=262
+ra: ok=True count=0
+merged items in window: 182
+
+=== run 2026-05-19T02:23:33.632457 ===
+19hz: ok=True count=262
+merged items in window: 182
+queue written: 180

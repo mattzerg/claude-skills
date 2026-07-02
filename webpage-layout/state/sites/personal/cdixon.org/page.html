@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cdixon</title>
+  <meta name="description" content="programming, philosophy, history, internet, startups">
+  <meta property="og:title" content="cdixon">
+  <meta property="og:description" content="programming, philosophy, history, internet, startups">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate" type="application/rss+xml" title="cdixon RSS" href="/rss.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Restore 80s mode before paint to prevent flash
+    if (localStorage.getItem('retro80s') === 'on') {
+      document.documentElement.classList.add('retro-80s-pending');
+    }
+  </script>
+  <style>
+    html.retro-80s-pending body { visibility: hidden; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+  <div class="header-plate">
+    <a href="/" class="site-title">cdixon</a>
+    <p class="site-subtitle">programming, philosophy, history, internet, startups</p>
+  </div>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/">Selected</a>
+    <span class="nav-dot" aria-hidden="true"></span>
+    <a href="/archive/">Archive</a>
+    <span class="nav-dot" aria-hidden="true"></span>
+    <a href="/about/">About</a>
+    <span class="nav-dot" aria-hidden="true"></span>
+    <a href="https://cdixon.substack.com/subscribe">Subscribe</a>
+  </nav>
+</header>
+
+  <main class="main-col">
+    <section class="archive-year">
+  <ul>
+    <li><time>Jun 2023</time><a href="/2023/06/22/read-write-own/">I wrote a book: Read Write Own</a></li>
+    <li><time>Jan 2019</time><a href="/2019/01/08/strong-and-weak-technologies/">Strong and weak technologies</a></li>
+    <li><time>Feb 2018</time><a href="/2018/02/18/why-decentralization-matters/">Why decentralization matters</a></li>
+    <li><time>Feb 2017</time><a href="/2017/02/20/aristotle-computer/">How Aristotle created the computer</a></li>
+    <li><time>Aug 2016</time><a href="/2016/08/18/eleven-reasons-to-be-excited-about-the-future-of-technology/">Eleven reasons to be excited about the future of technology</a></li>
+    <li><time>Feb 2016</time><a href="/2016/02/21/what-s-next-in-computing/">What's next in computing?</a></li>
+    <li><time>Jan 2015</time><a href="/2015/01/31/come-for-the-tool-stay-for-the-network/">Come for the tool, stay for the network</a></li>
+    <li><time>Mar 2014</time><a href="/2014/03/15/full-stack-startups/">Full stack startups</a></li>
+    <li><time>Aug 2013</time><a href="/2013/08/04/the-idea-maze/">The idea maze</a></li>
+    <li><time>Mar 2013</time><a href="/2013/03/02/what-the-smartest-people-do-on-the-weekend-is-what-everyone-else-will-do-during-the-week-in-ten-years/">What the smartest people do on the weekend is what everyone else will do during the week in ten years</a></li>
+    <li><time>Jul 2012</time><a href="/2012/07/08/how-bundling-benefits-sellers-and-buyers/">How bundling benefits sellers and buyers</a></li>
+    <li><time>Sep 2010</time><a href="/2010/09/12/if-you-arent-getting-rejected-on-a-daily-basis-your-goals-arent-ambitious-enough/">If you aren't getting rejected on a daily basis, your goals aren't ambitious enough</a></li>
+    <li><time>Jan 2010</time><a href="/2010/01/03/the-next-big-thing-will-start-out-looking-like-a-toy/">The next big thing will start out looking like a toy</a></li>
+    <li><time>Sep 2009</time><a href="/2009/09/19/climbing-the-wrong-hill/">Climbing the wrong hill</a></li>
+  </ul>
+</section>
+
+<p class="home-more"><a href="/archive/">Full archive &rarr;</a></p>
+
+  </main>
+  <footer class="site-footer">
+  <span class="mode-switch" id="retro-toggle" title="Toggle retro mode">
+    <span class="mode-label mode-label--modern">modern</span>
+    <span class="mode-label mode-label--retro">retro</span>
+  </span>
+</footer>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('retro-toggle');
+      var isOn = localStorage.getItem('retro80s') === 'on';
+
+      // Apply saved state
+      if (isOn) {
+        document.body.classList.add('retro-80s');
+      }
+      // Remove pending class to reveal page
+      document.documentElement.classList.remove('retro-80s-pending');
+
+      btn.addEventListener('click', function() {
+        document.body.style.transition = 'opacity 0.25s';
+        document.body.style.opacity = '0';
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+          var active = document.body.classList.toggle('retro-80s');
+          localStorage.setItem('retro80s', active ? 'on' : 'off');
+          document.body.style.opacity = '1';
+          setTimeout(function() { document.body.style.transition = ''; }, 300);
+        }, 250);
+      });
+    })();
+  </script>
+</body>
+</html>

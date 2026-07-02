@@ -1,0 +1,521 @@
+{
+  "name": "Tuple",
+  "url": "https://tuple.app",
+  "domain": "tuple.app",
+  "scanned_at": "2026-06-01T05:56:15.621102",
+  "sources": {
+    "landing": {
+      "url": "https://tuple.app",
+      "title": "Tuple: the best remote pair programming app on macOS and Windows",
+      "text": "Tuple: the best remote pair programming app on macOS and Windows\nTuple\nPricing\nLearn\nDocs\nChangelog\nBlog\nPair programming guide\nDistributed Podcast\nIntegrations\nSlack\nStart Tuple calls right from Slack\nGoogle Calendar\nAdd a Tuple call link to your calendar events\nApple Calendar\nSame as above, but for Apple Calendar\nTriggers\nAPI\nRun your own code in response to Tuple events\nJobs\nDownload\nLog in\nSign up\nPricing\nDownload\nLog in\nJobs\nSign up\nLearn\nDocs\nChangelog\nBlog\nPair programming guide\nDistributed Podcast\nIntegrations\nSlack\nGoogle Calendar\nApple Calendar\nTriggers\nPear\nTuple for Linux alpha is available!\nPenguin\nThe best remote pair programming\napp on macOS and Windows\nBuilt from the ground up to deliver razor sharp screen sharing, crisp audio, and seamless\n        remote control, so you can get into the flow with your teammates and do real work.\nStart your free trial\nFree for 14 days.\nCancel anytime.\n\uf8ff\nCode\nFile\nEdit\nView\nGo\nWindow\nHelp\nMon Jun 1\n5:56 AM\nPaidUsersList.tsx\n1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\nconst\nfetchUsersInPaidTeams =\nasync\n():\nPromise\n<\nUser\n[]\n>\n=\n>\n{\nconst\nresponse =\nawait\nfetch\n(\n`\n$\n{\nAPI_BASE_URL\n}\n/\nv1/users\n`\n)\nif\n(!response.\nok\n)\nthrow\nnew\nError\n(\n'Failed to fetch users'\n)\nconst\nusers\n:\nUser\n[] =\nawait\nresponse.\njson\n()\nreturn\nusers.\nfilter\n(\nuser\n=\n>\nuser.\nteam\n.\nisPaid\n)\n}\nexport\nconst\nPaidTeamUsers\n= (\n) =\n>\n{\nconst\n[users, setUsers] = useState\n<\nUser\n[] |\nnull\n>\n(\nnull\n)\nconst\n[error, setError] = useState\n<\nstring\n|\nnull\n>\n(\nnull\n)\nuseEffect\n(\n() =\n>\n{\nfetchUsersInPaidTeams\n()\n.\nthen\n(\ndata\n=\n>\nsetUsers\n(data))\n.\ncatch\n(\nerr\n=\n>\nsetError\n(err.\nmessage\n))\n}\n, [])\nif\n(!users)\nreturn\n<\nLoading\n/\n>\nif\n(error)\nreturn\n<\nError\n/\n>\nreturn\n<\nUserTable\nusers\n=\n{\nusers\n}\n/\n>\n}\nPaul\nSarah\nMike\nTrusted by thousands of teams\nBuilt for Pairing\nEngineers deserve sharp tools\nGeneric screen sharing tools just won't cut it.\nTuple is purpose-built\n    for an exceptional pairing experience.\nRidiculously crisp audio and video\nTuple streams in super high resolution (up to 5K) so you can read your pair's tiny programming\n      font.\nEnd-to-end encryption\nAll audio, video, and screen share data is end-to-end encrypted, and is never sent to Tuple's\n      servers. We take your privacy extremely seriously.\nSeamless collaboration\nSnappy remote control combined with clear audio and video make you feel like you're sitting\n      right next to your pair.\nconst\nfetchUsersInPaidTeams =\nasync\n():\nPromise\n<\nUser\n[]> => {\nconst\nresponse =\nawait\nfetch\n(\n`\n${API_BASE_URL}\n/\nv1/users\n`\n)\nif\n(!response.\nok\n)\nthrow\nnew\nError\n(\n'Failed to fetch users'\n)\nconst\nusers\n:\nUser\n[] =\nawait\nresponse.\njson\n()\nreturn\nusers.\nfilter\n(\nuser\n=>\nuser.\nteam\n.\nisPaid)\n}\nexport\nconst\nPaidTeamUsers\n= (\n) => {\nconst\n[users, setUsers] = useState<\nUser\n[] |\nnull\n>(\nnull\n)\nconst\n[error, setError] = useState<\nstring\n|\nnull\n>(\nnull\n)\nuseEffect\n(\n() =>\n{\nfetchUsersInPaidTeams\n()\n.\nthen\n(\ndata\n=>\nsetUsers\n(data))\n.\ncatch\n(\nerr\n=>\nsetError\n(err.\nmessage\n))\n}, [])\nif\n(!users)\nreturn\n<\nLoading\n/>\nif\n(error)\nreturn\n<\nError\n/>\nreturn\n<\nUserTable\nusers\n=\n{users}\n/>\n}\nOne click to swap who\u2019s sharing\nIt just takes one click to switch who's sharing when you're on a call. Easily go back and\n        forth with your pair on a tough problem.\nTestimonials\nDon't take our word for it\nHere are some of the nice things people have said about Tuple.\nTuple has become\nour default tool for remote pairing at Shopify\n. The teams love it.\nFarhan Thawar\nVP of Engineering, Shopify\nIt's the best tool for remote pair programming.\nLatency is important, keyboard binding all just works. It feels like you're working on a shared\n      computer.\nAndr\u00e9s Taylor\nDeveloper, PlanetScale\nSo impressed with Tuple. It makes\npair programming remotely with co-workers and friends fun again\n.\nMichael Feldstein\nStaff Engineer, Figma\nTuple allows me to thrive as an independent developer\n, easily chatting with freelance clients, mentoring others, and collaborating on open-source\n      projects.\nMikaela Caron\nIndependent iOS Engineer\nTuple spread like wildfire throughout the entire Clerk team, and quickly became an\nintegral part of our internal communications\n.\nBraden Sidoti\nCo-founder & CTO, Clerk\nSmall footprint\nRespectful of system resources and screen real estate\nNative where it counts\nThe core of Tuple is a natively compiled, cross-platform C++ engine. It's not just another Electron app.\nObsessed with performance\nWe've been hacking on Tuple for years to make it as fast and efficient as possible. We're stingy with your CPU cycles.\nRuns in your menu bar\nDo you hate a cluttered dock or task bar? Well, us too. Tuple stays out of your way until you need it.\nDesigned for privacy\nFearless\nscreen\nsharing with\nApp Veil\nYour teammates only see what you want them to see, nothing more.\nFearless\nscreen\nsharing with App Veil\nHide sensitive apps and notifications, and share your desktop with confidence.\nWorkflow\nBuilt for developers, by developers\nWe're programmers too. We built Tuple to fit the way engineers work.\nTuple call starts\nParticipant joins\nParticipant leaves\nTuple call ends\ncall-initiated\nparticipant-joined\nparticipant-left\ncall-ended\nevent fires\ntriggers\ntriggers\npause-spotify\ncall-initiated\ncall-ended\nadd-git-coauthor\nparticipant-joined\nparticipant-left\ncall-initiated\nparticipant-joined\nparticipant-left\ncall-ended\n1\n#!/usr/bin/env osascript\n2\n3\ntell\napplication \"Spotify\" to pause\n1\n#!/usr/bin/env ruby\n2\n3\nemail\n=\nENV\n.\nfetch\n(\n\"TUPLE_TRIGGER_EMAIL\"\n)\n4\nname\n=\nENV\n.\nfetch\n(\n\"TUPLE_TRIGGER_FULL_NAME\"\n)\n5\n6\nFile\n.\nopen\n(\n\"\n#{\nDir\n.\nhome\n}\n/.gitmessage\"\n,\n\"a\"\n)\ndo\n|\nf\n|\n7\nf\n.\nwrite\n(\n\"Co-Authored-By:\n#{\nname\n}\n<\n#{\nemail\n}\n>\\n\"\n)\n8\nend\n1\n#!/usr/bin/env ruby\n2\n3\nemail\n=\nENV\n.\nfetch\n(\n\"TUPLE_TRIGGER_EMAIL\"\n)\n4\nname\n=\nENV\n.\nfetch\n(\n\"TUPLE_TRIGGER_FULL_NAME\"\n)\n5\n6\ncontent\n=\nFile\n.\nread\n(\n\"\n#{\nDir\n.\nhome\n}\n/.gitmessage\"\n)\n.\nsplit\n(\n\"\\n\"\n)\n7\nfiltered\n=\ncontent\n.\nreject\n{ |\nl\n|\nl\n.include?(\n\"Co-Authored-By:\n#{\nname\n}\n<\n#{\nemail\n}\n>\"\n) }\n8\n9\nFile\n.\nopen\n(\n\"\n#{\nDir\n.\nhome\n}\n/.gitmessage\"\n,\n\"w\"\n)\ndo\n|\nf\n|\n10\nf\n.\nwrite\n(\nfiltered\n)\n11\nend\n1\n#!/usr/bin/env osascript\n2\n3\ntell\napplication \"Spotify\" to play\nAutomate your workflow with Triggers\nTools for programmers should be programmable.\nTriggers let you hook into Tuple's call\n        events and run arbitrary code.\nLearn more\n\u2318\n\u21e7\n\u2318\n\u2325\nM\n\u2318\nL\n\u2318\nP\nCopy call link\nAdd a participant\nOpen Tuple popover\nToggle microphone\nCopy call link\nAdd a participant\nOpen Tuple popover\nToggle microphone\nKeyboard shortcuts for everything\nKeep your hands on the keyboard and stay in flow with fully customizable shortcuts.\nFor macOS and Windows\nIt doesn't matter whether your team is using macOS or Windows \u2014 Tuple works great on both.\nEffective and fun\nLiven up your pairing sessions\nBuild cool stuff with your teammates \u2013 and have a good time in the process.\nScreen annotations\nDraw or type on a shared screen to draw attention to something or emphasize a point. Or use\n        Tuple as a shared virtual whiteboard.\nEmoji reactions\nShow the rest of team how you're feeling with on-screen emoji reactions.\nAnimations\nFinally figure out that gnarly race condition? Drop a giant \"ship it\" animation into the\n        pairing session.\n\u2764\ufe0f\n\ud83e\udd2f\n\ud83d\udd25\n\ud83d\udc4d\n\ud83d\udc4f\nPete\nLet's Go\nReady to get started?\nGive Tuple a spin with a\n14-day free trial\n.\nStart your free trial\nTuple\n\u00a9 2026 Tuple, LLC\nProduct\nPricing\nDownload\nChangelog\nDocs\nCompany\nPairing guide\nPodcast\nBlog\nJobs\nSupport\nPrivacy Policy\nTerms of Service\nSecurity\nContact us\nStatus\n\u00a9 2026 Tuple, LLC",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://tuple.app/pricing",
+      "title": "Pricing \u00b7 Tuple",
+      "text": "Pricing \u00b7 Tuple\nTuple\nPricing\nLearn\nDocs\nChangelog\nBlog\nPair programming guide\nDistributed Podcast\nIntegrations\nSlack\nStart Tuple calls right from Slack\nGoogle Calendar\nAdd a Tuple call link to your calendar events\nApple Calendar\nSame as above, but for Apple Calendar\nTriggers\nAPI\nRun your own code in response to Tuple events\nJobs\nDownload\nLog in\nSign up\nPricing\nDownload\nLog in\nJobs\nSign up\nLearn\nDocs\nChangelog\nBlog\nPair programming guide\nDistributed Podcast\nIntegrations\nSlack\nGoogle Calendar\nApple Calendar\nTriggers\nPricing\nTuple pays for itself in happier, more productive engineers\nGet started with a\n14-day free trial\n.\nEngineering teams\n$30\n/\nper user\nper month\nUnlimited pairing sessions\nPair with external collaborators for free\nTo pair with Tuple, only one of the users in the session must be a paid\n                          user.\nLearn more\nSingle sign-on (SSO)\nGet started for free\nEnterprises\nCustom pricing available\nContact us for more information\nEverything on the teams plan\nCustom contracts\nPayment via invoice/PO\nReduced per-user pricing at scale\nContact sales\nNo love, no pay.\nIf you're unhappy with\n          Tuple at any point, we'll refund your most recent monthly payment.\n90% off for a year for startups\nIf your company is less than two years old and has fewer than 50 employees, we'll add\n              a one-year 90% discount to your subscription.\nApply for discount\nTuple is free for OSS\nIf you do significant OSS work, we'll donate free Tuple licenses to collaborate with\n              contributors/maintainers.\nGet Tuple for free\nTestimonials\nDevelopers talk about Tuple best\nHere are some of the nice things folks have said about us.\nTuple is probably the highest rated tool we've implemented. The developers who use it\ncan't imagine working remote without it\n.\nNick Cash\nVP of Engineering, Jam City\nI've been in meetings with 10 people on Tuple, cycling through who's driving, and\nit's been incredibly productive\n. If we had to try to do that on another platform, it wouldn't be worth it.\nCassidy Scheffer\nStaff Software Developer, Wealthsimple\nTuple is integral for us as a remote team.\nIt creates the illusion that there is nothing in the way. It\u2019s faster, easier and more\n            seamless than anything else we\u2019ve tried.\nIan Lesperance\nSenior Principal Software Engineer, Vimeo\nFAQ\nFrequently asked questions\nHere's what you need to know about your Tuple license, based on the questions we get asked\n          the most.\nWhat platforms do you support?\nTuple is available for macOS and Windows.\nDoes it cost anything to pair with people outside my organization?\nNope! Paid users (the default) can pair with external collaborators (clients,\n            consultants, interviewees) for free. Learn more in\nour docs\n.\nHow do you handle security and privacy?\nCarefully! Check out our\nsecurity details\nand\nprivacy policy\n.\nCan I get a refund?\nWe're not in the business of making money from unhappy users. If you're unhappy with\n            Tuple at any point, we'll refund your most recent monthly payment. See our\nrefund policy\nfor more details.\nTuple\n\u00a9 2026 Tuple, LLC\nProduct\nPricing\nDownload\nChangelog\nDocs\nCompany\nPairing guide\nPodcast\nBlog\nJobs\nSupport\nPrivacy Policy\nTerms of Service\nSecurity\nContact us\nStatus\n\u00a9 2026 Tuple, LLC",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://tuple.app/changelog",
+      "title": "Changelog \u00b7 Tuple",
+      "text": "Changelog \u00b7 Tuple\nTuple\nPricing\nLearn\nDocs\nChangelog\nBlog\nPair programming guide\nDistributed Podcast\nIntegrations\nSlack\nStart Tuple calls right from Slack\nGoogle Calendar\nAdd a Tuple call link to your calendar events\nApple Calendar\nSame as above, but for Apple Calendar\nTriggers\nAPI\nRun your own code in response to Tuple events\nJobs\nDownload\nLog in\nSign up\nPricing\nDownload\nLog in\nJobs\nSign up\nLearn\nDocs\nChangelog\nBlog\nPair programming guide\nDistributed Podcast\nIntegrations\nSlack\nGoogle Calendar\nApple Calendar\nTriggers\nChangelog\nWhat's new in Tuple\nThe latest updates and improvements for macOS, Windows, and Linux.\nView full changelog\nmacOS\nmacOS 3.0.0\nAdded\nUpscale Content:\nwe've added a local, per-viewer toggle that sharpens incoming screen share content.\nRedesigned notifications\n: cards anchor to the menu bar status item, stack instead of replacing each other, and dissolve when dismissed.\nFor mute notifications, you can now choose to dismiss, snooze them for a call, or never show them again.\nFixed\nNotifications no longer appear in your outgoing video stream during a screen share, and remote participants can't click on them\nVisual artifacts in screen share at certain resolutions and with some fonts\nWebcam grid window now appears when you turn on your webcam (or click \"Detach Preview\") while waiting for a closed call link to start\nGuest-to-host pinch-to-zoom magnify gesture when someone on a Mac is hosting.\nGhost cursors left behind when a participant leaves a screen share they were already in before the share window opened.\nCrash and stuck cursors during peer reconnection or screen-driver changes on macOS Tahoe.\nNotifications and the incoming-call window now position correctly under Universal Control and on Macs with a notch, instead of falling back to screen center.\nmacOS\nmacOS 2.4.3\nAdded\nSpeaking-while-muted notification \u2014 get a heads-up with an \"Unmute Me\" action when you start talking while muted\nTuple now lets you know if your audio output device is muted during a call\n\"Mute Audio\" action in the launcher, grid, and toolbar participant menus\n\"Ask to Unmute\" action in the screen-sharing window and webcam window participant menus\n\"Ask to Share Webcam\", \"Ask to Unmute\", and \"Mute Audio\" are now available in the compact webcam view participant dropdown\nChanged\nLowered the screen share minimum bitrate floor so screen share can throttle further under congestion without starving audio\nWebcam window in conversation mode redesigned for smoother layout and animations\nFixed\nIncorrect layout in the conversation mode when joining a call with participants sharing their webcams\nSpurious empty annotation when the emoji picker was open\nHigh CPU usage when viewing the screen share window\nmacOS\nmacOS 2.4.2\nAdded\nSending GIFs\n: you can now send animated GIFs via the reactions menu when viewing a shared screen. Because why not?\nAlternate menu bar icon\n: choose between the Tuple logo and our cute lil' \"Pear Buddy\"\nPick-window mode\n: in the partial screen share chooser, you can now set the screen share boundaries to match the dimensions of a specific window. Note that this just sets the screen share boundaries - if the window moves or gets hidden, the boundary won't change.\nEmoji picker support for text annotations\nCaller's email is now shown in incoming call notifications\nChanged\nZoom modifier changed from Command to Option, so it no longer clashes with Cmd+V paste or Ctrl+Cmd+Space emoji insertion\nFaster reconnection after a network drop\nToolbar is now more visible in light mode\nLinux\nLinux 2026.04.08.0\nAdded\nSupport for annotations in Wayland\n: the annotation overlay now renders natively in Wayland! Be sure to set\nXDG_SESSION_TYPE=wayland\nto enable this functionality.\nNew CLI commands\n: we've added\ncall\n(to call a favorite contact),\nls\n(to list contacts), and\nfavorite $USER_ID\n(to favorite a contact). See more in our docs.\nApp icon\n: Tuple now has an icon \ud83d\ude05 This should make it way easier to find Tuple in your task bar / app switcher\nEmail address shown in incoming call window\nError message when screen capture fails\nX11 vsync support\nChanged\nIncoming call window has been redesigned\nmacOS\nmacOS 2.4.1\nFixed\nCrash that could happen after logging out\nCrash on the Sound Check window\nTuple\n\u00a9 2026 Tuple, LLC\nProduct\nPricing\nDownload\nChangelog\nDocs\nCompany\nPairing guide\nPodcast\nBlog\nJobs\nSupport\nPrivacy Policy\nTerms of Service\nSecurity\nContact us\nStatus\n\u00a9 2026 Tuple, LLC",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://docs.tuple.app",
+      "title": "Tuple docs - Tuple documentation",
+      "text": "Tuple docs - Tuple documentation\nSkip to main content\nTuple documentation\nhome page\nSearch...\n\u2318\nK\nAsk Assistant\nWebsite\nSupport\nDownload\nDownload\nSearch...\nNavigation\nTuple docs\nChangelog\nGetting Started\nInstallation\nSupported platforms\nTuple for Linux (alpha)\nAgreements and Policies\nPairing with Tuple\nScreen Sharing\nCalls\nFeatures\nManaging Your Account\nProfile and Security\nAccount Type and Access\nIntegrations and Activity\nTeam Management\nMembers and Permissions\nBilling and Subscription\nAuthentication and SSO\nReporting\nApplication Preferences\nmacOS\nWindows\nTriggers\nBuilding a trigger\nTesting and debugging\nAPI reference\nBest practices\nSubmitting a trigger\nSecurity\nTroubleshooting\nConnectivity and Call Quality\nAudio and Notifications\nPerformance and Stability\nUpdates and System Setup\nDiagnostics and Support\nclose\nTuple docs\nCopy page\nCopy page\nDocumentation Index\nFetch the complete documentation index at:\nhttps://docs.tuple.app/llms.txt\nUse this file to discover all available pages before exploring further.\nGetting Started\nInstall Tuple and get oriented with the basics.\nPairing with Tuple\nLearn how to share screens, use rooms, pair with guests, and navigate calls.\nManaging Your Account\nUpdate your profile, password, integrations, and account details.\nTeam Management\nManage invites, billing, SSO, team roles, and usage reports.\nApplication Preferences\nReview the macOS and Windows settings available in Tuple.\nTroubleshooting\nFind fixes for common installation, network, audio, and performance issues.\nWas this page helpful?\nYes\nNo\n\u2318\nI\nTuple documentation\nhome page\nx\nlinkedin\nyoutube\nProduct\nDownload\nChangelog\nPricing\nResources\nSupport\nBlog\nx\nlinkedin\nyoutube\nPowered by\nThis documentation is built and hosted on Mintlify, a developer documentation platform\nAssistant\nResponses are generated using AI and may contain mistakes.\nSuggestions\nWhy is my audio not working?\nHow do I set up team billing?\nHow do I install Tuple?\nContact support",
+      "source": "playwright"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/tuple/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Tuple: Pair Programming Tool for macOS",
+          "url": "https://tuple.app/",
+          "points": 276,
+          "num_comments": 144,
+          "created_at": "2021-12-21T20:46:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=29641907"
+        },
+        {
+          "title": "Typing lists and tuples in Elixir",
+          "url": "https://elixir-lang.org/blog/2024/08/28/typing-lists-and-tuples/",
+          "points": 231,
+          "num_comments": 52,
+          "created_at": "2024-08-28T11:49:32Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41378478"
+        },
+        {
+          "title": "Multiple assignment and tuple unpacking improve Python code readability (2018)",
+          "url": "https://treyhunner.com/2018/03/tuple-unpacking-improves-python-code-readability/",
+          "points": 166,
+          "num_comments": 96,
+          "created_at": "2022-05-08T12:34:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=31303463"
+        },
+        {
+          "title": "Redesigning Python's named tuples",
+          "url": "https://lwn.net/Articles/731423/",
+          "points": 165,
+          "num_comments": 128,
+          "created_at": "2017-09-01T04:14:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=15146070"
+        },
+        {
+          "title": "Optimization tricks in Python: lists and tuples",
+          "url": "https://rushter.com/blog/python-lists-and-tuples/",
+          "points": 131,
+          "num_comments": 43,
+          "created_at": "2018-06-14T09:17:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=17310421"
+        },
+        {
+          "title": "Tuple Spaces \u2013 Good Ideas Don't Always Win (2011)",
+          "url": "https://software-carpentry.org/blog/2011/03/tuple-spaces-or-good-ideas-dont-always-win.html",
+          "points": 109,
+          "num_comments": 43,
+          "created_at": "2018-07-28T22:34:32Z",
+          "hn_url": "https://news.ycombinator.com/item?id=17635413"
+        },
+        {
+          "title": "Tuple Space (2014)",
+          "url": "http://wiki.c2.com/?TupleSpace",
+          "points": 108,
+          "num_comments": 53,
+          "created_at": "2023-04-28T14:06:30Z",
+          "hn_url": "https://news.ycombinator.com/item?id=35741416"
+        },
+        {
+          "title": "Heap WARM Tuples \u2013 Design Draft",
+          "url": "https://www.postgresql.org/message-id/CABOikdMop5Rb_RnS2xFdAXMZGSqcJ-P-BY2ruMd%2BbuUkJ4iDPw%40mail.gmail.com",
+          "points": 88,
+          "num_comments": 15,
+          "created_at": "2016-08-04T11:36:04Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12224815"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://tuple.app/pricing",
+    "changelog": null,
+    "docs": "https://docs.tuple.app",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/tuple/reviews"
+  },
+  "analysis": {
+    "name": "Tuple",
+    "url": "https://tuple.app",
+    "tagline": "The best remote pair programming app on macOS and Windows",
+    "value_proposition": "Purpose-built pair programming tool with razor-sharp screen sharing, crisp audio, and seamless remote control so distributed engineers can code together as if sitting side-by-side.",
+    "target_segment": "dev",
+    "ideal_customer": "Software engineering teams at mid-market to enterprise companies doing regular remote pair programming, especially on macOS",
+    "features": [
+      {
+        "name": "high-resolution screen sharing",
+        "description": "Streams screen share at up to 5K resolution so code in small fonts is readable",
+        "evidence_source": "landing",
+        "evidence_quote": "Tuple streams in super high resolution (up to 5K) so you can read your pair's tiny programming font.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "end-to-end encryption",
+        "description": "All audio, video, and screen share data is E2E encrypted and never transits Tuple's servers",
+        "evidence_source": "landing",
+        "evidence_quote": "All audio, video, and screen share data is end-to-end encrypted, and is never sent to Tuple's servers.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "remote control",
+        "description": "One participant can control the other's machine during a pairing session",
+        "evidence_source": "landing",
+        "evidence_quote": "Snappy remote control combined with clear audio and video make you feel like you're sitting right next to your pair.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "one-click screen swap",
+        "description": "Switch who is sharing their screen with a single click during a call",
+        "evidence_source": "landing",
+        "evidence_quote": "It just takes one click to switch who's sharing when you're on a call.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "app veil",
+        "description": "Hide sensitive apps and notifications from your pair before sharing your desktop",
+        "evidence_source": "landing",
+        "evidence_quote": "Hide sensitive apps and notifications, and share your desktop with confidence.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "native c++ engine",
+        "description": "Core is natively compiled cross-platform C++, not an Electron wrapper, for performance and efficiency",
+        "evidence_source": "landing",
+        "evidence_quote": "The core of Tuple is a natively compiled, cross-platform C++ engine. It's not just another Electron app.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "menu bar app",
+        "description": "Runs unobtrusively in the menu bar rather than the dock to minimize visual clutter",
+        "evidence_source": "landing",
+        "evidence_quote": "Tuple stays out of your way until you need it.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "triggers",
+        "description": "Run custom scripts/code in response to Tuple call events (call start, participant join/leave, call end)",
+        "evidence_source": "landing",
+        "evidence_quote": "Run your own code in response to Tuple events",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "api",
+        "description": "Programmatic API to integrate Tuple events into external workflows",
+        "evidence_source": "landing",
+        "evidence_quote": "API \u2014 Run your own code in response to Tuple events",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "slack integration",
+        "description": "Start Tuple calls directly from Slack",
+        "evidence_source": "landing",
+        "evidence_quote": "Slack \u2014 Start Tuple calls right from Slack",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "google calendar integration",
+        "description": "Add Tuple call links to Google Calendar events",
+        "evidence_source": "landing",
+        "evidence_quote": "Google Calendar \u2014 Add a Tuple call link to your calendar events",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "apple calendar integration",
+        "description": "Add Tuple call links to Apple Calendar events",
+        "evidence_source": "landing",
+        "evidence_quote": "Apple Calendar \u2014 Same as above, but for Apple Calendar",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "linux support",
+        "description": "Alpha Linux client available with screen share, annotations, and CLI commands",
+        "evidence_source": "landing",
+        "evidence_quote": "Pear \u2014 Tuple for Linux alpha is available!",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "sso",
+        "description": "Single sign-on authentication for teams",
+        "evidence_source": "pricing",
+        "evidence_quote": "Single sign-on (SSO)",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "external collaborator pairing",
+        "description": "Paid users can pair with external guests (clients, contractors, interviewees) at no extra charge",
+        "evidence_source": "pricing",
+        "evidence_quote": "Pair with external collaborators for free \u2014 only one of the users in the session must be a paid user.",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "annotations",
+        "description": "Draw or annotate on the shared screen during a session; includes emoji picker support",
+        "evidence_source": "changelog",
+        "evidence_quote": "Support for annotations in Wayland: the annotation overlay now renders natively in Wayland!",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gif reactions",
+        "description": "Send animated GIFs via the reactions menu while viewing a shared screen",
+        "evidence_source": "changelog",
+        "evidence_quote": "Sending GIFs: you can now send animated GIFs via the reactions menu when viewing a shared screen.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webcam support",
+        "description": "Share webcam video during pairing sessions with a dedicated webcam grid window",
+        "evidence_source": "changelog",
+        "evidence_quote": "Webcam grid window now appears when you turn on your webcam",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "speaking-while-muted notification",
+        "description": "Detects when you speak while muted and surfaces an Unmute Me action",
+        "evidence_source": "changelog",
+        "evidence_quote": "Speaking-while-muted notification \u2014 get a heads-up with an 'Unmute Me' action when you start talking while muted",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ask to unmute",
+        "description": "Request a participant to unmute themselves from the host controls",
+        "evidence_source": "changelog",
+        "evidence_quote": "'Ask to Unmute' action in the screen-sharing window and webcam window participant menus",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ask to share webcam",
+        "description": "Prompt a participant to turn on their webcam during a session",
+        "evidence_source": "changelog",
+        "evidence_quote": "'Ask to Share Webcam', 'Ask to Unmute', and 'Mute Audio' are now available in the compact webcam view participant dropdown",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "partial screen share / pick-window mode",
+        "description": "Set screen share boundaries to match a specific window's dimensions for partial desktop sharing",
+        "evidence_source": "changelog",
+        "evidence_quote": "Pick-window mode: in the partial screen share chooser, you can now set the screen share boundaries to match the dimensions of a specific window.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "upscale content",
+        "description": "Per-viewer local toggle that sharpens incoming screen share content using upscaling",
+        "evidence_source": "changelog",
+        "evidence_quote": "Upscale Content: we've added a local, per-viewer toggle that sharpens incoming screen share content.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rooms",
+        "description": "Persistent rooms for pairing sessions (referenced in docs navigation)",
+        "evidence_source": "docs",
+        "evidence_quote": "Pairing with Tuple \u2014 Learn how to share screens, use rooms, pair with guests, and navigate calls.",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "linux cli",
+        "description": "Command-line interface for Linux to call contacts, list contacts, and manage favorites",
+        "evidence_source": "changelog",
+        "evidence_quote": "New CLI commands: we've added call (to call a favorite contact), ls (to list contacts), and favorite $USER_ID",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "usage reporting",
+        "description": "Team-level usage reports for admins",
+        "evidence_source": "docs",
+        "evidence_quote": "Reporting",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "team management",
+        "description": "Manage invites, roles, and member permissions for the team",
+        "evidence_source": "docs",
+        "evidence_quote": "Team Management \u2014 Manage invites, billing, SSO, team roles, and usage reports.",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "billing management",
+        "description": "Self-serve subscription and billing management including invoices and payment",
+        "evidence_source": "docs",
+        "evidence_quote": "Billing and Subscription",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "alternate menu bar icon",
+        "description": "Choose between the Tuple logo and a 'Pear Buddy' icon in the menu bar",
+        "evidence_source": "changelog",
+        "evidence_quote": "Alternate menu bar icon: choose between the Tuple logo and our cute lil' 'Pear Buddy'",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pinch-to-zoom magnify",
+        "description": "Guest-to-host pinch-to-zoom gesture to magnify content on the host's screen share",
+        "evidence_source": "changelog",
+        "evidence_quote": "Guest-to-host pinch-to-zoom magnify gesture when someone on a Mac is hosting.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mute audio control",
+        "description": "Mute participants from the launcher, grid, toolbar, and compact webcam view",
+        "evidence_source": "changelog",
+        "evidence_quote": "'Mute Audio' action in the launcher, grid, and toolbar participant menus",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "startup discount program",
+        "description": "90% off for one year for companies under 2 years old with fewer than 50 employees",
+        "evidence_source": "pricing",
+        "evidence_quote": "90% off for a year for startups \u2014 less than two years old and fewer than 50 employees",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "oss free license",
+        "description": "Free Tuple licenses donated to significant open-source contributors and maintainers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Tuple is free for OSS \u2014 If you do significant OSS work, we'll donate free Tuple licenses.",
+        "tier": "free",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Slack",
+      "Google Calendar",
+      "Apple Calendar",
+      "Triggers API (custom webhooks/scripts)"
+    ],
+    "differentiators": [
+      "Native C++ engine \u2014 explicitly not Electron, purpose-built for performance",
+      "End-to-end encrypted with no data transiting Tuple's servers",
+      "Up to 5K resolution screen sharing",
+      "External collaborators can join for free \u2014 only one paid seat required per session",
+      "App Veil to hide sensitive content before sharing desktop",
+      "Purpose-built for pair programming, not a generic screen sharing tool",
+      "Linux alpha support in addition to macOS and Windows"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026",
+        "what": "Upscale Content: local per-viewer toggle to sharpen incoming screen share; redesigned notifications with stacking and snooze",
+        "source": "macOS 3.0.0 \u2014 Upscale Content: we've added a local, per-viewer toggle that sharpens incoming screen share content."
+      },
+      {
+        "date": "2026",
+        "what": "Speaking-while-muted notification with Unmute Me action; Ask to Unmute and Ask to Share Webcam controls",
+        "source": "macOS 2.4.3 \u2014 Speaking-while-muted notification \u2014 get a heads-up with an 'Unmute Me' action"
+      },
+      {
+        "date": "2026",
+        "what": "GIF reactions in screen share view; pick-window mode for partial screen share; emoji picker for annotations; Pear Buddy alternate icon",
+        "source": "macOS 2.4.2 \u2014 Sending GIFs: you can now send animated GIFs via the reactions menu when viewing a shared screen."
+      },
+      {
+        "date": "2026-04",
+        "what": "Linux: Wayland annotation support; new CLI commands (call, ls, favorite); app icon; redesigned incoming call window",
+        "source": "Linux 2026.04.08.0 \u2014 Support for annotations in Wayland: the annotation overlay now renders natively in Wayland!"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Tuple has become our default tool for remote pairing at Shopify. The teams love it. \u2014 Farhan Thawar, VP Engineering, Shopify",
+        "It's the best tool for remote pair programming. Latency is important, keyboard binding all just works. It feels like you're working on a shared computer. \u2014 Andr\u00e9s Taylor, PlanetScale",
+        "Tuple is probably the highest rated tool we've implemented. The developers who use it can't imagine working remote without it. \u2014 Nick Cash, VP Engineering, Jam City",
+        "I've been in meetings with 10 people on Tuple, cycling through who's driving, and it's been incredibly productive. \u2014 Cassidy Scheffer, Wealthsimple",
+        "It creates the illusion that there is nothing in the way. It's faster, easier and more seamless than anything else we've tried. \u2014 Ian Lesperance, Vimeo",
+        "Makes pair programming remotely with co-workers and friends fun again. \u2014 Michael Feldstein, Figma",
+        "Tuple allows me to thrive as an independent developer, easily chatting with freelance clients, mentoring others. \u2014 Mikaela Caron, iOS Engineer",
+        "Tuple spread like wildfire throughout the entire Clerk team. \u2014 Braden Sidoti, CTO, Clerk",
+        "HN thread received 276 upvotes with 144 comments at launch"
+      ],
+      "complaints": [],
+      "sources": [
+        "landing",
+        "pricing",
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "trial",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Engineering Teams",
+          "price_per_seat_per_month": "$30",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Unlimited pairing sessions, SSO, free external collaborator pairing, 14-day trial"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Everything in Teams plus custom contracts, invoice/PO payment, reduced per-user pricing at scale"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "14-day free trial on signup. 90% discount for 1 year available to startups under 2 years old with <50 employees. Free licenses for significant OSS contributors. Refund policy covers most recent monthly payment. External collaborators (guests) join sessions free \u2014 only the host needs a paid seat."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Show HN: Hm \u2013 a task runner with a Python DSL, growing into a CI/CD system",
+        "url": "https://github.com/harmont-dev/harmont-cli",
+        "points": 12,
+        "comments": 1,
+        "age_days": 4,
+        "hn_url": "https://news.ycombinator.com/item?id=48296828"
+      },
+      {
+        "title": "Show HN: Stigmem \u2013 open-source federated knowledge fabric for AI agents (v1.0)",
+        "url": "https://news.ycombinator.com/item?id=48002447",
+        "points": 3,
+        "comments": 0,
+        "age_days": 28,
+        "hn_url": "https://news.ycombinator.com/item?id=48002447"
+      },
+      {
+        "title": "Claude Sonnet 4.6 thinking duplicates what it has said, wasting tokens",
+        "url": "https://news.ycombinator.com/item?id=47847236",
+        "points": 3,
+        "comments": 0,
+        "age_days": 40,
+        "hn_url": "https://news.ycombinator.com/item?id=47847236"
+      },
+      {
+        "title": "Tuple for Linux",
+        "url": "https://tuple.app/linux/",
+        "points": 3,
+        "comments": 0,
+        "age_days": 56,
+        "hn_url": "https://news.ycombinator.com/item?id=47651070"
+      },
+      {
+        "title": "Using Catastrophic Forgetting as a Knowledge Topology Probe",
+        "url": "https://news.ycombinator.com/item?id=47552974",
+        "points": 2,
+        "comments": 0,
+        "age_days": 65,
+        "hn_url": "https://news.ycombinator.com/item?id=47552974"
+      }
+    ]
+  }
+}

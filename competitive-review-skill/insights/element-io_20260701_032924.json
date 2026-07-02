@@ -1,0 +1,833 @@
+{
+  "name": "Element",
+  "url": "https://element.io",
+  "domain": "element.io",
+  "scanned_at": "2026-07-01T03:27:16.128656",
+  "sources": {
+    "landing": {
+      "url": "https://element.io",
+      "title": "Element | Secure collaboration and messaging",
+      "text": "Element | Secure collaboration and messaging\nCookies help us figure out what works and doesn\u2019t work on our website. It would be great if you hit the \u2018accept\u2019 button. To learn more about our approach, please read our\nCookie Policy\n.\nManage settings\nAccept\nDecline\nProduct\nOverview\nElement\nElement Server Suite\nThe Matrix Standard\nSelf-hosted\nSolutions\nMatrix in Europe\nMission Partner Environment\nSectors\nUse cases\nPartners\nCustomers\nBuild\nResources\nAbout\nUser guide\nDocumentation\nHelp\nLabs\nContact Sales\nMatrix Conf videos\nInsights\nBlog\nPricing\nDownload\n\ud83c\uddec\ud83c\udde7 English\n\ud83c\uddf8\ud83c\uddea Swedish\n\ud83c\uddeb\ud83c\uddf7 French\n\ud83c\udde9\ud83c\uddea German\nSign In\nOpen Element web\nCustomer portal\nGet started\nProduct\nOverview\nElement\nElement Server Suite\nThe Matrix Standard\nSelf-hosted\nSolutions\nMatrix in Europe\nMission Partner Environment\nSectors\nUse cases\nPartners\nCustomers\nBuild\nResources\nAbout\nUser guide\nDocumentation\nHelp\nLabs\nContact Sales\nMatrix Conf videos\nInsights\nSign In\nOpen Element web\nCustomer portal\nBlog\nPricing\nDownload\nLanguage\n\ud83c\uddec\ud83c\udde7 English\n\ud83c\uddf8\ud83c\uddea Swedish\n\ud83c\uddeb\ud83c\uddf7 French\n\ud83c\udde9\ud83c\uddea German\nGet started\nCommunicate\non\nyour\nterms\n.\nSovereign, interoperable and secure communications, built on the Matrix open standard.\nGet started\nDownload\nOwn your data\n.\nChoose your hosting\n.\nSecure your comms\n.\nTrusted by secure organisations\nBe in your element\n.\nWe built Element on the Matrix open standard to give users the independence to control and manage their communications.\nSovereignty\n.\nOwnership\n.\nControl\n.\nDigital sovereignty\nFree from proprietary, vendor-locked platforms\n.\nElement gives each and every government department the ability to run and control their own digitally sovereign, interoperable and secure communications solution.\n\u201cWe are working together towards one goal: European digital sovereignty.\u201d\nFriedrich Merz, Chancellor of Germany\nDeCentralised\nCentralised\nCentralised\nDecentralisation puts you in control\nBuilt on the decentralised Matrix open standard, to free you from vendor-locked systems.\nDigital commons\nSovereign cross-border collaboration\n.\nElement sits at the heart of Europe\u2019s digitally sovereign and open source office productivity suites.\nDigital sovereignty means not being reliant on a specific vendor. That\u2019s why we build on the interoperable Matrix open standard, and support a competitive ecosystem.\n\"\nDigital sovereignty, i.e. control, design and interchangeability in digital systems, cannot be achieved without open source software.\n\"\nOpen Source Business Alliance\nOpen standard interoperability\nCommunicate between organisations and nations\n.\nMake decisions faster and work more efficiently \u2028across governments and public institutions.\nBob\n@bob:matrix.org\nAlice\n@alice:element.io\nConnectivity between organisations\nMatrix offers vendor agnostic federation to enable different solutions from different vendors to work together. Think of the Matrix open standard as SMTP for real time communications.\nIndependence from siloed systems\nThe transparency of open source software, and building on the interoperable\nMatrix open standard\nmeans Element\u2019s customers are never vendor-locked.\n\u201cDigital sovereignty means having choices, so no single technology and provider become a dependency that can be used against our interests. It is always good to have choices in order to avoid dependencies.\u201d\nKarsten Wildberger, federal minister for Bundesministerium f\u00fcr Digitales und Staatsmodernisierung\nSovereign collaboration\nAlternative to Microsoft Teams\n.\nReplace vendor-locked productivity suites with self-hosted workplace collaboration for desktop and mobile.\nBased on the Matrix open standard, protect sensitive information while enabling real-time communication with partner organisations.\nSovereign messenger\nWhatsApp and Signal replacement\n.\nA consumer-style messaging app to ease adoption and encourage use.\nEnd-to-end encrypted messaging and calls, connected to workplace systems and built for public sector compliance requirements.\n77%\nof IT leaders say that their organisation struggles to maintain privacy and control of data shared via communications technologies.\nSource: A commissioned study conducted by Forrester Consulting on behalf of Element\nAir-gapped networks\nCollaboration in isolation\n.\nElement offers install and support for\nair-gapped\n, isolated and high-side instances with no internet connectivity needed.\n64%\nexpect their organisation\u2019s need to give partners access\u2028 to air-gapped or isolated environments to grow over the next 2 to 3 years.\nSource: A commissioned study conducted by Forrester Consulting on behalf of Element\nSecure by design\nResilient communications\n.\nElement utilises the decentralised Matrix open standard to create a resilient, zero trust, communications network.\nWith no central point of failure, Element protects against global outages and ensures high availability through the use of redundant servers.\nElement also supports air-gapped and low bandwidth communications, including Mesh and satellite connectivity.\nThe professionalised Matrix-based server that organisations can use to host any Matrix-based solution. Deploy sovereign, interoperable and secure real time communications at scale.\nOur partners\nCreators of Matrix\n.\nElement is led by the creators of Matrix, the decentralised open standard for secure and sovereign real time communication.\nCreated by the Element team in 2014.\nGoverned by The Matrix.org Foundation.\n200M+\nusers worldwide\n100K+\ndeployments\n60M+\nlargest public\ndeployment\n500K+\nlargest commercial deployment\nBe in your element\n.\nSovereign, interoperable and secure communications, built on the Matrix open standard.\nGet started\nPricing\nProduct\nElement\nElement\nPRO\nElement Server Suite\nThe Matrix standard\nFeatures\nIntegrations\nSupport and SLAs\nHosting\nPricing\nSolutions\nSectors\nUse cases\nCustomers\nPartners\nMatrix in Europe\nBuilt on Matrix\nResources\nBlog\nHelp\nAbout\nMatrix relationship\nDocumentation\nOpen\u00a0source\nCareers\nLabs\nContact us\nService status\nSecurity disclosure policy\nSecurity hall of fame\nImpressum\nLogos\nGet Started\nOpen Element Web\nDownload\nContact sales\nCustomer portal\nCopyright \u00a9 2016\u2013\n2026\nElement \u2022\nLegal\n\u2022\nPrivacy\nAll Rights Reserved. The Element name, logo and device are registered trade marks of Element Creations Ltd",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://element.io/pricing",
+      "title": "Element plans and pricing",
+      "text": "Element plans and pricing\nCookies help us figure out what works and doesn\u2019t work on our website. It would be great if you hit the \u2018accept\u2019 button. To learn more about our approach, please read our\nCookie Policy\n.\nManage settings\nAccept\nDecline\nProduct\nOverview\nElement\nElement Server Suite\nThe Matrix Standard\nSelf-hosted\nSolutions\nMatrix in Europe\nMission Partner Environment\nSectors\nUse cases\nPartners\nCustomers\nBuild\nResources\nAbout\nUser guide\nDocumentation\nHelp\nLabs\nContact Sales\nMatrix Conf videos\nInsights\nBlog\nPricing\nDownload\n\ud83c\uddec\ud83c\udde7 English\n\ud83c\uddf8\ud83c\uddea Swedish\n\ud83c\uddeb\ud83c\uddf7 French\n\ud83c\udde9\ud83c\uddea German\nSign In\nOpen Element web\nCustomer portal\nGet started\nProduct\nOverview\nElement\nElement Server Suite\nThe Matrix Standard\nSelf-hosted\nSolutions\nMatrix in Europe\nMission Partner Environment\nSectors\nUse cases\nPartners\nCustomers\nBuild\nResources\nAbout\nUser guide\nDocumentation\nHelp\nLabs\nContact Sales\nMatrix Conf videos\nInsights\nSign In\nOpen Element web\nCustomer portal\nBlog\nPricing\nDownload\nLanguage\n\ud83c\uddec\ud83c\udde7 English\n\ud83c\uddf8\ud83c\uddea Swedish\n\ud83c\uddeb\ud83c\uddf7 French\n\ud83c\udde9\ud83c\uddea German\nGet started\nPricing plans\n.\nSovereign and secure communications. Self-hosted, and also available air-gapped, with powerful enterprise performance and functionality.\nCommunity\n.\nNon-professional deployments and evaluations.\nSelf-hosted\nElement Server Suite Community\nOpen source under AGPL\nOfficial FOSS distribution from Element\nFree of charge frontend and backend\nIncludes Element Call\nSet up a server\nGet the free app\nEnterprise\n.\nProfessional use, enterprise-grade performance and features.\nSelf-hosted\nElement Server Suite Pro\nIncludes\nSynapse Pro\nEnhanced security and support\nCorporate oversight and control\nDynamic scaling and cost savings\nTalk to an expert\nPriced per seat/month\nSovereign\n.\nComplete sovereignty with no dependence on the internet.\nAir-gapped\nElement Server Suite Pro\nIncludes\nSynapse Pro\nOperate without internet connectivity\nDedicated mobile push gateway\nAir-gapped\ninstallation\nTalk to an expert\nPriced per deployment\nCommunity\nEnterprise\nSovereign\nNumber of users\n1-100\nFrom 100\nPer deployment\nBackend\nhomeServer\nSynapse\nCommunity edition homeserver, actively developed by Element, but not for use in production environments.\nSynapse\nPRO\nNext generation homeserver for professional use that provides dynamic scaling and 90%+ resource savings compared to Community Synapse.\nSecurity enhancements\nAdvance Security Advisory\nAdvance notification of higher severity security releases to ensure the deployment is always maximally secure.\nCurated full stack security updates\nEasy deployment of security updates.\nCompliance\nCorporate compliance and control\nEnterprise features for corporate oversight and management.\nCyber Resilience Act compliance\nSoftware Bill of Materials (SBOMs)\nGlobal accessibility compliance\nAccessibilty conformance reports available for clients up to WCAG AA 2.2 & BITV 2.0\nISO/IEC 27001:2022\nElement is independently audited and certified as compliant with the ISO/IEC 27001:2022 information security management standard.\nISO/IEC 5230\nElement\u2019s products are developed in accordance with ISO/IEC 5230 (\"OpenChain\"), an international standard for open source license compliance.\nCyber Essentials Plus\nElement holds Cyber Essentials Plus, a UK government backed certification scheme for cybersecurity.\nSupport\nInstallation support\nSetup, configurations and onboarding from the Element team.\nLong Term Support (LTS)\nLTS versions released every 6 months for guaranteed stability; backports of critical security fixes.\nLevel 3 support\nFor all functionality issues and bug fixes with response times based on priority.\nService Level Agreement (SLA)\nGuaranteed response times.\n4 Business hours\nEnhanced SLAs available\nTraining and Deployment\nEnable your teams with expert-led onboarding. One Time training for administrators and trainers.\nAdministration\nAdmin interface\nConfigure and control your deployment from a single pane of glass.\nAdvanced Identity and Access Management\nIntegrate with enterprise identity management systems (LDAP and SCIM) to automate user management and mirror organisational structures within room hierarchies.\nLDAP / AD authentication\nAuthenticate users against an external LDAP or Active Directory system.\nSingle Sign-On\nOIDC authentication to support SSO.\nAuditing and reporting\nVisible in-room auditing to capture an official record of discussion and decision-making for regulation and compliance purposes.\nModerating\nCorporate oversight and management of your organisation\u2019s conversations.\nRetention policies\nConfigure rules-based retention policies for messages and media, to meet your organisation's processes and compliance requirements.\nData export\nThe ability to easily migrate your data, protecting against vendor lock-in.\nInternal & External collaboration\nCross domain gateway\nHardware-based solution to enable data sharing between information classification boundaries or domains, such as high-side and low-side environments.\nAdd on\nSecure border gateway\nRules-based application firewall with federation controls to securely manage your Matrix network.\nFederation\nEnable or block federation.\nDeployment\nAir-gapped deployment\nInstall and support for air-gapped, isolated and high-side instances. No internet connectivity needed.\nCustom mobile push gateway\nPush notifications via your own infrastructure.\nSupport for OpenShift\nHelm charts\nOfficial helm charts from Element. Easy Kubernetes-based installation. Ready to use with GitOps processes and Continuous Deployment (CD) tooling.\nScaling, availability and efficiency\nAuto-scaling\nDynamically scale to save resources and ensure a great end user experience.\nHigh availability and rolling updates\nAutomatic failover and rolling updates for additional stability and to minimise downtime.\nS3 support\nSupport for media repository stored on S3.\nResource savings\nOptimise resource usage for cost savings and minimised environmental impact.\nFrontend\nWorkplace app\nElement Pro\nEnterprise-grade versions of the Element frontend, with server-side control for workplace use.\nWhitelabelled mobile app\nFully customised app for mobile and desktop.\nAdd on\nAdd on\nCustom colour theme\nApply your own brand colour to the app.\nCertificate pinning\nUtilise TLS certificate pinning to specify and ensure connection with the intended server.\nMobile device management\nAutomate the connection of your employees\u2019 Element Pro app to your homeserver.\nSovereign analytics and reporting\nReceive sensitive analytics and rageshakes internally, rather than routing to a third party provider.\nSeamless deployment\nProvision via your internal platform, or the usual app stores.\nEasier onboarding\nExtended organisation-wide chat room management with group and role-based access control.\nEnable content scanning\nEnhanced content scanning to support antivirus and data loss protection.\nGrid View\nMonitor, send and receive messages across multiple rooms simultaneously.\nCustom domain\nChoose your own user addresses based on your brand (for example @user:organisation.com).\nMessaging & collaboratioN\nMessaging\nThreads, read receipts, location sharing, attachments, voice messages, polls, emojis, reactions and much more.\nCollaboration\nEmbedded links and share-to capabilities, file sharing, polls, reactions and more.\nIntegrations\nWidgets and integrations such as whiteboard (NeoBoard) and project management (OpenProject, Jira).\nVoice and video calls (Element Call)\nE2EE voice and video for 1:1 and group chat.\nEnd-to-end encryption\nThe entire platform is end-to-end encrypted by default. Configuration can enable the creation of non-encrypted chat rooms.\nCross-signed device verification\nVerify a device using QR code or an emoji string\nPrivate rooms\nThe ability to create invite-only rooms.\nData history\nUnlimited data history.\nMobile and desktop\nAvailable on Windows, Mac and Linux. Download from the App store, Google Play, F-Droid or use in browser.\nBuilt on the Matrix Open standard\nOwn and control your data\nSelf-hosted communications.\nDecentralised\nNo single point of failure or global outages.\nInteroperability\nSecure communications between separate organisations with different frontends.\nSecurity\nEnd-to-end encrypted by default. Only those in the conversation can decrypt messages and data, including voice & video.\nOpen source\nBuilt on open source software to ensure users can trust the system.\nIndependence\nNo vendor lock-in, interoperable with any other Matrix-based system.\nProtects end user privacy\nNo personal phone numbers required.\nMaximum 1 set up per product (includes only one (1) production server and one (1) test server. Additional servers will be subject to the same price minimums)\nAccessibility\n.\nElement is deeply committed to accessibility, embedding inclusive design across our product set. We align our efforts with WCAG 2.1 Level AA and EN 301 549 criteria, with ongoing audits to support accessibility improvements, assistive-technology compatibility, high-contrast modes and full keyboard navigability.\nRead our complete\naccessibility statement\nProduct\nElement\nElement\nPRO\nElement Server Suite\nThe Matrix Standard\nFeatures\nIntegrations\nSupport and SLAs\nHosting\nPricing\nSolutions\nSectors\nUse cases\nCustomers\nPartners\nMatrix in Europe\nBuilt on Matrix\nResources\nBlog\nHelp\nAbout\nMatrix relationship\nDocumentation\nOpen\u00a0source\nCareers\nLabs\nContact us\nService status\nSecurity disclosure policy\nSecurity hall of fame\nImpressum\nLogos\nGet Started\nOpen Element Web\nDownload\nContact sales\nCustomer portal\nCopyright \u00a9 2016\u2013\n2026\nElement \u2022\nLegal\n\u2022\nPrivacy\nAll Rights Reserved. The Element name, logo and device are registered trade marks of Element Creations Ltd",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://element.io/blog",
+      "title": "Element Blog",
+      "text": "Element Blog\nCookies help us figure out what works and doesn\u2019t work on our website. It would be great if you hit the \u2018accept\u2019 button. To learn more about our approach, please read our\nCookie Policy\n.\nManage settings\nAccept\nDecline\nSee all posts\nGet Started\nSee all posts\nGet Started\nMost Recent\nInteroperability\nMatrix-based ZaPuK confirmed as a core component within Germany\u2019s Deutschland-Stack\nMatrix-based ZaPuK is confirmed as a cornerstone of Germany\u2019s Deutschland-Stack.\nDr Patrick Alberts\n30/06/2026\nElement\nElement recognised as a Digital Public Good\nWe're pleased that Element has been recognised as a Digital Public Good by the Digital Public Goods Alliance (DPGA), a multi-stakeholder initiative endorsed by the United Nations.\nPaulina Lundin\n17/06/2026\nHealthcare\nCompuGroup Medical (CGM) and Element partner to transform healthcare communications\nElement partners with CompuGroup Medical (CGM) to help build a new generation of secure, interoperable communication tools for healthcare using the open Matrix standard.\nSteve Loynes\n10/06/2026\nGovernment\nSweden goes live with Matrix-based federation!\nSweden's public sector just went live with Matrix-based federation!\nSteve Loynes\n26/05/2026\nElement\nAir-gapped communications for national security\nGovernments and national security organisations rely on air-gapped communications to protect sensitive and classified information. Yet the majority of air-gapped networks are running legacy technology.\nSteve Loynes\n19/05/2026\nElement\nSeamless encrypted history sharing arrives in Element\nSeamless encrypted history sharing arrives in Element\nAndreas Sisask\n13/05/2026\nDigital sovereignty\nDigital sovereignty is built on an open standard that enables federation\nAcross Europe, sovereign communications systems are already being deployed, and crucially, they don\u2019t have to exist in isolation.\nSteve Loynes\n22/04/2026\nElement\nIntroducing the ESS Community migration tool\nWe are officially releasing the first version of the ESS Migration Tool.\nPatrick Maier\n31/03/2026\nElement\nSpaces has landed on Element X!\nSpaces have landed on Element X! Spaces bring a faster, cleaner and more intuitive way to organise conversations. Gone are the long, overwhelming room lists as you can now navigate discussions by department, project or interest with a single tap.\nAndreas Sisask\n30/03/2026\nElement\nMeedio partners with Element to deliver sovereign communications across Europe\nMeedio partners with Element to deliver sovereign communications across Europe\nMeedio will use Element Server Suite Pro (ESS Pro) as the server backbone for its new Matrix-based communications platform, including video conferencing and a dedicated front-end client.\nSteve Loynes\n26/03/2026\nGovernments need to adopt Matrix responsibly\nIt\u2019s great to see another European government, this time Belgium, using the Matrix open standard as the foundation for\nSteve Loynes\n25/03/2026\nCompliance\nThe Cyber Resilience Act: Implications for open source and digital products\nThe Cyber Resilience Act (CRA) is set to reshape digital product security in Europe.\nApplying from 2027, the CRA introduces security-by-design requirements for any product with digital elements placed on the EU market - including open source-based software.\nDenise Almeida\n12/03/2026\nLatest Signal and WhatsApp breaches show that consumer apps have no place in government\nOn Monday the General Dutch \u2060Intelligence Agency (AIVD) and Dutch Military Intelligence and Security Service (MIVD) announced a sustained Russian-backed\nSteve Loynes\n11/03/2026\nElement\nSustainable decentralised comms at Element\nAt FOSDEM 2026, Neil Johnson explained why sustainability is essential for open source software - and why it matters even more for decentralised networks like Matrix.\nNeil Johnson\n25/02/2026\nVoIP\nExploring MatrixRTC: Real time communication in rooms\nMembers of Element\u2019s VoIP team shared a deep dive into MatrixRTC, the framework bringing real time communication natively into Matrix rooms.\nTimo Kandra\n19/02/2026\nCompliance\nThe Digital Omnibus: opportunities and risks for open source\nThe Digital Omnibus: opportunities and risks for open source\nDenise Almeida\n18/02/2026\nTI-Messenger\nElement\u2019s multi-tenancy TI-Messenger solution secures \u2018Good\u2019 rating in gematik commissioned pentest\nGematik\u2019s pentest confirms ESS Pro for TI-M as a multi-tenancy server-side solution that\u2019s ready for a TI-M Pro solution.\nPatrick Maier\n17/02/2026\nGovernment\nOpen source is key to Europe\u2019s digital sovereignty\nDigital sovereignty isn\u2019t about buying European software - it\u2019s about control and choice.\nOpen source and open standards give governments the ability to operate independently, avoid vendor lock-in, and switch providers when needed. That\u2019s real sovereignty.\nAmandine Le Pape\n11/02/2026\nElement\nAn Element Web for the future\nAt FOSDEM 2026, the world\u2019s largest open source conference, David Baker and Florian Duros presented an inside look at Element Web - from its early days to the bold plans shaping its future.\nDavid Baker\n10/02/2026\nGovernment\nThe messenger challenge for defence organisations\nReal time communication is mission-critical, but legacy systems and consumer apps put defence operations at risk. Here's why national security needs a different approach.\nSteve Loynes\n5/02/2026\nSecurity\nDecoding the hidden trade-offs of E2EE and usability\nDecoding end-to-end encryption: Privacy vs. Usability. Read more about the trade-offs and how we work to solve them\nAndreas Sisask\n4/02/2026\nElement app\nElement Pro Web introduces Grid View\nMulti-room monitoring, made simple. Element Pro Web now has Grid View, so that you can see, send and track messages across multiple rooms at once.\nDanielle Kirkwood\n21/01/2026\nElement\nWhen chat history matters most\nAs limits land on some free self-hosted collaboration tools, more teams are turning to ESS Community - our free-use, open source Matrix distribution.\nSteve Loynes\n14/01/2026\nElement Call\nElement Call: Redefining conferencing for privacy, scale and sovereignty\nAt Matrix Conference 2025, Florian, Aaron and Timo showcased how Element Call is bringing secure, federated, and scalable real-time communication to Matrix.\nFlorian Heese\n17/12/2025\nElement\nElement X Web: A glimpse into the future\nHow Element Web is evolving, by bringing the web and desktop version of the Element app in line with the sleek design and usability of Element X on mobile.\nDanielle Kirkwood\n3/12/2025\nElement\nESS - Element\u2019s distribution for Matrix deployments\nESS - Element\u2019s distribution for Matrix deployments\nPatrick Maier\n26/11/2025\nSecurity\nVerifying your devices is becoming mandatory\nFrom April 2026, only verified devices can send or receive end-to-end encrypted message on Element.\nAndreas Sisask\n19/11/2025\nGovernment\nElement at the Summit on European Digital Sovereignty\nWe\u2019re delighted to be participating in the Summit on European Digital Sovereignty.\nSteve Loynes\n18/11/2025\nElement X and Pro updates; a glimpse into the future\nAt The Matrix Conference 2025, I had the opportunity to reveal the evolution and journey to our flagship apps: Element\nAndreas Sisask\n12/11/2025\nReleases\nESS 25.10: LTS, MAS migration and Element Admin\nElement is rolling out ESS 25.10, delivering new LTS releases for ESS Classic, ESS Pro and ESS TI-M, alongside refreshed builds for ESS Community.\nPatrick Maier\n7/11/2025\nTI-Messenger\nLarge-scale multi-tenancy hosting for TI-Messenger and beyond\nHow do you effectively onboard hundreds of thousands of healthcare clinics and pharmacies to Germany\u2019s TI-Messenger?\nPatrick Maier\n5/11/2025\nDecentralised\nThe move to decentralised systems for mission critical technology\nYesterday\u2019s AWS outage highlights the importance of decentralised communications, and digital sovereignty. Governments simply cannot rely on systems with a single point of failure.\nSteve Loynes\n21/10/2025\nMatrix\nThe Matrix Conference 2025; a seminal moment for Matrix\nThe Matrix Conference 2025 was a huge success, and the energy and enthusiasm was just incredible!\nSteve Loynes\n20/10/2025\nElement app\nElement Pro: Element X, built specifically for the workplace\nElement Pro - our new frontend client built specifically for the workplace! It's the perfect complement to our backend Element Server Suite Pro (ESS Pro).\nSteve Loynes\n16/10/2025\nElement\nWelcome to the all new Element Server Suite family of Helm charts!\nIntroducing the new Helm-based Element Server Suite (ESS) - our family of products designed as an \u201cout-of-the-box\u201d way to deploy, host and maintain a Matrix-based system.\nPatrick Maier\n16/10/2025\nMatrix\nReady for The Matrix Conference 2025!\nWe\u2019re ready for The Matrix Conference 2025 - 300+ participants from 20+ countries and 10+ governments - all championing Matrix-based sovereign, secure and interoperable communications.\nSteve Loynes\n14/10/2025\nGovernment\nElement signs Chat Control open letter\nElement has joined other European organisations in an open letter to European leaders on the latest developments regarding Chat Control.\nDenise Almeida\n7/10/2025\nHiding room metadata from servers\nEvery year, Element takes on a small number of summer interns to work on various research and development projects. Internships\nSkye Elliot\n30/09/2025\nNew Element Web and Desktop apps have distinct Element X vibes!\nThe brand new updates of the Element Web and Desktop apps include a major rework of room listings. It brings\nDanielle Kirkwood\n23/09/2025\nTI-Messenger\nTI-Messenger is moving to Matrix 1.15\nGematik recently announced its intention to rebase its TI-Messenger specification on Matrix v1.15, which brings important improvements to TI-Messenger.\nPatrick Maier\n17/09/2025\nSecurity\nCoordinated Matrix security update\nA new coordinated security fix for all Matrix server implementations is now published as part of the Matrix\u202f1.16 off\u2011cycle spec update.\nElement Security\n11/08/2025\nAccessibility\nHelping to get everyone in their element\nElement is now more accessible by design and by default, thanks to more than 40 accessibility improvements.\nDanielle Kirkwood\n29/07/2025\nGovernment\nReality bites the UK government\u2019s push to undermine end-to-end encryption\nThe UK government\u2019s bruising Apple encounter has, inadvertently, underlined the global support for end-to-end encryption in democratic countries.\nSteve Loynes\n22/07/2025\nTI-Messenger\nTI-Messenger goes live!\nIt\u2019s a milestone week for Germany\u2019s TI-Messenger initiative as public healthcare insurers go live with their TI-Messenger based solutions!\nSteve Loynes\n16/07/2025\nElement\nAddressing fear, uncertainty and doubt thrown at Element and Matrix\nWe\u2019ve seen a serious uptick in misinformation about Element and Matrix over the last week, so thought it would be useful to set the record straight from Element\u2019s side.\nSteve Loynes\n20/06/2025\nOpen standard\nThe importance of open standard federation for chat\nA genuine open standard is the single most important part of ensuring digitally sovereign communications between multiple separate organisations.\nSteve Loynes\n19/06/2025\nGovernment\nHacking for a sovereign digital Europe\nOne of the most exciting highlights from Element at HackDays was the launch of Project Aurora, a bold and experimental prototype web and desktop Matrix client.\nMatthew Hodgson\n12/06/2025\nTI-Messenger\nElement powers T-Systems\u2019 TI-Messenger solution\nElement Server Suite Pro for TI-Messenger (ESS Pro for TI-M) gives T-Systems a complete backend for its #TI-Messenger solution, delivering outstanding performance, dynamic scaling and continuous security updates.\nSteve Loynes\n4/06/2025\nReleases\nESS Pro 25.04 LTS: A renewed commitment to security, stability, and scalability\nWe\u2019re excited to bring you Element Server Suite (ESS) 25.04 LTS, this month\u2019s release includes a renewed commitment to security, stability, and scalability for enterprise-grade Matrix deployments.\nSteve Loynes\n28/05/2025\nSecurity\nEnd-to-end encryption\nMany vendors claim to offer end-to-end encryption. Most don\u2019t deliver.\nDr Patrick Alberts\n27/05/2025\nElement X\nMAS migration unleashes Element X on Matrix.org\nWith MAS having landed on the matrix.org server, Element X is now by far the best way to manage your matrix.org account on mobile.\nSteve Loynes\n10/04/2025\nTI-Messenger\nIntroducing ESS TI-Messenger version 1.0 \ud83c\udfe5\nWe're launching our first TI-Messenger compliant edition of Element Server Suite built to suit TI-Messenger for German healthcare.\nArchie W\n8/04/2025\nOn-premise\nEnd-to-end encrypted voice and video for self-hosted community users\nThose self-hosting a homeserver outside of ESS will need to deploy their own MatrixRTC infrastructure.\nSteve Loynes\n4/04/2025\nGovernment\nHow Element protects against Signalgate style accidental invites\nElement Server Suite enables the IT department to integrate Element with the organisation\u2019s existing directory system to securely manage end-users.\nSteve Loynes\n3/04/2025\nGovernment\nAdvancing Secure & Convenient Government Communications: The Case for Element\nThe recent incident involving the inadvertent inclusion of a journalist into a Signal group chat where US officials discussed sensitive\nSteve Loynes\n25/03/2025\nGovernment\nA difficult chat: Messaging apps in Australian government\nThe Australian Information Commissioner (OAIC) produced an excellent report on consumer messaging apps within the Australian government.\nSteve Loynes\n20/03/2025\nlicensing\nBuild: Funding open source via commercial licensing\nWe've created our Build subscription to provide a commercial license that lets you develop proprietary products while supporting the Matrix ecosystem.\nArchie W\n13/03/2025\nGovernment\nWhy the Swedish Armed Forces\u2019 switch to Signal misses the mark\nGenuine security requires a holistic approach that considers not just encryption but also data governance, accessibility, interoperability...\nSteve Loynes\n11/03/2025\nElement Desktop update for Windows\nHi everyone,\n\nApologies, we had a blip with today\u2019s 1.11.94 Element Desktop app update for Windows (both\nSteve Loynes\n27/02/2025\nSecurity\nRunning outdated versions of Synapse is a p",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://element.io/help",
+      "title": "Element | FAQs | Help and customer support",
+      "text": "Element | FAQs | Help and customer support\nCookies help us figure out what works and doesn\u2019t work on our website. It would be great if you hit the \u2018accept\u2019 button. To learn more about our approach, please read our\nCookie Policy\n.\nManage settings\nAccept\nDecline\nProduct\nOverview\nElement\nElement Server Suite\nThe Matrix Standard\nSelf-hosted\nSolutions\nMatrix in Europe\nMission Partner Environment\nSectors\nUse cases\nPartners\nCustomers\nBuild\nResources\nAbout\nUser guide\nDocumentation\nHelp\nLabs\nContact Sales\nMatrix Conf videos\nInsights\nBlog\nPricing\nDownload\n\ud83c\uddec\ud83c\udde7 English\n\ud83c\uddf8\ud83c\uddea Swedish\n\ud83c\uddeb\ud83c\uddf7 French\n\ud83c\udde9\ud83c\uddea German\nSign In\nOpen Element web\nCustomer portal\nGet started\nProduct\nOverview\nElement\nElement Server Suite\nThe Matrix Standard\nSelf-hosted\nSolutions\nMatrix in Europe\nMission Partner Environment\nSectors\nUse cases\nPartners\nCustomers\nBuild\nResources\nAbout\nUser guide\nDocumentation\nHelp\nLabs\nContact Sales\nMatrix Conf videos\nInsights\nSign In\nOpen Element web\nCustomer portal\nBlog\nPricing\nDownload\nLanguage\n\ud83c\uddec\ud83c\udde7 English\n\ud83c\uddf8\ud83c\uddea Swedish\n\ud83c\uddeb\ud83c\uddf7 French\n\ud83c\udde9\ud83c\uddea German\nGet started\nElement help and support\n.\nCheck the FAQs below or send a message in a room to get community support or get in touch with our team.\nDesktop & Web\nJoin room\niOS\nJoin room\nAndroid\nJoin room\nDocumentation\nView docs\nYou should never share account details in any of these rooms. For account specific questions, please email\nsupport@element.io\n.\n\ud83d\udd17\nAccount management\n\ud83d\udd17\nHow do I reset my password?\nPlease note that we cannot reset passwords or reactivate matrix.org accounts. If you have an email address attached to your account, you can reset your password\nhere\n.\n\ud83d\udd17\nDo I need an email address to register?\nUsing an email address when creating a Matrix account is optional; it will make it easier for others to discover you and can help you to reset your password if needed.\nIt's ultimately up to the administrator of the server to decide whether or not you need to use an email address when creating a Matrix account.\nFor accounts on the matrix.org homeserver, supplying an email address during registration is optional, but matrix.org reserves the right to occasionally require it for abuse mitigation as referred to in the\nprivacy policy\n.\n\ud83d\udd17\nWhat is the username used for?\nWe will use your username to create an ID (Matrix ID) allowing to disambiguate you from others with the same display name. It will allow us to keep your email confidential. \ud83d\ude42\n\ud83d\udd17\nCan I register with a phone number?\nNot anymore. Sorry!\n\ud83d\udd17\nChat\n\ud83d\udd17\nHow can I mention someone?\nJust type their name and they will be notified accordingly. You can autocomplete by pressing the tab button, you don\u2019t need any prefix for the mention to work!\n\ud83d\udd17\nWith what type of mentions will I get notified?\nBy default you\u2019ll be notified if your display name and your user name are mentioned. You can add other names, nicknames or keywords on which you want to be notified from your settings, in the Notifications section.\n\ud83d\udd17\nHow do I send a file?\nSimple, just drag the file into Element and it will automatically upload. Alternatively you can click on the paperclip icon in the text input field and browse your filesystem.\n\ud83d\udd17\nCan I upload a file from a mobile device?\nYes you can! On a mobile device simply press the arrow which is pointing upwards (on iOS) or the + symbol (on android) while in a chat and select your file.\n\ud83d\udd17\nHow can I invite a contact to use Element?\nYou can invite someone to a room by using the \"Invite to this room\" button in the right hand side \"Room members list\" using their Matrix ID (if they have one) or by email. Those without a Matrix ID will be able to preview the room if the room allows for that.\n\ud83d\udd17\nIs there a way to know if a message has been read?\nYes! Element shows who has read a message by displaying their avatar to the right of the message. Hovering over these avatars (or clicking on them on mobile) will give you the user\u2019s info and reading time.\n\ud83d\udd17\nHow can I search for a file or message?\nTo search a room from Desktop, click on the magnifying glass located near the top of the screen. You can then type in a keyword or filename that you are searching for with the ability to select whether you want to search within the specific chat room or across all conversations. For encrypted rooms, search only works on Desktop (not Element web and mobile) and you need to have \"Message search\" enabled in the Element Security & Privacy settings.\n\ud83d\udd17\nSettings\n\ud83d\udd17\nHow do I change my account settings?\nClick on the drop down menu under your name in the top left corner of the web or desktop app and select. From here you can change all of your account and general Element preferences.\n\ud83d\udd17\nHow do I change my notification settings?\nElement allows you to customise your notifications at two levels: across the app and per room. You can configure how you will be notified for given events by default in the Notifications section of your Settings (accessible from the drop down menu under your name in the top left corner of the web/desktop app).\nYou can configure keywords, default notification settings for group, one-to-one chat rooms, invites and calls. The notifications can be:\n\u2013 Turned off: you won\u2019t be notified when the selected event happens.\n\u2013 Turned on: you will get a message popping up when the selected event happens, but no sound.\n\u2013 \u201cNoisy\u201d: you will get a visual highlight (red badge and/or text highlight), a sound and/or vibration (depending on the device) when the selected event happens.\nThen for finer tuning, you can easily configure per room notification setting from the context menu you get by clicking on the [...] icon that appears when hovering over the room name in the room list. This is very handy when you wish to temporarily mute a room, or make sure you\u2019re not missing anything from a given discussion. You can select the following options:\n\u2013 Mute: you won\u2019t be notified, even if your name or a keyword is mentioned.\n\u2013 Mentions only: you will only be notified for the items that are meant to be \u2018noisy\u2019, i.e. your name and keywords.\n\u2013 All messages: you will get a (silent) notification for every message happening in the room; your \u2018noisy\u2019 events (e.g. your name being mentioned) will still be noisy (red badge and sound).\n\u2013 All messages (noisy): every message will make a noise on top of the visual notification. Your noisy events will still be differentiated by a red badge.\n\ud83d\udd17\nHow do I set up email notifications?\nYou can set Element up to email you when you have missed some activity (new messages, new invites\u2026). You can do this in the Notification section of your Settings and turn on the toggle labelled as \u2018Enable email notifications\u2019.\n\ud83d\udd17\nHow can I change my display name?\nYou can change your display name in General section of your Settings (accessible from the drop down menu under your name in the top left corner of the web/desktop app).\n\ud83d\udd17\nHow do I reset my password?\nThe Element team won't be able to reset passwords or reactivate matrix.org accounts.\nIf you have forgotten your password, please visit\napp.element.io\nand click on the link \u2018Set a new password\u2019. You will need to input the email address which is registered to your Element account and choose a new password. An email will then be sent to confirm your request to reset your password. Please follow the link in the email to complete the process and regain access to your account.\nIf you haven't set an email address for your Element account, please contact your homeserver administrator who may choose to reset your password for you.\n\ud83d\udd17\nWhy would I need to associate an email address to my account? Can I do so a posteriori?\nIt's ultimately up to the administrator of the server to decide whether or not you need to use an email address when creating a Matrix account, and optionally restrict this to certain email addresses or domains.\nIf you can, we strongly recommend that you set an email address in order to be able to reclaim your account if you\u2019ve lost your password. It is also useful for people to find you, and easier to remember than (yet another) ID. If you haven\u2019t done so at registrationdon\u2019t worry; you can add as many email addresses as you like, at any point, in the General section of your Settings\nIf you have forgotten your password and did not register an email address with your account, your homeserver administrator may choose to reset the password for you. If not, we're sorry to say that there is no other way to access your account. \ud83d\ude41\n\ud83d\udd17\nRooms\n\ud83d\udd17\nHow can I change the settings for a specific chat or room?\nYou can change the settings for any one-to-one chat or group room by clicking on the cog icon next to the room name.\n\ud83d\udd17\nCan I restrict the access of a room to a given set of people?\nYou can restrict the access of a room to people who have been invited by selecting the \u201cPrivate (invite only)\" option in the \"Security & Privacy\" settings of the room. People knowing the link of the room won\u2019t be able to access it if an invite hasn\u2019t been explicitly sent to their email address or ID.\nBy adding the room to a Space, you can also select \"Space members\" to only allow anyone that is a member of the Space to join.\n\ud83d\udd17\nCan I limit the access of a room to people knowing its existence?\nYou can restrict the access of a room to people with whom you shared a link to the room by selecting the \u201canyone who knows the room link\u201d option in the room settings. Selecting this option will not make the room publicly visible to the rest of the community.\n\ud83d\udd17\nCan I make a room publicly discoverable?\nYou can get your room listed into your server\u2019s directory by checking the button labeled \"Publish this room to the public in example.com's room directory?\". By checking this box, it will be discoverable to anyone searching for a room on the server. However, they will be able to join only if you haven\u2019t restricted the access only to people with an invitation.\n\ud83d\udd17\nWill anyone be able to join my room if I list it in the directory?\nIf your room is listed in the directory, people will know it exists but they will only be able to join it if you allowed the access to it to anyone knowing the link.\n\ud83d\udd17\nCan new members read the history of the room?\nYes. If the room history visibility is set to \u201cMembers (full history)\u201d in the room\u2019s Privacy & Security settings, new members will be able to read messages that were sent before they were invited.\nIn rooms that are end-to-end encrypted, the feature is currently under development and will be available soon. When Greg invites Kate to such an end-to-end encrypted room, Kate is seeing a decoration on the past messages that they have been shared by Greg.\nAs Kate was not in the room when the past messages were sent, it is Greg who provides her with the message decryption keys. Even though most regular users won\u2019t make use of this information in nominal situations, and the messages can still be trusted, it is important from a security perspective to have full transparency on the provenance of the message decryption keys, and the trust anchors. If Greg was malicious and could also find a malicious server admin to cooperate with, they together could manipulate those past messages.\nIn contrast, if the history visibility is set to \u201cMembers since invited\u201d, the new members won\u2019t see the messages that were sent before they were invited.\nNote: when changing the history visibility of the room, it won\u2019t affect the visibility of the messages that have been already sent. The setting that was present at the time of sending the message, is what matters. For example, if at the time of sending the message the visibility was \u201cMembers since invited\u201d, then this message will be forever visible only to members who were invited (or already members) at the time of sending this message. Hence, when you switch from \u201cMembers since invited\u201d to \u201cMembers (full history)\u201d on Tuesday at 10, the future members can\u2019t read messages that were sent before Tuesday at 10.\nNote: in end-to-end encrypted rooms, history is only available when the new member is explicitly invited to the room. If the room allows members of a space to join without an invite, and the new member uses that option to join, they won\u2019t be able to see history.\n\ud83d\udd17\nIf I make the room accessible to anyone, will new members be able to read the history?\nNo. Changing the room\u2019s access (e.g. who can join the room) will not automatically affect the history visibility of the room (e.g. who can see history). For example, if the visibility is \u201cMembers since invited\u201d and the room is made accessible to anyone - the user would still need to join the room to see history, and they only see messages sent after they joined.\nSecondly, it shall be noted that even after the history visibility of that room is changed to \u201cMembers (full history)\u201d, this won\u2019t affect past messages - those messages can still only be seen by members who were invited (or already members) at the time the message was sent.\n\ud83d\udd17\nWhy would I want to make history visible to anyone?\nMaking the history visible to anyone means that people can see what is being said in a room before joining it. So typically, if you are browsing the room directory and see a room which might be interesting, you will have the opportunity to \u201cpeek\u201d into it, having a view of what has been said without joining it. This gives users the opportunity to gauge a room before joining. It is a useful option for rooms publicly listed and hosting public discussions, so that they have an idea of what they\u2019re going into before joining.\nNote: for security reasons, this option is only offered when the room is accessible to anyone and the room is not end-to-end encrypted.\n\ud83d\udd17\nWhat is a room address?\nBy default the room has an ugly identifier which is barely human readable. Setting an address for a room allows you to give it a simple reference, making it easier to share a link to it. The addresses are linked to the server you are registered on (e.g. Matrix.org if your ID is @username:matrix.org). A room can have different addresses on the same homeserver and addresses on different homeservers. They are just a user friendly entry point",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://element.io/integrations",
+      "title": "Element integrations | Enterprise functionality",
+      "text": "Element integrations | Enterprise functionality\nCookies help us figure out what works and doesn\u2019t work on our website. It would be great if you hit the \u2018accept\u2019 button. To learn more about our approach, please read our\nCookie Policy\n.\nManage settings\nAccept\nDecline\nProduct\nOverview\nElement\nElement Server Suite\nThe Matrix Standard\nSelf-hosted\nSolutions\nMatrix in Europe\nMission Partner Environment\nSectors\nUse cases\nPartners\nCustomers\nBuild\nResources\nAbout\nUser guide\nDocumentation\nHelp\nLabs\nContact Sales\nMatrix Conf videos\nInsights\nBlog\nPricing\nDownload\n\ud83c\uddec\ud83c\udde7 English\n\ud83c\uddf8\ud83c\uddea Swedish\n\ud83c\uddeb\ud83c\uddf7 French\n\ud83c\udde9\ud83c\uddea German\nSign In\nOpen Element web\nCustomer portal\nGet started\nProduct\nOverview\nElement\nElement Server Suite\nThe Matrix Standard\nSelf-hosted\nSolutions\nMatrix in Europe\nMission Partner Environment\nSectors\nUse cases\nPartners\nCustomers\nBuild\nResources\nAbout\nUser guide\nDocumentation\nHelp\nLabs\nContact Sales\nMatrix Conf videos\nInsights\nSign In\nOpen Element web\nCustomer portal\nBlog\nPricing\nDownload\nLanguage\n\ud83c\uddec\ud83c\udde7 English\n\ud83c\uddf8\ud83c\uddea Swedish\n\ud83c\uddeb\ud83c\uddf7 French\n\ud83c\udde9\ud83c\uddea German\nGet started\nIdentity and Access Management\n.\nSupport for single sign-on (SSO) integration.\nModerating\n.\nCorporate oversight and management of your conversations.\nAuditing\n.\nCapture an official record of conversations for compliance.\nWidgets\nEmbed full-blown interactive apps into your rooms. Everyone in a room can access them - helping you share or collaborate around the same material.\nEtherpad.\n\u200d\nShared note taking\nGrafana.\nDashboards in Element\nGoogle calendar.\nShare within Element\nJitsi.\nVoice and video\nSpotify.\n\u200d\nControl your music\nYouTube.\nVideos in your chat\nEthercalc.\nEditable spreadsheets.\nTradingView.\nExchange rates in room\nBots\nBots interact with third-party applications directly from Element. They sit in your rooms to listen and respond to your command. Use them to boost team productivity or add to the fun.\nGithub\nRSS\u00a0Bot\nGitlab\nJIRA\nWebhooks\nProduct\nElement\nElement\nPRO\nElement Server Suite\nThe Matrix Standard\nFeatures\nIntegrations\nSupport and SLAs\nHosting\nPricing\nSolutions\nSectors\nUse cases\nCustomers\nPartners\nMatrix in Europe\nBuilt on Matrix\nResources\nBlog\nHelp\nAbout\nMatrix relationship\nDocumentation\nOpen\u00a0source\nCareers\nLabs\nContact us\nService status\nSecurity disclosure policy\nSecurity hall of fame\nImpressum\nLogos\nGet Started\nOpen Element Web\nDownload\nContact sales\nCustomer portal\nCopyright \u00a9 2016\u2013\n2026\nElement \u2022\nLegal\n\u2022\nPrivacy\nAll Rights Reserved. The Element name, logo and device are registered trade marks of Element Creations Ltd",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/element/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Element (Matrix chat app) suspended from the Google Play Store",
+          "url": "https://twitter.com/element_hq/status/1355290296947499013",
+          "points": 2009,
+          "num_comments": 940,
+          "created_at": "2021-01-29T23:28:33Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25964226"
+        },
+        {
+          "title": "All elementary functions from a single binary operator",
+          "url": "https://arxiv.org/abs/2603.21852",
+          "points": 858,
+          "num_comments": 298,
+          "created_at": "2026-04-13T01:49:32Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47746610"
+        },
+        {
+          "title": "Norway imposes near ban on AI in elementary school",
+          "url": "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/",
+          "points": 822,
+          "num_comments": 588,
+          "created_at": "2026-06-19T16:03:15Z",
+          "hn_url": "https://news.ycombinator.com/item?id=48600093"
+        },
+        {
+          "title": "Element raises $30M to boost Matrix",
+          "url": "https://matrix.org/blog/2021/07/27/element-raises-30-m-to-boost-matrix",
+          "points": 809,
+          "num_comments": 339,
+          "created_at": "2021-07-27T07:29:13Z",
+          "hn_url": "https://news.ycombinator.com/item?id=27969624"
+        },
+        {
+          "title": "ClearURLs \u2013 automatically remove tracking elements from URLs",
+          "url": "https://github.com/ClearURLs/Addon/",
+          "points": 803,
+          "num_comments": 307,
+          "created_at": "2021-05-05T07:46:54Z",
+          "hn_url": "https://news.ycombinator.com/item?id=27047243"
+        },
+        {
+          "title": "UI elements with a hand-drawn, sketchy look",
+          "url": "https://wiredjs.com/",
+          "points": 766,
+          "num_comments": 116,
+          "created_at": "2024-05-31T22:23:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=40540952"
+        },
+        {
+          "title": "Elementary Knightship found in Conway's Game of Life",
+          "url": "http://www.conwaylife.com/forums/viewtopic.php?t=3303",
+          "points": 733,
+          "num_comments": 143,
+          "created_at": "2018-03-08T17:55:05Z",
+          "hn_url": "https://news.ycombinator.com/item?id=16546152"
+        },
+        {
+          "title": "Show HN: A guide to all HTML5 elements and attributes",
+          "url": "http://htmlreference.io/",
+          "points": 728,
+          "num_comments": 93,
+          "created_at": "2017-02-14T11:02:24Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13642662"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://element.io/pricing",
+    "changelog": "https://element.io/blog",
+    "docs": "https://element.io/help",
+    "integrations": "https://element.io/integrations",
+    "g2": "https://www.g2.com/products/element/reviews"
+  },
+  "analysis": {
+    "name": "Element",
+    "url": "https://element.io",
+    "tagline": "Communicate on your terms.",
+    "value_proposition": "Sovereign, interoperable and secure communications built on the Matrix open standard, self-hostable and available air-gapped for governments and regulated enterprises.",
+    "target_segment": "enterprise",
+    "ideal_customer": "European governments, defense/national security, healthcare, and regulated public-sector organizations needing digitally sovereign, self-hosted or air-gapped secure messaging as an alternative to Microsoft Teams, Slack, WhatsApp, and Signal.",
+    "features": [
+      {
+        "name": "end-to-end encrypted messaging",
+        "description": "E2EE 1:1 and group chat messaging.",
+        "evidence_source": "landing",
+        "evidence_quote": "End-to-end encrypted messaging and calls",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "end-to-end encrypted voice and video calls",
+        "description": "E2EE voice/video calling built on MatrixRTC.",
+        "evidence_source": "landing",
+        "evidence_quote": "End-to-end encrypted messaging and calls",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "element call",
+        "description": "Native group video conferencing built into Element.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Includes Element Call",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "federation",
+        "description": "Cross-org/cross-server federated communication over Matrix.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Enable or block federation.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "self-hosting",
+        "description": "Deploy the server suite on your own infrastructure.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Self-hosted",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "air-gapped deployment",
+        "description": "Install and run without internet connectivity for isolated/high-side networks.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Air-gapped installation",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "decentralized architecture",
+        "description": "No central point of failure; resilient network built on Matrix.",
+        "evidence_source": "landing",
+        "evidence_quote": "With no central point of failure, Element protects against global outages",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "open source",
+        "description": "Distributed under AGPL open-source license.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Open source under AGPL",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "matrix protocol",
+        "description": "Built on the Matrix open standard for interoperable real-time communications.",
+        "evidence_source": "landing",
+        "evidence_quote": "built on the Matrix open standard",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "synapse homeserver",
+        "description": "Community-edition Matrix homeserver backend.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Synapse Community edition homeserver",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "synapse pro",
+        "description": "Next-gen homeserver with dynamic scaling and 90%+ resource savings.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Next generation homeserver for professional use that provides dynamic scaling",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "auto-scaling",
+        "description": "Dynamically scales resources based on load.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dynamically scale to save resources",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "high availability",
+        "description": "Automatic failover and rolling updates.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Automatic failover and rolling updates for additional stability",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "s3 support",
+        "description": "Media repository storage on S3.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Support for media repository stored on S3.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "kubernetes helm charts",
+        "description": "Official Helm charts for Kubernetes-based install.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Official helm charts from Element. Easy Kubernetes-based installation.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "openshift support",
+        "description": "Deployment support for Red Hat OpenShift.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Support for OpenShift",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "gitops support",
+        "description": "Ready for GitOps and Continuous Deployment pipelines.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Ready to use with GitOps processes and Continuous Deployment (CD) tooling.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "sso",
+        "description": "Single Sign-On via OIDC.",
+        "evidence_source": "pricing",
+        "evidence_quote": "OIDC authentication to support SSO.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ldap authentication",
+        "description": "Authenticate users against LDAP or Active Directory.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Authenticate users against an external LDAP or Active Directory system.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "scim provisioning",
+        "description": "Automated user management via SCIM.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Integrate with enterprise identity management systems (LDAP and SCIM)",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "identity and access management",
+        "description": "Enterprise IAM integration mirroring org structure in room hierarchies.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Advanced Identity and Access Management",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "admin console",
+        "description": "Single-pane-of-glass admin interface.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Configure and control your deployment from a single pane of glass.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "audit logs",
+        "description": "Visible in-room auditing for compliance and record-keeping.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Visible in-room auditing to capture an official record of discussion",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "moderation tools",
+        "description": "Corporate oversight and management of conversations.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Corporate oversight and management of your organisation\u2019s conversations.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "retention policies",
+        "description": "Rules-based message/media retention configuration.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Configure rules-based retention policies for messages and media",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "data export",
+        "description": "Migrate your data out to avoid vendor lock-in.",
+        "evidence_source": "pricing",
+        "evidence_quote": "The ability to easily migrate your data, protecting against vendor lock-in.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "cross-domain gateway",
+        "description": "Hardware-based data sharing between classification boundaries.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Hardware-based solution to enable data sharing between information classification boundaries",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "secure border gateway",
+        "description": "Rules-based application firewall with federation controls.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Rules-based application firewall with federation controls",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom mobile push gateway",
+        "description": "Push notifications via customer's own infrastructure.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Push notifications via your own infrastructure.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated mobile push gateway",
+        "description": "Isolated push gateway for air-gapped deployments.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated mobile push gateway",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "iso 27001 certified",
+        "description": "ISO/IEC 27001:2022 information security certification.",
+        "evidence_source": "pricing",
+        "evidence_quote": "independently audited and certified as compliant with the ISO/IEC 27001:2022",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "iso 5230 openchain",
+        "description": "Open source license compliance standard.",
+        "evidence_source": "pricing",
+        "evidence_quote": "developed in accordance with ISO/IEC 5230 (\"OpenChain\")",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "cyber essentials plus",
+        "description": "UK government-backed cybersecurity certification.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Element holds Cyber Essentials Plus",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "cyber resilience act compliance",
+        "description": "Compliance with EU Cyber Resilience Act requirements.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Cyber Resilience Act compliance",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "software bill of materials",
+        "description": "SBOMs provided for enterprise deployments.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Software Bill of Materials (SBOMs)",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "accessibility conformance",
+        "description": "WCAG AA 2.2 and BITV 2.0 accessibility reports.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Accessibilty conformance reports available for clients up to WCAG AA 2.2 & BITV 2.0",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "long term support",
+        "description": "6-monthly LTS releases with security backports.",
+        "evidence_source": "pricing",
+        "evidence_quote": "LTS versions released every 6 months for guaranteed stability",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "advance security advisory",
+        "description": "Early notification of high-severity security releases.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Advance notification of higher severity security releases",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "curated security updates",
+        "description": "Easy deployment of full-stack security updates.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Easy deployment of security updates.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "installation support",
+        "description": "Setup, configuration, and onboarding from Element team.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Setup, configurations and onboarding from the Element team.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "level 3 support",
+        "description": "Bug fix and functionality support with priority response.",
+        "evidence_source": "pricing",
+        "evidence_quote": "For all functionality issues and bug fixes with response times based on priority.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "sla guarantees",
+        "description": "4 business hour response SLA with enhanced options.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Guaranteed response times. 4 Business hours",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "training and deployment",
+        "description": "Expert-led onboarding for admins and trainers.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Enable your teams with expert-led onboarding.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "element pro web",
+        "description": "Enterprise-grade web frontend with server-side control.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Enterprise-grade versions of the Element frontend",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "grid view",
+        "description": "Multi-room monitoring across many rooms simultaneously.",
+        "evidence_source": "changelog",
+        "evidence_quote": "Element Pro Web now has Grid View, so that you can see, send and track messages across multiple rooms at once.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "spaces",
+        "description": "Organize conversations by department/project/interest.",
+        "evidence_source": "changelog",
+        "evidence_quote": "Spaces have landed on Element X!",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "element x mobile",
+        "description": "Next-gen mobile client (iOS/Android).",
+        "evidence_source": "changelog",
+        "evidence_quote": "Spaces has landed on Element X!",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "encrypted history sharing",
+        "description": "Seamlessly share encrypted room history with new members.",
+        "evidence_source": "changelog",
+        "evidence_quote": "Seamless encrypted history sharing arrives in Element",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ess migration tool",
+        "description": "Migration tool between ESS Community and Pro.",
+        "evidence_source": "changelog",
+        "evidence_quote": "Introducing the ESS Community migration tool",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mentions and notifications",
+        "description": "@-mentions with granular notification controls.",
+        "evidence_source": "docs",
+        "evidence_quote": "By default you\u2019ll be notified if your display name and your user name are mentioned.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "keyword notifications",
+        "description": "Custom keyword-based notification triggers.",
+        "evidence_source": "docs",
+        "evidence_quote": "You can add other names, nicknames or keywords on which you want to be notified",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "per-room notification settings",
+        "description": "Fine-tune notifications per room (mute, mentions-only, all).",
+        "evidence_source": "docs",
+        "evidence_quote": "you can easily configure per room notification setting",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "file sharing",
+        "description": "Drag-and-drop file uploads from desktop and mobile.",
+        "evidence_source": "docs",
+        "evidence_quote": "just drag the file into Element and it will automatically upload",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "read receipts",
+        "description": "See who has read a message via avatars.",
+        "evidence_source": "docs",
+        "evidence_quote": "Element shows who has read a message by displaying their avatar",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "message search",
+        "description": "Search messages and files across rooms; E2EE search on desktop.",
+        "evidence_source": "docs",
+        "evidence_quote": "For encrypted rooms, search only works on Desktop",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email invitations",
+        "description": "Invite users by email even without a Matrix ID.",
+        "evidence_source": "docs",
+        "evidence_quote": "using their Matrix ID (if they have one) or by email",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "widgets",
+        "description": "Embed third-party interactive apps in rooms.",
+        "evidence_source": "integrations",
+        "evidence_quote": "Embed full-blown interactive apps into your rooms.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bots framework",
+        "description": "Bots for third-party app integration in rooms.",
+        "evidence_source": "integrations",
+        "evidence_quote": "Bots interact with third-party applications directly from Element.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Inbound webhooks for third-party events.",
+        "evidence_source": "integrations",
+        "evidence_quote": "Webhooks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "desktop app",
+        "description": "Native desktop client.",
+        "evidence_source": "docs",
+        "evidence_quote": "Desktop & Web",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "web app",
+        "description": "Browser-based Element Web client.",
+        "evidence_source": "landing",
+        "evidence_quote": "Open Element web",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ios app",
+        "description": "Native iOS mobile client.",
+        "evidence_source": "docs",
+        "evidence_quote": "iOS",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "android app",
+        "description": "Native Android mobile client.",
+        "evidence_source": "docs",
+        "evidence_quote": "Android",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-tenancy",
+        "description": "Multi-tenant server-side solution (TI-Messenger).",
+        "evidence_source": "changelog",
+        "evidence_quote": "Element\u2019s multi-tenancy TI-Messenger solution secures \u2018Good\u2019 rating",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "mesh and satellite connectivity",
+        "description": "Supports low-bandwidth, mesh, and satellite comms.",
+        "evidence_source": "landing",
+        "evidence_quote": "Element also supports air-gapped and low bandwidth communications, including Mesh and satellite connectivity.",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "matrixrtc",
+        "description": "Real-time comms framework native to Matrix rooms.",
+        "evidence_source": "changelog",
+        "evidence_quote": "MatrixRTC, the framework bringing real time communication natively into Matrix rooms.",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Etherpad",
+      "Grafana",
+      "Google Calendar",
+      "Jitsi",
+      "Spotify",
+      "YouTube",
+      "Ethercalc",
+      "TradingView",
+      "GitHub",
+      "GitLab",
+      "Jira",
+      "RSS",
+      "LDAP",
+      "Active Directory",
+      "SCIM",
+      "OIDC",
+      "S3",
+      "Kubernetes",
+      "OpenShift"
+    ],
+    "differentiators": [
+      "Built on the Matrix open standard for vendor-agnostic federation across organizations and nations",
+      "Air-gapped, isolated, and high-side deployments with no internet connectivity required",
+      "Digital sovereignty positioning \u2014 self-hosted, open source (AGPL), no vendor lock-in",
+      "Created by the Matrix creators (Element team, 2014); largest public Matrix deployment (60M+ users)",
+      "Synapse Pro delivers 90%+ resource savings vs Community Synapse",
+      "Cross-domain hardware gateway for classified/unclassified boundary comms",
+      "Deep public-sector compliance stack (ISO 27001, Cyber Essentials Plus, CRA, WCAG AA 2.2, BITV 2.0)"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-06",
+        "what": "Matrix-based ZaPuK confirmed as core component of Germany's Deutschland-Stack",
+        "source": "Matrix-based ZaPuK confirmed as a cornerstone of Germany's Deutschland-Stack"
+      },
+      {
+        "date": "2026-06",
+        "what": "Recognised as a Digital Public Good by DPGA",
+        "source": "Element recognised as a Digital Public Good"
+      },
+      {
+        "date": "2026-06",
+        "what": "CompuGroup Medical partnership for healthcare comms",
+        "source": "CompuGroup Medical (CGM) and Element partner to transform healthcare communications"
+      },
+      {
+        "date": "2026-05",
+        "what": "Sweden public sector live with Matrix federation",
+        "source": "Sweden's public sector just went live with Matrix-based federation!"
+      },
+      {
+        "date": "2026-05",
+        "what": "Seamless encrypted history sharing",
+        "source": "Seamless encrypted history sharing arrives in Element"
+      },
+      {
+        "date": "2026-03",
+        "what": "ESS Community migration tool released",
+        "source": "We are officially releasing the first version of the ESS Migration Tool."
+      },
+      {
+        "date": "2026-03",
+        "what": "Spaces launched on Element X mobile",
+        "source": "Spaces have landed on Element X!"
+      },
+      {
+        "date": "2026-03",
+        "what": "Meedio partnership for sovereign comms in Europe",
+        "source": "Meedio partners with Element to deliver sovereign communications across Europe"
+      },
+      {
+        "date": "2026-02",
+        "what": "TI-Messenger multi-tenancy passes gematik pentest",
+        "source": "ESS Pro for TI-M as a multi-tenancy server-side solution"
+      },
+      {
+        "date": "2026-01",
+        "what": "Element Pro Web Grid View for multi-room monitoring",
+        "source": "Element Pro Web now has Grid View"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Open standard, sovereign, and federated \u2014 cited by European governments (Germany, Sweden, Belgium) as strategic infrastructure",
+        "Strong developer/HN attention around funding and Matrix ecosystem (809 upvotes: 'Element raises $30M to boost Matrix')"
+      ],
+      "complaints": [
+        "Historically flagged: 'Element (Matrix chat app) suspended from the Google Play Store' (2009 upvotes on HN) \u2014 reputational hit around app store moderation",
+        "Encrypted message search only works on desktop, not web or mobile \u2014 friction called out in official FAQs"
+      ],
+      "sources": [
+        "hn",
+        "docs"
+      ]
+    },
+    "pricing": {
+      "model": "open-source",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "ESS Community (AGPL), self-hosted, non-production; free frontend + backend; includes Element Call"
+      },
+      "tiers": [
+        {
+          "name": "Community",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Free AGPL self-host, Synapse Community, Element Call \u2014 for evaluations/non-professional use"
+        },
+        {
+          "name": "Enterprise (ESS Pro)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Priced per seat/month; Synapse Pro, dynamic scaling, SSO/LDAP/SCIM, compliance, SLAs (100+ users)"
+        },
+        {
+          "name": "Sovereign (Air-gapped)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Priced per deployment; air-gapped install, dedicated push gateway, no internet needed"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Enterprise tier requires 100+ users and is priced per seat/month; Sovereign tier is priced per deployment (not per seat); all paid tiers gated behind 'Talk to an expert' sales conversation. Community edition is AGPL open source, free but explicitly not for production use."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Ukraine's Drone Commander on Drone Warfare and Use of AI [Dutch]",
+        "url": "https://www.nrc.nl/nieuws/2026/06/21/het-belangrijkste-element-van-onbemande-oorlogvoering-is-dat-de-risicos-voor-onze-militairen-omlaag-gaan-a4930367",
+        "points": 3,
+        "comments": 0,
+        "age_days": 7,
+        "hn_url": "https://news.ycombinator.com/item?id=48649019"
+      },
+      {
+        "title": "Show HN: HotFX Pseudorandom \u2013 value noise in a CSS variable via custom element",
+        "url": "https://fx.hot.page/pseudorandom",
+        "points": 2,
+        "comments": 0,
+        "age_days": 3,
+        "hn_url": "https://news.ycombinator.com/item?id=48699173"
+      },
+      {
+        "title": "Animating a dialog element using the View Transition API",
+        "url": "https://pqina.nl/blog/animating-the-dialog-element-using-view-transitions/",
+        "points": 2,
+        "comments": 0,
+        "age_days": 7,
+        "hn_url": "https://news.ycombinator.com/item?id=48650544"
+      },
+      {
+        "title": "Cyclopean Masonry",
+        "url": "https://www.dimensions.com/element/stone-masonry-cyclopean",
+        "points": 2,
+        "comments": 0,
+        "age_days": 7,
+        "hn_url": "https://news.ycombinator.com/item?id=48649813"
+      },
+      {
+        "title": "Show HN: SlimSnap \u2013 mark a screenshot element, get JSON for your coding agent",
+        "url": "https://slimsnap.ai/",
+        "points": 1,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48729837"
+      }
+    ]
+  }
+}

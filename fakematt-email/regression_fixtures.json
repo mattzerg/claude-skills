@@ -1,0 +1,18 @@
+{
+  "professional_email": {
+    "surface": "email",
+    "text": "# Draft\n\nHi Brian,\n\nJust confirming receipt of the IRS payment proof I sent yesterday. Let me know if you need anything else from me here.\n\nBest,\nMatthew\n\n---\n\n# Brief\n\n**Register chosen:** A — formal-warm.\n\n**Voice tells used:** direct ask, short body, standard professional closer.\n\n**Anti-patterns avoided:** no generic AI preamble."
+  },
+  "personal_email": {
+    "surface": "personal",
+    "text": "# Draft\n\nHi Catherine,\n\nHope you are doing well. It would be lovely to see you this summer if the timing works out, and I will send through a few windows once I know travel dates.\n\nLots of love,\nMatthew\n\n---\n\n# Brief\n\n**Tone chosen:** affection.\n\n**Voice tells used:** warm but direct.\n\n**Anti-patterns avoided:** no professional closer, no bullet list."
+  },
+  "slack_draft": {
+    "surface": "slack",
+    "text": "=== Draft ===\nCan you take a quick look at the PR when you have a minute? Main thing I want checked is whether the auth path still reads cleanly.\n\n=== Register ===\nDM-1to1\n\n=== Voice tells used ===\n- direct ask first\n- compact context\n\n=== Anti-pattern check ===\n- no formal greeting / closer\n- no preamble\n- no bullet wall"
+  },
+  "copyedit_pass": {
+    "surface": "copyedit",
+    "text": "# Fake Matt Copyedit Review\n\n## Findings\n\n### HIGH - tighten the promise\n\nRule cited: writing_style.md / concrete claims. The intro overstates the launch impact; rewrite it as a narrower operational claim.\n\n## Interview queue\n\nNo interview items."
+  }
+}

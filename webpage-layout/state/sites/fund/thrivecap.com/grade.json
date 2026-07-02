@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 6,
+    "color": 8,
+    "density": 7,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Fragment Mono is a specific choice that gives character \u2014 monospace for a VC fund is contrarian and has discipline, though not revolutionary.",
+    "hierarchy": "Clean dominance with strong hero treatment, but subsequent screens feel somewhat flat with uniform text sizing and limited typographic variation.",
+    "distinctiveness": "The monospace typography and restrained approach have some identity, but the 'builds and invests in internet, software, technology' positioning is interchangeable fund language.",
+    "color": "Restrained near-monochrome palette with warm beige background \u2014 disciplined and confident, minimal accent usage.",
+    "density": "Generous whitespace with confident breathing room, though some sections feel generically padded rather than purposefully composed.",
+    "voice": "The IA appears to follow conventional fund structure \u2014 likely About/Portfolio/Team/Contact flow rather than a narrative unique to Thrive's actual story or philosophy."
+  },
+  "winning_patterns": [
+    "Fragment Mono typeface choice creates unexpected personality for fund category",
+    "Restrained color palette with warm beige shows discipline",
+    "Confident whitespace usage without cluttered decoration",
+    "Clean, minimal aesthetic avoids typical VC bombast"
+  ],
+  "anti_patterns": [
+    "Generic fund positioning language that could describe 100 other VCs",
+    "Likely standard About/Portfolio/Team structure rather than unique narrative",
+    "Limited typographic hierarchy beyond hero \u2014 feels flat in body content",
+    "Framer template bones showing through the execution",
+    "Nothing in the visible content suggests why Thrive specifically exists"
+  ],
+  "one_word_personality": "austere",
+  "_url": "https://thrivecap.com",
+  "_persona": "fund",
+  "_note": "Image-led, polished",
+  "_graded_at": "2026-05-07T19:58:17.862429Z"
+}

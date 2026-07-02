@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 6,
+    "distinctiveness": 2,
+    "color": 3,
+    "density": 5,
+    "voice": 2
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif system with no discernible character \u2014 could be any agency site from 2018-2024. No typographic identity.",
+    "hierarchy": "Headline dominates correctly, but the repetitive card grid below undermines any sense of intentional progression. Adequate but predictable.",
+    "distinctiveness": "Utterly interchangeable \u2014 'We solve complex problems through design & technology' could be Work & Co, Metalab, Clay, etc. Pure stencil copy.",
+    "color": "Red accent bar at top and scattered red links show some restraint, but the beige/coral/purple cards feel arbitrary rather than systematic.",
+    "density": "Safe, generous padding everywhere. Not confident density, just standard agency whitespace. 'Latest' and 'Updates' sections feel obligatory rather than intentional.",
+    "voice": "Pure stencil: hero statement + testimonial + 'Latest' + case study cards. Zero reflection of actual story or point of view. Could swap all content for another firm."
+  },
+  "winning_patterns": [
+    "Clean headline hierarchy with clear focus on main value prop",
+    "Restrained use of red accent in logo and links shows some discipline",
+    "Adequate whitespace prevents visual clutter"
+  ],
+  "anti_patterns": [
+    "Generic 'We solve complex problems through design & technology' stencil headline \u2014 zero differentiation",
+    "Obligatory 'Latest' and 'Updates' sections with uniform card grids \u2014 template IA",
+    "No typographic personality \u2014 anonymous sans-serif like 1000 other agencies",
+    "'Part of Accenture Song' branding feels tacked on, undermines independence",
+    "Case study cards with identical padding/structure \u2014 assembly line layout",
+    "Cookie banner blocks 20% of viewport with generic compliance copy"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://work.co",
+  "_persona": "advisory",
+  "_note": "Black-tie agency feel",
+  "_graded_at": "2026-05-07T19:59:21.640310Z"
+}

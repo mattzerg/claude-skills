@@ -146,3 +146,48 @@ def aitr_model_or(fallback: str, **kwargs) -> str:
     Use aitr_pick_or when you also need the decision_id (e.g. to record a
     realized-quality outcome against the pick)."""
     return aitr_pick_or(fallback, **kwargs)[0]
+
+
+def record_outcome(
+    decision_id: Optional[str],
+    outcome: str,
+    *,
+    source: str,
+    note: Optional[str] = None,
+    input_tokens: Optional[int] = None,
+    output_tokens: Optional[int] = None,
+    model_id: Optional[str] = None,
+    timeout: int = 15,
+    runner=None,
+) -> None:
+    """Close the routing loop for a prior aitr_pick_or() decision.
+
+    Call after the picked model ran: outcome "good" (delivered), "bad"
+    (errored/unusable), or "mixed". When real token counts are known, pass
+    them with the aitr model_id (anthropic__…) to also feed the actuals log.
+    Best-effort: never raises, no-op when decision_id is None.
+    """
+    if not decision_id:
+        return
+    run = runner or subprocess.run
+    base = [sys.executable or "python3", str(AITR_PICK)]
+    try:
+        rq = run(
+            [*base, "record-quality", decision_id, outcome,
+             "--source", source, *(["--note", note] if note else [])],
+            capture_output=True, text=True, timeout=timeout,
+        )
+        if rq.returncode != 0:
+            print(f"[aitr] record-quality failed (exit {rq.returncode}) — non-blocking", file=sys.stderr)
+        if model_id and input_tokens is not None and output_tokens is not None:
+            ra = run(
+                [*base, "record-actuals", decision_id, "--model", model_id,
+                 "--input-tokens", str(int(input_tokens)),
+                 "--output-tokens", str(int(output_tokens)),
+                 "--caller", source],
+                capture_output=True, text=True, timeout=timeout,
+            )
+            if ra.returncode != 0:
+                print(f"[aitr] record-actuals failed (exit {ra.returncode}) — non-blocking", file=sys.stderr)
+    except (subprocess.TimeoutExpired, OSError) as exc:
+        print(f"[aitr] outcome recording failed ({exc}) — non-blocking", file=sys.stderr)

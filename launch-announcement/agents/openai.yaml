@@ -1,0 +1,7 @@
+interface:
+  display_name: "Launch Announcement"
+  short_description: "Review or scaffold a launch blog post"
+  default_prompt: "Use $launch-announcement to review or scaffold a launch post before copyedit or distribution."
+
+policy:
+  allow_implicit_invocation: true

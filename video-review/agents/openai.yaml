@@ -1,0 +1,7 @@
+interface:
+  display_name: "Video Review"
+  short_description: "Pre-flight review for product videos"
+  default_prompt: "Use $video-review to run a pre-flight critique on a product or launch video before shipping."
+
+policy:
+  allow_implicit_invocation: true

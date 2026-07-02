@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 3,
+    "hierarchy": 2,
+    "distinctiveness": 2,
+    "color": 4,
+    "density": 3,
+    "voice": 2
+  },
+  "reasoning": {
+    "typography": "Generic Open Sans system font with no character or discipline\u2014pure default stencil",
+    "hierarchy": "Everything is the same weight/size\u2014name, dates, post titles all blend together with no focal point",
+    "distinctiveness": "Completely interchangeable personal blog template\u2014swap the name for anyone else and it works identically",
+    "color": "Restrained black/white/subtle gray palette shows discipline, though there's zero accent or personality",
+    "density": "Excessive whitespace everywhere with timid centered content creates a floaty, unconfident layout",
+    "voice": "Blog stencil IA: 'Recent posts' chronological list with zero editorial voice or curation showing actual interests"
+  },
+  "winning_patterns": [
+    "Restrained monochrome palette avoids decorative color abuse",
+    "Social icons cleanly integrated without dominating",
+    "Clean typography hierarchy in post list (date, title separation)"
+  ],
+  "anti_patterns": [
+    "Default Jekyll theme with zero customization or personality",
+    "Timid centered layout drowning in whitespace\u2014no confident density",
+    "Generic 'Recent posts' blog stencil reveals nothing about the person",
+    "Open Sans is the Comic Sans of personal sites in 2024",
+    "Post titles are technical jargon with no narrative framing",
+    "No visual hierarchy\u2014name same weight as everything else"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://harshjv.com",
+  "_persona": "personal",
+  "_note": "Premium personal feel without templates",
+  "_graded_at": "2026-05-07T19:56:15.862063Z"
+}

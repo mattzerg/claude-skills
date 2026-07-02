@@ -1,0 +1,7 @@
+interface:
+  display_name: "Fake Matt Operator"
+  short_description: "Ingest, route, and draft across Matt's channels"
+  default_prompt: "Use $fakematt-operator to ingest this into Matt's tasks, memory, or reply workflow."
+
+policy:
+  allow_implicit_invocation: true

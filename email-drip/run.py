@@ -1,323 +1,347 @@
 #!/usr/bin/env python3
-"""Email drip skill — sequence-based drip + broadcast newsletter sender for Zerg's email program.
+"""Email drip skill — Stream A (lifecycle) scaffolder.
 
 Usage:
-    python3 ~/.claude/skills/email-drip/run.py lifecycle send \\
-        --to <email> --sequence <slug> [--step N] [--dry-run]
-    python3 ~/.claude/skills/email-drip/run.py broadcast send \\
-        --campaign <slug> --content <issue-NNN> [--segment all|zstack-users|solutions-prospects] [--dry-run]
-    python3 ~/.claude/skills/email-drip/run.py validate <campaign-or-sequence-yaml>
+    python3 ~/.claude/skills/email-drip/run.py init <slug>
+    python3 ~/.claude/skills/email-drip/run.py scaffold <slug> [--force]
+    python3 ~/.claude/skills/email-drip/run.py audit <slug>
     python3 ~/.claude/skills/email-drip/run.py list
-
-Phase 2 build. ESP dispatch via Resend (RESEND_API_KEY env var); falls back to dry-run if key missing.
-Hard-fails on raw zergai.com links — every link must pass through utm-attribution.
 """
 from __future__ import annotations
 
 import argparse
-import datetime as dt
-import json
 import os
 import re
 import sys
-import urllib.error
-import urllib.request
 from pathlib import Path
-from urllib.parse import urlparse
 
-VAULT = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
-EMAIL_DIR = VAULT / "Marketing" / "Email"
-SEQ_DIR = EMAIL_DIR / "Sequences"
-NEWS_DIR = EMAIL_DIR / "Newsletters"
-SENT_LOG = EMAIL_DIR / "sent-log.md"
-LIST_FILE = EMAIL_DIR / "list.md"
+import yaml
 
-ZERG_DOMAINS = {"zergai.com", "www.zergai.com", "zergboard.ai", "www.zergboard.ai"}
+DEFAULT_VAULT = "/Users/mattheweisner/Obsidian/Zerg/MattZerg"
+VAULT = Path(os.environ.get("ZERG_VAULT", DEFAULT_VAULT))
+GROWTH_DIR = VAULT / "Projects" / "Zerg-Production" / "Growth"
+LIFECYCLE_DIR = GROWTH_DIR / "lifecycle"
+TEMPLATE_YAML = LIFECYCLE_DIR / "_drip-template.yaml"
+BACKLOG_DIR = GROWTH_DIR / "launch-backlog"
+MEASUREMENT_DIR = GROWTH_DIR / "measurement"
 
-RESEND_API_URL = "https://api.resend.com/emails"
-DEFAULT_FROM = "Zerg <hello@zergai.com>"
-DEFAULT_REPLY_TO = "matt@zergai.com"
+EXPECTED_EMAILS = ["welcome", "aha_nudge", "trial_day_3", "trial_day_7", "post_pro_onboarding"]
+
+BODIES = {
+    "welcome": """Hi {{first_name}},
+
+Welcome to {{PRODUCT_NAME}}. You signed up because you wanted a faster path to the work that actually matters — this email is the orientation, and there's one thing to try in the next five minutes.
+
+## The 5-minute thing
+
+Open {{PRODUCT_NAME}} and complete the first core action. That single step is what separates accounts that stick from accounts that drift. We measure it, and we'll know when you hit it.
+
+## What's next
+
+- Tomorrow: a nudge with a concrete example if you haven't hit the aha moment yet.
+- Day 3: one usage tip from how other operators use it.
+- Day 7: a check-in — reply directly with what's working and what isn't.
+
+— Matt
+""",
+    "aha_nudge": """Hi {{first_name}},
+
+You signed up for {{PRODUCT_NAME}} yesterday and haven't hit the core action yet. No judgement — most products bury the value behind ten clicks. {{PRODUCT_NAME}} doesn't, but it's still on you to take the first swing.
+
+## Try this
+
+Pick a real task you'd normally handle manually. Open {{PRODUCT_NAME}}. Run it through the primary flow. You should hit the aha moment in under three minutes.
+
+If you don't, reply to this email and tell me where you got stuck. I read every reply.
+
+— Matt
+""",
+    "trial_day_3": """Hi {{first_name}},
+
+Three days into {{PRODUCT_NAME}}. Quick check-in plus one tip.
+
+## The tip
+
+Most operators miss this: {{PRODUCT_NAME}} works best when you wire it into the surface you already live in — your dashboard, your inbox, your IDE. Open one, anchor {{PRODUCT_NAME}} next to it, and let muscle memory do the rest.
+
+## How's it going?
+
+If something's clunky or confusing, reply and tell me. We ship fixes fast when real users surface them.
+
+— Matt
+""",
+    "trial_day_7": """Hi {{first_name}},
+
+One week in with {{PRODUCT_NAME}}. Worth a pause to ask: is it earning a spot in your workflow, or is it sitting on the shelf?
+
+## Reply with feedback
+
+I'd genuinely like to know:
+
+1. What's the one thing that worked best?
+2. What's the one thing that frustrated you?
+3. Would you miss {{PRODUCT_NAME}} if it disappeared tomorrow?
+
+Hit reply. Short answers are fine. The honest ones help most.
+
+— Matt
+""",
+    "post_pro_onboarding": """Hi {{first_name}},
+
+Welcome to {{PRODUCT_NAME}} Pro. Your payment went through and the upgraded features are live on your account.
+
+## What unlocks now
+
+Pro flips on the gated capabilities you saw locked in the free tier. The biggest one is the workflow you were already using — now without the rate limit. Re-run it and you'll feel the difference immediately.
+
+## Receipt + billing
+
+Your payment confirmation is in a separate email from our billing provider. If anything looks off, reply here and I'll sort it directly.
+
+— Matt
+""",
+}
+
+PURPOSES = {
+    "welcome": "orientation + one specific action",
+    "aha_nudge": "nudge toward the aha action with a concrete example",
+    "trial_day_3": "one usage tip + check-in",
+    "trial_day_7": "one-week-in reflection + ask for reply with feedback",
+    "post_pro_onboarding": "congrats + Pro feature pointer + payment confirmation reference",
+}
+
+PREHEADERS = {
+    "welcome": "Quick orientation — and one thing to try in the next 5 minutes.",
+    "aha_nudge": "You signed up yesterday. Here's the concrete thing to try.",
+    "trial_day_3": "Day 3 check-in plus one operator tip.",
+    "trial_day_7": "One week in. Reply with the honest answer.",
+    "post_pro_onboarding": "Pro is live on your account. Here's what unlocks.",
+}
 
 
 class DripError(Exception):
     pass
 
 
-def parse_simple_yaml(text: str) -> dict:
-    """Naive YAML parser — handles flat key:value, '|' literal blocks, and simple '- ' lists."""
-    out: dict = {}
-    lines = text.splitlines()
-    i = 0
-    while i < len(lines):
-        raw = lines[i]
-        line = raw.rstrip()
-        i += 1
-        if not line or line.lstrip().startswith("#"):
+def load_yaml(path: Path) -> dict:
+    with path.open() as f:
+        return yaml.safe_load(f) or {}
+
+
+def read_backlog_product_name(slug: str) -> str:
+    candidates = list(BACKLOG_DIR.glob("*.md"))
+    for f in candidates:
+        text = f.read_text()
+        if not text.startswith("---\n"):
             continue
-        if line.startswith(" "):
-            continue  # already-consumed continuation
-        if ":" not in line:
-            continue
-        k, _, v = line.partition(":")
-        k = k.strip()
-        v = v.strip()
-        if v == "|" or v == ">":
-            # literal block — gobble subsequent indented lines
-            block_lines: list[str] = []
-            while i < len(lines):
-                nxt = lines[i]
-                if not nxt:
-                    block_lines.append("")
-                    i += 1
-                    continue
-                if nxt.startswith("  "):
-                    block_lines.append(nxt[2:])
-                    i += 1
-                    continue
-                break
-            # strip trailing empty lines
-            while block_lines and block_lines[-1] == "":
-                block_lines.pop()
-            sep = "\n" if v == "|" else " "
-            out[k] = sep.join(block_lines)
-        elif not v:
-            # list start
-            items: list = []
-            while i < len(lines) and lines[i].lstrip().startswith("- "):
-                items.append(lines[i].lstrip()[2:].strip().strip('"'))
-                i += 1
-            out[k] = items
-        else:
-            if v.startswith('"') and v.endswith('"'):
-                v = v[1:-1]
-            out[k] = v
-    return out
-
-
-def find_raw_zerg_links(body: str) -> list[str]:
-    """Find zergai.com links missing utm_source param."""
-    raw: list[str] = []
-    for url in re.findall(r"https?://[^\s)\"']+", body):
-        host = urlparse(url).netloc.lower()
-        if host in ZERG_DOMAINS or any(host.endswith(s) for s in [".zergai.com"]):
-            if "utm_source=" not in url:
-                raw.append(url)
-    return raw
-
-
-def render_template(text: str, ctx: dict[str, str]) -> str:
-    """Replace {{key}} with ctx[key]."""
-    def replace(m: re.Match) -> str:
-        key = m.group(1).strip()
-        return ctx.get(key, m.group(0))
-    return re.sub(r"\{\{\s*([^}]+?)\s*\}\}", replace, text)
-
-
-def append_sent_log(date_str: str, recipient: str, kind: str, sequence: str,
-                    subject: str, dry_run: bool) -> None:
-    EMAIL_DIR.mkdir(parents=True, exist_ok=True)
-    if not SENT_LOG.exists():
-        SENT_LOG.write_text(
-            "# Email Send Log\n\nAuto-appended by email-drip skill.\n\n"
-            "| Date | Recipient | Kind | Sequence | Subject | Mode |\n"
-            "|---|---|---|---|---|---|\n"
-        )
-    mode = "dry-run" if dry_run else "sent"
-    row = f"| {date_str} | {recipient} | {kind} | {sequence} | {subject} | {mode} |\n"
-    with SENT_LOG.open("a") as f:
-        f.write(row)
-
-
-def resend_send(to: str, subject: str, body: str, from_addr: str, reply_to: str) -> bool:
-    """Dispatch via Resend API. Returns True on success. False on missing key OR API failure."""
-    key = os.environ.get("RESEND_API_KEY")
-    if not key:
-        print("WARN: RESEND_API_KEY not set; falling back to dry-run.", file=sys.stderr)
-        return False
-    payload = {
-        "from": from_addr,
-        "to": [to],
-        "subject": subject,
-        "html": body if "<html" in body.lower() or "<p>" in body else None,
-        "text": body if not ("<html" in body.lower() or "<p>" in body) else None,
-        "reply_to": reply_to,
-    }
-    payload = {k: v for k, v in payload.items() if v is not None}
-    req = urllib.request.Request(
-        RESEND_API_URL,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            r.read()
-        return True
-    except urllib.error.HTTPError as e:
-        print(f"ERROR: Resend API HTTP {e.code}: {e.read().decode('utf-8', errors='replace')}", file=sys.stderr)
-        return False
-    except (urllib.error.URLError, OSError) as e:
-        print(f"ERROR: Resend API call failed: {e}", file=sys.stderr)
-        return False
-
-
-def load_sequence(slug: str) -> tuple[Path, dict]:
-    f = SEQ_DIR / f"{slug}.yaml"
-    if not f.exists():
-        raise DripError(f"sequence not found: {f}")
-    return f, parse_simple_yaml(f.read_text())
-
-
-def load_newsletter(content: str) -> tuple[Path, dict, str]:
-    f = NEWS_DIR / f"{content}.md"
-    if not f.exists():
-        raise DripError(f"newsletter not found: {f}")
-    text = f.read_text()
-    if text.startswith("---\n"):
         end = text.find("\n---\n", 4)
-        if end > 0:
-            meta = parse_simple_yaml(text[4:end])
-            body = text[end + 5 :]
-            return f, meta, body
-    return f, {}, text
-
-
-def cmd_lifecycle_send(args: argparse.Namespace) -> int:
-    f, seq = load_sequence(args.sequence)
-    steps = seq.get("steps") if isinstance(seq.get("steps"), list) else None
-    # Steps as a list of slugs pointing to per-step Markdown files
-    if not steps:
-        # Single-step inline shape
-        subject = seq.get("subject", "(no subject)")
-        body_template = seq.get("body", "")
-    else:
-        idx = (args.step or 1) - 1
-        if idx < 0 or idx >= len(steps):
-            raise DripError(f"step {args.step} out of range; sequence has {len(steps)} steps")
-        step_file = SEQ_DIR / args.sequence / f"{steps[idx]}.md"
-        if not step_file.exists():
-            raise DripError(f"step file not found: {step_file}")
-        step_text = step_file.read_text()
-        if step_text.startswith("---\n"):
-            end = step_text.find("\n---\n", 4)
-            meta = parse_simple_yaml(step_text[4:end])
-            body_template = step_text[end + 5 :]
-            subject = meta.get("subject", "(no subject)")
-        else:
-            subject = "(no subject)"
-            body_template = step_text
-
-    ctx = {"recipient_email": args.to, "today": dt.date.today().isoformat()}
-    body = render_template(body_template, ctx)
-    subject = render_template(subject, ctx)
-
-    raw = find_raw_zerg_links(body)
-    if raw:
-        print("ERROR: raw zergai.com links found (UTM-instrument them via utm-attribution):", file=sys.stderr)
-        for u in raw:
-            print(f"  {u}", file=sys.stderr)
-        return 1
-
-    sent = False
-    if not args.dry_run:
-        sent = resend_send(args.to, subject, body, DEFAULT_FROM, DEFAULT_REPLY_TO)
-    today = dt.date.today().isoformat()
-    append_sent_log(today, args.to, "lifecycle", f"{args.sequence}#{args.step or 1}", subject, dry_run=args.dry_run or not sent)
-
-    if args.dry_run or not sent:
-        print(f"--- DRY RUN ---")
-        print(f"To: {args.to}")
-        print(f"Subject: {subject}")
-        print(f"Body:\n{body}")
-        return 0
-    print(f"Sent to {args.to}: {subject}")
-    return 0
-
-
-def cmd_broadcast_send(args: argparse.Namespace) -> int:
-    f, meta, body_template = load_newsletter(args.content)
-    subject = meta.get("subject") or args.subject or "(no subject)"
-
-    if not LIST_FILE.exists():
-        raise DripError(
-            f"list not found at {LIST_FILE}. Create it with header `# Newsletter list`\n"
-            "and one email per row in a Markdown table with columns: email, segment, status."
-        )
-
-    # Parse list
-    rows = []
-    for ln in LIST_FILE.read_text().splitlines():
-        if not ln.startswith("|") or ln.startswith("|---") or "email" in ln.lower() and "segment" in ln.lower():
+        if end < 0:
             continue
-        cells = [c.strip() for c in ln.split("|")[1:-1]]
-        if len(cells) >= 3 and "@" in cells[0]:
-            email, segment, status = cells[0], cells[1], cells[2]
-            if status.lower() in {"unsubscribed", "bounced"}:
-                continue
-            if args.segment != "all" and segment != args.segment:
-                continue
-            rows.append(email)
+        try:
+            fm = yaml.safe_load(text[4:end]) or {}
+        except yaml.YAMLError:
+            continue
+        if fm.get("slug") == slug:
+            name = fm.get("product_name")
+            if name:
+                return str(name)
+    return slug.replace("-", " ").title()
 
-    if not rows:
-        print(f"No recipients matched segment={args.segment}.")
+
+def cmd_init(args: argparse.Namespace) -> int:
+    slug = args.slug
+    target = LIFECYCLE_DIR / f"{slug}.yaml"
+    if target.exists():
+        print(f"SKIP: {target} already exists")
+        return 0
+    if not TEMPLATE_YAML.exists():
+        print(f"ERROR: template not found at {TEMPLATE_YAML}", file=sys.stderr)
+        return 1
+    raw = TEMPLATE_YAML.read_text()
+    rendered = raw.replace("PLACEHOLDER_SLUG", slug)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(rendered)
+    product_name = read_backlog_product_name(slug)
+    print(f"INIT: wrote {target}")
+    print(f"      product_name resolved from launch-backlog: {product_name}")
+    print(f"      next: edit {target.name} to confirm subjects/triggers, then run `scaffold {slug}`")
+    return 0
+
+
+def render_template(email_id: str, product_name: str, slug: str, success_event: str,
+                    subject_template: str, trigger: str, delay: int) -> str:
+    body = BODIES[email_id].replace("{{PRODUCT_NAME}}", product_name)
+    subject = subject_template.replace("{{PRODUCT_NAME}}", product_name)
+    preheader = PREHEADERS[email_id]
+    purpose = PURPOSES[email_id]
+    campaign = f"{slug}-stream-a-{email_id.replace('_', '-')}"
+    fm_lines = [
+        "---",
+        f"email_id: {email_id}",
+        f"trigger: {trigger}",
+        f"delay_minutes: {delay}",
+        f'subject: "{subject}"',
+        f'preheader: "{preheader}"',
+        f"success_event: {success_event}",
+        "utm_source: email",
+        "utm_medium: lifecycle",
+        f"utm_campaign: {campaign}",
+        f"purpose: {purpose}",
+        "---",
+    ]
+    header = f"# {subject}"
+    return "\n".join(fm_lines) + "\n\n" + header + "\n\n" + body
+
+
+def cmd_scaffold(args: argparse.Namespace) -> int:
+    slug = args.slug
+    config_path = LIFECYCLE_DIR / f"{slug}.yaml"
+    if not config_path.exists():
+        print(f"ERROR: drip config not found at {config_path}. Run `init {slug}` first.", file=sys.stderr)
+        return 1
+    try:
+        config = load_yaml(config_path)
+    except yaml.YAMLError as e:
+        print(f"ERROR: failed to parse {config_path}: {e}", file=sys.stderr)
+        return 2
+    product_name = read_backlog_product_name(slug)
+    out_dir = LIFECYCLE_DIR / slug / "templates"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    emails = config.get("emails", [])
+    written = 0
+    skipped = 0
+    for entry in emails:
+        email_id = entry.get("id")
+        if email_id not in BODIES:
+            print(f"WARN: unknown email id {email_id!r} in {config_path}; skipping")
+            continue
+        filename = email_id.replace("_", "-") + ".md"
+        target = out_dir / filename
+        if target.exists() and not args.force:
+            print(f"SKIP: {target} (use --force to overwrite)")
+            skipped += 1
+            continue
+        rendered = render_template(
+            email_id=email_id,
+            product_name=product_name,
+            slug=slug,
+            success_event=str(entry.get("success_event", "email_open")),
+            subject_template=str(entry.get("subject_template", f"Update from {product_name}")),
+            trigger=str(entry.get("trigger", f"{slug}_signup")),
+            delay=int(entry.get("delay", 0)),
+        )
+        target.write_text(rendered)
+        print(f"WROTE: {target}")
+        written += 1
+    print(f"\nScaffold complete: {written} written, {skipped} skipped (out of {len(emails)} configured).")
+    return 0
+
+
+def parse_frontmatter(text: str) -> dict:
+    if not text.startswith("---\n"):
+        return {}
+    end = text.find("\n---\n", 4)
+    if end < 0:
+        return {}
+    try:
+        return yaml.safe_load(text[4:end]) or {}
+    except yaml.YAMLError:
+        return {}
+
+
+def collect_measurement_events(slug: str) -> set:
+    path = MEASUREMENT_DIR / f"{slug}.yaml"
+    events: set = set()
+    if not path.exists():
+        return events
+    try:
+        data = load_yaml(path)
+    except yaml.YAMLError:
+        return events
+    for entry in data.get("required_events", []) or []:
+        if isinstance(entry, dict) and "name" in entry:
+            events.add(str(entry["name"]))
+        elif isinstance(entry, str):
+            events.add(entry)
+    for entry in data.get("optional_events", []) or []:
+        if isinstance(entry, str):
+            events.add(entry)
+        elif isinstance(entry, dict) and "name" in entry:
+            events.add(str(entry["name"]))
+    events.update({"email_open", "email_click", "email_reply", "pro_feature_used"})
+    return events
+
+
+def cmd_audit(args: argparse.Namespace) -> int:
+    slug = args.slug
+    out_dir = LIFECYCLE_DIR / slug / "templates"
+    findings: list[tuple[str, str, str]] = []
+
+    if not out_dir.exists():
+        findings.append(("HIGH", "A1", f"templates directory missing: {out_dir}"))
+
+    canonical_events = collect_measurement_events(slug)
+    measurement_present = (MEASUREMENT_DIR / f"{slug}.yaml").exists()
+
+    for email_id in EXPECTED_EMAILS:
+        filename = email_id.replace("_", "-") + ".md"
+        path = out_dir / filename
+        if not path.exists():
+            findings.append(("HIGH", "A1", f"missing template: {filename}"))
+            continue
+        text = path.read_text()
+        fm = parse_frontmatter(text)
+        subject = str(fm.get("subject", ""))
+        if not subject or re.search(r"TODO|\{\{|<.+?>", subject):
+            findings.append(("HIGH", "A2", f"{filename}: subject is placeholder or empty: {subject!r}"))
+        success_event = str(fm.get("success_event", ""))
+        if measurement_present and success_event and success_event not in canonical_events:
+            findings.append(("HIGH", "A3",
+                             f"{filename}: success_event {success_event!r} not in measurement/{slug}.yaml"))
+        elif not measurement_present and success_event:
+            findings.append(("MED", "A3",
+                             f"{filename}: measurement/{slug}.yaml missing — cannot verify success_event {success_event!r}"))
+        campaign = str(fm.get("utm_campaign", ""))
+        if not campaign.startswith(f"{slug}-stream-a-"):
+            findings.append(("MED", "A4",
+                             f"{filename}: utm_campaign {campaign!r} missing slug-stream-a- prefix"))
+        body = text.split("\n---\n", 1)[1] if "\n---\n" in text else text
+        if re.search(r"\bTODO\b|\bFIXME\b", body):
+            findings.append(("MED", "A5", f"{filename}: body contains TODO/FIXME"))
+
+    if not findings:
+        print(f"AUDIT OK: {slug} — all 5 templates present, subjects rendered, events bound.")
         return 0
 
-    raw = find_raw_zerg_links(body_template)
-    if raw:
-        print("ERROR: raw zergai.com links found (UTM-instrument via utm-attribution):", file=sys.stderr)
-        for u in raw:
-            print(f"  {u}", file=sys.stderr)
-        return 1
-
-    today = dt.date.today().isoformat()
-    sent_count = 0
-    for email in rows:
-        ctx = {"recipient_email": email, "today": today}
-        body = render_template(body_template, ctx)
-        subj = render_template(subject, ctx)
-        if args.dry_run:
-            ok = False
-        else:
-            ok = resend_send(email, subj, body, DEFAULT_FROM, DEFAULT_REPLY_TO)
-        if ok:
-            sent_count += 1
-        append_sent_log(today, email, "broadcast", f"{args.campaign}/{args.content}", subj, dry_run=args.dry_run or not ok)
-
-    if args.dry_run:
-        print(f"DRY RUN: would have sent to {len(rows)} recipients (segment={args.segment}). Subject: {subject}")
-    else:
-        print(f"Sent: {sent_count}/{len(rows)}. Failures logged in {SENT_LOG}.")
-    return 0
-
-
-def cmd_validate(args: argparse.Namespace) -> int:
-    p = Path(args.target)
-    if not p.exists():
-        print(f"ERROR: not found: {p}", file=sys.stderr)
-        return 1
-    text = p.read_text()
-    raw = find_raw_zerg_links(text)
-    if raw:
-        print(f"FAIL: raw zergai.com links:")
-        for u in raw:
-            print(f"  {u}")
-        return 2
-    print("OK")
-    return 0
+    print(f"AUDIT findings for {slug}:")
+    for severity, rule, msg in sorted(findings, key=lambda f: ("HIGH MED LOW".split().index(f[0]), f[1])):
+        print(f"  [{severity}] {rule}: {msg}")
+    high = sum(1 for f in findings if f[0] == "HIGH")
+    return 1 if high else 0
 
 
 def cmd_list(args: argparse.Namespace) -> int:
-    print("Sequences:")
-    if SEQ_DIR.exists():
-        for f in sorted(SEQ_DIR.glob("*.yaml")):
-            print(f"  - {f.stem}")
-    else:
-        print("  (no sequences directory)")
-    print("Newsletter issues:")
-    if NEWS_DIR.exists():
-        for f in sorted(NEWS_DIR.glob("*.md")):
-            print(f"  - {f.stem}")
-    else:
-        print("  (no newsletters directory)")
+    if not LIFECYCLE_DIR.exists():
+        print("(no lifecycle directory)")
+        return 0
+    configs = sorted(p for p in LIFECYCLE_DIR.glob("*.yaml") if not p.name.startswith("_"))
+    if not configs:
+        print("(no per-product drip configs found)")
+        return 0
+    print("| Slug | Stream | Emails | Templates dir |")
+    print("|---|---|---|---|")
+    for f in configs:
+        try:
+            data = load_yaml(f)
+        except yaml.YAMLError:
+            print(f"| {f.stem} | (parse error) | — | — |")
+            continue
+        slug = data.get("product", f.stem)
+        stream = data.get("stream", "?")
+        n_emails = len(data.get("emails", []) or [])
+        tdir = LIFECYCLE_DIR / slug / "templates"
+        tdir_status = "yes" if tdir.exists() else "missing"
+        print(f"| {slug} | {stream} | {n_emails} | {tdir_status} |")
     return 0
 
 
@@ -325,31 +349,21 @@ def main() -> int:
     p = argparse.ArgumentParser(prog="email-drip", description=__doc__)
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    pl = sub.add_parser("lifecycle", help="lifecycle (transactional) operations")
-    plsub = pl.add_subparsers(dest="lifecycle_cmd", required=True)
-    pls = plsub.add_parser("send")
-    pls.add_argument("--to", required=True)
-    pls.add_argument("--sequence", required=True)
-    pls.add_argument("--step", type=int, default=1)
-    pls.add_argument("--dry-run", action="store_true")
-    pls.set_defaults(func=cmd_lifecycle_send)
+    pi = sub.add_parser("init", help="copy template to per-product drip YAML")
+    pi.add_argument("slug")
+    pi.set_defaults(func=cmd_init)
 
-    pb = sub.add_parser("broadcast", help="broadcast newsletter operations")
-    pbsub = pb.add_subparsers(dest="broadcast_cmd", required=True)
-    pbs = pbsub.add_parser("send")
-    pbs.add_argument("--campaign", required=True)
-    pbs.add_argument("--content", required=True, help="newsletter slug, e.g. issue-001")
-    pbs.add_argument("--segment", default="all")
-    pbs.add_argument("--subject", help="override subject (default: from frontmatter)")
-    pbs.add_argument("--dry-run", action="store_true")
-    pbs.set_defaults(func=cmd_broadcast_send)
+    ps = sub.add_parser("scaffold", help="render 5 Stream A email markdown templates")
+    ps.add_argument("slug")
+    ps.add_argument("--force", action="store_true")
+    ps.set_defaults(func=cmd_scaffold)
 
-    pv = sub.add_parser("validate", help="validate a campaign or sequence file (raw-link scan)")
-    pv.add_argument("target")
-    pv.set_defaults(func=cmd_validate)
+    pa = sub.add_parser("audit", help="verify templates + canonical event bindings")
+    pa.add_argument("slug")
+    pa.set_defaults(func=cmd_audit)
 
-    pls2 = sub.add_parser("list", help="list available sequences and newsletter issues")
-    pls2.set_defaults(func=cmd_list)
+    pl = sub.add_parser("list", help="list per-product Stream A configs")
+    pl.set_defaults(func=cmd_list)
 
     args = p.parse_args()
     try:

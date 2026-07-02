@@ -1,0 +1,78 @@
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/promote_visual.py", line 124, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/promote_visual.py", line 116, in main
+    DIGEST.write_text("\n".join(out))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1275, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors) as f:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/_style/visual_iteration_patterns.md'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/promote_visual.py", line 124, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/promote_visual.py", line 116, in main
+    DIGEST.write_text("\n".join(out))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1275, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors) as f:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/_style/visual_iteration_patterns.md'
+[promote_visual] 22 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 31 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 31 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 31 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 31 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 32 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 43 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 43 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 43 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 43 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 43 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 43 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 43 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 43 total drift events, threshold=3
+  → /Users/mattheweisner/.zerg-vault-mirror/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 43 total drift events, threshold=3
+  → /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/_style/visual_iteration_patterns.md
+[promote_visual] 43 total drift events, threshold=3
+  → /Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/visual_iteration_patterns.md

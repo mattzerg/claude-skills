@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 7,
+    "hierarchy": 8,
+    "distinctiveness": 4,
+    "color": 8,
+    "density": 7,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Clean sans-serif system with good weight hierarchy, but lacks distinctive character \u2014 feels like refined Inter/SF Pro, not a unique voice",
+    "hierarchy": "Strong single-focus hero with commanding headline, clear visual dominance, CTAs well-separated with intentional sizing",
+    "distinctiveness": "Generic productivity launcher messaging \u2014 'shortcut to everything' could be Alfred, Spotlight, or any launcher; no unique POV visible",
+    "color": "Disciplined dark theme with restrained accent use, clean monochrome dominance, minimal color pollution",
+    "density": "Confident breathing room in hero, good vertical rhythm, avoids claustrophobic SaaS padding but plays it safe",
+    "voice": "Standard product site structure apparent \u2014 platform nav, hero, CTAs, features \u2014 IA doesn't reflect an opinionated story beyond product delivery"
+  },
+  "winning_patterns": [
+    "Hero headline has real visual weight and presence",
+    "Dark UI execution is refined and confident, not trendy",
+    "Download CTAs show platform specificity (Mac/Windows) vs generic 'Get Started'",
+    "Version info and technical details visible (homebrew install) \u2014 respects developer audience",
+    "Subhead actually describes the product succinctly"
+  ],
+  "anti_patterns": [
+    "Headline could be any productivity tool \u2014 zero product specificity",
+    "Navigation bar is standard SaaS horizontal menu (Store/Pro/AI/iOS/Windows/Teams/etc)",
+    "Section headline 'Take shortcuts, not detours' is clever copywriting but still generic launcher speak",
+    "'Introducing Glaze' pill feels like obligatory announcement banner",
+    "Overall structure follows productivity-app stencil religiously"
+  ],
+  "one_word_personality": "polished",
+  "_url": "https://raycast.com",
+  "_persona": "design_forward",
+  "_note": "Color-rich, illustrated screens, gradient meshes",
+  "_graded_at": "2026-05-08T21:43:36.278369Z"
+}

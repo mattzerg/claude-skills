@@ -1,0 +1,41 @@
+  max_client unavailable (Could not read Keychain entry Claude Code-credentials/mattheweisner. Either the Max plan isn't authenticated (`claude /login`) or Keychain access denied.); falling back to API key
+{
+  "ok": true,
+  "report": "/Users/mattheweisner/.claude/skills/webpage-layout/state/monitor/reports/2026-05-11.md",
+  "tracked": 4,
+  "regressions": 0,
+  "new_baselines": 0
+}
+  max_client unavailable (Could not read Keychain entry Claude Code-credentials/mattheweisner. Either the Max plan isn't authenticated (`claude /login`) or Keychain access denied.); falling back to API key
+{
+  "ok": true,
+  "report": "/Users/mattheweisner/.claude/skills/webpage-layout/state/monitor/reports/2026-05-18.md",
+  "tracked": 4,
+  "regressions": 0,
+  "new_baselines": 0
+}
+  max_client unavailable (Could not read Keychain entry Claude Code-credentials/mattheweisner. Either the Max plan isn't authenticated (`claude /login`) or Keychain access denied.); falling back to API key
+{
+  "ok": true,
+  "report": "/Users/mattheweisner/.claude/skills/webpage-layout/state/monitor/reports/2026-05-25.md",
+  "tracked": 4,
+  "regressions": 0,
+  "new_baselines": 0
+}
+  max_client unavailable (Could not read Keychain entry Claude Code-credentials/mattheweisner. Either the Max plan isn't authenticated (`claude /login`) or Keychain access denied.); falling back to API key
+{
+  "ok": true,
+  "report": "/Users/mattheweisner/.claude/skills/webpage-layout/state/monitor/reports/2026-06-01.md",
+  "tracked": 4,
+  "regressions": 0,
+  "new_baselines": 0
+}
+  max_client unavailable (Could not read Keychain entry Claude Code-credentials/mattheweisner. Either the Max plan isn't authenticated (`claude /login`) or Keychain access denied.); falling back to API key
+[aitr] webpage-layout: claude-opus-4-7 (ok tag fit, ~$0.070 estimated) [decision: aitr-20260608-120011-a6b5a6]
+{
+  "ok": true,
+  "report": "/Users/mattheweisner/.claude/skills/webpage-layout/state/monitor/reports/2026-06-08.md",
+  "tracked": 4,
+  "regressions": 0,
+  "new_baselines": 0
+}

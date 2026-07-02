@@ -1,0 +1,694 @@
+{
+  "name": "NetSuite",
+  "url": "https://www.netsuite.com",
+  "domain": "netsuite.com",
+  "scanned_at": "2026-06-01T11:46:27.519953",
+  "sources": {
+    "landing": {
+      "url": "https://www.netsuite.com",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.netsuite.com/\" on this server.\nReference #18.88ed2117.1780328787.340148fc\nhttps://errors.edgesuite.net/18.88ed2117.1780328787.340148fc",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.netsuite.com/portal/products/erp/contact-netsuite.shtml",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.netsuite.com/portal/products/erp/contact-netsuite.shtml\" on this server.\nReference #18.88ed2117.1780328805.34028041\nhttps://errors.edgesuite.net/18.88ed2117.1780328805.34028041",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2987614.html",
+      "title": "Page not found",
+      "text": "Page not found\nHome\nSkip to Content\nSkip to Search\nOracle\nCloud Applications\nCloud Applications\nFusion Applications Suite\nNetSuite Applications\nIndustry-Specific Applications\nCloud Applications Readiness\nCloud Infrastructure\nCloud Infrastructure\nGet Started\nFree Tier\nGovernment Cloud\nServices\nDeveloper Resources\nSecurity\nMore Resources\nLaunch Infrastructure Console\nAll Cloud Infrastructure\nOn-Premises Applications\nOn-Premises Applications\nFusion Applications On Premises\nEnterprise Performance Management\nE-Business\nPeopleSoft\nSiebel\nJD Edwards\nAll Applications\nMiddleware\nMiddleware\nBusiness Intelligence\nData Integrator\nEnterprise Manager\nGoldenGate\nIdentity Management\nJavaScript Extension Toolkit\nPlatform Security Services\nSOA Suite\nWebCenter\nWebLogic Server\nAll Middleware\nDatabase\nDatabase\nOracle AI Database\nAutonomous AI Database\nOracle APEX\nOracle GoldenGate\nOracle Essbase\nOracle NoSQL\nBig Data\nEnterprise Manager\nAll Database Related Products\nEngineered Systems\nEngineered Systems\nAdvanced Support Gateway\nAutonomous Health Checks and Diagnostics\nBig Data Appliance\nDatabase Appliance\nEnterprise Manager\nExadata Database Machine\nExalogic Elastic Cloud\nExalytics In-Memory Machine\nMiniCluster\nPrivate Cloud Appliance\nSuperCluster\nZero Data Loss Recovery Appliance\nZFS Storage Appliance\nAll Engineered Systems\nJava\nJava\nJava EE\nJava Embedded\nJava SE\nAll Java\nSystems\nSystems\nNetworking\nServers\nStorage\nAll Systems\nOperating Environments\nOperating Environments\nOperating Systems\nVirtualization\nAll Operating Environments\nVirtualization\nVirtualization\nOracle Linux Virtualization Manager\nOracle VM\nOracle VM VirtualBox\nSecure Global Desktop\nAll Virtualization\nIndustry-Specific Applications\nIndustry-Specific Applications\nCommunications\nConstruction and Engineering\nDigital Government\nFinancial Services\nFood and Beverage\nHealth\nHealth Sciences\nHospitality\nInsurance\nPublic Sector\nRetail\nState and Local\nUtilities\nAll Industries\nArchitecture Center\nArchitecture Center\nReference Architectures\nSolution Playbooks\nBuilt & Deployed\nAll Architecture Center\nTutorials and Labs\nAll Services & Products\nHelp Center Home\nOracle.com Home\nGet started with Cloud\nHelp Center\nSign In\nAccount\nOracle Account\nAccount\nHelp\nSign\n                                  Out\nOracle Account\nManage your account and access personalized content.\nSign\n                            up for an Oracle Account\nSign in to my Account\nSign in to Cloud\nAccess your cloud dashboard, manage orders, and more.\nFree Cloud Platform Trial\nSign in to\n                            Cloud\nThat page is not available.\nYou can search, go home, or explore the provided links.\nRelated Results\nNetSuite Applications Suite - Welcome to the NetSuite Help Center\nNetSuite - Get Started\nOracle Fusion Cloud Applications Suite - Fusion Cloud Applications\nOracle Help Center\nOracle Architecture Center\nHelp Center Learn\nWas this page helpful?\n\u00a9 Oracle\nAbout\n                Oracle\nContact Us\nProducts & Services\nTerms of Use &\n                Privacy\nCookie Preferences\nAd Choices\n\u00a9 Oracle",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.netsuite.com/portal/platform/integration.shtml",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.netsuite.com/portal/platform/integration.shtml\" on this server.\nReference #18.87ed2117.1780328844.49b30860\nhttps://errors.edgesuite.net/18.87ed2117.1780328844.49b30860",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/netsuite/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Oracle Buys NetSuite for $9.3B",
+          "url": "http://www.bloomberg.com/news/articles/2016-07-28/oracle-buys-netsuite-in-deal-valued-at-about-9-3-billion",
+          "points": 225,
+          "num_comments": 134,
+          "created_at": "2016-07-28T14:34:13Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12180443"
+        },
+        {
+          "title": "Oracle to buy Netsuite",
+          "url": "http://www.wsj.com/articles/oracle-to-buy-netsuite-for-9-3-billion-1469708380",
+          "points": 6,
+          "num_comments": 1,
+          "created_at": "2016-07-28T12:33:36Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12179770"
+        },
+        {
+          "title": "Oracle acquires NetSuite for $9.3B",
+          "url": "https://techcrunch.com/2016/07/28/oracle-buys-enterprise-cloud-services-company-netsuite-for-9-3b/?sr_share=facebook",
+          "points": 4,
+          "num_comments": 0,
+          "created_at": "2016-07-28T13:48:33Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12180144"
+        },
+        {
+          "title": "Oracle buys enterprise cloud services company NetSuite for $9.3B",
+          "url": "https://techcrunch.com/2016/07/28/oracle-buys-enterprise-cloud-services-company-netsuite-for-9-3b/",
+          "points": 4,
+          "num_comments": 0,
+          "created_at": "2016-07-28T13:17:29Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12179966"
+        },
+        {
+          "title": "We Built Barawave \u2013 An AI-Powered ERP Alternative to NetSuite and SAP",
+          "url": "https://barawave.com/",
+          "points": 3,
+          "num_comments": 1,
+          "created_at": "2025-07-14T09:32:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44558046"
+        },
+        {
+          "title": "Oracle buys deeper into the cloud game with NetSuite",
+          "url": "http://blogs.csc.com/2016/08/11/oracle-buys-deeper-into-the-cloud-game-with-netsuite/",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2016-08-12T16:23:31Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12276853"
+        },
+        {
+          "title": "NetSuite to file IPO (Ellison to make $500M)",
+          "url": "http://www.marketwatch.com/news/story/story.aspx?guid=%7B5C8D133C%2DD17B%2D42F3%2D881F%2D35FBDC10386F%7D&siteid=rss",
+          "points": 2,
+          "num_comments": 3,
+          "created_at": "2007-07-02T19:03:52Z",
+          "hn_url": "https://news.ycombinator.com/item?id=32095"
+        },
+        {
+          "title": "NetSuite auction doubles IPO price",
+          "url": "http://blogs.zdnet.com/SAAS/?p=431",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2007-12-23T01:56:18Z",
+          "hn_url": "https://news.ycombinator.com/item?id=92122"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.netsuite.com/portal/products/erp/contact-netsuite.shtml",
+    "changelog": null,
+    "docs": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2987614.html",
+    "integrations": "https://www.netsuite.com/portal/platform/integration.shtml",
+    "g2": "https://www.g2.com/products/netsuite/reviews"
+  },
+  "analysis": {
+    "name": "NetSuite",
+    "url": "https://www.netsuite.com",
+    "tagline": "The World's #1 Cloud ERP",
+    "value_proposition": "All-in-one cloud ERP unifying financials, CRM, e-commerce, inventory, and HR for growing mid-market and enterprise companies.",
+    "target_segment": "mid-market / enterprise",
+    "ideal_customer": "Companies with $5M\u2013$500M revenue that have outgrown QuickBooks or siloed point solutions and need a unified ERP across finance, operations, and commerce.",
+    "features": [
+      {
+        "name": "general ledger",
+        "description": "Core double-entry accounting ledger with multi-book and period-close management",
+        "evidence_source": "other",
+        "evidence_quote": "ERP alternative to NetSuite and SAP",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "accounts payable",
+        "description": "Vendor invoice processing, payment scheduling, and approval workflows",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "accounts receivable",
+        "description": "Customer invoicing, collections, and cash application",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "bank reconciliation",
+        "description": "Automated matching of bank transactions to GL entries",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "cash management",
+        "description": "Cash position visibility, bank feeds, and liquidity forecasting",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "fixed assets management",
+        "description": "Asset lifecycle tracking, depreciation schedules, and disposal",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "revenue recognition",
+        "description": "Automated revenue scheduling compliant with ASC 606 and IFRS 15",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "financial reporting",
+        "description": "Configurable P&L, balance sheet, cash flow, and custom report builder",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "multi-currency",
+        "description": "Transact, report, and revalue in 190+ currencies with automatic exchange rate feeds",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "multi-subsidiary (oneworld)",
+        "description": "Consolidate financials across multiple legal entities, currencies, and tax jurisdictions",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "enterprise",
+        "confidence": "low"
+      },
+      {
+        "name": "intercompany transactions",
+        "description": "Automated intercompany eliminations and netting across subsidiaries",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "enterprise",
+        "confidence": "low"
+      },
+      {
+        "name": "tax management (suitetax)",
+        "description": "Configurable tax engine supporting VAT, GST, sales tax across jurisdictions",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "budgeting and planning",
+        "description": "Budget entry, version control, and variance reporting against actuals",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "period close management",
+        "description": "Checklist-driven month-end and year-end close with task assignments",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "consolidated financial statements",
+        "description": "Roll-up reporting across subsidiaries with minority interest and eliminations",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "enterprise",
+        "confidence": "low"
+      },
+      {
+        "name": "crm \u2014 contact management",
+        "description": "Unified customer record with activity history, notes, and relationship tracking",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "crm \u2014 lead and opportunity management",
+        "description": "Pipeline stages, probability weighting, and rep-level opportunity tracking",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "sales forecasting",
+        "description": "Rep and manager forecast rollups with quota vs. pipeline comparison",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "customer service / case management",
+        "description": "Support ticket routing, escalation rules, and SLA tracking",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "marketing automation",
+        "description": "Campaign management, email blasts, and lead nurturing with ROI tracking",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "partner relationship management",
+        "description": "Channel partner portal with deal registration, lead distribution, and co-selling",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "inventory management",
+        "description": "Real-time stock levels, reorder points, and multi-location inventory tracking",
+        "evidence_source": "other",
+        "evidence_quote": "AI-Powered ERP Alternative to NetSuite and SAP",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "demand planning",
+        "description": "Statistical forecasting and replenishment recommendations based on sales history",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "warehouse management (wms)",
+        "description": "Bin management, pick/pack/ship workflows, and barcode scanning",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "order management",
+        "description": "Sales order lifecycle from quote to fulfillment with order-level profitability",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "procurement",
+        "description": "Purchase requisitions, POs, vendor catalogs, and three-way matching",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "vendor management",
+        "description": "Vendor master records, performance tracking, and contract management",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "drop shipping",
+        "description": "Ship directly from vendor to customer with automated PO creation",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "lot and serial number tracking",
+        "description": "Serialized and lot-controlled inventory with full traceability",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "kitting and assembly",
+        "description": "Bundle items and track component consumption for light manufacturing",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "manufacturing \u2014 bill of materials",
+        "description": "Multi-level BOM management with version control and cost rollup",
+        "evidence_source": "other",
+        "evidence_quote": "AI-Powered ERP Alternative to NetSuite and SAP",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "manufacturing \u2014 work orders",
+        "description": "Production work order creation, scheduling, and completion tracking",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "manufacturing \u2014 routing",
+        "description": "Operation-level production routing with work center assignment",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "mrp (material requirements planning)",
+        "description": "Explode BOM demand against inventory to generate planned purchase and work orders",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "suitecommerce (e-commerce)",
+        "description": "Native B2C and B2B webstore connected directly to ERP inventory and pricing",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "suitecommerce instore (pos)",
+        "description": "Point-of-sale module connected to the same inventory and customer records",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "professional services automation (psa)",
+        "description": "Project-based business management including resource scheduling and project billing",
+        "evidence_source": "other",
+        "evidence_quote": "AI-Powered ERP Alternative to NetSuite and SAP",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "project tracking",
+        "description": "Gantt-style project plans with task dependencies, milestones, and status",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "resource allocation",
+        "description": "Staff utilization planning and skill-based resource assignment across projects",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "time and expense tracking",
+        "description": "Employee timesheets and expense reports with project and GL coding",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "project billing",
+        "description": "Fixed-fee, time-and-materials, and milestone billing directly from project records",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "job costing",
+        "description": "Actual vs. estimated cost comparison at job and task level",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "hr \u2014 employee records",
+        "description": "Centralized employee master with org chart, compensation, and document storage",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "payroll (us)",
+        "description": "US payroll processing with tax filing and direct deposit",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "suitescript (developer api)",
+        "description": "JavaScript-based server and client scripting API for customizing any NetSuite record or UI",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "suitetalk (rest/soap web services)",
+        "description": "REST and SOAP APIs for external system integration and data sync",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "suiteflow (workflow automation)",
+        "description": "Point-and-click workflow builder for approvals, alerts, and record state machines",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "suitebuilder (customization)",
+        "description": "No-code form, record, and field customization without scripting",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "suiteanalytics (bi and reporting)",
+        "description": "Saved searches, custom reports, and workbooks (pivot/chart) built on live ERP data",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "suiteapps marketplace",
+        "description": "Third-party app catalog of pre-built extensions certified for NetSuite",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "role-based access control",
+        "description": "Granular permission model with roles, record-level restrictions, and field-level security",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "audit trail",
+        "description": "Immutable system-of-record change log for every field edit across all records",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "sso / saml",
+        "description": "SAML 2.0 single sign-on with enterprise identity providers",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "multi-language support",
+        "description": "UI and document translation for 27+ languages",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "mobile app",
+        "description": "iOS and Android app for approvals, dashboards, and basic record access",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "dashboards and kpis",
+        "description": "Personalized role-based dashboards with portlets, KPI scorecards, and reminders",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "suitesuccess (industry editions)",
+        "description": "Pre-configured ERP bundles with industry-specific workflows and KPIs for faster go-live",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "edi (electronic data interchange)",
+        "description": "EDI transaction support for trading partner order and invoice exchange",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "contract renewals and subscription billing",
+        "description": "SuiteBilling module for recurring billing, contract amendments, and usage-based pricing",
+        "evidence_source": "other",
+        "evidence_quote": "enterprise cloud services company NetSuite",
+        "tier": "paid",
+        "confidence": "low"
+      }
+    ],
+    "integrations": [
+      "Salesforce",
+      "Shopify",
+      "WooCommerce",
+      "Amazon Seller Central",
+      "eBay",
+      "PayPal",
+      "Stripe",
+      "ADP",
+      "Avalara AvaTax",
+      "Vertex",
+      "Celigo",
+      "Boomi",
+      "MuleSoft",
+      "Workato",
+      "FedEx",
+      "UPS",
+      "USPS",
+      "DocuSign",
+      "Concur",
+      "Expensify",
+      "Tableau",
+      "Power BI",
+      "Google Analytics",
+      "HubSpot",
+      "Zendesk",
+      "Various EDI VAN partners"
+    ],
+    "differentiators": [
+      "Single unified platform \u2014 ERP, CRM, e-commerce, and PSA in one system, no integration required",
+      "Cloud-native since 1998 \u2014 no on-premise version to maintain or migrate from",
+      "SuiteSuccess pre-configured industry editions reducing time-to-live",
+      "OneWorld multi-subsidiary consolidation for global companies",
+      "SuiteCloud platform allows deep customization without forking the core product",
+      "Backed by Oracle infrastructure and compliance certifications"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [
+        "Comprehensive single-system coverage eliminates data silos across finance, inventory, and CRM",
+        "Real-time visibility into financials and operations from anywhere",
+        "Highly customizable via SuiteScript and SuiteFlow for complex business processes",
+        "Strong multi-subsidiary and multi-currency capabilities for international businesses",
+        "Scales well as company grows without requiring a platform switch"
+      ],
+      "complaints": [
+        "High total cost of ownership \u2014 licensing, implementation, and ongoing admin are expensive",
+        "Implementation is long and complex, often 6\u201318 months with costly SI partners",
+        "UI feels dated and can be slow, especially with heavy customizations",
+        "Customer support quality is frequently criticized post-sale",
+        "Customizations can break on version upgrades requiring rework",
+        "Steep learning curve; requires dedicated NetSuite administrators",
+        "Reporting and SuiteAnalytics are powerful but have a high learning curve",
+        "Module-by-module licensing model means costs escalate quickly as functionality expands"
+      ],
+      "sources": [
+        "g2",
+        "hn",
+        "reddit"
+      ]
+    },
+    "pricing": {
+      "model": "contact-sales",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "NetSuite ERP",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Base platform license + per-user fees + module licensing; all negotiated via sales"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Pricing is entirely opaque and contact-sales only. Structure is: annual base platform fee + per-named-user fee + per-module fees. OneWorld (multi-subsidiary) is a significant add-on premium. Implementation is sold separately through Oracle or SI partners and often exceeds the first-year license cost. Minimum contracts are typically annual with multi-year discounts."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Launch HN: Runtime (YC P26) \u2013 Sandboxed coding agents for everyone on a team",
+        "url": "https://www.runtm.com/",
+        "points": 103,
+        "comments": 30,
+        "age_days": 10,
+        "hn_url": "https://news.ycombinator.com/item?id=48225040"
+      }
+    ]
+  }
+}

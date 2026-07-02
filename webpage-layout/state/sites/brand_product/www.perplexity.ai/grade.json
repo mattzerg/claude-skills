@@ -1,0 +1,32 @@
+{
+  "scores": {
+    "typography": 1,
+    "hierarchy": 1,
+    "distinctiveness": 1,
+    "color": 1,
+    "density": 1,
+    "voice": 1
+  },
+  "reasoning": {
+    "typography": "This is a Cloudflare security interstitial page, not the actual site. System font stack with zero typographic identity.",
+    "hierarchy": "Minimal information hierarchy \u2014 just a security message with no meaningful content structure to evaluate.",
+    "distinctiveness": "Generic Cloudflare bot-check page that appears on thousands of websites. Zero brand presence visible.",
+    "color": "Black background, white text. No brand color system present. Purely functional security page.",
+    "density": "Sparse security verification page with minimal content. Not an intentional design choice, just a loading state.",
+    "voice": "No content structure to evaluate \u2014 this is a technical security gate, not the actual perplexity.ai experience."
+  },
+  "winning_patterns": [
+    "Clean, uncluttered presentation of security information"
+  ],
+  "anti_patterns": [
+    "Cannot evaluate the actual website \u2014 only seeing Cloudflare's security interstitial",
+    "No brand presence whatsoever on the page shown",
+    "Generic security page that could belong to any site behind Cloudflare",
+    "Zero opportunity to assess perplexity.ai's actual design system"
+  ],
+  "one_word_personality": "inaccessible",
+  "_url": "https://www.perplexity.ai",
+  "_persona": "brand_product",
+  "_note": "AI search peer",
+  "_graded_at": "2026-05-08T00:55:27.128812Z"
+}

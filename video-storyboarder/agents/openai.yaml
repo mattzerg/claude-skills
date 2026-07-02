@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Storyboarder"
+  short_description: "Create storyboard frames and boards."
+  default_prompt: "Use $video-storyboarder to create a storyboard from this script and shot list."

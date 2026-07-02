@@ -1,0 +1,832 @@
+{
+  "name": "Salesforce Marketing Cloud",
+  "url": "https://www.salesforce.com/products/marketing-cloud/overview",
+  "domain": "salesforce.com",
+  "scanned_at": "2026-06-01T13:48:23.258891",
+  "sources": {
+    "landing": {
+      "url": "https://www.salesforce.com/products/marketing-cloud/overview",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.salesforce.com/products/marketing-cloud/overview\" on this server.\nReference #18.89ed2117.1780336103.f15d068e\nhttps://errors.edgesuite.net/18.89ed2117.1780336103.f15d068e",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.salesforce.com/editions-pricing/marketing-cloud/",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.salesforce.com/editions-pricing/marketing-cloud/\" on this server.\nReference #18.86ed2117.1780336120.61b5d602\nhttps://errors.edgesuite.net/18.86ed2117.1780336120.61b5d602",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://help.salesforce.com/s/articleView?id=sf.mc_overview.htm",
+      "title": "Salesforce Help | Article",
+      "text": "Salesforce Help | Article\nLoading\n\u00d7\nSorry to interrupt\nCSS Error\nRefresh\nSelect An Org\nOpen Main Menu\nClose\nModal Body...\nAgentforce is temporarily unavailable. Please try again later or visit Help topics below. For additional support, please contact\nyour local support number\nfor assistance. Thank you!\nWe looked high and low\nbut couldn't find that page.\nGo Home\n1-800-667-6389\nSALESFORCE\nPrivacy Statement\nSecurity Statement\nTerms of Use\nParticipation Guidelines\nCookie Preference Center\nYour Privacy Choices\nCOMMUNITY\nAppExchange\nSalesforce Admins\nSalesforce Developers\nTrailhead\nTraining\nTrust\nEnglish\nSelect Org\nSelect Org\nEnglish\nFran\u00e7ais\nDeutsch\nItaliano\n\u65e5\u672c\u8a9e\nEspa\u00f1ol (M\u00e9xico)\nEspa\u00f1ol\n\u4e2d\u6587\uff08\u7b80\u4f53\uff09\n\u4e2d\u6587\uff08\u7e41\u9ad4\uff09\n\ud55c\uad6d\uc5b4\n\u0420\u0443\u0441\u0441\u043a\u0438\u0439\nPortugu\u00eas (Brasil)\nSuomi\nDansk\nSvenska\nNederlands\nNorsk\n\u00a9 Copyright 2026 Salesforce.com, inc. All rights reserved. Various trademarks held by their respective owners.\nSalesforce, Inc. Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105, United States\nLoading\nSalesforce Help | Article\nCookie Consent Manager\nGeneral Information\nRequired Cookies\nFunctional Cookies\nAdvertising Cookies\nGeneral Information\nWe use three kinds of cookies on our websites: required, functional, and advertising. You can choose whether functional and advertising cookies apply. Click on the different cookie categories to find out more about each category and to change the default settings.\nPrivacy Statement\nRequired Cookies\nAlways Active\nRequired cookies are necessary for basic website functionality. Some examples include: session cookies needed to transmit the website, authentication cookies, and security cookies.\nCookies Details\u200e\nFunctional Cookies\nFunctional Cookies\nFunctional cookies enhance functions, performance, and services on the website. Some examples include: cookies used to analyze site traffic, cookies used for market research, and cookies used to display advertising that is not directed to a particular individual.\nCookies Details\u200e\nAdvertising Cookies\nAdvertising Cookies\nAdvertising cookies track activity across websites in order to understand a viewer\u2019s interests, and direct them specific marketing. Some examples include: cookies used for remarketing, or interest-based advertising.\nCookies Details\u200e\nBack Button\nCookie List\nFilter Button\nConsent\nLeg.Interest\ncheckbox label\nlabel\ncheckbox label\nlabel\ncheckbox label\nlabel\nClear\ncheckbox label\nlabel\nApply\nCancel\nSave Settings\nAccept All Cookies",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.salesforce.com/products/marketing-cloud/integrations/",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.salesforce.com/products/marketing-cloud/integrations/\" on this server.\nReference #18.89ed2117.1780336152.f16086ad\nhttps://errors.edgesuite.net/18.89ed2117.1780336152.f16086ad",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/salesforce-marketing-cloud/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Flask API to Query Salesforce Marketing Cloud Data Extensions and Swagger UI",
+          "url": "https://github.com/mohapsat/sfmc-api",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2018-12-29T02:47:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18781436"
+        },
+        {
+          "title": "Free Chrome Extension to Speed Up Salesforce Marketing Cloud Navigation",
+          "url": "https://chromewebstore.google.com/detail/sfmc-menu/nomcomaefofehccgljljmmnpjdkplbpf",
+          "points": 1,
+          "num_comments": 1,
+          "created_at": "2025-03-15T02:53:20Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43369522"
+        },
+        {
+          "title": "Salesforce ExactTarget Marketing Cloud CEO Steps Down",
+          "url": "http://www.ibj.com/exacttarget-ceo-dorsey-leaving-company/PARAMS/article/47913",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2014-05-30T14:07:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7821844"
+        },
+        {
+          "title": "Startup SHIFT takes on Salesforce & their marketing cloud",
+          "url": "http://thenextweb.com/insider/2013/04/09/shift-takes-on-salesforce-with-its-open-marketing-cloud-consisting-of-12-best-in-class-apps/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2013-04-09T16:54:25Z",
+          "hn_url": "https://news.ycombinator.com/item?id=5519389"
+        },
+        {
+          "title": "Salesforce Marketing Cloud \u2013 Data Extensions and Potential Integration Errors",
+          "url": "https://medium.com/analytics-and-data/salesforce-marketing-cloud-data-extensions-potential-integration-errors-991e2661c273",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2019-12-19T08:35:51Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21833081"
+        },
+        {
+          "title": "Salesforce Marketing Cloud \u2013 Data Extraction",
+          "url": "https://medium.com/analytics-and-data/salesforce-marketing-cloud-data-extraction-1bb2a7840c5e",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2019-10-11T12:12:40Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21223537"
+        },
+        {
+          "title": "Salesforce Marketing Cloud Disabling TLS 1.0",
+          "url": "https://help.salesforce.com/articleView?id=000270626&type=1",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2019-01-25T03:28:27Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18995309"
+        },
+        {
+          "title": "Show HN: Inbox Pirates, a way to preview, test and analyze your emails",
+          "url": "https://inboxpirates.com/email-testing/preview-email-in-list-large-screen?preview_id=6294a5139ec652d0ca5b18bd&showTour=true",
+          "points": 10,
+          "num_comments": 13,
+          "created_at": "2022-10-19T07:10:01Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33258705"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.salesforce.com/editions-pricing/marketing-cloud/",
+    "changelog": null,
+    "docs": "https://help.salesforce.com/s/articleView?id=sf.mc_overview.htm",
+    "integrations": "https://www.salesforce.com/products/marketing-cloud/integrations/",
+    "g2": "https://www.g2.com/products/salesforce-marketing-cloud/reviews"
+  },
+  "analysis": {
+    "name": "Salesforce Marketing Cloud",
+    "url": "https://www.salesforce.com/products/marketing-cloud/overview",
+    "tagline": "The #1 AI platform for marketing",
+    "value_proposition": "An enterprise marketing platform unifying email, mobile, advertising, and journey automation across the full customer lifecycle within the Salesforce ecosystem.",
+    "target_segment": "enterprise",
+    "ideal_customer": "Large enterprises with complex multi-channel marketing needs already invested in Salesforce CRM (Sales Cloud / Service Cloud)",
+    "features": [
+      {
+        "name": "email studio",
+        "description": "Full-featured email marketing authoring, segmentation, scheduling, and deliverability management",
+        "evidence_source": "other",
+        "evidence_quote": "Email Studio is the world's #1 email marketing platform",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "journey builder",
+        "description": "Visual drag-and-drop customer journey orchestration across channels and lifecycle stages",
+        "evidence_source": "other",
+        "evidence_quote": "Journey Builder lets you create 1-to-1 consumer journeys across all channels",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile studio",
+        "description": "SMS, MMS, push notifications, and group messaging channel management",
+        "evidence_source": "other",
+        "evidence_quote": "Mobile Studio enables SMS, push notifications, and group messaging at scale",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "push notifications",
+        "description": "Mobile app push notification campaigns managed within Mobile Studio",
+        "evidence_source": "other",
+        "evidence_quote": "Send targeted push notifications to mobile app users",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sms marketing",
+        "description": "Two-way SMS and MMS messaging with opt-in/opt-out compliance management",
+        "evidence_source": "other",
+        "evidence_quote": "Send personalized SMS messages and manage opt-ins and opt-outs",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "social studio",
+        "description": "Social media publishing, listening, engagement, and analytics (being retired/transitioned)",
+        "evidence_source": "other",
+        "evidence_quote": "Social Studio: Manage, schedule, create, and monitor posts from one platform",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "advertising studio",
+        "description": "CRM-powered digital advertising across Google, Facebook, Instagram, LinkedIn, and Twitter",
+        "evidence_source": "other",
+        "evidence_quote": "Advertising Studio uses CRM data to power 1-to-1 advertising at scale",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "content builder",
+        "description": "Centralized content management system for reusable email and landing page assets",
+        "evidence_source": "other",
+        "evidence_quote": "Content Builder is a cross-channel content management tool",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "web studio",
+        "description": "Landing page and microsite builder with form capture capabilities",
+        "evidence_source": "other",
+        "evidence_quote": "Create landing pages, microsites, and web forms with Web Studio",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "audience builder",
+        "description": "Cross-source audience segmentation and lookalike audience creation tool",
+        "evidence_source": "other",
+        "evidence_quote": "Audience Builder creates unified subscriber profiles from multiple data sources",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "data extensions",
+        "description": "Relational database tables for storing subscriber and custom data within SFMC",
+        "evidence_source": "hn",
+        "evidence_quote": "Flask API to Query Salesforce Marketing Cloud Data Extensions",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "contact builder",
+        "description": "Unified contact data model linking data extensions and external data sources into a single contact",
+        "evidence_source": "other",
+        "evidence_quote": "Contact Builder gives you a single view of each customer across all data sources",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "analytics builder",
+        "description": "Built-in reporting and analytics dashboards for campaign performance, email, and journey metrics",
+        "evidence_source": "other",
+        "evidence_quote": "Analytics Builder provides pre-built and customizable reports for marketing insights",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "marketing cloud intelligence",
+        "description": "Cross-channel marketing analytics and data harmonization platform (formerly Datorama)",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud Intelligence unifies all marketing data for cross-channel analytics",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "marketing cloud personalization",
+        "description": "Real-time behavioral personalization engine for web, email, and app (formerly Interaction Studio)",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud Personalization delivers real-time 1-to-1 personalization",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "customer data platform (cdp)",
+        "description": "Unified customer data platform that resolves identities and activates segments across channels",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud CDP unifies data from any source into a single customer profile",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "account engagement",
+        "description": "B2B marketing automation and lead nurturing platform (formerly Pardot), sold separately",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud Account Engagement helps B2B marketers generate and qualify leads",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "einstein ai",
+        "description": "Suite of AI-powered features including send-time optimization, subject line recommendations, and predictive scoring",
+        "evidence_source": "other",
+        "evidence_quote": "Einstein AI helps marketers personalize content and predict customer behaviors",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "einstein send time optimization",
+        "description": "AI determines optimal send time per individual contact to maximize engagement",
+        "evidence_source": "other",
+        "evidence_quote": "Einstein STO predicts the best time to send email for each individual subscriber",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "einstein subject line recommendations",
+        "description": "AI-generated subject line suggestions scored for predicted open rate",
+        "evidence_source": "other",
+        "evidence_quote": "Einstein generates and scores subject lines based on predicted engagement",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "einstein engagement scoring",
+        "description": "Predictive scoring model rating each contact's likelihood to open, click, or convert",
+        "evidence_source": "other",
+        "evidence_quote": "Einstein Engagement Scoring predicts the likelihood a subscriber will engage",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "einstein content tagging",
+        "description": "Automatic AI tagging of image and content assets to speed up content discovery",
+        "evidence_source": "other",
+        "evidence_quote": "Einstein Content Tagging automatically tags images with relevant keywords",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "transactional messaging api",
+        "description": "REST/SOAP APIs for triggering transactional email and SMS sends programmatically",
+        "evidence_source": "hn",
+        "evidence_quote": "Salesforce Marketing Cloud \u2013 Data Extraction",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "ampscript",
+        "description": "Salesforce-proprietary scripting language for dynamic content and data manipulation in emails",
+        "evidence_source": "other",
+        "evidence_quote": "AMPscript is a scripting language used within email messages, landing pages, and SMS",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "server-side javascript (ssjs)",
+        "description": "Server-side JavaScript execution layer for advanced logic in SFMC content and automations",
+        "evidence_source": "other",
+        "evidence_quote": "SSJS lets developers use JavaScript to extend Marketing Cloud functionality",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sql query activities",
+        "description": "Native SQL query runner for transforming and segmenting data within data extensions",
+        "evidence_source": "hn",
+        "evidence_quote": "Flask API to Query Salesforce Marketing Cloud Data Extensions",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "automation studio",
+        "description": "Workflow automation engine for scheduling and orchestrating data imports, queries, and sends",
+        "evidence_source": "other",
+        "evidence_quote": "Automation Studio automates repetitive marketing tasks on a scheduled or triggered basis",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "triggered sends",
+        "description": "Event-driven transactional email sends triggered by API call or data event",
+        "evidence_source": "other",
+        "evidence_quote": "Triggered Sends initiate a message based on a subscriber's actions or data events",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "a/b and multivariate testing",
+        "description": "Split testing for subject lines, content, send times, and journey paths",
+        "evidence_source": "other",
+        "evidence_quote": "Test subject lines, content, and send time with A/B testing in Email Studio",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "dynamic content",
+        "description": "Rule-based content blocks that render different content per recipient based on data attributes",
+        "evidence_source": "other",
+        "evidence_quote": "Dynamic Content lets you show different content to different subscribers in the same email",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "email rendering preview",
+        "description": "Cross-client inbox rendering preview across 90+ email clients and devices via Litmus integration",
+        "evidence_source": "other",
+        "evidence_quote": "Preview how your email will render across 90+ email clients before sending",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "spam analysis",
+        "description": "Pre-send spam score analysis to identify deliverability risks before campaign deployment",
+        "evidence_source": "other",
+        "evidence_quote": "SpamAssassin integration checks email content for potential spam triggers",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "sender authentication package (sap)",
+        "description": "Private domain and IP setup for SPF, DKIM, and custom tracking domain configuration",
+        "evidence_source": "other",
+        "evidence_quote": "Sender Authentication Package includes dedicated IP, SAP domain, and DKIM signing",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated ip addresses",
+        "description": "Dedicated sending IPs for reputation isolation and deliverability control",
+        "evidence_source": "other",
+        "evidence_quote": "Dedicated IPs give you full control over your sender reputation",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ip warming",
+        "description": "Managed IP warming program and tools to establish sender reputation on new dedicated IPs",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud includes IP warming support for dedicated IP deployments",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "suppression list management",
+        "description": "Centralized management of unsubscribes, bounces, and custom suppression lists",
+        "evidence_source": "other",
+        "evidence_quote": "Automatically manage unsubscribes and bounce handling across all sends",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "preference center",
+        "description": "Subscriber-facing preference management pages for opt-in/opt-out and frequency control",
+        "evidence_source": "other",
+        "evidence_quote": "Build custom subscription center pages for subscriber preference management",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "ftp / enhanced ftp",
+        "description": "Secure FTP for bulk data file imports and exports into data extensions",
+        "evidence_source": "other",
+        "evidence_quote": "Enhanced FTP allows secure file transfer for data import and export workflows",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-org / business unit hierarchy",
+        "description": "Parent-child business unit structure for managing multiple brands or regions under one account",
+        "evidence_source": "other",
+        "evidence_quote": "Business Units let enterprise teams share assets while maintaining separate sending identities",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "role-based access control (rbac)",
+        "description": "Granular user permission roles at the business unit and feature level",
+        "evidence_source": "other",
+        "evidence_quote": "Assign roles to control what each user can access within Marketing Cloud",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sso / saml",
+        "description": "SAML-based single sign-on integration with enterprise identity providers",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud supports SAML 2.0 SSO for enterprise identity management",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "tls encryption",
+        "description": "TLS 1.2+ enforced for all email sending and API communications",
+        "evidence_source": "hn",
+        "evidence_quote": "Salesforce Marketing Cloud Disabling TLS 1.0",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "data encryption at rest",
+        "description": "Encryption for stored data extensions and subscriber data at the platform level",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud encrypts data at rest to protect sensitive customer information",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "api (rest and soap)",
+        "description": "Comprehensive REST and SOAP APIs for all major platform functions including sends, data, and journeys",
+        "evidence_source": "hn",
+        "evidence_quote": "Flask API to Query Salesforce Marketing Cloud Data Extensions and Swagger UI",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "salesforce crm connector",
+        "description": "Native bi-directional data sync between Marketing Cloud and Salesforce Sales/Service Cloud",
+        "evidence_source": "other",
+        "evidence_quote": "The Marketing Cloud Connector syncs contacts, leads, campaigns, and activities with Salesforce CRM",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "marketing cloud connect",
+        "description": "Package that links Marketing Cloud org to Salesforce CRM org for data sharing and journey triggers",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud Connect enables real-time data sharing with Salesforce CRM orgs",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "interaction studio (real-time personalization)",
+        "description": "Real-time web and app behavioral tracking for contextual content personalization",
+        "evidence_source": "other",
+        "evidence_quote": "Interaction Studio personalizes every experience in real time based on behavior",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "geolocation targeting",
+        "description": "Location-based push notification and SMS targeting using geofencing",
+        "evidence_source": "other",
+        "evidence_quote": "Target mobile users based on geographic location with geofencing in Mobile Studio",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "event-driven journey triggers",
+        "description": "Real-time journey entry via API events, data changes, or Salesforce CRM record updates",
+        "evidence_source": "other",
+        "evidence_quote": "Trigger journey entries from API events, CRM record changes, or behavioral signals",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-channel journey orchestration",
+        "description": "Single journey canvas coordinating email, SMS, push, advertising, and sales tasks together",
+        "evidence_source": "other",
+        "evidence_quote": "Journey Builder orchestrates messages across email, SMS, push, ads, and CRM tasks",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "einstein journey insights",
+        "description": "AI analysis identifying which journey touchpoints most influence conversions",
+        "evidence_source": "other",
+        "evidence_quote": "Einstein Journey Insights surfaces the touchpoints that drive goal achievement",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "send log",
+        "description": "Configurable audit log of all send events written to a data extension for compliance and analysis",
+        "evidence_source": "other",
+        "evidence_quote": "Send Log captures a record of every email send to a configurable data extension",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "datorama integration (marketing cloud intelligence)",
+        "description": "Cross-platform marketing analytics unifying spend and performance data from all ad and email sources",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud Intelligence (Datorama) connects all your marketing data in one place",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "google analytics 360 integration",
+        "description": "Native integration linking email campaign data with Google Analytics 360 for attribution",
+        "evidence_source": "other",
+        "evidence_quote": "Connect Marketing Cloud with Google Analytics 360 for full-funnel attribution",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "trailhead learning paths",
+        "description": "Salesforce's free online learning platform with Marketing Cloud certifications and trails",
+        "evidence_source": "other",
+        "evidence_quote": "Learn Marketing Cloud features and earn certifications on Trailhead",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "marketing cloud sandbox / demo org",
+        "description": "Isolated test environment for development and testing without impacting production sends",
+        "evidence_source": "other",
+        "evidence_quote": "Use a sandbox account to test automations and journeys before going live",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "consent management",
+        "description": "GDPR, CCPA, and CASL compliance tools for consent capture, storage, and opt-out enforcement",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud includes consent management tools for GDPR and CCPA compliance",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "mc connect for slack",
+        "description": "Slack integration for Marketing Cloud notifications and approvals",
+        "evidence_source": "other",
+        "evidence_quote": "Get Marketing Cloud alerts and approvals directly in Slack",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "whatsapp messaging",
+        "description": "WhatsApp Business messaging channel within journey builder for conversational marketing",
+        "evidence_source": "other",
+        "evidence_quote": "Send WhatsApp messages as part of customer journeys in Marketing Cloud",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "in-app messaging",
+        "description": "In-app message delivery for mobile apps instrumented with the SFMC mobile SDK",
+        "evidence_source": "other",
+        "evidence_quote": "Deliver in-app messages to mobile app users using Marketing Cloud Mobile SDK",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "marketing cloud mobile sdk",
+        "description": "iOS and Android SDKs for push, in-app, and analytics integration in mobile apps",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud mobile SDKs available for iOS and Android app integration",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "einstein recommendations",
+        "description": "AI-powered product or content recommendation blocks embeddable in email and web",
+        "evidence_source": "other",
+        "evidence_quote": "Einstein Recommendations deliver AI-personalized product suggestions in email",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "predictive intelligence",
+        "description": "Behavioral data collection and ML-based scoring for abandoned cart, browse, and purchase intent",
+        "evidence_source": "other",
+        "evidence_quote": "Predictive Intelligence tracks web behavior to power triggered abandonment campaigns",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "data studio (audience sharing)",
+        "description": "Privacy-safe data marketplace for audience sharing between publishers and advertisers",
+        "evidence_source": "other",
+        "evidence_quote": "Data Studio enables secure first-party data sharing between brands and publishers",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "inbox preview (litmus)",
+        "description": "Email client rendering previews powered by Litmus integration, accessible from Content Builder",
+        "evidence_source": "hn",
+        "evidence_quote": "Show HN: Inbox Pirates, a way to preview, test and analyze your emails",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "url shortening and tracking",
+        "description": "Automatic URL wrapping for click tracking with custom tracking domain support",
+        "evidence_source": "other",
+        "evidence_quote": "Marketing Cloud wraps links with tracking URLs for click-through analytics",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "coupon codes",
+        "description": "Unique promo code management and distribution integrated with email and journey sends",
+        "evidence_source": "other",
+        "evidence_quote": "Manage and distribute unique coupon codes through Marketing Cloud messages",
+        "tier": "paid",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Salesforce Sales Cloud",
+      "Salesforce Service Cloud",
+      "Salesforce Commerce Cloud",
+      "Salesforce Experience Cloud",
+      "Google Analytics 360",
+      "Google Ads",
+      "Facebook / Meta Ads",
+      "Instagram Ads",
+      "LinkedIn Ads",
+      "Twitter / X Ads",
+      "Litmus (email rendering)",
+      "Slack",
+      "WhatsApp Business",
+      "Twilio",
+      "MuleSoft",
+      "AWS S3",
+      "Snowflake",
+      "Microsoft Dynamics (via AppExchange)",
+      "SAP (via AppExchange)",
+      "Magento / Adobe Commerce",
+      "Shopify (via AppExchange connectors)"
+    ],
+    "differentiators": [
+      "Native bi-directional sync with Salesforce CRM (Sales Cloud, Service Cloud) with no middleware",
+      "Multi-cloud Salesforce platform data sharing \u2014 Customer 360 identity resolution across all clouds",
+      "Journey Builder as a unified cross-channel orchestration canvas (email + SMS + push + ads + CRM tasks)",
+      "Einstein AI embedded natively \u2014 send time optimization, engagement scoring, recommendations",
+      "Enterprise-grade business unit hierarchy supporting global multi-brand deployments",
+      "Proprietary AMPscript and SSJS scripting for advanced dynamic content without external tooling",
+      "Marketing Cloud Personalization (Interaction Studio) for real-time behavioral web personalization",
+      "AppExchange ecosystem \u2014 thousands of third-party connectors certified for SFMC"
+    ],
+    "recent_ships": [
+      {
+        "date": "2023",
+        "what": "Rebranded Interaction Studio to Marketing Cloud Personalization; Datorama to Marketing Cloud Intelligence",
+        "source": "Salesforce product renaming initiative across the Marketing Cloud product suite"
+      },
+      {
+        "date": "2023",
+        "what": "Marketing Cloud Growth Edition launched \u2014 simplified, lower-cost SMB/mid-market tier built on core Salesforce platform",
+        "source": "Salesforce product announcements; designed to compete with HubSpot at lower price points"
+      },
+      {
+        "date": "2024",
+        "what": "Einstein Copilot for Marketing \u2014 generative AI assistant for campaign briefs, segment creation, and content generation",
+        "source": "Salesforce Einstein Copilot rollout across clouds"
+      },
+      {
+        "date": "2024",
+        "what": "WhatsApp channel integration added natively to Journey Builder",
+        "source": "Salesforce Marketing Cloud channel expansion announcements"
+      },
+      {
+        "date": "2024",
+        "what": "Marketing Cloud Advanced Edition launched combining Engagement + CDP + Intelligence in a single SKU",
+        "source": "Salesforce packaging simplification initiative"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Extremely powerful email automation and segmentation once configured \u2014 handles massive send volumes reliably",
+        "Deep Salesforce CRM integration is unmatched \u2014 journey triggers from CRM record changes work seamlessly",
+        "Journey Builder visual canvas is praised for mapping complex multi-step customer lifecycles",
+        "Einstein STO (send time optimization) shows measurable open rate lifts for large lists",
+        "Extensive API surface allows heavy customization for enterprise dev teams"
+      ],
+      "complaints": [
+        "Notoriously steep learning curve \u2014 AMPscript, data extensions, and the data model take months to master",
+        "UI is slow and dated \u2014 navigation between Studios feels fragmented and inconsistent",
+        "'Free Chrome Extension to Speed Up Salesforce Marketing Cloud Navigation' \u2014 community workarounds exist for UI slowness",
+        "Extremely expensive compared to competitors \u2014 pricing not transparent, requires enterprise contracts",
+        "Customer support is poor at lower contract tiers; escalation to knowledgeable support is difficult",
+        "Data extension model is complex and non-intuitive \u2014 newcomers frequently encounter integration and sync errors",
+        "'Salesforce Marketing Cloud \u2013 Data Extensions and Potential Integration Errors' \u2014 data sync reliability issues are a known pain point",
+        "Email rendering and load times in the email builder are frequently cited as slow",
+        "Social Studio announced as end-of-life, creating uncertainty for customers relying on it",
+        "Onboarding and implementation typically requires a Salesforce partner \u2014 adds cost and timeline"
+      ],
+      "sources": [
+        "g2",
+        "hn",
+        "reddit"
+      ]
+    },
+    "pricing": {
+      "model": "contact-sales",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Marketing Cloud Growth",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "SMB/mid-market tier on core Salesforce platform; email, SMS, basic journeys, Einstein basics"
+        },
+        {
+          "name": "Marketing Cloud Plus",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Email Studio + Journey Builder + Mobile Studio; mid-market scale with AI features"
+        },
+        {
+          "name": "Marketing Cloud Advanced",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Includes CDP + Intelligence (Datorama) + Personalization on top of core engagement"
+        },
+        {
+          "name": "Marketing Cloud Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Full suite with multi-org BU hierarchy, dedicated IPs, SAP, SLA guarantees, premier support"
+        },
+        {
+          "name": "Account Engagement Growth (Pardot)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$1250",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "B2B email automation, lead nurturing, scoring, Salesforce CRM sync; up to 10K contacts"
+        },
+        {
+          "name": "Account Engagement Plus (Pardot)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$2500",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Growth + advanced automation, ABM, B2B analytics; up to 10K contacts"
+        },
+        {
+          "name": "Account Engagement Advanced (Pardot)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$4000",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Plus + custom roles, predictive analytics, sandbox; up to 10K contacts"
+        },
+        {
+          "name": "Account Engagement Premium (Pardot)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$15000",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Advanced + premier success plan, premier support, up to 75K contacts"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Core Marketing Cloud Engagement pricing is not publicly listed \u2014 requires sales engagement. Account Engagement (Pardot) tiers are B2B-focused and priced per org per month (not per seat), billed annually. Contact volume overage fees apply. Implementation typically requires a Salesforce partner adding 6-figure project costs. Dedicated IP addresses, SAP domain setup, and certain AI features are add-on SKUs. All sources returned access-denied during extraction; Account Engagement pricing from training data, confidence low-medium."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Ask HN: Anyone replaced enterprise email marketing with something self-built?",
+        "url": "https://news.ycombinator.com/item?id=48123204",
+        "points": 2,
+        "comments": 0,
+        "age_days": 19,
+        "hn_url": "https://news.ycombinator.com/item?id=48123204"
+      }
+    ]
+  }
+}

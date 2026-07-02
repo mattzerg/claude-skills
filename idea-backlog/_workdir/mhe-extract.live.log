@@ -1,0 +1,23 @@
+found 37 markdown files; 12 pending; 801 already done
+[  1/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/Work/NTT DATA.md  ideas=0  cum=0  in=0  out=0  t=15s
+[  2/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/Work/Old Work/Brydg.md  ideas=0  cum=0  in=0  out=0  t=19s
+[  3/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/Work/Old Work/GrowCFO.md  ideas=0  cum=0  in=0  out=0  t=21s
+[  4/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/Work/Old Work/Vinapa.md  ideas=0  cum=0  in=0  out=0  t=23s
+[  5/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/Work/Random Work/Proposal Drafting.md  ideas=0  cum=0  in=0  out=0  t=26s
+[  6/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/Work/TechTree.md  ideas=0  cum=0  in=0  out=0  t=28s
+[  7/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/Work/Vang/Invesments.md  ideas=0  cum=0  in=0  out=0  t=30s
+[  8/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/Work/Vang/Vang Fund.md  ideas=0  cum=0  in=0  out=0  t=33s
+[  9/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/Work/Vang/Vang Projects.md  ideas=0  cum=0  in=0  out=0  t=35s
+[ 10/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/Work/Vang/Vang Website.md  ideas=0  cum=0  in=0  out=0  t=37s
+[ 11/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/p backup 30 sep 2022.md  ideas=0  cum=0  in=0  out=0  t=42s
+[ 12/12] /Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/MHE/p.md  ideas=0  cum=0  in=0  out=0  t=44s
+
+## 2026-05-10T01:45:15 — extract
+- model: claude-sonnet-4-5
+- files processed: 12
+- raw ideas extracted: 0
+- input tokens: 0  output tokens: 0
+- est cost: $0.00
+
+raw extracts: /Users/mattheweisner/.claude/skills/idea-backlog/_workdir/raw_extracts.jsonl
+next: dedupe.py

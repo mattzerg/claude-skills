@@ -14,6 +14,7 @@
     {"png": "<overlay png — 841 / concord glyphs / clock plate>", "w": 240, "gravity": "center|tl|tr|bl|br", "geom": "+0+0", "start": 0, "end": 999, "blend": "overlay"}
   ],
   "clock": {"surface": "folk|official|vo|none", "sign": null},
+  "serial": {"_comment": "Serialization hooks (required reels 5+, per season-1-serial.md §4). Metadata — ignored by reel_build.py; enforced by review.", "episode": "<N> of 13", "open_loop": "<the unanswered question the viewer carries away>", "tease_signal": "<visual/verbal cue planted in the last ~10s>", "cold_open_callback": "<how THIS reel's first ~10s answers the PREVIOUS reel's open loop>", "part_card": "<overlay png 'PART N of 13' — composited in post, NEVER generated>"},
   "frames_gen": {
     "dir": "<dir>",
     "negative": "numbers, digits, text, letters, words, signage lettering, writing, fantasy, painting, illustration, concept art, gold filigree, medieval, cartoon, anime, deformed hands, low detail",

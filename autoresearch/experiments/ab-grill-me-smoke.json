@@ -1,0 +1,71 @@
+{
+  "skill": "grill-me",
+  "runner": "echo",
+  "tol": 0.02,
+  "baseline": {
+    "skill": "grill-me",
+    "runner": "echo",
+    "n": 3,
+    "pass_rate": 0.3333,
+    "mean_wall_s": 0.0,
+    "mean_tokens": 19.3,
+    "rows": [
+      {
+        "id": "enumerates-branches",
+        "passed": false,
+        "reason": "missing: ['branch']",
+        "wall_s": 0.0,
+        "est_tokens": 19
+      },
+      {
+        "id": "refuses-open-branch",
+        "passed": false,
+        "reason": "missing: ['open']",
+        "wall_s": 0.0,
+        "est_tokens": 20
+      },
+      {
+        "id": "harness-sanity",
+        "passed": true,
+        "reason": "ok",
+        "wall_s": 0.0,
+        "est_tokens": 19
+      }
+    ]
+  },
+  "candidate": {
+    "skill": "grill-me",
+    "runner": "echo",
+    "n": 3,
+    "pass_rate": 0.3333,
+    "mean_wall_s": 0.0,
+    "mean_tokens": 19.3,
+    "rows": [
+      {
+        "id": "enumerates-branches",
+        "passed": false,
+        "reason": "missing: ['branch']",
+        "wall_s": 0.0,
+        "est_tokens": 19
+      },
+      {
+        "id": "refuses-open-branch",
+        "passed": false,
+        "reason": "missing: ['open']",
+        "wall_s": 0.0,
+        "est_tokens": 20
+      },
+      {
+        "id": "harness-sanity",
+        "passed": true,
+        "reason": "ok",
+        "wall_s": 0.0,
+        "est_tokens": 19
+      }
+    ]
+  },
+  "verdict": "REVERT",
+  "applied": false,
+  "variant": "/tmp/grill-me.candidate.md",
+  "stamp": "smoke"
+}

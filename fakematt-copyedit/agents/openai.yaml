@@ -1,0 +1,7 @@
+interface:
+  display_name: "Fake Matt Copyedit"
+  short_description: "Review prose drafts in Matt's style"
+  default_prompt: "Use $fakematt-copyedit to review and annotate a draft in Matt's style."
+
+policy:
+  allow_implicit_invocation: true

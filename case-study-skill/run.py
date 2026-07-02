@@ -71,11 +71,11 @@ STATE_DIR = SKILL_ROOT / "state"
 BRIEFS_DIR = STATE_DIR / "briefs"
 
 VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
+    "/Users/mattheweisner/Obsidian/Zerg/MattZerg"
 )
 GENRE_GUIDE = VAULT_ROOT / "_style" / "case_study_style.md"
 WRITING_STYLE = VAULT_ROOT / "_style" / "writing_style.md"
-CASESTUDIES_ROOT = VAULT_ROOT / "CaseStudies"
+CASESTUDIES_ROOT = VAULT_ROOT / "Clients"  # client-first home since 2026-06-10; drafts go to Clients/<client-slug>/case-study/
 DEFAULT_REVIEW_OUT = Path("/tmp/case-study")
 PDF_SCRIPT = Path("/tmp/md_to_pdf.py")
 
@@ -244,8 +244,18 @@ def derive_paths_from_brief(brief_path: Path) -> tuple[str, str]:
     return client_slug, project_slug
 
 
+def _client_dir(client_slug: str) -> Path:
+    """Match an existing Clients/<Name>/ folder case-insensitively (folders use display
+    names like CesiumAstro; slugs are lowercase); fall back to the slug itself."""
+    if CASESTUDIES_ROOT.exists():
+        for d in CASESTUDIES_ROOT.iterdir():
+            if d.is_dir() and d.name.lower().replace("-", "") == client_slug.lower().replace("-", ""):
+                return d
+    return CASESTUDIES_ROOT / client_slug
+
+
 def write_scaffold(client_slug: str, project_slug: str, draft_md: str, out_dir_override: Path | None) -> tuple[Path, Path]:
-    out_dir = out_dir_override if out_dir_override else CASESTUDIES_ROOT / client_slug
+    out_dir = out_dir_override if out_dir_override else _client_dir(client_slug) / "case-study"
     out_dir.mkdir(parents=True, exist_ok=True)
     draft_path = out_dir / f"{project_slug}.md"
     draft_path.write_text(draft_md)

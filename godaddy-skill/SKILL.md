@@ -4,6 +4,7 @@ description: Manage GoDaddy domains and DNS records. Use when the user asks to s
 allowed-tools: Bash, Read
 ---
 
+
 # GoDaddy Skill - Domain & DNS Management
 
 Manage domains and DNS records via the GoDaddy API. Set A records, CNAMEs, check propagation, bulk-configure DNS.

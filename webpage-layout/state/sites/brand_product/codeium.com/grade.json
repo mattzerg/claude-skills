@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 5,
+    "distinctiveness": 3,
+    "color": 6,
+    "density": 3,
+    "voice": 2
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif with no character \u2014 could be any SaaS product. The type system lacks personality and typographic discipline, defaulting to safe, corporate choices.",
+    "hierarchy": "Large headline dominates, but the composition is centered and safe. CTAs are present but the overall visual hierarchy feels formulaic rather than intentional.",
+    "distinctiveness": "Completely interchangeable \u2014 'Where developers are doing their best work' could be for GitHub, VSCode, Linear, or a dozen other dev tools. Zero specificity to Codeium/Windsurf.",
+    "color": "Navy background with mint green accents shows restraint. The accent color is well-controlled (~5% usage on CTAs and badge). Disciplined two-color approach works.",
+    "density": "Vast empty navy expanse with centered content floating in whitespace. This isn't confident density \u2014 it's generic 'hero section' padding. Wasteful and uninspired.",
+    "voice": "Pure stencil IA \u2014 'NEW badge / aspirational headline / Download CTA / feature bullet'. No story structure, no argument, just the standard SaaS template applied without thought."
+  },
+  "winning_patterns": [
+    "Restrained color palette with disciplined accent usage",
+    "Clean nav structure with clear Download CTA",
+    "Dark background creates tech-forward aesthetic"
+  ],
+  "anti_patterns": [
+    "Interchangeable headline with zero product specificity",
+    "Massive wasteful whitespace masquerading as minimalism",
+    "'NEW' badge + generic hero = 2024 SaaS stencil",
+    "Typography system has no personality or character",
+    "IA structure is paint-by-numbers product page",
+    "Could swap logo/copy for any dev tool and it would work identically"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://codeium.com",
+  "_persona": "brand_product",
+  "_note": "AI dev tools peer",
+  "_graded_at": "2026-05-08T00:55:13.136161Z"
+}

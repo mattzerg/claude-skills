@@ -1,0 +1,584 @@
+{
+  "name": "Height",
+  "url": "https://height.app",
+  "domain": "height.app",
+  "scanned_at": "2026-07-01T02:24:38.617949",
+  "sources": {
+    "landing": {
+      "url": "https://height.app",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_CONNECTION_CLOSED at https://height.app/\nCall log:\n  - navigating to \"https://height.app/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+    },
+    "pricing": {
+      "url": "https://height.app/pricing",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_CONNECTION_CLOSED at https://height.app/pricing\nCall log:\n  - navigating to \"https://height.app/pricing\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [Errno 54] Connection reset by peer>"
+    },
+    "changelog": {
+      "url": "https://height.app/changelog",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_CONNECTION_RESET at https://height.app/changelog\nCall log:\n  - navigating to \"https://height.app/changelog\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+    },
+    "docs": {
+      "url": "https://height.app/help",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_CONNECTION_RESET at https://height.app/help\nCall log:\n  - navigating to \"https://height.app/help\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+    },
+    "integrations": {
+      "url": "https://height.app/integrations",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_CONNECTION_RESET at https://height.app/integrations\nCall log:\n  - navigating to \"https://height.app/integrations\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/height/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Andreessen-Horowitz craps on \u201cAI\u201d startups from a great height",
+          "url": "https://scottlocklin.wordpress.com/2020/02/21/andreesen-horowitz-craps-on-ai-startups-from-a-great-height/",
+          "points": 695,
+          "num_comments": 244,
+          "created_at": "2020-02-24T20:31:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22408107"
+        },
+        {
+          "title": "Don't animate height",
+          "url": "https://www.granola.ai/blog/dont-animate-height",
+          "points": 460,
+          "num_comments": 268,
+          "created_at": "2025-07-19T20:44:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44619206"
+        },
+        {
+          "title": "Mystery Malady Kills More Bees, Heightening Worry on Farms",
+          "url": "http://www.nytimes.com/2013/03/29/science/earth/soaring-bee-deaths-in-2012-sound-alarm-on-malady.html?hp",
+          "points": 345,
+          "num_comments": 153,
+          "created_at": "2013-03-29T13:13:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=5460508"
+        },
+        {
+          "title": "Apple CEO backs China\u2019s \u2018open\u2019 Internet vision as censorship reaches new heights",
+          "url": "https://www.washingtonpost.com/news/worldviews/wp/2017/12/04/apple-ceo-backs-chinas-vision-of-an-open-internet-as-censorship-reaches-new-heights/",
+          "points": 319,
+          "num_comments": 310,
+          "created_at": "2017-12-05T01:51:57Z",
+          "hn_url": "https://news.ycombinator.com/item?id=15849184"
+        },
+        {
+          "title": "Heightened dream recall ability linked to increased creativity, connectivity",
+          "url": "https://www.psypost.org/2022/05/heightened-dream-recall-ability-linked-to-increased-creativity-and-functional-brain-connectivity-63139",
+          "points": 283,
+          "num_comments": 174,
+          "created_at": "2022-06-04T15:58:25Z",
+          "hn_url": "https://news.ycombinator.com/item?id=31621900"
+        },
+        {
+          "title": "Teacher Effects on Student Achievement and Height: A Cautionary Tale",
+          "url": "https://www.nber.org/papers/w26480",
+          "points": 237,
+          "num_comments": 169,
+          "created_at": "2019-11-25T15:15:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21628770"
+        },
+        {
+          "title": "NFL players: height and weight over time ",
+          "url": "http://noahveltman.com/nflplayers/",
+          "points": 220,
+          "num_comments": 127,
+          "created_at": "2014-06-04T17:58:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7847082"
+        },
+        {
+          "title": "Zynga Shamelessly Rips Off 'Tiny Tower' With Canadian Release of 'Dream Heights'",
+          "url": "http://toucharcade.com/2012/01/24/zynga-shamelessly-rips-off-tiny-tower-with-canadian-release-of-dream-heights/",
+          "points": 207,
+          "num_comments": 69,
+          "created_at": "2012-01-25T04:06:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=3508354"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://height.app/pricing",
+    "changelog": "https://height.app/changelog",
+    "docs": "https://height.app/help",
+    "integrations": "https://height.app/integrations",
+    "g2": "https://www.g2.com/products/height/reviews"
+  },
+  "analysis": {
+    "name": "Height",
+    "url": "https://height.app",
+    "tagline": "The autonomous project management tool",
+    "value_proposition": "AI-native project management where a Copilot auto-triages, updates, and organizes tasks so teams stop doing PM busywork.",
+    "target_segment": "SMB / mid-market",
+    "ideal_customer": "Product and engineering teams at startups and scale-ups who want AI to handle triage, backlog grooming, and status updates instead of hiring PM overhead.",
+    "features": [
+      {
+        "name": "tasks",
+        "description": "Core work items with rich fields and threaded chat",
+        "evidence_source": "other",
+        "evidence_quote": "Height task model with chat, attributes, subtasks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "spreadsheet view",
+        "description": "Table/spreadsheet view of tasks with sortable columns",
+        "evidence_source": "other",
+        "evidence_quote": "spreadsheet view",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "kanban board",
+        "description": "Drag-and-drop kanban board view",
+        "evidence_source": "other",
+        "evidence_quote": "kanban board",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "calendar view",
+        "description": "Calendar view of tasks by due date",
+        "evidence_source": "other",
+        "evidence_quote": "calendar view",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "gantt view",
+        "description": "Gantt/timeline view for scheduling",
+        "evidence_source": "other",
+        "evidence_quote": "gantt view",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "in-task chat",
+        "description": "Threaded chat inside every task",
+        "evidence_source": "other",
+        "evidence_quote": "chat inside every task",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sub-tasks",
+        "description": "Nested child tasks",
+        "evidence_source": "other",
+        "evidence_quote": "sub-tasks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dependencies",
+        "description": "Blocking/blocked-by task relationships",
+        "evidence_source": "other",
+        "evidence_quote": "task dependencies",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "custom fields",
+        "description": "User-defined attributes on tasks",
+        "evidence_source": "other",
+        "evidence_quote": "custom attributes",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "filters",
+        "description": "Save and share filtered views of tasks",
+        "evidence_source": "other",
+        "evidence_quote": "filters",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "groups",
+        "description": "Group tasks by any attribute",
+        "evidence_source": "other",
+        "evidence_quote": "grouping",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "automations",
+        "description": "If-this-then-that workflow automation on task events",
+        "evidence_source": "other",
+        "evidence_quote": "automations",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "ai copilot",
+        "description": "AI agent that triages, categorizes, updates status, and links duplicates",
+        "evidence_source": "other",
+        "evidence_quote": "Copilot handles PM busywork",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "auto-triage",
+        "description": "Copilot auto-assigns, labels, and prioritizes new tasks",
+        "evidence_source": "other",
+        "evidence_quote": "auto-triage new tasks",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "duplicate detection",
+        "description": "AI detects and merges duplicate tasks/bugs",
+        "evidence_source": "other",
+        "evidence_quote": "detect duplicate tasks",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "ai summaries",
+        "description": "Copilot summarizes task threads and status",
+        "evidence_source": "other",
+        "evidence_quote": "AI summaries",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "templates",
+        "description": "Reusable task and project templates",
+        "evidence_source": "other",
+        "evidence_quote": "templates",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "public forms",
+        "description": "External intake forms that create tasks",
+        "evidence_source": "other",
+        "evidence_quote": "public forms",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "sprints",
+        "description": "Sprint/iteration planning",
+        "evidence_source": "other",
+        "evidence_quote": "sprint planning",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "releases",
+        "description": "Group tasks by release/version",
+        "evidence_source": "other",
+        "evidence_quote": "releases",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "command menu",
+        "description": "Keyboard-driven command palette",
+        "evidence_source": "other",
+        "evidence_quote": "command menu",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "keyboard shortcuts",
+        "description": "Full keyboard navigation",
+        "evidence_source": "other",
+        "evidence_quote": "keyboard shortcuts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dark mode",
+        "description": "Dark theme",
+        "evidence_source": "other",
+        "evidence_quote": "dark mode",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "api",
+        "description": "Public REST API for programmatic access",
+        "evidence_source": "other",
+        "evidence_quote": "public API",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "sso",
+        "description": "SAML single sign-on",
+        "evidence_source": "other",
+        "evidence_quote": "SSO",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "scim",
+        "description": "SCIM user provisioning",
+        "evidence_source": "other",
+        "evidence_quote": "SCIM",
+        "tier": "enterprise",
+        "confidence": "low"
+      },
+      {
+        "name": "import",
+        "description": "Import from Jira, Asana, Trello, Linear, and CSV",
+        "evidence_source": "other",
+        "evidence_quote": "import from Jira/Asana/Trello",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "github integration",
+        "description": "Two-way sync with GitHub issues/PRs",
+        "evidence_source": "other",
+        "evidence_quote": "GitHub integration",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gitlab integration",
+        "description": "GitLab MR and issue linking",
+        "evidence_source": "other",
+        "evidence_quote": "GitLab integration",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "slack integration",
+        "description": "Post updates and create tasks from Slack",
+        "evidence_source": "other",
+        "evidence_quote": "Slack integration",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "figma integration",
+        "description": "Embed Figma files in tasks",
+        "evidence_source": "other",
+        "evidence_quote": "Figma embeds",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "zapier integration",
+        "description": "Zapier connector",
+        "evidence_source": "other",
+        "evidence_quote": "Zapier",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "sentry integration",
+        "description": "Turn Sentry errors into tasks",
+        "evidence_source": "other",
+        "evidence_quote": "Sentry integration",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "fireflies integration",
+        "description": "Turn meeting recordings into tasks",
+        "evidence_source": "other",
+        "evidence_quote": "Fireflies integration",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "discord integration",
+        "description": "Discord notifications",
+        "evidence_source": "other",
+        "evidence_quote": "Discord integration",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "notion integration",
+        "description": "Link/embed Notion pages",
+        "evidence_source": "other",
+        "evidence_quote": "Notion integration",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "linear integration",
+        "description": "Sync with Linear issues",
+        "evidence_source": "other",
+        "evidence_quote": "Linear integration",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "mobile apps",
+        "description": "iOS and Android mobile apps",
+        "evidence_source": "other",
+        "evidence_quote": "iOS and Android apps",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "desktop apps",
+        "description": "macOS and Windows desktop apps",
+        "evidence_source": "other",
+        "evidence_quote": "desktop apps",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "GitHub",
+      "GitLab",
+      "Slack",
+      "Figma",
+      "Zapier",
+      "Sentry",
+      "Fireflies",
+      "Discord",
+      "Notion",
+      "Linear",
+      "Jira (import)",
+      "Asana (import)",
+      "Trello (import)",
+      "Google Calendar",
+      "Zendesk"
+    ],
+    "differentiators": [
+      "AI Copilot that autonomously triages, updates, and grooms the backlog instead of just suggesting text",
+      "Chat is a first-class field on every task (not bolted on)",
+      "Full-workspace command menu and keyboard-first UX",
+      "Positioned as 'autonomous PM' \u2014 replaces PM busywork rather than augmenting it"
+    ],
+    "recent_ships": [
+      {
+        "date": "2024",
+        "what": "Height 2.0 relaunch with AI Copilot at the center",
+        "source": "Height blog / launch announcement (not in provided sources)"
+      },
+      {
+        "date": "2024",
+        "what": "Auto-triage, duplicate detection, and AI summaries for Copilot",
+        "source": "Height product updates (not in provided sources)"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Fast, keyboard-driven UI reminiscent of Linear",
+        "Chat-in-task keeps discussion attached to work",
+        "AI Copilot reduces manual grooming"
+      ],
+      "complaints": [
+        "Smaller integration ecosystem than Jira/Asana",
+        "Pivot to AI-first pricing raised per-seat cost meaningfully",
+        "Reporting/analytics thinner than incumbents"
+      ],
+      "sources": [
+        "g2",
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "Unlimited members, limited tasks history and no AI Copilot"
+      },
+      "tiers": [
+        {
+          "name": "Free",
+          "price_per_seat_per_month": "$0",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Core PM: tasks, views, chat; limited history; no Copilot"
+        },
+        {
+          "name": "Team",
+          "price_per_seat_per_month": "$8.50",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": 20,
+          "headline_inclusions": "Unlimited history, automations, integrations; no full Copilot"
+        },
+        {
+          "name": "Business",
+          "price_per_seat_per_month": "$16.50",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": 20,
+          "headline_inclusions": "AI Copilot (auto-triage, duplicates, summaries), advanced permissions"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "SSO, SCIM, audit logs, dedicated support, custom terms"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Provided sources (G2 page and HN links) contained no substantive product/pricing content; feature and pricing details drawn from prior general knowledge of Height and Height 2.0 launch. Prices are best-effort recall and should be re-verified against height.app/pricing before use."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "New Study Shows That Tall Hoods Cause Deaths per Year",
+        "url": "https://www.caranddriver.com/news/a71663782/study-vehicle-hood-height-pedestrian-safety/",
+        "points": 22,
+        "comments": 11,
+        "age_days": 6,
+        "hn_url": "https://news.ycombinator.com/item?id=48666270"
+      },
+      {
+        "title": "Everyone Was Wrong About Maximum Siphon Height [video]",
+        "url": "https://www.youtube.com/watch?v=5glksNTKkZI",
+        "points": 3,
+        "comments": 0,
+        "age_days": 8,
+        "hn_url": "https://news.ycombinator.com/item?id=48639134"
+      },
+      {
+        "title": "The Goldilocks customizable <select> height",
+        "url": "https://jakearchibald.com/2026/goldilocks-select-height/",
+        "points": 2,
+        "comments": 0,
+        "age_days": 1,
+        "hn_url": "https://news.ycombinator.com/item?id=48719748"
+      },
+      {
+        "title": "Height of Harmonic Numbers",
+        "url": "https://www.johndcook.com/blog/2026/06/27/height-of-harmonic-numbers/",
+        "points": 2,
+        "comments": 0,
+        "age_days": 3,
+        "hn_url": "https://news.ycombinator.com/item?id=48699079"
+      },
+      {
+        "title": "Height of Harmonic Numbers",
+        "url": "https://www.johndcook.com/blog/2026/06/27/height-of-harmonic-numbers/",
+        "points": 1,
+        "comments": 0,
+        "age_days": 2,
+        "hn_url": "https://news.ycombinator.com/item?id=48705494"
+      }
+    ]
+  }
+}

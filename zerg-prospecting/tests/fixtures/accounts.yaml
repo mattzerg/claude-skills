@@ -1,0 +1,32 @@
+- company: Alpha
+  slug: alpha
+  segment: ai-saas
+  status: research
+  durable_similarity: 5
+  public_signal: 5
+  urgency: 4
+  offer_fit: 4
+  recommended_offer: zcloud-harness
+  trigger_signals:
+    - one
+    - two
+  source_urls:
+    - https://example.com
+  network_paths:
+    - run network-reach
+
+- company: Beta
+  slug: beta
+  segment: platform
+  status: research
+  durable_similarity: 3
+  public_signal: 3
+  urgency: 3
+  offer_fit: 3
+  recommended_offer: zergboard-rollout
+  trigger_signals:
+    - beta signal
+  source_urls:
+    - https://example.org
+  network_paths:
+    - run network-reach

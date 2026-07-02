@@ -134,6 +134,22 @@ def render_one(md_path: Path) -> Path:
             print(f"  stripped {n} blank page(s)")
     except Exception as e:
         print(f"  (blank-page strip skipped: {e})")
+    # M9 render-gate: Chrome runs with stderr=DEVNULL and can exit 0 while
+    # emitting a broken/empty PDF. Verify the output exists + is a real PDF and
+    # fail LOUD rather than returning a path to nothing.
+    try:
+        sys_path_zerg = "/Users/mattheweisner/.config/zerg"
+        if sys_path_zerg not in sys.path:
+            sys.path.insert(0, sys_path_zerg)
+        from render_gate import verify_pdf
+        ok, reason = verify_pdf(pdf_path)
+        if not ok:
+            print(f"  RENDER-GATE FAIL: {reason}", file=sys.stderr)
+            raise SystemExit(3)
+    except SystemExit:
+        raise
+    except Exception as e:
+        print(f"  (render-gate skipped: {e})", file=sys.stderr)
     print(str(pdf_path))
     return pdf_path
 

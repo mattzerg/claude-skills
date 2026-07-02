@@ -48,9 +48,9 @@ No verbatim quotes in evidence. **Gap:** ask Alex Liu (primary Zerg owner) to re
 - `MattZerg/Epoch/Projects/Product Glossary.md` — Metamorph definition, ThreatConnect/Bitbucket/Axiom subprojects, Cybersec-Sim attribution.
 - `MattZerg/Conversations/Slack/standup/2026-04-07.md` through `2026-04-28.md` — week-by-week deliverable status from Alex Liu and Idan; weekly Andesite syncs; April 28 sync went well per Alex.
 - `MattZerg/Roadmap/2026-05-03-zergboard-roadmap.md` — references Andesite as a production Zergboard user (alongside CesiumAstro) but does not detail Zergboard usage there.
-- `MattZerg/Projects/Zstack/ZergStack.one-pager.md` — marketing claim that Andesite "runs their teams and their agents on it today" via Zergboard. Marketing copy; flag confidence.
-- `MattZerg/Projects/Zstack/Case-Studies/andesite.md` — prior capture-stub noting Andesite as "the most-referenced Zerg Solutions client (60+ production cards on Zergboard per memory)" and target publish Day 30.
-- `MattZerg/Projects/Zstack/Growth/weekly/2026-05-05.md`, `2026-05-06.md` — andesite case-study-in-flight tracker, status=capture, nda=unverified.
+- `MattZerg/Projects/Zerg-Production/Zstack/ZergStack.one-pager.md` — marketing claim that Andesite "runs their teams and their agents on it today" via Zergboard. Marketing copy; flag confidence.
+- `MattZerg/Projects/Zerg-Production/Case-Studies/andesite.md` — prior capture-stub noting Andesite as "the most-referenced Zerg Solutions client (60+ production cards on Zergboard per memory)" and target publish Day 30.
+- `MattZerg/Projects/Zerg-Production/Growth/weekly/2026-05-05.md`, `2026-05-06.md` — andesite case-study-in-flight tracker, status=capture, nda=unverified.
 
 ## Gaps
 
@@ -80,4 +80,4 @@ No verbatim quotes in evidence. **Gap:** ask Alex Liu (primary Zerg owner) to re
 - The strongest borrowable corpus moves for this brief: **Stack-used sidebar (Stripe × Notion)** listing Metamorph harness / ZCloud / ZTC / Cybersec-Sim; **Equivalent-workload framing (OpenAI × Klarna)** once a baseline exists for connector authoring time; **Indexed-sources sidebar (Glean × Reddit)** as a variant listing the security tools Metamorph generates connectors for (ThreatConnect, Bitbucket, Axiom) — but only if NDA permits naming them publicly.
 - Do **not** name Zerg engineers (Alex Liu, André, Franklin) in the published case study body or about-customer sidebar per the project-owner discipline rule. They appear here in `team` for internal sourcing only.
 - Architecture diagram (Block 7) is mandatory for `kind: delivery` — but only if NDA clears the harness → Metamorph → connector report shape. If NDA blocks, swap for an abstracted "harness generation pipeline" diagram with no client-system names.
-- The case study cannot scaffold until at least one of: (a) a verbatim Andesite quote, (b) one outcome metric with a baseline, (c) NDA cleared in writing. The capture-stub at `MattZerg/Projects/Zstack/Case-Studies/andesite.md` flags the same: clearance gate is Day 12–18 of the publish plan.
+- The case study cannot scaffold until at least one of: (a) a verbatim Andesite quote, (b) one outcome metric with a baseline, (c) NDA cleared in writing. The capture-stub at `MattZerg/Projects/Zerg-Production/Case-Studies/andesite.md` flags the same: clearance gate is Day 12–18 of the publish plan.

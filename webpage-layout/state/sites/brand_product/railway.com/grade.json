@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 5,
+    "distinctiveness": 3,
+    "color": 6,
+    "density": 4,
+    "voice": 3
+  },
+  "reasoning": {
+    "typography": "Inter Tight + JetBrains Mono is functional but utterly generic for dev tools. The serif headline is standard issue SaaS playbook, no typographic identity.",
+    "hierarchy": "Hero headline dominates adequately, but the product UI screenshot bleeds attention without clear focal point. CTAs compete rather than guide.",
+    "distinctiveness": "Swap 'Railway' for Vercel/Render/Fly.io and this works identically. Dark starfield bg, code aesthetic, logo parade \u2014 pure category stencil.",
+    "color": "Restrained dark palette with purple accent is disciplined. Accent used sparingly in CTAs. Atmospheric gradient bg adds depth without chaos.",
+    "density": "Generic uniform padding everywhere. The hero is spacious to the point of emptiness, product screenshot floats without content rhythm or confident density.",
+    "voice": "IA is invisible here \u2014 just hero CTA + product screenshot + logo parade. No story structure, no editorial POV, pure conversion funnel template."
+  },
+  "winning_patterns": [
+    "Purple accent used with genuine restraint \u2014 appears in CTAs and small UI elements only",
+    "Atmospheric background imagery (mountains/stars) creates mood without being decorative noise",
+    "Clean header navigation with logical grouping"
+  ],
+  "anti_patterns": [
+    "Completely interchangeable with every dev platform \u2014 zero brand personality",
+    "Logo parade of customers is the oldest B2B SaaS clich\u00e9",
+    "Product screenshot lacks focal point or explanatory context",
+    "Headline 'Ship software peacefully' is vague positioning poetry",
+    "Standard hero-CTA-product-logos template shows no editorial thinking"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://railway.com",
+  "_persona": "brand_product",
+  "_note": "Bold gradients, brand-forward",
+  "_graded_at": "2026-05-07T23:30:25.107829Z"
+}

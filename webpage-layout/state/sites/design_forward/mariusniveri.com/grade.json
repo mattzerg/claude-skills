@@ -1,0 +1,29 @@
+{
+  "scores": {
+    "typography": 1,
+    "hierarchy": 1,
+    "distinctiveness": 1,
+    "color": 1,
+    "density": 1,
+    "voice": 1
+  },
+  "reasoning": {
+    "typography": "This is a DNS error page, not an actual website. Default system/browser error typography with no design intention.",
+    "hierarchy": "Standard browser error page hierarchy with generic icon, heading, body text, and button. No custom hierarchy exists.",
+    "distinctiveness": "Generic Chrome/browser DNS error page. Could be for any broken website. Zero distinctive elements.",
+    "color": "Default browser dark theme with standard blue button. No intentional color system.",
+    "density": "Default browser error page spacing. No design decisions made here.",
+    "voice": "Standard technical error messaging ('DNS_PROBE_FINISHED_NXDOMAIN'). No custom voice or structure."
+  },
+  "winning_patterns": [],
+  "anti_patterns": [
+    "Site doesn't load\u2014DNS configuration error prevents any evaluation",
+    "Cannot assess any actual design work since no designed content is accessible",
+    "Domain appears to be misconfigured or expired"
+  ],
+  "one_word_personality": "nonexistent",
+  "_url": "https://mariusniveri.com",
+  "_persona": "design_forward",
+  "_note": "Personal-bold blend, full-bleed photo + motion",
+  "_graded_at": "2026-05-08T21:46:53.758684Z"
+}

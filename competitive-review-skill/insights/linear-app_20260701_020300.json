@@ -1,0 +1,1220 @@
+{
+  "name": "Linear",
+  "url": "https://linear.app",
+  "domain": "linear.app",
+  "scanned_at": "2026-07-01T02:00:18.943796",
+  "sources": {
+    "landing": {
+      "url": "https://linear.app",
+      "title": "Linear \u2013 The system for product development",
+      "text": "Skip to content \u2192\nProduct\nResources\nCustomers\nPricing\nNow\nContact\nDocs\nOpen app\nLog in\nSign up\nThe product\ndevelopment\nsystem for teams\nand agents\nThe product development\nsystem for teams and agents\nThe product development system for teams and agents\nPurpose-built for planning and building products. Designed for the AI era.\nNew\nCoding Sessions\n\u2192\nNew\nCoding Sessions\n\u2192\nLinear\nInbox\nMy issues\nReviews\nPulse\nWorkspace\nInitiatives\nProjects\nMore\nFavorites\nFaster app launch\nAgent tasks\nUI Refresh\nAgents Insights\nFaster app launch\n02\n/\n145\nFaster app launch\nRender UI before\nvehicle_state\nsync when minimum required state is present, instead of blocking on full refresh during iOS startup.\nActivity\nLinear\ncreated the issue via\nSlack\non behalf of\nkarri\n\u00b7\n2min ago\nTriage Intelligence\nadded the label\nPerformance\nand\niOS\n\u00b7\n2min ago\nkarri\n\u00b7 4 min ago\nRight now we show a spinner forever, which makes it look like the car disappeared...\njori\n\u00b7 just now\n@Linear\ncan you take a stab at this?\nLinear\nconnected by\njori\n\u00b7\n2 min ago\nChanged 2 files\nDraft PR awaiting your review\n\u00b7\n2 min ago\nLinear\nmoved from\nTodo\nto\nIn Progress\n\u00b7\njust now\nLinear\nOpus 4.8\njori\nconnected Linear to ENG-2703\nExamining the startup path...\nThinking...\nENG-2703\nIn Progress\nHigh\njori\nLinear\nLabels\nPerformance\niOS\nCycle\nCycle 144\nProject\nCore Performance\nA new species of product tool.\nPurpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products.\nBuilt for purpose\nLinear is shaped by the practices and principles of world-class product teams.\nPowered by AI agents\nDesigned for workflows shared by humans and agents. From drafting PRDs to pushing PRs.\nDesigned for speed\nReduces noise and restores momentum to help teams ship with high velocity and focus.\nFIG 0.2\nBuilt for purpose\nLinear is shaped by the practices and principles of world-class product teams.\nFIG 0.3\nPowered by AI agents\nDesigned for workflows shared by humans and agents. From drafting PRDs to pushing PRs.\nDesigned for workflows shared by humans and agents. From drafting PRDs to pushing PRs.\nFIG 0.4\nDesigned for speed\nReduces noise and restores momentum to help teams ship with high velocity and focus.\nMake product \noperations self-driving\nTurn conversations and customer feedback into actionable issues that are routed, labeled, and prioritized for the right team.\n1.0\nIntake\n\u2192\nBacklog\n8\nENG-2085\nReduce UI flicker during autonomy...\nENG-2094\nAdd buffering for autonomy event streams\nENG-2092\nReduce startup delay caused by vehicle sync\nENG-2200\nFix delayed route updates during rerouting\nTodo\n71\nENG-926\nRemove UI inconsistencies\nBug\nDesign\nENG-2088\nTypeError: Cannot read properties\nBug\nENG-924\nUpgrade to Claude Opus 4.8\nAI\nENG-1882\nOptimize load times\nPerformance\nIn Progress\n3\nENG-1487\nRemove contentData from GraphQL API\n61039\nMKT-1028\nLaunch page assets\nDesign\nENG-2187\nPrevent duplicate ride requests on poor...\nBug\n62048\nDone\n53\nENG-2074\nClean up deprecated APIs...\nAPI\n61002\nENG-1912\nReduce latency in autonomy st...\n61005\nENG-1951\nReduce ETA fluctuations durin...\n61202\nENG-1960\nImprove fallback messaging\nUI\n61149\nENG-1991\nImprove rider visibility into veh...\nThread in\n#feedback\ndidier\n2:00 AM\nHas anyone been looking into the iOS startup performance issues?\nlena\n2:00 AM\nAnyone else noticing the iOS app feels slow to open if you haven't used it in a bit?\ndidier\n2:00 AM\nYea, we're still blocking initial render on a full vehicle_state sync every time...\nandreas\n2:00 AM\nFeels like we could render sooner and load the rest in the background. Probably also worth tracking startup timing so we know how often this happens!\n@Linear\ncreate\nissues\nurgent issues\nand assign to me\n1\n.\n1\nLinear Agent\n+\n1\n.\n2\nTriage\n+\n1\n.\n3\nCustomer Requests\n+\n1\n.\n4\nLinear Asks\n+\nDefine the \nproduct direction\nPlan and navigate from idea to launch. Align your team with product initiatives, strategic roadmaps, and clear, up-to-date PRDs.\n2.0\nPlan\n\u2192\nFEB\nMAR\nAPR\nMAY\nJUN\nJUL\nAUG\nSEP\n2\n9\n16\n23\n2\n9\n16\n23\n30\n6\n13\n20\n27\n4\n11\n18\n25\n1\n8\n15\n22\n29\n6\n13\n20\n27\n3\n10\n17\n24\n31\n7\n14\n21\n28\nUI Refresh\nCore screens\nPolish\nSplit fares\nInternal\nPublic Beta\nAutonomy status clarity\nAlpha\nGA\nInitiatives\nCore Product\n99\nInfra stability\n28\nAutonomous systems\n16\nMobile apps\n8\nAPAC Expansion\n21\nJapan Launch\n12\nCustomer-driven priorities\n9\n2\n.\n1\nProjects\n+\n2\n.\n2\nDocuments\n+\n2\n.\n3\nInitiatives\n+\n2\n.\n4\nVisual planning\n+\nMove work forward \nacross teams and agents\nBuild and deploy AI agents that work alongside your team. Work on complex tasks together or delegate entire issues end-to-end.\n3.0\nBuild\n\u2192\nCodex\nOn it! I've received your request.\nKicked off a task in\nkinetic/kinetic-iOS environment.\nSearching for root AGENTS file\nkinetic/kinetic-iOS$ /bin/bash -lc rg --files -g 'AGENTS.md'\nAGENTS.md\nLocating initialization logic for\nvehicle_state\nThinking.\nAgents Command Menu\nCodex\nAgent\nSteven\nEma\nGitHub Copilot\nAgent\nCursor\nAgent\nMeg\n3\n.\n1\nIssues\n+\n3\n.\n2\nAgents\n+\n3\n.\n3\nLinear MCP\n+\n3\n.\n4\nGit automations\n+\n3\n.\n5\nCycles\n+\nReview PRs and agent output\nUnderstand code changes at a glance with structural diffs for human and agent output. Review, discuss, and merge \u2014 all within Linear.\n4.0\nDiffs\n\u2192\nkinetic-ios/src/screens/Home/HomeScreen.tsx\nkinetic-ios/src/HomeScreen.tsx\nLinear\nimport\nReact\nfrom\n'\nreact\n'\nimport\n{\nView\n,\nActivityIndicator\n}\nfrom\n'\nreact-native\n'\nimport\n{\nuseVehicleState\n}\nfrom\n'\n@hooks/useVehicleState\n'\nimport\n{\nDashboard\n}\nfrom\n'\n@components/Dashboard\n'\nexport\nconst\nHomeScreen\n=\n()\n=>\n{\nconst\n{\nvehicleState\n,\nisFullySynced\n}\n=\nuseVehicleState\n()\nif\n(\n!\nisFullySynced\n) {\nreturn\n<\nActivityIndicator\nsize\n=\n\"\nlarge\n\"\n/>\n}\nreturn\n(\n<\nView\n>\n<\nDashboard\nstate\n=\n{\nvehicleState\n} />\n</\nView\n>\n)\n}\nimport\nReact\nfrom\n'\nreact\n'\nimport\n{\nView\n,\nActivityIndicator\n}\nfrom\n'\nreact-native\n'\nimport\n{\nuseVehicleState\n,\nSyncStatus\n}\nfrom\n'\n@hooks/useVehicleState\n'\nimport\n{\nDashboard\n}\nfrom\n'\n@components/Dashboard\n'\nexport\nconst\nHomeScreen\n=\n()\n=>\n{\nconst\n{\nvehicleState\n,\nsyncStatus\n}\n=\nuseVehicleState\n()\nif\n(\nsyncStatus\n===\nSyncStatus\n.\nPENDING\n) {\nreturn\n<\nActivityIndicator\nsize\n=\n\"\nlarge\n\"\n/>\n}\nreturn\n(\n<\nView\n>\n<\nDashboard\nstate\n=\n{\nvehicleState\n}\nsyncStatus\n=\n{\nsyncStatus\n}\n/>\n</\nView\n>\n)\n}\nimport React from 'react'\nimport { View, ActivityIndicator } from 'react-native'\nimport { useVehicleState, SyncStatus } from '@hooks/useVehicleState'\nimport { Dashboard } from '@components/Dashboard'\n\nexport const HomeScreen = () => {\n  const { vehicleState, syncStatus } = useVehicleState()\n\n  if (syncStatus === SyncStatus.PENDING) {\n    return <ActivityIndicator size=\"large\" />\n  }\n\n  return (\n    <View>\n      <Dashboard state={vehicleState} syncStatus={syncStatus} />\n    </View>\n  )\n}\nexport\nconst\nCodeReview\n=\n()\n=>\n{\n<\nDiff.Provider\n>\n<\nSlow\n/>\n<\nFragmented\n/>\n<\nHumanOnly\n/>\n<\nFrictionless\n/>\n<\nIntegrated\n/>\n<\nAgentReady\n/>\n</\nDiff.Provider\n>\n};\nUnderstand \nprogress at scale\nTake the guesswork out of product development with project updates, analytics, and dashboards that surface what needs your attention.\n5.0\nMonitor\n\u2192\nIssue count by created date\n18\n16\n14\n12\n10\n8\n6\n4\n2\n0\nFeb 2025\nMay 2025\nAug 2025\nNov 2025\nCycle time by agent\nCursor\nCodex\nNo Agent\nWeekly Pulse for\nJul 1\nListen\n1.0\u00d7\nProjects\nUI refresh\nAt risk\nBy romain \u00b7 1 day ago\niOS implementation is mostly complete, but Android updates are still work in progress\nRisk of timeline slip if remaining design decisions aren\u2019t finalized soon\nTokyo launch\nOn track\nBy julian \u00b7 3 hours ago\nLocalization efforts have been completed\nEverything else on track for launch in early September\n5\n.\n1\nPulse\n+\n5\n.\n2\nInsights\n+\n5\n.\n3\nDashboards\n+\nChangelog\nAgent assisted project updates\nProject and initiative updates keep teams aligned, but writing them means pulling out recent changes from issues, documents, and discussions.\nJun 17, 2026\nCoding sessions in Linear\nEarlier this year, we launched Linear Agent, giving teams a new way to plan and coordinate their issues and projects. Since then, we've added Code Intelligence to extend that understanding to the codebase, and MCP support to bring all of your context together.\nJun 10, 2026\nTeam documents\nImportant team context doesn\u2019t always belong in a specific issue, project, or initiative. Teams also need a dedicated place for the notes, docs, and shared references that support their work over time. Now, every team has a page to keep its context organized and easy to access.\nJun 3, 2026\nLinear Diffs\nAgents generate large volumes of code, but individuals are still accountable for the changes that merge. This leads to a lot of review work, and the capability and performance of traditional review tools hasn't kept up.\nMay 27, 2026\nView all\n\u2192\nYou\u2019ll probably build a better product, just because of the craft that using Linear infuses on your brain.\nGabriel Peal\nOpenAI\nOur speed is intense and Linear helps us be action biased.\nNik Koblov\nRamp\nLinear is excellent, just excellent. It has the right opinions for fast moving teams.\nKaz Nejatian\nOpendoor\nYou\u2019ll probably build a better product, just because of the craft that using Linear infuses on your brain.\nGabriel Peal\nStaff Software Engineer, OpenAI\nOur speed is intense and Linear helps us be action biased.\nNik Koblov\nHead of Engineering, Ramp\nLinear powers over\n33,000\nproduct teams. From ambitious startups to major enterprises.\nCustomer stories\n\u2192\nBuilt for the future. Available today.\nGet started\nContact sales\nOpen app\nDownload\nProduct\nIntake\nPlan\nBuild\nDiffs\nMonitor\nPricing\nSecurity\nFeatures\nAsks\nAgents\nCoding Sessions\nCustomer Requests\nInsights\nMobile\nIntegrations\nChangelog\nCompany\nAbout\nCustomers\nCareers\nBlog\nMethod\nQuality\nBrand\nResources\nSwitch\nDownload\nDocumentation\nDocs\nDevelopers\nStatus\nEnterprise\nStartups\nConnect\nContact us\nCommunity\nX (Twitter)\nGitHub\nYouTube\nLegal\nPrivacy\nTerms\nDPA\nAUP\nPrivacy\nTerms\nDPA\nAUP\nLinear \u2013 The system for product development",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://linear.app/pricing",
+      "title": "Pricing \u2013 Linear",
+      "text": "Skip to content \u2192\nProduct\nResources\nCustomers\nPricing\nNow\nContact\nDocs\nOpen app\nLog in\nSign up\nPricing\nFree\n$0\nFree for everyone\nUnlimited members\n2 teams\n250 issues\nAgent platform\nLinear Agent\nGet started\nGet started\nBasic\n$10 per user/month\n$10 per user/month\nBilled yearly\nAll Free features +\n5 teams\nUnlimited issues\nUnlimited file uploads\nAdmin roles\nGet started\nGet started\nBusiness\n$16 per user/month\n$16 per user/month\nBilled yearly\nAll Basic features +\nUnlimited teams\nPrivate teams and guests\nTriage Intelligence\nLinear Agent automations (beta)\nCode Intelligence (beta)\nLinear Insights\nLinear Asks\nZendesk and Intercom integrations\nGet started\nGet started\nContact sales\nEnterprise\nCustom\nAnnual billing only\nAll Business features +\nInvoice/PO billing\nSAML and SCIM\nGranular admin controls\nEnterprise-grade security\nAdvanced org modeling\nMigration & onboarding support\nPriority support\nAccount management\nContact sales\nTrusted by more than\n33,000\ncompanies\nCustomer stories\n\u2192\nFeatures\nFree\nBasic\nBusiness\nEnterprise\nChange Plan\nFree\nBasic\nBusiness\nEnterprise\nMembers\nUnlimited\nUnlimited\nUnlimited\nUnlimited\nFile upload\n10MB\nUnlimited\nUnlimited\nUnlimited\nIssues\n250\nissues\nUnlimited\nUnlimited\nUnlimited\nTeams\n2\nteams\n5\nteams\nUnlimited\nUnlimited\nCore\nIssues, projects, cycles, initiatives\nCustomer requests\nAPI and webhook access\nImport and export\nTriage\nPulse\nIssue sync\nDiffs\nGuided reviews\nBeta\nIssue SLAs\nTriage responsibility\nTriage rules\nReleases\n15 pipelines\nUnlimited\nSub-initiatives\nAI and agent workflows\nAgent platform\nMCP access\nLinear Agent\nCoding sessions\n**\nBeta\nLinear Agent automations\nBeta\nCode Intelligence\nBeta\nTriage Intelligence\nIntegrations\nIntegrations\nMicrosoft Teams integration\nMultiple tenants\nSupport integrations\nSalesforce integration\nAdd-on\nTeam management\nSub-teams\n1 level\n5 levels\nPrivate teams\nGuest accounts\nAnalytics & Reporting\nProgress reports\nInsights\nDashboards\nData warehouse sync\nLinear Asks\nSlack intake\nEmail intake\nWeb forms\nMultiple Slack workspaces\nPrivate Slack channels\nPer-channel configurations\nSecurity\nSSO\nGoogle\nGoogle\nGoogle\nGoogle + SAML\nAdmin roles\nTeam owners\nAdvanced authentication\nSCIM provisioning\nIP restrictions\nDomain claiming\nAudit log\nThird-party app management\nHIPAA compliance\nSupport\nPriority support\nAccount manager\nCustom terms\nUptime SLA\nGet started\nGet started\nGet started\nGet started\nGet started\nGet started\nor\ncontact sales\nContact sales\n** Requires AI credits\nView docs\nBuilt for the future. Available today.\nGet started\nContact sales\nOpen app\nDownload\nProduct\nIntake\nPlan\nBuild\nDiffs\nMonitor\nPricing\nSecurity\nFeatures\nAsks\nAgents\nCoding Sessions\nCustomer Requests\nInsights\nMobile\nIntegrations\nChangelog\nCompany\nAbout\nCustomers\nCareers\nBlog\nMethod\nQuality\nBrand\nResources\nSwitch\nDownload\nDocumentation\nDocs\nDevelopers\nStatus\nEnterprise\nStartups\nConnect\nContact us\nCommunity\nX (Twitter)\nGitHub\nYouTube\nLegal\nPrivacy\nTerms\nDPA\nAUP\nPrivacy\nTerms\nDPA\nAUP\nPricing \u2013 Linear",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://linear.app/changelog",
+      "title": "Changelog \u2013 Linear",
+      "text": "Skip to content \u2192\nProduct\nResources\nCustomers\nPricing\nNow\nContact\nDocs\nOpen app\nLog in\nSign up\nNow\nAll\nChangelog\nCommunity\nNews\nCraft\nAI\nPractices\nPress\nSearch\u2026\nJune 18, 2026\nAgent assisted project updates\nElapsed\n00:00\nSeek to:\n00:00\n/\nDuration\n00:18\nRemaining\n\u2212\n00:18\n0.25\n\u00d7\n0.5\n\u00d7\n0.75\n\u00d7\n1\n\u00d7\n1.25\n\u00d7\n1.5\n\u00d7\n1.75\n\u00d7\n2\n\u00d7\nProject and initiative updates keep teams aligned, but writing them means pulling out recent changes from issues, documents, and discussions.\nInstead of finding that context manually, click\nWrite with Agent\nto let Linear do it for you. The agent reviews changes made since the last update, checks messages in the linked Slack channel, and writes an update draft for you to refine.\nAdd your own perspective by prompting for further changes or editing directly, then publish the update.\nDesktop navigation history and pinned tabs\n\u2060\nWe\u2019ve rebuilt our desktop tabs to make navigation feel fluid and predictable.\nEach desktop tab now has its own history stack, so moving backwards won\u2019t navigate you to another tab\nPinned tabs are now a reliable home for important work. They stay anchored in the tab bar, persist after quitting and reopening the app, and aren\u2019t replaced by new content you open.\nThese changes are live for current desktop users. Try Linear on desktop by\ndownloading the app\n.\nPrivate sub-teams\n\u2060\nPrivate sub-teams organize groups that work together under one umbrella, like independent business units, skunkworks efforts, or teams handling sensitive data like People Ops.\nWhen you create a sub-team under a private team, you can now choose between two access options:\nRestricted to parent team members\n\u2014 parent team members can see and choose to join the sub-team. This makes it easy to manage private team structures without coordinating invitations to each sub-team.\nPrivate to team members\n\u2014 the team is hidden, except to members directly invited to that sub-team\nPrivate sub-teams are available on Business and Enterprise plans. Learn more in our\ndocumentation\n.\nBuild agents with Vercel Eve\n\u2060\nVercel Eve is an open-source framework for building custom agents.\nBuild agents that can investigate incidents, monitor SLAs, or analyze customer feedback. You can deploy agents on Vercel with the guided setup, or host them wherever you run your Eve app.\nOnce connected to Linear, teammates can delegate issues to your agent or mention it in comments. Learn more about Eve in Vercel\u2019s\ndocumentation\n.\nRelease pipeline changelogs\n\u2060\nReleases\nlet you plan and track your software releases. Now, you can also keep your team aligned on what\u2019s shipping with changelogs for each release pipeline. These changelogs bring a pipeline\u2019s release notes together in one place, so progress is easy to review and share.\nChoose to auto-generate release notes in pipeline settings so your changelog is always up to date. Learn more in our\ndocumentation\n.\nOAuth application manifests\n\u2060\nOAuth application manifests let platforms provide a one-click OAuth app setup experience for users creating integrations.\nUse URL parameters to send users directly to a pre-filled\nCreate OAuth App\nform in Linear. An equivalent JSON manifest format lets you store configurations in files, validate them locally, or generate them programmatically.\nFind the details in our\ndeveloper docs\n.\nFixes\nCommand menu\nAdded the missing command menu action for recently deleted initiatives\nComments\nThreaded comment highlight corners now match with the reply composer below the thread\nCustomers\nFixed stale customer request counts on issues and projects after archiving or restoring customer requests\nDesktop\nMiddle-clicking a link to a document comment now properly navigates to the comment\nDiffs\nFixed the Unified/Split layout toggle not taking effect when a narrow column had forced the diff into unified view\nDiffs\nThe tooltip on group headers in the Reviews inbox now covers the entire clickable header\nDocuments\nCreating an issue from a selection in a team document now creates it in the correct team\nDuplicates\nWhen you remove a duplicate relation, it now restores the issue\u2019s last status\nDuplicates\nFixed duplicate merges running concurrently for the same issue during bulk deduplication\nFilters\nFixed the filter button not staying visually active while its menu is open\nFront\nFixed processing Front conversation links for conversations without a primary recipient\nGitHub\nFixed GitHub integrations being marked \u201cdisconnected\u201d after a transient GitHub authentication blip\nInbox\nWe no longer send a\nremoved from merge queue\nnotification when a pull request is successfully merged by GitHub\u2019s merge queue\nInbox\nFixed inbox notifications occasionally appearing as blank while the sender\u2019s name was loading\nInsights\nFixed release-filtered burn-up charts failing to render\nIssues\nFixed oversized issue status icons in delete confirmation toasts\nMilestones\nFixed a flicker in the milestone list when creating the first milestone from a project overview\nNotifications\nEach recipient\u2019s name display preference is now respected in project and initiative update notifications\nProject Updates\nFixed the project updates panel occasionally leaving an empty wrapper element on the page after navigating elsewhere\nPull requests\nRight-clicking pull request pills in issue lists now opens the correct menu\nPull requests\nFixed pull request details overflowing their container when hovering over a PR badge\nSCIM\nRenaming a linked SCIM role group (e.g.\nlinear-admins\n) in the identity provider no longer causes Linear to stop managing the associated role\nSettings\nPrevented the language selector from overlapping the scrollbar in Code & Reviews settings\nSettings\nFixed an odd transition when switching between the same settings page of different teams\nSlack\nSlack thread sync no longer fails to import a comment when one of its reactions came from a user without access to the issue\nSlack\nUnderscores in pull request titles are now preserved in Slack notifications\nSlack\nSlack comment notifications now link out to unsupported images instead of sending invalid Slack image blocks\nSlack\nSlack pasted message links now sync to Linear threads as a clickable link\nImprovements\nAgents\nAI chat thinking steps are now shown as blockquotes when copying conversations as markdown\nDiffs\nAdded a \u201cMissing issue\u201d PR filter that shows PRs without a linked issue\nDiffs\nRaised the size limit for generating Guides on larger pull request diffs\nDiffs\nHolding\nOpt\nand clicking the chevron in the file header now expands/collapses all files\nDiffs\nReview list approval copy now shows who approved a pull request\nDiffs\nWhole added/removed lines in diffs render more clearly with the same color as inline added/removed characters\nDiffs\nAdded the ability to use custom font for code in diffs\nDiffs\nAdded contextual help about the Reviews feature and related keyboard shortcuts\nDiffs\nPolished the pull request review layout \u2014 removed the divider between the conversation and code columns, and the Guide now has even horizontal padding with the scrollbar no longer overlapping content\nDiffs\nAdded copy link to file actions in pull request diffs\nGitHub/GitLab\nUnassigned triage issues remain in triage for Git request and commit automations, unless the final merged change closes the issue\nPagerDuty\nAdded support for PagerDuty shift-based schedules, so triage responsibility on-call now syncs from both shift-based (v3) and classic layer-based schedules (v2)\nTeam documents\nThe documents list now supports multi-select\nViews\nUpdated the sort direction icons so the arrow direction matches the active sort order\nMCP server\nMCP project status update tools are now available in workspaces without recent project update history\nFixed issue with fetches failing when descriptions contained Unicode line or paragraph separators\nAPI\ntemplateCreate\nand\ntemplateUpdate\nnow reject unsupported form field payloads\nJune 11, 2026\nCoding sessions in Linear\nElapsed\n00:00\nSeek to:\n00:00\n/\nDuration\n07:08\nRemaining\n\u2212\n07:08\n0.25\n\u00d7\n0.5\n\u00d7\n0.75\n\u00d7\n1\n\u00d7\n1.25\n\u00d7\n1.5\n\u00d7\n1.75\n\u00d7\n2\n\u00d7\nEarlier this year, we launched\nLinear Agent\n, giving teams a new way to plan and coordinate their issues and projects. Since then, we\u2019ve added\nCode Intelligence\nto extend that understanding to the codebase, and\nMCP support\nto bring all of your context together.\nToday we\u2019re closing the loop:\nLinear Agent can now write code using Claude Code and Codex.\nYou can triage, plan, review, and ship\u2014all in Linear.\nStart a coding session by assigning an issue to Linear, or ask it to make a change in a chat, comment, or Slack thread. Each session is grounded in your workspace context, pulling in issue details, history, customer requests, discussions, and related work.\nA coding agent your team will love\n\u2060\nCoding sessions run in the cloud, so you can prototype ideas and make changes without setting up a local development environment.\nWhen the change is ready, Linear returns a new diff for review. Share\npreview links\n, bring teammates into the discussion, and address feedback with further iterations in the same thread.\nAutomate the first pass\n\u2060\nWhen a new issue is reported, Linear Agent can investigate and attempt a fix before it reaches an engineer, reducing the load on your team.\nIt follows your team\u2019s guidance, gathers evidence from tools like Sentry or Datadog through MCP, and inspects the codebase to trace the root cause before producing a fix.\nLinear uses this workflow internally to resolve roughly 30% of incoming bug reports, mostly on the first pass.\nYou can set up your own agent automation in your team\u2019s Triage settings.\nAvailability and pricing\n\u2060\nCoding sessions are available on Basic, Business, and Enterprise plans. They require a GitHub connection with code access and use AI credits to run. Workspace admins can enable coding sessions in\nSettings\nand manage access, usage, and credits from the usage dashboard.\nLearn more in the docs\n.\nFixes\nAgents\nFilled in the thumbs down button after submitting AI feedback\nAgents\nFixed a missing space between the integrations link and surrounding text on the team agents settings page\nAgents\nVertically centered the label and preview text in the agent session card\u2019s status row\nAgents\nFixed left padding of the agent session card header to match other activity cards\nArchive\nFixed restoring a trashed issue or document failing in rare cases where the document\u2019s trashed flag was stored as\nfalse\nAsks\nAllowed Slack workflows and external users using the Asks Agent to access private teams\u2019 channel-configured templates\nCustomers\nFixed excessive row spacing and the limited customer list on the unfiltered customers page\nCustomers\nFixed the customer merge preview showing annual revenue under the monthly revenue label\nCustomers\nFixed a bug where linking a Slack channel to a customer failed for workspaces with multiple Slack connections but a single Asks connection\nDiffs\nOpening a\nlinear.review\nlink in a workspace without Diffs enabled now routes to enable-reviews instead of bouncing back to GitHub\nDiffs\nFixed showing GitHub legacy commit statuses (e.g. external CI like RWX or Jenkins) in PR checks\nDiffs\nFixed \u201cUpdate branch \u2192 with rebase\u201d creating a merge commit instead of rebasing\nDiffs\nFixed the file list sidebar not scrolling when the file tree was taller than the viewport\nDisplay options\nFixed the display options menu being slow to open on views grouped into a large number of items\nEditor\nFixed customer and customer request mentions not loading their details in the iOS editor\nEditor\nPasting\nlinear.app/review/<owner>/<repo>/pull/<id>\nnow properly embeds as a PR mention\nEditor\nFixed the tooltip for plain links covering link controls\nGitHub\nFixed Linear issues with comma-containing label names failing to sync to GitHub\nInitiatives\nFixed Initiative projects table columns occasionally overlapping or taking up too much width\nIntegrations\nFixed an importer freeze when mapping a large number of users\nIssues\nFixed a line break appearing between an issue\u2019s status icon and its identifier in undo/redo toasts\nLabels\nArchived labels no longer appear in the form-template label group picker\nLinks\nFixed a crash when a link embed with a missing or invalid URL failed to load a preview\nMobile\nRelease, Release Note, and Release Pipeline mentions now display properly on mobile\nNotifications\nFixed agent completion notifications not being delivered to the user who delegated the work\nProjects\nProject issue list deep links now redirect to the project overview instead of the filtered issue view\nProject Views\nFixed saved project views unexpectedly showing empty groups when grouping and filtering projects\nPulse\nFixed daily Pulse summaries being skipped when a single feed update had a malformed body\nSCIM\nFixed SCIM role group pushes not repairing a stale role when the user was  already tracked in the role\u2019s membership\nSettings\nAI settings dependent on the Linear Agent now show \u201cDisabled\u201d when the Linear Agent is turned off\nSlack\nSharing a project comment link in Slack now unfurls the comment instead of the project\nSLAs\nFixed missing SLAs for issues created from Slack asks\nUpdates\nFixed inconsistent icon spacing in the project/initiative update health control\nImprovements\nAsks\nImproved longer, cleaner fallback issue titles when creating Asks from Slack without an AI-generated title\nDiffs\nThe \u201cCopy pull request number\u201d action now copies just the number, without the leading\n#\nDiffs\nAdded a file action to open the full file in GitHub from the review diff\nDiffs\nGuided reviews now jump directly to a selected file instead of scrolling slowly through every file in between\nDocuments\nAdded \u201cNew document\u201d and \u201cNew document from template\u201d to the right click menu on the create issue button\nTeam Documents\nAdded cycle documents to the team documents tab, including support for grouping documents by cycle\nTriage\nOn Android, choosing a status that requires a priority to leave triage now opens the priority picker automatically instead of hiding those statuses\nKeyboard shortcuts\nEditor\nChanged the strikethrough shortc",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://linear.app/docs",
+      "title": "Linear Docs",
+      "text": "Skip to content \u2192\nDocs\nSign up\nOpen app\nGetting started\nAccount\nAI\nYour sidebar\nTeams\nIssues\nIssue properties\nProjects\nInitiatives\nCycles\nViews\nFind and filter\nLinear Asks\nIntegrations\nAnalytics\nAdministration\nDocs\nDevelopers\nLearn\nContact support\nHome\nSign up\nOpen app\nLinear Docs\nGet an overview of Linear's features, integrations, and how to use them.\nPopular\nStart Guide\nLearn how to use the app and follow best practices for software building\nImport Issues\nQuickly move issues from your existing issue tracker into Linear\nProjects\nShape your product ideas and plan what to build next\nGitHub Automations\nLink issues and automate pull request workflows\nLinear basics\nWorkflows\nCreate new statuses and design custom issue workflows\nSelect Issues\nLearn how to take actions on multiple issues at a time\nIssue Relations\nIndicate blocked, blocking, related, and duplicate issues\nDisplay Options\nOrder, sort, and group issues and projects and customize views\nTriage\nUse a special inbox for issues from integrations and other teams\nParent and Sub-Issues\nBreak down larger tasks into smaller pieces of work\nNotifications\nLearn how to manage notifications and stay up to date\nTeams\nCreate teams in your workspace to organize different types of work functions\nLinear Docs",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://linear.app/integrations",
+      "title": "Integrations \u2013\u00a0Linear",
+      "text": "Skip to content \u2192\nProduct\nResources\nCustomers\nPricing\nNow\nContact\nDocs\nOpen app\nLog in\nSign up\nIntegrations\nSearch\u2026\n\u2318K\nEssentials\nAgents\nAI clients\nEngineering\nLinear crafted\nBug Reporting\nAutomations\nCustomer Experience\nSecurity & Compliance\nAnalytics\nCollaboration\nMedia & Design\nEssentials\nKey integrations to enhance your Linear experience\nGitHub\nBy\nLinear\nConnect GitHub to automate PR workflows, review code in Linear, sync issues and understand your codebase with Linear Agent\nSlack\nBy\nLinear\nCreate issues from Slack messages and sync threads\nGitLab\nBy\nLinear\nAutomate your Merge Request workflow\nFigma\nBy\nLinear\nCreate and link issues directly from Figma\nIntercom\nBy\nLinear\nKeep a tight feedback loop with customers and streamline bug reports\nGoogle Sheets\nBy\nLinear\nBuild custom dashboards and analytics from issue and project data\nAgents\nDeploy AI teammates inside Linear\nCodex\nBy\nOpenAI\nDelegate issues to Codex directly from Linear\nCursor\nBy\nCursor\nTurn issues into pull requests with Cursor cloud agents\nGitHub Copilot\nBy\nGitHub\nTurn Linear issues into code with GitHub Copilot coding agent\nFactory\nBy\nFactory\nAssign issues from your backlog to Droids\nSentry Agent\nBy\nSentry\nResolve Linear Issues with Seer by Sentry\nDevin\nBy\nCognition\nAutomate work from issue to tested PR with Devin\nBrowse all \u2192\nAI clients\nLet external AI apps read and act on Linear data\nCursor MCP\nBy\nCursor\nConnect Cursor to the Linear MCP server\nChatGPT\nBy\nOpenAI\nConnect ChatGPT deep research to Linear\nClaude\nBy\nClaude\nConnect Claude to the Linear MCP server\nv0 by Vercel MCP connector\nBy\nVercel\nConnect v0 and Linear through MCP\nWindsurf\nBy\nWindsurf\nConnect Windsurf to the Linear MCP server\nReplit\nBy\nReplit\nBuild Apps & Automations\nBrowse all \u2192\nEngineering\nSeamlessly integrate your engineering workflows\nGitHub\nBy\nLinear\nConnect GitHub to automate PR workflows, review code in Linear, sync issues and understand your codebase with Linear Agent\nGitLab\nBy\nLinear\nAutomate your Merge Request workflow\nVS Code\nBy\nLinear\nEasily build VS Code extensions with Linear Connect\nSentry\nBy\nLinear\nCreate and link issues with Sentry and automate issue creation\nDatadog\nBy\nDatadog\nCreate Linear issues from Datadog Cases and Monitors\nRaycast\nBy\nRaycast\nCreate, search, and modify your issues from anywhere\nBrowse all \u2192\nLinear crafted\nIntegrations built by the Linear team\nGitHub\nBy\nLinear\nConnect GitHub to automate PR workflows, review code in Linear, sync issues and understand your codebase with Linear Agent\nSlack\nBy\nLinear\nCreate issues from Slack messages and sync threads\nGitLab\nBy\nLinear\nAutomate your Merge Request workflow\nNotion\nBy\nLinear\nPreviews of Linear issues, views and projects and query Notion AI\nFigma\nBy\nLinear\nCreate and link issues directly from Figma\nZendesk\nBy\nLinear\nKeep a tight feedback loop with customers and streamline bug reports\nBrowse all \u2192\nBug Reporting\nCreate issues and bug reports from anywhere\nLinear Asks for Slack\nBy\nLinear\nTurn requests from Slack or email into actionable issues and enable helpdesk workflows\nSentry\nBy\nLinear\nCreate and link issues with Sentry and automate issue creation\nincident.io\nBy\nincident.io\nManage incidents and triage responsibility directly in Linear\nBird Eats Bug\nBy\nBird Eats Bug\nSpeed up your bug reporting workflow with Bird Eats Bug\nHoneybadger\nBy\nHoneybadger\nManage Honeybadger errors via Linear issues\nJam\nBy\nJam.dev\nCreate Linear issues with all the details developers need to resolve bugs faster\nBrowse all \u2192\nAutomations\nBuild custom workflows and automations\nZapier\nBy\nLinear\nBuild custom automations to create or update Linear issues\nCreate issues via email\nBy\nLinear\nSet up email addresses for teams or templates to create issues via email\nJira\nBy\nLinear\nSmoothly transition from Jira to Linear\nRaycast\nBy\nRaycast\nCreate, search, and modify your issues from anywhere\nFivetran\nBy\nFivetran\nSync your Linear data with the Fivetran connector\nSupernormal\nBy\nSupernormal\nGo from discussion to Linear issues in seconds\nBrowse all \u2192\nCustomer Experience\nKeep a tight feedback loop with your customers\nZendesk\nBy\nLinear\nKeep a tight feedback loop with customers and streamline bug reports\nIntercom\nBy\nLinear\nKeep a tight feedback loop with customers and streamline bug reports\nFront\nBy\nLinear\nKeep a tight feedback loop with customers and streamline bug reports\nSalesforce\nBy\nLinear\nCreate Linear issues from Salesforce cases\nAttio\nBy\nAttio\nAdd customer requests and issues, plus sync customer details, directly from Attio\nGong\nBy\nLinear\nAutomatically create customer requests from Gong calls\nBrowse all \u2192\nSecurity & Compliance\nKeep your work secure and compliant\nFencer\nBy\nFencer\nCreate and link issues directly from Fencer\nSecureSlate\nBy\nSecureSlate\nCreate and link SecureSlate security tickets to Linear\nVanta\nBy\nVanta\nAutomate compliance. Simplify security. Demonstrate trust.\nKawach AI\nBy\nKreeti Technologies\nKeep your workspace compliant with org policies using Kawach.AI\nDrata\nBy\nDrata\nSimplify risk and managing frameworks like SOC 2, ISO 27001, PCI and more\nOrca Security\nBy\nOrca Security\nStreamline security fixes by sharing relevant context with the right people\nBrowse all \u2192\nAnalytics\nBuild reports and dashboards based on your Linear data\nAirbyte\nBy\nLinear\nConnect Linear to Airbyte and consolidate data in data warehouses, lakes, and databases\nGoogle Sheets\nBy\nLinear\nBuild custom dashboards and analytics from issue and project data\nFivetran\nBy\nFivetran\nSync your Linear data with the Fivetran connector\nRetool\nBy\nRetool\nCreate, update, and analyze Linear issues in custom internal tools\nSpan\nBy\nSpan\nSee how work translates into engineering impact\nJellyfish\nBy\nJellyfish\nDeveloper productivity insights and AI impact signals in one dashboard\nBrowse all \u2192\nCollaboration\nCollaborate across teams and tools\nSlack\nBy\nLinear\nCreate issues from Slack messages and sync threads\nNotion\nBy\nLinear\nPreviews of Linear issues, views and projects and query Notion AI\nLinear Asks for Slack\nBy\nLinear\nTurn requests from Slack or email into actionable issues and enable helpdesk workflows\nDiscord\nBy\nLinear\nCreate issues, share updates, and keep everyone in sync\nGlean\nBy\nGlean\nSearch Linear for instant insights\nAttio\nBy\nAttio\nAdd customer requests and issues, plus sync customer details, directly from Attio\nBrowse all \u2192\nMedia & Design\nPreview and embed design files, videos, and more\nFigma\nBy\nLinear\nCreate and link issues directly from Figma\nDescript\nBy\nLinear\nEmbed Descript share URLs in Linear issues and documents\nYouTube\nBy\nLinear\nEmbed YouTube videos in Linear issues and documents\nMiro\nBy\nMiro\nImport, create and manage issues directly in Miro\nLoom\nBy\nLinear\nEmbed Loom videos in Linear issues and documents\nTella\nBy\nTella\nEmbed Tella videos in Linear\nBrowse all \u2192\nBuild your own integration\nCreate your own integration with Linear\u2019s API and submit it to the directory.\nStart building\nBuild your own integration\nCreate your own integration with Linear\u2019s API and submit it to the directory.\nProduct\nIntake\nPlan\nBuild\nDiffs\nMonitor\nPricing\nSecurity\nFeatures\nAsks\nAgents\nCoding Sessions\nCustomer Requests\nInsights\nMobile\nIntegrations\nChangelog\nCompany\nAbout\nCustomers\nCareers\nBlog\nMethod\nQuality\nBrand\nResources\nSwitch\nDownload\nDocumentation\nDocs\nDevelopers\nStatus\nEnterprise\nStartups\nConnect\nContact us\nCommunity\nX (Twitter)\nGitHub\nYouTube\nLegal\nPrivacy\nTerms\nDPA\nAUP\nPrivacy\nTerms\nDPA\nAUP\nIntegrations \u2013\u00a0Linear",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/linear/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Immersive Linear Algebra (2016)",
+          "url": "http://immersivemath.com/ila/index.html",
+          "points": 1269,
+          "num_comments": 140,
+          "created_at": "2019-02-27T16:05:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=19264048"
+        },
+        {
+          "title": "Immersive Linear Algebra \u2013 textbook with fully interactive figures (2015)",
+          "url": "http://immersivemath.com/ila/index.html",
+          "points": 1015,
+          "num_comments": 74,
+          "created_at": "2017-03-19T02:52:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13904881"
+        },
+        {
+          "title": "Interactive Linear Algebra",
+          "url": "https://textbooks.math.gatech.edu/ila/",
+          "points": 981,
+          "num_comments": 49,
+          "created_at": "2019-11-25T14:39:18Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21628449"
+        },
+        {
+          "title": "Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares",
+          "url": "http://vmls-book.stanford.edu/",
+          "points": 938,
+          "num_comments": 123,
+          "created_at": "2018-12-14T03:48:32Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18678314"
+        },
+        {
+          "title": "Immersive Linear Algebra (2015)",
+          "url": "http://immersivemath.com/ila/index.html",
+          "points": 876,
+          "num_comments": 71,
+          "created_at": "2024-05-11T17:16:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=40329388"
+        },
+        {
+          "title": "A 2020 Vision of Linear Algebra",
+          "url": "https://ocw.mit.edu/resources/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/index.htm",
+          "points": 835,
+          "num_comments": 200,
+          "created_at": "2020-05-12T04:55:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=23150699"
+        },
+        {
+          "title": "An Intuitive Guide to Linear Algebra (2012)",
+          "url": "https://betterexplained.com/articles/linear-algebra-guide/",
+          "points": 709,
+          "num_comments": 102,
+          "created_at": "2020-02-25T19:19:50Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22416319"
+        },
+        {
+          "title": "Linear Algebra Done Right \u2013 4th Edition",
+          "url": "https://linear.axler.net",
+          "points": 631,
+          "num_comments": 294,
+          "created_at": "2023-10-29T16:31:26Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38060159"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://linear.app/pricing",
+    "changelog": "https://linear.app/changelog",
+    "docs": "https://linear.app/docs",
+    "integrations": "https://linear.app/integrations",
+    "g2": "https://www.g2.com/products/linear/reviews"
+  },
+  "analysis": {
+    "name": "Linear",
+    "url": "https://linear.app",
+    "tagline": "The product development system for teams and agents",
+    "value_proposition": "Purpose-built product development system for planning and building products, designed for the AI era with humans and agents working together.",
+    "target_segment": "mid-market / dev",
+    "ideal_customer": "Modern product and engineering teams adopting AI-native workflows to plan, build, and ship software",
+    "features": [
+      {
+        "name": "issues",
+        "description": "Core issue tracking unit for tasks, bugs, and features",
+        "evidence_source": "docs",
+        "evidence_quote": "Issues, projects, cycles, initiatives",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "projects",
+        "description": "Shape product ideas and plan what to build next",
+        "evidence_source": "docs",
+        "evidence_quote": "Projects \u2014 Shape your product ideas and plan what to build next",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cycles",
+        "description": "Time-boxed sprints for planning and executing work",
+        "evidence_source": "pricing",
+        "evidence_quote": "Issues, projects, cycles, initiatives",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "initiatives",
+        "description": "High-level strategic groupings that align teams around goals",
+        "evidence_source": "pricing",
+        "evidence_quote": "Issues, projects, cycles, initiatives",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sub-initiatives",
+        "description": "Nested initiatives for hierarchical strategic planning",
+        "evidence_source": "pricing",
+        "evidence_quote": "Sub-initiatives",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "sub-issues",
+        "description": "Break down larger tasks into smaller pieces of work",
+        "evidence_source": "docs",
+        "evidence_quote": "Parent and Sub-Issues \u2014 Break down larger tasks into smaller pieces of work",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "triage",
+        "description": "Special inbox for issues from integrations and other teams",
+        "evidence_source": "docs",
+        "evidence_quote": "Use a special inbox for issues from integrations and other teams",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "triage intelligence",
+        "description": "AI-powered auto-labeling, routing, and prioritization of intake",
+        "evidence_source": "pricing",
+        "evidence_quote": "Triage Intelligence",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "triage responsibility",
+        "description": "Assigned rotation for who handles incoming triage",
+        "evidence_source": "pricing",
+        "evidence_quote": "Triage responsibility",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "triage rules",
+        "description": "Automated rules for routing incoming issues",
+        "evidence_source": "pricing",
+        "evidence_quote": "Triage rules",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "customer requests",
+        "description": "Turn conversations and customer feedback into actionable issues",
+        "evidence_source": "pricing",
+        "evidence_quote": "Customer requests",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pulse",
+        "description": "Real-time visibility into team activity and status",
+        "evidence_source": "pricing",
+        "evidence_quote": "Pulse",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "issue sync",
+        "description": "Bidirectional sync of issues across teams and tools",
+        "evidence_source": "pricing",
+        "evidence_quote": "Issue sync",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "diffs",
+        "description": "Structural code diffs to review PR and agent output inside Linear",
+        "evidence_source": "landing",
+        "evidence_quote": "Understand code changes at a glance with structural diffs for human and agent output",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "guided reviews",
+        "description": "Assisted PR review workflow (beta)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Guided reviews Beta",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "issue slas",
+        "description": "Service-level agreement tracking on issues",
+        "evidence_source": "pricing",
+        "evidence_quote": "Issue SLAs",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "releases",
+        "description": "Plan and track software releases with pipelines",
+        "evidence_source": "changelog",
+        "evidence_quote": "Releases let you plan and track your software releases",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "release pipeline changelogs",
+        "description": "Auto-generated release notes per pipeline",
+        "evidence_source": "changelog",
+        "evidence_quote": "Choose to auto-generate release notes in pipeline settings",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "documents",
+        "description": "PRDs and team documents inside Linear",
+        "evidence_source": "landing",
+        "evidence_quote": "clear, up-to-date PRDs",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "visual planning",
+        "description": "Visual roadmap and timeline planning",
+        "evidence_source": "landing",
+        "evidence_quote": "2.4 Visual planning",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "roadmap",
+        "description": "Strategic roadmap view aligned to initiatives",
+        "evidence_source": "landing",
+        "evidence_quote": "strategic roadmaps",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "prds",
+        "description": "Product requirement docs authored and shared inside Linear",
+        "evidence_source": "landing",
+        "evidence_quote": "From drafting PRDs to pushing PRs",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "workflows",
+        "description": "Custom statuses and issue workflow design",
+        "evidence_source": "docs",
+        "evidence_quote": "Create new statuses and design custom issue workflows",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "issue relations",
+        "description": "Blocked, blocking, related, and duplicate relationships",
+        "evidence_source": "docs",
+        "evidence_quote": "Indicate blocked, blocking, related, and duplicate issues",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "duplicate merging",
+        "description": "Merge duplicate issues in bulk",
+        "evidence_source": "changelog",
+        "evidence_quote": "Fixed duplicate merges running concurrently for the same issue during bulk deduplication",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "display options",
+        "description": "Order, sort, group and customize views",
+        "evidence_source": "docs",
+        "evidence_quote": "Order, sort, and group issues and projects and customize views",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "views and filters",
+        "description": "Custom filtered views for issues and projects",
+        "evidence_source": "docs",
+        "evidence_quote": "Find and filter",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "select issues",
+        "description": "Bulk actions on multiple issues",
+        "evidence_source": "docs",
+        "evidence_quote": "Learn how to take actions on multiple issues at a time",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "notifications",
+        "description": "Manage notifications and stay up to date",
+        "evidence_source": "docs",
+        "evidence_quote": "Learn how to manage notifications and stay up to date",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "inbox",
+        "description": "Consolidated inbox for notifications and reviews",
+        "evidence_source": "landing",
+        "evidence_quote": "Inbox",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "import and export",
+        "description": "Import issues from other trackers and export data",
+        "evidence_source": "pricing",
+        "evidence_quote": "Import and export",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "api access",
+        "description": "Public API for building integrations",
+        "evidence_source": "pricing",
+        "evidence_quote": "API and webhook access",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Webhook events for external integrations",
+        "evidence_source": "pricing",
+        "evidence_quote": "API and webhook access",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "oauth application manifests",
+        "description": "One-click OAuth app setup via URL params or JSON manifest",
+        "evidence_source": "changelog",
+        "evidence_quote": "OAuth application manifests let platforms provide a one-click OAuth app setup experience",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "desktop app",
+        "description": "Native desktop app with pinned tabs and navigation history",
+        "evidence_source": "changelog",
+        "evidence_quote": "We've rebuilt our desktop tabs to make navigation feel fluid and predictable",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile apps",
+        "description": "Native iOS and Android apps",
+        "evidence_source": "integrations",
+        "evidence_quote": "Mobile",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "linear agent",
+        "description": "AI agent that can be assigned issues and create PRs",
+        "evidence_source": "pricing",
+        "evidence_quote": "Linear Agent",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "linear agent automations",
+        "description": "Automated agent-driven workflows (beta)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Linear Agent automations Beta",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "coding sessions",
+        "description": "AI-powered coding sessions inside Linear (requires AI credits)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Coding sessions Beta ** Requires AI credits",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "code intelligence",
+        "description": "AI understanding of codebase context (beta)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Code Intelligence Beta",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "agent platform",
+        "description": "Platform to build and deploy custom AI agents",
+        "evidence_source": "pricing",
+        "evidence_quote": "Agent platform",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mcp access",
+        "description": "Model Context Protocol server for external AI clients",
+        "evidence_source": "pricing",
+        "evidence_quote": "MCP access",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "linear mcp server",
+        "description": "Hosted MCP server letting Claude, ChatGPT, Cursor, Windsurf act on Linear data",
+        "evidence_source": "integrations",
+        "evidence_quote": "Connect Claude to the Linear MCP server",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "agent assisted project updates",
+        "description": "Agent drafts project updates from recent changes and Slack",
+        "evidence_source": "changelog",
+        "evidence_quote": "click Write with Agent to let Linear do it for you",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "linear asks",
+        "description": "Turn Slack/email/web-form requests into helpdesk-style issues",
+        "evidence_source": "pricing",
+        "evidence_quote": "Linear Asks",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "slack intake",
+        "description": "Create issues from Slack messages via Asks",
+        "evidence_source": "pricing",
+        "evidence_quote": "Slack intake",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "email intake",
+        "description": "Create issues from emails to a team address",
+        "evidence_source": "pricing",
+        "evidence_quote": "Email intake",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "web forms",
+        "description": "Public web forms that create issues",
+        "evidence_source": "pricing",
+        "evidence_quote": "Web forms",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "multiple slack workspaces",
+        "description": "Connect multiple Slack workspaces to one Linear workspace",
+        "evidence_source": "pricing",
+        "evidence_quote": "Multiple Slack workspaces",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "private slack channels",
+        "description": "Support for intake from private Slack channels",
+        "evidence_source": "pricing",
+        "evidence_quote": "Private Slack channels",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "per-channel configurations",
+        "description": "Different Asks configuration per Slack channel",
+        "evidence_source": "pricing",
+        "evidence_quote": "Per-channel configurations",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "progress reports",
+        "description": "Basic progress reporting for teams and projects",
+        "evidence_source": "pricing",
+        "evidence_quote": "Progress reports",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "insights",
+        "description": "Analytics on issue and project data",
+        "evidence_source": "pricing",
+        "evidence_quote": "Insights",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "dashboards",
+        "description": "Custom analytics dashboards",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dashboards",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "data warehouse sync",
+        "description": "Sync Linear data to external warehouses",
+        "evidence_source": "pricing",
+        "evidence_quote": "Data warehouse sync",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "sub-teams",
+        "description": "Nested team hierarchies (1 level Basic, 5 levels Business)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Sub-teams 1 level 5 levels",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "private teams",
+        "description": "Restrict team visibility to invited members",
+        "evidence_source": "pricing",
+        "evidence_quote": "Private teams",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "private sub-teams",
+        "description": "Sub-teams hidden except to directly invited members",
+        "evidence_source": "changelog",
+        "evidence_quote": "Private sub-teams are available on Business and Enterprise plans",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "guest accounts",
+        "description": "Invite external guests with restricted access",
+        "evidence_source": "pricing",
+        "evidence_quote": "Guest accounts",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "team owners",
+        "description": "Delegate team-level admin to non-workspace admins",
+        "evidence_source": "pricing",
+        "evidence_quote": "Team owners",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "admin roles",
+        "description": "Granular admin permissions",
+        "evidence_source": "pricing",
+        "evidence_quote": "Admin roles",
+        "tier": "basic",
+        "confidence": "high"
+      },
+      {
+        "name": "sso",
+        "description": "Google SSO on lower tiers, SAML on Enterprise",
+        "evidence_source": "pricing",
+        "evidence_quote": "SSO Google Google Google Google + SAML",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "saml",
+        "description": "SAML-based SSO for Enterprise",
+        "evidence_source": "pricing",
+        "evidence_quote": "Google + SAML",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "scim provisioning",
+        "description": "Automated user provisioning via SCIM",
+        "evidence_source": "pricing",
+        "evidence_quote": "SCIM provisioning",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "advanced authentication",
+        "description": "Enhanced auth options beyond basic SSO",
+        "evidence_source": "pricing",
+        "evidence_quote": "Advanced authentication",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ip restrictions",
+        "description": "Restrict workspace access by IP",
+        "evidence_source": "pricing",
+        "evidence_quote": "IP restrictions",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "domain claiming",
+        "description": "Claim a domain for auto-provisioned accounts",
+        "evidence_source": "pricing",
+        "evidence_quote": "Domain claiming",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "audit log",
+        "description": "Audit trail of workspace activity",
+        "evidence_source": "pricing",
+        "evidence_quote": "Audit log",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "third-party app management",
+        "description": "Admin controls over connected third-party apps",
+        "evidence_source": "pricing",
+        "evidence_quote": "Third-party app management",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "hipaa compliance",
+        "description": "HIPAA-compliant configuration",
+        "evidence_source": "pricing",
+        "evidence_quote": "HIPAA compliance",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "uptime sla",
+        "description": "Contractual uptime guarantees",
+        "evidence_source": "pricing",
+        "evidence_quote": "Uptime SLA",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "priority support",
+        "description": "Higher-priority customer support",
+        "evidence_source": "pricing",
+        "evidence_quote": "Priority support",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "account manager",
+        "description": "Dedicated account management",
+        "evidence_source": "pricing",
+        "evidence_quote": "Account manager",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom terms",
+        "description": "Custom contract terms",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom terms",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "advanced org modeling",
+        "description": "Complex org/team hierarchy modeling",
+        "evidence_source": "pricing",
+        "evidence_quote": "Advanced org modeling",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "granular admin controls",
+        "description": "Fine-grained admin permissioning",
+        "evidence_source": "pricing",
+        "evidence_quote": "Granular admin controls",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "migration & onboarding support",
+        "description": "Assisted migration from other tools",
+        "evidence_source": "pricing",
+        "evidence_quote": "Migration & onboarding support",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "invoice/po billing",
+        "description": "Invoice and PO-based payment",
+        "evidence_source": "pricing",
+        "evidence_quote": "Invoice/PO billing",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "github integration",
+        "description": "Automate PR workflows, review code, sync issues, understand codebase",
+        "evidence_source": "integrations",
+        "evidence_quote": "Connect GitHub to automate PR workflows, review code in Linear, sync issues",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gitlab integration",
+        "description": "Automate Merge Request workflow",
+        "evidence_source": "integrations",
+        "evidence_quote": "Automate your Merge Request workflow",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "slack integration",
+        "description": "Create issues from Slack messages and sync threads",
+        "evidence_source": "integrations",
+        "evidence_quote": "Create issues from Slack messages and sync threads",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "figma integration",
+        "description": "Create and link issues directly from Figma",
+        "evidence_source": "integrations",
+        "evidence_quote": "Create and link issues directly from Figma",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "notion integration",
+        "description": "Previews of Linear issues and query Notion AI",
+        "evidence_source": "integrations",
+        "evidence_quote": "Previews of Linear issues, views and projects and query Notion AI",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "intercom integration",
+        "description": "Feedback loop with customers and bug reports",
+        "evidence_source": "integrations",
+        "evidence_quote": "Keep a tight feedback loop with customers and streamline bug reports",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "zendesk integration",
+        "description": "Customer request sync with Zendesk",
+        "evidence_source": "pricing",
+        "evidence_quote": "Zendesk and Intercom integrations",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "front integration",
+        "description": "Customer feedback sync via Front",
+        "evidence_source": "integrations",
+        "evidence_quote": "Front \u2014 Keep a tight feedback loop with customers",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "salesforce integration",
+        "description": "Create Linear issues from Salesforce cases (add-on)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Salesforce integration Add-on",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft teams integration",
+        "description": "Chat integration for MS Teams users",
+        "evidence_source": "pricing",
+        "evidence_quote": "Microsoft Teams integration",
+        "tier": "business",
+        "confidence": "high"
+      },
+      {
+        "name": "jira migration",
+        "description": "Smooth transition from Jira",
+        "evidence_source": "integrations",
+        "evidence_quote": "Smoothly transition from Jira to Linear",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sentry integration",
+        "description": "Create and link issues from Sentry",
+        "evidence_source": "integrations",
+        "evidence_quote": "Create and link issues with Sentry and automate issue creation",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "datadog integration",
+        "description": "Create issues from Datadog Cases and Monitors",
+        "evidence_source": "integrations",
+        "evidence_quote": "Create Linear issues from Datadog Cases and Monitors",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "zapier integration",
+        "description": "Custom automations to create/update Linear issues",
+        "evidence_source": "integrations",
+        "evidence_quote": "Build custom automations to create or update Linear issues",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "raycast integration",
+        "description": "Create, search, modify issues from Raycast",
+        "evidence_source": "integrations",
+        "evidence_quote": "Create, search, and modify your issues from anywhere",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vs code extension",
+        "description": "Build VS Code extensions with Linear Connect",
+        "evidence_source": "integrations",
+        "evidence_quote": "Easily build VS Code extensions with Linear Connect",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "google sheets integration",
+        "description": "Custom dashboards from issue/project data",
+        "evidence_source": "integrations",
+        "evidence_quote": "Build custom dashboards and analytics from issue and project data",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "airbyte integration",
+        "description": "Sync Linear data to warehouses/lakes via Airbyte",
+        "evidence_source": "integrations",
+        "evidence_quote": "Connect Linear to Airbyte and consolidate data in data warehouses",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "fivetran integration",
+        "description": "Sync Linear data via Fivetran connector",
+        "evidence_source": "integrations",
+        "evidence_quote": "Sync your Linear data with the Fivetran connector",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "retool integration",
+        "description": "Create/update issues in Retool internal tools",
+        "evidence_source": "integrations",
+        "evidence_quote": "Create, update, and analyze Linear issues in custom internal tools",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vanta integration",
+        "description": "Automate compliance frameworks",
+        "evidence_source": "integrations",
+        "evidence_quote": "Automate compliance. Simplify security. Demonstrate trust.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "drata integration",
+        "description": "Risk and compliance framework management",
+        "evidence_source": "integrations",
+        "evidence_quote": "Simplify risk and managing frameworks like SOC 2, ISO 27001, PCI",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "attio integration",
+        "description": "Sync customer requests from Attio CRM",
+        "evidence_source": "integrations",
+        "evidence_quote": "Add customer requests and issues, plus sync customer details, directly from Attio",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gong integration",
+        "description": "Auto-create customer requests from Gong calls",
+        "evidence_source": "integrations",
+        "evidence_quote": "Automatically create customer requests from Gong calls",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "incident.io integration",
+        "description": "Manage incidents and triage in Linear",
+        "evidence_source": "integrations",
+        "evidence_quote": "Manage incidents and triage responsibility directly in Linear",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "jam integration",
+        "description": "Bug reports with dev-ready details",
+        "evidence_source": "integrations",
+        "evidence_quote": "Create Linear issues with all the details developers need to resolve bugs faster",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bird eats bug integration",
+        "description": "Speed up bug reporting",
+        "evidence_source": "integrations",
+        "evidence_quote": "Speed up your bug reporting workflow with Bird Eats Bug",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "codex agent integration",
+        "description": "Delegate issues to OpenAI Codex",
+        "evidence_source": "integrations",
+        "evidence_quote": "Delegate issues to Codex directly from Linear",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cursor agent integration",
+        "description": "Turn issues into PRs with Cursor cloud agents",
+        "evidence_source": "integrations",
+        "evidence_quote": "Turn issues into pull requests with Cursor cloud agents",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "github copilot agent integration",
+        "description": "Turn Linear issues into code with Copilot",
+        "evidence_source": "integrations",
+        "evidence_quote": "Turn Linear issues into code with GitHub Copilot coding agent",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "factory droid integration",
+        "description": "Assign backlog issues to Factory Droids",
+        "evidence_source": "integrations",
+        "evidence_quote": "Assign issues from your backlog to Droids",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "devin integration",
+        "description": "Automate issue to tested PR with Devin",
+        "evidence_source": "integrations",
+        "evidence_quote": "Automate work from issue to tested PR with Devin",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sentry seer agent",
+        "description": "Auto-resolve Linear issues with Seer by Sentry",
+        "evidence_source": "integrations",
+        "evidence_quote": "Resolve Linear Issues with Seer by Sentry",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vercel eve",
+        "description": "Open-source framework for building custom agents",
+        "evidence_source": "changelog",
+        "evidence_quote": "Vercel Eve is an open-source framework for building custom agents",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "create issues via email",
+        "description": "Team email addresses that auto-create issues",
+        "evidence_source": "integrations",
+        "evidence_quote": "Set up email addresses for teams or templates to create issues via email",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "GitHub",
+      "GitLab",
+      "Slack",
+      "Figma",
+      "Intercom",
+      "Zendesk",
+      "Front",
+      "Salesforce",
+      "Notion",
+      "Microsoft Teams",
+      "Jira (migration)",
+      "Sentry",
+      "Datadog",
+      "Zapier",
+      "Raycast",
+      "VS Code",
+      "Google Sheets",
+      "Airbyte",
+      "Fivetran",
+      "Retool",
+      "Vanta",
+      "Drata",
+      "Attio",
+      "Gong",
+      "incident.io",
+      "Jam.dev",
+      "Bird Eats Bug",
+      "Honeybadger",
+      "OpenAI Codex",
+      "Cursor",
+      "GitHub Copilot",
+      "Factory",
+      "Devin",
+      "Sentry Seer",
+      "ChatGPT",
+      "Claude",
+      "v0 by Vercel",
+      "Windsurf",
+      "Replit",
+      "Supernormal",
+      "Span",
+      "Jellyfish",
+      "Fencer",
+      "SecureSlate",
+      "Kawach AI",
+      "Orca Security",
+      "Cursor MCP"
+    ],
+    "differentiators": [
+      "Purpose-built for AI-era product development with humans + agents",
+      "Designed for speed \u2014 reduces noise, restores momentum",
+      "Native agent platform with MCP access",
+      "Structural diffs and PR review inside the issue tracker",
+      "Self-driving product operations via Triage Intelligence"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-06",
+        "what": "Agent assisted project updates \u2014 Write with Agent drafts updates from recent changes and Slack",
+        "source": "June 18, 2026 changelog: 'click Write with Agent to let Linear do it for you'"
+      },
+      {
+        "date": "2026-06",
+        "what": "Desktop navigation history and pinned tabs",
+        "source": "changelog: 'Each desktop tab now has its own history stack'"
+      },
+      {
+        "date": "2026-06",
+        "what": "Private sub-teams",
+        "source": "changelog: 'Private sub-teams organize groups that work together under one umbrella'"
+      },
+      {
+        "date": "2026-06",
+        "what": "Vercel Eve open-source agent framework",
+        "source": "changelog: 'Vercel Eve is an open-source framework for building custom agents'"
+      },
+      {
+        "date": "2026-06",
+        "what": "Release pipeline changelogs with auto-generated notes",
+        "source": "changelog: 'keep your team aligned on what's shipping with changelogs for each release pipeline'"
+      },
+      {
+        "date": "2026-06",
+        "what": "OAuth application manifests for one-click OAuth app setup",
+        "source": "changelog: 'OAuth application manifests let platforms provide a one-click OAuth app setup experience'"
+      },
+      {
+        "date": "2026",
+        "what": "Coding Sessions launched (new)",
+        "source": "landing page: 'New Coding Sessions'"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": [
+        "g2"
+      ]
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "Unlimited members, 2 teams, 250 issues, 10MB file upload"
+      },
+      "tiers": [
+        {
+          "name": "Free",
+          "price_per_seat_per_month": "$0",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Unlimited members, 2 teams, 250 issues, Agent platform, Linear Agent"
+        },
+        {
+          "name": "Basic",
+          "price_per_seat_per_month": "$10",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "All Free + 5 teams, unlimited issues, unlimited file uploads, admin roles"
+        },
+        {
+          "name": "Business",
+          "price_per_seat_per_month": "$16",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "All Basic + unlimited teams, private teams/guests, Triage Intelligence, Insights, Asks, Zendesk/Intercom"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "All Business + SAML/SCIM, granular admin, HIPAA, audit log, priority support, account management"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Basic and Business prices shown as billed yearly; Enterprise is annual billing only. Coding Sessions requires AI credits. Salesforce integration is a paid add-on."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Show HN: 143.dev \u2013 we open-sourced our internal coding-agent infrastructure",
+        "url": "https://news.ycombinator.com/item?id=48736251",
+        "points": 11,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48736251"
+      },
+      {
+        "title": "Show HN: NodePad \u2013 AI agent on a canvas instead of a linear chat",
+        "url": "https://node-pad.com/",
+        "points": 5,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48731991"
+      },
+      {
+        "title": "Show HN: Rinkta \u2013 pulls finished work from all task managers into one dashboard",
+        "url": "https://rinkta.com/",
+        "points": 3,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48732730"
+      },
+      {
+        "title": "Show HN: LiSkat: Free real-time Skat with Elo and bots",
+        "url": "https://liskat.com",
+        "points": 3,
+        "comments": 2,
+        "age_days": 1,
+        "hn_url": "https://news.ycombinator.com/item?id=48725442"
+      },
+      {
+        "title": "Show HN: Morning Report \u2013 daily briefing compiled from Sentry, Linear, Gmail,etc",
+        "url": "https://my-morning-report.vercel.app",
+        "points": 2,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48736812"
+      }
+    ]
+  }
+}

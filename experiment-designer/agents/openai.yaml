@@ -1,0 +1,7 @@
+interface:
+  display_name: "Experiment Designer"
+  short_description: "Turn ideas into disciplined test plans"
+  default_prompt: "Use $experiment-designer to design or tighten an experiment with hypothesis, metric, thresholds, and decision rules."
+
+policy:
+  allow_implicit_invocation: true

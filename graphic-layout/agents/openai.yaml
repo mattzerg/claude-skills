@@ -1,0 +1,7 @@
+interface:
+  display_name: "Graphic Layout"
+  short_description: "Review composition of rendered graphics"
+  default_prompt: "Use $graphic-layout to review the composition and balance of a rendered image asset."
+
+policy:
+  allow_implicit_invocation: true

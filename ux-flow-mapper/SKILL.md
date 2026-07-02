@@ -1,8 +1,8 @@
 ---
 name: ux-flow-mapper
-description: Maps multi-screen UX flows to a journey doc — Mermaid state diagram, screen inventory table, drop-off severity annotations. Three modes: `map` (spec → markdown), `audit` (manifest of observed screens → markdown), `compare` (diff intended vs observed). Writes to `MattZerg/Projects/Zstack/Growth/journeys/<flow>.md` plus a JSON sidecar. USE PROACTIVELY when mapping a flow, before a feature ships, or after `funnel-analyzer` surfaces friction. `ui-designer` covers a single screen; this skill covers the multi-screen flow between them. `funnel-analyzer` measures drop-offs; this skill names the screens being measured.
-allowed-tools: Bash, Read, Write
+description: Map multi-screen UX flows into journey docs, state diagrams, screen inventories, and drop-off annotations. Different from ui-designer (single-screen structure), funnel-analyzer (measures actual drop-off from Zergalytics data), and cro-auditor (heuristic conversion-friction findings) — ux-flow-mapper names the screens being measured and the transitions between them. USE PROACTIVELY when Matt asks for a flow diagram, journey map, onboarding map, multi-step funnel layout, or wants to inventory the screens involved in a feature. Pairs with ui-designer (per-screen), funnel-analyzer (data overlay), cro-auditor (friction overlay).
 ---
+
 
 # UX Flow Mapper Skill
 
@@ -10,7 +10,7 @@ allowed-tools: Bash, Read, Write
 
 ## Why this exists
 
-`MattZerg/Projects/Zstack/Growth/journeys/` has hand-authored journey docs (zergboard-icp.md, solutions-buyer.md). Those are strong on persona narrative, inconsistent on screen-level detail. When Matt needs "what are all the screens in the signup flow and what state can they be in," there's no structured artifact.
+`MattZerg/Projects/Zerg-Production/Growth/journeys/` has hand-authored journey docs (zergboard-icp.md, solutions-buyer.md). Those are strong on persona narrative, inconsistent on screen-level detail. When Matt needs "what are all the screens in the signup flow and what state can they be in," there's no structured artifact.
 
 This skill produces that structured artifact: Mermaid state diagram, screen inventory table, drop-off-candidate annotations. Pairs with `funnel-analyzer`. This skill names the steps. funnel-analyzer measures them.
 
@@ -19,7 +19,7 @@ This skill produces that structured artifact: Mermaid state diagram, screen inve
 ### `map` — read spec, emit structured journey
 
 ```bash
-python3 ~/.claude/skills/ux-flow-mapper/run.py map \
+/usr/bin/python3 ~/.claude/skills/ux-flow-mapper/run.py map \
   --spec ~/Desktop/signup-flow-spec.yaml \
   --output zergboard-signup
 ```
@@ -61,7 +61,7 @@ screens:
 ---
 ```
 
-Outputs to `MattZerg/Projects/Zstack/Growth/journeys/<output>.md`:
+Outputs to `MattZerg/Projects/Zerg-Production/Growth/journeys/<output>.md`:
 - YAML frontmatter (flow metadata)
 - Mermaid `stateDiagram-v2` block
 - Screen inventory table (id / name / purpose / CTA / ship-status / drop-off severity)
@@ -71,7 +71,7 @@ Outputs to `MattZerg/Projects/Zstack/Growth/journeys/<output>.md`:
 ### `audit` — drive playwright, capture observed flow
 
 ```bash
-python3 ~/.claude/skills/ux-flow-mapper/run.py audit \
+/usr/bin/python3 ~/.claude/skills/ux-flow-mapper/run.py audit \
   --url http://localhost:3001/signup \
   --output zergboard-signup-observed \
   --screens-dir ~/Desktop/signup-screens/
@@ -84,7 +84,7 @@ Phase 2 (when wired): integrates `fakematt-feedback`'s playwright harness direct
 ### `compare` — diff intended vs observed
 
 ```bash
-python3 ~/.claude/skills/ux-flow-mapper/run.py compare \
+/usr/bin/python3 ~/.claude/skills/ux-flow-mapper/run.py compare \
   --intended journeys/zergboard-signup.md \
   --observed journeys/zergboard-signup-observed.md
 ```

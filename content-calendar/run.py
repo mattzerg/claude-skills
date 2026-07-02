@@ -10,6 +10,7 @@ Usage:
     python3 ~/.claude/skills/content-calendar/run.py slip --slug <slug> --to YYYY-MM-DD --reason "..."
     python3 ~/.claude/skills/content-calendar/run.py transition --slug <slug> --to STATE
     python3 ~/.claude/skills/content-calendar/run.py audit
+    python3 ~/.claude/skills/content-calendar/run.py pulse [--past-days 30] [--next-days 30]
 
 Forward-only state machine. Refuses skips. Refuses missing required artifacts.
 """
@@ -24,9 +25,9 @@ import sys
 from pathlib import Path
 
 # Override with $ZERG_VAULT for non-author runs (S2 from fakeidan review).
-DEFAULT_VAULT = "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
+DEFAULT_VAULT = "/Users/mattheweisner/Obsidian/Zerg/MattZerg"
 VAULT = Path(os.environ.get("ZERG_VAULT", DEFAULT_VAULT))
-GROWTH_DIR = VAULT / "Projects" / "Zstack" / "Growth"
+GROWTH_DIR = VAULT / "Projects" / "Zerg-Production" / "Growth"
 CONTENT_DIR = GROWTH_DIR / "content"
 LEDGER_FILE = GROWTH_DIR / "content-calendar.md"
 
@@ -127,6 +128,15 @@ def render_yaml_frontmatter(meta: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def piece_kind(meta: dict) -> str:
+    """Return blog/launch/pseo/... — `kind` is the gtm-hub canonical field.
+
+    Falls back to legacy `type` for files pre-hub-normalization. After
+    migration `type` is always `content` and the actual kind lives in `kind`.
+    """
+    return meta.get("kind") or meta.get("type", "?")
+
+
 def slug_path(slug: str) -> Path:
     return CONTENT_DIR / f"{slug}.md"
 
@@ -162,15 +172,21 @@ def cmd_add(args: argparse.Namespace) -> int:
 
     today = dt.date.today().isoformat()
     meta = {
-        "slug": args.slug,
+        # gtm-hub envelope
+        "id": args.slug,
+        "type": "content",
         "title": args.title,
-        "type": args.type,
+        "status": "idea",
+        "owner": args.owner.lower() if isinstance(args.owner, str) else args.owner,
+        "created": today,
+        "last_touch": today,
+        # content-calendar fields
+        "slug": args.slug,
+        "kind": args.type,
         "state": "idea",
         "target_date": target.isoformat(),
         "slips": 0,
         "slip_log": [],
-        "owner": args.owner,
-        "created": today,
         "artifacts": {
             "draft": "",
             "imagery": "",
@@ -219,7 +235,7 @@ def cmd_next(args: argparse.Namespace) -> int:
     for td, m in rows:
         nxt = _next_action(m)
         marker = " ⚠️ OVERDUE" if td < today else ""
-        print(f"| {td.isoformat()}{marker} | {m['slug']} | {m['type']} | {m['state']} | {nxt} |")
+        print(f"| {td.isoformat()}{marker} | {m['slug']} | {piece_kind(m)} | {m['state']} | {nxt} |")
     return 0
 
 
@@ -228,7 +244,7 @@ def cmd_status(args: argparse.Namespace) -> int:
     if args.state:
         rows = [r for r in rows if r[1].get("state") == args.state]
     if args.type:
-        rows = [r for r in rows if r[1].get("type") == args.type]
+        rows = [r for r in rows if piece_kind(r[1]) == args.type]
     if not rows:
         print("(no matching pieces)")
         return 0
@@ -236,7 +252,7 @@ def cmd_status(args: argparse.Namespace) -> int:
     print("| Target | Slug | Type | State | Owner | Slips |")
     print("|---|---|---|---|---|---|")
     for _, m in rows:
-        print(f"| {m.get('target_date','?')} | {m['slug']} | {m['type']} | {m['state']} | {m.get('owner','?')} | {m.get('slips',0)} |")
+        print(f"| {m.get('target_date','?')} | {m['slug']} | {piece_kind(m)} | {m['state']} | {m.get('owner','?')} | {m.get('slips',0)} |")
     return 0
 
 
@@ -261,6 +277,7 @@ def cmd_slip(args: argparse.Namespace) -> int:
         log = []
     log.append(f"{today}: {old} → {new_target.isoformat()} — {args.reason}")
     meta["slip_log"] = log
+    meta["last_touch"] = today  # gtm-hub envelope
     f.write_text(render_yaml_frontmatter(meta) + "\n" + body)
     print(f"Slipped {args.slug}: {old} → {new_target.isoformat()} (slip count: {slips}).")
     if slips >= SLIP_DRIFT_THRESHOLD:
@@ -270,7 +287,7 @@ def cmd_slip(args: argparse.Namespace) -> int:
 
 def _next_action(meta: dict) -> str:
     state = meta.get("state", "?")
-    typ = meta.get("type", "?")
+    typ = piece_kind(meta)
     if state == "idea":
         if typ == "pseo":
             return "scaffold via programmatic-seo"
@@ -339,6 +356,8 @@ def cmd_transition(args: argparse.Namespace) -> int:
 
     today = dt.date.today().isoformat()
     meta["state"] = args.to
+    meta["status"] = args.to  # gtm-hub envelope mirror
+    meta["last_touch"] = today
     f.write_text(render_yaml_frontmatter(meta) + "\n" + body)
 
     # Append to state log
@@ -407,6 +426,121 @@ def cmd_audit(args: argparse.Namespace) -> int:
     return 0 if not overdue else 2
 
 
+STATE_CODE = {
+    "idea": "id",
+    "drafted": "dr",
+    "reviewed": "rv",
+    "scheduled": "sc",
+    "published": "pb",
+    "distributed": "di",
+    "cancelled": "ca",
+}
+TYPE_CODE = {
+    "blog": "B",
+    "launch": "L",
+    "pseo": "P",
+    "case-study": "C",
+    "newsletter": "N",
+    "thread": "T",
+}
+
+
+def _slug_cell(slug: str, slips: int, width: int) -> str:
+    prefix = "!" if int(slips or 0) >= SLIP_DRIFT_THRESHOLD else ""
+    body = prefix + slug
+    if len(body) > width:
+        body = body[: width - 3] + "..."
+    return body.ljust(width)
+
+
+def cmd_pulse(args: argparse.Namespace) -> int:
+    today = dt.date.today()
+    past_floor = today - dt.timedelta(days=args.past_days)
+    next_ceil = today + dt.timedelta(days=args.next_days)
+
+    past, upcoming, overdue = [], [], []
+    for _, meta in all_pieces():
+        try:
+            td = dt.date.fromisoformat(meta.get("target_date", ""))
+        except ValueError:
+            continue
+        state = meta.get("state", "idea")
+        if state == "cancelled":
+            continue
+        if state in ("published", "distributed"):
+            if past_floor <= td <= today:
+                past.append((td, meta))
+        elif td < today:
+            overdue.append((td, meta))
+        elif td <= next_ceil:
+            upcoming.append((td, meta))
+
+    past.sort(key=lambda r: r[0], reverse=True)
+    upcoming.sort(key=lambda r: r[0])
+    overdue.sort(key=lambda r: r[0])
+
+    SLUG_W = 17
+    HEADER_PAST = "DATE  SLUG              T ST O"
+    HEADER_NEXT = "DATE  SLUG              T ST O   D"
+    LINE = "=" * 36
+
+    print(f"PUBLISHING PULSE  {today.isoformat()}")
+    print(LINE)
+    print()
+
+    print(f"PAST {args.past_days}D  ({len(past)} shipped)")
+    if past:
+        print(HEADER_PAST)
+        for td, m in past:
+            print(
+                f"{td.strftime('%m-%d')} {_slug_cell(m['slug'], m.get('slips', 0), SLUG_W)} "
+                f"{TYPE_CODE.get(m.get('type',''), '?')} "
+                f"{STATE_CODE.get(m.get('state',''), '??')} "
+                f"{(m.get('owner') or '?')[:1]}"
+            )
+    else:
+        print("(none)")
+    print()
+
+    print(f"NEXT {args.next_days}D  ({len(upcoming)} upcoming)")
+    if upcoming:
+        print(HEADER_NEXT)
+        for td, m in upcoming:
+            d = (td - today).days
+            print(
+                f"{td.strftime('%m-%d')} {_slug_cell(m['slug'], m.get('slips', 0), SLUG_W)} "
+                f"{TYPE_CODE.get(m.get('type',''), '?')} "
+                f"{STATE_CODE.get(m.get('state',''), '??')} "
+                f"{(m.get('owner') or '?')[:1]} "
+                f"{d:3d}"
+            )
+    else:
+        print("(none)")
+    print()
+
+    print(f"OVERDUE  ({len(overdue)})")
+    if overdue:
+        print(HEADER_NEXT)
+        for td, m in overdue:
+            d = (td - today).days
+            print(
+                f"{td.strftime('%m-%d')} {_slug_cell(m['slug'], m.get('slips', 0), SLUG_W)} "
+                f"{TYPE_CODE.get(m.get('type',''), '?')} "
+                f"{STATE_CODE.get(m.get('state',''), '??')} "
+                f"{(m.get('owner') or '?')[:1]} "
+                f"{d:3d}"
+            )
+    print()
+
+    print("LEGEND")
+    print("type  B blog  L launch  P pseo")
+    print("      C case  N newsl   T thread")
+    print("state id dr rv sc pb di")
+    print("flag  ! prefix = slips >= 3")
+    print(LINE)
+    return 0
+
+
 def main() -> int:
     p = argparse.ArgumentParser(prog="content-calendar", description=__doc__)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -442,6 +576,11 @@ def main() -> int:
 
     pau = sub.add_parser("audit", help="flag overdue + missing artifacts")
     pau.set_defaults(func=cmd_audit)
+
+    pp = sub.add_parser("pulse", help="terminal pulse — past + next + overdue, <40 chars wide")
+    pp.add_argument("--past-days", type=int, default=30, dest="past_days")
+    pp.add_argument("--next-days", type=int, default=30, dest="next_days")
+    pp.set_defaults(func=cmd_pulse)
 
     args = p.parse_args()
     return args.func(args)

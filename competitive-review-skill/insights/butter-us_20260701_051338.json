@@ -1,0 +1,175 @@
+{
+  "name": "Butter",
+  "url": "https://www.butter.us",
+  "domain": "butter.us",
+  "scanned_at": "2026-07-01T04:58:35.802826",
+  "sources": {
+    "landing": {
+      "url": "https://www.butter.us",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://www.butter.us/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error timed out>"
+    },
+    "pricing": {
+      "url": "https://www.butter.us/pricing",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: Timeout 20000ms exceeded.\nCall log:\n  - navigating to \"https://www.butter.us/pricing\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error timed out>"
+    },
+    "changelog": {
+      "url": "https://www.butter.us/changelog",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: Timeout 20000ms exceeded.\nCall log:\n  - navigating to \"https://www.butter.us/changelog\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error timed out>"
+    },
+    "docs": {
+      "url": "https://help.butter.us",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: Timeout 20000ms exceeded.\nCall log:\n  - navigating to \"https://help.butter.us/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error timed out>"
+    },
+    "integrations": {
+      "url": "https://www.butter.us/integrations",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: Timeout 20000ms exceeded.\nCall log:\n  - navigating to \"https://www.butter.us/integrations\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error timed out>"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/butter/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Give babies peanut butter to cut peanut allergies, study says",
+          "url": "https://www.bbc.com/news/health-64987074",
+          "points": 746,
+          "num_comments": 363,
+          "created_at": "2023-03-17T14:50:06Z",
+          "hn_url": "https://news.ycombinator.com/item?id=35197835"
+        },
+        {
+          "title": "Buttery Smooth Emacs",
+          "url": "https://www.facebook.com/notes/daniel-colascione/buttery-smooth-emacs/10155313440066102/",
+          "points": 651,
+          "num_comments": 229,
+          "created_at": "2016-10-30T15:12:24Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12830206"
+        },
+        {
+          "title": "Please, enough with the dead butterflies (2017)",
+          "url": "https://www.emilydamstra.com/please-enough-dead-butterflies/",
+          "points": 614,
+          "num_comments": 210,
+          "created_at": "2021-07-25T09:56:42Z",
+          "hn_url": "https://news.ycombinator.com/item?id=27948008"
+        },
+        {
+          "title": "Enough with the dead butterflies",
+          "url": "http://emilydamstra.com/news/please-enough-dead-butterflies/",
+          "points": 586,
+          "num_comments": 163,
+          "created_at": "2017-06-01T13:24:27Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14460013"
+        },
+        {
+          "title": "Its butterfly keyboard design has failed, but Apple has yet to admit its mistake",
+          "url": "https://theoutline.com/post/7315/apple-keyboards-still-suck-insanely-bad?zd=1&zi=qklqjspx",
+          "points": 573,
+          "num_comments": 627,
+          "created_at": "2019-04-19T04:32:23Z",
+          "hn_url": "https://news.ycombinator.com/item?id=19697122"
+        },
+        {
+          "title": "Analyzing the Design of Unusual Japanese Butter Tableware",
+          "url": "https://www.core77.com/posts/102355/Analyzing-the-Design-of-Unusual-Japanese-Butter-Tableware",
+          "points": 403,
+          "num_comments": 188,
+          "created_at": "2020-10-17T22:44:41Z",
+          "hn_url": "https://news.ycombinator.com/item?id=24814038"
+        },
+        {
+          "title": "California\u2019s Monarch Butterfly Population Hits Record Low",
+          "url": "https://www.nytimes.com/2019/01/09/science/monarch-butterfly-california.html",
+          "points": 397,
+          "num_comments": 159,
+          "created_at": "2019-01-15T16:11:14Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18912164"
+        },
+        {
+          "title": "Bee and butterfly numbers are falling, even in undisturbed forests",
+          "url": "https://www.science.org/content/article/bee-butterfly-numbers-are-falling-even-undisturbed-forests",
+          "points": 394,
+          "num_comments": 221,
+          "created_at": "2023-03-08T11:33:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=35067766"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.butter.us/pricing",
+    "changelog": "https://www.butter.us/changelog",
+    "docs": "https://help.butter.us",
+    "integrations": "https://www.butter.us/integrations",
+    "g2": "https://www.g2.com/products/butter/reviews"
+  },
+  "analysis": {
+    "error": "Could not extract JSON from output:\n\ud83d\udc24\n{\"name\":\"Butter\",\"url\":\"https://www.butter.us\",\"tagline\":\"unknown\",\"value_proposition\":\"unknown\",\"target_segment\":\"unknown\",\"ideal_customer\":\"unknown\",\"features\":[],\"integrations\":[],\"differentiators\":[],\"recent_ships\":[],\"user_sentiment\":{\"praised\":[],\"complaints\":[],\"sources\":[]},\"pricing\":{\"model\":\"unknown\",\"currency\":\"USD\",\"free_tier\":{\"available\":false,\"limits\":null},\"tiers\":[],\"enterprise\":null,\"notes\":\"No usable source content available. G2 returned only 'g2.com' with no review data. Hacker News results are entirely unrelated (peanut butter, butterflies, Apple butterfly keyboard, Emacs). No landing page, pricing, docs, changelog, or integrations content was provided. Butter.us appears to be a facilitator/workshop video meeting platform based on general knowledge, but no verifiable source content was included to extract structured features.\"}}}",
+    "features": []
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Coal Butter - Butter Made from Coal",
+        "url": "https://en.wikipedia.org/wiki/Margarine",
+        "points": 6,
+        "comments": 5,
+        "age_days": 6,
+        "hn_url": "https://news.ycombinator.com/item?id=48667132"
+      },
+      {
+        "title": "Give the Baby Peanut Butter",
+        "url": "https://www.thefp.com/p/give-the-baby-peanut-butter-allergy",
+        "points": 4,
+        "comments": 0,
+        "age_days": 9,
+        "hn_url": "https://news.ycombinator.com/item?id=48623595"
+      },
+      {
+        "title": "Ask HN: Did you try Claude's \"Fable 5\" model before it was pulled?",
+        "url": "https://news.ycombinator.com/item?id=48538711",
+        "points": 4,
+        "comments": 3,
+        "age_days": 15,
+        "hn_url": "https://news.ycombinator.com/item?id=48538711"
+      },
+      {
+        "title": "Butter Box \u2013 Sharing offline has never been easier",
+        "url": "https://likebutter.app/",
+        "points": 3,
+        "comments": 0,
+        "age_days": 48,
+        "hn_url": "https://news.ycombinator.com/item?id=48130458"
+      },
+      {
+        "title": "Why Some People Are Allergic to 'Peanut Butter Raises'",
+        "url": "https://www.nytimes.com/2026/05/10/business/peanut-butter-raises.html",
+        "points": 3,
+        "comments": 0,
+        "age_days": 48,
+        "hn_url": "https://news.ycombinator.com/item?id=48126407"
+      }
+    ]
+  }
+}

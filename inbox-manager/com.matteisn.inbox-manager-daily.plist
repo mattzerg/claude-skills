@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- STAGED TEMPLATE — not installed. Enable with:
+     cp ~/.claude/skills/inbox-manager/com.matteisn.inbox-manager-daily.plist ~/Library/LaunchAgents/
+     launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.matteisn.inbox-manager-daily.plist
+     Disable with:
+     launchctl bootout gui/$(id -u)/com.matteisn.inbox-manager-daily
+     rm ~/Library/LaunchAgents/com.matteisn.inbox-manager-daily.plist
+     Runs the READ-ONLY Phase-0 scan daily at 07:15 (just after the 07:00 triage). -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HOME</key>
+		<string>/Users/mattheweisner</string>
+		<key>PATH</key>
+		<string>/Users/mattheweisner/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin</string>
+		<key>ZERG_AUTH_NONINTERACTIVE</key>
+		<string>1</string>
+	</dict>
+	<key>Label</key>
+	<string>com.matteisn.inbox-manager-daily</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/opt/homebrew/bin/python3</string>
+		<string>/Users/mattheweisner/.claude/skills/inbox-manager/inbox_scan.py</string>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>/Users/mattheweisner/.claude/state/inbox/inbox_scan.launchd.err</string>
+	<key>StandardOutPath</key>
+	<string>/Users/mattheweisner/.claude/state/inbox/inbox_scan.launchd.log</string>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>7</integer>
+		<key>Minute</key>
+		<integer>15</integer>
+	</dict>
+	<key>WorkingDirectory</key>
+	<string>/Users/mattheweisner/.claude/skills/inbox-manager</string>
+</dict>
+</plist>

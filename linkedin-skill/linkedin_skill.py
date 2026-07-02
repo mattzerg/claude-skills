@@ -32,7 +32,7 @@ import secrets
 import socket
 import sys
 import webbrowser
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
 from typing import Optional
@@ -57,7 +57,8 @@ LINKEDIN_TOKEN_URL = "https://www.linkedin.com/oauth/v2/accessToken"
 LINKEDIN_API_BASE = "https://api.linkedin.com"
 
 # LinkedIn API version header (required for all API calls)
-LINKEDIN_VERSION = "202501"
+# LinkedIn deprecates versions outside the rolling ~12-month window — bump when 426 NONEXISTENT_VERSION returns.
+LINKEDIN_VERSION = os.environ.get("LINKEDIN_VERSION", "202606")
 
 # OAuth scopes
 # Basic: openid, profile, email
@@ -226,7 +227,7 @@ def do_oauth_flow(client_config: dict, force_consent: bool = False) -> dict:
 
     # Calculate and store absolute expiry time
     if "expires_in" in tokens:
-        expiry = datetime.utcnow() + timedelta(seconds=tokens["expires_in"])
+        expiry = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(seconds=tokens["expires_in"])
         tokens["expiry"] = expiry.isoformat() + "Z"
 
     # Get user profile info
@@ -634,14 +635,142 @@ def cmd_list_posts(args):
     print(json.dumps({"posts": posts, "total": len(posts)}, indent=2))
 
 
-def cmd_get_post(args):
-    """Get a single post."""
-    # URL-encode the URN for the path
-    post_id = args.post_urn.replace(":", "%3A")
+def _activity_id_from_urn(post_urn: str) -> Optional[str]:
+    """Extract the numeric activity id from urn:li:activity:XXXX or urn:li:share:XXXX."""
+    m = re.search(r"urn:li:(?:activity|share|ugcPost):(\d+)", post_urn)
+    return m.group(1) if m else None
 
+
+def _public_url_from_urn(post_urn: str) -> Optional[str]:
+    """Best-effort public LinkedIn URL for an activity URN.
+
+    LinkedIn's `/feed/update/urn:li:activity:NNN` route renders the post body and
+    counts without requiring a specific company slug, so we use it as the
+    canonical browser target for the chrome-devtools-mcp fallback path.
+    """
+    activity = _activity_id_from_urn(post_urn)
+    if not activity:
+        return None
+    return f"https://www.linkedin.com/feed/update/urn:li:activity:{activity}/"
+
+
+def _chrome_devtools_handshake(post_urn: str) -> dict:
+    """Emit a handshake instruction the parent Claude assistant can act on.
+
+    Mirrors the pattern in ~/.claude/skills/content-release/run.py:scrape_live —
+    the CLI itself can't call MCP tools, so it returns a JSON envelope that
+    tells the assistant exactly what to do (navigate, evaluate_script, write
+    output to PATH, re-invoke with --scraped-from PATH). The assistant is
+    expected to be in a Claude session with the chrome-devtools-mcp plugin
+    available and an authenticated LinkedIn browser session.
+    """
+    url = _public_url_from_urn(post_urn)
+    if not url:
+        return {
+            "error": True,
+            "via": "chrome-devtools",
+            "needs_scrape": False,
+            "message": f"Could not derive a public LinkedIn URL from {post_urn}. "
+                       "Expected urn:li:activity:NNN or urn:li:share:NNN.",
+        }
+    out_path = SKILL_DIR / "captured" / f"{_activity_id_from_urn(post_urn)}.json"
+    return {
+        "ok": False,
+        "via": "chrome-devtools",
+        "needs_scrape": True,
+        "post_urn": post_urn,
+        "url": url,
+        "output_path": str(out_path),
+        "instruction": (
+            f"chrome-devtools-mcp scrape required. Assistant should: "
+            f"(1) ensure a Chrome page is logged into LinkedIn, "
+            f"(2) navigate to {url}, "
+            f"(3) call evaluate_script to extract "
+            f"{{ post_urn, url, author, commentary, reactions, comments, shares, "
+            f"posted_at, scraped_at }} from the rendered post, "
+            f"(4) write that JSON object to {out_path} (mkdir -p the parent), "
+            f"(5) re-invoke: python3 {Path(__file__).resolve()} get-post "
+            f"{post_urn} --scraped-from {out_path}"
+        ),
+        "evaluate_script_hint": (
+            "() => { const root = document.querySelector('div.feed-shared-update-v2') "
+            "|| document.querySelector('article'); const text = root ? "
+            "(root.querySelector('.feed-shared-update-v2__description, .update-components-text') "
+            "?.innerText || root.innerText) : document.body.innerText; const author = "
+            "document.querySelector('.update-components-actor__name, .feed-shared-actor__name')"
+            "?.innerText?.trim(); const counts = {}; "
+            "document.querySelectorAll('button, span').forEach(el => { const t = "
+            "(el.innerText||'').trim(); const m = t.match(/^([0-9,.KkMm]+)\\s+(reactions?|"
+            "comments?|reposts?|shares?)/i); if (m) counts[m[2].toLowerCase().replace(/s$/, '')] "
+            "= m[1]; }); return { commentary: text, author, counts }; }"
+        ),
+    }
+
+
+def cmd_get_post(args):
+    """Get a single post.
+
+    Default path: LinkedIn REST `/rest/posts/{urn}`. Returns 403 ACCESS_DENIED
+    on apps without partner-API scope (the common Zerg/Matt case).
+
+    Fallback path (--via chrome-devtools): emit a handshake the parent Claude
+    assistant resolves by driving chrome-devtools-mcp against an authed
+    LinkedIn browser session, then re-invokes this command with
+    --scraped-from <path-to-json>. Mirrors content-release/run.py:scrape_live.
+    """
+    # Re-injection: assistant has finished the browser scrape and is feeding the
+    # captured JSON back in. Just normalize + print it so callers (e.g.
+    # release_thread.py:scrape_linkedin) see the same JSON-on-stdout contract.
+    if getattr(args, "scraped_from", None):
+        src = Path(args.scraped_from)
+        if not src.is_file():
+            print(json.dumps({
+                "error": True,
+                "via": "chrome-devtools",
+                "message": f"--scraped-from path does not exist: {src}",
+            }, indent=2))
+            sys.exit(1)
+        try:
+            payload = json.loads(src.read_text())
+        except Exception as e:
+            print(json.dumps({
+                "error": True,
+                "via": "chrome-devtools",
+                "message": f"could not parse JSON at {src}: {e}",
+            }, indent=2))
+            sys.exit(1)
+        payload.setdefault("post_urn", args.post_urn)
+        payload.setdefault("via", "chrome-devtools")
+        payload.setdefault("source_file", str(src))
+        print(json.dumps(payload, indent=2))
+        return
+
+    # Explicit opt-in to the browser path.
+    if getattr(args, "via", None) == "chrome-devtools":
+        handshake = _chrome_devtools_handshake(args.post_urn)
+        print(json.dumps(handshake, indent=2))
+        # exit non-zero so cron callers don't treat the handshake as a real result
+        sys.exit(2 if handshake.get("needs_scrape") else 1)
+
+    # Default REST path.
+    post_id = args.post_urn.replace(":", "%3A")
     result = api_request("GET", f"/rest/posts/{post_id}", account=args.account)
 
     if result.get("error"):
+        # Surface the chrome-devtools fallback in the error envelope so the
+        # parent assistant knows the recovery path without re-reading SKILL.md.
+        details = result.get("details") or {}
+        if (result.get("status") == 403
+                and ("ACCESS_DENIED" in json.dumps(details)
+                     or "partnerApiPostsExternal" in json.dumps(details))):
+            result["fallback"] = {
+                "via": "chrome-devtools",
+                "hint": (
+                    f"Re-run in a Claude session with chrome-devtools-mcp: "
+                    f"python3 {Path(__file__).resolve()} get-post "
+                    f"{args.post_urn} --via chrome-devtools"
+                ),
+            }
         print(json.dumps(result, indent=2))
         sys.exit(1)
 
@@ -929,6 +1058,27 @@ def main():
 
     get_post_parser = subparsers.add_parser("get-post", help="Get a single post")
     get_post_parser.add_argument("post_urn", help="Post URN")
+    get_post_parser.add_argument(
+        "--via",
+        choices=["rest", "chrome-devtools"],
+        default="rest",
+        help=(
+            "Fetch path. 'rest' (default) hits /rest/posts/{urn} via the OAuth "
+            "app — requires partner-API scope, otherwise 403 ACCESS_DENIED. "
+            "'chrome-devtools' emits a handshake JSON instructing a Claude "
+            "session to scrape via chrome-devtools-mcp + an authed browser, "
+            "then re-invoke with --scraped-from."
+        ),
+    )
+    get_post_parser.add_argument(
+        "--scraped-from",
+        dest="scraped_from",
+        help=(
+            "Path to a JSON file produced by the chrome-devtools-mcp scrape. "
+            "When set, the skill skips both REST and handshake paths and just "
+            "normalizes + emits the captured JSON on stdout."
+        ),
+    )
     add_account_arg(get_post_parser)
     get_post_parser.set_defaults(func=cmd_get_post)
 

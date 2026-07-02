@@ -1,8 +1,9 @@
 ---
 name: content-calendar
-description: Editorial calendar orchestrator. Sequences content pieces through `idea → drafted → reviewed → scheduled → published → distributed` with target dates and required-artifact gates (no `reviewed` without copyedit; no `distributed` without distribution-card). Routes to existing skills at each transition — programmatic-seo, launch-announcement, blog-imagery, fakematt-copyedit, content-distribution. Six modes: `add`, `next`, `status`, `slip`, `transition`, `audit`. Writes to `MattZerg/Projects/Zstack/Growth/content/<slug>.md`. USE PROACTIVELY for content-calendar questions, "what's queued this week," or before any blog/launch/case-study ships. `content-distribution` handles single-post 14-surface fan-out; content-calendar manages the queue of multiple pieces with dates and states.
+description: Manage the Zerg editorial calendar mechanics — target dates and review/distribution gates. Sub-tool under zpub — for "content status", "what's publishing", or pipeline-state questions, use `zpub all` (hard rule 13), not this skill.
 allowed-tools: Bash, Read, Write
 ---
+
 
 # Content Calendar Skill
 
@@ -69,6 +70,22 @@ python3 ~/.claude/skills/content-calendar/run.py transition --slug agent-memory 
 
 Refuses if required artifact for the state is missing. Suggests the next downstream skill (e.g. `transition --to drafted` → "next: run blog-imagery").
 
+### `pulse` — terminal-friendly publishing snapshot
+
+```bash
+python3 ~/.claude/skills/content-calendar/run.py pulse [--past-days 30] [--next-days 30]
+```
+
+Single-screen view, ≤36 chars wide, intended for recurring inline check-ins. Three sections:
+
+- **PAST 30D** — pieces in `published`/`distributed` with target_date in the past window
+- **NEXT 30D** — pieces in any non-terminal state with target_date in the upcoming window (sorted by date, shows days delta)
+- **OVERDUE** — pieces with target_date in the past but state still non-terminal (sorted oldest-first)
+
+Per-row columns: `MM-DD slug T ST O [D]` — date, slug (truncated to 17, prefixed `!` if slips ≥ 3), type marker (B/L/P/C/N/T), state code (id/dr/rv/sc/pb/di), owner initial, and (NEXT/OVERDUE only) signed days delta.
+
+Use as the "what shipped, what's next, what's slipping" daily/weekly check. Pair with `audit` (drift alarms) and `next` (artifact-routing forecast).
+
 ### `audit` — flag overdue + missing artifacts
 
 ```bash
@@ -133,7 +150,7 @@ Content workflow has type-specific transitions that cards alone can't enforce: p
 ## Implementation notes
 
 - File-based, no DB
-- Per-piece file at `MattZerg/Projects/Zstack/Growth/content/<slug>.md`
+- Per-piece file at `MattZerg/Projects/Zerg-Production/Growth/content/<slug>.md`
 - Top ledger at `Growth/content-calendar.md` (regenerated from per-piece files on each `status` call)
 - Cache nothing — always re-read source of truth
 - States transition forward-only; refuses skips

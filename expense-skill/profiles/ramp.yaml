@@ -1,0 +1,43 @@
+# Reimburser profile: Epoch AI Inc via Ramp
+name: ramp
+display_name: "Epoch AI Inc (Ramp)"
+type: ramp
+
+# Matt's Ramp identity
+account_email: matthew@zergai.com
+business: "Epoch AI Inc"
+approver: "Idan Beck"
+
+# Notification source — how we learn what Ramp needs
+notifications:
+  gmail_account: matthew@zergai.com
+  query: "from:ramp.com"
+
+# Filing channels, in preference order
+channels:
+  # Receipts for existing card transactions: forward the vendor receipt email
+  # to Ramp's auto-match address FROM the work account.
+  - kind: receipt-forward
+    method: email
+    forward_to: receipts@ramp.com
+    from_account: matthew@zergai.com
+    note: >
+      Verify on first use that auto-match is enabled for Epoch's Ramp account.
+      Ramp matches on amount + merchant + date from the forwarded email.
+
+  # Out-of-pocket reimbursements: browser automation (no API access yet)
+  - kind: reimbursement
+    method: browser
+    url: https://app.ramp.com/details/reimbursements/new
+    reimburse_from: "None"   # AI fund has reimbursements disabled
+    payout: outside-ramp     # Matt chose "get paid outside Ramp" (2026-06-03)
+
+# Phase 3: Ramp API (requires admin-created client credentials from Idan)
+api:
+  enabled: false
+  docs: https://developer.ramp.com/
+
+# Memo conventions for this reimburser
+memo_style: >
+  "<what> for <why> — <date range> (<vendor/location>)".
+  Example: "Hotel for Zerg onboarding in SF Bay Area — week 1, Tue 4/28–Fri 5/1 (WAFER 450 Hotel, Santa Clara)"

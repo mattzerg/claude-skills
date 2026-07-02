@@ -1,0 +1,4 @@
+interface:
+  display_name: "LLM Feedback"
+  short_description: "Capture natural-language feedback on any LLM output and classify it"
+  default_prompt: "Use $llm-feedback to capture this correction on an LLM output and classify it into a learn-matt bucket."

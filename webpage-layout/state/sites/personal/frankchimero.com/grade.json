@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 9,
+    "distinctiveness": 9,
+    "color": 9,
+    "density": 8,
+    "voice": 9
+  },
+  "reasoning": {
+    "typography": "Clean system with nice contrast between sans headline spans and body text. Not revolutionary but disciplined and personal. Avoids the Inter trap.",
+    "hierarchy": "Exceptional clarity\u2014each section has one clear visual anchor. The intro portrait dominates, then writing cards with strong image+text rhythm. No competing elements.",
+    "distinctiveness": "Deeply personal\u2014the 'walking NYC, investigating creative tooling, researching Brian Eno' is specific human work, not 'helping clients achieve goals.' Black void aesthetic is a strong choice.",
+    "color": "Black background with white text and selective color in the portrait gradient. Extremely restrained, maybe 2% accent color. Disciplined to the point of ascetic.",
+    "density": "Generous whitespace with confident content placement. Not afraid of negative space. Writing cards have good breathing room without feeling sparse or padded.",
+    "voice": "Structure reflects actual thought\u2014'Beyond the Machine,' 'Everything Easy is Hard Again' are essay titles doing conceptual work, not 'Services/Process/Contact.' The IA is the story."
+  },
+  "winning_patterns": [
+    "Black void background creates dramatic stage for content\u2014confident negative space",
+    "Writing section uses actual essay imagery (exploding cog, anvil+balloon) not stock decoration",
+    "Specific biographical details ('walking NYC... researching Brian Eno') vs generic designer bio",
+    "Visual hierarchy through scale/image rather than color noise",
+    "Long-form essay titles that do conceptual work ('The Web's Grain')"
+  ],
+  "anti_patterns": [
+    "Footer credits list could be more visually integrated\u2014feels like database dump",
+    "Some small type sizing might be pushing legibility limits on the black",
+    "Newsletter embed iframe is the one generic widget disrupting the aesthetic"
+  ],
+  "one_word_personality": "essayistic",
+  "_url": "https://frankchimero.com",
+  "_persona": "personal",
+  "_note": "Designer, idiosyncratic structure, custom type",
+  "_graded_at": "2026-05-07T18:37:56.254142Z"
+}

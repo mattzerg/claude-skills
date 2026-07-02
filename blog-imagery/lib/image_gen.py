@@ -1,6 +1,7 @@
 """Multi-provider image generation with quota fallback chain.
 
-Order: nano-banana-pro (Gemini 3 Pro Image) → fal-image-skill (Flux Pro) → Pollinations (free).
+Order: chatgpt-image-skill (gpt-image-1, Idan-preferred) → nano-banana-pro (Gemini 3 Pro Image)
+→ fal-image-skill (Flux Pro) → Pollinations (free).
 On quota failure, falls through to the next provider transparently.
 On all-providers-failed, queues the prompt to /tmp/blog-imagery/queue/<slug>.json.
 """
@@ -14,11 +15,39 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
 
+CHATGPT_BIN = Path.home() / ".claude" / "skills" / "chatgpt-image-skill" / "generate_image.py"
 NANO_BIN = Path.home() / ".claude" / "skills" / "nano-banana-pro" / "generate_image.py"
 FAL_BIN = Path.home() / ".claude" / "skills" / "fal-image-skill" / "fal_image_skill.py"
 
 QUEUE_DIR = Path("/tmp/blog-imagery/queue")
 QUEUE_DIR.mkdir(parents=True, exist_ok=True)
+
+VALIDATE_HERO = Path.home() / ".claude/skills/blog-imagery/tools/validate_hero.py"
+
+
+def _post_write_validate(out_path: Path, provider: str) -> Optional[str]:
+    """Run validate_hero against a freshly-written image. Returns an error
+    string if the file fails hard rules (defect classes that must never ship),
+    or None if it's clean. Caller is expected to unlink and fall through to
+    the next provider on a non-None return.
+
+    Hard rules enforced here (not just warnings): JPEG-in-PNG signature,
+    width<1200, height<600, format mismatch, aspect outside hard band.
+    """
+    if not out_path.exists() or not VALIDATE_HERO.exists():
+        return None
+    res = subprocess.run(
+        ["python3", str(VALIDATE_HERO), str(out_path), "--json"],
+        capture_output=True, text=True, timeout=15,
+    )
+    try:
+        payload = json.loads(res.stdout)
+    except (json.JSONDecodeError, ValueError):
+        return None
+    if payload.get("ok"):
+        return None
+    findings = payload.get("findings", [])
+    return f"post-write validate_hero rejected {provider} output: " + "; ".join(findings[:2])
 
 # Aspect → (nano-banana --aspect, target dimensions)
 ASPECT_MAP = {
@@ -35,6 +64,45 @@ class GenResult:
     path: Optional[Path] = None
     provider: str = ""
     error: str = ""
+
+
+def try_chatgpt(prompt: str, aspect: str, out_path: Path) -> GenResult:
+    """Try OpenAI gpt-image-1 via chatgpt-image-skill (Idan-preferred, stdlib-only).
+
+    gpt-image-1 supports {1024x1024, 1024x1536, 1536x1024}. We pick the closest
+    to the requested aspect; the orchestrator's --size is wide for 16:9/1.91:1
+    and square for 1:1. The blog-imagery brand anchor is already in the prompt,
+    so pass --no-brand-prefix to avoid double-stamping a brand suffix.
+    """
+    if not CHATGPT_BIN.exists():
+        return GenResult(False, error="chatgpt-image-skill not found")
+    size_map = {
+        "1.91:1": "1536x1024",
+        "16:9":   "1536x1024",
+        "3:2":    "1536x1024",
+        "1:1":    "1024x1024",
+    }
+    size = size_map.get(aspect, "1536x1024")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        res = subprocess.run(
+            ["python3", str(CHATGPT_BIN), prompt,
+             "--size", size,
+             "--quality", "high",
+             "--output", str(out_path),
+             "--no-brand-prefix"],
+            capture_output=True, text=True, timeout=180,
+        )
+        if res.returncode != 0:
+            return GenResult(False, provider="chatgpt-image", error=res.stderr.strip()[:300])
+        if out_path.exists() and out_path.stat().st_size > 5000:
+            return GenResult(True, path=out_path, provider="chatgpt-image")
+        return GenResult(False, provider="chatgpt-image",
+                         error=f"output too small ({out_path.stat().st_size if out_path.exists() else 0} bytes)")
+    except subprocess.TimeoutExpired:
+        return GenResult(False, provider="chatgpt-image", error="timeout")
+    except Exception as e:
+        return GenResult(False, provider="chatgpt-image", error=str(e)[:300])
 
 
 def try_nano_banana(prompt: str, aspect: str, out_path: Path) -> GenResult:
@@ -154,7 +222,9 @@ def generate(prompt: str, aspect: str, out_path: Path, slug: str = "", label: st
     """Generate one image with provider fallback. Queues on full failure."""
     chain = []
     if provider == "auto":
-        chain = [try_nano_banana, try_fal, try_pollinations]
+        chain = [try_chatgpt, try_nano_banana, try_fal, try_pollinations]
+    elif provider == "chatgpt":
+        chain = [try_chatgpt]
     elif provider == "nano-banana":
         chain = [try_nano_banana]
     elif provider == "fal":
@@ -168,7 +238,16 @@ def generate(prompt: str, aspect: str, out_path: Path, slug: str = "", label: st
     for fn in chain:
         result = fn(prompt, aspect, out_path)
         if result.success:
-            return result
+            reject = _post_write_validate(out_path, result.provider)
+            if reject is None:
+                return result
+            try:
+                out_path.unlink()
+            except OSError:
+                pass
+            last_err = f"[{result.provider}] {reject}"
+            print(f"  ⚠ {last_err}", flush=True)
+            continue
         last_err = f"[{result.provider}] {result.error}"
         print(f"  ⚠ {last_err}", flush=True)
 

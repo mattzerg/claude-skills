@@ -1,0 +1,97 @@
+{
+  "computed_at": "2026-06-29T18:48:08.456970",
+  "corpus_years": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "filtered": true,
+  "fresh": {
+    "n": 80,
+    "word_count": {
+      "median": 43,
+      "p25": 23,
+      "p75": 126,
+      "p90": 351
+    },
+    "sentences": {
+      "median": 1,
+      "p75": 4
+    },
+    "pct_bullets": 13.8,
+    "pct_self_intro": 2.5,
+    "pct_hope_opener": 2.5,
+    "openers": {
+      "(no greeting \u2014 straight into it)": 70,
+      "Hi <Name>,": 5,
+      "Hey <Name>,": 3,
+      "Hey,": 2
+    },
+    "closers": {
+      "(no closer)": 67,
+      "Best, / Matthew": 7,
+      "(bare name)": 5,
+      "Thanks! / Matthew": 1
+    }
+  },
+  "reply": {
+    "n": 199,
+    "word_count": {
+      "median": 35,
+      "p25": 19,
+      "p75": 66,
+      "p90": 121
+    },
+    "sentences": {
+      "median": 1,
+      "p75": 3
+    },
+    "pct_bullets": 2.5,
+    "pct_self_intro": 0.5,
+    "pct_hope_opener": 0.5,
+    "openers": {
+      "(no greeting \u2014 straight into it)": 193,
+      "Hi <Name>,": 6
+    },
+    "closers": {
+      "(no closer)": 188,
+      "Best, / Matthew": 7,
+      "(bare name)": 3,
+      "Thanks! / Matthew": 1
+    }
+  },
+  "all": {
+    "n": 279,
+    "word_count": {
+      "median": 37,
+      "p25": 20,
+      "p75": 77,
+      "p90": 174
+    },
+    "sentences": {
+      "median": 1,
+      "p75": 3
+    },
+    "pct_bullets": 5.7,
+    "pct_self_intro": 1.1,
+    "pct_hope_opener": 1.1,
+    "openers": {
+      "(no greeting \u2014 straight into it)": 263,
+      "Hi <Name>,": 11,
+      "Hey <Name>,": 3,
+      "Hey,": 2
+    },
+    "closers": {
+      "(no closer)": 255,
+      "Best, / Matthew": 14,
+      "(bare name)": 8,
+      "Thanks! / Matthew": 2
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Production Planner"
+  short_description: "Plan shoots, assets, and logistics."
+  default_prompt: "Use $video-production-planner to turn this video concept into a production plan."

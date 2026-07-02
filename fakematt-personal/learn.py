@@ -75,7 +75,8 @@ def clean_outgoing(body: str) -> str:
     return "\n".join(out).strip()
 
 
-def find_sent_for_record(svc, record):
+def find_sent_for_record(svc, record, skip_ids=None):
+    skip_ids = skip_ids or set()
     to = record["to"]
     after_ts = record["ts"]
     try:
@@ -85,6 +86,8 @@ def find_sent_for_record(svc, record):
     q = f"in:sent to:{to} after:{after_date}"
     res = svc.users().messages().list(userId="me", q=q, maxResults=10).execute()
     for m in res.get("messages", []):
+        if m["id"] in skip_ids:
+            continue
         full = svc.users().messages().get(userId="me", id=m["id"], format="full").execute()
         body = extract_body(full.get("payload", {}))
         cleaned = clean_outgoing(body)
@@ -155,21 +158,38 @@ def main() -> int:
             if not line: continue
             try: records.append(json.loads(line))
             except: continue
-    pending = [r for r in records if not r.get("checked")]
-    print(f"[learn] {len(pending)} unchecked / {len(records)} total")
+    pending = [r for r in records if not r.get("checked") and not r.get("synthetic")]
+    n_synthetic = sum(1 for r in records if r.get("synthetic"))
+    print(f"[learn] {len(pending)} unchecked / {len(records)} total "
+          f"({n_synthetic} synthetic skipped)")
+
+    claimed_ids = {
+        r["sent_msg_id"] for r in records
+        if r.get("checked") and r.get("sent_msg_id")
+    }
 
     svc_cache = {}
     updated = 0
+    no_sent_yet = 0
+    no_generated_body = 0
     for record in pending:
         account = record.get("account", "matteisn@gmail.com")
         if account not in svc_cache:
             svc_cache[account] = make_service(account)
         svc = svc_cache[account]
-        if not svc: continue
-        sent_body, sent_id = find_sent_for_record(svc, record)
-        if not sent_body: continue
+        if not svc:
+            print(f"[learn] no Gmail token/service for {account}; leaving record unchecked")
+            continue
+        sent_body, sent_id = find_sent_for_record(svc, record, claimed_ids)
+        if sent_id:
+            claimed_ids.add(sent_id)
+        if not sent_body:
+            no_sent_yet += 1
+            continue
         generated = record.get("generated_body", "").strip()
-        if not generated: continue
+        if not generated:
+            no_generated_body += 1
+            continue
         diff_text, changed = diff_summary(generated, sent_body)
         if changed >= 2:
             append_correction(record, sent_body, diff_text, changed)
@@ -185,6 +205,11 @@ def main() -> int:
             f.write(json.dumps(r) + "\n")
     prune_old_corrections(args.max_age_days)
     print(f"[learn] {updated} new corrections appended")
+    if updated == 0:
+        print(
+            "[learn] loop ran; no corrections found "
+            f"(pending={len(pending)}, no_sent_yet={no_sent_yet}, no_generated_body={no_generated_body})"
+        )
     return 0
 
 

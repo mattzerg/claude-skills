@@ -4,6 +4,7 @@ description: Create, read, update, share, and export Google Docs. Use when the u
 allowed-tools: Bash, Read
 ---
 
+
 # Google Docs Skill
 
 Create, read, update, share, and export Google Docs with markdown formatting support.

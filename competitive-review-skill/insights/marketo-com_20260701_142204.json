@@ -1,0 +1,577 @@
+{
+  "name": "Adobe Marketo Engage",
+  "url": "https://www.marketo.com",
+  "domain": "marketo.com",
+  "scanned_at": "2026-07-01T14:18:39.771408",
+  "sources": {
+    "landing": {
+      "url": "https://www.marketo.com",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.marketo.com/\nCall log:\n  - navigating to \"https://www.marketo.com/\", waiting until \"domcontentloaded\"\n; urllib: The read operation timed out"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "url": "https://nation.marketo.com/t5/product-releases/ct-p/product-releases",
+      "title": "Adobe Experience League | Community",
+      "text": "Adobe Experience League | Community\nSkip to main content\nCreate new post\nLogin\nWelcome to the Experience League Community\nYour community to connect, grow your skills, and build what's next.\n902,160\nMembers\n181,407\nTotal posts\n393,871\nTotal replies\nRecently online\nR\nS\nK\nQ\nK\nWhat's new\nNews\nJoin the Conversation: Built by Developers Is Now Live \ud83d\udcac\n11 days ago\n46\n9\nNews\nNow Live: Adobe Premium Learning Platform in Experience League\n22 days ago\n102\n8\nNews\nIntroducing 5 new certification study groups on Experience League \ud83c\udf93\n1 month ago\n694\n4\nNews\nNow Live: the AI training hub for marketers on Experience League \ud83c\udf93\n1 month ago\n179\n6\nNews\nIntroducing the Agentic Workflows for Customer Experience Orchestration Discussion Group\n2 months ago\n167\n5\nSpotlight\nCelebrating our 2025 Community Members of the Year \ud83c\udf89\n3 months ago\n318\n10\nNews\nCommunity Update: Streamlined Ways to Engage and a Redesigned Homepage\n5 months ago\n370\n1\nGetting started\nProduct forums\nAsk questions, share ideas, and stay up to date on Adobe products.\nExplore product forums\nDiscussion groups\nConnect with peers, share tips, and grow your professional network.\nJoin a group\nCommunity AMAs\nLearn from experts in live Ask Me Anything events.\nSee all AMAs\nFind your community\nSort\nPopularity\nPopularity\nAlphabetical\nProduct Communities\nAdobe Marketo Engage\n2\nCategories\n48307 topics\nAdobe Experience Manager\n6\nCategories\n45362 topics\nAdobe Workfront\n2\nCategories\n21494 topics\nAdobe Analytics\n0\nCategories\n17131 topics\nAdobe Campaign\n2\nCategories\n9997 topics\nAdobe Experience Platform\n0\nCategories\n6375 topics\nAdobe Target\n0\nCategories\n4246 topics\nAdobe Journey Optimizer\n0\nCategories\n2087 topics\nAdobe Audience Manager\n0\nCategories\n878 topics\nAdobe Real-Time Customer Data Platform\n0\nCategories\n574 topics\nAdobe Advertising\n0\nCategories\n369 topics\nAdobe CX Enterprise Coworker\n3\nCategories\n2 topics\nCommunity AMAs\nAdobe Analytics\n0\nCategories\n5 topics\nAdobe Campaign\n0\nCategories\n2 topics\nAdobe Target\n0\nCategories\n11 topics\nAdobe Journey Optimizer\n0\nCategories\n13 topics\nAdobe Workfront\n0\nCategories\n14 topics\nCommunity Pulse\nCommunity Pulse Blog\n0\nCategories\n128 topics\nShow all products\nMeet the community\nSkye Hansen\nLead Functional Architect\n@skyehansen\nSeattle, USA\nProducts\nAdobe Workfront\nAsk me about\nAdobe Workfront, Reporting, Adobe Workfront Proof, Governance\nArun Patidar\nTech Architecture Manager\n@arunpatidar\nMunich, Germany\nProducts\nAdobe Experience Manager\nAsk me about\nScalable architecture, component development, intuitive Touch UI dialogs and authoring experience\nMelissa Rae Brancato\nPlatform Architect\n@mbr4n\nPhiladelphia, PA, United States\nProducts\nAdobe Experience Platform, Adobe Journey Optimizer\nAsk me about\nData transformation, intuitive workflows, real-time offer orchestration, AI-powered segmentation\nMonique Evans\nSenior Manager, Global Content Studio Operations\n@MoniqueEvans\nBaltimore, MD, USA\nProducts\nAdobe Workfront\nAsk me about\nReporting, Review and Approval, User Management, System Setup, System Maintenance, Adobe Workfront Fusion\nJineet Vora\nVP Lead Software Engineer\n@Jineet_Vora\nLondon, UK\nProducts\nAdobe Experience Manager, Edge Delivery Services\nAsk me about\nAdobe Experience Manager Sites, Adobe Experience Manager Assets, Adobe Experience Manager Guides, Dynamic Media (AEM Assets)\nSanford Whiteman\nChief Technologist\n@SanfordWhiteman\nNew York, NY\nProducts\nAdobe Marketo Engage\nAsk me about\nForms, JavaScript, webhooks, velocity scripting, REST API integrations, database operations\nExplore community programs\nCommunity Pulse\nDiscover stories, spotlights, and updates that celebrate our members and showcase what\u2019s happening across the Experience League Community.\nLearn more\nAdvocacy programs\nAmplify your voice, share your passion, and inspire others through our advocacy programs.\nLearn more\nAdobe User Groups\nJoin peer-led meetups wherever you are to learn, share, and connect with your community.\nLearn more\nEvents\nExpand your learning through Adobe-hosted events, from live sessions to on-demand content tailored to your interests.\nLearn more\nPerspectives\nExplore real-world insights, tutorials, and use cases from Adobe experts and community members.\nLearn more\nPowered by Gainsight\nTerms & Conditions\nAccessibility statement\nCookie preferences\nSign up\nAlready have an account?\nLogin\nLogin with SSO\nLogin with oauth\nLogin to the community\nNo account yet?\nCreate an account\nLogin with SSO\nLogin with oauth\nEnter your E-mail address. We'll send you an e-mail with instructions to reset your password.\nEnter your e-mail address\nSend\nBack to overview\nScanning file for viruses.\nSorry, we're still checking this file's contents to make sure it's safe to download. Please try again in a few minutes.\nOK\nThis file cannot be downloaded\nSorry, our virus scanner detected that this file isn't safe to download.\nOK\n\u00d7\nScanning file for viruses.\nSorry, we're still checking this file's contents to make sure it's safe to download. Please try again in a few minutes.\nOK\n\u00d7\nThis file cannot be downloaded\nSorry, our virus scanner detected that this file isn't safe to download.\nOK",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://experienceleague.adobe.com/docs/marketo/using/home.html",
+      "title": "Marketo Product Docs | Adobe Marketo Engage",
+      "text": "Marketo Product Docs | Adobe Marketo Engage\nDocumentation\nMarketo Engage\nMarketo Guide\nMarketo Engage Product Docs\nLast update:\nJune 16, 2026\nBookmark\nSign-in to bookmark\nCopy link\nCopy link URL\nTopics:\nSmart Campaigns\nModern demand marketing strategies require end-to-end engagement to deliver the best possible customer experiences. Learn how to achieve this with Marketo Engage\u2014part of Adobe Experience Cloud\u2014by viewing our range of docs, guides, and tutorials.\nWhether you are just getting started and want an introductory Marketo Engage tutorial, or you are an experienced user looking to get more out of your subscription, you\u2019ll find all the answers you need in the Marketo Engage Product Docs.\nGet started\nSetup Steps\nConfigure Protocols for Marketo Engage\nGet Set Up and Add a Person\nMarketo Engage Glossary\nPopular Marketo Engage articles\nUnderstanding the Salesforce Sync\nUnderstanding the Microsoft Dynamics Sync\nUnderstanding Smart Campaigns\nAdobe Dynamic Chat Overview\nEmail Designer Overview\nRelease notes\nCurrent Release\nDynamic Chat Release Notes\nTable of contents\nMarketo Engage\nExpand all sections\nHome\nGetting Started with Marketo Engage\nWhat is Adobe Marketo Engage?\nInitial Setup\nSetup Steps\nConfigure Protocols\nUser Setup\nImplementing a New Marketo Engage Instance\nWhere to Start\nNew Instance Best Practices: Admin Section Checklist\nNew Instance Best Practices: Database Checklist\nNew Instance Best Practices: Design Studio Checklist\nNew Instance Best Practices: Marketing Activities Checklist\nNew Instance Best Practices: Analytics Checklist\nNew Instance Best Practices: Document Your Setup\nThings to Know\nMarketo Engage glossary\nIcon glossary\nClassic icon glossary\nHelp center\nSubscribe to system status notifications\nQuick Wins\nGet Set up and Add a Person\nSend an Email\nLanding Page with a Form\nSimple Scoring\nEmail Auto-Response\nImport a List of People\nDrip, Drip, Nurture\nPersonalize an Email\nAlert the Sales Rep\nUpdate Person Data\nRedirect a Landing Page\nAutomate an Alert for Possible Duplicate People\nInheriting a Marketo Engage Instance\nWhere to Start\nInherited Instance: Admin Section Checklist\nInherited Instance: Database Checklist\nInherited Instance: Design Studio Checklist\nInherited Instance: Marketing Activities Checklist\nInherited Instance: Document Your Setup\nReviewing Core Skills\nProduct Docs\nAdministration\nSetup\nFind Out What Permissions You Have\nMinimum System Requirements\nMunchkin\nSupported Browsers\nAdditional Integrations\nAdd Adobe Connect as a LaunchPoint Service\nAdd Google AdWords as a Launchpoint Service with a Manager Account\nAdd Google AdWords as a LaunchPoint Service\nAdd GoToWebinar as a LaunchPoint Service\nAdd Level 3 Web Meeting as a LaunchPoint Service\nAdd Munchkin Tracking Code to Your Website\nAdd Single Sign-On to a Portal\nAdd Webex as a LaunchPoint Service\nAdd Zoom as a LaunchPoint Service\nConnect BrightTALK to Marketo\nCreate a Custom Service for Use with ReST API\nCreate a Webhook\nCreate an Allowlist for IP-Based API Access\nDownload GoogleAdwords Activity Log\nRestrict User Login to SSO Only\nAudit Trail\nAudit Trail Overview\nChange Details in Audit Trail\nEnable Audit Trail\nFiltering in Audit Trail\nUser Login History\nEmail Setup\nAdd Multiple Branding Domains\nAdd an Additional Branding Domain with Workspaces\nAdd an Additional Branding Domain\nDelete a Branding Domain\nEdit Your Default Branding Domain with Workspaces\nEdit Your Default Branding Domain\nOverwrite Primary Domain for Emails\nChange Custom Object Retrieval Limits in Velocity Scripting\nChange the Default From Email and From Label\nEdit the Unsubscribe Message\nMake Your Unsubscribe Message Dynamic for Languages\nEdit the \u201cView as Web Page\u201d Message\nEnable Communication Limits\nEnable Person Restrictions for Smart Campaigns\nEmail Open Tracking at Campaign Level\nFiltering Email Bot Activity\nRemove Unsubscribe Text\nField Management\nBlock Field Updates During List Import from Untrusted Sources\nBlock Updates to a Field\nChange the Type of a Marketo Custom Field\nCreate a Custom Field in Marketo\nCreate and Use a Concatenated String (Formula) Field\nCustom Field Type Glossary\nDelete a Custom Field in Marketo\nEdit Field Aliases for List Import\nExport All Object Metadata\nExport a List of All Marketo API Field Names\nExport Used By Data for a Field\nHide and Unhide a Field\nHTML Encode Tokens in Emails\nMark a Field as Sensitive\nPicklist Management\nRename a Field\nUnderstanding System Managed Fields\nView Field Mappings Between Marketo and Salesforce\nMarketo Custom Activities\nUnderstanding Custom Activities\nAdd/Edit/Delete Marketo Custom Activity Fields\nCreate a Custom Activity\nEdit a Custom Activity\nPublish a Custom Activity\nCustom Activity Metadata Export\nMarketo Custom Objects\nUnderstanding Marketo Custom Objects\nAdd Marketo Custom Object Fields\nAdd Marketo Custom Object Link Fields\nApprove a Custom Object\nCreate Marketo Custom Objects\nEdit and Delete a Marketo Custom Object\nEdit and Delete Marketo Custom Object Fields\nImport Custom Object Data\nTrigger Off Custom Object Changes\nCustom Object Metadata Export\nMarketo with Adobe Identity\nQuick Guide\nAdobe Identity Management Overview\nAdmin Setup\nProduct Admin Setup\nUser Sign-in with Adobe ID\nSettings\nBulk Export API Information\nCampaign Inspector\nChange Attribution Settings for Analytics\nCreating a Custom Tab for the Person Detail Page\nEdit \u201cDo Not Track\u201d Browser Support Settings\nEdit Landing Page Settings\nEdit Link Expiration in Reports and Alerts\nEmail Tracking Link Headers\nEdit Subscription Settings\nEnable or Disable Treasure Chest Features\nEnable Personalized URLs for Your Account\nGlobal Form Validation Rules\nLanding Page Headers\nRestrict Marketo Logins Based on IP\nChange Your Time Zone\nSet a Fallback Page\nSet the Default Currency\nUnderstanding Privacy Settings\nTags\nCreate a New Program Tag and Tag Values\nCreate a Program Channel\nCreate Custom Tags\nDelete a Program Channel\nDelete a Program Status From a Program Channel\nHide/Unhide a Program Channel\nManaging Tag Values\nUsers and Roles\nAdd or Remove a Product Admin\nAdd or Remove a User\nCreate an API Only User Role\nCreate an API Only User\nCreate, Delete, Edit and Change a User Role\nEdit User Workspaces\nExport a List of Users and Roles\nManaging User Roles and Permissions\nExport Roles and Permissions\nDescriptions of Role Permissions\nEnable No-Draft for Snippets\nWorkspaces and Person Partitions\nUnderstanding Workspaces and Person Partitions\nAllow User Access to a Workspace\nAssign Person Partitions to Workspaces\nAssigning Person Partitions with Assignment Rules\nChange the Name of a Workspace\nCreate a New Workspace\nCreate a Person Partition\nDelete a Workspace\nEdit a Workspace\nEdit an Existing Person Partition\nShare Segmentations Across Workspaces and Partitions\nAdobe Experience Cloud Integrations\nAdobe Experience Cloud Integrations Overview\nSet up Adobe Organization Mapping\nSync an Audience From Adobe Experience Cloud\nImporting Assets with Adobe Experience Manager\nAdobe Experience Cloud Interface Overview\nCore Marketo Concepts\nSmart Campaigns\nUnderstanding Smart Campaigns\nCreating a Smart Campaign\nUnderstanding Batch and Trigger Smart Campaigns\nCreate a New Smart Campaign\nDefine Smart List for Smart Campaign | Batch\nDefine Smart List for Smart Campaign | Trigger\nSmart Campaign Checklist\nUsing Smart Campaigns\nAbort a Smart Campaign\nActivate a Trigger Smart Campaign | Schedule Tab\nApply Communication Limits to Smart Campaign\nAutomatic Trigger Campaign Cleanup\nCampaign Actions: Clone a Smart Campaign\nCampaign Actions: Delete a Smart Campaign\nCancel a Scheduled Batch Campaign Run\nCancel a Scheduled Recurring Batch Campaign Run\nDeactivate a Trigger Smart Campaign | Schedule Tab\nEdit Qualification Rules in a Smart Campaign\nMove a Smart Campaign\nOverride Person Restrictions in a Smart Campaign\nPriority Override for Trigger Campaigns\nRename a Smart Campaign\nRun a Batch Smart Campaign Now | Schedule Tab\nSchedule a Batch Smart Campaign to Run Later\nSchedule a Recurring Batch Campaign\nSetting Up a Trigger Smart Campaign for Sales Using \u201cCampaign is Requested\u201d\nUsing Standard Smart List Rule Logic\nFlow Actions\nAdd a Flow Step to a Smart Campaign\nReorder the Flow Steps in a Smart Campaign\nAdd to List\nAppend Data to a Field\nCall Webhook\nChange Data Value\nClear Field Values\nChange Person Partition\nChange Revenue Stage\nChange Score\nConvert Person\nDelete a Flow Step\nDelete Person\nExecute Campaign\nFlow Step Service\nInteresting Moment\nRemove from Flow\nRemove from List\nReorder \u201cAdd Choice\u201d in a Flow Step\nRequest Campaign\nSend Alert\nSend Email\nTriggers and Filters for Mobile Smart Campaigns\nUse a Webhook in a Smart Campaign\nUse Add Choice in a Flow Step\nUse Tokens in Flow Steps\nWait\nWait Overview\nUse a Date Token in a Wait Flow Step\nUse a Duration in a Wait Flow Step\nUse a Specific Date in a Wait Flow Step\nProgram Flow Actions\nAdd to Engagement Program\nChange Engagement Program Cadence\nChange Engagement Program Stream\nChange Program Status\nChange Program Success\nChange Program Member Data\nMicrosoft Dynamics Flow Actions\nAdd or Remove People from your Dynamics Campaign\nChange Owner in Microsoft\nCreate Task in Microsoft\nSync Person to Microsoft\nSalesforce Flow Actions\nAdd to SFDC Campaign\nChange Owner\nChange Status in SFDC Campaign\nCreate Task\nDelete Person from SFDC\nRemove from SFDC Campaign\nSync Person to SFDC\nSmart Campaign Data\nExport Smart Campaign Results to Excel\nFilter Smart Campaign Results\nView Blocked People in a Smart Campaign\nView Qualified People in a Smart Campaign\nView Smart Campaign Members\nView Smart Campaign Results\nSmart Lists and Static Lists\nUnderstanding Smart Lists\nCreating a Smart List\nBest Practices for Smart Lists\nCreate a Smart List\nDefine Smart List Filters\nFind and Add Filters to a Smart List\nSmart List Filter Operators Glossary\nUsing Smart Lists\nAdd a Constraint to a Smart List Filter\nAdd Multiple Values to a Smart List Filter\nClone a List or Smart List\nCreate and Change Views for Lists and Smart List\nInferred Filters\nOpportunity Filters and Triggers\nReference a List or Smart List Across Workspaces\nRefresh a List or Smart List\nRun a Single Flow Step from a Smart List\nUse Built-in/System Smart Lists\nUse Inactivity Filters in a Smart List\nUse the Data Value Changed Filter in a Smart List\nUsing Advanced Smart List Rule Logic\nManaging People in Smart Lists\nAdd Person to Blocklist\nCreate a Person Manually\nDatabase Dashboard\nDelete People in a Smart List or List\nExport People to Excel from a List or Smart List\nFilter Activity Types in the Activity Log of a Person\nFind All People in a Revenue Stage\nFind and Merge Duplicate People\nFind Duplicate People with Custom Logic\nLocate the Activity Log for a Person\nUnderstanding Anonymous Activity and People\nUse Members of List in a Smart List\nUse Quick Find in a List or Smart List\nUsing the Person Detail Page\nStatic Lists\nCreate a Static List\nSend a List to Adobe Experience Cloud\nPush an Adobe Experience Platform Segment to a Marketo Static List\nUnderstanding Static Lists\nPrograms\nCreating Programs\nUnderstanding Programs\nCreate a Program\nUnderstanding Local Assets in a Program\nUnderstanding Program Membership\nUsing the Assets Tab\nUsing the Program Home Tab\nWorking with Programs\nBest Practice: How to Organize your Programs\nClone a Program\nClone an Asset in a Program\nDelete a Program\nEdit Analytics Behavior Settings\nImport a Program\nImport Members from a Spreadsheet into a Program\nLocal Asset Expiration\nManage and View Members\nProgram Member Custom Fields\nProgram Member Custom Field Sync\nSync an SFDC Campaign with a Program\nUnderstanding Period Costs\nUnderstanding Tags\nUse Tags in a Program\nUsing Period Costs in a Program\nProgram Library\nProgram Import Library Overview\nEM-YYYY-MM-DD-Single Email Send\nNL-YYYY-MM-Newsletter\nWBN-YYYY-MM-DD-Webinar Program\nEV-YYYY-MM-DD-Event Program\nTS-YYYY-MM-DD-Tradeshow Program\nNUR-YYYY-MM-Simple Nurture\nNUR-YYYY-MM-Advanced Nurture\nCT-YYYY-MM-Content on Marketo Landing Page\nCT-YYYY-MM-Content Non-Marketo Landing Page\nWR-YYYY-MM-Web Request Program\nOA-YYYY-MM-Online Advertising Marketo Landing Page\nOP-Data Management\nOP-Lead Management\nOP-Scoring-Behavior\nOP-Scoring-Demographic\nOP-Acquisition-API\nOP-Deliverability Management\nQuick Start Email Template\nQuick Start Landing Page Template\nProgram Performance Report\nCreate a Program Performance Report\nAdd Program Status Columns to a Program Report\nFilter a Program Report by Period Cost\nFilter a Program Report by Program\nFilter a Program Report by Tag\nProgram Schedule View\nCreate Custom Entry Types\nCreating a Batch Smart Campaign in the Program Schedule View\nCreating a New Email Program in the Schedule View\nCreating an Entry in the Program Schedule View\nCreating Custom Overlays in Program Schedule View\nEditing Entries in the Program Schedule View\nHiding and Unhiding Custom Entry Types\nMoving Entries in the Program Schedule View\nNavigating the Program Schedule View\nProgram Schedule View Entry Types\nRerun a Smart Campaign in the Program Schedule View\nReschedule a Batch Smart Campaign in the Program Schedule View\nRescheduling an Entire Program from the Schedule View\nUnderstanding Tentative/Confirmed Dates\nUsing a Global Overlay\nTokens\nManaging My Tokens\nUnderstanding My Tokens in a Program\nProgram Member Custom Field Tokens\nMarketing Calendar\nUnderstanding the Calendar\nIssue/Revoke a Marketing Calendar License\nNavigating the Marketing Calendar\nUnderstand/Enable Program Focus\nView Entry Details\nWorking with the Calendar\nConfirm Entries Directly In the Marketing Calendar\nCreate Entries Directly in the Marketing Calendar\nDelete Entries Directly In the Marketing Calendar\nDeleting a Filter in the Marketing Calendar\nEdit Entries Directly In the Marketing Calendar\nFiltering the Marketing Calendar by Workspace\nFiltering the Marketing Calendar\nSaving a Filter Definition in the Marketing Calendar\nSharing a Filter Definition in the Marketing Calendar\nCalendar HD\nAdd a Background Image to a Presentation\nClone a Presentation\nCreate a Custom Goal\nCreate a Presentation\nCreate a Smart Lis",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://nation.marketo.com/t5/marketo-launchpoint/ct-p/launchpoint",
+      "title": "Adobe Experience League | Community",
+      "text": "Adobe Experience League | Community\nSkip to main content\nCreate new post\nLogin\nWelcome to the Experience League Community\nYour community to connect, grow your skills, and build what's next.\n902,160\nMembers\n181,407\nTotal posts\n393,871\nTotal replies\nRecently online\nR\nS\nK\nQ\nK\nWhat's new\nNews\nJoin the Conversation: Built by Developers Is Now Live \ud83d\udcac\n11 days ago\n46\n9\nNews\nNow Live: Adobe Premium Learning Platform in Experience League\n22 days ago\n102\n8\nNews\nIntroducing 5 new certification study groups on Experience League \ud83c\udf93\n1 month ago\n694\n4\nNews\nNow Live: the AI training hub for marketers on Experience League \ud83c\udf93\n1 month ago\n179\n6\nNews\nIntroducing the Agentic Workflows for Customer Experience Orchestration Discussion Group\n2 months ago\n167\n5\nSpotlight\nCelebrating our 2025 Community Members of the Year \ud83c\udf89\n3 months ago\n318\n10\nNews\nCommunity Update: Streamlined Ways to Engage and a Redesigned Homepage\n5 months ago\n370\n1\nGetting started\nProduct forums\nAsk questions, share ideas, and stay up to date on Adobe products.\nExplore product forums\nDiscussion groups\nConnect with peers, share tips, and grow your professional network.\nJoin a group\nCommunity AMAs\nLearn from experts in live Ask Me Anything events.\nSee all AMAs\nFind your community\nSort\nPopularity\nPopularity\nAlphabetical\nProduct Communities\nAdobe Marketo Engage\n2\nCategories\n48307 topics\nAdobe Experience Manager\n6\nCategories\n45362 topics\nAdobe Workfront\n2\nCategories\n21494 topics\nAdobe Analytics\n0\nCategories\n17131 topics\nAdobe Campaign\n2\nCategories\n9997 topics\nAdobe Experience Platform\n0\nCategories\n6375 topics\nAdobe Target\n0\nCategories\n4246 topics\nAdobe Journey Optimizer\n0\nCategories\n2087 topics\nAdobe Audience Manager\n0\nCategories\n878 topics\nAdobe Real-Time Customer Data Platform\n0\nCategories\n574 topics\nAdobe Advertising\n0\nCategories\n369 topics\nAdobe CX Enterprise Coworker\n3\nCategories\n2 topics\nCommunity AMAs\nAdobe Analytics\n0\nCategories\n5 topics\nAdobe Campaign\n0\nCategories\n2 topics\nAdobe Target\n0\nCategories\n11 topics\nAdobe Journey Optimizer\n0\nCategories\n13 topics\nAdobe Workfront\n0\nCategories\n14 topics\nCommunity Pulse\nCommunity Pulse Blog\n0\nCategories\n128 topics\nShow all products\nMeet the community\nSkye Hansen\nLead Functional Architect\n@skyehansen\nSeattle, USA\nProducts\nAdobe Workfront\nAsk me about\nAdobe Workfront, Reporting, Adobe Workfront Proof, Governance\nArun Patidar\nTech Architecture Manager\n@arunpatidar\nMunich, Germany\nProducts\nAdobe Experience Manager\nAsk me about\nScalable architecture, component development, intuitive Touch UI dialogs and authoring experience\nMelissa Rae Brancato\nPlatform Architect\n@mbr4n\nPhiladelphia, PA, United States\nProducts\nAdobe Experience Platform, Adobe Journey Optimizer\nAsk me about\nData transformation, intuitive workflows, real-time offer orchestration, AI-powered segmentation\nMonique Evans\nSenior Manager, Global Content Studio Operations\n@MoniqueEvans\nBaltimore, MD, USA\nProducts\nAdobe Workfront\nAsk me about\nReporting, Review and Approval, User Management, System Setup, System Maintenance, Adobe Workfront Fusion\nJineet Vora\nVP Lead Software Engineer\n@Jineet_Vora\nLondon, UK\nProducts\nAdobe Experience Manager, Edge Delivery Services\nAsk me about\nAdobe Experience Manager Sites, Adobe Experience Manager Assets, Adobe Experience Manager Guides, Dynamic Media (AEM Assets)\nSanford Whiteman\nChief Technologist\n@SanfordWhiteman\nNew York, NY\nProducts\nAdobe Marketo Engage\nAsk me about\nForms, JavaScript, webhooks, velocity scripting, REST API integrations, database operations\nExplore community programs\nCommunity Pulse\nDiscover stories, spotlights, and updates that celebrate our members and showcase what\u2019s happening across the Experience League Community.\nLearn more\nAdvocacy programs\nAmplify your voice, share your passion, and inspire others through our advocacy programs.\nLearn more\nAdobe User Groups\nJoin peer-led meetups wherever you are to learn, share, and connect with your community.\nLearn more\nEvents\nExpand your learning through Adobe-hosted events, from live sessions to on-demand content tailored to your interests.\nLearn more\nPerspectives\nExplore real-world insights, tutorials, and use cases from Adobe experts and community members.\nLearn more\nPowered by Gainsight\nTerms & Conditions\nAccessibility statement\nCookie preferences\nSign up\nAlready have an account?\nLogin\nLogin with SSO\nLogin with oauth\nLogin to the community\nNo account yet?\nCreate an account\nLogin with SSO\nLogin with oauth\nEnter your E-mail address. We'll send you an e-mail with instructions to reset your password.\nEnter your e-mail address\nSend\nBack to overview\nScanning file for viruses.\nSorry, we're still checking this file's contents to make sure it's safe to download. Please try again in a few minutes.\nOK\nThis file cannot be downloaded\nSorry, our virus scanner detected that this file isn't safe to download.\nOK\n\u00d7\nScanning file for viruses.\nSorry, we're still checking this file's contents to make sure it's safe to download. Please try again in a few minutes.\nOK\n\u00d7\nThis file cannot be downloaded\nSorry, our virus scanner detected that this file isn't safe to download.\nOK",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/marketo/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Social is dead; only media left",
+          "url": null,
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2023-04-13T19:30:15Z",
+          "hn_url": "https://news.ycombinator.com/item?id=35560906"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": "https://nation.marketo.com/t5/product-releases/ct-p/product-releases",
+    "docs": "https://experienceleague.adobe.com/docs/marketo/using/home.html",
+    "integrations": "https://nation.marketo.com/t5/marketo-launchpoint/ct-p/launchpoint",
+    "g2": "https://www.g2.com/products/marketo/reviews"
+  },
+  "analysis": {
+    "name": "Adobe Marketo Engage",
+    "url": "https://www.marketo.com",
+    "tagline": "Modern demand marketing strategies require end-to-end engagement to deliver the best possible customer experiences",
+    "value_proposition": "Enterprise marketing automation platform for end-to-end customer engagement as part of Adobe Experience Cloud",
+    "target_segment": "enterprise",
+    "ideal_customer": "Enterprise B2B marketing teams running demand generation, lead nurturing, and account-based marketing programs",
+    "features": [
+      {
+        "name": "smart campaigns",
+        "description": "Automated campaign engine for triggered and batch marketing workflows",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding Smart Campaigns",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email marketing",
+        "description": "Email creation, sending, tracking, and personalization",
+        "evidence_source": "docs",
+        "evidence_quote": "Send an Email; Email Designer Overview",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email designer",
+        "description": "WYSIWYG email builder",
+        "evidence_source": "docs",
+        "evidence_quote": "Email Designer Overview",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "landing pages",
+        "description": "Landing page builder with forms",
+        "evidence_source": "docs",
+        "evidence_quote": "Landing Page with a Form",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "forms",
+        "description": "Web forms for lead capture with global validation rules",
+        "evidence_source": "docs",
+        "evidence_quote": "Global Form Validation Rules",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "lead scoring",
+        "description": "Behavioral and demographic scoring of leads",
+        "evidence_source": "docs",
+        "evidence_quote": "Simple Scoring",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "lead nurturing",
+        "description": "Drip and nurture programs for lead engagement",
+        "evidence_source": "docs",
+        "evidence_quote": "Drip, Drip, Nurture",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email personalization",
+        "description": "Dynamic content and token-based email personalization",
+        "evidence_source": "docs",
+        "evidence_quote": "Personalize an Email; HTML Encode Tokens in Emails",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "list import",
+        "description": "Bulk import of people/leads with field aliasing",
+        "evidence_source": "docs",
+        "evidence_quote": "Import a List of People; Edit Field Aliases for List Import",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sales alerts",
+        "description": "Automated notifications to sales reps on lead activity",
+        "evidence_source": "docs",
+        "evidence_quote": "Alert the Sales Rep",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "duplicate detection",
+        "description": "Automated alerts for possible duplicate person records",
+        "evidence_source": "docs",
+        "evidence_quote": "Automate an Alert for Possible Duplicate People",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "salesforce sync",
+        "description": "Bi-directional CRM sync with Salesforce",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding the Salesforce Sync",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft dynamics sync",
+        "description": "Bi-directional CRM sync with Microsoft Dynamics",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding the Microsoft Dynamics Sync",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dynamic chat",
+        "description": "Conversational chatbot for lead engagement",
+        "evidence_source": "docs",
+        "evidence_quote": "Adobe Dynamic Chat Overview",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "munchkin tracking",
+        "description": "JavaScript web tracking code for visitor behavior",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Munchkin Tracking Code to Your Website",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sso",
+        "description": "Single sign-on for portal login with option to restrict to SSO only",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Single Sign-On to a Portal; Restrict User Login to SSO Only",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "adobe identity management",
+        "description": "Sign-in with Adobe ID via Adobe Identity Management",
+        "evidence_source": "docs",
+        "evidence_quote": "User Sign-in with Adobe ID",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "rest api",
+        "description": "REST API for programmatic access to Marketo",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a Custom Service for Use with ReST API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bulk export api",
+        "description": "Bulk export API for large data exports",
+        "evidence_source": "docs",
+        "evidence_quote": "Bulk Export API Information",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Outbound webhooks for third-party integrations",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a Webhook",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ip allowlisting",
+        "description": "Restrict API access by IP address",
+        "evidence_source": "docs",
+        "evidence_quote": "Create an Allowlist for IP-Based API Access",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ip login restriction",
+        "description": "Restrict Marketo user logins by IP",
+        "evidence_source": "docs",
+        "evidence_quote": "Restrict Marketo Logins Based on IP",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "audit trail",
+        "description": "Audit log of changes with filtering and user login history",
+        "evidence_source": "docs",
+        "evidence_quote": "Audit Trail Overview; User Login History",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom fields",
+        "description": "Create, edit, and manage custom fields on person records",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a Custom Field in Marketo",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom objects",
+        "description": "Custom data objects linked to person records",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding Marketo Custom Objects",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom activities",
+        "description": "Custom activity tracking with metadata export",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding Custom Activities",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "launchpoint integrations",
+        "description": "Marketplace of third-party integrations (Zoom, Webex, GoToWebinar, etc.)",
+        "evidence_source": "integrations",
+        "evidence_quote": "marketo launchpoint",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "google adwords integration",
+        "description": "Native Google AdWords LaunchPoint integration",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Google AdWords as a LaunchPoint Service",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "zoom integration",
+        "description": "Zoom webinar LaunchPoint integration",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Zoom as a LaunchPoint Service",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webex integration",
+        "description": "Webex meeting LaunchPoint integration",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Webex as a LaunchPoint Service",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gotowebinar integration",
+        "description": "GoToWebinar LaunchPoint integration",
+        "evidence_source": "docs",
+        "evidence_quote": "Add GoToWebinar as a LaunchPoint Service",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "adobe connect integration",
+        "description": "Adobe Connect LaunchPoint integration",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Adobe Connect as a LaunchPoint Service",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "brighttalk integration",
+        "description": "BrightTALK webinar LaunchPoint integration",
+        "evidence_source": "docs",
+        "evidence_quote": "Connect BrightTALK to Marketo",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "velocity scripting",
+        "description": "Server-side scripting for advanced email personalization",
+        "evidence_source": "docs",
+        "evidence_quote": "Change Custom Object Retrieval Limits in Velocity Scripting",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "branding domains",
+        "description": "Multiple custom branded sending domains",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Multiple Branding Domains",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "workspaces",
+        "description": "Multi-workspace segmentation for shared Marketo instance",
+        "evidence_source": "docs",
+        "evidence_quote": "Add an Additional Branding Domain with Workspaces",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "unsubscribe management",
+        "description": "Configurable unsubscribe messages with dynamic language support",
+        "evidence_source": "docs",
+        "evidence_quote": "Edit the Unsubscribe Message; Make Your Unsubscribe Message Dynamic for Languages",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "communication limits",
+        "description": "Cap frequency of communications to persons",
+        "evidence_source": "docs",
+        "evidence_quote": "Enable Communication Limits",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email bot filtering",
+        "description": "Filter non-human email opens/clicks",
+        "evidence_source": "docs",
+        "evidence_quote": "Filtering Email Bot Activity",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email open tracking",
+        "description": "Open tracking at campaign level",
+        "evidence_source": "docs",
+        "evidence_quote": "Email Open Tracking at Campaign Level",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "personalized urls",
+        "description": "Personalized URLs (PURLs) per recipient",
+        "evidence_source": "docs",
+        "evidence_quote": "Enable Personalized URLs for Your Account",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "campaign inspector",
+        "description": "Tool to inspect and audit campaign configurations",
+        "evidence_source": "docs",
+        "evidence_quote": "Campaign Inspector",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "revenue attribution",
+        "description": "Multi-touch attribution reporting",
+        "evidence_source": "docs",
+        "evidence_quote": "Change Attribution Settings for Analytics",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "program tags",
+        "description": "Program tags and channels for organization/reporting",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a New Program Tag and Tag Values",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "do not track support",
+        "description": "Browser Do Not Track compliance settings",
+        "evidence_source": "docs",
+        "evidence_quote": "Edit \"Do Not Track\" Browser Support Settings",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "privacy controls",
+        "description": "Privacy settings including sensitive field marking",
+        "evidence_source": "docs",
+        "evidence_quote": "Understanding Privacy Settings; Mark a Field as Sensitive",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "users and roles",
+        "description": "Role-based access control for users",
+        "evidence_source": "docs",
+        "evidence_quote": "Users and Roles",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-currency",
+        "description": "Set default currency for reporting",
+        "evidence_source": "docs",
+        "evidence_quote": "Set the Default Currency",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "treasure chest features",
+        "description": "Opt-in beta/experimental feature toggles",
+        "evidence_source": "docs",
+        "evidence_quote": "Enable or Disable Treasure Chest Features",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "formula fields",
+        "description": "Concatenated string / formula custom fields",
+        "evidence_source": "docs",
+        "evidence_quote": "Create and Use a Concatenated String (Formula) Field",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "picklist management",
+        "description": "Manage picklist values for fields",
+        "evidence_source": "docs",
+        "evidence_quote": "Picklist Management",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom person tabs",
+        "description": "Custom tabs on the person detail page",
+        "evidence_source": "docs",
+        "evidence_quote": "Creating a Custom Tab for the Person Detail Page",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "agentic workflows",
+        "description": "Agentic AI workflows for customer experience orchestration",
+        "evidence_source": "changelog",
+        "evidence_quote": "Introducing the Agentic Workflows for Customer Experience Orchestration Discussion Group",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "ai for marketers",
+        "description": "AI training and capabilities aimed at marketers",
+        "evidence_source": "changelog",
+        "evidence_quote": "Now Live: the AI training hub for marketers on Experience League",
+        "tier": "enterprise",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Salesforce",
+      "Microsoft Dynamics",
+      "Adobe Connect",
+      "Google AdWords",
+      "GoToWebinar",
+      "Level 3 Web Meeting",
+      "Webex",
+      "Zoom",
+      "BrightTALK",
+      "Adobe Experience Cloud",
+      "Adobe Experience Platform",
+      "Adobe Journey Optimizer",
+      "Adobe Target",
+      "Adobe Analytics",
+      "Adobe Workfront"
+    ],
+    "differentiators": [
+      "Part of Adobe Experience Cloud with tight integration to Adobe Analytics, Target, and Experience Platform",
+      "Deep enterprise B2B marketing automation with custom objects and custom activities",
+      "LaunchPoint integration marketplace",
+      "Velocity scripting for advanced personalization",
+      "Enterprise-grade audit trail, SSO, and IP restrictions"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-06",
+        "what": "Built by Developers community launched",
+        "source": "Join the Conversation: Built by Developers Is Now Live (11 days ago)"
+      },
+      {
+        "date": "2026-06",
+        "what": "Adobe Premium Learning Platform on Experience League",
+        "source": "Now Live: Adobe Premium Learning Platform in Experience League (22 days ago)"
+      },
+      {
+        "date": "2026-06",
+        "what": "AI training hub for marketers launched",
+        "source": "Now Live: the AI training hub for marketers on Experience League (1 month ago)"
+      },
+      {
+        "date": "2026-05",
+        "what": "Agentic Workflows for Customer Experience Orchestration discussion group",
+        "source": "Introducing the Agentic Workflows for Customer Experience Orchestration Discussion Group (2 months ago)"
+      },
+      {
+        "date": "2026-06-16",
+        "what": "Marketo Engage product docs updated",
+        "source": "Last update: June 16, 2026"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "contact-sales",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [],
+      "enterprise": "contact-sales",
+      "notes": "Marketo Engage pricing is not publicly listed; sold through Adobe enterprise sales with tiered packages (Growth, Select, Prime, Ultimate historically). Contact sales required for quotes."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

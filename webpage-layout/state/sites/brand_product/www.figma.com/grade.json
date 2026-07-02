@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 5,
+    "distinctiveness": 2,
+    "color": 3,
+    "density": 4,
+    "voice": 3
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif system with no character. The type is clean but completely anonymous\u2014could be any SaaS product. No typographic identity or discipline beyond basic legibility.",
+    "hierarchy": "Hero headline dominates adequately, but the layout is standard SaaS stencil. The image carousel competes with the headline. Secondary sections have reasonable weight but nothing feels purposefully composed.",
+    "distinctiveness": "Catastrophically generic. The 'Make anything possible' headline, carousel of gray placeholder boxes, logo parade, and 'first idea to final product' copy are all completely interchangeable. This exact layout could work for any B2B software with zero changes.",
+    "color": "Minimal palette with blue CTA accent, but no restraint philosophy\u2014just default safety. The blue feels algorithmic, not designed. No color personality or distinctive accent strategy beyond 'primary button blue.'",
+    "density": "Uniform padding throughout. Safe, predictable spacing that never commits to density or breathing room. The logo parade has decent compression, but overall it's timid\u2014afraid to pack information or create dramatic whitespace.",
+    "voice": "Pure SaaS stencil structure: hero CTA \u2192 social proof logos \u2192 feature section. The IA is completely template-driven with no connection to Figma's actual collaborative/design story. Could be Notion, Miro, or any design tool."
+  },
+  "winning_patterns": [
+    "Clean, uncluttered interface that doesn't overwhelm",
+    "Logo parade is well-executed with recognizable brands",
+    "Product screenshot shows actual interface rather than abstract metaphors"
+  ],
+  "anti_patterns": [
+    "Completely generic hero with placeholder gray boxes\u2014zero personality",
+    "Stencil headline 'Make anything possible' could be any product",
+    "Standard SaaS layout: hero \u2192 logos \u2192 feature \u2192 repeat",
+    "Navigation dropdowns for everything signal lack of opinion",
+    "Cookie modal immediately undermines any design credibility",
+    "No typographic identity for a company that makes design tools",
+    "Uniform padding throughout\u2014no spatial rhythm or confidence"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://www.figma.com",
+  "_persona": "brand_product",
+  "_note": "Vibrant, playful product brand",
+  "_graded_at": "2026-05-07T23:28:22.196450Z"
+}

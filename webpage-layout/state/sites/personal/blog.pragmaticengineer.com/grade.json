@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 6,
+    "distinctiveness": 3,
+    "color": 6,
+    "density": 5,
+    "voice": 4
+  },
+  "reasoning": {
+    "typography": "Open Sans + Merriweather is the 2013 Google Fonts pairing every content site defaulted to. Zero personality, pure template energy. It's legible but utterly forgettable.",
+    "hierarchy": "Headlines are doing some work (bold, sized up), but everything sits at the same rhythm. The sidebar avatar + name + links creates competing hierarchy with main content. No single dominant element per screen.",
+    "distinctiveness": "This is a Ghost template with minimal customization. Swap 'Pragmatic Engineer' for any other tech blogger and it works identically. The nav structure (Newsletter | Podcast | Guidebook | Books) is commodity.",
+    "color": "Restrained palette (grey background, dark text, subtle underlines). No accent color abuse. Professional and disciplined, though utterly safe.",
+    "density": "Uniform padding throughout. The left sidebar is spacious, articles have consistent vertical rhythm, but it's calibrated for 'blog template' not confident content density. Nothing surprising.",
+    "voice": "The structure is pure Ghost stencil: hero title, horizontal nav, sidebar with author card + links, article list with dates. The IA doesn't reflect any unique story\u2014it's 'blog + products' like 10,000 others."
+  },
+  "winning_patterns": [
+    "Restrained color palette avoids decoration",
+    "Clear article headlines do most of the visual work",
+    "Consistent vertical rhythm makes content scannable"
+  ],
+  "anti_patterns": [
+    "Open Sans + Merriweather is the Ikea Allen wrench of web type",
+    "Ghost default template with almost zero customization",
+    "Sidebar navigation competes with article content for attention",
+    "Generic 'Newsletter | Podcast | Books' nav could be anyone's",
+    "Uniform padding/whitespace shows no opinion on density"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://blog.pragmaticengineer.com",
+  "_persona": "personal",
+  "_note": "Gergely Orosz \u2014 newsletter-first",
+  "_graded_at": "2026-05-07T23:26:46.217786Z"
+}

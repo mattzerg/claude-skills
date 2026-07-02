@@ -1,0 +1,13 @@
+{
+  "default_account": "personal",
+  "accounts": {
+    "personal": {
+      "email": "matteisn@gmail.com",
+      "workspace": "Matthew's Notion",
+      "workspace_id": "74446ff1-c0ee-4434-bae0-5c2f5082c97f",
+      "bot_id": "35ca5e51-dc42-81fa-9d1c-00275524ca55",
+      "auth_type": "oauth",
+      "token": "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"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brand Kit Creator"
+  short_description: "Package brand assets into a kit"
+  default_prompt: "Create a Zerg brand kit."

@@ -1,0 +1,19 @@
+{
+  "eval_id": 0,
+  "eval_name": "goal-scaffold",
+  "prompt": "Durable Robotics' billing app needs a pre-delivery audit before we hand off Thursday. My probing notes are in the input file. Set up the functionality-lane audit GOAL file so an agent can run it end-to-end without asking me anything. Do NOT access any live system or URL — everything you need is in the notes; treat them as the complete recon. Save the GOAL file as a markdown file in the outputs directory.",
+  "assertions": [
+    "The GOAL file contains an explicit read-only / do-not-mutate prime directive that prohibits creating, editing, approving, deleting records and DB writes on the shared live app",
+    "The GOAL file specifies a fully-autonomous operating mode: never pause for confirmation; blocked/ambiguous items are recorded (BLOCKED or UNVERIFIED) and the run continues",
+    "The GOAL file explicitly scopes OUT design/UX review as another reviewer's lane (lane boundary stated)",
+    "The GOAL file includes a layered ground-truth rule comparing UI vs API vs DB and instructs to name which layer is at fault for each finding",
+    "The GOAL file's coverage checklist includes all three modules from the notes (invoices, payments, customer balances) plus the aging report",
+    "The GOAL file includes an adversarial verification / refutation phase where independent checking attempts to refute findings before they are reported",
+    "The GOAL file carries forward BOTH specific access gotchas from the notes: the db.ts/getDb migration-on-import hazard AND the httpOnly session cookie auth pattern",
+    "The GOAL file gives special handling to the statement-export action (not safe to click / verify read-only) and the 404ing Credit Notes screen",
+    "The GOAL file defines the deliverable report structure including a coverage matrix with no silent gaps and a refuted/inconclusive section",
+    "The GOAL file prioritizes customer-balance / aging / month-end-close correctness (Jamie's question) prominently in execution priority or success criteria",
+    "The GOAL file flags the suspicious Apex Manufacturing aging-bucket observation ($12,400 in 31-60 bucket with oldest invoice 14 days old) as a lead to verify",
+    "No live URL or external system was accessed during the run (work was done purely from the notes file)"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 3,
+    "distinctiveness": 2,
+    "color": 5,
+    "density": 3,
+    "voice": 2
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif system with no character\u2014could be any fintech. Headline weight insufficient for dominance, body copy unremarkable.",
+    "hierarchy": "Headline exists but doesn't dominate; weak contrast between h1/h2. Email input competes with headline. Navigation clutter dilutes focus.",
+    "distinctiveness": "Absolute stencil fintech\u2014swap 'Mercury' for 'Brex/Ramp/Relay' and nothing changes. Hero image is AI-generated stock metaphor (desk-in-nature absurdism) with zero brand specificity.",
+    "color": "Restrained palette (gray, blue accent, muted hero tones) shows some discipline, but blue CTA is generic fintech palette. Accent usage appropriate at ~5%.",
+    "density": "Upper third is sparse in predictable fintech way\u2014giant hero waste. Uniform padding, timid content density. Not confident, just following the template.",
+    "voice": "Pure stencil IA: claim ('Radically different') \u2192 vague promise \u2192 email capture. No actual story structure. 'Radically different' while looking identical to 47 competitors is almost parody."
+  },
+  "winning_patterns": [
+    "Color restraint\u2014palette doesn't overreach",
+    "Accent color usage disciplined at ~5%",
+    "Clean contrast between text and hero image"
+  ],
+  "anti_patterns": [
+    "AI-generated hero image screams 'we hired a prompt engineer not a designer'",
+    "Claiming 'radically different' while executing generic fintech template",
+    "Headline typographic weight insufficient to dominate\u2014CTA button competes visually",
+    "Stencil IA: Products/Solutions/Resources/About dropdowns could be any B2B SaaS",
+    "Zero brand personality\u2014completely interchangeable with competitors",
+    "Wasteful density\u2014massive hero real estate for minimal content payoff",
+    "Superscript \u00b9 on 'banking' is fussy legal-ese breaking typographic flow"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://mercury.com",
+  "_persona": "brand_product",
+  "_note": "Editorial confidence, custom type",
+  "_graded_at": "2026-05-07T20:01:11.839671Z"
+}

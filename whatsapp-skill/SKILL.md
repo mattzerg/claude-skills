@@ -4,6 +4,7 @@ description: Send and receive WhatsApp messages. Use when the user asks to send 
 allowed-tools: Bash, Read
 ---
 
+
 # WhatsApp Skill - Messaging Automation
 
 Send messages, read chats, and search WhatsApp via WhatsApp Web automation.

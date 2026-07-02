@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 6,
+    "color": 8,
+    "density": 7,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Geist typeface system is executed well\u2014disciplined, technical character fits the dev tool brand. Size scale is confident, but still within 'developer tool' conventions rather than truly distinctive.",
+    "hierarchy": "Hero headline dominates effectively, gradient pyramid draws focus. However, below-fold content becomes more democratic/uniform\u2014the testimonial section especially lacks visual dominance between elements.",
+    "distinctiveness": "The gradient pyramid and 'AI Cloud' positioning are Vercel-specific, but structural beats (testimonials, product grid, feature cards) are replaceable. Swap 'Vercel' for 'Netlify' and much still works\u2014it's product-category design.",
+    "color": "Black base with blue-to-red gradient is restrained and striking. Accent colors (teal event badge, gradient hero) stay under 10% of canvas. No decorative noise\u2014disciplined execution.",
+    "density": "Hero has confident breathing room. Mid-page toggles between dense (testimonials tight) and loose (feature cards padded). Not generic uniform padding, but also not systematically intentional\u2014varies by section.",
+    "voice": "Structure is 'Hero / Social Proof / Product Grid / Features'\u2014textbook SaaS stencil. The copy has personality ('build times went from 7m to 40s') but the IA doesn't reflect Vercel's actual narrative\u2014could be any dev platform."
+  },
+  "winning_patterns": [
+    "Gradient pyramid visual is memorable and technically expressive\u2014fits AI infrastructure positioning",
+    "Geist typeface system executed with discipline\u2014appropriate character for developer tools",
+    "Color restraint: black canvas with surgical gradient accent creates technical premium feel",
+    "Testimonial specificity: '7m to 40s' and '24x faster' are concrete, not generic fluff",
+    "Hero type scale is confident\u2014large enough to do visual work without secondary elements"
+  ],
+  "anti_patterns": [
+    "Below-fold becomes product-grid stencil: 'Your product / Agents / AI Apps / Web Apps' tiles are interchangeable",
+    "IA is textbook SaaS template\u2014doesn't surface what makes Vercel's story unique vs. competitors",
+    "Feature cards have uniform treatment\u2014no visual prioritization of what matters most",
+    "Event banner ('Ship 26 coming to 5 cities') sits in nav limbo\u2014not integrated into story hierarchy",
+    "Tab navigation ('AI Apps / Web Apps / Ecommerce') feels like feature-list thinking, not narrative structure"
+  ],
+  "one_word_personality": "slick",
+  "_url": "https://vercel.com",
+  "_persona": "brand_product",
+  "_note": "Bold gradients, brand-strong",
+  "_graded_at": "2026-05-07T20:00:47.437472Z"
+}

@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 7,
+    "distinctiveness": 3,
+    "color": 6,
+    "density": 5,
+    "voice": 3
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif with no character. Headline is enormous but lacks typographic identity\u2014could be any SaaS company. Letter-spacing feels arbitrary rather than intentional.",
+    "hierarchy": "Strong headline dominance with clear focal point. Two-line benefit statement and dual CTAs work well. But after hero, it's just logo soup with zero content hierarchy.",
+    "distinctiveness": "Completely swappable. 'AI infrastructure that developers love' could describe 20 companies. Black background + green accent is the new 'dark mode SaaS' stencil. Logo grid screams 'we need social proof.'",
+    "color": "Black + neon green + white. Palette is restrained, green accent is disciplined (~5% usage). But the choice itself is trendy/generic\u2014not ownable. Green CTA button is effective but predictable.",
+    "density": "Massive amounts of empty black space feel more like 'we don't have content yet' than confident minimalism. Hero takes full viewport with basically 3 text elements. Customer logos crammed at bottom.",
+    "voice": "Structure is paint-by-numbers: Hero headline \u2192 benefit copy \u2192 dual CTA \u2192 logo wall. No story, no journey, no reason this ordering matters. Could be any B2B SaaS site from 2023-2024."
+  },
+  "winning_patterns": [
+    "Headline size and contrast create immediate focal point",
+    "Neon green accent pops dramatically against pure black",
+    "Benefit copy is specific (sub-second cold starts, autoscaling) not vague",
+    "Logo grid shows credible customer portfolio (Quora, Meta, Scale)"
+  ],
+  "anti_patterns": [
+    "Absurd amounts of empty black space\u2014wasteful, not confident",
+    "Logo grid with zero context or framing feels desperate",
+    "'AI infrastructure that developers love' is indistinguishable from competitors",
+    "No visual identity beyond black+green\u2014swap the color and it's any dev tool",
+    "Navigation is functional but generic\u2014Product/Solutions/Resources stencil",
+    "Zero content beyond hero\u2014what does this company actually do?"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://modal.com",
+  "_persona": "brand_product",
+  "_note": "Distinctive type + grid",
+  "_graded_at": "2026-05-07T23:30:04.042833Z"
+}

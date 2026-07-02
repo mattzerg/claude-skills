@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 6,
+    "distinctiveness": 3,
+    "color": 7,
+    "density": 5,
+    "voice": 4
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif (likely system font) with no character \u2014 could be any VC site. The type system shows no distinctive personality or disciplined scale.",
+    "hierarchy": "Headline dominates and does visual work, but the carousel dot navigation and attribution compete. Single focus per screen mostly achieved through image size.",
+    "distinctiveness": "Generic VC language ('New defense for a new terrain: adapt, design, deploy') + logo + carousel = completely interchangeable. Anduril credit doesn't save it from stencil status.",
+    "color": "Restrained grayscale monochrome with small accent (flag logo uses red/blue). Disciplined and serious, avoids decorative excess.",
+    "density": "Large hero image with minimal text shows confidence, but it's the generic VC confidence \u2014 not earned through content structure. Uniform padding around elements.",
+    "voice": "The headline attempts gravitas but 'adapt, design, deploy' is consultant-speak. Structure appears to be standard carousel \u2192 portfolio grid. No evident IA reflecting actual story."
+  },
+  "winning_patterns": [
+    "Restrained monochromatic palette creates serious/institutional tone",
+    "Large hero image with minimal text shows confidence in presentation",
+    "Clean logo mark with geometric simplicity"
+  ],
+  "anti_patterns": [
+    "Carousel is the 2015 stencil \u2014 lazy information architecture",
+    "Generic headline could work for any defense/tech VC or consulting firm",
+    "Typography has zero personality \u2014 system font mediocrity",
+    "Portfolio company name as attribution doesn't create distinctiveness",
+    "No evidence of structural thinking beyond 'hero \u2192 carousel \u2192 presumably grid below'"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://foundersfund.com",
+  "_persona": "fund",
+  "_note": "Bold typography, narrative hero",
+  "_graded_at": "2026-05-07T19:56:51.934320Z"
+}

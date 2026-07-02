@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 6,
+    "distinctiveness": 3,
+    "color": 5,
+    "density": 4,
+    "voice": 3
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif system with no character \u2014 could be any B2B SaaS site. The type lacks distinctive personality or discipline beyond standard weights.",
+    "hierarchy": "Hero headline dominates adequately, but below the fold everything flattens into uniform card grids with identical visual weight. Icon-title-description pattern repeats mechanically.",
+    "distinctiveness": "Completely interchangeable. 'Own your AI' + trust logos + three-column features = the exact template used by 1000 enterprise AI companies. Zero visual or structural specificity to Cohere.",
+    "color": "Muted palette with occasional purple accent in imagery, but mostly grayscale. The accent color appears in photography, not as a systematic design element. Safe but unremarkable.",
+    "density": "Generic padding everywhere. Hero has excessive whitespace, then cookie-cutter card grids with uniform spacing. No confidence in density variation or asymmetry.",
+    "voice": "Pure stencil IA: Hero CTA \u2192 Trust logos \u2192 Three-column value props. The structure could describe any infrastructure product. 'Safe. Flexible. Independent.' could be cloud hosting, databases, anything."
+  },
+  "winning_patterns": [
+    "Large hero headline creates initial impact",
+    "Clean, uncluttered navigation structure",
+    "Product screenshot provides some tangible proof"
+  ],
+  "anti_patterns": [
+    "Completely generic B2B SaaS template structure",
+    "Icon-title-description cards with zero personality",
+    "Trust logo parade is enterprise clich\u00e9",
+    "No distinctive visual or typographic voice whatsoever",
+    "Could swap 'Cohere' for any AI infrastructure company"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://www.cohere.com",
+  "_persona": "brand_product",
+  "_note": "AI infra peer",
+  "_graded_at": "2026-05-08T00:56:02.618195Z"
+}

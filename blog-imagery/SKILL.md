@@ -1,8 +1,8 @@
 ---
 name: blog-imagery
-description: Generate the full image set for a blog post in one pass — hero (OG card 1200x630), 2+ in-body images/diagrams/tables, plus platform-optimized share variants for Twitter/X (1200x675 16:9) and LinkedIn (1200x1200 square for in-feed engagement). Routes by post type: technical/data posts use coded SVG templates (stat-card, funnel, tree, before-after) so the whole campaign matches the body-diagram visual language; narrative/concept posts use AI image gen (chatgpt-image-skill primary, then nano-banana-pro → fal-image-skill → Pollinations fallback). Writes assets to `~/zerg/web/src/public/images/blog/`. USE PROACTIVELY when Matt drafts a new blog post, when an existing post is missing imagery, or before a launch where social shares matter. Never auto-posts to social — only writes asset files + a Markdown insertion plan. Different from graphic-layout (which REVIEWS composition of an already-rendered asset) — blog-imagery GENERATES the full asset set; pair them (generate with blog-imagery → review with graphic-layout before declaring done).
-allowed-tools: Bash, Read, Write, Edit
+description: 'Generate full blog image sets: OG hero, body visuals, diagrams, and social share variants.'
 ---
+
 
 # Blog Imagery Skill
 
@@ -10,19 +10,34 @@ Generate the full image set for a blog post in one orchestrated pass. Sibling to
 
 ## Routing strategy (read this first)
 
-The hard lesson from agents-that-remember (2026-05-04 → 2026-05-05): mixing coded SVG body diagrams with AI-generated decorative hero/social on one post produces "two different brands stapled together" (Idan's words). The fix is to pick ONE register per campaign:
+**MUST run `creative-prereq prepare hero-image --slug <slug>` and fill the checklist BEFORE invoking any image-generation tool below.** A PreToolUse hook in `~/.claude/settings.json` enforces this (bypass via `CREATIVE_PREREQ_BYPASS=1` for one-off prompts only). See memory: `feedback_creative_prereq_hard_gate.md`.
 
-**Tier 1 — coded SVG templates (technical/data posts).** Use when the post has metrics, before/after numbers, process steps, comparisons, or architecture. Hero + body + LinkedIn + X all coded in the body-diagram visual language (#07111E bg, #0E1B2D card, #F4A261 / #44B8FF / #1FC78D accents, system sans). Render via Chrome headless. Reference templates: `~/zerg/web/src/public/images/blog/agents-that-remember-{hero,body-1,body-2,linkedin,twitter}.svg`.
+The classification model below decides Tier 1 vs Tier 2 PER ASSET TYPE, not per post.
 
-**Tier 2 — AI image gen (narrative/concept/vision posts).** Use when the post is essay/opinion/vision with no body diagrams. Provider order:
-1. **chatgpt-image-skill (gpt-image-1)** — Idan's stated preference (2026-05-05)
-2. nano-banana-pro (Gemini 3 Pro Image)
-3. fal-image-skill (Flux Pro)
-4. Pollinations (free, last resort)
+### Default routing per asset type
 
-**Decision rule:** if the post body has any of (metric numbers, "before/after", "X → Y", process steps, comparison vs competitors, architecture diagram language) → Tier 1. Otherwise → Tier 2. When ambiguous, Tier 1 wins for any Zerg-research/Zerg-product post; Tier 2 for opinion essays.
+- **Hero / OG (1200×630) / Twitter (1200×675) / LinkedIn share (1200×1200)** → **Tier 2 AI gen** (cinematic single-metaphor) for **both narrative and technical posts**, IF the prompt clears `creative-prereq` Cap Tests #1–4 (no split-frame; post-specific; mechanism not aesthetic; richer palette than minimalist cosmic). Provider order: `chatgpt-image-skill` (Idan's stated preference) → `nano-banana-pro` → `fal-image-skill` → Pollinations. Fall back to **Tier 1 SVG hero** ONLY when the post is pure data/research (e.g. AdaExplore-style result post) AND a stat-card better conveys the central claim than any cinematic metaphor would.
 
-See memory: `feedback_blog_imagery_coherence.md` for the full reasoning.
+- **Body images (1200×675 / 1200×800 / 1200×1200)** → **Tier 1 SVG templates** whenever the post has metrics / before-after / process / comparison / architecture. `stat-card` for one headline delta, `funnel` for multi-stage compression, `tree` for two-way comparison. Tier 2 only when a body image is purely aesthetic (rare).
+
+### Asset count rule (HIGH PRIORITY)
+
+Count **unique compositions**, not file paths. Hero re-cropped to LinkedIn + Twitter = 1 composition served 3 ways, that's normal. 3 separate stat-cards at different aspect ratios = 1 composition, NOT 3. A launch bundle should have **3–5 unique compositions** (hero + body-1 + body-2 + optional comparison + optional diagram). Bundles without a hero composition are incomplete. See memory: `feedback_asset_count_compositions_not_files.md`.
+
+### Why this split
+
+The hard lesson from agents-that-remember (2026-05-04 → 2026-05-05): mixing coded SVG body diagrams with AI-generated decorative hero/social on one post produces "two different brands stapled together" (Idan's words). The fix is **not** "all SVG" — heroes carry emotional/conceptual weight, bodies carry structural weight. The fix is `creative-prereq` discipline on the hero prompt (single dominant metaphor, mechanism-showing, post-specific) so the AI hero earns its register alongside the SVG bodies.
+
+References:
+- `feedback_hero_imagery_design_bar.md` — hero design Cap Tests
+- `feedback_imagery_tier_classification_strict.md` — body classification signals (Tier 1 wins for technical body images)
+- `feedback_blog_imagery_coherence.md` — register-coherence anchor
+- `feedback_creative_prereq_hard_gate.md` — PreToolUse hook spec
+- `feedback_asset_count_compositions_not_files.md` — asset accounting rule
+- `feedback_graphic_basics.md` — 8-rule quality bar for diagrams (title casing, edge clipping, density, label overlap, canvas fit, layout direction matches content type, render-then-Read self-check)
+
+Reference SVG body templates: `~/zerg/web/src/public/images/blog/agents-that-remember-{body-1,body-2}.svg`.
+Reference AI heroes: `~/zerg/web/src/public/images/blog/{build-now,alphaevolve,business-velocity,agents-that-remember}-hero.png`.
 
 ## When to invoke
 
@@ -118,6 +133,28 @@ python3 ~/.claude/skills/blog-imagery/run.py <blog_md_path> [flags]
 #   --plan-only           emit the imagery plan file but skip image generation (useful when quota is dead)
 #   --apply               edit the blog markdown to insert image embeds (default: write plan only, don't touch md)
 ```
+
+## Image-quality validation — `tools/validate_hero.py`
+
+Standalone lint that enforces the hero/OG-card spec defined in `MattZerg/_style/blog_template_rules.md` §1. Used by the zpub `imagery_quality` gate; also runnable directly.
+
+```bash
+# Check a single hero (exits 0 = pass, 2 = fail)
+python3 ~/.claude/skills/blog-imagery/tools/validate_hero.py <path-to-hero.png>
+
+# JSON output (for gate consumption)
+python3 ~/.claude/skills/blog-imagery/tools/validate_hero.py <path> --json
+```
+
+**HARD FAIL conditions (gate blocks):**
+- JPEG bytes inside `.png` container (Pollinations fallback signature)
+- Width < 1200 px or height < 600 px
+- Aspect ratio < 1.78 or > 1.95 (rejects 4:3 1.5 and square; accepts deployed 1.79 + OG 1.91)
+- File size > 2 MB
+
+**WARN conditions (gate passes, but flagged):** file size > 1 MB or > 300 KB ideal; aspect outside [1.85, 1.95] ideal band.
+
+**Pollinations is banned for prod heroes.** Use `--provider pollinations` only for `--plan-only` iteration. Any hero matching the Pollinations signature must be regenerated via gpt-image-1 / nano-banana-pro / fal before publish.
 
 ## Tier 1: SVG templates (technical/data posts)
 

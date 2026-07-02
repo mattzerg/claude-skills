@@ -1,0 +1,7 @@
+interface:
+  display_name: "Fake Matt Feedback"
+  short_description: "Run a product and UX review pass"
+  default_prompt: "Use $fakematt-feedback to run a structured product or UX review before shipping."
+
+policy:
+  allow_implicit_invocation: true

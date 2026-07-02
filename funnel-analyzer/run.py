@@ -5,6 +5,7 @@ Usage:
     python3 ~/.claude/skills/funnel-analyzer/run.py define \\
         --name <funnel> --product <slug> \\
         --steps "event_type:event_name,event_type:event_name,..."
+    python3 ~/.claude/skills/funnel-analyzer/run.py bind --product <slug>
     python3 ~/.claude/skills/funnel-analyzer/run.py query --name <funnel> [--days N]
     python3 ~/.claude/skills/funnel-analyzer/run.py compare --name <funnel> --segment <field> [--days N]
     python3 ~/.claude/skills/funnel-analyzer/run.py top-friction [--days N]
@@ -16,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import os
 import re
@@ -24,12 +26,20 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+try:
+    import yaml as _yaml
+except ImportError:
+    _yaml = None
+
 # Override with $ZERG_VAULT for non-author runs (S2 from fakeidan review).
-DEFAULT_VAULT = "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
+DEFAULT_VAULT = "/Users/mattheweisner/Obsidian/Zerg/MattZerg"
 VAULT = Path(os.environ.get("ZERG_VAULT", DEFAULT_VAULT))
-GROWTH_DIR = VAULT / "Projects" / "Zstack" / "Growth"
+GROWTH_DIR = VAULT / "Projects" / "Zerg-Production" / "Growth"
 FUNNELS_DIR = GROWTH_DIR / "funnels"
 RUNS_DIR = FUNNELS_DIR / "_runs"
+MEASUREMENT_DIR = GROWTH_DIR / "measurement"
+FUNNEL_TEMPLATE = FUNNELS_DIR / "_template.yaml"
+USER_EDITS_MARKER = "# --- user edits below ---"
 
 VALID_DATA_SOURCES = ("api", "postgres", "stripe", "fixture")
 DEFAULT_FRICTION = 0.50
@@ -354,6 +364,119 @@ def cmd_top_friction(args: argparse.Namespace) -> int:
     return 0
 
 
+def _hash_block(obj) -> str:
+    payload = json.dumps(obj, sort_keys=True, default=str).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()[:16]
+
+
+def _render_steps_yaml(steps: list, slug: str) -> list[str]:
+    lines = ["steps:"]
+    for step in steps:
+        lines.append(f"  - {{ event: {step}, label: \"{step.replace('_', ' ').strip().capitalize()}\" }}")
+    if steps:
+        lines.append(f"\nsuccess_step: {steps[-1]}")
+    return lines
+
+
+def _split_at_marker(text: str) -> tuple[str, str | None]:
+    if USER_EDITS_MARKER in text:
+        head, _, tail = text.partition(USER_EDITS_MARKER)
+        return head, USER_EDITS_MARKER + tail
+    return text, None
+
+
+def _read_existing_hash(text: str) -> str | None:
+    m = re.search(r"^#\s*generated_hash:\s*([0-9a-f]+)\s*$", text, re.MULTILINE)
+    return m.group(1) if m else None
+
+
+def cmd_bind(args: argparse.Namespace) -> int:
+    if _yaml is None:
+        print("ERROR: PyYAML required for `bind` (pip install pyyaml)", file=sys.stderr)
+        return 2
+    slug = args.product
+    src = MEASUREMENT_DIR / f"{slug}.yaml"
+    if not src.exists():
+        print(f"ERROR: measurement spec not found at {src}", file=sys.stderr)
+        return 1
+    try:
+        with src.open() as f:
+            spec = _yaml.safe_load(f) or {}
+    except _yaml.YAMLError as e:
+        print(f"ERROR: failed to parse {src}: {e}", file=sys.stderr)
+        return 2
+    funnels = spec.get("funnels") or {}
+    if not isinstance(funnels, dict) or not funnels:
+        print(f"ERROR: no `funnels:` block found in {src}", file=sys.stderr)
+        return 2
+
+    FUNNELS_DIR.mkdir(parents=True, exist_ok=True)
+    written: list[Path] = []
+    skipped: list[Path] = []
+    updated: list[Path] = []
+
+    for funnel_name, steps in funnels.items():
+        if not isinstance(steps, list) or not steps:
+            print(f"WARN: funnel {funnel_name!r} has no steps; skipping")
+            continue
+        steps = [str(s) for s in steps]
+        target = FUNNELS_DIR / f"{slug}-{funnel_name}.yaml"
+        block_hash = _hash_block({"funnel": funnel_name, "steps": steps})
+
+        header_lines = [
+            f"# generated_hash: {block_hash}",
+            f"# Source: measurement/{slug}.yaml funnels.{funnel_name}",
+            f"# Regenerate via: python3 ~/.claude/skills/funnel-analyzer/run.py bind --product {slug}",
+            "",
+            f"product: {slug}",
+            f"funnel_name: {funnel_name}",
+            "data_source: zerglytics",
+            "window_days: 7",
+            "",
+        ]
+        header_lines.extend(_render_steps_yaml(steps, slug))
+        header_lines.append("")
+        header_lines.append(f"notes: |")
+        header_lines.append(f"  Generated from measurement/{slug}.yaml funnels.{funnel_name}.")
+        header_lines.append(f"  Hand-edits below the marker are preserved on regeneration.")
+        header_lines.append("")
+        header_lines.append(USER_EDITS_MARKER)
+        header_lines.append("")
+        generated_body = "\n".join(header_lines)
+
+        if target.exists():
+            existing = target.read_text()
+            existing_hash = _read_existing_hash(existing)
+            if existing_hash == block_hash:
+                skipped.append(target)
+                continue
+            _, user_tail = _split_at_marker(existing)
+            if user_tail is not None:
+                target.write_text(generated_body + user_tail.split(USER_EDITS_MARKER, 1)[1].lstrip("\n"))
+            else:
+                target.write_text(generated_body)
+            updated.append(target)
+        else:
+            target.write_text(generated_body)
+            written.append(target)
+
+    print(f"Source: {src}")
+    print(f"Funnels processed: {len(funnels)}")
+    if written:
+        print(f"Written ({len(written)}):")
+        for p in written:
+            print(f"  + {p}")
+    if updated:
+        print(f"Updated — hash mismatch ({len(updated)}):")
+        for p in updated:
+            print(f"  ~ {p}")
+    if skipped:
+        print(f"Skipped — already current ({len(skipped)}):")
+        for p in skipped:
+            print(f"  = {p}")
+    return 0
+
+
 def cmd_list(args: argparse.Namespace) -> int:
     if not FUNNELS_DIR.exists() or not list(FUNNELS_DIR.glob("*.yaml")):
         print("(no funnels defined)")
@@ -399,6 +522,10 @@ def main() -> int:
     pt = sub.add_parser("top-friction", help="worst step across funnels")
     pt.add_argument("--days", type=int, default=7)
     pt.set_defaults(func=cmd_top_friction)
+
+    pb = sub.add_parser("bind", help="render per-funnel YAMLs from measurement/<slug>.yaml")
+    pb.add_argument("--product", required=True)
+    pb.set_defaults(func=cmd_bind)
 
     pl = sub.add_parser("list", help="list defined funnels")
     pl.set_defaults(func=cmd_list)

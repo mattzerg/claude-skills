@@ -1,0 +1,57 @@
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/experiment-tracker/run.py", line 433, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/experiment-tracker/run.py", line 429, in main
+    return args.func(args)
+  File "/Users/mattheweisner/.claude/skills/experiment-tracker/run.py", line 283, in cmd_prompt
+    for f, meta in running_experiments():
+  File "/Users/mattheweisner/.claude/skills/experiment-tracker/run.py", line 104, in running_experiments
+    return [(f, m) for (f, m) in all_experiments() if m.get("status") == "running"]
+  File "/Users/mattheweisner/.claude/skills/experiment-tracker/run.py", line 94, in all_experiments
+    for f in sorted(EXPERIMENTS_DIR.glob("exp-*.md")):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1167, in glob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/experiment-tracker/run.py", line 433, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/experiment-tracker/run.py", line 429, in main
+    return args.func(args)
+  File "/Users/mattheweisner/.claude/skills/experiment-tracker/run.py", line 283, in cmd_prompt
+    for f, meta in running_experiments():
+  File "/Users/mattheweisner/.claude/skills/experiment-tracker/run.py", line 104, in running_experiments
+    return [(f, m) for (f, m) in all_experiments() if m.get("status") == "running"]
+  File "/Users/mattheweisner/.claude/skills/experiment-tracker/run.py", line 94, in all_experiments
+    for f in sorted(EXPERIMENTS_DIR.glob("exp-*.md")):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1167, in glob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments'
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.
+No kill-decision prompts due.

@@ -1,0 +1,52 @@
+[llm-feedback] no slack send-script found; printed digest only
+*llm-feedback digest* (since 2026-05-22)
+No captures this week. Either Matt didn't correct anything (unlikely) or the capture skill isn't being invoked. Check `learn-matt scan --hours 168`.
+[llm-feedback] no slack send-script found; printed digest only
+*llm-feedback digest* (since 2026-05-22)
+No captures this week. Either Matt didn't correct anything (unlikely) or the capture skill isn't being invoked. Check `learn-matt scan --hours 168`.
+[llm-feedback] no slack send-script found; printed digest only
+*llm-feedback digest* (since 2026-05-29, 8 capture(s))
+
+*needs-tool-regression* (1)
+  - `2026-06-05-001` _/Users/mattheweisner/.config/zerg/claude_account_router.py_ — Codex broke a working Claude account router by letting generic stickiness/dominance heuristics override the configured healthy preferred account. For router/acc
+
+*new-rule* (2)
+  - `2026-06-03-002` _2026-06-03-full-history-learning-pass_ — NEW RULE: Treat the morning brief as purely informational; never auto-act on its reminders. Promoted to memory/feedback_morning_brief_informational_only.md
+  - `2026-06-03-004` _2026-06-03-full-history-learning-pass_ — NEW RULE: Don't book in-person/out-of-pocket meetings on customer-sync days. Promoted to memory/feedback_no_inperson_meetings_on_customer_sync_days.md
+
+*archive-only* (5)
+  - `2026-05-29-001` _codex-session-ai-tracker-hosting_ — In long prompt cycles, use some sort of visible list/progress tracker so I can see stages instead of only prose updates.
+  - `2026-06-03-001` _2026-06-03-full-history-learning-pass_ — NEW RULE: Re-ping Matt if he hasn't responded to a submission/approval within 24 hours. Promoted to memory/feedback_approval_reping_24h.md
+  - `2026-06-03-003` _2026-06-03-full-history-learning-pass_ — NEW RULE: Prototype tools/experiments in Claude or the lightest surface first; only graduate into a Zerg product when justified. Promoted to memory/feedback_pro
+  - `2026-06-03-005` _2026-06-03-full-history-learning-pass_ — NEW RULE: Keep core capabilities in ZTC; customer/app-specific work on the CA side; migrate pollution incrementally. Promoted to memory/feedback_ztc_core_vs_ca_
+  - `2026-06-04-001` _fakematt-email/voice_priors.py_ — RFQ structural gate false-failed a vendor FOLLOW-UP by forcing the first-contact 8-beat template (it matched on the word 'RFQ'). Fixed: is_first_contact_rfq() n
+
+*Promotion-pending (2)* — run `llm-feedback promote <id>` to hand to learn-matt.
+  - `2026-06-03-002`
+  - `2026-06-03-004`
+
+[llm-feedback] no slack send-script found; printed digest only
+*llm-feedback digest* (since 2026-06-05, 6 capture(s))
+
+*needs-tool-regression* (5)
+  - `2026-06-05-001` _/Users/mattheweisner/.config/zerg/claude_account_router.py_ — Codex broke a working Claude account router by letting generic stickiness/dominance heuristics override the configured healthy preferred account. For router/acc
+  - `2026-06-09-001` _codex-session-zerglytics-launch_ — Codex claimed Zerglytics data was present after only verifying an old local legacy DB with zergai.com historical rows. For app launch/debug work, do not say dat
+  - `2026-06-09-002` _codex-session-zerglytics-degradation-2026-06-09_ — Serious recurring degradation over the past two days: Codex/Claude became unreliable enough that Matt had to supervise and recover core workflows, including rou
+  - `2026-06-10-001` _digital-twin-ingestion-backfill-2026-06-10_ — When asked to process email/resources, also scan self-sent resources and feedback sources for reusable rules, Fake Matt/Fake Idan improvements, and durable futu
+  - `2026-06-10-002` _self-sent-ai-resource-ingestion_ — When processing self-sent AI/Claude/Obsidian/setup-resource emails, do not stop at link metadata or captions. Open the resource, transcribe videos/audio when th
+
+*new-rule* (1)
+  - `2026-06-08-001` _Slack video feedback ingestion 2026-06-08_ — When ingesting Slack feedback that includes video attachments, transcribe the videos before learning/writing memory. Do not rely only on thread text and written
+
+*Promotion-pending (4)* — run `llm-feedback promote <id>` to hand to learn-matt.
+  - `2026-06-08-001`
+  - `2026-06-09-001`
+  - `2026-06-10-001`
+  - `2026-06-10-002`
+
+[llm-feedback] no slack send-script found; printed digest only
+*llm-feedback digest* (since 2026-06-12)
+No captures this week. Either Matt didn't correct anything (unlikely) or the capture skill isn't being invoked. Check `learn-matt scan --hours 168`.
+[llm-feedback] no slack send-script found; printed digest only
+*llm-feedback digest* (since 2026-06-26)
+No captures this week. Either Matt didn't correct anything (unlikely) or the capture skill isn't being invoked. Check `learn-matt scan --hours 168`.

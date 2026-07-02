@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """BD tracker — log + alert on Zerg's Product BD partner conversations.
 
-Reads the canonical 25-target list at MattZerg/Projects/Zstack/Growth/bd-targets.md
+Reads the canonical 25-target list at MattZerg/Projects/Zerg-Production/Growth/bd-targets.md
 and tracks status / next-touch / owner for each target. Mirrors to a Zergboard "BD"
 board (Phase 2.1 — currently file-based only).
 
@@ -21,63 +21,96 @@ import re
 import sys
 from pathlib import Path
 
-VAULT = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
-BD_FILE = VAULT / "Projects" / "Zstack" / "Growth" / "bd-targets.md"
-LOG_FILE = VAULT / "Projects" / "Zstack" / "Growth" / "bd-touch-log.md"
+VAULT = Path("/Users/mattheweisner/Obsidian/Zerg/MattZerg")
+GROWTH_DIR = VAULT / "Projects" / "Zerg-Production" / "Growth"
+BD_DIR = GROWTH_DIR / "bd"
+LOG_FILE = GROWTH_DIR / "bd-touch-log.md"
 
 VALID_STATUSES = {
     "planned", "outreach", "engaged", "paused", "closed-won", "closed-lost",
 }
 
 
-def load_targets() -> list[dict[str, str]]:
-    """Parse bd-targets.md tables into a list of target dicts.
+def _parse_flat_frontmatter(text: str) -> dict[str, str]:
+    """Minimal flat-YAML reader: top-level `key: value` lines only. Skip nested."""
+    if not text.startswith("---\n"):
+        return {}
+    end = text.find("\n---", 4)
+    if end < 0:
+        return {}
+    out: dict[str, str] = {}
+    for line in text[4:end].splitlines():
+        if not line or line[0] in (" ", "\t", "#", "-"):
+            continue
+        if ":" not in line:
+            continue
+        k, _, v = line.partition(":")
+        v = v.strip()
+        if (v.startswith('"') and v.endswith('"')) or (v.startswith("'") and v.endswith("'")):
+            v = v[1:-1]
+        out[k.strip()] = v
+    return out
 
-    Skips header rows + empty rows. Adds a `category` field based on the
-    nearest preceding `## Category` header.
-    """
-    if not BD_FILE.exists():
-        return []
-    targets: list[dict[str, str]] = []
-    current_category = "uncategorized"
-    for raw in BD_FILE.read_text().splitlines():
-        line = raw.rstrip()
-        m = re.match(r"^##+\s+(.+?)\s*\(", line)
-        if m:
-            current_category = m.group(1).strip().lower().replace(" ", "-")
+
+def _update_frontmatter(path: Path, updates: dict[str, str]) -> None:
+    """Rewrite path's frontmatter, applying updates. Preserves body verbatim."""
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith("---\n"):
+        raise ValueError(f"{path} has no frontmatter to update")
+    end = text.find("\n---", 4)
+    if end < 0:
+        raise ValueError(f"{path} frontmatter has no terminator")
+    block = text[4:end]
+    body = text[end:]  # includes the closing --- + body
+    # Replace existing lines or append.
+    lines = block.splitlines()
+    seen = set()
+    for i, line in enumerate(lines):
+        if not line or line[0] in (" ", "\t", "#", "-"):
             continue
-        if not line.startswith("|"):
+        k = line.split(":", 1)[0].strip()
+        if k in updates:
+            v = updates[k]
+            if v is None or v == "":
+                lines[i] = f"{k}:"
+            elif any(c in str(v) for c in [":", "#"]):
+                lines[i] = f'{k}: "{str(v).replace(chr(34), chr(92) + chr(34))}"'
+            else:
+                lines[i] = f"{k}: {v}"
+            seen.add(k)
+    for k, v in updates.items():
+        if k in seen:
             continue
-        if line.startswith("|---"):
-            continue
-        cells = [c.strip() for c in line.split("|")[1:-1]]
-        # Skip header rows
-        if cells and cells[0].lower() in {"target", "show", "title"}:
-            continue
-        if not cells or len(cells) < 4:
-            continue
-        # Common shape: Target | Status | Why | Owner | Next
-        # Podcast shape:  Target | Audience | Pitch angle | Owner | Next
-        if cells[1].lower() in VALID_STATUSES:
-            targets.append({
-                "name": _strip_md(cells[0]),
-                "category": current_category,
-                "status": cells[1],
-                "why": cells[2] if len(cells) > 2 else "",
-                "owner": cells[3] if len(cells) > 3 else "",
-                "next": cells[4] if len(cells) > 4 else "",
-            })
+        if v is None or v == "":
+            lines.append(f"{k}:")
         else:
-            # Podcast-shape (no status column at index 1) — treat status as "planned" by default
-            targets.append({
-                "name": _strip_md(cells[0]),
-                "category": current_category,
-                "status": "planned",
-                "why": cells[2] if len(cells) > 2 else "",
-                "owner": cells[3] if len(cells) > 3 else "",
-                "next": cells[4] if len(cells) > 4 else "",
-            })
-    return targets
+            lines.append(f"{k}: {v}")
+    new_block = "\n".join(lines)
+    path.write_text("---\n" + new_block + body, encoding="utf-8")
+
+
+def load_targets() -> list[dict[str, str]]:
+    """Read bd/<slug>.md entity files. Each file is the canonical source."""
+    if not BD_DIR.exists():
+        return []
+    out: list[dict[str, str]] = []
+    for f in sorted(BD_DIR.glob("*.md")):
+        if f.name.startswith("_"):
+            continue
+        meta = _parse_flat_frontmatter(f.read_text(encoding="utf-8"))
+        if not meta or meta.get("type") != "bd_target":
+            continue
+        out.append({
+            "name": meta.get("title") or meta.get("target") or f.stem,
+            "category": meta.get("category", "uncategorized"),
+            "status": meta.get("status", "planned"),
+            "why": meta.get("why", ""),
+            "owner": meta.get("owner", ""),
+            "next": meta.get("next_action", ""),
+            "_path": str(f),
+            "_last_touch": meta.get("last_touch", ""),
+        })
+    return out
 
 
 def _strip_md(s: str) -> str:
@@ -145,12 +178,28 @@ def cmd_log(args: argparse.Namespace) -> int:
     if args.status and args.status not in VALID_STATUSES:
         print(f"ERROR: --status must be one of {sorted(VALID_STATUSES)}", file=sys.stderr)
         return 1
-    # Verify target exists in canonical list
     targets = load_targets()
-    names = {_normalize(t["name"]) for t in targets}
-    if _normalize(args.target) not in names:
-        print(f"WARN: '{args.target}' not in bd-targets.md. Logging anyway.", file=sys.stderr)
+    match = next((t for t in targets if _normalize(t["name"]) == _normalize(args.target)), None)
     status = args.status or "engaged"
+    today = dt.date.today().isoformat()
+
+    # Update per-entity file (source of truth).
+    if match:
+        path = Path(match["_path"])
+        updates: dict[str, str] = {
+            "status": status,
+            "last_touch": today,
+        }
+        if args.next_touch:
+            updates["next_action"] = (
+                f"follow up by {args.next_touch}: {args.note}" if args.note else f"follow up by {args.next_touch}"
+            )
+        _update_frontmatter(path, updates)
+        print(f"Updated {path.name}: status={status}, last_touch={today}")
+    else:
+        print(f"WARN: '{args.target}' not in bd/. Touch-log only.", file=sys.stderr)
+
+    # Append to touch log (historical record, kept across status flips).
     append_touch_log(args.target, status, args.note or "", args.next_touch)
     print(f"Logged: {args.target} → {status}" + (f" (next-touch {args.next_touch})" if args.next_touch else ""))
     return 0
@@ -177,38 +226,25 @@ def cmd_status(args: argparse.Namespace) -> int:
 
 
 def cmd_stale(args: argparse.Namespace) -> int:
+    """Use per-entity `last_touch` (set by `log`) — single source of truth."""
     targets = load_targets()
     today = dt.date.today()
     threshold_days = args.days
-    log_rows_by_target: dict[str, str] = {}  # latest log date per target
-    if LOG_FILE.exists():
-        for line in LOG_FILE.read_text().splitlines():
-            if not line.startswith("|") or line.startswith("|---") or "Date" in line:
-                continue
-            cells = [c.strip() for c in line.split("|")[1:-1]]
-            if len(cells) >= 2:
-                t_name = cells[1].lower()
-                date_str = cells[0]
-                if t_name not in log_rows_by_target or date_str > log_rows_by_target[t_name]:
-                    log_rows_by_target[t_name] = date_str
-
     stale: list[tuple[dict[str, str], int]] = []
     for t in targets:
         if t["status"] in {"closed-won", "closed-lost", "paused", "planned"}:
             continue
-        # active = outreach | engaged
-        last_touch_date_str = log_rows_by_target.get(t["name"].lower())
-        if not last_touch_date_str:
-            stale.append((t, threshold_days + 1))  # never touched
-            continue
+        last_str = t.get("_last_touch", "")
         try:
-            last = dt.date.fromisoformat(last_touch_date_str)
+            last = dt.date.fromisoformat(last_str) if last_str else None
         except ValueError:
+            last = None
+        if not last:
+            stale.append((t, threshold_days + 1))
             continue
         days_since = (today - last).days
         if days_since >= threshold_days:
             stale.append((t, days_since))
-
     if not stale:
         print(f"No active targets stale (>{threshold_days}d).")
         return 0

@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 4,
+    "color": 6,
+    "density": 5,
+    "voice": 3
+  },
+  "reasoning": {
+    "typography": "Strong typographic system with confident scale on the hero ('Build better sites, faster'), but falls into the rounded geometric sans trap that's become ubiquitous in 2024-2026 SaaS",
+    "hierarchy": "Hero dominates effectively with massive type, but the gallery wall below competes for attention rather than supporting a single message per scroll depth",
+    "distinctiveness": "Classic SaaS homepage stencil: hero statement + social proof name-drop ('Fortune 500') + dual CTA buttons + customer gallery. Swap 'Framer' for 'Webflow' and it still works",
+    "color": "Black background with white type is disciplined, but the multicolor gallery breaks restraint \u2014 every customer thumbnail screams for attention simultaneously",
+    "density": "Hero has confident breathing room, but transitions abruptly to a dense undifferentiated gallery wall. No rhythm between 'generous' and 'considered' \u2014 just binary extremes",
+    "voice": "Generic builder positioning: 'trusted by leading startups' / 'build fast and scale' / 'Start for free' \u2014 interchangeable with any site builder. No actual story about *why* or *how* Framer is different"
+  },
+  "winning_patterns": [
+    "Hero typography scale shows real confidence \u2014 the headline does visual work",
+    "Black canvas creates strong container for the brand mark and navigation",
+    "Restrained top-level hierarchy before the gallery"
+  ],
+  "anti_patterns": [
+    "Gallery wall as primary content strategy \u2014 quantity over curation",
+    "Dual CTA pattern ('Start for free' + 'Start with AI') \u2014 classic conversion optimization stencil",
+    "Social proof by association ('Fortune 500') rather than showing actual work",
+    "No structural voice \u2014 could be any site builder's homepage",
+    "State of Sites report banner feels tacked-on rather than integrated"
+  ],
+  "one_word_personality": "polished",
+  "_url": "https://framer.com",
+  "_persona": "design_forward",
+  "_note": "Heavy motion, animated hero, scroll-driven choreography",
+  "_graded_at": "2026-05-08T21:42:55.287181Z"
+}

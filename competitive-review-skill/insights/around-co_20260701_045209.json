@@ -1,0 +1,191 @@
+{
+  "name": "Around",
+  "url": "https://www.around.co",
+  "domain": "around.co",
+  "scanned_at": "2026-07-01T04:51:02.460644",
+  "sources": {
+    "landing": {
+      "url": "https://www.around.co",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://forsale.godaddy.com/forsale/www.around.co?\" on this server.\nReference #18.a4ed2117.1782895865.389bdaed\nhttps://errors.edgesuite.net/18.a4ed2117.1782895865.389bdaed",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.around.co/pricing",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://forsale.godaddy.com/forsale/www.around.co?\" on this server.\nReference #18.a4ed2117.1782895877.389c14ba\nhttps://errors.edgesuite.net/18.a4ed2117.1782895877.389c14ba",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://help.around.co",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://help.around.co/\nCall log:\n  - navigating to \"https://help.around.co/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1129)>"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/around/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Ethereum will use around 99.95% less energy post merge",
+          "url": "https://blog.ethereum.org/2021/05/18/country-power-no-more/",
+          "points": 1661,
+          "num_comments": 1690,
+          "created_at": "2021-05-18T13:55:41Z",
+          "hn_url": "https://news.ycombinator.com/item?id=27194586"
+        },
+        {
+          "title": "Planet Found in Habitable Zone Around Nearest Star",
+          "url": "https://www.eso.org/public/news/eso1629/",
+          "points": 1187,
+          "num_comments": 427,
+          "created_at": "2016-08-24T17:00:44Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12353441"
+        },
+        {
+          "title": "Ask HN: Has anyone here turned around their life in their 40s?",
+          "url": null,
+          "points": 1127,
+          "num_comments": 726,
+          "created_at": "2022-12-19T14:11:23Z",
+          "hn_url": "https://news.ycombinator.com/item?id=34052201"
+        },
+        {
+          "title": "Netflix Is Now Available Around the World",
+          "url": "https://media.netflix.com/en/press-releases/netflix-is-now-available-around-the-world",
+          "points": 1015,
+          "num_comments": 497,
+          "created_at": "2016-01-06T18:09:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=10852261"
+        },
+        {
+          "title": "Stripe laying off around 14% of workforce",
+          "url": "https://stripe.com/en-au/newsroom/news/ceo-patrick-collisons-email-to-stripe-employees",
+          "points": 997,
+          "num_comments": 1217,
+          "created_at": "2022-11-03T13:37:58Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33450753"
+        },
+        {
+          "title": "Google Container for Firefox \u2013 Prevent Google from tracking you around the web",
+          "url": "https://addons.mozilla.org/en-US/firefox/addon/google-container/?src=recommended",
+          "points": 959,
+          "num_comments": 290,
+          "created_at": "2018-11-30T03:30:23Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18566405"
+        },
+        {
+          "title": "Map showing birthplaces of \"notable people\" around the world",
+          "url": "https://tjukanovt.github.io/notable-people",
+          "points": 924,
+          "num_comments": 332,
+          "created_at": "2022-07-29T07:32:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=32274077"
+        },
+        {
+          "title": "Swedish Couple Builds Greenhouse Around Home",
+          "url": "https://returntonow.net/2019/03/04/swedish-couple-builds-greenhouse-around-home-to-stay-warm-and-grow-food-all-year-long/",
+          "points": 850,
+          "num_comments": 221,
+          "created_at": "2019-06-21T20:57:55Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20246258"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.around.co/pricing",
+    "changelog": null,
+    "docs": "https://help.around.co",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/around/reviews"
+  },
+  "analysis": {
+    "name": "Around",
+    "url": "https://www.around.co",
+    "tagline": null,
+    "value_proposition": null,
+    "target_segment": "unknown",
+    "ideal_customer": null,
+    "features": [],
+    "integrations": [],
+    "differentiators": [],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "unknown",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [],
+      "enterprise": null,
+      "notes": "Domain around.co appears parked/for-sale (GoDaddy forsale redirect); no live landing, pricing, or G2 content retrievable. Product may be defunct or rebranded. No sources yielded extractable data."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Ask HN: How would you launch an open-source app with a small budget?",
+        "url": "https://news.ycombinator.com/item?id=48735500",
+        "points": 8,
+        "comments": 1,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48735500"
+      },
+      {
+        "title": "Show HN: Morph Reflexes \u2013 Multi-head classifiers for agent traces",
+        "url": "https://news.ycombinator.com/item?id=48739038",
+        "points": 7,
+        "comments": 1,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48739038"
+      },
+      {
+        "title": "Google pulls the plug on Tenor API, killing GIF pickers around the web",
+        "url": "https://9to5google.com/2026/06/30/google-tenor-api-gif-updates/",
+        "points": 2,
+        "comments": 1,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48738613"
+      },
+      {
+        "title": "Ask HN: Where did the terminology (AI) \"System Card\" come from?",
+        "url": "https://news.ycombinator.com/item?id=48737512",
+        "points": 2,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48737512"
+      },
+      {
+        "title": "Show HN: LangevinAI \u2013 Automated FP&A for Everyone",
+        "url": "https://langevinai.io/",
+        "points": 1,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48737538"
+      }
+    ]
+  }
+}

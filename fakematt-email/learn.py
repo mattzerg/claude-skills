@@ -31,8 +31,31 @@ warnings.filterwarnings("ignore")
 SKILL_DIR = Path(__file__).parent
 SENT_LOG = SKILL_DIR / "sent-log.jsonl"
 CORRECTIONS = SKILL_DIR / "corrections.md"
+UNPAIRED_LOG = SKILL_DIR / "unpaired.jsonl"
 TOKENS_DIR = Path.home() / ".claude" / "skills" / "gmail-skill" / "tokens"
 CREDS_FILE = Path.home() / ".claude" / "skills" / "gmail-skill" / "credentials.json"
+
+# Records older than this that still can't pair with a sent message get marked
+# unpaired (checked=True, unpaired=True) and written to unpaired.jsonl for
+# manual review via fm_corrected.py — instead of being re-queried forever.
+UNPAIRED_AFTER_DAYS = 14
+
+# Pairing-confidence floor: if the sent message's similarity to the draft is
+# below this, the pairing is wrong or the logged draft body is junk (e.g. a
+# CRM meta-note) — logging it as a correction would teach noise. Park instead.
+MIN_PAIR_SIMILARITY = 0.2
+
+
+def list_token_accounts() -> list[str]:
+    """All accounts with a Gmail token, e.g. ['matteisn@gmail.com', 'matthew@zergai.com']."""
+    accounts = []
+    for p in TOKENS_DIR.glob("token_*.json"):
+        # token_<user>_<domain>.json → <user>@<domain>
+        stem = p.stem[len("token_"):]
+        if "_" in stem:
+            user, domain = stem.split("_", 1)
+            accounts.append(f"{user}@{domain}")
+    return accounts
 
 
 def make_service(account: str):
@@ -107,26 +130,75 @@ def find_sent_in_thread(svc, draft_id: str, account: str, after_ts: int):
     return None, None, "draft-gone"
 
 
-def find_sent_for_record(svc, record: dict):
+def find_sent_for_record(svc, record: dict, skip_ids: set | None = None):
     """Given a sent-log record, find the sent message Matt actually sent in that
-    thread (newer than the record's timestamp). Return (body, msg_id) or (None, None).
+    thread (newer than the record's timestamp). Skip ids already claimed by an
+    earlier record in this pass so a single sent message can't pair with
+    multiple drafts.
+
+    Tries progressively looser queries: exact to: match, then any-header match
+    (catches cc/bcc, display-name addressing, and forwards), then recipient
+    local-part only (catches Matt sending to a sibling address at the same org).
     """
+    skip_ids = skip_ids or set()
     to = record["to"]
-    after_ts = record["ts"]  # YYYYMMDDTHHMMSS string; convert to date for query
+    after_ts = record["ts"]
     try:
         after_date = dt.datetime.strptime(after_ts[:8], "%Y%m%d").strftime("%Y/%m/%d")
     except Exception:
         after_date = "2026/01/01"
-    q = f"in:sent to:{to} after:{after_date}"
-    res = svc.users().messages().list(userId="me", q=q, maxResults=10).execute()
-    candidates = res.get("messages", [])
-    for m in candidates:
-        full = svc.users().messages().get(userId="me", id=m["id"], format="full").execute()
-        body = extract_body(full.get("payload", {}))
-        cleaned = clean_outgoing(body)
-        if len(cleaned) > 30:
-            return cleaned, m["id"]
+
+    local_part = to.split("@")[0] if "@" in to else to
+    queries = [
+        f"in:sent to:{to} after:{after_date}",
+        f"in:sent {to} after:{after_date}",
+    ]
+    # Local-part fallback only when it's distinctive enough to not flood-match.
+    if len(local_part) >= 5 and local_part.lower() not in {"hello", "info", "sales", "support", "contact", "admin"}:
+        queries.append(f"in:sent {local_part} after:{after_date}")
+
+    seen_ids: set[str] = set()
+    for q in queries:
+        try:
+            res = svc.users().messages().list(userId="me", q=q, maxResults=10).execute()
+        except Exception:
+            continue
+        for m in res.get("messages", []):
+            if m["id"] in skip_ids or m["id"] in seen_ids:
+                continue
+            seen_ids.add(m["id"])
+            full = svc.users().messages().get(userId="me", id=m["id"], format="full").execute()
+            body = extract_body(full.get("payload", {}))
+            cleaned = clean_outgoing(body)
+            if len(cleaned) > 30:
+                return cleaned, m["id"]
     return None, None
+
+
+def record_age_days(record: dict) -> int:
+    """Age of a sent-log record in days (0 if unparsable)."""
+    try:
+        ts = dt.datetime.strptime(record["ts"][:8], "%Y%m%d")
+        return (dt.datetime.now() - ts).days
+    except Exception:
+        return 0
+
+
+def mark_unpaired(record: dict, reason: str = "no-sent-match") -> None:
+    """Park a record that can't confidently pair: flag it and append to
+    unpaired.jsonl for manual review (fm_corrected.py --sent-file ...)."""
+    record["checked"] = True
+    record["unpaired"] = True
+    with open(UNPAIRED_LOG, "a") as f:
+        f.write(json.dumps({
+            "ts": record.get("ts"),
+            "to": record.get("to"),
+            "account": record.get("account"),
+            "register": record.get("register"),
+            "generated_body": record.get("generated_body", ""),
+            "parked": dt.date.today().isoformat(),
+            "reason": reason,
+        }) + "\n")
 
 
 def diff_summary(generated: str, sent: str) -> tuple[str, int]:
@@ -153,7 +225,7 @@ def append_correction(record: dict, sent_body: str, diff_text: str, changed: int
     today = dt.date.today().isoformat()
     with open(CORRECTIONS, "a") as f:
         f.write(f"\n## {today} — to {record['to']} (Register {record['register']})\n\n")
-        f.write(f"**Original draft (skill output):**\n\n```\n{record['generated_body']}\n```\n\n")
+        f.write(f"**Original draft:**\n\n```\n{record['generated_body']}\n```\n\n")
         f.write(f"**What Matt sent:**\n\n```\n{sent_body}\n```\n\n")
         if changed:
             f.write(f"**Diff** ({changed} changed lines):\n\n```diff\n{diff_text}\n```\n\n")
@@ -207,25 +279,72 @@ def main() -> int:
             except Exception:
                 continue
 
-    pending = [r for r in records if not r.get("checked")]
-    print(f"[learn] {len(pending)} unchecked draft(s); {len(records)} total")
+    pending = [r for r in records if not r.get("checked") and not r.get("synthetic")]
+    n_synthetic = sum(1 for r in records if r.get("synthetic"))
+    print(f"[learn] {len(pending)} unchecked draft(s); {len(records)} total "
+          f"({n_synthetic} synthetic skipped)")
+
+    # Reserve sent_msg_ids already claimed by previously-checked records so
+    # we don't double-count one sent message against multiple drafts.
+    claimed_ids: set[str] = {
+        r["sent_msg_id"] for r in records
+        if r.get("checked") and r.get("sent_msg_id")
+    }
 
     svc_cache: dict[str, object] = {}
+    all_accounts = list_token_accounts()
     updated = 0
+    no_sent_yet = 0
+    no_generated_body = 0
+    parked = 0
     for record in pending:
-        account = record.get("account", "matteisn@gmail.com")
-        if account not in svc_cache:
-            svc_cache[account] = make_service(account)
-        svc = svc_cache[account]
-        if not svc:
+        account = record.get("account", "matthew@zergai.com")
+        # Search the record's account first, then every other account with a
+        # token — Matt sometimes sends FM drafts from his other address.
+        search_accounts = [account] + [a for a in all_accounts if a != account]
+
+        sent_body, sent_id = None, None
+        for acct in search_accounts:
+            if acct not in svc_cache:
+                svc_cache[acct] = make_service(acct)
+            svc = svc_cache[acct]
+            if not svc:
+                continue
+            sent_body, sent_id = find_sent_for_record(svc, record, claimed_ids)
+            if sent_body:
+                break
+
+        if not any(svc_cache.get(a) for a in search_accounts):
+            print(f"[learn] no Gmail token/service for any of {search_accounts}; leaving record unchecked")
             continue
 
-        sent_body, sent_id = find_sent_for_record(svc, record)
+        if sent_id:
+            claimed_ids.add(sent_id)
         if not sent_body:
+            # Park stale records instead of re-querying them forever.
+            if record_age_days(record) >= UNPAIRED_AFTER_DAYS:
+                mark_unpaired(record)
+                parked += 1
+                print(f"[learn] parked unpaired record: to={record['to']} ts={record.get('ts')} "
+                      f"(>{UNPAIRED_AFTER_DAYS}d old, no sent match — see unpaired.jsonl)")
+            else:
+                no_sent_yet += 1
             continue  # not sent yet
 
         generated = record.get("generated_body", "").strip()
         if not generated:
+            no_generated_body += 1
+            continue
+
+        # Pairing-confidence guard (see MIN_PAIR_SIMILARITY).
+        similarity = difflib.SequenceMatcher(None, generated, sent_body).ratio()
+        if similarity < MIN_PAIR_SIMILARITY:
+            mark_unpaired(record, reason=f"low-similarity ({similarity:.2f})")
+            record["sent_msg_id"] = sent_id
+            record["pair_similarity"] = round(similarity, 3)
+            parked += 1
+            print(f"[learn] parked low-similarity pair: to={record['to']} "
+                  f"sim={similarity:.2f} (draft body may be junk or pairing wrong)")
             continue
 
         diff_text, changed = diff_summary(generated, sent_body)
@@ -248,6 +367,12 @@ def main() -> int:
 
     prune_old_corrections(args.max_age_days)
     print(f"[learn] {updated} new correction(s) appended.")
+    if updated == 0:
+        print(
+            "[learn] loop ran; no corrections found "
+            f"(pending={len(pending)}, no_sent_yet={no_sent_yet}, "
+            f"no_generated_body={no_generated_body}, parked_unpaired={parked})"
+        )
     return 0
 
 

@@ -40,7 +40,7 @@ from pathlib import Path
 from typing import Optional
 
 HOME = Path.home()
-VAULT = HOME / "Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg"
+VAULT = HOME / "Obsidian/Zerg"
 TIER_MAP = HOME / ".claude/skills/fakematt-email/tier_map.json"
 KILL_LIST = VAULT / "MattZerg/_agent_memory/feedback_email_kill_list.md"
 DEAL_WATCH = VAULT / "MattZerg/_agent_memory/feedback_email_deal_watchlist.md"

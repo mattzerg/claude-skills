@@ -1,0 +1,58 @@
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/growth-dashboard/run.py", line 613, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/growth-dashboard/run.py", line 597, in main
+    vault_content = render_dashboard(week_label, args.verbose, for_slack=False)
+  File "/Users/mattheweisner/.claude/skills/growth-dashboard/run.py", line 349, in render_dashboard
+    line_top_sources(),
+  File "/Users/mattheweisner/.claude/skills/growth-dashboard/run.py", line 211, in line_top_sources
+    txt = LINKS_FILE.read_text()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/links.md'
+WARN: Slack post attempt 1 failed: usage: slack_skill.py send [-h] -m MESSAGE [-t THREAD_TS] [-w WORKSPACE]
+                           channel
+slack_skill.py send: error: the following arguments are required: -m/--message
+
+WARN: Slack post attempt 2 failed: usage: slack_skill.py send [-h] -m MESSAGE [-t THREAD_TS] [-w WORKSPACE]
+                           channel
+slack_skill.py send: error: the following arguments are required: -m/--message
+
+WARN: Slack post attempt 3 failed: usage: slack_skill.py send [-h] -m MESSAGE [-t THREAD_TS] [-w WORKSPACE]
+                           channel
+slack_skill.py send: error: the following arguments are required: -m/--message
+
+INFO: Email fallback sent to matteisn@gmail.com.
+Wrote /Users/mattheweisner/.zerg-vault-writeback/MattZerg/Projects/Zstack/Growth/weekly/2026-05-25.md
+WARN: Slack attempt 1 failed: usage: slack_skill.py send [-h] -m MESSAGE [-t THREAD_TS] [-w WORKSPACE]
+                           channel
+slack_skill.py send: error: the following arguments are required: -m/--message
+
+WARN: Slack attempt 2 failed: usage: slack_skill.py send [-h] -m MESSAGE [-t THREAD_TS] [-w WORKSPACE]
+                           channel
+slack_skill.py send: error: the following arguments are required: -m/--message
+
+WARN: Slack attempt 3 failed: usage: slack_skill.py send [-h] -m MESSAGE [-t THREAD_TS] [-w WORKSPACE]
+                           channel
+slack_skill.py send: error: the following arguments are required: -m/--message
+
+Wrote /Users/mattheweisner/.zerg-vault-writeback/MattZerg/Projects/Zstack/Growth/weekly/2026-06-01.md
+WARN: Slack attempt 1 failed: usage: slack_skill.py send [-h] -m MESSAGE [-t THREAD_TS] [-w WORKSPACE]
+                           channel
+slack_skill.py send: error: the following arguments are required: -m/--message
+
+WARN: Slack attempt 2 failed: usage: slack_skill.py send [-h] -m MESSAGE [-t THREAD_TS] [-w WORKSPACE]
+                           channel
+slack_skill.py send: error: the following arguments are required: -m/--message
+
+WARN: Slack attempt 3 failed: usage: slack_skill.py send [-h] -m MESSAGE [-t THREAD_TS] [-w WORKSPACE]
+                           channel
+slack_skill.py send: error: the following arguments are required: -m/--message
+
+Wrote /Users/mattheweisner/.zerg-vault-writeback/MattZerg/Projects/Zerg-Production/Growth/weekly/2026-06-08.md
+Wrote /Users/mattheweisner/.zerg-vault-writeback/MattZerg/Projects/Zerg-Production/Growth/weekly/2026-06-15.md
+Posted to Slack DM D0B0T0ETDR8.

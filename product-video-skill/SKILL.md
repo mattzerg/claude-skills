@@ -1,8 +1,9 @@
 ---
 name: product-video-skill
-description: Plan, record, and assemble short (15–60s) software product launch / feature demo videos. Codifies the 15-item pre-publish checklist, beat-template patterns (15s/30s/60s), caption-overlay typography, end-card layout, and ffmpeg assembly pipeline. Reads a JSON storyboard, renders a Markdown brief for human approval, then drives the recording + assembly. USE PROACTIVELY whenever Matt mentions a product video, demo video, launch reel, or sizzle clip — and as a pre-flight on existing video drafts before they ship. Never auto-publishes — writes asset files + a storyboard brief for sign-off.
+description: Plan, record, and assemble short (15–60s) software product launch / feature demo videos. Codifies the 15-item pre-publish checklist, beat-template patterns (15s/30s/60s), caption-overlay typography, end-card layout, and ffmpeg assembly pipeline. Reads a JSON storyboard, renders a Markdown brief for human approval, then drives the recording + assembly. USE PROACTIVELY whenever Matt mentions a product video, demo video, launch reel, or sizzle clip — and as a pre-flight on existing video drafts before they ship. Owns first-touch for short reels/demos; for full campaign-scoped launch-video planning (concept → script → shots → edit → channel variants) use `product-launch-video` instead. Never auto-publishes — writes asset files + a storyboard brief for sign-off.
 allowed-tools: Bash, Read, Write, Edit
 ---
+
 
 # Product Video Skill
 
@@ -23,8 +24,11 @@ A skill for producing short software product launch / feature demo videos that d
 The skill is anchored on three documents in this directory. Read them BEFORE designing a new video:
 
 1. **`techniques.md`** — frame-by-frame measurements from 10 launch videos (Linear, Cursor, Stripe, Notion Calendar, Replit, Figma, Vercel, Raycast, Lex). Every recipe has measured numbers. §8 has 3 ready-to-execute templates ("Linear Releases mode," "Cursor mode," "Linear Agent mode"). §10 is the recipe priority list.
-2. **`pm_tools_density.md`** — interaction-density measurements from 10 PM-tool demos (Asana, monday.com, Height, Linear Insights, ClickUp, Notion, Trello, Coda). §6 has the "v14 interaction packing" recipe. Targets: 0.5 events/sec on demo content, 6+ distinct verb types.
-3. **`best-practices.md`** — older general-launch-video research. Superseded by techniques.md; kept for the 15-item pre-publish checklist.
+2. **`best-practices.md`** — older general-launch-video research. Superseded by techniques.md; kept for the 15-item pre-publish checklist.
+
+**Interaction-density target** (not yet a separate catalog — folded here to keep the reference honest): on demo content aim for **≥0.4 events/sec** and **6+ distinct verb types** so the UI feels alive rather than narrated. This is enforced by `video-review` human-checklist item 9. A dedicated PM-tool density catalog (Asana / monday / Height / ClickUp mining) is **not yet built** — TODO if a density regression recurs.
+
+**Craft layer.** For the upstream craft (script / storyboard / shot order / edit), use the sibling skills' measured catalogs — `video-{scriptwriter,storyboarder,shot-sequencer,editing-director}/references/*-techniques.md` — and score any artifact against `_style/video_quality_rubric.md`. This skill owns the demo/assembly layer; those own the pre-production craft. For React/Remotion-rendered motion scenes, invoke `remotion-best-practices` after this skill's storyboard/approval step; use this skill for narrative and gates, and Remotion for code-level composition, timing, captions, and render-safe animation.
 
 ## Library (composable primitives — use these, don't roll your own)
 
@@ -56,7 +60,7 @@ After ANY new video render, run `~/.claude/skills/video-review/run.py <video.mp4
 ## Failure modes captured in memory
 
 - `feedback_video_motion_pitfalls.md` — three concrete pitfalls from v8–v13 iterations: ffmpeg zoompan creates shake at low rates (use smooth_record instead); title/end cards must carry brand identity (not Linear-clone mono caps); demos need ≥1 UI event per 1.5–2s.
-- `feedback_internal_review_pack_format.md` — review pack format for sharing drafts.
+- For sharing drafts as a review pack, use the **`review-pack`** skill (canonical multi-perspective pack builder) — it supersedes the old per-skill review-pack note.
 - `project_zergboard_video_brief.md` — standing brief for Zergboard demo videos.
 
 ## Workflow
@@ -106,10 +110,16 @@ Use `lib/assemble.py` (or copy from `/tmp/zb_demo_assemble.py` and adapt). The s
 
 ### 5. Pre-publish check
 
-Run the checklist:
+Run the checklist via the canonical `video-review` skill (preferred — runs 10 deterministic checks + 15-item human gate per line 55 above):
 
 ```bash
-python3 ~/.claude/skills/product-video-skill/checklist.py /path/to/video.mp4
+python3 ~/.claude/skills/video-review/run.py /path/to/video.mp4
+```
+
+Or call the legacy checklist directly (older 13-item subset, kept for compatibility):
+
+```bash
+python3 ~/.claude/skills/product-video-skill/lib/checklist.py /path/to/video.mp4
 ```
 
 It verifies the verifiable items (duration, codec, faststart, dimensions, end-card hold time via frame analysis) and prints the human-judgement items (hook by 0:03, captions readable, dead space) for the approver to confirm.

@@ -1,18 +1,15 @@
 ---
 name: codex
-preamble-tier: 3
-version: 1.0.0
 description: |
-  OpenAI Codex CLI wrapper — three modes. Code review: independent diff review via
-  codex review with pass/fail gate. Challenge: adversarial mode that tries to break
-  your code. Consult: ask codex anything with session continuity for follow-ups.
-  The "200 IQ autistic developer" second opinion. Use when asked to "codex review",
-  "codex challenge", "ask codex", "second opinion", or "consult codex". (gstack)
-  Voice triggers (speech-to-text aliases): "code x", "code ex", "get another opinion".
-triggers:
-  - codex review
-  - second opinion
-  - outside voice challenge
+  OpenAI Codex CLI wrapper — three modes. `review` (independent diff review via
+  `codex review` with pass/fail gate), `challenge` (adversarial mode that tries
+  to break your code), `consult` (free-form question with session continuity).
+  The "second opinion" lane in Matt's stack. Different from `cross-model-check`
+  (which writes a dated HIGH/MED/LOW review file under `_reviews/`) and from
+  `codex-transcript-read` (read-only Codex session history). USE PROACTIVELY
+  when Matt says "codex review", "codex challenge", "ask codex", "second
+  opinion", "consult codex", or speech-to-text "code x" / "code ex" / "get
+  another opinion".
 allowed-tools:
   - Bash
   - Read
@@ -21,6 +18,20 @@ allowed-tools:
   - Grep
   - AskUserQuestion
 ---
+
+## Skill Metadata (non-frontmatter)
+
+The fields below were previously declared in YAML frontmatter under custom keys
+(`preamble-tier`, `version`, `triggers`). The Anthropic skill validator only
+accepts `name | description | license | allowed-tools | metadata | compatibility`,
+so they live here for human reference.
+
+- preamble-tier: 3
+- version: 1.0.0
+- triggers:
+  - codex review
+  - second opinion
+  - outside voice challenge
 <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
 <!-- Regenerate: bun run gen:skill-docs -->
 

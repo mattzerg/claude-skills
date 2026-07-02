@@ -1,0 +1,669 @@
+{
+  "name": "Dynamic",
+  "url": "https://dynamic.xyz",
+  "domain": "dynamic.xyz",
+  "scanned_at": "2026-06-01T03:19:51.297665",
+  "sources": {
+    "landing": {
+      "url": "https://dynamic.xyz",
+      "title": "Dynamic | Wallet Infrastructure for Fintech, Crypto, and Stablecoins",
+      "text": "Dynamic | Wallet Infrastructure for Fintech, Crypto, and Stablecoins\nWe brought together 20+ industry voices to map the future of agentic finance. Get the full breakdown in our latest report!\nRead the full report\nProduct\nProduct\nWallet Infrastructure\nOnboard users simply and securely.\nStablecoin Accounts\nUnlock everything needed for global stablecoin payments.\nServer Wallets\nProgrammatically create wallets and move money.\nGlobal Wallets\nTurn your app into an ecosystem.\nWallet Connectors\nConnect to 500+ external wallets across chains.\nDeposit with Crypto\nUse external wallets, exchanges and providers.\nPlatform\nSecurity\nShield your app with layered protection.\nFraud Protection\nDeter bots and manage threat vectors.\nUser Authentication\nManage users with advanced features.\nUI Components\nCraft unique and personalized experiences.\nMoney & Funding\nGet money in and out of wallets quickly.\nSDKs\nBuild with tools you know and love.\nSolutions\nBy Use Case\nChains\nBuild an ecosystem with your brand front and center.\nStablecoin Payments\nEnable payments with secure and scalable infrastructure.\nAgentic\nPower AI agents with secure wallets and payments.\nConsumer Apps\nSimplify onboarding and auth for consumer experiences.\nBridges\nInfrastructure for building cross-chain experiences.\nView All\nBy Ecosystem\nEVM\nSolana\nBitcoin\nSui\nBase\nView All\nDocs\nCustomers\nPricing\nInsights\nStablecoin Hub\nBlog\nDynamic\u00a0Dispatch\nGuide to Blockchains\nStablecoin Playbook\nAgentic Report\nDownloads\nGuide to Blockchains\nStablecoin Playbook\nAgentic Report\nCompany\nAbout Us\nCareers\nFollow Dynamic\nLog in\nLive demo\nGet started\nFollow Dynamic\nGet started\nWallet infrastructure that turns crypto demand into revenue\nGrow your revenue by offering onchain products like Pay with Crypto, tokenized assets, yield and more. Quickly launch secure, non-custodial wallets without crypto specialists.\nGet started\nView live demo\nTrusted by leading fintech and crypto teams.\nBacked by the security and scale of\nCase\u00a0study\nWestern Union\nRead case study\nCase\u00a0study\nCircle\nRead case study\nCase\u00a0study\nStripe\nRead case study\nCase\u00a0study\nPapaya\nRead case study\nCase\u00a0study\nMagic Eden\nRead case study\nCase\u00a0study\nFranklin Templeton\nRead case study\nCase\u00a0study\nKraken\nRead case study\nCase\u00a0study\nLighter\nRead case study\nView All Case Studies\nScale that's battle-tested\n50M+\nUsers onboarded\n800+\nExternal wallets supported\n< 1\nSecond signing speed\nCrypto features your customers demand\nDynamic gives your customers the ability to trade, earn, pay, and move money on global crypto rails.\nTrade\nExpand what customers can trade from prediction markets to tokenized assets.\nEarn\nOffer yield on balances to keep customers engaged with your app.\nPay\nLet customers pay with and deposit crypto from any wallet or exchange. No on/off-ramping required.\nMove\nLet customers send money globally, fast, cheap, and 24/7.\nDesigned for developers. Built\u00a0for enterprise.\nBuild your way \u2014 from low-level APIs to full SDKs. Use primitives for full control or prebuilt flows to ship fast. Get sub-second signing and enterprise-grade security. Scale from concept to millions without rebuilding your stack.\nLow-level APIs\nCreate and control wallets through APIs for programmable money movement at scale.\nLearn more\nEmbedded wallets\nSpin up non-custodial wallets in your app and let users start their onchain journey instantly.\nLearn more\nWallet connections\nLet users connect the wallets they already have across chains & platforms.\nLearn more\nOne complete wallet stack\nDynamic is the only platform with embedded wallets, external wallets, and multi-chain connectivity in one unified SDK.\nBuilt for security, engineered for speed\nSecurity is the foundation of everything we do. From key management to infrastructure, every layer of Dynamic is designed for safety, reliability, and compliance.\nEnterprise self-custody\nEvery wallet benefits from secure distributed signing, flexible thresholds, and built-in recovery paths.\nLearn more\nFireblocks security\nDynamic inherits Fireblocks\u2019 security expertise, practices, and operational rigor. Together, we deliver institutional-grade protection from custody to consumer wallets.\n2,400+ institutions\n$10T+ in transactions\n550M+ wallets\nDefense in depth\nOur infrastructure is regularly audited by top firms and protected by a public bug bounty program.\nAdvanced authentication\nPolicy controls\nMFA\nAllowlists\nRate-limiting safeguards\nSub-second signing\nTransactions complete in under a second. Users get speed and enterprise-grade security in every wallet interaction.\nRecent audits\n99.9% uptime\nJuly 2025\nApril 2025\nFebruary 2025\nSeptember 2024\nOngoing Bounty Program\nWorld-class teams build with Dynamic\nTrade\nWe wanted something that just works. That means no seed phrases, no chain switching, and no waiting. You tap a token, you buy it. That\u2019s what we built, and Dynamic helped make it all possible\nView case study\nEarn\nWe explored and started implementing various other embedded wallet solutions. Dynamic not only had the most secure solution it had by far the best developer experience. We had a working prototype in a fraction of the time.\nView case study\nPay with Crypto\nThrough Dynamic, Stripe has made crypto pay-ins seamless for millions of merchants.\nView case study\nTrade\nFor our users, the experience from their first wallet connection to first trade is smooth. Dynamic is easy to integrate, supports lots of wallets out of the box, and the team is extremely responsive.\nView case study\nShip\np\na\ny\nw\ni\nt\nh\nc\nr\ny\np\nt\no\nwith Dynamic in\nF\nl\nu\nt\nt\ne\nr\n1\nGet an account\nCreate your environment in the\nDynamic Dashboard\n2\nInstall the MCP\nThis takes a few seconds\n3\nAsk your agent\nIt can access\nour documentation\nand start implementing for you!\nCursor\nClaude Code\nCodex\nOther\nAdd the MCP to Cursor\nCopied!\nclaude mcp\nadd\n--transport http dynamic https://www.dynamic.xyz/docs/mcp\n>\nCopied!\ncodex mcp\nadd dynamic\n--url https://www.dynamic.xyz/docs/mcp\n>\nIf your editor or agent supports remote HTTP MCP, add a server that points at\nhttps://www.dynamic.xyz/docs/mcp\n. The exact steps depend on the product; use its MCP documentation for URL-based or HTTP transport setup.\nSet up Dynamic in minutes\nFree to start up to 1,000 MAUs\nCreate a free account\nTalk to us\nMade with love in\nNew York\ndynamic@fireblocks.com\nGeneral\nDocumentation\nCustomers\nPricing\nSlack Support\nBug Bounty Program\nStatus\nPRODUCT\nProduct\nWallet Infrastructure\nStablecoin Accounts\nServer Wallets\nGlobal Wallets\nWallet Connectors\nDeposit with Crypto\nEmbedded Wallets\nPlatform\nSecurity\nFraud Protection\nUser Authentication\nUI Components\nMoney & Funding\nSDKs\nSolutions\nUse CaseS\nChains\nStablecoin Payments\nAgentic\nConsumer Apps\nBridges\nRWAs\nGaming\nDeFi\nEcosystems\nEVM\nNew\nSolana\nNew\nBitcoin\nNew\nSui\nNew\nBase\nNew\nMonad\nNew\nTON\nNew\nAptos\nNew\nSVM\nNew\nAleo\nNew\nSei\nNew\nInsights\nBlog\nStablecoin Hub\n2025 Stablecoin Playbook\nGuide to Blockchains\nAgentic Report\nCompany\nAbout Us\nCareers\nBrand Kit\nLegal\nTerms\nPrivacy\nCookie Settings\n\u00a9 2026 Dynamic Labs, Inc. All rights reserved.",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.dynamic.xyz/pricing",
+      "title": "Dynamic Wallet Infrastructure | Pricing \u2013  Free to Start, Built to Scale",
+      "text": "Dynamic Wallet Infrastructure | Pricing \u2013  Free to Start, Built to Scale\nWe brought together 20+ industry voices to map the future of agentic finance. Get the full breakdown in our latest report!\nRead the full report\nProduct\nProduct\nWallet Infrastructure\nOnboard users simply and securely.\nStablecoin Accounts\nUnlock everything needed for global stablecoin payments.\nServer Wallets\nProgrammatically create wallets and move money.\nGlobal Wallets\nTurn your app into an ecosystem.\nWallet Connectors\nConnect to 500+ external wallets across chains.\nDeposit with Crypto\nUse external wallets, exchanges and providers.\nPlatform\nSecurity\nShield your app with layered protection.\nFraud Protection\nDeter bots and manage threat vectors.\nUser Authentication\nManage users with advanced features.\nUI Components\nCraft unique and personalized experiences.\nMoney & Funding\nGet money in and out of wallets quickly.\nSDKs\nBuild with tools you know and love.\nSolutions\nBy Use Case\nChains\nBuild an ecosystem with your brand front and center.\nStablecoin Payments\nEnable payments with secure and scalable infrastructure.\nAgentic\nPower AI agents with secure wallets and payments.\nConsumer Apps\nSimplify onboarding and auth for consumer experiences.\nBridges\nInfrastructure for building cross-chain experiences.\nView All\nBy Ecosystem\nEVM\nSolana\nBitcoin\nSui\nBase\nView All\nDocs\nCustomers\nPricing\nInsights\nStablecoin Hub\nBlog\nDynamic\u00a0Dispatch\nGuide to Blockchains\nStablecoin Playbook\nAgentic Report\nDownloads\nGuide to Blockchains\nStablecoin Playbook\nAgentic Report\nCompany\nAbout Us\nCareers\nFollow Dynamic\nLog in\nLive demo\nGet started\nFollow Dynamic\nGet started\nFlexible Plans as you Scale\nBring your users onchain in minutes! Dynamic makes creating onchain experiences quick and simple for projects of all sizes.\nConsumer Wallets\nMost Common\nCombine authentication, smart wallets, and secure key management into one flexible SDK.\nServer Wallets\nTrigger transactions, run contract calls, and handle complex flows without user involvement.\nChoose your approximate Monthly Active Users\n1,700\nMAUs\nThank you! Your submission has been received!\nOops! Something went wrong while submitting the form.\n0 MAUs\n+10,000 MAUs\nLaunch plan\nFree\nGet started\nGrowth Plan\n$249\n/\u00a0month\nGet started\nGrowth Plan\n$249\n/\u00a0month\nGet started\nEnterprise Plan\nCustom\nBook a demo\nCompare\nView below to understand the differences between our plans\nMAUs\nRate Limits\nAuthentication\nMulti-chain auth and access control\n+ 100 EVM Chains\nSocial Login & Embedded Wallets\nFlexible On & Off-Ramps\nUser Management & Analytics\nCommunity Support & Docs\nSmart Wallets (4337 & 7702)\nFraud Protection Tools\nAdditional MFA\u00a0Options\nDedicated Technical Support\nPrivate Direct Communication Channel\nPremium SLAs & Service Guarantees\nCustomized White Glove Support\nEarly Access to New Features\nGlobal Wallet Kit\nWhite-labeling Options\nPre-generated Wallets\nBring Your Own Auth / JWT\nSSO/Okta Support\nLaunch\nFree\nBasic functionality for anyone just starting out\nGet started\nUp to 1,000 MAUs\nNo credit card required in Sandbox\nRate limits will apply\nAuthentication\nMulti-chain auth and access control\n+ 100 EVMs\nSocial Login & Embedded Wallets\nFlexible On & Off-Ramps\nUser Management & Analytics\nCommunity Support & Docs\nGlobal Wallet Kit & Event\nAdvanced Customization\nEarly Access to New Features\nDedicated Channels for Support\nBring Your Own Auth / JWT\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nGrowth\n$249\n/ month\nEnhanced functionality and support to fuel your next stage of growth\nGet started\nIncludes 5,000 MAUs\n+$0.05 / additional MAU\nSome rate limits will apply\nAuthentication\nMulti-chain auth and access control\n+ 100 EVMs\nSocial Login & Embedded Wallets\nFlexible On & Off-Ramps\nUser Management & Analytics\nCommunity Support & Docs\nSmart Wallets (4337 & 7702)\nFraud Protection Tools\nAdditional MFA Options\nDedicated Channels for Support\nBring Your Own Auth / JWT\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nCustom Feature Requests\nEnterprise\nLet\u2019s talk\nAuth, user management, integrations, dedicated support, and much more\nBook a demo\n10,000+ MAUs\nVolume discounted MAU tiers\nHighest rate limits\nAuthentication\nMulti-chain auth and access control\n+ 100 EVMs\nSocial Login & Embedded Wallets\nFlexible On & Off-Ramps\nUser Management & Analytics\nCommunity Support & Docs\nSmart Wallets (4337 & 7702)\nFraud Protection Tools\nAdditional MFA Options\nDedicated Technical Support\nPrivate Direct Communication Channel\nPremium SLAs & Service Gaurentees\nCustomized White Glove Support\nEarly Access to New Features\nGlobal Wallet Kit\nWhite-labeling Options\nPre-generated Wallets\nBring Your Own Auth / JWT\nSSO/Okta Support\nCompare\nView below to understand the differences between our plans\nOperations\nGenerate, Backup, Sign, Recover\nExtensive Chain Support\n+ 100 EVM Chains\n(Embedded wallets on EVM & SVM)\nAdvanced Analytics\nSLAs\nLaunch\nFree\nBasic functionality for anyone\njust starting out\nGet started\nIncludes 1,000 / month\nNo credit card required in Sandbox\nExtensive Chain Support\n+ 100 EVMs\nEmbedded wallets on EVM & SVM\nAdvanced Analytics\nGrowth\n$249\n/ month\nEnhanced functionality and support to fuel your next stage of growth\nGet started\nIncludes 5,000 / month\n+$0.05 / additional operation\nExtensive Chain Support\n+ 100 EVMs\nEmbedded wallets on EVM & SVM\nAdvanced Analytics\nEnterprise\nLet\u2019s talk\nAuth, user management, integrations, dedicated support and much more\nBook a demo\nIncludes 10,000 / month\nDiscounted prices above\nExtensive Chain Support\n+ 100 EVMs\nEmbedded wallets on EVM & SVM\nAdvanced Analytics\nSLAs\nTrusted by leading fintech and crypto teams.\nBacked by the security and scale of\nCase\u00a0study\nWestern Union\nRead case study\nCase\u00a0study\nCircle\nRead case study\nCase\u00a0study\nStripe\nRead case study\nCase\u00a0study\nPapaya\nRead case study\nCase\u00a0study\nMagic Eden\nRead case study\nCase\u00a0study\nFranklin Templeton\nRead case study\nCase\u00a0study\nKraken\nRead case study\nCase\u00a0study\nLighter\nRead case study\nFAQ\nAny questions?\nWe'd love to help\nContact us\nWhat classifies as an \"operation\"?\nFor\nOnchain Automation\n, operations include common wallet actions such as \u00a0generating and backing up keys, signing, and recovering accounts.\nWhat if I just need a wallet adapter?\nGreat!\u00a0It is included in the free tier. There is no limit on the number of connect-only users within the tier.\nWhat is the difference between connected users and Monthly Active Users?\nA connected user is a user that used the Dynamic connect functionality to expose their public address to the app. An authenticated user is one that signed a SIWE message, proving that they are the wallet owner. You can learn a bit more about the difference between connection and authentication\nhere\n.\nHow are unique monthly active users (MAUs) calculated?\nA user is counted if they log in at least once a month or when an embedded wallet (including pre-generated wallets) is created for them.\nWhen a user logs in for the first time, they are assigned a unique Dynamic ID. If they log in again, they remain linked to their original Dynamic ID and are counted as a single user for that month.\nIf the same user adds additional verified credentials (e.g., wallet, email, or social accounts) to their account, they still retain the same Dynamic ID and are counted only once for payment purposes.\nDo you have any rate limits?\nYes, you can learn more in our documentation\nhere\n.\nI need a feature that I don\u2019t think you support\nAsk us. We are constantly adding new, powerful features to Dynamic. We\u2019d love to chat! We are easiest to find in our\nSlack community\n.\nI want to talk to someone before starting\nWe\u2019d love to chat. You can\nbook a meeting\nwith us here, or talk to us in our\nSlack community\n.\nSet up Dynamic in minutes\nFree to start up to 1,000 MAUs\nCreate a free account\nTalk to us\nMade with love in\nSun\ndynamic@fireblocks.com\nGeneral\nDocumentation\nCustomers\nPricing\nSlack Support\nBug Bounty Program\nStatus\nPRODUCT\nProduct\nWallet Infrastructure\nStablecoin Accounts\nServer Wallets\nGlobal Wallets\nWallet Connectors\nDeposit with Crypto\nEmbedded Wallets\nPlatform\nSecurity\nFraud Protection\nUser Authentication\nUI Components\nMoney & Funding\nSDKs\nSolutions\nUse CaseS\nChains\nStablecoin Payments\nAgentic\nConsumer Apps\nBridges\nRWAs\nGaming\nDeFi\nEcosystems\nEVM\nNew\nSolana\nNew\nBitcoin\nNew\nSui\nNew\nBase\nNew\nMonad\nNew\nTON\nNew\nAptos\nNew\nSVM\nNew\nAleo\nNew\nSei\nNew\nInsights\nBlog\nStablecoin Hub\n2025 Stablecoin Playbook\nGuide to Blockchains\nAgentic Report\nCompany\nAbout Us\nCareers\nBrand Kit\nLegal\nTerms\nPrivacy\nCookie Settings\n\u00a9 2026 Dynamic Labs, Inc. All rights reserved.",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://docs.dynamic.xyz/changelog",
+      "title": "Page Not Found",
+      "text": "Page Not Found\nSkip to main content\nDynamic home page\nOverview\nSearch...\n\u2318K\nGetting Started\nWelcome\nGoing Live\nGo Live Checklist\nWallets\nWallets Overview\nOur Embedded Wallets\nChains & External Wallet Support\nOverview\nExternal Wallets\nUsing chains with Tier 2 support\nUsing chains with Tier 3 support\nAccept Crypto\nFireblocks Flow\nEarn\nEarn Overview\nAgents\nAgents Overview\nAgent Payments\nAuthentication\nOverview\nConcepts\nTokens\nAuthentication With Dynamic\nBring Your Own Auth\nSession management\nStep-Up Authentication\nMulti-Factor Authentication (MFA)\nAccess Control\nBest Practices\nSecurity\nOverview\nDevice Registration\nBest Practices\nMitigating Attack Vectors\nContent Security Policy (CSP)\nRate Limits\nRate Limit Policies\nDeveloper Dashboard\nSDK and API Keys\nSet Up SSO\nAPI Token Permissions\nAnalytics\nUsers & Visitors\nTest Accounts\nAdmin Action Approvals\nWebhooks\nOrganization\nSettings\nSocial Providers\nAPI Upgrades\n2026_01_01\n2026_04_01\nMigrations\nMigrating to Dynamic\nMigrating Users via CSV\nMigration from RainbowKit\nTroubleshooting\nInitial Steps\nDynamic Doctor\nGenerating a HAR file\nEmail OTP delivery\nReact / Vite\nNext.js\nSolana\nMobile\nWalletConnect\nBrowser Extension\nTypeScript\nExplore Dynamic\nStart Free\nLive Support\nSystem Status\nDynamic home page\nOverview\nSearch...\n\u2318K\nAsk Assistant\nExplore Dynamic\nStart Free\nLive Support\nSystem Status\nSearch...\nNavigation\nPage Not Found\n404\nPage Not Found\nWe couldn't find the page. Maybe you were looking for one of these pages below?\nTrack Wallet Events/Changes\nCustomizing Signup/Login UI\nMigrating from action-based MFA to step-up authentication\n\u2318I\nAssistant\nResponses are generated using AI and may contain mistakes.\nSearch\n\u2318\nK",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://docs.dynamic.xyz",
+      "title": "Welcome - Dynamic",
+      "text": "Welcome - Dynamic\nSkip to main content\nDynamic\nhome page\nOverview\nSearch...\n\u2318\nK\nGetting Started\nWelcome\nGoing Live\nGo Live Checklist\nWallets\nWallets Overview\nOur Embedded Wallets\nChains & External Wallet Support\nOverview\nExternal Wallets\nUsing chains with Tier 2 support\nUsing chains with Tier 3 support\nAccept Crypto\nFireblocks Flow\nEarn\nEarn Overview\nAgents\nAgents Overview\nAgent Payments\nAuthentication\nOverview\nConcepts\nTokens\nAuthentication With Dynamic\nBring Your Own Auth\nSession management\nStep-Up Authentication\nMulti-Factor Authentication (MFA)\nAccess Control\nBest Practices\nSecurity\nOverview\nDevice Registration\nBest Practices\nMitigating Attack Vectors\nContent Security Policy (CSP)\nRate Limits\nRate Limit Policies\nDeveloper Dashboard\nSDK and API Keys\nSet Up SSO\nAPI Token Permissions\nAnalytics\nUsers & Visitors\nTest Accounts\nAdmin Action Approvals\nWebhooks\nOrganization\nSettings\nSocial Providers\nAPI Upgrades\n2026_01_01\n2026_04_01\nMigrations\nMigrating to Dynamic\nMigrating Users via CSV\nMigration from RainbowKit\nTroubleshooting\nInitial Steps\nDynamic Doctor\nGenerating a HAR file\nEmail OTP delivery\nReact / Vite\nNext.js\nSolana\nMobile\nWalletConnect\nBrowser Extension\nTypeScript\nExplore Dynamic\nStart Free\nLive Support\nSystem Status\nDynamic\nhome page\nOverview\nSearch...\n\u2318\nK\nAsk Assistant\nExplore Dynamic\nStart Free\nLive Support\nSystem Status\nSearch...\nNavigation\nGetting Started\nWelcome\nGetting Started\nWelcome\nCopy page\nDynamic provides one complete wallet stack. Build your way \u2014 from low-level APIs to full SDKs. Use primitives for full control or prebuilt flows to ship fast. Get sub-second signing and enterprise-grade security.\nCopy page\nDocumentation Index\nFetch the complete documentation index at:\nhttps://www.dynamic.xyz/docs/llms.txt\nUse this file to discover all available pages before exploring further.\nShip\na\nt\nr\na\nd\ne\ne\nv\ne\nr\ny\nt\nh\ni\nn\ng\na\np\np\nwith Dynamic in\nJ\na\nv\na\nS\nc\nr\ni\np\nt\n\u200b\nGet started\n1\nGet an account\nCreate an environment in the\nDynamic dashboard\n.\n2\nInstall the MCP\nCursor\nClaude Code\nCodex\nOther\nClick here to add the MCP to Cursor.\nclaude\nmcp\nadd\n--transport\nhttp\ndynamic\nhttps://www.dynamic.xyz/docs/mcp\ncodex\nmcp\nadd\ndynamic\n--url\nhttps://www.dynamic.xyz/docs/mcp\nIf your editor or agent supports remote HTTP MCP, add a server that points at\nhttps://www.dynamic.xyz/docs/mcp\n. The exact steps depend on the product; use its MCP documentation for URL-based or HTTP transport setup.\n3\nAsk your agent\nIt can access the documentation and start implementing for you!\n\u200b\nBrowse by platform\nPrefer reading in the browser? Use the product menu (top left) or open a guide below.\nJavaScript\nReact\nReact Native\nFlutter\nSwift\nUnity\nKotlin\nNode\nAPI\nIntegrate anything using HTTP\nPrefer to browse full integrations?\nCheck out the Recipes section.\n\u200b\nSupport & feedback\nReach us for questions, issues, ideas, or feedback:\nSlack\nJoin our Slack community\nX\nPost or DM us on X\nEmail\nEmail\nhello@dynamic.xyz\nFounders\nEmail\nfounders@dynamic.xyz\n\u2014 tell us what works and what does not\nWas this page helpful?\nYes\nNo\nGo Live Checklist\nNext\n\u2318\nI\nx\nlinkedin\nslack\nPowered by\nThis documentation is built and hosted on Mintlify, a developer documentation platform\nOn this page\nGet started\nBrowse by platform\nSupport & feedback\nAssistant\nResponses are generated using AI and may contain mistakes.\nSearch\n\u2318\nK",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.dynamic.xyz/integrations",
+      "title": "Not Found",
+      "text": "Not Found\n404\nThe page you are looking for doesn't exist or has been moved.\nGo back home",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/dynamic-xyz/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Google Puts Boston Dynamics Up for Sale in Robotics Retreat",
+          "url": "http://www.bloomberg.com/news/articles/2016-03-17/google-is-said-to-put-boston-dynamics-robotics-unit-up-for-sale",
+          "points": 830,
+          "num_comments": 387,
+          "created_at": "2016-03-17T16:40:53Z",
+          "hn_url": "https://news.ycombinator.com/item?id=11305527"
+        },
+        {
+          "title": "Google Acquires Boston Dynamics",
+          "url": "http://www.nytimes.com/2013/12/14/technology/google-adds-to-its-menagerie-of-robots.html",
+          "points": 799,
+          "num_comments": 291,
+          "created_at": "2013-12-14T05:44:27Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6904793"
+        },
+        {
+          "title": "Run DeepSeek R1 Dynamic 1.58-bit",
+          "url": "https://unsloth.ai/blog/deepseekr1-dynamic",
+          "points": 767,
+          "num_comments": 332,
+          "created_at": "2025-01-28T08:52:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=42850222"
+        },
+        {
+          "title": "Hyundai to acquire Boston Dynamics",
+          "url": "https://www.therobotreport.com/hyundai-acquires-boston-dynamics-for-921m/",
+          "points": 748,
+          "num_comments": 248,
+          "created_at": "2020-12-09T20:08:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25363981"
+        },
+        {
+          "title": "Show HN: Lunar lander-type game with computational fluid dynamics",
+          "url": "https://github.com/s-macke/Interplanetary-Postal-Service/",
+          "points": 660,
+          "num_comments": 127,
+          "created_at": "2018-09-15T11:54:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=17993933"
+        },
+        {
+          "title": "Dynamicland 2024",
+          "url": "https://dynamicland.org/",
+          "points": 590,
+          "num_comments": 194,
+          "created_at": "2024-09-04T17:02:14Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41448022"
+        },
+        {
+          "title": "SoftBank Agrees to Buy Boston Dynamics From Alphabet",
+          "url": "https://www.bloomberg.com/news/articles/2017-06-09/softbank-agrees-to-buy-robot-maker-boston-dynamics",
+          "points": 566,
+          "num_comments": 215,
+          "created_at": "2017-06-09T01:22:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14518542"
+        },
+        {
+          "title": "Dynamic Programming for Technical Interviews",
+          "url": "https://blogarithms.github.io/articles/2019-03/cracking-dp-part-one",
+          "points": 470,
+          "num_comments": 218,
+          "created_at": "2019-03-15T01:16:14Z",
+          "hn_url": "https://news.ycombinator.com/item?id=19395578"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.dynamic.xyz/pricing",
+    "changelog": "https://docs.dynamic.xyz/changelog",
+    "docs": "https://docs.dynamic.xyz",
+    "integrations": "https://www.dynamic.xyz/integrations",
+    "g2": "https://www.g2.com/products/dynamic-xyz/reviews"
+  },
+  "analysis": {
+    "name": "Dynamic",
+    "url": "https://dynamic.xyz",
+    "tagline": "Wallet infrastructure that turns crypto demand into revenue",
+    "value_proposition": "One unified SDK combining embedded wallets, external wallet connectors, and multi-chain auth so fintechs can launch onchain products without crypto specialists.",
+    "target_segment": "enterprise / mid-market / dev",
+    "ideal_customer": "Fintech companies and crypto-native teams (exchanges, payment processors, consumer apps) who need to offer wallets, stablecoin payments, or onchain yield without building custody infrastructure from scratch.",
+    "features": [
+      {
+        "name": "embedded wallets",
+        "description": "Non-custodial wallets spun up inside the host app, no seed phrases for end users",
+        "evidence_source": "landing",
+        "evidence_quote": "Spin up non-custodial wallets in your app and let users start their onchain journey instantly.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "server wallets",
+        "description": "Programmatically create and control wallets server-side for automated money movement without user involvement",
+        "evidence_source": "pricing",
+        "evidence_quote": "Trigger transactions, run contract calls, and handle complex flows without user involvement.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "external wallet connectors",
+        "description": "Connect 500+ external wallets across chains (MetaMask, Phantom, etc.) to the host app",
+        "evidence_source": "landing",
+        "evidence_quote": "800+ External wallets supported",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-chain authentication",
+        "description": "Auth and access control across EVM, Solana, Bitcoin, Sui, and 100+ EVM chains",
+        "evidence_source": "pricing",
+        "evidence_quote": "Multi-chain auth and access control + 100 EVM Chains",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "social login",
+        "description": "OAuth-based social login (Google, Apple, etc.) tied to embedded wallet creation",
+        "evidence_source": "pricing",
+        "evidence_quote": "Social Login & Embedded Wallets",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "smart wallets (erc-4337 and eip-7702)",
+        "description": "Account abstraction wallets supporting ERC-4337 and EIP-7702 standards",
+        "evidence_source": "pricing",
+        "evidence_quote": "Smart Wallets (4337 & 7702)",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "fraud protection",
+        "description": "Bot detection and threat vector management tools",
+        "evidence_source": "pricing",
+        "evidence_quote": "Fraud Protection Tools",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "mfa",
+        "description": "Multi-factor authentication with additional MFA options beyond defaults",
+        "evidence_source": "pricing",
+        "evidence_quote": "Additional MFA Options",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "step-up authentication",
+        "description": "Trigger elevated authentication challenges at specific transaction or action points",
+        "evidence_source": "docs",
+        "evidence_quote": "Step-Up Authentication",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "bring your own auth / jwt",
+        "description": "Accept existing JWTs from the developer's own auth system to link to Dynamic wallets",
+        "evidence_source": "pricing",
+        "evidence_quote": "Bring Your Own Auth / JWT",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sso / okta support",
+        "description": "Enterprise SSO integration including Okta for organization-level authentication",
+        "evidence_source": "pricing",
+        "evidence_quote": "SSO/Okta Support",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "user management & analytics",
+        "description": "Dashboard for managing users, viewing visitor analytics, and tracking wallet activity",
+        "evidence_source": "pricing",
+        "evidence_quote": "User Management & Analytics",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "on/off ramps",
+        "description": "Flexible fiat-to-crypto and crypto-to-fiat ramps integrated into the wallet flow",
+        "evidence_source": "pricing",
+        "evidence_quote": "Flexible On & Off-Ramps",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "stablecoin accounts",
+        "description": "Full stablecoin payment and holding infrastructure for global payments",
+        "evidence_source": "landing",
+        "evidence_quote": "Unlock everything needed for global stablecoin payments.",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "deposit with crypto",
+        "description": "Accept crypto deposits from external wallets and exchanges without on/off-ramp friction",
+        "evidence_source": "landing",
+        "evidence_quote": "Let customers pay with and deposit crypto from any wallet or exchange. No on/off-ramping required.",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "global wallets",
+        "description": "Turn a host app into an ecosystem by enabling wallet interoperability across apps",
+        "evidence_source": "landing",
+        "evidence_quote": "Global Wallets \u2014 Turn your app into an ecosystem.",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "global wallet kit",
+        "description": "Prebuilt UI kit for wallet connection and onboarding flows",
+        "evidence_source": "pricing",
+        "evidence_quote": "Global Wallet Kit",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "earn / yield",
+        "description": "Offer yield on user balances to drive engagement within the host app",
+        "evidence_source": "landing",
+        "evidence_quote": "Offer yield on balances to keep customers engaged with your app.",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "agent payments",
+        "description": "Wallet and payment infrastructure for AI agents to send and receive funds autonomously",
+        "evidence_source": "docs",
+        "evidence_quote": "Agents Overview / Agent Payments",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "trade support",
+        "description": "Infrastructure for prediction markets and tokenized asset trading within apps",
+        "evidence_source": "landing",
+        "evidence_quote": "Expand what customers can trade from prediction markets to tokenized assets.",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "low-level apis",
+        "description": "REST/HTTP APIs for wallet creation and control without using the full SDK",
+        "evidence_source": "landing",
+        "evidence_quote": "Create and control wallets through APIs for programmable money movement at scale.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-platform sdks",
+        "description": "SDKs for JavaScript, React, React Native, Flutter, Swift, Unity, Kotlin, and Node",
+        "evidence_source": "docs",
+        "evidence_quote": "JavaScript / React / React Native / Flutter / Swift / Unity / Kotlin / Node / API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Event-driven webhooks for wallet and user lifecycle events",
+        "evidence_source": "docs",
+        "evidence_quote": "Webhooks",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "white-labeling",
+        "description": "Full white-label options to remove Dynamic branding from wallet UX",
+        "evidence_source": "pricing",
+        "evidence_quote": "White-labeling Options",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "pre-generated wallets",
+        "description": "Wallets created in advance before user onboarding for instant assignment",
+        "evidence_source": "pricing",
+        "evidence_quote": "Pre-generated Wallets",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "policy controls",
+        "description": "Rule-based transaction and access policies enforced at the wallet layer",
+        "evidence_source": "landing",
+        "evidence_quote": "Policy controls",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "allowlists",
+        "description": "Address and contract allowlists to restrict wallet interaction surfaces",
+        "evidence_source": "landing",
+        "evidence_quote": "Allowlists",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "rate limiting",
+        "description": "Configurable rate limits as a security safeguard against abuse",
+        "evidence_source": "landing",
+        "evidence_quote": "Rate-limiting safeguards",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "device registration",
+        "description": "Register and manage trusted devices to reduce re-authentication friction",
+        "evidence_source": "docs",
+        "evidence_quote": "Device Registration",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "content security policy (csp) support",
+        "description": "Documentation and tooling to configure CSP headers for Dynamic-powered apps",
+        "evidence_source": "docs",
+        "evidence_quote": "Content Security Policy (CSP)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bug bounty program",
+        "description": "Public bug bounty program for responsible disclosure of security vulnerabilities",
+        "evidence_source": "landing",
+        "evidence_quote": "protected by a public bug bounty program",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "security audits",
+        "description": "Regular third-party audits of infrastructure; recent audits in Jul/Apr/Feb 2025 and Sep 2024",
+        "evidence_source": "landing",
+        "evidence_quote": "regularly audited by top firms\u2026 July 2025 / April 2025 / February 2025 / September 2024",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "fireblocks security integration",
+        "description": "Inherits Fireblocks' institutional custody security model for key management",
+        "evidence_source": "landing",
+        "evidence_quote": "Dynamic inherits Fireblocks' security expertise, practices, and operational rigor.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "distributed key management",
+        "description": "Secure distributed signing with flexible thresholds and built-in recovery paths",
+        "evidence_source": "landing",
+        "evidence_quote": "secure distributed signing, flexible thresholds, and built-in recovery paths",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sub-second signing",
+        "description": "Transaction signing completes in under one second",
+        "evidence_source": "landing",
+        "evidence_quote": "< 1 Second signing speed",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "developer dashboard",
+        "description": "Web dashboard for managing environments, API keys, users, analytics, and settings",
+        "evidence_source": "docs",
+        "evidence_quote": "Developer Dashboard / SDK and API Keys / Analytics / Users & Visitors",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sandbox environment",
+        "description": "Isolated test environment requiring no credit card for initial development",
+        "evidence_source": "pricing",
+        "evidence_quote": "No credit card required in Sandbox",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "admin action approvals",
+        "description": "Workflow for approving sensitive admin-level actions before execution",
+        "evidence_source": "docs",
+        "evidence_quote": "Admin Action Approvals",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "access control",
+        "description": "Role-based and rule-based access control for wallet and user operations",
+        "evidence_source": "docs",
+        "evidence_quote": "Access Control",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "session management",
+        "description": "Control session duration, token expiry, and re-authentication flows",
+        "evidence_source": "docs",
+        "evidence_quote": "Session management",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "api token permissions",
+        "description": "Granular permission scopes for API tokens used in server-side integrations",
+        "evidence_source": "docs",
+        "evidence_quote": "API Token Permissions",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "mcp server",
+        "description": "Remote MCP endpoint allowing AI coding agents (Cursor, Claude Code, Codex) to access Dynamic docs and implement integrations",
+        "evidence_source": "landing",
+        "evidence_quote": "claude mcp add --transport http dynamic https://www.dynamic.xyz/docs/mcp",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "social providers configuration",
+        "description": "Dashboard configuration for connecting OAuth social login providers",
+        "evidence_source": "docs",
+        "evidence_quote": "Social Providers",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "csv user migration",
+        "description": "Import existing users via CSV when migrating from another auth/wallet provider",
+        "evidence_source": "docs",
+        "evidence_quote": "Migrating Users via CSV",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "rainbowkit migration support",
+        "description": "Documented migration path from RainbowKit to Dynamic",
+        "evidence_source": "docs",
+        "evidence_quote": "Migration from RainbowKit",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "99.9% uptime sla",
+        "description": "Published uptime SLA backed by infrastructure guarantees",
+        "evidence_source": "landing",
+        "evidence_quote": "99.9% uptime",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cross-chain money movement",
+        "description": "Send money globally 24/7 across chains fast and cheaply",
+        "evidence_source": "landing",
+        "evidence_quote": "Let customers send money globally, fast, cheap, and 24/7.",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "evm chain support (100+)",
+        "description": "Embedded and external wallets work across 100+ EVM-compatible chains",
+        "evidence_source": "pricing",
+        "evidence_quote": "+ 100 EVM Chains",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "solana support",
+        "description": "Embedded wallets and auth on Solana (SVM)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Embedded wallets on EVM & SVM",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bitcoin support",
+        "description": "External wallet connectivity for Bitcoin",
+        "evidence_source": "landing",
+        "evidence_quote": "By Ecosystem: Bitcoin",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "sui support",
+        "description": "External wallet connectivity for Sui ecosystem",
+        "evidence_source": "landing",
+        "evidence_quote": "By Ecosystem: Sui",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "ui components / customization",
+        "description": "Prebuilt and customizable UI components for wallet onboarding and auth flows",
+        "evidence_source": "landing",
+        "evidence_quote": "UI Components \u2014 Craft unique and personalized experiences.",
+        "tier": "all",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Fireblocks",
+      "WalletConnect",
+      "Okta (SSO)",
+      "Stripe",
+      "Circle",
+      "Social OAuth providers (Google, Apple, etc.)",
+      "500+ external wallets",
+      "Cursor (MCP)",
+      "Claude Code (MCP)",
+      "OpenAI Codex (MCP)"
+    ],
+    "differentiators": [
+      "Only platform with embedded wallets, external wallets, and multi-chain connectivity in one unified SDK",
+      "Fireblocks institutional-grade security inherited at the consumer wallet layer",
+      "Sub-second signing speed with enterprise-grade security",
+      "50M+ users onboarded at scale",
+      "800+ external wallets supported out of the box",
+      "No seed phrases required for end users",
+      "MCP server for AI-assisted integration directly in coding agents"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-04",
+        "what": "API upgrade (2026_04_01)",
+        "source": "docs navigation: API Upgrades / 2026_04_01"
+      },
+      {
+        "date": "2026-01",
+        "what": "API upgrade (2026_01_01)",
+        "source": "docs navigation: API Upgrades / 2026_01_01"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Dynamic not only had the most secure solution it had by far the best developer experience. We had a working prototype in a fraction of the time.",
+        "Dynamic is easy to integrate, supports lots of wallets out of the box, and the team is extremely responsive.",
+        "No seed phrases, no chain switching, and no waiting \u2014 Dynamic helped make it all possible."
+      ],
+      "complaints": [],
+      "sources": [
+        "landing (testimonials)"
+      ]
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "1,000 MAUs (consumer wallets) or 1,000 operations/month (server wallets); sandbox requires no credit card"
+      },
+      "tiers": [
+        {
+          "name": "Launch",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$0",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "1,000 MAUs/ops, multi-chain auth, social login, embedded wallets, on/off ramps, community support"
+        },
+        {
+          "name": "Growth",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$249",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "5,000 MAUs/ops (+$0.05/additional), smart wallets (4337 & 7702), fraud protection, MFA, BYOA/JWT, dedicated support"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "10,000+ MAUs/ops, volume discounts, SSO/Okta, white-labeling, pre-generated wallets, premium SLAs, white-glove support"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Dual metering model: Consumer Wallets billed by MAU; Server Wallets billed by operations (same tier prices, same $0.05 overage rate). Enterprise gets volume-discounted MAU/op tiers and highest rate limits."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Show HN: Pictolab (online HDR image editor)",
+        "url": "https://pictolab.io/",
+        "points": 2,
+        "comments": 2,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48350064"
+      },
+      {
+        "title": "A dynamic programming algorithm for the traveling salesman problem (1993)",
+        "url": "https://dl.acm.org/doi/abs/10.1145/173834.173835",
+        "points": 2,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48347230"
+      },
+      {
+        "title": "Workflow patterns behind Claude Dynamic Workflows",
+        "url": "https://github.com/peymanvahidi/awesome-claude-dynamic-workflows",
+        "points": 2,
+        "comments": 0,
+        "age_days": 1,
+        "hn_url": "https://news.ycombinator.com/item?id=48336168"
+      },
+      {
+        "title": "VDF AI \u2013 Multi-agent AI orchestration with dynamic model routing",
+        "url": "https://vdf.ai/",
+        "points": 2,
+        "comments": 0,
+        "age_days": 2,
+        "hn_url": "https://news.ycombinator.com/item?id=48322292"
+      },
+      {
+        "title": "Orchestrate subagents at scale with dynamic workflows",
+        "url": "https://code.claude.com/docs/en/workflows",
+        "points": 1,
+        "comments": 0,
+        "age_days": 3,
+        "hn_url": "https://news.ycombinator.com/item?id=48319629"
+      }
+    ]
+  }
+}

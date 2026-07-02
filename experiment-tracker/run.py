@@ -24,8 +24,8 @@ import re
 import sys
 from pathlib import Path
 
-VAULT = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
-GROWTH_DIR = VAULT / "Projects" / "Zstack" / "Growth"
+VAULT = Path("/Users/mattheweisner/Obsidian/Zerg/MattZerg")
+GROWTH_DIR = VAULT / "Projects" / "Zerg-Production" / "Growth"
 EXPERIMENTS_DIR = GROWTH_DIR / "experiments"
 LEDGER_FILE = GROWTH_DIR / "experiments.md"
 
@@ -139,8 +139,18 @@ def cmd_register(args: argparse.Namespace) -> int:
     eid = next_experiment_id()
     today = dt.date.today().isoformat()
     status = "running" if args.start else "proposed"
+    # Phase guess: kill_date within phase-1 window (≤ 2026-06-13) → phase-1; else phase-2-c1.
+    phase = "phase-1" if args.kill_date <= "2026-06-13" else "phase-2-c1"
     meta = {
+        # Envelope (gtm-hub schema)
         "id": eid,
+        "type": "experiment",
+        "title": args.name,
+        "status": status,
+        "owner": args.owner.lower() if isinstance(args.owner, str) else args.owner,
+        "created": today,
+        "last_touch": today,
+        # Experiment-specific
         "name": args.name,
         "hypothesis": args.hypothesis,
         "variant_a": args.variant_a,
@@ -151,11 +161,10 @@ def cmd_register(args: argparse.Namespace) -> int:
         "kill_threshold": args.kill_threshold,
         "kill_date": args.kill_date,
         "sample_size_target": args.sample_size,
-        "RICE_score": args.rice,
-        "status": status,
+        "rice_score": args.rice,
+        "RICE_score": args.rice,  # legacy alias for backward-compat readers
         "problem": args.problem,
-        "owner": args.owner,
-        "created": today,
+        "phase": phase,
         "concluded": "",
         "verdict": "",
     }
@@ -213,6 +222,11 @@ def cmd_log(args: argparse.Namespace) -> int:
         text = text.replace(needle, needle + row, 1)
     else:
         text = text + f"\n## Decision log\n\n| Date | Read | Note |\n|---|---|---|\n{row}"
+    # Bump last_touch (gtm-hub envelope discipline)
+    meta, body = parse_yaml_frontmatter(text)
+    if meta:
+        meta["last_touch"] = today
+        text = render_yaml_frontmatter(meta) + "\n" + body
     f.write_text(text)
     print(f"Logged read for {args.id} on {today}.")
     return 0
@@ -236,6 +250,7 @@ def cmd_conclude(args: argparse.Namespace) -> int:
                   "inconclusive": "inconclusive"}[args.verdict]
     meta["status"] = new_status
     meta["concluded"] = today
+    meta["last_touch"] = today  # gtm-hub envelope
     meta["verdict"] = args.verdict
 
     # Append conclusion section
@@ -274,7 +289,23 @@ def cmd_prompt(args: argparse.Namespace) -> int:
             overdue.append((f, meta))
         elif kd <= threshold:
             needs_decision.append((f, meta))
-    if not needs_decision and not overdue:
+    # NO-DATA tripwire (added 2026-06-10): a running experiment with zero
+    # data-bearing decision-log reads after NO_DATA_GRACE_DAYS is a silent
+    # failure — exp-001/002/003 ran 35 days with 0 exposures before anyone
+    # looked. Marker rows (PROMPT-FIRED / OVERDUE / NO-DATA) don't count as
+    # reads; only rows logged via `log --read` do.
+    no_data: list[tuple[Path, dict[str, str]]] = []
+    for f, meta in running_experiments():
+        try:
+            started = dt.date.fromisoformat(str(meta.get("created", ""))[:10])
+        except ValueError:
+            continue
+        if (today - started).days < NO_DATA_GRACE_DAYS:
+            continue
+        if not _has_data_read(f):
+            no_data.append((f, meta))
+
+    if not needs_decision and not overdue and not no_data:
         print("No kill-decision prompts due.")
         return 0
 
@@ -294,7 +325,38 @@ def cmd_prompt(args: argparse.Namespace) -> int:
         print()
         _append_log_row(f, today_str, "OVERDUE",
                         f"kill_date={meta['kill_date']} passed. Auto-kill recommended (run conclude --verdict kill).")
+    for f, meta in no_data:
+        print(f"[NO-DATA] {meta['id']} ({meta['name']}) — running since {meta.get('created')} with ZERO logged reads")
+        print(f"   An experiment collecting nothing is indistinguishable from one that was never wired.")
+        print(f"   Verify instrumentation (exposures + metric events exist), then `log` a read — or kill as inconclusive.")
+        print()
+        _append_log_row(f, today_str, "NO-DATA",
+                        f"running {(today - dt.date.fromisoformat(str(meta.get('created'))[:10])).days}d with zero data reads. Verify instrumentation or kill.")
     return 0
+
+
+MARKER_STATUSES = {"PROMPT-FIRED", "OVERDUE", "NO-DATA"}
+NO_DATA_GRACE_DAYS = 7
+
+
+def _has_data_read(f: Path) -> bool:
+    """True if the decision log holds at least one real read (non-marker row)."""
+    text = f.read_text()
+    needle = "## Decision log"
+    idx = text.find(needle)
+    if idx < 0:
+        return False
+    block = text[idx:]
+    end = block.find("\n## ", len(needle))
+    if end > 0:
+        block = block[:end]
+    for line in block.splitlines():
+        if not line.startswith("|") or line.startswith("|---") or line.startswith("| Date"):
+            continue
+        cells = [c.strip() for c in line.split("|")]
+        if len(cells) >= 3 and cells[2] and cells[2] not in MARKER_STATUSES:
+            return True
+    return False
 
 
 def _append_log_row(f: Path, date_str: str, status: str, note: str) -> None:
@@ -342,6 +404,7 @@ def cmd_start(args: argparse.Namespace) -> int:
         return 1
     today = dt.date.today().isoformat()
     meta["status"] = "running"
+    meta["last_touch"] = today  # gtm-hub envelope
     if not meta.get("started"):
         meta["started"] = today
     f.write_text(render_yaml_frontmatter(meta) + "\n" + body)
@@ -389,7 +452,7 @@ def main() -> int:
 
     pl = sub.add_parser("log", help="log a weekly read")
     pl.add_argument("--id", required=True)
-    pl.add_argument("--read", required=True, help="data summary, e.g. 'A: 12% n=412 / B: 14% n=408'")
+    pl.add_argument("--read", required=True, help="data summary, e.g. 'A: 12%% n=412 / B: 14%% n=408'")
     pl.add_argument("--note", help="qualitative note")
     pl.set_defaults(func=cmd_log)
 

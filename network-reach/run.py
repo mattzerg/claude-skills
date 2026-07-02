@@ -12,7 +12,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-VAULT = Path('/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents')
+VAULT = Path.home() / 'Obsidian'
 MZ = VAULT / 'Zerg' / 'MattZerg'
 PEOPLE_DIRS = [MZ / 'People', MZ / 'People' / 'CRM']
 OUT_BASE = Path('/tmp/network-reach')

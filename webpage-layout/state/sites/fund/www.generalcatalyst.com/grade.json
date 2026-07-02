@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 7,
+    "hierarchy": 6,
+    "distinctiveness": 5,
+    "color": 4,
+    "density": 5,
+    "voice": 4
+  },
+  "reasoning": {
+    "typography": "Custom display face with geometric letterforms (circles cut into letters) shows ambition, but body text appears standard. The headline treatment is memorable, though the execution feels somewhat forced.",
+    "hierarchy": "Hero dominates appropriately, but the circular stats section creates visual confusion with competing scale. The headline does visual work, but subsequent sections lose focus.",
+    "distinctiveness": "The circular letterform trick and 'Venture Beyond' tagline provide some identity, but the structure (hero \u2192 stats \u2192 carousel) is venture capital boilerplate. Could easily be swapped for another firm.",
+    "color": "Gradient backgrounds (purple/pink/blue) are decorative rather than disciplined. The beige background is safe. Accent colors appear in multiple gradients rather than a single restrained highlight\u2014lacks focus.",
+    "density": "Awkward. Hero has breathing room but the circular stats create cramped horizontal scrolling. The density isn't confident\u2014it's uncertain whether to be spacious or packed.",
+    "voice": "Generic VC structure: inspiring headline \u2192 proof metrics \u2192 vague promise. The 'Blueprint for the Next Century' language is inflated corporate speak. IA doesn't reflect an actual story, just credential signaling."
+  },
+  "winning_patterns": [
+    "Custom display typography with geometric letterform treatment creates visual interest",
+    "Hero headline scale and dominance establish immediate presence",
+    "Brand mark has character and isn't generic sans wordmark"
+  ],
+  "anti_patterns": [
+    "Gradient backgrounds are 2020-era decorative tech aesthetic clich\u00e9",
+    "Circular stats layout creates awkward horizontal competition and scroll confusion",
+    "Voice is generic inspirational VC speak ('resilience,' 'blueprint,' 'beyond')\u2014interchangeable with any firm",
+    "Color discipline absent\u2014multiple gradients, no clear accent strategy",
+    "Structure is pure stencil: hero tagline \u2192 credibility metrics \u2192 carousel"
+  ],
+  "one_word_personality": "aspirational",
+  "_url": "https://www.generalcatalyst.com",
+  "_persona": "fund",
+  "_note": "Premium without busy",
+  "_graded_at": "2026-05-07T19:57:59.574680Z"
+}

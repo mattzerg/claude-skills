@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 6,
+    "distinctiveness": 3,
+    "color": 4,
+    "density": 5,
+    "voice": 3
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif (Camera Plain Variable) lacks character \u2014 could be any SaaS. No typographic tension or personality, just safe legibility.",
+    "hierarchy": "Headline dominates adequately, but the gradient background competes for attention. The input field is properly subordinate, though the 'New' badge disrupts focus.",
+    "distinctiveness": "Pure AI-tool stencil: swap 'Lovable' for 'BuildFast' or 'CodeGen' and nothing changes. The gradient + input pattern is 2023-24 boilerplate.",
+    "color": "Vibrant gradient is decorative eye-candy, not disciplined. Occupies ~70% of viewport \u2014 the opposite of restrained accent use. No clear color system beyond 'make it pop'.",
+    "density": "Massive void above the headline wastes space. Uniform padding on nav. The hero takes standard 'center everything' approach without confident density decisions.",
+    "voice": "Structure is pure SaaS template: hero with input + CTA. 'Build something Lovable' is brand-first, not story-first. IA invisible \u2014 where's the why/how/proof?"
+  },
+  "winning_patterns": [
+    "Clear visual dominance of the main headline \u2014 no confusion about where to look first",
+    "The gradient provides energy and consumer-facing warmth vs. enterprise sterility",
+    "Dark nav bar creates clean separation from hero content"
+  ],
+  "anti_patterns": [
+    "AI-tool template #47: gradient background + centered input field + vague AI promise",
+    "Typographic system has zero personality \u2014 pure commodity sans-serif",
+    "Massive undifferentiated whitespace above headline wastes prime viewport real estate",
+    "Color gradient is decorative wallpaper, not a disciplined accent strategy",
+    "IA completely hidden \u2014 no story structure visible on hero screen"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://www.lovable.dev",
+  "_persona": "design_forward",
+  "_note": "Color-rich, motion-rich AI builder brand",
+  "_graded_at": "2026-05-08T21:44:45.770100Z"
+}

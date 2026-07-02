@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 6,
+    "color": 9,
+    "density": 8,
+    "voice": 7
+  },
+  "reasoning": {
+    "typography": "Clean sans-serif system with strong weights. Bold headline creates presence, but nothing particularly distinctive \u2014 feels competent rather than characterful.",
+    "hierarchy": "The hero statement dominates well with underline emphasis on key phrase. Blog list is appropriately secondary, though date/author metadata competes slightly.",
+    "distinctiveness": "The thesis statement has specificity ('edge of large markets...technological and societal pressures'), but the overall structure is still 'About/People/Writing' standard. Green square logo is memorable but layout could work for many funds.",
+    "color": "Excellent restraint. Single green accent used sparingly for branding only. Black text on white, disciplined color discipline throughout.",
+    "density": "Confident whitespace around hero statement. Blog list has appropriate breathing room. Not overly padded or cramped \u2014 feels considered.",
+    "voice": "The IA is mostly conventional (About/People/Investments/Jobs/Writing) but the hero copy has an actual POV. The thesis gets prime real estate rather than buried. Still feels like professional services stencil overall."
+  },
+  "winning_patterns": [
+    "Ruthless color restraint \u2014 green only for brand identity, not decoration",
+    "Thesis statement gets hero treatment with meaningful underline on core concept",
+    "Content density feels professional and confident, not over-designed",
+    "Clean typographic hierarchy without resorting to multiple font families"
+  ],
+  "anti_patterns": [
+    "Navigation is pure boilerplate fund template (About/People/Investments/Jobs/Writing)",
+    "Blog post list is undifferentiated metadata soup \u2014 all posts look identical",
+    "Footer Contact section is procedural institutional copy",
+    "No typographic personality \u2014 could be any professional services firm's font stack",
+    "Recent posts have no visual differentiation or importance signaling"
+  ],
+  "one_word_personality": "professional",
+  "_url": "https://www.usv.com",
+  "_persona": "fund",
+  "_note": "Blog-first, fund-second",
+  "_graded_at": "2026-05-07T19:57:35.941831Z"
+}

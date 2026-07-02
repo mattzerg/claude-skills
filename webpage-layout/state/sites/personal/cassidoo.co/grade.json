@@ -1,0 +1,38 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 9,
+    "color": 8,
+    "density": 7,
+    "voice": 9
+  },
+  "reasoning": {
+    "typography": "Monospace type system (looks like a classic dev font) is distinctive and disciplined, but not groundbreaking \u2014 works perfectly for the persona without being generic Inter",
+    "hierarchy": "Clear dominance of name/intro, but post list gets a bit uniform \u2014 headlines could be bolder, dates are appropriately subordinate, navigation is clean but not doing heavy visual lifting",
+    "distinctiveness": "Unmistakably personal \u2014 'memes and dreams and software', mechanical keyboards, the circular photo \u2014 swap the words and this breaks immediately. Strong individual voice.",
+    "color": "Dark theme with restrained accent usage (underlines on links), minimal decoration, disciplined palette \u2014 the magenta/pink underlines provide just enough pop without chaos",
+    "density": "Confident breathing room, not overly padded, allows content to speak \u2014 could push density slightly higher in post list but generally well-balanced",
+    "voice": "Structure mirrors the actual person: intro > work > posts > tags. No stencil 'Services' or 'Testimonials' \u2014 it's a genuine 'here's who I am and what I make' flow"
+  },
+  "winning_patterns": [
+    "Monospace everywhere commits to dev-person aesthetic without apology",
+    "Circular photo + keyboard prop immediately signals personality",
+    "Inline conversational links ('You should subscribe to my newsletter!') feel human, not corporate",
+    "Bio integrates actual interests (mechanical keyboards, memes) not just resume bullets",
+    "Tag taxonomy at bottom is functional and humble, not over-designed",
+    "Dark theme with subtle accent underlines shows restraint"
+  ],
+  "anti_patterns": [
+    "Post list could have more typographic variation \u2014 titles blend together",
+    "Navigation bar is functional but could be bolder/more distinctive",
+    "Date positioning (right-aligned italic) is a bit generic blog-template",
+    "Some posts lack clear visual hierarchy between title and description",
+    "Footer 'View posts by tag' section feels slightly tacked-on visually"
+  ],
+  "one_word_personality": "genuine",
+  "_url": "https://cassidoo.co",
+  "_persona": "personal",
+  "_note": "Cassidy Williams \u2014 colorful + structured",
+  "_graded_at": "2026-05-07T23:26:26.804127Z"
+}

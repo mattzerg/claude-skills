@@ -1,0 +1,176 @@
+{
+  "sections": {
+    "1c01496e0668f83b": [
+      {
+        "rule": "Stop over-emphasizing 'vampire pricing'; treat it as a pricing strategy, not a newsworthy theme worth foregrounding in content.",
+        "why": "Matt has told the agent many times it overweights this; it's not newsworthy.",
+        "when": "Writing/editing Zerg blog and content copy",
+        "example_before": "headline/section foregrounding vampire pricing as a story",
+        "example_after": "treat vampire pricing as a minor strategy mention, not a theme"
+      },
+      {
+        "rule": "Don't reference the Securitize SPAC specifically; frame the line as cumulative follow-on funding raised, not Securitize/SPAC.",
+        "why": "Matt does not want SPAC/Securitize called out specifically in public-facing copy.",
+        "when": "Writing public signals / funding lines in Zerg copy",
+        "example_before": "9-figure SPAC / Securitize SPAC line",
+        "example_after": "cumulative follow-on funding raised across the cohort"
+      },
+      {
+        "rule": "Do not list DoorDeck publicly as a client or investment.",
+        "why": "They weren't a great client or investment.",
+        "when": "Listing clients/portfolio in public-facing Zerg copy",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Open posts with a complete sentence; if using a fragment, commit to it fully rather than half-fragment.",
+        "why": "Half-fragment openers read as weird/unintentional in Matt's voice.",
+        "when": "Drafting blog/announcement intros in Matt's voice.",
+        "example_before": "First sentence not being a proper sentence",
+        "example_after": ""
+      },
+      {
+        "rule": "Avoid self-congratulatory phrasing like 'been a long time coming' or aggrandizing Matt's role/remit.",
+        "why": "Matt finds it cocky, overly formal, and too transparent; he wants understated, less self-aggrandizing copy.",
+        "when": "Announcement/launch copy in Matt's voice.",
+        "example_before": "Been a long time coming; describing my remit/role",
+        "example_after": "excited to be working with Idan again"
+      },
+      {
+        "rule": "Use round, approximate numbers (e.g. 'about 90% less') instead of overly precise figures in prose.",
+        "why": "Matt prefers to keep it simple and move on rather than nail exact multipliers.",
+        "when": "Stating metrics/claims in blog or marketing prose.",
+        "example_before": "7-10x per-tool with bundle math breakdown",
+        "example_after": "about 90% less"
+      },
+      {
+        "rule": "Drop inline source-citation parentheticals like '(per durable.com/about, 2026)' from case-study prose, and don't split dates awkwardly across two lines.",
+        "why": "Citations read as weird and add little value; split dates look lazy/poorly formatted.",
+        "when": "Writing case studies and prose in Matt's voice.",
+        "example_before": "(per durable.com/about, 2026); date wrapped across 2 lines",
+        "example_after": ""
+      },
+      {
+        "rule": "Never name Idan (or other individuals) on Matt's personal website.",
+        "why": "Matt finds naming a colleague on his personal site weird.",
+        "when": "Editing/generating Matt's personal site copy.",
+        "example_before": "mentions Idan by name",
+        "example_after": ""
+      },
+      {
+        "rule": "Avoid \"X, not Y\" constructions and platitude pivots that lack a concrete mechanism; cut platitudes unless backed by specifics.",
+        "why": "These are AI-writing tells (per Wikipedia Signs of AI Writing) that erode credibility; codified in writing_style.md after Idan's feedback.",
+        "when": "Editing any prose, blog post, thesis piece, or launch copy before publication.",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Frame content honestly as articles vs research and eliminate AI writing signals to protect credibility with skeptical technical readers.",
+        "why": "Idan's quality-first content strategy emphasizes positioning and credibility over volume; mis-framing damages trust with CTOs.",
+        "when": "Drafting or reviewing thought pieces, case studies, and thesis content for external publication.",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "In case studies, include authentic customer voice and verify all date math, never overselling completion in headline vs body.",
+        "why": "A vendor-self-narrative without customer voice and with date errors damages credibility with skeptical readers (Idan ship-blockers on Durable).",
+        "when": "Writing or reviewing customer case studies and their cover stats/dek.",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Label every source/reference URL \u2014 internal and external alike \u2014 with a live or to-build/roadmapped status marker; do not leave internal Zerg paths unmarked.",
+        "why": "Matt's honest-scoping rule applies equally to internal and external links; unmarked internal paths break parity with verified external sources (flagged HIGH in copyedit review).",
+        "when": "Copyediting prose/launch posts that cite source or product URLs",
+        "example_before": "",
+        "example_after": "(live \u2014 ships on this site)"
+      },
+      {
+        "rule": "Delete AI writing tells: overused words (delve, leverage, multifaceted), filler hedges ('It's important to note that'), and reflexive 'Not X, but Y' contrast frames; apply stricter rules to public prose than email/personal.",
+        "why": "Matt's style philosophy is to kill LLM-generation tells, not enforce formulae; voice rules are context-stratified and context-specific rules win on conflict.",
+        "when": "Copyediting any prose, with strictest application on public Zerg-facing prose",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Keep the spin-off social/content account voice recognizably similar to Matt's own voice.",
+        "why": "The account is essentially a FakeMatt content channel, so it should sound like him.",
+        "when": "Drafting content/captions for Matt's Instagram/social spin-off account",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Always add creative flair, cross-over, and humor to Matt's content projects.",
+        "why": "Matt wants his spin-off content to feel creative and playful, not dry.",
+        "when": "Creative content/social projects under Matthew's personal slate",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Differentiate Matt's personal writing style from Matt-for-Zerg writing style; style changes should barely affect personal use but significantly shape Zerg voice.",
+        "why": "Personal and Zerg professional voices are distinct and should be governed asymmetrically.",
+        "when": "Any prose/voice editing where audience is personal vs Zerg",
+        "example_before": "",
+        "example_after": ""
+      }
+    ],
+    "c5c1679c7ebdb97a": [
+      {
+        "rule": "Keep em-dash count to \u2264 3 in pieces of \u2264 800 words; convert conversational asides to periods",
+        "why": "Pulp/social register reads best with periods; em-dashes should be load-bearing, not decorative filler",
+        "when": "Short pulp-register blog posts (\u2264 800 words) distributed on social or LinkedIn",
+        "example_before": "\u2026trying again \u2014 often with the same broken approach\u2026",
+        "example_after": "\u2026trying again. Often with the same broken approach\u2026"
+      },
+      {
+        "rule": "Give sharp single-sentence central-frame claims their own paragraph",
+        "why": "White space sells punchlines; burying them mid-paragraph dilutes their impact",
+        "when": "Pulp-register blog posts where one sentence carries the core argument",
+        "example_before": "The retry loop is the default, and the default is wrong. We notice this at Zerg, so a new paper\u2026",
+        "example_after": "The retry loop is the default, and the default is wrong.\n\nWe notice this at Zerg\u2026"
+      },
+      {
+        "rule": "Cap figure captions at \u2264 20 words in pulp; use numeric shorthand when data supports; cut any caption sentence that restates the body",
+        "why": "Pulp social captions are billboards, not paragraphs; duplication wastes reader attention",
+        "when": "Figures and images in short pulp or social blog posts",
+        "example_before": "Figure 1 shows the dramatic reduction from 1,178 tokens to 174 and then 78, while single-pass correctness improved from 22% to 54%.",
+        "example_after": "1,178 \u2192 174 \u2192 78. Single-pass correctness: 22% \u2192 54%."
+      },
+      {
+        "rule": "Name the baseline explicitly whenever citing a speedup or improvement ratio",
+        "why": "Vague baselines undermine credibility with sharp readers and obscure what was actually measured",
+        "when": "Any quantitative claim in blog posts, explainers, or launch copy using 'over baseline' / 'vs baseline' / 'than baseline'",
+        "example_before": "3.12\u00d7 speedup over baseline within 100 steps.",
+        "example_after": "3.12\u00d7 over PyTorch eager within 100 steps."
+      },
+      {
+        "rule": "Use exactly one call to action in the closer; choose the more confident and specific one",
+        "why": "Two CTAs split focus and dilute the closer's punch; filler CTAs weaken the specific one",
+        "when": "Pulp blog post closers and email sign-offs",
+        "example_before": "we'd love to compare notes \u2014 come argue with us about what should and shouldn't transfer.",
+        "example_after": "Come argue with us about what should and shouldn't transfer."
+      },
+      {
+        "rule": "Replace 'competitive with X' / 'comparable to X' / 'in line with X' with a verb-forward phrase grounded in the actual data",
+        "why": "Pulp register wants verbs; nominal comparisons are weak and imprecise",
+        "when": "Performance claims or comparisons in blog posts and launch copy",
+        "example_before": "competitive with vendor-optimized code",
+        "example_after": "as fast as vendor-optimized code"
+      },
+      {
+        "rule": "Move gap-admission and strategic-disclosure lines to a separate 'Strategic disclosure' section rather than flagging them as writing-quality findings",
+        "why": "These are CEO/author judgment calls, not copyedit issues; mixing them confuses the review and the responsibility",
+        "when": "Copy reviews of blog posts or launch copy that include lines admitting a product gap or unfinished capability",
+        "example_before": "[Flagging 'we don't have ours yet' as a soft writing finding under prose quality]",
+        "example_after": "[Move to 'Strategic disclosure' section with note: author/CEO should decide whether to keep this admission]"
+      },
+      {
+        "rule": "When a draft title uses a 'What X Gets Wrong About Y' or 'Why X Is Failing Y' curiosity-gap shape, find the flat declarative version of the same claim in the body or share copy and recommend it as the primary title",
+        "why": "Flat declarative headlines are sharper and more pulp; curiosity-gap shapes are overused and signal dated content",
+        "when": "Headline review for pulp-register blog posts, especially those with existing LinkedIn share copy",
+        "example_before": "What AI Agents Get Wrong About Failure",
+        "example_after": "Most AI Agents Have No Memory"
+      }
+    ]
+  }
+}

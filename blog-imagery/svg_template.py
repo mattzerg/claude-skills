@@ -131,6 +131,26 @@ def main():
         render_svg_to_png(svg_sibling, out, w, h)
         print(f"Wrote {svg_sibling} ({svg_sibling.stat().st_size:,} bytes)")
         print(f"Wrote {out} ({out.stat().st_size:,} bytes)")
+        # Post-render auto-lint per `feedback_graphic_basics.md` rule 8 (mandatory self-check).
+        # Runs check_layout.py against the SVG sibling — rules 9/10/11 (geometry).
+        # Skips the PNG-side rule 5 (top-padding) here because that has false positives on
+        # eyebrow-led layouts; rule 5 is enforced when check_layout is invoked directly on .png.
+        # HIGH findings exit non-zero so build scripts fail fast.
+        check_layout = Path.home() / ".config" / "zerg" / "check_layout.py"
+        if check_layout.exists():
+            r = subprocess.run(
+                ["python3", str(check_layout), str(svg_sibling)],
+                capture_output=True, text=True,
+            )
+            if r.stdout.strip():
+                print(r.stdout.strip())
+            if r.stderr.strip():
+                print(r.stderr.strip(), file=sys.stderr)
+            if r.returncode != 0:
+                print(f"!! check_layout reported HIGH SVG-geometry findings on {svg_sibling.name}. "
+                      f"Fix the config or template before treating this image as shippable.",
+                      file=sys.stderr)
+                sys.exit(2)
         return
 
     parser.error(f"Unsupported output extension: {out.suffix} (use .svg or .png)")

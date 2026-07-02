@@ -29,6 +29,23 @@ except ImportError:
     sys.exit(1)
 
 
+def _load_zerg_secrets() -> None:
+    """Populate os.environ from ~/.config/zerg/secrets.env (gitignored, chmod 600).
+    Does not override already-set env vars. Fail-open."""
+    try:
+        p = Path.home() / ".config" / "zerg" / "secrets.env"
+        if not p.exists():
+            return
+        for raw in p.read_text().splitlines():
+            line = raw.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    except Exception:
+        pass
+
+
 # Resolution mapping
 RESOLUTIONS = {
     "1K": (1024, 1024),
@@ -111,7 +128,8 @@ def generate_image(
 ) -> str:
     """Generate an image using Gemini 3 Pro Image model."""
 
-    # Check for API key (env var or config.json)
+    # Check for API key (env var, ~/.config/zerg/secrets.env, then config.json)
+    _load_zerg_secrets()
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         config_path = os.path.join(os.path.dirname(__file__), "config.json")

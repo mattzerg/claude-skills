@@ -1,8 +1,8 @@
 # Voice Family — architecture overview
 
-A single document describing the four "Fake Matt" voice skills + their shared anchors. Future agents/sessions should read this to get oriented quickly. Lives in `fakematt-email/` because that's the entry-point skill, but covers the whole family.
+A single document describing the five "Fake Matt" voice skills + their shared anchors. Future agents/sessions should read this to get oriented quickly. Lives in `fakematt-email/` because that's the entry-point skill, but covers the whole family.
 
-## The four skills
+## The five skills
 
 | Skill | Purpose | Surface | Corpus |
 |---|---|---|---|
@@ -10,16 +10,18 @@ A single document describing the four "Fake Matt" voice skills + their shared an
 | `fakematt-personal` | Draft/revise family/close-friend emails | Outbound to EXCLUDED-list contacts | 29 samples in `MattZerg/_style/personal_voice_corpus.md`, refreshed weekly |
 | `fakematt-copyedit` | Review prose drafts (blog, thought pieces, social) | Vault writing pipeline | `MattZerg/_style/writing_style.md` + voice fingerprint |
 | `fakematt-feedback` | Product/UX critique | External targets (URLs, Figma) | `~/.claude/feedback-corpus/` (262 quotes — separate model) |
+| `fakematt-launch` | Build a launch package in Matt's voice | Launch posts, one-pagers, campaign assets, GTM checklist | `launch_announcement_style.md`, `one_pager_style.md`, `case_study_style.md`, plus launch-planning patterns |
 
 ## Anchor stack (loaded in order)
 
-All four skills load `MattZerg/_style/voice_universals.md` first as the **shared substrate** — universal anti-patterns, voice tells (e.g. "Hope all is well!", "Let me know if [...]", "got tied up"), sentence-length norms, hedge vocabulary.
+All five skills load `MattZerg/_style/voice_universals.md` first as the **shared substrate** — universal anti-patterns, voice tells (e.g. "Hope all is well!", "Let me know if [...]", "got tied up"), sentence-length norms, hedge vocabulary.
 
 Then surface-specific:
 - **email** → professional_voice.md + corpus + tier_map + corrections + subject_patterns
 - **personal** → personal_voice.md + corpus + corrections + (Register-C section of professional_voice as fallback texture)
 - **copyedit** → writing_style.md + AI-cleanup checklist + voice fingerprint
 - **feedback** → feedback-corpus voice/principles (independent model, doesn't read voice_universals)
+- **launch** → launch_announcement_style.md + one_pager_style.md + case_study_style.md + reusable asset/channel checklists
 
 ## Auto-routing between email + personal
 
@@ -93,6 +95,13 @@ Run it manually whenever you want to see if the system is working. Add to a dail
 ├── sent-log.jsonl
 ├── corrections.md
 └── logs/
+
+~/.claude/skills/fakematt-launch/
+├── SKILL.md
+├── references/
+│   └── launch_system_patterns.md
+└── agents/
+    └── openai.yaml
 
 MattZerg/_style/                  (vault)
 ├── voice_universals.md           # shared substrate (anti-patterns, voice tells, norms)

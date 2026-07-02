@@ -1,0 +1,11 @@
+{
+  "blog": ["fakematt_copyedit", "fakeidan", "imagery_quality", "ledger_clean", "signoff", "prod_deployed"],
+  "launch": ["fakematt_copyedit", "launch_announcement", "signoff", "prod_deployed"],
+  "case-study": ["fakeidan", "client_signoff"],
+  "web-page": ["fakematt_feedback", "signoff"],
+  "video": ["fakematt_feedback", "signoff"],
+  "email": ["fakematt_email", "send_gate"],
+  "social": ["fakematt_copyedit"],
+  "one-pager": ["fakematt_copyedit", "signoff"],
+  "other": ["signoff"]
+}

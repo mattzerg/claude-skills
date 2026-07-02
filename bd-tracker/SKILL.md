@@ -1,20 +1,21 @@
 ---
 name: bd-tracker
-description: Track Product BD partner conversations + Solutions referrer pipeline. Thin Zergboard-board template + skill that logs partner status (planned / outreach / engaged / paused / closed-won / closed-lost), next-touch dates, owner, conversation threads. Reads MattZerg/Projects/Zstack/Growth/bd-targets.md (canonical 25-target list). Posts stale-card alerts to Slack DM for cards untouched >14 days. Sister to network-reach (warm prospecting) and prospects.md (Solutions deal pipeline). Phase 2 build (Day 31–60), small effort. USE PROACTIVELY when Matt mentions a partner conversation, integration discussion, podcast pitch, ecosystem listing, or co-marketing opportunity.
+description: Track Product BD partner conversations + Solutions referrer pipeline. Thin Zergboard-board template + skill that logs partner status (planned / outreach / engaged / paused / closed-won / closed-lost), next-touch dates, owner, conversation threads. Reads MattZerg/Projects/Zerg-Production/Growth/bd-targets.md (canonical 25-target list). Posts stale-card alerts to Slack DM for cards untouched >14 days. Sister to network-reach (warm prospecting) and prospects.md (Solutions deal pipeline). Phase 2 build (Day 31–60), small effort. USE PROACTIVELY when Matt mentions a partner conversation, integration discussion, podcast pitch, ecosystem listing, or co-marketing opportunity.
 allowed-tools: Bash, Read, Write
 ---
 
-# BD Tracker Skill (v0 stub — Phase 2 build, S effort)
+
+# BD Tracker Skill (v1 — Phase 2, implemented 2026-05-07)
 
 Plan: `~/.claude/plans/i-am-planning-growth-splendid-bee.md`. Dogfood pattern: Zergboard board IS the CRM, this skill is a thin wrapper.
 
 ## Status
 
-**v0 stub — not yet implemented.** Phase 2 Day 31–45 build window.
+**v1 — implemented.** All 4 modes (`list`, `log`, `status`, `stale`) functional. File-based touch log at `Growth/bd-touch-log.md`. Reads 28 targets from `Growth/bd-targets.md`.
 
 ## What it does
 
-Two-way sync between `MattZerg/Projects/Zstack/Growth/bd-targets.md` and a Zergboard "BD" board.
+Two-way sync between `MattZerg/Projects/Zerg-Production/Growth/bd-targets.md` and a Zergboard "BD" board.
 
 ```bash
 python3 ~/.claude/skills/bd-tracker/run.py sync           # bd-targets.md → Zergboard cards

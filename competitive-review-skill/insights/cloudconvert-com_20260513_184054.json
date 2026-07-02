@@ -1,0 +1,828 @@
+{
+  "name": "CloudConvert",
+  "url": "https://cloudconvert.com",
+  "domain": "cloudconvert.com",
+  "scanned_at": "2026-05-13T18:36:35.104392",
+  "sources": {
+    "landing": {
+      "url": "https://cloudconvert.com",
+      "title": "File Converter | CloudConvert",
+      "text": "File Converter | CloudConvert\nCloud\nConvert\nTools\nAPI\nPricing\nSign in\nSign up\nConvert Any File\nDrop a file and pick what to turn it into. CloudConvert handles 200+ formats across documents, images, audio, video, archives and more \u2014 straight from your browser.\nPDF\nto\nDOCX\nSelect your file here to get started\nor drop your file here.\nSelect File\nFormats supported\nHundreds of formats, thousands of conversion types.\nThe everyday ones, the niche ones, and a few you've probably never heard of \u2014\n212\nformats across 11 categories, all available right now, in your browser.\nDocuments\n23\nImages\n42\nVideo\n28\nAudio\n21\nSpreadsheets\n8\nSlides\n11\nE-books\n22\nArchives\n39\nVector\n10\nCAD\n3\nFonts\n5\nabw\ndjvu\ndoc\ndocm\ndocx\ndot\ndotx\nhtml\nhwp\nhwpx\nlwp\nmd\nodt\npages\npdf\nrst\nrtf\nsdw\ntex\ntxt\nwpd\nwps\nzabw\nData Security\nYour files, handled securely.\nISO 27001 certified, audited regularly. Each conversion runs in an isolated container, files are deleted right after processing, and we make money from the API \u2014 never from your data.\nRead the security overview\nInformation Security\nIndependently Audited\nISO\n27001\nAPI & Integrations\nPowerful API for custom integrations.\nOur API allows custom integrations with your app. You pay only for what you actually use, and there are huge discounts for high-volume customers. We provide a lot of handy features such as full Amazon S3 integration.\nExplore the API\nPOST /v2/jobs\napplication/json\n{\n\"\ntasks\n\"\n:\n{\n\"\nimport-1\n\"\n:\n{\n\"\noperation\n\"\n:\n\"\nimport/url\n\"\n,\n\"\nurl\n\"\n:\n\"\nhttps://example.com/file.pdf\n\"\n},\n\"\nconvert-1\n\"\n:\n{\n\"\noperation\n\"\n:\n\"\nconvert\n\"\n,\n\"\ninput\n\"\n:\n\"\nimport-1\n\"\n,\n\"\noutput_format\n\"\n:\n\"\ndocx\n\"\n},\n\"\nexport-1\n\"\n:\n{\n\"\noperation\n\"\n:\n\"\nexport/url\n\"\n,\n\"\ninput\n\"\n:\n\"\nconvert-1\n\"\n}\n}\n}\nHigh-Quality Conversions\nQuality you can tune.\nWe pair premium vendor partnerships with open source so you get the best of both \u2014 and the controls to fine-tune the result.\nPremium vendor engines paired with battle-tested open source\nPer-conversion controls \u2014 codec, bitrate, resolution, quality\nColor-accurate, font-faithful output for documents and images\nTrusted since 2012\nfiles converted \u2014\nof data processed \u2014 and counting.\nCompany\nAbout Us\nSecurity\nResources\nBlog\nStatus\nLegal\nPrivacy\nTerms\nImprint\nContact\nContact Us\n\u00a9 2026 Lunaweb GmbH\nMade in Munich, Germany",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://cloudconvert.com/pricing",
+      "title": "Pricing | CloudConvert",
+      "text": "Pricing | CloudConvert\nCloud\nConvert\nTools\nAPI\nPricing\nSign in\nSign up\nPricing\nPay only for what you need. Use the slider to choose the number of conversion credits you want, and see prices update instantly.\nSelect your volume\n1,000\ncredits\n500\n1,000,000\nPackages from\n$18\n\u00b7 Subscriptions from\n$10/month\nFree\nFor personal use, testing and hobby projects.\n$0\nSign Up\nPackage\nOne-time payment. Credits never expire.\n$18\nBuy Now\nSubscription\nMonthly credits at our best rates.\n$10\n/month\nSubscribe\nEnterprise\nCustom plans for large-scale workloads.\nCustom\nContact Sales\nPricing\nConversion Credits\n10 / day\n1,000\n1,000 / month\nCustom\nCost per Credit\nFree\n$0.018\n$0.01\nCustom\nCredit Expiry\nDaily reset\nNever\nMonthly reset\nCustom\nFeatures\nAll API Features\nAll Bandwidth Included\nProcessing Priority\nLow\nHigh\nHigh\nHigh\nMax File Size\n1 GB\nUnlimited\nUnlimited\nUnlimited\nMax Processing Time\n5 minutes\nUnlimited\nUnlimited\nUnlimited\nConcurrent Tasks\n5\nUnlimited\nUnlimited\nUnlimited\nDedicated Capacity\nOptional\nInstall Custom Fonts\nSupport & Compliance\nSupport\nStandard\nStandard\nPriority\n99.9% SLA\nData Processing Agreement\nAuto-Refill\nTeam Billing\nSSO / SAML 2.0\nCustom Security Reviews\nCustom Contracts & NDAs\nMetered Billing / Invoicing\nFree\nFor personal use, testing and hobby projects.\n$0\nSign Up\nPricing\nConversion Credits\n10 / day\nCost per Credit\nFree\nCredit Expiry\nDaily reset\nFeatures\nAll API Features\nAll Bandwidth Included\nProcessing Priority\nLow\nMax File Size\n1 GB\nMax Processing Time\n5 minutes\nConcurrent Tasks\n5\nDedicated Capacity\nInstall Custom Fonts\nSupport & Compliance\nSupport\n99.9% SLA\nData Processing Agreement\nAuto-Refill\nTeam Billing\nSSO / SAML 2.0\nCustom Security Reviews\nCustom Contracts & NDAs\nMetered Billing / Invoicing\nPackage\nOne-time payment. Credits never expire.\n$18\nBuy Now\nPricing\nConversion Credits\n1,000\nCost per Credit\n$0.018\nCredit Expiry\nNever\nFeatures\nAll API Features\nAll Bandwidth Included\nProcessing Priority\nHigh\nMax File Size\nUnlimited\nMax Processing Time\nUnlimited\nConcurrent Tasks\nUnlimited\nDedicated Capacity\nInstall Custom Fonts\nSupport & Compliance\nSupport\nStandard\n99.9% SLA\nData Processing Agreement\nAuto-Refill\nTeam Billing\nSSO / SAML 2.0\nCustom Security Reviews\nCustom Contracts & NDAs\nMetered Billing / Invoicing\nSubscription\nMonthly credits at our best rates.\n$10\n/month\nSubscribe\nPricing\nConversion Credits\n1,000 / month\nCost per Credit\n$0.01\nCredit Expiry\nMonthly reset\nFeatures\nAll API Features\nAll Bandwidth Included\nProcessing Priority\nHigh\nMax File Size\nUnlimited\nMax Processing Time\nUnlimited\nConcurrent Tasks\nUnlimited\nDedicated Capacity\nInstall Custom Fonts\nSupport & Compliance\nSupport\nStandard\n99.9% SLA\nData Processing Agreement\nAuto-Refill\nTeam Billing\nSSO / SAML 2.0\nCustom Security Reviews\nCustom Contracts & NDAs\nMetered Billing / Invoicing\nEnterprise\nCustom plans for large-scale workloads.\nCustom\nContact Sales\nPricing\nConversion Credits\nCustom\nCost per Credit\nCustom\nCredit Expiry\nCustom\nFeatures\nAll API Features\nAll Bandwidth Included\nProcessing Priority\nHigh\nMax File Size\nUnlimited\nMax Processing Time\nUnlimited\nConcurrent Tasks\nUnlimited\nDedicated Capacity\nOptional\nInstall Custom Fonts\nSupport & Compliance\nSupport\nPriority\n99.9% SLA\nData Processing Agreement\nAuto-Refill\nTeam Billing\nSSO / SAML 2.0\nCustom Security Reviews\nCustom Contracts & NDAs\nMetered Billing / Invoicing\nWhat are conversion credits?\nThe longer a conversion takes, the more resources it consumes and the more expensive it becomes. Our packages and subscriptions typically consume\none credit per minute of conversion time\n.\nDepending on the conversion type, each conversion also has\na base credit cost\n. By default, conversions consume\nat least one credit\n, with additional credits charged for every extra minute if the conversion takes longer than one minute. We also offer a few\npremium conversion types\nthat require more resources and therefore have a minimum base cost of two credits. Of course, only successful conversions are charged.\nConversion Type\nBase Credits\nGeneral\n1\nOffice to PDF\n2\niWork to PDF\n2\nPDF to Office\n4\nCredits Calculator\nWhy do I have to pay for a base amount of credits per conversion?\nNinety-five percent of our conversions take only a few seconds, and we already account for that. To make costs more predictable, our pricing is based on a combination of the minimum credits consumed per conversion type and the total conversion time.\nWhat is the difference between a package and a subscription?\nPackages\nare one-time purchases \u2014 your credits never expire and you can use them whenever you like (\"pay as you go\").\nSubscriptions\ncharge a monthly fee for a fixed amount of credits at a lower per-credit price, but unused credits\ndo not roll over\nat the end of the month. Subscriptions can be up to 50% cheaper than packages.\nCan I combine packages and subscriptions?\nYes! Your credits from your monthly subscription will be consumed first, and then your package credits will be consumed.\nHow can I make sure my account never runs out of credits?\nAn\nauto-refill\noption is available for packages. When enabled, your account is automatically refilled as soon as it runs out of credits. You can activate it in the\nbilling settings\n.\nCan I share my package/subscription with multiple accounts?\nYes. Team billing is available, so organizations such as companies or schools can use one central billing account with unlimited team members. Only billing is shared across accounts; files and conversions remain private.\nWhen can I cancel/change my subscription?\nYou can cancel your subscription at any time. There is no minimum term. You can also switch to a different subscription at any time, but any remaining conversion credits will expire.\nWhich payment methods are available?\nWe accept all major credit cards including Visa, MasterCard, and American Express.\nReady to get started?\nStart free with 10 conversions per day. No credit card required.\nGet Started Free\nContact Sales\nCompany\nAbout Us\nSecurity\nResources\nBlog\nStatus\nLegal\nPrivacy\nTerms\nImprint\nContact\nContact Us\n\u00a9 2026 Lunaweb GmbH\nMade in Munich, Germany",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://cloudconvert.com/api/v2",
+      "title": "API Documentation - CloudConvert",
+      "text": "API Documentation - CloudConvert\nCloud\nConvert\ndocs\nSearch\u2026\n\u2318\nk\nSearch\u2026\n\u2318\nk\nGetting Started\nIntroduction\nQuickstart Guide\nAPI Reference\nJobs\nTasks\nOperations\nUsers\nWebhooks\nSocket API\nSigned URLs\nOperations\nConvert Files\nOptimize Files\nAdd Watermarks\nCapture Website\nCreate Thumbnails\nMerge Files\nPDF Operations\nCreate Archives\nFile Metadata\nExecute Commands\nImport & Export\nImport Files\nExport Files\nGetting Started\nAPI Documentation\nCopy page\nWelcome to the CloudConvert API\nWelcome to the CloudConvert API Documentation! This is the documentation for version 2 of the API (\n/v2\nprefix).\nOn this page, you will find general information about the terminology and about formatting and authenticating requests.\nYou can use the menu on the left to jump directly to the endpoint documentation.\nA good start is trying out the\nJob Builder\n: It allows you to generate and try out requests using a graphical interface.\nYou can also have a look at the\nQuickstart Guide\nto get up and running quickly.\nSDKs\nFor API v2, official PHP, Node.js, Python, Ruby, Java and .NET SDKs are available.\nPHP SDK\nLaravel SDK\nNode.js SDK\nPython SDK\nRuby SDK\nJava SDK\n.NET SDK\nCLI\nIntegrations\nZapier\nThere is a\nZapier integration\nfor API v2 available.\nZapier allows you to connect CloudConvert with 5,000+ apps and create automated workflows using a graphical interface.\nMicrosoft Power Automate\nBuild automated processes with flows in\nMicrosoft Power Automate\n.\nPower Automate allows you to automate repetitive, mundane tasks with ease.\nYou can build complex workflows involving multiple apps using drag and drop in a graphical interface.\nMake (formerly Integromat)\nMake\nis integrated with the CloudConvert API v2.\nThanks to the handy Make scenario builder, you can drag and drop your desired apps together to create powerful workflows without writing any code.\nn8n\nn8n\nis an open-source workflow automation tool.\nWe have built a\nCloudConvert integration\nas a certified community node.\nBase URL and Region Endpoints\nThe base URL of the API is\nhttps://api.cloudconvert.com/v2\n.\nBy default, CloudConvert automatically selects the nearest processing region based on your IP address.\nYou can use a specific region by using the region-specific endpoints or setting a fixed region in your account settings.\nThe main endpoints are:\nEndpoint\nRegion\nhttps://api.cloudconvert.com\nAutomatically selects the nearest processing region, unless overridden by account region settings.\nhttps://eu-central.api.cloudconvert.com\neu-central\n: Germany\nhttps://us-east.api.cloudconvert.com\nus-east\n: Virginia, USA\nSandbox API\nBesides the Live API, CloudConvert has a Sandbox API.\nThe sandbox API allows you to perform unlimited jobs and tasks without consuming your credits.\nThe only limitation is that it only allows a limited set of whitelisted files.\nThe sandbox API is meant to be used for development purposes and integration tests.\nThe base URL of the Sandbox API is\nhttps://sandbox.api.cloudconvert.com/v2\n.\nTerminology\nJobs & Tasks\nProcessing files is done via\njobs\nin the terminology of the CloudConvert REST API.\nEach job consists of one or more\ntasks\n.\nFor example, the first task of a job could import a file from an S3 bucket.\nThe second task could convert this file to a different format, and the final task of the job could export the file back to an S3 bucket.\nIt would also be possible to have multiple conversions and multiple export tasks within a single job.\nThis is useful if you want to convert a file and create a thumbnail at the same time, for example.\nImport & Export Tasks\nAn\nimport task\nis a task that imports one or more files into CloudConvert for use in other tasks.\nExamples of import tasks are downloading files from a URL or an S3 bucket.\nImported files are only stored temporarily.\nExport tasks\nare used to export one or more output files from CloudConvert, for example by generating public URLs or by storing them in your S3 bucket.\nTypically, each job has at least one import and one export task.\nEngine & Engine Versions\nFor some tasks, there are multiple\nengines\navailable.\nFor example, it is possible to convert DOCX files with the\noffice\nengine or the\nlibreoffice\nengine.\nThe available options differ based on the selected engine.\nYou can also set an\nengine version\nto use.\nFor example, you can set a fixed LibreOffice version, which ensures that this version is used even if we update the default version of LibreOffice.\nAn API is available for each task type that shows the available engines, versions and their options.\nAuthentication\nAPI Keys\nTo authenticate requests, you need to\ncreate an API key\n.\nAPI keys do not expire unless you revoke them.\nRequests are authenticated using the\nAuthorization: Bearer API_KEY\nheader.\nWhen creating an API key, you can select scopes to limit access.\nAvailable Scopes\nCategory\nScope\nDescription\nUser\nuser.read\nAllows you to read your account data, remaining credits and usage charts.\nUser\nuser.write\nAllows you to update your account data.\nTasks & Jobs\ntask.read\nAllows you to read tasks and jobs.\nTasks & Jobs\ntask.write\nAllows you to create, update and delete tasks and jobs.\nWebhooks\nwebhook.read\nAllows you to read the webhook settings.\nWebhooks\nwebhook.write\nAllows you to update the webhook settings.\nOAuth 2.0 Clients\nCloudConvert supports OAuth 2.0's\nauthorization code grant flow\nand\nimplicit grant flow\nto issue access tokens on behalf of users.\nYou can create your OAuth 2.0 client\nhere\n.\nYour web or mobile app should redirect users to the following URL:\nhttps://cloudconvert.com/oauth/authorize\n. Access tokens can be obtained via:\nhttps://cloudconvert.com/oauth/token\n.\nErrors and Rate Limiting\nThe CloudConvert API responds with standard HTTP status codes, such as\n422\n(invalid data),\n500\n(internal server error),\n503\n(temporarily unavailable) or\n429\n(too many requests).\nAn example response body for a\n422\nerror is given below:\nHTTP/\n1.1\n422\nUnprocessable Entity\nContent-Type: application/json\n{\n\"\nmessage\n\"\n:\n\"\nThe given data was invalid.\n\"\n,\n\"\ncode\n\"\n:\n\"\nINVALID_DATA\n\"\n,\n\"\nerrors\n\"\n:\n{\n\"\ntasks\n\"\n:\n[\n\"\nThe tasks field is required.\n\"\n]\n}\n}\nRate Limiting\nSome endpoints enforce dynamic rate limiting.\nThese endpoints return the\nX-RateLimit-Limit\nand\nX-RateLimit-Remaining\nheaders.\nIf the limit is reached, a\n429\nerror is returned, and there is a\nRetry-After\nheader with the time in seconds to wait before the next request.\nThese endpoints are currently rate limited:\nCreating tasks\nCreating jobs\nHTTP/\n1.1\n429\nToo Many Requests\nContent-Type: application/json\nX-RateLimit-Limit:\n1000\nX-RateLimit-Remaining:\n0\nRetry-After:\n60\n{\n\"\nmessage\n\"\n:\n\"\nToo many attempts\n\"\n,\n\"\ncode\n\"\n:\n\"\nTOO_MANY_REQUESTS\n\"\n}\nFailed Jobs and Tasks\nJobs and tasks that fail have their\nstatus\nset to\nerror\n.\nMore information about the error can be obtained via the\nmessage\nand\ncode\nattributes of the task resource.\nPlease do not automatically retry tasks.\nCloudConvert internally already retries tasks if there are retryable errors (such as network errors).\nHTTP/\n1.1\n200\nOK\nContent-Type: application/json\n{\n\"\ndata\n\"\n:\n{\n\"\nid\n\"\n:\n\"\n9a160154-58e2-437f-9b6b-19d63b1f59e3\n\"\n,\n\"\ntag\n\"\n:\n\"\nmyjob-123\n\"\n,\n\"\nstatus\n\"\n:\n\"\nerror\n\"\n,\n\"\ncreated_at\n\"\n:\n\"\n2026-05-08T07:45:49+00:00\n\"\n,\n\"\nstarted_at\n\"\n:\n\"\n2026-05-08T07:45:49+00:00\n\"\n,\n\"\nended_at\n\"\n:\n\"\n2026-05-08T07:45:50+00:00\n\"\n,\n\"\ntasks\n\"\n:\n[\n{\n\"\nid\n\"\n:\n\"\n1f34c1b5-9ee8-4c8c-890f-bf44cda1deb7\n\"\n,\n\"\noperation\n\"\n:\n\"\nconvert\n\"\n,\n\"\nstatus\n\"\n:\n\"\nerror\n\"\n,\n\"\ncredits\n\"\n:\nnull,\n\"\nmessage\n\"\n:\n\"\nFailed to open the file\n\"\n,\n\"\ncode\n\"\n:\n\"\nOPEN_FAILED\n\"\n,\n\"\ncreated_at\n\"\n:\n\"\n2026-05-08T07:45:49+00:00\n\"\n,\n\"\nstarted_at\n\"\n:\n\"\n2026-05-08T07:45:49+00:00\n\"\n,\n\"\nended_at\n\"\n:\n\"\n2026-05-08T07:45:50+00:00\n\"\n,\n}\n]\n}\n}\nExpand Error Response\nQuickstart Guide\nA typical implementation flow for the CloudConvert API\nOn this page\nOn this page\nSDKs\nIntegrations\nBase URL and Region Endpoints\nSandbox API\nTerminology\nJobs & Tasks\nImport & Export Tasks\nEngine & Engine Versions\nAuthentication\nAPI Keys\nAvailable Scopes\nOAuth 2.0 Clients\nErrors and Rate Limiting\nRate Limiting\nFailed Jobs and Tasks\nCompany\nAbout Us\nSecurity\nResources\nBlog\nStatus\nLegal\nPrivacy\nTerms\nImprint\nContact\nContact Us\n\u00a9 2026 Lunaweb GmbH\nMade in Munich, Germany\nAsk AI\nFAQ\nQuestions\nHow do I convert a DOCX to PDF?\nHow do I add a watermark to a PDF with the node.js SDK?\nHow do I create a thumbnail from a video which is stored on S3?\nLine break\n\u21e7\n\u21b5\nChat is cleared on refresh\n0/1000\n\u2318\nI",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://cloudconvert.com/integrations",
+      "title": "Integrations \u2014 Automate with CloudConvert | CloudConvert",
+      "text": "Integrations \u2014 Automate with CloudConvert | CloudConvert\nCloud\nConvert\nTools\nAPI\nPricing\nSign in\nSign up\nAutomate with CloudConvert\nIntegrate CloudConvert with thousands of apps using the most popular no-code automation platforms. Build powerful file processing workflows \u2014 no coding required.\nView Integrations\nUse the API Instead\nWhen Something Happens\nNew File in Dropbox\nEmail Received\nForm Submitted\nWebhook Fired\nScheduled Run\nProcess with CloudConvert\nConvert PDF to DOCX\nCompress Images\nMerge PDFs\nAdd Watermark\nCapture Screenshot\nThen Do Something Else\nSave to Google Drive\nSend via Email\nUpload to S3\nNotify on Slack\nUpdate Spreadsheet\nHow it works\nGet started in minutes. No coding, no infrastructure \u2014 just connect and go.\n1.\nChoose Your Platform\nPick the automation tool that fits your workflow \u2014 Zapier, Make, Power Automate, or n8n.\n2.\nSet Up a Trigger\nDefine what starts your automation: a new file in Dropbox, an incoming email, a form submission, and more.\n3.\nAdd CloudConvert\nSelect CloudConvert as your action step. Choose the conversion, compression, or processing task you need.\n4.\nAutomate & Scale\nYour workflow runs automatically. Process thousands of files without lifting a finger.\nChoose your platform\nCloudConvert integrates with the most popular no-code automation tools.\nCloudConvert + Zapier\nConnect CloudConvert to 7,000+ apps. Build automated workflows with triggers and actions \u2014 no code required.\nExplore Zapier Integration\nCloudConvert + Make\nCreate visual automated workflows using Make's powerful scenario builder and CloudConvert's full feature set.\nExplore Make Integration\nCloudConvert + Power Automate\nImplement cloud-based document workflows without code using Microsoft Power Automate and CloudConvert.\nExplore Power Automate\nCloudConvert + n8n\nBuild advanced, self-hosted automation workflows using n8n's open-source platform with CloudConvert nodes.\nExplore n8n Integration\nWhy automate with CloudConvert?\nPowerful file processing meets effortless automation. Here's what you get out of the box.\nNo-Code Automation\nAutomate repetitive file processing tasks without writing a single line of code. Build complex workflows using intuitive drag & drop interfaces.\nAI Workflows\nIntegrate AI tools into your workflows to automate your workflows even further. All platforms are integrated with the most popular AI providers like OpenAI, Anthropic, and more.\n5,000+ Apps Supported\nGoogle Drive, Dropbox, OneDrive, SharePoint, and thousands more. Connect CloudConvert with the tools you already use every day.\nEvent-Driven Triggers\nStart workflows automatically when files are uploaded, emails arrive, forms are submitted, or any other event occurs in your connected apps.\nAny File Format\nConvert documents, images, videos, audio, ebooks, archives, and more. All format combinations available through every integration platform.\nEnterprise-Grade Security\nAll file transfers are encrypted. Files are automatically deleted after processing. ISO 27001 certified infrastructure you can trust.\nLearn more\nReady to automate your file workflows?\nStart for free. No credit card required. Connect your favorite automation tool and let CloudConvert handle the rest.\nGet Started Free\nView Pricing\nCompany\nAbout Us\nSecurity\nResources\nBlog\nStatus\nLegal\nPrivacy\nTerms\nImprint\nContact\nContact Us\n\u00a9 2026 Lunaweb GmbH\nMade in Munich, Germany",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/cloudconvert/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "CloudConvert \u2013 convert anything to anything",
+          "url": "https://cloudconvert.com",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2015-02-06T21:40:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=9011735"
+        },
+        {
+          "title": "CloudConvert \u2013 convert anything to anything",
+          "url": "https://cloudconvert.org/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2014-03-11T21:37:33Z",
+          "hn_url": "https://news.ycombinator.com/item?id=7382336"
+        },
+        {
+          "title": "CloudConvert \u2013 convert anything to anything",
+          "url": "https://cloudconvert.com/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2015-01-19T22:26:12Z",
+          "hn_url": "https://news.ycombinator.com/item?id=8914517"
+        },
+        {
+          "title": "Show HN: Free online file converter \u2013 cloudconvert.live",
+          "url": "https://cloudconvert.live/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2025-04-12T05:40:29Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43661650"
+        },
+        {
+          "title": "Ask HN: Experiences with Image, Video and Doc processing services",
+          "url": null,
+          "points": 2,
+          "num_comments": 2,
+          "created_at": "2017-05-08T22:16:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14296150"
+        },
+        {
+          "title": "Looking for beta testers for PROCESIO",
+          "url": null,
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2021-06-28T09:10:14Z",
+          "hn_url": "https://news.ycombinator.com/item?id=27659576"
+        },
+        {
+          "title": "Show HN: T3XTR a Text Transformation API",
+          "url": "https://t3xtr.org",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2025-06-21T08:19:45Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44335705"
+        },
+        {
+          "title": "Cloud Converter: seamlessly move between cloud hosting providers",
+          "url": "http://www.cloudconverter.com/",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2013-03-19T23:15:20Z",
+          "hn_url": "https://news.ycombinator.com/item?id=5404307"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "What harm could just one chalupa supreme do? It wasn't until Pete was forced to clean up the aftermath himself that he finally understood the importance of following colonoscopy prep guidelines.",
+          "subreddit": "wheredidthesodago",
+          "score": 1136,
+          "num_comments": 20,
+          "permalink": "https://reddit.com/r/wheredidthesodago/comments/1s4wppr/what_harm_could_just_one_chalupa_supreme_do_it/",
+          "selftext": "^(\\[Start of Ad Copy\\*\\])\n\n# Hey, you! Yeah, you!\n\nDo you miss the days of watching people act like complete buffoons in service of mediocre products?\n\nAre you tired of only seeing a post in this subreddit every 6-12 months?\n\nHave you tried to make a post in this subreddit, but can't find any inspiration that wouldn't be a repost?\n\nWell, I used to be just like you, until I found [asseenontvlive.com](http://asseenontvlive.com)!\\*\\*\n\nThe site showcases a bunch of crappy products, but most importan"
+        },
+        {
+          "title": "Confused Math Lady - LN Rendition",
+          "subreddit": "LoveNikki",
+          "score": 892,
+          "num_comments": 27,
+          "permalink": "https://reddit.com/r/LoveNikki/comments/1mwek4q/confused_math_lady_ln_rendition/",
+          "selftext": "Posted in SC with a small-screen iPhone, recorded it as a video using a larger-screen iPhone so it zoomed in, then cropped it and converted it to a GIF using [cloudconvert](https://cloudconvert.com/mov-to-gif), then sped it up with [ezgif](https://ezgif.com) because after converting, it slowed down. \n\nIt also looked pretty hilarious with the makeup Lights of Divinity because she looks like she's trying really hard to think. If anyone wants a version with that, let me know!"
+        },
+        {
+          "title": "Custom PSVITA Boot Screens that i made",
+          "subreddit": "vitahacks",
+          "score": 404,
+          "num_comments": 17,
+          "permalink": "https://reddit.com/r/vitahacks/comments/1qfbbo2/custom_psvita_boot_screens_that_i_made/",
+          "selftext": "i made these two bootscreens for the PSVita, one which just stays white, while the colored version has white bubbles form around it (inspired by the 3ds' game startup animation)\n\nthese boot screens are made because i prefered something close to the sony experience, but i don't like the static boot image that shows up when booting the console\n\nso i animated it, and this is the result.\n\n&gt;!but the tools that are used to convert it into a valid boot animation are locked away in windows (and im no"
+        },
+        {
+          "title": "custom PowerPoint, Excel and Word folder icons",
+          "subreddit": "Windows11",
+          "score": 376,
+          "num_comments": 37,
+          "permalink": "https://reddit.com/r/Windows11/comments/1r6oivg/custom_powerpoint_excel_and_word_folder_icons/",
+          "selftext": "i made these icons in Photoshop for some organization in my documents folder. i think they look really neat and thought some other people might find them useful. to apply them, you need to convert them to .ico, and go to folder properties &gt; change icon. for converting i used cloudconvert, just make sure to set the image res to 256x256 or windows wont scale it properly"
+        },
+        {
+          "title": "[Submod Release] Watching TV Together is finally here",
+          "subreddit": "MASFandom",
+          "score": 120,
+          "num_comments": 49,
+          "permalink": "https://reddit.com/r/MASFandom/comments/1t714j1/submod_release_watching_tv_together_is_finally/",
+          "selftext": "Hi everyone! After some time in development, I\u2019m excited to officially release the \"Watching TV Together\" submod.\n\nI wanted to give us more ways to bond with Monika so I created this interactive movie date experience. You can now watch videos together, choose snacks, and just enjoy each other's company in a cozy setting.\n\nKey Features:\n\nInteractive Movie System: Watch your favorite .webm videos in-game.\n\nCustomizable Background: Not feeling the default room? You can easily swap it with your own "
+        },
+        {
+          "title": "Good ways to download femtanyl songs?",
+          "subreddit": "femtanyl",
+          "score": 121,
+          "num_comments": 39,
+          "permalink": "https://reddit.com/r/femtanyl/comments/1pb5zw4/good_ways_to_download_femtanyl_songs/",
+          "selftext": "I have found a good solution and I no longer need your guys' help and thank you :D\n\nI just want to listen to femtanyl in the cybergrind(from ultrakill) but I can't find many songs. newgrounds had a few but I can't find any other websites that look trustable  \n:(\n\nedit- I sadly cannot buy the songs on bandcamp, not because I lack the funds, but because my mother would never let me.\n\nSolution: I have found a method combining Youtube, Socialplug and Cloudconvert that has worked well so far. :D"
+        },
+        {
+          "title": "A nice long list of the \"trusted\" partners Dropbox shares your personal data with. \ud83e\udd28",
+          "subreddit": "tutanota",
+          "score": 112,
+          "num_comments": 8,
+          "permalink": "https://reddit.com/r/tutanota/comments/1qdfp8q/a_nice_long_list_of_the_trusted_partners_dropbox/",
+          "selftext": "\n\n\u274c Google  \n\u274c Amazon  \n\u274c OpenAI  \n.... &amp; many more.\u00a0  \nIn today's guide we take a look at how secure and private the cloud storage platform actually is: [https://tuta.com/blog/is-dropbox-secure](https://tuta.com/blog/is-dropbox-secure)"
+        },
+        {
+          "title": "[Rolex Explorer] 39mm on canvas strap",
+          "subreddit": "Watches",
+          "score": 92,
+          "num_comments": 12,
+          "permalink": "https://reddit.com/r/Watches/comments/1lpknd7/rolex_explorer_39mm_on_canvas_strap/",
+          "selftext": "Almost traded this for a 1981 champagne day date head only today but dealer only wanted to credit me 4500 for the explorer (no box or papers), \ud83e\udee0 new strap instead. Have had this since 2018 still not sick of it. Explorer is highly underrated imo compared to sub and other similarly priced options\u2026 Never see it until the wild but then again I don\u2019t get out much\u2026 "
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://cloudconvert.com/pricing",
+    "changelog": null,
+    "docs": "https://cloudconvert.com/api/v2",
+    "integrations": "https://cloudconvert.com/integrations",
+    "g2": "https://www.g2.com/products/cloudconvert/reviews"
+  },
+  "analysis": {
+    "name": "CloudConvert",
+    "url": "https://cloudconvert.com",
+    "tagline": "Convert Any File",
+    "value_proposition": "A file conversion API and browser tool supporting 212+ formats across 11 categories with ISO 27001-certified isolated processing, usage-based credit pricing, and no-code automation integrations.",
+    "target_segment": "dev / SMB / enterprise",
+    "ideal_customer": "Developers and businesses needing programmatic, high-volume file format conversion embedded in applications or automated workflows",
+    "features": [
+      {
+        "name": "file conversion",
+        "description": "Convert between 212+ formats across 11 categories from the browser or via API",
+        "evidence_source": "landing",
+        "evidence_quote": "212 formats across 11 categories, all available right now, in your browser.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "document conversion",
+        "description": "Convert 23 document formats including PDF, DOCX, ODT, HTML, Markdown, RTF, TXT, and more",
+        "evidence_source": "landing",
+        "evidence_quote": "Documents 23 ... pdf docx odt html md txt rtf",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "image conversion",
+        "description": "Convert between 42 image formats",
+        "evidence_source": "landing",
+        "evidence_quote": "Images 42",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "video conversion",
+        "description": "Convert between 28 video formats",
+        "evidence_source": "landing",
+        "evidence_quote": "Video 28",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "audio conversion",
+        "description": "Convert between 21 audio formats",
+        "evidence_source": "landing",
+        "evidence_quote": "Audio 21",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "spreadsheet conversion",
+        "description": "Convert between 8 spreadsheet formats",
+        "evidence_source": "landing",
+        "evidence_quote": "Spreadsheets 8",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "slides conversion",
+        "description": "Convert between 11 presentation/slides formats",
+        "evidence_source": "landing",
+        "evidence_quote": "Slides 11",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ebook conversion",
+        "description": "Convert between 22 ebook formats",
+        "evidence_source": "landing",
+        "evidence_quote": "E-books 22",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "archive conversion",
+        "description": "Create and convert between 39 archive formats",
+        "evidence_source": "landing",
+        "evidence_quote": "Archives 39",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vector conversion",
+        "description": "Convert between 10 vector formats",
+        "evidence_source": "landing",
+        "evidence_quote": "Vector 10",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cad conversion",
+        "description": "Convert between 3 CAD formats",
+        "evidence_source": "landing",
+        "evidence_quote": "CAD 3",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "font conversion",
+        "description": "Convert between 5 font formats",
+        "evidence_source": "landing",
+        "evidence_quote": "Fonts 5",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "browser-based conversion",
+        "description": "Convert files directly from the browser without installing any software",
+        "evidence_source": "landing",
+        "evidence_quote": "Drop a file and pick what to turn it into. CloudConvert handles 200+ formats ... straight from your browser.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rest api v2",
+        "description": "Full REST API for programmatic file conversion using a jobs-and-tasks model",
+        "evidence_source": "docs",
+        "evidence_quote": "Welcome to the CloudConvert API Documentation! This is the documentation for version 2 of the API (/v2 prefix).",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "job builder",
+        "description": "Graphical interface to generate, configure, and test API requests without writing code",
+        "evidence_source": "docs",
+        "evidence_quote": "A good start is trying out the Job Builder: It allows you to generate and try out requests using a graphical interface.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sdk support",
+        "description": "Official SDKs for PHP, Laravel, Node.js, Python, Ruby, Java, and .NET",
+        "evidence_source": "docs",
+        "evidence_quote": "For API v2, official PHP, Node.js, Python, Ruby, Java and .NET SDKs are available.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cli",
+        "description": "Command-line interface for file conversion operations",
+        "evidence_source": "docs",
+        "evidence_quote": "CLI",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "sandbox api",
+        "description": "Sandbox environment for development and integration testing without consuming credits",
+        "evidence_source": "docs",
+        "evidence_quote": "The sandbox API allows you to perform unlimited jobs and tasks without consuming your credits.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Webhook notifications for asynchronous job and task completion events",
+        "evidence_source": "docs",
+        "evidence_quote": "Webhooks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "socket api",
+        "description": "Real-time WebSocket API for live conversion status updates",
+        "evidence_source": "docs",
+        "evidence_quote": "Socket API",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "signed urls",
+        "description": "Signed URLs for secure, time-limited access to converted output files",
+        "evidence_source": "docs",
+        "evidence_quote": "Signed URLs",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "oauth 2.0",
+        "description": "OAuth 2.0 authorization code and implicit grant flows for user-delegated API access",
+        "evidence_source": "docs",
+        "evidence_quote": "CloudConvert supports OAuth 2.0's authorization code grant flow and implicit grant flow to issue access tokens on behalf of users.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "api key scopes",
+        "description": "Granular API key permission scopes covering user, task/job, and webhook access",
+        "evidence_source": "docs",
+        "evidence_quote": "When creating an API key, you can select scopes to limit access.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "file optimization",
+        "description": "Optimize and compress files to reduce output file size",
+        "evidence_source": "docs",
+        "evidence_quote": "Optimize Files",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "watermark addition",
+        "description": "Add watermarks to files as part of a processing job",
+        "evidence_source": "docs",
+        "evidence_quote": "Add Watermarks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "website capture",
+        "description": "Capture screenshots or generate PDFs from website URLs",
+        "evidence_source": "docs",
+        "evidence_quote": "Capture Website",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "thumbnail creation",
+        "description": "Generate thumbnails from documents, images, or video files",
+        "evidence_source": "docs",
+        "evidence_quote": "Create Thumbnails",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "file merging",
+        "description": "Merge multiple files (e.g., PDFs) into a single output file",
+        "evidence_source": "docs",
+        "evidence_quote": "Merge Files",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pdf operations",
+        "description": "Advanced PDF-specific operations beyond basic format conversion",
+        "evidence_source": "docs",
+        "evidence_quote": "PDF Operations",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "archive creation",
+        "description": "Bundle multiple files into compressed archives as a processing task",
+        "evidence_source": "docs",
+        "evidence_quote": "Create Archives",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "file metadata extraction",
+        "description": "Extract and return metadata from files without converting them",
+        "evidence_source": "docs",
+        "evidence_quote": "File Metadata",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "execute commands",
+        "description": "Execute arbitrary shell commands as a task step within a processing job",
+        "evidence_source": "docs",
+        "evidence_quote": "Execute Commands",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "amazon s3 integration",
+        "description": "Import and export files directly to/from Amazon S3 buckets within jobs",
+        "evidence_source": "landing",
+        "evidence_quote": "we provide a lot of handy features such as full Amazon S3 integration.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "url import",
+        "description": "Import source files for conversion directly from a remote URL",
+        "evidence_source": "docs",
+        "evidence_quote": "\"operation\": \"import/url\", \"url\": \"https://example.com/file.pdf\"",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multiple conversion engines",
+        "description": "Select from multiple processing engines per task type (e.g., office vs libreoffice for DOCX)",
+        "evidence_source": "docs",
+        "evidence_quote": "it is possible to convert DOCX files with the office engine or the libreoffice engine.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "engine version pinning",
+        "description": "Pin a specific engine version to guarantee reproducible output across updates",
+        "evidence_source": "docs",
+        "evidence_quote": "you can set a fixed LibreOffice version, which ensures that this version is used even if we update the default version",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "per-conversion quality controls",
+        "description": "Fine-tune codec, bitrate, resolution, and quality settings on a per-conversion basis",
+        "evidence_source": "landing",
+        "evidence_quote": "Per-conversion controls \u2014 codec, bitrate, resolution, quality",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "color-accurate and font-faithful document output",
+        "description": "Preserve color accuracy and font fidelity when converting documents and images",
+        "evidence_source": "landing",
+        "evidence_quote": "Color-accurate, font-faithful output for documents and images",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "premium conversion engines",
+        "description": "Premium vendor engine partnerships used alongside open-source tools for higher quality output",
+        "evidence_source": "landing",
+        "evidence_quote": "We pair premium vendor partnerships with open source so you get the best of both",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "multi-region processing",
+        "description": "Route processing to specific geographic regions (EU-central Germany or US-east Virginia) for data residency",
+        "evidence_source": "docs",
+        "evidence_quote": "eu-central: Germany ... us-east: Virginia, USA",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "isolated container processing",
+        "description": "Each conversion runs in a dedicated isolated container for security and workload isolation",
+        "evidence_source": "landing",
+        "evidence_quote": "Each conversion runs in an isolated container, files are deleted right after processing",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "automatic file deletion",
+        "description": "Files are automatically deleted immediately after processing completes",
+        "evidence_source": "landing",
+        "evidence_quote": "files are deleted right after processing, and we make money from the API \u2014 never from your data.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "iso 27001 certification",
+        "description": "ISO 27001 certified information security management, independently audited",
+        "evidence_source": "landing",
+        "evidence_quote": "ISO 27001 certified, audited regularly.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "conversion credit system",
+        "description": "Usage-based billing: 1 credit per minute of conversion time; only successful conversions charged",
+        "evidence_source": "pricing",
+        "evidence_quote": "our packages and subscriptions typically consume one credit per minute of conversion time",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "tiered base credit costs by conversion type",
+        "description": "Base credits vary by conversion complexity: General=1, Office-to-PDF=2, iWork-to-PDF=2, PDF-to-Office=4",
+        "evidence_source": "pricing",
+        "evidence_quote": "Conversion Type Base Credits General 1 Office to PDF 2 iWork to PDF 2 PDF to Office 4",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "package credits (never expire)",
+        "description": "One-time credit purchases that never expire; can be combined with subscriptions",
+        "evidence_source": "pricing",
+        "evidence_quote": "Packages are one-time purchases \u2014 your credits never expire and you can use them whenever you like",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "subscription credits",
+        "description": "Monthly rolling credit allotment at lower per-credit rate; unused credits do not roll over",
+        "evidence_source": "pricing",
+        "evidence_quote": "Subscriptions charge a monthly fee for a fixed amount of credits at a lower per-credit price",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "auto-refill",
+        "description": "Automatically purchases more package credits when account balance runs out",
+        "evidence_source": "pricing",
+        "evidence_quote": "An auto-refill option is available for packages. When enabled, your account is automatically refilled as soon as it runs out.",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "team billing",
+        "description": "Shared central billing account for organizations with unlimited team members; files and conversions stay private",
+        "evidence_source": "pricing",
+        "evidence_quote": "Team billing is available, so organizations such as companies or schools can use one central billing account with unlimited team members.",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sso / saml 2.0",
+        "description": "Single sign-on via SAML 2.0 for enterprise identity provider authentication",
+        "evidence_source": "pricing",
+        "evidence_quote": "SSO / SAML 2.0",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "data processing agreement",
+        "description": "Formal DPA for GDPR/compliance requirements, available on enterprise plans",
+        "evidence_source": "pricing",
+        "evidence_quote": "Data Processing Agreement",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom security reviews",
+        "description": "Bespoke security review process for enterprise customer due diligence requirements",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom Security Reviews",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom contracts & ndas",
+        "description": "Custom contractual arrangements including NDAs for enterprise customers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom Contracts & NDAs",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "metered billing / invoicing",
+        "description": "Invoice-based and metered billing for enterprise customers instead of credit card self-serve",
+        "evidence_source": "pricing",
+        "evidence_quote": "Metered Billing / Invoicing",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated capacity",
+        "description": "Optional dedicated processing infrastructure for enterprise large-scale workloads",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated Capacity Optional",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom font installation",
+        "description": "Install custom fonts on processing infrastructure for accurate document rendering",
+        "evidence_source": "pricing",
+        "evidence_quote": "Install Custom Fonts",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "processing priority",
+        "description": "High-priority processing queue for paid tiers; free tier receives low-priority scheduling",
+        "evidence_source": "pricing",
+        "evidence_quote": "Processing Priority Low [free] ... High [paid]",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "unlimited concurrent tasks",
+        "description": "No limit on simultaneous processing tasks on paid tiers; free tier capped at 5 concurrent",
+        "evidence_source": "pricing",
+        "evidence_quote": "Concurrent Tasks 5 [free] ... Unlimited [paid]",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "unlimited file size",
+        "description": "No file size limit on paid tiers; free tier capped at 1 GB per file",
+        "evidence_source": "pricing",
+        "evidence_quote": "Max File Size 1 GB [free] ... Unlimited [paid]",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "unlimited processing time",
+        "description": "No per-conversion processing time cap on paid tiers; free tier limited to 5 minutes",
+        "evidence_source": "pricing",
+        "evidence_quote": "Max Processing Time 5 minutes [free] ... Unlimited [paid]",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "priority support",
+        "description": "Priority customer support channel for enterprise plans; standard support on free and package tiers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Support Priority [enterprise]",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "99.9% sla",
+        "description": "99.9% uptime SLA commitment for enterprise customers",
+        "evidence_source": "pricing",
+        "evidence_quote": "99.9% SLA",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "zapier integration",
+        "description": "No-code automation connecting CloudConvert to 7,000+ apps via Zapier",
+        "evidence_source": "integrations",
+        "evidence_quote": "Connect CloudConvert to 7,000+ apps. Build automated workflows with triggers and actions \u2014 no code required.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "make integration",
+        "description": "Visual scenario-based workflow automation via Make (formerly Integromat)",
+        "evidence_source": "integrations",
+        "evidence_quote": "Create visual automated workflows using Make's powerful scenario builder",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft power automate integration",
+        "description": "Cloud-based document workflow automation via Microsoft Power Automate without code",
+        "evidence_source": "integrations",
+        "evidence_quote": "Implement cloud-based document workflows without code using Microsoft Power Automate and CloudConvert.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "n8n integration",
+        "description": "Self-hosted open-source workflow automation via certified n8n community node",
+        "evidence_source": "integrations",
+        "evidence_quote": "Build advanced, self-hosted automation workflows using n8n's open-source platform with CloudConvert nodes.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "event-driven workflow triggers",
+        "description": "Trigger automations on file upload, email receipt, form submission, schedule, or webhook events",
+        "evidence_source": "integrations",
+        "evidence_quote": "Start workflows automatically when files are uploaded, emails arrive, forms are submitted, or any other event occurs",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "no-code automation",
+        "description": "Build file processing workflows without writing code using drag-and-drop automation platforms",
+        "evidence_source": "integrations",
+        "evidence_quote": "Automate repetitive file processing tasks without writing a single line of code.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai workflow integrations",
+        "description": "Connect AI providers (OpenAI, Anthropic) within automation workflows alongside CloudConvert steps",
+        "evidence_source": "integrations",
+        "evidence_quote": "Integrate AI tools into your workflows ... All platforms are integrated with the most popular AI providers like OpenAI, Anthropic",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "volume discounts for high-volume api customers",
+        "description": "Large-scale API customers receive significant per-credit discounts",
+        "evidence_source": "landing",
+        "evidence_quote": "You pay only for what you actually use, and there are huge discounts for high-volume customers.",
+        "tier": "paid",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Amazon S3",
+      "Zapier",
+      "Make (formerly Integromat)",
+      "Microsoft Power Automate",
+      "n8n",
+      "Google Drive",
+      "Dropbox",
+      "OneDrive",
+      "SharePoint",
+      "Slack",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "differentiators": [
+      "212 formats across 11 categories \u2014 among the broadest format coverage in the market",
+      "ISO 27001 certified and independently audited \u2014 not just self-declared security",
+      "Files deleted immediately after processing; revenue from API, never from user data",
+      "Premium vendor engine partnerships alongside open-source for best-of-both output quality",
+      "Per-conversion engine selection and version pinning for reproducible output",
+      "Trusted since 2012 \u2014 longest-running file conversion API in production",
+      "Sandbox API for unlimited test conversions without consuming paid credits",
+      "Credits never expire on one-time package purchases"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "10 credits/day (daily reset), 1 GB max file size, 5 min max processing time, 5 concurrent tasks, low priority"
+      },
+      "tiers": [
+        {
+          "name": "Free",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$0",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "10 credits/day, 1 GB max file, 5 min max, 5 concurrent tasks, all API features, low priority"
+        },
+        {
+          "name": "Package",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "One-time from $18; credits never expire, unlimited file size/time/concurrency, high priority, $0.018/credit"
+        },
+        {
+          "name": "Subscription",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$10",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "1,000 credits/month at $0.01/credit; unlimited file size/time/concurrency, high priority; up to 50% vs packages"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Custom volume/pricing, dedicated capacity optional, priority support, SSO/SAML 2.0, DPA, custom contracts & NDAs"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Usage-based credits: 1 credit per minute of conversion time. Base costs by type: General=1 credit, Office-to-PDF=2, iWork-to-PDF=2, PDF-to-Office=4. Only successful conversions charged. Package is a one-time purchase (slider from 500 to 1,000,000 credits; starts at $18/1,000 credits at $0.018/credit). Subscription starting price is $10/month for 1,000 credits at $0.01/credit; unused monthly credits do not roll over. Packages and subscriptions can be stacked (subscription credits consumed first). Auto-refill available for packages. Volume discounts available for high-volume API customers. No credit card required for free tier. Payment: Visa, MasterCard, American Express. No minimum subscription term; cancel or switch anytime."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

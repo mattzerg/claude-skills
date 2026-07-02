@@ -4,6 +4,7 @@ description: Read, create, and manage Google Calendar events. Use when the user 
 allowed-tools: Bash, Read
 ---
 
+
 # Google Calendar Skill - Calendar & Events
 
 Read, create, and manage Google Calendar events. View agenda, create meetings, check availability.

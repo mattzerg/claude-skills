@@ -1,0 +1,275 @@
+/* zerg-navy-multipage — enterprise multi-page documents (client guides,
+ * policies, audit-orbit deliverables).
+ *
+ * Sibling to zerg-dark-multipage.css. White paper + deep navy accent so the
+ * @page margins (which Chrome prints as unstyled white) are invisible, and
+ * page numbers stamped post-render (render.py stamp_page_numbers) land in a
+ * clean bottom margin. Pair with `layout: multi-page` + `theme:
+ * zerg-navy-multipage` in frontmatter.
+ *
+ * Unlike the one-pager themes, headings here are real reading-size headings
+ * (a 7pt uppercase eyebrow works on a one-page sheet; in a 10-page guide it
+ * reads as a label, not a section).
+ */
+
+:root {
+  --accent: #1F3A5F;            /* deep navy */
+  --accent-soft: rgba(31, 58, 95, 0.055);
+  --accent-softer: rgba(31, 58, 95, 0.035);
+  --warning: #8a4a1f;           /* burnt orange, AA on white */
+  --warning-soft: rgba(179, 102, 47, 0.08);
+  --ink: #1a1f1e;
+  --mid-gray: #52605c;
+  --rule-gray: #d5d9de;
+  --paper: #ffffff;
+}
+
+@page {
+  size: letter;
+  margin: 0.62in 0.78in 0.72in 0.78in;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.45;
+}
+
+main { display: block; }
+
+/* ============ HEADINGS ============ */
+h1 {
+  font-size: 19pt;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  color: var(--accent);
+  margin: 0 0 4pt 0;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h2 {
+  font-size: 13pt;
+  font-weight: 700;
+  letter-spacing: -0.008em;
+  color: var(--accent);
+  margin: 20pt 0 6pt 0;
+  padding-bottom: 2.5pt;
+  border-bottom: 0.75pt solid var(--rule-gray);
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-size: 10.5pt;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 12pt 0 3pt 0;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+/* ============ TEXT ============ */
+p {
+  margin: 0 0 6pt 0;
+  orphans: 3;
+  widows: 3;
+}
+
+strong { color: var(--ink); font-weight: 700; }
+em { color: var(--mid-gray); }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+code {
+  font-family: 'Space Mono', ui-monospace, monospace;
+  font-size: 8.5pt;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 0 3pt;
+  border-radius: 2pt;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+ul, ol {
+  margin: 2pt 0 8pt 0;
+  padding-left: 18pt;
+}
+li { margin: 1.5pt 0; page-break-inside: avoid; break-inside: avoid; }
+li::marker { color: var(--accent); font-weight: 600; }
+
+hr {
+  border: none;
+  border-top: 0.5pt solid var(--rule-gray);
+  margin: 14pt 0;
+}
+
+/* ============ CONTENTS (toc extension output) ============ */
+.toc {
+  background: var(--accent-softer);
+  border: 0.5pt solid var(--rule-gray);
+  border-radius: 3pt;
+  padding: 9pt 14pt 10pt 14pt;
+  margin: 10pt 0 14pt 0;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.toc .toctitle {
+  display: block;
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 4pt;
+}
+.toc ul {
+  margin: 0;
+  padding-left: 14pt;
+  columns: 2;
+  column-gap: 24pt;
+}
+.toc ul ul { columns: 1; padding-left: 12pt; }
+.toc li { margin: 1pt 0; font-size: 8.75pt; break-inside: avoid; }
+.toc a { font-weight: 500; }
+
+/* ============ CALLOUTS ============ */
+blockquote {
+  margin: 8pt 0 10pt 0;
+  padding: 7pt 12pt;
+  border-left: 2.5pt solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 3pt 3pt 0;
+  font-size: 9.25pt;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+blockquote p { margin: 0 0 4pt 0; }
+blockquote p:last-child { margin-bottom: 0; }
+blockquote ul, blockquote ol { margin-bottom: 2pt; }
+
+blockquote.callout::before {
+  display: block;
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 3pt;
+}
+blockquote.callout-warning {
+  border-left-color: var(--warning);
+  background: var(--warning-soft);
+}
+blockquote.callout-warning::before { content: "⚠ Warning"; color: var(--warning); }
+blockquote.callout-note::before { content: "Note"; color: var(--accent); }
+blockquote.callout-info::before { content: "Info"; color: var(--accent); }
+
+/* ============ TABLES ============ */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 6pt 0 10pt 0;
+  font-size: 8.5pt;
+  line-height: 1.34;
+}
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 3.5pt 7pt;
+  border-bottom: 0.4pt solid var(--rule-gray);
+}
+th {
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1pt solid var(--accent);
+  background: var(--accent-softer);
+}
+tbody tr:nth-child(even) { background: var(--accent-softer); }
+td:first-child, th:first-child { padding-left: 5pt; }
+
+/* keep header rows attached to their tables across page breaks */
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; break-inside: avoid; }
+
+/* Empty-header tables (markdown `| | |` idiom) render headerless. */
+th:empty { border: none; padding: 0; height: 0; line-height: 0; font-size: 0; background: none; }
+thead:has(> tr:not(:has(th:not(:empty)))) { display: none; }
+
+/* ============ DOCUMENT CONTROL PANEL ============ */
+/* The key-value table directly after `## Document Control {#document-control}`
+   reads as an info panel: bold navy keys, no zebra, soft frame. */
+#document-control + table { border: 0.5pt solid var(--rule-gray); border-radius: 3pt; }
+#document-control + table tbody tr { background: transparent; }
+#document-control + table tbody tr:nth-child(even) { background: var(--accent-softer); }
+#document-control + table td:first-child {
+  font-weight: 700;
+  color: var(--accent);
+  width: 1.55in;
+  white-space: nowrap;
+}
+
+/* ============ MISC ============ */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10pt auto;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Keep a figure and everything bound to it (image + caption + legend/key)
+ * on the same page. Wrap the block in source as either a <figure> or
+ * <div class="keep-together" markdown="1"> … </div> (md_in_html is on in
+ * multi-page mode). Fixes "the key is on the other page" / split captions. */
+figure { margin: 10pt 0; }
+/* Cap figure image height so a tall (portrait) diagram scales to fit one page
+ * instead of overflowing and splitting across a page break. Wide/landscape
+ * figures (architecture, Gantt, dashboards) are well under this and unaffected. */
+figure img { margin: 0 auto 4pt auto; max-height: 7.5in; }
+figure figcaption { font-size: 8pt; color: var(--mid-gray); line-height: 1.35; }
+figure, .keep-together {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+pre {
+  background: var(--accent-softer);
+  border-left: 2pt solid var(--accent);
+  padding: 8pt 12pt;
+  font-size: 8.5pt;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin: 8pt 0;
+}
+pre code { background: none; padding: 0; }
+
+.page-break {
+  page-break-after: always;
+  break-after: page;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}

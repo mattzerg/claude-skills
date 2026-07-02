@@ -1,0 +1,453 @@
+{
+  "name": "Skyfire",
+  "url": "https://skyfire.xyz",
+  "domain": "skyfire.xyz",
+  "scanned_at": "2026-06-01T02:54:36.045971",
+  "sources": {
+    "landing": {
+      "url": "https://skyfire.xyz",
+      "title": "Skyfire: The Agent Trust Stack",
+      "text": "Skyfire: The Agent Trust Stack\nProduct\nAbout\nUse Case\nBlog\nDocs\nContact\nLaunch Skyfire\nAccess.\nIdentity.\nCheckout.\nThe Agent Trust Stack.\nSkyfire gives agents\nverified identity and payment credentials\nthat work across the open\n          internet. No 403 errors, captchas or blocked checkouts. Authenticated access and payment capability,\n          everywhere your agents need to be.\nSee Use Cases\n\u2192\nAgent Wallet\nKYA\nAgent\nKYA\nSECURITY\nKYA\nKYA\nKYA\nWebsites\nLogin\nCheckout\nWhat KYA Powers\nOne token, two surfaces.\nAn extensible identity token accepted by the majority of the commercial internet, enabling the entire agentic\n          customer journey from access to login to checkout.\nKYA \u00b7 Access\nAccess & Login\nA portable, verified identity token accepted by the majority of the commercial internet. KYA is designed to\n            give your agent programmatic access and log-in capabilities to websites, applications and agent protocols\n            with little engineering effort.\nExperian\nAkamai\nDataDome\nOkta\nAuth0\nOry\nApify\nRye\nSequentum\nCequence\nf5\nForter\nConsumer Reports\nGetty\n                Images\nFastly\nAgntcy\nFetch.ai\nLinkup\nBuildShip\nImperva\nNeuroID\nReuters\nBlackhawk Networks\nMastercard\nExperian\nAkamai\nDataDome\nOkta\nAuth0\nOry\nApify\nRye\nSequentum\nCequence\nf5\nForter\nConsumer Reports\nGetty Images\nFastly\nAgntcy\nFetch.ai\nLinkup\nBuildShip\nImperva\nNeuroID\nReuters\nBlackhawk\n                Networks\nMastercard\nLearn more\n            about KYA \u2192\nAgentic Commerce\nCheckout & Payments\nA complete agentic commerce wallet that allows your agents to securely complete checkouts via websites and\n            emerging agentic protocols. Skyfire partners will all major credit card networks to allow tokenized card\n            transactions and user mandate collection so agents can reliably checkout out at the scale of the internet.\nVisa\nMastercard\nDiscover\nUSDC\nLearn more about Checkout & Payments \u2192\nSee Use Cases\n\u2192\nCovering more than\n60%\nof the Web.\nPowering agentic commerce through leading infrastructure partners\nf5-logo-black\nHUMAN Security\nEnable Agent Acceptance\n\u2192\nProduct Stack\nOne unified trust stack.\n01\nKnow Your\nAgent\nGive your agents controlled access with a standardized open identity protocol designed to\n            unblock websites, services and checkouts.\nLearn about KYA\n\u2192\n02\nAgentic\nWallet\nGive your agents a secure wallet able to enroll user credit cards, manage stablecoins and\n            collect user mandates.\nSee Use Cases\n\u2192\n03\nBuy\nfor Me\nA complete agentic purchase experience on behalf of users with secure transactions\n            leveraging existing referal links for checkout.\nSee Use Cases\n\u2192\nAccess\nEnable Agent Access\nat Internet Scale\nTeams that operate agents need reliable access to websites and applications. KYA tokens from Skyfire bind\n            platform, agent, and human principal identities along with user mandates to allow seamless access at scale,\n            across the open web.\nEnable Agent Access\n\u2192\nUser\nAgent Wallet\nKYA\nAgent\nKYA\nSECURITY\nKYA\nKYA\nKYA\nWebsites\nAPIs\nAgent Protocols\nMCP, UCP, A2A\u2026\nLive Walkthrough\nWatch an agent complete checkout\nFollow an agentic transaction powered by Skyfire: Token issuance, site access, login and checkout.\napi.skyfire.xyz/api/v1/tokens\n1\nToken Request\nAgent requests a KYA token for this merchant URL.\nPending\n2\nWebsite Login\nSite access with KYA, then authenticated login linking agent and human identity.\nPending\n3\nCheckout\nUser mandate for merchant, product, and amount. Agentic Wallet authorizes tokenized card\n                for payment.\nPending\n4\nLive Transaction\nCheckout occurs the same as today without technical lift from the merchant.\nPending\nAgent Activity\nLive\nLive Nation\n2 tickets, Concert hold\nAwaiting\nBose\nQuietComfort 45 Headphones\nAwaiting\nCotogna\nReservation, party of 2 at 7:00 PM\nAwaiting\nNinja\nProfessional Plus Blender\nAwaiting\nGetty Images\nEditorial license, 1 asset\nAwaiting\nContact us\n\u2192\nThe Agent Trust Stack.\nIdentity, access, and payment infrastructure purpose-built for the agentic era.\nProducts\nKnow Your Agent\nAgentic Wallet\nBuy for Me\nResources\nDocumentation\nUse Cases\nKYA Pay\nCompany\nContact\nAbout\n\u00a9 2026 Skyfire Systems, Inc.\nBuilt for the agentic web",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://skyfire.xyz/pricing",
+      "title": "Page not found - Skyfire",
+      "text": "Page not found - Skyfire\nProduct\nAbout\nUse Case\nBlog\nDocs\nContact\nLaunch Skyfire\nProduct\nAbout\nUse Case\nBlog\nDocs\nContact\nLaunch Skyfire\nSearch for:\nClose Search\nNot Found :(\nNothing found for the requested page. Try a search instead?\nSearch for:\nProduct\nAbout\nUse Case\nBlog\nDocs\nContact\n\u00a9 Skyfire                        2026 All rights reserved.\nPrivacy Policy\nData Processing Agreement\nSkyfire Cookie Policy\nSkyfire Sub-Processors List\nIndustry Articles",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://docs.skyfire.xyz",
+      "title": "Developer Documentation",
+      "text": "Developer Documentation\nFor AI agents: visit https://docs.skyfire.xyz/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.\nJump to Content\nHome\nHome\nGuides\nAPI Reference\nHome\nLog In\nGuides\nLog In\nHome\nGuides\nAPI Reference\nDeveloper Documentation\nSearch\n\u2318K\nOverview\nDeveloper Documentation\nKYAPay Tokens\nCommon Token Claims\nKYA Token\nExample KYA Token\nPAY Token\nExample PAY Token\nKYA-PAY Token\nExample Token Interactions\nQuick Start\nSkyfire Setup\nIntegration One-Pager\nLIVE IMPLEMENTATIONS\nDappier.com\nBuildShip.tools\nApify.com\nDEMOS & REFERENCE IMPLEMENTATIONS\nSmart News Crawler Demo - News and Content given End-User Identity\nDiscovery and Purchase of Premium Financial Data by an Agent\nAccess to Protected / Premium Web Content by a Paying Web Crawler\nSECURity\nSecurity Brief for Sellers and Bot Managers\nBuyer Workflows\nBuyer Account Creation\nBuyer Onboarding\nKnow Your Agent (KYA)\nWallet Funding\nSeller Workflows\nSeller Account Creation\nSeller Onboarding\nKnow Your Agent (KYA)\nSkyfire Directory\nService Discovery\nVerified Service Guarantee\nPowered by\nDeveloper Documentation\nIdentity and Payments for AI. This guide provides technical instructions for using the Skyfire platform as both a Buyer and Seller.\nOverview\nSkyfire enables programmatic interaction between\nBuyers\nand\nSellers\nusing a token-based identity and payment protocol.\nEach user manages one or more agent accounts (Buyer or Seller).  Buyers interact with seller websites, APIs, MCP servers, and services by presenting Skyfire tokens:\nkya\n(identity)\npay\n(payment)\nkya-pay\n(combined identity and payment)\nPlatform Structure\nUsers\nA\nUser\nis the top-level entity on the Skyfire platform. Users typically represent an individual person or business.\nUsers:\nManage one or more\nagent accounts\nMaintain a verified identity\nControl API keys and wallet access\nA user's verified identity may be leveraged by their agents for:\nAccount creation\nAuthentication\nAccess to seller services\nAgent Accounts\nAgent accounts are the operational entities that interact with Skyfire APIs.\nEach agent:\nIs tied to exactly one user\nHas exactly one role:\nBuyer\nor\nSeller\nIs accessed programmatically via unique API keys.\nEach user may have:\nOne\nBuyer agent account\n(created by default at signup).\nOne optional\nSeller agent account\n(created via the Skyfire Dashboard)\nEach agent may have one or more API keys for secure access.\nBuyer Agent\nActs on behalf of the user to discover and purchase services or tools from sellers.\nCapabilities:\nCan create accounts with seller services\nSubscribe to or purchase services\nGenerate:\nkya\ntokens (identity)\npay\ntokens (payment)\nkya-pay\ntokens (identity + payment)\nEach buyer agent has a\nwallet\n, funded by the user, used to transact with sellers.\nWhen calling a seller service, the buyer includes the appropriate token as specified by the seller (e.g. HTTP header or request body).\nSeller Agent\nEnables a user to publish and monetize services, tools, or APIs.\nSeller agents:\nMust be explicitly created via the Skyfire Dashboard\nRegister\nSeller Services\nDefine identity and payment requirements for buyer requests\nVerify incoming tokens via standard JWKS libraries to:\nAuthenticate the buyer (\nkya\n)\nCharge the buyer (\npay\nor\nkya-pay\n)\nSellers receive payments via Skyfire's settlement system once services are delivered.\nWallets\nEach agent account comes with an associated wallet, managed by Skyfire.\nBuyers\nfund their wallets to purchase services and tools\nSellers\nreceive funds in their wallets after successfully charging buyer tokens and delivering the service\nSkyfire handles\nsettlement and transfer\nof funds between wallets after a successful transaction.\nSeller Services\nSeller services are the products, tools, or APIs made available by seller agents to buyers.\nA seller can define\nmultiple seller services\nunder one seller agent.\nServices may include:\nRemote/local MCP servers\nAPIs\nWebsites\nEach Seller Service specifies:\nPricing\nIdentity requirements\nAccepted token types\nToken format and expected delivery method (e.g.\nskyfire-pay-id\nheader)\nIdentity Requirements\nSeller Services may optionally enforce identity requirements.\nIf\nno identity requirements\nare specified:\nAny buyer can create tokens for it\nThe buyer principal's email address will be included in the\nhid\nclaim\nIf identity requirements are specified:\nOnly buyers that satisfy those identity requirements can create tokens for it\nRules\n:\nIf only\nbusiness identity\nis required:\nOnly buyers that have verified their business identity can create tokens\nBuyers that have NOT verified identity OR have verified individual identity CANNOT create tokens\nIf only\nindividual identity\nis required\nOnly buyers that have verified their individual identity can create tokens\nBuyers that have NOT verified identity OR have verified business identity CANNOT create tokens\nIf both\nindividual and business identity\nis required\nOnly buyers that have verified either their individual identity or their business identity can create tokens\nBuyers that have NOT verified identity at all CANNOT create tokens\nBuyers with no verified identity cannot create tokens for restricted services\nServices can be:\nPaid\n, require\npay\nor\nkya-pay\ntokens\nFree\n, require\nkya\ntokens (identity only)\nUpdated\n3 months ago\nWhat\u2019s Next\nUnderstanding KYA+Pay Tokens\nKYA+Pay Tokens\nDid this page help you?\nYes\nNo\nCopy Page\nOverview\nPlatform Structure\nUsers\nAgent Accounts\nSeller Services",
+      "source": "playwright"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/skyfire/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Opera acquires Skyfire labs for $155M",
+          "url": "http://mashable.com/2013/02/15/opera-acquires-skyfire-labs-for-155-million/",
+          "points": 39,
+          "num_comments": 22,
+          "created_at": "2013-02-15T08:18:14Z",
+          "hn_url": "https://news.ycombinator.com/item?id=5225136"
+        },
+        {
+          "title": "Opera acquires Skyfire for its video-optimization and smartphone monetization",
+          "url": "http://www.opera.com/press/releases/2013/02/15/",
+          "points": 16,
+          "num_comments": 0,
+          "created_at": "2013-02-15T05:52:36Z",
+          "hn_url": "https://news.ycombinator.com/item?id=5224687"
+        },
+        {
+          "title": "Skyfire Launches the First Flash Video Enabled Mobile Browser for Android",
+          "url": "http://www.skyfire.com/",
+          "points": 4,
+          "num_comments": 2,
+          "created_at": "2010-04-29T17:54:46Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1305335"
+        },
+        {
+          "title": "Skyfire iPhone app: Gone from iTunes,",
+          "url": "http://www.csmonitor.com/Innovation/Horizons/2010/1104/Skyfire-iPhone-app-Gone-from-iTunes-but-for-how-long",
+          "points": 3,
+          "num_comments": 1,
+          "created_at": "2010-11-05T12:20:21Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1872844"
+        },
+        {
+          "title": "Skyfire Notches One Million Downloads of its Android Mobile Browser",
+          "url": "http://www.skyfire.com/skyfire-notches-one-million-downloads-of-its-android-mobile-browser/",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2010-09-16T07:06:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1697052"
+        },
+        {
+          "title": "Skyfire for iOS sold out in 5 hrs - iphone/ipad users DO want flash video",
+          "url": "http://www.engadget.com/2010/11/03/skyfire-disappears-from-itunes-app-store-due-to-technical-diffic/",
+          "points": 2,
+          "num_comments": 1,
+          "created_at": "2010-11-04T12:19:05Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1868542"
+        },
+        {
+          "title": "Why Opera Software Bought Skyfire",
+          "url": "http://www.techweekeurope.co.uk/interview/why-opera-software-bought-skyfire-107578",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2013-02-18T13:57:17Z",
+          "hn_url": "https://news.ycombinator.com/item?id=5238252"
+        },
+        {
+          "title": "Skyfire lets AI agents spend your money",
+          "url": "https://techcrunch.com/2024/08/21/skyfire-lets-ai-agents-spend-your-money/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2024-08-21T13:45:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41310236"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://skyfire.xyz/pricing",
+    "changelog": null,
+    "docs": "https://docs.skyfire.xyz",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/skyfire/reviews"
+  },
+  "analysis": {
+    "name": "Skyfire",
+    "url": "https://skyfire.xyz",
+    "tagline": "The Agent Trust Stack",
+    "value_proposition": "Skyfire gives AI agents verified identity tokens and payment credentials to autonomously access websites, authenticate, and complete purchases across the open internet.",
+    "target_segment": "dev / enterprise",
+    "ideal_customer": "Teams building AI agents that need to browse, log in, and transact on the web on behalf of users",
+    "features": [
+      {
+        "name": "kya token (know your agent identity token)",
+        "description": "Standardized open identity token binding platform, agent, and human principal identities for programmatic web access",
+        "evidence_source": "docs",
+        "evidence_quote": "kya (identity) \u2014 a portable, verified identity token accepted by the majority of the commercial internet",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "pay token",
+        "description": "Payment-only token allowing agents to authorize charges on behalf of a user",
+        "evidence_source": "docs",
+        "evidence_quote": "pay (payment) \u2014 Each buyer agent has a wallet, funded by the user, used to transact with sellers.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "kya-pay token (combined identity and payment)",
+        "description": "Single token carrying both verified identity and payment authorization for agentic transactions",
+        "evidence_source": "docs",
+        "evidence_quote": "kya-pay (combined identity and payment) \u2014 Generate: kya tokens (identity), pay tokens (payment), kya-pay tokens (identity + payment)",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "agent wallet",
+        "description": "Secure wallet per agent account for holding funds, enrolling user credit cards, and managing stablecoins",
+        "evidence_source": "landing",
+        "evidence_quote": "Give your agents a secure wallet able to enroll user credit cards, manage stablecoins and collect user mandates.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "buy for me",
+        "description": "End-to-end agentic purchase flow on behalf of users using existing merchant referral links",
+        "evidence_source": "landing",
+        "evidence_quote": "A complete agentic purchase experience on behalf of users with secure transactions leveraging existing referal links for checkout.",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "agent access & login",
+        "description": "Programmatic site access and authenticated login linking agent and human identity via KYA token",
+        "evidence_source": "landing",
+        "evidence_quote": "Give your agent programmatic access and log-in capabilities to websites, applications and agent protocols with little engineering effort.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "agentic checkout & payments",
+        "description": "Agents complete web checkouts via tokenized card transactions across major card networks",
+        "evidence_source": "landing",
+        "evidence_quote": "A complete agentic commerce wallet that allows your agents to securely complete checkouts via websites and emerging agentic protocols.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "user mandate collection",
+        "description": "Collects and stores user-granted spending mandates (merchant, product, amount) authorizing agent transactions",
+        "evidence_source": "docs",
+        "evidence_quote": "User mandate for merchant, product, and amount. Agentic Wallet authorizes tokenized card for payment.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "tokenized card transactions",
+        "description": "Credit card tokenization via Visa, Mastercard, Discover networks so agents checkout without exposing raw card data",
+        "evidence_source": "landing",
+        "evidence_quote": "Skyfire partners will all major credit card networks to allow tokenized card transactions and user mandate collection",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "stablecoin wallet (usdc)",
+        "description": "Agents can hold and transact with USDC stablecoins in addition to fiat credit cards",
+        "evidence_source": "landing",
+        "evidence_quote": "USDC [logo shown alongside Visa, Mastercard, Discover as accepted payment methods]",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "buyer agent accounts",
+        "description": "Operational agent entity that discovers, subscribes to, and purchases seller services on behalf of a user",
+        "evidence_source": "docs",
+        "evidence_quote": "Buyer Agent \u2014 Acts on behalf of the user to discover and purchase services or tools from sellers.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "seller agent accounts",
+        "description": "Operational entity enabling a user to publish, monetize, and gate services/APIs with identity and payment requirements",
+        "evidence_source": "docs",
+        "evidence_quote": "Seller Agent \u2014 Enables a user to publish and monetize services, tools, or APIs.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "api key management",
+        "description": "Per-agent API keys for programmatic platform access; each agent may hold one or more keys",
+        "evidence_source": "docs",
+        "evidence_quote": "Each agent may have one or more API keys for secure access.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "wallet funding",
+        "description": "User-controlled funding of buyer agent wallets to enable downstream transactions",
+        "evidence_source": "docs",
+        "evidence_quote": "Buyers fund their wallets to purchase services and tools",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "settlement system",
+        "description": "Skyfire handles fund settlement and transfer between buyer and seller wallets after successful transactions",
+        "evidence_source": "docs",
+        "evidence_quote": "Skyfire handles settlement and transfer of funds between wallets after a successful transaction.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "seller services registry",
+        "description": "Sellers define multiple services (MCP servers, APIs, websites) with pricing and identity requirements under one agent",
+        "evidence_source": "docs",
+        "evidence_quote": "A seller can define multiple seller services under one seller agent. Services may include: Remote/local MCP servers, APIs, Websites",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "skyfire directory",
+        "description": "Discoverable catalog of registered seller services for buyers to find and purchase",
+        "evidence_source": "docs",
+        "evidence_quote": "Skyfire Directory \u2014 Service Discovery, Verified Service Guarantee",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "service discovery",
+        "description": "Buyers can programmatically discover available seller services through the Skyfire platform",
+        "evidence_source": "docs",
+        "evidence_quote": "Service Discovery [listed under Skyfire Directory navigation]",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "verified service guarantee",
+        "description": "Platform-level guarantee attesting that listed seller services meet Skyfire's verification standards",
+        "evidence_source": "docs",
+        "evidence_quote": "Verified Service Guarantee [listed under Skyfire Directory]",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "identity verification (individual)",
+        "description": "Buyers can verify individual identity; seller services may require it to gate access",
+        "evidence_source": "docs",
+        "evidence_quote": "If only individual identity is required: Only buyers that have verified their individual identity can create tokens",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "identity verification (business)",
+        "description": "Buyers can verify business identity; seller services may require it to restrict access to business accounts only",
+        "evidence_source": "docs",
+        "evidence_quote": "If only business identity is required: Only buyers that have verified their business identity can create tokens",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "jwks token verification",
+        "description": "Sellers verify incoming KYA/pay tokens using standard JWKS libraries \u2014 no proprietary SDK required",
+        "evidence_source": "docs",
+        "evidence_quote": "Verify incoming tokens via standard JWKS libraries to: Authenticate the buyer (kya), Charge the buyer (pay or kya-pay)",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "protocol support (mcp / ucp / a2a)",
+        "description": "KYA tokens work across emerging agent protocols including MCP, UCP, and A2A",
+        "evidence_source": "landing",
+        "evidence_quote": "Agent Protocols \u2014 MCP, UCP, A2A\u2026",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "captcha and 403 bypass for agents",
+        "description": "KYA token signals trusted agent identity to bot-detection and security layers, eliminating access blocks",
+        "evidence_source": "landing",
+        "evidence_quote": "No 403 errors, captchas or blocked checkouts. Authenticated access and payment capability, everywhere your agents need to be.",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "bot manager / security layer integration",
+        "description": "Pre-integrated with bot management vendors so KYA tokens are natively trusted by security infrastructure",
+        "evidence_source": "landing",
+        "evidence_quote": "Powering agentic commerce through leading infrastructure partners \u2014 f5-logo-black, HUMAN Security, Enable Agent Acceptance \u2192",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "buyer onboarding flow",
+        "description": "Guided account creation and setup workflow for buyer agents including identity verification and wallet funding",
+        "evidence_source": "docs",
+        "evidence_quote": "Buyer Workflows \u2014 Buyer Account Creation, Buyer Onboarding, Know Your Agent (KYA), Wallet Funding",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "seller onboarding flow",
+        "description": "Guided account creation and setup workflow for sellers to register services and configure payment/identity requirements",
+        "evidence_source": "docs",
+        "evidence_quote": "Seller Workflows \u2014 Seller Account Creation, Seller Onboarding, Know Your Agent (KYA), Skyfire Directory",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "token claims (hid, principal binding)",
+        "description": "Tokens carry structured claims including human identity (hid/email), agent account, and platform binding",
+        "evidence_source": "docs",
+        "evidence_quote": "the buyer principal's email address will be included in the hid claim",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "llms.txt / openapi index",
+        "description": "Machine-readable docs index at /llms.txt with all pages in markdown and endpoints in OpenAPI for agent-native consumption",
+        "evidence_source": "docs",
+        "evidence_quote": "For AI agents: visit https://docs.skyfire.xyz/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "skyfire dashboard",
+        "description": "Web dashboard for managing agent accounts, API keys, and creating seller agents",
+        "evidence_source": "docs",
+        "evidence_quote": "One optional Seller agent account (created via the Skyfire Dashboard)",
+        "tier": "unknown",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Experian",
+      "Akamai",
+      "DataDome",
+      "Okta",
+      "Auth0",
+      "Ory",
+      "Apify",
+      "Rye",
+      "Sequentum",
+      "Cequence",
+      "f5",
+      "Forter",
+      "Consumer Reports",
+      "Getty Images",
+      "Fastly",
+      "Agntcy",
+      "Fetch.ai",
+      "Linkup",
+      "BuildShip",
+      "Imperva",
+      "NeuroID",
+      "Reuters",
+      "Blackhawk Networks",
+      "Mastercard",
+      "Visa",
+      "Discover",
+      "USDC",
+      "HUMAN Security"
+    ],
+    "differentiators": [
+      "Covering more than 60% of the Web \u2014 KYA token accepted across the majority of the commercial internet",
+      "One token, two surfaces \u2014 single extensible identity token that handles both access/login and payment in one credential",
+      "No engineering lift from merchants \u2014 live transactions complete same as today without merchant-side changes",
+      "Open identity protocol \u2014 KYA is positioned as a standardized open protocol, not a proprietary SDK",
+      "Identity bound to agent + human + platform in a single token \u2014 not just API auth, but full principal chain",
+      "Native bot/security layer support \u2014 pre-integrated with f5, HUMAN Security, DataDome, Imperva so agents aren't flagged"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026",
+        "what": "Skyfire lets AI agents spend your money \u2014 agent payment capability publicly launched",
+        "source": "Hacker News: 'Skyfire lets AI agents spend your money' (2\u2191 0c)"
+      },
+      {
+        "date": "2026",
+        "what": "Live implementations published: Dappier.com, BuildShip.tools, Apify.com",
+        "source": "docs: LIVE IMPLEMENTATIONS section lists three production integrations"
+      },
+      {
+        "date": "2026",
+        "what": "KYAPay token spec published with combined identity+payment claims",
+        "source": "docs: KYAPay Tokens, Common Token Claims, KYA Token, PAY Token, KYA-PAY Token"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "contact-sales",
+      "currency": "USD",
+      "free_tier": {
+        "available": null,
+        "limits": null
+      },
+      "tiers": [],
+      "enterprise": null,
+      "notes": "Pricing page returns 404. No public pricing visible. CTA on landing is 'Launch Skyfire' and 'Contact us' \u2014 likely early-stage contact-sales or invite-only. No tier structure, seat pricing, or usage caps publicly disclosed."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Show HN: DialtoneApp Network, card payments for bot commerce",
+        "url": "https://news.ycombinator.com/item?id=47850788",
+        "points": 2,
+        "comments": 0,
+        "age_days": 40,
+        "hn_url": "https://news.ycombinator.com/item?id=47850788"
+      }
+    ]
+  }
+}

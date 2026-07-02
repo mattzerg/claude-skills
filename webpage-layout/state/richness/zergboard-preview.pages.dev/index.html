@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zergboard — The project board your team and agents share</title>
+  <meta name="description" content="Trello-simple for your team. API-complete for your agents. Multi-tenant workspaces with the structure to scale — and the webhooks to automate everything." />
+  <meta property="og:title" content="Zergboard — The project board your team and agents share" />
+  <meta property="og:description" content="Trello-simple for your team. API-complete for your agents. Multi-tenant workspaces with the structure to scale — and the webhooks to automate everything." />
+  <meta name="theme-color" content="#f4f0e7" />
+  <link rel="canonical" href="https://zergboard.com/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zergboard.com/" />
+  <meta property="og:image" content="https://zergboard.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zergboard — The project board your team and agents share" />
+  <meta name="twitter:description" content="Trello-simple for your team. API-complete for your agents. Multi-tenant workspaces with the structure to scale — and the webhooks to automate everything." />
+  <meta name="twitter:image" content="https://zergboard.com/og-image.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://zergboard.com/#org",
+        "name": "Zergboard",
+        "url": "https://zergboard.com/",
+        "logo": "https://zergboard.com/icon-192.png",
+        "parentOrganization": { "@type": "Organization", "name": "Zerg AI", "url": "https://zergai.com/" },
+        "sameAs": ["https://zergai.com/"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://zergboard.com/#site",
+        "url": "https://zergboard.com/",
+        "name": "Zergboard",
+        "publisher": { "@id": "https://zergboard.com/#org" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Zergboard",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "description": "A focused project board for teams that want to ship, not configure. API-first, multi-tenant, transparent pricing, agent-ready.",
+        "offers": [
+          { "@type": "Offer", "name": "Free",     "price": "0",  "priceCurrency": "USD", "description": "Up to 10 seats, full API access" },
+          { "@type": "Offer", "name": "Team",     "price": "6",  "priceCurrency": "USD", "description": "Per user / month, billed yearly. SSO, audit log." },
+          { "@type": "Offer", "name": "Business", "price": "14", "priceCurrency": "USD", "description": "Per user / month, billed yearly. SCIM, self-host, SOC 2." }
+        ],
+        "publisher": { "@id": "https://zergboard.com/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is this just a Trello clone?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Trello is great if you want a board. Zergboard adds multi-tenant workspaces, a complete API, SSO + audit logs, and a self-host option — without dragging in a sprint planner, a docs tool, and a workflow engine." } },
+          { "@type": "Question", "name": "How does Zergboard differ from Linear?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Linear is excellent and very engineering-focused. Zergboard is built for any team that needs a board (engineering, agency, ops, IT) and especially shines for multi-tenant scenarios — agencies running boards per client, SaaS embedding boards, holdcos running per-portfolio workspaces. Linear is also closed-source and SaaS-only; Zergboard offers self-host." } },
+          { "@type": "Question", "name": "Do I need to use AI agents to use Zergboard?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Zergboard works perfectly as a manual board. Agent-friendliness is a property of the architecture (API-first, webhooks, idempotent writes) — if you want to plug in agents later, you can." } },
+          { "@type": "Question", "name": "Where is my data stored?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Cloud: us-east-1 by default, eu-west-1 on request. Self-host: wherever you put it. Backups encrypted at rest, TLS 1.3 in transit, SOC 2 Type II in progress (target Q3 2026)." } },
+          { "@type": "Question", "name": "How does this fit with the rest of Zerg AI?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Zergboard is one of several products built on the Zerg platform — alongside ZTC (terminal IDE), ZDE (web IDE), and Zerg Cloud. They share auth, billing, and an agent runtime, but each works standalone." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============== NAV ============== -->
+<header class="nav" role="banner">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark"></span> Zergboard</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="integrations.html">Integrations</a>
+      <a href="compare.html">Compare</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-secondary" href="https://app.zergboard.com/login" data-zb-event="login_clicked">Login</a>
+      <a class="btn btn-primary" href="signup.html" data-zb-event="signup_clicked">Start free</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============== HERO ============== -->
+<section class="hero-section">
+  <div class="wrap">
+    <div class="grid-2 hero-grid">
+      <div>
+        <p class="eyebrow">From the team behind Zerg AI · v3.2</p>
+        <h1 class="hero">The project board your team and agents share.</h1>
+        <p class="lead">
+          Trello-simple for your team. API-complete for your agents.
+          Multi-tenant workspaces with the structure to scale — and the
+          webhooks to automate everything.
+        </p>
+        <div class="btn-row mt-3">
+          <a class="btn btn-primary" href="signup.html" data-zb-event="signup_clicked">Start free — no credit card</a>
+          <a class="btn btn-secondary" href="features.html" data-zb-event="learn_more_clicked" data-zb-meta="target=features">See how it works</a>
+        </div>
+        <p class="muted mt-3" style="font-size: 0.85rem;">
+          Free forever for teams &lt; 10. Self-host or cloud. SOC 2 Type II in flight.
+        </p>
+      </div>
+
+      <!-- Live mock board as the hero visual -->
+      <div class="hero-visual">
+        <div class="col-head" style="border:0; padding:0; margin-bottom: 0.75rem;">
+          <span>workspace · acme-eng</span>
+          <span style="display:flex; gap: 0.4rem; align-items:center;">
+            <span class="dot p1 live-pulse" aria-hidden="true"></span>
+            <span style="color: var(--accent);">live</span>
+          </span>
+        </div>
+        <div class="agent-ticker" aria-hidden="true" style="margin-bottom: 0.75rem;">
+          <span>● agent · created 7 cards from Sentry alerts</span>
+          <span>● agent · moved 3 cards to Shipped on PR merge</span>
+          <span>● agent · posted v3.2.1 release notes to #eng</span>
+        </div>
+        <div class="board">
+          <div class="col">
+            <div class="col-head">Backlog <span class="col-count">12</span></div>
+            <div class="task">
+              <span>Migrate auth to OIDC</span>
+              <div class="meta"><span><span class="dot p2"></span> P2</span><span class="avatar"></span></div>
+            </div>
+            <div class="task">
+              <span>Add webhook retries</span>
+              <div class="meta"><span><span class="dot p3"></span> P3</span><span class="avatar b"></span></div>
+            </div>
+            <div class="task">
+              <span>Quarterly billing report</span>
+              <div class="meta"><span><span class="dot p3"></span> P3</span><span class="avatar c"></span></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-head">In progress <span class="col-count">4</span></div>
+            <div class="task agent-card" style="border-color: var(--accent-hi);">
+              <span>Stripe → Mercury reconciliation</span>
+              <div class="meta"><span><span class="dot p1"></span> P1 · agent</span><span class="avatar"></span></div>
+            </div>
+            <div class="task">
+              <span>Multi-tenant audit log</span>
+              <div class="meta"><span><span class="dot p2"></span> P2</span><span class="avatar b"></span></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-head">Shipped <span class="col-count">38</span></div>
+            <div class="task">
+              <span>API rate-limit tier</span>
+              <div class="meta"><span style="color: var(--accent);">✓ today</span><span class="avatar c"></span></div>
+            </div>
+            <div class="task">
+              <span>Workspace transfer flow</span>
+              <div class="meta"><span style="color: var(--accent);">✓ today</span><span class="avatar"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== STATS / PROOF STRIP ============== -->
+<section class="tight">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="num">4</div><div class="label">Things that matter — not 40</div></div>
+      <div class="stat"><div class="num">&lt;90s</div><div class="label">From signup to first board</div></div>
+      <div class="stat"><div class="num">100%</div><div class="label">Of features in the API</div></div>
+      <div class="stat"><div class="num">$0</div><div class="label">Until you outgrow the free tier</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SOCIAL PROOF (placeholder slots) ============== -->
+<section class="tight" aria-label="Trusted by">
+  <div class="wrap">
+    <p class="proof-strip-label">Trusted by teams shipping at</p>
+    <div class="proof-strip">
+      <div class="proof-cell">YC startup</div>
+      <div class="proof-cell">Dev studio</div>
+      <div class="proof-cell">Fintech series B</div>
+      <div class="proof-cell">DevTools OSS</div>
+      <div class="proof-cell">Internal IT, F500</div>
+      <div class="proof-cell">Multi-tenant SaaS</div>
+    </div>
+    <p class="muted center mt-3" style="font-size: 0.8rem; margin-top: 1rem;">
+      Real logos coming as our first cohort goes public · <a href="signup.html#contact" style="color: var(--accent);">be a launch partner →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============== ANTI-BLOAT MANIFESTO ============== -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow center">01 · The pitch</p>
+    <h2 class="center" style="max-width: 22ch; margin: 0 auto 1.5rem;">Every PM tool starts simple. Then comes the bloat.</h2>
+    <p class="lead center" style="margin: 0 auto;">
+      Sprints. Roadmaps. OKRs. Forms. Approval chains. Custom fields you'll
+      configure once and never touch. Suddenly you're paying for a workflow
+      engine, an automation builder, a docs tool, a chat tool — and an AI to
+      help you find anything in it. Zergboard does the four things every team
+      actually opens the app to do, and gets out of the way.
+    </p>
+    <div class="grid-4 mt-3" style="margin-top: 3rem;">
+      <div class="card">
+        <p class="eyebrow">01</p>
+        <h3>Cards &amp; columns</h3>
+        <p>Drag, drop, ship. Keyboard-first, sub-50ms interactions, real-time across every client.</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">02</p>
+        <h3>Multi-tenant workspaces</h3>
+        <p>One account, many isolated workspaces. Built for agencies, holdcos, and SaaS that resell boards.</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">03</p>
+        <h3>API-first architecture</h3>
+        <p>Every feature is a REST + webhook endpoint. The UI is just one client among many.</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">04</p>
+        <h3>Admin controls</h3>
+        <p>SSO, SCIM, audit logs, granular roles. Enterprise-grade governance without enterprise-grade overhead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== AGENT / API DEMO ============== -->
+<section style="background: rgba(17,21,20,0.02);">
+  <div class="wrap">
+    <div class="grid-2">
+      <div>
+        <p class="eyebrow">02 · Agents welcome</p>
+        <h2>Boards your agents can drive.</h2>
+        <p class="lead">
+          Zergboard is built for the world where humans and AI agents share the
+          same backlog. Every action in the UI is one curl away. Hand a board
+          to a Zerg agent, a Claude agent, or your own — they'll create
+          tickets, move cards, and post status updates the same way your team
+          does.
+        </p>
+        <div class="btn-row mt-3">
+          <a class="btn btn-secondary" href="integrations.html" data-zb-event="learn_more_clicked" data-zb-meta="target=integrations">Read API docs →</a>
+          <a class="btn btn-secondary" href="use-cases.html#engineering" data-zb-event="learn_more_clicked" data-zb-meta="target=use-cases">Engineering use cases →</a>
+        </div>
+      </div>
+      <div>
+        <pre class="code" role="region" aria-label="Code example"><span class="c"># An agent moves a card and adds a comment</span>
+<span class="k">curl</span> -X PATCH https://api.zergboard.com/v1/cards/<span class="n">card_8f2a</span> \
+  -H <span class="s">"Authorization: Bearer $ZB_TOKEN"</span> \
+  -d <span class="s">'{"column": "shipped", "comment": "Deployed in v3.2.1"}'</span>
+
+<span class="c">→ 200 OK</span>
+<span class="c">→ webhook fired: card.moved</span>
+<span class="c">→ slack notified: #eng-ship</span>
+
+<span class="c"># Or, with the SDK</span>
+<span class="k">await</span> zergboard.cards.move(<span class="n">"card_8f2a"</span>, <span class="s">"shipped"</span>);</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== COMPARISON STRIP ============== -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow center">03 · Competitive math</p>
+    <h2 class="center" style="max-width: 22ch; margin: 0 auto 0.75rem;">The hidden cost of "all-in-one".</h2>
+    <p class="lead center" style="margin: 0 auto 2.5rem;">
+      Most PM tools sell you a platform when you came for a board. Here's
+      what's actually different.
+    </p>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="us">Zergboard</th>
+          <th>Jira</th>
+          <th>Monday</th>
+          <th>Asana</th>
+          <th>Linear</th>
+          <th>Trello</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pricing visible on homepage</td>
+          <td class="us-cell"><span class="check">✓</span></td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+        </tr>
+        <tr>
+          <td>Free forever for small teams</td>
+          <td class="us-cell"><span class="check">✓ &lt;10 seats</span></td>
+          <td>Up to 10</td>
+          <td>Up to 2</td>
+          <td>Up to 10</td>
+          <td>Up to 10</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <td>100% feature coverage in API</td>
+          <td class="us-cell"><span class="check">✓</span></td>
+          <td>~70%</td>
+          <td>~60%</td>
+          <td>~70%</td>
+          <td><span class="check">✓</span></td>
+          <td>~50%</td>
+        </tr>
+        <tr>
+          <td>Multi-tenant workspaces (true isolation)</td>
+          <td class="us-cell"><span class="check">✓</span></td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+        </tr>
+        <tr>
+          <td>Self-host option</td>
+          <td class="us-cell"><span class="check">✓</span></td>
+          <td>Data Center ($$$)</td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+          <td class="x">—</td>
+        </tr>
+        <tr>
+          <td>Time to first board (signup → board)</td>
+          <td class="us-cell"><span class="check">&lt;90s</span></td>
+          <td>~10 min</td>
+          <td>~5 min</td>
+          <td>~5 min</td>
+          <td>~3 min</td>
+          <td>~2 min</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted center mt-3" style="font-size: 0.8rem;">
+      Comparison based on public pricing pages and product docs as of April 2026. <a href="compare.html" style="color: var(--accent);">See full breakdown →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============== USE-CASE SEGMENTATION ============== -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow center">04 · Built for</p>
+    <h2 class="center" style="max-width: 24ch; margin: 0 auto 2.5rem;">Teams that ship more than they configure.</h2>
+    <div class="grid-3">
+      <div class="card">
+        <p class="tag">Engineering</p>
+        <h3 style="margin-top: 1rem;">Cut your standup in half.</h3>
+        <p>API-first means CI, agents, and bots can update the board without anyone moving a card by hand.</p>
+        <a href="use-cases.html#engineering" class="muted" style="font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--accent); margin-top: 1rem; display: inline-block;">Read more →</a>
+      </div>
+      <div class="card">
+        <p class="tag">Agencies</p>
+        <h3 style="margin-top: 1rem;">One login, every client.</h3>
+        <p>Multi-tenant workspaces with true data isolation. White-label optional. Bill per workspace, not per seat.</p>
+        <a href="use-cases.html#agencies" class="muted" style="font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--accent); margin-top: 1rem; display: inline-block;">Read more →</a>
+      </div>
+      <div class="card">
+        <p class="tag">Founders</p>
+        <h3 style="margin-top: 1rem;">From kitchen-table to Series B.</h3>
+        <p>Free until you're 10. Pay-as-you-grow. Don't migrate when you raise — just flip on SSO.</p>
+        <a href="use-cases.html#founders" class="muted" style="font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--accent); margin-top: 1rem; display: inline-block;">Read more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PRICING TEASER ============== -->
+<section style="background: rgba(17,21,20,0.02);">
+  <div class="wrap">
+    <p class="eyebrow center">05 · Pricing</p>
+    <h2 class="center" style="margin-bottom: 0.75rem;">Honest tiers. On the homepage.</h2>
+    <p class="lead center" style="margin: 0 auto 3rem;">
+      Because making you click "Pricing" three times shouldn't be the first
+      thing your PM tool teaches you about itself.
+    </p>
+    <div class="price-grid">
+      <div class="price-card">
+        <div>
+          <div class="name">Free</div>
+          <div class="price">$0<small> / forever</small></div>
+        </div>
+        <ul>
+          <li>Up to 10 seats</li>
+          <li>Unlimited boards &amp; cards</li>
+          <li>Full API access</li>
+          <li>Community support</li>
+        </ul>
+        <a class="btn btn-secondary" href="signup.html" data-zb-event="signup_clicked">Start free</a>
+      </div>
+      <div class="price-card featured">
+        <div>
+          <div class="name">Team</div>
+          <div class="price">$6<small> / user / month</small></div>
+        </div>
+        <ul>
+          <li>Everything in Free</li>
+          <li>SSO (Google, Okta)</li>
+          <li>Audit logs</li>
+          <li>Workspace transfer</li>
+          <li>Priority support</li>
+        </ul>
+        <a class="btn btn-primary" href="signup.html" data-zb-event="signup_clicked">Start 14-day trial</a>
+      </div>
+      <div class="price-card">
+        <div>
+          <div class="name">Business</div>
+          <div class="price">$14<small> / user / month</small></div>
+        </div>
+        <ul>
+          <li>Everything in Team</li>
+          <li>SCIM, custom roles</li>
+          <li>Self-host option</li>
+          <li>Dedicated CSM</li>
+          <li>SOC 2 + DPA</li>
+        </ul>
+        <a class="btn btn-secondary" href="signup.html#contact" data-zb-event="sales_clicked">Talk to sales</a>
+      </div>
+    </div>
+    <p class="muted center mt-3"><a href="pricing.html" style="color: var(--accent);">Full pricing &amp; FAQ →</a></p>
+  </div>
+</section>
+
+<!-- ============== FAQ ============== -->
+<section>
+  <div class="wrap" style="max-width: 760px;">
+    <p class="eyebrow center">06 · Frequently asked</p>
+    <h2 class="center" style="margin-bottom: 2rem;">The questions you'd ask a PM tool on a sales call.</h2>
+    <div class="faq">
+      <details>
+        <summary>Is this just a Trello clone?</summary>
+        <p>No. Trello is great if you want a board. Zergboard adds multi-tenant workspaces, a complete API, SSO + audit logs, and a self-host option — without dragging in a sprint planner, a docs tool, and a workflow engine. Trello-simplicity, post-Trello plumbing.</p>
+      </details>
+      <details>
+        <summary>How does Zergboard differ from Linear?</summary>
+        <p>Linear is excellent and very engineering-focused. Zergboard is built for any team that needs a board (engineering, agency, ops, IT) and especially shines for multi-tenant scenarios — agencies running boards per client, SaaS embedding boards for end-users, holdcos running per-portfolio-company workspaces. Linear is also closed-source and SaaS-only; Zergboard offers self-host.</p>
+      </details>
+      <details>
+        <summary>Do I need to use AI agents to use Zergboard?</summary>
+        <p>No. Zergboard works perfectly as a manual board. Agent-friendliness is a property of the architecture (API-first, webhooks, idempotent writes) — if you want to plug in agents later, you can. If you don't, you'll never see them.</p>
+      </details>
+      <details>
+        <summary>Where is my data stored?</summary>
+        <p>Cloud: us-east-1 by default, eu-west-1 on request. Self-host: wherever you put it. Backups encrypted at rest, TLS 1.3 in transit, SOC 2 Type II audit in progress (target Q3 2026).</p>
+      </details>
+      <details>
+        <summary>How does this fit with the rest of Zerg AI?</summary>
+        <p>Zergboard is one of several products built on the Zerg platform — alongside ZTC (terminal IDE), ZDE (web IDE), and Zerg Cloud. They share auth, billing, and an agent runtime, but each works standalone. You can use Zergboard without ever touching the rest of Zerg.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FINAL CTA ============== -->
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <p class="eyebrow" style="color: var(--accent-hi);">07 · Get started</p>
+      <h2 style="max-width: 22ch; margin: 0 auto;">Spin up a board in 90 seconds.</h2>
+      <p class="lead">
+        Free forever for teams under ten. No credit card. No "schedule a demo"
+        wall. The board is waiting.
+      </p>
+      <div class="btn-row" style="justify-content: center;">
+        <a class="btn btn-primary" href="signup.html" data-zb-event="signup_clicked">Start free</a>
+        <a class="btn btn-secondary" href="signup.html#contact" data-zb-event="sales_clicked">Talk to sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+</main>
+
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="brand mb-3"><span class="brand-mark"></span> Zergboard</a>
+        <p class="muted" style="font-size: 0.9rem; max-width: 32ch;">
+          Project boards without enterprise bloat. Built by Zerg AI for teams who'd rather ship than configure.
+        </p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="integrations.html">Integrations</a></li>
+          <li><a href="compare.html">vs Jira / Monday / Linear</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="use-cases.html#engineering">Engineering teams</a></li>
+          <li><a href="use-cases.html#agencies">Agencies</a></li>
+          <li><a href="use-cases.html#founders">Founders &amp; solo</a></li>
+          <li><a href="use-cases.html#it">Internal IT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://zergai.com">Zerg AI</a></li>
+          <li><a href="https://docs.zergboard.com">Docs</a></li>
+          <li><a href="https://status.zergboard.com">Status</a></li>
+          <li><a href="signup.html">Contact</a></li>
+          <li><a href="admin.html">Admin (analytics)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Zerg AI · Made for teams who want their tools to stay out of the way</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Security</a></span>
+    </div>
+  </div>
+</footer>
+
+<script defer src="cookie.js"></script>
+<script defer data-domain="zergboard.com" src="https://zerglytics-epoch.fly.dev/zb.js"></script>
+</body>
+</html>

@@ -1,15 +1,15 @@
 #!/bin/bash
-# Install pr-gate as a pre-push hook + GitHub Action in a git repo.
+# Install pr-gate as a local pre-push hook in a git repo.
 #
 # Usage:
-#   ~/.claude/skills/pr-gate/install_hook.sh <repo-path>             # local hook only
-#   ~/.claude/skills/pr-gate/install_hook.sh --action <repo-path>    # local hook + .github action
-#   ~/.claude/skills/pr-gate/install_hook.sh --all                   # local hook in all known repos
-#   ~/.claude/skills/pr-gate/install_hook.sh --all --action          # local hook + actions in all
+#   ~/.claude/skills/pr-gate/install_hook.sh <repo-path>
+#   ~/.claude/skills/pr-gate/install_hook.sh --all
 #
 # Idempotent: re-running overwrites with the latest content.
 # To uninstall hook: rm <repo>/.git/hooks/pre-push
-# To uninstall action: rm <repo>/.github/workflows/pr-gate.yml
+#
+# This installer intentionally does not write GitHub Actions or tracked repo
+# metadata. PR Gate is Matt-local workflow hygiene, not repo CI/CD.
 
 set -e
 
@@ -18,10 +18,6 @@ KNOWN_REPOS=(
     "$HOME/zerg/zergwallet"
     "$HOME/.claude/skills"
 )
-
-# The canonical Action source — copied from ~/zerg/.github/* (which is the source of truth).
-ACTION_WORKFLOW_SRC="$HOME/zerg/.github/workflows/pr-gate.yml"
-ACTION_SCRIPT_SRC="$HOME/zerg/.github/scripts/pr_gate_ci.py"
 
 write_hook() {
     local repo="$1"
@@ -56,6 +52,12 @@ while read local_ref local_sha remote_ref remote_sha; do
     case "$remote_ref" in
         refs/heads/main|refs/heads/master|refs/heads/development|refs/heads/develop)
             continue ;;
+        # Backup / archival pushes are NOT pull requests — they just preserve local
+        # state off-machine. They must not require an Idan-reviewed PR / stale-base
+        # rebase. Real feature branches (anything else) still go through pr-gate.
+        refs/heads/backup/*|refs/heads/archive/*|refs/heads/*graveyard*|refs/heads/*-backup)
+            echo "[pre-push] $remote_ref is a backup/archival branch — skipping pr-gate"
+            continue ;;
     esac
     gate_needed=1
     gate_branch="$remote_ref"
@@ -81,7 +83,13 @@ case "$identity" in
         ;;
 esac
 
-if /usr/bin/python3 "$PR_GATE" --dry-run --fast $identity_flag; then
+PYTHON_BIN="$(command -v python3.12 || command -v python3.11 || command -v python3.10 || command -v python3 || true)"
+if [ -z "$PYTHON_BIN" ]; then
+    echo "[pre-push] python3 not found in PATH"
+    exit 2
+fi
+
+if "$PYTHON_BIN" "$PR_GATE" --dry-run --fast --no-prior-review $identity_flag; then
     echo
     echo "[pre-push] gate passed — push proceeding."
     exit 0
@@ -96,56 +104,37 @@ fi
 HOOK_EOF
     chmod +x "$repo/.git/hooks/pre-push"
     echo "  [ok]   hook → $repo/.git/hooks/pre-push"
+    mkdir -p "$repo/.git/info"
+    touch "$repo/.git/info/exclude"
+    for pattern in ".pr-gate-review.md" ".pr-gate-review-full.md" ".pr-gate-asset-previews.md"; do
+        if ! grep -qxF "$pattern" "$repo/.git/info/exclude"; then
+            printf '%s\n' "$pattern" >> "$repo/.git/info/exclude"
+            echo "  [ok]   local exclude += $pattern"
+        fi
+    done
 }
 
-write_action() {
-    local repo="$1"
-    if [ ! -d "$repo/.git" ]; then
-        return
-    fi
-    if [ ! -f "$ACTION_WORKFLOW_SRC" ] || [ ! -f "$ACTION_SCRIPT_SRC" ]; then
-        echo "  [skip] action not installed — source files missing at $ACTION_WORKFLOW_SRC"
-        return
-    fi
-    mkdir -p "$repo/.github/workflows" "$repo/.github/scripts"
-    cp "$ACTION_WORKFLOW_SRC" "$repo/.github/workflows/pr-gate.yml"
-    cp "$ACTION_SCRIPT_SRC" "$repo/.github/scripts/pr_gate_ci.py"
-    chmod +x "$repo/.github/scripts/pr_gate_ci.py"
-    echo "  [ok]   action → $repo/.github/workflows/pr-gate.yml"
-    echo "         (commit + add ANTHROPIC_API_KEY repo secret to enable)"
-}
-
-INSTALL_ACTION=0
 TARGETS=()
 
 for arg in "$@"; do
     case "$arg" in
-        --action) INSTALL_ACTION=1 ;;
+        --action)
+            echo "error: --action was removed. PR Gate is local-only; do not install repo CI/CD for Matt-only workflow rules." >&2
+            exit 2
+            ;;
         --all) TARGETS=("${KNOWN_REPOS[@]}") ;;
-        --help) echo "Usage: $0 [<repo-path>] [--action] [--all]"; exit 0 ;;
+        --help) echo "Usage: $0 [<repo-path>] [--all]"; exit 0 ;;
         *) TARGETS+=("$arg") ;;
     esac
 done
 
 if [ ${#TARGETS[@]} -eq 0 ]; then
-    echo "Usage: $0 [<repo-path>] [--action] [--all]"
+    echo "Usage: $0 [<repo-path>] [--all]"
     exit 2
 fi
 
-action_label=""
-if [ "$INSTALL_ACTION" -eq 1 ]; then
-    action_label=" + GitHub Action"
-fi
-echo "Installing pre-push hook${action_label} in ${#TARGETS[@]} repo(s):"
+echo "Installing local pre-push hook in ${#TARGETS[@]} repo(s):"
 for repo in "${TARGETS[@]}"; do
     echo "[$repo]"
     write_hook "$repo"
-    if [ "$INSTALL_ACTION" -eq 1 ]; then
-        # Don't write the action into the repo it's sourced from
-        if [ "$repo" = "$HOME/zerg" ]; then
-            echo "  [skip] action source repo — action already lives in $HOME/zerg/.github/"
-        else
-            write_action "$repo"
-        fi
-    fi
 done

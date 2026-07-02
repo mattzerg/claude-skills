@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 9,
+    "distinctiveness": 4,
+    "color": 7,
+    "density": 8,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Custom 'Sohne' typeface with strong character and disciplined implementation. Type system is confident but not groundbreaking\u2014solid enterprise-grade identity.",
+    "hierarchy": "Excellent dominance per screen. Massive headline does the visual work, clear CTAs, well-graduated scale from hero to body. Nothing competes for attention.",
+    "distinctiveness": "Classic SaaS template structure: hero claim, social proof logos, features grid, product screenshots. Swap 'payments' for 'analytics' and it's identical to 50 competitors.",
+    "color": "Gradient backdrop is controlled but trending generic (orange-purple-pink is 2023's blue). Black text dominates, purple accent used sparingly in CTAs. Restrained execution.",
+    "density": "Confident whitespace around hero, purposeful breathing room. Not afraid of scale. Feature sections have appropriate density without claustrophobia or waste.",
+    "voice": "Generic SaaS IA: hero value prop \u2192 social proof \u2192 solutions \u2192 features. Copy is clear but structure could be anyone's. No narrative innovation or Stripe-specific journey."
+  },
+  "winning_patterns": [
+    "Massive typographic scale creates undeniable hierarchy\u2014headline physically dominates viewport",
+    "Gradient backdrop adds warmth without sacrificing legibility or professionalism",
+    "Product screenshots grounded in realistic UI context (phone, browser frames) rather than floating abstractions",
+    "Balanced density: generous hero whitespace, denser feature sections where appropriate"
+  ],
+  "anti_patterns": [
+    "Logo parade social proof is stencil SaaS 101\u2014OpenAI/Amazon/NVIDIA feels obligatory not earned",
+    "Information architecture is interchangeable: hero \u2192 proof \u2192 solutions \u2192 features (could be Twilio, Plaid, anyone)",
+    "Gradient aesthetic is becoming the new 'Inter + blue'\u2014trendy but losing distinctiveness",
+    "Purple accent color in CTAs lacks connection to the gradient palette",
+    "Copy structure 'from your first X to your billionth' is template language"
+  ],
+  "one_word_personality": "corporate",
+  "_url": "https://stripe.com",
+  "_persona": "design_forward",
+  "_note": "Shifting gradients, oversized stat moments",
+  "_graded_at": "2026-05-08T21:44:21.118590Z"
+}

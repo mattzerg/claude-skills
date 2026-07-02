@@ -27,9 +27,24 @@ from googleapiclient.discovery import build
 import warnings
 warnings.filterwarnings("ignore")
 
-VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
-)
+def _vault_root() -> Path:
+    """Prefer the live Obsidian vault (canonical); fall back to legacy iCloud or the
+    TCC mirror. Pre-2026-06-30 this hardcoded the iCloud path, which became a near-
+    empty shell after the vault moved to ~/Obsidian/Zerg — so corpus appends landed
+    in the shell while canonical went stale. See _audit-2026-06-30-nobody-reads-code.md §4."""
+    canonical = Path.home() / "Obsidian" / "Zerg" / "MattZerg"
+    icloud = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
+    mirror = Path.home() / ".zerg-vault-mirror" / "MattZerg"
+    for cand in (canonical, icloud, mirror):
+        try:
+            if cand.exists() and any(cand.iterdir()):
+                return cand
+        except (PermissionError, OSError):
+            continue
+    return canonical
+
+
+VAULT_ROOT = _vault_root()
 CORPUS = VAULT_ROOT / "_style" / "professional_voice_corpus.md"
 TIER_MAP = Path(__file__).parent / "tier_map.json"
 TOKENS = Path.home() / ".claude" / "skills" / "gmail-skill" / "tokens"
@@ -173,6 +188,37 @@ def append_to_corpus(samples: list[dict]) -> int:
     return len(samples)
 
 
+RAW_OUTGOING_ROOT = Path(__file__).parent / "raw_outgoing"
+
+
+def append_to_raw_outgoing(samples: list[dict], account: str) -> int:
+    """Append harvested samples to raw_outgoing/<account>/<year>.md — the
+    corpus the exemplar-first drafting system (voice_priors.py) reads. Added
+    2026-06-02: previously the weekly refresh only updated the vault corpus
+    file, so exemplar retrieval slowly went stale."""
+    if not samples:
+        return 0
+    account_short = account.split("@")[0]
+    if account == "matthew@zergai.com":
+        account_short = "matthew"
+    account_dir = RAW_OUTGOING_ROOT / account_short
+    account_dir.mkdir(parents=True, exist_ok=True)
+    appended = 0
+    for s in samples:
+        date = (s.get("date") or "")[:10]
+        year = date[:4] or str(dt.datetime.now().year)
+        year_file = account_dir / f"{year}.md"
+        # dedup by msg_id
+        if year_file.exists() and s["id"] in year_file.read_text():
+            continue
+        with open(year_file, "a") as f:
+            f.write(f"\n---\ndate: {date}\nto: {s['to']}\n"
+                    f"subject: {s.get('subject','')}\nmsg_id: {s['id']}\n---\n\n")
+            f.write(s["body"].strip() + "\n")
+        appended += 1
+    return appended
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=7, help="how far back to look (default 7)")
@@ -187,10 +233,34 @@ def main() -> int:
             continue
         new = harvest(svc, account, args.days, known)
         added = append_to_corpus(new)
-        print(f"[refresh] {account}: harvested {len(new)} new, appended {added}")
+        raw_added = append_to_raw_outgoing(new, account)
+        print(f"[refresh] {account}: harvested {len(new)} new, appended {added} "
+              f"(vault corpus) + {raw_added} (raw_outgoing)")
         total_added += added
 
     print(f"[refresh] total new samples: {total_added}")
+
+    # 2026-06-02 voice overhaul: recompute structural priors whenever the
+    # corpus refreshes (professional + family segments). Pure Python, no LLM.
+    try:
+        sys.path.insert(0, str(Path(__file__).parent))
+        from voice_priors import compute_structural_priors
+        compute_structural_priors(force=True)
+        personal_dir = Path.home() / ".claude" / "skills" / "fakematt-personal"
+        if personal_dir.exists() and TIER_MAP.exists():
+            data = json.loads(TIER_MAP.read_text())
+            fam = {e.lower() for e in data.get("_excluded", {}).get("members", [])}
+            fam.discard("matteisn@gmail.com")
+            if fam:
+                years = tuple(str(y) for y in range(2018, dt.datetime.now().year + 1))
+                compute_structural_priors(
+                    force=True, recipient_filter=fam,
+                    cache_path=personal_dir / "structural_priors.json",
+                    years=years,
+                )
+        print("[refresh] structural priors recomputed (professional + family)")
+    except Exception as e:
+        print(f"[refresh] priors recompute failed (non-fatal): {e}", file=sys.stderr)
     return 0
 
 

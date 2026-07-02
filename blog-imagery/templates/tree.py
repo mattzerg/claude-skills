@@ -79,12 +79,12 @@ def _layout(aspect):
     # body default
     return dict(
         w=1600, h=1000, title_y=70, title_size=34, sub_y=106, sub_size=20,
-        root_y=160, root_h=80, root_w=250,
-        tbar_y=280, head_y=328,
+        root_y=160, root_h=90, root_w=380,
+        tbar_y=290, head_y=348,
         show_examples=True,
-        examples_y=430, examples_h=100,
-        panels_y=600, panels_h=180,
-        bottom_take_y=858, bottom_sub_y=892, source_y=950,
+        examples_y=460, examples_h=110,
+        panels_y=620, panels_h=180,
+        bottom_take_y=860, bottom_sub_y=894, source_y=952,
     )
 
 
@@ -142,13 +142,24 @@ def render(config):
         f'<line x1="{rx}" y1="{tb}" x2="{rx}" y2="{tb + 25}" stroke="{R_color}" stroke-width="2.5"/>',
     ]
 
-    # Section heads
-    parts += [
-        f'<text x="{lx}" y="{head}" text-anchor="middle" font-family="{p.FONT}" font-size="22" font-weight="700" fill="{L_color}">{_esc(L_arm["name"])}</text>',
-        f'<text x="{lx}" y="{head + 26}" text-anchor="middle" font-family="{p.FONT}" font-size="14" fill="{p.MUTED}">{_esc(L_arm.get("sub", ""))}</text>',
-        f'<text x="{rx}" y="{head}" text-anchor="middle" font-family="{p.FONT}" font-size="22" font-weight="700" fill="{R_color}">{_esc(R_arm["name"])}</text>',
-        f'<text x="{rx}" y="{head + 26}" text-anchor="middle" font-family="{p.FONT}" font-size="14" fill="{p.MUTED}">{_esc(R_arm.get("sub", ""))}</text>',
-    ]
+    # Section heads — rendered as bordered cards (Rule 9: hierarchy consistency).
+    # Branch headers were bare text in v2 (2026-05-13); Matt flagged it twice.
+    head_w = 360
+    head_h = 80
+    head_card_y = head - 32  # raise the card so the name baseline sits inside
+    for arm_cx, arm, color in [(lx, L_arm, L_color), (rx, R_arm, R_color)]:
+        parts.append(
+            f'<rect x="{arm_cx - head_w//2}" y="{head_card_y}" width="{head_w}" height="{head_h}" '
+            f'rx="12" fill="{p.CARD}" stroke="{color}" stroke-width="2"/>'
+        )
+        parts.append(
+            f'<text x="{arm_cx}" y="{head}" text-anchor="middle" font-family="{p.FONT}" '
+            f'font-size="22" font-weight="700" fill="{color}">{_esc(arm["name"])}</text>'
+        )
+        parts.append(
+            f'<text x="{arm_cx}" y="{head + 26}" text-anchor="middle" font-family="{p.FONT}" '
+            f'font-size="14" fill="{p.MUTED}">{_esc(arm.get("sub", ""))}</text>'
+        )
 
     # Optional examples row (body aspect only)
     if show_examples and "examples" in L_arm and "examples" in R_arm:
@@ -162,8 +173,8 @@ def render(config):
                 f'<line x1="{arm_cx}" y1="{arm_top_y}" x2="{arm_cx}" y2="{arm_top_y + 30}" stroke="{color}" stroke-width="2"/>',
             ]
             n_ex = len(examples)
-            box_w = 200
-            spacing = 270
+            box_w = 280
+            spacing = 310
             total = (n_ex - 1) * spacing
             start_x = arm_cx - total // 2
             tbar_y2 = arm_top_y + 30
@@ -197,7 +208,7 @@ def render(config):
     p_cx_right = p_right_x + pw // 2
 
     parts += [
-        f'<rect x="{p_left_x}" y="{py}" width="{pw}" height="{ph}" rx="14" fill="{p.CARD}" stroke="{L_color}" stroke-width="1" stroke-opacity="0.5"/>',
+        f'<rect x="{p_left_x}" y="{py}" width="{pw}" height="{ph}" rx="14" fill="{p.CARD}" stroke="{L_color}" stroke-width="2"/>',
         f'<text x="{p_cx_left}" y="{py + 42}" text-anchor="middle" font-family="{p.FONT}" font-size="22" font-weight="700" fill="{L_color}">Alone</text>',
     ]
     for li, line in enumerate(L_arm.get("alone_lines", [])):
@@ -206,7 +217,7 @@ def render(config):
         parts.append(f'<text x="{p_cx_left}" y="{py + ph - 32}" text-anchor="middle" font-family="{p.FONT}" font-size="14" fill="{p.MUTED}" font-style="italic">{_esc(L_arm["alone_fail"])}</text>')
 
     parts += [
-        f'<rect x="{p_right_x}" y="{py}" width="{pw}" height="{ph}" rx="14" fill="{p.CARD}" stroke="{R_color}" stroke-width="1" stroke-opacity="0.5"/>',
+        f'<rect x="{p_right_x}" y="{py}" width="{pw}" height="{ph}" rx="14" fill="{p.CARD}" stroke="{R_color}" stroke-width="2"/>',
         f'<text x="{p_cx_right}" y="{py + 42}" text-anchor="middle" font-family="{p.FONT}" font-size="22" font-weight="700" fill="{R_color}">Alone</text>',
     ]
     for li, line in enumerate(R_arm.get("alone_lines", [])):

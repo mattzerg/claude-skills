@@ -1,0 +1,47 @@
+# Caddyfile — Zerg GTM Hub (private internal)
+#
+# Auth via env vars set as Fly secrets:
+#   fly secrets set GTM_HUB_USER=<username> GTM_HUB_AUTH_HASH='<bcrypt-hash>'
+#
+# Generate the hash with:
+#   docker run --rm caddy:2-alpine caddy hash-password --plaintext '<your-password>'
+
+:8080 {
+	root * /srv/dist
+	encode gzip
+
+	# Unauthenticated liveness probe for Fly's HTTP healthcheck.
+	# Plain text "ok" + 200; no data leak. Caddy's `handle` blocks are
+	# mutually exclusive — /healthz hits this block ONLY, everything else
+	# falls through to the auth+file_server handle below.
+	handle /healthz {
+		respond "ok" 200
+	}
+
+	# Everything else: basic auth + static file serving.
+	handle {
+		basic_auth {
+			{$GTM_HUB_USER} {$GTM_HUB_AUTH_HASH}
+		}
+		file_server
+	}
+
+	header {
+		# Security headers — secure defaults for static internal app
+		X-Frame-Options "DENY"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer"
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		# index.html ships an inline <style> block so style-src needs 'unsafe-inline';
+		# everything else is same-origin only. data: on font-src is reserved in case
+		# the page later inlines @font-face data URIs.
+		Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+		# Don't index in case the URL leaks
+		X-Robots-Tag "noindex, nofollow"
+	}
+
+	log {
+		output stdout
+		format console
+	}
+}

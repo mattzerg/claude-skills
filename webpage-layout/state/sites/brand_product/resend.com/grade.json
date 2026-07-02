@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 9,
+    "distinctiveness": 6,
+    "color": 8,
+    "density": 9,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Elegant serif display (likely Domaine) paired with clean sans-serif creates sophistication. Not the AI stencil, but serif-for-dev-tools is becoming a micro-trend. Strong character.",
+    "hierarchy": "Exceptional clarity\u2014massive headline dominates, single message, perfect visual weight distribution. The 'Email for developers' is doing all the work it needs to.",
+    "distinctiveness": "Clean dev tool aesthetic with good execution, but swap 'Resend' for 'Courier' or 'Postmark' and the visual system holds. Logo wall is generic trust signaling. Formula over fingerprint.",
+    "color": "Disciplined near-monochrome palette, dark mode done well. Accents are restrained. No decorative color pollution. Professional and confident.",
+    "density": "Confident use of negative space\u2014not afraid to let the hero breathe. Massive padding around core message shows restraint. Logo grid has proper spacing. Premium density balance.",
+    "voice": "Structure is pure SaaS stencil: Hero + Social Proof Logos + CTA. The 'Email for developers' positioning is sharp, but the IA is completely interchangeable with any dev tool. No structural surprise."
+  },
+  "winning_patterns": [
+    "Massive typographic hierarchy with serif display creates immediate gravitas",
+    "Confident negative space usage\u2014not filling every pixel",
+    "Restrained monochrome palette executed with discipline",
+    "Sharp positioning copy ('reach humans instead of spam folders')",
+    "Logo wall properly integrated without visual chaos"
+  ],
+  "anti_patterns": [
+    "Complete SaaS stencil architecture: hero + logos + CTA",
+    "Generic logo wall trust signaling (Warner Bros to Paper\u2014every dev tool does this)",
+    "No structural surprise or navigation curiosity\u2014pure conversion funnel",
+    "Dark mode is trendy but not distinctive for this category anymore",
+    "Could swap the product name and have identical visual system work"
+  ],
+  "one_word_personality": "polished",
+  "_url": "https://resend.com",
+  "_persona": "brand_product",
+  "_note": "Modern dev brand",
+  "_graded_at": "2026-05-07T23:29:12.020463Z"
+}

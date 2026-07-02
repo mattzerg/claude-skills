@@ -71,9 +71,9 @@ The closest in-evidence statement is Idan Beck's internal standup commentary ("l
 - `MattZerg/Conversations/Slack/standup/2026-05-04.md` — continued push on Supply/BOM tool; internal-deploy support; sync prep for 2026-05-05.
 - `MattZerg/Conversations/Slack/standup/2026-05-05.md` — Matt's note of "call with CesiumAstro with Idan, feedback on deliverable".
 - `MattZerg/Roadmap/2026-05-03-zergboard-roadmap.md` — references CesiumAstro as one of two named clients in production for Zergboard adoption signal.
-- `MattZerg/Projects/Zstack/Zergboard.md` — internal Zergboard usage shows 32 active cards on a "CesiumAstro" board (project tracking, not a customer-deployed Zerg product).
-- `MattZerg/Projects/Zstack/ZergStack.one-pager.md` — names CesiumAstro alongside Andesite and Durable as ZergStack production customers.
-- `MattZerg/Projects/Zstack/Case-Studies/cesiumastro.md` — earlier capture stub flagging NDA as unverified and target publish at Phase 2 Month 2 (Day 60).
+- `MattZerg/Projects/Zerg-Production/Zstack/Zergboard.md` — internal Zergboard usage shows 32 active cards on a "CesiumAstro" board (project tracking, not a customer-deployed Zerg product).
+- `MattZerg/Projects/Zerg-Production/Zstack/ZergStack.one-pager.md` — names CesiumAstro alongside Andesite and Durable as ZergStack production customers.
+- `MattZerg/Projects/Zerg-Production/Case-Studies/cesiumastro.md` — earlier capture stub flagging NDA as unverified and target publish at Phase 2 Month 2 (Day 60).
 
 ## Gaps
 

@@ -48,7 +48,7 @@ CORPUS_FILE = SKILL_ROOT / "corpus" / "one-pager-corpus.md"
 TEMPLATES_DIR = SKILL_ROOT / "templates"
 
 VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
+    "/Users/mattheweisner/Obsidian/Zerg/MattZerg"
 )
 GENRE_GUIDE = VAULT_ROOT / "_style" / "one_pager_style.md"
 WRITING_STYLE = VAULT_ROOT / "_style" / "writing_style.md"
@@ -60,7 +60,7 @@ VARIANTS = ("company", "consulting", "product")
 VARIANT_VAULT_DIR = {
     "company": VAULT_ROOT / "Zerg",
     "consulting": VAULT_ROOT / "Consulting",
-    "product": VAULT_ROOT / "Projects" / "Zstack",
+    "product": VAULT_ROOT / "Projects" / "Zerg-Production" / "Zstack",
 }
 
 VARIANT_DEFAULT_AUDIENCE = {
@@ -79,9 +79,9 @@ VARIANT_POSITIONING_DOCS = {
     "company": [VAULT_ROOT / "Zerg" / "positioning.md"],
     "consulting": [VAULT_ROOT / "Consulting" / "positioning.md"],
     "product": [
-        VAULT_ROOT / "Projects" / "Zstack" / "Zstack.md",
-        VAULT_ROOT / "Projects" / "Zstack" / "Pricing-Snapshot.md",
-        VAULT_ROOT / "Projects" / "Zstack" / "Integration.md",
+        VAULT_ROOT / "Projects" / "Zerg-Production" / "Zstack" / "Zstack.md",
+        VAULT_ROOT / "Projects" / "Zerg-Production" / "Zstack" / "Pricing-Snapshot.md",
+        VAULT_ROOT / "Projects" / "Zerg-Production" / "Zstack" / "Integration.md",
     ],
 }
 

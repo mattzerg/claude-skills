@@ -1,0 +1,390 @@
+{
+  "name": "Salesforce",
+  "url": "https://www.salesforce.com",
+  "domain": "salesforce.com",
+  "scanned_at": "2026-07-01T05:55:35.657342",
+  "sources": {
+    "landing": {
+      "url": "https://www.salesforce.com",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.salesforce.com/\" on this server.\nReference #18.e81c3f17.1782899736.16fbb85f\nhttps://errors.edgesuite.net/18.e81c3f17.1782899736.16fbb85f",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.salesforce.com/sales/pricing/",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.salesforce.com/sales/pricing/\" on this server.\nReference #18.f01c3f17.1782899756.14418f58\nhttps://errors.edgesuite.net/18.f01c3f17.1782899756.14418f58",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_included_release_notes.htm",
+      "title": "Salesforce Help | Article",
+      "text": "Salesforce Help | Article\nLoading\n\u00d7\nSorry to interrupt\nCSS Error\nRefresh\nSelect An Org\nOpen Main Menu\nClose\nModal Body...\nAgentforce is temporarily unavailable. Please try again later or visit Help topics below. For additional support, please contact\nyour local support number\nfor assistance. Thank you!\nSalesforce Enforces New Security Requirements in Summer 2026\nRead More\nClose\nWe looked high and low\nbut couldn't find that page.\nGo Home\n1-800-667-6389\nSALESFORCE\nPrivacy Statement\nSecurity Statement\nTerms of Use\nParticipation Guidelines\nCookie Preference Center\nYour Privacy Choices\nCOMMUNITY\nAppExchange\nSalesforce Admins\nSalesforce Developers\nTrailhead\nTraining\nTrust\nEnglish\nSelect Org\nSelect Org\nEnglish\nFran\u00e7ais\nDeutsch\nItaliano\n\u65e5\u672c\u8a9e\nEspa\u00f1ol (M\u00e9xico)\nEspa\u00f1ol\n\u4e2d\u6587\uff08\u7b80\u4f53\uff09\n\u4e2d\u6587\uff08\u7e41\u9ad4\uff09\n\ud55c\uad6d\uc5b4\n\u0420\u0443\u0441\u0441\u043a\u0438\u0439\nPortugu\u00eas (Brasil)\nSuomi\nDansk\nSvenska\nNederlands\nNorsk\n\u00a9 Copyright 2026 Salesforce.com, inc. All rights reserved. Various trademarks held by their respective owners.\nSalesforce, Inc. Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105, United States\nLoading\nSalesforce Help | Article\nCookie Consent Manager\nCookie Consent Manager\nGeneral Information\nRequired Cookies\nFunctional Cookies\nAdvertising Cookies\nGeneral Information\nWe use three kinds of cookies on our websites: required, functional, and advertising. You can choose whether functional and advertising cookies apply. Click on the different cookie categories to find out more about each category and to change the default settings.\nPrivacy Statement\nRequired Cookies\nAlways Active\nRequired cookies are necessary for basic website functionality. Some examples include: session cookies needed to transmit the website, authentication cookies, and security cookies.\nCookies Details\nFunctional Cookies\nFunctional Cookies\nFunctional cookies enhance functions, performance, and services on the website. Some examples include: cookies used to analyze site traffic, cookies used for market research, and cookies used to display advertising that is not directed to a particular individual.\nCookies Details\nAdvertising Cookies\nAdvertising Cookies\nAdvertising cookies track activity across websites in order to understand a viewer\u2019s interests, and direct them specific marketing. Some examples include: cookies used for remarketing, or interest-based advertising.\nCookies Details\nBack Button\nCookie List\nFilter Button\nConsent\nLeg.Interest\ncheckbox label\nlabel\ncheckbox label\nlabel\ncheckbox label\nlabel\nClear\ncheckbox label\nlabel\nApply\nCancel\nSave Settings\nAccept All Cookies",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://developer.salesforce.com/docs",
+      "title": "Developer Documentation | Salesforce Developers",
+      "text": "Developer Documentation | Salesforce Developers\nBrowse docs\nStart Learning\nBrowse\nGet Support\nCookie Consent Manager\nCookie Consent Manager\nGeneral Information\nRequired Cookies\nFunctional Cookies\nAdvertising Cookies\nGeneral Information\nWe use three kinds of cookies on our websites: required, functional, and advertising. You can choose whether functional and advertising cookies apply. Click on the different cookie categories to find out more about each category and to change the default settings.\nPrivacy Statement\nRequired Cookies\nAlways Active\nRequired cookies are necessary for basic website functionality. Some examples include: session cookies needed to transmit the website, authentication cookies, and security cookies.\nCookies Details\nFunctional Cookies\nFunctional Cookies\nFunctional cookies enhance functions, performance, and services on the website. Some examples include: cookies used to analyze site traffic, cookies used for market research, and cookies used to display advertising that is not directed to a particular individual.\nCookies Details\nAdvertising Cookies\nAdvertising Cookies\nAdvertising cookies track activity across websites in order to understand a viewer\u2019s interests, and direct them specific marketing. Some examples include: cookies used for remarketing, or interest-based advertising.\nCookies Details\nBack Button\nCookie List\nFilter Button\nConsent\nLeg.Interest\ncheckbox label\nlabel\ncheckbox label\nlabel\ncheckbox label\nlabel\nClear\ncheckbox label\nlabel\nApply\nCancel\nSave Settings\nAccept All Cookies",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.salesforce.com/products/platform/integration/",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.salesforce.com/products/platform/integration/\" on this server.\nReference #18.e81c3f17.1782899773.16fc8339\nhttps://errors.edgesuite.net/18.e81c3f17.1782899773.16fc8339",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/salesforce-sales-cloud/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Salesforce is buying Tableau for $15.7B",
+          "url": "https://techcrunch.com/2019/06/10/salesforce-is-buying-data-visualization-company-tableau-for-15-7b-in-all-stock-deal/",
+          "points": 950,
+          "num_comments": 376,
+          "created_at": "2019-06-10T11:24:54Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20145630"
+        },
+        {
+          "title": "Salesforce Signs Definitive Agreement to Acquire Slack",
+          "url": "https://www.salesforce.com/news/press-releases/2020/12/01/salesforce-definitive-agreement-update/",
+          "points": 858,
+          "num_comments": 633,
+          "created_at": "2020-12-01T21:10:46Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25269934"
+        },
+        {
+          "title": "Salesforce Buys Heroku (YC W08)  For $212 Million In Cash",
+          "url": "http://techcrunch.com/2010/12/08/breaking-salesforce-buys-heroku-for-212-million-in-cash/",
+          "points": 717,
+          "num_comments": 198,
+          "created_at": "2010-12-08T11:04:31Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1982489"
+        },
+        {
+          "title": "Salesforce fires red team staffers who gave Defcon talk",
+          "url": "http://www.zdnet.com/article/salesforce-fires-red-team-staffers-who-gave-defcon-talk/",
+          "points": 698,
+          "num_comments": 290,
+          "created_at": "2017-08-09T20:55:28Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14973506"
+        },
+        {
+          "title": "What's Salesforce?",
+          "url": "https://tryretool.com/blog/salesforce-for-engineers/",
+          "points": 619,
+          "num_comments": 232,
+          "created_at": "2019-06-25T18:13:15Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20277115"
+        },
+        {
+          "title": "Hugging Face raises $235M from investors including Salesforce and Nvidia",
+          "url": "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/",
+          "points": 378,
+          "num_comments": 203,
+          "created_at": "2023-08-24T14:02:12Z",
+          "hn_url": "https://news.ycombinator.com/item?id=37248895"
+        },
+        {
+          "title": "Twenty, a modern CRM alternative to Salesforce",
+          "url": "https://twenty.com",
+          "points": 378,
+          "num_comments": 165,
+          "created_at": "2024-06-11T16:15:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=40648082"
+        },
+        {
+          "title": "Salesforce is in talks to buy Slack",
+          "url": "https://www.cnbc.com/2020/11/25/slack-shares-jump-following-report-of-possible-salesforce-acquisition.html",
+          "points": 377,
+          "num_comments": 350,
+          "created_at": "2020-11-25T16:52:59Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25211262"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.salesforce.com/sales/pricing/",
+    "changelog": "https://help.salesforce.com/s/articleView?id=release-notes.rn_included_release_notes.htm",
+    "docs": "https://developer.salesforce.com/docs",
+    "integrations": "https://www.salesforce.com/products/platform/integration/",
+    "g2": "https://www.g2.com/products/salesforce-sales-cloud/reviews"
+  },
+  "analysis": {
+    "name": "Salesforce",
+    "url": "https://www.salesforce.com",
+    "tagline": null,
+    "value_proposition": "Cloud-based CRM platform for sales, service, marketing, and application development.",
+    "target_segment": "enterprise",
+    "ideal_customer": "large enterprises and mid-market companies needing customizable CRM, sales, and customer service platforms with extensive integrations",
+    "features": [
+      {
+        "name": "sales cloud",
+        "description": "CRM platform for sales pipeline, opportunity, and account management",
+        "evidence_source": "other",
+        "evidence_quote": "Salesforce Sales Cloud (G2 product page)",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "service cloud",
+        "description": "Customer service and support case management platform",
+        "evidence_source": "other",
+        "evidence_quote": "inferred from Salesforce product portfolio",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "marketing cloud",
+        "description": "Marketing automation and campaign management",
+        "evidence_source": "other",
+        "evidence_quote": "inferred from Salesforce product portfolio",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "tableau analytics",
+        "description": "Business intelligence and data visualization (acquired 2019)",
+        "evidence_source": "hn",
+        "evidence_quote": "Salesforce is buying Tableau for $15.7B",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "slack integration",
+        "description": "Team messaging platform (acquired 2020)",
+        "evidence_source": "hn",
+        "evidence_quote": "Salesforce Signs Definitive Agreement to Acquire Slack",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "heroku platform",
+        "description": "Cloud application platform for developers (acquired 2010)",
+        "evidence_source": "hn",
+        "evidence_quote": "Salesforce Buys Heroku (YC W08) For $212 Million In Cash",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "agentforce",
+        "description": "AI agent platform for customer-facing autonomous workflows",
+        "evidence_source": "changelog",
+        "evidence_quote": "Agentforce is temporarily unavailable. Please try again later",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "appexchange",
+        "description": "Marketplace for third-party apps and extensions",
+        "evidence_source": "other",
+        "evidence_quote": "AppExchange (footer navigation)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "trailhead",
+        "description": "Learning platform for Salesforce skills and certification",
+        "evidence_source": "other",
+        "evidence_quote": "Trailhead (footer navigation)",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "developer platform",
+        "description": "APIs, Apex, Lightning components for custom apps",
+        "evidence_source": "docs",
+        "evidence_quote": "Developer Documentation | Salesforce Developers",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "lightning platform",
+        "description": "Low-code app builder and UI framework",
+        "evidence_source": "other",
+        "evidence_quote": "inferred from developer docs surface",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "apex",
+        "description": "Proprietary programming language for Salesforce customization",
+        "evidence_source": "docs",
+        "evidence_quote": "inferred from developer documentation surface",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "multi-language ui",
+        "description": "Support for 16+ interface languages",
+        "evidence_source": "other",
+        "evidence_quote": "English, Fran\u00e7ais, Deutsch, Italiano, \u65e5\u672c\u8a9e, Espa\u00f1ol...",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sso",
+        "description": "Single sign-on and enterprise authentication",
+        "evidence_source": "other",
+        "evidence_quote": "Salesforce Enforces New Security Requirements in Summer 2026",
+        "tier": "enterprise",
+        "confidence": "low"
+      },
+      {
+        "name": "trust and security",
+        "description": "Compliance, security posture, and status transparency",
+        "evidence_source": "other",
+        "evidence_quote": "Trust (footer navigation)",
+        "tier": "all",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Slack",
+      "Tableau",
+      "Heroku",
+      "MuleSoft",
+      "AppExchange partner apps"
+    ],
+    "differentiators": [
+      "market-leading CRM incumbent",
+      "extensive AppExchange ecosystem",
+      "end-to-end sales/service/marketing suite",
+      "Trailhead learning ecosystem"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026",
+        "what": "New security requirements enforcement in Summer 2026",
+        "source": "Salesforce Enforces New Security Requirements in Summer 2026"
+      },
+      {
+        "date": "2026",
+        "what": "Agentforce AI agent platform",
+        "source": "Agentforce is temporarily unavailable"
+      },
+      {
+        "date": "2019",
+        "what": "Acquired Tableau for $15.7B",
+        "source": "Salesforce is buying Tableau for $15.7B"
+      },
+      {
+        "date": "2020",
+        "what": "Acquired Slack",
+        "source": "Salesforce Signs Definitive Agreement to Acquire Slack"
+      },
+      {
+        "date": "2010",
+        "what": "Acquired Heroku for $212M",
+        "source": "Salesforce Buys Heroku (YC W08) For $212 Million In Cash"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "extensive customization and platform depth",
+        "large ecosystem of integrations and consultants"
+      ],
+      "complaints": [
+        "high cost and per-seat pricing at scale",
+        "complexity requiring dedicated admins/consultants",
+        "controversial internal moves (fired red team staff who gave Defcon talk)"
+      ],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "contact-sales",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Starter Suite",
+          "price_per_seat_per_month": "$25",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "entry Sales/Service/Marketing bundle (pricing page inaccessible; historical benchmark)"
+        },
+        {
+          "name": "Pro Suite",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "pricing page returned Access Denied \u2014 tier exists per public marketing but price unverified"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "pricing page inaccessible \u2014 historically ~$165/seat/mo"
+        },
+        {
+          "name": "Unlimited",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "top tier with full platform access; pricing page inaccessible"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Pricing and landing pages returned Access Denied (edge-blocked); tier structure inferred from public knowledge. Annual contracts standard; per-cloud pricing (Sales Cloud, Service Cloud, etc.) sold separately."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Trillions of dollars spent just to work on customer services?",
+        "url": "https://news.ycombinator.com/item?id=48596176",
+        "points": 8,
+        "comments": 3,
+        "age_days": 12,
+        "hn_url": "https://news.ycombinator.com/item?id=48596176"
+      },
+      {
+        "title": "Show HN: Opencom \u2013 an open-source Intercom alternative given the Salesforce deal",
+        "url": "https://opencom.dev",
+        "points": 5,
+        "comments": 0,
+        "age_days": 15,
+        "hn_url": "https://news.ycombinator.com/item?id=48552549"
+      },
+      {
+        "title": "Show HN: Valmis, an OpenClaw alternative built for work, with security in mind",
+        "url": "https://github.com/valmishq/valmis",
+        "points": 3,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48732702"
+      },
+      {
+        "title": "Salesforce Signs Definitive Agreement to Acquire Fin (Formely Intercom))",
+        "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Signs-Definitive-Agreement-to-Acquire-Fin/default.aspx",
+        "points": 3,
+        "comments": 1,
+        "age_days": 15,
+        "hn_url": "https://news.ycombinator.com/item?id=48540472"
+      },
+      {
+        "title": "Show HN: Self-Hostable Company Brain",
+        "url": "https://www.npmjs.com/package/@connectai/selfhost",
+        "points": 1,
+        "comments": 1,
+        "age_days": 12,
+        "hn_url": "https://news.ycombinator.com/item?id=48590547"
+      }
+    ]
+  }
+}

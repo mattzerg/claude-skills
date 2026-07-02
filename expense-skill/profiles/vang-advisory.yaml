@@ -1,0 +1,14 @@
+# Reimburser profile: Vang Advisory — PHASE 2, NOT YET CONFIGURED
+# Expenses tracked in Google Drive folder + Google Sheet.
+# To activate: fill in drive_folder_id + sheet_id + column schema, set enabled: true.
+name: vang-advisory
+display_name: "Vang Advisory"
+type: drive-sheet
+enabled: false
+
+channels:
+  - kind: reimbursement
+    method: drive-sheet
+    drive_folder_id: ""    # TODO: discover via drive-skill
+    sheet_id: ""           # TODO: discover via google-sheets-skill
+    sheet_columns: []      # TODO: e.g. [date, vendor, amount, category, memo, receipt_link]

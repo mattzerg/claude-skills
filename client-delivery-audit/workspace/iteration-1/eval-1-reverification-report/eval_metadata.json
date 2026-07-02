@@ -1,0 +1,19 @@
+{
+  "eval_id": 1,
+  "eval_name": "reverification-report",
+  "prompt": "Idan shipped a new build of the Acme portal overnight (v7a91d03). Last week's findings are in acme-portal-prior-findings.md. An agent walked the new build and captured raw observations in acme-portal-new-build-observations.md. Write up the re-verification FINDINGS report for the client team. Save it as a markdown file in the outputs directory.",
+  "assertions": [
+    "The report contains a re-verification section that addresses ALL 5 prior findings by ID (ORD-01, ORD-02, ORD-03, FUL-01, FUL-02) — none silently dropped",
+    "ORD-01 (discount drop) is marked Fixed/resolved with the evidence that all three layers now agree on $1,564.00",
+    "ORD-02 (cancelled orders in Open Orders KPI) is marked Fixed/resolved, correctly handling that the count changed from 11 to 12 due to a new order (not flagging the different number as a failure)",
+    "ORD-03 (date filter timezone) is marked Fixed/resolved with evidence",
+    "FUL-01 (shipment delivered vs in-transit) is marked STILL BROKEN / not fixed — not marked as resolved",
+    "FUL-02 (tracking number whitespace) is marked blocked/not-verifiable because the fulfillment detail screen now 500s — it is NOT marked as fixed and NOT silently dropped",
+    "The fulfillment detail screen 500 error (all 28 shipments) is reported as a NEW confirmed finding with High or Critical severity",
+    "The negative available credit (−$2,300.00, customer over limit) is NOT reported as a confirmed defect — it is treated as correct behavior, refuted, or at most a low-severity display/UX consideration",
+    "The June payments $0.00 observation is NOT reported as a defect (correctly identified as accurate for June 1)",
+    "The report includes a severity summary (counts by severity)",
+    "The report includes a coverage matrix or explicit coverage statement showing what was checked vs blocked",
+    "Each confirmed finding includes evidence/proof, repro steps, and the layer at fault"
+  ]
+}

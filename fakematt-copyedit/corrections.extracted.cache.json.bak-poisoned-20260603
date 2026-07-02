@@ -1,0 +1,2499 @@
+{
+  "sections": {
+    "16f7acac5e44bf54": [],
+    "c5c1679c7ebdb97a": [
+      {
+        "rule": "Cap em-dashes at \u2264 3 in pieces \u2264 800 words; convert conversational asides to periods",
+        "why": "Pulp/social register reads with periods, not em-dashes; dashes dilute when overused",
+        "when": "Short-form blog posts (\u2264 800 words) in pulp or social register",
+        "example_before": "\u2026trying again \u2014 often with the same broken approach\u2026",
+        "example_after": "\u2026trying again. Often with the same broken approach\u2026"
+      },
+      {
+        "rule": "Give sharp single-sentence central-frame claims their own paragraph",
+        "why": "White space sells punchlines; burying a key claim mid-paragraph kills its impact",
+        "when": "Pulp-register blog posts with a central thesis or memorable frame line",
+        "example_before": "The retry loop is the default, and the default is wrong. We notice this at Zerg \u2014 so a new paper\u2026",
+        "example_after": "The retry loop is the default, and the default is wrong.\n\nWe notice this at Zerg\u2026"
+      },
+      {
+        "rule": "Keep figure captions \u2264 20 words; use numeric tells when data supports; never restate the body",
+        "why": "Pulp social captions are billboards, not paragraphs; redundancy with body wastes reader attention",
+        "when": "Any figure/diagram caption in short-form blog or social post",
+        "example_before": "Figure 1 shows the pass rate improvement across three phases of the experiment, rising from 22% to 54% as the model learned to correct itself.",
+        "example_after": "1,178 \u2192 174 \u2192 78. Single-pass correctness: 22% \u2192 54%."
+      },
+      {
+        "rule": "Name the baseline whenever citing a speedup or improvement metric",
+        "why": "Vague baselines are what sharp readers attack; precision is compatible with pulp register",
+        "when": "Any performance claim using 'over baseline', 'vs baseline', or 'than baseline'",
+        "example_before": "3.12\u00d7 speedup over baseline within 100 steps.",
+        "example_after": "3.12\u00d7 over PyTorch eager within 100 steps."
+      },
+      {
+        "rule": "Use exactly one CTA in the closer; keep the more confident and specific one",
+        "why": "Two CTAs dilute each other; filler enterprise phrases undercut the post's voice",
+        "when": "Pulp blog post closers with any call to action",
+        "example_before": "We'd love to compare notes \u2014 or come argue with us about what should and shouldn't transfer.",
+        "example_after": "Come argue with us about what should and shouldn't transfer."
+      },
+      {
+        "rule": "Replace 'competitive with X' / 'comparable to X' / 'in line with X' with a verb-forward claim",
+        "why": "Pulp register wants verbs; nominal hedges hide the actual result",
+        "when": "Any performance or comparison claim in blog, launch copy, or social",
+        "example_before": "competitive with vendor-optimized code",
+        "example_after": "as fast as vendor-optimized code"
+      },
+      {
+        "rule": "Route gap-admission / strategic-disclosure lines to a separate 'Strategic disclosure' section, not writing-quality findings",
+        "why": "Whether to admit a gap is a strategic call for the author/CEO, not a copyedit judgment",
+        "when": "Any review of external-facing copy that contains a 'we don't have X yet' type admission",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "When a draft title uses 'What X Gets Wrong About Y' or a curiosity-gap shape, check if a flat declarative version exists in the body or share copy and recommend it as primary",
+        "why": "Flat declaratives are sharper and more pulp; curiosity-gap titles are a worn-out pattern",
+        "when": "Any blog post or article headline in pulp or social register",
+        "example_before": "What AI Agents Get Wrong About Failure",
+        "example_after": "Most AI Agents Have No Memory"
+      }
+    ],
+    "b89cc551a008f3fd": [],
+    "ed6fe0196222ae89": [
+      {
+        "rule": "Open with the tension or payoff, not the backstory",
+        "why": "Readers decide in the first sentence whether to continue; context earns its place only after the hook exists.",
+        "when": "Blog post introductions, email subject lines, launch copy headlines",
+        "example_before": "We've been building this for six months and thinking hard about the problem space before we finally arrived at\u2026",
+        "example_after": "Most analytics tools lie to you. Here's what we built instead."
+      },
+      {
+        "rule": "Cut throat-clearing phrases ('I wanted to share', 'I thought it might be worth', 'just a quick note')",
+        "why": "These phrases signal uncertainty and dilute the authority of what follows.",
+        "when": "Professional emails, outreach messages, any first paragraph",
+        "example_before": "I just wanted to quickly share something I thought might be interesting to you.",
+        "example_after": "Here's something worth your attention."
+      },
+      {
+        "rule": "Name the reader's problem before naming your solution",
+        "why": "People scan for evidence you understand them before they trust you to fix anything.",
+        "when": "Product launch copy, cold outreach, landing page above-the-fold text",
+        "example_before": "Introducing FastPipe \u2014 a new way to move data.",
+        "example_after": "Your data pipeline breaks every time the schema changes. FastPipe fixes that."
+      },
+      {
+        "rule": "Replace 'very', 'really', and 'quite' with a stronger word or nothing",
+        "why": "Intensifiers weaken the noun or adjective they modify by signaling it couldn't carry the weight alone.",
+        "when": "All professional writing",
+        "example_before": "This is a really important decision that will have a very significant impact.",
+        "example_after": "This decision will reshape how the team ships."
+      },
+      {
+        "rule": "Use active voice; make the agent the subject",
+        "why": "Passive constructions hide accountability and slow the reader down.",
+        "when": "All professional writing, especially announcements and instructions",
+        "example_before": "Mistakes were made and lessons have been learned by the team.",
+        "example_after": "We made mistakes and learned from them."
+      },
+      {
+        "rule": "Shorten sentences that run past two clauses",
+        "why": "Long multi-clause sentences force the reader to hold too much in working memory at once.",
+        "when": "Blog posts, email body copy, any writing meant to be scanned",
+        "example_before": "We looked at the data, which showed a trend, and decided to act on it, which led to the result we wanted.",
+        "example_after": "The data showed a clear trend. We acted on it. It worked."
+      },
+      {
+        "rule": "Pick one call to action per email; remove secondary asks",
+        "why": "Multiple asks diffuse attention and reduce the chance any single one gets done.",
+        "when": "Outreach emails, follow-up messages, newsletter CTAs",
+        "example_before": "Let me know your thoughts, and also feel free to share with others, and book time if you want to chat.",
+        "example_after": "If this resonates, book 20 minutes here."
+      },
+      {
+        "rule": "End with the ask or the next step, not a summary",
+        "why": "Summaries signal the writer is done; a concrete next step pulls the reader forward.",
+        "when": "Emails, proposals, blog post conclusions",
+        "example_before": "So in summary, we covered X, Y, and Z. Hope this was helpful!",
+        "example_after": "Try it on your next draft and see what changes."
+      },
+      {
+        "rule": "Replace jargon with the plain word your audience already uses",
+        "why": "Borrowed jargon signals you're performing expertise rather than demonstrating it.",
+        "when": "Cross-functional emails, blog posts, any writing for a mixed audience",
+        "example_before": "We need to leverage our core competencies to ideate around the opportunity space.",
+        "example_after": "We should use what we're already good at to find new opportunities."
+      },
+      {
+        "rule": "Show the specific number; don't describe the magnitude",
+        "why": "Vague magnitude words ('significant', 'huge', 'major') are reader-relative; numbers anchor meaning.",
+        "when": "Results announcements, launch copy, investor or stakeholder updates",
+        "example_before": "We saw a significant improvement in load time after the change.",
+        "example_after": "Load time dropped from 4.2 s to 0.9 s."
+      },
+      {
+        "rule": "Match sentence length to emotional pace: short for emphasis, longer for texture",
+        "why": "Monotone sentence length flattens the reading experience and buries your most important points.",
+        "when": "Blog posts, essays, narrative sections of longer emails",
+        "example_before": "The launch went well. People liked it. We hit our goals. It was a good day.",
+        "example_after": "The launch hit every goal we set. But the part I'll remember: a customer emailed within the first hour to say it fixed the exact problem we'd bet on."
+      },
+      {
+        "rule": "Delete 'I think' and 'I believe' when the sentence already expresses an opinion",
+        "why": "Hedging a claim that's already clearly your view signals a lack of conviction.",
+        "when": "Professional emails, blog posts, any first-person opinion writing",
+        "example_before": "I think this is probably the right approach for most teams.",
+        "example_after": "This is the right approach for most teams."
+      },
+      {
+        "rule": "Use contractions in conversational registers; drop them in formal ones",
+        "why": "Contractions calibrate warmth and register; mismatched formality sounds robotic or overly casual.",
+        "when": "Blog posts and outreach (use contractions); legal, board, or compliance writing (avoid them)",
+        "example_before": "We are pleased to announce that we have reached our goal.",
+        "example_after": "We're pleased to announce we hit our goal."
+      },
+      {
+        "rule": "State your conclusion first, then support it (inverted pyramid)",
+        "why": "Busy readers often stop after the first paragraph; burying the conclusion loses them.",
+        "when": "Business emails, memos, analytical blog posts",
+        "example_before": "We reviewed the data, consulted the team, and weighed the tradeoffs\u2026 therefore we recommend Option B.",
+        "example_after": "We recommend Option B. Here's why."
+      },
+      {
+        "rule": "Cut the word 'just' unless it signals timing or precision",
+        "why": "'Just' used as a softener minimizes what you're saying and undermines authority.",
+        "when": "All professional writing, especially requests and recommendations",
+        "example_before": "I just wanted to check in and see if you'd had a chance to review this.",
+        "example_after": "Have you had a chance to review this?"
+      },
+      {
+        "rule": "Don't apologize for the email's length or your reader's time in the opening",
+        "why": "Pre-emptive apologies frame the message as an imposition before the reader has formed any view.",
+        "when": "All email writing",
+        "example_before": "Sorry for the long email, I know you're busy, but I wanted to\u2026",
+        "example_after": "Three things I need from you by Thursday:"
+      },
+      {
+        "rule": "Use second person ('you') to address the reader directly rather than 'users' or 'teams'",
+        "why": "Generic third-person nouns create distance; 'you' makes the reader feel directly addressed.",
+        "when": "Blog posts, marketing copy, outreach emails",
+        "example_before": "Teams that adopt this approach tend to see better results.",
+        "example_after": "When you adopt this approach, you'll see better results."
+      },
+      {
+        "rule": "Break up noun stacks into 'X that does Y' or 'X for Y' constructions",
+        "why": "Stacked nouns compress meaning until it becomes ambiguous or inaccessible.",
+        "when": "Technical writing, product descriptions, any domain-heavy prose",
+        "example_before": "pipeline execution failure notification system configuration",
+        "example_after": "settings for the system that notifies you when a pipeline fails"
+      },
+      {
+        "rule": "Vary paragraph length; avoid three or more consecutive same-length paragraphs",
+        "why": "Uniform paragraph length creates a visual and cognitive rhythm that dulls the reader.",
+        "when": "Blog posts, longer emails, any document over 300 words",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Spell out what 'this' or 'it' refers to when the antecedent is more than one sentence back",
+        "why": "Ambiguous pronouns force backtracking and break reading flow.",
+        "when": "All writing, especially technical explanations and multi-step arguments",
+        "example_before": "The system processes the event, logs the result, and updates the state. This is why it matters.",
+        "example_after": "The system processes the event, logs the result, and updates the state. That audit trail is why the design matters."
+      }
+    ],
+    "25377f929e34be9c": [],
+    "065154a6de751059": [
+      {
+        "rule": "Strip solo intensifiers (really, very, truly, quite, just) unless load-bearing",
+        "why": "Intensifiers signal the writer doesn't trust the noun or adjective to carry the claim, and cutting them strengthens it.",
+        "when": "Any professional writing \u2014 emails, blog posts, launch copy",
+        "example_before": "This is a really transformative approach to hiring.",
+        "example_after": "This is a transformative approach to hiring."
+      },
+      {
+        "rule": "When you know who acted, name them \u2014 rewrite passive constructions into active ones",
+        "why": "Named agents create accountability and motion; passive constructions create distance.",
+        "when": "Emails and launch copy where ownership matters; acceptable in blog posts when the agent is genuinely unknown or unimportant",
+        "example_before": "The decision was made to delay the rollout.",
+        "example_after": "We decided to delay the rollout."
+      },
+      {
+        "rule": "Cut 'it's important to,' 'it's worth noting,' 'needless to say,' 'it should be mentioned' \u2014 assert directly",
+        "why": "These phrases front-load noise, signaling something meaningful is coming without actually saying it.",
+        "when": "All registers; especially common in blog intros and email prefacing",
+        "example_before": "It's worth noting that our approach differs from competitors.",
+        "example_after": "Our approach differs from competitors."
+      },
+      {
+        "rule": "Delete 'As you can see,' 'As I mentioned,' 'It goes without saying that,' 'Clearly' \u2014 start with the substance",
+        "why": "These openers add no information; they either condescend or signal poor structure.",
+        "when": "Blog posts, emails, any multi-paragraph writing",
+        "example_before": "As you can see, the data supports a different conclusion.",
+        "example_after": "The data supports a different conclusion."
+      },
+      {
+        "rule": "Convert nominalizations back into verbs: 'make a decision \u2192 decide,' 'give consideration to \u2192 consider,' 'have an impact \u2192 impact'",
+        "why": "Nominalizations bloat sentence length and slow reading; the verb form is almost always tighter and more direct.",
+        "when": "All professional writing",
+        "example_before": "We need to make a determination about the timeline.",
+        "example_after": "We need to determine the timeline."
+      },
+      {
+        "rule": "Replace worn clich\u00e9s and tired metaphors with specific language that earns its place",
+        "why": "Clich\u00e9s signal the writer didn't think carefully; specific language signals they did.",
+        "when": "All registers, especially launch copy and blog posts where differentiation matters",
+        "example_before": "This will really move the needle for your team.",
+        "example_after": "Teams cut onboarding time by 40% in the first month."
+      },
+      {
+        "rule": "Follow every abstract noun (value, impact, outcomes, results, success) immediately with a concrete referent \u2014 what, for whom, by how much",
+        "why": "Abstractions without referents are unverifiable assertions; concrete specifics let the reader evaluate the claim.",
+        "when": "Launch copy, blog posts, any persuasive writing",
+        "example_before": "This creates real value for your business.",
+        "example_after": "This cuts your support queue by half."
+      },
+      {
+        "rule": "Don't label emotions (excited, proud, frustrated) \u2014 render the scene or action that caused the emotion",
+        "why": "Telling the reader what to feel directs rather than invites; the scene creates the feeling more reliably.",
+        "when": "Blog posts, personal anecdotes, narrative emails",
+        "example_before": "I was really excited when the contract closed.",
+        "example_after": "I read the signed PDF three times before I believed it."
+      },
+      {
+        "rule": "Keep all items in a list grammatically parallel \u2014 same part of speech, same verb form, same syntactic shape",
+        "why": "Parallelism is a contract with the reader; breaking it creates cognitive friction.",
+        "when": "Any list: bullet points, feature lists, numbered steps, series in a sentence",
+        "example_before": "Fast onboarding, Reduces churn, Security built in.",
+        "example_after": "Fast onboarding, lower churn, built-in security."
+      },
+      {
+        "rule": "Vary sentence length deliberately \u2014 after two or three medium sentences, use a short one, then expand again",
+        "why": "Uniform sentence length creates a metronome effect that reads as monotone; variation creates emphasis and pace.",
+        "when": "Blog posts, long-form emails, any writing meant to hold attention",
+        "example_before": "We built the tool over six months. The team worked across three time zones. Every sprint taught us something new.",
+        "example_after": "We built the tool over six months, working across three time zones. Every sprint taught us something new."
+      },
+      {
+        "rule": "Pick a tense and hold it \u2014 only shift intentionally (e.g., past for the story, present for the takeaway)",
+        "why": "Unintentional tense drift signals the writer wasn't tracking the narrative plane and erodes trust.",
+        "when": "Case studies, blog posts, any narrative writing",
+        "example_before": "We launched in Q3. The team builds quickly. We were surprised by the response.",
+        "example_after": "We launched in Q3. The team built quickly. We were surprised by the response."
+      },
+      {
+        "rule": "Every pronoun must have an unambiguous antecedent in the same paragraph \u2014 when in doubt, repeat the noun",
+        "why": "Pronoun ambiguity forces re-reading; clarity costs one extra word.",
+        "when": "All writing; critical in technical or process descriptions with multiple nouns",
+        "example_before": "The platform integrates with the CRM. It then syncs the data. It flags errors automatically.",
+        "example_after": "The platform integrates with the CRM, syncs the data, and flags errors automatically."
+      },
+      {
+        "rule": "Lead with the most important information \u2014 move context, background, or qualifications after the core claim",
+        "why": "Readers scan; if the news is buried, most won't reach it.",
+        "when": "Emails, blog posts, announcements; less rigid in long-form narrative where buildup is intentional",
+        "example_before": "Over the past year we've been talking to hundreds of customers\u2026 [3 paragraphs]\u2026 Today we're launching X.",
+        "example_after": "Today we're launching X. Here's what led us here."
+      },
+      {
+        "rule": "Use em dashes sparingly \u2014 one, maybe two per page; when reaching for a third, restructure the sentence",
+        "why": "The em dash's power comes from rarity; overuse flattens it into visual noise.",
+        "when": "Blog posts, long-form copy; less of a concern in short emails",
+        "example_before": "The product \u2014 which we built over six months \u2014 solves a problem \u2014 one we kept hearing about \u2014 in a new way.",
+        "example_after": "The product, built over six months, solves a problem we kept hearing about \u2014 in a new way."
+      },
+      {
+        "rule": "Always use the Oxford (serial) comma in lists of three or more items",
+        "why": "Omitting it creates genuine ambiguity in some constructions; consistency eliminates the need to judge each case.",
+        "when": "All writing",
+        "example_before": "speed, accuracy and reliability",
+        "example_after": "speed, accuracy, and reliability"
+      },
+      {
+        "rule": "Cut redundant phrasing where one word contains the meaning of the other: 'past history \u2192 history,' 'end result \u2192 result,' 'completely finished \u2192 finished'",
+        "why": "Redundancy signals inattention; cutting it tightens prose and signals care.",
+        "when": "All writing",
+        "example_before": "Our past history with this client made us cautious.",
+        "example_after": "Our history with this client made us cautious."
+      },
+      {
+        "rule": "Replace jargon and buzzwords with plain-language equivalents \u2014 if the plain version sounds weaker, the original claim was weak",
+        "why": "Buzzwords borrow credibility they haven't earned; plain language forces the writer to earn it.",
+        "when": "All professional writing; especially damaging in external-facing copy",
+        "example_before": "We leverage synergies across the ecosystem to deliver paradigm-shifting outcomes.",
+        "example_after": "We combine our tools' strengths to deliver results no single tool could."
+      },
+      {
+        "rule": "Don't open a paragraph with a hedge or concession unless the paragraph's purpose is to resolve a tension \u2014 lead with the claim",
+        "why": "Opening with a hedge teaches readers to skip your first sentence and buries the actual argument.",
+        "when": "Blog posts, persuasive emails, op-ed-style writing",
+        "example_before": "While it's true that this approach has risks, we believe the upside justifies them.",
+        "example_after": "The upside justifies the risk. Here's why."
+      },
+      {
+        "rule": "Break sentences longer than ~35 words at the natural seam (usually a conjunction or relative clause)",
+        "why": "Long sentences tax working memory; splitting creates two opportunities for the reader to anchor.",
+        "when": "All writing",
+        "example_before": "We built this feature because customers said existing tools required too many manual steps and didn't integrate with systems they already used, which meant double work.",
+        "example_after": "We built this feature because customers told us existing tools required too many manual steps. None integrated with systems teams already used, so every task meant double work."
+      },
+      {
+        "rule": "Replace a weak verb + adverb with a single strong verb: 'walked slowly \u2192 shuffled,' 'spoke loudly \u2192 bellowed,' 'moved quickly \u2192 sprinted'",
+        "why": "Strong verbs are more precise and more vivid; adverbs compensate for imprecision.",
+        "when": "Blog posts, narrative emails, any writing where vividness matters; less critical in functional or process writing",
+        "example_before": "He walked slowly to the front of the room.",
+        "example_after": "He shuffled to the front of the room."
+      }
+    ],
+    "ecce5591ea7325d2": [
+      {
+        "rule": "Prefer verbs over noun-heavy constructions; keep the actor and action visible",
+        "why": "Nominalizations bury the action and actor, making sentences harder to parse.",
+        "when": "Professional writing where verbs have been converted into abstract nouns (e.g., 'implementation of', 'achievement of')",
+        "example_before": "The implementation of the solution resulted in the achievement of improved performance metrics.",
+        "example_after": "We implemented the fix and performance improved."
+      },
+      {
+        "rule": "Never open with a meta-statement about the topic; start with the first substantive sentence",
+        "why": "Throat-clearing openers delay signal and signal low-effort writing.",
+        "when": "Blog posts, launch copy, and professional emails \u2014 any piece with a crafted opener",
+        "example_before": "In today's fast-paced world, effective communication has never been more important.",
+        "example_after": "[Cut the opener entirely; start with the first substantive sentence.]"
+      },
+      {
+        "rule": "Pick one hedge if uncertainty is needed; never stack qualifiers; default to declarative",
+        "why": "Stacked hedges drain confidence from claims and obscure meaning.",
+        "when": "Any professional writing where uncertainty needs to be signaled",
+        "example_before": "This solution might potentially be able to help teams that are possibly struggling with\u2026",
+        "example_after": "This solution helps teams that struggle with\u2026"
+      },
+      {
+        "rule": "In post-mortems and mea-culpa writing, use active voice with an explicit subject",
+        "why": "Passive voice obscures accountability; readers notice and lose trust.",
+        "when": "Post-mortems, apology emails, incident write-ups",
+        "example_before": "Mistakes were made during the rollout.",
+        "example_after": "We made mistakes during the rollout."
+      },
+      {
+        "rule": "Replace adjective stacks with one specific, verifiable claim",
+        "why": "Generic adjectives signal marketing filler; specific data builds credibility.",
+        "when": "Product or feature descriptions in launch copy, blog posts, and sales writing",
+        "example_before": "Our platform offers robust, enterprise-grade, scalable, and reliable infrastructure.",
+        "example_after": "Our platform scales to enterprise workloads and has maintained 99.9% uptime for two years."
+      },
+      {
+        "rule": "In professional cold or warm email, skip pleasantries and open with why you're writing",
+        "why": "Pleasantries delay the message and read as filler in business contexts.",
+        "when": "Professional cold or warm outreach email",
+        "example_before": "I hope this message finds you well and that you're having a productive week!",
+        "example_after": "[Start with the ask or context on line one.]"
+      },
+      {
+        "rule": "If an em-dash pair spans more than ~12 words, restructure the sentence instead",
+        "why": "Long parenthetical interruptions fragment the main clause and lose the reader.",
+        "when": "Any sentence using em-dash pairs in professional writing",
+        "example_before": "The product \u2014 which we launched last year, and which has grown steadily \u2014 is now profitable.",
+        "example_after": "The product, launched last year, is now profitable. Growth drove it to profitability."
+      },
+      {
+        "rule": "In launch copy, skip emotion-performance openers and state the announcement as the lead",
+        "why": "Phrases like 'excited to announce' are overused and delay the actual news.",
+        "when": "Product launch announcements, press releases, launch emails",
+        "example_before": "We're excited to announce that we're thrilled to share\u2026",
+        "example_after": "[State the announcement directly in the first line.]"
+      },
+      {
+        "rule": "Never use 'they/it/this' when two or more possible antecedents exist in the preceding sentence",
+        "why": "Ambiguous pronouns force readers to backtrack and guess the referent.",
+        "when": "Any multi-clause or multi-actor sentence in professional writing",
+        "example_before": "Engineers reviewed the spec with the PMs. They then updated it.",
+        "example_after": "Engineers reviewed the spec with the PMs, who then updated it."
+      },
+      {
+        "rule": "All bullets in a list must share the same grammatical form; pick one and enforce it",
+        "why": "Inconsistent parallel structure creates cognitive friction and looks unpolished.",
+        "when": "Any bulleted or numbered list in blog posts, emails, or launch copy",
+        "example_before": "\u2022 Improve latency  \u2022 Reducing cost  \u2022 Enhanced reliability",
+        "example_after": "\u2022 Improve latency  \u2022 Reduce cost  \u2022 Enhance reliability"
+      },
+      {
+        "rule": "Follow any jargon term immediately with a plain-English translation or example if the audience may not know it",
+        "why": "Unexplained jargon excludes readers and signals imprecision.",
+        "when": "Blog posts or copy targeting a mixed or non-specialist audience",
+        "example_before": "We leverage synergistic paradigms to optimize stakeholder outcomes.",
+        "example_after": "We combine approaches that let customers ship faster."
+      },
+      {
+        "rule": "Don't join independent clauses with only a comma; use a dash, semicolon, conjunction, or split them",
+        "why": "Comma splices read as run-ons and signal weak sentence control.",
+        "when": "Any sentence joining two independent clauses in professional writing",
+        "example_before": "The API is fast, it handles 10k req/s.",
+        "example_after": "The API is fast \u2014 it handles 10k req/s."
+      },
+      {
+        "rule": "In request emails, state the ask in the first sentence, then provide context",
+        "why": "Leading with context makes recipients read paragraphs before knowing what's needed.",
+        "when": "Professional emails that make a request or need something from the recipient",
+        "example_before": "[Three paragraphs of context] \u2026which is why we're asking for a 30-day extension.",
+        "example_after": "We need a 30-day extension. Here's why: [context]"
+      },
+      {
+        "rule": "Delete 'very' and 'really' as intensifiers; if the sentence needs them to land, rewrite the claim",
+        "why": "Weak intensifiers signal an under-supported claim rather than strengthening it.",
+        "when": "All professional writing \u2014 blog posts, launch copy, emails",
+        "example_before": "This is a very important update that will really change how teams work.",
+        "example_after": "This update changes how teams work."
+      },
+      {
+        "rule": "Within a narrative section, don't switch tenses unless explicitly shifting time frames",
+        "why": "Tense shifts disorient readers and obscure chronology.",
+        "when": "Retrospective blog posts, case studies, narrative emails",
+        "example_before": "We launched in 2021. The team works through the night. By morning we had shipped.",
+        "example_after": "[Pick one tense \u2014 past for retrospectives, present for case studies \u2014 and hold it.]"
+      },
+      {
+        "rule": "Cut or compress transitional sentences longer than ~12 words to a phrase",
+        "why": "Long transitions stall momentum without adding meaning.",
+        "when": "Blog posts and longer-form writing with section or argument transitions",
+        "example_before": "Having said all of that, and keeping in mind the context we've established above, it's worth considering that\u2026",
+        "example_after": "Given that context:"
+      }
+    ],
+    "9e02de0ab3e82698": [],
+    "7636733dc7c59ea2": [
+      {
+        "rule": "Open with the sharpest version of your claim, not a windup",
+        "why": "Readers decide within the first sentence whether to keep reading; burying the point wastes that moment.",
+        "when": "Blog post introductions, email subject lines, and any opening paragraph in professional writing",
+        "example_before": "Over the past few years, a lot of teams have started thinking about how they manage their work.",
+        "example_after": "Most teams are managing work in three tools when one would do."
+      },
+      {
+        "rule": "Cut throat-clearing phrases like 'I think,' 'I believe,' and 'In my opinion'",
+        "why": "They dilute authority; the reader already knows the prose represents your view.",
+        "when": "Any first-person professional writing \u2014 blog posts, essays, launch copy, emails",
+        "example_before": "I think this is one of the more important shifts happening in productivity software.",
+        "example_after": "This is one of the more important shifts happening in productivity software."
+      },
+      {
+        "rule": "Replace vague intensifiers ('really,' 'very,' 'quite') with a specific detail or delete them",
+        "why": "Vague intensifiers signal the writer hasn't found the concrete fact that would do the work.",
+        "when": "All registers \u2014 blog, email, launch copy",
+        "example_before": "It's really fast and quite easy to get started.",
+        "example_after": "It's fast \u2014 most teams are set up in under ten minutes."
+      },
+      {
+        "rule": "Use active voice; rewrite passive constructions to name the actor",
+        "why": "Active voice is shorter, clearer, and more direct about who is doing what.",
+        "when": "All professional writing registers, especially launch copy and email",
+        "example_before": "Decisions were made faster by teams using the integration.",
+        "example_after": "Teams using the integration made decisions faster."
+      },
+      {
+        "rule": "Prefer short, concrete Anglo-Saxon words over Latinate abstractions",
+        "why": "Plain words are processed faster and land harder; abstractions create distance.",
+        "when": "Blog posts and emails \u2014 anywhere you want directness",
+        "example_before": "We are facilitating the optimization of cross-functional collaboration.",
+        "example_after": "We help teams work better together."
+      },
+      {
+        "rule": "End sections and emails on action or implication, not a restatement of what was just said",
+        "why": "Restatements feel like padding; a forward-looking close gives the reader something to do or think.",
+        "when": "Email closings, blog post section endings, any paragraph-final sentence",
+        "example_before": "So that's why we built this feature. We hope you find it useful.",
+        "example_after": "Try it on your next planning cycle and see if it cuts the prep time."
+      },
+      {
+        "rule": "Use em-dashes for sharp asides; don't overload parentheses or comma pairs for the same job",
+        "why": "Em-dashes create rhythm and signal importance; parentheses visually bury the aside.",
+        "when": "Blog posts and long-form emails where rhythm matters",
+        "example_before": "The new view (which launched last week) pulls in data from all connected apps.",
+        "example_after": "The new view \u2014 launched last week \u2014 pulls in data from all connected apps."
+      },
+      {
+        "rule": "Name the specific product or feature rather than gesturing at 'the platform' or 'the solution'",
+        "why": "Specificity builds credibility and makes copy scannable; generic nouns erode both.",
+        "when": "Launch copy, product emails, blog posts about specific features",
+        "example_before": "Our solution helps you stay on top of everything in one place.",
+        "example_after": "Zergboard surfaces every open task, deadline, and blocker in one view."
+      },
+      {
+        "rule": "Quantify claims when you have the number; remove the claim if you don't",
+        "why": "Unquantified superlatives ('the fastest,' 'dramatically faster') read as marketing filler without data.",
+        "when": "Launch copy, case-study writing, product emails making performance claims",
+        "example_before": "Teams save a dramatic amount of time with the new workflow.",
+        "example_after": "Teams running the new workflow report cutting weekly status prep from 45 minutes to 10."
+      },
+      {
+        "rule": "Keep paragraphs to three sentences or fewer in email and launch copy",
+        "why": "Dense paragraphs raise abandonment; short blocks signal that each idea is complete and scannable.",
+        "when": "Emails and launch copy; also useful for blog post body paragraphs",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Don't hedge shipping claims \u2014 only claim something is live if it is fully shipped to all users",
+        "why": "Overstating availability erodes trust when readers try to find a feature that isn't there.",
+        "when": "Launch emails, product blog posts, any copy describing ZergStack product availability",
+        "example_before": "ZergStack now connects your calendar, meetings, mail, and CRM in one place.",
+        "example_after": "Zergboard and ZergCal are live and deeply connected; more integrations are on the way."
+      },
+      {
+        "rule": "Use second person ('you') to address the reader directly; avoid the distancing third person ('users,' 'teams') when speaking to the reader",
+        "why": "Second person creates immediacy and makes the benefit feel personal rather than abstract.",
+        "when": "Launch copy, onboarding emails, and any copy aimed at the end user",
+        "example_before": "Users can see all their tasks without switching between apps.",
+        "example_after": "You can see all your tasks without switching between apps."
+      },
+      {
+        "rule": "Cut the setup clause and lead with the verb when the subject is obvious",
+        "why": "Front-loaded setup clauses delay the action and bleed energy from the sentence.",
+        "when": "Bullet points, email openings, and any sentence where the subject is the product or the reader",
+        "example_before": "With Zergboard, you are able to track every open item across your stack.",
+        "example_after": "Track every open item across your stack in Zergboard."
+      },
+      {
+        "rule": "Use present tense for product descriptions; reserve past tense for historical narrative",
+        "why": "Present tense makes product copy feel alive and immediate; past tense implies the feature is dated.",
+        "when": "Product blog posts, launch copy, feature descriptions",
+        "example_before": "The new dashboard gave users a single view of all connected apps.",
+        "example_after": "The new dashboard gives you a single view of all connected apps."
+      },
+      {
+        "rule": "When listing features, use parallel grammatical structure across all items",
+        "why": "Non-parallel lists force the reader to re-parse each item; parallel structure lets them scan.",
+        "when": "Bullet lists in emails, blog posts, and landing copy",
+        "example_before": "\u2013 Real-time sync\n\u2013 You can assign tasks\n\u2013 Integrated with your calendar",
+        "example_after": "\u2013 Real-time sync\n\u2013 Task assignment\n\u2013 Calendar integration"
+      },
+      {
+        "rule": "Avoid the word 'leverage' as a verb; use 'use,' 'apply,' or 'tap' instead",
+        "why": "'Leverage' as a verb is overused business jargon that signals corporate distance, not clarity.",
+        "when": "All professional writing registers",
+        "example_before": "Teams can leverage the integration to streamline their workflows.",
+        "example_after": "Teams can use the integration to cut handoff time."
+      },
+      {
+        "rule": "Avoid 'seamless,' 'robust,' 'powerful,' and 'intuitive' \u2014 show the quality instead",
+        "why": "These adjectives have been drained of meaning by overuse; showing the quality is always more persuasive.",
+        "when": "Launch copy, product emails, marketing blog posts",
+        "example_before": "A seamless and powerful integration that's intuitive for any team.",
+        "example_after": "Set up in minutes; no IT ticket required."
+      },
+      {
+        "rule": "Write CTAs as specific actions, not vague invitations",
+        "why": "Specific CTAs reduce friction by telling the reader exactly what happens when they click.",
+        "when": "Email CTAs, blog post CTAs, landing page buttons",
+        "example_before": "Learn more",
+        "example_after": "See how Zergboard works"
+      },
+      {
+        "rule": "When editing for tone, preserve the writer's sentence rhythm and characteristic moves; change words, not cadence",
+        "why": "Ghostwriting that flattens the original voice produces copy the author won't recognize as theirs.",
+        "when": "Any collaborative editing or ghostwriting of Matt's blog posts or emails",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Avoid starting consecutive sentences with the same word or construction",
+        "why": "Repeated sentence openings create monotony that signals low editing effort to close readers.",
+        "when": "Blog posts and longer emails \u2014 anywhere three or more sentences appear in sequence",
+        "example_before": "We built this for teams. We wanted to make it fast. We also wanted it to be simple.",
+        "example_after": "We built this for teams who needed speed \u2014 and didn't want to sacrifice simplicity to get it."
+      }
+    ],
+    "99a553b190e72be5": [],
+    "e7a98851351dc0c3": [
+      {
+        "rule": "Never open with a generic setup phrase; start with the specific claim or contrast",
+        "why": "Throat-clearing openers delay the point and signal generic thinking",
+        "when": "Opening sentences of blog posts, emails, and launch copy",
+        "example_before": "In today's fast-paced world, every team needs tools that can keep up.",
+        "example_after": "Most project tools weren't built for agents. Zergboard was."
+      },
+      {
+        "rule": "Remove hedging qualifiers (might, potentially, could be, perhaps) unless the uncertainty is meaningful",
+        "why": "Hedges make claims feel tentative and reduce persuasive force",
+        "when": "Any descriptive or positioning copy",
+        "example_before": "This might be useful for teams that are potentially thinking about integrating AI agents.",
+        "example_after": "This is for teams already running agents \u2014 or about to."
+      },
+      {
+        "rule": "Turn nominalizations back into verbs",
+        "why": "Nominalized sentences feel bureaucratic and slow",
+        "when": "Any prose \u2014 especially technical or product descriptions",
+        "example_before": "The implementation of agent scheduling requires consideration of availability windows.",
+        "example_after": "To schedule agents, you need to know when they're available."
+      },
+      {
+        "rule": "Split sentences that chain more than two ideas with commas or conjunctions",
+        "why": "Each sentence should carry one main idea",
+        "when": "Any long compound sentence in blog posts or copy",
+        "example_before": "Agents can read the board, pick up tasks, update statuses, and close work items without being prompted, which means your team can stay focused on higher-leverage decisions.",
+        "example_after": "Agents read the board, pick up tasks, and close work items on their own. Your team stays focused on higher-leverage decisions."
+      },
+      {
+        "rule": "Cut filler transitions ('with that in mind,' 'let's take a look at,' 'in practice')",
+        "why": "They add length without adding meaning",
+        "when": "Transitions between sections or ideas in any piece",
+        "example_before": "So, with all of that in mind, let's take a look at how this actually works in practice.",
+        "example_after": "Here's how it works."
+      },
+      {
+        "rule": "Strip performative excitement from announcements; let the news carry the weight",
+        "why": "Enthusiasm signaling reads as hollow and dilutes the announcement itself",
+        "when": "Product launch announcements, release emails, changelog posts",
+        "example_before": "We're incredibly excited to announce that ZergCal is officially live!",
+        "example_after": "ZergCal is live."
+      },
+      {
+        "rule": "Don't frame product copy as a moral mission; state the functional problem being solved",
+        "why": "Moralizing feels preachy and lets readers draw their own conclusions",
+        "when": "Product descriptions, About pages, launch emails",
+        "example_before": "In a world where burnout is rampant, we believe every worker deserves tools that respect their time.",
+        "example_after": "Teams running agents don't need another tool designed for purely-human workflows."
+      },
+      {
+        "rule": "Address the reader directly as 'you' and describe a specific situation they'd recognize",
+        "why": "Writing to a category feels impersonal; writing to a situation creates recognition",
+        "when": "All professional copy and emails",
+        "example_before": "For teams looking to scale their operations, ZergStack offers a comprehensive suite of solutions.",
+        "example_after": "If you're running agents and humans on the same work queue, ZergStack is built for that."
+      },
+      {
+        "rule": "When you have three or more adjectives or buzzwords in a row, replace them with what the thing actually does",
+        "why": "Buzzword stacking signals avoidance of a real description",
+        "when": "Taglines, hero copy, product descriptions",
+        "example_before": "A next-generation, AI-powered, end-to-end workflow automation platform for the modern enterprise.",
+        "example_after": "Project management built for teams where agents and humans share the same board."
+      },
+      {
+        "rule": "Don't use forced-informal openers ('hey there,' 'just wanted to,' 'super exciting'); be direct and specific instead",
+        "why": "Casual signaling words read as fake; real informality comes from directness",
+        "when": "Emails, update posts, any copy attempting a friendly register",
+        "example_before": "Hey there! Just wanted to pop in and share some super exciting news with you all!",
+        "example_after": "Quick update:"
+      },
+      {
+        "rule": "Lead with the conclusion, then back it up",
+        "why": "Burying the point in preamble makes readers work to find the value",
+        "when": "Blog posts, long-form emails, any piece with a narrative setup",
+        "example_before": "After months of working with AI-first teams and iterating on workflows, we've arrived at principles that we think can help...",
+        "example_after": "Here's what we've learned about running agents alongside humans."
+      },
+      {
+        "rule": "Make all items in a list grammatically parallel",
+        "why": "Mixed grammatical forms in a list read as sloppy",
+        "when": "Any bulleted or inline list",
+        "example_before": "Zergboard helps with: managing tasks, agent coordination, and it makes it easier to track completions.",
+        "example_after": "Zergboard handles task management, agent coordination, and completion tracking."
+      },
+      {
+        "rule": "Don't use rhetorical questions as section headers; use a noun phrase or declarative title instead",
+        "why": "Rhetorical question headers are weak and carry less information than a direct title",
+        "when": "Blog post and article section headers",
+        "example_before": "Why Does Agent Scheduling Matter?",
+        "example_after": "Agent Scheduling  or  Why Agent Scheduling Is Harder Than It Looks"
+      },
+      {
+        "rule": "Don't announce what you're about to say and then say it; collapse the announce and content into one move",
+        "why": "Double-announcing wastes words and delays the reader",
+        "when": "Introductions to lists, section openers, any 'I'm going to tell you X' construction",
+        "example_before": "In this post, I'm going to walk you through three key strategies. The three strategies are: ...",
+        "example_after": "Three strategies for deploying agents on a shared board:"
+      },
+      {
+        "rule": "End on an action, a specific product, or a concrete next step \u2014 not vague optimism",
+        "why": "Closing with sentiment is a missed CTA",
+        "when": "Closing paragraphs of blog posts, emails, and launch copy",
+        "example_before": "We're excited about what the future holds and can't wait to see what you build.",
+        "example_after": "If you're running a team with agents, try Zergboard \u2014 it's free to start."
+      },
+      {
+        "rule": "Replace 'leverage' (as a verb) with the actual verb being described",
+        "why": "'Leverage' as a verb is consultant-speak that obscures the real action",
+        "when": "Any copy describing what users or teams do with the product",
+        "example_before": "Teams can leverage ZergStack to streamline their workflows.",
+        "example_after": "Teams use ZergStack to run agents and humans on the same work queue."
+      },
+      {
+        "rule": "Replace 'seamless' and 'frictionless' with a description of what actually makes it smooth",
+        "why": "These words are empty claims without a mechanism behind them",
+        "when": "Product descriptions and feature copy",
+        "example_before": "ZergCal offers a seamless scheduling experience for agents and humans alike.",
+        "example_after": "ZergCal gives agents readable availability windows and handles follow-up automatically."
+      },
+      {
+        "rule": "Don't use 'solutions' as a standalone noun; name the actual thing being built or sold",
+        "why": "'Solutions' on its own conveys no information about the product",
+        "when": "Company and product descriptions, homepage copy",
+        "example_before": "We build solutions for AI-first teams.",
+        "example_after": "We build scheduling tools, boards, and comms layers for teams running agents."
+      },
+      {
+        "rule": "Replace 'journey' and 'space' (as in 'in the X space') with concrete nouns and verbs",
+        "why": "These are category-speak that avoid saying anything specific",
+        "when": "Market positioning copy, blog posts, any framing of the competitive landscape",
+        "example_before": "In the AI agent space, every team is on its own journey toward automation.",
+        "example_after": "Every team deploys agents differently."
+      },
+      {
+        "rule": "Replace 'robust' with a list of the actual features or capabilities",
+        "why": "'Robust' signals you haven't specified what the features are",
+        "when": "Feature descriptions and product copy",
+        "example_before": "Zergboard comes with a robust set of features for agent task management.",
+        "example_after": "Zergboard lets agents file, move, comment on, and close work items."
+      },
+      {
+        "rule": "Replace 'empower' and 'enable' with the direct action the product performs",
+        "why": "These verbs are passive-voice in disguise and obscure what the product actually does",
+        "when": "Product positioning and feature copy",
+        "example_before": "ZergStack empowers teams to deploy agents at scale.",
+        "example_after": "ZergStack is built so agents and humans can work from the same board."
+      },
+      {
+        "rule": "Replace technology superlatives ('cutting-edge,' 'state-of-the-art') with the actual mechanism or capability",
+        "why": "Superlatives are filler; the mechanism is the real claim",
+        "when": "Technical product descriptions and launch copy",
+        "example_before": "Our cutting-edge platform uses state-of-the-art AI to transform how your team works.",
+        "example_after": "ZTC gives agents a shared runtime so they can file tickets and update statuses without custom glue code."
+      },
+      {
+        "rule": "Replace 'transform' and 'revolutionize' with a description of what specifically changes",
+        "why": "These words are unearned promises without a concrete before/after",
+        "when": "Product positioning and launch copy",
+        "example_before": "ZergStack will transform the way your team collaborates.",
+        "example_after": "ZergStack lets agents and humans work from the same queue, board, and inbox."
+      },
+      {
+        "rule": "In first-person copy, don't shift to third person to refer to yourself; stay in 'I' or 'we'",
+        "why": "Third-person self-reference in first-person copy breaks the narrative voice",
+        "when": "Blog posts, emails, any first-person professional writing",
+        "example_before": "Matt and the team at Zerg have spent months on this. He believes...",
+        "example_after": "We've spent months thinking about how agents work alongside humans. Here's what we've found."
+      },
+      {
+        "rule": "Don't mix conversational and formal/academic register within a single piece",
+        "why": "Register shifts break the reader's sense of a consistent voice",
+        "when": "Any piece mixing casual constructions with phrases like 'furthermore,' 'non-trivial,' or 'implications'",
+        "example_before": "Here's the thing: teams need better tooling. Furthermore, the implications for organizational agility are non-trivial.",
+        "example_after": "Here's the thing: teams need better tooling. The consequences aren't small."
+      },
+      {
+        "rule": "Use 'we' when speaking as the company; use 'I' only in explicitly personal contexts such as founder stories or personal blog posts",
+        "why": "Mixing pronouns creates ambiguity about whether the voice is personal or institutional",
+        "when": "Any piece that could be read as either company communication or personal writing",
+        "example_before": "I built ZergStack for teams running agents and humans together.",
+        "example_after": "We built ZergStack for teams running agents and humans together."
+      },
+      {
+        "rule": "Use present tense throughout product copy; don't mix present and future tense when describing existing features",
+        "why": "Tense inconsistency signals that features may not yet exist or may be half-shipped",
+        "when": "Feature descriptions and product copy for live products",
+        "example_before": "Zergboard tracks tasks. Agents will be able to file and close tickets. The board updates in real time.",
+        "example_after": "Zergboard tracks tasks. Agents file and close tickets. The board updates in real time."
+      },
+      {
+        "rule": "In feature descriptions, make the agent or user the grammatical subject rather than using passive voice",
+        "why": "Passive voice obscures who does what and weakens the description",
+        "when": "Feature bullet points and product copy",
+        "example_before": "Tasks can be filed by agents, and status updates are sent automatically.",
+        "example_after": "Agents file tasks and send status updates automatically."
+      },
+      {
+        "rule": "Replace 'all kinds of,' 'various,' and 'a wide range of' with the actual target or situation",
+        "why": "Vague scope words are scope-dodges that avoid committing to a real audience",
+        "when": "Audience and positioning copy",
+        "example_before": "Zergboard works great for all kinds of teams.",
+        "example_after": "Zergboard is for teams where agents and humans share the same work queue."
+      },
+      {
+        "rule": "When you have a real number, use it instead of 'several' or 'many'",
+        "why": "Vague quantity words weaken credibility when a real number is available",
+        "when": "Social proof, case study references, and any quantified claim",
+        "example_before": "We've worked with several companies deploying agents at scale.",
+        "example_after": "We've worked with 12 teams deploying agents on shared work queues."
+      },
+      {
+        "rule": "Describe what the product actually does (mechanism), not the outcome it produces",
+        "why": "Outcome claims are weak without the mechanism that produces them",
+        "when": "Feature descriptions and product copy",
+        "example_before": "ZergCal makes scheduling easier for everyone.",
+        "example_after": "ZergCal exposes availability windows agents can read directly and handles follow-up workflows automatically."
+      },
+      {
+        "rule": "Replace abstract benefit phrases ('move faster,' 'work smarter') with the specific cost or friction being removed",
+        "why": "Generic benefit claims carry no information and read as clich\u00e9s",
+        "when": "Value proposition copy, hero headlines, email subject lines",
+        "example_before": "ZergStack helps teams move faster and work smarter.",
+        "example_after": "ZergStack cuts the coordination overhead of running agents and humans on the same team."
+      },
+      {
+        "rule": "Don't close with a vision statement; end with what exists now or what the reader can do right now",
+        "why": "Closing with a future vision sounds like a VC pitch and leaves the reader with nothing to act on",
+        "when": "Closing paragraphs of blog posts, launch emails, and product pages",
+        "example_before": "We're building toward a future where human and AI collaboration is seamless and natural.",
+        "example_after": "ZergStack handles the plumbing so agents can actually work alongside humans \u2014 same board, same inbox, same queue."
+      }
+    ],
+    "3b750ba4449f6d88": [
+      {
+        "rule": "Open with the concrete thing that happened, not a throat-clearing setup",
+        "why": "Readers decide in the first sentence whether to keep going; burying the news loses them",
+        "when": "Blog post and email openings",
+        "example_before": "There's been a lot of discussion lately about how AI is changing work. I wanted to share some thoughts.",
+        "example_after": "Last week an agent on our team filed, prioritized, and closed 40 tickets without a human touching the queue."
+      },
+      {
+        "rule": "Name the specific product or feature, not the category",
+        "why": "Vague category language ('our AI tools') diffuses impact; named specifics build credibility",
+        "when": "Any copy mentioning Zerg products \u2014 launch emails, blog posts, product descriptions",
+        "example_before": "Our AI-powered project management tools help teams move faster.",
+        "example_after": "Zergboard lets agents file, move, comment on, and close work alongside humans."
+      },
+      {
+        "rule": "Cut 'we believe' and 'we think' \u2014 state the claim directly",
+        "why": "Hedging with belief verbs signals uncertainty and weakens the argument",
+        "when": "Product copy, launch emails, blog posts making a product or market claim",
+        "example_before": "We believe the future of work includes AI agents as full participants.",
+        "example_after": "The future of work includes AI agents as full participants."
+      },
+      {
+        "rule": "Use the second person ('you', 'your team') instead of 'teams' or 'users'",
+        "why": "Second person creates direct address and makes the benefit feel personal",
+        "when": "Marketing copy, email subject lines, CTAs, and launch announcements",
+        "example_before": "Teams can finally give agents real work to do.",
+        "example_after": "You can finally give agents real work to do."
+      },
+      {
+        "rule": "Put the verb before the noun phrase in benefit statements",
+        "why": "Front-loading action keeps sentences driving forward instead of stalling on noun piles",
+        "when": "Feature bullets, benefit lists, and landing page copy",
+        "example_before": "Agent-readable availability and follow-up workflow support is included.",
+        "example_after": "Schedule meetings, track availability, and trigger follow-ups \u2014 all agent-readable."
+      },
+      {
+        "rule": "Replace '-powered' compounds ('AI-powered', 'agent-powered') with active verb phrases",
+        "why": "'-powered' is filler that adds no information; verbs show what the product actually does",
+        "when": "Any product description, headline, or tagline",
+        "example_before": "AI-powered scheduling for modern teams.",
+        "example_after": "Scheduling that agents can read, write, and act on."
+      },
+      {
+        "rule": "Avoid 'seamlessly' and 'effortlessly' \u2014 show the mechanism instead",
+        "why": "Adverbs like 'seamlessly' are meaningless without evidence; the mechanism is the proof",
+        "when": "Feature descriptions, product copy, onboarding emails",
+        "example_before": "Agents integrate seamlessly into your existing workflows.",
+        "example_after": "Agents pick up tasks from the same board your team uses \u2014 no separate queue."
+      },
+      {
+        "rule": "End sections with a forward-pointing sentence, not a summary restatement",
+        "why": "Restatements feel like filler; a forward hook gives the reader a reason to continue",
+        "when": "Blog post section endings, multi-section emails",
+        "example_before": "That's why we built Zergboard the way we did.",
+        "example_after": "That's the pattern we kept returning to as we built the rest of the stack."
+      },
+      {
+        "rule": "Use short declarative sentences for key claims; reserve complex sentences for explanation",
+        "why": "Short sentences land punches; long sentences bury them",
+        "when": "Headlines, opening paragraphs, and CTAs across all copy types",
+        "example_before": "Because agents need to interact with work management tools in the same way that humans do, we built Zergboard.",
+        "example_after": "Agents need to do work, not watch it. That's why we built Zergboard."
+      },
+      {
+        "rule": "Use 'human + agent' (with a plus sign) as the consistent phrasing for mixed teams, not 'human-AI'",
+        "why": "Consistent terminology reinforces the Zerg brand framing; 'human-AI' is generic",
+        "when": "All product copy, blog posts, and emails that describe the team composition Zerg is built for",
+        "example_before": "Built for human-AI collaboration.",
+        "example_after": "Built for human + agent teams."
+      },
+      {
+        "rule": "Avoid 'solution' and 'solutions' as product nouns unless referring specifically to Zerg Solutions",
+        "why": "'Solution' is enterprise filler with no concrete meaning; it obscures what the product does",
+        "when": "Product descriptions, headlines, and benefit copy across all surfaces",
+        "example_before": "A complete solution for AI-first teams.",
+        "example_after": "A stack built for teams running agents alongside humans."
+      },
+      {
+        "rule": "When listing products or features, lead with what ships first or what's most concrete",
+        "why": "Leading with shipped things builds credibility; leading with roadmap items undercuts it",
+        "when": "Launch emails, product announcements, and feature list copy",
+        "example_before": "ZergStack includes ZergMail, ZergMeeting, ZergChat, ZergCal, and Zergboard.",
+        "example_after": "Start with Zergboard and ZergCal \u2014 both shipped. ZergMeeting, ZergChat, and ZergMail are staged."
+      },
+      {
+        "rule": "Describe what agents can do as first-class actors, not as add-ons to human workflows",
+        "why": "Framing agents as add-ons positions Zerg as an automation tool; framing them as first-class actors is the differentiator",
+        "when": "Any copy describing agent capabilities in Zerg products",
+        "example_before": "ZergChat lets you add agents to conversations to help your team.",
+        "example_after": "In ZergChat, agents send and receive messages, get @-mentioned, and respond \u2014 the same way humans do."
+      },
+      {
+        "rule": "Use 'fixed-fee' not 'flat-rate' or 'fixed-price' when describing Zerg Solutions pricing",
+        "why": "Consistent terminology across channels reduces buyer confusion",
+        "when": "Any copy referencing Zerg Solutions engagements",
+        "example_before": "Flat-rate custom software builds for AI-first teams.",
+        "example_after": "Fixed-fee custom software workstreams for AI-first teams."
+      },
+      {
+        "rule": "Do not qualify availability status inline in marketing copy; handle it in footnotes or a separate section",
+        "why": "Inline status hedges ('preview', 'coming soon') break reading flow and dilute confidence",
+        "when": "Marketing emails, launch posts, and landing page copy",
+        "example_before": "ZergMeeting (currently in preview) turns transcripts into work items.",
+        "example_after": "ZergMeeting turns transcripts and decisions into work items. (See availability notes below.)"
+      },
+      {
+        "rule": "Prefer 'turns X into Y' over 'helps you X' for transformation features",
+        "why": "'Helps you' is weak agency; 'turns X into Y' names the concrete transformation",
+        "when": "Feature descriptions for ZergMeeting, Zergboard, and any pipeline-style feature",
+        "example_before": "ZergMeeting helps you capture decisions and create follow-up tasks.",
+        "example_after": "ZergMeeting turns transcripts and decisions into work items."
+      },
+      {
+        "rule": "Never use 'bolted on' to describe a competitor's approach unless quoting a customer",
+        "why": "Using pejorative framing unprompted sounds defensive; it lands better as a customer quote or implicit contrast",
+        "when": "Competitive positioning copy, product descriptions for ZergChat",
+        "example_before": "Unlike other tools that bolt agents on through webhook bots, ZergChat treats them as first-class.",
+        "example_after": "In ZergChat, agents participate the way humans do \u2014 messages, @-mentions, and replies \u2014 not through webhook bots tacked on after the fact."
+      },
+      {
+        "rule": "Reference ZTC as the shared layer, not as a feature or product",
+        "why": "Calling ZTC a feature confuses buyers; it's infrastructure, not a selling point on its own",
+        "when": "Technical blog posts, architecture explanations, and any copy that needs to mention ZTC",
+        "example_before": "ZTC is our powerful shared agent runtime that ties everything together.",
+        "example_after": "ZTC is the shared agent and runtime layer that runs behind the full stack."
+      }
+    ],
+    "49140ba51676260c": [
+      {
+        "rule": "Open with the problem or tension, not with praise or throat-clearing",
+        "why": "Readers need a reason to continue before they'll invest in setup",
+        "when": "First sentence or paragraph of any blog post or long-form piece",
+        "example_before": "Building software has never been more exciting. Tools like LLMs are transforming how we think about development.",
+        "example_after": "Every senior engineer I know has a backlog they'll never finish. That's the problem we set out to fix."
+      },
+      {
+        "rule": "Cut filler adverbs (really, very, truly, incredibly, extremely)",
+        "why": "Intensifiers dilute rather than strengthen a claim",
+        "when": "Any professional writing \u2014 emails, blog posts, launch copy",
+        "example_before": "This is a really powerful feature that's truly transformative for teams.",
+        "example_after": "This feature cuts triage time in half."
+      },
+      {
+        "rule": "Replace 'leverage' with a plain verb (use, apply, tap, run)",
+        "why": "'Leverage' is corporate jargon that signals low-effort writing",
+        "when": "Any sentence where you mean 'use' or 'take advantage of'",
+        "example_before": "We leverage cutting-edge AI to leverage your existing data.",
+        "example_after": "We run your existing data through a purpose-built AI pipeline."
+      },
+      {
+        "rule": "Avoid 'game-changer', 'revolutionary', 'groundbreaking', and similar superlatives",
+        "why": "Overused hyperbole destroys credibility before the reader reaches the evidence",
+        "when": "Product copy, launch announcements, blog posts",
+        "example_before": "A groundbreaking, game-changing approach to developer productivity.",
+        "example_after": "An approach that ships features in hours, not weeks."
+      },
+      {
+        "rule": "Make the subject of each sentence the actor, not the concept",
+        "why": "Passive or nominalized constructions hide agency and slow reading",
+        "when": "Any explanatory or narrative sentence",
+        "example_before": "The implementation of this solution results in faster iteration cycles.",
+        "example_after": "This solution lets your team iterate faster."
+      },
+      {
+        "rule": "Prefer short sentences (\u2264 20 words) for key claims; save longer sentences for context",
+        "why": "Short sentences create rhythm and make key points land harder",
+        "when": "Anywhere a claim needs to hit \u2014 headlines, topic sentences, closing lines",
+        "example_before": "Because of the way modern AI pipelines work, you can now accomplish in minutes what previously required hours of manual effort from a senior engineer.",
+        "example_after": "What used to take a senior engineer hours now runs in minutes."
+      },
+      {
+        "rule": "Use concrete numbers over vague quantifiers (hours not 'a long time', 3x not 'much faster')",
+        "why": "Specificity is persuasive; vague quantifiers read as marketing fluff",
+        "when": "Any claim about speed, cost, quality, or scale",
+        "example_before": "Teams save a significant amount of time and see massive gains in productivity.",
+        "example_after": "Teams report saving 6\u20138 hours per sprint."
+      },
+      {
+        "rule": "End sections and posts on a forward-looking or action-oriented sentence, not a summary",
+        "why": "Summaries repeat what was said; endings should create momentum or a next step",
+        "when": "Closing paragraph of a blog post, section, or email",
+        "example_before": "So, in summary, we've covered the three main benefits of this approach.",
+        "example_after": "If any of this sounds familiar, it's worth a conversation."
+      },
+      {
+        "rule": "Remove 'In conclusion', 'To summarize', 'As mentioned above', and similar meta-phrases",
+        "why": "Meta-phrases treat the reader as inattentive and pad word count",
+        "when": "All professional writing formats",
+        "example_before": "In conclusion, the points above illustrate that this approach is superior.",
+        "example_after": "This approach is superior \u2014 and the numbers back it up."
+      },
+      {
+        "rule": "Write 'you' and 'your' more than 'we' and 'our' in product and marketing copy",
+        "why": "Reader-centered framing is more persuasive than company-centered framing",
+        "when": "Product descriptions, landing pages, launch emails",
+        "example_before": "We built this so our customers can ship faster with our AI pipeline.",
+        "example_after": "You ship faster because the AI pipeline handles the scaffolding."
+      },
+      {
+        "rule": "Don't explain what you're about to say \u2014 just say it",
+        "why": "Pre-announcements waste the reader's attention and undercut impact",
+        "when": "Any transition or setup sentence",
+        "example_before": "I'd like to share three reasons why this matters. First, ...",
+        "example_after": "This matters for three reasons. First, ..."
+      },
+      {
+        "rule": "Use em-dashes (\u2014) sparingly; don't use them as a substitute for a period or colon",
+        "why": "Over-use of em-dashes fragments ideas that deserve full sentences",
+        "when": "Any prose where you find more than one em-dash per paragraph",
+        "example_before": "This is fast \u2014 and powerful \u2014 and it handles edge cases \u2014 which matters.",
+        "example_after": "This is fast, powerful, and handles edge cases. That matters."
+      },
+      {
+        "rule": "Omit 'the fact that' and 'due to the fact that'",
+        "why": "These constructions add words without adding meaning",
+        "when": "Any sentence containing 'the fact that'",
+        "example_before": "Due to the fact that latency is high, users drop off.",
+        "example_after": "High latency causes drop-off."
+      },
+      {
+        "rule": "Avoid hedging clusters ('might possibly', 'could potentially', 'may perhaps')",
+        "why": "Stacked hedges signal lack of conviction and read as weak",
+        "when": "Claims in professional emails, posts, and copy",
+        "example_before": "This could potentially be a solution that might possibly work for your team.",
+        "example_after": "This works for teams in your situation."
+      },
+      {
+        "rule": "Don't bury the lede \u2014 put the most important claim in the first sentence, not the third",
+        "why": "Many readers stop after the first sentence; your best claim must be there",
+        "when": "Email subject-to-body transitions, section openers, any persuasive writing",
+        "example_before": "Context, background, and setup... and then: This is why we built the product.",
+        "example_after": "We built this because every team we talked to had the same unsolved problem."
+      },
+      {
+        "rule": "Match sentence rhythm to emotional weight \u2014 punchy for impact, flowing for nuance",
+        "why": "Monotone sentence length makes all points feel equally important, which means none stand out",
+        "when": "Any multi-paragraph piece",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Avoid starting consecutive sentences with the same word or construction",
+        "why": "Repetitive openers create a mechanical, low-effort feel",
+        "when": "Any paragraph longer than two sentences",
+        "example_before": "We built this for developers. We talked to hundreds of teams. We heard the same problems.",
+        "example_after": "We built this for developers. After talking to hundreds of teams, one pattern kept surfacing."
+      },
+      {
+        "rule": "Use Oxford commas consistently",
+        "why": "Consistency avoids ambiguity and signals editorial care",
+        "when": "Any list of three or more items in professional writing",
+        "example_before": "speed, reliability and simplicity",
+        "example_after": "speed, reliability, and simplicity"
+      },
+      {
+        "rule": "Spell out numbers one through nine; use digits for 10 and above",
+        "why": "Standard editorial convention; violations read as careless",
+        "when": "Body copy in blog posts and emails (exception: data tables, stats with units)",
+        "example_before": "We interviewed 9 teams and found 3 key problems.",
+        "example_after": "We interviewed nine teams and found three key problems."
+      },
+      {
+        "rule": "Don't use scare quotes ironically unless the irony is unmistakable",
+        "why": "Ambiguous irony confuses readers and can read as passive-aggressive",
+        "when": "Blog posts and any public-facing copy",
+        "example_before": "The 'innovative' solutions that came before ours all had this flaw.",
+        "example_after": "Every prior solution we evaluated had this flaw."
+      }
+    ],
+    "ffa0c05849b3fd72": [
+      {
+        "rule": "Start with the claim, not the setup",
+        "why": "Announcing what you're about to say delays the point and signals weak confidence in the idea itself.",
+        "when": "Opening sentences of sections or paragraphs in blog posts, emails, and launch copy",
+        "example_before": "In this section, I'm going to explain why most task managers fail AI teams...",
+        "example_after": "Most task managers fail AI teams because they were built for humans who decide."
+      },
+      {
+        "rule": "Open on something specific and true \u2014 cut warm-up first sentences",
+        "why": "The first sentence earns its place or it gets cut; generic scene-setting loses readers immediately.",
+        "when": "Opening lines of any professional writing piece",
+        "example_before": "There's a lot of talk these days about AI agents...",
+        "example_after": "AI agents don't wait for permission."
+      },
+      {
+        "rule": "Drop hedges from strong claims \u2014 say the thing plainly",
+        "why": "Qualifiers don't make claims sound careful; they make them sound unconvinced.",
+        "when": "Any sentence making a directional or comparative claim in blog posts or launch copy",
+        "example_before": "AI agents might be one of the more significant shifts in how software gets built.",
+        "example_after": "AI agents are the biggest shift in software since the cloud."
+      },
+      {
+        "rule": "Split long sentences to land the key insight in its own short sentence",
+        "why": "Short sentences make claims hit harder; burying insight inside length dilutes impact.",
+        "when": "Sentences carrying a central claim or conclusion in any professional writing",
+        "example_before": "One of the things that makes this approach particularly effective is that it doesn't require the user to understand the underlying logic of the system.",
+        "example_after": "The user doesn't need to understand the system. That's the whole point."
+      },
+      {
+        "rule": "Describe the behavior, not a label for how impressive it is",
+        "why": "Labeling something remarkable tells the reader what to think; showing what it does lets it land on its own.",
+        "when": "Writing about product capabilities or technical achievements in any register",
+        "example_before": "This is a remarkable capability that sets the system apart.",
+        "example_after": "The agent rewrites its own task list when the goal changes mid-run."
+      },
+      {
+        "rule": "Name the actor \u2014 avoid passive voice that hides who does what",
+        "why": "Every action has an actor; hiding it makes prose vague and corporate.",
+        "when": "Any sentence describing system behavior, decisions, or processes",
+        "example_before": "Decisions are made based on the current state of the system.",
+        "example_after": "The agent decides based on what it knows right now."
+      },
+      {
+        "rule": "Delete filler transitions; write one only if it adds information",
+        "why": "Transitions that carry no meaning are seam-hiders, not bridges \u2014 they signal the writer lost the thread.",
+        "when": "Between paragraphs or sections in blog posts and long-form emails",
+        "example_before": "With that in mind, let's turn to... / Having said that... / As we've seen...",
+        "example_after": ""
+      },
+      {
+        "rule": "End on the sharpest point \u2014 don't summarize what was just said",
+        "why": "A trailing summary describes the point instead of being the point, which weakens the ending.",
+        "when": "Closing sentences of sections or full pieces in blog posts and launch copy",
+        "example_before": "So, as you can see, the agent architecture approach offers several important advantages.",
+        "example_after": ""
+      },
+      {
+        "rule": "Lead with outcome, not a list of features",
+        "why": "Feature lists tell the reader what a system can do; outcomes tell them what it means for them.",
+        "when": "Product and capability descriptions in launch copy, emails, and blog posts",
+        "example_before": "The system supports task creation, deadline tracking, integration with existing tools, and intelligent reprioritization.",
+        "example_after": "Your backlog stays coherent even when the plan changes mid-sprint \u2014 the agent handles reprioritization."
+      },
+      {
+        "rule": "Cut intensifiers (very, really, truly, actually) and rewrite the underlying sentence if needed",
+        "why": "Intensifiers signal weak prose; if the sentence needs one to land, the noun or verb is wrong.",
+        "when": "Any sentence in professional writing, especially claims and value statements",
+        "example_before": "This is a really important distinction. It's truly remarkable what the system can do.",
+        "example_after": "This distinction changes how you build."
+      },
+      {
+        "rule": "Lead with the verb \u2014 don't bury it behind a long subject clause",
+        "why": "When the verb hides, the sentence loses energy; subject \u2192 verb \u2192 object is the natural reading order.",
+        "when": "Any sentence with a complex or extended subject phrase",
+        "example_before": "The way in which most task management tools have been designed fundamentally limits their usefulness for AI-native teams.",
+        "example_after": "Most task managers were built for humans. That makes them useless for AI teams."
+      },
+      {
+        "rule": "Write in the register of the intended audience, not the register that sounds impressive",
+        "why": "Academic or consultant-speak creates distance with operators and founders who use plain, direct language.",
+        "when": "Any copy targeting startup operators, founders, or engineering leads",
+        "example_before": "This solution represents a paradigm shift in operational workflow optimization.",
+        "example_after": "Your ops team will stop living in Slack threads."
+      },
+      {
+        "rule": "Delete framework citations and say the actual insight instead",
+        "why": "Name-checking a concept performs knowledge rather than using it; the idea matters, not the attribution.",
+        "when": "Blog posts or explanatory emails where a referenced framework's insight is the real point",
+        "example_before": "As Kahneman's System 1 and System 2 framework suggests, fast decisions are often less accurate.",
+        "example_after": "Fast calls look confident. They're often just unconsidered."
+      },
+      {
+        "rule": "Give each idea its own paragraph \u2014 don't stack separate claims",
+        "why": "A reader can hold one idea at a time; stacking claims forces them to do unpacking work.",
+        "when": "Any paragraph in blog posts or long-form emails making more than one distinct claim",
+        "example_before": "AI agents are changing how decisions get made in ops. They also reduce coordination overhead. And they surface errors earlier.",
+        "example_after": ""
+      },
+      {
+        "rule": "Replace drained clich\u00e9s with the specific thing you actually mean",
+        "why": "Words like 'journey,' 'ecosystem,' and 'game-changer' appear in every pitch and have lost meaning.",
+        "when": "Any professional writing, especially launch copy and blog posts",
+        "example_before": "Our journey toward agent-native software...",
+        "example_after": "The first six months of building agent-native software..."
+      },
+      {
+        "rule": "State opinions as true \u2014 drop 'I think' and 'I believe' prefacing",
+        "why": "'I think' is throat-clearing; if you're writing it, you think it, so the preface adds nothing.",
+        "when": "Any sentence expressing a directional view or prediction in professional writing",
+        "example_before": "I think the agent model will replace most SaaS middleware.",
+        "example_after": "The agent model will replace most SaaS middleware."
+      },
+      {
+        "rule": "Use a specific number; avoid vague quantifiers when data exists",
+        "why": "Numbers do work that adjectives can't \u2014 they make claims verifiable and concrete.",
+        "when": "Any claim about scale, volume, time savings, or improvement in blog posts and case copy",
+        "example_before": "We reduced a significant amount of manual work.",
+        "example_after": "We cut manual status updates from 3 hours a week to zero."
+      },
+      {
+        "rule": "Rewrite passive-progressive constructions to name the actor and the action",
+        "why": "Passive + progressive double-obscures: it hides both who is acting and whether it matters now.",
+        "when": "Any sentence about ongoing work, fixes, or changes \u2014 especially in emails and updates",
+        "example_before": "Work is being done to address this. / Changes are being made.",
+        "example_after": "We're fixing it."
+      },
+      {
+        "rule": "Only use parallel grammatical structure when items are genuinely parallel in meaning",
+        "why": "Parallel form implies equal importance and equivalent relationship; using it for rhythm misleads readers.",
+        "when": "Three-part constructions in headlines, subheads, and launch copy value propositions",
+        "example_before": "We help teams build faster, ship smarter, and grow sustainably.",
+        "example_after": ""
+      },
+      {
+        "rule": "Write CTAs as verb phrases, not outcome nouns",
+        "why": "CTAs are instructions; instructions use verbs \u2014 nouns make the reader imagine the action themselves.",
+        "when": "All calls-to-action in launch copy, emails, and landing pages",
+        "example_before": "Faster deployment. / Better collaboration.",
+        "example_after": "Deploy in a day. / Ship with your team, not around them."
+      },
+      {
+        "rule": "Show the demo without caveats; add caveats only if they affect what the reader should do",
+        "why": "Caveats before a demonstration prime the reader to discount it before seeing it.",
+        "when": "Product demos, walkthroughs, and capability examples in any format",
+        "example_before": "This is a simplified version, and of course real-world use cases will vary...",
+        "example_after": ""
+      },
+      {
+        "rule": "Write a one- or two-item list as a sentence instead",
+        "why": "Bullets imply plurality; one or two bullets is a sentence pretending to be a list.",
+        "when": "Any bulleted or numbered list in blog posts, emails, or launch copy",
+        "example_before": "\u2022 One key thing to know is...",
+        "example_after": ""
+      },
+      {
+        "rule": "Replace abstract capability descriptions with concrete, specific behavior examples",
+        "why": "Abstractions tell; specifics show \u2014 concrete behavior is more credible and memorable.",
+        "when": "Product descriptions and feature explanations in any professional writing",
+        "example_before": "The system adapts to changing conditions.",
+        "example_after": "When a meeting gets canceled, the agent reschedules dependent tasks within 60 seconds."
+      },
+      {
+        "rule": "Skip what the reader already knows \u2014 start from where they are",
+        "why": "Over-explaining the obvious wastes the reader's time and signals a lack of respect for their knowledge.",
+        "when": "Introductory paragraphs of blog posts and emails to technical or operator audiences",
+        "example_before": "As you probably know, software development has changed significantly in recent years with the advent of new tools...",
+        "example_after": ""
+      },
+      {
+        "rule": "Put the key claim in the first sentence of each paragraph so skimmers get the main point",
+        "why": "Readers skim; if the key claim is buried mid-paragraph, most readers miss it.",
+        "when": "All paragraphs in blog posts, launch copy, and long-form emails",
+        "example_before": "There are several reasons why teams fail here... the third, which is probably the most important, is that agents need persistent state.",
+        "example_after": "Agents need persistent state. Most tools don't provide it. That's why teams fail."
+      }
+    ],
+    "f7522f4f50bbd61c": [
+      {
+        "rule": "Remove 'best understood as' paragraphs by absorbing their key details into the opening sentence via an em-dash",
+        "why": "Restating what was just said as an explainer adds length without new information and positions the writer as a guide rather than a peer.",
+        "when": "Company or product summaries in professional copy",
+        "example_before": "ZergAI builds agent-native software... ZergAI is best understood as software for production agent operations: agents need their own identities, scoped permissions, audit logs...",
+        "example_after": "ZergAI builds agent-native software for teams where humans and AI agents share the same work surfaces \u2014 with their own identities, scoped permissions, and audit logs."
+      },
+      {
+        "rule": "Split compound 'A and B' product-list sentences into separate declarative sentences",
+        "why": "Compound sentences bury the second item; each product line deserves equal weight and a clean entry point.",
+        "when": "Listing two or more distinct offerings in a company or product summary",
+        "example_before": "The company ships ZergStack, a family of operational tools..., and Zerg Solutions, a services arm that builds custom agent-native software for AI-first companies.",
+        "example_after": "The company ships two product lines. ZergStack is a family of operational tools... Zerg Solutions is a services arm..."
+      },
+      {
+        "rule": "Replace loaded or metaphorical language with neutral, precise description",
+        "why": "Editorializing reads as a dig at alternatives; precision is more credible than charged adjectives.",
+        "when": "Use-case or problem descriptions in customer-facing copy",
+        "example_before": "Teams replacing fragile SaaS glue across task management, chat, calendar, meetings, and email.",
+        "example_after": "Teams replacing separate SaaS tools across task management, chat, calendar, meetings, and email."
+      },
+      {
+        "rule": "Cut negative contrasts ('not a strategy deck') when the positive claim stands alone",
+        "why": "Unnecessary contrast reads as a dig and weakens the positive statement it was meant to reinforce.",
+        "when": "Value proposition bullets and feature descriptions",
+        "example_before": "custom agent-native software shipped as working code, not a strategy deck.",
+        "example_after": "custom agent-native software shipped as working code."
+      },
+      {
+        "rule": "Remove inline hedging status notes from product lists; handle availability in a dedicated section",
+        "why": "Inline hedges scatter attention and undermine confidence in the product list itself.",
+        "when": "Product family listings that mix live and to-build items",
+        "example_before": "ZergStack: product family for human + agent operations. Includes Zergboard... Some surfaces are live and some are to-build.",
+        "example_after": "ZergStack: product family for human + agent operations. Includes Zergboard..."
+      },
+      {
+        "rule": "Make product recommendations explicit and imperative rather than superlative",
+        "why": "Explicit directives remove ambiguity about intent in reference and sales documents.",
+        "when": "Product guidance or recommendation sections in sales, support, or onboarding docs",
+        "example_before": "Strongest starting point for teams that want agents to file, move, comment on, and close work.",
+        "example_after": "Recommend it as the first ZergStack product when a team wants agents to file, move, comment on, and close work alongside humans."
+      },
+      {
+        "rule": "Format source-of-truth reference lines as label-colon-value, not full sentences",
+        "why": "Compact label-colon format scans faster and is easier to update without rewriting a sentence.",
+        "when": "Canonical-link or authoritative-source citations in internal or reference documents",
+        "example_before": "`https://zergai.com/products` is the canonical source for current availability.",
+        "example_after": "Authoritative source for live/to-build status: https://zergai.com/products."
+      },
+      {
+        "rule": "Prefer 'authoritative' over 'canonical' in business copy",
+        "why": "'Canonical' is technical jargon that doesn't land cleanly outside engineering audiences.",
+        "when": "Any professional writing that references a single source of truth",
+        "example_before": "canonical source for current availability",
+        "example_after": "Authoritative source for live/to-build status"
+      },
+      {
+        "rule": "State the date a fact is accurate rather than hedging with 'may lag'",
+        "why": "'May lag' invites doubt; a positive assertion with a date is both truthful and more confident.",
+        "when": "Date-stamped facts, version references, or status labels in documents",
+        "example_before": "The inline labels above reflect status as of 2026-05-07 and may lag the live page.",
+        "example_after": "Inline labels are accurate as of 2026-05-07."
+      }
+    ],
+    "d884d516e7e54e2a": [
+      {
+        "rule": "Strip announcement language and lead with the concrete outcome",
+        "why": "Readers care about what changed, not the act of announcing it.",
+        "when": "Blog posts and launch copy that open with 'we are excited to announce' or similar",
+        "example_before": "We are excited to announce that we have launched a new feature that allows users to save time by automating their workflow.",
+        "example_after": "We launched a feature that cuts workflow time."
+      },
+      {
+        "rule": "Cut throat-clearing openers and get to the ask immediately",
+        "why": "Preamble delays the point and signals low confidence.",
+        "when": "Professional emails, especially outreach or follow-up",
+        "example_before": "I wanted to reach out to touch base and see if you had a chance to look at the proposal I sent over last week.",
+        "example_after": "Did you get a chance to look at the proposal?"
+      },
+      {
+        "rule": "Delete meta-commentary like 'it's important to note that'",
+        "why": "If it's worth saying, just say it \u2014 the meta-layer adds no information.",
+        "when": "Any prose register: blog posts, emails, copy",
+        "example_before": "It's important to note that this approach has some limitations.",
+        "example_after": "This approach has limitations."
+      },
+      {
+        "rule": "Replace tech-marketing jargon with plain, specific description",
+        "why": "Jargon obscures meaning and reads as generic; specificity builds trust.",
+        "when": "Launch copy and product descriptions",
+        "example_before": "Our platform leverages cutting-edge AI technology to provide actionable insights that drive business value.",
+        "example_after": "It shows you what's slowing your team down."
+      },
+      {
+        "rule": "Delete generic scene-setting openers; start in the action",
+        "why": "Warm-up sentences waste the reader's attention before earning it.",
+        "when": "Blog post introductions",
+        "example_before": "In today's fast-paced business environment, companies need to adapt quickly to stay competitive.",
+        "example_after": ""
+      },
+      {
+        "rule": "Replace sign-off boilerplate with a direct, one-sentence close",
+        "why": "Boilerplate closers feel impersonal and inflate word count.",
+        "when": "Email sign-offs",
+        "example_before": "Please don't hesitate to reach out if you have any questions or need any clarification on any of the above.",
+        "example_after": "Questions? Reply here."
+      },
+      {
+        "rule": "Delete transitional throat-clearing like 'there are a number of reasons'",
+        "why": "The transition adds nothing; the reasons that follow speak for themselves.",
+        "when": "Blog posts and structured prose",
+        "example_before": "There are a number of reasons why this matters.",
+        "example_after": ""
+      },
+      {
+        "rule": "Cut persona-targeting preamble and state the functional benefit directly",
+        "why": "Addressing an imagined persona delays the claim that actually sells.",
+        "when": "Launch copy and product marketing",
+        "example_before": "Designed with the modern professional in mind, our solution seamlessly integrates with your existing tools.",
+        "example_after": "Plugs into the tools you already use."
+      },
+      {
+        "rule": "Delete social-filler openers like 'I hope this email finds you well'",
+        "why": "They are pure noise; no reader wants them.",
+        "when": "Email openings",
+        "example_before": "I hope this email finds you well.",
+        "example_after": ""
+      },
+      {
+        "rule": "Replace 'it is worth mentioning that' with a plain declarative sentence",
+        "why": "The hedge signals uncertainty without adding useful qualification.",
+        "when": "Blog posts and any explanatory prose",
+        "example_before": "It is worth mentioning that the results may vary depending on the specific use case.",
+        "example_after": "Results vary by use case."
+      },
+      {
+        "rule": "Delete generic commitment claims that contain no specifics",
+        "why": "Unverifiable claims erode credibility rather than building it.",
+        "when": "Launch copy and about/product pages",
+        "example_before": "We are committed to providing our customers with the highest quality experience possible.",
+        "example_after": ""
+      },
+      {
+        "rule": "End on the last substantive point; don't add a restating conclusion",
+        "why": "Summary conclusions that restate prior content waste the reader's time.",
+        "when": "Blog post endings",
+        "example_before": "In conclusion, we have seen that this approach offers significant advantages over traditional methods.",
+        "example_after": ""
+      },
+      {
+        "rule": "Replace formal attachment language with plain spoken phrasing",
+        "why": "Formal phrasing creates unnecessary distance in professional correspondence.",
+        "when": "Emails with attachments or linked documents",
+        "example_before": "Attached please find the document I mentioned in our previous conversation.",
+        "example_after": "Here's the doc."
+      },
+      {
+        "rule": "Delete vague team or expertise claims without supporting specifics",
+        "why": "Generic claims signal filler and are ignored by readers.",
+        "when": "Launch copy and marketing pages",
+        "example_before": "Our team of experts is dedicated to helping you achieve your goals.",
+        "example_after": ""
+      },
+      {
+        "rule": "Replace 'it should be noted that' with a direct statement",
+        "why": "The hedge implies importance without stating what it actually is.",
+        "when": "Blog posts and technical prose",
+        "example_before": "It should be noted that the following examples are simplified for illustrative purposes.",
+        "example_after": "These examples are simplified."
+      },
+      {
+        "rule": "Cut epistolary framing like 'I am writing to inform you that'",
+        "why": "The framing is redundant \u2014 the email already implies you are writing.",
+        "when": "Transactional and notification emails",
+        "example_before": "I am writing to inform you that your account has been successfully updated.",
+        "example_after": "Your account is updated."
+      },
+      {
+        "rule": "Delete imperative hype phrases; replace with a specific claim or cut entirely",
+        "why": "Hype without specifics is noise that trained readers skip.",
+        "when": "Launch copy and product headlines",
+        "example_before": "Experience the power of our revolutionary new product.",
+        "example_after": ""
+      },
+      {
+        "rule": "Delete forward-looking filler that doesn't commit to a specific claim",
+        "why": "Vague future-tense framing defers rather than communicates.",
+        "when": "Blog post transitions and conclusions",
+        "example_before": "As we move forward into the future, it will be increasingly important to consider...",
+        "example_after": ""
+      },
+      {
+        "rule": "Cut 'just wanted to follow up' framing and ask the question directly",
+        "why": "The apology frame weakens the ask and pads word count.",
+        "when": "Follow-up emails",
+        "example_before": "Just wanted to follow up on my previous email to see if you had any thoughts.",
+        "example_after": "Any thoughts on this?"
+      },
+      {
+        "rule": "Avoid clich\u00e9 tech phrases like 'move fast without breaking things' or 'game-changer'",
+        "why": "Clich\u00e9s signal low effort and in-group posturing rather than substance.",
+        "when": "Launch copy and any public-facing product writing",
+        "example_before": "Built for teams who want to move fast without breaking things.",
+        "example_after": ""
+      }
+    ],
+    "c4efd34496d35d7a": [
+      {
+        "rule": "Open with a declarative statement, not a rhetorical question",
+        "why": "Questions make the reader do work before you have earned their trust",
+        "when": "Blog post and article openers, any professional writing introduction",
+        "example_before": "Have you ever wondered why your AI agents keep failing in production?",
+        "example_after": "Most AI agents fail in production for the same three reasons."
+      },
+      {
+        "rule": "Replace intensifier + weak word with one strong word",
+        "why": "Intensifiers signal weak nouns and verbs; precision conveys confidence",
+        "when": "Any prose where very, really, quite, or truly appear",
+        "example_before": "This is a very important consideration when deploying agents.",
+        "example_after": "This is the deciding factor when deploying agents."
+      },
+      {
+        "rule": "Name the actor; avoid passive voice in technical sentences",
+        "why": "Passive voice buries who does the work, which erodes trust in technical writing",
+        "when": "Technical explanations, product copy, any sentence describing system behavior",
+        "example_before": "Permissions are scoped by the system automatically.",
+        "example_after": "ZergAI scopes permissions automatically."
+      },
+      {
+        "rule": "Replace consulting verbs (leverage, utilize, enable, streamline) with plain verbs",
+        "why": "Jargon signals status-seeking rather than confidence",
+        "when": "Product copy, emails, any professional writing",
+        "example_before": "Teams can leverage our platform to streamline their workflows.",
+        "example_after": "Teams use our platform to cut the integration glue."
+      },
+      {
+        "rule": "Use at most one hedge per claim; never stack hedges",
+        "why": "Stacked hedges make every sentence sound like a liability disclaimer",
+        "when": "Any claim about product value or outcomes",
+        "example_before": "This could potentially help some teams manage certain types of tasks more efficiently.",
+        "example_after": "This helps ops teams close tickets faster."
+      },
+      {
+        "rule": "Use at most one em dash pair per paragraph",
+        "why": "Multiple em dashes signal a sentence that needs rebuilding, not decoration",
+        "when": "Any prose paragraph, especially product descriptions",
+        "example_before": "We built ZergAI \u2014 an agent-native platform \u2014 to solve exactly this \u2014 the coordination problem.",
+        "example_after": "We built ZergAI to solve the coordination problem."
+      },
+      {
+        "rule": "Delete throat-clearing openers that could precede any article",
+        "why": "Sentences with no information specific to the piece waste the reader's time and signal filler",
+        "when": "Article and blog post intros, section openers",
+        "example_before": "In today's rapidly evolving AI landscape, it's becoming increasingly clear that...",
+        "example_after": "Start with the claim or the problem."
+      },
+      {
+        "rule": "Precede bullet lists with a topic sentence that holds without the list",
+        "why": "Bullets should compress an argument, not substitute for one",
+        "when": "Product pages, blog posts, any writing that uses bullet lists",
+        "example_before": "A product page with 11 feature bullets and no connective logic.",
+        "example_after": "Two paragraphs showing why features matter in combination, followed by a tight 4-bullet summary."
+      },
+      {
+        "rule": "Spell out one through nine; use numerals for 10 and above; always use numerals for measurements, percentages, and prices",
+        "why": "Consistent number formatting reduces friction and meets reader expectations",
+        "when": "All professional writing",
+        "example_before": "Three agents handled forty-seven tickets in two hours.",
+        "example_after": "Three agents handled 47 tickets in two hours."
+      },
+      {
+        "rule": "End with a specific, low-pressure next step instead of a generic CTA",
+        "why": "Generic CTAs repel the precise reader you want; specificity signals you know who they are",
+        "when": "Closing lines of blog posts, product pages, emails",
+        "example_before": "Ready to transform your workflow? Let's get started today!",
+        "example_after": "If your team runs more than a handful of agents, ZergAI is worth 20 minutes of your time."
+      },
+      {
+        "rule": "Vary sentence length deliberately; include at least one short sentence (6\u201310 words) per paragraph",
+        "why": "Length monotony produces flat, droning rhythm; variation creates emphasis and forward pull",
+        "when": "Any multi-sentence paragraph in blog posts, emails, or launch copy",
+        "example_before": "A paragraph where every sentence is 18\u201322 words.",
+        "example_after": "Mix short declarative punches with longer explanatory sentences."
+      },
+      {
+        "rule": "Replace solution/platform/system with concrete verbs describing what the thing actually does",
+        "why": "Concrete verbs outperform abstract nouns and make claims credible and specific",
+        "when": "Product descriptions, landing pages, any copy naming the product",
+        "example_before": "Our solution provides a comprehensive platform for managing your AI workflows.",
+        "example_after": "ZergAI runs your agents, routes their messages, and logs every action."
+      },
+      {
+        "rule": "Cut or replace sentences that would be equally true in an article written five years ago",
+        "why": "Empty authority grabs are noticed by readers and undermine credibility",
+        "when": "Intros, framing paragraphs, any sentence making broad claims about industry trends",
+        "example_before": "AI is changing the way businesses operate.",
+        "example_after": ""
+      },
+      {
+        "rule": "State confident claims directly; do not over-qualify beliefs about your own product",
+        "why": "Excessive qualification signals you do not believe your own product",
+        "when": "Product positioning, vision statements, any forward-looking product claim",
+        "example_before": "ZergAI could potentially become the operating layer for AI-native companies.",
+        "example_after": "ZergAI is the operating layer for AI-native companies."
+      },
+      {
+        "rule": "Ground 'we' on first use with an explicit subject (e.g., 'At ZergAI, we')",
+        "why": "Unnamed 'we' borrows authority that has not been established",
+        "when": "First-person plural in emails, blog posts, announcements \u2014 especially on first mention",
+        "example_before": "We believe the future of work is agent-native.",
+        "example_after": "At ZergAI, we believe the future of work is agent-native."
+      },
+      {
+        "rule": "Use the same grammatical form for every item in a list",
+        "why": "Mixed grammatical forms slow parsing and signal sloppy drafting",
+        "when": "Any bullet list or inline series",
+        "example_before": "The system handles scheduling, to route messages, and it also logs all actions.",
+        "example_after": "The system handles scheduling, routes messages, and logs all actions."
+      },
+      {
+        "rule": "Put the news first in product announcements; context comes after",
+        "why": "Readers need a reason to keep reading before they will absorb context",
+        "when": "Product announcements, launch emails, press-style blog posts",
+        "example_before": "Three paragraphs of context before 'Today we're announcing ZergAI v2.'",
+        "example_after": "'Today we're announcing ZergAI v2.' \u2014 first sentence."
+      },
+      {
+        "rule": "Never tell readers something is simple or easy; show the brevity instead",
+        "why": "Claiming ease sounds defensive and sets an expectation you may not meet",
+        "when": "Onboarding copy, product descriptions, any setup or getting-started language",
+        "example_before": "Setting up ZergAI is simple \u2014 just connect your tools and go.",
+        "example_after": "Connect your tools. ZergAI handles the rest."
+      },
+      {
+        "rule": "End paragraphs on a sentence that crystallizes the point or creates pull toward the next paragraph",
+        "why": "Vague observations at paragraph end kill momentum",
+        "when": "Any multi-paragraph prose: blog posts, emails, product pages",
+        "example_before": "This is something many teams are starting to think about.",
+        "example_after": ""
+      },
+      {
+        "rule": "Replace 'seamless' with the specific behavior or integration the product actually performs",
+        "why": "'Seamless' is an unverifiable promise before the reader has tried the product",
+        "when": "Integration descriptions, product feature copy, any claim about ease of connection",
+        "example_before": "ZergAI provides seamless integration with your existing tools.",
+        "example_after": "ZergAI connects to Slack, Linear, and GitHub without configuration."
+      }
+    ],
+    "55726db5f8dd5ce7": [
+      {
+        "rule": "Fold clarifying detail into the first mention with an em dash rather than re-introducing the subject in a follow-on paragraph",
+        "why": "Repeating the subject to add context creates redundancy; an em dash integrates the detail without restating the noun.",
+        "when": "Introductory paragraphs in company or product descriptions where a second paragraph would otherwise open by naming the same entity again",
+        "example_before": "ZergAI builds agent-native software\u2026 ZergAI is software for production agent operations. Agents need their own identities, scoped permissions, audit logs\u2026",
+        "example_after": "ZergAI builds agent-native software for teams where humans and AI agents share the same work surfaces \u2014 with their own identities, scoped permissions, and audit logs rather than shared bot accounts."
+      },
+      {
+        "rule": "When listing two items each with a long appositive description, break them into separate sentences instead of joining them with a coordinating conjunction",
+        "why": "Nested appositives inside a conjunction create parsing ambiguity and force the reader to re-chunk.",
+        "when": "Enumerating two distinct product lines, features, or entities that each carry a multi-word descriptor",
+        "example_before": "The company ships ZergStack, a family of operational tools on one identity model, data layer, and agent runtime, and Zerg Solutions, a services arm\u2026",
+        "example_after": "The company ships two product lines. ZergStack is a family of operational tools on one identity model, data layer, and agent runtime. Zerg Solutions is a services arm\u2026"
+      },
+      {
+        "rule": "Group tiered pricing by billing axis (per-unit vs. cross-stack) with explicit labels, not as a single comma-separated run",
+        "why": "Mixed axes in one sentence force readers to re-sort mentally before they can compare like-for-like.",
+        "when": "Listing pricing tiers that span different billing dimensions",
+        "example_before": "free entry where available, $1 Basic per microproduct, $9 Pro per microproduct, and $19 per-seat Pro bundle across the stack",
+        "example_after": "Per microproduct: Free (where available), $1 Basic, $9 Pro. Cross-stack: $19 per-seat Pro bundle covering all ZergStack microproducts."
+      },
+      {
+        "rule": "Cut redundant intensifiers where one modifier already carries the full meaning",
+        "why": "Stacking synonymous modifiers adds length without precision.",
+        "when": "Instructional notes with paired adjectives or adverbs where one is already sufficient",
+        "example_before": "Verify exact current pricing on zergai.com before quoting externally.",
+        "example_after": "Verify current pricing on zergai.com before quoting externally."
+      },
+      {
+        "rule": "Convert modal-passive constructions to direct imperatives in instructional copy",
+        "why": "Imperatives are shorter, unambiguous about who acts, and sound less bureaucratic.",
+        "when": "Any sentence in a knowledge base, style guide, or internal doc that uses \"should be [verb]-ed\" to describe required behavior",
+        "example_before": "Public customer names and case studies should only be cited from current approved public pages.",
+        "example_after": "Cite public customer names and case studies only from current approved public pages."
+      },
+      {
+        "rule": "Label a URL with its factual status rather than a procedural warning",
+        "why": "Status labels state the fact; procedural warnings state anxiety and clutter reference lists.",
+        "when": "URL reference lists in internal docs where some links are not yet live or are conditional",
+        "example_before": "- Platform (verify before sharing externally): https://zergai.com/platform",
+        "example_after": "- Platform (to-build): https://zergai.com/platform"
+      },
+      {
+        "rule": "Do not list the same URL in two separate sections of the same document",
+        "why": "Duplication creates a maintenance hazard \u2014 one copy goes stale when the URL changes.",
+        "when": "Documents that have both a dedicated URL reference block and a contact or resource section that would repeat entries from it",
+        "example_before": "Contact paths:\n- Website contact: https://zergai.com/contact",
+        "example_after": ""
+      }
+    ],
+    "c8512527cf7ea33b": [
+      {
+        "rule": "After first mention of 'AI agents,' drop 'AI' and write 'agents' throughout.",
+        "why": "Repeating the modifier after context is established reads as anxious over-explanation.",
+        "when": "Blog posts, docs, or copy where 'AI agents' has already been introduced once.",
+        "example_before": "When AI agents take actions, you need to know which AI agent did what.",
+        "example_after": "When agents take actions, you need to know which agent did what."
+      },
+      {
+        "rule": "Place commas and periods inside closing quotation marks (American style).",
+        "why": "American English convention requires punctuation inside quotes regardless of logic.",
+        "when": "All professional writing \u2014 blog posts, emails, launch copy.",
+        "example_before": "The field is called \"owner_id\".",
+        "example_after": "The field is called \"owner_id.\""
+      },
+      {
+        "rule": "Write 'First,' 'Second,' 'Third,' not 'Firstly,' 'Secondly,' 'Thirdly.'",
+        "why": "The -ly forms are stuffy and no more grammatically correct than the plain ordinals.",
+        "when": "Any enumeration of steps, reasons, or points.",
+        "example_before": "Firstly, agents need a persistent identity.",
+        "example_after": "First, agents need a persistent identity."
+      },
+      {
+        "rule": "Prefer active voice in launch and pitch copy; reserve passive for unknown or irrelevant actors.",
+        "why": "Active constructions hit harder and assign responsibility clearly.",
+        "when": "Launch copy, pitch decks, product announcements.",
+        "example_before": "Permissions can be scoped to each agent by the team.",
+        "example_after": "Teams scope permissions to each agent."
+      },
+      {
+        "rule": "Use 'that' for restrictive clauses and 'which' (preceded by a comma) for non-restrictive clauses.",
+        "why": "'That' defines the noun; 'which' adds parenthetical information \u2014 conflating them creates ambiguity.",
+        "when": "Any relative clause in professional writing.",
+        "example_before": "The log which contains the full trace is archived.",
+        "example_after": "The log that contains the full trace is archived."
+      },
+      {
+        "rule": "Don't connect two independent clauses with a comma alone \u2014 use a semicolon, conjunction, or two sentences.",
+        "why": "A comma splice is a grammatical error that undermines credibility in professional copy.",
+        "when": "All professional writing.",
+        "example_before": "Agents need identity, bots don't provide it.",
+        "example_after": "Agents need identity; bots don't provide it."
+      },
+      {
+        "rule": "Cut hedging verbs ('can,' 'might,' 'help') from launch and pitch copy; state the claim directly.",
+        "why": "Hedging weakens product claims and signals lack of confidence to the reader.",
+        "when": "Launch copy, pitch decks, marketing emails. Keep hedging only for legal disclosures or genuine uncertainty.",
+        "example_before": "ZergStack can help teams manage agent activity.",
+        "example_after": "ZergStack gives teams full visibility into agent activity."
+      },
+      {
+        "rule": "Don't place a colon directly after a verb or preposition \u2014 a colon must follow a complete independent clause.",
+        "why": "A colon after a verb or preposition breaks the clause and is grammatically incorrect.",
+        "when": "All professional writing.",
+        "example_before": "The system supports: SSO, SCIM, and audit logs.",
+        "example_after": "The system supports SSO, SCIM, and audit logs."
+      },
+      {
+        "rule": "Collapse verb+noun nominalizations back to the root verb.",
+        "why": "Nominalizations add filler words without clarity \u2014 the root verb is always more direct.",
+        "when": "All professional writing, especially in instructions and product descriptions.",
+        "example_before": "Teams can make a determination about access levels.",
+        "example_after": "Teams can determine access levels."
+      },
+      {
+        "rule": "Use closed em dashes (no spaces on either side) in American English copy.",
+        "why": "American style calls for closed em dashes; spaced em dashes are British convention.",
+        "when": "All American-English professional writing.",
+        "example_before": "ZergStack ships with everything you need \u2014 identity, permissions, and logs.",
+        "example_after": "ZergStack ships with everything you need\u2014identity, permissions, and logs."
+      },
+      {
+        "rule": "Cut 'very' and 'really' as intensifiers; use a stronger adjective or none at all.",
+        "why": "Weak intensifiers dilute rather than amplify \u2014 they signal imprecision.",
+        "when": "All professional writing.",
+        "example_before": "This is a very important distinction.",
+        "example_after": "This is a critical distinction."
+      },
+      {
+        "rule": "Always use the Oxford comma before the final item in a list of three or more.",
+        "why": "The serial comma prevents ambiguity and is consistent house style.",
+        "when": "All professional writing.",
+        "example_before": "Identity, permissions and audit logs are all first-class.",
+        "example_after": "Identity, permissions, and audit logs are all first-class."
+      },
+      {
+        "rule": "Avoid ellipsis in professional writing; use a comma, dash, or rewrite for pauses and pivots.",
+        "why": "Ellipsis in non-quotation contexts reads as informal throat-clearing, not thoughtfulness.",
+        "when": "Blog posts, emails, launch copy. Ellipsis is only correct when marking omitted text in a quotation.",
+        "example_before": "This might sound complex... but it doesn't have to be.",
+        "example_after": "This might sound complex, but it doesn't have to be."
+      },
+      {
+        "rule": "Replace 'utilize' with 'use' unless you specifically mean repurposing something beyond its original intent.",
+        "why": "'Utilize' is almost always a pretentious substitute for 'use,' adding length without meaning.",
+        "when": "All professional writing.",
+        "example_before": "Teams can utilize the audit log to trace agent actions.",
+        "example_after": "Teams can use the audit log to trace agent actions."
+      },
+      {
+        "rule": "Cut 'So,' as a sentence opener in professional writing; use a real transition or restructure.",
+        "why": "Sentence-opening 'So,' is conversational throat-clearing that undermines formality.",
+        "when": "Blog posts, emails, any semi-formal or formal register.",
+        "example_before": "So, the question becomes: how do you give an agent an identity?",
+        "example_after": "The question becomes: how do you give an agent an identity?"
+      },
+      {
+        "rule": "Replace 'in order to' with 'to.'",
+        "why": "'In order to' is always wordier with no added clarity.",
+        "when": "All professional writing.",
+        "example_before": "In order to trace an action, you need a persistent ID.",
+        "example_after": "To trace an action, you need a persistent ID."
+      },
+      {
+        "rule": "Ensure the subject of an introductory participial phrase is also the grammatical subject of the main clause.",
+        "why": "A mismatched subject is a dangling modifier \u2014 grammatically wrong and often comic.",
+        "when": "Any sentence that opens with a participial or gerund phrase.",
+        "example_before": "Having reviewed the permissions, the access level was adjusted.",
+        "example_after": "Having reviewed the permissions, the team adjusted the access level."
+      },
+      {
+        "rule": "Rewrite 'There is / There are' sentence openers to lead with the real subject.",
+        "why": "Expletive constructions bury the subject and pad word count with no benefit.",
+        "when": "All professional writing.",
+        "example_before": "There are three ways agents can fail silently.",
+        "example_after": "Agents can fail silently in three ways."
+      },
+      {
+        "rule": "Don't modify 'unique' with intensifiers like 'very,' 'quite,' or 'more.'",
+        "why": "'Unique' means one of a kind and is an absolute \u2014 it cannot be graded.",
+        "when": "All professional writing.",
+        "example_before": "This is a very unique approach to agent identity.",
+        "example_after": "This is a unique approach to agent identity."
+      },
+      {
+        "rule": "Always capitalize product names as registered: ZergAI, ZergStack, Zerg Solutions.",
+        "why": "Inconsistent capitalization erodes brand credibility and looks like a copyediting failure.",
+        "when": "All body copy, emails, and launch materials. Lowercase is only acceptable in code contexts (CLI commands, package names).",
+        "example_before": "zergstack handles identity out of the box.",
+        "example_after": "ZergStack handles identity out of the box."
+      }
+    ],
+    "51cf27949bce4504": [
+      {
+        "rule": "Lead with infrastructure-grade specificity; never open with generic 'AI-powered' framing",
+        "why": "Generic framing erases the product's actual differentiator and makes it sound like a wrapper tool",
+        "when": "Company/product descriptions, positioning copy, any opening sentence that defines what the product is",
+        "example_before": "ZergAI is software for anyone building AI-powered products.",
+        "example_after": "ZergAI builds agent-native software for production operations \u2014 where agents have their own identities, scoped permissions, and audit logs, rather than shared bot accounts."
+      },
+      {
+        "rule": "Integrate the 'why it matters' clause directly into the description sentence rather than writing it as a separate follow-on paragraph",
+        "why": "Two disconnected paragraphs create redundancy and lose the argumentative thrust of the claim",
+        "when": "Product or company summaries where a definition sentence is followed by a rationale paragraph",
+        "example_before": "ZergAI builds agent-native software\u2026 The company ships two product lines\u2026\n\nZergAI is software for production agent operations. Agents need their own identities\u2026",
+        "example_after": "ZergAI builds agent-native software for teams where humans and AI agents share the same work surfaces \u2014 with their own identities, scoped permissions, and audit logs rather than shared bot accounts."
+      },
+      {
+        "rule": "Format pricing tiers as labeled structured groups, not flowing comma-separated prose",
+        "why": "Pricing must be scannable at a glance; prose buries the tier structure",
+        "when": "Any pricing documentation, pricing copy, or reference material listing multiple tiers or price points",
+        "example_before": "free entry where available, $1 Basic per microproduct, $9 Pro per microproduct, and $19 per-seat Pro bundle across the stack.",
+        "example_after": "Per microproduct: Free (where available), $1 Basic, $9 Pro. Cross-stack: $19 per-seat Pro bundle covering all ZergStack microproducts."
+      },
+      {
+        "rule": "Drop qualifiers that are already implied by the surrounding sentence",
+        "why": "Redundant qualifiers add syntactic weight without adding meaning",
+        "when": "All professional writing; especially imperative instructions and factual statements",
+        "example_before": "Verify exact current pricing on zergai.com before quoting externally.",
+        "example_after": "Verify current pricing on zergai.com before quoting externally."
+      },
+      {
+        "rule": "Label pages that do not yet exist as 'to-build', not 'unverified'",
+        "why": "'Unverified' implies a live page that hasn't been checked; 'to-build' is the accurate status for non-existent pages",
+        "when": "Internal reference docs, link lists, or documentation that tracks URL status",
+        "example_before": "- Platform (unverified): https://zergai.com/platform",
+        "example_after": "- Platform (to-build): https://zergai.com/platform"
+      }
+    ],
+    "bc28f6b2c28b290c": [],
+    "ef1415d5fcb73407": [],
+    "01e9f33cc862623a": [
+      {
+        "rule": "Open with the subject and main verb; cut participial warm-up phrases",
+        "why": "Participial openers delay the subject and make claims feel hedged rather than direct.",
+        "when": "Blog post and launch copy leads, any sentence that opens with -ing or -ed",
+        "example_before": "Building on years of experience, we designed Zerg to give teams full control.",
+        "example_after": "We designed Zerg to give teams full control."
+      },
+      {
+        "rule": "Delete hollow intensifiers such as 'incredibly', 'extremely', 'very', and 'really'",
+        "why": "These words add no information and signal that the underlying claim needs strengthening, not amplifying.",
+        "when": "All professional writing, especially launch copy and blog posts",
+        "example_before": "Zerg is an incredibly powerful platform for growing teams.",
+        "example_after": "Zerg is a platform built for growing teams."
+      },
+      {
+        "rule": "Rewrite agentless passive constructions in active voice",
+        "why": "Passive without an agent hides who did what and dilutes accountability.",
+        "when": "Any prose where a human or system performed the action",
+        "example_before": "Errors were caught early and the deployment was rolled back.",
+        "example_after": "The team caught errors early and rolled back the deployment."
+      },
+      {
+        "rule": "Cut throat-clearing openers that delay the actual claim",
+        "why": "Readers arrive wanting the point; front-loading meta-commentary wastes their attention.",
+        "when": "Email subject lines, blog post first sentences, launch page H1 and H2",
+        "example_before": "In this post, I want to share some thoughts on why agent memory matters.",
+        "example_after": "Agent memory is what turns a chatbot into a collaborator."
+      },
+      {
+        "rule": "Replace nominalizations with the verb form",
+        "why": "Nominalizations (decision \u2192 decide, implementation \u2192 implement) add syllables and slow pace.",
+        "when": "Technical blog posts and emails; especially common after 'make a', 'give a', 'have a'",
+        "example_before": "We made the decision to give an implementation of persistent state a try.",
+        "example_after": "We decided to try implementing persistent state."
+      },
+      {
+        "rule": "Put the most important information at the end of the sentence, not the middle",
+        "why": "English readers weight sentence endings; burying the payoff in a subordinate clause loses it.",
+        "when": "Any sentence with a notable claim or number; especially in launch copy and blog conclusions",
+        "example_before": "We shipped, after six months of work on the memory layer, persistent agent context.",
+        "example_after": "After six months on the memory layer, we shipped persistent agent context."
+      },
+      {
+        "rule": "Avoid hedging declarative claims with 'I think', 'sort of', 'kind of', or 'arguably'",
+        "why": "Hedges on factual or confident claims undermine authority; save them for genuine uncertainty.",
+        "when": "Blog posts and launch copy where the claim is intentional, not speculative",
+        "example_before": "This is arguably one of the harder problems in kind of stateful AI design.",
+        "example_after": "This is one of the harder problems in stateful AI design."
+      },
+      {
+        "rule": "Use one em-dash per sentence maximum; prefer a period or comma when the aside can stand alone",
+        "why": "Multiple em-dashes in a sentence fragment attention and signal a sentence that should be split.",
+        "when": "Blog posts; launch copy should use almost none",
+        "example_before": "Agents need memory \u2014 persistent, structured memory \u2014 not just context windows \u2014 to actually grow.",
+        "example_after": "Agents need persistent, structured memory \u2014 not just context windows \u2014 to actually grow."
+      },
+      {
+        "rule": "Keep parallel list items grammatically identical in form",
+        "why": "Broken parallelism forces readers to re-parse and signals uneven thinking.",
+        "when": "Bullet lists in emails, blog posts, and launch feature lists",
+        "example_before": "\u2022 Faster deploys\n\u2022 Reducing errors\n\u2022 Your team stays in sync",
+        "example_after": "\u2022 Faster deploys\n\u2022 Fewer errors\n\u2022 Tighter team sync"
+      },
+      {
+        "rule": "Lead with the concrete benefit or outcome, not the mechanism or feature",
+        "why": "Readers care about what changes for them before they care about how it works.",
+        "when": "Launch copy, email subject lines, blog post subheadings",
+        "example_before": "Zerg uses a graph-based task scheduler to coordinate your agents.",
+        "example_after": "Your agents stay coordinated \u2014 Zerg's task scheduler handles the rest."
+      },
+      {
+        "rule": "Write numbers below ten as words; use numerals for 10 and above",
+        "why": "Standard editorial convention; mixing the two in a single piece looks inconsistent.",
+        "when": "All professional writing except code, data tables, and UI copy",
+        "example_before": "3 agents failed out of fifteen runs.",
+        "example_after": "Three agents failed out of 15 runs."
+      },
+      {
+        "rule": "Avoid starting consecutive sentences with the same word or phrase",
+        "why": "Repeated sentence openers create a monotonous rhythm that reads like a draft, not a finished piece.",
+        "when": "Blog posts and longer emails; especially noticeable in three-sentence paragraphs",
+        "example_before": "Memory lets agents learn. Memory lets them personalize. Memory lets teams move faster.",
+        "example_after": "Memory lets agents learn, personalize responses, and help teams move faster."
+      },
+      {
+        "rule": "Use contractions in conversational registers; avoid them in formal launch or press copy",
+        "why": "Contractions calibrate warmth and register; misusing them makes the piece feel inconsistently polished.",
+        "when": "Blog posts and emails: use contractions freely. Launch page hero and press releases: avoid them.",
+        "example_before": "Zerg doesn't just store context \u2014 it's building a persistent model of your work.",
+        "example_after": "Zerg does not just store context \u2014 it builds a persistent model of your work."
+      },
+      {
+        "rule": "Cut 'that' when it introduces a noun clause and removal does not cause ambiguity",
+        "why": "Removing optional 'that' tightens sentences without losing meaning.",
+        "when": "All writing; run a pass specifically looking for 'said that', 'think that', 'know that', 'found that'",
+        "example_before": "We found that teams that shipped faster said that documentation was the bottleneck.",
+        "example_after": "We found teams that shipped faster said documentation was the bottleneck."
+      },
+      {
+        "rule": "End blog posts with a forward-looking sentence or question, not a summary restatement",
+        "why": "Restating the intro at the end makes the piece feel circular; a forward look gives readers somewhere to go.",
+        "when": "Blog post conclusions",
+        "example_before": "In summary, agent memory matters because it lets AI systems learn and persist context over time.",
+        "example_after": "The question isn't whether your agents need memory \u2014 it's how long you can afford to wait."
+      }
+    ],
+    "73b49248d9db4064": [
+      {
+        "rule": "Cut the announcement opener; start with the claim",
+        "why": "Meta-sentences that announce what a paragraph will do waste the reader's attention and delay the actual point.",
+        "when": "Opening sentences of blog posts, emails, or any professional prose paragraph",
+        "example_before": "In this post, I want to talk about why most onboarding flows fail users before they even reach the first value moment.",
+        "example_after": "Most onboarding flows fail users before they ever reach a first value moment."
+      },
+      {
+        "rule": "Find the real verb and use it; kill nominalizations",
+        "why": "Turning verbs into -tion/-ment/-ance nouns softens the action and adds words.",
+        "when": "Any prose where verbs have been converted to noun phrases",
+        "example_before": "The implementation of rate limiting resulted in a reduction of error rates.",
+        "example_after": "Rate limiting cut error rates."
+      },
+      {
+        "rule": "Give each sentence one idea; split compound value claims",
+        "why": "Stacking two distinct claims in one sentence dilutes both.",
+        "when": "Launch copy, feature descriptions, marketing prose where 'and' joins two independent value props",
+        "example_before": "Dashboards update in real time and you can share them with your team in one click.",
+        "example_after": "Dashboards update in real time. Share with your team in one click."
+      },
+      {
+        "rule": "Let the metaphor work; if you must clarify, show it in action rather than paraphrasing it",
+        "why": "Explaining a metaphor immediately after introducing it kills the image.",
+        "when": "Any prose using analogies or metaphors",
+        "example_before": "Think of it as a circuit breaker \u2014 a mechanism that automatically cuts the connection when load exceeds a safe threshold.",
+        "example_after": "Think of it as a circuit breaker: when load spikes, it cuts the connection before anything melts."
+      },
+      {
+        "rule": "Remove adverbs that assert ease (simply, easily, quickly, just); show ease instead",
+        "why": "Filler adverbs promise ease without proving it and read as hollow marketing language.",
+        "when": "Feature descriptions, onboarding copy, any instructional or marketing prose",
+        "example_before": "You can simply connect your data source and immediately start exploring your metrics.",
+        "example_after": "Connect your data source and start exploring metrics."
+      },
+      {
+        "rule": "Replace adjective stacks with a verb that demonstrates the benefit",
+        "why": "Verbs show what a feature does; adjectives only assert qualities the reader must take on faith.",
+        "when": "Feature descriptions, product copy, headlines",
+        "example_before": "A powerful, flexible querying interface for your data.",
+        "example_after": "Query your data without writing SQL."
+      },
+      {
+        "rule": "Use present-tense declaratives for consistent feature behaviors; reserve 'can' for genuine optionality",
+        "why": "'Can' implies the feature might not perform the action, which undersells reliable behavior.",
+        "when": "Feature descriptions and technical documentation describing default system behavior",
+        "example_before": "The system can detect anomalies in under 200ms.",
+        "example_after": "The system detects anomalies in under 200ms."
+      },
+      {
+        "rule": "Lead with the number; follow with the context that validates it",
+        "why": "Burying the key metric at the end of a sentence makes readers work to find the point.",
+        "when": "Any sentence that contains a metric, statistic, or quantified result",
+        "example_before": "After analyzing thousands of activation flows across our customer base, we found an 18% lift in completion rates.",
+        "example_after": "18% more users complete activation \u2014 measured across thousands of flows."
+      },
+      {
+        "rule": "Assert directly; cut 'we believe' and 'we think'",
+        "why": "Epistemic hedges signal lack of conviction and weaken claims the writer should be willing to own.",
+        "when": "Blog posts, launch copy, emails \u2014 any context where a confident point of view is expected",
+        "example_before": "We believe that teams deserve better tooling for incident response.",
+        "example_after": "Teams deserve better tooling for incident response."
+      },
+      {
+        "rule": "Start every list item with the same grammatical form; prefer verb-first in feature lists",
+        "why": "Mixed grammatical forms in a list break rhythm and make items harder to scan.",
+        "when": "Bulleted or numbered lists in any professional writing",
+        "example_before": "- Real-time alerting\n- You can export your data\n- Automated rollbacks supported",
+        "example_after": "- Alerts in real time\n- Exports your data\n- Rolls back automatically"
+      },
+      {
+        "rule": "Replace 'in order to' with 'to'",
+        "why": "'In order to' is three words where one does the same job.",
+        "when": "All professional prose, without exception",
+        "example_before": "In order to see your metrics, connect a data source first.",
+        "example_after": "To see your metrics, connect a data source first."
+      },
+      {
+        "rule": "Replace superlatives with a specific, verifiable claim",
+        "why": "Superlatives ('fastest,' 'most powerful') are noise; a concrete number is signal.",
+        "when": "Headlines, feature descriptions, marketing copy where superlative claims appear",
+        "example_before": "The fastest way to go from data to insight.",
+        "example_after": "From raw event to dashboard in under 60 seconds."
+      },
+      {
+        "rule": "Open a section with new information, not a restatement of the heading",
+        "why": "The heading already set the topic; repeating it in the first sentence wastes the reader's time.",
+        "when": "First sentence of any headed section in a blog post, doc, or email",
+        "example_before": "**Why it's fast** \u2014 Speed is one of the most important properties of this system.",
+        "example_after": "**Why it's fast** \u2014 Every query runs on a pre-aggregated cache \u2014 there's no live scan on write."
+      },
+      {
+        "rule": "Use second-person ('you') and imperative voice in instructional and onboarding copy",
+        "why": "Third-person ('users can') creates distance; direct address closes it.",
+        "when": "Instructional copy, onboarding flows, documentation steps",
+        "example_before": "Users can configure alerts by setting thresholds in the dashboard.",
+        "example_after": "Set thresholds in the dashboard to configure your alerts."
+      },
+      {
+        "rule": "Make the product the active subject; avoid passive voice in feature descriptions",
+        "why": "Passive constructions obscure what the product does and weaken capability claims.",
+        "when": "Feature descriptions, product marketing copy, release notes",
+        "example_before": "Anomalies are automatically flagged when they are detected.",
+        "example_after": "The system flags anomalies the moment they appear."
+      },
+      {
+        "rule": "Define acronyms on first use, even for technical audiences",
+        "why": "Shared vocabulary cannot be assumed; undefined acronyms alienate some readers and look careless.",
+        "when": "All professional writing \u2014 blog posts, emails, docs \u2014 on first occurrence of any acronym",
+        "example_before": "MTTRs dropped 40% after deployment.",
+        "example_after": "Mean time to resolution (MTTR) dropped 40% after deployment."
+      },
+      {
+        "rule": "Delete setup clauses that only restate context already established",
+        "why": "Needless setup clauses delay the point and pad sentences with information the reader already has.",
+        "when": "Any sentence beginning with 'given that,' 'as we know,' or similar context-restating phrases",
+        "example_before": "Given that we're building for enterprise customers who operate in regulated industries, security has to be a first-class concern.",
+        "example_after": "Security is a first-class concern."
+      },
+      {
+        "rule": "Never pre-apologize for complexity; just explain the thing",
+        "why": "Warnings like 'this is complicated' undercut reader confidence before the explanation begins.",
+        "when": "Technical explanations, complex-topic intros in blog posts or emails",
+        "example_before": "This is a bit complicated, but the way the scheduler works is actually pretty interesting.",
+        "example_after": "The scheduler works in two phases."
+      },
+      {
+        "rule": "Use em-dashes for mid-sentence asides in flowing prose; reserve parentheses for citations and abbreviations",
+        "why": "Parentheses visually fragment a sentence; em-dashes keep the flow intact.",
+        "when": "Flowing prose paragraphs in blog posts and emails",
+        "example_before": "The pipeline (which runs every five minutes) recomputes aggregates from raw events.",
+        "example_after": "The pipeline \u2014 which runs every five minutes \u2014 recomputes aggregates from raw events."
+      },
+      {
+        "rule": "End sections and posts with a claim, not a rhetorical question",
+        "why": "Rhetorical questions abdicate the author's responsibility to have a point of view.",
+        "when": "Closing sentences of blog post sections, email conclusions, any authored prose",
+        "example_before": "So what does this mean for the future of data infrastructure?",
+        "example_after": "Data infrastructure is being rebuilt from the ground up \u2014 and the teams moving now will set the defaults."
+      }
+    ],
+    "3d2cb04ca54e2501": [
+      {
+        "rule": "Open with the claim or conclusion, not the setup that led to it",
+        "why": "Readers scan first; burying the point after context causes them to lose interest before reaching it.",
+        "when": "Any paragraph in a blog post, email, or launch copy where you are building toward a conclusion",
+        "example_before": "We tried a lot of different approaches over the past year. We looked at X, Y, and Z. What we found was that simplicity wins.",
+        "example_after": "Simplicity wins. We tried X, Y, and Z over the past year, and they all pointed the same direction."
+      },
+      {
+        "rule": "Cut filler phrases that restate the obvious ('It's worth noting that', 'As you can see', 'It goes without saying')",
+        "why": "These phrases add length without information and signal low confidence in the sentence that follows.",
+        "when": "All registers \u2014 blog posts, emails, launch copy",
+        "example_before": "It's worth noting that this approach cuts build time in half.",
+        "example_after": "This approach cuts build time in half."
+      },
+      {
+        "rule": "Use concrete numbers instead of vague intensifiers ('dramatically', 'significantly', 'a lot')",
+        "why": "Specific numbers are credible; vague intensifiers read as marketing puffery and invite skepticism.",
+        "when": "Any claim about scale, improvement, or impact in blog posts and launch copy",
+        "example_before": "This dramatically improved our conversion rate.",
+        "example_after": "This lifted our conversion rate from 2.1 % to 3.8 %."
+      },
+      {
+        "rule": "Avoid hedging qualifiers ('kind of', 'sort of', 'a bit', 'pretty', 'fairly') in professional copy",
+        "why": "Hedging undermines authority and makes assertions feel tentative; cut or replace with the plain adjective.",
+        "when": "Emails to customers or stakeholders, blog posts, launch copy",
+        "example_before": "We built a pretty solid onboarding flow that's kind of self-serve.",
+        "example_after": "We built a self-serve onboarding flow."
+      },
+      {
+        "rule": "Write in active voice; move the actor to subject position",
+        "why": "Active constructions are shorter, clearer, and attribute responsibility explicitly.",
+        "when": "All professional writing, especially blog posts and launch copy",
+        "example_before": "Errors were caught by the linter before they reached production.",
+        "example_after": "The linter caught the errors before they reached production."
+      },
+      {
+        "rule": "Replace 'leverage' with 'use', 'build on', or 'take advantage of'",
+        "why": "'Leverage' is overused business jargon that blurs meaning; a plain verb is almost always clearer.",
+        "when": "All registers",
+        "example_before": "We leverage existing infrastructure to keep costs low.",
+        "example_after": "We use existing infrastructure to keep costs low."
+      },
+      {
+        "rule": "Don't open emails or posts with 'I wanted to' or 'I'm reaching out to'",
+        "why": "These phrases front-load the writer's intent instead of the reader's benefit; they slow entry and read as timid.",
+        "when": "Email subject and first sentence; blog post openings",
+        "example_before": "I wanted to share some updates on the launch timing.",
+        "example_after": "Launch is moving to March 14. Here's what changed."
+      },
+      {
+        "rule": "Trim 'in order to' down to 'to'",
+        "why": "'In order to' is three words doing one word's job; no meaning is lost by cutting.",
+        "when": "All writing",
+        "example_before": "We simplified the API in order to reduce onboarding friction.",
+        "example_after": "We simplified the API to reduce onboarding friction."
+      },
+      {
+        "rule": "Prefer short Anglo-Saxon words over Latinate equivalents when both are available",
+        "why": "Shorter, familiar words move faster and feel less corporate; the reader doesn't have to slow down.",
+        "when": "Blog posts and outbound emails; anywhere voice should feel human",
+        "example_before": "We endeavored to ascertain the root cause of the degradation.",
+        "example_after": "We tried to find the root cause of the slowdown."
+      },
+      {
+        "rule": "Break sentences longer than ~25 words into two sentences",
+        "why": "Long sentences require readers to hold multiple ideas in working memory; splitting them preserves each idea cleanly.",
+        "when": "Blog posts, launch copy, customer emails",
+        "example_before": "Because we ship on a two-week cycle and want to keep quality high, we run a full regression suite before every deploy even though it adds 20 minutes to the pipeline.",
+        "example_after": "We ship on a two-week cycle and run a full regression suite before every deploy. It adds 20 minutes to the pipeline, but keeps quality high."
+      },
+      {
+        "rule": "Use em-dashes sparingly \u2014 one per paragraph at most \u2014 not as a general-purpose connector",
+        "why": "Overuse of em-dashes fragments sentences and makes prose feel breathless; reserve them for genuine asides.",
+        "when": "Blog posts and long-form emails",
+        "example_before": "We shipped the feature \u2014 after months of work \u2014 and saw great results \u2014 almost immediately.",
+        "example_after": "We shipped the feature after months of work and saw results almost immediately."
+      },
+      {
+        "rule": "Don't use scare quotes around standard terms you're comfortable with",
+        "why": "Scare quotes signal distance or irony; using them on plain terms reads as uncertain or condescending.",
+        "when": "All professional writing",
+        "example_before": "We ran a \"growth experiment\" to test the hypothesis.",
+        "example_after": "We ran a growth experiment to test the hypothesis."
+      },
+      {
+        "rule": "Put the most important word or phrase at the end of the sentence, not the middle",
+        "why": "The final position in a sentence carries the most cognitive weight; saving the key term for last makes it land harder.",
+        "when": "Blog post body copy and launch copy",
+        "example_before": "Speed, which is the thing users care about most, is what we optimized for.",
+        "example_after": "We optimized for the thing users care about most: speed."
+      },
+      {
+        "rule": "Replace 'utilize' with 'use'",
+        "why": "'Utilize' technically means to make use of something not intended for that purpose; in general copy it's just a longer 'use'.",
+        "when": "All writing",
+        "example_before": "Teams can utilize this dashboard to track progress.",
+        "example_after": "Teams can use this dashboard to track progress."
+      },
+      {
+        "rule": "Don't pad transitions with 'As mentioned above' or 'As we discussed'; just make the logical connection directly",
+        "why": "Back-references interrupt forward momentum and remind readers they might have missed something.",
+        "when": "Blog posts, multi-section emails",
+        "example_before": "As mentioned above, the bottleneck was in the queue. This led us to rethink the architecture.",
+        "example_after": "The queue bottleneck led us to rethink the architecture."
+      },
+      {
+        "rule": "Kill throat-clearing introductions that restate the subject of the email before making the point",
+        "why": "The recipient already knows the context from the subject line or prior thread; repeating it is wasted words.",
+        "when": "Email, especially follow-ups and status updates",
+        "example_before": "Following up on our conversation about the pricing page redesign, I wanted to share a few thoughts.",
+        "example_after": "Three thoughts on the pricing page redesign:"
+      },
+      {
+        "rule": "Use parallel grammatical structure in lists and bullet points",
+        "why": "Inconsistent structure forces readers to re-parse each item; parallelism lets them skim.",
+        "when": "Any bulleted or numbered list in emails, docs, or launch copy",
+        "example_before": "\u2022 Faster builds\n\u2022 Reduces errors\n\u2022 You save money on CI costs",
+        "example_after": "\u2022 Faster builds\n\u2022 Fewer errors\n\u2022 Lower CI costs"
+      },
+      {
+        "rule": "Avoid starting consecutive sentences with 'This'",
+        "why": "Repetition of 'This' at the sentence start creates a monotonous rhythm and each instance can feel vague.",
+        "when": "Blog posts and longer emails",
+        "example_before": "This changed our approach. This meant we had to rebuild the pipeline. This added two weeks.",
+        "example_after": "This changed our approach \u2014 we had to rebuild the pipeline, which added two weeks."
+      },
+      {
+        "rule": "Replace 'moving forward' and 'going forward' with a specific time reference or just cut it",
+        "why": "'Going forward' is hollow filler; readers want to know when, not that you intend to keep existing.",
+        "when": "Emails and update posts",
+        "example_before": "Going forward, we'll send updates every Friday.",
+        "example_after": "Starting this Friday, we'll send weekly updates."
+      },
+      {
+        "rule": "Don't use 'exciting' to describe your own product or feature",
+        "why": "Self-applied enthusiasm reads as hype; readers decide what excites them \u2014 show them something worth being excited about instead.",
+        "when": "Launch copy, product announcements, blog posts",
+        "example_before": "We're excited to announce this exciting new feature.",
+        "example_after": "Today we're shipping X. It does Y in half the time."
+      },
+      {
+        "rule": "Keep subject lines under 8 words and front-load the most specific noun",
+        "why": "Mobile email clients truncate long subjects; the first word determines whether the email gets opened.",
+        "when": "Outbound emails, newsletter subject lines",
+        "example_before": "Subject: Just wanted to share some updates on our latest product release",
+        "example_after": "Subject: March release notes \u2014 3 breaking changes"
+      },
+      {
+        "rule": "Write 'can't', 'won't', 'don't' instead of 'cannot', 'will not', 'do not' unless the register demands formality",
+        "why": "Contractions match natural spoken cadence and keep the tone approachable; full forms feel stiff in most product contexts.",
+        "when": "Blog posts, product emails, onboarding copy \u2014 not legal docs or formal partner agreements",
+        "example_before": "Users will not be able to access the old dashboard after June 1.",
+        "example_after": "Users won't be able to access the old dashboard after June 1."
+      },
+      {
+        "rule": "Cut 'very', 'really', and 'quite' from every sentence without replacement",
+        "why": "These adverbs weaken the adjective they modify; the plain adjective is almost always stronger.",
+        "when": "All registers",
+        "example_before": "This is a very important change that really affects how you use the product.",
+        "example_after": "This change affects how you use the product."
+      },
+      {
+        "rule": "Name the customer or persona in CTAs instead of using 'you'",
+        "why": "Specific personas make the reader self-select and feel the copy was written for them rather than anyone.",
+        "when": "Landing page CTAs and launch copy targeting a defined audience",
+        "example_before": "Sign up if you want faster deploys.",
+        "example_after": "Sign up if you're an engineering team shipping daily."
+      },
+      {
+        "rule": "Use sentence case for headings, not title case, in blog posts and product docs",
+        "why": "Sentence case reads more naturally inline and matches the conversational tone of most product writing; title case can feel formal or bureaucratic.",
+        "when": "Blog post headings, in-product section headers",
+        "example_before": "How to Set Up Your First Funnel in Five Minutes",
+        "example_after": "How to set up your first funnel in five minutes"
+      }
+    ],
+    "bacd0d61fd49b34c": [
+      {
+        "rule": "Open with the problem the reader already feels, not a scene-setting summary of how agents work",
+        "why": "Readers grant attention when they recognize their own pain immediately; background earns its place only after the hook.",
+        "when": "Blog post or technical essay intros where the subject is a well-known AI behavior",
+        "example_before": "AI agents write code by trying, failing, seeing the error, and trying again \u2014 often with the same broken approach, slightly rephrased.",
+        "example_after": "The retry loop is the default, and the default is wrong."
+      },
+      {
+        "rule": "Name Zerg's stake in the problem before explaining the paper",
+        "why": "Credibility and relevance land harder when the reader knows the writer has skin in the game.",
+        "when": "Any company blog post covering external research",
+        "example_before": "a new paper from a team across CMU, the University of Washington, and Arm caught our eye",
+        "example_after": "We don't have an analog of this in our own pipeline yet, and that's exactly why this paper jumped out."
+      }
+    ],
+    "0e31ddac9963736e": [
+      {
+        "rule": "Open with the concrete fact or number, not the framing sentence",
+        "why": "The lead earns attention; burying the payload in sentence two makes readers work for the point",
+        "when": "First paragraph of any blog post, especially technical posts announcing a result",
+        "example_before": "Most AI agents approach this the same way they approach everything. When generation fails, the agent sees the error and tries again.",
+        "example_after": "Single-pass code correctness jumped from 22% to 54%\u2014before any search, before any optimization."
+      },
+      {
+        "rule": "Put the punchline number in the same sentence as its cause, not a paragraph later",
+        "why": "Separating cause and effect forces re-reading and dilutes impact",
+        "when": "Any paragraph reporting a metric tied to a method or intervention",
+        "example_before": "AdaExplore distilled 1,178 raw failure traces into 78 high-frequency rules. Single-pass correctness jumped from 22% to 54%.",
+        "example_after": "Distilling 1,178 traces into 78 rules pushed single-pass correctness from 22% to 54%."
+      },
+      {
+        "rule": "Avoid throat-clearing that names what you are about to say instead of saying it",
+        "why": "Meta-commentary ('Call it a validity rulebook') substitutes for the actual claim and adds no information",
+        "when": "Any time you catch yourself writing 'Call it X', 'Think of it as Y', or 'In other words'",
+        "example_before": "Call it a validity rulebook: a cross-task memory of what Triton won't tolerate.",
+        "example_after": "The result is a cross-task memory of what Triton won't tolerate\u201478 rules the agent checks before generating."
+      },
+      {
+        "rule": "Collapse the deduplication pipeline description into one crisp sentence with the key numbers only",
+        "why": "Listing every intermediate step buries the result; readers care about input, method, and output\u2014not every node",
+        "when": "Describing multi-stage data processing pipelines in blog posts or technical summaries",
+        "example_before": "1,178 raw failure traces became 174 unique patterns after deduplication, then 78 high-frequency rules after filtering.",
+        "example_after": "1,178 failure traces, filtered to 78 high-frequency rules."
+      },
+      {
+        "rule": "Name what the agent 'doesn't do' only when it directly contrasts with what your system does do",
+        "why": "Negative framing without an immediate positive payoff reads as a setup without a punchline",
+        "when": "Competitive or contrast framing in blog posts about new approaches",
+        "example_before": "What it doesn't do is ask whether it has seen this class of failure before, and what rule that failure points to.",
+        "example_after": "AdaExplore asks exactly that question\u2014and answers it by mining its own failure history."
+      },
+      {
+        "rule": "End section closers with the implication, not the restatement",
+        "why": "Restating the metric the reader just absorbed is filler; the implication is the value",
+        "when": "Closing sentences of any paragraph that contains a quantitative result",
+        "example_before": "The agent got the code right more than twice as often, because it stopped repeating known mistakes.",
+        "example_after": "Stopping known mistakes was enough to double correctness\u2014before tuning a single hyperparameter."
+      }
+    ],
+    "b9aa15cabe61ae57": [],
+    "946c93a2ed506aaa": [
+      {
+        "rule": "Compress image alt text to data chains and key metrics using arrow notation, not prose sentences",
+        "why": "Alt text should be scannable and minimal; the surrounding body copy carries the narrative",
+        "when": "Image alt text in technical blog posts where the image shows a funnel, pipeline, or numeric reduction",
+        "example_before": "Distilling 1,178 raw failure traces from 200 Triton tasks down to 78 high-frequency rules: deduplication then frequency filtering, with single-pass correctness jumping from 22% to 54%",
+        "example_after": "1,178 \u2192 174 \u2192 78. Single-pass correctness: 22% \u2192 54%."
+      },
+      {
+        "rule": "Describe only what is visually in the diagram in alt text \u2014 strip analytical conclusions and implications",
+        "why": "The body copy already explains what the diagram means; alt text should describe what's visible, not duplicate the argument",
+        "when": "Image alt text for diagrams that illustrate comparative or multi-part concepts in technical blog posts",
+        "example_before": "Each type covers what the other gives up \u2014 small moves alone get stuck in local optima; large moves alone waste time rediscovering known constraints.",
+        "example_after": "Tree search holds two move types: small moves patch a working kernel; large moves regenerate from different assumptions."
+      },
+      {
+        "rule": "Name the specific system being compared against instead of using the generic word 'baseline'",
+        "why": "Readers need to know what the comparison point is to evaluate the claim's significance",
+        "when": "Technical blog posts and launch copy reporting benchmark or performance results",
+        "example_before": "AdaExplore hit a 3.12x speedup over baseline within 100 steps.",
+        "example_after": "AdaExplore hit a 3.12x speedup over PyTorch eager within 100 steps."
+      },
+      {
+        "rule": "When reporting multi-level or multi-benchmark results in sequence, carry the baseline reference through every result, not just the first",
+        "why": "Dropping the baseline reference on later results creates ambiguity about whether the comparisons are parallel",
+        "when": "Technical writing that reports results at multiple difficulty levels or benchmark suites in the same passage",
+        "example_before": "Level-2: 3.12x speedup over PyTorch eager. Level-3 came in at 1.72x.",
+        "example_after": "Level-2: 3.12x speedup over PyTorch eager. Level-3 came in at 1.72x against the same baseline."
+      }
+    ],
+    "1c01496e0668f83b": [
+      {
+        "rule": "Stop over-emphasizing 'vampire pricing'; treat it as a pricing strategy, not a newsworthy theme worth foregrounding in content.",
+        "why": "Matt has told the agent many times it overweights this; it's not newsworthy.",
+        "when": "Writing/editing Zerg blog and content copy",
+        "example_before": "headline/section foregrounding vampire pricing as a story",
+        "example_after": "treat vampire pricing as a minor strategy mention, not a theme"
+      },
+      {
+        "rule": "Don't reference the Securitize SPAC specifically; frame the line as cumulative follow-on funding raised, not Securitize/SPAC.",
+        "why": "Matt does not want SPAC/Securitize called out specifically in public-facing copy.",
+        "when": "Writing public signals / funding lines in Zerg copy",
+        "example_before": "9-figure SPAC / Securitize SPAC line",
+        "example_after": "cumulative follow-on funding raised across the cohort"
+      },
+      {
+        "rule": "Do not list DoorDeck publicly as a client or investment.",
+        "why": "They weren't a great client or investment.",
+        "when": "Listing clients/portfolio in public-facing Zerg copy",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Open posts with a complete sentence; if using a fragment, commit to it fully rather than half-fragment.",
+        "why": "Half-fragment openers read as weird/unintentional in Matt's voice.",
+        "when": "Drafting blog/announcement intros in Matt's voice.",
+        "example_before": "First sentence not being a proper sentence",
+        "example_after": ""
+      },
+      {
+        "rule": "Avoid self-congratulatory phrasing like 'been a long time coming' or aggrandizing Matt's role/remit.",
+        "why": "Matt finds it cocky, overly formal, and too transparent; he wants understated, less self-aggrandizing copy.",
+        "when": "Announcement/launch copy in Matt's voice.",
+        "example_before": "Been a long time coming; describing my remit/role",
+        "example_after": "excited to be working with Idan again"
+      },
+      {
+        "rule": "Use round, approximate numbers (e.g. 'about 90% less') instead of overly precise figures in prose.",
+        "why": "Matt prefers to keep it simple and move on rather than nail exact multipliers.",
+        "when": "Stating metrics/claims in blog or marketing prose.",
+        "example_before": "7-10x per-tool with bundle math breakdown",
+        "example_after": "about 90% less"
+      },
+      {
+        "rule": "Drop inline source-citation parentheticals like '(per durable.com/about, 2026)' from case-study prose, and don't split dates awkwardly across two lines.",
+        "why": "Citations read as weird and add little value; split dates look lazy/poorly formatted.",
+        "when": "Writing case studies and prose in Matt's voice.",
+        "example_before": "(per durable.com/about, 2026); date wrapped across 2 lines",
+        "example_after": ""
+      },
+      {
+        "rule": "Never name Idan (or other individuals) on Matt's personal website.",
+        "why": "Matt finds naming a colleague on his personal site weird.",
+        "when": "Editing/generating Matt's personal site copy.",
+        "example_before": "mentions Idan by name",
+        "example_after": ""
+      },
+      {
+        "rule": "Avoid \"X, not Y\" constructions and platitude pivots that lack a concrete mechanism; cut platitudes unless backed by specifics.",
+        "why": "These are AI-writing tells (per Wikipedia Signs of AI Writing) that erode credibility; codified in writing_style.md after Idan's feedback.",
+        "when": "Editing any prose, blog post, thesis piece, or launch copy before publication.",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Frame content honestly as articles vs research and eliminate AI writing signals to protect credibility with skeptical technical readers.",
+        "why": "Idan's quality-first content strategy emphasizes positioning and credibility over volume; mis-framing damages trust with CTOs.",
+        "when": "Drafting or reviewing thought pieces, case studies, and thesis content for external publication.",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "In case studies, include authentic customer voice and verify all date math, never overselling completion in headline vs body.",
+        "why": "A vendor-self-narrative without customer voice and with date errors damages credibility with skeptical readers (Idan ship-blockers on Durable).",
+        "when": "Writing or reviewing customer case studies and their cover stats/dek.",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Label every source/reference URL \u2014 internal and external alike \u2014 with a live or to-build/roadmapped status marker; do not leave internal Zerg paths unmarked.",
+        "why": "Matt's honest-scoping rule applies equally to internal and external links; unmarked internal paths break parity with verified external sources (flagged HIGH in copyedit review).",
+        "when": "Copyediting prose/launch posts that cite source or product URLs",
+        "example_before": "",
+        "example_after": "(live \u2014 ships on this site)"
+      },
+      {
+        "rule": "Delete AI writing tells: overused words (delve, leverage, multifaceted), filler hedges ('It's important to note that'), and reflexive 'Not X, but Y' contrast frames; apply stricter rules to public prose than email/personal.",
+        "why": "Matt's style philosophy is to kill LLM-generation tells, not enforce formulae; voice rules are context-stratified and context-specific rules win on conflict.",
+        "when": "Copyediting any prose, with strictest application on public Zerg-facing prose",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Keep the spin-off social/content account voice recognizably similar to Matt's own voice.",
+        "why": "The account is essentially a FakeMatt content channel, so it should sound like him.",
+        "when": "Drafting content/captions for Matt's Instagram/social spin-off account",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Always add creative flair, cross-over, and humor to Matt's content projects.",
+        "why": "Matt wants his spin-off content to feel creative and playful, not dry.",
+        "when": "Creative content/social projects under Matthew's personal slate",
+        "example_before": "",
+        "example_after": ""
+      },
+      {
+        "rule": "Differentiate Matt's personal writing style from Matt-for-Zerg writing style; style changes should barely affect personal use but significantly shape Zerg voice.",
+        "why": "Personal and Zerg professional voices are distinct and should be governed asymmetrically.",
+        "when": "Any prose/voice editing where audience is personal vs Zerg",
+        "example_before": "",
+        "example_after": ""
+      }
+    ]
+  }
+}

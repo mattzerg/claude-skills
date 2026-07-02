@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 3,
+    "hierarchy": 4,
+    "distinctiveness": 1,
+    "color": 5,
+    "density": 3,
+    "voice": 2
+  },
+  "reasoning": {
+    "typography": "Generic Inter/Inter Display stack with no character\u2014the exact stencil mentioned in the rubric. Zero typographic identity.",
+    "hierarchy": "Error page has clear dominance with headline, but this is boilerplate, not designed hierarchy\u2014works by default, not by intention.",
+    "distinctiveness": "100% swappable error page. Could be literally any SaaS company. No brand differentiation whatsoever.",
+    "color": "Near-monochrome with restrained black buttons\u2014palette discipline by default of being an error page, not by design ambition.",
+    "density": "Excessive whitespace with centered content floating in void\u2014safe and boring rather than confident. Generic uniform padding around CTAs.",
+    "voice": "Corporate apology template. 'Our team have been alerted' + reload/support CTAs is the universal error stencil. Zero personality or brand voice."
+  },
+  "winning_patterns": [
+    "Clean, uncluttered error state without unnecessary decoration",
+    "Restrained color palette keeps focus on message",
+    "Clear CTA pairing (primary/secondary) follows basic UX patterns"
+  ],
+  "anti_patterns": [
+    "Completely generic Inter typography\u2014the AI stencil incarnate",
+    "Error message could be copied from any SaaS site verbatim",
+    "Wasteland of whitespace with no density or confidence",
+    "Zero brand personality\u2014'Something has gone wrong' is the most generic possible headline",
+    "Corporate speak ('Our team have been alerted') instead of human voice",
+    "Centered floating content is the safest, most timid layout choice"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://www.attio.com",
+  "_persona": "design_forward",
+  "_note": "Dup-fallback for redirect flakiness",
+  "_graded_at": "2026-05-08T21:45:57.875630Z"
+}

@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 6,
+    "distinctiveness": 3,
+    "color": 7,
+    "density": 5,
+    "voice": 3
+  },
+  "reasoning": {
+    "typography": "Inter Variable \u2014 the default SaaS choice. Competent but zero personality. Large headline works functionally but this is the stencil.",
+    "hierarchy": "Hero headline dominates adequately, but below-fold becomes generic logo soup and undifferentiated content blocks. Clear focal point on entry, then diffuses.",
+    "distinctiveness": "Swap 'Linear' for 'Notion' or 'Height' or any B2B tool and nothing changes. Dark mode + big sans headline + logo parade is the 2023 startup template. 'Purpose-built for modern teams' is interchangeable corporate speak.",
+    "color": "Disciplined black/white with minimal accent use. The restraint works \u2014 no decorative gradients or busy color. This is well-executed monochrome.",
+    "density": "Vast empty black space in hero feels intentional but wastes prime real estate. Logo strip sits in void. Not confident density \u2014 just stretched padding.",
+    "voice": "Generic SaaS IA hiding behind 'AI era' buzzwords. The structure says nothing specific about Linear's actual workflow philosophy. 'A new species of product tool' is marketing fluff, not structural voice."
+  },
+  "winning_patterns": [
+    "Restrained monochrome palette \u2014 no gradient soup or decorative noise",
+    "Hero headline is large and functionally dominant",
+    "Clean navigation without clutter"
+  ],
+  "anti_patterns": [
+    "Inter Variable strikes again \u2014 typographic default with zero character",
+    "Logo parade as social proof \u2014 the clich\u00e9 B2B trust signal",
+    "Vast empty black space wastes screen real estate without adding meaning",
+    "'Purpose-built for modern teams with AI workflows' \u2014 generic positioning that could describe 50 products",
+    "No structural voice \u2014 this is a template IA with buzzwords swapped in"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://linear.app",
+  "_persona": "design_forward",
+  "_note": "Gradient meshes, smooth scroll reveals, refined motion",
+  "_graded_at": "2026-05-08T21:42:03.578787Z"
+}

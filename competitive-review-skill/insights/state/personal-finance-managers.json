@@ -7398,7 +7398,7 @@
     }
   ],
   "spec": {
-    "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Zergwallet.md",
+    "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Projects/Zerg-Production/Zstack/Zergwallet.md",
     "frontmatter": {
       "created": "2026-05-01",
       "updated": "2026-05-03",
@@ -9319,7 +9319,7 @@
   ],
   "prior_audits": [
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-01-untitled-e9403552.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-01-untitled-e9403552.md",
       "filename": "2026-05-01-untitled-e9403552.md",
       "score": 26,
       "matched_terms": [
@@ -9339,7 +9339,7 @@
       "snippet": "*retail crypto / brokerage** | coinbase (retail), robinhood, public, kraken, m1 finance | investment-manager surface; consumer expectations for charts/holdings | | **4** | **neobanks** | chime, cash app, revolut, sofi, wise, current | personal banking tab; spending-account ux, instant-transfer table stakes | | **5** | **personal finance managers** | monarch, copilot, rocket money, ynab, empower, q"
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-02-analyze-finance-wallets-competitive-landscape-vs-zergwallet-0e4e979c.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-02-analyze-finance-wallets-competitive-landscape-vs-zergwallet-0e4e979c.md",
       "filename": "2026-05-02-analyze-finance-wallets-competitive-landscape-vs-zergwallet-0e4e979c.md",
       "score": 16,
       "matched_terms": [
@@ -9352,7 +9352,7 @@
       "snippet": "weisner/.claude/skills/competitive-review-skill branches: [main] ---  # analyze finance-wallets competitive landscape vs zergwallet  ## what was asked you are a competitive intelligence analyst. the user is reviewing the \"finance-and-wallets\" product category against the zerg product 'zergwallet'.  user-supplied seed competitors: - https://metamask.io - https://rainbow.me - https://skyfire.xyz - h"
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-map-airdrop-tools-across-finance-wallets-1dc5cdc1.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-map-airdrop-tools-across-finance-wallets-1dc5cdc1.md",
       "filename": "2026-05-03-map-airdrop-tools-across-finance-wallets-1dc5cdc1.md",
       "score": 14,
       "matched_terms": [
@@ -9365,7 +9365,7 @@
       "snippet": "kills/competitive-review-skill branches: [main] ---  # map airdrop tools across finance wallets  ## what was asked you are filling in a feature presence matrix for the \"finance-and-wallets\" category.  for each canonical feature in the list below, mark presence in each source as one of: - \"yes\"     \u2014 clearly present, confirmed in source content - \"partial\" \u2014 limited form, gated to enterprise tier, "
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallets-feature-matrix-assessment-1575309d.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallets-feature-matrix-assessment-1575309d.md",
       "filename": "2026-05-03-finance-wallets-feature-matrix-assessment-1575309d.md",
       "score": 14,
       "matched_terms": [
@@ -9378,7 +9378,7 @@
       "snippet": "s/mattheweisner/.claude/skills/competitive-review-skill branches: [main] ---  # finance wallets feature matrix assessment  ## what was asked you are filling in a feature presence matrix for the \"finance-and-wallets\" category.  for each canonical feature in the list below, mark presence in each source as one of: - \"yes\"     \u2014 clearly present, confirmed in source content - \"partial\" \u2014 limited form, "
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallet-features-comparison-matrix-172600dc.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallet-features-comparison-matrix-172600dc.md",
       "filename": "2026-05-03-finance-wallet-features-comparison-matrix-172600dc.md",
       "score": 14,
       "matched_terms": [
@@ -9391,7 +9391,7 @@
       "snippet": "s/mattheweisner/.claude/skills/competitive-review-skill branches: [main] ---  # finance wallet features comparison matrix  ## what was asked you are filling in a feature presence matrix for the \"finance-and-wallets\" category.  for each canonical feature in the list below, mark presence in each source as one of: - \"yes\"     \u2014 clearly present, confirmed in source content - \"partial\" \u2014 limited form, "
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallet-feature-presence-matrix-cd3258ca.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallet-feature-presence-matrix-cd3258ca.md",
       "filename": "2026-05-03-finance-wallet-feature-presence-matrix-cd3258ca.md",
       "score": 14,
       "matched_terms": [
@@ -9404,7 +9404,7 @@
       "snippet": "s/mattheweisner/.claude/skills/competitive-review-skill branches: [main] ---  # finance wallet feature presence matrix  ## what was asked you are filling in a feature presence matrix for the \"finance-and-wallets\" category.  for each canonical feature in the list below, mark presence in each source as one of: - \"yes\"     \u2014 clearly present, confirmed in source content - \"partial\" \u2014 limited form, gat"
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallet-feature-presence-matrix-6b3d2603.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-finance-wallet-feature-presence-matrix-6b3d2603.md",
       "filename": "2026-05-03-finance-wallet-feature-presence-matrix-6b3d2603.md",
       "score": 14,
       "matched_terms": [
@@ -9417,7 +9417,7 @@
       "snippet": "s/mattheweisner/.claude/skills/competitive-review-skill branches: [main] ---  # finance wallet feature presence matrix  ## what was asked you are filling in a feature presence matrix for the \"finance-and-wallets\" category.  for each canonical feature in the list below, mark presence in each source as one of: - \"yes\"     \u2014 clearly present, confirmed in source content - \"partial\" \u2014 limited form, gat"
     },
     {
-      "path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Conversations/Claude/2026-05-03-feature-presence-matrix-for-finance-wallets-e3313d7d.md",
+      "path": "/Users/mattheweisner/Obsidian/Zerg/MattZerg/Conversations/Claude/2026-05-03-feature-presence-matrix-for-finance-wallets-e3313d7d.md",
       "filename": "2026-05-03-feature-presence-matrix-for-finance-wallets-e3313d7d.md",
       "score": 14,
       "matched_terms": [

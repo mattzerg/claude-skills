@@ -1,0 +1,669 @@
+{
+  "name": "FFmpeg",
+  "url": "https://ffmpeg.org",
+  "domain": "ffmpeg.org",
+  "scanned_at": "2026-05-13T18:51:28.777464",
+  "sources": {
+    "landing": {
+      "url": "https://ffmpeg.org",
+      "title": "FFmpeg",
+      "text": "FFmpeg\nFFmpeg\nAbout\nNews\nDownload\nDocumentation\nCommunity\nCode of Conduct\nMailing Lists\nIRC\nForums\nBug Reports\nWiki\nConferences\nDevelopers\nSource Code\nContribute\nFATE\nCode Coverage\nFunding through SPI\nMore\nDonate\nHire Developers\nContact\nSecurity\nLegal\nFFmpeg\nA complete, cross-platform solution to record, convert and stream audio and video.\nDownload\nConverting\nvideo\nand\naudio\nhas never been so easy.\n$ ffmpeg -i input.mp4 output.avi\nDiscover more\nNews\nMarch 16th, 2026, FFmpeg 8.1\n\"Hoare\"\nA new minor release,\nFFmpeg 8.1\n\"Hoare\"\n,\n  is now available for download. Here are some of the highlights:\nDecoders: xHE-AAC Mps212 (experimental) MPEG-H decoding via libmpeghdec\nEXIF Metadata Parsing\nLCEVC: support for parsing and forwarding metadata\nVulkan compute-based codecs: ProRes encoding and decoding, DPX decoding\nD3D12: D3D12 H.264/AV1 encoding, scale_d3d12, mestimate_d3d12, deinterlace_d3d12 filters\nRockchip H.264/HEVC hardware encoding\nIAMF: Projection mode Ambisonic Audio Elements muxing and demuxing\nFormats: hxvs demuxer\nFilters: drawvg, vpp_amf\nThis release features a lot of internal changes and bugfixes. The groundwork for the upcoming swscale rewrite is progressing.\n  The Vulkan compute-based codecs, and a few filters, no longer depend on runtime GLSL compilation, which speeds up their initialization.\nA companion post about the Vulkan Compute-based codec implementations has been published on the\nKhronos blog\n,\n  featuring technical details on the implementations and future plans.\nWe recommend users, distributors, and system integrators to upgrade unless they use current git master.\nAugust 22nd, 2025, FFmpeg 8.0\n\"Huffman\"\nA new major release,\nFFmpeg 8.0\n\"Huffman\"\n,\n  is now available for download.\n  Thanks to several delays, and modernization of our entire infrastructure, this release ended up\n  being one of our largest releases to date. In short, its new features are:\nNative decoders:\nAPV\n, ProRes RAW, RealVideo 6.0, Sanyo LD-ADPCM, G.728\nVVC decoder improvements:\nIBC\n,\nACT\n,\n                                  Palette Mode\nVulkan compute-based codecs: FFv1 (encode and decode), ProRes RAW (decode only)\nHardware accelerated decoding: Vulkan VP9, VAAPI VVC, OpenHarmony H264/5\nHardware accelerated encoding: Vulkan AV1, OpenHarmony H264/5\nFormats: MCC, G.728, Whip, APV\nFilters: colordetect, pad_cuda, scale_d3d11, Whisper, and others\nA new class of decoders and encoders based on pure Vulkan compute implementation have been added.\n  Vulkan is a cross-platform, open standard set of APIs that allows programs to use GPU hardware in various ways,\n  from drawing on screen, to doing calculations, to decoding video via custom hardware accelerators.\n  Rather than using a custom hardware accelerator present, these codecs are based on compute shaders, and work\n  on any implementation of Vulkan 1.3.\nDecoders use the same hwaccel API and commands, so users do not need to do anything special to enable them,\n  as enabling\nVulkan decoding\nis sufficient to use them.\nEncoders, like our hardware accelerated encoders, require specifying a new encoder (ffv1_vulkan).\n  Currently, the only codecs supported are: FFv1 (encoding and decoding) and ProRes RAW (decode only).\n  ProRes (encode+decode) and VC-2 (encode+decode) implementations are complete and currently in review,\n  to be merged soon and available with the next minor release.\nOnly codecs specifically designed for parallelized decoding can be implemented in such a way, with\n  more mainstream codecs not being planned for support.\nDepending on the hardware, these new codecs can provide very significant speedups, and open up\n  possibilities to work with them for situations like non-linear video editors and\n  lossless screen recording/streaming, so we are excited to learn what our downstream users can make with them.\nThe project has recently started to modernize its infrastructure. Our mailing list servers have been\n  fully upgraded, and we have recently started to accept contributions via a new forge, available on\ncode.ffmpeg.org\n, running a Forgejo instance.\nAs usual, we recommend that users, distributors, and system integrators to upgrade unless they use current git master.\nSeptember 30th, 2024, FFmpeg 7.1\n\"P\u00e9ter\"\nFFmpeg 7.1 \"P\u00e9ter\"\n, a new\n    major release, is now available! A full list of changes can be found in the release\nchangelog\n.\nThe more important highlights of the release are that the VVC decoder, merged as experimental in version 7.0,\n    has had enough time to mature and be optimized enough to be declared as stable. The codec is starting to gain\n    traction with broadcast standardization bodies.\nSupport has been added for a native AAC USAC (part of the xHE-AAC coding system) decoder, with the format starting\n    to be adopted by streaming websites, due to its extensive volume normalization metadata.\nMV-HEVC decoding is now supported. This is a stereoscopic coding tool that begun to be shipped and generated\n    by recent phones and VR headsets.\nLC-EVC decoding, an enhancement metadata layer to attempt to improve the quality of codecs, is now supported via an\n    external library.\nSupport for Vulkan encoding, with H264 and HEVC was merged. This finally allows fully Vulkan-based decode-filter-encode\n    pipelines, by having a sink for Vulkan frames, other than downloading or displaying them. The encoders have feature-parity\n    with their VAAPI implementation counterparts. Khronos has announced that support for AV1 encoding is also coming soon to Vulkan,\n    and FFmpeg is aiming to have day-one support.\nIn addition to the above, this release has had a lot of important internal work done. By far, the standout internally\n    are the improvements made for full-range images. Previously, color range data had two paths, no negotiation,\n    and was unreliably forwarded to filters, encoders, muxers. Work on cleaning the system up started more than 10\n    years ago, however this stalled due to how fragile the system was, and that breaking behaviour would be unacceptable.\n    The new system fixes this, so now color range is forwarded correctly and consistently everywhere needed, and also\n    laid the path for more advanced forms of negotiation.\nCropping metadata is now supported with Matroska and MP4 formats. This metadata is important not only for archival,\n    but also with AV1, as hardware encoders require its signalling due to the codec not natively supporting one.\nAs usual, we recommend that users, distributors, and system integrators to upgrade unless they use current git master.\nSeptember 11th, 2024, Coverity\nThe number of issues FFmpeg has in\nCoverity (a static analyzer)\nis now lower than it has been since 2016.\n  Our defect density is less than one 30th of the average in OSS with over a million code\n  lines. All this was possible thanks to a grant from the\nSovereign Tech Fund\n.\nJune 2nd, 2024, native xHE-AAC decoder\nFFmpeg now implements a native xHE-AAC decoder. Currently, streams without (e)SBR, USAC or MPEG-H Surround\n  are supported, which means the majority of xHE-AAC streams in use should work. Support for USAC and (e)SBR is\n  coming soon. Work is also ongoing to improve its stability and compatibility.\n  During the process we found several specification issues, which were then submitted back to the authors\n  for discussion and potential inclusion in a future errata.\nMay 13th, 2024, Sovereign Tech Fund\nThe FFmpeg community is excited to announce that Germany's\nSovereign Tech Fund\nhas become its first governmental sponsor. Their support will help\n  sustain the maintainance of the FFmpeg project, a critical open-source\n  software multimedia component essential to bringing audio and video to\n  billions around the world everyday.\nApril 5th, 2024, FFmpeg 7.0 \"Dijkstra\"\nA new major release,\nFFmpeg 7.0 \"Dijkstra\"\n,\n  is now available for download. The most noteworthy changes for most users are\n  a\nnative VVC decoder\n(currently experimental, until more\n  fuzzing is done),\nIAMF support\n, or a\nmulti-threaded\nffmpeg\nCLI tool\n.\nThis release is\nnot\nbackwards compatible, removing APIs deprecated before 6.0.\n  The biggest change for most library callers will be the removal of the old bitmask-based\n  channel layout API, replaced by the\nAVChannelLayout\nAPI allowing such\n  features as custom channel ordering, or Ambisonics. Certain deprecated\nffmpeg\nCLI options were also removed, and a C11-compliant compiler is now required to build\n  the code.\nAs usual, there is also a number of new supported formats and codecs, new filters, APIs,\n  and countless smaller features and bugfixes. Compared to 6.1, the\ngit\nrepository\n  contains almost \u223c2000 new commits by \u223c100 authors, touching >100000 lines in\n  \u223c2000 files \u2014 thanks to everyone who contributed. See the\nChangelog\n,\nAPIchanges\n,\n  and the git log for more comprehensive lists of changes.\nJanuary 3rd, 2024, native VVC decoder\nThe\nlibavcodec\nlibrary now contains a native VVC (Versatile Video Coding)\n  decoder, supporting a large subset of the codec's features. Further optimizations and\n  support for more features are coming soon. The code was written by Nuo Mi, Xu Mu,\n  Frank Plowman, Shaun Loo, and Wu Jianhua.\nDecember 18th, 2023, IAMF support\nThe\nlibavformat\nlibrary can now read and write\nIAMF\n(Immersive Audio) files. The\nffmpeg\nCLI tool can configure IAMF structure with the new\n-stream_group\noption. IAMF support was written by James Almer.\nDecember 12th, 2023, multi-threaded\nffmpeg\nCLI tool\nThanks to a major refactoring of the\nffmpeg\ncommand-line tool, all the major\n  components of the transcoding pipeline (demuxers, decoders, filters, encodes, muxers) now\n  run in parallel. This should improve throughput and CPU utilization, decrease latency,\n  and open the way to other exciting new features.\nNote that you should\nnot\nexpect significant performance improvements in cases\n  where almost all computational time is spent in a single component (typically video\n  encoding).\nNovember 10th, 2023, FFmpeg 6.1 \"Heaviside\"\nFFmpeg 6.1 \"Heaviside\"\n, a new\n    major release, is now available! Some of the highlights:\nlibaribcaption decoder\nPlaydate video decoder and demuxer\nExtend VAAPI support for libva-win32 on Windows\nafireqsrc audio source filter\narls filter\nffmpeg CLI new option: -readrate_initial_burst\nzoneplate video source filter\ncommand support in the setpts and asetpts filters\nVulkan decode hwaccel, supporting H264, HEVC and AV1\ncolor_vulkan filter\nbwdif_vulkan filter\nnlmeans_vulkan filter\nRivaTuner video decoder\nxfade_vulkan filter\nvMix video decoder\nEssential Video Coding parser, muxer and demuxer\nEssential Video Coding frame merge bsf\nbwdif_cuda filter\nMicrosoft RLE video encoder\nRaw AC-4 muxer and demuxer\nRaw VVC bitstream parser, muxer and demuxer\nBitstream filter for editing metadata in VVC streams\nBitstream filter for converting VVC from MP4 to Annex B\nscale_vt filter for videotoolbox\ntranspose_vt filter for videotoolbox\nsupport for the P_SKIP hinting to speed up libx264 encoding\nSupport HEVC,VP9,AV1 codec in enhanced flv format\napsnr and asisdr audio filters\nOSQ demuxer and decoder\nSupport HEVC,VP9,AV1 codec fourcclist in enhanced rtmp protocol\nCRI USM demuxer\nffmpeg CLI '-top' option deprecated in favor of the setfield filter\nVAAPI AV1 encoder\nffprobe XML output schema changed to account for multiple variable-fields elements within the same parent element\nffprobe -output_format option added as an alias of -of\nThis release had been overdue for at least half a year, but due to constant activity in the repository,\n    had to be delayed, and we were finally able to branch off the release recently, before some of the large\n    changes scheduled for 7.0 were merged.\nInternally, we have had a number of changes too. The FFT, MDCT, DCT and DST implementation used for codecs\n    and filters has been fully replaced with the faster libavutil/tx (full article about it coming soon).\nThis also led to a reduction in the the size of the compiled binary, which can be noticeable in small builds.\nThere was a very large reduction in the total amount of allocations being done on each frame throughout video decoders,\n    reducing overhead.\nRISC-V optimizations for many parts of our DSP code have been merged, with mainly the large decoders being left.\nThere was an effort to improve the correctness of timestamps and frame durations of each packet, increasing the\n    accurracy of variable frame rate video.\nNext major release will be version 7.0, scheduled to be released in February. We will attempt to better stick\n    to the new release schedule we announced at the start of this year.\nWe strongly recommend users, distributors, and system integrators to upgrade unless they use current git master.\nMay 31st, 2023, Vulkan decoding\nA few days ago, Vulkan-powered decoding hardware acceleration code was merged into the codebase.\n    This is the first vendor-generic and platform-generic decode acceleration API, enabling the\n    same code to be used on multiple platforms, with very minimal overhead.\n    This is also the first multi-threaded hardware decoding API, and our code makes full use of this,\n    saturating all available decode engines the hardware exposes.\nThose wishing to test the code can read our\ndocumentation page\n.\n    For those who would like to integrate FFmpeg's Vulkan code to demux, parse, decode, and receive\n    a VkImage to present or manipulate, documentation and examples are available in our source tree.\n    Currently, using the latest available git checkout of our\nrepository\nis required.\n    The functionality will be included in stable branches with the release of version 6.1, due\n    to be released soon.\nAs this is also the first practical implementation of the specifications, bugs may be present,\n    particularly in drivers, and, although passing verification, the implementation itself.\n    New codecs, and encoding support are also being worked on, by both the Khronos organization\n    for standardizing, and us as implementing it, and giving feedback on improving.\nFebruary ",
+      "source": "playwright"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "url": "https://ffmpeg.org/index.html#news",
+      "title": "FFmpeg",
+      "text": "FFmpeg\nFFmpeg\nAbout\nNews\nDownload\nDocumentation\nCommunity\nCode of Conduct\nMailing Lists\nIRC\nForums\nBug Reports\nWiki\nConferences\nDevelopers\nSource Code\nContribute\nFATE\nCode Coverage\nFunding through SPI\nMore\nDonate\nHire Developers\nContact\nSecurity\nLegal\nFFmpeg\nA complete, cross-platform solution to record, convert and stream audio and video.\nDownload\nConverting\nvideo\nand\naudio\nhas never been so easy.\n$ ffmpeg -i input.mp4 output.avi\nDiscover more\nNews\nMarch 16th, 2026, FFmpeg 8.1\n\"Hoare\"\nA new minor release,\nFFmpeg 8.1\n\"Hoare\"\n,\n  is now available for download. Here are some of the highlights:\nDecoders: xHE-AAC Mps212 (experimental) MPEG-H decoding via libmpeghdec\nEXIF Metadata Parsing\nLCEVC: support for parsing and forwarding metadata\nVulkan compute-based codecs: ProRes encoding and decoding, DPX decoding\nD3D12: D3D12 H.264/AV1 encoding, scale_d3d12, mestimate_d3d12, deinterlace_d3d12 filters\nRockchip H.264/HEVC hardware encoding\nIAMF: Projection mode Ambisonic Audio Elements muxing and demuxing\nFormats: hxvs demuxer\nFilters: drawvg, vpp_amf\nThis release features a lot of internal changes and bugfixes. The groundwork for the upcoming swscale rewrite is progressing.\n  The Vulkan compute-based codecs, and a few filters, no longer depend on runtime GLSL compilation, which speeds up their initialization.\nA companion post about the Vulkan Compute-based codec implementations has been published on the\nKhronos blog\n,\n  featuring technical details on the implementations and future plans.\nWe recommend users, distributors, and system integrators to upgrade unless they use current git master.\nAugust 22nd, 2025, FFmpeg 8.0\n\"Huffman\"\nA new major release,\nFFmpeg 8.0\n\"Huffman\"\n,\n  is now available for download.\n  Thanks to several delays, and modernization of our entire infrastructure, this release ended up\n  being one of our largest releases to date. In short, its new features are:\nNative decoders:\nAPV\n, ProRes RAW, RealVideo 6.0, Sanyo LD-ADPCM, G.728\nVVC decoder improvements:\nIBC\n,\nACT\n,\n                                  Palette Mode\nVulkan compute-based codecs: FFv1 (encode and decode), ProRes RAW (decode only)\nHardware accelerated decoding: Vulkan VP9, VAAPI VVC, OpenHarmony H264/5\nHardware accelerated encoding: Vulkan AV1, OpenHarmony H264/5\nFormats: MCC, G.728, Whip, APV\nFilters: colordetect, pad_cuda, scale_d3d11, Whisper, and others\nA new class of decoders and encoders based on pure Vulkan compute implementation have been added.\n  Vulkan is a cross-platform, open standard set of APIs that allows programs to use GPU hardware in various ways,\n  from drawing on screen, to doing calculations, to decoding video via custom hardware accelerators.\n  Rather than using a custom hardware accelerator present, these codecs are based on compute shaders, and work\n  on any implementation of Vulkan 1.3.\nDecoders use the same hwaccel API and commands, so users do not need to do anything special to enable them,\n  as enabling\nVulkan decoding\nis sufficient to use them.\nEncoders, like our hardware accelerated encoders, require specifying a new encoder (ffv1_vulkan).\n  Currently, the only codecs supported are: FFv1 (encoding and decoding) and ProRes RAW (decode only).\n  ProRes (encode+decode) and VC-2 (encode+decode) implementations are complete and currently in review,\n  to be merged soon and available with the next minor release.\nOnly codecs specifically designed for parallelized decoding can be implemented in such a way, with\n  more mainstream codecs not being planned for support.\nDepending on the hardware, these new codecs can provide very significant speedups, and open up\n  possibilities to work with them for situations like non-linear video editors and\n  lossless screen recording/streaming, so we are excited to learn what our downstream users can make with them.\nThe project has recently started to modernize its infrastructure. Our mailing list servers have been\n  fully upgraded, and we have recently started to accept contributions via a new forge, available on\ncode.ffmpeg.org\n, running a Forgejo instance.\nAs usual, we recommend that users, distributors, and system integrators to upgrade unless they use current git master.\nSeptember 30th, 2024, FFmpeg 7.1\n\"P\u00e9ter\"\nFFmpeg 7.1 \"P\u00e9ter\"\n, a new\n    major release, is now available! A full list of changes can be found in the release\nchangelog\n.\nThe more important highlights of the release are that the VVC decoder, merged as experimental in version 7.0,\n    has had enough time to mature and be optimized enough to be declared as stable. The codec is starting to gain\n    traction with broadcast standardization bodies.\nSupport has been added for a native AAC USAC (part of the xHE-AAC coding system) decoder, with the format starting\n    to be adopted by streaming websites, due to its extensive volume normalization metadata.\nMV-HEVC decoding is now supported. This is a stereoscopic coding tool that begun to be shipped and generated\n    by recent phones and VR headsets.\nLC-EVC decoding, an enhancement metadata layer to attempt to improve the quality of codecs, is now supported via an\n    external library.\nSupport for Vulkan encoding, with H264 and HEVC was merged. This finally allows fully Vulkan-based decode-filter-encode\n    pipelines, by having a sink for Vulkan frames, other than downloading or displaying them. The encoders have feature-parity\n    with their VAAPI implementation counterparts. Khronos has announced that support for AV1 encoding is also coming soon to Vulkan,\n    and FFmpeg is aiming to have day-one support.\nIn addition to the above, this release has had a lot of important internal work done. By far, the standout internally\n    are the improvements made for full-range images. Previously, color range data had two paths, no negotiation,\n    and was unreliably forwarded to filters, encoders, muxers. Work on cleaning the system up started more than 10\n    years ago, however this stalled due to how fragile the system was, and that breaking behaviour would be unacceptable.\n    The new system fixes this, so now color range is forwarded correctly and consistently everywhere needed, and also\n    laid the path for more advanced forms of negotiation.\nCropping metadata is now supported with Matroska and MP4 formats. This metadata is important not only for archival,\n    but also with AV1, as hardware encoders require its signalling due to the codec not natively supporting one.\nAs usual, we recommend that users, distributors, and system integrators to upgrade unless they use current git master.\nSeptember 11th, 2024, Coverity\nThe number of issues FFmpeg has in\nCoverity (a static analyzer)\nis now lower than it has been since 2016.\n  Our defect density is less than one 30th of the average in OSS with over a million code\n  lines. All this was possible thanks to a grant from the\nSovereign Tech Fund\n.\nJune 2nd, 2024, native xHE-AAC decoder\nFFmpeg now implements a native xHE-AAC decoder. Currently, streams without (e)SBR, USAC or MPEG-H Surround\n  are supported, which means the majority of xHE-AAC streams in use should work. Support for USAC and (e)SBR is\n  coming soon. Work is also ongoing to improve its stability and compatibility.\n  During the process we found several specification issues, which were then submitted back to the authors\n  for discussion and potential inclusion in a future errata.\nMay 13th, 2024, Sovereign Tech Fund\nThe FFmpeg community is excited to announce that Germany's\nSovereign Tech Fund\nhas become its first governmental sponsor. Their support will help\n  sustain the maintainance of the FFmpeg project, a critical open-source\n  software multimedia component essential to bringing audio and video to\n  billions around the world everyday.\nApril 5th, 2024, FFmpeg 7.0 \"Dijkstra\"\nA new major release,\nFFmpeg 7.0 \"Dijkstra\"\n,\n  is now available for download. The most noteworthy changes for most users are\n  a\nnative VVC decoder\n(currently experimental, until more\n  fuzzing is done),\nIAMF support\n, or a\nmulti-threaded\nffmpeg\nCLI tool\n.\nThis release is\nnot\nbackwards compatible, removing APIs deprecated before 6.0.\n  The biggest change for most library callers will be the removal of the old bitmask-based\n  channel layout API, replaced by the\nAVChannelLayout\nAPI allowing such\n  features as custom channel ordering, or Ambisonics. Certain deprecated\nffmpeg\nCLI options were also removed, and a C11-compliant compiler is now required to build\n  the code.\nAs usual, there is also a number of new supported formats and codecs, new filters, APIs,\n  and countless smaller features and bugfixes. Compared to 6.1, the\ngit\nrepository\n  contains almost \u223c2000 new commits by \u223c100 authors, touching >100000 lines in\n  \u223c2000 files \u2014 thanks to everyone who contributed. See the\nChangelog\n,\nAPIchanges\n,\n  and the git log for more comprehensive lists of changes.\nJanuary 3rd, 2024, native VVC decoder\nThe\nlibavcodec\nlibrary now contains a native VVC (Versatile Video Coding)\n  decoder, supporting a large subset of the codec's features. Further optimizations and\n  support for more features are coming soon. The code was written by Nuo Mi, Xu Mu,\n  Frank Plowman, Shaun Loo, and Wu Jianhua.\nDecember 18th, 2023, IAMF support\nThe\nlibavformat\nlibrary can now read and write\nIAMF\n(Immersive Audio) files. The\nffmpeg\nCLI tool can configure IAMF structure with the new\n-stream_group\noption. IAMF support was written by James Almer.\nDecember 12th, 2023, multi-threaded\nffmpeg\nCLI tool\nThanks to a major refactoring of the\nffmpeg\ncommand-line tool, all the major\n  components of the transcoding pipeline (demuxers, decoders, filters, encodes, muxers) now\n  run in parallel. This should improve throughput and CPU utilization, decrease latency,\n  and open the way to other exciting new features.\nNote that you should\nnot\nexpect significant performance improvements in cases\n  where almost all computational time is spent in a single component (typically video\n  encoding).\nNovember 10th, 2023, FFmpeg 6.1 \"Heaviside\"\nFFmpeg 6.1 \"Heaviside\"\n, a new\n    major release, is now available! Some of the highlights:\nlibaribcaption decoder\nPlaydate video decoder and demuxer\nExtend VAAPI support for libva-win32 on Windows\nafireqsrc audio source filter\narls filter\nffmpeg CLI new option: -readrate_initial_burst\nzoneplate video source filter\ncommand support in the setpts and asetpts filters\nVulkan decode hwaccel, supporting H264, HEVC and AV1\ncolor_vulkan filter\nbwdif_vulkan filter\nnlmeans_vulkan filter\nRivaTuner video decoder\nxfade_vulkan filter\nvMix video decoder\nEssential Video Coding parser, muxer and demuxer\nEssential Video Coding frame merge bsf\nbwdif_cuda filter\nMicrosoft RLE video encoder\nRaw AC-4 muxer and demuxer\nRaw VVC bitstream parser, muxer and demuxer\nBitstream filter for editing metadata in VVC streams\nBitstream filter for converting VVC from MP4 to Annex B\nscale_vt filter for videotoolbox\ntranspose_vt filter for videotoolbox\nsupport for the P_SKIP hinting to speed up libx264 encoding\nSupport HEVC,VP9,AV1 codec in enhanced flv format\napsnr and asisdr audio filters\nOSQ demuxer and decoder\nSupport HEVC,VP9,AV1 codec fourcclist in enhanced rtmp protocol\nCRI USM demuxer\nffmpeg CLI '-top' option deprecated in favor of the setfield filter\nVAAPI AV1 encoder\nffprobe XML output schema changed to account for multiple variable-fields elements within the same parent element\nffprobe -output_format option added as an alias of -of\nThis release had been overdue for at least half a year, but due to constant activity in the repository,\n    had to be delayed, and we were finally able to branch off the release recently, before some of the large\n    changes scheduled for 7.0 were merged.\nInternally, we have had a number of changes too. The FFT, MDCT, DCT and DST implementation used for codecs\n    and filters has been fully replaced with the faster libavutil/tx (full article about it coming soon).\nThis also led to a reduction in the the size of the compiled binary, which can be noticeable in small builds.\nThere was a very large reduction in the total amount of allocations being done on each frame throughout video decoders,\n    reducing overhead.\nRISC-V optimizations for many parts of our DSP code have been merged, with mainly the large decoders being left.\nThere was an effort to improve the correctness of timestamps and frame durations of each packet, increasing the\n    accurracy of variable frame rate video.\nNext major release will be version 7.0, scheduled to be released in February. We will attempt to better stick\n    to the new release schedule we announced at the start of this year.\nWe strongly recommend users, distributors, and system integrators to upgrade unless they use current git master.\nMay 31st, 2023, Vulkan decoding\nA few days ago, Vulkan-powered decoding hardware acceleration code was merged into the codebase.\n    This is the first vendor-generic and platform-generic decode acceleration API, enabling the\n    same code to be used on multiple platforms, with very minimal overhead.\n    This is also the first multi-threaded hardware decoding API, and our code makes full use of this,\n    saturating all available decode engines the hardware exposes.\nThose wishing to test the code can read our\ndocumentation page\n.\n    For those who would like to integrate FFmpeg's Vulkan code to demux, parse, decode, and receive\n    a VkImage to present or manipulate, documentation and examples are available in our source tree.\n    Currently, using the latest available git checkout of our\nrepository\nis required.\n    The functionality will be included in stable branches with the release of version 6.1, due\n    to be released soon.\nAs this is also the first practical implementation of the specifications, bugs may be present,\n    particularly in drivers, and, although passing verification, the implementation itself.\n    New codecs, and encoding support are also being worked on, by both the Khronos organization\n    for standardizing, and us as implementing it, and giving feedback on improving.\nFebruary ",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://ffmpeg.org/documentation.html",
+      "title": "Documentation",
+      "text": "Documentation\nFFmpeg\nAbout\nNews\nDownload\nDocumentation\nCommunity\nCode of Conduct\nMailing Lists\nIRC\nForums\nBug Reports\nWiki\nConferences\nDevelopers\nSource Code\nContribute\nFATE\nCode Coverage\nFunding through SPI\nMore\nDonate\nHire Developers\nContact\nSecurity\nLegal\nDocumentation\nThe following documentation is regenerated nightly, and corresponds to\n  the\nnewest FFmpeg revision\n.\n  Consult your locally installed documentation for older versions.\nCommand Line Tools Documentation\nffmpeg\n:\nffmpeg\ntool\nffmpeg-all\n:\nffmpeg\ntool and FFmpeg components\nffplay\n:\nffplay\ntool\nffplay-all\n:\nffplay\ntool and FFmpeg components\nffprobe\n:\nffprobe\ntool\nffprobe-all\n:\nffprobe\ntool and FFmpeg components\nComponents Documentation\nUtilities\nVideo scaling and pixel format converter\nAudio resampler\nEncoders and decoders (codecs)\nBitstream filters\nMuxers and demuxers (formats)\nProtocols\nInput and output devices\nFilters\nLibraries Documentation\nlibavutil\nlibswscale\nlibswresample\nlibavcodec\nlibavformat\nlibavdevice\nlibavfilter\nGeneral Documentation\nFrequently Asked Questions\nSupported External Libraries, Formats, Codecs or Features\nPlatform Specific Information\nDeveloper Documentation\nGit How-To\nFATE FFmpeg Automated Testing Environment\nAPI Documentation\nDoxygen documentation\nfor current\n          trunk (regenerated nightly); documentation for the\n8.0\n,\n7.1\n,\n7.0\n,\n6.1\n,\n6.0\n,\n5.1\n,\n5.0\n,\n4.4\n,\n4.3\n,\n4.2\n,\n4.1\n,\n4.0\n,\n3.4\n,\n3.3\n,\n3.2\n,\n3.1\n,\n3.0\n,\n2.8\n,\n2.7\n,\n2.6\n,\n2.5\n,\n2.4\n,\n2.3\n,\n2.2\n,\n2.1\n,\n2.0\n,\n1.2\n,\n1.1\n,\n1.0\n,\n0.11\n,\n0.10\n,\n0.9\n,\n0.8\n,\n0.7\n,\n0.6\nand\n0.5\nbranches is also available.\nCommunity Contributed Documentation\nOfficial FFmpeg Wiki\nBooks and other external resources\nHosting provided by\ntelepoint.bg",
+      "source": "playwright"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/ffmpeg/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "FFmpeg to Google: Fund us or stop sending bugs",
+          "url": "https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/",
+          "points": 1175,
+          "num_comments": 886,
+          "created_at": "2025-11-11T18:32:11Z",
+          "hn_url": "https://news.ycombinator.com/item?id=45891016"
+        },
+        {
+          "title": "FFmpeg 8.0 adds Whisper support",
+          "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/commit/13ce36fef98a3f4e6d8360c24d6b8434cbb8869b",
+          "points": 1033,
+          "num_comments": 325,
+          "created_at": "2025-08-13T10:19:35Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44886647"
+        },
+        {
+          "title": "FFmpeg 8.0",
+          "url": "https://ffmpeg.org/index.html#pr8.0",
+          "points": 987,
+          "num_comments": 200,
+          "created_at": "2025-08-22T15:22:42Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44985730"
+        },
+        {
+          "title": "Guide to FFmpeg",
+          "url": "https://img.ly/blog/ultimate-guide-to-ffmpeg/",
+          "points": 985,
+          "num_comments": 140,
+          "created_at": "2022-11-28T09:30:20Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33771445"
+        },
+        {
+          "title": "FFmpeg by Example",
+          "url": "https://ffmpegbyexample.com/",
+          "points": 920,
+          "num_comments": 247,
+          "created_at": "2025-01-14T09:58:15Z",
+          "hn_url": "https://news.ycombinator.com/item?id=42695547"
+        },
+        {
+          "title": "FFmpeg merges WebRTC support",
+          "url": "https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/167e343bbe75515a80db8ee72ffa0c607c944a00",
+          "points": 877,
+          "num_comments": 199,
+          "created_at": "2025-06-04T15:58:50Z",
+          "hn_url": "https://news.ycombinator.com/item?id=44182186"
+        },
+        {
+          "title": "FFmpeg School of Assembly Language",
+          "url": "https://github.com/FFmpeg/asm-lessons/blob/main/lesson_01/index.md",
+          "points": 869,
+          "num_comments": 220,
+          "created_at": "2025-02-22T16:52:49Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43140614"
+        },
+        {
+          "title": "FFmpeg lands CLI multi-threading as its \"most complex refactoring\" in decades",
+          "url": "https://www.phoronix.com/news/FFmpeg-CLI-MT-Merged",
+          "points": 628,
+          "num_comments": 181,
+          "created_at": "2023-12-12T15:15:17Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38613219"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "I built a self-hosted alternative to Google's Video Intelligence API after spending about $450 analyzing my personal videos (MIT License)",
+          "subreddit": "selfhosted",
+          "score": 1517,
+          "num_comments": 169,
+          "permalink": "https://reddit.com/r/selfhosted/comments/1ogis3j/i_built_a_selfhosted_alternative_to_googles_video/",
+          "selftext": "Hey r/selfhosted!\n\nI have 2TB+ of personal video footage accumulated over the years (mostly outdoor GoPro footage). Finding specific moments was nearly impossible \u2013 imagine trying to search through thousands of videos for \"that scene where \"@ilias' was riding a  bike and laughing.\"\n\nI tried Google's Video Intelligence API. It worked perfectly... until I got the bill: about **$450+ for just a few videos**. Scaling to my entire library would cost **$1,500+**, plus I'd have to upload all my raw per"
+        },
+        {
+          "title": "compress.lol \u2014 shrink your videos in the browser, no servers involved \ud83d\udeab\u2601\ufe0f",
+          "subreddit": "selfhosted",
+          "score": 1359,
+          "num_comments": 158,
+          "permalink": "https://reddit.com/r/selfhosted/comments/1ne5wqi/compresslol_shrink_your_videos_in_the_browser_no/",
+          "selftext": "Hey folks \ud83d\udc4b\n\nI built a simple tool: [compress.lol](https://compress.lol)\nYou can also see the source here: [https://github.com/anhostfr/compress.lol](https://github.com/anhostfr/compress.lol)\n\nIt lets you compress videos directly in your browser \u2014 no installs, no uploads. Everything runs locally using [ffmpeg.wasm](https://github.com/ffmpegwasm/ffmpeg.wasm).\n\nSome benefits:\n\n\ud83d\udd12 Privacy: your video never leaves your computer\n\n\u26a1 Convenience: works in-browser\n\n\ud83c\udfa5 Practical: reduces file size so shari"
+        },
+        {
+          "title": "tooAfraidToGoogleIt",
+          "subreddit": "ProgrammerHumor",
+          "score": 26171,
+          "num_comments": 374,
+          "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1mocs3h/tooafraidtogoogleit/",
+          "selftext": ""
+        },
+        {
+          "title": "so who is sending patches now",
+          "subreddit": "programmingmemes",
+          "score": 19518,
+          "num_comments": 158,
+          "permalink": "https://reddit.com/r/programmingmemes/comments/1p15oj6/so_who_is_sending_patches_now/",
+          "selftext": ""
+        },
+        {
+          "title": "changeMyMind",
+          "subreddit": "ProgrammerHumor",
+          "score": 13922,
+          "num_comments": 357,
+          "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1kun9zj/changemymind/",
+          "selftext": ""
+        },
+        {
+          "title": "itWasFfmpegAllAlong",
+          "subreddit": "ProgrammerHumor",
+          "score": 11644,
+          "num_comments": 273,
+          "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1mihbq5/itwasffmpegallalong/",
+          "selftext": ""
+        },
+        {
+          "title": "stupidFuckingSmellyNerds",
+          "subreddit": "ProgrammerHumor",
+          "score": 11311,
+          "num_comments": 460,
+          "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1noydvy/stupidfuckingsmellynerds/",
+          "selftext": ""
+        },
+        {
+          "title": "defeatedTheWholePurposeOfWritingInAssembly",
+          "subreddit": "ProgrammerHumor",
+          "score": 9768,
+          "num_comments": 259,
+          "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1t1u3dl/defeatedthewholepurposeofwritinginassembly/",
+          "selftext": ""
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": "https://ffmpeg.org/index.html#news",
+    "docs": "https://ffmpeg.org/documentation.html",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/ffmpeg/reviews"
+  },
+  "analysis": {
+    "name": "FFmpeg",
+    "url": "https://ffmpeg.org",
+    "tagline": "A complete, cross-platform solution to record, convert and stream audio and video.",
+    "value_proposition": "Open-source CLI toolkit and library suite for decoding, encoding, transcoding, muxing, demuxing, streaming, filtering, and playing virtually any audio/video format.",
+    "target_segment": "dev",
+    "ideal_customer": "Software developers, system integrators, broadcasters, and media platform engineers embedding AV processing into pipelines or applications",
+    "features": [
+      {
+        "name": "video/audio conversion",
+        "description": "Transcode between virtually any audio and video format via CLI or API",
+        "evidence_source": "landing",
+        "evidence_quote": "Converting video and audio has never been so easy. $ ffmpeg -i input.mp4 output.avi",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "video/audio recording",
+        "description": "Capture audio and video from input devices to file or stream",
+        "evidence_source": "landing",
+        "evidence_quote": "A complete, cross-platform solution to record, convert and stream audio and video.",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "live streaming",
+        "description": "Stream audio/video to remote endpoints over network protocols",
+        "evidence_source": "landing",
+        "evidence_quote": "A complete, cross-platform solution to record, convert and stream audio and video.",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "cross-platform support",
+        "description": "Runs on Linux, macOS, Windows, and other platforms without modification",
+        "evidence_source": "landing",
+        "evidence_quote": "A complete, cross-platform solution to record, convert and stream audio and video.",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "ffmpeg cli tool",
+        "description": "Primary command-line tool for AV processing with extensive flag/filter support",
+        "evidence_source": "docs",
+        "evidence_quote": "ffmpeg: ffmpeg tool; ffmpeg-all: ffmpeg tool and FFmpeg components",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "ffplay cli tool",
+        "description": "Lightweight media player built on FFmpeg libraries for playback and testing",
+        "evidence_source": "docs",
+        "evidence_quote": "ffplay: ffplay tool; ffplay-all: ffplay tool and FFmpeg components",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "ffprobe cli tool",
+        "description": "Media analysis tool that reports codec, format, stream, and metadata info",
+        "evidence_source": "docs",
+        "evidence_quote": "ffprobe: ffprobe tool; ffprobe-all: ffprobe tool and FFmpeg components",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "cli multi-threading",
+        "description": "Parallelized processing across multiple threads in the ffmpeg CLI",
+        "evidence_source": "hn",
+        "evidence_quote": "FFmpeg lands CLI multi-threading as its \"most complex refactoring\" in decades",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "codec support (encoders and decoders)",
+        "description": "Broad library of native and third-party-linked audio/video codecs",
+        "evidence_source": "docs",
+        "evidence_quote": "Encoders and decoders (codecs)",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "bitstream filters",
+        "description": "Post-decode/pre-encode bitstream manipulation without full re-encoding",
+        "evidence_source": "docs",
+        "evidence_quote": "Bitstream filters",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "muxers and demuxers",
+        "description": "Read and write hundreds of container formats for packaging AV streams",
+        "evidence_source": "docs",
+        "evidence_quote": "Muxers and demuxers (formats)",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "protocol support",
+        "description": "I/O over HTTP, RTMP, RTSP, HLS, SRT, and many other network protocols",
+        "evidence_source": "docs",
+        "evidence_quote": "Protocols",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "input/output device support",
+        "description": "Interface with capture cards, webcams, display devices, and audio hardware",
+        "evidence_source": "docs",
+        "evidence_quote": "Input and output devices",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "filter graph / filters",
+        "description": "Composable DAG of audio and video filters for complex processing pipelines",
+        "evidence_source": "docs",
+        "evidence_quote": "Filters",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "video scaling and pixel format conversion",
+        "description": "libswscale: high-quality software scaling and color space/pixel format conversion",
+        "evidence_source": "docs",
+        "evidence_quote": "Video scaling and pixel format converter",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "audio resampling",
+        "description": "libswresample: audio resampling, sample format conversion, and channel mixing",
+        "evidence_source": "docs",
+        "evidence_quote": "Audio resampler",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "libavcodec api",
+        "description": "C library exposing encoding/decoding for integration into third-party applications",
+        "evidence_source": "docs",
+        "evidence_quote": "libavcodec",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "libavformat api",
+        "description": "C library for muxing/demuxing container formats programmatically",
+        "evidence_source": "docs",
+        "evidence_quote": "libavformat",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "libavfilter api",
+        "description": "C library for building filter graphs programmatically",
+        "evidence_source": "docs",
+        "evidence_quote": "libavfilter",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "libavdevice api",
+        "description": "C library for accessing capture and playback devices",
+        "evidence_source": "docs",
+        "evidence_quote": "libavdevice",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "libavutil api",
+        "description": "Utility library with common data structures, math, and helper functions",
+        "evidence_source": "docs",
+        "evidence_quote": "libavutil",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "hardware acceleration - vulkan",
+        "description": "GPU-accelerated decoding and encoding via cross-platform Vulkan 1.3 API",
+        "evidence_source": "changelog",
+        "evidence_quote": "Hardware accelerated decoding: Vulkan VP9... Hardware accelerated encoding: Vulkan AV1",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "hardware acceleration - vaapi",
+        "description": "VA-API hardware-accelerated decode/encode on Intel and AMD Linux drivers",
+        "evidence_source": "changelog",
+        "evidence_quote": "Hardware accelerated decoding: ... VAAPI VVC",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "hardware acceleration - d3d12",
+        "description": "Direct3D 12 GPU pipeline for encoding, scaling, motion estimation, and deinterlacing on Windows",
+        "evidence_source": "changelog",
+        "evidence_quote": "D3D12: D3D12 H.264/AV1 encoding, scale_d3d12, mestimate_d3d12, deinterlace_d3d12 filters",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "hardware acceleration - rockchip",
+        "description": "H.264/HEVC hardware encoding on Rockchip SoCs",
+        "evidence_source": "changelog",
+        "evidence_quote": "Rockchip H.264/HEVC hardware encoding",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "hardware acceleration - openharmony",
+        "description": "H.264/H.265 hardware encode and decode on OpenHarmony platform",
+        "evidence_source": "changelog",
+        "evidence_quote": "Hardware accelerated decoding: ... OpenHarmony H264/5; Hardware accelerated encoding: ... OpenHarmony H264/5",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "vulkan compute-based codecs",
+        "description": "GPU compute shader codecs (FFv1, ProRes RAW) that run on any Vulkan 1.3 GPU without vendor-specific accelerators",
+        "evidence_source": "changelog",
+        "evidence_quote": "these codecs are based on compute shaders, and work on any implementation of Vulkan 1.3",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "vvc decoding",
+        "description": "Versatile Video Coding (H.266) native decoder, stable as of 7.1",
+        "evidence_source": "changelog",
+        "evidence_quote": "The VVC decoder... has had enough time to mature and be optimized enough to be declared as stable.",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "xhe-aac / aac usac decoding",
+        "description": "Native decoder for xHE-AAC (AAC USAC) with volume normalization metadata",
+        "evidence_source": "changelog",
+        "evidence_quote": "Support has been added for a native AAC USAC (part of the xHE-AAC coding system) decoder",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "mv-hevc decoding",
+        "description": "Multi-View HEVC stereoscopic video decoding for VR headsets and phones",
+        "evidence_source": "changelog",
+        "evidence_quote": "MV-HEVC decoding is now supported. This is a stereoscopic coding tool...shipped by recent phones and VR headsets.",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "lcevc support",
+        "description": "LC-EVC enhancement metadata layer decoding to improve codec quality via external library",
+        "evidence_source": "changelog",
+        "evidence_quote": "LC-EVC decoding, an enhancement metadata layer to attempt to improve the quality of codecs, is now supported",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "prores raw decoding",
+        "description": "Native ProRes RAW decoder including Vulkan compute variant",
+        "evidence_source": "changelog",
+        "evidence_quote": "Native decoders: ... ProRes RAW ... Vulkan compute-based codecs: FFv1 (encode and decode), ProRes RAW (decode only)",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "ffv1 encode/decode",
+        "description": "Lossless FFv1 codec with Vulkan compute-accelerated encode and decode",
+        "evidence_source": "changelog",
+        "evidence_quote": "Vulkan compute-based codecs: FFv1 (encode and decode)",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "webrtc / whip support",
+        "description": "WebRTC WHIP ingest protocol support for real-time streaming workflows",
+        "evidence_source": "hn",
+        "evidence_quote": "FFmpeg merges WebRTC support",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "whisper integration",
+        "description": "Filter wrapping OpenAI Whisper for on-the-fly speech recognition within filter graphs",
+        "evidence_source": "changelog",
+        "evidence_quote": "Filters: colordetect, pad_cuda, scale_d3d11, Whisper, and others",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "exif metadata parsing",
+        "description": "Extract and forward EXIF metadata from media files",
+        "evidence_source": "changelog",
+        "evidence_quote": "EXIF Metadata Parsing",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "iamf support",
+        "description": "Immersive Audio Model and Formats muxing/demuxing including Ambisonic Audio Elements",
+        "evidence_source": "changelog",
+        "evidence_quote": "IAMF: Projection mode Ambisonic Audio Elements muxing and demuxing",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "apv format support",
+        "description": "APV (All-intra Profile Video) codec decoding and format handling",
+        "evidence_source": "changelog",
+        "evidence_quote": "Native decoders: APV ... Formats: MCC, G.728, Whip, APV",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "mpeg-h 3d audio decoding",
+        "description": "MPEG-H spatial audio decoding via libmpeghdec (experimental)",
+        "evidence_source": "changelog",
+        "evidence_quote": "Decoders: xHE-AAC Mps212 (experimental) MPEG-H decoding via libmpeghdec",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "realvideo 6.0 decoding",
+        "description": "Native decoder for RealVideo 6.0 legacy format",
+        "evidence_source": "changelog",
+        "evidence_quote": "Native decoders: APV, ProRes RAW, RealVideo 6.0, Sanyo LD-ADPCM, G.728",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "colordetect filter",
+        "description": "Video filter for detecting dominant colors in frames",
+        "evidence_source": "changelog",
+        "evidence_quote": "Filters: colordetect, pad_cuda, scale_d3d11, Whisper, and others",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "drawvg filter",
+        "description": "Video filter for rendering SVG/vector graphics overlays onto video frames",
+        "evidence_source": "changelog",
+        "evidence_quote": "Filters: drawvg, vpp_amf",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "fate automated testing environment",
+        "description": "Continuous integration test suite for regression and codec conformance testing",
+        "evidence_source": "docs",
+        "evidence_quote": "FATE FFmpeg Automated Testing Environment",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "doxygen api documentation",
+        "description": "Auto-generated C API docs for all libav* libraries across all historical release branches",
+        "evidence_source": "docs",
+        "evidence_quote": "Doxygen documentation for current trunk (regenerated nightly); documentation for the 8.0, 7.1... branches",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "full-range color pipeline",
+        "description": "Correct full-range vs. limited-range color negotiation through filters, encoders, and muxers",
+        "evidence_source": "changelog",
+        "evidence_quote": "the standout internally are the improvements made for full-range images... Work on cleaning the system up started more than 10 years ago",
+        "tier": "free",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Vulkan 1.3",
+      "VA-API",
+      "Direct3D 12 (D3D12)",
+      "Direct3D 11 (D3D11)",
+      "OpenHarmony",
+      "Rockchip hardware video engine",
+      "OpenAI Whisper (libwhisper)",
+      "libmpeghdec (MPEG-H)",
+      "libmpeghdec",
+      "Khronos (Vulkan standards body)",
+      "Forgejo / code.ffmpeg.org (contribution forge)",
+      "SPI (Software in the Public Interest \u2014 fiscal sponsor)"
+    ],
+    "differentiators": [
+      "Vulkan compute-based codecs run on any GPU with Vulkan 1.3 \u2014 no vendor-specific hardware accelerator required",
+      "Complete cross-platform AV solution in a single toolkit (record, convert, filter, stream, play)",
+      "Broadest codec and format coverage of any open-source tool",
+      "CLI multi-threading refactored as the most complex change in decades, enabling parallel pipeline execution",
+      "Day-one support commitment for emerging standards (Vulkan AV1, VVC, IAMF)",
+      "Free and open-source (LGPL/GPL); no paid tier or license fee"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-03",
+        "what": "FFmpeg 8.1 'Hoare': xHE-AAC Mps212, MPEG-H decoding, EXIF parsing, LCEVC metadata, Vulkan ProRes encode/decode, DPX Vulkan decode, D3D12 H.264/AV1 encoding + scale/mestimate/deinterlace filters, Rockchip H.264/HEVC encoding, IAMF Ambisonic muxing/demuxing, hxvs demuxer, drawvg and vpp_amf filters",
+        "source": "FFmpeg 8.1 release news, ffmpeg.org"
+      },
+      {
+        "date": "2025-08",
+        "what": "FFmpeg 8.0 'Huffman': APV/ProRes RAW/RealVideo 6.0/G.728 native decoders, Vulkan FFv1 encode+decode, VAAPI VVC decode, OpenHarmony H264/5 encode+decode, Vulkan VP9 decode, Vulkan AV1 encode, WHIP/WebRTC format, colordetect/pad_cuda/scale_d3d11/Whisper filters, Forgejo forge launch",
+        "source": "FFmpeg 8.0 release news, ffmpeg.org"
+      },
+      {
+        "date": "2024-09",
+        "what": "FFmpeg 7.1 'P\u00e9ter': VVC decoder declared stable, native AAC USAC/xHE-AAC decoder, MV-HEVC stereoscopic decoding, LC-EVC support, Vulkan H.264/HEVC encoding enabling full Vulkan decode-filter-encode pipeline, full-range color pipeline cleanup",
+        "source": "FFmpeg 7.1 release news, ffmpeg.org"
+      },
+      {
+        "date": "2024",
+        "what": "CLI multi-threading \u2014 described as the most complex refactoring in decades, enabling parallel processing in the ffmpeg command-line tool",
+        "source": "Hacker News: 'FFmpeg lands CLI multi-threading as its most complex refactoring in decades'"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Ubiquity and indispensability \u2014 'it was FFmpeg all along' (r/ProgrammerHumor, 11.6k upvotes)",
+        "Comprehensive codec and format coverage \u2014 treated as the definitive AV Swiss army knife",
+        "Educational value \u2014 'FFmpeg School of Assembly Language', 'Guide to FFmpeg', 'FFmpeg by Example' all highly upvoted on HN",
+        "Breadth of capability \u2014 WebRTC merge, Whisper integration, Vulkan codecs all received 900\u20131000+ upvote HN posts"
+      ],
+      "complaints": [
+        "Sustainability and funding \u2014 'FFmpeg to Google: Fund us or stop sending bugs' (1175 upvotes, 886 comments on HN) signals frustration with large corporate consumers not contributing",
+        "Complexity \u2014 CLI flags and filter graph syntax are notoriously difficult for newcomers (implied by popularity of 'Guide to FFmpeg' and 'FFmpeg by Example')",
+        "Assembly-level internals complexity \u2014 'FFmpeg School of Assembly Language' (869 upvotes) reflects steep contributor learning curve"
+      ],
+      "sources": [
+        "hn",
+        "reddit"
+      ]
+    },
+    "pricing": {
+      "model": "open-source",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": null
+      },
+      "tiers": [],
+      "enterprise": "null",
+      "notes": "FFmpeg is fully open-source (LGPL 2.1+ for libraries, GPL 2+ for tools). No paid tiers exist. Funding is via donations to SPI (Software in the Public Interest) and optional commercial developer hiring (Hire Developers page). Zero seat, storage, or usage caps."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Show HN: tltv \u2013 Federation protocol for 24/7 TV channels",
+        "url": "https://timelooptv.org/",
+        "points": 6,
+        "comments": 0,
+        "age_days": 5,
+        "hn_url": "https://news.ycombinator.com/item?id=48067612"
+      },
+      {
+        "title": "FFmpeg: The Technology Behind Video on the Internet",
+        "url": "https://www.youtube.com/watch?v=nepKKz-MzFM",
+        "points": 4,
+        "comments": 0,
+        "age_days": 2,
+        "hn_url": "https://news.ycombinator.com/item?id=48097422"
+      },
+      {
+        "title": "Show HN: Duckflix, an open-source self-hosted media streaming platform",
+        "url": "https://github.com/duckflixapp/duckflix",
+        "points": 3,
+        "comments": 0,
+        "age_days": 1,
+        "hn_url": "https://news.ycombinator.com/item?id=48114806"
+      },
+      {
+        "title": "Show HN: GIF Pile. a site to make piles of GIFs",
+        "url": "https://gifpile.com/",
+        "points": 2,
+        "comments": 0,
+        "age_days": 1,
+        "hn_url": "https://news.ycombinator.com/item?id=48114649"
+      },
+      {
+        "title": "Show HN: Dikaletus \u2013 meeting recording and transcription using Mistral AI",
+        "url": "https://codeberg.org/MimosaDev/dikaletus",
+        "points": 2,
+        "comments": 0,
+        "age_days": 4,
+        "hn_url": "https://news.ycombinator.com/item?id=48073470"
+      }
+    ]
+  }
+}

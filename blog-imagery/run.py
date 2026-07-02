@@ -266,6 +266,8 @@ def main() -> int:
     p.add_argument("--plan-only", action="store_true")
     p.add_argument("--apply", action="store_true", help="Edit blog md to insert image embeds")
     p.add_argument("--force", action="store_true", help="Overwrite existing image files")
+    p.add_argument("--skip-prereq", action="store_true",
+                   help="Skip creative-prereq pre-flight gate (use for propagation/iteration of approved concepts)")
     args = p.parse_args()
 
     md_path = Path(args.blog_md)
@@ -277,6 +279,30 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     blog = parse_blog(md_path)
     slug = args.slug or md_path.stem
+
+    # Creative pre-flight gate (added 2026-05-12 — feedback_hero_imagery_design_bar.md).
+    # Forces the brainstorm-3 + check-rules + self-review ritual BEFORE firing the
+    # image-gen chain. Skip via --skip-prereq for propagation runs (twitter/li variants
+    # of an already-approved hero concept).
+    if not args.skip_prereq:
+        import subprocess as _sp
+        prereq_run = Path.home() / ".claude/skills/creative-prereq/run.py"
+        checklist = Path(f"/tmp/creative-prereq/{slug}-hero-image.checklist.md")
+        if not checklist.exists():
+            print(f"[creative-prereq] no pre-flight checklist found for {slug}", file=sys.stderr)
+            print(f"[creative-prereq] run: python3 {prereq_run} prepare hero-image --slug {slug} --source {md_path}", file=sys.stderr)
+            print(f"[creative-prereq] then fill in the checklist, then re-run blog-imagery", file=sys.stderr)
+            print(f"[creative-prereq] OR pass --skip-prereq if this is a propagation/iteration of an approved hero concept", file=sys.stderr)
+            return 2
+        if prereq_run.exists():
+            res = _sp.run(["python3", str(prereq_run), "validate", str(checklist)],
+                          capture_output=True, text=True)
+            if res.returncode != 0:
+                print(f"[creative-prereq] checklist incomplete; fire blocked", file=sys.stderr)
+                print(res.stderr, file=sys.stderr)
+                print(f"[creative-prereq] complete the checklist at {checklist} or pass --skip-prereq", file=sys.stderr)
+                return 2
+            print(f"[creative-prereq] ✓ pre-flight passed for {slug}", file=sys.stderr)
 
     print(f"\n[blog-imagery] Generating asset bundle for {slug!r}", file=sys.stderr)
     print(f"  title: {blog['title']}", file=sys.stderr)
@@ -348,6 +374,31 @@ def main() -> int:
 
     n_ok = sum(1 for r in results.values() if r.get("success"))
     print(f"[blog-imagery] Done: {n_ok}/{len(results)} assets ready", file=sys.stderr)
+
+    # Auto-invoke graphic-layout per file + brand-check on the bundle. Post-fire
+    # visual review (creative-prereq Step 9) is no longer optional discipline —
+    # it runs automatically. NO_AUTO_REVIEW=1 disables for genuine one-offs.
+    import os, subprocess
+    if os.environ.get("NO_AUTO_REVIEW") != "1":
+        graphic_layout = Path.home() / ".claude/skills/graphic-layout/run.py"
+        brand_check = Path.home() / ".claude/skills/brand-check/scripts/run.py"
+        asset_paths = [r["path"] for r in results.values() if r.get("success") and r.get("path")]
+        if asset_paths and graphic_layout.exists():
+            print(f"\n[blog-imagery] Auto-invoking graphic-layout on {len(asset_paths)} assets…", file=sys.stderr)
+            for asset in asset_paths:
+                try:
+                    subprocess.run(["python3", str(graphic_layout), "review", asset], timeout=60, check=False)
+                except (subprocess.TimeoutExpired, OSError) as e:
+                    print(f"  ✗ graphic-layout({asset}) failed: {e}", file=sys.stderr)
+        if asset_paths and brand_check.exists():
+            print(f"\n[blog-imagery] Auto-invoking brand-check on bundle…", file=sys.stderr)
+            try:
+                subprocess.run(["python3", str(brand_check), str(out_dir)], timeout=60, check=False)
+            except (subprocess.TimeoutExpired, OSError) as e:
+                print(f"  ✗ brand-check failed: {e}", file=sys.stderr)
+    else:
+        print(f"[blog-imagery] (Auto-review skipped: NO_AUTO_REVIEW=1)", file=sys.stderr)
+
     return 0 if n_ok == len(results) else 2
 
 

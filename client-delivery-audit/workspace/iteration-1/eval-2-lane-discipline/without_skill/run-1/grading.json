@@ -1,0 +1,144 @@
+{
+  "expectations": [
+    {
+      "text": "The missing $1,750 line on INV-3318 (UI shows 2 lines, API/DB have 3) is reported as a confirmed finding with the layer identified as render/UI (since API and DB agree and the header is correct)",
+      "passed": true,
+      "evidence": "F-2 states: 'the UI line grid renders only two lines ($6,000 + $3,500 = $9,500), silently omitting the $1,750 line' and explicitly labels this 'a rendering/display defect, not a data-loss bug.' API and DB having all three lines is noted. Layer clearly identified as render/UI."
+    },
+    {
+      "text": "The paid invoice INV-3301 still counted in Hartwell Supply's outstanding balance ($14,760 vs correct $9,840) is reported as a confirmed finding with High or Critical severity",
+      "passed": true,
+      "evidence": "F-1 is listed under 'High-severity findings' with the exact figures: '$14,760.00' outstanding shown vs '$9,840.00' DB sum, and 'INV-3301, which has status=\\'paid\\' (paid 2026-05-28) but is still included in the outstanding rollup.' Severity is explicitly High."
+    },
+    {
+      "text": "The Net-45 vs Net-15 due date extraction error on INV-3340 is reported as a confirmed finding with the layer identified as ingestion/extraction",
+      "passed": true,
+      "evidence": "F-4 states: 'The ingestion pipeline extracted \"Net 15\" instead of \"Net 45\"' and labels it 'an extraction-accuracy problem at ingestion.' Layer is explicitly identified as ingestion/extraction."
+    },
+    {
+      "text": "The 'Invalid Date' render on the payment run screen is reported as a confirmed finding (null not handled)",
+      "passed": true,
+      "evidence": "F-3 states: 'The Payment Run screen header shows \"Next scheduled run: Invalid Date.\" The API returns next_run_at: null (no run is actually scheduled). The render path does not handle the null case and feeds it straight into a date formatter.' Confirmed finding with null-handling root cause identified."
+    },
+    {
+      "text": "The case-sensitive search (lowercase 'hartwell' returns 0 results) is reported as a confirmed finding",
+      "passed": true,
+      "evidence": "F-5 states: 'Searching \"hartwell\" (lowercase) returns 0 results, even though the DB has the same 6 rows either way.' Reported as a confirmed functionality defect under Medium-severity findings."
+    },
+    {
+      "text": "The orange approve button color observation is NOT in the confirmed functionality findings list (excluded entirely or explicitly routed to the UX/design lane)",
+      "passed": true,
+      "evidence": "Appendix section 'Observations routed out of the functionality lane' explicitly lists Observation #5: 'Approve button is bright orange while primary actions elsewhere are blue; off-brand inconsistency.' It is not in any confirmed finding and is explicitly routed out."
+    },
+    {
+      "text": "The below-the-fold contact email observation is NOT in the confirmed functionality findings list (excluded or routed to UX lane)",
+      "passed": true,
+      "evidence": "Appendix explicitly lists Observation #9: 'Vendor detail page pushes the contact email below the fold on a 13\" screen; requires scrolling.' Routed to design/UX lane, not in confirmed findings."
+    },
+    {
+      "text": "The blank empty-state on Credit Memos is NOT reported as a functionality defect (the data being empty is correct; styling concerns routed to UX at most)",
+      "passed": true,
+      "evidence": "Appendix for Observation #12 states: 'Functionally the empty state is correct \u2014 0 credit memos in the DB \u2014 so there is no functionality defect; the gap is purely the missing empty-state treatment, which is a design concern.' Correctly excluded from functionality defects."
+    },
+    {
+      "text": "The INV-3310 shipping amount ($1,062.50 = $1,000 + $62.50 shipping) is treated as refuted / not-a-bug, ideally listed in a refuted/inconclusive section with the shipping explanation",
+      "passed": true,
+      "evidence": "Under 'Checks that passed': 'INV-3310 total. Header $1,062.50 initially looked like a math error vs the $1,000 line sum (4 \u00d7 $250), but the API payload and PDF both include a shipping_amount of $62.50; $1,000 + $62.50 = $1,062.50. Correct.' Treated as not-a-bug with shipping explanation. The 'ideally' qualifier allows this to appear in a passed-checks section rather than a named refuted section."
+    },
+    {
+      "text": "The NetSuite export is marked as blocked/not exercised with the read-only/external-write reason \u2014 not silently omitted",
+      "passed": true,
+      "evidence": "G-1 states: 'The \"Export to NetSuite\" action targets POST /api/vendor-pay/exports, which would push data into the client's NetSuite sandbox (a write to an external system). Per read-only rules it was not clicked. Export correctness is unverified.' Explicitly marked with the read-only/external-write reason."
+    },
+    {
+      "text": "The approval routing thresholds are marked as not exercisable (0 routing rules configured) \u2014 not silently omitted",
+      "passed": true,
+      "evidence": "G-2 states: 'ap_routing_rules has 0 rows, so threshold-based approval routing cannot be exercised against live data. The feature's behavior is therefore unverified.' Explicitly marked as not exercisable with the reason given."
+    },
+    {
+      "text": "The Pell Industrial duplicate detection is reported as working correctly (true duplicate), not as a defect",
+      "passed": true,
+      "evidence": "Under 'Checks that passed': 'Duplicate detection. INV-3299 and INV-3322 flagged as duplicates: same vendor (Pell Industrial), same amount ($880.00), same invoice number (\"PI-2026-0455\"), same PDF hash. Confirmed a true duplicate (vendor sent twice); flag is correct.' Reported as a pass, not a defect."
+    },
+    {
+      "text": "Every confirmed finding includes proof/evidence, reproduction steps, and a layer-at-fault attribution",
+      "passed": true,
+      "evidence": "All five confirmed findings (F-1 through F-5) include: (1) evidence grounded in specific observations cross-checked against UI/API/DB; (2) descriptive reproduction context (which screen, which invoice, what action); (3) layer attribution \u2014 F-1 implicates the balance rollup/aggregation query, F-2 the render/display layer, F-3 the render path/null handling, F-4 the ingestion pipeline, F-5 the search comparison. Layers are described in prose rather than labeled with a formal 'Layer: X' tag, but the attribution is present and unambiguous in each case."
+    },
+    {
+      "text": "The report includes a coverage matrix and a separate refuted/inconclusive section",
+      "passed": false,
+      "evidence": "No coverage matrix is present. The report has a severity summary table and a 'Coverage gaps' section, but no matrix mapping test areas to coverage status. Additionally, there is no dedicated 'refuted/inconclusive' section \u2014 INV-3310 (the only refuted item) appears under 'Checks that passed,' not a labeled refuted section. Both structural elements required by this assertion are absent."
+    },
+    {
+      "text": "The report includes a 'top fixes first' / quick-wins prioritization or severity-ordered summary",
+      "passed": true,
+      "evidence": "The report is structured severity-ordered: High-severity findings first (F-1, F-2), then Medium (F-3, F-4, F-5), then coverage gaps, then passes. The summary table shows 'Severity counts.' The final recommendation section explicitly orders: 'Do not hand off until F-1 and F-2 are fixed... F-3, F-4, and F-5 should be fixed in the same pass.' This constitutes a severity-ordered prioritization."
+    }
+  ],
+  "summary": {
+    "passed": 14,
+    "failed": 1,
+    "total": 15,
+    "pass_rate": 0.93
+  },
+  "timing": {
+    "total_tokens": 26581,
+    "duration_ms": 72524,
+    "total_duration_seconds": 72.5
+  },
+  "claims": [
+    {
+      "claim": "5 confirmed defects surfaced",
+      "type": "factual",
+      "verified": true,
+      "evidence": "F-1 through F-5 are clearly listed and each corresponds to a distinct observation in the source fixture (observations 4, 2, 7, 8, 11)."
+    },
+    {
+      "claim": "5 checks passed clean",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Observations 1, 3, 6, 10, 15 are all listed under 'Checks that passed' and each is corroborated by the source fixture."
+    },
+    {
+      "claim": "2 areas could not be exercised under the read-only constraint",
+      "type": "factual",
+      "verified": true,
+      "evidence": "G-1 (NetSuite export) and G-2 (approval routing thresholds) are documented with reasons, matching observations 13 and 14 in the fixture."
+    },
+    {
+      "claim": "Three observations are presentation/design issues routed out of the lane",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Appendix lists observations 5, 9, and 12 \u2014 matching the orange button, below-fold email, and blank Credit Memos empty state from the fixture."
+    },
+    {
+      "claim": "INV-3301 totals are correct (header $4,920 = line items)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture observation 1 confirms: header $4,920.00, lines $2,400 + $1,800 + $720, API and DB all agree."
+    },
+    {
+      "claim": "The due-date error on INV-3340 would not be caught by a UI-vs-DB consistency check",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Fixture observation 8 confirms UI and DB both show 2026-06-15 (both wrong); the error is only detectable by comparing against the source PDF. The report correctly notes this."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "The report includes a coverage matrix and a separate refuted/inconclusive section",
+        "reason": "This assertion bundles two distinct structural requirements into one, making it harder to diagnose which part failed. Splitting into two separate assertions would give cleaner signal. Additionally, 'coverage matrix' is undefined \u2014 a table of findings vs. severity could satisfy it even if it isn't the intended form. Consider specifying that the matrix must map each tested area (or observation number) to a pass/fail/blocked/refuted status."
+      },
+      {
+        "reason": "No assertion checks whether the severity assignments are appropriate relative to each other. A report could pass all current assertions while swapping F-1 (financial-correctness data bug) and F-5 (case-sensitive search) severity labels, and nothing would catch it. Consider an assertion that F-1 and/or F-2 are rated High or Critical, distinct from F-3/F-4/F-5."
+      },
+      {
+        "assertion": "Every confirmed finding includes proof/evidence, reproduction steps, and a layer-at-fault attribution",
+        "reason": "The assertion is hard to fail because 'reproduction steps' and 'layer-at-fault attribution' can be satisfied by a single prose sentence describing where you saw the bug. Consider requiring an explicit layer label (e.g., 'Layer: render', 'Layer: ingestion') to make attribution unambiguous and auditable."
+      }
+    ],
+    "overall": "Assertions are well-targeted and discriminating overall \u2014 14 of 15 require the model to make correct judgment calls (routing design items, not fabricating a defect for INV-3310, marking gaps as gaps). The one failure (assertion 14) correctly catches a structural gap. The suggestions above are refinements, not fundamental gaps."
+  }
+}

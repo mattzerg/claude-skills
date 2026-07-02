@@ -76,8 +76,30 @@ def load_config() -> Dict:
         return json.load(f)
 
 
-def get_client(workspace: Optional[str] = None) -> tuple[WebClient, str]:
-    """Get Slack client for specified workspace."""
+def _load_zerg_secrets() -> None:
+    """Populate os.environ from ~/.config/zerg/secrets.env (gitignored, chmod 600).
+    Does not override already-set env vars. Fail-open."""
+    try:
+        p = Path.home() / ".config" / "zerg" / "secrets.env"
+        if not p.exists():
+            return
+        for raw in p.read_text().splitlines():
+            line = raw.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    except Exception:
+        pass
+
+
+def get_client(workspace: Optional[str] = None, prefer_user_token: bool = False) -> tuple[WebClient, str]:
+    """Get Slack client for specified workspace.
+
+    prefer_user_token=True selects the xoxp user token when present (required
+    for search.messages and for reading DMs/channels the user is in but the
+    bot isn't). Falls back to the bot token if no user token configured.
+    """
     config = load_config()
 
     if workspace and workspace in config:
@@ -90,7 +112,13 @@ def get_client(workspace: Optional[str] = None) -> tuple[WebClient, str]:
         workspace = next(iter(config.keys()))
         ws_config = config[workspace]
 
-    token = ws_config.get("token")
+    # Tokens: prefer config.json, fall back to ~/.config/zerg/secrets.env env vars.
+    _load_zerg_secrets()
+    token = ws_config.get("user_token") if prefer_user_token else None
+    if not token and prefer_user_token:
+        token = os.environ.get("SLACK_USER_TOKEN")
+    if not token:
+        token = ws_config.get("token") or os.environ.get("SLACK_TOKEN")
     if not token:
         print(json.dumps({"error": f"No token found for workspace: {workspace}"}))
         sys.exit(1)
@@ -138,8 +166,28 @@ def resolve_channel(client: WebClient, channel: str) -> tuple[str, str]:
             for ch in result["channels"]:
                 if ch["name"] == clean:
                     return ch["id"], f"#{ch['name']}"
-    except SlackApiError:
-        pass
+    except SlackApiError as e:
+        # User (xoxp) tokens can lack channels:read / groups:read, which kills
+        # name→ID resolution while history reads still work (broke slack_corpus
+        # 2026-05-27 → every channel "not found"). Channel IDs are token-agnostic,
+        # so retry the LISTING with the bot token and keep using the original
+        # client for the actual read.
+        if e.response.get("error") == "missing_scope":
+            try:
+                bot_client, _ = get_client(prefer_user_token=False)
+                result = bot_client.conversations_list(types="public_channel,private_channel")
+                while True:
+                    for ch in result["channels"]:
+                        if ch["name"] == clean:
+                            return ch["id"], f"#{ch['name']}"
+                    cursor = result.get("response_metadata", {}).get("next_cursor")
+                    if not cursor:
+                        break
+                    result = bot_client.conversations_list(
+                        types="public_channel,private_channel", cursor=cursor
+                    )
+            except SlackApiError:
+                pass
 
     return None, channel
 
@@ -299,7 +347,7 @@ def auto_join_channel(client: WebClient, channel_id: str) -> bool:
 
 def cmd_read(args):
     """Read messages from a channel."""
-    client, workspace = get_client(args.workspace)
+    client, workspace = get_client(args.workspace, prefer_user_token=getattr(args, "as_user", False))
 
     channel_id, channel_name = resolve_channel(client, args.channel)
     if not channel_id:
@@ -310,25 +358,29 @@ def cmd_read(args):
         # Build user cache for display names
         users_cache = build_users_cache(client)
 
+        # Build kwargs so optional time-window args only pass when provided
+        history_kwargs = {"channel": channel_id, "limit": args.limit or 20}
+        if getattr(args, "oldest", None):
+            history_kwargs["oldest"] = args.oldest
+        if getattr(args, "latest", None):
+            history_kwargs["latest"] = args.latest
+        if getattr(args, "cursor", None):
+            history_kwargs["cursor"] = args.cursor
+
         try:
-            result = client.conversations_history(
-                channel=channel_id,
-                limit=args.limit or 20
-            )
+            result = client.conversations_history(**history_kwargs)
         except SlackApiError as e:
             # Auto-join if not in channel
             if "not_in_channel" in str(e):
                 if auto_join_channel(client, channel_id):
-                    result = client.conversations_history(
-                        channel=channel_id,
-                        limit=args.limit or 20
-                    )
+                    result = client.conversations_history(**history_kwargs)
                 else:
                     raise
             else:
                 raise
 
         messages = [format_message(msg, users_cache) for msg in result["messages"]]
+        next_cursor = (result.get("response_metadata") or {}).get("next_cursor", "")
 
         print(json.dumps({
             "workspace": workspace,
@@ -336,57 +388,65 @@ def cmd_read(args):
             "channel_id": channel_id,
             "messages": list(reversed(messages)),  # Oldest first
             "total": len(messages),
+            "has_more": bool(result.get("has_more")),
+            "next_cursor": next_cursor,
         }, indent=2))
 
     except SlackApiError as e:
         print(json.dumps({"error": str(e)}))
 
 
-def cmd_send(args):
-    """Send a message to a channel or user."""
-    client, workspace = get_client(args.workspace)
+def send_message(channel: str, text: str, *, thread_ts: Optional[str] = None,
+                 workspace: Optional[str] = None) -> Dict[str, Any]:
+    """Send a message to a channel or user. Single source of truth for the send
+    contract — importable so in-process callers never hand-build the CLI argv
+    (the class of bug that silently broke 6 callers when `send` started requiring
+    -m/--message). The `send` CLI verb is a thin wrapper around this.
 
-    channel_id, channel_name = resolve_channel(client, args.channel)
+    Returns {"success": True, "channel": ..., "message_ts": ...} or
+    {"success": False, "error": ...}. Does not raise for ordinary Slack errors.
+    """
+    client, ws = get_client(workspace)
+
+    channel_id, channel_name = resolve_channel(client, channel)
     if not channel_id:
-        print(json.dumps({"error": f"Channel/user not found: {args.channel}"}))
-        return
+        return {"success": False, "error": f"Channel/user not found: {channel}"}
 
     # Convert markdown to Slack mrkdwn
-    message_text = markdown_to_mrkdwn(args.message)
+    message_text = markdown_to_mrkdwn(text)
+    kwargs: Dict[str, Any] = {"channel": channel_id, "text": message_text}
+    if thread_ts:
+        kwargs["thread_ts"] = thread_ts
 
     try:
-        kwargs = {
-            "channel": channel_id,
-            "text": message_text,
-        }
-
-        if args.thread_ts:
-            kwargs["thread_ts"] = args.thread_ts
-
         try:
             result = client.chat_postMessage(**kwargs)
         except SlackApiError as e:
             # Auto-join if not in channel
-            if "not_in_channel" in str(e):
-                if auto_join_channel(client, channel_id):
-                    result = client.chat_postMessage(**kwargs)
-                else:
-                    raise
+            if "not_in_channel" in str(e) and auto_join_channel(client, channel_id):
+                result = client.chat_postMessage(**kwargs)
             else:
                 raise
 
-        print(json.dumps({
+        return {
             "success": True,
-            "workspace": workspace,
+            "workspace": ws,
             "channel": channel_name,
             "channel_id": channel_id,
             "message_ts": result["ts"],
-            "thread_ts": args.thread_ts,
-            "text": args.message,
-        }, indent=2))
-
+            "thread_ts": thread_ts,
+            "text": text,
+        }
     except SlackApiError as e:
-        print(json.dumps({"success": False, "error": str(e)}))
+        return {"success": False, "error": str(e)}
+
+
+def cmd_send(args):
+    """Send a message to a channel or user (CLI wrapper around send_message)."""
+    result = send_message(args.channel, args.message,
+                          thread_ts=args.thread_ts, workspace=args.workspace)
+    # Preserve prior CLI output shape: pretty on success, compact on error.
+    print(json.dumps(result, indent=2 if result.get("success") else None))
 
 
 def cmd_edit(args):
@@ -450,7 +510,8 @@ def cmd_delete(args):
 
 def cmd_search(args):
     """Search messages."""
-    client, workspace = get_client(args.workspace)
+    # search.messages requires a user token (xoxp); bot tokens can't search.
+    client, workspace = get_client(args.workspace, prefer_user_token=True)
 
     try:
         result = client.search_messages(
@@ -644,13 +705,16 @@ def cmd_react(args):
 def cmd_workspaces(args):
     """List configured workspaces."""
     config = load_config()
+    _load_zerg_secrets()
 
     workspaces = []
     for key, value in config.items():
+        has_token = bool(value.get("token") or value.get("user_token")
+                         or os.environ.get("SLACK_TOKEN") or os.environ.get("SLACK_USER_TOKEN"))
         workspaces.append({
             "key": key,
             "workspace": value.get("workspace", key),
-            "has_token": bool(value.get("token")),
+            "has_token": has_token,
         })
 
     print(json.dumps({"workspaces": workspaces}, indent=2))
@@ -750,6 +814,10 @@ def main():
     sub.add_argument("channel", help="Channel (#name or ID) or user (@name)")
     sub.add_argument("-l", "--limit", type=int, default=20, help="Number of messages")
     sub.add_argument("-w", "--workspace", help="Workspace to use")
+    sub.add_argument("--oldest", help="Filter messages after this Slack ts (epoch.fraction)")
+    sub.add_argument("--latest", help="Filter messages before this Slack ts (epoch.fraction)")
+    sub.add_argument("--cursor", help="Pagination cursor (next_cursor from prior call)")
+    sub.add_argument("--as-user", action="store_true", help="Use xoxp user token (required for DMs/channels the bot isn't in)")
     sub.set_defaults(func=cmd_read)
 
     # Send

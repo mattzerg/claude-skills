@@ -9,9 +9,10 @@ One entry point for producing the next reel in the Omphalos channel. Everything 
 
 ## Paths
 
-- Project: `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/scifi-reels/` (quote it — spaces)
-- Pipeline `<P>` = `<project>/assets/_pipeline/`
-- Canon: `omphalos-universe-bible-v1-2026-06-07.md` (LOCKED craft bar — never relitigate), `encyclopedia/` (12 notes incl. Intrigue Engine), `lore-ledger.jsonl` (CLI: `lore.py`), `season-1-map.md` (the slate), `channel-log.md` (Stage A state), `channel-plan.md` (rotation, captions, feedback loop).
+- Project: `~/Obsidian/Zerg/MattZerg/Projects/Zerg-Production/scifi-reels/` (quote it — spaces)
+- Pipeline `<P>` = `<project>/assets/_pipeline/` — **restored 2026-07-02 from June session transcripts** after the toolchain was lost in the iCloud→Obsidian vault migration; all scripts validated (`py_compile`/`json.load`). June one-off prototypes live in `<P>/_archive-june-prototypes/`.
+- Canon: `omphalos-universe-bible-v1-2026-06-07.md` (LOCKED craft bar — never relitigate), `encyclopedia.md` (master v3) + `encyclopedia/` (16 notes incl. Intrigue Engine), `lore-ledger.jsonl` (CLI: `lore.py`), `season-1-map.md` (the slate; Book-1 tight-8 ordering), `channel-log.md` (Stage A state), `channel-plan.md` (rotation, captions, feedback loop).
+- Sibling pipeline: `templates/ministry-bulletin/` (the bulletin engine — compose-clean → neon_v3 → critic gate → glyph plates → welded HUD; entry via `scifi-predicted-this`). Use THIS skill for narrative serial reels; use the bulletin engine for Ministry-bulletin shorts.
 
 ## The ritual (in order — do not skip steps)
 
@@ -35,4 +36,4 @@ One entry point for producing the next reel in the Omphalos channel. Everything 
 - Craft bar is LOCKED (no serif titles, no zoom prompts, numbers in POST, ≤3 heroes, animatic-first, ≤~9 FAL calls/reel).
 - Versioned filenames on every Matt-facing artifact (`-vN-YYYY-MM-DD`).
 - Never auto-post to any platform; captions pack is drafts-only.
-- FAL spend always through `fal_budget.Budget` (cap $2 est/session, `FAL_SESSION_CAP` override) + `OMPHALOS_QUEUE_CAP` for batches.
+- FAL spend always through `fal_budget.Budget` (cap $2 est/session, `FAL_SESSION_CAP` override) + `OMPHALOS_QUEUE_CAP` for batches. Ledger is UNIFIED at `~/.config/zerg/fal_ledger.jsonl` (shared with ambient-reel; override `FAL_LEDGER`). An **arc cap** also applies: `OMPHALOS_ARC_CAP` (default $20) summed across sessions per `OMPHALOS_ARC` tag — raise only with Matt's explicit go.

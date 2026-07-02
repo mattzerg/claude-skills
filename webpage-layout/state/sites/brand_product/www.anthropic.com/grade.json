@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 6,
+    "color": 8,
+    "density": 7,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Strong serif headlines with deliberate weight and distinctive underline treatment on 'research' and 'products'. More character than Inter+Fraunces, though body copy feels safe.",
+    "hierarchy": "Hero headline dominates effectively with scale and weight. Mission statement provides good counterbalance. Card hierarchy in 'Latest releases' is clear but predictable.",
+    "distinctiveness": "The underlined 'research and products' treatment and 'Project Glasswing' naming show personality, but the overall structure (hero \u2192 project showcase \u2192 card grid) could work for many tech brands. Mission statement language is specific though.",
+    "color": "Restrained beige/cream base with black accents. Black hero section provides good contrast. Minimal color palette shows discipline, though borders on corporate-safe.",
+    "density": "Generous breathing room in hero, confident use of negative space in black section. Card grid has good padding. Avoids the overcrowded trap, though maybe too uniform in lower sections.",
+    "voice": "Structure is fairly conventional (hero/feature/releases grid). The 'public benefit corporation' framing and safety-first messaging provide voice, but IA still follows tech-company template. No 'Currently/Selected/Testimonials' but close."
+  },
+  "winning_patterns": [
+    "Underline typographic treatment creates instant visual identity without gimmicks",
+    "Black section with subtle geometric visualization breaks up beige monotony effectively",
+    "Mission statement positioning (right-aligned, secondary hierarchy) shows restraint",
+    "Dates on cards provide temporal context instead of generic 'Learn more' spam"
+  ],
+  "anti_patterns": [
+    "Three-column card grid is the default Webflow/Framer layout \u2014 zero invention",
+    "Navigation structure is generic tech company (Research/News/Try Product)",
+    "'Latest releases' as a section title is pure CMS thinking, not storytelling",
+    "Card design (beige backgrounds, safe padding) could be any SaaS marketing site",
+    "Project name 'Glasswing' floats without context or explanation \u2014 assumes insider knowledge"
+  ],
+  "one_word_personality": "composed",
+  "_url": "https://www.anthropic.com",
+  "_persona": "brand_product",
+  "_note": "Editorial, custom serif, restrained",
+  "_graded_at": "2026-05-07T23:27:15.495181Z"
+}

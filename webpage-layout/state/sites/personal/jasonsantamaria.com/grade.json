@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 9,
+    "hierarchy": 8,
+    "distinctiveness": 9,
+    "color": 9,
+    "density": 7,
+    "voice": 8
+  },
+  "reasoning": {
+    "typography": "Confident serif system with personality \u2014 the custom 'jsm' logotype and classical serif body text show deliberate typographic choices, not defaults",
+    "hierarchy": "Strong headline dominance and clear visual sections, though some mid-page density could use more breathing room between content blocks",
+    "distinctiveness": "Extremely specific \u2014 the type specimen showcases, book promotion, version timeline, and personal narrative couldn't belong to anyone else",
+    "color": "Masterful restraint \u2014 near-monochrome with strategic red accent on book cover and sparse decorative type specimens, classic design discipline",
+    "density": "Good rhythm but slightly inconsistent \u2014 hero section is spacious, mid-sections get denser with lists, version timeline breaks it up nicely but could use more confident emptiness",
+    "voice": "Structure directly reflects the person \u2014 type designer leads with type, book author promotes book, version history shows craft evolution, not generic 'services/testimonials' stencil"
+  },
+  "winning_patterns": [
+    "Type specimen showcases (Citywide, Chronk) as actual portfolio pieces",
+    "Version history timeline showing iterative design thinking",
+    "Book promotion integrated as natural content, not CTA",
+    "Handcrafted initials logo with character",
+    "Restrained near-monochrome palette with surgical accent use"
+  ],
+  "anti_patterns": [
+    "Mid-page list density (talks, interviews, articles) feels compressed",
+    "Section headers ('ABOUT ME', 'TYPE DESIGN') small-caps shouting lacks sophistication",
+    "Some generic left-sidebar content chunking in body sections",
+    "Past Versions section could be more visually dynamic given the concept"
+  ],
+  "one_word_personality": "typographic",
+  "_url": "https://jasonsantamaria.com",
+  "_persona": "personal",
+  "_note": "Designer, single-font system, careful kerning",
+  "_graded_at": "2026-05-07T18:38:15.452402Z"
+}

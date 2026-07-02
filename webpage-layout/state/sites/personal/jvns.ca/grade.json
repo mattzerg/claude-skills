@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 5,
+    "distinctiveness": 7,
+    "color": 6,
+    "density": 7,
+    "voice": 8
+  },
+  "reasoning": {
+    "typography": "Default system fonts, no typographic personality. Readable but utterly generic \u2014 this could be any Octopress/Hugo blog from 2012.",
+    "hierarchy": "Weak headline differentiation. The orange header dominates but content below is flat chronological lists with minimal visual weight variation.",
+    "distinctiveness": "The diagonal stripe pattern and orange are unique enough, but the body content structure (chronological date-title lists) is pure blog stencil. The voice in post titles saves it.",
+    "color": "Orange + gray + white is restrained and disciplined. Orange used sparingly as accent in stripes and links. Could be more boring but works.",
+    "density": "Good content density \u2014 no afraid-of-text syndrome. Lists are tight, readable, functional. Not trying to be a landing page, actually has substance.",
+    "voice": "Structure genuinely reflects the person: 'here's everything I've written, organized how I organize it.' No fake 'Selected Works' curation. Honest blog archive energy."
+  },
+  "winning_patterns": [
+    "Unapologetically dense \u2014 shows all posts, no fake minimalism hiding content",
+    "Diagonal stripe motif creates memorable visual identity despite generic typography",
+    "Navigation is functional and honest: 'Favorites/TIL/Zines' reflects actual content types",
+    "Post titles have personality ('tcpdump is amazing', 'the fish shell is awesome') \u2014 not SEO slop"
+  ],
+  "anti_patterns": [
+    "Typography has zero character \u2014 default sans-serif could be any blog platform",
+    "Header hierarchy is weak \u2014 name, nav, and body content all compete at similar weights",
+    "Orange header box feels disconnected from content below \u2014 two different design systems",
+    "Date-title lists lack visual rhythm \u2014 every row has identical weight"
+  ],
+  "one_word_personality": "earnest",
+  "_url": "https://jvns.ca",
+  "_persona": "personal",
+  "_note": "Julia Evans \u2014 hand-drawn, distinctive voice",
+  "_graded_at": "2026-05-07T23:26:04.760369Z"
+}

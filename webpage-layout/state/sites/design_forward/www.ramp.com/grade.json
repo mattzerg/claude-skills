@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 2,
+    "hierarchy": 3,
+    "distinctiveness": 8,
+    "color": 4,
+    "density": 7,
+    "voice": 9
+  },
+  "reasoning": {
+    "typography": "Plain monospace terminal aesthetic with zero typographic refinement \u2014 feels like raw markdown/CLI output, not a designed type system",
+    "hierarchy": "Weak visual hierarchy \u2014 markdown headings (#, ##, ###) provide structure but no bold visual dominance; everything feels equally weighted in the monotone",
+    "distinctiveness": "Radically distinctive \u2014 a 'machine version' that literally documents an AI agent signup bonus and reads like API documentation. No one else is doing this.",
+    "color": "Limited monochrome palette (black/white/gray) but not because of discipline \u2014 it's the absence of color design. Links appear standard blue, breaking the system.",
+    "density": "Strong content density with confident information packing \u2014 reads like documentation/spec, not afraid of text blocks and bullet lists without decorative padding",
+    "voice": "Exceptional voice-structure fit \u2014 the 'Machine Version' conceit perfectly executed as literal plain-text documentation for AI consumption. IA reflects genuine utility (promotional offer upfront, then product details)"
+  },
+  "winning_patterns": [
+    "Brazenly honest 'machine version' concept \u2014 literally a page designed for AI agents to parse",
+    "Information-first density without apology \u2014 every line has utility",
+    "Use-case bullets that actually describe real scenarios instead of marketing fluff",
+    "Novel IA: promotional offer at top (smart for AI agent context), then technical product breakdown"
+  ],
+  "anti_patterns": [
+    "Zero typographic craft \u2014 looks like unformatted terminal output",
+    "No visual hierarchy whatsoever \u2014 flat gray text soup",
+    "Standard blue hyperlinks break the monochrome system",
+    "While conceptually bold, execution is just... markdown. No design labor visible."
+  ],
+  "one_word_personality": "utilitarian",
+  "_url": "https://www.ramp.com",
+  "_persona": "design_forward",
+  "_note": "Big numbers, photography, bold full-bleed strips",
+  "_graded_at": "2026-05-08T21:43:15.819887Z"
+}

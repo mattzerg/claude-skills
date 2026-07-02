@@ -27,7 +27,7 @@ import re
 import sys
 import textwrap
 import webbrowser
-from datetime import datetime
+from datetime import datetime, timezone
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from http.server import HTTPServer, BaseHTTPRequestHandler
@@ -36,6 +36,24 @@ from typing import Optional
 from urllib.parse import urlencode, parse_qs, urlparse
 import threading
 import secrets
+
+# Background launch agents use these skills for polling. They must never open
+# OAuth browser windows unattended; explicit auth commands still work in a TTY.
+def ensure_interactive_auth_allowed(auth_url: Optional[str] = None) -> None:
+    if os.environ.get("GOOGLE_OAUTH_ALLOW_BROWSER") == "1":
+        return
+    if sys.stdin.isatty() and sys.stdout.isatty():
+        return
+    print(
+        json.dumps(
+            {
+                "error": "google_oauth_interactive_required",
+                "message": "Google OAuth needs an interactive terminal; refusing to open a browser from a background job.",
+                "auth_url": auth_url,
+            }
+        )
+    )
+    sys.exit(2)
 
 # Email line width for readability (matches Superhuman style)
 EMAIL_LINE_WIDTH = 72
@@ -66,6 +84,8 @@ SCOPES = [
     "https://www.googleapis.com/auth/contacts.readonly",
     "https://www.googleapis.com/auth/contacts.other.readonly",
     "https://www.googleapis.com/auth/userinfo.email",  # To get email address
+    "https://www.googleapis.com/auth/drive",         # Drive search + file metadata + read/write
+    "https://www.googleapis.com/auth/spreadsheets",  # Read + write Google Sheets
 ]
 
 # Google OAuth endpoints
@@ -170,6 +190,8 @@ def do_oauth_flow(client_config: dict, login_hint: str = None, force_consent: bo
         login_hint: Email address to pre-select in Google account chooser
         force_consent: If True, force re-consent (needed for new refresh token)
     """
+    ensure_interactive_auth_allowed()
+
     client_id = client_config["installed"]["client_id"]
     client_secret = client_config["installed"]["client_secret"]
 
@@ -221,6 +243,7 @@ def do_oauth_flow(client_config: dict, login_hint: str = None, force_consent: bo
     print(f"If browser doesn't open, visit:\n{auth_url}\n")
 
     # Open browser
+    ensure_interactive_auth_allowed(auth_url)
     webbrowser.open(auth_url)
 
     # Wait for callback
@@ -250,7 +273,7 @@ def do_oauth_flow(client_config: dict, login_hint: str = None, force_consent: bo
     # Calculate and store absolute expiry time
     if "expires_in" in tokens:
         from datetime import timedelta
-        expiry = datetime.utcnow() + timedelta(seconds=tokens["expires_in"])
+        expiry = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(seconds=tokens["expires_in"])
         tokens["expiry"] = expiry.isoformat() + "Z"
 
     # Get user email
@@ -334,6 +357,27 @@ def list_accounts() -> list[dict]:
                     })
             except:
                 pass
+
+    # IMAP-backend accounts (app password — no OAuth token needed)
+    try:
+        import imap_backend
+        for email in imap_backend.imap_accounts():
+            account_meta = meta.get(email, {})
+            existing = next((a for a in accounts if a["email"] == email), None)
+            if existing:
+                existing["backend"] = "imap"
+                existing["description"] = existing["description"] or "IMAP backend (app password, permanent)"
+            else:
+                accounts.append({
+                    "email": email,
+                    "label": account_meta.get("label", ""),
+                    "description": account_meta.get("description", "") or "IMAP backend (app password, permanent)",
+                    "is_default": account_meta.get("is_default", False),
+                    "file": str(imap_backend.imap_password_path(email)),
+                    "backend": "imap",
+                })
+    except ImportError:
+        pass
     return accounts
 
 
@@ -408,6 +452,7 @@ def get_credentials(account: Optional[str] = None) -> Credentials:
                     token_data["expiry"] = creds.expiry.replace(tzinfo=None).isoformat() + "Z"
                 with open(token_path, "w") as f:
                     json.dump(token_data, f, indent=2)
+                token_path.chmod(0o600)
                 return creds  # Success - return refreshed creds
             except Exception as e:
                 print(f"Token refresh failed, re-authenticating: {e}")
@@ -424,6 +469,7 @@ def get_credentials(account: Optional[str] = None) -> Credentials:
             token_path = get_token_path(token_data.get("email", account))
             with open(token_path, "w") as f:
                 json.dump(token_data, f, indent=2)
+            token_path.chmod(0o600)
 
             print(f"Authenticated as: {token_data.get('email', 'unknown')}")
 
@@ -1489,6 +1535,37 @@ def main():
     if not args.command:
         parser.print_help()
         sys.exit(1)
+
+    # ---- IMAP backend routing (app-password accounts) ----
+    # Accounts with tokens/<email>.imap_password use IMAP/SMTP instead of the
+    # Gmail API: permanent credentials, immune to OAuth refresh-token revocation
+    # (Google revokes Testing-mode consumer refresh tokens every 7 days, and
+    # hard-blocks unverified Production apps from Gmail scopes — see
+    # ~/.config/zerg/auth/dead_token_selfheal.py docstring, 2026-06-02).
+    try:
+        import imap_backend
+        if args.command in imap_backend.IMAP_COMMANDS:
+            effective = resolve_account_email(getattr(args, "account", None))
+            if not (effective and "@" in effective):
+                # No explicit account: mirror get_token_path() default (first OAuth token)
+                tokens = list(TOKENS_DIR.glob("token_*.json"))
+                effective = None
+                if tokens:
+                    try:
+                        with open(tokens[0]) as f:
+                            effective = json.load(f).get("email")
+                    except Exception:
+                        pass
+                if not effective:
+                    imap_accts = imap_backend.imap_accounts()
+                    effective = imap_accts[0] if imap_accts else None
+            if effective and imap_backend.account_uses_imap(effective):
+                args.account = effective
+                imap_backend.IMAP_COMMANDS[args.command](args)
+                return
+    except ImportError:
+        pass
+    # ---- end IMAP routing ----
 
     args.func(args)
 

@@ -1,0 +1,439 @@
+{
+  "name": "Mem",
+  "url": "https://mem.ai",
+  "domain": "mem.ai",
+  "scanned_at": "2026-06-01T14:15:51.759915",
+  "sources": {
+    "landing": {
+      "url": "https://mem.ai",
+      "title": "Mem \u2013 Your AI Thought Partner",
+      "text": "Mem \u2013 Your AI Thought Partner\nProduct\nkeyboard_arrow_down\nSolutions\nkeyboard_arrow_down\nPricing\nLog in\nDownload\nOne place for everything on your mind\nDump your ideas, meetings, and research into Mem\u2014and get it all organized for you.\nDownload Mem\nWatch the video\nRemembering is so yesterday\nWe pour so much into not forgetting. You could keep using chaotic systems\u2014or\u2014you could let Mem learn how you think and do the remembering for you.\nGet things out of your head and into Mem\nDump anything into Mem and rest assured you\u2019ll find it easily later.\nWith your voice\nTurn brain dumps into beautifully organized notes.\nIn meetings\nLet Mem record, transcribe, and take meeting notes for you.\nOn the web\nSave any website in a single click with the Mem Chrome Extension.\nOn the go\nShoot Mem a quick message with the info you want to remember.\nMem helps you use everything you save\nMem remembers and organizes for you, bringing up past notes and info so nothing goes to waste.\nNo-effort organizing\nQuickly throw notes into collections, or just ask Mem to organize them for you.\nSee related context without asking\nDidn\u2019t organize? No problem. Heads Up automatically brings up related timelines, notes, collections\nMem understands and answers questions about your notes\nMem knows what\u2019s related, quickly connecting relevant details and topics.\nFind needle-in-a-haystack info\nFind that thing on the tip of your tongue, even without keywords. If you can describe it, you can find it.\nChat with your mind\u2019s better half\nTrust Mem to help you use your notes to the fullest while answering questions or drafting content.\nDo more with Mem\nGet handy tips and tricks on the\nThe Memo\nBlog\nProduct Update Roundup: Calendar Integration, Claude Connector, Referral Program, + Beta Features for Pro Users\nUse Case\nYour favorite LLMs can now use your second brain as context\nUse Case\nMem has your back, when meetings are back-to-back\nA match for great minds\nDownload Mem\nI no longer worry about how I organize or segment notes into different apps\u2014I toss it in Mem and know it will be there when I need it. So much weight off my shoulders.\nZach Price\nFounder at Impulse to Impact\nQuick Links\nHome\nDownload\nGuides\nBlog\nCareers\nPricing\nCommunity\nSlack\nX\nYouTube\nLinkedIn\nCompare\nNotion\nObsidian\nEvernote\nApple Notes\nOneNote\nSupport\nHelp & Support\nPrivacy Policy\nTerms of Service\nSecurity\nTrust Center",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://mem.ai/pricing",
+      "title": "Mem",
+      "text": "Mem\nYour browser needs an update\nMem requires a newer browser version to work properly. Please update your browser and try\n      again.\nOne place for everything on your mind\nLog in with Google\nSign in with Apple\nLearn more",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://mem.ai/changelog",
+      "title": "Mem \u2013 Your AI Thought Partner",
+      "text": "Mem \u2013 Your AI Thought Partner\nProduct\nkeyboard_arrow_down\nSolutions\nkeyboard_arrow_down\nPricing\nLog in\nDownload\nThe Memo\n.\nViews and perspectives on building the world's first AI thought partner\nAll\nFeatured\nUse Case\nCommunity\nDeep Dive\nBlog\nProduct Update Roundup: Calendar Integration, Claude Connector, Referral Program, + Beta Features for Pro Users\nUse Case\nYour favorite LLMs can now use your second brain as context\nUse Case\nMem has your back, when meetings are back-to-back\nBlog\nMem is Now SOC 2 Type II Compliant\nUse Case\nThe Art of the \"Done\" List: Automating Your Daily Retrospective\nUse Case\nThe End of \"Note Rot\": How to Use AI to Refactor Your Entire Knowledge Base in Minutes\nBlog\nIntroducing Mem 2.0: The World's First AI Thought Partner\nBlog\nTop 10 AI Meeting Assistants in 2025: Which Tool Is Best for Your Meetings?\nQuick Links\nHome\nDownload\nGuides\nBlog\nCareers\nPricing\nCommunity\nSlack\nX\nYouTube\nLinkedIn\nCompare\nNotion\nObsidian\nEvernote\nApple Notes\nOneNote\nSupport\nHelp & Support\nPrivacy Policy\nTerms of Service\nSecurity\nTrust Center",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://mem.ai/docs",
+      "title": "Mem",
+      "text": "Mem\nYour browser needs an update\nMem requires a newer browser version to work properly. Please update your browser and try\n      again.\nOne place for everything on your mind\nLog in with Google\nSign in with Apple\nLearn more",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://mem.ai/integrations",
+      "title": "Mem",
+      "text": "Mem\nYour browser needs an update\nMem requires a newer browser version to work properly. Please update your browser and try\n      again.\nOne place for everything on your mind\nLog in with Google\nSign in with Apple\nLearn more",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/mem/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Cloudflare Reverse Proxies Are Dumping Uninitialized Memory",
+          "url": "https://bugs.chromium.org/p/project-zero/issues/detail?id=1139",
+          "points": 3238,
+          "num_comments": 992,
+          "created_at": "2017-02-23T23:05:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13718752"
+        },
+        {
+          "title": "Reading privileged memory with a side-channel",
+          "url": "https://googleprojectzero.blogspot.com/2018/01/reading-privileged-memory-with-side.html",
+          "points": 2334,
+          "num_comments": 593,
+          "created_at": "2018-01-03T22:20:48Z",
+          "hn_url": "https://news.ycombinator.com/item?id=16065845"
+        },
+        {
+          "title": "In loving memory of square checkbox",
+          "url": "https://tonsky.me/blog/checkbox/",
+          "points": 1967,
+          "num_comments": 505,
+          "created_at": "2024-01-28T00:36:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39161339"
+        },
+        {
+          "title": "Google Fires Employee Behind Controversial Diversity Memo",
+          "url": "https://www.bloomberg.com/news/articles/2017-08-08/google-fires-employee-behind-controversial-diversity-memo",
+          "points": 1697,
+          "num_comments": 2371,
+          "created_at": "2017-08-08T01:31:15Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14952787"
+        },
+        {
+          "title": "In Memoriam: Ian Murdock",
+          "url": "http://blog.docker.com/2015/12/ian-murdock/",
+          "points": 1457,
+          "num_comments": 366,
+          "created_at": "2015-12-30T18:43:55Z",
+          "hn_url": "https://news.ycombinator.com/item?id=10813524"
+        },
+        {
+          "title": "Google Memory Loss",
+          "url": "https://www.tbray.org/ongoing/When/201x/2018/01/15/Google-is-losing-its-memory",
+          "points": 1377,
+          "num_comments": 539,
+          "created_at": "2018-01-15T22:04:16Z",
+          "hn_url": "https://news.ycombinator.com/item?id=16153840"
+        },
+        {
+          "title": "Memory Allocation",
+          "url": "https://samwho.dev/memory-allocation/",
+          "points": 1360,
+          "num_comments": 177,
+          "created_at": "2023-05-22T09:26:22Z",
+          "hn_url": "https://news.ycombinator.com/item?id=36029087"
+        },
+        {
+          "title": "Email is your electronic memory",
+          "url": "https://blog.fastmail.com/2018/02/14/email-is-your-electronic-memory/",
+          "points": 1248,
+          "num_comments": 282,
+          "created_at": "2018-02-14T22:59:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=16380345"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://mem.ai/pricing",
+    "changelog": null,
+    "docs": "https://mem.ai/docs",
+    "integrations": "https://mem.ai/integrations",
+    "g2": "https://www.g2.com/products/mem/reviews"
+  },
+  "analysis": {
+    "name": "Mem",
+    "url": "https://mem.ai",
+    "tagline": "One place for everything on your mind",
+    "value_proposition": "AI-powered personal knowledge base that automatically organizes notes, transcribes meetings, and surfaces relevant context so users never have to manually file or retrieve information.",
+    "target_segment": "consumer / prosumer / SMB",
+    "ideal_customer": "Knowledge workers, founders, and individuals who want a frictionless capture-and-recall system without manual organization overhead",
+    "features": [
+      {
+        "name": "voice note capture",
+        "description": "Dictate brain dumps that get converted into organized notes",
+        "evidence_source": "landing",
+        "evidence_quote": "Turn brain dumps into beautifully organized notes.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "meeting recording",
+        "description": "Automatically records audio from meetings",
+        "evidence_source": "landing",
+        "evidence_quote": "Let Mem record, transcribe, and take meeting notes for you.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "meeting transcription",
+        "description": "Transcribes recorded meeting audio to text",
+        "evidence_source": "landing",
+        "evidence_quote": "Let Mem record, transcribe, and take meeting notes for you.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "ai meeting notes",
+        "description": "Automatically generates structured notes from recorded meetings",
+        "evidence_source": "landing",
+        "evidence_quote": "Let Mem record, transcribe, and take meeting notes for you.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "chrome extension web clipper",
+        "description": "One-click save of any website to Mem",
+        "evidence_source": "landing",
+        "evidence_quote": "Save any website in a single click with the Mem Chrome Extension.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile quick capture",
+        "description": "Send a quick message to Mem on mobile to capture information",
+        "evidence_source": "landing",
+        "evidence_quote": "Shoot Mem a quick message with the info you want to remember.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "collections",
+        "description": "Group notes into named collections for lightweight organization",
+        "evidence_source": "landing",
+        "evidence_quote": "Quickly throw notes into collections, or just ask Mem to organize them for you.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "ai auto-organization",
+        "description": "Ask Mem to automatically organize notes into collections on your behalf",
+        "evidence_source": "landing",
+        "evidence_quote": "just ask Mem to organize them for you.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "heads up related context",
+        "description": "Proactively surfaces related timelines, notes, and collections without user prompting",
+        "evidence_source": "landing",
+        "evidence_quote": "Heads Up automatically brings up related timelines, notes, collections",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "natural language search",
+        "description": "Find notes by describing them rather than using exact keywords",
+        "evidence_source": "landing",
+        "evidence_quote": "Find that thing on the tip of your tongue, even without keywords. If you can describe it, you can find it.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "ai chat over notes",
+        "description": "Chat interface to ask questions about your saved notes and get answers",
+        "evidence_source": "landing",
+        "evidence_quote": "Trust Mem to help you use your notes to the fullest while answering questions or drafting content.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "ai content drafting",
+        "description": "Generate new content using saved notes as context",
+        "evidence_source": "landing",
+        "evidence_quote": "Trust Mem to help you use your notes to the fullest while answering questions or drafting content.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "calendar integration",
+        "description": "Connects calendar events to note-taking and meeting workflows",
+        "evidence_source": "changelog",
+        "evidence_quote": "Product Update Roundup: Calendar Integration, Claude Connector, Referral Program, + Beta Features",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "claude connector",
+        "description": "Integration with Anthropic's Claude LLM as an AI backend or connector",
+        "evidence_source": "changelog",
+        "evidence_quote": "Product Update Roundup: Calendar Integration, Claude Connector, Referral Program, + Beta Features",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "llm context api / mcp support",
+        "description": "Expose personal knowledge base as context for external LLMs and AI tools",
+        "evidence_source": "changelog",
+        "evidence_quote": "Your favorite LLMs can now use your second brain as context",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "daily retrospective automation",
+        "description": "Automates creation of a daily done list / retrospective from captured notes",
+        "evidence_source": "changelog",
+        "evidence_quote": "The Art of the \"Done\" List: Automating Your Daily Retrospective",
+        "tier": "unknown",
+        "confidence": "low"
+      },
+      {
+        "name": "ai knowledge base refactoring",
+        "description": "AI-powered bulk cleanup and restructuring of an existing note library",
+        "evidence_source": "changelog",
+        "evidence_quote": "The End of \"Note Rot\": How to Use AI to Refactor Your Entire Knowledge Base in Minutes",
+        "tier": "unknown",
+        "confidence": "low"
+      },
+      {
+        "name": "soc 2 type ii compliance",
+        "description": "Third-party audited security certification for enterprise trust",
+        "evidence_source": "changelog",
+        "evidence_quote": "Mem is Now SOC 2 Type II Compliant",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "google sso",
+        "description": "Sign in / authenticate with a Google account",
+        "evidence_source": "landing",
+        "evidence_quote": "Log in with Google",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "apple sso",
+        "description": "Sign in / authenticate with an Apple ID",
+        "evidence_source": "landing",
+        "evidence_quote": "Sign in with Apple",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "desktop app",
+        "description": "Native downloadable desktop application",
+        "evidence_source": "landing",
+        "evidence_quote": "Download Mem",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "related timelines",
+        "description": "Automatic chronological view of related notes surfaced by Heads Up feature",
+        "evidence_source": "landing",
+        "evidence_quote": "Heads Up automatically brings up related timelines, notes, collections",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "referral program",
+        "description": "User referral incentive program",
+        "evidence_source": "changelog",
+        "evidence_quote": "Product Update Roundup: Calendar Integration, Claude Connector, Referral Program, + Beta Features",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "pro beta features",
+        "description": "Early access beta features available to Pro tier subscribers",
+        "evidence_source": "changelog",
+        "evidence_quote": "Beta Features for Pro Users",
+        "tier": "paid",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Google (SSO / Calendar)",
+      "Apple (SSO)",
+      "Claude (Anthropic)",
+      "Chrome Extension"
+    ],
+    "differentiators": [
+      "Positions as 'world's first AI thought partner' \u2014 not just note-taking but active recall and organization",
+      "Heads Up: proactively surfaces related context without user querying",
+      "Zero-effort organizing \u2014 AI handles taxonomy so user never files anything manually",
+      "Natural language / semantic search without keyword matching",
+      "LLM context bridge \u2014 exposes personal notes as context layer for external AI tools"
+    ],
+    "recent_ships": [
+      {
+        "date": "2025",
+        "what": "Calendar Integration",
+        "source": "Product Update Roundup: Calendar Integration, Claude Connector, Referral Program, + Beta Features for Pro Users"
+      },
+      {
+        "date": "2025",
+        "what": "Claude Connector (Anthropic LLM integration)",
+        "source": "Product Update Roundup: Calendar Integration, Claude Connector, Referral Program, + Beta Features for Pro Users"
+      },
+      {
+        "date": "2025",
+        "what": "Referral Program launch",
+        "source": "Product Update Roundup: Calendar Integration, Claude Connector, Referral Program, + Beta Features for Pro Users"
+      },
+      {
+        "date": "2025",
+        "what": "Pro beta features access tier",
+        "source": "Product Update Roundup: Calendar Integration, Claude Connector, Referral Program, + Beta Features for Pro Users"
+      },
+      {
+        "date": "2025",
+        "what": "LLM context API \u2014 external LLMs can use Mem as second brain context",
+        "source": "Your favorite LLMs can now use your second brain as context"
+      },
+      {
+        "date": "2025",
+        "what": "SOC 2 Type II certification",
+        "source": "Mem is Now SOC 2 Type II Compliant"
+      },
+      {
+        "date": "2025",
+        "what": "Mem 2.0 \u2014 repositioned as AI Thought Partner",
+        "source": "Introducing Mem 2.0: The World's First AI Thought Partner"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "\"I no longer worry about how I organize or segment notes into different apps\u2014I toss it in Mem and know it will be there when I need it. So much weight off my shoulders.\" \u2014 Zach Price, Founder at Impulse to Impact"
+      ],
+      "complaints": [],
+      "sources": [
+        "landing (testimonial)"
+      ]
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": null,
+        "limits": null
+      },
+      "tiers": [],
+      "enterprise": null,
+      "notes": "Pricing page failed to render (browser compatibility error in scrape); no tier data extractable. Blog references a 'Pro' tier with beta features. Pricing structure unconfirmed."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "\u03b4-mem: Efficient Online Memory for Large Language Models",
+        "url": "https://arxiv.org/abs/2605.12357",
+        "points": 240,
+        "comments": 60,
+        "age_days": 16,
+        "hn_url": "https://news.ycombinator.com/item?id=48158506"
+      },
+      {
+        "title": "Show HN: CoreMem \u2013 Portable context for AI agents",
+        "url": "https://coremem.app",
+        "points": 5,
+        "comments": 0,
+        "age_days": 10,
+        "hn_url": "https://news.ycombinator.com/item?id=48239117"
+      },
+      {
+        "title": ".NET Memory Performance Analysis",
+        "url": "https://github.com/Maoni0/mem-doc/blob/master/doc/.NETMemoryPerformanceAnalysis.md",
+        "points": 2,
+        "comments": 0,
+        "age_days": 26,
+        "hn_url": "https://news.ycombinator.com/item?id=48029663"
+      },
+      {
+        "title": "Ask HN: Mining Scientific Papers",
+        "url": "https://news.ycombinator.com/item?id=47949379",
+        "points": 2,
+        "comments": 2,
+        "age_days": 33,
+        "hn_url": "https://news.ycombinator.com/item?id=47949379"
+      },
+      {
+        "title": "Show HN: I replaced a memory app with two Markdown files and a Git repo",
+        "url": "https://news.ycombinator.com/item?id=47912675",
+        "points": 2,
+        "comments": 1,
+        "age_days": 35,
+        "hn_url": "https://news.ycombinator.com/item?id=47912675"
+      }
+    ]
+  }
+}

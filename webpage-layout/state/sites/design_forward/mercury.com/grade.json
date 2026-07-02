@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 3,
+    "distinctiveness": 2,
+    "color": 5,
+    "density": 3,
+    "voice": 2
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif system with no character \u2014 could be any SaaS product. Headline sizing is competent but completely forgettable, lacks typographic voice or discipline.",
+    "hierarchy": "Headline dominates initially but the giant AI-generated hero image competes heavily for attention. Email input feels lost in the composition. Weak visual prioritization overall.",
+    "distinctiveness": "Completely generic fintech template. 'Radically different' claim contradicted by utterly conventional design. Swap Mercury for any neobank and nothing changes \u2014 pure stencil.",
+    "color": "Restrained palette of grays/whites with blue accent CTA is appropriate, but the overwhelming decorative hero image breaks any discipline. The image color palette dominates everything.",
+    "density": "Massive amounts of whitespace with anemic content. Single headline, subhead, and email field floating in void. Timid and generic padding ratios \u2014 no confidence in density.",
+    "voice": "Standard SaaS homepage template: hero headline + subhead + email capture. IA completely disconnected from 'radically different' promise. Pure conversion funnel stencil with zero structural personality."
+  },
+  "winning_patterns": [
+    "Clean, uncluttered nav with clear hierarchy",
+    "Accent color used sparingly on CTAs only",
+    "Confident white text on complex background handles legibility adequately"
+  ],
+  "anti_patterns": [
+    "AI-generated hero image screams 'generic fintech trying too hard' \u2014 the desk-in-nature clich\u00e9",
+    "Claiming 'radically different' while using the most conventional fintech design template possible",
+    "Weak headline typography with no character or discipline",
+    "Email capture as primary CTA feels low-commitment for 'banking' claim",
+    "Enormous hero taking 100vh with almost no actual content",
+    "Completely interchangeable with Brex, Ramp, or any neobank homepage"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://mercury.com",
+  "_persona": "design_forward",
+  "_note": "Dark hero, neon accent strokes, big-number callouts",
+  "_graded_at": "2026-05-08T21:41:40.250506Z"
+}

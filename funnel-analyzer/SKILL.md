@@ -1,8 +1,8 @@
 ---
 name: funnel-analyzer
-description: Computes measured conversion rates per funnel step from Zergalytics events. Funnels are YAML at `Growth/funnels/<name>.yaml` (name, product, ordered steps). Five modes: `define`, `query` (drop-off table + ASCII chart), `compare` (segmented cuts), `top-friction` (worst step across funnels), `list`. Data sources in priority order: Zergalytics public API, direct Postgres on `zerg/api/analytics/PageMetricEvent`, Stripe webhooks for paid steps; ships with a fixture-mode fallback for development. USE PROACTIVELY for "what's the actual signup conversion," "where do users drop off," or after `cro-auditor` to verify a hypothesis with measured data. `cro-auditor` is heuristic friction on marketing surfaces; funnel-analyzer is data-driven measurement. `growth-dashboard` is the rolled-up weekly summary; funnel-analyzer is per-funnel deep-dive.
-allowed-tools: Bash, Read, Write
+description: Measure Zerg funnel conversion rates and drop-offs from analytics data or fixture fallback.
 ---
+
 
 # Funnel Analyzer Skill
 
@@ -23,7 +23,7 @@ python3 ~/.claude/skills/funnel-analyzer/run.py define \
   --steps "view:landing,click:cta_signup,submit:signup_form,activate:first_card_created"
 ```
 
-Writes `MattZerg/Projects/Zstack/Growth/funnels/signup.yaml`. Each step is `event_type:event_name`. Order matters — funnel computation walks them in sequence.
+Writes `MattZerg/Projects/Zerg-Production/Growth/funnels/signup.yaml`. Each step is `event_type:event_name`. Order matters — funnel computation walks them in sequence.
 
 ### `query` — measured drop-off rates
 

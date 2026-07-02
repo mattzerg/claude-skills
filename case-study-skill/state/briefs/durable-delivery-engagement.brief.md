@@ -33,7 +33,7 @@ No measurable outcomes documented in evidence. Gap: customer-side metrics (deplo
 
 ## Candidate quotes
 
-No verbatim quotes in evidence. Gap: ask Durable champion (name unknown — needs identification per `MattZerg/Projects/Zstack/Case-Studies/durable.md`) for a 1-2 sentence quote covering what the Zerg module orchestration of Durable v2 unlocked. André Ricardo's standup notes are internal Zerg voice, not publishable customer testimony.
+No verbatim quotes in evidence. Gap: ask Durable champion (name unknown — needs identification per `MattZerg/Projects/Zerg-Production/Case-Studies/durable.md`) for a 1-2 sentence quote covering what the Zerg module orchestration of Durable v2 unlocked. André Ricardo's standup notes are internal Zerg voice, not publishable customer testimony.
 
 ## Evidence links
 
@@ -41,16 +41,16 @@ No verbatim quotes in evidence. Gap: ask Durable champion (name unknown — need
 - `MattZerg/Conversations/Slack/standup/2026-04-15.md` — André's standup confirming full v2 orchestration through Zerg modules
 - `MattZerg/Conversations/Slack/standup/2026-04-28.md` — André's update on probe wiring still iterating, console logs working
 - `MattZerg/Conversations/Slack/standup/2026-04-13.md` — Idan note: "follow up with Rubrik and Durable" (light signal of ongoing engagement cadence)
-- `MattZerg/Projects/Zstack/Case-Studies/durable.md` — capture-mode placeholder noting NDA unverified and clearance still required
-- `MattZerg/Projects/Zstack/Growth/weekly/2026-05-05.md`, `weekly/2026-05-06.md` — case-study-in-flight tracker confirming status=capture, nda=unverified
-- `MattZerg/Projects/Zstack/Growth/utm-convention.md` — pre-allocated `case-study-durable` UTM slug
-- `MattZerg/Projects/Zstack/Growth/journeys/solutions-buyer.md` — case study referenced as a planned inbound trigger
+- `MattZerg/Projects/Zerg-Production/Case-Studies/durable.md` — capture-mode placeholder noting NDA unverified and clearance still required
+- `MattZerg/Projects/Zerg-Production/Growth/weekly/2026-05-05.md`, `weekly/2026-05-06.md` — case-study-in-flight tracker confirming status=capture, nda=unverified
+- `MattZerg/Projects/Zerg-Production/Growth/utm-convention.md` — pre-allocated `case-study-durable` UTM slug
+- `MattZerg/Projects/Zerg-Production/Growth/journeys/solutions-buyer.md` — case study referenced as a planned inbound trigger
 
 ## Gaps
 
 - **Linear pulls not done by script.** Run: `linear-skill search "durable"` and `linear-skill search "v2 harness"` to surface in-flight issues for the harness build, probe system, and overseer logic. Expect MEDIUM confidence on in-progress, HIGH on shipped.
 - **Zergboard pulls not done by script.** Run: `zergboard-skill search "durable"` to surface card-level scope and status.
-- **No Companies/Durable.md captured.** Per `MattZerg/Projects/Zstack/Case-Studies/durable.md`, this file may exist but was not surfaced by evidence gathering. Confirm presence; if absent, identify Durable as a company (sector, size, product) before drafting.
+- **No Companies/Durable.md captured.** Per `MattZerg/Projects/Zerg-Production/Case-Studies/durable.md`, this file may exist but was not surfaced by evidence gathering. Confirm presence; if absent, identify Durable as a company (sector, size, product) before drafting.
 - **No People/CRM contacts surfaced.** No Durable champion or legal contact named in evidence. Required for NDA clearance and quote capture.
 - **No timeframe start.** Engagement clearly active by 2026-04-13 but start date not in evidence. Ask André or check Linear ticket creation dates.
 - **No measurable outcomes.** Need: orchestration scope (how many subservices, what error volume), probe-system error-triage delta, deploy/operate cadence change vs. prior tooling. Without baselines, current evidence supports zero HIGH-confidence outcomes.
@@ -59,7 +59,7 @@ No verbatim quotes in evidence. Gap: ask Durable champion (name unknown — need
 
 ## Risks
 
-- **NDA status: unknown.** `MattZerg/Projects/Zstack/Case-Studies/durable.md` explicitly notes "NDA: unverified — clearance needed Day 12–18." Cannot publish until cleared. The growth weekly trackers also flag `nda=unverified`.
+- **NDA status: unknown.** `MattZerg/Projects/Zerg-Production/Case-Studies/durable.md` explicitly notes "NDA: unverified — clearance needed Day 12–18." Cannot publish until cleared. The growth weekly trackers also flag `nda=unverified`.
 - **Mid-flight engagement.** Probe system was not working as of 2026-04-28; the harness story is not yet a "shipped" story. Frame as in-progress at minimum, or wait until probes land + overseer logic ships before drafting.
 - **Single-Zerg-source evidence.** All technical claims trace to André Ricardo's standup notes. No second corroborating source within Zerg, no customer-side artifact. MEDIUM at best on technical detail until Linear/Zergboard pulls add corroboration.
 - **Product naming ambiguity.** "Zerg cloud" in standups vs. "ZCloud" in canonical naming — verify Product Glossary alignment before any draft uses product names.

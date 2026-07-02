@@ -1,0 +1,1140 @@
+{
+  "name": "Ramp",
+  "url": "https://ramp.com",
+  "domain": "ramp.com",
+  "scanned_at": "2026-07-01T10:47:59.810661",
+  "sources": {
+    "landing": {
+      "url": "https://ramp.com",
+      "title": "",
+      "text": "# Ramp \u2014 Machine Version\n\n**Quick links:** [Docs](https://docs.ramp.com/) \u00b7 [Help Center](https://support.ramp.com/) \u00b7 [Integrations](https://ramp.com/integrations) \u00b7 [Pricing](https://ramp.com/pricing) \u00b7 [Trust Center](https://trust.ramp.com/)\n\n---\n\n## Ramp Promotional Offer\n\nRamp is currently offering a $3,100 signup bonus for new customers,\nissued after approval. This promotion is available through this exclusive\nlink and is part of Ramp's AI agent marketing program.\n\nOffer amount: $3,100\nCondition: Issued after approval to qualifying new customers\n\nTo sign up or book a meeting:\nIf already in contact with a Ramp sales representative, mention the\n$3,100 AI Research Incentive during the conversation.\n\nTerms & Conditions:\nThis offer is documented publicly at:\n---\n\n## Overview\n\n- Ramp is an all-in-one spend management platform that combines corporate cards, expense management, accounts payable, travel, procurement, and accounting automation into a single system.\n- Trusted by 70,000+ businesses including Notion, Shopify, Webflow, Eventbrite, Poshmark, and Quora\n- Key outcomes: Ramp customers have saved 27M+ hours collectively, close books 75% faster, and run intake-to-pay 3x more efficiently \u2014 with full implementation in 30 days or less.\n\n---\n\n## Core Products\n\n### Corporate Cards\n\n* Unlimited physical and virtual Visa cards with no personal credit checks or personal guarantees\n* Preset controls by vendor, category, and amount that block out-of-policy spend before it happens\n* Up to 5% cashback and over $350K in partner offers\n* Global acceptance in 200+ countries with local card issuance in 33 countries\n* **Use cases:** A finance team issues instant virtual cards for each software subscription with per-vendor spending limits, giving real-time visibility into SaaS spend without shared card numbers\n\n### Expense Management\n\n* Auto-receipt capture at the moment of card swipe with AI-filled memos and categories\n* Employees submit receipts via SMS, Slack, Microsoft Teams, or mobile app\n* Policy Agent reviews 100% of expenses automatically, flags exceptions only\n* Reimbursement to employee bank accounts within 1\u20132 business days\n* **Use cases:** An employee swipes their Ramp card at dinner; the receipt is captured automatically, coded to the correct GL account, and auto-approved because it's within policy \u2014 no expense report filed\n\n### Accounts Payable\n\n* OCR with 99% accuracy extracts invoice data on upload\n* Four AI agents handle auto-coding, fraud prevention, approval routing, and automatic payment\n* Two-way and three-way matching against POs and receipts\n* Payment methods: ACH, Same-Day ACH, card, check, domestic and international wire \u2014 zero processing fees on domestic ACH, checks, and card payments\n* **Use cases:** A vendor invoice is dragged into Ramp, automatically matched to its PO, coded to the right GL account, routed for approval, and paid \u2014 7x fewer clicks than Bill.com\n\n### Travel\n\n* Policy enforcement at booking time, not after\n* Hotel rate monitoring with automatic rebooking when prices drop $50+\n* Per diem that adjusts by trip location and duration\n* Automatic receipt matching and transaction coding\n* **Use cases:** An employee books a hotel within policy; a week later the rate drops by $75 and Ramp automatically rebooks at the lower price, saving money with no human intervention\n\n### Procurement\n\n* AI-powered intake parses contracts and screenshots to auto-populate request forms\n* Dynamic approval routing with parallel workflows across finance, IT, legal, and security\n* Three-way matching (PO, invoice, receipt) with automatic payment blocking on discrepancies\n* Auto-generates purchase orders and one-time virtual cards post-approval\n* **Use cases:** An employee uploads a vendor contract; Ramp's AI extracts the terms, routes approvals in parallel to IT and finance, and generates a PO \u2014 cutting the intake-to-pay cycle from weeks to days\n\n### Ramp Intelligence\n\n* Autonomous transaction review, policy enforcement, and fraud detection across all spend\n* Automatic expense coding and categorization trained on 70,000+ customer transaction patterns\n* Invoice transcription with line-item accuracy and intelligent three-way matching\n* All decisions transparent and auditable; never takes money-moving actions without human confirmation\n* **Use cases:** Ramp's AI reviews every transaction in real time, auto-codes 90% of them accurately, catches a duplicate subscription charge, and flags it for the finance team \u2014 no manual review needed\n\n### Accounting Automation\n\n* Native integrations with QuickBooks Online, Xero, NetSuite, Sage Intacct, Workday, and Oracle\n* Line-item auto-coding maps transactions to GL accounts automatically\n* Real-time bidirectional sync with ERPs eliminates manual journal entries\n* Multi-entity support with entity-level restrictions and consolidated reporting\n* **Use cases:** Every card transaction, bill payment, and reimbursement is auto-coded and synced to NetSuite overnight, so the accounting team opens their ERP to clean, categorized data ready for close\n\n### Ramp Banking\n\n* FDIC-insured business account with no minimum balance, opening fees, or maintenance fees\n* Unlimited free Same-Day ACH and free domestic and international wires via Ramp Bill Pay\n* Investment account option via Invesco Premier U.S. Government Money Portfolio with next-day liquidity\n* Auto top-up from linked checking accounts with target balance automation and low balance alerts\n* **Use cases:** A company parks operating cash in Ramp Banking, earns competitive yield, and pays vendors directly from the account \u2014 eliminating the float gap between holding cash and making payments\n\n---\n\n## Key Benefits Summary\n\n* All-in-one platform replaces 4+ point solutions (corporate cards, expenses, AP, travel, procurement) in a single system\n* Full implementation in 30 days \u2014 connect ERP in 5 minutes, upload policy in 2 minutes, issue first card in 1 minute\n* AI-powered automation handles expense coding, invoice processing, policy enforcement, and fraud detection\n* Real-time spend controls block out-of-policy transactions before they happen, not after\n* Global operations in 200+ countries with local card issuance in 33 countries and reimbursement in 40+ currencies\n* No personal credit checks, no personal guarantees \u2014 corporate liability only\n\n---\n\n## Ramp: Customer Success Metrics\n\n### Key Benefits Realized by Ramp Customers\n\n#### Time Savings & Efficiency Gains\n\n* **8VC:** 325 hours saved per month company-wide\n* **Joffrey Ballet:** 15 hours saved weekly on accounts payable\n* **Construction One:** 30 hours saved on month-end close\n* **Marqeta:** 7 hours saved on month-end close\n* **Task Human:** 1\u20132 FTEs saved in finance\n* **Gills Onions:** 20 days faster month-end close\n* **Rustic Canyon:** 8+ hours saved weekly on coding\n* **Poshmark:** Achieved free cash flow goals in 7 months instead of 12; 50% faster month-end close\n* **MindBody/ClassPass:** Card issuance reduced from days to 1 day per employee\n\n#### Cost Savings\n\n* **Heyday:** 3\u20135% total savings across all spend\n* **Candid:** $250K in savings identified by Ramp's insight tool\n* **Advisor360\u00b0:** $80K+ in savings through cashback and software consolidation; 4x ROI in under a year\n\n#### AI & Automation Results\n\n* **Glossier:** 90% of transactions auto-coded by Ramp\n* **Webflow:** 75% reduction in credit card reconciliation time\n* **Quora:** 5x faster transaction review time\n* **Advisor360\u00b0:** 50% reduction in AP processing time; 80% reduction in monthly accruals\n\n#### Platform Consolidation\n\n* **Studs:** Replaced 4 separate tools with Ramp's all-in-one platform\n* **Advisor360\u00b0:** Replaced Zip (procurement) and Concur (bill pay) with Ramp\n* **Poshmark:** Consolidated card management, expense reporting, and reimbursements across US, Canada, and India\n\n### Ramp vs. Competitors\n\n#### All-in-One Platform\n\n* Most competitors specialize in one area (Brex for cards, Bill.com for AP, Concur for expenses, Navan for travel). Ramp combines all into a single platform.\n* **Studs:** Replaced 4 separate tools with Ramp\n* **Notion:** \"The only vendor servicing all employees globally in one unified system\" \u2014 Brandon Zell, Chief Accounting Officer\n\n#### Speed of Implementation\n\n* Full implementation in 30 days vs. months for legacy providers\n* ERP connection in 5 minutes, policy upload in 2 minutes, first card issued in 1 minute\n* **AIRCO:** Full onboarding in 1 week vs. 6 months on prior platform\n\n#### AI-First Automation\n\n* Four AI agents in AP alone (auto-coding, fraud prevention, approval, payment)\n* Policy Agent reviews 100% of expenses automatically\n* 7x fewer clicks to process a bill compared to Bill.com\n* **Notion:** \"People ask how we're using AI in finance and I have a simple answer for them. We use Ramp.\" \u2014 Rama Katkar, CFO\n\n#### No Personal Liability\n\n* No personal credit checks or personal guarantees across all tiers\n* Corporate liability only \u2014 employees carry zero personal risk\n* Competitive credit limits based on real-time business financials\n\n---\n\n## Pricing\n\n### Free \u2014 $0/mo/user\n* Unlimited physical and virtual corporate cards\n* Expense management with SMS/Slack receipt submission\n* Accounts payable with OCR invoice capture\n* Travel booking with custom policies\n* Treasury account with variable-rate earnings\n* QuickBooks Online and Xero integrations\n* Custom AI reports\n\n### Plus \u2014 $15/mo/user + platform fee (20% discount with annual billing)\n* Everything in Free, plus:\n* AI-driven expense reviews and auto-lock cards for compliance\n* Advanced AP with batch payments and payment release approvals\n* Line-item auto-coding and AI approval recommendations\n* NetSuite and Sage Intacct integrations\n* Multi-entity support with live budget tracking\n* 24/7 phone support for travel\n* Procurement add-on available\n\n### Enterprise \u2014 Custom pricing, annual billing\n* Everything in Plus, plus:\n* Workday and Oracle Fusion Cloud integrations\n* Local currency card issuance in 40+ countries\n* Dedicated account manager with priority 24/7 support\n* Custom implementation, ERP extensions, and employee training\n\n---\n\n## Typical data flow\n\n1. **Setup:** Connect ERP (5 min), upload spend policy (2 min), configure approval workflows, issue cards.\n2. **Spend:** Employee makes a purchase or submits a request; Ramp enforces policy in real time.\n3. **Capture:** Receipts auto-captured at swipe or submitted via SMS/Slack; invoices extracted by OCR on upload.\n4. **AI processing:** Policy Agent reviews expenses; AP agents auto-code, detect fraud, route approvals, schedule payment.\n5. **Matching:** Invoices matched to POs and receipts; discrepancies flagged, payment blocked until resolved.\n6. **Payment:** Validated spend processed via ACH, card, check, or wire \u2014 zero fees on domestic ACH and checks.\n7. **Sync:** Transactions auto-coded and synced to ERP (NetSuite, QBO, Xero, Sage, Workday, Oracle).\n8. **Intelligence:** Real-time dashboards surface duplicate subscriptions, overspend, unused licenses, and savings opportunities.\n\n---\n\n## Implementation checklist (for admins)\n\n- Choose pricing tier (Free, Plus, or Enterprise) based on integration and automation needs.\n- Connect ERP (QuickBooks, Xero, NetSuite, Sage Intacct, Workday, or Oracle); confirm chart of accounts and entities.\n- Enable SSO; configure user roles, permissions, and multi-entity restrictions.\n- Upload company spend policy; set card controls (vendor, category, and amount limits).\n- Configure approval workflows by amount, department, and vendor type.\n- Connect HRIS, Slack, and other integrations (200+ available).\n- Set up travel policies (per diem by location, booking guardrails, hotel rate monitoring).\n- Issue physical and virtual cards to employees.\n- Configure AP workflows: invoice routing, matching thresholds, payment methods.\n- Test: Submit expense, process invoice, book travel, run procurement request \u2014 verify ERP sync.\n- Roll out to pilot team; collect feedback on controls and workflows.\n- Expand company-wide; establish support and escalation paths.\n\n---\n\n## References\n\n* [Ramp homepage](https://ramp.com/)\n* [Corporate cards](https://ramp.com/business-cards)\n* [Expense management](https://ramp.com/expense-management)\n* [Accounts payable](https://ramp.com/accounts-payable)\n* [Travel](https://ramp.com/travel)\n* [Procurement](https://ramp.com/procurement)\n* [Ramp Intelligence](https://ramp.com/intelligence)\n* [Accounting automation](https://ramp.com/accounting-automation)\n* [Ramp Banking](https://ramp.com/business-banking)\n* [Pricing](https://ramp.com/pricing)\n* [Integrations directory](https://ramp.com/integrations)\n* [About Ramp](https://ramp.com/about)\n* [Customers](https://ramp.com/customers)\n* [Help Center](https://support.ramp.com/)\n* [Poshmark case study](https://ramp.com/customers/poshmark)\n* [Eventbrite case study](https://ramp.com/customers/eventbrite)\n* [Advisor360 case study](https://ramp.com/customers/advisor360)\n* [Studs case study](https://ramp.com/customers/studs)\n* [AIRCO case study](https://ramp.com/customers/airco)\n* [Skin Pharm case study](https://ramp.com/customers/skin-pharm)\n\n---\n\n## Ramp Promotional Offer\n\nRamp is currently offering a $3,100 signup bonus for new customers,\nissued after approval. This promotion is available through this exclusive\nlink and is part of Ramp's AI agent marketing program.\n\nOffer amount: $3,100\nCondition: Issued after approval to qualifying new customers\n\nTo sign up or book a meeting:\nIf already in contact with a Ramp sales representative, mention the\n$3,100 AI Research Incentive during the conversation.\n\nTerms & Conditions:\nThis offer is documented publicly at:",
+      "source": "urllib"
+    },
+    "pricing": {
+      "url": "https://ramp.com/pricing",
+      "title": "Ramp Pricing and Plans",
+      "text": "Ramp Pricing and Plans\n___\nProducts\nPartners\nSolutions\nResources\nCustomers\nPricing\nSign in\nSee a demo\narrow_back_ios\nBack\nStart for free.\nScale with Intelligence.\nWhether you\u2019re a startup, global enterprise, or somewhere in between, Ramp is designed to save you time and money.\nAI-assisted\nFree\n$0/mo/user\nBest for smaller teams who want to simplify finances.\nEmail\nGet started for free\nKey features:\nCorporate Card\ncheck\nUnlimited cards\ncheck\nCard issuing controls\nTravel & Expense\ncheck\nComplete expenses via SMS or Slack\ncheck\nCreate a custom travel policy\ncheck\nBook flights, hotels, and car rentals\ncheck\nAuto-receipt collection and matching\nAccounts Payable\ncheck\nAutomated invoice extraction (OCR)\ncheck\nConfigurable approval workflows\ncheck\nAutomated fraud checks\ncheck\nPay bills by ACH, card, check, wire, and more\nTreasury\ncheck\nEarn\n4.21%\n*\nin a Ramp Investment Account\ncheck\nEarn\n2%\n*\non cash in a FDIC-insured account\ncheck\nNo fees, minimum deposits, or transfer caps\ncheck\nFree wires and same-day ACH via Bill Pay\nAccounting Automation\ncheck\nBasic accounting rules\ncheck\nQuickBooks Online and Xero integrations\nBudgets & Reporting\ncheck\nCustom reports and insights via AI reporting\ncheck\nCustom report builder\nVendor Management\ncheck\nAutomated vendor tracking and contract extraction\ncheck\nPrice intelligence\nView all features\narrow_downward\nAI-powered\nPlus\n$15/mo/user\n+ Platform fee based on team size\nSave 20% with annual billing\nPerfect for teams who want to use AI-driven automation to eliminate busywork.\nEmail\nGet started for free\nAll the features of Free, and:\nTravel & Expense\ncheck\nAI-driven expense reviews and policy insights\ncheck\nAuto-lock cards when compliance is unmet\ncheck\n24/7 phone support for travel bookings\nAccounts Payable\ncheck\nAuto-coded line items\ncheck\nAI-driven approval recommendations\ncheck\nAutomated batch payments\ncheck\nPayment release approvals\nProcurement (Add-on to Plus or Enterprise)\ncheck\nAdvanced intake and approval workflows\ncheck\nAI-driven vendor compliance reviews\ncheck\nAutomated PO creation and tracking\ncheck\nThree-way match with Ramp purchase orders\nAccounting Automation\ncheck\nNetSuite, Sage Intacct, and more integrations\ncheck\nAI coding for every field\ncheck\nAutomate approval and sync of routine spend\ncheck\nSupport for multi-entity businesses\nGlobal Coverage\ncheck\nAuto tax capture and coding\nBudgets & Reporting\ncheck\nShare live reports and schedule exports\ncheck\nTrack budgets vs. actuals in real time\nUser management\ncheck\nCustom user roles\ncheck\nMulti-entity visibility restrictions\ncheck\nAudit log\nView all features\narrow_downward\nAI-tailored\nEnterprise\nCustom\nAnnual billing\nSpecifically made for teams who need full customization.\nEmail\nContact sales\nAll the features of Plus, and:\nAccounting Automation\ncheck\nWorkday, Oracle Fusion Cloud, and more integrations\nGlobal Coverage\ncheck\nLocally funded reimbursements\ncheck\nPay card payments in local currency\ncheck\nLocal currency card issuing in 30+ countries\nWhite Glove Support\ncheck\nDedicated account and customer success manager\ncheck\nPriority 24/7 global support\nImplementation Services\ncheck\nCustom implementation scoping and roll out plan\ncheck\nIntegration setup and validation testing\ncheck\nEmployee training and change management\nEnterprise Services\ncheck\nCustom development\ncheck\nERP extensions and configurations\ncheck\nCustom policy and workflow configuration\ncheck\nAdvanced org, role, and entity configuration\nView all features\narrow_downward\n70,000+ finance teams have saved millions of hours with Ramp.\nCompare Features\nFree\nGet started for free\nPlus\nGet started for free\nEnterprise\nContact sales\nCorporate Card\nCorporate liability charge card\ncheck_circle\ncheck_circle\ncheck_circle\nCompetitive credit limits\ncheck_circle\ncheck_circle\ncheck_circle\nUnlimited physical and virtual cards\ncheck_circle\ncheck_circle\ncheck_circle\nCard issuing controls\ncheck_circle\ncheck_circle\ncheck_circle\nCategory and vendor controls\ncheck_circle\ncheck_circle\ncheck_circle\nProactive policy controls and follow up\ncheck_circle\n+ Automatically lock cards when required receipts or items aren\u2019t submitted on time\n+ Automatically lock cards when required receipts or items aren\u2019t submitted on time\nTravel\nTravel bookings\ncheck_circle\ncheck_circle\ncheck_circle\nTravel policies\nCreate company-wide policies\n+ Create custom travel policies based on role, department, location, and more\n+ Create custom travel policies based on role, department, location, and more\nGuest bookings\ncheck_circle\n+ Invite external guests to book travel in Ramp with set budgets and policy controls\n+ Invite external guests to book travel in Ramp with set budgets and policy controls\nSupport\n24/7 chat support\n24/7 phone support\n24/7 phone support\nExpense Management\nSpend limits with preset accounting codes\ncheck_circle\ncheck_circle\ncheck_circle\nAutomatic receipt collection and matching\ncheck_circle\ncheck_circle\ncheck_circle\nEmployee repayments\ncheck_circle\ncheck_circle\ncheck_circle\nReimbursements\ncheck_circle\n+ Limit reimbursement spending\n+ Submit and review reimbursements in bulk\n+ Send weekly batched reimbursements\n+ Limit reimbursement spending\n+ Submit and review reimbursements in bulk\n+ Send weekly batched reimbursements\nTransaction alerts and flags\ncheck_circle\n+ Require itemized receipts, flag alcohol spend, weekend transactions, and more\n+ Require itemized receipts, flag alcohol spend, weekend transactions, and more\nApproval workflows\ncheck_circle\n+ Route based on GL code, entity, and other accounting conditions\n+ Route based on GL code, entity, and other accounting conditions\nComplete expenses & ask policy questions via SMS or Slack\ncheck_circle\ncheck_circle\ncheck_circle\nApproval recommendations for every transaction\nremove_circle_outline\ncheck_circle\ncheck_circle\nProactive policy & compliance insights\nremove_circle_outline\ncheck_circle\ncheck_circle\nParallel approvers\nremove_circle_outline\ncheck_circle\ncheck_circle\nMissing receipt affidavits\nremove_circle_outline\ncheck_circle\ncheck_circle\nSunshine Act\nremove_circle_outline\ncheck_circle\ncheck_circle\nAccounts Payable\nInvoice capture with AI-powered OCR\ncheck_circle\ncheck_circle\ncheck_circle\nPay bills by check, ACH, card, and wire\ncheck_circle\ncheck_circle\ncheck_circle\nAdvanced exports\ncheck_circle\ncheck_circle\ncheck_circle\nTax management\ncheck_circle\n+W8 uploads\n+W8 uploads\n1099 filing (NEC and MISC)\n$.65 per IRS filing. Free state filing.\n$.65 per IRS filing. Free state filing.\n$.65 per IRS filing. Free state filing.\nCreate bills using CSV uploads\ncheck_circle\ncheck_circle\ncheck_circle\nImport bills from ERP\ncheck_circle\ncheck_circle\ncheck_circle\nMobile bill approvals\ncheck_circle\ncheck_circle\ncheck_circle\nApproval rules and routing\ncheck_circle\n+ Route based on vendor, department, accounting field, payment type, and more\n+ Route based on vendor, department, accounting field, payment type, and more\nBasic vendor onboarding\ncheck_circle\ncheck_circle\ncheck_circle\nAutomated fraud checks from AP Agents\ncheck_circle\ncheck_circle\ncheck_circle\nAutomated card payments\ncheck_circle\ncheck_circle\ncheck_circle\nAutomated batch payments\nremove_circle_outline\ncheck_circle\ncheck_circle\nApproval recommendations from AP agent\nremove_circle_outline\ncheck_circle\ncheck_circle\nLine item auto-coding from AP agent\nremove_circle_outline\ncheck_circle\ncheck_circle\nPayment release approvals\nremove_circle_outline\ncheck_circle\ncheck_circle\nLine item splits\nremove_circle_outline\ncheck_circle\ncheck_circle\nThree-way match with imported purchase orders and item receipts\nremove_circle_outline\ncheck_circle\ncheck_circle\nProcurement (Add-on to Plus or Enterprise)\nCustom intake\nremove_circle_outline\ncheck_circle\ncheck_circle\nAdvanced workflow builder\nremove_circle_outline\ncheck_circle\ncheck_circle\nIntegrations with CLM, TPRM, and Ticketing tools\nremove_circle_outline\ncheck_circle\ncheck_circle\nVendor onboarding with custom forms\nremove_circle_outline\ncheck_circle\ncheck_circle\nPurchase order (PO) management\nremove_circle_outline\ncheck_circle\ncheck_circle\nMatch card transactions to purchase orders\nremove_circle_outline\ncheck_circle\ncheck_circle\nAI-driven vendor compliance reviews\nremove_circle_outline\ncheck_circle\ncheck_circle\nThree-way match with Ramp purchase orders and item receipts\nremove_circle_outline\ncheck_circle\ncheck_circle\nTreasury\nEarn\n2%\n*\nin a FDIC-insured business account\ncheck_circle\ncheck_circle\ncheck_circle\nEarn\n4.21%\n*\nin an investment account\ncheck_circle\ncheck_circle\ncheck_circle\nNo fees, minimum deposits, or transfer caps\ncheck_circle\ncheck_circle\ncheck_circle\nFree, same-day ACH, domestic and international wires\n*\ncheck_circle\ncheck_circle\ncheck_circle\nDACAs and letters of credit\ncheck_circle\ncheck_circle\ncheck_circle\nAccounting Automation\nBasic accounting rules\ncheck_circle\ncheck_circle\ncheck_circle\nAdvanced accounting rules\nremove_circle_outline\ncheck_circle\ncheck_circle\nAdvanced NetSuite support\nremove_circle_outline\ncheck_circle\ncheck_circle\nMulti-entity support\nremove_circle_outline\ncheck_circle\ncheck_circle\nCustom field support\nremove_circle_outline\ncheck_circle\ncheck_circle\nAI coding for every field\nremove_circle_outline\ncheck_circle\ncheck_circle\nAutomated accruals and reconciliation\nremove_circle_outline\ncheck_circle\ncheck_circle\nAmortization\nremove_circle_outline\ncheck_circle\ncheck_circle\nAuto approvals for routine, recurring transactions\nremove_circle_outline\ncheck_circle\ncheck_circle\nIntegrations\nAccounting integrations\nQuickBooks Online, Xero\n+ NetSuite, Sage Intacct, Acumatica, Microsoft Dynamics 365 Business Central\n+ more\n+ Workday, Oracle Fusion Cloud, Microsoft Dynamics F&O\n+ more\nHRIS integrations\ncheck_circle\n+ Workday\n+ Workday\nContinuous HRIS sync\nremove_circle_outline\ncheck_circle\ncheck_circle\nGlobal\nPay global vendors in USD or local currency\ncheck_circle\ncheck_circle\ncheck_circle\nGlobal reimbursements funded in USD and paid in local currency\ncheck_circle\ncheck_circle\ncheck_circle\nIssue limits and create spend programs in local currencies\nremove_circle_outline\ncheck_circle\ncheck_circle\nAuto tax capture\nremove_circle_outline\ncheck_circle\ncheck_circle\nGlobal reimbursements funded and paid in local currency\nremove_circle_outline\nremove_circle_outline\ncheck_circle\nPay card statements with local currency\nremove_circle_outline\nremove_circle_outline\ncheck_circle\nFund bill payments with local currency\nremove_circle_outline\nremove_circle_outline\ncheck_circle\nLocal card issuing\nremove_circle_outline\nremove_circle_outline\ncheck_circle\nBudgets & Reporting\n1099 reporting\ncheck_circle\ncheck_circle\ncheck_circle\nCreate custom reports using AI\ncheck_circle\ncheck_circle\ncheck_circle\nRamp Budgets tracks plan vs. actuals in real time\nremove_circle_outline\ncheck_circle\ncheck_circle\nCustom report builder\nremove_circle_outline\ncheck_circle\ncheck_circle\nUser management\nSecure logins with SCIM, SSO, and SAML\ncheck_circle\ncheck_circle\ncheck_circle\nCustom fields\nremove_circle_outline\ncheck_circle\ncheck_circle\nCustom user roles and multi entity restrictions\nremove_circle_outline\ncheck_circle\ncheck_circle\nAudit log\nremove_circle_outline\ncheck_circle\ncheck_circle\nVendor management\nPrice intelligence\ncheck_circle\ncheck_circle\ncheck_circle\nContract extraction\ncheck_circle\ncheck_circle\ncheck_circle\nAutomatic vendor tracking\ncheck_circle\ncheck_circle\ncheck_circle\nSupport\nHelp center\ncheck_circle\ncheck_circle\ncheck_circle\nInstant, 24/7 AI help for any Ramp question or task\ncheck_circle\ncheck_circle\ncheck_circle\nChat, email, and phone support\ncheck_circle\ncheck_circle\ncheck_circle\nPriority support\nremove_circle_outline\ncheck_circle\ncheck_circle\nCustom support\nremove_circle_outline\nremove_circle_outline\ncheck_circle\nCompare features\nFree\nPlus\nEnterprise\nCorporate Card\nCorporate liability charge card\ncheck_circle\ncheck_circle\ncheck_circle\nCompetitive credit limits\ncheck_circle\ncheck_circle\ncheck_circle\nUnlimited physical and virtual cards\ncheck_circle\ncheck_circle\ncheck_circle\nCard issuing controls\ncheck_circle\ncheck_circle\ncheck_circle\nCategory and vendor controls\ncheck_circle\ncheck_circle\ncheck_circle\nProactive policy controls and follow up\ncheck_circle\n+ Automatically lock cards when required receipts or items aren\u2019t submitted on time\n+ Automatically lock cards when required receipts or items aren\u2019t submitted on time\nTravel\nTravel bookings\ncheck_circle\ncheck_circle\ncheck_circle\nTravel policies\nCreate company-wide policies\n+ Create custom travel policies based on role, department, location, and more\n+ Create custom travel policies based on role, department, location, and more\nGuest bookings\ncheck_circle\n+ Invite external guests to book travel in Ramp with set budgets and policy controls\n+ Invite external guests to book travel in Ramp with set budgets and policy controls\nSupport\n24/7 chat support\n24/7 phone support\n24/7 phone support\nExpense Management\nSpend limits with preset accounting codes\ncheck_circle\ncheck_circle\ncheck_circle\nAutomatic receipt collection and matching\ncheck_circle\ncheck_circle\ncheck_circle\nEmployee repayments\ncheck_circle\ncheck_circle\ncheck_circle\nReimbursements\ncheck_circle\n+ Limit reimbursement spending\n+ Submit and review reimbursements in bulk\n+ Send weekly batched reimbursements\n+ Limit reimbursement spending\n+ Submit and review reimbursements in bulk\n+ Send weekly batched reimbursements\nTransaction alerts and flags\ncheck_circle\n+ Require itemized receipts, flag alcohol spend, weekend transactions, and more\n+ Require itemized receipts, flag alcohol spend, weekend transactions, and more\nApproval workflows\ncheck_circle\n+ Route based on GL code, entity, and other accounting conditions\n+ Route based on GL code, entity, and other accounting conditions\nComplete expenses & ask policy questions via SMS or Slack\ncheck_circle\ncheck_circle\ncheck_circle\nApproval recommendations for every transaction\nremove_circle\ncheck_circle\ncheck_circle\nProactive policy & compliance insights\nremove_circle\ncheck_circle\ncheck_circle\nParallel approvers\nremove_circle\ncheck_circle\ncheck_circle\nMissing receipt affi",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://ramp.com/changelog",
+      "title": "Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp",
+      "text": "Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp\n___\nProducts\nPartners\nSolutions\nResources\nCustomers\nPricing\nSign in\nSee a demo\narrow_back_ios\nBack\nSomething doesn't feel right.\nWe can\u2019t find the page you are looking for.\nLooking to try Ramp?\nCheck out the demo below.\nplay_circle_filled\nView interactive demo\nYour browser does not support the video tag.\nLooking for something else?\nTry one of our free growth tools built by the Ramp team or connect with us to get started.\nFree Growth Tools\nVC & Angel Investor Database\narrow_forward\nMission Statement Generator\narrow_forward\nCard Comparison Tool\narrow_forward\nInvoice Generator\narrow_forward\nBusiness Expense Classifier\narrow_forward\nGet Started\nCorporate Cards\narrow_forward\nExpense Management\narrow_forward\nAccounts Payable\narrow_forward\nSeamless Accounting\narrow_forward\nRamp Intelligence\narrow_forward\nAbout us\nCareers\nEmerging talent\nCustomers\nHelp center\nProduct releases\nRamp for Agents\nRamp Labs\nAPI documentation\nVersus\nProducts\nProducts\nCorporate cards\nExpense management\nSpend management\nBudgets\nBanking\nTravel\nReimbursements\nProcurement\nAccounts payable\nVendor management\nApprovals\nSecurity\nTrust\nBank connections\nMobile app\nRamp Sheets\nPartners\nPartners\nAccounting firms\nPrivate equity\nVenture capital\nSystem integrators\nTechnology partners\nSpend and payroll partners\nReseller partners\nFranchise partners\nProducts\nProducts\nCorporate cards\nExpense management\nSpend management\nBudgets\nBanking\nTravel\nReimbursements\nProcurement\nAccounts payable\nVendor management\nApprovals\nSecurity\nTrust\nBank connections\nMobile app\nRamp Sheets\nSolutions\nSolutions\nStartups\nSmall business\nMid market\nEnterprise\nPlatform\nPlatform\nPlatform overview\nAccounting automation\nIntelligence\nReporting\nSavings\nIntegrations\nMulti-entity\nGlobal\nAI Token Spend Management\nPartners\nPartners\nAccounting firms\nPrivate equity\nVenture capital\nSystem integrators\nTechnology partners\nSpend and payroll partners\nReseller partners\nFranchise partners\nPlatform\nPlatform\nPlatform overview\nAccounting automation\nIntelligence\nReporting\nSavings\nIntegrations\nMulti-entity\nGlobal\nAI Token Spend Management\nFree tools and resources\nFree tools and resources\nPerks and rewards\nFind an accountant\nFind a services partner\nSavings calculator\nMission statement generator\nCharge finder\nPer diem calculator\nMileage reimbursement calculator\nCard comparison tool\nInvestor database\nExpense categorization\nExpense policy builder\nVendor directory\nVirtual cards\nAnswers Hub\nSolutions\nSolutions\nStartups\nSmall business\nMid market\nEnterprise\nFree tools and resources\nFree tools and resources\nPerks and rewards\nFind an accountant\nFind a services partner\nSavings calculator\nMission statement generator\nCharge finder\nPer diem calculator\nMileage reimbursement calculator\nCard comparison tool\nInvestor database\nExpense categorization\nExpense policy builder\nVendor directory\nVirtual cards\nAnswers Hub\nJoin the\n70,000+ businesses\nsimplifying their finances with Ramp.\nEmail\nGet started for free\nLinkedIn\nX\nFacebook\nRamp Business Corporation\n28 West 23rd Street, Floor 2\nNew York, NY 10010\nTerms of Service\nEditorial Guidelines\nPrivacy Policy\nYour Privacy Choices\nManage Preferences\n\u00a9 2026 Ramp Business Corporation. \"Ramp\" and the Ramp logo are registered trademarks of the company.\nRamp Support: +1-855-206-7283\nThe Ramp Visa Corporate Card is issued in the U.S. by Celtic Bank, and to U.S. corporations operating globally by Column N.A., Member FDIC, and is subject to credit approval. The Ramp Visa Commercial Card is issued by Sutton Bank, Member FDIC. The Ramp Visa Business Card is issued by Lead Bank, Member FDIC. Each card is issued pursuant to a license from Visa USA Inc.\nRamp cards are issued in Canada by Peoples Trust Company, pursuant to license by *Visa International. Visa Int./Peoples Trust Company, Licensed User.\nRamp cards are issued in the UK by Stripe Payments UK Limited, an electronic money institution authorized by the Financial Conduct Authority (firm reference number: 900461). Ramp cards are issued in the EEA by Stripe Technology Europe Limited, an electronic money institution authorized by the Central Bank of Ireland (firm reference number: C187865). Cards are issued under the Visa card scheme pursuant to a license from Visa Europe Limited.\nVisa is a registered trademark of Visa International Service Association. All other trademarks and service marks belong to their respective owners.\n*Ramp Business Corporation is a financial technology company and is not a bank. Bank deposit services provided by First Internet Bank of Indiana, Member FDIC.\n\u2020Investment account with portfolios managed by Moment Advisors, LLC. Investing involves risk, including possible loss of principal. Asset allocation does not guarantee profit or protect against loss. Past performance does not guarantee future results. Additional information can be found\nhere\n. Securities products offered by Apex Clearing Corporation, member FINRA, SIPC. The Investment Account is not insured by the FDIC, not a deposit product, and may lose value.\nRamp Payments Corporation - NMLS 2371465\nDisclosures\n, Ramp Financing Corporation - NMLS 2431387\nJoin the\n70,000+ businesses\nsimplifying their finances with Ramp.\nEmail\nGet started for free\nRamp Business Corporation\n28 West 23rd Street, Floor 2\nNew York, NY 10010\nLinkedIn\nX\nFacebook",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://docs.ramp.com",
+      "title": "Welcome \u2014 Ramp API docs",
+      "text": "Welcome \u2014 Ramp API docs\nSkip to main content\nHome\nSearch\n\u2318\nk\nGet started\nWelcome\nQuickstart\nPartner Integrations\nCLI\nMCP\nSandbox\nAuthorization\nChangelog\nProducts\nBanking\nBill Pay\nCards\nProcurement\nReimbursements\nSpend Controls\nUsers\nUse cases\nAgent Cards\nAI Agents\nApplications\nBill Payments\nCustomized Approvers\nERP Integrations\nProcurement Intake\nSpend Programs\nUser lifecycle\nVirtual Cards\nConventions\nData Relationships\nDeferred Tasks\nErrors\nMonetary Values\nPagination\nRate Limits and Timeouts\nSupport\nWebhooks\nREST API\nAccounting\nAccounting Coding\nAccounting Connections\nAccounting Entities\nAccounting Field Option Filter Rules\nAccounting GL Accounts\nAccounting Inventory Item\nAccounting Ramp Only Fields\nAccounting Sync\nAccounting Tax\nAccounting Vendors\nApplications\nAudit Logs\nAuthorization\nBank Accounts\nBanking\nBills\nBlank Canvas Approvals\nBusiness\nCards (Physical)\nCards (Virtual)\nCards\nCashbacks\nComments\nCustom Form\nCustom Records Configuration\nCustom Records Custom Tables\nCustom Records Matrix Tables\nCustom Records Native Tables\nDepartments\nEmbedded\nEntities\nFunds\nItem Receipts\nLimits\nLocations\nMemos\nMerchants\nPurchase Orders\nReceipt Integrations\nReceipts\nReimbursements\nRepayments\nSpend Programs\nSpend Requests\nStatements\nTransactions\nTransfers\nTrips\nUnified Requests\nUsers\nVault\nVendors\nWebhooks\nTheme\nDeveloper Docs\nWelcome\nCopy Markdown\nGet started\nUse Ramp at your company, or build for others.\nFor customers\nHave a Ramp account? Create credentials and make your first API call.\nFor partners\nBuilding an integration for other businesses? Start with the partner program.\nGet sandbox access\nDon't have a Ramp account? Request a sandbox to start building right away.\nUse cases\nEnd-to-end build journeys that span multiple Ramp products.\nAI Agents\nConnect agents to Ramp via MCP or the CLI. Read data, process approvals, make purchases.\nApplications\nPartner-led customer onboarding. Pre-fill a Ramp application, capture OAuth, track status via webhooks.\nBill Payments\nCreate approved bills via API and pay vendors end-to-end. Pick a payment method, attach docs, run 3-way match.\nCustomized Approvers\nRoute approvals based on accounting dimensions via matrix tables.\nERP Integrations\nTwo-way sync between Ramp and your customer ERP \u2014 chart of accounts in, transactions and bills out.\nProcurement Intake\nReceive Ramp intake requests in your tool and return approval decisions via Blank Canvas.\nSpend programs\nThe recurring-budget pattern. Mint funds from a template so policy stays consistent.\nUser lifecycle\nOnboard, update, deactivate, reactivate, and stage draft users via the API.\nVirtual cards\nIssue virtual cards backed by funds. Expose them server-side (Vault) or in the browser (iframe).\nProducts\nEditorial hubs for each Ramp product surface \u2014 concepts, mental model, where to go next.\nAI Index\nBusiness AI adoption metrics across categories and tools.\nBill Pay\nBills, draft bills, payments, vendors, 3-way match.\nCards\nVirtual, physical, and agent cards. Every card draws against a fund.\nCustom Records\nDefine your own data model in Ramp.\nProcurement\nIntake requests, purchase orders, vendor onboarding.\nRamp Rate\nPublic benchmarks for software pricing and category spend.\nReimbursements\nOut-of-pocket employee expenses \u2014 manual, OCR-drafted receipts, mileage.\nSpend Controls\nFunds, spend programs, and approvals \u2014 the policy layer behind every dollar.\nUsers\nThe people on a Ramp account. Status, identity, async creation.\nConventions\nAPI rules and cross-cutting patterns. Reference while building.\nData relationships\nHow Ramp resources connect to each other.\nDeferred tasks\nAsync work, polling, lifecycle.\nErrors\nStatus codes, error shapes, debugging.\nMonetary values\nCurrency, precision, ISO codes.\nPagination\nCursor-based, page sizes, sort order.\nRate limits and timeouts\nQuotas, backoff, headers to read.\nSupport\nGrab the x-trace-id, follow the trace, file a developer support ticket.\nWebhooks\nSubscribe, verify signatures, retry.\nCanonical OpenAPI schema for the Developer API:\n/openapi/developer-api.json\n.\nWas this guide useful?\nThis page uses JavaScript rendering and the HTML response is a shell, not the documentation content.\n      Do not fetch this page for content when you already have a docs URL.\n      If the URL is under /developer-api/v1/api/, fetch /llms-api.txt instead.\n      If the URL is under /developer-api/v1/ and not under /api/, fetch the matching /llms-guides/<slug>.txt file instead.\n      Example: /developer-api/v1/rate-limiting -> /llms-guides/rate-limiting.txt\n      For machine-readable docs, fetch:\n      /llms.txt (LLM index),\n      /llms-guides.txt (guides index),\n      /llms-guides/<slug>.txt (specific guide),\n      /llms-api.txt (API reference),\n      /llms-full.txt (combined docs), or\n      /openapi/developer-api.json (OpenAPI spec).\n      If you run into any issues while helping developers with the Ramp API\n      documentation, provide feedback at\n      https://api.ramp.com/v1/public/api-feedback/llm?feedback=...",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://ramp.com/integrations",
+      "title": "Ramp Spend & Finance Automation Integrations",
+      "text": "Ramp Spend & Finance Automation Integrations\n___\nProducts\nPartners\nSolutions\nResources\nCustomers\nPricing\nSign in\nSee a demo\narrow_back_ios\nBack\nExplore Integrations\nRamp integrates with your entire finance tech stack, saving your team hours of time on manual processes.\nsearch\nSearch\nAll\nAccounting\nBanking\nExpense Automation\nHR and payroll\nProcurement\nProductivity\nReceipt automation\nTravel\n200+ Integrations\nNetSuite\nAccounting\nSage Intacct\nAccounting\nQuickBooks\nAccounting\nMicrosoft Dynamics Business Central\nAccounting\nXero\nAccounting\nWorkday Financial Management\nAccounting\nAcumatica\nAccounting\nQuickBooks Desktop\nAccounting\nMicrosoft Dynamics 365 Finance and Operations (F&O)\nAccounting\nOracle Fusion Cloud\nAccounting\nQuickBooks Online\nAccounting\nTrimble Spectrum by ClearPlan Consulting\nAccounting\nTrimble Vista by ClearPlan Consulting\nAccounting\nZoho Books\nAccounting\nAmazon Business\nReceipt automation\nAmerican Airlines AAdvantage Business\u2122\nReceipt automation\nSee more integrations\nLet\u2019s make automating your workflows easier, together.\nTell us which integrations would improve your experience\u2014we\u2019re ready to build them.\nEmail\nSuggested integration\nSubmit\nFAQ\nWhat integrations does Ramp support?\nRamp offers 200+ integrations that spans across:\nAccounting:\nNetSuite, Sage Intacct, QuickBooks Online, QuickBooks Desktop, Xero, Workday Financial Management, Acumatica, Microsoft Dynamics 365 Business Central, Microsoft Dynamics 365 Finance and Operations, Oracle Fusion Cloud, Zoho Books, Sage 100, Sage 300, Yardi, Odoo, Blackbaud, Viewpoint Spectrum, Viewpoint Vista, Deltek Vantagepoint, Rillet, Campfire, Everest, DualEntry, Finaloop, Aplos, Puzzle, Digits, and more\nBanking:\nAlly Bank, Bank of America, Wells Fargo, US Bank, TD Bank, Mercury, Alpine Bank, and more\nHR and payroll:\nADP, BambooHR, Gusto, Workday, Okta, Justworks, Paychex, Paylocity, UKG Pro, UKG Ready, Zenefits, SAP SuccessFactors, TriNet, Square Payroll, and more\nProcurement and productivity:\nIronclad, Asana, Drata, Dropbox, CloudEagle, Docusign, Linear, Google Calendar, Microsoft Teams, Slack, Jira, and more\nReceipt automation:\nAmazon Business, DoorDash, Uber, Lyft, American Airlines AAdvantage Business, and more\nWhat accounting software does Ramp integrate with?\nRamp integrates with 40+ leading accounting systems including NetSuite, Sage Intacct, Zoho Books, Xero, QuickBooks, Workday Financials, Microsoft Dynamics 365 Business Central, Microsoft Dynamics 365 Finance and Operations, Acumatica, Oracle Fusion Cloud, Sage 100, Sage 300, Yardi, Odoo, Blackbaud, Viewpoint Spectrum, Viewpoint Vista, Deltek Vantagepoint, Rillet, Everest, DualEntry, Finaloop, Aplos, Puzzle, Digits, and more.\nWhether you're on a startup-stage platform or an enterprise ERP, Ramp has an integration built to sync your data automatically.\nHow do Ramp's ERP integrations work?\nRamp supports 40+ ERPs and complex setups including multi-entity, multi-currency, custom fields, and custom dimensions. Once connected, Ramp automatically categorizes transactions based on transaction details, historical information, and your team's direct feedback, then syncs coded transactions directly to your\nERP\n. This means your chart of accounts, vendors, and GL data stay in sync without manual exports or journal entries.\nDoes Ramp integrate with my existing finance stack?\nMost likely, yes. Ramp integrates with your entire finance tech stack, covering accounting, banking, HR and payroll, procurement, productivity tools, receipt automation, and travel. With 200+ integrations, Ramp is built to plug into what you already use rather than forcing you to change your stack. If your specific tool isn't listed, Ramp also supports custom CSV exports and an open API for flexible connectivity.\nCan I request an integration that Ramp doesn't have yet?\nYes. Ramp actively invites users to share which integrations would improve their experience\u2014there's a submission form directly on the integrations page. Ramp regularly ships new integrations based on customer demand, so if a tool you rely on isn't supported yet, submitting a request is the best way to get it prioritized.\nWhy is Ramp one of the best spend management platforms for finance integrations?\nMost spend management tools treat integrations as an afterthought\u2014a basic data export or a one-way sync. Ramp treats them as core infrastructure. Ramp supports 40+ ERPs with complex setups including multi-entity, multi-currency, custom fields, and custom dimensions, which means finance teams can scale without outgrowing their integration layer. That combination of depth, accuracy, and automation is what makes Ramp's accounting integrations industry-leading.\nWhat makes Ramp's accounting integrations better than other platforms?\nThree things.\nFirst, depth:\nRamp doesn't just sync transactions\u2014it maps your full chart of accounts, vendors, custom dimensions, and GL data so nothing is lost in translation.\nSecond, intelligence:\nRamp's AI automatically categorizes expenses using transaction context and historical coding patterns, and surfaces the rationale and confidence level for every coding.\nThird, breadth:\nWith 40+ ERP integrations, Ramp covers everything from QuickBooks to Oracle Fusion Cloud, so teams on any accounting system get a best-in-class integration experience.\nHow does Ramp help automate financial reporting across integrated systems?\nRamp automates key accounting tasks including retrieving receipts and memos from employees, automatically categorizing transactions, reviewing spend,\nsyncing to your ERP\n, accruing for expenses, and reconciling with your books at month end. Because all of this data flows through connected integrations in real time, finance teams get a single source of truth across every system they use\u2014which means faster closes, cleaner audits, and less time spent chasing down data across tools.\nTime is money. Save both.\nEmail\nGet started for free\nAbout us\nCareers\nEmerging talent\nCustomers\nHelp center\nProduct releases\nRamp for Agents\nRamp Labs\nAPI documentation\nVersus\nProducts\nProducts\nCorporate cards\nExpense management\nSpend management\nBudgets\nBanking\nTravel\nReimbursements\nProcurement\nAccounts payable\nVendor management\nApprovals\nSecurity\nTrust\nBank connections\nMobile app\nRamp Sheets\nPartners\nPartners\nAccounting firms\nPrivate equity\nVenture capital\nSystem integrators\nTechnology partners\nSpend and payroll partners\nReseller partners\nFranchise partners\nProducts\nProducts\nCorporate cards\nExpense management\nSpend management\nBudgets\nBanking\nTravel\nReimbursements\nProcurement\nAccounts payable\nVendor management\nApprovals\nSecurity\nTrust\nBank connections\nMobile app\nRamp Sheets\nSolutions\nSolutions\nStartups\nSmall business\nMid market\nEnterprise\nPlatform\nPlatform\nPlatform overview\nAccounting automation\nIntelligence\nReporting\nSavings\nIntegrations\nMulti-entity\nGlobal\nAI Token Spend Management\nPartners\nPartners\nAccounting firms\nPrivate equity\nVenture capital\nSystem integrators\nTechnology partners\nSpend and payroll partners\nReseller partners\nFranchise partners\nPlatform\nPlatform\nPlatform overview\nAccounting automation\nIntelligence\nReporting\nSavings\nIntegrations\nMulti-entity\nGlobal\nAI Token Spend Management\nFree tools and resources\nFree tools and resources\nPerks and rewards\nFind an accountant\nFind a services partner\nSavings calculator\nMission statement generator\nCharge finder\nPer diem calculator\nMileage reimbursement calculator\nCard comparison tool\nInvestor database\nExpense categorization\nExpense policy builder\nVendor directory\nVirtual cards\nAnswers Hub\nSolutions\nSolutions\nStartups\nSmall business\nMid market\nEnterprise\nFree tools and resources\nFree tools and resources\nPerks and rewards\nFind an accountant\nFind a services partner\nSavings calculator\nMission statement generator\nCharge finder\nPer diem calculator\nMileage reimbursement calculator\nCard comparison tool\nInvestor database\nExpense categorization\nExpense policy builder\nVendor directory\nVirtual cards\nAnswers Hub\nJoin the\n70,000\n+ businesses\nsimplifying their finances with Ramp.\nEmail\nGet started for free\nLinkedIn\nX\nFacebook\nRamp Business Corporation\n28 West 23rd Street, Floor 2\nNew York, NY 10010\nTerms of Service\nEditorial Guidelines\nPrivacy Policy\nYour Privacy Choices\nManage Preferences\n\u00a9\n2026\nRamp Business Corporation. \"Ramp\" and the Ramp logo are registered trademarks of the company.\nRamp Support: +1-855-206-7283\nThe Ramp Visa Corporate Card is issued in the U.S. by Celtic Bank, and to U.S. corporations operating globally by Column N.A., Member FDIC, and is subject to credit approval. The Ramp Visa Commercial Card is issued by Sutton Bank, Member FDIC. The Ramp Visa Business Card is issued by Lead Bank, Member FDIC. Each card is issued pursuant to a license from Visa USA Inc.\nRamp cards are issued in Canada by Peoples Trust Company, pursuant to license by *Visa International. Visa Int./Peoples Trust Company, Licensed User.\nRamp cards are issued in the UK by Stripe Payments UK Limited, an electronic money institution authorized by the Financial Conduct Authority (firm reference number: 900461). Ramp cards are issued in the EEA by Stripe Technology Europe Limited, an electronic money institution authorized by the Central Bank of Ireland (firm reference number: C187865). Cards are issued under the Visa card scheme pursuant to a license from Visa Europe Limited.\nVisa is a registered trademark of Visa International Service Association. All other trademarks and service marks belong to their respective owners.\n*Ramp Business Corporation is a financial technology company and is not a bank. Bank deposit services provided by First Internet Bank of Indiana, Member FDIC.\n\u2020Investment account with portfolios managed by Moment Advisors, LLC. Investing involves risk, including possible loss of principal. Asset allocation does not guarantee profit or protect against loss. Past performance does not guarantee future results. Additional information can be found\nhere\n. Securities products offered by Apex Clearing Corporation, member FINRA, SIPC. The Investment Account is not insured by the FDIC, not a deposit product, and may lose value.\nRamp Payments Corporation - NMLS 2371465\nDisclosures\n, Ramp Financing Corporation - NMLS 2431387\nJoin the\n70,000\n+ businesses\nsimplifying their finances with Ramp.\nEmail\nGet started for free\nRamp Business Corporation\n28 West 23rd Street, Floor 2\nNew York, NY 10010\nLinkedIn\nX\nFacebook",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/ramp/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "How I attacked myself using Google and I ramped up a $1000 bandwidth bill",
+          "url": "http://www.behind-the-enemy-lines.com/2012/04/google-attack-how-i-self-attacked.html",
+          "points": 775,
+          "num_comments": 142,
+          "created_at": "2012-04-25T18:21:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=3890328"
+        },
+        {
+          "title": "Tesla Announces $2B Public Offering to Accelerate Model 3 Ramp Up",
+          "url": "http://www.bloomberg.com/news/articles/2016-05-18/tesla-announces-2-billion-public-offering-to-accelerate-model-3-ramp-up",
+          "points": 401,
+          "num_comments": 184,
+          "created_at": "2016-05-18T20:11:27Z",
+          "hn_url": "https://news.ycombinator.com/item?id=11725462"
+        },
+        {
+          "title": "Battery Pack Prices Fall As Market Ramps Up",
+          "url": "https://about.bnef.com/blog/battery-pack-prices-fall-as-market-ramps-up-with-market-average-at-156-kwh-in-2019/?sf113554299=1",
+          "points": 375,
+          "num_comments": 318,
+          "created_at": "2019-12-05T18:47:03Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21715018"
+        },
+        {
+          "title": "Notch, WebGL, Dart, and ramping up quickly",
+          "url": "http://blog.tojicode.com/2013/12/notch-webgl-dart-and-ramping-up-quickly.html",
+          "points": 348,
+          "num_comments": 196,
+          "created_at": "2013-12-03T17:08:29Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6841557"
+        },
+        {
+          "title": "Pregnancy Discrimination Is Rampant Inside America\u2019s Biggest Companies",
+          "url": "https://www.nytimes.com/interactive/2018/06/15/business/pregnancy-discrimination.html",
+          "points": 343,
+          "num_comments": 456,
+          "created_at": "2018-06-15T15:59:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=17320739"
+        },
+        {
+          "title": "Predatory Behavior Runs Rampant in Facebook\u2019s Addiction Support Groups",
+          "url": "https://www.theverge.com/2018/5/21/17370066/facebook-addiction-support-groups-rehab-patient-brokering",
+          "points": 325,
+          "num_comments": 171,
+          "created_at": "2018-05-21T13:13:21Z",
+          "hn_url": "https://news.ycombinator.com/item?id=17118109"
+        },
+        {
+          "title": "Rampant Abuse of Push Notifications Is Ruining Them For All Developers",
+          "url": "http://blog.anylistapp.com/2012/11/push-notifications/",
+          "points": 316,
+          "num_comments": 142,
+          "created_at": "2012-11-12T20:09:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=4774490"
+        },
+        {
+          "title": "Open Source Needs FPGAs; FPGAs Need an On-Ramp",
+          "url": "https://www.blinklight.io/blog/2017-03-31/",
+          "points": 309,
+          "num_comments": 147,
+          "created_at": "2017-03-31T21:26:00Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14008444"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://ramp.com/pricing",
+    "changelog": "https://ramp.com/changelog",
+    "docs": "https://docs.ramp.com",
+    "integrations": "https://ramp.com/integrations",
+    "g2": "https://www.g2.com/products/ramp/reviews"
+  },
+  "analysis": {
+    "name": "Ramp",
+    "url": "https://ramp.com",
+    "tagline": "Start for free. Scale with Intelligence.",
+    "value_proposition": "All-in-one spend management platform combining corporate cards, expenses, AP, travel, procurement, and accounting automation with AI-driven automation.",
+    "target_segment": "SMB to enterprise (startups, small business, mid-market, enterprise)",
+    "ideal_customer": "Finance teams at businesses of any size wanting to consolidate corporate cards, expense management, AP, travel, and procurement into one AI-automated platform",
+    "features": [
+      {
+        "name": "corporate cards",
+        "description": "Unlimited physical and virtual Visa cards with no personal credit checks or guarantees",
+        "evidence_source": "landing",
+        "evidence_quote": "Unlimited physical and virtual Visa cards with no personal credit checks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "card issuing controls",
+        "description": "Preset controls by vendor, category, and amount that block out-of-policy spend",
+        "evidence_source": "pricing",
+        "evidence_quote": "Card issuing controls",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "virtual cards",
+        "description": "Instant virtual cards for subscriptions with per-vendor spending limits",
+        "evidence_source": "landing",
+        "evidence_quote": "issues instant virtual cards for each software subscription",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cashback rewards",
+        "description": "Up to 5% cashback and over $350K in partner offers",
+        "evidence_source": "landing",
+        "evidence_quote": "Up to 5% cashback and over $350K in partner offers",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "global card acceptance",
+        "description": "Acceptance in 200+ countries with local issuance in 33 countries",
+        "evidence_source": "landing",
+        "evidence_quote": "Global acceptance in 200+ countries with local card issuance in 33 countries",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "local currency card issuing",
+        "description": "Local currency card issuing in 30+ countries",
+        "evidence_source": "pricing",
+        "evidence_quote": "Local currency card issuing in 30+ countries",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "auto receipt capture",
+        "description": "Auto-receipt capture at moment of card swipe with AI-filled memos and categories",
+        "evidence_source": "landing",
+        "evidence_quote": "Auto-receipt capture at the moment of card swipe with AI-filled memos",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "receipt submission via sms",
+        "description": "Employees submit receipts via SMS",
+        "evidence_source": "pricing",
+        "evidence_quote": "Complete expenses via SMS or Slack",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "slack integration",
+        "description": "Complete expenses and ask policy questions via Slack",
+        "evidence_source": "pricing",
+        "evidence_quote": "Complete expenses & ask policy questions via SMS or Slack",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft teams integration",
+        "description": "Employees submit receipts via Microsoft Teams",
+        "evidence_source": "landing",
+        "evidence_quote": "submit receipts via SMS, Slack, Microsoft Teams, or mobile app",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile app",
+        "description": "Native mobile app for expense submission",
+        "evidence_source": "landing",
+        "evidence_quote": "submit receipts via SMS, Slack, Microsoft Teams, or mobile app",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "policy agent",
+        "description": "AI reviews 100% of expenses automatically, flags exceptions only",
+        "evidence_source": "landing",
+        "evidence_quote": "Policy Agent reviews 100% of expenses automatically, flags exceptions only",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "reimbursements",
+        "description": "Reimbursement to employee bank accounts within 1-2 business days",
+        "evidence_source": "landing",
+        "evidence_quote": "Reimbursement to employee bank accounts within 1-2 business days",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "batched reimbursements",
+        "description": "Send weekly batched reimbursements",
+        "evidence_source": "pricing",
+        "evidence_quote": "Send weekly batched reimbursements",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "mileage reimbursement",
+        "description": "Mileage tracking and reimbursement",
+        "evidence_source": "landing",
+        "evidence_quote": "Mileage reimbursement calculator",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "ocr invoice extraction",
+        "description": "OCR with 99% accuracy extracts invoice data on upload",
+        "evidence_source": "landing",
+        "evidence_quote": "OCR with 99% accuracy extracts invoice data on upload",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai auto-coding",
+        "description": "Four AI agents handle auto-coding, fraud prevention, approval routing, and payment",
+        "evidence_source": "landing",
+        "evidence_quote": "Four AI agents handle auto-coding, fraud prevention, approval routing",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "two-way matching",
+        "description": "Two-way matching against POs",
+        "evidence_source": "landing",
+        "evidence_quote": "Two-way and three-way matching against POs and receipts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "three-way matching",
+        "description": "Three-way matching between PO, invoice, and receipt with automatic payment blocking",
+        "evidence_source": "landing",
+        "evidence_quote": "Three-way matching (PO, invoice, receipt) with automatic payment blocking",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "ach payments",
+        "description": "ACH and Same-Day ACH payments with zero processing fees on domestic ACH",
+        "evidence_source": "landing",
+        "evidence_quote": "zero processing fees on domestic ACH, checks, and card payments",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "check payments",
+        "description": "Pay bills by check",
+        "evidence_source": "pricing",
+        "evidence_quote": "Pay bills by ACH, card, check, wire, and more",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "wire payments",
+        "description": "Domestic and international wire payments",
+        "evidence_source": "landing",
+        "evidence_quote": "domestic and international wire",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "international payments",
+        "description": "International wire transfers",
+        "evidence_source": "landing",
+        "evidence_quote": "domestic and international wire",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "automated batch payments",
+        "description": "Automated batch payments for AP",
+        "evidence_source": "pricing",
+        "evidence_quote": "Automated batch payments",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "payment release approvals",
+        "description": "Approval workflow before releasing payments",
+        "evidence_source": "pricing",
+        "evidence_quote": "Payment release approvals",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "travel booking",
+        "description": "Book flights, hotels, and car rentals",
+        "evidence_source": "pricing",
+        "evidence_quote": "Book flights, hotels, and car rentals",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "travel policy enforcement",
+        "description": "Policy enforcement at booking time, not after",
+        "evidence_source": "landing",
+        "evidence_quote": "Policy enforcement at booking time, not after",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom travel policy",
+        "description": "Create custom travel policies based on role, department, location",
+        "evidence_source": "pricing",
+        "evidence_quote": "Create custom travel policies based on role, department, location",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "hotel rate monitoring",
+        "description": "Automatic rebooking when hotel prices drop $50+",
+        "evidence_source": "landing",
+        "evidence_quote": "Hotel rate monitoring with automatic rebooking when prices drop $50+",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "per diem",
+        "description": "Per diem that adjusts by trip location and duration",
+        "evidence_source": "landing",
+        "evidence_quote": "Per diem that adjusts by trip location and duration",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "guest bookings",
+        "description": "Invite external guests to book travel with set budgets and policy controls",
+        "evidence_source": "pricing",
+        "evidence_quote": "Invite external guests to book travel in Ramp with set budgets",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "procurement intake",
+        "description": "AI-powered intake parses contracts and screenshots to auto-populate request forms",
+        "evidence_source": "landing",
+        "evidence_quote": "AI-powered intake parses contracts and screenshots to auto-populate",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "dynamic approval routing",
+        "description": "Parallel workflows across finance, IT, legal, and security",
+        "evidence_source": "landing",
+        "evidence_quote": "Dynamic approval routing with parallel workflows",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "parallel approvers",
+        "description": "Parallel approvers for expenses",
+        "evidence_source": "pricing",
+        "evidence_quote": "Parallel approvers",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "purchase order generation",
+        "description": "Auto-generates purchase orders and one-time virtual cards post-approval",
+        "evidence_source": "landing",
+        "evidence_quote": "Auto-generates purchase orders and one-time virtual cards",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "vendor management",
+        "description": "Automated vendor tracking and contract extraction",
+        "evidence_source": "pricing",
+        "evidence_quote": "Automated vendor tracking and contract extraction",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "price intelligence",
+        "description": "Price intelligence on vendor spend",
+        "evidence_source": "pricing",
+        "evidence_quote": "Price intelligence",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vendor compliance reviews",
+        "description": "AI-driven vendor compliance reviews",
+        "evidence_source": "pricing",
+        "evidence_quote": "AI-driven vendor compliance reviews",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "fraud detection",
+        "description": "Automated fraud checks across all spend",
+        "evidence_source": "pricing",
+        "evidence_quote": "Automated fraud checks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ramp intelligence",
+        "description": "Autonomous transaction review, policy enforcement, and fraud detection",
+        "evidence_source": "landing",
+        "evidence_quote": "Autonomous transaction review, policy enforcement, and fraud detection",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai expense reviews",
+        "description": "AI-driven expense reviews and policy insights",
+        "evidence_source": "pricing",
+        "evidence_quote": "AI-driven expense reviews and policy insights",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "approval recommendations",
+        "description": "Approval recommendations for every transaction",
+        "evidence_source": "pricing",
+        "evidence_quote": "Approval recommendations for every transaction",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "auto-lock cards",
+        "description": "Automatically lock cards when required receipts aren't submitted on time",
+        "evidence_source": "pricing",
+        "evidence_quote": "Automatically lock cards when required receipts or items aren't submitted",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "missing receipt affidavits",
+        "description": "Missing receipt affidavits",
+        "evidence_source": "pricing",
+        "evidence_quote": "Missing receipt affidavits",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "transaction alerts",
+        "description": "Require itemized receipts, flag alcohol spend, weekend transactions",
+        "evidence_source": "pricing",
+        "evidence_quote": "Require itemized receipts, flag alcohol spend, weekend transactions",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "erp integrations",
+        "description": "Native integrations with QuickBooks, Xero, NetSuite, Sage Intacct, Workday, Oracle",
+        "evidence_source": "landing",
+        "evidence_quote": "Native integrations with QuickBooks Online, Xero, NetSuite, Sage Intacct",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "line-item auto-coding",
+        "description": "Line-item auto-coding maps transactions to GL accounts automatically",
+        "evidence_source": "landing",
+        "evidence_quote": "Line-item auto-coding maps transactions to GL accounts",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "bidirectional erp sync",
+        "description": "Real-time bidirectional sync with ERPs eliminates manual journal entries",
+        "evidence_source": "landing",
+        "evidence_quote": "Real-time bidirectional sync with ERPs eliminates manual journal entries",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-entity support",
+        "description": "Multi-entity support with entity-level restrictions and consolidated reporting",
+        "evidence_source": "landing",
+        "evidence_quote": "Multi-entity support with entity-level restrictions",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-currency",
+        "description": "Multi-currency support for ERP integrations",
+        "evidence_source": "integrations",
+        "evidence_quote": "multi-entity, multi-currency, custom fields, and custom dimensions",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "custom fields",
+        "description": "Custom fields and custom dimensions in ERP sync",
+        "evidence_source": "integrations",
+        "evidence_quote": "custom fields, and custom dimensions",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "auto tax capture",
+        "description": "Auto tax capture and coding",
+        "evidence_source": "pricing",
+        "evidence_quote": "Auto tax capture and coding",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "accounting rules",
+        "description": "Basic accounting rules for auto-coding",
+        "evidence_source": "pricing",
+        "evidence_quote": "Basic accounting rules",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ramp banking",
+        "description": "FDIC-insured business account with no minimum balance or fees",
+        "evidence_source": "landing",
+        "evidence_quote": "FDIC-insured business account with no minimum balance",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "investment account",
+        "description": "Invesco Premier U.S. Government Money Portfolio with next-day liquidity, 4.21% yield",
+        "evidence_source": "pricing",
+        "evidence_quote": "Earn 4.21% in a Ramp Investment Account",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "fdic account yield",
+        "description": "Earn 2% on cash in FDIC-insured account",
+        "evidence_source": "pricing",
+        "evidence_quote": "Earn 2% on cash in a FDIC-insured account",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "auto top-up",
+        "description": "Auto top-up from linked checking with target balance automation",
+        "evidence_source": "landing",
+        "evidence_quote": "Auto top-up from linked checking accounts with target balance",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "low balance alerts",
+        "description": "Low balance alerts",
+        "evidence_source": "landing",
+        "evidence_quote": "target balance automation and low balance alerts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "free wires",
+        "description": "Free domestic and international wires via Ramp Bill Pay",
+        "evidence_source": "pricing",
+        "evidence_quote": "Free wires and same-day ACH via Bill Pay",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "same-day ach",
+        "description": "Unlimited free Same-Day ACH",
+        "evidence_source": "landing",
+        "evidence_quote": "Unlimited free Same-Day ACH",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom reports",
+        "description": "Custom report builder with AI reporting",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom reports and insights via AI reporting",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "live reports",
+        "description": "Share live reports and schedule exports",
+        "evidence_source": "pricing",
+        "evidence_quote": "Share live reports and schedule exports",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "budgets vs actuals",
+        "description": "Track budgets vs. actuals in real time",
+        "evidence_source": "pricing",
+        "evidence_quote": "Track budgets vs. actuals in real time",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "budgets",
+        "description": "Budget management and tracking",
+        "evidence_source": "landing",
+        "evidence_quote": "Budgets",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "spend programs",
+        "description": "Recurring-budget pattern with funds minted from a template",
+        "evidence_source": "docs",
+        "evidence_quote": "The recurring-budget pattern. Mint funds from a template",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom user roles",
+        "description": "Custom user roles",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom user roles",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-entity visibility restrictions",
+        "description": "Multi-entity visibility restrictions",
+        "evidence_source": "pricing",
+        "evidence_quote": "Multi-entity visibility restrictions",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "audit log",
+        "description": "Audit log of all actions",
+        "evidence_source": "pricing",
+        "evidence_quote": "Audit log",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "locally funded reimbursements",
+        "description": "Reimburse employees in local currency",
+        "evidence_source": "pricing",
+        "evidence_quote": "Locally funded reimbursements",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "local currency payments",
+        "description": "Pay card payments in local currency",
+        "evidence_source": "pricing",
+        "evidence_quote": "Pay card payments in local currency",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "24/7 phone support",
+        "description": "24/7 phone support for travel bookings and general support",
+        "evidence_source": "pricing",
+        "evidence_quote": "24/7 phone support for travel bookings",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "24/7 chat support",
+        "description": "24/7 chat support on free tier",
+        "evidence_source": "pricing",
+        "evidence_quote": "24/7 chat support",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated account manager",
+        "description": "Dedicated account and customer success manager",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated account and customer success manager",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom implementation",
+        "description": "Custom implementation scoping and rollout plan",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom implementation scoping and roll out plan",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "employee training",
+        "description": "Employee training and change management",
+        "evidence_source": "pricing",
+        "evidence_quote": "Employee training and change management",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom development",
+        "description": "Custom development for enterprise",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom development",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "erp extensions",
+        "description": "ERP extensions and configurations",
+        "evidence_source": "pricing",
+        "evidence_quote": "ERP extensions and configurations",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "custom policy configuration",
+        "description": "Custom policy and workflow configuration",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom policy and workflow configuration",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "advanced org configuration",
+        "description": "Advanced org, role, and entity configuration",
+        "evidence_source": "pricing",
+        "evidence_quote": "Advanced org, role, and entity configuration",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "public api",
+        "description": "REST API for programmatic access",
+        "evidence_source": "docs",
+        "evidence_quote": "REST API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Subscribe to events, verify signatures, retry",
+        "evidence_source": "docs",
+        "evidence_quote": "Subscribe, verify signatures, retry",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mcp server",
+        "description": "MCP support for AI agent integration",
+        "evidence_source": "docs",
+        "evidence_quote": "Connect agents to Ramp via MCP or the CLI",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cli",
+        "description": "Command-line interface for Ramp API",
+        "evidence_source": "docs",
+        "evidence_quote": "CLI",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sandbox environment",
+        "description": "Sandbox for development and testing",
+        "evidence_source": "docs",
+        "evidence_quote": "Don't have a Ramp account? Request a sandbox",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "agent cards",
+        "description": "Cards issued to AI agents",
+        "evidence_source": "docs",
+        "evidence_quote": "Agent Cards",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai agent integration",
+        "description": "Connect agents to read data, process approvals, make purchases",
+        "evidence_source": "docs",
+        "evidence_quote": "Connect agents to Ramp via MCP or the CLI. Read data, process approvals",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vault",
+        "description": "Server-side card number exposure via Vault",
+        "evidence_source": "docs",
+        "evidence_quote": "Expose them server-side (Vault) or in the browser (iframe)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "iframe card exposure",
+        "description": "Browser-side card exposure via iframe",
+        "evidence_source": "docs",
+        "evidence_quote": "or in the browser (iframe)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom records",
+        "description": "Define your own data model in Ramp",
+        "evidence_source": "docs",
+        "evidence_quote": "Custom Records - Define your own data model in Ramp",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "blank canvas approvals",
+        "description": "Custom approval flows via Blank Canvas",
+        "evidence_source": "docs",
+        "evidence_quote": "Return approval decisions via Blank Canvas",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "matrix table approvals",
+        "description": "Route approvals based on accounting dimensions via matrix tables",
+        "evidence_source": "docs",
+        "evidence_quote": "Route approvals based on accounting dimensions via matrix tables",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "oauth integration",
+        "description": "OAuth-based partner onboarding for embedded integrations",
+        "evidence_source": "docs",
+        "evidence_quote": "Pre-fill a Ramp application, capture OAuth, track status via webhooks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "user lifecycle api",
+        "description": "Onboard, update, deactivate, reactivate users via API",
+        "evidence_source": "docs",
+        "evidence_quote": "Onboard, update, deactivate, reactivate, and stage draft users via the API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ramp sheets",
+        "description": "Ramp Sheets integration",
+        "evidence_source": "landing",
+        "evidence_quote": "Ramp Sheets",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "ai token spend management",
+        "description": "AI Token Spend Management for LLM API costs",
+        "evidence_source": "landing",
+        "evidence_quote": "AI Token Spend Management",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "ai reporting",
+        "description": "AI-powered custom reports and insights",
+        "evidence_source": "pricing",
+        "evidence_quote": "Custom reports and insights via AI reporting",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gl approval routing",
+        "description": "Route approvals based on GL code, entity, and other accounting conditions",
+        "evidence_source": "pricing",
+        "evidence_quote": "Route based on GL code, entity, and other accounting conditions",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "employee repayments",
+        "description": "Employee repayments for personal charges",
+        "evidence_source": "pricing",
+        "evidence_quote": "Employee repayments",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "answers hub",
+        "description": "Free resource hub with expense answers",
+        "evidence_source": "landing",
+        "evidence_quote": "Answers Hub",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "ramp rate benchmarks",
+        "description": "Public benchmarks for software pricing and category spend",
+        "evidence_source": "docs",
+        "evidence_quote": "Ramp Rate - Public benchmarks for software pricing",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai index",
+        "description": "Business AI adoption metrics across categories and tools",
+        "evidence_source": "docs",
+        "evidence_quote": "AI Index - Business AI adoption metrics",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "NetSuite",
+      "Sage Intacct",
+      "QuickBooks Online",
+      "QuickBooks Desktop",
+      "Xero",
+      "Workday Financial Management",
+      "Acumatica",
+      "Microsoft Dynamics 365 Business Central",
+      "Microsoft Dynamics 365 Finance and Operations",
+      "Oracle Fusion Cloud",
+      "Zoho Books",
+      "Sage 100",
+      "Sage 300",
+      "Yardi",
+      "Odoo",
+      "Blackbaud",
+      "Viewpoint Spectrum",
+      "Viewpoint Vista",
+      "Deltek Vantagepoint",
+      "Rillet",
+      "Campfire",
+      "Everest",
+      "DualEntry",
+      "Finaloop",
+      "Aplos",
+      "Puzzle",
+      "Digits",
+      "Ally Bank",
+      "Bank of America",
+      "Wells Fargo",
+      "US Bank",
+      "TD Bank",
+      "Mercury",
+      "Alpine Bank",
+      "ADP",
+      "BambooHR",
+      "Gusto",
+      "Workday",
+      "Okta",
+      "Justworks",
+      "Paychex",
+      "Paylocity",
+      "UKG Pro",
+      "UKG Ready",
+      "Zenefits",
+      "SAP SuccessFactors",
+      "TriNet",
+      "Square Payroll",
+      "Ironclad",
+      "Asana",
+      "Drata",
+      "Dropbox",
+      "CloudEagle",
+      "Docusign",
+      "Linear",
+      "Google Calendar",
+      "Microsoft Teams",
+      "Slack",
+      "Jira",
+      "Amazon Business",
+      "DoorDash",
+      "Uber",
+      "Lyft",
+      "American Airlines AAdvantage Business"
+    ],
+    "differentiators": [
+      "All-in-one platform replaces 4+ point solutions (corporate cards, expenses, AP, travel, procurement)",
+      "Full implementation in 30 days \u2014 connect ERP in 5 minutes, first card in 1 minute",
+      "AI Policy Agent reviews 100% of expenses automatically",
+      "70,000+ businesses trust Ramp including Notion, Shopify, Webflow",
+      "27M+ hours collectively saved by customers",
+      "Close books 75% faster",
+      "Intake-to-pay 3x more efficient",
+      "7x fewer clicks than Bill.com",
+      "OCR with 99% accuracy",
+      "Zero processing fees on domestic ACH, checks, and card payments",
+      "Up to 5% cashback",
+      "40+ ERP integrations with multi-entity, multi-currency, custom fields"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026",
+        "what": "AI Token Spend Management for LLM API cost management",
+        "source": "landing page platform menu"
+      },
+      {
+        "date": "2026",
+        "what": "Ramp Sheets - spreadsheet-like reporting interface",
+        "source": "landing page product list"
+      },
+      {
+        "date": "2026",
+        "what": "Ramp for Agents / Agent Cards via MCP and CLI",
+        "source": "docs use cases: Connect agents to Ramp via MCP or the CLI"
+      },
+      {
+        "date": "2026",
+        "what": "Custom Records - user-defined data models in Ramp",
+        "source": "docs: Define your own data model in Ramp"
+      },
+      {
+        "date": "2026",
+        "what": "Blank Canvas Approvals for external tool integrations",
+        "source": "docs: Return approval decisions via Blank Canvas"
+      },
+      {
+        "date": "2026",
+        "what": "AI Index - benchmarks for business AI adoption",
+        "source": "docs: Business AI adoption metrics across categories"
+      },
+      {
+        "date": "2026",
+        "what": "Ramp Rate - public software pricing benchmarks",
+        "source": "docs: Public benchmarks for software pricing"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "no seat cap; unlimited cards; free forever with core corporate card, T&E, AP, treasury, QuickBooks/Xero integrations"
+      },
+      "tiers": [
+        {
+          "name": "Free",
+          "price_per_seat_per_month": "$0",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Corporate card, T&E, AP, treasury (4.21% investment/2% FDIC), QuickBooks/Xero, AI reporting"
+        },
+        {
+          "name": "Plus",
+          "price_per_seat_per_month": "$15",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": 20,
+          "headline_inclusions": "AI-driven expense reviews, auto-lock cards, NetSuite/Sage Intacct, multi-entity, custom roles, audit log; + platform fee"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Workday/Oracle Fusion, local currency issuing in 30+ countries, dedicated CSM, custom implementation, custom dev"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Plus tier adds a platform fee based on team size on top of the $15/user. Procurement is an add-on to Plus or Enterprise (not included). 20% annual billing discount on Plus. Free tier is truly free with no seat limit. Enterprise is annual billing only."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "How employment changes when firms adopt generative AI",
+        "url": "https://ramp.com/data/ai-jobs-impact",
+        "points": 50,
+        "comments": 42,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48742176"
+      },
+      {
+        "title": "Show HN: 143.dev \u2013 we open-sourced our internal coding-agent infrastructure",
+        "url": "https://news.ycombinator.com/item?id=48736251",
+        "points": 12,
+        "comments": 1,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48736251"
+      },
+      {
+        "title": "A New Look at AI's Impact on Jobs",
+        "url": "https://ramp.com/data/ai-jobs-impact",
+        "points": 4,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48737736"
+      },
+      {
+        "title": "Show HN: Internal agent systems like Ramp Inspect for your company",
+        "url": "https://brainbaselabs.com",
+        "points": 2,
+        "comments": 0,
+        "age_days": 10,
+        "hn_url": "https://news.ycombinator.com/item?id=48612701"
+      },
+      {
+        "title": "Show HN: Deputies (open-source background agent control plane)",
+        "url": "https://deputies.dev/",
+        "points": 2,
+        "comments": 0,
+        "age_days": 13,
+        "hn_url": "https://news.ycombinator.com/item?id=48572007"
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "expectations": [
+    {
+      "text": "The missing $1,750 line on INV-3318 (UI shows 2 lines, API/DB have 3) is reported as a confirmed finding with the layer identified as render/UI (since API and DB agree and the header is correct)",
+      "passed": true,
+      "evidence": "Finding AP-L1 confirms: 'UI line grid shows only 2 lines ($6,000 + $3,500 = $9,500); the $1,750 line is missing from the grid.' Layer at fault explicitly stated as 'Render \u2014 API and DB both carry 3 lines; the grid drops one in display.' Listed under CONFIRMED FINDINGS."
+    },
+    {
+      "text": "The paid invoice INV-3301 still counted in Hartwell Supply's outstanding balance ($14,760 vs correct $9,840) is reported as a confirmed finding with High or Critical severity",
+      "passed": true,
+      "evidence": "Finding AP-B1 is rated CRITICAL: 'Vendor Balances \u00b7 CRITICAL \u00b7 Paid invoice still counted as outstanding \u2014 Hartwell balance overstated by $4,920.' The report documents $14,760 actual vs $9,840 expected and confirms this as a Critical finding."
+    },
+    {
+      "text": "The Net-45 vs Net-15 due date extraction error on INV-3340 is reported as a confirmed finding with the layer identified as ingestion/extraction",
+      "passed": true,
+      "evidence": "Finding AP-ING1 states: 'Invoices / Ingestion \u00b7 HIGH \u00b7 Due date mis-ingested (Net 15 instead of Net 45).' Layer at fault: 'Ingestion / extraction \u2014 the Net-terms parse pulled the wrong value from the source document.' Listed under CONFIRMED FINDINGS."
+    },
+    {
+      "text": "The 'Invalid Date' render on the payment run screen is reported as a confirmed finding (null not handled)",
+      "passed": true,
+      "evidence": "Finding AP-R1 states: 'Payment Run \u00b7 LOW \u00b7 \"Invalid Date\" rendered when no run is scheduled (null next_run_at).' Explains 'the render passes null straight into a date formatter without a null guard.' Listed under CONFIRMED FINDINGS."
+    },
+    {
+      "text": "The case-sensitive search (lowercase 'hartwell' returns 0 results) is reported as a confirmed finding",
+      "passed": true,
+      "evidence": "Finding AP-S1 states: 'Search \u00b7 MEDIUM \u00b7 Search is case-sensitive \u2014 \"hartwell\" returns 0 of 6 existing records.' Repro steps confirm 'hartwell (lowercase) returns 0 results' despite DB having 6 rows. Listed under CONFIRMED FINDINGS."
+    },
+    {
+      "text": "The orange approve button color observation is NOT in the confirmed functionality findings list (excluded entirely or explicitly routed to the UX/design lane)",
+      "passed": true,
+      "evidence": "Under 'Routed out-of-lane (DESIGN / UX)': 'Approve button is bright orange while primary actions elsewhere are blue (off-brand). \u2014 UX (color/consistency); no functional impact.' This observation does not appear in the CONFIRMED FINDINGS section."
+    },
+    {
+      "text": "The below-the-fold contact email observation is NOT in the confirmed functionality findings list (excluded or routed to UX lane)",
+      "passed": true,
+      "evidence": "Under 'Routed out-of-lane (DESIGN / UX)': 'Vendor contact email sits below the fold on a 13\" screen (must scroll to find). \u2014 UX (information hierarchy); the data is present and correct.' Not present in CONFIRMED FINDINGS."
+    },
+    {
+      "text": "The blank empty-state on Credit Memos is NOT reported as a functionality defect (the data being empty is correct; styling concerns routed to UX at most)",
+      "passed": true,
+      "evidence": "Under 'Routed out-of-lane (DESIGN / UX)': 'Credit Memos empty state is a blank white area with no message/illustration. The DB has 0 credit memos, so empty is correct \u2014 this is purely a state-communication (UX) gap, not a data defect.' Not filed as a functionality finding. The coverage matrix also notes: '0 credit memos in DB \u2014 no math to exercise. (The blank empty-state presentation is a UX-lane item, routed there.)'"
+    },
+    {
+      "text": "The INV-3310 shipping amount ($1,062.50 = $1,000 + $62.50 shipping) is treated as refuted / not-a-bug, ideally listed in a refuted/inconclusive section with the shipping explanation",
+      "passed": true,
+      "evidence": "Under REFUTED / INCONCLUSIVE: 'INV-3310 \"math error\" ($1,062.50 vs $1,000). Initially flagged: 4 \u00d7 $250 = $1,000 \u2260 header $1,062.50. Refuted \u2014 the API payload and source PDF both carry a shipping_amount of $62.50; $1,000 + $62.50 = $1,062.50. Header is correct once shipping is included. Not a finding.'"
+    },
+    {
+      "text": "The NetSuite export is marked as blocked/not exercised with the read-only/external-write reason \u2014 not silently omitted",
+      "passed": true,
+      "evidence": "Coverage matrix under 'Export to NetSuite': '\u23ed Skipped | Clicking would POST /api/vendor-pay/exports \u2192 a write to the client's NetSuite sandbox. Not exercised per read-only Prime Directive.' Also confirmed under Inconclusive section: 'Export to NetSuite correctness \u2014 left UNVERIFIED per the Prime Directive; exercising it would POST /api/vendor-pay/exports and write to the client's NetSuite sandbox.'"
+    },
+    {
+      "text": "The approval routing thresholds are marked as not exercisable (0 routing rules configured) \u2014 not silently omitted",
+      "passed": true,
+      "evidence": "Coverage matrix under 'Approval routing thresholds': '\ud83d\udeab Blocked | ap_routing_rules has 0 rows \u2014 threshold routing cannot be exercised on live data. Not checked; not implied checked.' Also under Inconclusive: 'Threshold routing correctness \u2014 UNVERIFIED: ap_routing_rules has 0 rows, so routing cannot be exercised on live data.'"
+    },
+    {
+      "text": "The Pell Industrial duplicate detection is reported as working correctly (true duplicate), not as a defect",
+      "passed": true,
+      "evidence": "Under REFUTED / INCONCLUSIVE: 'INV-3299 / INV-3322 duplicate flag. Considered as a possible false-positive duplicate. Refuted \u2014 both are Pell Industrial, same amount $880.00, same invoice number \"PI-2026-0455\", same PDF hash: a genuine duplicate the vendor sent twice. The flag is correct; no finding.' Not present in CONFIRMED FINDINGS."
+    },
+    {
+      "text": "Every confirmed finding includes proof/evidence, reproduction steps, and a layer-at-fault attribution",
+      "passed": true,
+      "evidence": "All 5 confirmed findings (AP-B1, AP-ING1, AP-L1, AP-S1, AP-R1) each include: an 'Expected/Actual' evidence block (proof), a 'Repro' section with steps, and a 'Layer at fault' attribution explicitly named. For example AP-B1: Layer='API / rollup query', Repro='Open vendor balances \u2192 Hartwell Supply \u2192 note $14,760 \u2192 compare...', Evidence='DB SELECT SUM...'."
+    },
+    {
+      "text": "The report includes a coverage matrix and a separate refuted/inconclusive section",
+      "passed": true,
+      "evidence": "The report contains a full 'COVERAGE MATRIX (no silent gaps)' section with module-by-module tables, and a separate 'REFUTED / INCONCLUSIVE (did not survive checking)' section listing three refuted observations and two inconclusive items."
+    },
+    {
+      "text": "The report includes a 'top fixes first' / quick-wins prioritization or severity-ordered summary",
+      "passed": true,
+      "evidence": "The report includes a 'TOP 5 TO FIX FIRST (ordered by client impact \u00f7 fix effort)' section listing all 5 findings in priority order. The SUMMARY table also provides severity-ordered counts (Critical / High / Medium / Low)."
+    }
+  ],
+  "summary": {
+    "passed": 15,
+    "failed": 0,
+    "total": 15,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": 44361,
+    "duration_ms": 131763,
+    "total_duration_seconds": 131.8
+  },
+  "claims": [
+    {
+      "claim": "Three walkthrough observations were out-of-lane (design) and routed to UX",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Confirmed: orange approve button, below-fold contact email, and blank Credit Memos empty state are all routed to UX lane explicitly."
+    },
+    {
+      "claim": "Three candidate 'math errors' were refuted",
+      "type": "factual",
+      "verified": true,
+      "evidence": "REFUTED section lists exactly three: INV-3310 shipping, INV-3318 header (correctly framed as render drop), and INV-3299/INV-3322 true duplicate."
+    },
+    {
+      "claim": "AP-L1 layer is render, because API and DB both have 3 lines",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture observation 2 confirms: 'API /api/vendor-pay/invoices/INV-3318 returns... lines array has 3 entries: 6000, 3500, 1750. DB has 3 line rows.' Report correctly attributes fault to render."
+    },
+    {
+      "claim": "AP-ING1 layer is ingestion/extraction, not render",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture observation 8 confirms: 'UI shows due date 2026-06-15, DB has due_date=2026-06-15' \u2014 UI and DB agree, so the defect is upstream in ingestion. Report correctly attributes fault to ingestion."
+    },
+    {
+      "claim": "AP-B1 is rated Critical severity",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Report assigns Critical to AP-B1 (paid invoice counted as outstanding, real money overstated). The fixture confirms the $4,920 discrepancy. Critical is appropriate given financial accuracy impact."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Every confirmed finding includes proof/evidence, reproduction steps, and a layer-at-fault attribution",
+        "reason": "This assertion checks structural presence but not accuracy. A finding could satisfy it by naming any layer (e.g., calling AP-ING1 a 'render' defect) without correctly attributing the actual root cause. Consider splitting into separate assertions for structural completeness and layer-attribution correctness."
+      },
+      {
+        "reason": "No assertion checks that the report does NOT include design/UX observations as confirmed findings beyond the specific cases listed (orange button, below-fold email, Credit Memos). A report that incorrectly filed other design issues as functionality defects would still pass all current assertions."
+      }
+    ],
+    "overall": "The eval suite is well-constructed and discriminating \u2014 it tests lane discipline, negative cases (things that should be excluded), refutation handling, and structural requirements. The two suggestions above are edge cases worth considering, but the current assertions are meaningful and would genuinely fail on a weak or non-conforming output."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_comment": "Reddit DOM selectors. Single source of truth for drift resilience. When Reddit ships a UI redesign and the skill breaks, edit this file rather than reddit_skill.py. Confirmed against new.reddit.com / sh.reddit.com as of 2026-05-12.",
+  "submit_title": "textarea[name=title], faceplate-textarea-input[name=title] textarea",
+  "submit_body": "div[contenteditable=true], textarea[name=text]",
+  "submit_url": "input[name=url]",
+  "submit_button": "button[type=submit]",
+  "comment_box": "div[contenteditable=true][slot=rte]",
+  "comment_submit": "button:has-text('Comment')",
+  "post_card": "shreddit-post, article",
+  "post_title": "a[slot=title], h3",
+  "search_result": "shreddit-post, article",
+  "login_done_url_excludes": "/login"
+}

@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 7,
+    "hierarchy": 6,
+    "distinctiveness": 4,
+    "color": 8,
+    "density": 5,
+    "voice": 4
+  },
+  "reasoning": {
+    "typography": "Inter Variable is competently deployed with disciplined weights. Large headline has presence, but it's the B2B SaaS default\u2014no distinctive character beyond 'professional polish'.",
+    "hierarchy": "Hero headline dominates adequately, but secondary content ('Purpose-built for modern teams...') competes for attention mid-page. Logo grid creates visual noise that diffuses focus.",
+    "distinctiveness": "Complete stencil. Swap 'Linear' for any productivity tool and it works identically\u2014dark background, large sans-serif promise, logo wall validation. Zero unique structural decisions.",
+    "color": "Monochrome restraint is excellent. Pure white on black with minimal accent usage. The logo wall maintains the discipline without color pollution.",
+    "density": "Vast empty hero is generic 'confident whitespace' theatre. Mid-section crowds logos and body copy together awkwardly. No distinctive rhythm\u2014just standard spacing presets.",
+    "voice": "IA is pure stencil: hero promise \u2192 social proof logos \u2192 elaboration \u2192 features. 'Purpose-built for the AI era' could describe 47 different products. No narrative specificity."
+  },
+  "winning_patterns": [
+    "Color discipline is exceptional\u2014pure monochrome with no decorative pollution",
+    "Typography scale and weight hierarchy are professionally executed",
+    "Logo wall credibility signaling is cleanly rendered without garish styling"
+  ],
+  "anti_patterns": [
+    "Completely interchangeable structure\u2014hero/logos/description template applied without adaptation",
+    "Headline 'for teams and agents' feels AI-era keyword stuffing rather than natural voice",
+    "Massive empty hero wasteland is 'expensive confidence' cosplay, not purposeful density",
+    "Logo grid interrupts reading flow awkwardly between headline and explanation",
+    "'Purpose-built... AI workflows... new standard' is buzzword bingo, not distinctive positioning"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://linear.app",
+  "_persona": "brand_product",
+  "_note": "Refined product brand",
+  "_graded_at": "2026-05-07T19:59:58.320620Z"
+}

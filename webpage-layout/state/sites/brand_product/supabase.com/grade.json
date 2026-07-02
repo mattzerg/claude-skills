@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 6,
+    "hierarchy": 7,
+    "distinctiveness": 5,
+    "color": 7,
+    "density": 6,
+    "voice": 4
+  },
+  "reasoning": {
+    "typography": "System sans (likely Inter) with green accent color on key phrases. Functional but lacks typographic personality \u2014 could be any dev tool. Scale relationships are competent but unremarkable.",
+    "hierarchy": "Hero headline does dominate with clear size contrast. Green 'Scale to millions' creates focal point. Feature cards have consistent hierarchy but nothing particularly bold or surprising.",
+    "distinctiveness": "Standard developer platform playbook: dark theme, logo parade, feature grid with icons. Swap 'Supabase' for 'Planetscale' or 'Railway' and structure holds perfectly. Green is the only distinguishing element.",
+    "color": "Restrained palette: dark background, white text, single green accent used sparingly (~3-5% surface area). Disciplined use of brand color without overdecorating. Grayscale dominates appropriately.",
+    "density": "Reasonable breathing room in hero, but feature cards feel template-padded with uniform spacing. Not particularly confident about density \u2014 playing it safe rather than making intentional spatial statements.",
+    "voice": "IA is pure SaaS stencil: headline promise \u2192 social proof logos \u2192 feature grid (Database/Auth/Functions/Storage/Realtime/Vector). No narrative arc, no Supabase-specific story structure. Generic 'what we offer' catalog."
+  },
+  "winning_patterns": [
+    "Green accent color used with restraint \u2014 dominates only where needed ('Scale to millions', CTAs)",
+    "Hero headline has genuine hierarchy \u2014 size differential creates clear entry point",
+    "Dark theme executed cleanly without falling into busy neon trap",
+    "Code/terminal aesthetic in feature cards feels authentic to developer audience"
+  ],
+  "anti_patterns": [
+    "Logo parade social proof is the most tired pattern in B2B SaaS (datashares/submagic/mozilla/github/1password)",
+    "Feature grid is templated uniformity \u2014 every card same size, same padding, same structure",
+    "IA follows paint-by-numbers SaaS structure with zero story or Supabase-specific POV",
+    "'Build in a weekend / Scale to millions' is aspirational copy that could apply to 50 platforms",
+    "Typography has no character \u2014 system sans doing system sans things"
+  ],
+  "one_word_personality": "competent",
+  "_url": "https://supabase.com",
+  "_persona": "brand_product",
+  "_note": "Open-source dev brand, dark",
+  "_graded_at": "2026-05-07T23:29:39.546818Z"
+}

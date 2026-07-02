@@ -1,8 +1,8 @@
 [
   {
-    "category": "internal-chat",
-    "product": "ZergChat",
-    "started": "2026-05-02T18:01:55.126511",
+    "category": "pm-software",
+    "product": "Zergboard",
+    "started": "2026-07-01T02:00:01.481790",
     "phases": {
       "discover": {
         "rc": 0,
@@ -25,14 +25,74 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-02T20:09:55.238622",
+    "ended": "2026-07-01T02:32:40.412107",
     "ok": true,
-    "elapsed_seconds": 7680.111883
+    "elapsed_seconds": 1958.93011
+  },
+  {
+    "category": "finance-and-wallets",
+    "product": "Zergwallet",
+    "started": "2026-07-01T02:32:45.477812",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-07-01T03:09:40.298739",
+    "ok": true,
+    "elapsed_seconds": 2214.820724
+  },
+  {
+    "category": "internal-chat",
+    "product": "ZergChat",
+    "started": "2026-07-01T03:09:45.373027",
+    "phases": {
+      "discover": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
+      }
+    },
+    "ended": "2026-07-01T03:43:29.231098",
+    "ok": true,
+    "elapsed_seconds": 2023.857738
   },
   {
     "category": "workspace-email",
     "product": "ZergMail",
-    "started": "2026-05-02T20:10:00.240147",
+    "started": "2026-07-01T03:43:34.296418",
     "phases": {
       "discover": {
         "rc": 0,
@@ -55,14 +115,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-02T21:37:45.699873",
+    "ended": "2026-07-01T04:15:43.917433",
     "ok": true,
-    "elapsed_seconds": 5265.4595
+    "elapsed_seconds": 1929.620809
   },
   {
     "category": "calendar",
     "product": "ZergCal",
-    "started": "2026-05-02T21:37:50.701200",
+    "started": "2026-07-01T04:15:49.065913",
     "phases": {
       "discover": {
         "rc": 0,
@@ -73,6 +133,10 @@
         "err_tail": ""
       },
       "compare": {
+        "rc": 1,
+        "err_tail": "[compare] Stage A: canonical feature inventory (15 competitors)\n[compare]   prompt size: 15344 chars\n[aitr] competitive-review-skill: claude-opus-4-7 (+0.15 quality reputation, ok tag fit, ~$0.070 estimated) [decision: aitr-20260701-083635-12f9e1]\nTraceback (most recent call last):\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py\", line 411, in <module>\n    main()\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py\", line 338, in main\n    inv_result = claude.call_claude_json(inv_prompt, timeout=900)\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/lib/claude.py\", line 260, in call_claude_json\n    raise ValueError(f\"Could not extract JSON from output:\\n{raw[:1500]}\")\nValueError: Could not extract JSON from output:\n\ud83d\udc24 The JSON feature inventory is the requested task output (a deliverable returned to the caller for the calendar category competitive matrix), not a durable lesson or personal insight \u2014 intentionally ephemeral from a memory-capture standpoint. No memory-file write needed."
+      },
+      "compare_retry": {
         "rc": 0,
         "err_tail": ""
       },
@@ -85,14 +149,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-02T22:13:08.993370",
+    "ended": "2026-07-01T04:43:57.683612",
     "ok": true,
-    "elapsed_seconds": 2118.291854
+    "elapsed_seconds": 1688.61753
   },
   {
     "category": "video-meetings",
     "product": "ZergMeeting",
-    "started": "2026-05-02T22:13:13.998855",
+    "started": "2026-07-01T04:44:02.831590",
     "phases": {
       "discover": {
         "rc": 0,
@@ -115,14 +179,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-02T23:37:18.566829",
+    "ended": "2026-07-01T05:23:22.933272",
     "ok": true,
-    "elapsed_seconds": 5044.567499
+    "elapsed_seconds": 2360.101481
   },
   {
     "category": "sms-messaging",
     "product": "ZMsg",
-    "started": "2026-05-02T23:37:23.569970",
+    "started": "2026-07-01T05:23:27.995026",
     "phases": {
       "discover": {
         "rc": 0,
@@ -145,14 +209,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-03T00:16:39.023433",
+    "ended": "2026-07-01T05:55:07.472667",
     "ok": true,
-    "elapsed_seconds": 2355.453225
+    "elapsed_seconds": 1899.477412
   },
   {
     "category": "crm",
     "product": "ZergCRM",
-    "started": "2026-05-03T00:16:44.024257",
+    "started": "2026-07-01T05:55:12.508607",
     "phases": {
       "discover": {
         "rc": 0,
@@ -175,14 +239,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-03T01:49:02.915916",
+    "ended": "2026-07-01T06:28:30.585027",
     "ok": true,
-    "elapsed_seconds": 5538.891422
+    "elapsed_seconds": 1998.07622
   },
   {
     "category": "file-storage",
     "product": "ZergBox",
-    "started": "2026-05-03T01:49:07.919844",
+    "started": "2026-07-01T06:28:35.733479",
     "phases": {
       "discover": {
         "rc": 0,
@@ -205,14 +269,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-03T16:13:59.191307",
+    "ended": "2026-07-01T07:04:46.059639",
     "ok": true,
-    "elapsed_seconds": 51891.27114
+    "elapsed_seconds": 2170.325855
   },
   {
     "category": "analytics",
     "product": "Zergalytics",
-    "started": "2026-05-03T16:14:04.197011",
+    "started": "2026-07-01T07:04:51.133932",
     "phases": {
       "discover": {
         "rc": 0,
@@ -223,26 +287,22 @@
         "err_tail": ""
       },
       "compare": {
-        "rc": 0,
-        "err_tail": ""
+        "rc": 1,
+        "err_tail": "Error: no product spec found at MattZerg/Projects/Zerg-Production/Zstack/Zergalytics.md"
       },
-      "rank": {
-        "rc": 0,
-        "err_tail": ""
-      },
-      "report": {
-        "rc": 0,
-        "err_tail": ""
+      "compare_retry": {
+        "rc": 1,
+        "err_tail": "Error: no product spec found at MattZerg/Projects/Zerg-Production/Zstack/Zergalytics.md"
       }
     },
-    "ended": "2026-05-03T19:56:38.786360",
-    "ok": true,
-    "elapsed_seconds": 13354.589156
+    "ended": "2026-07-01T07:28:11.617779",
+    "ok": false,
+    "stage_failed": "compare"
   },
   {
     "category": "email-marketing",
     "product": "Zstack",
-    "started": "2026-05-03T19:56:43.791146",
+    "started": "2026-07-01T07:28:16.661297",
     "phases": {
       "discover": {
         "rc": 0,
@@ -265,14 +325,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-03T20:41:42.811372",
+    "ended": "2026-07-01T08:01:58.228090",
     "ok": true,
-    "elapsed_seconds": 2699.019937
+    "elapsed_seconds": 2021.56659
   },
   {
     "category": "customer-support",
     "product": "Zstack",
-    "started": "2026-05-03T20:41:47.821104",
+    "started": "2026-07-01T08:02:03.301984",
     "phases": {
       "discover": {
         "rc": 0,
@@ -295,14 +355,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-03T21:31:35.353595",
+    "ended": "2026-07-01T08:33:52.775302",
     "ok": true,
-    "elapsed_seconds": 2987.532279
+    "elapsed_seconds": 1909.473146
   },
   {
     "category": "accounting",
     "product": "Zstack",
-    "started": "2026-05-03T21:31:40.357547",
+    "started": "2026-07-01T08:33:57.924348",
     "phases": {
       "discover": {
         "rc": 0,
@@ -325,14 +385,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-03T22:19:23.833603",
+    "ended": "2026-07-01T12:32:22.227844",
     "ok": true,
-    "elapsed_seconds": 2863.475792
+    "elapsed_seconds": 14304.303314
   },
   {
     "category": "expense-management",
     "product": "Zstack",
-    "started": "2026-05-03T22:19:28.836853",
+    "started": "2026-07-01T12:32:27.375847",
     "phases": {
       "discover": {
         "rc": 0,
@@ -355,14 +415,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-03T23:16:50.643844",
+    "ended": "2026-07-01T13:42:16.400621",
     "ok": true,
-    "elapsed_seconds": 3441.806749
+    "elapsed_seconds": 4189.024534
   },
   {
     "category": "hris-payroll",
     "product": "Zstack",
-    "started": "2026-05-03T23:16:55.645277",
+    "started": "2026-07-01T13:42:21.549165",
     "phases": {
       "discover": {
         "rc": 0,
@@ -385,14 +445,14 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-04T00:10:19.117745",
+    "ended": "2026-07-01T14:16:36.284727",
     "ok": true,
-    "elapsed_seconds": 3203.472229
+    "elapsed_seconds": 2054.735381
   },
   {
     "category": "marketing-automation",
     "product": "Zstack",
-    "started": "2026-05-04T00:10:24.120933",
+    "started": "2026-07-01T14:16:41.431507",
     "phases": {
       "discover": {
         "rc": 0,
@@ -415,36 +475,68 @@
         "err_tail": ""
       }
     },
-    "ended": "2026-05-04T00:55:25.537638",
+    "ended": "2026-07-01T14:45:22.062179",
     "ok": true,
-    "elapsed_seconds": 2701.41636
+    "elapsed_seconds": 1720.630498
   },
   {
     "category": "notes-wiki",
     "product": "Zstack",
-    "started": "2026-05-04T00:55:30.543383",
+    "started": "2026-07-01T14:45:27.204118",
     "phases": {
       "discover": {
-        "rc": 1,
-        "err_tail": "[claude] attempt 2/3 failed: Claude CLI exit 1: \n[claude] attempt 3/3 failed: Claude CLI exit 1: \nTraceback (most recent call last):\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py\", line 112, in <module>\n    main()\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py\", line 75, in main\n    candidates = claude.call_claude_json(prompt)\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/lib/claude.py\", line 189, in call_claude_json\n    raw = call_claude(prompt, system=system, model=model, timeout=timeout)\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/lib/claude.py\", line 178, in call_claude\n    raise RuntimeError(f\"Claude CLI failed after {MAX_RETRIES} attempts: {last_err}\")\nRuntimeError: Claude CLI failed after 3 attempts: Claude CLI exit 1: "
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
       }
     },
-    "ended": "2026-05-04T00:56:11.296965",
-    "ok": false,
-    "stage_failed": "discover"
+    "ended": "2026-07-01T15:15:31.779343",
+    "ok": true,
+    "elapsed_seconds": 1804.575028
   },
   {
     "category": "all-in-one-platforms",
     "product": "Zstack",
-    "started": "2026-05-04T00:56:16.303096",
+    "started": "2026-07-01T15:15:36.923105",
     "phases": {
       "discover": {
-        "rc": 1,
-        "err_tail": "[claude] attempt 2/3 failed: Claude CLI exit 1: \n[claude] attempt 3/3 failed: Claude CLI exit 1: \nTraceback (most recent call last):\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py\", line 112, in <module>\n    main()\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py\", line 75, in main\n    candidates = claude.call_claude_json(prompt)\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/lib/claude.py\", line 189, in call_claude_json\n    raw = call_claude(prompt, system=system, model=model, timeout=timeout)\n  File \"/Users/mattheweisner/.claude/skills/competitive-review-skill/lib/claude.py\", line 178, in call_claude\n    raise RuntimeError(f\"Claude CLI failed after {MAX_RETRIES} attempts: {last_err}\")\nRuntimeError: Claude CLI failed after 3 attempts: Claude CLI exit 1: "
+        "rc": 0,
+        "err_tail": ""
+      },
+      "scan": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "compare": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "rank": {
+        "rc": 0,
+        "err_tail": ""
+      },
+      "report": {
+        "rc": 0,
+        "err_tail": ""
       }
     },
-    "ended": "2026-05-04T00:56:57.512637",
-    "ok": false,
-    "stage_failed": "discover"
+    "ended": "2026-07-01T15:49:27.510923",
+    "ok": true,
+    "elapsed_seconds": 2030.587657
   }
 ]

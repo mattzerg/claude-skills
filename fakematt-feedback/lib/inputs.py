@@ -23,7 +23,7 @@ class TargetSpec:
     kind: TargetKind
     raw: str
     canonical: str
-    product_hint: str | None = None  # used to find Projects/Zstack/<product>.md
+    product_hint: str | None = None  # used to find Projects/Zerg-Production/Zstack/<product>.md
     figma_key: str | None = None
     figma_frame: str | None = None
     static_paths: list[str] | None = None
@@ -46,6 +46,8 @@ def _resolve_static(path: str) -> TargetSpec:
             return TargetSpec(kind="static", raw=path, canonical=str(p), static_paths=[str(p)], product_hint=p.stem)
         if p.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp"}:
             return TargetSpec(kind="static", raw=path, canonical=str(p), static_paths=[str(p)], product_hint=p.stem)
+        if p.suffix.lower() in {".html", ".htm"}:
+            return TargetSpec(kind="local_url", raw=path, canonical=p.as_uri(), product_hint=p.stem)
         raise ValueError(f"unsupported static file type: {p.suffix}")
     images = sorted(
         str(c) for c in p.iterdir()

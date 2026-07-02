@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 7,
+    "hierarchy": 8,
+    "distinctiveness": 4,
+    "color": 6,
+    "density": 7,
+    "voice": 4
+  },
+  "reasoning": {
+    "typography": "Cosmica + PP Mori system has personality and discipline, but the headline doesn't feel uniquely ownable\u2014competent execution of a familiar pattern",
+    "hierarchy": "Strong headline dominance, clear focal point with team photos, good visual weight distribution\u2014the hero does proper hierarchical work",
+    "distinctiveness": "Entirely swappable\u2014'stakes/experience matters' could be any consultancy; team photos on colored backgrounds are 2019 SaaS stencil; case study carousel is pure template",
+    "color": "Dark background with cyan/purple/green accent blocks feels calculated-diverse but restrained; red CTA is disciplined at ~3% usage\u2014competent palette, not adventurous",
+    "density": "Confident breathing room in hero, but the uniform card grid below is generic padding discipline\u2014safe, not distinctive",
+    "voice": "IA is pure consultancy stencil: hero claim \u2192 case study proof \u2192 testimonial. No structural innovation reflecting their actual methodology or story\u2014just templates filled in"
+  },
+  "winning_patterns": [
+    "Hero headline has genuine visual presence and does hierarchical work",
+    "Team photography treatment (solid color backgrounds, casual portraits) adds human warmth",
+    "Case study visuals show actual product work with mobile screens\u2014proof over decoration",
+    "Restrained color usage\u2014red CTA stays disciplined, dark background lets content breathe"
+  ],
+  "anti_patterns": [
+    "Completely generic consultancy IA structure\u2014hero, case study, testimonial is paint-by-numbers",
+    "Colored-background team photos are 2019 design agency stencil",
+    "Headline 'When stakes are high, experience matters' could be any consultancy\u2014zero specificity",
+    "Featured case study carousel with uniform card treatment is pure template behavior",
+    "No structural voice\u2014nothing about the layout reflects thoughtbot's actual POV or methodology"
+  ],
+  "one_word_personality": "professional",
+  "_url": "https://thoughtbot.com",
+  "_persona": "advisory",
+  "_note": "Services structure done well",
+  "_graded_at": "2026-05-07T19:59:02.811323Z"
+}

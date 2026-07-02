@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 6,
+    "color": 7,
+    "density": 8,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Sohne is a strong, distinctive choice with excellent weight distribution. Code snippets in Source Code Pro show discipline. Not perfect\u2014hero text could be tighter-leaded.",
+    "hierarchy": "Hero dominates appropriately, but competing CTAs ('Get started' + Google sign-up) dilute focus. Lower sections flatten into sameness\u2014headlines don't do enough visual work.",
+    "distinctiveness": "Gradient blobs are Stripe's signature now, but the 'Accept payments globally' + 'Enable billing' structure is pure fintech stencil. Swap for Adyen and it'd work fine.",
+    "color": "Branded gradient (blue-pink-orange) is controlled but occupies ~40% of hero viewport\u2014not accent territory. Below-fold reverts to safe blue/purple. Disciplined but not restrained.",
+    "density": "Confident whitespace in hero. Logo parade breathes properly. Product cards below show good padding discipline without generic uniformity. Actual content density, not fear-of-space.",
+    "voice": "Opens strong ('your billionth') but IA defaults to 'Solutions for every business model' \u2192 feature grid. Classic product homepage structure\u2014doesn't reflect Stripe's actual complexity/story."
+  },
+  "winning_patterns": [
+    "Sohne typeface creates immediate brand recognition\u2014not Inter/default sans",
+    "Hero gradient is genuinely ownable visual territory at this point",
+    "Confident scale contrast between stat ticker and headline",
+    "Logo parade has proper weight hierarchy (not all same size)",
+    "Product screenshots show actual UI, not decorated mockups"
+  ],
+  "anti_patterns": [
+    "Dual CTAs in hero split attention\u2014pick one dominant action",
+    "'Flexible solutions for every business model' is generic B2B speak",
+    "Below-fold structure is paint-by-numbers: feature 1, feature 2, testimonials incoming",
+    "Gradient occupies too much viewport %\u2014decorative not functional",
+    "Gray subheads lack personality\u2014could be any fintech's microcopy"
+  ],
+  "one_word_personality": "slick",
+  "_url": "https://stripe.com",
+  "_persona": "brand_product",
+  "_note": "Type-led, restrained",
+  "_graded_at": "2026-05-07T20:00:20.792262Z"
+}

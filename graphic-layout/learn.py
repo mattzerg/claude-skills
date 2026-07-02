@@ -35,9 +35,14 @@ def sha256_file(path: Path) -> str:
     if not path.exists():
         return ""
     h = hashlib.sha256()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(65536), b""):
-            h.update(chunk)
+    try:
+        with open(path, "rb") as f:
+            for chunk in iter(lambda: f.read(65536), b""):
+                h.update(chunk)
+    except (PermissionError, OSError):
+        # iCloud-evicted or TCC-blocked files report exists()=True but deny reads.
+        # Treat as un-hashable (skip) instead of crashing the whole learn run.
+        return ""
     return h.hexdigest()
 
 

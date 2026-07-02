@@ -1,0 +1,4 @@
+interface:
+  display_name: "QA Gate"
+  short_description: "Gate code changes with tests and fakeidan review"
+  default_prompt: "Use $qa-gate before shipping this code change."

@@ -1,11 +1,27 @@
 ---
 name: graphic-layout
-description: Composition + balance review for any rendered image asset Matt or Claude builds — blog hero, body figure, share variant, GIF frame, one-pager page, slide. Sibling to fakematt-feedback (UX) and fakematt-copyedit (prose). Anchored on `references/graphic_layout_patterns.md` (templates) + `feedback_graphic_basics.md` (memory rules). Different from blog-imagery (which GENERATES new image sets — hero + body + share variants) — graphic-layout REVIEWS already-rendered assets for composition. Two modes — `review` (audit a rendered PNG/PDF for layout failures) and `template` (return the canonical composition for a target intent: hero / split-comparison / stat-strip / step-sequence / title-card / annotated-screenshot). Output is a structured findings list with cited rules + suggested fixes; never modifies source files. USE PROACTIVELY whenever Matt or Claude renders a graphic, before declaring it done; whenever building a multi-frame GIF/video so each frame's composition is intentional; whenever an asset feels "weird" (left-heavy, dead space, generic eyebrow noise) so the issue gets named instead of guessed at. Hard rule: graphic shipping requires this check to pass.
+description: Review rendered image assets for composition, balance, text fit, whitespace, and brand-layout failures before shipping.
 ---
+
 
 # Graphic Layout Skill
 
 Sibling to `fakematt-feedback` (product/UX review on live targets) and `fakematt-copyedit` (sentence-level prose review). This one operates on **rendered image assets** — PNG, PDF page, GIF frame, slide — and audits **composition + balance**, not content.
+
+## Anchors
+
+This skill draws its voice and pattern catalog from:
+
+- **Voice fingerprint:** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/matt_considered_voice.md`
+- **Pattern catalog:** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/feedback_patterns_catalog.md`
+- **Domain corpus:**
+  - `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/brand_feedback_corpus.md`
+  - `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/ui_density_feedback_corpus.md`
+- **Catalog patterns to cite by slug** (Section B UI / product design): ui-weight-vs-importance
+- **Catalog patterns to cite by slug** (Section C Prose / writing): pulp-caption-discipline
+- **Catalog patterns to cite by slug** (Section G Viz / video): annotation-near-the-point, annotation-placement, color-encoding-discipline, data-density, axis-truncation-honesty, chart-junk
+
+Read these BEFORE producing output. Cite patterns by slug from the catalog.
 
 It exists because composition mistakes have been recurring on Matt's deliverables (left-pile, eyebrow noise, top-bottom asymmetry, minimalism), and "guess and iterate" wastes turns. With this skill, Claude has a named template + checklist to consult during build, and a review pass to run before declaring done.
 
@@ -118,7 +134,7 @@ Findings are professional/structured (not Matt-voice cosplay). Each cites:
 
 - `references/graphic_layout_patterns.md` — canonical composition templates with pixel specs
 - `feedback_graphic_basics.md` (memory) — the 6 generation-time rules + 6-point self-check
-- `feedback_internal_review_pack_format.md` (memory) — required asset set for launch packs
+- `feedback_content_release_pack.md` (memory) — required asset set for launch / release packs
 - `feedback_blog_imagery_coherence.md` (memory) — visual coherence across an asset campaign
 
 ## What this skill is NOT

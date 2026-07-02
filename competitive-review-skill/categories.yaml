@@ -3,7 +3,7 @@
 #
 # Schema per entry:
 #   - slug:        category slug (becomes MattZerg/Competitive/<slug>/)
-#     product:     Zerg product to compare against (must have spec at Projects/Zstack/<Product>.md or Projects/<Product>.md)
+#     product:     Zerg product to compare against (must have spec at Projects/Zerg-Production/Zstack/<Product>.md or Projects/<Product>.md)
 #     seeds:       list of competitor URLs/domains to discover from
 #     notes:       optional free-text describing why this category is in the queue
 

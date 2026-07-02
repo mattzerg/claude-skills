@@ -2,10 +2,11 @@
 name: landing-page-skill
 description: Analyze competitor/reference landing pages, audit Zerg pages against them, and generate new landing pages matching Zerg's design system. Different from webpage-layout (data-driven 6-axis SCORING of personal/agency/fund/product sites) — landing-page-skill is for analyzing references + auditing + GENERATING Zerg's own marketing pages.
 commands:
-  - analyze
-  - audit
-  - build
+- analyze
+- audit
+- build
 ---
+
 
 # Landing Page Skill
 
@@ -17,13 +18,13 @@ Screenshots, scrapes, and sends to Claude for structured insights (headline, val
 
 ```bash
 # Analyze one or more competitor pages
-python3 ~/.claude/skills/landing-page-skill/analyze.py https://cursor.com https://devin.ai
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/analyze.py https://cursor.com https://devin.ai
 
 # Skip screenshots (faster, text-only)
-python3 ~/.claude/skills/landing-page-skill/analyze.py https://lovable.dev --no-screenshot
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/analyze.py https://lovable.dev --no-screenshot
 
 # Save to custom dir
-python3 ~/.claude/skills/landing-page-skill/analyze.py https://replit.com --save ~/Desktop/insights
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/analyze.py https://replit.com --save ~/Desktop/insights
 ```
 
 Saves JSON to `~/.claude/skills/landing-page-skill/insights/`.
@@ -34,13 +35,13 @@ Compares competitor pages against Zerg's live pages. Produces a ranked recommend
 
 ```bash
 # Full pipeline: analyze competitors + Zerg homepage, generate report
-python3 ~/.claude/skills/landing-page-skill/audit.py \
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/audit.py \
   --urls https://cursor.com https://devin.ai https://lovable.dev \
   --zerg-urls https://zergai.com https://zergai.com/products/ztc \
   --output ~/Desktop/zerg-audit.md
 
 # Use existing insights (skip re-fetching)
-python3 ~/.claude/skills/landing-page-skill/audit.py \
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/audit.py \
   --insights-dir ~/.claude/skills/landing-page-skill/insights \
   --zerg-urls https://zergai.com
 ```
@@ -53,17 +54,17 @@ Generates Nuxt/Vue pages matching Zerg's design system, informed by competitive 
 
 ```bash
 # Build a new ZTC product page (Nuxt .vue)
-python3 ~/.claude/skills/landing-page-skill/build.py \
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/build.py \
   "ZTC: AI terminal for serious engineering teams. Emphasize speed, agent autonomy, and terminal-native workflow." \
   --product ztc \
   --insights-dir ~/.claude/skills/landing-page-skill/insights
 
 # Write directly into the Zerg web repo
-python3 ~/.claude/skills/landing-page-skill/build.py \
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/build.py \
   "ZTC product page" --product ztc --write-to-repo
 
 # Generate standalone HTML (for quick review, no Nuxt needed)
-python3 ~/.claude/skills/landing-page-skill/build.py \
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/build.py \
   "Zerg Cloud landing page" --product cloud --html --output ~/Desktop/
 ```
 
@@ -73,17 +74,17 @@ Products: `ztc`, `zde`, `zergboard`, `cloud`, `zerg`
 
 ```bash
 # 1. Research competitors
-python3 ~/.claude/skills/landing-page-skill/analyze.py \
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/analyze.py \
   https://cursor.com https://devin.ai https://lovable.dev https://replit.com
 
 # 2. Run competitive audit vs Zerg
-python3 ~/.claude/skills/landing-page-skill/audit.py \
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/audit.py \
   --insights-dir ~/.claude/skills/landing-page-skill/insights \
   --zerg-urls https://zergai.com \
   --output ~/zerg-audit-$(date +%Y%m%d).md
 
 # 3. Build an improved page
-python3 ~/.claude/skills/landing-page-skill/build.py \
+/usr/bin/python3 ~/.claude/skills/landing-page-skill/build.py \
   "Improved Zerg homepage based on competitive audit" \
   --product zerg --html --output ~/Desktop/
 ```

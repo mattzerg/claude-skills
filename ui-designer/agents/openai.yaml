@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Designer"
+  short_description: "Design product UI structure and states"
+  default_prompt: "Use $ui-designer to design the structure, states, and handoff notes for a product UI or flow."
+
+policy:
+  allow_implicit_invocation: true

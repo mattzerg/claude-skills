@@ -4,6 +4,7 @@ description: Generate a tailored CV draft for a specific job description by pull
 allowed-tools: Bash, Read, Write
 ---
 
+
 # CV Tailor Skill
 
 Builds tailored CV drafts for specific job applications by composing from Matt's structured career data.
@@ -93,7 +94,7 @@ Use the Diff Matrix's "What to borrow when" §9 as the primary playbook. Order o
 ## Never
 
 - Auto-send anywhere
-- Modify the source `.docx` files (those are sacred — only `fix_nov_cvs.py` touches them)
+- Modify the source `.docx` files (those are sacred — only the one-shot `~/.config/zerg/vault-tools/imports/fix_nov_cvs.py` ever touched them)
 - Invent bullets that aren't grounded in Matt's actual history
 - Use AI-tells (em-dash overuse, "serves as," "stands as a testament") — see CLAUDE.md AI Writing Cleanup
 

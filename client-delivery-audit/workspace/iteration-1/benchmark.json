@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "skill_name": "client-delivery-audit",
+    "skill_path": "/Users/mattheweisner/.claude/skills/client-delivery-audit",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-06-02T01:15:15Z",
+    "evals_run": [
+      0,
+      1,
+      2
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 12,
+        "failed": 0,
+        "total": 12,
+        "time_seconds": 121.2,
+        "tokens": 40371,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The GOAL file contains an explicit read-only / do-not-mutate prime directive that prohibits creating, editing, approving, deleting records and DB writes on the shared live app",
+          "passed": true,
+          "evidence": "Section 0 'PRIME DIRECTIVE \u2014 DO NOT ALTER THE DATA (NON-NEGOTIABLE \u2014 READ THIS FIRST)' explicitly prohibits creating, editing, sending, marking paid, voiding, approving, posting, submitting, importing, uploading, or deleting any record. Also: 'run any write (UPDATE / INSERT / DELETE / DDL / truncate / seed / reset / migration) against the DB' is explicitly prohibited."
+        },
+        {
+          "text": "The GOAL file specifies a fully-autonomous operating mode: never pause for confirmation; blocked/ambiguous items are recorded (BLOCKED or UNVERIFIED) and the run continues",
+          "passed": true,
+          "evidence": "Section 0b 'OPERATING MODE \u2014 FULLY AUTONOMOUS (RUN END-TO-END, NEVER PAUSE)': 'Execute this entire goal from start to finish WITHOUT stopping, asking, or waiting for approval. There is NO human in the loop during the run.' And: 'If a screen is blocked, a value is ambiguous, a credential is missing, or a path is unavailable: record it (coverage item BLOCKED + why, or finding tagged UNVERIFIED) and move to the next item \u2014 do NOT halt the run.'"
+        },
+        {
+          "text": "The GOAL file explicitly scopes OUT design/UX review as another reviewer's lane (lane boundary stated)",
+          "passed": true,
+          "evidence": "The opening callout box states: 'The UX/design lane is OUT OF SCOPE here \u2014 Matt is covering UX feedback separately.' Section 1 Mission also states: 'OUT OF SCOPE: Visual design, spacing, colors, typography, copywriting, layout, responsiveness. (Matt is covering UX separately \u2014 do not report unless a visual defect corrupts data/meaning.)' and Section 7 Success Criteria: 'No out-of-lane (UX/design) findings in the report.'"
+        },
+        {
+          "text": "The GOAL file includes a layered ground-truth rule comparing UI vs API vs DB and instructs to name which layer is at fault for each finding",
+          "passed": true,
+          "evidence": "Section 3 'Three-layer rule: UI == API == DB == SOURCE. A break at any layer is a finding; identify WHICH layer broke (render bug vs API bug vs compute/ingestion bug).' Section 5 Phase 2 also instructs to tag each finding with 'layer-at-fault (render / API / compute-ingestion)'. Section 6 finding format requires 'Layer at fault (render / API / compute-ingestion)' for each confirmed finding."
+        },
+        {
+          "text": "The GOAL file's coverage checklist includes all three modules from the notes (invoices, payments, customer balances) plus the aging report",
+          "passed": true,
+          "evidence": "Section 4 checklist covers: 'Invoices' (list, detail, tax, status workflow, list mechanics), 'Payments (TOP PRIORITY \u2014 real money)' (list, detail, application against invoices, partial payments, multi-invoice/payment), and 'Customer Balances (HEADLINE \u2014 Jamie's month-end-close trust question)' with an explicit aging bucket sub-checklist. The aging report is a separate sub-section within Customer Balances with multiple checklist items."
+        },
+        {
+          "text": "The GOAL file includes an adversarial verification / refutation phase where independent checking attempts to refute findings before they are reported",
+          "passed": true,
+          "evidence": "Section 5 Phase 3 'Adversarial verification (CHECKING agents)': 'For EACH candidate finding, spawn an independent checking agent whose job is to REFUTE it: re-run the DB query, re-load the screen/API, and check for innocent explanations... Default to \"NOT a real finding\" unless the checker independently confirms. Only survivors ship as CONFIRMED.' Section 6 deliverable also requires a 'REFUTED / INCONCLUSIVE' section."
+        },
+        {
+          "text": "The GOAL file carries forward BOTH specific access gotchas from the notes: the db.ts/getDb migration-on-import hazard AND the httpOnly session cookie auth pattern",
+          "passed": true,
+          "evidence": "Section 3A: '\u26a0 DO NOT import/instantiate the app's own DB layer server/utils/db.ts \u2014 it RUNS PENDING MIGRATIONS on first import (a write). Always open your own raw pg connection.' Section 3B: 'the session cookie is db_session and is httpOnly (NOT readable from JS). To get it: replay the login POST to /api/auth/login with email/password; the response sets db_session.'"
+        },
+        {
+          "text": "The GOAL file gives special handling to the statement-export action (not safe to click / verify read-only) and the 404ing Credit Notes screen",
+          "passed": true,
+          "evidence": "Section 0 Prime Directive: 'click the \"Statement export\" button or any export/generate/recompute control \u2014 it is UNKNOWN whether it generates server-side state (see DATA-STATE); treat it as a write until proven otherwise.' Section 2 Navigation gotchas: 'Credit Notes appears in the nav but 404s \u2014 believed UNRELEASED. Do not chase it as a bug; record it as out-of-scope/blocked (unreleased) in the coverage matrix.' Section 4 Customer Balances checklist: '[ ] Statement export \u2014 DO NOT click. Read the handler...' and '[ ] Credit Notes screen 404s \u2014 unreleased; out of scope (coverage = Blocked: unreleased)' in Section 3 DATA-STATE."
+        },
+        {
+          "text": "The GOAL file defines the deliverable report structure including a coverage matrix with no silent gaps and a refuted/inconclusive section",
+          "passed": true,
+          "evidence": "Section 6 Deliverable defines the full report structure including: 'COVERAGE MATRIX: every Section-4 item marked Covered / Blocked / Skipped (with reason). NO SILENT GAPS.' and 'REFUTED / INCONCLUSIVE: candidate claims that did NOT survive checking (e.g. if the Apex aging figure turns out to have an innocent explanation), so they aren't silently dropped.' Section 7 Success Criteria also states: 'Every Section-4 item exercised or explicitly marked Blocked with a reason (no silent truncation).'"
+        },
+        {
+          "text": "The GOAL file prioritizes customer-balance / aging / month-end-close correctness (Jamie's question) prominently in execution priority or success criteria",
+          "passed": true,
+          "evidence": "Section 1 Mission: 'CLIENT-CRITICAL QUESTION (drives severity): Jamie on the Durable side explicitly asked \"can we trust the balances screen for month-end close?\" The Customer Balances module \u2014 outstanding balances + aging buckets + statement totals \u2014 is the headline. Prioritize proving or disproving its correctness.' Section 6 Report structure: 'SUMMARY... explicitly answering Jamie's \"can we trust the balances screen for month-end close?\" question.' Section 7 Success Criteria: 'Jamie's month-end-close trust question is answered directly in the SUMMARY, backed by the balances + aging reconciliation.'"
+        },
+        {
+          "text": "The GOAL file flags the suspicious Apex Manufacturing aging-bucket observation ($12,400 in 31-60 bucket with oldest invoice 14 days old) as a lead to verify",
+          "passed": true,
+          "evidence": "Section 3 DATA-STATE: 'SUSPECTED AGING BUG (highest-priority lead): on the aging report, Apex Manufacturing showed $12,400 in the 31-60 bucket, but their OLDEST unpaid invoice is dated 2026-05-18 \u2014 only 14 days old as of 2026-06-01, which should land in the 0-30 bucket, not 31-60.' Section 4 Customer Balances checklist explicitly includes: 'verify the Apex Manufacturing $12,400 lead above'. Section 7 Success Criteria: 'The Apex Manufacturing aging lead is resolved to a CONFIRMED finding or REFUTED with evidence.'"
+        },
+        {
+          "text": "No live URL or external system was accessed during the run (work was done purely from the notes file)",
+          "passed": true,
+          "evidence": "The GOAL file is a standalone planning document that contains only information traceable to the fixture notes (durable-billing-app-notes.md): the live URL, stack details, login, API patterns, db.ts hazard, httpOnly cookie, data state (47 invoices, 31 payments, 12 customers, $84,312.50), Apex Manufacturing $12,400 observation, Statement export uncertainty, and Credit Notes 404 are all present in the fixture. No external data beyond the fixture appears in the GOAL file. The file contains no fetched HTML, live API responses, or data inconsistent with offline authoring."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 12,
+        "failed": 0,
+        "total": 12,
+        "time_seconds": 91.3,
+        "tokens": 35839,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The report contains a re-verification section that addresses ALL 5 prior findings by ID (ORD-01, ORD-02, ORD-03, FUL-01, FUL-02) \u2014 none silently dropped",
+          "passed": true,
+          "evidence": "Section 4 'RE-VERIFICATION OF PRIOR RUN' contains a table with all five prior finding IDs explicitly: ORD-01 (Fixed), ORD-02 (Fixed), FUL-01 (Still broken), ORD-03 (Fixed), FUL-02 (Blocked \u2014 unknown). None are silently dropped."
+        },
+        {
+          "text": "ORD-01 (discount drop) is marked Fixed/resolved with the evidence that all three layers now agree on $1,564.00",
+          "passed": true,
+          "evidence": "Section 4 row for ORD-01: '\u2705 Fixed \u2014 UI header = $1,564.00; API /api/orders/ORD-2241 total:1564.00 with lines [1200, 640, -276]; DB SUM(amount) WHERE order_id='ord_8821f' = 1564.00. All three layers agree.' Directly grounds the claim in the fixture evidence."
+        },
+        {
+          "text": "ORD-02 (cancelled orders in Open Orders KPI) is marked Fixed/resolved, correctly handling that the count changed from 11 to 12 due to a new order (not flagging the different number as a failure)",
+          "passed": true,
+          "evidence": "Section 4 row for ORD-02: '\u2705 Fixed \u2014 Tile = 12; DB COUNT(*) WHERE status NOT IN ('cancelled','fulfilled') = 12 (one new order since last run; 3 cancelled correctly excluded); API /api/orders/stats {open:12}. Matches.' The report explicitly explains the count moved from 11 to 12 due to a new order and does not flag this as a defect."
+        },
+        {
+          "text": "ORD-03 (date filter timezone) is marked Fixed/resolved with evidence",
+          "passed": true,
+          "evidence": "Section 4 row for ORD-03: '\u2705 Fixed \u2014 ?from=2026-05-28&to=2026-05-28 returns 5; DB created_at::date AT TIME ZONE 'America/New_York' = '2026-05-28' = 5; an 11pm ET order is now included correctly across 3 tested dates.' Clear fixed verdict with supporting evidence."
+        },
+        {
+          "text": "FUL-01 (shipment delivered vs in-transit) is marked STILL BROKEN / not fixed \u2014 not marked as resolved",
+          "passed": true,
+          "evidence": "Section 4 row for FUL-01: '\u274c Still broken \u2014 UI/DB still status='delivered', delivered_at='2026-05-23'; carrier page 2026-06-01 09:00 ET = \"Out for delivery\". 6 new webhook events since 05-25 all written delivered regardless of event type.' Also a full confirmed finding in Section 5."
+        },
+        {
+          "text": "FUL-02 (tracking number whitespace) is marked blocked/not-verifiable because the fulfillment detail screen now 500s \u2014 it is NOT marked as fixed and NOT silently dropped",
+          "passed": true,
+          "evidence": "Section 4 row for FUL-02: '\ud83d\udeab Blocked \u2014 unknown \u2014 Could not re-verify: the fulfillment detail screen now 500s on every shipment (FUL-03) before the tracking number renders. Listed so it is not silently dropped \u2014 re-check once FUL-03 is fixed.' The coverage matrix also shows '\ud83d\udeab Blocked' for tracking-number whitespace with the same explanation."
+        },
+        {
+          "text": "The fulfillment detail screen 500 error (all 28 shipments) is reported as a NEW confirmed finding with High or Critical severity",
+          "passed": true,
+          "evidence": "Section 5 FUL-03: 'Fulfillment \u00b7 CRITICAL \u00b7 Fulfillment detail screen 500s on all 28 shipments \u2014 the entire detail view is unreachable'. The finding is explicitly marked CRITICAL, appears in the confirmed findings section, and the summary table lists it as the sole Critical finding (FUL-03). The report also states it is 'New in v7a91d03'."
+        },
+        {
+          "text": "The negative available credit (\u2212$2,300.00, customer over limit) is NOT reported as a confirmed defect \u2014 it is treated as correct behavior, refuted, or at most a low-severity display/UX consideration",
+          "passed": true,
+          "evidence": "Section 6 (Refuted / Inconclusive): 'Customer credit balance shows negative \"\u2212$2,300.00\" (CUST-014). Raised as a possible math defect. Refuted: credit_limit = 10,000.00, SUM(open order totals) = 12,300.00, and 10,000 \u2212 12,300 = \u22122,300.00 \u2014 the arithmetic is correct and the customer is genuinely over their credit limit... Whether a bare negative reads clearly... is a UX/presentation question, not a functionality defect \u2014 routed to the UX lane, not reported here.' It is explicitly NOT in the confirmed findings list."
+        },
+        {
+          "text": "The June payments $0.00 observation is NOT reported as a defect (correctly identified as accurate for June 1)",
+          "passed": true,
+          "evidence": "Section 6: 'Payments \"Total received this month\" = $0.00 (June). Raised as a possible aggregate bug. Refuted: DB SUM(amount) FROM payments WHERE received_at >= '2026-06-01' returns 0 rows \u2014 no June payments exist yet (run date is June 1). $0.00 is the correct aggregate over an empty set. No defect.' Correctly refuted and not listed as a confirmed finding."
+        },
+        {
+          "text": "The report includes a severity summary (counts by severity)",
+          "passed": true,
+          "evidence": "Section 1 'SUMMARY' contains a table: 'Critical \u2014 1 (FUL-03), High \u2014 1 (FUL-01), Medium \u2014 0, Low \u2014 0'. The YAML frontmatter also echoes: total_findings:2, critical:1, high:1, medium:0, low:0."
+        },
+        {
+          "text": "The report includes a coverage matrix or explicit coverage statement showing what was checked vs blocked",
+          "passed": true,
+          "evidence": "Section 3 'COVERAGE MATRIX (no silent gaps)' provides separate tables for Orders and Fulfillment showing each item's status: \u2705 Covered or \ud83d\udeab Blocked, with explicit notes. The summary paragraph in Section 1 also lists all screens covered."
+        },
+        {
+          "text": "Each confirmed finding includes evidence/proof, repro steps, and the layer at fault",
+          "passed": true,
+          "evidence": "FUL-03 in Section 5 includes: Expected/Actual with proof (API returns valid JSON, render 500s), Layer at fault (render layer), Repro steps (navigate to any /fulfillment/SHP-* and observe 500; hit API to confirm). FUL-01 includes: Expected/Actual with proof (carrier page pulled at specific time), Layer at fault (ingestion \u2014 webhook handler), Repro steps (open SHP-0092, compare to carrier tracking page, inspect webhook log). Both confirmed findings satisfy all three sub-requirements."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 15,
+        "failed": 0,
+        "total": 15,
+        "time_seconds": 131.8,
+        "tokens": 44361,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The missing $1,750 line on INV-3318 (UI shows 2 lines, API/DB have 3) is reported as a confirmed finding with the layer identified as render/UI (since API and DB agree and the header is correct)",
+          "passed": true,
+          "evidence": "Finding AP-L1 confirms: 'UI line grid shows only 2 lines ($6,000 + $3,500 = $9,500); the $1,750 line is missing from the grid.' Layer at fault explicitly stated as 'Render \u2014 API and DB both carry 3 lines; the grid drops one in display.' Listed under CONFIRMED FINDINGS."
+        },
+        {
+          "text": "The paid invoice INV-3301 still counted in Hartwell Supply's outstanding balance ($14,760 vs correct $9,840) is reported as a confirmed finding with High or Critical severity",
+          "passed": true,
+          "evidence": "Finding AP-B1 is rated CRITICAL: 'Vendor Balances \u00b7 CRITICAL \u00b7 Paid invoice still counted as outstanding \u2014 Hartwell balance overstated by $4,920.' The report documents $14,760 actual vs $9,840 expected and confirms this as a Critical finding."
+        },
+        {
+          "text": "The Net-45 vs Net-15 due date extraction error on INV-3340 is reported as a confirmed finding with the layer identified as ingestion/extraction",
+          "passed": true,
+          "evidence": "Finding AP-ING1 states: 'Invoices / Ingestion \u00b7 HIGH \u00b7 Due date mis-ingested (Net 15 instead of Net 45).' Layer at fault: 'Ingestion / extraction \u2014 the Net-terms parse pulled the wrong value from the source document.' Listed under CONFIRMED FINDINGS."
+        },
+        {
+          "text": "The 'Invalid Date' render on the payment run screen is reported as a confirmed finding (null not handled)",
+          "passed": true,
+          "evidence": "Finding AP-R1 states: 'Payment Run \u00b7 LOW \u00b7 \"Invalid Date\" rendered when no run is scheduled (null next_run_at).' Explains 'the render passes null straight into a date formatter without a null guard.' Listed under CONFIRMED FINDINGS."
+        },
+        {
+          "text": "The case-sensitive search (lowercase 'hartwell' returns 0 results) is reported as a confirmed finding",
+          "passed": true,
+          "evidence": "Finding AP-S1 states: 'Search \u00b7 MEDIUM \u00b7 Search is case-sensitive \u2014 \"hartwell\" returns 0 of 6 existing records.' Repro steps confirm 'hartwell (lowercase) returns 0 results' despite DB having 6 rows. Listed under CONFIRMED FINDINGS."
+        },
+        {
+          "text": "The orange approve button color observation is NOT in the confirmed functionality findings list (excluded entirely or explicitly routed to the UX/design lane)",
+          "passed": true,
+          "evidence": "Under 'Routed out-of-lane (DESIGN / UX)': 'Approve button is bright orange while primary actions elsewhere are blue (off-brand). \u2014 UX (color/consistency); no functional impact.' This observation does not appear in the CONFIRMED FINDINGS section."
+        },
+        {
+          "text": "The below-the-fold contact email observation is NOT in the confirmed functionality findings list (excluded or routed to UX lane)",
+          "passed": true,
+          "evidence": "Under 'Routed out-of-lane (DESIGN / UX)': 'Vendor contact email sits below the fold on a 13\" screen (must scroll to find). \u2014 UX (information hierarchy); the data is present and correct.' Not present in CONFIRMED FINDINGS."
+        },
+        {
+          "text": "The blank empty-state on Credit Memos is NOT reported as a functionality defect (the data being empty is correct; styling concerns routed to UX at most)",
+          "passed": true,
+          "evidence": "Under 'Routed out-of-lane (DESIGN / UX)': 'Credit Memos empty state is a blank white area with no message/illustration. The DB has 0 credit memos, so empty is correct \u2014 this is purely a state-communication (UX) gap, not a data defect.' Not filed as a functionality finding. The coverage matrix also notes: '0 credit memos in DB \u2014 no math to exercise. (The blank empty-state presentation is a UX-lane item, routed there.)'"
+        },
+        {
+          "text": "The INV-3310 shipping amount ($1,062.50 = $1,000 + $62.50 shipping) is treated as refuted / not-a-bug, ideally listed in a refuted/inconclusive section with the shipping explanation",
+          "passed": true,
+          "evidence": "Under REFUTED / INCONCLUSIVE: 'INV-3310 \"math error\" ($1,062.50 vs $1,000). Initially flagged: 4 \u00d7 $250 = $1,000 \u2260 header $1,062.50. Refuted \u2014 the API payload and source PDF both carry a shipping_amount of $62.50; $1,000 + $62.50 = $1,062.50. Header is correct once shipping is included. Not a finding.'"
+        },
+        {
+          "text": "The NetSuite export is marked as blocked/not exercised with the read-only/external-write reason \u2014 not silently omitted",
+          "passed": true,
+          "evidence": "Coverage matrix under 'Export to NetSuite': '\u23ed Skipped | Clicking would POST /api/vendor-pay/exports \u2192 a write to the client's NetSuite sandbox. Not exercised per read-only Prime Directive.' Also confirmed under Inconclusive section: 'Export to NetSuite correctness \u2014 left UNVERIFIED per the Prime Directive; exercising it would POST /api/vendor-pay/exports and write to the client's NetSuite sandbox.'"
+        },
+        {
+          "text": "The approval routing thresholds are marked as not exercisable (0 routing rules configured) \u2014 not silently omitted",
+          "passed": true,
+          "evidence": "Coverage matrix under 'Approval routing thresholds': '\ud83d\udeab Blocked | ap_routing_rules has 0 rows \u2014 threshold routing cannot be exercised on live data. Not checked; not implied checked.' Also under Inconclusive: 'Threshold routing correctness \u2014 UNVERIFIED: ap_routing_rules has 0 rows, so routing cannot be exercised on live data.'"
+        },
+        {
+          "text": "The Pell Industrial duplicate detection is reported as working correctly (true duplicate), not as a defect",
+          "passed": true,
+          "evidence": "Under REFUTED / INCONCLUSIVE: 'INV-3299 / INV-3322 duplicate flag. Considered as a possible false-positive duplicate. Refuted \u2014 both are Pell Industrial, same amount $880.00, same invoice number \"PI-2026-0455\", same PDF hash: a genuine duplicate the vendor sent twice. The flag is correct; no finding.' Not present in CONFIRMED FINDINGS."
+        },
+        {
+          "text": "Every confirmed finding includes proof/evidence, reproduction steps, and a layer-at-fault attribution",
+          "passed": true,
+          "evidence": "All 5 confirmed findings (AP-B1, AP-ING1, AP-L1, AP-S1, AP-R1) each include: an 'Expected/Actual' evidence block (proof), a 'Repro' section with steps, and a 'Layer at fault' attribution explicitly named. For example AP-B1: Layer='API / rollup query', Repro='Open vendor balances \u2192 Hartwell Supply \u2192 note $14,760 \u2192 compare...', Evidence='DB SELECT SUM...'."
+        },
+        {
+          "text": "The report includes a coverage matrix and a separate refuted/inconclusive section",
+          "passed": true,
+          "evidence": "The report contains a full 'COVERAGE MATRIX (no silent gaps)' section with module-by-module tables, and a separate 'REFUTED / INCONCLUSIVE (did not survive checking)' section listing three refuted observations and two inconclusive items."
+        },
+        {
+          "text": "The report includes a 'top fixes first' / quick-wins prioritization or severity-ordered summary",
+          "passed": true,
+          "evidence": "The report includes a 'TOP 5 TO FIX FIRST (ordered by client impact \u00f7 fix effort)' section listing all 5 findings in priority order. The SUMMARY table also provides severity-ordered counts (Critical / High / Medium / Low)."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 12,
+        "failed": 0,
+        "total": 12,
+        "time_seconds": 107.3,
+        "tokens": 30462,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The GOAL file contains an explicit read-only / do-not-mutate prime directive that prohibits creating, editing, approving, deleting records and DB writes on the shared live app",
+          "passed": true,
+          "evidence": "Section 0 'PRIME DIRECTIVE \u2014 READ ONLY, DO NO HARM' explicitly states: 'Never mutate state. Never create, edit, delete, or transition any record. Never trigger any action that could write to the database, send anything to a customer, or change anything an ops user would see.' It also lists concrete read-only constraints prohibiting creation/editing/deletion of invoices, payments, customers, balances, and statements."
+        },
+        {
+          "text": "The GOAL file specifies a fully-autonomous operating mode: never pause for confirmation; blocked/ambiguous items are recorded (BLOCKED or UNVERIFIED) and the run continues",
+          "passed": true,
+          "evidence": "Section 1 'OPERATING MODE \u2014 AUTONOMOUS' states: 'Run this audit start-to-finish without pausing for human input.' and 'Do not ask clarifying questions... If you genuinely cannot resolve something... record it as BLOCKED / INCONCLUSIVE with the reason and move on. A blocked item is a reportable result, not a reason to stop.'"
+        },
+        {
+          "text": "The GOAL file explicitly scopes OUT design/UX review as another reviewer's lane (lane boundary stated)",
+          "passed": true,
+          "evidence": "Section 2 'OUT OF SCOPE' states: 'UX / visual / design feedback. Matt is covering UX/design feedback in a separate lane. Do not raise styling, layout, copy, color, spacing, or \"feels off\" observations. If you notice a design issue, drop it or note \"routed to UX lane\" \u2014 do not write it up as a finding here.'"
+        },
+        {
+          "text": "The GOAL file includes a layered ground-truth rule comparing UI vs API vs DB and instructs to name which layer is at fault for each finding",
+          "passed": true,
+          "evidence": "Section 3 'GROUND-TRUTH RULES \u2014 LAYERED VERIFICATION' defines a four-layer order (DB \u2192 API \u2192 Repo/logic \u2192 UI) and mandates: 'When the UI and a lower layer disagree, the discrepancy itself is the finding; pinpoint where (DB\u2194API, API\u2194UI, or logic\u2194data) it diverges.' and 'Every confirmed finding must carry: proof... the layer(s) the divergence lives at.'"
+        },
+        {
+          "text": "The GOAL file's coverage checklist includes all three modules from the notes (invoices, payments, customer balances) plus the aging report",
+          "passed": true,
+          "evidence": "Section 5 'COVERAGE CHECKLIST' explicitly enumerates Invoices (with sub-items), Payments (with sub-items), Customer balances + aging (with sub-items including aging buckets), and Edge screens including 'Aging report screen'. All three modules from the notes are present plus the aging report."
+        },
+        {
+          "text": "The GOAL file includes an adversarial verification / refutation phase where independent checking attempts to refute findings before they are reported",
+          "passed": true,
+          "evidence": "Section 6 Phase D 'Adversarial verification (mandatory final phase)' states: 'Before writing the deliverable, try to break your own conclusions: For each CONFIRMED bug: attempt to disprove it... Only findings that survive Phase D go in the report as confirmed.'"
+        },
+        {
+          "text": "The GOAL file carries forward BOTH specific access gotchas from the notes: the db.ts/getDb migration-on-import hazard AND the httpOnly session cookie auth pattern",
+          "passed": true,
+          "evidence": "Section 0 states: 'DO NOT use the app's own DB helper server/utils/db.ts for queries. It runs pending migrations on first import \u2014 importing it against the live DB could mutate the schema/data. This is a hard hazard.' Section 1 describes: 'Session: cookie db_session, httpOnly (not readable from JS). To call APIs programmatically, replay the login POST to /api/auth/login with email/password \u2014 the response sets db_session.' Both gotchas from the notes are present."
+        },
+        {
+          "text": "The GOAL file gives special handling to the statement-export action (not safe to click / verify read-only) and the 404ing Credit Notes screen",
+          "passed": true,
+          "evidence": "Section 0 (prime directive) states: 'the Statement export button was NOT clicked during recon because it is unknown whether it generates server-side state \u2014 do not click it on the live app. Verify its behavior by reading the server route in the local repo first.' Section 5 edge screens checklist covers both 'Statement export' (confirm behavior by reading source first) and 'Credit Notes screen \u2014 nav link 404s; confirm it's unreleased...'"
+        },
+        {
+          "text": "The GOAL file defines the deliverable report structure including a coverage matrix with no silent gaps and a refuted/inconclusive section",
+          "passed": true,
+          "evidence": "Section 7 'DELIVERABLE SPEC' defines a 9-part report structure including item 5: 'Coverage matrix \u2014 every item in \u00a75 with its explicit status. No silent gaps; blocked items shown as blocked with reasons.' and item 6: 'Refuted / not-a-bug' section and item 7: 'Blocked / inconclusive' section."
+        },
+        {
+          "text": "The GOAL file prioritizes customer-balance / aging / month-end-close correctness (Jamie's question) prominently in execution priority or success criteria",
+          "passed": true,
+          "evidence": "Section 4 is titled 'PRIORITY \u2014 JAMIE'S MONTH-END-CLOSE QUESTION' and opens with Jamie's direct quote: 'Can we trust the balances screen for month-end close?' and states: 'This is the headline question the deliverable must answer directly and defensibly. The customer-balances and aging modules are therefore the top priority.' Section 8 success criteria also states: 'Jamie's month-end-close question is answered directly with layered evidence.'"
+        },
+        {
+          "text": "The GOAL file flags the suspicious Apex Manufacturing aging-bucket observation ($12,400 in 31-60 bucket with oldest invoice 14 days old) as a lead to verify",
+          "passed": true,
+          "evidence": "Section 4 states: 'Apex Manufacturing showed $12,400 in the 31-60 bucket, but their oldest unpaid invoice is dated 2026-05-18 \u2014 only 14 days ago (as of 2026-06-01), which should fall in 0-30.' The section provides detailed sub-tasks to investigate this lead including repo logic, DB SELECTs, and generalization check."
+        },
+        {
+          "text": "No live URL or external system was accessed during the run (work was done purely from the notes file)",
+          "passed": true,
+          "evidence": "The GOAL file is an authoring artifact (a task specification), not an execution trace. All factual content in the GOAL file (app URL, data counts: 47 invoices, 31 payments, 12 customers, $84,312.50 in payments, Apex Manufacturing $12,400 aging figure, 2026-05-18 invoice date, db.ts hazard, httpOnly cookie pattern, Credit Notes 404, statement export uncertainty) is traceable to and consistent with the fixture notes at fixtures/durable-billing-app-notes.md. No content suggests fetched live data \u2014 for example, no API responses, no DB query results, no screenshots or dynamically fetched records appear in the output. The file instructs the executing agent to access live systems; it does not itself access them."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.92,
+        "passed": 11,
+        "failed": 1,
+        "total": 12,
+        "time_seconds": 70.2,
+        "tokens": 28499,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The report contains a re-verification section that addresses ALL 5 prior findings by ID (ORD-01, ORD-02, ORD-03, FUL-01, FUL-02) \u2014 none silently dropped",
+          "passed": true,
+          "evidence": "Section 1 summary table lists all five by ID (ORD-01, ORD-02, FUL-01, ORD-03, FUL-02). Dedicated subsections appear in Sections 2 and 3 for each. None are omitted."
+        },
+        {
+          "text": "ORD-01 (discount drop) is marked Fixed/resolved with the evidence that all three layers now agree on $1,564.00",
+          "passed": true,
+          "evidence": "Section 2 ORD-01: 'All three layers agree at $1,564.00' \u2014 UI header ($1,564.00), API ({'total': 1564.00, 'lines': [1200.00, 640.00, -276.00]}), DB (SELECT SUM \u2192 1564.00). Verdict: 'Fixed.'"
+        },
+        {
+          "text": "ORD-02 (cancelled orders in Open Orders KPI) is marked Fixed/resolved, correctly handling that the count changed from 11 to 12 due to a new order (not flagging the different number as a failure)",
+          "passed": true,
+          "evidence": "Section 2 ORD-02: 'The count moved 11 \u2192 12 only because a genuine new order was created between runs \u2014 not a regression.' DB and API both show 12. Verdict: 'Fixed.'"
+        },
+        {
+          "text": "ORD-03 (date filter timezone) is marked Fixed/resolved with evidence",
+          "passed": true,
+          "evidence": "Section 2 ORD-03: returns 5 orders for 2026-05-28, DB confirms 5 with AT TIME ZONE 'America/New_York', spot-checked 2 more dates including one with an 11pm ET order. Verdict: 'Fixed.'"
+        },
+        {
+          "text": "FUL-01 (shipment delivered vs in-transit) is marked STILL BROKEN / not fixed \u2014 not marked as resolved",
+          "passed": true,
+          "evidence": "Section 3 FUL-01: labeled 'STILL PRESENT (unchanged from prior run)'. Verdict: 'NOT FIXED.' Cites 6 new mis-written carrier events since the prior run."
+        },
+        {
+          "text": "FUL-02 (tracking number whitespace) is marked blocked/not-verifiable because the fulfillment detail screen now 500s \u2014 it is NOT marked as fixed and NOT silently dropped",
+          "passed": true,
+          "evidence": "Section 3 FUL-02: 'Status UNKNOWN. Carry forward and re-verify once NEW-01 is fixed. Not marked resolved.' Also in Section 1 summary table as '\u26a0\ufe0f UNVERIFIABLE (blocked by NEW-01)'. Appears in Section 3 header: 'FUL-02 \u00b7 Fulfillment \u00b7 LOW \u00b7 UNVERIFIABLE THIS RUN (blocked by NEW-01)'."
+        },
+        {
+          "text": "The fulfillment detail screen 500 error (all 28 shipments) is reported as a NEW confirmed finding with High or Critical severity",
+          "passed": true,
+          "evidence": "Section 3 NEW-01: 'CRITICAL \u00b7 NEW REGRESSION \u2014 fulfillment detail screen 500s for every shipment'. Affects all 28 shipments. Section 1 summary table labels it Critical."
+        },
+        {
+          "text": "The negative available credit (\u2212$2,300.00, customer over limit) is NOT reported as a confirmed defect \u2014 it is treated as correct behavior, refuted, or at most a low-severity display/UX consideration",
+          "passed": true,
+          "evidence": "Section 4 NEG-CREDIT: 'Not a bug. The arithmetic (10000 \u2212 12300 = \u22122300) is correct \u2014 the customer is genuinely over their credit limit.' Only a parenthetical UX note is offered, with 'No functional finding raised.'"
+        },
+        {
+          "text": "The June payments $0.00 observation is NOT reported as a defect (correctly identified as accurate for June 1)",
+          "passed": true,
+          "evidence": "Section 4 JUNE-PAYMENTS: 'No payments have been recorded in June yet (today is June 1). $0.00 is genuinely correct. No finding raised.'"
+        },
+        {
+          "text": "The report includes a severity summary (counts by severity)",
+          "passed": true,
+          "evidence": "Section 1 headline: 'Net severity movement vs. prior run: Critical 1 \u2192 1 (the old one fixed, a new one introduced), High 2 \u2192 1, Medium 1 \u2192 0, Low 1 \u2192 0 (1 unverifiable).' This provides current severity counts by category. The Section 1 summary table also lists severity per finding."
+        },
+        {
+          "text": "The report includes a coverage matrix or explicit coverage statement showing what was checked vs blocked",
+          "passed": true,
+          "evidence": "Section 1 summary table lists all 5 prior findings with a 'Status in v7a91d03' column (RESOLVED / STILL PRESENT / UNVERIFIABLE), explicitly showing what was checked vs blocked. FUL-02 is called out as 'UNVERIFIABLE (blocked by NEW-01)'. Section 3 FUL-02 explains it could not be checked due to the 500 regression."
+        },
+        {
+          "text": "Each confirmed finding includes evidence/proof, repro steps, and the layer at fault",
+          "passed": false,
+          "evidence": "FUL-01 and NEW-01 are the active confirmed findings. Both include evidence and a layer at fault. However, neither has explicit repro steps. FUL-01 names the URL and evidence but omits a 'Repro:' block. NEW-01 describes the failure and scopes it (list works, detail 500s, API fine) but gives no step-by-step reproduction procedure. The prior findings format used explicit 'Repro:' sections; this report drops them for both confirmed findings."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.93,
+        "passed": 14,
+        "failed": 1,
+        "total": 15,
+        "time_seconds": 72.5,
+        "tokens": 26581,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The missing $1,750 line on INV-3318 (UI shows 2 lines, API/DB have 3) is reported as a confirmed finding with the layer identified as render/UI (since API and DB agree and the header is correct)",
+          "passed": true,
+          "evidence": "F-2 states: 'the UI line grid renders only two lines ($6,000 + $3,500 = $9,500), silently omitting the $1,750 line' and explicitly labels this 'a rendering/display defect, not a data-loss bug.' API and DB having all three lines is noted. Layer clearly identified as render/UI."
+        },
+        {
+          "text": "The paid invoice INV-3301 still counted in Hartwell Supply's outstanding balance ($14,760 vs correct $9,840) is reported as a confirmed finding with High or Critical severity",
+          "passed": true,
+          "evidence": "F-1 is listed under 'High-severity findings' with the exact figures: '$14,760.00' outstanding shown vs '$9,840.00' DB sum, and 'INV-3301, which has status=\\'paid\\' (paid 2026-05-28) but is still included in the outstanding rollup.' Severity is explicitly High."
+        },
+        {
+          "text": "The Net-45 vs Net-15 due date extraction error on INV-3340 is reported as a confirmed finding with the layer identified as ingestion/extraction",
+          "passed": true,
+          "evidence": "F-4 states: 'The ingestion pipeline extracted \"Net 15\" instead of \"Net 45\"' and labels it 'an extraction-accuracy problem at ingestion.' Layer is explicitly identified as ingestion/extraction."
+        },
+        {
+          "text": "The 'Invalid Date' render on the payment run screen is reported as a confirmed finding (null not handled)",
+          "passed": true,
+          "evidence": "F-3 states: 'The Payment Run screen header shows \"Next scheduled run: Invalid Date.\" The API returns next_run_at: null (no run is actually scheduled). The render path does not handle the null case and feeds it straight into a date formatter.' Confirmed finding with null-handling root cause identified."
+        },
+        {
+          "text": "The case-sensitive search (lowercase 'hartwell' returns 0 results) is reported as a confirmed finding",
+          "passed": true,
+          "evidence": "F-5 states: 'Searching \"hartwell\" (lowercase) returns 0 results, even though the DB has the same 6 rows either way.' Reported as a confirmed functionality defect under Medium-severity findings."
+        },
+        {
+          "text": "The orange approve button color observation is NOT in the confirmed functionality findings list (excluded entirely or explicitly routed to the UX/design lane)",
+          "passed": true,
+          "evidence": "Appendix section 'Observations routed out of the functionality lane' explicitly lists Observation #5: 'Approve button is bright orange while primary actions elsewhere are blue; off-brand inconsistency.' It is not in any confirmed finding and is explicitly routed out."
+        },
+        {
+          "text": "The below-the-fold contact email observation is NOT in the confirmed functionality findings list (excluded or routed to UX lane)",
+          "passed": true,
+          "evidence": "Appendix explicitly lists Observation #9: 'Vendor detail page pushes the contact email below the fold on a 13\" screen; requires scrolling.' Routed to design/UX lane, not in confirmed findings."
+        },
+        {
+          "text": "The blank empty-state on Credit Memos is NOT reported as a functionality defect (the data being empty is correct; styling concerns routed to UX at most)",
+          "passed": true,
+          "evidence": "Appendix for Observation #12 states: 'Functionally the empty state is correct \u2014 0 credit memos in the DB \u2014 so there is no functionality defect; the gap is purely the missing empty-state treatment, which is a design concern.' Correctly excluded from functionality defects."
+        },
+        {
+          "text": "The INV-3310 shipping amount ($1,062.50 = $1,000 + $62.50 shipping) is treated as refuted / not-a-bug, ideally listed in a refuted/inconclusive section with the shipping explanation",
+          "passed": true,
+          "evidence": "Under 'Checks that passed': 'INV-3310 total. Header $1,062.50 initially looked like a math error vs the $1,000 line sum (4 \u00d7 $250), but the API payload and PDF both include a shipping_amount of $62.50; $1,000 + $62.50 = $1,062.50. Correct.' Treated as not-a-bug with shipping explanation. The 'ideally' qualifier allows this to appear in a passed-checks section rather than a named refuted section."
+        },
+        {
+          "text": "The NetSuite export is marked as blocked/not exercised with the read-only/external-write reason \u2014 not silently omitted",
+          "passed": true,
+          "evidence": "G-1 states: 'The \"Export to NetSuite\" action targets POST /api/vendor-pay/exports, which would push data into the client's NetSuite sandbox (a write to an external system). Per read-only rules it was not clicked. Export correctness is unverified.' Explicitly marked with the read-only/external-write reason."
+        },
+        {
+          "text": "The approval routing thresholds are marked as not exercisable (0 routing rules configured) \u2014 not silently omitted",
+          "passed": true,
+          "evidence": "G-2 states: 'ap_routing_rules has 0 rows, so threshold-based approval routing cannot be exercised against live data. The feature's behavior is therefore unverified.' Explicitly marked as not exercisable with the reason given."
+        },
+        {
+          "text": "The Pell Industrial duplicate detection is reported as working correctly (true duplicate), not as a defect",
+          "passed": true,
+          "evidence": "Under 'Checks that passed': 'Duplicate detection. INV-3299 and INV-3322 flagged as duplicates: same vendor (Pell Industrial), same amount ($880.00), same invoice number (\"PI-2026-0455\"), same PDF hash. Confirmed a true duplicate (vendor sent twice); flag is correct.' Reported as a pass, not a defect."
+        },
+        {
+          "text": "Every confirmed finding includes proof/evidence, reproduction steps, and a layer-at-fault attribution",
+          "passed": true,
+          "evidence": "All five confirmed findings (F-1 through F-5) include: (1) evidence grounded in specific observations cross-checked against UI/API/DB; (2) descriptive reproduction context (which screen, which invoice, what action); (3) layer attribution \u2014 F-1 implicates the balance rollup/aggregation query, F-2 the render/display layer, F-3 the render path/null handling, F-4 the ingestion pipeline, F-5 the search comparison. Layers are described in prose rather than labeled with a formal 'Layer: X' tag, but the attribution is present and unambiguous in each case."
+        },
+        {
+          "text": "The report includes a coverage matrix and a separate refuted/inconclusive section",
+          "passed": false,
+          "evidence": "No coverage matrix is present. The report has a severity summary table and a 'Coverage gaps' section, but no matrix mapping test areas to coverage status. Additionally, there is no dedicated 'refuted/inconclusive' section \u2014 INV-3310 (the only refuted item) appears under 'Checks that passed,' not a labeled refuted section. Both structural elements required by this assertion are absent."
+        },
+        {
+          "text": "The report includes a 'top fixes first' / quick-wins prioritization or severity-ordered summary",
+          "passed": true,
+          "evidence": "The report is structured severity-ordered: High-severity findings first (F-1, F-2), then Medium (F-3, F-4, F-5), then coverage gaps, then passes. The summary table shows 'Severity counts.' The final recommendation section explicitly orders: 'Do not hand off until F-1 and F-2 are fixed... F-3, F-4, and F-5 should be fixed in the same pass.' This constitutes a severity-ordered prioritization."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 114.7667,
+        "stddev": 21.0025,
+        "min": 91.3,
+        "max": 131.8
+      },
+      "tokens": {
+        "mean": 40190.3,
+        "stddev": 4263.9,
+        "min": 35839,
+        "max": 44361
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.95,
+        "stddev": 0.0436,
+        "min": 0.92,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 83.3333,
+        "stddev": 20.7876,
+        "min": 70.2,
+        "max": 107.3
+      },
+      "tokens": {
+        "mean": 28514,
+        "stddev": 1940.5,
+        "min": 26581,
+        "max": 30462
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.05",
+      "time_seconds": "+31.4",
+      "tokens": "+11676"
+    }
+  },
+  "notes": [
+    "Eval 0 (goal-scaffold) is NON-DISCRIMINATING: both configurations scored 12/12. The fixture notes were detailed enough, and the prompt explicit enough ('functionality-lane GOAL file'), that the baseline replicated the pattern without the skill. To discriminate, use sparser/messier fixture notes or assertions checking structural specifics only the skill template enforces.",
+    "The skill's measurable edge is REPORT-STRUCTURE COMPLETENESS: both baseline failures were exactly the structural elements the skill's report-format reference enforces \u2014 repro steps per confirmed finding (eval 1 baseline) and coverage matrix + separate refuted/inconclusive section (eval 2 baseline).",
+    "Cost of the skill: +31.4s mean wall-clock (+38%) and ~+11.7k tokens (+41%) per run, from reading SKILL.md + references. Reasonable for a client-deliverable gate; not worth it for casual checks.",
+    "Baseline quality is high in absolute terms (95%): the underlying model is already strong at audit-report writing. The skill adds CONSISTENCY and the exact structural contract, not raw capability. Expect the delta to widen on real audits (live access discipline, GOAL re-use, re-verification cadence) which fixtures can't fully exercise.",
+    "Possible baseline inflation: output paths contained 'client-delivery-audit-workspace'/'without_skill', so baseline agents could infer the eval context; one baseline noted it explicitly. Fixtures were also authored following Michael's pattern, giving baselines pre-structured hints.",
+    "Assertion 'no live URL accessed' passes trivially in both arms (fixtures are fictional apps) \u2014 non-discriminating by design; keep it as a safety tripwire, not a quality signal."
+  ]
+}

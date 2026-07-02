@@ -1,0 +1,56 @@
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 173, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 142, in main
+    body = build_message()
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 53, in build_message
+    for p in iter_all_ideas(include_inbox=False, include_archive=False):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 173, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 142, in main
+    body = build_message()
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 53, in build_message
+    for p in iter_all_ideas(include_inbox=False, include_archive=False):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 173, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 142, in main
+    body = build_message()
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 53, in build_message
+    for p in iter_all_ideas(include_inbox=False, include_archive=False):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 173, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 142, in main
+    body = build_message()
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/weekly_digest.py", line 53, in build_message
+    for p in iter_all_ideas(include_inbox=False, include_archive=False):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+posted to D0B0T0ETDR8: ts=1780365799.859389
+posted to D0B0T0ETDR8: ts=1780366021.302809
+posted to D0B0T0ETDR8: ts=1780837206.393159
+posted to D0B0T0ETDR8: ts=1781442178.223849

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Compact Session"
+  short_description: "Within-session context compaction; produces a focused summary so the assistant works from the summary forward"
+  default_prompt: "Use $compact-session to compact the current conversation into a structured summary (completed work, open tasks, in-flight agents, Matt blockers, key memory rules, files touched, decisions made) and declare a working-from-summary shed."
+
+policy:
+  allow_implicit_invocation: true

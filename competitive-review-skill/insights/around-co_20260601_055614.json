@@ -1,0 +1,255 @@
+{
+  "name": "Around",
+  "url": "https://around.co",
+  "domain": "around.co",
+  "scanned_at": "2026-06-01T05:45:46.609244",
+  "sources": {
+    "landing": {
+      "url": "https://around.co",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://forsale.godaddy.com/forsale/around.co?\" on this server.\nReference #18.a4ed2117.1780307150.1d10042e\nhttps://errors.edgesuite.net/18.a4ed2117.1780307150.1d10042e",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://around.co/pricing",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://forsale.godaddy.com/forsale/around.co?\" on this server.\nReference #18.a4ed2117.1780307195.1d10bf9c\nhttps://errors.edgesuite.net/18.a4ed2117.1780307195.1d10bf9c",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://around.co/changelog",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://forsale.godaddy.com/forsale/around.co?\" on this server.\nReference #18.a4ed2117.1780307205.1d10e6b0\nhttps://errors.edgesuite.net/18.a4ed2117.1780307205.1d10e6b0",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://docs.around.co",
+      "title": "",
+      "text": "",
+      "source": "failed",
+      "error": "playwright: Page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://docs.around.co/\nCall log:\n  - navigating to \"https://docs.around.co/\", waiting until \"domcontentloaded\"\n; urllib: <urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1129)>"
+    },
+    "integrations": {
+      "url": "https://around.co/integrations",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://forsale.godaddy.com/forsale/around.co?\" on this server.\nReference #18.b0ed2117.1780307707.159fe9fe\nhttps://errors.edgesuite.net/18.b0ed2117.1780307707.159fe9fe",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/around/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Ethereum will use around 99.95% less energy post merge",
+          "url": "https://blog.ethereum.org/2021/05/18/country-power-no-more/",
+          "points": 1661,
+          "num_comments": 1690,
+          "created_at": "2021-05-18T13:55:41Z",
+          "hn_url": "https://news.ycombinator.com/item?id=27194586"
+        },
+        {
+          "title": "Planet Found in Habitable Zone Around Nearest Star",
+          "url": "https://www.eso.org/public/news/eso1629/",
+          "points": 1187,
+          "num_comments": 427,
+          "created_at": "2016-08-24T17:00:44Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12353441"
+        },
+        {
+          "title": "Ask HN: Has anyone here turned around their life in their 40s?",
+          "url": null,
+          "points": 1127,
+          "num_comments": 726,
+          "created_at": "2022-12-19T14:11:23Z",
+          "hn_url": "https://news.ycombinator.com/item?id=34052201"
+        },
+        {
+          "title": "Netflix Is Now Available Around the World",
+          "url": "https://media.netflix.com/en/press-releases/netflix-is-now-available-around-the-world",
+          "points": 1015,
+          "num_comments": 497,
+          "created_at": "2016-01-06T18:09:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=10852261"
+        },
+        {
+          "title": "Stripe laying off around 14% of workforce",
+          "url": "https://stripe.com/en-au/newsroom/news/ceo-patrick-collisons-email-to-stripe-employees",
+          "points": 997,
+          "num_comments": 1217,
+          "created_at": "2022-11-03T13:37:58Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33450753"
+        },
+        {
+          "title": "Google Container for Firefox \u2013 Prevent Google from tracking you around the web",
+          "url": "https://addons.mozilla.org/en-US/firefox/addon/google-container/?src=recommended",
+          "points": 959,
+          "num_comments": 290,
+          "created_at": "2018-11-30T03:30:23Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18566405"
+        },
+        {
+          "title": "Map showing birthplaces of \"notable people\" around the world",
+          "url": "https://tjukanovt.github.io/notable-people",
+          "points": 924,
+          "num_comments": 332,
+          "created_at": "2022-07-29T07:32:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=32274077"
+        },
+        {
+          "title": "Swedish Couple Builds Greenhouse Around Home",
+          "url": "https://returntonow.net/2019/03/04/swedish-couple-builds-greenhouse-around-home-to-stay-warm-and-grow-food-all-year-long/",
+          "points": 850,
+          "num_comments": 221,
+          "created_at": "2019-06-21T20:57:55Z",
+          "hn_url": "https://news.ycombinator.com/item?id=20246258"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://around.co/pricing",
+    "changelog": "https://around.co/changelog",
+    "docs": "https://docs.around.co",
+    "integrations": "https://around.co/integrations",
+    "g2": "https://www.g2.com/products/around/reviews"
+  },
+  "analysis": {
+    "name": "Around",
+    "url": "https://around.co",
+    "tagline": "unknown \u2014 domain is for sale (GoDaddy forsale page returned for all URLs)",
+    "value_proposition": "Focus-friendly video calling with floating circular video bubbles designed to stay out of the way while working",
+    "target_segment": "SMB / startup / remote-first teams",
+    "ideal_customer": "Small remote teams wanting lightweight, always-on video presence without full-screen meeting fatigue",
+    "features": [
+      {
+        "name": "floating circular video bubbles",
+        "description": "Small circular video frames that float on the desktop rather than taking over a full window",
+        "evidence_source": "other",
+        "evidence_quote": "Recalled from product coverage prior to shutdown; no live source available",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "noise cancellation",
+        "description": "AI-powered background noise suppression during calls",
+        "evidence_source": "other",
+        "evidence_quote": "Recalled from product coverage prior to shutdown; no live source available",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "background blur",
+        "description": "Real-time background blur or virtual background replacement",
+        "evidence_source": "other",
+        "evidence_quote": "Recalled from product coverage prior to shutdown; no live source available",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "screen sharing",
+        "description": "Share full screen or individual application windows during a call",
+        "evidence_source": "other",
+        "evidence_quote": "Recalled from product coverage prior to shutdown; no live source available",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "reactions",
+        "description": "Quick emoji reactions visible to other call participants",
+        "evidence_source": "other",
+        "evidence_quote": "Recalled from product coverage prior to shutdown; no live source available",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "drawing / annotation tools",
+        "description": "In-call annotation on shared screens",
+        "evidence_source": "other",
+        "evidence_quote": "Recalled from product coverage prior to shutdown; no live source available",
+        "tier": "all",
+        "confidence": "low"
+      },
+      {
+        "name": "desktop-native app",
+        "description": "Mac-first native desktop application rather than browser-based",
+        "evidence_source": "other",
+        "evidence_quote": "Recalled from product coverage prior to shutdown; no live source available",
+        "tier": "all",
+        "confidence": "low"
+      }
+    ],
+    "integrations": [],
+    "differentiators": [
+      "Floating circular video bubbles that don't interrupt workflow (vs. full-screen meetings)",
+      "Focus-first design philosophy for deep-work-compatible video presence"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "unknown",
+      "currency": "USD",
+      "free_tier": {
+        "available": null,
+        "limits": null
+      },
+      "tiers": [],
+      "enterprise": null,
+      "notes": "All source URLs (landing, pricing, changelog, integrations) returned GoDaddy 'domain for sale' access denied errors. Around.co appears to be a defunct/shut-down product \u2014 the company was acquired by Coda circa 2022-2023 and the product was subsequently discontinued. No live pricing data is available. All feature data above is low-confidence recall from training data, not extracted from live sources."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Tell HN: Meta's AI support feature allows Instagram accounts to be stolen",
+        "url": "https://news.ycombinator.com/item?id=48350239",
+        "points": 23,
+        "comments": 9,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48350239"
+      },
+      {
+        "title": "United flight forced to turn around because of a Bluetooth speaker name",
+        "url": "https://www.theverge.com/transportation/940486/united-flight-236-bluetooth-speaker-name-bomb",
+        "points": 3,
+        "comments": 2,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48347272"
+      },
+      {
+        "title": "Show HN: Manger \u2013 Livestock Management App",
+        "url": "https://www.manger.app/",
+        "points": 2,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48351776"
+      },
+      {
+        "title": "G7 Agrees on Shared Language Around Open-Source AI, Open Weights AI",
+        "url": "https://www.phoronix.com/news/G7-On-Open-Source-AI",
+        "points": 2,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48350096"
+      },
+      {
+        "title": "Ask HN: How do you solve AI's confused deputy problem?",
+        "url": "https://news.ycombinator.com/item?id=48352369",
+        "points": 1,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48352369"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "skill_name": "client-delivery-audit",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "goal-scaffold",
+      "prompt": "Durable Robotics' billing app needs a pre-delivery audit before we hand off Thursday. My probing notes are in the input file. Set up the functionality-lane audit GOAL file so an agent can run it end-to-end without asking me anything. Do NOT access any live system or URL — everything you need is in the notes; treat them as the complete recon. Save the GOAL file as a markdown file in the outputs directory.",
+      "expected_output": "A self-contained GOAL file with read-only prime directive, autonomous operating mode, in/out-of-scope lane boundaries, layered ground-truth rules, coverage checklist of all 3 modules + edge screens, phased method ending in adversarial verification, deliverable spec, and success criteria. Should incorporate the specific access gotchas from the notes (httpOnly cookie, db.ts migration hazard, unclicked statement export, 404ing credit notes screen) and Jamie's month-end-close question as a priority.",
+      "files": ["fixtures/durable-billing-app-notes.md"]
+    },
+    {
+      "id": 1,
+      "eval_name": "reverification-report",
+      "prompt": "Idan shipped a new build of the Acme portal overnight (v7a91d03). Last week's findings are in acme-portal-prior-findings.md. An agent walked the new build and captured raw observations in acme-portal-new-build-observations.md. Write up the re-verification FINDINGS report for the client team. Save it as a markdown file in the outputs directory.",
+      "expected_output": "A FINDINGS report that leads with a re-verification scoreboard covering ALL 5 prior findings (ORD-01 fixed, ORD-02 fixed, FUL-01 still broken, ORD-03 fixed, FUL-02 blocked/not-checkable due to the 500), reports the new fulfillment 500 as a new confirmed finding, treats the negative credit and $0 June payments as refuted/not-bugs (correct behavior), and includes a coverage matrix with no silent gaps.",
+      "files": ["fixtures/acme-portal-prior-findings.md", "fixtures/acme-portal-new-build-observations.md"]
+    },
+    {
+      "id": 2,
+      "eval_name": "lane-discipline",
+      "prompt": "Here are the raw observations from the functionality walkthrough of Meridian Aerospace's vendor-pay app (handoff next Friday). Some of it might be design stuff, I'm not sure. Write the findings report — this is the functionality lane. Save it as a markdown file in the outputs directory.",
+      "expected_output": "A functionality-lane FINDINGS report that: includes the real functionality bugs (missing UI line on INV-3318, paid invoice in vendor balance rollup, Net-45 ingestion error, Invalid Date render, case-sensitive search) with proof/repro/layer/severity per finding; EXCLUDES pure design observations (orange button, below-fold email, empty-state styling) or routes them to the UX lane rather than reporting them; treats INV-3310 shipping as refuted (not a bug); marks NetSuite export and approval routing as blocked/not-exercisable with reasons; has a coverage matrix and refuted/inconclusive section.",
+      "files": ["fixtures/vendor-pay-raw-observations.md"]
+    }
+  ]
+}

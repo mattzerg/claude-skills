@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 5,
+    "distinctiveness": 6,
+    "color": 3,
+    "density": 4,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif with no typographic character \u2014 clean but utterly forgettable, typical DTC product site font choices with no discipline or identity",
+    "hierarchy": "Hero headline does visual work, but below-the-fold the three feature circles are identically weighted with no dominance \u2014 everything is medium-sized and equal",
+    "distinctiveness": "The headline 'device they'll actually put down' has specific POV, and the product photography shows actual distinctive hardware \u2014 not completely swappable, though the structure is still 'hero/features/CTA'",
+    "color": "Blue gradient dominates at ~40% of hero, mint green accent buttons, but the palette lacks discipline \u2014 hero is decorative rather than strategic, accent usage exceeds 5% significantly",
+    "density": "Uniform padding throughout, safe whitespace that never takes risks \u2014 features section has identical circular frames at identical sizes with identical spacing, no density variation",
+    "voice": "Has some personality in copy ('device they'll actually put down' is specific), but IA is pure stencil: hero product shot + 3-feature grid + trust badges + CTA \u2014 structure doesn't reflect the parenting anxiety story"
+  },
+  "winning_patterns": [
+    "Headline has actual POV about smartphone addiction and parenting",
+    "Product photography shows distinctive physical hardware that couldn't be mistaken for another brand",
+    "Circular feature illustrations have playful, kid-friendly curves that match product personality",
+    "Copy voice is conversational and specific ('trusted adults into the loop')"
+  ],
+  "anti_patterns": [
+    "Three equal-weighted feature circles with identical visual treatment \u2014 no hierarchy or emphasis",
+    "Generic blue gradient hero background is 2019 SaaS aesthetic, not distinctive",
+    "Mint green CTA buttons overused \u2014 accent color appears at >20% rather than restrained 5%",
+    "Trust badge parade at bottom (Times, BBC, EduEvidence) is pure stencil credibility theater",
+    "IA is paint-by-numbers: hero \u2192 features \u2192 CTA \u2192 social proof, ignores the emotional parenting journey",
+    "Uniform padding/spacing throughout \u2014 no confident density or breathing room variation"
+  ],
+  "one_word_personality": "wholesome",
+  "_url": "https://karri.io",
+  "_persona": "design_forward",
+  "_note": "Animated hero, color-shifting",
+  "_graded_at": "2026-05-08T21:46:41.931896Z"
+}

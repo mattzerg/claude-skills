@@ -8,9 +8,9 @@ Usage:
     python3 ~/.claude/skills/utm-attribution/run.py ledger  (prints recent rows)
 
 Hard-fails when destination is not on a Zerg domain or when required fields are missing.
-Appends every built link to MattZerg/Projects/Zstack/Growth/links.md (canonical ledger).
+Appends every built link to MattZerg/Projects/Zerg-Production/Growth/links.md (canonical ledger).
 
-Convention source: MattZerg/Projects/Zstack/Growth/utm-convention.md
+Convention source: MattZerg/Projects/Zerg-Production/Growth/utm-convention.md
 """
 from __future__ import annotations
 
@@ -21,8 +21,8 @@ import sys
 from pathlib import Path
 from urllib.parse import quote, urlencode, urlparse, parse_qs
 
-VAULT = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
-GROWTH_DIR = VAULT / "Projects" / "Zstack" / "Growth"
+VAULT = Path("/Users/mattheweisner/Obsidian/Zerg/MattZerg")
+GROWTH_DIR = VAULT / "Projects" / "Zerg-Production" / "Growth"
 CONVENTION_FILE = GROWTH_DIR / "utm-convention.md"
 LEDGER_FILE = GROWTH_DIR / "links.md"
 

@@ -1,0 +1,356 @@
+{
+  "name": "Notion Calendar",
+  "url": "https://calendar.notion.so",
+  "domain": "calendar.notion.so",
+  "scanned_at": "2026-06-01T05:06:57.278290",
+  "sources": {
+    "landing": {
+      "url": "https://calendar.notion.so",
+      "title": "Notion - Log in",
+      "text": "Notion - Log in\nSkip to content\nWelcome to Notion Calendar\nLog in to your Notion account\nEmail\nUse an organization email to easily collaborate with teammates\nContinue\nor continue with\nGoogle\nApple\nMicrosoft\nPasskey\nSSO\nNew user?\nSign up\nBy continuing, you acknowledge that you understand and agree to the\nTerms & Conditions\nand\nPrivacy Policy\nLanguage: English (US)",
+      "source": "playwright"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "url": "https://www.notion.so/releases",
+      "title": "What\u2019s New \u2013 Notion",
+      "text": "What\u2019s New \u2013 Notion\nNew\nNotion's developer platform: Any data. Any tool. Any agent. No infra required.\nLearn more\n\u2192\nProduct\nNotion\nYour AI workspace\nNotion Calendar\nNotion Mail\nNotion AI\nAI tools for work\nAgents\nAutomate busywork\nAI Meeting Notes\nPerfectly written by AI\nEnterprise Search\nFind answers instantly\nKnowledge Base\nCentralize your knowledge\nDocs\nSimple and powerful\nProjects\nManage any project\nConnections\nConnect your apps\nSecurity\nSafe and scalable\nMerge cells in simple tables.\nSee what\u2019s new\n\u2192\nDownload the\nNotion App\n\u2192\nAI\nAI features\nNotion AI\nAI tools for work\nAgents\nAutomate busywork\nAI Meeting Notes\nPerfectly written by AI\nEnterprise Search\nFind answers instantly\nExplore use cases\nFor work\nFor life\nSolutions\nTeams\nEng & Product\nDesign\nMarketing\nIT\nCompany size\nStartups\nSmall businesses\nEnterprise\nUse Cases\nEducation\nPersonal\nProfessional\nAI use cases\nResources\nBrowse\nTemplates\nConsultants\nConnections\nDiscover\nWhat's New\nCustomer stories\nBlog\nWebinars\nLearn\nDevelopers\nAcademy\nProduct tours\nHelp\nDevelopers\nEnterprise\nPricing\nRequest a demo\nGet Notion free\nLog in\nWhat\u2019s New\nKeep up with the latest releases, improvements, and fixes.\nFollow @NotionHQ\n\u2197\nMay 26, 2026\nMerge cells in simple tables\nPlay\nUh-oh! It looks like your ad blocker is preventing the video from playing.\nPlease watch it on\nYouTube\nFinally! Merge cells in simple tables.\nCreate headers that span multiple columns or group related rows into structured layouts.\nGive it a try: select multiple cells \u2192 open the cell menu \u2192 select\nMerge cells\n.\nSee the\nannouncement\non X \u2192\nMay 13, 2026\n3.5\n3.5: Notion Developer Platform\nNotion? For developers? Fair question. It\u2019s true, we haven\u2019t always been the most developer-focused platform. Today that changes.\nIntroducing: the\nNotion Developer Platform.\nNow you (and your coding agents) can write code to sync any data and build any agent tool, all running on our infrastructure. You can also bring your favorite agents into Notion (like Claude, Codex, Decagon, or ones you\u2019ve built yourself). It turns Notion into one shared canvas with all your data, for your team and agents to work together.\nLearn more \u2192\nOrchestrate all your team\u2019s agents (Alpha)\nBring your favorite agents into Notion with the External Agents API, even the ones you built yourself. We\u2019ve also partnered with Claude, Codex, Decagon, and more so they work out of the box. Now Notion is your orchestration layer: a Decagon ticket routes to your coding agent, which proposes a fix and loops in your team to approve. Anyone can work with agents in Notion, not just engineers.\nJoin the External Agents waitlist \u2192\nNotion is our AI layer because it\u2019s where work is created or imagined\u2014and we want our agents as close to the action as possible.\nDan Gilbert\nCEO at Brainlabs\nSync\nany\ndata source (Beta)\nSync any data source with an API into your Notion databases. No servers for your team to manage. Our new database sync is powered by Workers that run on our infrastructure (more on this below). Pull in tickets from Zendesk so agents can take a first pass on the fix. Sync customer data from Salesforce for agents to build detailed reports. Connect Strava and Spotify data to curate the perfect running playlist. Whatever context you need can now live in Notion.\nWatch the demo \u2192\nWorkers give us the tools to build deep integrations into Notion that simply couldn't exist before. We have a worker that runs every night that syncs and converts uneditable PDFs in our Google Drive into rich, fully editable pages in an organized Notion database. It unlocks this data for our team and agents - and saves us tons of time.\nSam Lambert\nCEO at PlanetScale\nBuild custom tools for your agents (Beta)\nGive your Custom Agents capabilities that Notion and MCP don\u2019t cover on their own. Write your logic in code and deploy it as a Worker. It\u2019s\ndeterministic\n, so it\u2019s more reliable than LLM reasoning, and a\nfraction of the token cost\n. Use them to generate assets, query internal data, or take action in any other app.\nRead the docs \u2192\nI think of Notion Workers as infrastructure: they auto-populate, auto-update, and set up the systems I need.\nAustin Tedesco\nHead of Growth at Every\nTrigger Notion workflows from anywhere (Beta)\nWebhooks used to be a one-way street: Notion could trigger your other apps, but not the other way around. Now any app can trigger Notion directly. A Worker receives the webhook, runs your logic, and takes action in Notion or calls other APIs. Use it to close tasks when a PR merges, update your CRM when a subscription changes, or create an onboarding doc when an offer is signed.\nRead the docs \u2192\nMeet your Notion Workers\nDatabase sync, agent tools, and webhook triggers are all powered by a new primitive we\u2019re calling Workers. Notion Workers are our hosted runtime for custom code, so you can extend Notion without running your own servers. You and your coding agent write the code, deploy it through the CLI, and run it in a secure sandbox. Workers are free to try during the beta period. Starting August 11 2026, Workers will run on Notion credits.\nRead the docs \u2192\nWorkers let us connect directly to other tools\u2019 APIs and automate what used to be manual handoffs. Notion becomes the connective layer, and Workers fill in whatever gaps exist between your tools.\nBrian Emerick\nTechnical Program Manager at Vercel\nA Notion CLI, built for devs and coding agents\nThe Notion command-line interface (CLI), made specifically for developers and coding agents, is a new way to work with Notion programmatically. Use it to sign in to your workspace, read and take action in Notion, build and deploy Workers, and extend Notion however your team needs. To install, run curl -fsSL https://ntn.dev | bash.\nWatch the demo \u2192\nUse your Notion Agents in any app (Alpha)\nSoon, your Notion Agents won\u2019t have to stay in Notion. With the Notion Agent SDK, you can embed an agent inside your other tools. Trigger a deal report from a button in your CRM. Answer repeat questions inside MS Teams or Discord with verified knowledge from your workspace. Or pull customer context into Amplitude, Hex, or any dashboard.\nJoin the Agent SDK waitlist \u2192\nManage all connections from one tab\nWe\u2019ve updated the Connections tab in workspace settings. Now, every connection lives in one place, so your team can see everything that\u2019s available at a glance. It includes personal and workspace connections, personal access tokens for API authentication, and internal API connections. And each app shows every connection type in one listing. Go to\nSettings\n\u2192\nConnections\nto check it out (or\nclick here\n).\nAgents \u201chall of fame\u201d\nKnowing what agents to build can be the hardest part, so we pulled together the best agents from companies like Ramp, Clay, and Vercel into one library. Each one comes with a checklist of exactly what you need (databases, pages, tools) and a starter prompt to copy/paste. Pick one and set it up in minutes.\nBrowse the collection \u2192\nMore updates your devs will love\nMarkdown API:\nICYMI read and write Notion pages as Markdown. Built for the way agents already think.\nNotion MCP:\nNow works with Meeting Notes and block comments, plus creating and updating databases are 91% more token-efficient.\nNotion API:\nAny member can build connections (not just Workspace Owners). Plus workspace-scoped OAuth and personal access tokens.\nSee releases \u2192\nDeveloper Portal:\napp.notion.com/developers\nis now a dedicated portal for creating, managing, and listing your connections and tokens.\nDeveloper Docs:\nRebuilt and streamlined for clarity with a built-in AI assistant to help you find what you need.\nThis is just the beginning for the\nNotion Developer Platform\n. Any data, any tool, any agent, all running on our infrastructure. We can\u2019t wait to see what you build.\nKeep the feedback coming!\nIvan\nP.S. We announced all of this and more at Make with Notion: Developer Platform.\nWatch the keynote \u2192\nP.P.S. Curious what teams are already building? See how\nEvery\n,\nBrainlabs\n, and\nVercel\nare using our developer platform in production.\nP.P.P.S. One more thing. You can now merge cells in simple tables, just like a spreadsheet. We\u2019re excited about this one too.\nMay 7, 2026\nPlan Mode\nPlay\nUh-oh! It looks like your ad blocker is preventing the video from playing.\nPlease watch it on\nYouTube\nWhen you ask your agent to make significant changes like rewriting pages or updating databases in bulk, results can drift off course if your intent is unclear. Plan Mode introduces a preliminary step where your agent asks clarifying questions and builds a detailed plan before acting. The result is fewer surprises and more confidence in complex, multi-step work.\nLearn more about\nPlan Mode\nfrom the Help Center \u2192\nMay 6, 2026\nNew Custom Agent Directory\nPlay\nUh-oh! It looks like your ad blocker is preventing the video from playing.\nPlease watch it on\nYouTube\nCustom Agents now have a dedicated place in your Library. Use the Custom Agent Directory to browse all your workspace\u2019s agents, pin your favorites, and create new ones to automate your team\u2019s busywork 24/7.\nGet started from the sidebar:\nLibrary\n\u2192\nAgents\n.\nMay 5, 2026\nNew Custom Agent controls for admins\nTwo months ago, we launched Custom Agents in beta. Since then, teams have created more than a million of them and honestly pushed them further than we expected!\nOne theme from admins was consistent:\nas Custom Agents scaled, so did the need for more control and visibility.\nYour feedback shaped what we built next, so here\u2019s what's new.\nSet guardrails before Custom Agents run\nManaging who can create Custom Agents and how much each agent is allowed to spend make rollouts easier to manage:\nStart by choosing who create agents, either individuals or user groups, then expand access over time as you build confidence. You can do this in\nSettings\n\u2192\nNotion AI\n\u2192\nAgents\n.\nTo keep spend predictable, set per-agent credit limits with agent creators. If you\u2019re on Enterprise and planning a broader rollout, you can also set one workspace-level credit limit that applies to all new and existing agents. Both controls are in your usage dashboard at\nSettings\n\u2192\nNotion credits\n.\nTrack every agent and spend across your workspace\nThe Notion credits dashboard shows total usage broken down by agent, plus spend trends, status, and recent activity.\nIf an agent is pacing higher than expected, you can disable it right away in\nSettings\n\u2192\nNotion AI\n\u2192\nAgents\n, then work with the creator to adjust it before turning it back on.\nIf you manage multiple workspaces, you\u2019ll also see a credits dashboard in your\nadmin console\nto track credit pacing and Custom Agent usage across your organization.\nScale agents with built-in guardrails\nA few things happen automatically to keep rollouts predictable even at scale:\nGet notified by email and in-app as your workspace approaches its credit limit, so you\u2019ve time to plan ahead.\nIf credits run out, all agents pause until you add more, so you won\u2019t get surprise bills.\nIf a new agent starts spending unusually fast, we\u2019ll pause it and notify the creator to review.\nMembers can request a higher credit limit, but nothing goes through without admin approval.\nMay 4, 2026\nA new home on mobile\nPlay\nUh-oh! It looks like your ad blocker is preventing the video from playing.\nPlease watch it on\nYouTube\nNavigating Notion on mobile just got easier with the new home tab. Now your home, chats, meetings, and inbox are just one swipe away.\nSee the\nannouncement\non X \u2192\nMay 1, 2026\nAdd Custom Agents to private Slack channels\nPlay\nUh-oh! It looks like your ad blocker is preventing the video from playing.\nPlease watch it on\nYouTube\nCustom Agents can now read and reply in private Slack channels. Get started from your workspace settings under\nSettings\n\u2192\nNotion AI\n\u2192\nAI connectors\n\u2192\nEnable access to private content\n. Custom Agents only see the private channels you invite them to.\nLearn more about our\nSlack AI Connector\nin our Help Center \u2192\nApril 27, 2026\nRollups now as currency, percent, and more\nRollups now support number formatting (USD, EUR, percent, etc.) and decimal places. Show budget totals, conversion rates, and more in your rollups without any formula workarounds.\nLearn more about\nRelations & rollups\nin our Help Center \u2192\nApril 24, 2026\nFind pages faster from the breadcrumb\nPlay\nUh-oh! It looks like your ad blocker is preventing the video from playing.\nPlease watch it on\nYouTube\nHover over any item in the breadcrumb to see sibling pages, including pages inside databases. This makes it easier to find related pages and navigate your workspace.\nSee the\nannouncement\non X \u2192\nApril 17, 2026\nMail & Calendar, now in your settings\nConnect your calendar and inbox from a new dedicated tab in your settings. After linking accounts, Notion AI can handle work across your apps like scheduling meetings and drafting emails.\nNext page\nEnglish (US)\nEnglish (US)\nEnglish (US)\nEnglish (UK)\nEnglish (UK)\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629\nArabic\nDansk\nDanish\nNederlands\nDutch\nSuomi\nFinnish\nFran\u00e7ais (France)\nFrench (France)\nDeutsch\nGerman\n\u05e2\u05d1\u05e8\u05d9\u05ea\nHebrew\nBahasa Indonesia\nIndonesian\nItaliano\nItalian\n\u65e5\u672c\u8a9e\nJapanese\n\ud55c\uad6d\uc5b4\nKorean\nNorsk\nNorwegian\nPortugu\u00eas (Brasil)\nPortuguese (Brazil)\n\u7b80\u4f53\u4e2d\u6587\nSimplified Chinese\nEspa\u00f1ol (Latinoam\u00e9rica)\nSpanish (Latin America)\nEspa\u00f1ol (Espa\u00f1a)\nSpanish (Spain)\nSvenska\nSwedish\n\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22\nThai\n\u7e41\u9ad4\u4e2d\u6587\nTraditional Chinese\nTi\u1ebfng Vi\u1ec7t\nVietnamese\nDo Not Sell or Share My Info\nCookie settings\n\u00a9 2026 Notion Labs, Inc.\nCompany\nAbout us\nCareers\nSecurity\nStatus\nTerms & privacy\nYour privacy rights\nDownload\niOS & Android\nMac & Windows\nMail\nCalendar\nWeb Clipper\nResources\nHelp center\nPricing\nBlog\nCommunity\nConnections\nTemplates\nPartner programs\nNotion for\nEnterprise\nSmall business\nPersonal\nExplore more\n\u2192",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://www.notion.so/help/category/notion-calendar",
+      "title": "Notion Calendar \u2013 Notion Help Center",
+      "text": "Notion Calendar \u2013 Notion Help Center\nNew\nNotion's developer platform: Any data. Any tool. Any agent. No infra required.\nLearn more\n\u2192\nProduct\nNotion\nYour AI workspace\nNotion Calendar\nNotion Mail\nNotion AI\nAI tools for work\nAgents\nAutomate busywork\nAI Meeting Notes\nPerfectly written by AI\nEnterprise Search\nFind answers instantly\nKnowledge Base\nCentralize your knowledge\nDocs\nSimple and powerful\nProjects\nManage any project\nConnections\nConnect your apps\nSecurity\nSafe and scalable\nMerge cells in simple tables.\nSee what\u2019s new\n\u2192\nDownload the\nNotion App\n\u2192\nAI\nAI features\nNotion AI\nAI tools for work\nAgents\nAutomate busywork\nAI Meeting Notes\nPerfectly written by AI\nEnterprise Search\nFind answers instantly\nExplore use cases\nFor work\nFor life\nSolutions\nTeams\nEng & Product\nDesign\nMarketing\nIT\nCompany size\nStartups\nSmall businesses\nEnterprise\nUse Cases\nEducation\nPersonal\nProfessional\nAI use cases\nResources\nBrowse\nTemplates\nConsultants\nConnections\nDiscover\nWhat's New\nCustomer stories\nBlog\nWebinars\nLearn\nDevelopers\nAcademy\nProduct tours\nHelp\nDevelopers\nEnterprise\nPricing\nRequest a demo\nGet Notion free\nLog in\nSearch help center\nHelp Center\nGet started\nNotion basics\nSidebar navigation\nWorkspace basics\nWorkspace settings\nSettings & preferences\nCreate & format pages\nPages & blocks\nBuild databases\nDatabases\nDatabase views\nShare & collaborate\nSharing & permissions\nNotion Sites\nAutomation & connections\nImport & export your data\nConnections\nAutomations\nWork with Notion AI\nNotion AI\nNotion AI Connectors\nCustom Agents\nAdmin & security\nAdminister your workspace\nPrivacy & security\nNotion AI security\nMail, Calendar & Apps\nNotion on desktop, web, & mobile\nNotion Mail\nNotion Calendar\nGet started on marketplace\nMarketplace & templates\nManage your plan\nPlans & billing\nFix a problem\nTroubleshoot\nDeveloper Platform\nExplore developer tools\nGet certified\nNotion Academy\nSupport\nChat with us\nJoin our community\nFind a consultant\nHelp Center\nHelp Docs\n\u2190 Help Docs\nNotion Calendar\nNotion Calendar is a free-to-use tool where you can view and manage your personal and work schedules in one place. Learn how to bring all of your commitments together, and even use Notion Calendar with Notion.\nPopular topics\nSee all\nHelp doc\nNotion Calendar apps\nHelp doc\nUse Notion Calendar with Notion\nHelp doc\nManage your calendars & events\nHelp doc\nNotion Calendar settings\nHelp doc\nCreate a Notion Calendar account\nHelp doc\nNotion Calendar connections & API\nPopular guides\nSee all\nHelp guide\nGetting started with Notion Calendar\nEnglish (US)\nEnglish (US)\nEnglish (US)\nEnglish (UK)\nEnglish (UK)\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629\nArabic\nDansk\nDanish\nNederlands\nDutch\nSuomi\nFinnish\nFran\u00e7ais (France)\nFrench (France)\nDeutsch\nGerman\n\u05e2\u05d1\u05e8\u05d9\u05ea\nHebrew\nBahasa Indonesia\nIndonesian\nItaliano\nItalian\n\u65e5\u672c\u8a9e\nJapanese\n\ud55c\uad6d\uc5b4\nKorean\nNorsk\nNorwegian\nPortugu\u00eas (Brasil)\nPortuguese (Brazil)\n\u7b80\u4f53\u4e2d\u6587\nSimplified Chinese\nEspa\u00f1ol (Latinoam\u00e9rica)\nSpanish (Latin America)\nEspa\u00f1ol (Espa\u00f1a)\nSpanish (Spain)\nSvenska\nSwedish\n\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22\nThai\n\u7e41\u9ad4\u4e2d\u6587\nTraditional Chinese\nTi\u1ebfng Vi\u1ec7t\nVietnamese\nDo Not Sell or Share My Info\nCookie settings\n\u00a9 2026 Notion Labs, Inc.\nCompany\nAbout us\nCareers\nSecurity\nStatus\nTerms & privacy\nYour privacy rights\nDownload\niOS & Android\nMac & Windows\nMail\nCalendar\nWeb Clipper\nResources\nHelp center\nPricing\nBlog\nCommunity\nConnections\nTemplates\nPartner programs\nNotion for\nEnterprise\nSmall business\nPersonal\nExplore more\n\u2192",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.notion.so/integrations",
+      "title": "Notion Connections & Integrations",
+      "text": "Notion Connections & Integrations\nProduct\nNotion\nYour AI workspace\nNotion Calendar\nNotion Mail\nNotion AI\nAI tools for work\nAgents\nAutomate busywork\nAI Meeting Notes\nPerfectly written by AI\nEnterprise Search\nFind answers instantly\nKnowledge Base\nCentralize your knowledge\nDocs\nSimple and powerful\nProjects\nManage any project\nConnections\nConnect your apps\nSecurity\nSafe and scalable\nMerge cells in simple tables.\nSee what\u2019s new\n\u2192\nDownload the\nNotion App\n\u2192\nAI\nAI features\nNotion AI\nAI tools for work\nAgents\nAutomate busywork\nAI Meeting Notes\nPerfectly written by AI\nEnterprise Search\nFind answers instantly\nExplore use cases\nFor work\nFor life\nSolutions\nTeams\nEng & Product\nDesign\nMarketing\nIT\nCompany size\nStartups\nSmall businesses\nEnterprise\nUse Cases\nEducation\nPersonal\nProfessional\nAI use cases\nResources\nBrowse\nTemplates\nConsultants\nConnections\nDiscover\nWhat's New\nCustomer stories\nBlog\nWebinars\nLearn\nDevelopers\nAcademy\nProduct tours\nHelp\nDevelopers\nEnterprise\nPricing\nRequest a demo\nGet Notion free\nLog in\nMarketplace\nTemplates\nAgents\nConsultants\nConnections\nConnections\nMarketplace\nTemplates\nAgents\nConsultants\nConnections\nLife\n32317 templates\nWork\n23175 templates\nPersonal Productivity\n22419 templates\nSchool\n13271 templates\nProject Management\n9073 templates\nTemplates\nSimple Weekly To-do List\nNotion\nSimple To-do List\nNotion\nQuick Notes\nNotion\nAgents\n300+ more templates\nNo results for\nExplore connections\nExtend Notion with connections that sync your data, automate workflows, and connect your favorite tools.\nRead our connections guide\nFeatured connections\nSlack\nFree\nGoogle Drive\nFree\nGitHub\nFree\nNotion AI Connector for MS Teams\nFree\nNotion AI Connector for Salesforce\nFree\nFigma\nFree\nNotion AI Connector for Jira\nFree\nNotion AI Connector for Linear\nFree\nEngineering\nDesign\nSales\nMarketing\nFinance\nAnalytics\nAutomations\nProductivity\nCollaboration\nForms\nCustomer experience\nFile management\nCommunication\nSecurity & compliance\nIdentity\nAll types\nPublic API\nAI connector\nEmbed\nSCIM/SSO\nAll developers\nMade by Notion\nTechnology partners\nRecommended\nAlphabetical\nNewest\nDatadog\nNew\nDetect, investigate, and automate response to threats at any scale\nFree\nPanther\nNew\nA SIEM built for speed, scale, and flexibility\nFree\nSumo Logic\nNew\nCollects, analyzes, and ingests data to provide actionable insights\nFree\nSplunk\nNew\nMonitor and analyze your Notion logs from Splunk\nFree\nNightfall AI\nNew\nScan, monitor, and protect your sensitive Notion data to ensure continuous security and compliance\nFree\nPolymer\nNew\nRedact sensitive data from your Notion workspace\nFree\nLoom\nView Loom videos directly in Notion\nFree\nMicrosoft Entra ID\nNew\nSet up automated user provisioning via Microsoft Entra\nFree\nRunReveal\nNew\nA SIEM you can love. Collect your logs, search them, alert using them, and use them for incident response when you need them most.\nFree\nMixpanel\nView Mixpanel boards, reports and charts inside Notion\nFree\nCanva\nNew\nView and share Canva designs in Notion\nFree\nGraphy\nEmbed interactive data visualizations into Notion pages\nFree\nStreamlit\nNew\nBring Streamlit apps into Notion\nFree\nCalendly\nNew\nEmbed Calendly booking pages into Notion\nFree\nSketch\nView and share Sketch designs in Notion\nFree\nPinterest\nNew\nView Pinterest pins, boards and profiles in Notion\nFree\nRippling\nProvision users & groups in your Notion workspace\nFree\nLottieFiles\nNew\nBring lightweight animations to your Notion pages\nFree\nOneLogin\nProvision users & groups in your Notion workspace with OneLogin\nFree\nTableau\nNew\nView Tableau charts and dashboards in Notion\nFree\nGitHub\nKeep your GitHub and Notion workflows in sync\nFree\nNotion AI Connector for Salesforce\nNew\nSearch Salesforce accounts, leads, opportunities, and contacts in Notion\nFree\nNotion AI Connector for Outlook\nNew\nSearch your Outlook inbox from Notion\nFree\nNotion AI Connector for Notion Calendar\nSearch your Notion calendar events from your workspace\nFree\n\u2190\n1\n2\n3\n4\n5\n\u2192\nNotion partners with select companies to build integrations. Notion does not endorse or certify these integrations. Please reach out to the integration developer with any issues.\nEnglish (US)\nEnglish (US)\nEnglish (US)\nEnglish (UK)\nEnglish (UK)\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629\nArabic\nDansk\nDanish\nNederlands\nDutch\nSuomi\nFinnish\nFran\u00e7ais (France)\nFrench (France)\nDeutsch\nGerman\n\u05e2\u05d1\u05e8\u05d9\u05ea\nHebrew\nBahasa Indonesia\nIndonesian\nItaliano\nItalian\n\u65e5\u672c\u8a9e\nJapanese\n\ud55c\uad6d\uc5b4\nKorean\nNorsk\nNorwegian\nPortugu\u00eas (Brasil)\nPortuguese (Brazil)\n\u7b80\u4f53\u4e2d\u6587\nSimplified Chinese\nEspa\u00f1ol (Latinoam\u00e9rica)\nSpanish (Latin America)\nEspa\u00f1ol (Espa\u00f1a)\nSpanish (Spain)\nSvenska\nSwedish\n\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22\nThai\n\u7e41\u9ad4\u4e2d\u6587\nTraditional Chinese\nTi\u1ebfng Vi\u1ec7t\nVietnamese\nDo Not Sell or Share My Info\nCookie settings\n\u00a9 2026 Notion Labs, Inc.\nCompany\nAbout us\nCareers\nSecurity\nStatus\nTerms & privacy\nYour privacy rights\nDownload\niOS & Android\nMac & Windows\nMail\nCalendar\nWeb Clipper\nResources\nHelp center\nPricing\nBlog\nCommunity\nConnections\nTemplates\nPartner programs\nNotion for\nEnterprise\nSmall business\nPersonal\nExplore more\n\u2192",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/notion-calendar/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Notion Calendar",
+          "url": "https://www.notion.so/blog/introducing-notion-calendar",
+          "points": 190,
+          "num_comments": 185,
+          "created_at": "2024-01-17T17:03:35Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39030375"
+        },
+        {
+          "title": "Cron is now Notion Calendar",
+          "url": "https://cron.com/blog/2024-01-17-cron-is-now-notion-calendar",
+          "points": 7,
+          "num_comments": 3,
+          "created_at": "2024-01-17T18:37:54Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39031614"
+        },
+        {
+          "title": "Show HN: Outlook to Google Calendar Sync for Notion Calendar Integration",
+          "url": "https://github.com/2bd-ventures/outlook-google-sync",
+          "points": 2,
+          "num_comments": 1,
+          "created_at": "2024-03-09T18:37:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39653771"
+        },
+        {
+          "title": "Show HN: Taskwarrior_syncall: Synchronize TW with Notion,Google Calendar",
+          "url": "https://github.com/bergercookie/taskwarrior-syncall",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2021-12-15T18:44:14Z",
+          "hn_url": "https://news.ycombinator.com/item?id=29569988"
+        },
+        {
+          "title": "Show HN: Notion Calendar Wrapper Linux (tray, libnotify notifications)",
+          "url": "https://github.com/opsMachine/notion-calendar-linux",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2026-04-03T16:13:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47628510"
+        },
+        {
+          "title": "Is Notion Calendar a \"super lackluster release\"?",
+          "url": "https://tuanmon.com/notion-calendar-is-brilliant-but/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2024-01-30T03:15:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39186008"
+        },
+        {
+          "title": "Notion Calendar",
+          "url": "https://www.notion.so/product/calendar",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2024-01-17T20:49:06Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39033237"
+        },
+        {
+          "title": "Ask HN: Do you also \"hoard\" notes/links but struggle to turn them into actions?",
+          "url": null,
+          "points": 235,
+          "num_comments": 217,
+          "created_at": "2026-01-30T16:22:05Z",
+          "hn_url": "https://news.ycombinator.com/item?id=46826277"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": "https://www.notion.so/releases",
+    "docs": "https://www.notion.so/help/category/notion-calendar",
+    "integrations": "https://www.notion.so/integrations",
+    "g2": "https://www.g2.com/products/notion-calendar/reviews"
+  },
+  "analysis": {
+    "name": "Notion Calendar",
+    "url": "https://calendar.notion.so",
+    "tagline": "Welcome to Notion Calendar",
+    "value_proposition": "A free calendar tool to view and manage personal and work schedules in one unified place, deeply integrated with your Notion workspace.",
+    "target_segment": "SMB / consumer / mid-market",
+    "ideal_customer": "Notion users who want unified calendar management across Google, Apple, and Microsoft calendars alongside their Notion pages and databases",
+    "features": [
+      {
+        "name": "google calendar sync",
+        "description": "Sign in and sync events from Google Calendar",
+        "evidence_source": "landing",
+        "evidence_quote": "or continue with Google",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "apple calendar sync",
+        "description": "Sign in and sync events from Apple Calendar",
+        "evidence_source": "landing",
+        "evidence_quote": "or continue with Apple",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft outlook calendar sync",
+        "description": "Sign in and sync events from Microsoft Outlook calendar",
+        "evidence_source": "landing",
+        "evidence_quote": "or continue with Microsoft",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "sso",
+        "description": "Single sign-on login for organizations",
+        "evidence_source": "landing",
+        "evidence_quote": "SSO",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "passkey login",
+        "description": "Passwordless authentication via passkey",
+        "evidence_source": "landing",
+        "evidence_quote": "Passkey",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-calendar unified view",
+        "description": "View personal and work calendars from multiple providers in one place",
+        "evidence_source": "docs",
+        "evidence_quote": "view and manage your personal and work schedules in one place",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "notion workspace integration",
+        "description": "Connect calendar events to Notion pages and databases bidirectionally",
+        "evidence_source": "docs",
+        "evidence_quote": "Use Notion Calendar with Notion",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "event management",
+        "description": "Create, view, edit, and delete calendar events",
+        "evidence_source": "docs",
+        "evidence_quote": "Manage your calendars & events",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "calendar settings",
+        "description": "Customizable settings for calendar display and behavior",
+        "evidence_source": "docs",
+        "evidence_quote": "Notion Calendar settings",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "calendar api and connections",
+        "description": "API and third-party connection support for Notion Calendar",
+        "evidence_source": "docs",
+        "evidence_quote": "Notion Calendar connections & API",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "ios mobile app",
+        "description": "Native iOS app for Notion Calendar",
+        "evidence_source": "docs",
+        "evidence_quote": "iOS & Android",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "android mobile app",
+        "description": "Native Android app for Notion Calendar",
+        "evidence_source": "docs",
+        "evidence_quote": "iOS & Android",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "mac desktop app",
+        "description": "Native macOS desktop application",
+        "evidence_source": "docs",
+        "evidence_quote": "Mac & Windows",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "windows desktop app",
+        "description": "Native Windows desktop application",
+        "evidence_source": "docs",
+        "evidence_quote": "Mac & Windows",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "notion ai connector for calendar",
+        "description": "Search Notion Calendar events from within the Notion AI interface",
+        "evidence_source": "integrations",
+        "evidence_quote": "Search your Notion calendar events from your workspace",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "web app",
+        "description": "Browser-based access to Notion Calendar",
+        "evidence_source": "landing",
+        "evidence_quote": "Log in to your Notion account",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-language support",
+        "description": "UI available in 20+ languages including Japanese, Korean, Arabic, and more",
+        "evidence_source": "docs",
+        "evidence_quote": "English (US), English (UK), \u0627\u0644\u0639\u0631\u0628\u064a\u0629, Dansk, Nederlands, Suomi, Fran\u00e7ais",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "linux community wrapper (unofficial)",
+        "description": "Community-built Linux tray app with libnotify notifications \u2014 no official Linux support",
+        "evidence_source": "hn",
+        "evidence_quote": "Show HN: Notion Calendar Wrapper Linux (tray, libnotify notifications)",
+        "tier": "free",
+        "confidence": "low"
+      }
+    ],
+    "integrations": [
+      "Google Calendar",
+      "Apple Calendar",
+      "Microsoft Outlook",
+      "Notion",
+      "Slack",
+      "Google Drive",
+      "GitHub",
+      "Microsoft Teams",
+      "Salesforce",
+      "Figma",
+      "Jira",
+      "Linear",
+      "Calendly",
+      "Loom",
+      "Zapier (via Notion connections)"
+    ],
+    "differentiators": [
+      "Free to use with no documented paid tier for core calendar functionality",
+      "Deep native integration with Notion workspace \u2014 link events to databases and pages",
+      "Built on Cron (acquired), a well-regarded power-user calendar product",
+      "Notion AI Connector allows searching calendar events from Notion AI chat",
+      "Unified personal and work schedule view across Google, Apple, and Microsoft in one tool"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-05",
+        "what": "Notion Developer Platform 3.5: External Agents API, Database sync Workers, CLI, Agent SDK \u2014 platform-level, enables calendar data sync use cases",
+        "source": "May 13, 2026: Notion Developer Platform \u2014 sync any data source with an API into Notion databases"
+      },
+      {
+        "date": "2026-05",
+        "what": "Merge cells in simple tables (Notion platform feature, not Calendar-specific)",
+        "source": "May 26, 2026: Merge cells in simple tables \u2014 select multiple cells \u2192 open cell menu \u2192 select Merge cells"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Cron heritage appreciated \u2014 power users followed product through rebrand",
+        "Unified multi-provider calendar view seen as genuinely useful for knowledge workers"
+      ],
+      "complaints": [
+        "Perceived as underwhelming at launch: 'Is Notion Calendar a super lackluster release?' (HN thread)",
+        "No official Linux support \u2014 community resorted to building their own wrapper",
+        "Outlook-to-Google sync gaps required third-party workarounds: 'Show HN: Outlook to Google Calendar Sync for Notion Calendar Integration'",
+        "Rebrand from Cron felt like a step back for some power users who valued Cron's independent identity"
+      ],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "no documented seat or storage caps \u2014 described as fully free-to-use standalone product"
+      },
+      "tiers": [
+        {
+          "name": "Free",
+          "price_per_seat_per_month": "$0",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Full calendar access \u2014 multi-calendar view, Notion integration, mobile & desktop apps, API"
+        }
+      ],
+      "enterprise": "null",
+      "notes": "Notion Calendar is documented as a free standalone product; advanced AI features (e.g. AI Connector for Calendar) may inherit requirements from parent Notion workspace plan tiers"
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Show HN: Notion Calendar Wrapper Linux (tray, libnotify notifications)",
+        "url": "https://github.com/opsMachine/notion-calendar-linux",
+        "points": 1,
+        "comments": 0,
+        "age_days": 58,
+        "hn_url": "https://news.ycombinator.com/item?id=47628510"
+      }
+    ]
+  }
+}

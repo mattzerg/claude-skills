@@ -4,6 +4,7 @@ description: Read and manage Zergboard cards, boards, and workspaces. Use when t
 allowed-tools: Bash, Read
 ---
 
+
 # Zergboard Skill — Card & Board Management
 
 Read, search, and manage Zergboard cards via the REST API. Lists workspaces (organizations), boards, cards, comments; supports create / update / move / reorder; works with workspace members and per-board guests.

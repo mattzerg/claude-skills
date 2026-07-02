@@ -1,9 +1,8 @@
 {
-  "_comment": "Recipient email → register classification. A=Formal-Warm, B=Mid-Casual, C=Casual-Pro. Lowercase keys.",
+  "_comment": "Recipient email \u2192 register classification. A=Formal-Warm, B=Mid-Casual, C=Casual-Pro. Lowercase keys.",
   "_updated": "2026-05-05",
-
   "A": {
-    "_label": "Formal-Warm — accountants/lawyers/fund/hiring",
+    "_label": "Formal-Warm \u2014 accountants/lawyers/fund/hiring",
     "members": [
       "bleidel@kbgrp.com",
       "shane@shieldaccountancy.co.uk",
@@ -26,12 +25,41 @@
       "jlockwood@ibcp.com",
       "jesse@startco.com",
       "noah@adamantum.com",
-      "marketing@realvision.com"
-    ]
+      "marketing@realvision.com",
+      "partner@hypotheticalseedfund.vc",
+      "sales@realthread.com",
+      "hello@threadbird.com",
+      "info@underdogla.com",
+      "info@realthread.com",
+      "hi@apliiq.com",
+      "vickyli@vogracecustom.com",
+      "agashi@stickeryou.com",
+      "cs@apliiq.com",
+      "tesla@tuozhenclothing.com",
+      "xycy@xinyiprint.com",
+      "service@goosehead.com",
+      "shannon.scholtens@parkstitle.com",
+      "a vc"
+    ],
+    "_autoclassified": {
+      "partner@hypotheticalseedfund.vc": "LLM classifier high: First-touch outbound to a fund partner at a seed fund with no prior thread or vault context \u2014 canonical Register A scenario.",
+      "sales@realthread.com": "LLM classifier high: First-touch outbound to a sales team address at an unknown company with no prior relationship or thread history.",
+      "hello@threadbird.com": "LLM classifier medium: Last contact was 2708 days ago (2018) and relationship score is 1, making this effectively a cold first-touch outbound despite a prior acquaintance relationship.",
+      "info@underdogla.com": "LLM classifier high: First-touch outbound to an organizational info address with no prior relationship signals formal-warm register.",
+      "info@realthread.com": "LLM classifier high: First-touch outbound to an unrecognized external contact (info@realthread.com) with no prior thread or vault match.",
+      "hi@apliiq.com": "LLM classifier high: hi@apliiq.com is a first-touch outbound to an unknown contact at an external company with no prior thread.",
+      "vickyli@vogracecustom.com": "LLM classifier high: Vicky is a first-touch external vendor contact replying formally with 'Hi Matthew' and professional sign-off, matching the A-register criteria for first-touch external contacts.",
+      "agashi@stickeryou.com": "LLM classifier high: Anila is a first-touch external sales contact at StickerYou with no prior relationship in vault; her formal-warm inbound ('Hi Matthew') confirms the A-register framing.",
+      "cs@apliiq.com": "LLM classifier high: cs@apliiq.com is a first-touch external business contact (vendor RFQ cold outreach) and Ayush's reply uses formal 'Hello Matthew' with professional customer service tone, confirming Register A appropriate.",
+      "tesla@tuozhenclothing.com": "LLM classifier high: First-touch external vendor contact with no prior relationship; their formal opening 'Hi Matthew' and structured RFQ response confirms this is an initial business exchange.",
+      "xycy@xinyiprint.com": "LLM classifier high: Cyan is a first-touch external vendor contact with no prior relationship; the inbound uses formal business register ('Dear Matt', 'Best regards') confirming this is a new professional outreach.",
+      "service@goosehead.com": "LLM classifier high: Goosehead is an insurance service provider with no prior personal relationship indicated \u2014 the inbound is an automated reply, no vault entry exists, making this a formal external business contact.",
+      "shannon.scholtens@parkstitle.com": "LLM classifier high: Shannon Scholtens at Parks Title is a first-touch external professional contact (title company) being engaged for a formal real estate transaction with no prior relationship on record.",
+      "a vc": "LLM classifier high: VC is explicitly listed as 'investors/fund partners' in the Register A definition, and this is a first-touch outbound with no prior thread."
+    }
   },
-
   "B": {
-    "_label": "Mid-Casual — warm biz peers, established relationships",
+    "_label": "Mid-Casual \u2014 warm biz peers, established relationships",
     "members": [
       "inchausn@gmail.com",
       "julian_d@hotmail.co.uk",
@@ -63,12 +91,27 @@
       "gabe@dinari.com",
       "matthew.eisner@samba.tv",
       "pmanchan@umich.edu",
-      "adriankpang@gmail.com"
-    ]
+      "adriankpang@gmail.com",
+      "neal@hypotheticalfounder.io",
+      "tariq@hypotheticalclient.io",
+      "samantha@threadbird.com",
+      "steven@rushordertees.com",
+      "bill@contagiousgraphics.com",
+      "christan@stweed.com",
+      "hello@baronfig.com"
+    ],
+    "_autoclassified": {
+      "neal@hypotheticalfounder.io": "LLM classifier medium: Neal is a network contact Matt personally introduced to Idan via a warm thread, placing him in the known-ecosystem-peer tier rather than a cold first-touch external, though the lack of direct prior threads with Matt and the mismatch between vault email and outbound address tempers confidence.",
+      "tariq@hypotheticalclient.io": "LLM classifier medium: Tariq is a former client with 14 prior meetings and 30 threads, placing him in 'known business contact with prior threads,' though the 9-year gap and career pivot to prop trading make the relationship cold enough to border on A.",
+      "samantha@threadbird.com": "LLM classifier high: Sam has replied to an ongoing RFQ thread with a warm, substantive business response, making this a known contact with a prior thread rather than a first-touch external contact.",
+      "steven@rushordertees.com": "LLM classifier high: Steven Cruz responded warmly to Matt's RFQ with a first-name greeting and casual tone, establishing an active business thread \u2014 this is now an ongoing vendor contact, not a cold first-touch.",
+      "bill@contagiousgraphics.com": "LLM classifier high: Bill has replied directly with a warm, practical tone ('Ok, let me know!') establishing an active vendor thread, moving this from first-touch A to ongoing-partner B.",
+      "christan@stweed.com": "LLM classifier high: Christan is an account executive at a vendor (Scarborough & Tweed) who has initiated a business thread and signs off 'Best regards' \u2014 a known business contact with an active prior thread, fitting mid-casual register.",
+      "hello@baronfig.com": "LLM classifier high: Kelley has initiated two prior threads and signed off with her name, establishing a known ongoing vendor relationship that warrants mid-casual register."
+    }
   },
-
   "C": {
-    "_label": "Casual-Pro — close colleagues, peer founders, met-IRL friends",
+    "_label": "Casual-Pro \u2014 close colleagues, peer founders, met-IRL friends",
     "members": [
       "josh@stride-studios.com",
       "ethan@glystn.com",
@@ -90,12 +133,19 @@
       "leslie@example.com",
       "leutholdleslie@gmail.com",
       "shah.m.neal@gmail.com",
-      "jelmer posthumus_personal"
-    ]
+      "jelmer posthumus_personal",
+      "idan@zergai.com",
+      "michael@hypotheticalcofounder.com",
+      "michael@zergai.com"
+    ],
+    "_autoclassified": {
+      "idan@zergai.com": "auto from 20260507T162333",
+      "michael@hypotheticalcofounder.com": "LLM classifier high: Michael Chen is an internal Zerg team member (Weekly Sync colleague, ZergAI employee) \u2014 maps directly to the C-register 'internal Zerg team' definition.",
+      "michael@zergai.com": "LLM classifier high: Michael Chen is an internal Zerg team member (michael@zergai.com) who meets weekly with Matt, placing him squarely in the C-register internal-team category alongside Idan and Andr\u00e9."
+    }
   },
-
   "_excluded": {
-    "_label": "Personal/family — DO NOT use professional voice",
+    "_label": "Personal/family \u2014 DO NOT use professional voice",
     "members": [
       "jens.arne.hartwig@gmail.com",
       "dean.eisner@gmail.com",
@@ -103,9 +153,12 @@
       "christine@fromhopetohomefilm.com",
       "leutholdcat@hotmail.com",
       "seisner1234@gmail.com",
-      "matteisn@gmail.com"
-    ]
+      "matteisn@gmail.com",
+      "sarah@acmevc.example"
+    ],
+    "_autoclassified": {
+      "sarah@acmevc.example": "LLM classifier: Vault CRM identifies Sarah Elizabeth Eisner as family (relationship: Family, topic_tags include Personal), matching the EXCLUDED pattern despite the acmevc.example sender address \u2014 the Gmail address seisner1234@gmail.com and family relationship score confirm this is a personal contact, not a professional one."
+    }
   },
-
-  "_fallback_rule": "If recipient not in any register: classify by domain + prior-thread tone. Default to B (mid-casual) if unclear. Personal Gmail addresses (gmail.com, hotmail.com) without prior thread → B. Corporate domains without prior thread → A."
+  "_fallback_rule": "If recipient not in any register: classify by domain + prior-thread tone. Default to B (mid-casual) if unclear. Personal Gmail addresses (gmail.com, hotmail.com) without prior thread \u2192 B. Corporate domains without prior thread \u2192 A."
 }

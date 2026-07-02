@@ -1,8 +1,8 @@
 ---
 name: email-drip
-description: Sequence-based email drip + broadcast newsletter sender for Zerg's email marketing program. Reads YAML campaign files at MattZerg/Marketing/Email/<campaign>.yaml (trigger → delay → template per step) and dispatches via Resend (Phase 2) → ZergMail (Phase 3 when product-ready). Two streams — `lifecycle` (transactional drips: welcome, trial-day-N, "you reached limit", post-Pro) and `broadcast` (bi-weekly newsletter with optional segmentation). UTM-instruments every link via utm-attribution skill (hard-fails on raw links). Logs every send to MattZerg/Marketing/Email/sent-log.md. Phase 1 uses gmail-skill manual sequences for welcome drip — this skill is the Phase 2 upgrade once list ≥200. USE PROACTIVELY when Matt mentions sending a sequence, drip, broadcast, newsletter, or "follow-up email N days after X."
-allowed-tools: Bash, Read, Write
+description: Plan and send Zerg lifecycle drip campaigns and broadcast newsletters with UTM-instrumented links.
 ---
+
 
 # Email Drip Skill (v0 stub — Phase 2 build, deferred until list ≥200 + ESP chosen)
 

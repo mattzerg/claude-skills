@@ -1,0 +1,309 @@
+{"ts": "2026-05-29T07:13:08.938290+00:00", "action": "verify", "doi": "10.1126/science.185.4157.1124", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:02:15.534677+00:00", "action": "discover", "construct": "default-effect", "domain": "behavioral-economics", "source": "openalex", "hits": 20}
+{"ts": "2026-05-29T08:02:15.630593+00:00", "action": "discover", "construct": "recognition-over-recall", "domain": "hci", "source": "openalex", "hits": 20}
+{"ts": "2026-05-29T08:02:15.683160+00:00", "action": "discover", "construct": "social-proof", "domain": "applied-psychology", "source": "openalex", "hits": 20}
+{"ts": "2026-05-29T08:02:15.970552+00:00", "action": "discover", "construct": "NPS-measurement-properties", "domain": "user-research", "source": "openalex", "hits": 20}
+{"ts": "2026-05-29T08:02:16.232228+00:00", "action": "discover", "construct": "fitts-law", "domain": "hci", "source": "openalex", "hits": 20}
+{"ts": "2026-05-29T08:02:16.398485+00:00", "action": "discover", "construct": "rail-model-performance-budgets", "domain": "hci", "source": "openalex", "hits": 20}
+{"ts": "2026-05-29T08:02:16.772494+00:00", "action": "discover", "construct": "anchoring-in-pricing", "domain": "behavioral-economics", "source": "openalex", "hits": 20}
+{"ts": "2026-05-29T08:02:16.917179+00:00", "action": "discover", "construct": "scarcity-cues-in-marketing", "domain": "consumer-behavior", "source": "openalex", "hits": 20}
+{"ts": "2026-05-29T08:02:16.918418+00:00", "action": "discover", "construct": "decoy-pricing", "domain": "consumer-behavior", "source": "openalex", "hits": 20}
+{"ts": "2026-05-29T08:02:17.038462+00:00", "action": "discover", "construct": "left-digit-effect", "domain": "behavioral-economics", "source": "openalex", "hits": 20}
+{"ts": "2026-05-29T08:04:09.913980+00:00", "action": "verify", "doi": "10.1126/science.1091721", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:10.204449+00:00", "action": "verify", "doi": "10.1162/003355301753265543", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:10.463276+00:00", "action": "verify", "doi": "10.1017/bpp.2018.43", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:11.369071+00:00", "action": "verify", "doi": "10.1162/003355303321675009", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T08:04:12.787964+00:00", "action": "verify", "doi": "10.1509/jmkr.42.1.54.56883", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T08:04:13.045437+00:00", "action": "verify", "doi": "10.1086/208999", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:13.294237+00:00", "action": "verify", "doi": "10.1509/jmr.13.0291", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:13.529077+00:00", "action": "verify", "doi": "10.1037/0022-3514.32.5.906", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:13.772590+00:00", "action": "verify", "doi": "10.1037/h0055392", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:14.024174+00:00", "action": "verify", "doi": "10.1016/j.ijhcs.2004.09.001", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:14.287269+00:00", "action": "verify", "doi": "10.1207/s15327051hci0701_3", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:14.533931+00:00", "action": "verify", "doi": "10.1145/142750.142834", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:14.799488+00:00", "action": "verify", "doi": "10.1509/jmkg.71.3.039", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:04:15.223615+00:00", "action": "verify", "doi": "10.1086/586910", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:05:49.442494+00:00", "action": "verify", "doi": "10.1086/208899", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:05:50.167879+00:00", "action": "verify", "doi": "10.1509/jmr.13.0303", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T08:05:50.443008+00:00", "action": "verify", "doi": "10.1162/00335530360535153", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:05:50.807302+00:00", "action": "verify", "doi": "10.1086/429600", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:05:51.314712+00:00", "action": "verify", "doi": "10.1080/14640747308400340", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:13:15.053901+00:00", "action": "verify", "doi": "10.1086/208999", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:13:15.054369+00:00", "action": "verify-title-mismatch", "doi": "10.1086/208999", "expected": "asymmetric,decoy", "got": "Recent Developments in Classical Conditioning"}
+{"ts": "2026-05-29T08:13:15.288637+00:00", "action": "verify", "doi": "10.1086/208899", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:13:36.052079+00:00", "action": "verify", "doi": "10.1086/208999", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:13:36.052295+00:00", "action": "verify-title-mismatch", "doi": "10.1086/208999", "expected": "asymmetric,decoy", "got": "Recent Developments in Classical Conditioning"}
+{"ts": "2026-05-29T08:13:36.543746+00:00", "action": "verify", "doi": "10.1086/208899", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:13:37.181655+00:00", "action": "verify", "doi": "10.1086/208899", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:13:37.181884+00:00", "action": "verify-year-mismatch", "doi": "10.1086/208899", "expected": "2005", "got": 1982}
+{"ts": "2026-05-29T08:14:30.859814+00:00", "action": "discover", "construct": "default-effect", "domain": "behavioral-economics", "source": "openalex", "hits": 10, "concept_id": "C109574028", "phrase_quoted": true}
+{"ts": "2026-05-29T08:25:35.770173+00:00", "action": "verify", "doi": "10.1177/0022243719898369", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T08:25:36.031394+00:00", "action": "verify", "doi": "10.1086/598614", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:25:36.031679+00:00", "action": "verify-title-mismatch", "doi": "10.1086/598614", "expected": "price ending,left-digit,nine-ending,price endings", "got": "The Effect of Mere Touch on Perceived Ownership"}
+{"ts": "2026-05-29T08:25:36.750378+00:00", "action": "verify", "doi": "10.1509/jmr.13.0061", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T08:25:36.980165+00:00", "action": "verify", "doi": "10.1086/209405", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:25:36.980414+00:00", "action": "verify-title-mismatch", "doi": "10.1086/209405", "expected": "context,asymmetric,trade-off", "got": "A Meta-Analysis of Cronbach's Coefficient Alpha"}
+{"ts": "2026-05-29T08:25:38.178679+00:00", "action": "verify", "doi": "10.1002/mar.4220080107", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T08:25:38.419372+00:00", "action": "verify", "doi": "10.1086/657228", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:25:38.419593+00:00", "action": "verify-title-mismatch", "doi": "10.1086/657228", "expected": "scarcity", "got": "Nicolas\u00a0Rasmussen. <i>On Speed: The Many Lives of Amphetamine</i>. ix + 352 pp., illus., index. New York/London: New York University Press, 2008. $29.95 (cloth)."}
+{"ts": "2026-05-29T08:25:38.958157+00:00", "action": "verify", "doi": "10.1111/j.1467-9280.2007.01917.x", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:25:39.231421+00:00", "action": "verify", "doi": "10.1038/nature11421", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:26:08.392445+00:00", "action": "discover", "construct": "scarcity heuristic", "domain": "consumer-behavior", "source": "openalex", "hits": 14, "concept_id": "C23213687", "phrase_quoted": true}
+{"ts": "2026-05-29T08:26:08.406096+00:00", "action": "discover", "construct": "attraction effect", "domain": "consumer-behavior", "source": "openalex", "hits": 15, "concept_id": "C23213687", "phrase_quoted": true}
+{"ts": "2026-05-29T08:26:08.432303+00:00", "action": "discover", "construct": "left digit effect", "domain": "behavioral-economics", "source": "openalex", "hits": 11, "concept_id": "C109574028", "phrase_quoted": true}
+{"ts": "2026-05-29T08:26:53.400686+00:00", "action": "discover", "construct": "left-digit-effect", "domain": "behavioral-economics", "source": "openalex", "hits": 11, "concept_id": "C109574028", "phrase_quoted": true}
+{"ts": "2026-05-29T08:27:16.810930+00:00", "action": "discover", "construct": "scarcity-cues-in-marketing", "domain": "consumer-behavior", "source": "openalex", "hits": 2, "concept_id": "C23213687", "phrase_quoted": true}
+{"ts": "2026-05-29T08:27:16.980856+00:00", "action": "discover", "construct": "decoy-pricing", "domain": "consumer-behavior", "source": "openalex", "hits": 14, "concept_id": "C23213687", "phrase_quoted": true}
+{"ts": "2026-05-29T08:27:17.026161+00:00", "action": "discover", "construct": "social-proof", "domain": "applied-psychology", "source": "openalex", "hits": 15, "concept_id": "C75630572", "phrase_quoted": true}
+{"ts": "2026-05-29T08:27:17.175053+00:00", "action": "discover-fallback", "construct": "scarcity-cues-in-marketing", "reason": "concept-filter-empty", "hits": 3}
+{"ts": "2026-05-29T08:27:41.537204+00:00", "action": "verify", "doi": "10.1016/j.jretai.2022.06.003", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:27:41.778431+00:00", "action": "verify", "doi": "10.1016/j.beproc.2019.05.020", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:27:42.019589+00:00", "action": "verify", "doi": "10.1016/j.obhdp.2015.08.004", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:27:56.324660+00:00", "action": "verify", "doi": "10.1509/jmr.12.0061", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:29.140593+00:00", "action": "verify", "doi": "10.1007/BF00055564", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:29.390960+00:00", "action": "verify", "doi": "10.1257/jep.5.1.193", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:29.639543+00:00", "action": "verify", "doi": "10.1111/1467-9280.00441", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:29.872727+00:00", "action": "verify", "doi": "10.2307/1914185", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:30.118944+00:00", "action": "verify", "doi": "10.1007/BF00122574", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:30.119142+00:00", "action": "verify-title-mismatch", "doi": "10.1007/BF00122574", "expected": "cumulative prospect", "got": "Advances in prospect theory: Cumulative representation of uncertainty"}
+{"ts": "2026-05-29T08:45:30.374776+00:00", "action": "verify", "doi": "10.1002/jcpy.1047", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:30.620314+00:00", "action": "verify", "doi": "10.1126/science.7455683", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:30.901516+00:00", "action": "verify", "doi": "10.1006/obhd.1998.2781", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:31.150693+00:00", "action": "verify", "doi": "10.1162/003355397555253", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:31.425459+00:00", "action": "verify", "doi": "10.1257/aer.89.1.103", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:31.654168+00:00", "action": "verify", "doi": "10.1257/jel.40.2.351", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:31.959231+00:00", "action": "verify", "doi": "10.1027/1864-9335/a000178", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:31.959547+00:00", "action": "verify-title-mismatch", "doi": "10.1027/1864-9335/a000178", "expected": "many labs,replication", "got": "Investigating Variation in Replicability"}
+{"ts": "2026-05-29T08:45:53.935967+00:00", "action": "verify", "doi": "10.1007/BF00122574", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:54.232443+00:00", "action": "verify", "doi": "10.1027/1864-9335/a000178", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:54.486312+00:00", "action": "verify", "doi": "10.1287/mksc.4.3.199", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:54.877460+00:00", "action": "verify", "doi": "10.2307/3151931", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:45:54.877730+00:00", "action": "verify-title-mismatch", "doi": "10.2307/3151931", "expected": "divide and prosper,partitioning", "got": "An Anchoring and Adjustment Model of Purchase Quantity Decisions"}
+{"ts": "2026-05-29T08:52:01.503679+00:00", "action": "verify", "doi": "10.1147/sj.214.0397", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T08:52:02.964890+00:00", "action": "verify", "doi": "10.1145/108844.108874", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:52:03.451599+00:00", "action": "verify", "doi": "10.1145/1476589.1476628", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T08:52:16.762215+00:00", "action": "verify", "doi": "10.1147/sj.214.0397", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T09:05:44.034775+00:00", "action": "verify", "doi": "10.1037/0096-1523.1.3.288", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:05:44.364398+00:00", "action": "verify", "doi": "10.1037/0033-295X.90.4.293", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:05:55.402372+00:00", "action": "verify", "doi": "10.1016/0010-0285(73)90033-9", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:05:55.702430+00:00", "action": "verify", "doi": "10.1016/0010-0285(72)90016-3", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:05:56.066278+00:00", "action": "verify", "doi": "10.1016/0749-5978(85)90049-4", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:19.496614+00:00", "action": "verify", "doi": "10.1037/0033-295X.84.3.231", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:19.496882+00:00", "action": "verify-title-mismatch", "doi": "10.1037/0033-295X.84.3.231", "expected": "confidence", "got": "Telling more than we can know: Verbal reports on mental processes."}
+{"ts": "2026-05-29T09:08:19.737697+00:00", "action": "verify", "doi": "10.1287/mnsc.39.1.17", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:19.737929+00:00", "action": "verify-title-mismatch", "doi": "10.1287/mnsc.39.1.17", "expected": "planning fallacy,overestimation", "got": "Timid Choices and Bold Forecasts: A Cognitive Perspective on Risk Taking"}
+{"ts": "2026-05-29T09:08:20.007155+00:00", "action": "verify", "doi": "10.2307/1879431", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:20.007403+00:00", "action": "verify-year-mismatch", "doi": "10.2307/1879431", "expected": "1961", "got": 1970}
+{"ts": "2026-05-29T09:08:20.287314+00:00", "action": "verify", "doi": "10.1037/0033-295X.93.2.136", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:21.084682+00:00", "action": "verify", "doi": "10.2307/3003318", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:21.084920+00:00", "action": "verify-title-mismatch", "doi": "10.2307/3003318", "expected": "endowment,assignment of property rights", "got": "Individual Discount Rates and the Purchase and Utilization of Energy-Using Durables"}
+{"ts": "2026-05-29T09:08:21.892732+00:00", "action": "verify", "doi": "10.1037/h0034747", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:21.893003+00:00", "action": "verify-title-mismatch", "doi": "10.1037/h0034747", "expected": "belief,small numbers,law", "got": "On the psychology of prediction."}
+{"ts": "2026-05-29T09:08:57.759593+00:00", "action": "verify", "doi": "10.1037/0022-3514.67.3.366", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:58.026737+00:00", "action": "verify", "doi": "10.1037/h0031322", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:58.356829+00:00", "action": "verify", "doi": "10.2307/1884324", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:58.631363+00:00", "action": "verify", "doi": "10.1086/261737", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:08:58.891325+00:00", "action": "verify", "doi": "10.1017/CBO9780511809477.023", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:11:54.799727+00:00", "action": "verify", "doi": "10.2307/2232669", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:11:55.654180+00:00", "action": "verify", "doi": "10.1037/0022-3514.77.6.1121", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:11:55.960442+00:00", "action": "verify", "doi": "10.3758/bf03206327", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:11:56.680377+00:00", "action": "verify", "doi": "10.3982/ECTA14943", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:11:57.786095+00:00", "action": "verify", "doi": "10.1086/500480", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:11:57.786335+00:00", "action": "verify-title-mismatch", "doi": "10.1086/500480", "expected": "goal-gradient,goal gradient", "got": "The Endowed Progress Effect: How Artificial Advancement Increases Effort"}
+{"ts": "2026-05-29T09:11:58.585656+00:00", "action": "verify", "doi": "10.1023/A:1006282725798", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T09:12:13.650293+00:00", "action": "verify", "doi": "10.1086/500480", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:12:13.936860+00:00", "action": "verify", "doi": "10.1509/jmkr.43.1.39", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:12:14.713986+00:00", "action": "verify", "doi": "10.1023/A:1007879411489", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:12:14.976878+00:00", "action": "verify", "doi": "10.2307/1907921", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:16:36.488069+00:00", "action": "verify", "doi": "10.1287/mksc.17.4.301", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:16:36.488366+00:00", "action": "verify-title-mismatch", "doi": "10.1287/mksc.17.4.301", "expected": "partitioned prices,partitioning", "got": "Process Innovation, Product Differentiation, and Channel Structure: Strategic Incentives in a Duopoly"}
+{"ts": "2026-05-29T09:16:37.730073+00:00", "action": "verify", "doi": "10.1287/mnsc.1110.1376", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:16:38.551968+00:00", "action": "verify", "doi": "10.1257/aer.93.2.175", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T09:16:51.048764+00:00", "action": "verify", "doi": "10.1002/(SICI)1099-0771(199909)12:3<183::AID-BDM318>3.0.CO;2-F", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:16:51.316512+00:00", "action": "verify", "doi": "10.1257/000282803321947001", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:16:51.574302+00:00", "action": "verify", "doi": "10.1177/002224379803500408", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:16:51.574532+00:00", "action": "verify-title-mismatch", "doi": "10.1177/002224379803500408", "expected": "divide,partitioning,partitioned", "got": "Designing the Next Study for Maximum Impact"}
+{"ts": "2026-05-29T09:17:44.796163+00:00", "action": "verify", "doi": "10.1177/002224379803500404", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:17:45.043021+00:00", "action": "verify", "doi": "10.1037/h0076284", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:17:45.296918+00:00", "action": "verify", "doi": "10.2307/1600573", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:23:07.747652+00:00", "action": "verify", "doi": "10.1080/17470215208416600", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:23:08.422164+00:00", "action": "verify", "doi": "10.1037/h0043158", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:23:08.707490+00:00", "action": "verify", "doi": "10.1017/S0140525X01003922", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:23:08.976526+00:00", "action": "verify", "doi": "10.1207/s15516709cog1202_4", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:23:09.224179+00:00", "action": "verify", "doi": "10.1145/301153.301168", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:23:09.446790+00:00", "action": "verify", "doi": "10.1145/191666.191729", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:23:09.663560+00:00", "action": "verify", "doi": "10.1037/0033-295X.88.1.1", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:26:17.483604+00:00", "action": "verify", "doi": "10.1145/2070719.2070757", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T09:26:17.718642+00:00", "action": "verify", "doi": "10.1007/BF00410640", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:26:18.014064+00:00", "action": "verify", "doi": "10.1073/pnas.0803390105", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:26:18.767441+00:00", "action": "verify", "doi": "10.1145/1240624.1240688", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:26:18.767612+00:00", "action": "verify-title-mismatch", "doi": "10.1145/1240624.1240688", "expected": "above the fold,page fold", "got": "The relationship between accessibility and usability of websites"}
+{"ts": "2026-05-29T09:26:19.473715+00:00", "action": "verify", "doi": "10.1145/2207676.2208539", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:26:19.473884+00:00", "action": "verify-title-mismatch", "doi": "10.1145/2207676.2208539", "expected": "f-pattern,reading,eye", "got": "Sustainably unpersuaded"}
+{"ts": "2026-05-29T09:26:19.916939+00:00", "action": "verify", "doi": "10.1207/s1532690xci0701_1", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:26:19.917126+00:00", "action": "verify-title-mismatch", "doi": "10.1207/s1532690xci0701_1", "expected": "split-attention,split attention", "got": "Structuring Effective Worked Examples"}
+{"ts": "2026-05-29T09:26:20.291794+00:00", "action": "verify", "doi": "10.1145/642611.642638", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:26:20.292020+00:00", "action": "verify-title-mismatch", "doi": "10.1145/642611.642638", "expected": "scrolling,reading", "got": "Electronic voting system usability issues"}
+{"ts": "2026-05-29T09:26:21.013317+00:00", "action": "verify", "doi": "10.3758/BF03195514", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:26:37.464423+00:00", "action": "discover", "construct": "form-design-best-practices", "domain": "hci", "source": "openalex", "hits": 1, "concept_id": "C107457646", "phrase_quoted": true}
+{"ts": "2026-05-29T09:26:39.547612+00:00", "action": "discover-fallback", "construct": "form-design-best-practices", "reason": "concept-filter-empty", "hits": 5}
+{"ts": "2026-05-29T09:26:39.844990+00:00", "action": "verify", "doi": "10.1037/0022-3514.61.2.195", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:26:40.115962+00:00", "action": "verify", "doi": "10.1145/1978942.1979345", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T09:26:40.116171+00:00", "action": "verify-title-mismatch", "doi": "10.1145/1978942.1979345", "expected": "form,registration,usability", "got": "TapBack"}
+{"ts": "2026-05-29T10:54:34.126011+00:00", "action": "verify", "doi": "10.1080/01449290410001715714", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:54:35.142203+00:00", "action": "verify", "doi": "10.1518/001872009X398039", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T10:54:35.703195+00:00", "action": "verify", "doi": "10.2307/414498", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:54:36.179604+00:00", "action": "verify", "doi": "10.1207/s15327051hci0103_3", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:54:36.179865+00:00", "action": "verify-title-mismatch", "doi": "10.1207/s15327051hci0103_3", "expected": "GOMS,keystroke,prospects", "got": "Exploring Exploring a Word Processor"}
+{"ts": "2026-05-29T10:54:36.805424+00:00", "action": "verify", "doi": "10.2307/1575659", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:54:36.805662+00:00", "action": "verify-title-mismatch", "doi": "10.2307/1575659", "expected": "design of everyday things", "got": "\"Art in Outerspace\": Gauging Public Response to High-Technology Art"}
+{"ts": "2026-05-29T10:54:40.769291+00:00", "action": "verify", "doi": "10.1080/10447310009359150", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T10:54:41.810355+00:00", "action": "verify", "doi": "10.4324/9780203731543", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T10:54:58.224333+00:00", "action": "verify", "doi": "10.1145/358886.358895", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:54:58.479511+00:00", "action": "verify", "doi": "10.1146/annurev.ne.18.030195.001205", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:54:58.732179+00:00", "action": "verify", "doi": "10.1145/1952383.1952384", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:54:59.056880+00:00", "action": "verify", "doi": "10.1145/1056808.1056952", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:54:59.057108+00:00", "action": "verify-title-mismatch", "doi": "10.1145/1056808.1056952", "expected": "above-the-fold,page fold", "got": "Don't take my folders away!"}
+{"ts": "2026-05-29T10:54:59.733553+00:00", "action": "verify", "doi": "10.1518/107118100621118506", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T10:58:14.782736+00:00", "action": "verify", "doi": "10.1086/209465", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:58:15.050838+00:00", "action": "verify", "doi": "10.1006/game.1995.1027", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:58:15.791157+00:00", "action": "verify", "doi": "10.1509/jmkr.38.1.30.18828", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:58:16.062739+00:00", "action": "verify", "doi": "10.1126/science.1238041", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:58:16.325216+00:00", "action": "verify", "doi": "10.1016/j.jebo.2006.03.001", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:58:16.325464+00:00", "action": "verify-title-mismatch", "doi": "10.1016/j.jebo.2006.03.001", "expected": "uncertainty,discount", "got": ""}
+{"ts": "2026-05-29T10:58:16.567078+00:00", "action": "verify", "doi": "10.1007/BF00056211", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T10:58:16.567365+00:00", "action": "verify-title-mismatch", "doi": "10.1007/BF00056211", "expected": "uncertainty,risk", "got": "Feasibility of conducting a lung-cancer chemoprevention trial among tin miners in Yunnan, P. R. China"}
+{"ts": "2026-05-29T11:00:46.543575+00:00", "action": "verify", "doi": "10.1162/qjec.121.4.1133", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T11:00:46.863697+00:00", "action": "verify", "doi": "10.1257/jel.20151245", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T11:00:47.108346+00:00", "action": "verify", "doi": "10.2307/2234133", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:47.887611+00:00", "action": "verify", "doi": "10.1037/h0023552", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:48.116078+00:00", "action": "verify", "doi": "10.1037/h0040525", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:48.348143+00:00", "action": "verify", "doi": "10.1037/h0025848", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:48.644642+00:00", "action": "verify", "doi": "10.1037/10318-001", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:48.644925+00:00", "action": "verify-year-mismatch", "doi": "10.1037/10318-001", "expected": "1957", "got": 2004}
+{"ts": "2026-05-29T12:06:48.901088+00:00", "action": "verify", "doi": "10.1037/0003-066X.54.7.493", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:49.160451+00:00", "action": "verify", "doi": "10.1002/ejsp.674", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:49.160719+00:00", "action": "verify-year-mismatch", "doi": "10.1002/ejsp.674", "expected": "2010", "got": 2009}
+{"ts": "2026-05-29T12:06:49.439873+00:00", "action": "verify", "doi": "10.1287/mnsc.2013.1784", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:49.440120+00:00", "action": "verify-year-mismatch", "doi": "10.1287/mnsc.2013.1784", "expected": "2014", "got": 2013}
+{"ts": "2026-05-29T12:06:51.751384+00:00", "action": "verify", "doi": "10.1080/15298860701801064", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T12:06:51.990423+00:00", "action": "verify", "doi": "10.1037/0033-295X.84.2.191", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:52.237886+00:00", "action": "verify", "doi": "10.1037/0003-066X.57.9.705", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:52.474532+00:00", "action": "verify", "doi": "10.1287/mnsc.2014.1901", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:06:52.733352+00:00", "action": "verify", "doi": "10.1037/1089-2680.5.4.323", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:07:08.583929+00:00", "action": "verify", "doi": "10.1002/ejsp.674", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:07:08.835953+00:00", "action": "verify", "doi": "10.1287/mnsc.2013.1784", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:07:09.445177+00:00", "action": "verify", "doi": "10.1146/annurev-psych-010416-044114", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T12:49:19.635690+00:00", "action": "verify", "doi": "10.1037/h0041593", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:49:45.723275+00:00", "action": "verify", "doi": "10.1037/0022-3514.74.6.1464", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:49:46.018282+00:00", "action": "verify", "doi": "10.1080/00461520.2012.722805", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:49:46.292397+00:00", "action": "verify", "doi": "10.1086/209156", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:49:46.292672+00:00", "action": "verify-title-mismatch", "doi": "10.1086/209156", "expected": "scarcity,limited", "got": "Hemispherically Lateralized EEG as a Response to Television Commercials"}
+{"ts": "2026-05-29T12:49:46.563492+00:00", "action": "verify", "doi": "10.1037/a0019471", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:49:46.563730+00:00", "action": "verify-title-mismatch", "doi": "10.1037/a0019471", "expected": "are you happy,liking", "got": "A dual-stage two-phase model of selective attention."}
+{"ts": "2026-05-29T12:51:07.309321+00:00", "action": "verify", "doi": "10.1086/209525", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:51:07.309537+00:00", "action": "verify-title-mismatch", "doi": "10.1086/209525", "expected": "limited time,scarcity", "got": "Integrating Multiple Opinions: the Role of Aspiration Level on Consumer Response to Critic Consensus"}
+{"ts": "2026-05-29T12:51:07.614797+00:00", "action": "verify", "doi": "10.1037/a0020271", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:51:07.615025+00:00", "action": "verify-title-mismatch", "doi": "10.1037/a0020271", "expected": "are you happy to see me", "got": "Moving toward more perfect unions: Daily and long-term consequences of approach and avoidance goals in romantic relationships."}
+{"ts": "2026-05-29T12:51:08.380783+00:00", "action": "verify", "doi": "10.1146/annurev-psych-122414-033614", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T12:56:48.723046+00:00", "action": "verify", "doi": "10.1037/h0030369", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:56:48.723632+00:00", "action": "verify-title-mismatch", "doi": "10.1037/h0030369", "expected": "interpersonal attraction,liking", "got": "Control of orienting behavior in children under five years of age."}
+{"ts": "2026-05-29T12:56:48.975000+00:00", "action": "verify", "doi": "10.1016/j.jcps.2009.06.001", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:56:48.975247+00:00", "action": "verify-title-mismatch", "doi": "10.1016/j.jcps.2009.06.001", "expected": "identity-based motivation", "got": "Identity\u2010based motivation and consumer behavior"}
+{"ts": "2026-05-29T12:56:49.229758+00:00", "action": "verify", "doi": "10.1146/annurev.psych.55.090902.142015", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:57:25.530472+00:00", "action": "verify", "doi": "10.1016/j.jcps.2009.06.001", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T12:57:26.394963+00:00", "action": "verify", "doi": "10.1016/0022-1031(65)90034-3", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T12:57:51.521460+00:00", "action": "verify", "doi": "10.1016/0022-1031(65)90034-3", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T14:19:03.830338+00:00", "action": "verify", "doi": "10.1086/209174", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:03.830962+00:00", "action": "verify-title-mismatch", "doi": "10.1086/209174", "expected": "brand extension", "got": "How Consumers are Affected by the Framing of Attribute Information Before and After Consuming the Product"}
+{"ts": "2026-05-29T14:19:04.119836+00:00", "action": "verify", "doi": "10.1086/208906", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:04.120146+00:00", "action": "verify-title-mismatch", "doi": "10.1086/208906", "expected": "price-quality", "got": "The Experiential Aspects of Consumption: Consumer Fantasies, Feelings, and Fun"}
+{"ts": "2026-05-29T14:19:04.463353+00:00", "action": "verify", "doi": "10.1086/209123", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:04.463624+00:00", "action": "verify-title-mismatch", "doi": "10.1086/209123", "expected": "involvement,elaboration", "got": "Assessing the Role of Emotions as Mediators of Consumer Responses to Advertising"}
+{"ts": "2026-05-29T14:19:04.717838+00:00", "action": "verify", "doi": "10.1509/jmkr.43.3.345", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:04.991366+00:00", "action": "verify", "doi": "10.1086/209508", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:04.991782+00:00", "action": "verify-title-mismatch", "doi": "10.1086/209508", "expected": "brand attachment", "got": "Contingent Processes of Source Identification"}
+{"ts": "2026-05-29T14:19:05.225786+00:00", "action": "verify", "doi": "10.1037/0022-3514.79.6.995", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:05.226013+00:00", "action": "verify-title-mismatch", "doi": "10.1037/0022-3514.79.6.995", "expected": "choice overload,assortment", "got": "When choice is demotivating: Can one desire too much of a good thing?"}
+{"ts": "2026-05-29T14:19:05.493557+00:00", "action": "verify", "doi": "10.1086/651235", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:05.724381+00:00", "action": "verify", "doi": "10.1037/0022-3514.42.1.116", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:06.005336+00:00", "action": "verify", "doi": "10.1509/jmkg.74.5.1", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:06.005578+00:00", "action": "verify-title-mismatch", "doi": "10.1509/jmkg.74.5.1", "expected": "purchase momentum", "got": "Driving Profitability by Encouraging Customer Referrals: Who, When, and How"}
+{"ts": "2026-05-29T14:19:31.476092+00:00", "action": "verify", "doi": "10.1037/0022-3514.79.6.995", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:31.733169+00:00", "action": "verify", "doi": "10.1016/S0065-2601(08)60214-2", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:32.038600+00:00", "action": "verify", "doi": "10.1509/jmkg.74.6.1", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:32.298616+00:00", "action": "verify", "doi": "10.2307/1252171", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:32.558816+00:00", "action": "verify", "doi": "10.2307/3172593", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:32.559085+00:00", "action": "verify-title-mismatch", "doi": "10.2307/3172593", "expected": "price,quality", "got": "The Influence of Message Framing and Issue Involvement"}
+{"ts": "2026-05-29T14:19:32.853299+00:00", "action": "verify", "doi": "10.1086/378187", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:32.853605+00:00", "action": "verify-title-mismatch", "doi": "10.1086/378187", "expected": "purchase momentum", "got": "Shadowing of the Nascent Jet in NGC 4261 by a Line\u2010emitting Supersonic Accretion Disk"}
+{"ts": "2026-05-29T14:19:33.249390+00:00", "action": "verify", "doi": "10.1086/424574", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:33.250193+00:00", "action": "verify-title-mismatch", "doi": "10.1086/424574", "expected": "regret,post-purchase", "got": "Reply to Tso et al."}
+{"ts": "2026-05-29T14:19:33.545471+00:00", "action": "verify", "doi": "10.1287/mksc.2014.0848", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:19:33.545726+00:00", "action": "verify-title-mismatch", "doi": "10.1287/mksc.2014.0848", "expected": "freemium", "got": "Valuing Customer Portfolios with Endogenous Mass and Direct Marketing Interventions Using a Stochastic Dynamic Programming Decomposition"}
+{"ts": "2026-05-29T14:21:37.430016+00:00", "action": "verify", "doi": "10.1086/378615", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:21:37.430542+00:00", "action": "verify-title-mismatch", "doi": "10.1086/378615", "expected": "purchase momentum,shopping momentum", "got": "Consumer and Market Drivers of the Trial Probability of New Consumer Packaged Goods"}
+{"ts": "2026-05-29T14:21:37.759480+00:00", "action": "verify", "doi": "10.1207/s15327663jcp1602_4", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:21:37.759731+00:00", "action": "verify-title-mismatch", "doi": "10.1207/s15327663jcp1602_4", "expected": "brand love", "got": "Construal\u2010Level Effects on Preference Stability, Preference\u2010Behavior Correspondence, and the Suppression of Competing Brands"}
+{"ts": "2026-05-29T14:21:38.171702+00:00", "action": "verify", "doi": "10.1086/383421", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:21:38.171990+00:00", "action": "verify-title-mismatch", "doi": "10.1086/383421", "expected": "regret,post-purchase", "got": "Answering Questions about Questions: A Persuasion Knowledge Perspective for Understanding the Effects of Rhetorical Questions"}
+{"ts": "2026-05-29T14:21:38.445097+00:00", "action": "verify", "doi": "10.1086/209218", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:21:38.445302+00:00", "action": "verify-title-mismatch", "doi": "10.1086/209218", "expected": "compromise,context effects", "got": "Literary Criticism and Consumer Research: Overview and Illustrative Analysis"}
+{"ts": "2026-05-29T14:21:40.305488+00:00", "action": "verify", "doi": "10.1177/0022243719898369", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-29T14:21:40.558421+00:00", "action": "verify", "doi": "10.1287/mksc.2013.0834", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-29T14:21:40.558672+00:00", "action": "verify-title-mismatch", "doi": "10.1287/mksc.2013.0834", "expected": "freemium", "got": "The Company That You Keep: When to Buy a Competitor's Keyword"}
+{"ts": "2026-05-30T22:32:47.285081+00:00", "action": "verify", "doi": "10.1037/0033-295X.87.3.215", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:32:47.567679+00:00", "action": "verify", "doi": "10.1002/acp.2350050305", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:32:48.684679+00:00", "action": "verify", "doi": "10.1037/0033-2909.130.2.298", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:32:48.931635+00:00", "action": "verify", "doi": "10.1037/0003-066X.54.2.93", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:32:49.209876+00:00", "action": "verify", "doi": "10.1177/1525822X05279903", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:32:49.210091+00:00", "action": "verify-year-mismatch", "doi": "10.1177/1525822X05279903", "expected": "2006", "got": 2005}
+{"ts": "2026-05-30T22:32:49.448325+00:00", "action": "verify", "doi": "10.1037/h0072891", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:32:49.448612+00:00", "action": "verify-title-mismatch", "doi": "10.1037/h0072891", "expected": "attitude", "got": "Changes in motor control and individual variations under the influence of 'razzing.\""}
+{"ts": "2026-05-30T22:32:50.229873+00:00", "action": "verify", "doi": "10.1145/512520.512523", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:32:50.886881+00:00", "action": "verify", "doi": "10.1145/325096.325096", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:32:51.150434+00:00", "action": "verify", "doi": "10.1145/2470654.2466114", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:32:51.150670+00:00", "action": "verify-title-mismatch", "doi": "10.1145/2470654.2466114", "expected": "card sort", "got": "Understanding palm-based imaginary interfaces"}
+{"ts": "2026-05-30T22:33:13.227868+00:00", "action": "verify", "doi": "10.1177/1525822X05279903", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:33:13.868164+00:00", "action": "verify", "doi": "10.1037/0021-9010.85.1.131", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:33:14.480077+00:00", "action": "verify", "doi": "10.1016/B978-0-12-373558-4.00007-1", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:33:15.149053+00:00", "action": "verify", "doi": "10.1080/01449290802410292", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:33:15.579921+00:00", "action": "verify", "doi": "10.1146/annurev.psych.54.101601.145030", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:33:15.580226+00:00", "action": "verify-year-mismatch", "doi": "10.1146/annurev.psych.54.101601.145030", "expected": "2003", "got": 2002}
+{"ts": "2026-05-30T22:33:15.827671+00:00", "action": "verify", "doi": "10.4324/9780203771587", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:33:15.827935+00:00", "action": "verify-year-mismatch", "doi": "10.4324/9780203771587", "expected": "1988", "got": 2013}
+{"ts": "2026-05-30T22:33:16.092455+00:00", "action": "verify", "doi": "10.1093/poq/nfl033", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:33:41.052482+00:00", "action": "verify", "doi": "10.1146/annurev.psych.54.101601.145030", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:33:41.298388+00:00", "action": "verify", "doi": "10.4324/9780203771587", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:33:41.546736+00:00", "action": "verify", "doi": "10.1037/0033-2909.103.3.299", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:33:41.547015+00:00", "action": "verify-title-mismatch", "doi": "10.1037/0033-2909.103.3.299", "expected": "acquiescence", "got": "Cognitive processes underlying context effects in attitude measurement."}
+{"ts": "2026-05-30T22:33:41.787873+00:00", "action": "verify", "doi": "10.5860/choice.50-6347", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:33:41.788098+00:00", "action": "verify-title-mismatch", "doi": "10.5860/choice.50-6347", "expected": "effortless,customer effort", "got": "Crime and punishment in early modern Russia"}
+{"ts": "2026-05-30T22:33:42.435443+00:00", "action": "verify", "doi": "10.1145/2693756", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:41:10.648959+00:00", "action": "verify", "doi": "10.1086/208721", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:41:11.535851+00:00", "action": "verify", "doi": "10.1509/jmkr.45.6.674", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:41:11.770525+00:00", "action": "verify", "doi": "10.4135/9781412963947", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:41:11.770760+00:00", "action": "verify-title-mismatch", "doi": "10.4135/9781412963947", "expected": "van Westendorp,price", "got": "Encyclopedia of Survey Research Methods"}
+{"ts": "2026-05-30T22:41:12.002525+00:00", "action": "verify", "doi": "10.4324/9780203710753", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:41:12.002735+00:00", "action": "verify-title-mismatch", "doi": "10.4324/9780203710753", "expected": "diffusion of innovations", "got": "An Integrated Approach to Communication Theory and Research"}
+{"ts": "2026-05-30T22:41:12.226369+00:00", "action": "verify", "doi": "10.2307/3151895", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:41:12.226580+00:00", "action": "verify-title-mismatch", "doi": "10.2307/3151895", "expected": "double jeopardy", "got": "Using Market-Level Data to Understand Promotion Effects in a Nonlinear Model"}
+{"ts": "2026-05-30T22:41:12.467179+00:00", "action": "verify", "doi": "10.2501/JAR-2016-027", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:41:12.467414+00:00", "action": "verify-title-mismatch", "doi": "10.2501/JAR-2016-027", "expected": "category entry points,memory", "got": "The Personal-Data Tsunami And the Future of Marketing"}
+{"ts": "2026-05-30T22:41:13.198268+00:00", "action": "verify", "doi": "10.1016/j.ijresmar.2007.05.004", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:41:13.447247+00:00", "action": "verify", "doi": "10.1006/jeem.2000.1163", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:41:13.447804+00:00", "action": "verify-title-mismatch", "doi": "10.1006/jeem.2000.1163", "expected": "stated preference,revealed preference", "got": "Optimal Institutional Arrangements for Transboundary Pollutants in a Second-Best World: Evidence from a Differential Game with Asymmetric Players"}
+{"ts": "2026-05-30T22:41:51.991987+00:00", "action": "verify", "doi": "10.1287/mksc.20.4.473.9755", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:41:52.626456+00:00", "action": "verify", "doi": "10.1108/JCM-07-2010-0517", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:41:53.351665+00:00", "action": "verify", "doi": "10.2501/IJA-29-3-405-428", "source": null, "result": "fail", "reason": "unresolved_via_all_sources"}
+{"ts": "2026-05-30T22:41:53.582602+00:00", "action": "verify", "doi": "10.2307/1250386", "source": "openalex", "result": "ok", "reason": null}
+{"ts": "2026-05-30T22:41:53.582842+00:00", "action": "verify-title-mismatch", "doi": "10.2307/1250386", "expected": "conjoint,trade-off", "got": "Outreach of Consumers and the Modernization of Urban Food Retailing in Developing Countries"}
+{"ts": "2026-06-01T01:54:30.560637+00:00", "action": "discover", "construct": "loss frame B2B SaaS retention", "domain": "behavioral-economics", "source": "openalex", "hits": 0, "concept_id": "C109574028", "phrase_quoted": true}
+{"ts": "2026-06-01T01:55:38.529991+00:00", "action": "discover", "construct": "loss aversion framing", "domain": "behavioral-economics", "source": "openalex", "hits": 20, "concept_id": "C109574028", "phrase_quoted": true}
+{"ts": "2026-06-01T01:55:39.164989+00:00", "action": "discover", "construct": "gain frame conversion", "domain": "behavioral-economics", "source": "openalex", "hits": 0, "concept_id": "C109574028", "phrase_quoted": true}
+{"ts": "2026-06-01T01:55:40.127434+00:00", "action": "discover", "construct": "framing effect subscription", "domain": "behavioral-economics", "source": "openalex", "hits": 0, "concept_id": "C109574028", "phrase_quoted": true}
+{"ts": "2026-06-01T01:56:02.011336+00:00", "action": "discover", "construct": "default effect onboarding", "domain": "behavioral-economics", "source": "openalex", "hits": 0, "concept_id": "C109574028", "phrase_quoted": true}
+{"ts": "2026-06-01T01:56:02.899715+00:00", "action": "discover", "construct": "pre-checked option default", "domain": "behavioral-economics", "source": "openalex", "hits": 0, "concept_id": "C109574028", "phrase_quoted": true}
+{"ts": "2026-06-01T01:56:03.881057+00:00", "action": "discover", "construct": "default option choice architecture", "domain": "behavioral-economics", "source": "openalex", "hits": 0, "concept_id": "C109574028", "phrase_quoted": true}
+{"ts": "2026-06-01T01:56:04.205685+00:00", "action": "discover-fallback", "construct": "default option choice architecture", "reason": "concept-filter-empty", "hits": 2}
+{"ts": "2026-06-01T01:56:04.847094+00:00", "action": "discover", "construct": "labor illusion AI", "domain": "behavioral-economics", "source": "openalex", "hits": 0, "concept_id": "C109574028", "phrase_quoted": true}

@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 9,
+    "color": 8,
+    "density": 7,
+    "voice": 8
+  },
+  "reasoning": {
+    "typography": "Custom Fricolage Grotesque + Mackinac combo creates real personality\u2014'fearlessly' in italic serif against sans headlines is confident, not stencil",
+    "hierarchy": "Hero dominates cleanly with scale contrast, though secondary content hierarchy weakens\u2014'Modern Compute' section feels like it drops 3 weight classes",
+    "distinctiveness": "Whimsical hand-drawn illustration system is genuinely ownable\u2014couldn't swap this for any other dev platform, the visual language is utterly specific",
+    "color": "Restrained purple/pink gradient with confident use of accent purple CTA (<5% of canvas), though gradient background risks trend-chasing",
+    "density": "Hero has breathing room but not boring uniform padding\u2014illustration fills space asymmetrically, creating actual composition rather than grid blocks",
+    "voice": "Avoids 'Features/Pricing/Testimonials' stencil\u2014'Build fast. Run any code fearlessly' is declarative positioning, not generic benefit list"
+  },
+  "winning_patterns": [
+    "Genuinely distinctive illustration system that creates brand memory",
+    "Typography pairing (sans + serif italic) does real work for emphasis",
+    "Headline copy has rhythm and personality ('fearlessly' as payoff)",
+    "Asymmetric composition\u2014illustration wraps around text organically",
+    "Restrained color palette with disciplined accent use"
+  ],
+  "anti_patterns": [
+    "Gradient background feels 2023-trendy rather than timeless",
+    "Secondary headline 'Modern Compute Without the Complexity' drops too much visual weight",
+    "Body copy gray is safe/forgettable\u2014could push tone harder",
+    "Bottom section preview hints at generic 'benefit blocks' pattern emerging",
+    "Navigation is standard issue horizontal list\u2014missed branding opportunity"
+  ],
+  "one_word_personality": "playful",
+  "_url": "https://fly.io",
+  "_persona": "brand_product",
+  "_note": "Type-only, opinionated",
+  "_graded_at": "2026-05-07T23:30:46.699955Z"
+}

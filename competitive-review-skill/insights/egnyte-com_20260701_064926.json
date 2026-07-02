@@ -1,0 +1,779 @@
+{
+  "name": "Egnyte",
+  "url": "https://www.egnyte.com/",
+  "domain": "egnyte.com",
+  "scanned_at": "2026-07-01T06:45:58.117415",
+  "sources": {
+    "landing": {
+      "url": "https://www.egnyte.com/",
+      "title": "Egnyte Content Cloud for Enterprises | Start Free Trial",
+      "text": "Egnyte Content Cloud for Enterprises | Start Free Trial\n\",\"position\":\"append\"});\n/*vwo_debug log(\"changeCSS\",\"body\"); vwo_debug*/;\nel.vwoCss({\"visibility\":\"visible !important\"});\n/*vwo_debug log(\"content\",\".button--light\"); vwo_debug*/;\nel=vwo_$(\".button--light\");\nel;vwo_$(\".button--light\").each(function(){\nthis.__vwoControlOuterHTML = this.__vwoControlOuterHTML || this.outerHTML ;\nvwo_$(this).vwoAttr('class', \"button button--small button--light user-nav__button get-demo-new-scheduler scheduler-popup \")\n});\nel=vwo_$(\".button--light\");\nel;\n/*vwo_debug log(\"content\",\".banner_copy--block > div:nth-of-type(2) > a:nth-of-type(1)\"); vwo_debug*/;\nel=vwo_$(\".banner_copy--block > div:nth-of-type(2) > a:nth-of-type(1)\");\nel;vwo_$(\".banner_copy--block > div:nth-of-type(2) > a:nth-of-type(1)\").each(function(){\nthis.__vwoControlOuterHTML = this.__vwoControlOuterHTML || this.outerHTML ;\nvwo_$(this).vwoAttr('class', \"button button-teal tc--black scheduler-popup\")\n});\nel=vwo_$(\".banner_copy--block > div:nth-of-type(2) > a:nth-of-type(1)\");\nel;\nel.vwoCss({\"transition\":\"none !important\"});;\n/*vwo_debug log(\"content\",\".nav__btn--teal\"); vwo_debug*/;\nel=vwo_$(\".nav__btn--teal\");\nel;vwo_$(\".nav__btn--teal\").each(function(){\nthis.__vwoControlOuterHTML = this.__vwoControlOuterHTML || this.outerHTML ;\nvwo_$(this).vwoAttr('class', \"nav__btn nav__btn--teal p--xsmall teal-bg tc--black semibold scheduler-popup\")\n});\nel=vwo_$(\".nav__btn--teal\");\nel;})(\"body\")}}},rules:[{\"triggers\":[\"25815381\"],\"tags\":[{\"data\":\"campaigns.590\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"22354825\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":1}]},\"metricId\":2109124,\"id\":\"metric\"}]},{\"triggers\":[\"19483151\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":3}]},\"metricId\":1883132,\"id\":\"metric\"}]},{\"triggers\":[\"19483142\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":4}]},\"metricId\":1883087,\"id\":\"metric\"}]},{\"triggers\":[\"9413556\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":588,\"g\":1}]},\"metricId\":1057593,\"id\":\"metric\"},{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":5}]},\"metricId\":1057593,\"id\":\"metric\"}]},{\"triggers\":[\"9248004\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":588,\"g\":2}]},\"metricId\":1041300,\"id\":\"metric\"},{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":6}]},\"metricId\":1041300,\"id\":\"metric\"}]},{\"triggers\":[\"20081323\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":588,\"g\":3}]},\"metricId\":1939879,\"id\":\"metric\"}]},{\"triggers\":[\"20081326\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":588,\"g\":4}]},\"metricId\":1939888,\"id\":\"metric\"}]},{\"triggers\":[\"20081329\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":588,\"g\":5}]},\"metricId\":1939891,\"id\":\"metric\"}]},{\"triggers\":[\"26208360\"],\"tags\":[{\"data\":{\"type\":\"g\",\"campaigns\":[{\"c\":588,\"g\":6}]},\"metricId\":0,\"id\":\"metric\"}]},{\"triggers\":[\"24852947\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":588,\"g\":7}]},\"metricId\":2468303,\"id\":\"metric\"}]},{\"triggers\":[\"20520496\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":588,\"g\":8}]},\"metricId\":1982281,\"id\":\"metric\"},{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":2}]},\"metricId\":1982281,\"id\":\"metric\"}]},{\"triggers\":[\"25173511\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":588,\"g\":9}]},\"metricId\":2513161,\"id\":\"metric\"},{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":11}]},\"metricId\":2513161,\"id\":\"metric\"}]},{\"triggers\":[\"10814251\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":588,\"g\":10}]},\"metricId\":1205092,\"id\":\"metric\"}]},{\"triggers\":[\"22355626\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":10}]},\"metricId\":2153200,\"id\":\"metric\"}]},{\"triggers\":[\"19169828\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":9}]},\"metricId\":1866257,\"id\":\"metric\"}]},{\"triggers\":[\"19483145\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":8}]},\"metricId\":1883108,\"id\":\"metric\"}]},{\"triggers\":[\"26208357\"],\"tags\":[{\"data\":\"campaigns.588\",\"priority\":4,\"id\":\"runCampaign\"}]},{\"triggers\":[\"19483148\"],\"tags\":[{\"data\":{\"type\":\"m\",\"campaigns\":[{\"c\":590,\"g\":7}]},\"metricId\":1883111,\"id\":\"metric\"}]},{\"triggers\":[\"8\"],\"tags\":[{\"priority\":3,\"id\":\"prePostMutation\"},{\"priority\":2,\"id\":\"groupCampaigns\"}]},{\"triggers\":[\"9\"],\"tags\":[{\"priority\":2,\"id\":\"visibilityService\"}]},{\"triggers\":[\"11\"],\"tags\":[{\"priority\":3,\"id\":\"revaluateHiding\"}]},{\"triggers\":[\"75\"],\"tags\":[{\"id\":\"urlChange\"}]},{\"triggers\":[\"5\"],\"tags\":[{\"id\":\"checkEnvironment\"}]},{\"triggers\":[\"2\"],\"tags\":[{\"id\":\"runTestCampaign\"}]}],pages:{\"ec\":[{\"3570003\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i).*\"]]}},{\"3570006\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i)^https?\\\\:\\\\\\/\\\\\\/(w{3}\\\\.)?egnyte\\\\.com\\\\\\/?(?:[\\\\?#].*)?$\"]]}},{\"3570000\":{\"inc\":[\"o\",[\"url\",\"urlReg\",\"(?i).*\\\\\\/register_conf\\\\.html.*\"]]}}]},pagesEval:{\"ec\":[3570003,3570006]},stags:{},domPath:{}}})();if(typeof window!==\"undefined\"&&window._vwoFlow===\"link-survey\"){window.VWO._.rCS()}\n;if(typeof heatmapDevice!==\"undefined\"&&heatmapDevice&&VWO._.allSettings&&VWO._.allSettings.dataStore.plugins.UA){VWO._.allSettings.dataStore.plugins.UA.dt=heatmapDevice};var commonWrapper=function(argument){if(!argument){argument={integrationName:\"\",valuesGetter:function(){return{}},valuesSetter:function(){},verifyData:function(){return{}}}}var isWingifyEnabled=false;var sendMonitoringEvent=function(type,elapsedMs,extraPayload){try{if(argument.integrationName!==\"factor\"){return}var eventName=\"vwo_debugLogs\";var eventPayload={intName:argument.integrationName||\"\",type:type,msg:elapsedMs,url:window.location.href};if(extraPayload&&typeof extraPayload===\"object\"){for(var key in extraPayload){if(Object.prototype.hasOwnProperty.call(extraPayload,key)){eventPayload[key]=extraPayload[key]}}}if(window.VWO&&window.VWO._&&typeof window.VWO._.event===\"function\"){window.VWO._.event(eventName,eventPayload,{enableLogs:1})}}catch(e){}};var getVisitorUuid=function(){if(window._vwo_acc_id>=1037725){return window.VWO&&window.VWO.get(\"visitor.id\")}else{return window.VWO._&&window.VWO._.cookies&&window.VWO._.cookies.get(\"_vwo_uuid\")}};var pollInterval=100;var timeout=6e4;return function(){sendMonitoringEvent(\"intCallTriggered\",0);var accountIntegrationSettings={};var _interval=null;var startTime=performance.now();var hasSentTimingEvent=false;function waitForAnalyticsVariables(){try{accountIntegrationSettings=argument.valuesGetter();accountIntegrationSettings.visitorUuid=getVisitorUuid();accountIntegrationSettings.isWingifyEnabled=isWingifyEnabled}catch(error){accountIntegrationSettings=undefined}if(accountIntegrationSettings&&argument.verifyData(accountIntegrationSettings)){argument.valuesSetter(accountIntegrationSettings);if(!hasSentTimingEvent){hasSentTimingEvent=true;sendMonitoringEvent(\"intDataPushed\",Math.round(performance.now()-startTime))}return 1}return 0}var currentTime=0;_interval=setInterval((function(){currentTime=currentTime||performance.now();var result=waitForAnalyticsVariables();var isTimeout=performance.now()-currentTime>=timeout;if(isTimeout&&!hasSentTimingEvent){hasSentTimingEvent=true;sendMonitoringEvent(\"intTimeout\",Math.round(performance.now()-startTime),{timeout_ms:timeout})}if(result||isTimeout){clearInterval(_interval)}}),pollInterval)}};\n    commonWrapper({valuesGetter:function(){return{}},valuesSetter:function(data){var ga4_device_id=\"\";if(typeof window.VWO._.cookies!==\"undefined\"){ga4_device_id=window.VWO._.cookies.get(\"_ga\")||\"\"}if(ga4_device_id){window.vwo_ga4_uuid=ga4_device_id.split(\".\").slice(-2).join(\".\");window.wingify_ga4_uuid=window.vwo_ga4_uuid}},verifyData:function(data){if(typeof window.VWO._.cookies!==\"undefined\"){return window.VWO._.cookies.get(\"_ga\")||\"\"}else{return false}}})();\n        var serverPushCommonWrapper=function(argument){var serverfiredCamp={};var INTEGRATION_EVENT=\"vwo_integrationData\";var defaultArgument={partner:null,getExperimentList:function(){return[]},accountSettings:function(){return{}},getCampaignSettings:function(){return{}},getServerPushPayload:function(){return null}};argument=argument||{};for(var key in defaultArgument){if(!argument[key]){argument[key]=defaultArgument[key]}}return function(){window.VWO=window.VWO||[];function ensureVwoEvent(){window.VWO=window.VWO||[];window.VWO.event=window.VWO.event||function(){window.VWO.push([\"event\"].concat([].slice.call(arguments)))}}function getVisitorUuid(){if(window._vwo_acc_id>=1037725){return window.VWO&&window.VWO.get(\"visitor.id\")}return window.VWO._&&window.VWO._.cookies&&window.VWO._.cookies.get(\"_vwo_uuid\")}function isFirstVisit(repeated){return repeated!==\"vS\"&&repeated!==\"vSS\"}function triggerServerPush(cData){var expId=cData.expId;var variationId=cData.variationId;var visitorUuid=cData.visitorUuid;var connectS=cData.connectS;var repeated=cData.repeated;if(!isFirstVisit(repeated)){return}if(!connectS||connectS.isServerSidePush!==true){return}var experimentList=argument.getExperimentList();var cId=connectS.cId;var partner=argument.partner;if(!partner||typeof partner!==\"string\"||!partner.length){return}serverfiredCamp[expId]=serverfiredCamp[expId]||{};if(serverfiredCamp[expId][cId]){return}if(experimentList.indexOf(+expId)===-1){return}var timeout=6e4;var currentTime=0;var interval=setInterval((function(){window.serverExpList=window.serverExpList||{};window.serverExpList[partner]=window.serverExpList[partner]||{};window.serverExpList[partner][cId]=window.serverExpList[partner][cId]||[];if(window.serverExpList[partner][cId].indexOf(expId)!==-1){clearInterval(interval);return}currentTime=currentTime||performance.now();var campaign=window._vwo_exp&&window._vwo_exp[expId];if(!campaign||!campaign.comb_n||!campaign.comb_n[variationId]){return}var defaultPayload={campaignId:expId,variationId:variationId,partner:partner,campaignName:campaign.name,variationName:campaign.comb_n[variationId],connectorId:connectS.cId};var integrationPayload=argument.getServerPushPayload(connectS,{expId:expId,variationId:variationId,visitorUuid:visitorUuid});var payload=Object.assign({},defaultPayload,integrationPayload);if(payload&&payload.partnerId){ensureVwoEvent();window.VWO.event(INTEGRATION_EVENT,payload);serverfiredCamp[expId][cId]=variationId;window.serverExpList[partner][cId].push(expId);clearInterval(interval);return}if(performance.now()-currentTime>=timeout){clearInterval(interval)}}),100)}function callbackFn(data){if(!data){return}var repeated=data[0];var expId=data[1];var variationId=data[2];var visitorUuid=getVisitorUuid();var accountSettings=argument.accountSettings();var allCampaignSettings=argument.getCampaignSettings();var connectors=allCampaignSettings.connectors;if(typeof connectors===\"undefined\"||connectors===null){connectors=[accountSettings]}var pushSettings=allCampaignSettings.push||{};var campaignConnectors=pushSettings[expId]||[0];var connectCampSettings=campaignConnectors.map((function(id){var connector=connectors[id]||{};return Object.assign({},connector,{cId:id})}));if(expId&&variationId&&[\"VISUAL_AB\",\"VISUAL\",\"SPLIT_URL\"].indexOf(_vwo_exp[expId].type)>-1){connectCampSettings.forEach((function(connectS){triggerServerPush({expId:expId,variationId:variationId,visitorUuid:visitorUuid,connectS:connectS,repeated:repeated})}))}}window.VWO.push([\"onVariationApplied\",callbackFn]);window.VWO.push([\"onVariationShownSent\",callbackFn])}};\nvar pushBasedCommonWrapper=function(argument){var firedCamp={};var defaultArgument={integrationName:\"\",getExperimentList:function(){return[]},accountSettings:function(){return{}},getCampaignSettings:function(){return{}},pushData:function(){return false},sendData:function(){return false}};argument=argument||{};for(var key in defaultArgument){if(!argument[key]){argument[key]=defaultArgument[key]}}return function(){window.VWO=window.VWO||[];var getVisitorUuid=function(){if(window._vwo_acc_id>=1037725){return window.VWO&&window.VWO.get(\"visitor.id\")}else{return window.VWO._&&window.VWO._.cookies&&window.VWO._.cookies.get(\"_vwo_uuid\")}};var sendDebugLogsOld=function(expId,variationId,errorType,user_type,data){try{var errorPayload={f:argument[\"integrationName\"]||\"\",a:window._vwo_acc_id,url:window.location.href,exp:expId,v:variationId,vwo_uuid:getVisitorUuid(),user_type:user_type};if(errorType==\"initIntegrationCallback\"){errorPayload[\"log_type\"]=\"initIntegrationCallback\";errorPayload[\"data\"]=JSON.stringify(data||\"\")}else if(errorType==\"timeout\"){errorPayload[\"timeout\"]=true}if(window.VWO._.customError){window.VWO._.customError({msg:\"integration debug\",url:window.location.href,lineno:\"\",colno:\"\",source:JSON.stringify(errorPayload)})}}catch(e){window.VWO._.customError&&window.VWO._.customError({msg:\"integration debug failed\",url:\"\",lineno:\"\",colno:\"\",source:\"\"})}};var sendDebugLogs=function(expId,variationId,errorType,user_type){var eventName=\"vwo_debugLogs\";var eventPayload={};try{eventPayload={intName:argument[\"integrationName\"]||\"\",varId:variationId,expId:expId,type:errorType,vwo_uuid:getVisitorUuid(),user_type:user_type};if(window.VWO._.event){window.VWO._.event(eventName,eventPayload,{enableLogs:1})}}catch(e){eventPayload={msg:\"integrationevent log failed\",url:window.location.href};window.VWO._.event&&window.VWO._.event(eventName,eventPayload)}};var getVariationDetails=function(exp,variation_id){if(!exp)return null;var isPersonalizeV2=exp.iType&&exp.iType.type===\"TARGETING\"&&exp.iType.v===2;if(isPersonalizeV2){var parts=String(variation_id).split(\",\");if(parts.length<2)return null;var targetId=String(parts[0]);var targetName=exp.comb_n[targetId];var varId=String(parts[1]);var variationName=\"\";if(exp.sections&&exp.sections[1]&&exp.sections[1].variation_names){variationName=exp.sections[1].variation_names[varId]}return{variation_id:varId,variation_name:variationName||\"\",target_id:targetId||\"\",target_name:targetName||\"\"}}var variationNameNormal=\"\";if(exp.comb_n){variationNameNormal=exp.comb_n[variation_id]}return{variation_id:variation_id,variation_name:variationNameNormal||\"\",target_id:\"\",target_name:\"\"}};var triggerConnector=function(cData){var expId=cData.expId,variationId=cData.variationId,visitorUuid=cData.visitorUuid,connectS=cData.connectS,repeated=cData.repeated;var experimentList=argument.",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.egnyte.com/pricing",
+      "title": "Egnyte Pricing From $22 Per User/Month | Start Free Trial",
+      "text": "Egnyte Pricing From $22 Per User/Month | Start Free Trial\nSkip to main content\nMeet Egnyte's AI Assistant\nYour go-to collaborator grounded in your organization's content.\nWatch\u00a0the\u00a0Video\n\u00d7\nFusion Mega Menu\nProduct\nProduct\nEGNYTE Content cloud\nProduct Overview\nYour secure file server in the cloud\nPlatform\nScale with a strong foundation\nProduct Tours\nExplore how Egnyte works for you\nIntegrations\nConnect content across your apps\nCollaboration\nSecure Sharing & Co-editing\nCollaborate securely on shared files\nMassive File Handling\nWork with complex files in the cloud\nDesktop-Cloud Experience\nAccess cloud files from your desktop\nProject Hub\nManage project folders in one place\nAll Collaboration\nIntelligence\nAI Assistant\nGet secure insights with generative AI\nAI Agents\nDeploy agents powered by your data\nAI Search\nSearch using questions, not keywords\nAI Workflows\nAutomate tasks and processes with AI\nAll Intelligence\nGovernance\nSensitive Content Protection\nIdentify and secure sensitive data\nCompliance Automation\nStay ready with always-on evidence\nAI Safeguards\nControl what content AI can access\nRansomware Detection\nDetect threats and restore rapidly\nAll Governance\nIndustries\nIndustries\nAEC\nFinancial Services\nLife Sciences\nMedia & Entertainment\nPublic Sector\nAll Use Cases\nIndustry overview\nArchitecture, Engineering,\nand Construction\nSub industries\nArchitecture\nEngineering\nConstruction\nOwners\nUse Cases\nFile Server Replacement\nMassive File Handling\nData Access Governance\nInsider Risk Management\nIndustry overview\nFinancial Services\nSub industries\nBuy-Side\nWealth Management\nSell-side\nBanking and Credit\nInsurance\nUse Cases\nFile Server Replacement\nControlled External File Sharing\nData Access Governance\nMassive File Handling\nIndustry overview\nLife Sciences\nSub Industries\nClinical Operations\nQuality and Regulatory Compliance\nResearch and Development\nData Governance\nUse Cases\nCollaborate with CROs\nLab to Cloud\nFile Server Replacement\nIndustry overview\nMedia & Entertainment\nUse Cases\nMassive File Handling\nFile Server Replacement\nSecure Sensitive Data\nInsider Risk Management\nIndustry overview\nPublic Sector\nUse Cases\nFile Server Replacement\nSecure Sensitive Data\nData Access Governance\nInsider Risk Management\nCollaborate with CROs\nControlled External File Sharing\nData Access Governance\nFile Server Replacement\nInsider Risk Management\nLab to Cloud\nMassive File Handling\nSecure Sensitive Data\nFeatured Webinar\nWhat's New & Next: Q2 Roadmap\nA hands-on look at how extraction, skills-based agents, and visual workflows work together \u2028to advance your AI strategy.\nPartners\nPartners\nChannel Partners\nPartner with Egnyte\nAccess Partner Hub\nRegister a Deal\nTechnology Partners\nGoogle Workspace\nMicrosoft 365\nSalesforce\ncloud partners\nGoogle Cloud\nMicrosoft Azure\nAWS\nFeatured Resource\nEgnyte Intelligence Product Brief\nDiscover how our AI solutions integrate with your organization's data.\nAll Apps Integrations\nApp Marketplace\nDeveloper Toolkit\nResources\nResources\nLearn\nUniversity\nEvents and Webinars\nProduct Tours\nexplore\nBlog\nGuides\nCustomer Stories\nhelp\nHelp Desk\nCommunity\nResource Center\nPopular Topics\nQuick Tips\nProduct Updates\nGlossary\nCompliance Standards\nValue Report\nFeatured Resource\nAEC Virtual Summit 2026\nDesktop Workflows, Cloud Collaboration, and Secure AI: Built for AEC. Designed for What's Next.\nPricing\nLogin\nSearch\nUse the up and down arrows to select a result. Press enter to go to the selected search result. Touch device users can use touch and swipe gestures.\nStart Free Trial\nGet Demo\nAI Included in Every Plan\nSelect the Best Plan For Your Organization\nBusiness\nEverything in Business, plus:\nSingle document AI Q&A\nSecure collaboration\nDiscretionary permissions\nGoogle Workspace integration\nM365 co-editing (online and desktop)\nStart Free Trial\n$22 / User / Month\nPaid annually*\nEnterprise Lite\nEverything in Business, plus:\nRansomware detection (artifact-based)\n\u200b\nSuspicious login detection\n\u200b\nContent lifecycle management\u200b\n\u200b\nAdvanced workflows\u200b\n\u200b\nSecure collaboration\nStart Free Trial\n$39 / User / Month\nPaid annually*\nAdvanced AI\nAdvanced AI\nMOST POPULAR\nElite\nEverything in Enterprise Lite,\u00a0plus:\nAI Assistant, AI Search, AI Workflow\nPDF markup\nE-signature\nDynamic watermarking\nAuto-remediation\nStart Free Trial\n$48 / User / Month\nPaid annually*\nAdvanced AI\nUltimate\nEverything in Elite,\u00a0plus:\nDocument type classification\nSensitive data classification\nSnapshot & recovery\nRansomware detection (behavioral-based)\nDLP/Preventive control integration\nContact Us\nContact us for a custom quote\nView Team Plan\nCompare Features\nBusiness\nStart Free Trial\n$22 / User / Month\nPaid annually*\nEnterprise Lite\nStart Free Trial\n$39 / User / Month\nPaid annually*\nAdvanced AI\nMOST POPULAR\nElite\nStart Free Trial\n$48 / User / Month\nPaid annually*\nAdvanced AI\nUltimate\nContact Us\nContact us for a custom quote\nAdvanced AI\nCompare Features\nCOLLABORATION\nMobile Apps (iOS and Android)\nAbility to use a native mobile app on a smartphone or tablet to access files in Egnyte. Available for iOS and Android operating systems.\nDesktop App (Windows and MacOS)\nAbility to work on cloud content using desktop applications.\nWeb App\nAbility to work on cloud content using a browser experience.\nExternal User Accounts\nAbility to share content with users who are not part of your organization.\nDiscretionary permissions\nFlexible permission inheritance with the ability to change them by users to share content \"in place\".\nVersioning and global file locking\nAutomatic version history, user access tracking, and locking that instantly propagates to all caches.\nEmail-Validated Sharing\nLimit file sharing to specific email addresses and revoke permissions when necessary.\nEmail Capture\nFile Outlook emails directly into Egnyte to create organized, searchable, team-accessible project records.\nPDF Markup\nAbility to edit and annotate PDF documents.\ne-Signature\nAbility to electronically sign PDF, Word, Google Docs, and other documents.\nDynamic Watermarking\nSet up rules to automatically watermark sensitive documents upon delivery. Part of Enhanced Sharing Controls.\nStandard Workflows\nAd hoc workflows to assign documents to users to review and approve content in a repeatable and auditable way.\nAdvanced Workflows (e.g. Multi-step)\nMulti-step ad-hoc and template-based workflows with automatic and manual steps, AI steps, and webhooks for external system integration.\nAdvanced Video Playback\nAdvanced video playback capabilities including more video formats, ability to play videos up to 2GB, and playback in file preview mode.\nINTELLIGENCE\nSingle Document/Image Q&A\nAI Assistant for questions, summarization, and generative AI for individual documents.\nAI Assistant (multi document/image)\nConversational AI assistant capable of answering questions and summarizing multiple selected files or knowledge bases, and generating content such as emails, memos, proposals, etc.\nAI Search\nSophisticated search function capable of understanding questions in natural language and delivering results together with an AI-generated summary. It augments existing search features such as full-text, metadata, and geo-coordinates search.\nAI Workflows\nAbility to trigger workflows by AI action (i.e. new metadata tag) and to execute AI prompts such as a workflow step.\nDocument Type Classification\nAutomatically identify common document types using natural language processing, such as invoices, contracts and resumes.\nTrainable Classifiers\nAbility to train AI using a sample document set to automatically recognize and tag similar documents.\nOCR (Optical Character Recognition)\nAbility to automatically perform optical character recognition (OCR) to enable full-text search and classification.\ngovernance\nContent Lifecycle (Retain, Archive, Delete) Policies\nPolicy-based retention, deletion, and archival of content.\nSuspicious Login Issue Detection\nDetect anomalous user login activity that may indicate a compromised account.\nRansomware Detection (artifact-based)\nMonitor and alert to ransomware based on known indicators and artifacts.\nRansomware Detection (behavioral-based)\nMonitor and alert to ransomware based on suspicious patterns and actions using machine learning.\nSensitive Data Discovery and Classification\nAutomate the discovery, classification and continuous monitoring of sensitive data across cloud and on-premises sources, with out-of-the-box classification patterns and a unified control dashboard.\nAuto-Remediation\nAutomatically remediate any detected security and governance issues to reduce the burden on IT Administrators and their notification fatigue.\nSnapshot & Recovery (30-days)\nCreate periodic snapshot of all your data, identify the point of first attack, and automatically restore files and folders with a single click.\nAdvanced Snapshot & Recovery (90-days)\nCreate periodic snapshot of all your data, identify the point of first attack, and automatically restore files and folders with a single click.\nINDUSTRY-SPECIFIC OPTIONS\nProject Hub (AEC)\nAutomate project setup, collaboration, compliance, and close-out while integrating with Procore and Autodesk.\nSpecialized File Handler (AEC)\nEasily access, share and collaborate on large BIM data sets.\nDocument Portal (Financial Services)\nAbility to simplify and secure document requests, collection, and sharing for client onboarding, new account opening, and more.\nDocument Room (Financial Services)\nVirtual Document Rooms (VDR) for management and sharing of very sensitive files with partners require additional security and controls beyond what a traditional file-sharing service can provide.\nControlled Documents (Life Sciences)\nDocument controls for formally managed records such as SOPs and work instructions that are handled according to specific regulations and standards.\neTMF (Life Sciences)\nSet up, manage, track and report on the progress of trial documentation.\nGxP Compliance (Life Sciences)\nData integrity, quality and compliance with FDA 21 CFR Part 11.\nInstrument Service Accounts (Life Sciences)\nEnsure lab generated data is transferred to the cloud with full audit trails.\nPLATFORM\nUpload Files Up To\nNumber of account domains included\nMaximum number of users\nMaximum number of power users defined in the system.\nCompliant Storage (HIPAA, FINRA, SOC2, ISO/IEC 27001)\nFacilitate compliance with government regulations and data privacy policies from a single viewer.\nEdge Caching\nAccelerate access to your content files using a virtual caching appliance.\nData Residency Options\nAllocate storage to your Egnyte domain from other sources such as Azure, AWS, and GCP to meet your or your country's data residency requirements, while maintaining properly governed data in the public cloud.\nUser Authentication (AD and SSO/SAML)\nIntegrate with any major Single Sign-On (SSO) providers or Active Directory Domain Controller.\nEncryption Key Management\nEgnyte managed encryption keys available for all plans. Customer can retain and manage own encryption keys on Ultimate plan only.\nINTEGRATIONS\nGoogle Workspace Integration\nSimultaneous collaborative editing of documents by multiple users using Google Workspace applications (browser-based).\nM365 Co-Editing (Online & Desktop)\nSimultaneous collaborative editing of documents by multiple users using desktop or browser-based Microsoft 365 applications.\nDLP/Preventive Control Integrations\nAutomatically detect sensitive content according to your safeguard policies, apply persistent labels, and pass them onto popular DLP systems for enforcement.\nRich authoring applications integrations\nAbility to work in the cloud with desktop and browser based applications including Autodesk, Adobe, Esri, Bentley, and more.\nBusiness workflow applications integrations\nAbility to integrate with business applications such as Procore, Salesforce, Autodesk Construction Cloud, Practifi, and more.\nSaaS cloud storage integration\nAbility to protect content against security and compliance risks in repositories such as Google Drive, Microsoft OneDrive, Box, Dropbox, SharePoint, and more.\nPublic Cloud Connector\nSynchronize files between Egnyte and public clouds like Azure and Amazon S3.\nservices\nSupport Services\nIncluded support plans for every plan.\nBusiness\nStart Free Trial\n$22 / User / Month\nPaid annually*\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n100GB\n1\n100\n$\nStandard\nEnterprise Lite\nStart Free Trial\n$39 / User / Month\nPaid annually*\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n150GB\n1 Primary / 5 Secondary\nUnlimited\nStandard\nAdvanced AI\nMOST POPULAR\nElite\nStart Free Trial\n$48 / User / Month\nPaid annually*\n$\n$\n$\n$\n$\n$\n$\n$\n$\n150GB\n1 Primary / 5 Secondary\nUnlimited\nStandard\nAdvanced AI\nUltimate\nContact Us\nContact us for a custom quote\n$\n$\n$\n$\n$\n$\n$\n$\n150GB\n1 Primary / 5 Secondary\nUnlimited\nStandard\nAdvanced AI\n*Multi-year discount available on all plans.\n>\nFeatured Solutions\nAEC\nFinancial Services\nLife Sciences\nOther\nSelect Add-Ons\nAEC\nFinancial Services\nLife Sciences\nOther\nProject Hub\nAutomate project setup, collaboration, compliance, and close-out while integrating with Procore and Autodesk.\n$6 / User / Month\nSpecialized File Handler\nEasily access, share and collaborate on large BIM data sets.\n$6 / User / Month\nCMMC 2.0 Compliance\nA secure and controlled environment that enables you to protect CUI and fast-track your CMMC 2.0 assessment.\nChat with Specialist\nDocument Portal\nSimplify and secure document requests, collection, and sharing for client onboarding, new account opening, and more.\nChat with Specialist\nEgnyte Sign\nLegally binding electronic signatures directly in Egnyte workflow.\nIncluded in PDF Annotator\nDocument Room\nProtect highly confidential files in an ultra-secure data enclave for M&A, capital raise, investor relations, and more.\nChat with Specialist\neTMF\nSet up, manage, track and report on the progress of trial documentation.\nChat with Specialist\nGxP Compliance\nData integrity, quality and compliance with FDA 21 CFR Part 11.\nChat with Specialist\nInstrument Service Accounts\nEnsure lab generated data is transferred to the cloud with full audit trails.\nChat w",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://helpdesk.egnyte.com/hc/en-us/sections/360003405111-Release-Notes",
+      "title": "The page you were looking for doesn't exist \u2013 Egnyte",
+      "text": "The page you were looking for doesn't exist \u2013 Egnyte\nElevate Your Egnyte Expertise.\nJoin our Customer Community to connect with a network of peers and share game-changing strategies.\nJoin Today\n\u00d7\nSign in\nHelp Desk\nProduct\nUpdates\nTraining\nSupport\nCommunity\nIdeas\nContact Support\nSign in\nWelcome to\nHelp Desk\nProduct Updates\nTraining\nSupport\nIdeas\nCommunity\nContact Support\nWe use cookies on our website. Read more about this in our\nPrivacy Policy\n. By clicking Accept All, you consent to the use of all cookies. To decline all non-strictly necessary cookies, click Decline All. To manage cookie preferences selectively, click More Information.\nAccept All\nDecline All\nMore Information\nPowered by\nSorry, this page doesn't exist!\nCan't find what you're looking for?\nContact Support\n.\nTake me back to the home page\nUS:\n1-877-734-6983\nEMEA:\n+44.020.3356.3714\nAbout Us\nAbout Us\nLeadership\nInvestors\nOffices\nCareers\nNews\nMedia Room\nIn the News\nPress Releases\nSupport\nProfessional Services\nSupport Packages\nTechnical Support\nCommunity\nTop Customer-Rated Software\nTop 50\nBest Remote Work Products\nLeader\nin Data Governance\nLeader\nin Data-Centric Security\nLeader\nin Cloud Content Collaboration\nEnterprise File Sharing\nFull Features\nSecure File Sharing\nGovernance\nCloud File Server\nWebsite Terms of Use\nPrivacy Policy\nTerms of Service\nCompliance\nDMCA Requests\nSite Map\n\u00a9\n2026\nEgnyte, Inc. All rights reserved.\nCookies Preferences\nDo Not Sell or Share My Personal Information",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://helpdesk.egnyte.com/hc/en-us",
+      "title": "Egnyte",
+      "text": "Egnyte\nElevate Your Egnyte Expertise.\nJoin our Customer Community to connect with a network of peers and share game-changing strategies.\nJoin Today\n\u00d7\nSign in\nHelp Desk\nProduct\nUpdates\nTraining\nSupport\nCommunity\nIdeas\nContact Support\nSign in\nWelcome to\nHelp Desk\nProduct Updates\nTraining\nSupport\nIdeas\nCommunity\nContact Support\nWe use cookies on our website. Read more about this in our\nPrivacy Policy\n. By clicking Accept All, you consent to the use of all cookies. To decline all non-strictly necessary cookies, click Decline All. To manage cookie preferences selectively, click More Information.\nAccept All\nDecline All\nMore Information\nPowered by\n/hc/theming_assets/01JJAG955CEZX2ZJ7PNXP3GRD4\nWelcome to Egnyte\nHelp Desk\nNOTICE:\nImportant Notice from Egnyte\nHome\nGetting Started\nGet Started\nMigration App\nAnnouncements\nUpdates\nKnown Issues\nProduct Support Lifecycle\nBrowse Categories\nAI\nDesktop App\nMobile\nWeb UI\nDocument Portal\nDocument Room\nAPI\nMigration App\nSecure and Govern\nExternal Replication\nSmart Cache\nReporting\nAEC\nLife Sciences\nBilling\nCMMC\nEgnyte Support\nUser Types\nAdmin Users\nNon-Admin Users\nIntegrations\nMS Teams\nGoogle Apps\nMicrosoft Office\nSalesforce\nSee\n                    All\nCertified Apps\nAutoCAD\nCivil 3D\nNavisWorks\nEgnyte Community\nSuggested Articles\nEgnyte AI Help Assistant\nAI Help Assistant is a dedicated virtual assistant that provides quick access to information from Egnyte Helpdesk directly within the product...\nEgnyte\u2019s AI Assistant - Overview\nEgnyte\u2019s AI Assistant (FKA Egnyte Copilot) is an AI-powered conversational interface designed to enhance productivity and collaboration across an organization...\nMicrosoft Purview & Egnyte Integration\nEgnyte integrates Microsoft Purview seamlessly to get the label definitions and add them to the files in Egnyte....\nInactive Containers Overview\nInactive Containers provide a dedicated space within the Egnyte platform where users can store content...\nEgnyte Sign Overview And Administration\nEgnyte Sign allows you to send an electronic signature request for a document stored in Egnyte...\nLatest Updates\nEgnyte for Salesforce 3.10 - Miscellaneous Improvements\nExternal Release Notes: Egnyte for Salesforce 3.10 (June 25, 2026)...\nEgnyte iOS App for Intune V 9.8.1 - Upload Improvement\nExternal Release Notes: iOS Mobile App for Intune v 9.8.1 (June 25, 2026)...\nEgnyte iOS App V 9.8.1 - Upload Improvements\nExternal Release Notes: iOS Mobile App v 9.8.1 (June 25, 2026)...\nMulti-Document Tagging - Efficient Metadata Tagging for Multiple Files\nEgnyte offers users the ability to add, update, or remove metadata tags for multiple files in a...\nSFTP with MFA: Authenticator App Support (Limited Availability)\nEgnyte supports the ability to require Multi-Factor Authentication (MFA) for SFTP connections a...\nElevate Your Egnyte Experience.\nJoin our Customer Community to connect with a network of peers\n                            and share game-changing strategies.\nJoin Today\nSubscribe to our System Status page for real time alerts\nSubscribe Now\nElevate Your Egnyte Experience.\nJoin our Customer Community to connect with a network of peers\n                            and share game-changing strategies.\nJoin Today\nSubscribe to our System Status page for real time alerts\nSubscribe Now\nElevate Your Egnyte Experience.\nJoin our Customer Community to connect with a network of peers\n                            and share game-changing strategies.\nJoin Today\n1\n2\nKnown Issues\nDesktop App Not Visible in Windows Explorer\nIMPORTANT NOTICE FROM EGNYTE\nPermission Denied Error for Standard Users\nPowerPoint Version 2604 \"Save As\" Error Workaround\nMicrosoft Entra (Azure AD) SSO Global Identifier\nMacOS Tahoe Compatibility with Egnyte Desktop App Core for Mac\nUS:\n1-877-734-6983\nEMEA:\n+44.020.3356.3714\nAbout Us\nAbout Us\nLeadership\nInvestors\nOffices\nCareers\nNews\nMedia Room\nIn the News\nPress Releases\nSupport\nProfessional Services\nSupport Packages\nTechnical Support\nCommunity\nTop Customer-Rated Software\nTop 50\nBest Remote Work Products\nLeader\nin Data Governance\nLeader\nin Data-Centric Security\nLeader\nin Cloud Content Collaboration\nEnterprise File Sharing\nFull Features\nSecure File Sharing\nGovernance\nCloud File Server\nWebsite Terms of Use\nPrivacy Policy\nTerms of Service\nCompliance\nDMCA Requests\nSite Map\n\u00a9\n2026\nEgnyte, Inc. All rights reserved.\nCookies Preferences\nDo Not Sell or Share My Personal Information",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.egnyte.com/integrations",
+      "title": "404 Error | Egnyte",
+      "text": "404 Error | Egnyte\nSkip to main content\nMeet Egnyte's AI Assistant\nYour go-to collaborator grounded in your organization's content.\nWatch\u00a0the\u00a0Video\n\u00d7\nFusion Mega Menu\nProduct\nProduct\nEGNYTE Content cloud\nProduct Overview\nYour secure file server in the cloud\nPlatform\nScale with a strong foundation\nProduct Tours\nExplore how Egnyte works for you\nIntegrations\nConnect content across your apps\nCollaboration\nSecure Sharing & Co-editing\nCollaborate securely on shared files\nMassive File Handling\nWork with complex files in the cloud\nDesktop-Cloud Experience\nAccess cloud files from your desktop\nProject Hub\nManage project folders in one place\nAll Collaboration\nIntelligence\nAI Assistant\nGet secure insights with generative AI\nAI Agents\nDeploy agents powered by your data\nAI Search\nSearch using questions, not keywords\nAI Workflows\nAutomate tasks and processes with AI\nAll Intelligence\nGovernance\nSensitive Content Protection\nIdentify and secure sensitive data\nCompliance Automation\nStay ready with always-on evidence\nAI Safeguards\nControl what content AI can access\nRansomware Detection\nDetect threats and restore rapidly\nAll Governance\nIndustries\nIndustries\nAEC\nFinancial Services\nLife Sciences\nMedia & Entertainment\nPublic Sector\nAll Use Cases\nIndustry overview\nArchitecture, Engineering,\nand Construction\nSub industries\nArchitecture\nEngineering\nConstruction\nOwners\nUse Cases\nFile Server Replacement\nMassive File Handling\nData Access Governance\nInsider Risk Management\nIndustry overview\nFinancial Services\nSub industries\nBuy-Side\nWealth Management\nSell-side\nBanking and Credit\nInsurance\nUse Cases\nFile Server Replacement\nControlled External File Sharing\nData Access Governance\nMassive File Handling\nIndustry overview\nLife Sciences\nSub Industries\nClinical Operations\nQuality and Regulatory Compliance\nResearch and Development\nData Governance\nUse Cases\nCollaborate with CROs\nLab to Cloud\nFile Server Replacement\nIndustry overview\nMedia & Entertainment\nUse Cases\nMassive File Handling\nFile Server Replacement\nSecure Sensitive Data\nInsider Risk Management\nIndustry overview\nPublic Sector\nUse Cases\nFile Server Replacement\nSecure Sensitive Data\nData Access Governance\nInsider Risk Management\nCollaborate with CROs\nControlled External File Sharing\nData Access Governance\nFile Server Replacement\nInsider Risk Management\nLab to Cloud\nMassive File Handling\nSecure Sensitive Data\nFeatured Webinar\nWhat's New & Next: Q2 Roadmap\nA hands-on look at how extraction, skills-based agents, and visual workflows work together \u2028to advance your AI strategy.\nPartners\nPartners\nChannel Partners\nPartner with Egnyte\nAccess Partner Hub\nRegister a Deal\nTechnology Partners\nGoogle Workspace\nMicrosoft 365\nSalesforce\ncloud partners\nGoogle Cloud\nMicrosoft Azure\nAWS\nFeatured Resource\nEgnyte Intelligence Product Brief\nDiscover how our AI solutions integrate with your organization's data.\nAll Apps Integrations\nApp Marketplace\nDeveloper Toolkit\nResources\nResources\nLearn\nUniversity\nEvents and Webinars\nProduct Tours\nexplore\nBlog\nGuides\nCustomer Stories\nhelp\nHelp Desk\nCommunity\nResource Center\nPopular Topics\nQuick Tips\nProduct Updates\nGlossary\nCompliance Standards\nValue Report\nFeatured Resource\nAEC Virtual Summit 2026\nDesktop Workflows, Cloud Collaboration, and Secure AI: Built for AEC. Designed for What's Next.\nPricing\nLogin\nSearch\nUse the up and down arrows to select a result. Press enter to go to the selected search result. Touch device users can use touch and swipe gestures.\nStart Free Trial\nGet Demo\n404 Error\nit's ok if you're lost\nLet's go Home!\nUS:\n1-877-734-6983\nEMEA:\n+44.20.3356.3714\nIndustries\nAEC\nLife Sciences\nFinancial Services\nMedia & Entertainment\nPublic Sector\nResources\nBlog\nGuides\nEvents\nCase Studies\nResources Center\nSupport\nProfessional Services\nSupport Packages\nHelpdesk\nUniversity\nCommunity\nEgnyte Advantage\nEgnyte vs. Box\nEgnyte vs. Dropbox\nEgnyte vs. Sharefile\nEgnyte vs. Panzura\nEgnyte vs. Nasuni\nEGNYTE CONTENT CLOUD\nProduct Overview\nCollaboration\nIntelligence\nGovernance\nIntegrations\nPlatform\nCompany\nAbout Us\nCareers\nMedia Room\nOffices\nContact Sales\nLegal & Privacy\nTerms of Service\nPrivacy Policy\nWebsite Terms of Use\nCompliance\nDMCA Requests\nCookie Preferences\nSitemap\n\u00a9\n2026\nEgnyte, Inc.\nDo Not Sell or Share My Personal Information\nWe use cookies on our website. Read more about this in our\nPrivacy Policy\n. By clicking Accept All, you consent to the use of all cookies. To decline all non-strictly necessary cookies, click Decline All. To manage cookie preferences selectively, click More Information.\nAccept All\nDecline All\nMore Information\nPowered by",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/egnyte/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Egnyte: Different Perspective Than Box About Cloud And All That Data",
+          "url": "http://techcrunch.com/2012/10/14/egnyte-a-different-perspective-than-box-about-the-cloud-and-all-that-data/",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2012-10-15T03:20:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=4653595"
+        },
+        {
+          "title": "Interview with Egnyte: secure on-demand file server for SMBs - over 1000 customers in 8 months",
+          "url": "http://talktech.tv/2008/10/24/interview-with-egnyte-file-storage-sharing-backup-in-the-cloud-no-hardware-required/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2008-10-24T16:17:35Z",
+          "hn_url": "https://news.ycombinator.com/item?id=342491"
+        },
+        {
+          "title": "Egnyte: Lessons learned in building and scaling a multipetabyte content platform",
+          "url": "http://highscalability.com/blog/2019/11/25/egnyte-architecture-lessons-learned-in-building-and-scaling.html",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2019-11-27T08:42:28Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21646271"
+        },
+        {
+          "title": "Transcoding: How Egnyte Serves Videos at Scale",
+          "url": "https://www.egnyte.com/blog/2018/12/transcoding-how-we-serve-videos-at-scale/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2018-12-07T05:25:51Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18625361"
+        },
+        {
+          "title": "Egnyte raises 75m series E led by Goldman Sachs",
+          "url": "https://news.crunchbase.com/news/egnyte-raises-75m-series-e-led-by-goldman-after-history-of-not-losing-money/",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2018-10-10T22:53:08Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18189657"
+        },
+        {
+          "title": "As Egnyte turns 10, it moves into data protection",
+          "url": "https://techcrunch.com/2017/06/28/as-egnyte-turns-10-it-moves-beyond-file-sync-and-share",
+          "points": 2,
+          "num_comments": 0,
+          "created_at": "2017-06-28T13:01:06Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14653655"
+        },
+        {
+          "title": "Permission escalation vulnerability in Egnyte reveals user credentials",
+          "url": "http://blog.foldergrid.com/2012/07/why-we-stopped-trusting-egnyte-a-cautionary-tale-for-users-of-cloud-services/",
+          "points": 1,
+          "num_comments": 2,
+          "created_at": "2012-07-26T13:33:04Z",
+          "hn_url": "https://news.ycombinator.com/item?id=4295850"
+        },
+        {
+          "title": "How and Why Egnyte Redesigned Its Core Configuration System",
+          "url": "https://www.egnyte.com/blog/post/how-and-why-egnyte-redesigned-its-core-configuration-system",
+          "points": 1,
+          "num_comments": 1,
+          "created_at": "2021-10-13T19:10:47Z",
+          "hn_url": "https://news.ycombinator.com/item?id=28856137"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.egnyte.com/pricing",
+    "changelog": "https://helpdesk.egnyte.com/hc/en-us/sections/360003405111-Release-Notes",
+    "docs": "https://helpdesk.egnyte.com/hc/en-us",
+    "integrations": "https://www.egnyte.com/integrations",
+    "g2": "https://www.g2.com/products/egnyte/reviews"
+  },
+  "analysis": {
+    "name": "Egnyte",
+    "url": "https://www.egnyte.com/",
+    "tagline": "Egnyte Content Cloud for Enterprises",
+    "value_proposition": "Secure cloud content platform combining file server replacement, collaboration, AI, and governance for regulated and content-heavy industries.",
+    "target_segment": "enterprise / mid-market",
+    "ideal_customer": "Regulated and content-heavy industries (AEC, Financial Services, Life Sciences, Media & Entertainment, Public Sector) needing secure file server replacement with governance and AI.",
+    "features": [
+      {
+        "name": "mobile apps",
+        "description": "Native iOS and Android apps to access files.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Mobile Apps (iOS and Android)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "desktop app",
+        "description": "Windows and macOS desktop app for cloud content access.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Desktop App (Windows and MacOS)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "web app",
+        "description": "Browser-based access to cloud content.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Ability to work on cloud content using a browser experience.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "external user accounts",
+        "description": "Share content with users outside the organization.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Ability to share content with users who are not part of your organization.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "discretionary permissions",
+        "description": "Flexible permission inheritance users can adjust.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Flexible permission inheritance with the ability to change them by users",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "versioning",
+        "description": "Automatic version history with user access tracking.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Automatic version history, user access tracking",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "global file locking",
+        "description": "File locking that instantly propagates to all caches.",
+        "evidence_source": "pricing",
+        "evidence_quote": "locking that instantly propagates to all caches",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email-validated sharing",
+        "description": "Limit sharing to specific email addresses and revoke permissions.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Limit file sharing to specific email addresses and revoke permissions",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email capture",
+        "description": "File Outlook emails directly into Egnyte for project records.",
+        "evidence_source": "pricing",
+        "evidence_quote": "File Outlook emails directly into Egnyte to create organized, searchable, team-accessible project records.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pdf markup",
+        "description": "Edit and annotate PDF documents.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Ability to edit and annotate PDF documents.",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "e-signature",
+        "description": "Electronically sign PDF, Word, Google Docs, and other documents.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Ability to electronically sign PDF, Word, Google Docs, and other documents.",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "dynamic watermarking",
+        "description": "Rules to automatically watermark documents.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Set up rules to automatically waterma[rk]",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "secure sharing and co-editing",
+        "description": "Collaborate securely on shared files.",
+        "evidence_source": "landing",
+        "evidence_quote": "Secure Sharing & Co-editing / Collaborate securely on shared files",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "massive file handling",
+        "description": "Work with complex/large files in the cloud.",
+        "evidence_source": "landing",
+        "evidence_quote": "Massive File Handling / Work with complex files in the cloud",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "desktop-cloud experience",
+        "description": "Access cloud files from your desktop.",
+        "evidence_source": "landing",
+        "evidence_quote": "Desktop-Cloud Experience / Access cloud files from your desktop",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "project hub",
+        "description": "Manage project folders in one place.",
+        "evidence_source": "landing",
+        "evidence_quote": "Project Hub / Manage project folders in one place",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "google workspace integration",
+        "description": "Integrated co-editing with Google Workspace.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Google Workspace integration",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft 365 co-editing",
+        "description": "M365 co-editing online and desktop.",
+        "evidence_source": "pricing",
+        "evidence_quote": "M365 co-editing (online and desktop)",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft office integration",
+        "description": "Native Microsoft Office integration.",
+        "evidence_source": "docs",
+        "evidence_quote": "Microsoft Office",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "salesforce integration",
+        "description": "Egnyte for Salesforce integration.",
+        "evidence_source": "docs",
+        "evidence_quote": "Egnyte for Salesforce 3.10",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft teams integration",
+        "description": "MS Teams integration.",
+        "evidence_source": "docs",
+        "evidence_quote": "MS Teams",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft purview integration",
+        "description": "Integrates Microsoft Purview labels into Egnyte files.",
+        "evidence_source": "docs",
+        "evidence_quote": "Egnyte integrates Microsoft Purview seamlessly to get the label definitions",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "autocad integration",
+        "description": "Certified AutoCAD app integration.",
+        "evidence_source": "docs",
+        "evidence_quote": "Certified Apps / AutoCAD",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "civil 3d integration",
+        "description": "Certified Civil 3D integration for AEC workflows.",
+        "evidence_source": "docs",
+        "evidence_quote": "Certified Apps / Civil 3D",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "navisworks integration",
+        "description": "Certified NavisWorks integration.",
+        "evidence_source": "docs",
+        "evidence_quote": "Certified Apps / NavisWorks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai assistant",
+        "description": "AI-powered conversational interface grounded in org content.",
+        "evidence_source": "docs",
+        "evidence_quote": "Egnyte's AI Assistant (FKA Egnyte Copilot) is an AI-powered conversational interface",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "single document ai q&a",
+        "description": "AI Q&A on a single document.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Single document AI Q&A",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "ai agents",
+        "description": "Deploy agents powered by organization data.",
+        "evidence_source": "landing",
+        "evidence_quote": "AI Agents / Deploy agents powered by your data",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ai search",
+        "description": "Semantic search using natural language questions.",
+        "evidence_source": "landing",
+        "evidence_quote": "AI Search / Search using questions, not keywords",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ai workflows",
+        "description": "Automate tasks and processes with AI.",
+        "evidence_source": "landing",
+        "evidence_quote": "AI Workflows / Automate tasks and processes with AI",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ai help assistant",
+        "description": "Virtual assistant giving quick access to Egnyte helpdesk info in-product.",
+        "evidence_source": "docs",
+        "evidence_quote": "AI Help Assistant is a dedicated virtual assistant that provides quick access to information from Egnyte Helpdesk",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai safeguards",
+        "description": "Control what content AI can access.",
+        "evidence_source": "landing",
+        "evidence_quote": "AI Safeguards / Control what content AI can access",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "sensitive content protection",
+        "description": "Identify and secure sensitive data.",
+        "evidence_source": "landing",
+        "evidence_quote": "Sensitive Content Protection / Identify and secure sensitive data",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "sensitive data classification",
+        "description": "Automatic classification of sensitive data.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Sensitive data classification",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "document type classification",
+        "description": "Automatic document type classification.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Document type classification",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "compliance automation",
+        "description": "Always-on compliance evidence.",
+        "evidence_source": "landing",
+        "evidence_quote": "Compliance Automation / Stay ready with always-on evidence",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ransomware detection artifact-based",
+        "description": "Detects ransomware via artifacts.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Ransomware detection (artifact-based)",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ransomware detection behavioral",
+        "description": "Behavioral ransomware detection.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Ransomware detection (behavioral-based)",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "auto-remediation",
+        "description": "Automatic remediation of governance issues.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Auto-remediation",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "suspicious login detection",
+        "description": "Detect suspicious login activity.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Suspicious login detection",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "content lifecycle management",
+        "description": "Manage content through its lifecycle.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Content lifecycle management",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "advanced workflows",
+        "description": "Advanced content workflows.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Advanced workflows",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "snapshot and recovery",
+        "description": "Point-in-time snapshots and recovery.",
+        "evidence_source": "pricing",
+        "evidence_quote": "Snapshot & recovery",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "dlp integration",
+        "description": "DLP/Preventive control integration.",
+        "evidence_source": "pricing",
+        "evidence_quote": "DLP/Preventive control integration",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "data access governance",
+        "description": "Governance over who can access what content.",
+        "evidence_source": "landing",
+        "evidence_quote": "Data Access Governance",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "insider risk management",
+        "description": "Insider risk detection and control.",
+        "evidence_source": "landing",
+        "evidence_quote": "Insider Risk Management",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "file server replacement",
+        "description": "Cloud replacement for on-prem file servers.",
+        "evidence_source": "landing",
+        "evidence_quote": "Your secure file server in the cloud",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "smart cache",
+        "description": "Local caching for fast access to cloud files.",
+        "evidence_source": "docs",
+        "evidence_quote": "Smart Cache",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "external replication",
+        "description": "Replicate content externally.",
+        "evidence_source": "docs",
+        "evidence_quote": "External Replication",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "reporting",
+        "description": "Reporting and analytics on content and users.",
+        "evidence_source": "docs",
+        "evidence_quote": "Reporting",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "document portal",
+        "description": "Portal for sharing documents externally.",
+        "evidence_source": "docs",
+        "evidence_quote": "Document Portal",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "document room",
+        "description": "Secure document room for controlled sharing.",
+        "evidence_source": "docs",
+        "evidence_quote": "Document Room",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "inactive containers",
+        "description": "Dedicated space to store inactive content.",
+        "evidence_source": "docs",
+        "evidence_quote": "Inactive Containers provide a dedicated space within the Egnyte platform where users can store content",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-document tagging",
+        "description": "Add, update, or remove metadata tags for multiple files at once.",
+        "evidence_source": "docs",
+        "evidence_quote": "Multi-Document Tagging - Efficient Metadata Tagging for Multiple Files",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sftp",
+        "description": "SFTP access to Egnyte content.",
+        "evidence_source": "docs",
+        "evidence_quote": "SFTP with MFA: Authenticator App Support",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "sftp mfa",
+        "description": "MFA requirement for SFTP connections via authenticator app.",
+        "evidence_source": "docs",
+        "evidence_quote": "SFTP with MFA: Authenticator App Support (Limited Availability)",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "migration app",
+        "description": "Tool to migrate content into Egnyte.",
+        "evidence_source": "docs",
+        "evidence_quote": "Migration App",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rest api",
+        "description": "Developer API for extending Egnyte.",
+        "evidence_source": "docs",
+        "evidence_quote": "API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "developer toolkit",
+        "description": "Developer toolkit and app marketplace.",
+        "evidence_source": "landing",
+        "evidence_quote": "App Marketplace / Developer Toolkit",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sso",
+        "description": "Single sign-on including Microsoft Entra/Azure AD.",
+        "evidence_source": "docs",
+        "evidence_quote": "Microsoft Entra (Azure AD) SSO Global Identifier",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile intune support",
+        "description": "iOS mobile app for Microsoft Intune.",
+        "evidence_source": "docs",
+        "evidence_quote": "Egnyte iOS App for Intune V 9.8.1",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "cmmc compliance",
+        "description": "CMMC compliance support for public sector.",
+        "evidence_source": "docs",
+        "evidence_quote": "CMMC",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "video transcoding",
+        "description": "Video transcoding at scale for media use cases.",
+        "evidence_source": "hn",
+        "evidence_quote": "Transcoding: How Egnyte Serves Videos at Scale",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "google cloud hosting",
+        "description": "Cloud partner: Google Cloud.",
+        "evidence_source": "landing",
+        "evidence_quote": "cloud partners / Google Cloud",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "azure hosting",
+        "description": "Cloud partner: Microsoft Azure.",
+        "evidence_source": "landing",
+        "evidence_quote": "cloud partners / Microsoft Azure",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "aws hosting",
+        "description": "Cloud partner: AWS.",
+        "evidence_source": "landing",
+        "evidence_quote": "cloud partners / AWS",
+        "tier": "all",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Microsoft 365",
+      "Google Workspace",
+      "Microsoft Teams",
+      "Microsoft Outlook",
+      "Microsoft Office",
+      "Microsoft Purview",
+      "Microsoft Intune",
+      "Microsoft Entra (Azure AD)",
+      "Salesforce",
+      "AutoCAD",
+      "Civil 3D",
+      "NavisWorks",
+      "Google Cloud",
+      "Microsoft Azure",
+      "AWS"
+    ],
+    "differentiators": [
+      "Secure file server in the cloud with governance built in",
+      "AI Assistant, AI Search, AI Agents, and AI Workflows grounded in org content",
+      "Massive file handling for AEC/M&E workflows",
+      "Vertical focus on AEC, Life Sciences, Financial Services, M&E, Public Sector",
+      "Ransomware detection (artifact + behavioral) with auto-remediation",
+      "AI Safeguards to control what content AI can access"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-06",
+        "what": "Egnyte for Salesforce 3.10 - Miscellaneous Improvements",
+        "source": "External Release Notes: Egnyte for Salesforce 3.10 (June 25, 2026)"
+      },
+      {
+        "date": "2026-06",
+        "what": "Egnyte iOS App for Intune V 9.8.1 upload improvements",
+        "source": "External Release Notes: iOS Mobile App for Intune v 9.8.1 (June 25, 2026)"
+      },
+      {
+        "date": "2026-06",
+        "what": "Egnyte iOS App V 9.8.1 upload improvements",
+        "source": "External Release Notes: iOS Mobile App v 9.8.1 (June 25, 2026)"
+      },
+      {
+        "date": "2026",
+        "what": "Multi-Document Tagging for efficient metadata tagging across multiple files",
+        "source": "Multi-Document Tagging - Efficient Metadata Tagging for Multiple Files"
+      },
+      {
+        "date": "2026",
+        "what": "SFTP with MFA authenticator app support (limited availability)",
+        "source": "SFTP with MFA: Authenticator App Support (Limited Availability)"
+      },
+      {
+        "date": "2026",
+        "what": "Microsoft Purview integration for label sync into Egnyte files",
+        "source": "Microsoft Purview & Egnyte Integration"
+      },
+      {
+        "date": "2026",
+        "what": "AI Help Assistant embedded in product for helpdesk Q&A",
+        "source": "Egnyte AI Help Assistant"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Positioned as leader in Data Governance, Data-Centric Security, and Cloud Content Collaboration",
+        "Top 50 Best Remote Work Products recognition"
+      ],
+      "complaints": [
+        "Historical security concern: 'Permission escalation vulnerability in Egnyte reveals user credentials' (HN)",
+        "Desktop app compatibility friction: 'Desktop App Not Visible in Windows Explorer' and 'MacOS Tahoe Compatibility with Egnyte Desktop App Core for Mac' listed as known issues"
+      ],
+      "sources": [
+        "hn",
+        "docs"
+      ]
+    },
+    "pricing": {
+      "model": "contact-sales",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Business",
+          "price_per_seat_per_month": "$22",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Single doc AI Q&A, secure collaboration, discretionary permissions, Google Workspace, M365 co-editing"
+        },
+        {
+          "name": "Enterprise Lite",
+          "price_per_seat_per_month": "$39",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Business + ransomware detection (artifact), suspicious login detection, content lifecycle, advanced workflows"
+        },
+        {
+          "name": "Elite",
+          "price_per_seat_per_month": "$48",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Enterprise Lite + AI Assistant/Search/Workflow, PDF markup, e-signature, dynamic watermarking, auto-remediation"
+        },
+        {
+          "name": "Ultimate",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Elite + doc classification, sensitive data classification, snapshot & recovery, behavioral ransomware, DLP integration"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "All listed tier prices are per user/month paid annually; Ultimate tier is custom-quote only; a separate Team Plan is referenced but not priced on the main comparison; free trial available but no free tier."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

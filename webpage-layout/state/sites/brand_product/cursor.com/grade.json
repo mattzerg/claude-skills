@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 6,
+    "color": 8,
+    "density": 7,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Strong mono/grotesque pairing (Berkeley Mono + Cursor Gothic). The mono feels purposeful for a code editor brand, but the execution isn't radical enough to be a 9+.",
+    "hierarchy": "Hero headline dominates well, product screenshot gets proper prominence. But the social proof logo grid is uniform/weak \u2014 no clear visual anchor beyond the screenshot itself.",
+    "distinctiveness": "Dark theme + code editor UI is category-appropriate but not unique. The headline 'extraordinarily productive' could swap for any productivity tool. Product screenshot does heavy lifting, copy doesn't.",
+    "color": "Restrained black/white/orange accent system. Orange used sparingly (~3-5% on CTAs). Clean discipline, though dark-on-dark feels safe rather than bold.",
+    "density": "Confident whitespace around hero elements. Product screenshot breathes. Logo grid has good rhythm. Not generic padding, but not pushing boundaries either.",
+    "voice": "Generic SaaS IA: headline \u2192 CTA \u2192 product shot \u2192 social proof logos. No story arc, no opinionated structure. 'Trusted every day' is stencil language. Doesn't reflect how developers actually think about tools."
+  },
+  "winning_patterns": [
+    "Monospace typography choice signals technical authenticity",
+    "Product-first \u2014 massive screenshot shows actual interface, not metaphors",
+    "Restrained color palette with disciplined accent usage",
+    "Logo grid using actual recognizable brands (Stripe, OpenAI, Adobe) not generic icons"
+  ],
+  "anti_patterns": [
+    "Hero headline is productivity-tool Mad Libs: '[adjective] productive'",
+    "'Trusted every day by teams that build world-class software' \u2014 pure stencil copy",
+    "Zero information architecture personality \u2014 straight-line conversion funnel",
+    "Dark theme feels expected for dev tools, not a choice with POV",
+    "No differentiation from other AI code assistants beyond branding"
+  ],
+  "one_word_personality": "competent",
+  "_url": "https://cursor.com",
+  "_persona": "brand_product",
+  "_note": "AI code editor \u2014 direct Zerg adjacency",
+  "_graded_at": "2026-05-08T00:54:50.544658Z"
+}

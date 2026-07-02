@@ -1,8 +1,9 @@
 ---
 name: case-study-skill
-description: Capture, scaffold, and review Zerg AI client case studies (CesiumAstro, Andesite, Durable, etc.) against a 12-exemplar corpus from McKinsey, BCG, Thoughtworks, Anthropic, OpenAI, Glean, Stripe, Vercel, Snowflake, Pivotal, Modal. Three modes — `capture` (pull raw evidence from vault + Linear + Zergboard + Conversations into a structured brief), `scaffold` (generate a draft from the brief), and `review` (audit a draft for fabricated metrics, NDA leakage, voice drift, missing structural beats). Anchored on `MattZerg/_style/case_study_style.md` + the corpus exemplars. Output is professional/structured with citations to the rule or pattern; never auto-posts; hard-refuses scaffolding without NDA clearance. USE PROACTIVELY when Matt or Idan mentions a Zerg client win, asks "let's draft a case study for [client]", or before any case study leaves the vault.
+description: Capture/scaffold/review Zerg client case studies (CesiumAstro, Andesite, Durable) against 12-exemplar corpus (McKinsey, BCG, Anthropic, OpenAI, Glean, Stripe, Modal). Three modes — `capture` (pull vault+Linear+Zergboard+Conversations evidence), `scaffold` (draft from brief), `review` (audit for fabricated metrics, NDA leakage, voice drift). Anchored on `_style/case_study_style.md`. Hard-refuses scaffolding without NDA clearance. USE PROACTIVELY when Matt/Idan mention a client win or ask "draft case study for [client]".
 allowed-tools: Bash, Read, Write
 ---
+
 
 # Case Study Skill
 
@@ -47,7 +48,7 @@ python3 ~/.claude/skills/case-study-skill/run.py scaffold <brief-path> [flags]
 ```
 
 Flags:
-- `--out-dir DIR` — default: `MattZerg/CaseStudies/<client-slug>/`
+- `--out-dir DIR` — default: `MattZerg/Clients/<Client>/case-study/`
 - `--model MODEL` — default: `claude-opus-4-7`
 - `--length WORDS` — target word count (default: 1500; band: 1,200–2,000)
 - `--cleared-for-publication` — explicit override of `nda_status: unknown`. Logs `nda_override_at` + `nda_override_by` into the case-study frontmatter. **Hard-refused** if brief says `nda_status: restricted`.
@@ -56,8 +57,8 @@ Flags:
 Beat sequence (from style guide): Headline → Dek → Challenge → Why Zerg → Approach → Solution → Results → Quote → What's next → CTA.
 
 Writes:
-- `MattZerg/CaseStudies/<client-slug>/<project-slug>.md` — durable draft
-- `MattZerg/CaseStudies/<client-slug>/<project-slug>.checklist.md` — pre-publish gates auto-filled
+- `MattZerg/Clients/<Client>/case-study/<project-slug>.md` — durable draft
+- `MattZerg/Clients/<Client>/case-study/<project-slug>.checklist.md` — pre-publish gates auto-filled
 
 ### review — audit a draft against the corpus + style guide
 
@@ -130,3 +131,9 @@ Case studies follow the same approval cadence as blog posts: heavy review at fir
 - **Doesn't modify source briefs or drafts.** Reviews land in separate files; scaffolds get a fresh path.
 - **Hard NDA refuse.** `nda_status: restricted` blocks scaffold regardless of flags.
 - **No memory writes.** Reads anchors; doesn't write to memory.
+
+## Cross-genre review rules (memory anchors)
+
+The review pass should apply these universal rules in addition to the skill's genre-specific corpus:
+
+- **Honest scoping** — see `feedback_honest_scoping_universal.md`. Cover/intro/dek must reconcile with body content; name what's NOT included as explicitly as what IS. Cover-vs-body mismatch is a ship-blocker, not a polish item.

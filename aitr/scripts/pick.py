@@ -254,6 +254,27 @@ def _cmd_record_quality(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_record_actuals(args: argparse.Namespace) -> int:
+    """Record real token usage for a prior decision (feeds the weekly report's
+    actual-vs-estimated savings). Producer-facing twin of record-quality."""
+    from aitr_exec import actual_cost, log_actuals  # local import keeps startup light
+
+    cost = actual_cost(args.model, args.input_tokens, args.output_tokens)
+    rec = {
+        "decision_id": args.decision_id,
+        "model": args.model,
+        "provider": args.model.split("__")[0] if "__" in args.model else "",
+        "caller": args.caller or "",
+        "billing_mode": args.billing_mode or "unknown",
+        "input_tokens": args.input_tokens,
+        "output_tokens": args.output_tokens,
+        "actual_cost_usd": cost,
+    }
+    log_actuals(rec)
+    print(json.dumps(rec, indent=2))
+    return 0
+
+
 def _cmd_refresh_cache(args: argparse.Namespace) -> int:
     try:
         src = load_catalog(force_refresh=True)
@@ -356,6 +377,14 @@ def build_argparser() -> argparse.ArgumentParser:
     sub_rq.add_argument("--note", help="freeform context")
     subs.add_parser("reputation", parents=[global_parser],
                     help="Print learned realized-quality priors per (caller, task, model).")
+    sub_ra = subs.add_parser("record-actuals", parents=[global_parser],
+                             help="Record real token usage for a decision (feeds actual savings).")
+    sub_ra.add_argument("decision_id")
+    sub_ra.add_argument("--model", required=True, help="aitr model id (e.g. anthropic__claude-opus-4-8)")
+    sub_ra.add_argument("--input-tokens", type=int, required=True)
+    sub_ra.add_argument("--output-tokens", type=int, required=True)
+    sub_ra.add_argument("--caller", help="who executed the pick")
+    sub_ra.add_argument("--billing-mode", help="flat | metered | unknown")
 
     return p
 
@@ -365,7 +394,7 @@ def main(argv: list[str] | None = None) -> int:
     # Default to `pick` if no verb given but kv args are present.
     args_in = list(sys.argv[1:] if argv is None else argv)
     _verbs = {"pick", "explain", "refresh-cache", "list-models", "replay",
-              "record-quality", "reputation"}
+              "record-quality", "record-actuals", "reputation"}
     if args_in and args_in[0] not in _verbs and not args_in[0].startswith("-"):
         args_in.insert(0, "pick")
     elif not args_in:
@@ -382,6 +411,8 @@ def main(argv: list[str] | None = None) -> int:
         return _cmd_replay(args)
     if args.verb == "record-quality":
         return _cmd_record_quality(args)
+    if args.verb == "record-actuals":
+        return _cmd_record_actuals(args)
     if args.verb == "reputation":
         return _cmd_reputation(args)
     # default: pick

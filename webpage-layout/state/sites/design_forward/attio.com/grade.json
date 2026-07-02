@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 5,
+    "distinctiveness": 3,
+    "color": 6,
+    "density": 4,
+    "voice": 3
+  },
+  "reasoning": {
+    "typography": "Inter Display + Tiempos Text is literally the AI-era stencil pairing. Safe, readable, zero character. Could be any SaaS product launched 2022-2024.",
+    "hierarchy": "Headline dominates adequately but the product screenshot below competes for attention. Tab navigation fragments focus. Not clear what I should look at first in the lower half.",
+    "distinctiveness": "Swap 'Attio' for any B2B CRM name and this works identically. 'Revenue platform engineered for scale' + customer logos + product UI screenshot = maximum genericness. No editorial stance.",
+    "color": "Restrained black/white base with minimal accent usage. The product UI shows purple accents judiciously. Clean discipline, though perhaps too safe/corporate.",
+    "density": "Generic uniform padding everywhere. The hero area has appropriate breathing room, but the navigation sidebar screenshot feels like filler rather than confident content. Nothing bold about the spacing choices.",
+    "voice": "IA is pure SaaS stencil: Hero value prop \u2192 Product tabs (Ask Attio, Data model, Workflows, Reporting) \u2192 Customer logos \u2192 CTAs. Zero reflection of actual story or personality. Could be generated."
+  },
+  "winning_patterns": [
+    "Clean color restraint with disciplined black/white base",
+    "Readable hierarchy in hero headline area",
+    "Navigation sidebar UI preview attempts to show product depth",
+    "Customer logo bar shows legitimate credibility"
+  ],
+  "anti_patterns": [
+    "Inter Display + Tiempos Text = the 2023 AI stencil combo everyone uses",
+    "Generic SaaS hero formula: big claim + subhead + dual CTA buttons",
+    "Tab navigation (Ask Attio/Data model/Workflows/Reporting) feels like feature checklist",
+    "Product screenshot 'Thinking...' placeholder text feels unfinished/lazy",
+    "No editorial voice or perspective\u2014pure capability listing",
+    "Uniform padding throughout lacks spatial confidence"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://attio.com",
+  "_persona": "design_forward",
+  "_note": "Dark gradient, glass-morph cards, motion",
+  "_graded_at": "2026-05-08T21:45:36.357183Z"
+}

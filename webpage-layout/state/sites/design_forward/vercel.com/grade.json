@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 7,
+    "hierarchy": 8,
+    "distinctiveness": 6,
+    "color": 8,
+    "density": 7,
+    "voice": 5
+  },
+  "reasoning": {
+    "typography": "Geist typeface has character but execution is safe \u2014 clean sans-serif with decent weight variation. The testimonial section shows bold logo names that do typographic work, but overall system lacks risk-taking.",
+    "hierarchy": "Strong hero dominance with gradient triangle asset commanding attention. Headline sizing works well, testimonial metrics (7m\u219240s, 95%, 24x) are visually loud in the right way. Clear primary action hierarchy.",
+    "distinctiveness": "The gradient triangle is a strong brand asset, but the IA structure (hero \u2192 social proof \u2192 product cards) is developer-tools-stencil. Swap 'Vercel' for 'Netlify' and 90% still works. Testimonial presentation has some personality.",
+    "color": "Disciplined dark theme with teal-to-red gradient used as singular accent moment. White text, dark cards, restrained palette. Gradient feels earned as centerpiece, not decorative. Small blue event badge controlled.",
+    "density": "Confident spacing in hero area with breathing room around headline. Card grid below has good rhythm. Not maximalist but not over-padded SaaS either. Slightly generic uniform card heights.",
+    "voice": "Structure is pure B2B dev-tools template: hero CTA \u2192 social proof logos \u2192 filtered product cards \u2192 feature grid. The 'AI Cloud' positioning is clear but IA doesn't break from category conventions. Reads professional, not visionary."
+  },
+  "winning_patterns": [
+    "Gradient triangle as singular focal asset \u2014 gives the page a memorable centerpiece",
+    "Testimonial metrics styled as bold typographic statements (runway/LEONARDO.AI/zapier + numbers)",
+    "Dark theme executed with restraint \u2014 not trying to be 'cool dark mode'",
+    "Hero headline does the positioning work clearly: 'Build and deploy on the AI Cloud'",
+    "Tab filtering interface (AI Apps/Web Apps/Ecommerce) shows product range efficiently"
+  ],
+  "anti_patterns": [
+    "IA is pure category template: hero \u2192 proof \u2192 cards \u2192 features \u2014 could be any dev platform",
+    "Product cards ('Your product, delivered' / 'Agents' / 'AI Apps') feel generic in phrasing",
+    "Event banner at top ('Ship 26 coming to 5 cities') breaks the hero's visual authority",
+    "Card descriptions too vague ('Deliver more value to users by executing complex workflows')",
+    "Footer card grid spacing feels mechanically uniform \u2014 no density variation or visual surprise"
+  ],
+  "one_word_personality": "professional",
+  "_url": "https://vercel.com",
+  "_persona": "design_forward",
+  "_note": "Bold mono typography, gradient hero, motion accents",
+  "_graded_at": "2026-05-08T21:42:31.592607Z"
+}

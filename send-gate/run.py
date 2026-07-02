@@ -143,6 +143,142 @@ def log_send(record: dict) -> None:
         f.write(json.dumps(record) + "\n")
 
 
+# ---------- send-time learning hook ----------
+# Reduces FM voice-loop feedback latency from 24h (cron'd learn.py reading the
+# Gmail sent folder) to 0. send-gate already has both the original FM draft
+# (looked up from sent-log) and the about-to-send body — the cleanest moment
+# to capture an in-flight diff. Wrapped in try/except so any failure here is
+# silent and never blocks the actual send.
+
+LEARN_SKILL_DIRS = [
+    Path.home() / ".claude" / "skills" / "fakematt-email",
+    Path.home() / ".claude" / "skills" / "fakematt-personal",
+]
+LEARN_WINDOW_DAYS = 7
+LEARN_MIN_CHANGED_LINES = 2
+
+
+def _diff_summary(generated: str, sent: str) -> tuple[str, int]:
+    import difflib
+    g = [l.rstrip() for l in generated.splitlines()]
+    s = [l.rstrip() for l in sent.splitlines()]
+    diff = list(difflib.unified_diff(g, s, lineterm="", n=2))
+    changed = sum(
+        1 for l in diff
+        if l.startswith(("+", "-")) and not l.startswith(("+++", "---")) and l[1:].strip()
+    )
+    return "\n".join(diff), changed
+
+
+def _find_recent_unchecked(sent_log: Path, recipient: str) -> tuple[int, dict, list[dict]] | tuple[None, None, list]:
+    if not sent_log.exists():
+        return None, None, []
+    cutoff = dt.datetime.now() - dt.timedelta(days=LEARN_WINDOW_DAYS)
+    records: list[dict] = []
+    for line in sent_log.read_text().splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            records.append(json.loads(line))
+        except Exception:
+            continue
+    # Walk newest-first, return first unchecked match within the window
+    for i in range(len(records) - 1, -1, -1):
+        r = records[i]
+        if r.get("checked"):
+            continue
+        if (r.get("to") or "").lower() != recipient.lower():
+            continue
+        try:
+            ts = dt.datetime.strptime((r.get("ts") or "")[:15], "%Y%m%dT%H%M%S")
+        except Exception:
+            continue
+        if ts < cutoff:
+            continue
+        return i, r, records
+    return None, None, records
+
+
+def _append_correction(corrections: Path, record: dict, sent_body: str,
+                       diff_text: str, changed: int) -> None:
+    if not corrections.exists():
+        corrections.write_text(
+            "# Recent corrections\n\n"
+            "Diffs of edits Matt made to skill-generated drafts before sending. "
+            "Includes send-time captures via send-gate.\n\n---\n\n"
+        )
+    today = dt.date.today().isoformat()
+    register_str = ""
+    if record.get("register"):
+        register_str = f" (Register {record['register']})"
+    elif record.get("tone"):
+        register_str = f" (Tone {record['tone']})"
+    with open(corrections, "a") as f:
+        f.write(f"\n## {today} — to {record.get('to','?')}{register_str}\n\n")
+        f.write("_Captured at send-time by send-gate._\n\n")
+        f.write(f"**Original draft:**\n\n```\n{record.get('generated_body','').strip()}\n```\n\n")
+        f.write(f"**What Matt sent:**\n\n```\n{sent_body.strip()}\n```\n\n")
+        if changed:
+            f.write(f"**Diff** ({changed} changed lines):\n\n```diff\n{diff_text}\n```\n\n")
+        f.write("---\n")
+
+
+def capture_at_send(recipient: str, sent_body: str) -> dict | None:
+    """Best-effort: look up most recent unchecked FM draft to this recipient,
+    diff against the about-to-send body, and if material edit, log a correction
+    + mark the record checked. Returns the captured payload or None.
+    """
+    if not recipient or not sent_body or not sent_body.strip():
+        return None
+    try:
+        for sdir in LEARN_SKILL_DIRS:
+            sent_log = sdir / "sent-log.jsonl"
+            corrections = sdir / "corrections.md"
+            idx, record, records = _find_recent_unchecked(sent_log, recipient)
+            if record is None:
+                continue
+            generated = (record.get("generated_body") or "").strip()
+            if not generated:
+                continue
+            diff_text, changed = _diff_summary(generated, sent_body.strip())
+            if changed >= LEARN_MIN_CHANGED_LINES:
+                _append_correction(corrections, record, sent_body, diff_text, changed)
+                record["checked"] = True
+                record["edit_distance"] = changed
+                record["manual_override"] = True
+                record["captured_by"] = "send-gate"
+                records[idx] = record
+                with open(sent_log, "w") as f:
+                    for r in records:
+                        f.write(json.dumps(r) + "\n")
+                return {
+                    "skill": sdir.name,
+                    "ts": record.get("ts"),
+                    "changed_lines": changed,
+                    "to": recipient,
+                }
+            # Found a match but no material edit → mark checked anyway so cron
+            # learn.py doesn't redo the work. edit_distance < threshold.
+            record["checked"] = True
+            record["edit_distance"] = changed
+            record["captured_by"] = "send-gate"
+            records[idx] = record
+            with open(sent_log, "w") as f:
+                for r in records:
+                    f.write(json.dumps(r) + "\n")
+            return {
+                "skill": sdir.name,
+                "ts": record.get("ts"),
+                "changed_lines": changed,
+                "to": recipient,
+                "no_material_edit": True,
+            }
+    except Exception as e:
+        print(f"[send-gate] learning hook failed (non-fatal): {e}", file=sys.stderr)
+    return None
+
+
 def main() -> int:
     args, passthrough = parse_args()
 
@@ -185,6 +321,16 @@ def main() -> int:
         print("[send-gate] --dry-run: not sending.", file=sys.stderr)
         return 0
 
+    # Send-time learning — best-effort, never blocks the send.
+    capture = capture_at_send(to, body)
+    if capture and not capture.get("no_material_edit"):
+        print(
+            f"[send-gate] captured edit for FM voice loop: "
+            f"{capture['changed_lines']} changed line(s) vs draft {capture['ts']} "
+            f"({capture['skill']})",
+            file=sys.stderr,
+        )
+
     # Pass through
     print("[send-gate] sending…", file=sys.stderr)
     rc = subprocess.call(["python3", str(GMAIL_SKILL), "send"] + passthrough)
@@ -194,6 +340,7 @@ def main() -> int:
         "anti_patterns": len(findings),
         "register_warnings": len(reg_warnings),
         "scrubbed_coauthor_lines": stripped,
+        "send_time_capture": capture,
         "exit_code": rc,
     })
     return rc

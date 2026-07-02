@@ -1,0 +1,368 @@
+[2026-06-01T02:00:03-04:00] monthly refresh starting
+[2026-06-01T02:00:03] === Queue runner starting: 18 categories ===
+[2026-06-01T02:00:03]   - pm-software → Zergboard (9 seeds)
+[2026-06-01T02:00:03]   - finance-and-wallets → Zergwallet (13 seeds)
+[2026-06-01T02:00:03]   - internal-chat → ZergChat (6 seeds)
+[2026-06-01T02:00:03]   - workspace-email → ZergMail (6 seeds)
+[2026-06-01T02:00:03]   - calendar → ZergCal (6 seeds)
+[2026-06-01T02:00:03]   - video-meetings → ZergMeeting (6 seeds)
+[2026-06-01T02:00:03]   - sms-messaging → ZMsg (6 seeds)
+[2026-06-01T02:00:03]   - crm → ZergCRM (6 seeds)
+[2026-06-01T02:00:03]   - file-storage → ZergBox (6 seeds)
+[2026-06-01T02:00:03]   - analytics → Zergalytics (6 seeds)
+[2026-06-01T02:00:03]   - email-marketing → Zstack (6 seeds)
+[2026-06-01T02:00:03]   - customer-support → Zstack (6 seeds)
+[2026-06-01T02:00:03]   - accounting → Zstack (6 seeds)
+[2026-06-01T02:00:03]   - expense-management → Zstack (5 seeds)
+[2026-06-01T02:00:03]   - hris-payroll → Zstack (5 seeds)
+[2026-06-01T02:00:03]   - marketing-automation → Zstack (5 seeds)
+[2026-06-01T02:00:03]   - notes-wiki → Zstack (6 seeds)
+[2026-06-01T02:00:03]   - all-in-one-platforms → Zstack (5 seeds)
+[2026-06-01T02:00:03] === pm-software (product=Zergboard, 9 seeds) ===
+[2026-06-01T02:00:03]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py pm-software linear.app asana.com atlassian.com/software/jira monday.com clickup.com notion.so shortcut.com github.com/features/project-management trello.com --product Zergboard --n 10
+[2026-06-01T02:00:58]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py pm-software --all
+[2026-06-01T02:48:50]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py pm-software --product Zergboard
+[2026-06-01T02:48:50]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zergboard.md
+[2026-06-01T02:48:50]   retrying compare with --reuse-inventory
+[2026-06-01T02:48:50]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py pm-software --product Zergboard --reuse-inventory
+[2026-06-01T02:48:55] === finance-and-wallets (product=Zergwallet, 13 seeds) ===
+[2026-06-01T02:48:55]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py finance-and-wallets metamask.io rainbow.me skyfire.xyz crossmint.com monarchmoney.com copilot.money ynab.com originfinancial.com cash.app coinbase.com/wallet privy.io rocketmoney.com wealthfront.com --product Zergwallet --n 10
+[2026-06-01T02:49:21]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py finance-and-wallets --all
+[2026-06-01T03:22:47]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py finance-and-wallets --product Zergwallet
+[2026-06-01T03:22:48]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zergwallet.md
+[2026-06-01T03:22:48]   retrying compare with --reuse-inventory
+[2026-06-01T03:22:48]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py finance-and-wallets --product Zergwallet --reuse-inventory
+[2026-06-01T03:22:53] === internal-chat (product=ZergChat, 6 seeds) ===
+[2026-06-01T03:22:53]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py internal-chat slack.com microsoft.com/microsoft-teams discord.com mattermost.com rocket.chat twist.com --product ZergChat --n 10
+[2026-06-01T03:23:30]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py internal-chat --all
+[2026-06-01T04:20:47]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py internal-chat --product ZergChat
+[2026-06-01T04:20:48]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/ZergChat.md
+[2026-06-01T04:20:48]   retrying compare with --reuse-inventory
+[2026-06-01T04:20:48]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py internal-chat --product ZergChat --reuse-inventory
+[2026-06-01T04:20:53] === workspace-email (product=ZergMail, 6 seeds) ===
+[2026-06-01T04:20:53]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py workspace-email workspace.google.com microsoft.com/microsoft-365/outlook hey.com superhuman.com proton.me/mail fastmail.com --product ZergMail --n 10
+[2026-06-01T04:21:29]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py workspace-email --all
+[2026-06-01T04:57:07]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py workspace-email --product ZergMail
+[2026-06-01T04:57:07]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/ZergMail.md
+[2026-06-01T04:57:07]   retrying compare with --reuse-inventory
+[2026-06-01T04:57:07]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py workspace-email --product ZergMail --reuse-inventory
+[2026-06-01T04:57:12] === calendar (product=ZergCal, 6 seeds) ===
+[2026-06-01T04:57:12]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py calendar calendar.google.com outlook.live.com/owa calendar.notion.so reclaim.ai motion.app fantastical.app --product ZergCal --n 10
+[2026-06-01T04:57:56]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py calendar --all
+[2026-06-01T05:30:34]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py calendar --product ZergCal
+[2026-06-01T05:30:34]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/ZergCal.md
+[2026-06-01T05:30:34]   retrying compare with --reuse-inventory
+[2026-06-01T05:30:34]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py calendar --product ZergCal --reuse-inventory
+[2026-06-01T05:30:39] === video-meetings (product=ZergMeeting, 6 seeds) ===
+[2026-06-01T05:30:39]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py video-meetings zoom.us meet.google.com microsoft.com/microsoft-teams around.co tuple.app whereby.com --product ZergMeeting --n 10
+[2026-06-01T05:31:15]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py video-meetings --all
+[2026-06-01T06:33:35]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py video-meetings --product ZergMeeting
+[2026-06-01T06:33:35]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/ZergMeeting.md
+[2026-06-01T06:33:35]   retrying compare with --reuse-inventory
+[2026-06-01T06:33:35]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py video-meetings --product ZergMeeting --reuse-inventory
+[2026-06-01T06:33:40] === sms-messaging (product=ZMsg, 6 seeds) ===
+[2026-06-01T06:33:40]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py sms-messaging twilio.com messagebird.com sinch.com plivo.com vonage.com telnyx.com --product ZMsg --n 10
+[2026-06-01T06:34:16]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py sms-messaging --all
+[2026-06-01T07:05:23]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py sms-messaging --product ZMsg
+[2026-06-01T07:05:24]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/ZMsg.md
+[2026-06-01T07:05:24]   retrying compare with --reuse-inventory
+[2026-06-01T07:05:24]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py sms-messaging --product ZMsg --reuse-inventory
+[2026-06-01T07:05:29] === crm (product=ZergCRM, 6 seeds) ===
+[2026-06-01T07:05:29]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py crm salesforce.com hubspot.com attio.com pipedrive.com folk.app clay.com --product ZergCRM --n 10
+[2026-06-01T07:06:07]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py crm --all
+[2026-06-01T08:08:36]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py crm --product ZergCRM
+[2026-06-01T08:08:36]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/ZergCRM.md
+[2026-06-01T08:08:36]   retrying compare with --reuse-inventory
+[2026-06-01T08:08:37]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py crm --product ZergCRM --reuse-inventory
+[2026-06-01T08:08:42] === file-storage (product=ZergBox, 6 seeds) ===
+[2026-06-01T08:08:42]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py file-storage workspace.google.com/products/drive dropbox.com box.com onedrive.live.com sync.com pcloud.com --product ZergBox --n 10
+[2026-06-01T08:09:17]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py file-storage --all
+[2026-06-01T09:08:56]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py file-storage --product ZergBox
+[2026-06-01T09:08:57]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/ZergBox.md
+[2026-06-01T09:08:57]   retrying compare with --reuse-inventory
+[2026-06-01T09:08:57]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py file-storage --product ZergBox --reuse-inventory
+[2026-06-01T09:09:02] === analytics (product=Zergalytics, 6 seeds) ===
+[2026-06-01T09:09:02]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py analytics analytics.google.com mixpanel.com amplitude.com posthog.com june.so plausible.io --product Zergalytics --n 10
+[2026-06-01T09:09:37]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py analytics --all
+[2026-06-01T09:55:31]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py analytics --product Zergalytics
+[2026-06-01T09:55:31]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zergalytics.md
+[2026-06-01T09:55:31]   retrying compare with --reuse-inventory
+[2026-06-01T09:55:31]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py analytics --product Zergalytics --reuse-inventory
+[2026-06-01T09:55:39] === email-marketing (product=Zstack, 6 seeds) ===
+[2026-06-01T09:55:39]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py email-marketing mailchimp.com klaviyo.com customer.io beehiiv.com resend.com convertkit.com --product Zstack --n 10
+[2026-06-01T09:56:18]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py email-marketing --all
+[2026-06-01T10:36:28]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py email-marketing --product Zstack
+[2026-06-01T10:36:28]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zstack.md
+[2026-06-01T10:36:28]   retrying compare with --reuse-inventory
+[2026-06-01T10:36:28]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py email-marketing --product Zstack --reuse-inventory
+[2026-06-01T10:36:33] === customer-support (product=Zstack, 6 seeds) ===
+[2026-06-01T10:36:33]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py customer-support zendesk.com intercom.com front.com plain.com helpscout.com gorgias.com --product Zstack --n 10
+[2026-06-01T10:37:10]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py customer-support --all
+[2026-06-01T11:20:15]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py customer-support --product Zstack
+[2026-06-01T11:20:15]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zstack.md
+[2026-06-01T11:20:15]   retrying compare with --reuse-inventory
+[2026-06-01T11:20:15]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py customer-support --product Zstack --reuse-inventory
+[2026-06-01T11:20:20] === accounting (product=Zstack, 6 seeds) ===
+[2026-06-01T11:20:20]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py accounting quickbooks.intuit.com xero.com waveapps.com bench.co freshbooks.com sage.com --product Zstack --n 10
+[2026-06-01T11:20:58]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py accounting --all
+[2026-06-01T11:59:21]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py accounting --product Zstack
+[2026-06-01T11:59:22]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zstack.md
+[2026-06-01T11:59:22]   retrying compare with --reuse-inventory
+[2026-06-01T11:59:22]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py accounting --product Zstack --reuse-inventory
+[2026-06-01T11:59:27] === expense-management (product=Zstack, 5 seeds) ===
+[2026-06-01T11:59:27]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py expense-management brex.com ramp.com expensify.com pleo.com navan.com --product Zstack --n 10
+[2026-06-01T12:00:01]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py expense-management --all
+[2026-06-01T12:36:54]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py expense-management --product Zstack
+[2026-06-01T12:36:54]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zstack.md
+[2026-06-01T12:36:54]   retrying compare with --reuse-inventory
+[2026-06-01T12:36:54]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py expense-management --product Zstack --reuse-inventory
+[2026-06-01T12:36:59] === hris-payroll (product=Zstack, 5 seeds) ===
+[2026-06-01T12:36:59]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py hris-payroll gusto.com rippling.com justworks.com deel.com bamboohr.com --product Zstack --n 10
+[2026-06-01T12:37:27]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py hris-payroll --all
+[2026-06-01T13:13:49]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py hris-payroll --product Zstack
+[2026-06-01T13:13:49]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zstack.md
+[2026-06-01T13:13:49]   retrying compare with --reuse-inventory
+[2026-06-01T13:13:49]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py hris-payroll --product Zstack --reuse-inventory
+[2026-06-01T13:13:54] === marketing-automation (product=Zstack, 5 seeds) ===
+[2026-06-01T13:13:54]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py marketing-automation hubspot.com marketo.com activecampaign.com customer.io autopilot.com --product Zstack --n 10
+[2026-06-01T13:14:33]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py marketing-automation --all
+[2026-06-01T13:51:59]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py marketing-automation --product Zstack
+[2026-06-01T13:51:59]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zstack.md
+[2026-06-01T13:51:59]   retrying compare with --reuse-inventory
+[2026-06-01T13:51:59]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py marketing-automation --product Zstack --reuse-inventory
+[2026-06-01T13:52:04] === notes-wiki (product=Zstack, 6 seeds) ===
+[2026-06-01T13:52:04]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py notes-wiki notion.so confluence.atlassian.com coda.io obsidian.md slite.com mem.ai --product Zstack --n 10
+[2026-06-01T13:52:40]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py notes-wiki --all
+[2026-06-01T14:34:30]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py notes-wiki --product Zstack
+[2026-06-01T14:34:31]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zstack.md
+[2026-06-01T14:34:31]   retrying compare with --reuse-inventory
+[2026-06-01T14:34:31]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py notes-wiki --product Zstack --reuse-inventory
+[2026-06-01T14:34:36] === all-in-one-platforms (product=Zstack, 5 seeds) ===
+[2026-06-01T14:34:36]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py all-in-one-platforms notion.so airtable.com clickup.com coda.io fibery.io --product Zstack --n 10
+[2026-06-01T14:35:25]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py all-in-one-platforms --all
+[2026-06-01T15:25:58]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py all-in-one-platforms --product Zstack
+[2026-06-01T15:25:59]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zstack/Zstack.md
+[2026-06-01T15:25:59]   retrying compare with --reuse-inventory
+[2026-06-01T15:25:59]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py all-in-one-platforms --product Zstack --reuse-inventory
+[2026-06-01T15:26:04] 
+=== Queue runner done ===
+[2026-06-01T15:26:04]   0/18 successful
+[2026-06-01T15:26:04]   ✗ pm-software               failed at compare
+[2026-06-01T15:26:04]   ✗ finance-and-wallets       failed at compare
+[2026-06-01T15:26:04]   ✗ internal-chat             failed at compare
+[2026-06-01T15:26:04]   ✗ workspace-email           failed at compare
+[2026-06-01T15:26:04]   ✗ calendar                  failed at compare
+[2026-06-01T15:26:04]   ✗ video-meetings            failed at compare
+[2026-06-01T15:26:04]   ✗ sms-messaging             failed at compare
+[2026-06-01T15:26:04]   ✗ crm                       failed at compare
+[2026-06-01T15:26:04]   ✗ file-storage              failed at compare
+[2026-06-01T15:26:04]   ✗ analytics                 failed at compare
+[2026-06-01T15:26:04]   ✗ email-marketing           failed at compare
+[2026-06-01T15:26:04]   ✗ customer-support          failed at compare
+[2026-06-01T15:26:04]   ✗ accounting                failed at compare
+[2026-06-01T15:26:04]   ✗ expense-management        failed at compare
+[2026-06-01T15:26:04]   ✗ hris-payroll              failed at compare
+[2026-06-01T15:26:04]   ✗ marketing-automation      failed at compare
+[2026-06-01T15:26:04]   ✗ notes-wiki                failed at compare
+[2026-06-01T15:26:04]   ✗ all-in-one-platforms      failed at compare
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/competitive-review-skill/monthly_summary.py", line 158, in <module>
+    main()
+  File "/Users/mattheweisner/.claude/skills/competitive-review-skill/monthly_summary.py", line 138, in main
+    rows = collect_categories()
+  File "/Users/mattheweisner/.claude/skills/competitive-review-skill/monthly_summary.py", line 55, in collect_categories
+    for d in sorted(base.iterdir()):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Obsidian/Zerg/MattZerg/Competitive'
+[2026-06-01T15:26:04-04:00] monthly_summary exited non-zero
+[2026-06-01T15:26:04-04:00] monthly refresh done
+[2026-07-01T02:00:01-04:00] monthly refresh starting
+[2026-07-01T02:00:01] === Queue runner starting: 18 categories ===
+[2026-07-01T02:00:01]   - pm-software → Zergboard (9 seeds)
+[2026-07-01T02:00:01]   - finance-and-wallets → Zergwallet (13 seeds)
+[2026-07-01T02:00:01]   - internal-chat → ZergChat (6 seeds)
+[2026-07-01T02:00:01]   - workspace-email → ZergMail (6 seeds)
+[2026-07-01T02:00:01]   - calendar → ZergCal (6 seeds)
+[2026-07-01T02:00:01]   - video-meetings → ZergMeeting (6 seeds)
+[2026-07-01T02:00:01]   - sms-messaging → ZMsg (6 seeds)
+[2026-07-01T02:00:01]   - crm → ZergCRM (6 seeds)
+[2026-07-01T02:00:01]   - file-storage → ZergBox (6 seeds)
+[2026-07-01T02:00:01]   - analytics → Zergalytics (6 seeds)
+[2026-07-01T02:00:01]   - email-marketing → Zstack (6 seeds)
+[2026-07-01T02:00:01]   - customer-support → Zstack (6 seeds)
+[2026-07-01T02:00:01]   - accounting → Zstack (6 seeds)
+[2026-07-01T02:00:01]   - expense-management → Zstack (5 seeds)
+[2026-07-01T02:00:01]   - hris-payroll → Zstack (5 seeds)
+[2026-07-01T02:00:01]   - marketing-automation → Zstack (5 seeds)
+[2026-07-01T02:00:01]   - notes-wiki → Zstack (6 seeds)
+[2026-07-01T02:00:01]   - all-in-one-platforms → Zstack (5 seeds)
+[2026-07-01T02:00:01] === pm-software (product=Zergboard, 9 seeds) ===
+[2026-07-01T02:00:01]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py pm-software linear.app asana.com atlassian.com/software/jira monday.com clickup.com notion.so shortcut.com github.com/features/project-management trello.com --product Zergboard --n 10
+[2026-07-01T02:00:18]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py pm-software --all
+[2026-07-01T02:26:17]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py pm-software --product Zergboard
+[2026-07-01T02:31:52]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py pm-software --top 10
+[2026-07-01T02:31:52]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py pm-software --product Zergboard
+[2026-07-01T02:32:40]   DONE in 1959s
+[2026-07-01T02:32:45] === finance-and-wallets (product=Zergwallet, 13 seeds) ===
+[2026-07-01T02:32:45]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py finance-and-wallets metamask.io rainbow.me skyfire.xyz crossmint.com monarchmoney.com copilot.money ynab.com originfinancial.com cash.app coinbase.com/wallet privy.io rocketmoney.com wealthfront.com --product Zergwallet --n 10
+[2026-07-01T02:32:59]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py finance-and-wallets --all
+[2026-07-01T02:56:31]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py finance-and-wallets --product Zergwallet
+[2026-07-01T03:08:21]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py finance-and-wallets --top 10
+[2026-07-01T03:08:21]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py finance-and-wallets --product Zergwallet
+[2026-07-01T03:09:40]   DONE in 2215s
+[2026-07-01T03:09:45] === internal-chat (product=ZergChat, 6 seeds) ===
+[2026-07-01T03:09:45]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py internal-chat slack.com microsoft.com/microsoft-teams discord.com mattermost.com rocket.chat twist.com --product ZergChat --n 10
+[2026-07-01T03:10:05]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py internal-chat --all
+[2026-07-01T03:31:08]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py internal-chat --product ZergChat
+[2026-07-01T03:42:34]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py internal-chat --top 10
+[2026-07-01T03:42:34]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py internal-chat --product ZergChat
+[2026-07-01T03:43:29]   DONE in 2024s
+[2026-07-01T03:43:34] === workspace-email (product=ZergMail, 6 seeds) ===
+[2026-07-01T03:43:34]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py workspace-email workspace.google.com microsoft.com/microsoft-365/outlook hey.com superhuman.com proton.me/mail fastmail.com --product ZergMail --n 10
+[2026-07-01T03:43:50]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py workspace-email --all
+[2026-07-01T04:05:50]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py workspace-email --product ZergMail
+[2026-07-01T04:14:37]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py workspace-email --top 10
+[2026-07-01T04:14:37]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py workspace-email --product ZergMail
+[2026-07-01T04:15:43]   DONE in 1930s
+[2026-07-01T04:15:49] === calendar (product=ZergCal, 6 seeds) ===
+[2026-07-01T04:15:49]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py calendar calendar.google.com outlook.live.com/owa calendar.notion.so reclaim.ai motion.app fantastical.app --product ZergCal --n 10
+[2026-07-01T04:16:04]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py calendar --all
+[2026-07-01T04:36:31]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py calendar --product ZergCal
+[2026-07-01T04:37:38]   compare FAILED rc=1: [compare] Stage A: canonical feature inventory (15 competitors)
+[compare]   prompt size: 15344 chars
+[aitr] competitive-review-skill: claude-opus-4-7 (+0.15 quality reputation, ok tag fit, ~$0.070 estimated) [decision: aitr-20260701-083635-12f9e1]
+Traceback (most recent call last):
+  File "/Users/ma
+[2026-07-01T04:37:38]   retrying compare with --reuse-inventory
+[2026-07-01T04:37:38]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py calendar --product ZergCal --reuse-inventory
+[2026-07-01T04:42:58]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py calendar --top 10
+[2026-07-01T04:42:58]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py calendar --product ZergCal
+[2026-07-01T04:43:57]   DONE in 1689s
+[2026-07-01T04:44:02] === video-meetings (product=ZergMeeting, 6 seeds) ===
+[2026-07-01T04:44:02]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py video-meetings zoom.us meet.google.com microsoft.com/microsoft-teams around.co tuple.app whereby.com --product ZergMeeting --n 10
+[2026-07-01T04:44:19]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py video-meetings --all
+[2026-07-01T05:15:01]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py video-meetings --product ZergMeeting
+[2026-07-01T05:22:23]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py video-meetings --top 10
+[2026-07-01T05:22:23]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py video-meetings --product ZergMeeting
+[2026-07-01T05:23:22]   DONE in 2360s
+[2026-07-01T05:23:27] === sms-messaging (product=ZMsg, 6 seeds) ===
+[2026-07-01T05:23:27]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py sms-messaging twilio.com messagebird.com sinch.com plivo.com vonage.com telnyx.com --product ZMsg --n 10
+[2026-07-01T05:23:48]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py sms-messaging --all
+[2026-07-01T05:47:50]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py sms-messaging --product ZMsg
+[2026-07-01T05:54:24]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py sms-messaging --top 10
+[2026-07-01T05:54:24]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py sms-messaging --product ZMsg
+[2026-07-01T05:55:07]   DONE in 1899s
+[2026-07-01T05:55:12] === crm (product=ZergCRM, 6 seeds) ===
+[2026-07-01T05:55:12]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py crm salesforce.com hubspot.com attio.com pipedrive.com folk.app clay.com --product ZergCRM --n 10
+[2026-07-01T05:55:35]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py crm --all
+[2026-07-01T06:22:04]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py crm --product ZergCRM
+[2026-07-01T06:27:32]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py crm --top 10
+[2026-07-01T06:27:32]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py crm --product ZergCRM
+[2026-07-01T06:28:30]   DONE in 1998s
+[2026-07-01T06:28:35] === file-storage (product=ZergBox, 6 seeds) ===
+[2026-07-01T06:28:35]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py file-storage workspace.google.com/products/drive dropbox.com box.com onedrive.live.com sync.com pcloud.com --product ZergBox --n 10
+[2026-07-01T06:28:52]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py file-storage --all
+[2026-07-01T06:51:15]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py file-storage --product ZergBox
+[2026-07-01T07:03:50]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py file-storage --top 10
+[2026-07-01T07:03:50]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py file-storage --product ZergBox
+[2026-07-01T07:04:46]   DONE in 2170s
+[2026-07-01T07:04:51] === analytics (product=Zergalytics, 6 seeds) ===
+[2026-07-01T07:04:51]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py analytics analytics.google.com mixpanel.com amplitude.com posthog.com june.so plausible.io --product Zergalytics --n 10
+[2026-07-01T07:05:07]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py analytics --all
+[2026-07-01T07:28:11]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py analytics --product Zergalytics
+[2026-07-01T07:28:11]   compare FAILED rc=1: Error: no product spec found at MattZerg/Projects/Zerg-Production/Zstack/Zergalytics.md
+[2026-07-01T07:28:11]   retrying compare with --reuse-inventory
+[2026-07-01T07:28:11]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py analytics --product Zergalytics --reuse-inventory
+[2026-07-01T07:28:16] === email-marketing (product=Zstack, 6 seeds) ===
+[2026-07-01T07:28:16]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py email-marketing mailchimp.com klaviyo.com customer.io beehiiv.com resend.com convertkit.com --product Zstack --n 10
+[2026-07-01T07:28:31]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py email-marketing --all
+[2026-07-01T07:55:22]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py email-marketing --product Zstack
+[2026-07-01T08:01:05]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py email-marketing --top 10
+[2026-07-01T08:01:05]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py email-marketing --product Zstack
+[2026-07-01T08:01:58]   DONE in 2022s
+[2026-07-01T08:02:03] === customer-support (product=Zstack, 6 seeds) ===
+[2026-07-01T08:02:03]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py customer-support zendesk.com intercom.com front.com plain.com helpscout.com gorgias.com --product Zstack --n 10
+[2026-07-01T08:02:21]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py customer-support --all
+[2026-07-01T08:25:15]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py customer-support --product Zstack
+[2026-07-01T08:33:02]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py customer-support --top 10
+[2026-07-01T08:33:02]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py customer-support --product Zstack
+[2026-07-01T08:33:52]   DONE in 1909s
+[2026-07-01T08:33:57] === accounting (product=Zstack, 6 seeds) ===
+[2026-07-01T08:33:57]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py accounting quickbooks.intuit.com xero.com waveapps.com bench.co freshbooks.com sage.com --product Zstack --n 10
+[2026-07-01T08:34:15]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py accounting --all
+[2026-07-01T11:29:37]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py accounting --product Zstack
+[2026-07-01T12:31:30]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py accounting --top 10
+[2026-07-01T12:31:30]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py accounting --product Zstack
+[2026-07-01T12:32:22]   DONE in 14304s
+[2026-07-01T12:32:27] === expense-management (product=Zstack, 5 seeds) ===
+[2026-07-01T12:32:27]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py expense-management brex.com ramp.com expensify.com pleo.com navan.com --product Zstack --n 10
+[2026-07-01T12:32:49]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py expense-management --all
+[2026-07-01T13:32:27]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py expense-management --product Zstack
+[2026-07-01T13:41:25]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py expense-management --top 10
+[2026-07-01T13:41:25]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py expense-management --product Zstack
+[2026-07-01T13:42:16]   DONE in 4189s
+[2026-07-01T13:42:21] === hris-payroll (product=Zstack, 5 seeds) ===
+[2026-07-01T13:42:21]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py hris-payroll gusto.com rippling.com justworks.com deel.com bamboohr.com --product Zstack --n 10
+[2026-07-01T13:42:38]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py hris-payroll --all
+[2026-07-01T14:09:53]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py hris-payroll --product Zstack
+[2026-07-01T14:15:44]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py hris-payroll --top 10
+[2026-07-01T14:15:44]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py hris-payroll --product Zstack
+[2026-07-01T14:16:36]   DONE in 2055s
+[2026-07-01T14:16:41] === marketing-automation (product=Zstack, 5 seeds) ===
+[2026-07-01T14:16:41]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py marketing-automation hubspot.com marketo.com activecampaign.com customer.io autopilot.com --product Zstack --n 10
+[2026-07-01T14:16:57]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py marketing-automation --all
+[2026-07-01T14:38:58]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py marketing-automation --product Zstack
+[2026-07-01T14:44:31]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py marketing-automation --top 10
+[2026-07-01T14:44:31]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py marketing-automation --product Zstack
+[2026-07-01T14:45:22]   DONE in 1721s
+[2026-07-01T14:45:27] === notes-wiki (product=Zstack, 6 seeds) ===
+[2026-07-01T14:45:27]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py notes-wiki notion.so confluence.atlassian.com coda.io obsidian.md slite.com mem.ai --product Zstack --n 10
+[2026-07-01T14:45:43]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py notes-wiki --all
+[2026-07-01T15:09:04]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py notes-wiki --product Zstack
+[2026-07-01T15:14:46]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py notes-wiki --top 10
+[2026-07-01T15:14:46]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py notes-wiki --product Zstack
+[2026-07-01T15:15:31]   DONE in 1805s
+[2026-07-01T15:15:36] === all-in-one-platforms (product=Zstack, 5 seeds) ===
+[2026-07-01T15:15:36]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/discover.py all-in-one-platforms notion.so airtable.com clickup.com coda.io fibery.io --product Zstack --n 10
+[2026-07-01T15:15:52]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/scan.py all-in-one-platforms --all
+[2026-07-01T15:44:32]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/compare.py all-in-one-platforms --product Zstack
+[2026-07-01T15:48:40]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/rank.py all-in-one-platforms --top 10
+[2026-07-01T15:48:40]   $ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/mattheweisner/.claude/skills/competitive-review-skill/report.py all-in-one-platforms --product Zstack
+[2026-07-01T15:49:27]   DONE in 2031s
+[2026-07-01T15:49:32] 
+=== Queue runner done ===
+[2026-07-01T15:49:32]   17/18 successful
+[2026-07-01T15:49:32]   ✓ pm-software               1959s
+[2026-07-01T15:49:32]   ✓ finance-and-wallets       2215s
+[2026-07-01T15:49:32]   ✓ internal-chat             2024s
+[2026-07-01T15:49:32]   ✓ workspace-email           1930s
+[2026-07-01T15:49:32]   ✓ calendar                  1689s
+[2026-07-01T15:49:32]   ✓ video-meetings            2360s
+[2026-07-01T15:49:32]   ✓ sms-messaging             1899s
+[2026-07-01T15:49:32]   ✓ crm                       1998s
+[2026-07-01T15:49:32]   ✓ file-storage              2170s
+[2026-07-01T15:49:32]   ✗ analytics                 failed at compare
+[2026-07-01T15:49:32]   ✓ email-marketing           2022s
+[2026-07-01T15:49:32]   ✓ customer-support          1909s
+[2026-07-01T15:49:32]   ✓ accounting                14304s
+[2026-07-01T15:49:32]   ✓ expense-management        4189s
+[2026-07-01T15:49:32]   ✓ hris-payroll              2055s
+[2026-07-01T15:49:32]   ✓ marketing-automation      1721s
+[2026-07-01T15:49:32]   ✓ notes-wiki                1805s
+[2026-07-01T15:49:32]   ✓ all-in-one-platforms      2031s
+[monthly_summary] slack token not in config; skipping
+[monthly_summary] wrote /Users/mattheweisner/Obsidian/Zerg/MattZerg/Competitive/_monthly/2026-07-01.md
+
+--- slack digest preview ---
+:bar_chart: *Monthly competitive refresh — 2026-07-01*
+Refreshed 22 categories. Vault: `MattZerg/Competitive/_monthly/2026-07-01.md`
+
+*Categories with changes:*
+  • accounting: - **New competitors:** acumatica.com, aveapps.com, bench.co, freeagent.com, freshbooks.com, netsuite.com, odoo.com, pilo
+  • calendar: - **New competitors:** akiflow.com, cal.com, calendar.google.com, calendar.notion.so, calendly.com, fantastical.app, fle
+  • crm: - **New competitors:** affinity.co, attio.com, clay.com, close.com, copper.com, folk.app, hubspot.com, microsoft.com, mo
+  • customer-support: - **New competitors:** chatwoot.com, freshdesk.com, freshworks.com, front.com, gladly.com, gorgias.com, helpscout.com, h
+  • email-marketing: - **New competitors:** activecampaign.com, beehiiv.com, brevo.com, convertkit.com, customer.io, hubspot.com, iterable.co
+----
+[2026-07-01T15:49:32-04:00] monthly refresh done

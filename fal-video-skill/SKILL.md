@@ -1,3 +1,9 @@
+---
+name: fal-video-skill
+description: Generate videos through FAL.ai providers including Kling, Luma, Minimax,
+  and Runway.
+---
+
 # FAL Video Skill
 
 Generate videos using FAL.ai - access to Kling, Luma Dream Machine, Minimax, Runway, and more through a single API.

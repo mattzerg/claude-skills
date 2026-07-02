@@ -1,12 +1,39 @@
 ---
 name: fakematt-feedback
-description: Run a structured product/UX review of a target (live URL, localhost, Figma file, or static mockups). Scans pages with template-aware sampling (won't crawl 200 person profiles, just 2 of each template), exercises flows via playwright, captures responsive viewports + axe a11y + console/network errors, then emits findings calibrated to cover what Matt would catch (consistency, IA, responsive, interactions, copy, additive features) — output is professional/technical/structured, NOT a Matt-voice cosplay. Each finding cites a research principle (NN/g, Baymard, Cialdini/Kahneman, Ogilvy/Schwartz, WCAG, etc.); voice citations are coverage-only. Supports `--persona` (super-admin/admin/end-user/external-viewer) and `--target-kind` (marketing-page/internal-tool/b2b-saas-product/client-deliverable/dashboard) so internal tools don't get marketing-CRO critique and admin controls don't get flagged for super-admins. USE PROACTIVELY when Matt asks for a product review, UX audit, design critique, "what's wrong with this page", "go look at <url>", or wants feedback before shipping. Never auto-posts to shared channels — Obsidian note + Fake Matt self-DM only. Different from cro-auditor (which is funnel/conversion-friction-focused on marketing surfaces specifically — homepages, pricing, signup) — fakematt-feedback is BROAD UX/heuristics across page types (in-app product UI, internal tools, marketing, dashboards).
+description: Run structured product and UX reviews of URLs, local pages, Figma files, or static mockups with screenshots, a11y checks, and sourced Matt-voice findings. Different from cro-auditor (FUNNEL/CONVERSION-focused for marketing surfaces), webpage-layout (corpus-scored 6-axis grading), and landing-page-skill (GENERATES Zerg pages) — fakematt-feedback is the broad UX walkthrough pass that exercises whole-product flows. USE PROACTIVELY when Matt pastes a URL, Figma link, or screenshot and asks "what do you think", "review this", "tell me what's off", or before any product surface ships. Pairs with fakeidan (Idan-bar second pass) and landing-page-skill (single-page-only deep audit).
 allowed-tools: Bash, Read, Write
 ---
+
 
 # Fake Matt Feedback Skill
 
 Sibling to `landing-page-skill` (single-page audit) and `competitive-review-skill` (category-level review). This one is the **product feedback** counterpart: walks the whole product, exercises flows, screenshots everything, and writes Matt-voice critique grounded in research.
+
+## Anchors
+
+This skill draws its voice and pattern catalog from:
+
+- **Voice fingerprint (default — structured reviews):** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/matt_considered_voice.md`
+- **Voice fingerprint (live dogfood / `--voice fast`):** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/matt_fast_voice.md`
+- **Cross-surface voice patterns:** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/feedback_voice_patterns.md`
+- **Pattern catalog:** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/feedback_patterns_catalog.md`
+- **Exemplar corpus (product feedback):** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/matt_product_feedback_corpus.md`
+- **Domain corpus (UI density):** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/ui_density_feedback_corpus.md`
+- **Domain corpus (CRO / conversion):** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/cro_feedback_corpus.md`
+- **Catalog patterns to cite by slug** (Section B UI / product design): main-sticking-action, ia-ordering, smart-defaults, ui-weight-vs-importance, blank-canvas-friction, library-recurring
+- **Catalog patterns to cite by slug** (Section C Prose / writing): shipped-vs-roadmap-visibility, capability-claim-unverified
+- **Catalog patterns to cite by slug** (Section E CRO / marketing): hero-clarity, single-cta, missing-cta, proof-gap
+
+Read these BEFORE producing output. Cite patterns by slug from the catalog.
+
+## Voice mode (`--voice fast|considered`)
+
+This skill exposes a voice axis that controls which Matt-voice fingerprint anchors the critique register:
+
+- **`--voice considered`** (default) — used for structured artifact reviews (the standard fakematt-feedback flow that writes to `MattZerg/Feedback/`, the Slack self-DM digest, anything that becomes a referenceable artifact). Anchored on `matt_considered_voice.md`.
+- **`--voice fast`** — used for live dogfood passes where Matt is clicking through a product alongside the model and wants conversational, dive-in observations rather than a structured findings document. Anchored on `matt_fast_voice.md`. Skips vault write + Slack digest by default.
+
+The default remains `--voice considered` for backward-compatible behavior. Mode is documented at the skill prompt layer; the harness loads the SKILL.md as text, so no code change is required to honor the parameter — the model reads the active anchor file when the flag is set.
 
 ## When to invoke
 
@@ -20,7 +47,7 @@ When in doubt, suggest running it. Always confirm the flow list before exercisin
 ## Phase flow (with confirmation gates)
 
 1. **input** — resolve target into one of {live URL, local URL, Figma file, static folder/PDF}. Pre-checks (port up, file exists, Figma key valid).
-2. **flows** — discover candidate flows. Order: spec-driven (parse `Projects/Zstack/<product>.md`) → auto-crawl baseline → free-form pass. **STOP, await confirmation.** User can add/remove.
+2. **flows** — discover candidate flows. Order: spec-driven (parse `Projects/Zerg-Production/Zstack/<product>.md`) → auto-crawl baseline → free-form pass. **STOP, await confirmation.** User can add/remove.
 3. **capture** — for each page + each flow step: full-page screenshot, DOM snapshot, console+network errors, axe-core a11y scan, mobile viewport pass.
 4. **critique** — Claude call with two cached prompts (voice + principles). Emit structured findings with `voice_provenance` + `principle_provenance`.
 5. **validate** — reject findings missing both provenance fields; flag voice-only as "opinion only".
@@ -29,8 +56,10 @@ When in doubt, suggest running it. Always confirm the flow list before exercisin
 
 ## Default invocation
 
+> **Use `/usr/bin/python3` explicitly** — `python3` resolves to homebrew's 3.14, which lacks `playwright`. The skill needs `playwright` for browser capture.
+
 ```bash
-python3 ~/.claude/skills/fakematt-feedback/run.py <target> [flags]
+/usr/bin/python3 ~/.claude/skills/fakematt-feedback/run.py <target> [flags]
 # target = URL | http://localhost:port | figma://<file-key> | /path/to/screenshots
 # flags:
 #   --session NAME         playwright session for auth-walled targets
@@ -40,6 +69,10 @@ python3 ~/.claude/skills/fakematt-feedback/run.py <target> [flags]
 #   --no-confirm           skip gates (for scheduled/loop contexts)
 #   --no-vault             skip writing to MattZerg/Feedback/
 #   --no-slack             skip self-DM digest
+#   --voice fast|considered
+#                          which Matt-voice fingerprint to anchor critique register.
+#                          default: considered (structured artifact reviews).
+#                          fast: live dogfood pass; conversational, skips vault/slack by default.
 ```
 
 For auth-walled internal tools, set up the session once with playwright-skill `--visible`, then pass `--session NAME` on subsequent runs. The skill symlinks to `~/.claude/skills/playwright-skill/sessions/`.
@@ -59,7 +92,7 @@ Plus a Slack self-DM to `D0B109RDJQ6` with the top 5 findings + Obsidian deep-li
 
 ## Conventions
 
-- Vault root: `/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg`
+- Vault root: `/Users/mattheweisner/Obsidian/Zerg/MattZerg`
 - Self-DM channel: `D0B109RDJQ6` (Fake Matt's bot, per `project_slack_identity.md`)
 - **Never** auto-post to shared channels (per `feedback_fakematt_no_autopost.md`)
 - Voice corpus loaded from `~/.claude/feedback-corpus/voice/`

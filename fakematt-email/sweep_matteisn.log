@@ -1,0 +1,51 @@
+/Users/mattheweisner/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/mattheweisner/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/mattheweisner/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:242: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.10, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+[sweep] account=matteisn@gmail.com query='in:sent after:2015/01/01' resume_token='07296982518814402452'
+[sweep] page complete — kept 215, skipped 35 so far
+[sweep] page complete — kept 433, skipped 67 so far
+[sweep] page complete — kept 645, skipped 105 so far
+[sweep] page complete — kept 873, skipped 127 so far
+[sweep] page complete — kept 1097, skipped 153 so far
+[sweep] page complete — kept 1310, skipped 190 so far
+[sweep] page complete — kept 1527, skipped 223 so far
+[sweep] page complete — kept 1735, skipped 265 so far
+[sweep] page complete — kept 1947, skipped 303 so far
+[sweep] page complete — kept 2157, skipped 343 so far
+[sweep] page complete — kept 2343, skipped 407 so far
+[sweep] page complete — kept 2503, skipped 497 so far
+[sweep] page complete — kept 2655, skipped 595 so far
+[sweep] page complete — kept 2829, skipped 671 so far
+[sweep] page complete — kept 2990, skipped 760 so far
+[sweep] page complete — kept 3119, skipped 881 so far
+[sweep] page complete — kept 3291, skipped 959 so far
+[sweep] page complete — kept 3411, skipped 1089 so far
+[sweep] page complete — kept 3566, skipped 1184 so far
+[sweep] page complete — kept 3698, skipped 1302 so far
+[sweep] page complete — kept 3840, skipped 1410 so far
+[sweep] page complete — kept 4045, skipped 1455 so far
+[sweep] page complete — kept 4252, skipped 1498 so far
+[sweep] page complete — kept 4466, skipped 1534 so far
+[sweep] page complete — kept 4660, skipped 1590 so far
+[sweep] page complete — kept 4849, skipped 1651 so far
+[sweep] page complete — kept 5046, skipped 1704 so far
+[sweep] page complete — kept 5232, skipped 1768 so far
+[sweep] page complete — kept 5432, skipped 1818 so far
+[sweep] page complete — kept 5607, skipped 1893 so far
+[sweep] no nextPageToken — fully drained
+
+[sweep] DONE for matteisn@gmail.com
+  fetched this run: 7568
+  kept: 5656
+  skipped: 1912
+  skip breakdown:
+    1099× sent-to-self
+    795× body too short (<50 chars)
+    12× no recipient
+    3× unparseable date
+    2× no-reply recipient
+    1× auto-reply subject
+  total processed (cumulative): 23850

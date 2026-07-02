@@ -27,7 +27,28 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-VAULT = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
+def _pick_vault() -> Path:
+    """Prefer the live Obsidian vault (canonical); fall back to the legacy iCloud
+    path or the TCC mirror only when canonical is unavailable.
+
+    NOTE 2026-06-30: canonical moved to ~/Obsidian/Zerg — the old iCloud Documents
+    path is now a near-empty shell. The previous 'prefer iCloud' logic was readable
+    (so it always won) and stranded learned _style digests in that shell while the
+    real vault went stale. See Growth/publishing/_audit-2026-06-30-nobody-reads-code.md §4.
+    """
+    canonical = Path.home() / "Obsidian" / "Zerg" / "MattZerg"
+    icloud = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
+    mirror = Path.home() / ".zerg-vault-mirror" / "MattZerg"
+    for cand in (canonical, icloud, mirror):
+        try:
+            if cand.exists() and any(cand.iterdir()):
+                return cand
+        except (PermissionError, OSError):
+            continue
+    return canonical
+
+
+VAULT = _pick_vault()
 DIGEST = VAULT / "_style" / "visual_iteration_patterns.md"
 GRAPHIC_CORRECTIONS = Path.home() / ".claude" / "skills" / "graphic-layout" / "corrections.md"
 IMAGERY_CORRECTIONS = Path.home() / ".claude" / "skills" / "blog-imagery" / "corrections.md"

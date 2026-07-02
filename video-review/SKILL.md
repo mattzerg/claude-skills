@@ -1,17 +1,31 @@
 ---
 name: video-review
-description: Pre-flight critique for short product launch / demo videos. Runs structured checks against the techniques.md + pm_tools_density.md catalogs (~/.claude/skills/product-video-skill/) and emits failure findings with concrete fix recipes BEFORE shipping. Catches v11/v12/v13-style regressions: zoompan jitter, hook timing, missing music-out + logo silence, off-brand bookends, low interaction density, format/codec specs. Sibling to product-video-skill (which builds videos); this one reviews them. USE PROACTIVELY before showing any product video to Matt or shipping externally.
-allowed-tools: Bash, Read, Write
+description: Run pre-flight critique for short product launch and demo videos before showing or shipping.
 ---
+
 
 # Video Review Skill — Pre-Flight Critique
 
 A structured critique pass against any draft product video. Runs deterministic checks (format, duration, cut cadence, music-out, silence-on-logo, motion jitter) and prints a human-judgment checklist for items the algorithm can't decide.
 
+## Anchors
+
+This skill draws its voice and pattern catalog from:
+
+- **Voice fingerprint:** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/matt_considered_voice.md`
+- **Pattern catalog:** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/feedback_patterns_catalog.md`
+- **Domain corpus:** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/video_feedback_corpus.md`
+- **Scoring rubric:** `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/video_quality_rubric.md` — score the finished cut against the **Review** section (100 pts + hard caps). Emit the scorecard in the report.
+- **Catalog patterns to cite by slug** (Section B UI / product design): blank-canvas-friction, cherry-on-top, ia-ordering
+- **Catalog patterns to cite by slug** (Section E CRO / marketing): missing-cta
+- **Catalog patterns to cite by slug** (Section G Viz / video): demo-or-perish, scorecard-deltas
+
+Read these BEFORE producing output. Cite patterns by slug from the catalog.
+
 Modeled after `fakematt-feedback` (UX/product critique) but specialized for video. Reads from the same catalog as `product-video-skill`:
 
 - `~/.claude/skills/product-video-skill/techniques.md` — frame-by-frame measurements from 10 launch videos (Linear, Cursor, Stripe, Notion, Replit, Figma, etc.)
-- `~/.claude/skills/product-video-skill/pm_tools_density.md` — interaction-density measurements from 10 PM-tool demos (Asana, monday, Height, etc.)
+- Interaction-density target: ≥0.4 events/sec, 6+ distinct verb types on demo content (enforced by human-checklist item 9 below; no separate density catalog yet)
 
 ## When to invoke
 
@@ -62,6 +76,7 @@ Printed for the operator to confirm before shipping (yes/no per item):
 13. Bottom 12% of frame clear of important content
 14. Music drops out before logo (silence on logo card)
 15. Aspect-ratio variants exist for planned channels
+16. **Opens on the primary affordance** — NOT settings / login / empty-state / sidebar chrome. Flag this as its OWN finding; do not fold it into the hook/logo-sting note (`product-as-the-product`)
 
 ### Output
 
@@ -71,8 +86,11 @@ Writes a structured Markdown report to `/tmp/video-review/<video-slug>-<timestam
 # Video Review: <slug>
 <auto check results — pass/fail per item with measured value>
 <human checklist for operator>
+<Video Scorecard — Review section: total /100, cap applied, per-dimension scores with corpus-slug citations>
 <concrete fix recipes for each failure, citing the catalog rule that diagnosed it>
 ```
+
+The **scorecard** is the human-judgment layer: after the deterministic auto-checks, score the cut against the Review section of `video_quality_rubric.md` (7 dimensions, 100 pts) and apply any hard cap whose trigger is present (e.g. no-burned-captions-on-social → 69; broken hero frame → 64; music-hot → 74). A cut **passes review at ≥80 and no cap**; anything capped or <80 ships fixes first. The deterministic gate (`run.py`, exits non-zero on auto-check failure) is unchanged and runs first — the scorecard adds the judgment layer the old 15-item checklist left unscored.
 
 Exits non-zero if any auto check fails.
 

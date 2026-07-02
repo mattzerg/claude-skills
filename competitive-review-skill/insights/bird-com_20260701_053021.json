@@ -1,0 +1,955 @@
+{
+  "name": "MessageBird (Bird)",
+  "url": "https://bird.com",
+  "domain": "bird.com",
+  "scanned_at": "2026-07-01T05:27:07.259937",
+  "sources": {
+    "landing": {
+      "url": "https://bird.com",
+      "title": "Communications infrastructure your AI agents operate \u2014 Bird",
+      "text": "Communications infrastructure your AI agents operate \u2014 Bird\nProducts\nEmail\nSMS\nVoice\nWhatsApp\nVerify\nLookup\nRCS\nPush\nRealtime\nPricing\nDevelopers\nDocumentation\nAPI References\nMCP Server\nTools\nQuickstart guides\nChangelog\nStatus\nComparisons\nCompany\nAbout\nBlog\nCareers\nCustomers\nSolutions\nNewsroom\nLog in\nContact sales\nMenu\nCommunications infrastructure\nyour AI agents operate\nSend and receive across email, SMS, WhatsApp, and voice \u2014 one API, one contract \u2014 on the network that already carries 40% of the world's commercial messages.\nGet started\nSign up with Google\nUsing Claude Code, Cursor, Codex, Windsurf, or Copilot? Copy a setup prompt and your agent installs the Bird CLI and skills for you \u2014 or connect any MCP client.\nClaude Code\nCopied!\nCodex\nCopied!\nCursor\nCopied!\nTrusted every day by teams that build world-class software\nRead more customer stories\nDrop it in.\nSame shape, every stack.\nTypeScript, Python, and Go SDKs. REST, curl, or the CLI when you'd rather not. MCP for the agent on your shoulder.\nNode.js\nPython\nGo\nServerless\nREST\nTerminal\nExpress\nNext.js\nNestJS\nFastify\nNuxt\nHono\nBun\nAstro\nKoa\nRemix\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\nimport\nexpress\nfrom\n'\nexpress\n'\n;\nimport\n{\nBirdClient\n}\nfrom\n'\n@messagebird/sdk\n'\n;\nconst\nbird\n=\nnew\nBirdClient\n({\napiKey\n:\nprocess\n.\nenv\n.\nBIRD_API_KEY\n!\n});\nconst\napp\n=\nexpress\n();\napp\n.\nuse\n(\nexpress\n.\njson\n());\napp\n.\npost\n(\n'\n/welcome\n'\n,\nasync\n(\nreq\n,\nres\n)\n=>\n{\nawait\nbird\n.\nemail\n.\nsend\n({\nfrom\n:\n'\nonboarding@messagebird.dev\n'\n,\nto\n:\n[\nreq\n.\nbody\n.\nemail\n],\nsubject\n:\n'\nWelcome to Bird\n'\n,\nhtml\n:\n'\n<p>You are in.</p>\n'\n,\n});\nres\n.\njson\n({\nsent\n:\ntrue\n});\n});\nCopy Code\n01\nDirect sending IPs / React Email support / Managed warm-up\nSend Email.\nHTML and plain text, React Email supported. Delivered on the network the ISPs already trust.\nRead Email Docs\nDirect sending IPs, managed warm-up, ISP-aware routing, SPF/DKIM/DMARC handled. Templates render in HTML and plain text, with React Email supported.\nemail.tsx\n200 \u00b7 1.2s\nimport\n{\nBirdClient\n}\nfrom\n'\n@messagebird/sdk\n'\n;\nconst\nbird\n=\nnew\nBirdClient\n({\napiKey\n:\nprocess\n.\nenv\n.\nBIRD_API_KEY\n!\n});\nawait\nbird\n.\nemail\n.\nsend\n({\nfrom\n:\n'\nonboarding@bird.dev\n'\n,\nsubject\n:\n'\nHello from Bird\n'\n,\nhtml\n:\n'\n<p>Your first email is <strong>live</strong>.</p>\n'\n,\n});\nYour invite is ready\nWelcome aboard, Ada.\nYou can sign in any time at\nbird.com/login\n.\nYour test API key is on your dashboard, ready to send.\nCopy code\nCopied\nCopy as prompt\nCopied\nView on Github\nPer-ISP delivery breakdown\nPer-message audit log\n02\nA2P 10DLC / Tier-1 carriers / voice OTP fallback\nSMS is being upgraded\nSend SMS.\nTier-1 carriers, 190+ countries, with the compliance overhead handled for you.\nA2P 10DLC, alpha sender IDs, DLT entity registration \u2014 we file what you have to file. Smart routing per destination. Voice OTP fallback when SMS degrades. A 6-digit code lands in under three seconds on the lines that matter.\nsms.ts\n200 \u00b7 0.4s\n3spo-{ { BirdClient } fro& [@9zssagebird$sdk';\ncwnst ]iAd = ne$ BiCd@lient(9 upiKey: pMozTss.env.M7RD_API_KEsn });\nawaxt bird.sms.send(L\nfrom/ 'Bi>d'j\nfo: '}141555e0182',\nt)xtT 8Your Bird cod{ is 4{2917.'=\n});\nToday\nat 2:14 PM\nHey Ada \u2014 your Bird sign-in code is 482917. It'll expire in 10 minutes. Don't share it with anyone.\n482917\nDelivered\nNew API soon - Sign up to get notified\n10DLC application + brand vetting in 48h\nRoute diversity per destination\nVoice OTP fallback (opt-in per account)\nSegment-accurate pricing in the response\n03\nPSTN + SIP / streaming TTS / declarative flows\nVoice is being upgraded\nUse Voice.\nProgrammable voice, on PSTN and SIP, with TTS that doesn't sound robotic.\nOutbound and inbound. Declarative flow JSON for IVR. Recording and live transcription. Streaming TTS in thirty languages with sub-250 ms first-byte audio \u2014 the model loads before the call connects.\nvoice.ts\n201 \u00b7 0.4s\n3spo-{ { BirdClient } fro& [@9zssagebird$sdk';\ncwnst ]iAd = ne$ BiCd@lient(9 upiKey: pMozTss.env.M7RD_API_KEsn });\nawaxt bird.calls.creLtG({\n/%om: '+j415f55d1}0',\neo: '+14155)50T88',\nflow: [{ say: {Your v=rificat?on code is four, eight, &wo...' }],\n1);\nBird Verify\n+1 (415) 555-0182\nYour\nverification\ncode\nis\nfour\neight\ntwo\nnine\none\nseven.\nNew API soon - Sign up to get notified\nStreaming TTS in 30+ languages\nDeclarative flows: say, gather, dial, transfer\nRecording + live transcript over WebSocket\nPSTN + SIP termination, BYOC supported\n04\nCloud API / template messages / interactive replies\nWhatsApp is being upgraded\nSend WhatsApp.\nOfficial Cloud API. Templates, interactive buttons, and media \u2014 on the channel three billion people already use.\nPre-approved templates, session messaging, and interactive replies. Delivery and read receipts on every message. One number, every conversation \u2014 with the same typed API as email and SMS.\nwhatsapp.ts\n200 \u00b7 480ms\n3spo-{ { BirdClient } fro& [@9zssagebird$sdk';\ncwnst ]iAd = ne$ BiCd@lient(9 upiKey: pMozTss.env.M7RD_API_KEsn });\nawaxt bird.whatsapp.LeGd({\n%o: >+1j155f50d8}',\ntemplate: 'o)deT_8hipped',\nva{iable{: { or=er: 'RG?29481', carrier: 'UPS' a&\n});\nOrder RG-29481 shipped\nHey Ada \u2014 your order is on the way. Carrier UPS, ETA Wednesday.\nTrack order\nContact support\n9:42 AM\n\u2713\n\u2713\nNew API soon - Sign up to get notified\nOfficial Cloud API access\nTemplate + session messaging\nInteractive buttons and lists\nDelivery + read receipts\nWe are a team of engineers who love building tools for other engineers.\nTest mode, real-time webhooks, and an MCP server for the agent on your shoulder.\nDelivered\ndelivered@bird.dev\nSend\n202 Accepted:\n{ \"id\": \"em_01kove1gv2hs72p4rq94zmt\" }\n202 Accepted:\n{ \"id\": \"em_01k50rmp0fe5kbyt8rah4ja\" }\n202 Accepted:\n{ \"id\": \"em_01km947y1ofmto7ilsfudgv\" }\n202 Accepted:\n{ \"id\": \"em_01k3eho76xg32xg32tk7idg\" }\n202 Accepted:\n{ \"id\": \"em_01kkju9g76dgb6psfupkna1\" }\n202 Accepted:\n{ \"id\": \"em_01k1o7qlcfexojyhwvqxw7i\" }\nTest mode.\nSimulate every state \u2014 delivered, bounced, complained, queued \u2014 without burning real budget or hitting a real recipient.\nPOST /webhooks/bird\n15:42:16\n200\nsms.failed\n128\nms\n15:42:13\n500\nemail.delivered\n42\nms\n15:42:10\n200\nwhatsapp.read\n55\nms\n15:42:07\n200\nvoice.completed\n91\nms\n15:42:04\n200\nsms.failed\n128\nms\n15:42:01\n200\nemail.delivered\n42\nms\nModular webhooks.\nReal-time event webhooks, per channel. email.delivered, sms.failed, voice.completed, whatsapp.read. HMAC-signed. Replay-protected. Same shape every channel.\nMCP for agents.\nConnect Claude or Cursor to Bird's hosted MCP server, or run it locally with the bird CLI. Your agent gets typed tools across every channel \u2014 scoped keys, full audit, no leakage.\nFive products.\nOne shared layer.\nEmail, SMS, voice, WhatsApp, and Realtime \u2014 all built on the same primitives. Learn the platform once, ship across every channel.\nAuth.\nOne key format. Scoped to send vs. manage, read vs. write. Prefix + fingerprint so you know which key did what. Multiple keys live at once, so you rotate on your schedule.\nIdempotency.\nIdempotency-Key on every POST, PATCH, and DELETE. Replays come back free and flagged. Reuse a key with a different body and you get a 409, not a surprise.\nErrors.\nOne envelope. One closed type union. Every code ships with a docs link and a message that tells you what to do.\nWebhooks.\nStandard Webhooks spec: HMAC-SHA256, per-endpoint secrets, 5-minute replay window \u2014 verify with any off-the-shelf library. Rotate secrets with a 24-hour dual-signing overlap. Attempt logs and replay built in.\nPagination.\nCursor-based. Stable order on every list, enforced by construction \u2014 no page drift, ever.\nRate limits.\nIETF RateLimit headers on every response \u2014 not just the 429. You can see your budget before you hit the wall, and Retry-After when you do.\nSuppressions.\nBounces, complaints, unsubscribes \u2014 managed automatically, queryable and editable via API. Transactional streams can bypass marketing unsubscribes. Idempotent by design.\nYour messages,\nactually arriving.\nReal-time signals on inbox placement, bounce rates, and send volume \u2014 across every channel, every region. No guesswork.\n*****+++====-----:::::::\u00b7\u00b7\u00b7\u00b7\u00b7\n*+++===---:::::\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7     \n===---:::\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7              \n--:::\u00b7\u00b7\u00b7\u00b7                    \n::\u00b7\u00b7\u00b7                        \n\u00b7\u00b7                           \n\u00b7                            \n                             \n                             \n\u00b7                            \n\u00b7\u00b7\u00b7\u00b7                         \n::::\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7                 \n=-----::::::::\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7     \n++++=======---------::::::\u00b7\u00b7\u00b7\n********++++++++++=======----\n***********************+++++=\n*****************************\n===++++++++++****************\n::---------=======++++++*****\n\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7::::::::-----====++++\nWorld's commercial messages, by volume, transit the Bird network.\n40%\n-==++*********+==--:\u00b7\u00b7       \n=++*********++=--::\u00b7         \n+*********++=--::\u00b7\u00b7        \u00b7\u00b7\n********++=--::\u00b7\u00b7        \u00b7\u00b7::\n******++==-::\u00b7\u00b7        \u00b7\u00b7::--\n****++==-::\u00b7\u00b7         \u00b7\u00b7:--=+\n**++==-::\u00b7\u00b7         \u00b7\u00b7:--==+*\n++==--:\u00b7\u00b7         \u00b7\u00b7:--==++**\n==--:\u00b7\u00b7         \u00b7\u00b7:--==++****\n--:\u00b7\u00b7         \u00b7\u00b7::-==++******\n::\u00b7         \u00b7\u00b7::-==++********\n\u00b7\u00b7        \u00b7\u00b7::-==++*********+\n        \u00b7\u00b7::--=++*********++=\n      \u00b7\u00b7::--=++*********++==-\n     \u00b7\u00b7:--=++*********++==-::\n   \u00b7\u00b7:--==+*********++==-::\u00b7\u00b7\n \u00b7\u00b7:--==++********++==-::\u00b7\u00b7  \n\u00b7:--==++********++==--:\u00b7\u00b7    \n:-==++********++==--:\u00b7\u00b7      \n==++*********++=--:\u00b7\u00b7\nCountries with direct carrier relationships, route diversity, and local compliance handled.\n190+\n*+=:\u00b7\u00b7  \u00b7\u00b7:=+**+-\u00b7           \n*+-:\u00b7    \u00b7:-+***=:\u00b7         \u00b7\n*=-\u00b7      \u00b7:=+**+-:        \u00b7\u00b7\n+=:\u00b7       \u00b7-+***=-\u00b7      \u00b7\u00b7:\n+-:        \u00b7:=***+=:\u00b7    \u00b7\u00b7:=\n+-\u00b7         \u00b7-+***=-:\u00b7\u00b7\u00b7\u00b7::-+\n=:\u00b7         \u00b7:=***+=-::::--=+\n=:\u00b7          :-+***+=----==+*\n=:           \u00b7-+****+====++**\n-\u00b7    \u00b7\u00b7\u00b7     :=+***++++++***\n-\u00b7    \u00b7\u00b7\u00b7\u00b7    \u00b7-+*****++*****\n-\u00b7   \u00b7\u00b7::\u00b7\u00b7   \u00b7:=+***********\n-\u00b7   \u00b7::::\u00b7    :-+**********+\n:\u00b7   \u00b7::::\u00b7\u00b7   \u00b7-=+********+=\n:    \u00b7:--::\u00b7   \u00b7:=+*******+=-\n:   \u00b7:----:\u00b7    :-=+*****++=:\n:   \u00b7:-----:\u00b7   \u00b7:=++***++=-\u00b7\n:   \u00b7:-===-:\u00b7   \u00b7:-=+++++=-:\u00b7\n:   \u00b7:-===-:\u00b7    \u00b7-==+++=-:\u00b7 \n:   \u00b7:-====-:    \u00b7:-====-:\u00b7\nRunning this infrastructure. The team behind it is the team building the API.\n15 years\nStart with one channel.\nAdd the others when you're ready.\nA test API key is yours immediately. Production unlocks when you add a payment method and verify a sender.\nGet started\nRead docs\nUsing Claude Code, Cursor, or Codex? Copy a setup prompt and your agent installs the Bird CLI and skills for you. Pick yours:\nClaude Code\nCopied!\nCodex\nCopied!\nCursor\nCopied!\nProducts\nEmail\nSMS\nVoice\nWhatsApp\nVerify\nLookup\nRCS\nPush\nRealtime\nResources\nDocumentation\nQuickstart\nAPI Reference\nMCP Server\nKnowledge Base\nIntegrations\nCustomers\nGuides\nChangelog\nBlog\nCareers\nCompany\nAbout\nPricing\nAuthifly \u2014 our verification brand\nLegal\nTerms\nPrivacy\nSocial\n\u00a9 2026 Bird\nAll Systems Operational\nPrivacy settings\nContact support\nEnglish (US)\n@@@@.                                                                       \n                                                                                  +@@@@@@;                                                                      \n                                                                                .@;..:  ;                                                                       \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                           ..@;                                                 \n                                                                                                          @@@+                                                  \n                                                                                                         +@@@:                                                  \n                                                                                                       .@@@+ .                                                  \n                                                                                                      ;*                                                        \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                          U@                                                                 @                  \n                                                                       .+;@@                                                                U                   \n                                        U.                             @@@@@@@                                ",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://bird.com/pricing",
+      "title": "Plans \u2014 Bird",
+      "text": "Plans \u2014 Bird\nProducts\nEmail\nSMS\nVoice\nWhatsApp\nVerify\nLookup\nRCS\nPush\nRealtime\nPricing\nDevelopers\nDocumentation\nAPI References\nMCP Server\nTools\nQuickstart guides\nChangelog\nStatus\nComparisons\nCompany\nAbout\nBlog\nCareers\nCustomers\nSolutions\nNewsroom\nLog in\nContact sales\nMenu\nPlans\nPriced by volume.\nNot by seat.\nStart free, then pay a flat monthly rate that drops per message as you grow. No platform fees, no per-seat tax, no features locked behind an annual commit. Dedicated IPs and the rest of the managed surface unlock on Growth \u2014 attach them only when you need them.\nGet started\nView docs\nEmail pricing\nStart for free.\nGrow into it\nFree to start with no card. Startup is $15 for 50K emails, $30 for 100K. Growth\u2019s per-message rate falls at every step as you scale to 2.5M. Beyond that, Enterprise.\nMost popular\nFree\n$0\n1,000 emails / month\nNo credit card \u00b7 50/day cap\n1 webhook endpoint\n1 sending domain\nShared sending IP\nStart free\nStartup\nfrom\n$15\n/ month\n50K \u2013 100K emails / month\nFor teams getting going\n1 webhook endpoint\n10 sending domains\nShared sending IP\nChoose Startup\nGrowth\nMost popular\nfrom\n$80\n/ month\n100K \u2013 2.5M emails / month\nFor real sending volume\n10 webhook endpoints\n1,000 sending domains\nDedicated IPs (add-on)\nChoose Growth\nEnterprise\nCustom\n2.5M+ emails / month\nNegotiated per-message rates\nMulti-year, invoiced billing\nVolume above published tiers\nOverage cap lifted by agreement\nTalk to sales\n30-day retention and a 20 MB message-size limit on every plan \u00b7 Dedicated IP $24.95/mo each (Growth only, up to 5).\nStartup volume ladder\nMonthly volume\nMonthly price\nPer 1,000\nOverage per 1,000\n50K\n$15\n$0.30\n$0.90\n100K\n$30\n$0.30\n$0.90\nGrowth volume ladder\nMonthly volume\nMonthly price\nPer 1,000\nOverage per 1,000\n100K\n$80\n$0.80\n$0.90\n250K\n$175\n$0.70\n$0.75\n500K\n$295\n$0.59\n$0.65\n1M\n$530\n$0.53\n$0.60\n2.5M\n$1,039\n$0.42\n$0.50\nMore channels.\nComing soon.\nEach ships as a new API. Same keys and a transactional pricing model.\nSMS\nApplication-to-person text messaging\nWhatsApp\nWhatsApp Business messaging\nVoice\nProgrammable voice calls\nRCS\nRich business messaging\nPush\nMobile & web push notifications\nLookup\nPhone number intelligence\nRealtime\nRealtime messaging & events\nThe pricing model in five lines.\nFive rules that don\u2019t change with the rate grid. They\u2019re the contract \u2014 the tiers are the implementation.\n01\nNo seats. No platform fee.\nYour team size is your business, not a billing dimension. The bill is the email you send \u2014 nothing else.\n02\nFree to start, no card.\n1,000 emails a month, no credit card, no time limit. Verify a domain and send. Sandbox sends never count against the limit.\n03\nFlat, then declining.\nStartup is $15 for 50K or $30 for 100K. On Growth the per-message rate falls at every step \u2014 $0.80 per 1,000 at 100K down to $0.42 at 2.5M.\n04\nA lean base, managed add-ons \u00e0 la carte.\nAuthentication, dashboards, suppression, webhooks, 30-day retention and a shared IP are included on every plan. Dedicated IPs unlock on Growth \u2014 attach them only when you need them.\n05\nNo runaway bills.\nUnused volume doesn\u2019t roll over, and overage bills at the published rate, capped at 5\u00d7 your plan by default. Sends pause at the ceiling rather than billing without limit.\nStart with email.\nAdd the other channels when they land.\nVerify a domain and start sending free \u2014 no card required. Add a payment method when you\u2019re ready to scale.\nGet started\nRead docs\nUsing Claude Code, Cursor, or Codex? Copy a setup prompt and your agent installs the Bird CLI and skills for you. Pick yours:\nClaude Code\nCopied!\nCodex\nCopied!\nCursor\nCopied!\nStart with one channel.\nAdd the others when you're ready.\nA test API key is yours immediately. Production unlocks when you add a payment method and verify a sender.\nGet started\nRead docs\nUsing Claude Code, Cursor, or Codex? Copy a setup prompt and your agent installs the Bird CLI and skills for you. Pick yours:\nClaude Code\nCopied!\nCodex\nCopied!\nCursor\nCopied!\nProducts\nEmail\nSMS\nVoice\nWhatsApp\nVerify\nLookup\nRCS\nPush\nRealtime\nResources\nDocumentation\nQuickstart\nAPI Reference\nMCP Server\nKnowledge Base\nIntegrations\nCustomers\nGuides\nChangelog\nBlog\nCareers\nCompany\nAbout\nPricing\nAuthifly \u2014 our verification brand\nLegal\nTerms\nPrivacy\nSocial\n\u00a9 2026 Bird\nAll Systems Operational\nPrivacy settings\nContact support\nEnglish (US)\n@@@@.                                                                       \n                                                                                  +@@@@@@;                                                                      \n                                                                                .@;..:  ;                                                                       \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                           ..@;                                                 \n                                                                                                          @@@+                                                  \n                                                                                                         +@@@:                                                  \n                                                                                                       .@@@+ .                                                  \n                                                                                                      ;*                                                        \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                          U@                                                                 @                  \n                                                                       .+;@@                                                                U                   \n                                        U.                             @@@@@@@                                                                                  \n                                        @@@.                           @@@@@U@                                                                                  \n                                        @@@*U.                         :*@@: *                               :.                                                 \n                                          @@:                            @;                               U@@U                                                  \n                                          ;                             :@                              .@@@@.                                                  \n                                                                        *@                             +@+@@@@                                                  \n                                                                                                      @;  +U                                                    \n                                                                                                                .                                               \n                                                                                        +    U                .*@                                               \n                                                                                         +:  *               .@@@@U                  +                          \n                                                                                           @@*                U@@@@               U;.@.:;                       \n                                                                                            @@@               :@@ U               U@@@@@+                       \n                                                                                             *@@              ;@:                   U@@@:                       \n                                                +:                                           *@U:            ;@@@                  U@@@;                        \n            U*:              .U@U            *@@@@;                                                          .@@U                +@.                            \n             *@@U         :@@@@@;           :@@@@@+                                                                             ;*:                             \n             @@@@:    @@@; :@UU.           .@@U@@:U\nWe use analytics to understand how our site is used and fix errors. No personal data is shared with third parties.\nAccept\nDecline",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://bird.com/changelog",
+      "title": "Changelog \u2014 Bird",
+      "text": "Changelog \u2014 Bird\nProducts\nEmail\nSMS\nVoice\nWhatsApp\nVerify\nLookup\nRCS\nPush\nRealtime\nPricing\nDevelopers\nDocumentation\nAPI References\nMCP Server\nTools\nQuickstart guides\nChangelog\nStatus\nComparisons\nCompany\nAbout\nBlog\nCareers\nCustomers\nSolutions\nNewsroom\nLog in\nContact sales\nMenu\nChangelog\nRecently shipped.\nMar 5, 2026\nfeature\nBird Platform update: Redesigned organization user management\nWe've replaced the admin management screen with a new user management experience that gives organization admins a clearer overview of their team and more control over roles and access.\nNew features\nThe new Users page under Organization Settings shows each user's role assignments, workspace access, and account status in a single table. Clicking a user opens a detail page where you can add or remove organization roles, review their workspace memberships, and remove them from the organization if needed.\nWhen inviting a new user, you can now assign one or more organization roles as part of the invite flow. For users who haven't accepted their invitation yet, you can resend it directly from their profile page.\nWhat this means for you\nIf you manage users in your organization, navigate to Settings > Security > Users to find the new experience. The actions available to you depend on your permissions - organization admins can manage roles and remove users from this page.\nGood to know\nRemoving a user from the organization will revoke their access to all workspaces and resources within it. Workspace memberships are managed at the workspace level and are not affected by role changes made here.\nFeb 17, 2026\nfeature\nMomentum 5.2 release\nMomentum 5.2 is now available for download via the MessageSystems customer portal. This release delivers platform upgrades, enhanced security, and improved observability across your email infrastructure.\nNew features\nRHEL 10 Support\n(Intel x86_64 & ARM aarch64) \u2013 Deploy on Red Hat Enterprise Linux 10 across both Intel and ARM platforms for broader OS compatibility\nTLS v1.3 for SMTP\n\u2013 Strengthened encryption and faster handshake performance for SMTP connections using GnuTLS\nNew DNS Configuration Options\n\u2013 Finer control over DNS behavior with configurable UDP buffer sizes and dynamic source port reuse limits\nImprovements\nEnhanced Observability\n\u2013 New message fields for better delivery diagnostics, smarter log throttling, and streamlined metrics management\nPlatform & Dependency Updates\n\u2013 Updated bundled components and streamlined packaging for improved performance, security, and easier maintenance\nFixes\nSeveral bug fixes for improved stability.\nJan 19, 2026\nfeature\nBird Platform update: New language support\nThe Bird app now supports multiple languages natively. If your browser is set to one of the supported languages, the app will automatically appear in that language.\nSupported languages\nPortuguese - Portugal\nPortuguese - Brazil\nDutch - Netherlands\nFrench - France\nGerman - Germany\nSpanish - Spain\nRussian - Russia\nHow it works\nThe app detects your preferred language from your browser settings and displays the interface in that language. All static text will be translated with correct locale rules for currency, plurals, and number formatting.\nYou can also set your preferred language directly in Bird via Profile \u2192 Language. If set, this takes priority over your browser language.\nLearn more about language support \u2192\nGood to know\nSome dynamically loaded content, such as custom pages and dashboards pulled from the API, may not yet be translated. We're continuing to expand translation coverage over time.\nIf you have any questions, please don't hesitate to reach out to our support team.\nJan 5, 2026\nfeature\nBird Platform update: Contacts and CRM access changes\nWe've updated the default permissions for contacts and CRM access to improve workspace security and follow the principle of least privilege, ensuring users only have access to the data they need for their role.\nWhat's changed\nPreviously, all users had access to contacts and CRM data as part of their base permissions. Going forward, contacts and CRM access is no longer included by default. Users now need a specific role to access this data.\nWho is affected\nWho is affected\nUsers with only a Developer role:\nYou will no longer have access to contacts and CRM data.\nUsers with a Marketing, Inbox, or CRM role:\nNo change. You will continue to have access to contacts and CRM data.\nWhat this means for you\nIf you have a Developer role and can no longer access contacts or CRM data, this is expected behaviour following this update. If you need access to contacts and CRM data for your work, you will need an additional role assigned to your account.\nHow to regain access\nTo regain access to contacts and CRM data, speak to your Organization Admin. They can assign a Marketing, Inbox, or CRM role to your account alongside your existing Developer role.\nDec 22, 2025\nfeature\nBird Platform update: Developer app visibility changes\nWe've updated the permissions required to access the Developer app to improve workspace security and ensure appropriate access control.\nWhat's changed\nDeveloper app visibility requirements:\nGoing forward, users need to have either a\ndeveloper\napp role or a\nworkspace admin\nrole to view the Developer app in the left menu panel.\nWhat this means for you\nIf you or your team members can no longer see the Developer app in the navigation menu, check that the appropriate role has been assigned. Workspace admins can grant the\ndeveloper\napp role to users who need access.\n1\n2\n3\n\u2026\n8\nStart with one channel.\nAdd the others when you're ready.\nA test API key is yours immediately. Production unlocks when you add a payment method and verify a sender.\nGet started\nRead docs\nUsing Claude Code, Cursor, or Codex? Copy a setup prompt and your agent installs the Bird CLI and skills for you. Pick yours:\nClaude Code\nCopied!\nCodex\nCopied!\nCursor\nCopied!\nProducts\nEmail\nSMS\nVoice\nWhatsApp\nVerify\nLookup\nRCS\nPush\nRealtime\nResources\nDocumentation\nQuickstart\nAPI Reference\nMCP Server\nKnowledge Base\nIntegrations\nCustomers\nGuides\nChangelog\nBlog\nCareers\nCompany\nAbout\nPricing\nAuthifly \u2014 our verification brand\nLegal\nTerms\nPrivacy\nSocial\n\u00a9 2026 Bird\nAll Systems Operational\nPrivacy settings\nContact support\nEnglish (US)\n@@@@.                                                                       \n                                                                                  +@@@@@@;                                                                      \n                                                                                .@;..:  ;                                                                       \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                           ..@;                                                 \n                                                                                                          @@@+                                                  \n                                                                                                         +@@@:                                                  \n                                                                                                       .@@@+ .                                                  \n                                                                                                      ;*                                                        \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                          U@                                                                 @                  \n                                                                       .+;@@                                                                U                   \n                                        U.                             @@@@@@@                                                                                  \n                                        @@@.                           @@@@@U@                                                                                  \n                                        @@@*U.                         :*@@: *                               :.                                                 \n                                          @@:                            @;                               U@@U                                                  \n                                          ;                             :@                              .@@@@.                                                  \n                                                                        *@                             +@+@@@@                                                  \n                                                                                                      @;  +U                                                    \n                                                                                                                .                                               \n                                                                                        +    U                .*@                                               \n                                                                                         +:  *               .@@@@U                  +                          \n                                                                                           @@*                U@@@@               U;.@.:;                       \n                                                                                            @@@               :@@ U               U@@@@@+                       \n                                                                                             *@@              ;@:                   U@@@:                       \n                                                +:                                           *@U:            ;@@@                  U@@@;                        \n            U*:              .U@U            *@@@@;                                                          .@@U                +@.                            \n             *@@U         :@@@@@;           :@@@@@+                                                                             ;*:                             \n             @@@@:    @@@; :@UU.           .@@U@@:U\nWe use analytics to understand how our site is used and fix errors. No personal data is shared with third parties.\nAccept\nDecline",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://docs.bird.com",
+      "title": "Bird Documentation | Bird Docs",
+      "text": "Bird Documentation | Bird Docs\n\u2318\nCtrl\nk\nGet a demo\nLog in\nAcademy\nDevelopers\nMore docs\nMore\nBird Documentation\nExplore all features\nMarketing: Getting started video\nUse cases\nBird Support\nProduct updates\nLanguage support\nBird Pricing\nAbout Bird\nMarketing Dashboard\nCampaigns\nCampaigns\nWhatsApp campaigns\nEmail campaigns\nSMS campaigns\nPush notification campaigns\nGoogle RCS campaigns\nTroubleshooting Campaigns and FAQs\nJOURNEYS\nJourneys\nTroubleshooting Journeys and FAQs\nAudience\nContacts\nLists and segments\nSuppressions\nCompanies\nCustom Events\nCustom Objects\nContent\nTemplates overview\nEmail templates\nMessage templates\nContent Blocks\nMedia Library\nTranslation files\nExternal Data Sources\nLookup Tables\nDiscounts\nProducts\nChat widgets\nSign-up forms\nOverview\nQuickstarts\nConcepts\nQuizzes\nLANDING PAGES\nLanding Pages\nAnalytics\nAnalytics\nChannel analytics\nCampaign reports\nCustom Dashboards\nExport metrics to S3\nAutomation\nFlows\nData Flows\nApproval Flows\nAI\nAI\nAI Agents\nChannels\nChannels\nIntegrations\nIntegrations\nSETTINGS\nAccount\nUser Management\nMarketing\nSupport\nInbox\nPayments\nBird Pay (Beta)\nHelp & Reference\nDeliverability & compliance\nData protection\nBird Updates\nGlossary\nPowered by GitBook\nOn this page\nStart using Bird\nGetting started: most popular articles\nFind your use case\nGet contacts into Bird\nTarget customers\nDesign content\nSend campaigns\nMeasure campaign performance\nWas this helpful?\nFor the complete documentation index, see\nllms.txt\n. This page is also available as\nMarkdown\n.\nCopy\nOn this page\nBird Documentation\nWelcome to Bird's documentation! Find guides and tutorials to help you set up and use our platform.\nStart using Bird\nSet up an account, import your customer data, and learn how to start using Bird for marketing, sales, and payments.\nGet a demo \u2192\nGetting started: most popular articles\nAdd users to your organization\nSetup your first channel\nInstall a connector\nImport your contacts into Bird\nGet started with AI employees\nFind your use case\nYou have to\nregister\nfor a Bird account before you can use any of these products or solutions.\nBuild a campaign\nBuild and send an Email, SMS, WhatsApp, Push or RCS Campaign.\nBuild a Journey\nCreate targeted marketing sequences that adapt to customer actions.\nGet contacts into Bird\nBring your contacts into Bird, with CSV uploads or data flows.\nTarget customers\nManage your audience.\nDesign content\nCraft engaging message templates.\nBuild webforms\nCollect customer contact details and embed forms on your store or website.\nMeasure campaign performance\nSee your campaign results.\nGet contacts into Bird\nTo bring your contacts into Bird, you can install an\nintegration\n, such as\nShopify\nor\nHubSpot\n, or import contacts with a\nCSV file\n. Each contact will have a\nprofile\n, where information about subscription statuses, event history, and custom and integration properties are stored.\nImport contacts with a CSV file\nSee the full article \u2192\nPrepare your CSV file using the correct format, ensuring it includes at least one identifier like a phone number or email for each contact. Use the provided demo file as a template to avoid formatting issues.\nAccess the \"Contacts\" section from the side panel, click\nAdd Contact\n, then\nImport from CSV\n. You can drag and drop the file or browse to select it from your device, then review it.\nIf the CSV file includes subscription statuses, you can skip this step. Otherwise, update the subscription status for each contact based on their opt-in preferences for marketing messages. If no marketing subscriptions are present, select\nImport without updating subscription status\n.\nDuring import, you can add contacts to an automatically-generated list named with the import's date and time, or to new or existing lists. This can be customized during the import process.\nPost-import, visit the\nImports\ntab to view details of each import, such as the file name, lists added to, contacts skipped or updated, total contacts, and timestamps of import activities.\nImport contacts by installing an integration\nSee the full article \u2192\nInstall an integration by clicking your name at the bottom left-hand side of your screen, then clicking\nIntegrations\n.\nFind and install your integration. Once you install an integration, contact data is automatically imported and contact profiles in Bird are updated.\nSee also\nIntegration data sync \u2192\nTarget customers\nManage your audience and get granular with your targeting by creating dynamic\nsegments\nand static\nlists\n.\nCreate a segment\nSee the full article \u2192\nNavigate to\nAudience\n>\nLists & segments\n.\nClick\nCreate new\n>\nCreate segment\n.\nEnter a name for your segment and an optional description.\nIn the\nSegment definition\nsection, decide if the contacts should match \"All\" or \"Any\" of the specified conditions.\nApply filters by attributes or condition groups for precise audience targeting.\nUtilize \"and/or\" filters to refine your selection further.\nPreview the matching contacts, and when satisfied, hit the\nSave Segment\nbutton.\nSee also:\nContact activity\nCreate a segment based on contact activity\nDesign content\nTo craft your emails in Bird, you can choose from a library of\npre-designed templates\nor\ndesign your own from scratch\n. Our drag-and-drop email builder is easy to use, and templates can be personalized with both customer data and products from your ecommerce store.\nUse a pre-built email template\nSee the full article \u2192\nNavigate to\nContent > Email templates > Template gallery\n.\nSearch or browse to find a template.\nClick on the template for more information.\nTo use it, click\nClone template\n, set up your project, and click\nCreate template\n.\nEdit the template as needed and click\nPublish\nwhen you're ready to use it.\nCreate an email template from scratch\nSee the full article \u2192\nNavigate to\nContent > Email templates > Create blank email\n.\nName your email, select a locale, and click\nCreate new email\n.\nChoose\nBuild from scratch\nand click\nGet started\n.\nEnter a subject line, add custom or prebuilt content blocks, and insert any variables.\nUse desktop and mobile preview options in the email builder to check the email's appearance. For a more accurate view, send test emails to various email clients and devices.\nClick\nPublish\nwhen you're ready to use it.\nSee also:\nEmail content, styling, and personalization\nSend campaigns\nSend your marketing campaign directly to your customers' inboxes by sending them an email campaign.\nSend an email campaign\nSee the full article \u2192\nConfirm that your Email channel,\nemail template\n, and opted-in customer segment or list are ready.\nGo to\nCampaigns > Create campaign\n.\nName your campaign, choose\nEmail\nas the type, optionally add tags, then\nSave and continue\n.\nChoose target lists or segments from the\nSend to\ndropdown. Optionally exclude specific lists with\nDon't send to\n.\nClick\nContinue to content\n.\nSelect the sending account and input your sender details.\nChoose and configure your email template.\nCheck the message preview, select a test contact, and\nSend a test message\n.\nChoose\nSchedule or send\n, select\nSend now\nor schedule for later.\nSee also:\nInstall Email\nCreate an email template\nSend a WhatsApp campaign\nSee the full article \u2192\nConfirm that your WhatsApp channel, WhatsApp template, and opted-in customer segment or list are ready.\nGo to\nCampaigns > Create campaign\n.\nName your campaign, choose\nWhatsApp\nas the type, optionally add tags, then\nSave and continue\n.\nChoose target lists or segments from the\nSend to\ndropdown. Optionally exclude specific lists with\nDon't send to\n.\nClick\nContinue to content\n.\nSelect the sending account and input your sender details.\nChoose and configure your email template.\nCheck the message preview, select a test contact, and\nSend a test message\n.\nChoose\nSchedule or send\n, select\nSend now\nor schedule for later.\nSee also:\nCreate a WhatsApp template\nInstall WhatsApp\nMeasure campaign performance\nSpot trends, see which campaigns have performed the best, and dive into detailed data.\nView campaign reports\nSee the full article \u2192\nNavigate to\nCampaigns\n.\nSelect your campaign, and click\nView report\n.\nEmail Campaigns:\nOverview Tab\n: Shows performance including delivery rates, open rates, and click rates.\nEngagement Tab\n: Highlights spam complaints and unsubscribes.\nBounce Tab\n: Details on bounced emails, including types of bounces and bounce rates.\nRejection Tab\n: Information on rejected emails and delivery failures.\nDeliverability Tab\n: Insights into email deliverability issues.\nWhatsApp Campaigns:\nOverview Tab\n: Summarizes performance metrics like delivery and read rates.\nFailure Reasons\n: Explains why campaigns failed.\nSMS Campaigns:\nOverview Tab\n: Presents sending and delivery performance.\nFailure Reasons\n: Details reasons for campaign failures.\nEach tab presents critical data and visualizations to understand and improve your marketing efforts.\nLast updated\n7 days ago\nWas this helpful?\nThis site uses cookies to deliver its service and to analyze traffic. By browsing this site, you accept the\nprivacy policy\n.\nAccept\nReject",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://bird.com/integrations",
+      "title": "Integrations: Automate Your Entire Stack \u2014 Bird",
+      "text": "Integrations: Automate Your Entire Stack \u2014 Bird\nProducts\nEmail\nSMS\nVoice\nWhatsApp\nVerify\nLookup\nRCS\nPush\nRealtime\nPricing\nDevelopers\nDocumentation\nAPI References\nMCP Server\nTools\nQuickstart guides\nChangelog\nStatus\nComparisons\nCompany\nAbout\nBlog\nCareers\nCustomers\nSolutions\nNewsroom\nLog in\nContact sales\nMenu\nIntegrations\nAll your essentials automated in one platform.\nAll Integrations\nCRM\nAI\nCustomer Support\nData Warehouse\nDev Tools\nEcommerce\nHealthcare\nLanding Pages & Forms\nLead Generation\nMarketing\nMarketplace\nPayments\nProductivity\nProject Management\nReviews\nActiveCampaign\nMarketing\nSee Integration\n\u2192\nAirtable\nProductivity\nSee Integration\n\u2192\nAirwallex\nPayments\nSee Integration\n\u2192\nAmplitude\nData Warehouse\nSee Integration\n\u2192\nAnthropic\nAI\nSee Integration\n\u2192\nAsana\nProject Management\nSee Integration\n\u2192\nAtlassian Jira\nProject Management\nSee Integration\n\u2192\nAWS S3\nData Warehouse\nSee Integration\n\u2192\nAzure OpenAI\nAI\nSee Integration\n\u2192\nBambooHR\nAI\nSee Integration\n\u2192\nBigCommerce\nEcommerce\nSee Integration\n\u2192\nBuiltWith\nLead Generation\nSee Integration\n\u2192\nCalendly\nProductivity\nSee Integration\n\u2192\nClinicminds\nHealthcare\nSee Integration\n\u2192\nCognism\nLead Generation\nSee Integration\n\u2192\nContentful\nLanding Pages & Forms\nSee Integration\n\u2192\nDeepSeek\nAI\nSee Integration\n\u2192\nDocuSign\nProductivity\nSee Integration\n\u2192\nEasyship\nEcommerce\nSee Integration\n\u2192\nFal.ai\nAI\nSee Integration\n\u2192\nGoogle Ads\nAI\nSee Integration\n\u2192\nGoogle BigQuery\nData Warehouse\nSee Integration\n\u2192\nGoogle Calendar\nProductivity\nSee Integration\n\u2192\nGoogle Cloud Translation AI\nAI\nSee Integration\n\u2192\nGoogle Datastore\nData Warehouse\nSee Integration\n\u2192\nGoogle Docs\nProductivity\nSee Integration\n\u2192\nGoogle Document AI\nAI\nSee Integration\n\u2192\nGoogle Drive\nProductivity\nSee Integration\n\u2192\nGoogle Sheets\nProductivity\nSee Integration\n\u2192\nGoogle Vertex AI\nAI\nSee Integration\n\u2192\nGroq\nAI\nSee Integration\n\u2192\nHighLevel\nMarketing\nSee Integration\n\u2192\nHubSpot\nMarketing\nSee Integration\n\u2192\nHubSpot Data Source\nCRM\nSee Integration\n\u2192\nKlaviyo\nMarketing\nSee Integration\n\u2192\nLinkedIn Ads\nAI\nSee Integration\n\u2192\nLinkedIn Lead Gen Forms\nLead Generation\nSee Integration\n\u2192\nLoyaltyLion\nEcommerce\nSee Integration\n\u2192\nMagento 1\nEcommerce\nSee Integration\n\u2192\nMagento 2\nEcommerce\nSee Integration\n\u2192\nMeta Ads\nAI\nSee Integration\n\u2192\nMonday.com\nProject Management\nSee Integration\n\u2192\nMongoDB Atlas Data\nData Warehouse\nSee Integration\n\u2192\nNetSuite\nCRM\nSee Integration\n\u2192\nNotion\nProject Management\nSee Integration\n\u2192\nOpenAI\nAI\nSee Integration\n\u2192\nOPERA Cloud\nMarketplace\nSee Integration\n\u2192\nPagerDuty\nDev Tools\nSee Integration\n\u2192\nPipeDrive\nCRM\nSee Integration\n\u2192\nPostgREST\nDev Tools\nSee Integration\n\u2192\nPrestaShop\nEcommerce\nSee Integration\n\u2192\nRebrandly\nMarketing\nSee Integration\n\u2192\nSalesforce\nCRM\nSee Integration\n\u2192\nSalesforce Custom Object\nCRM\nSee Integration\n\u2192\nserVme\nMarketplace\nSee Integration\n\u2192\nShopify\nEcommerce\nSee Integration\n\u2192\nShoplazza\nEcommerce\nSee Integration\n\u2192\nShopware\nEcommerce\nSee Integration\n\u2192\nSlack App\nProductivity\nSee Integration\n\u2192\nSmartSheet\nProductivity\nSee Integration\n\u2192\nSmile\nEcommerce\nSee Integration\n\u2192\nSnapchat Ads\nAI\nSee Integration\n\u2192\nSnowflake\nData Warehouse\nSee Integration\n\u2192\nSplunk\nDev Tools\nSee Integration\n\u2192\nSquarespace\nLanding Pages & Forms\nSee Integration\n\u2192\nStripe\nPayments\nSee Integration\n\u2192\nSugarCRM\nCRM\nSee Integration\n\u2192\nTaxi for Email\nMarketing\nSee Integration\n\u2192\nTikTok Ads\nAI\nSee Integration\n\u2192\nTrustpilot\nReviews\nSee Integration\n\u2192\nTypeform\nLanding Pages & Forms\nSee Integration\n\u2192\nUltraCart\nEcommerce\nSee Integration\n\u2192\nWebsite (Bird SDK)\nDev Tools\nSee Integration\n\u2192\nWix\nLanding Pages & Forms\nSee Integration\n\u2192\nWooCommerce\nEcommerce\nSee Integration\n\u2192\nYouTube\nMarketing\nSee Integration\n\u2192\nZendesk Sell\nCRM\nSee Integration\n\u2192\nZendesk Support\nCustomer Support\nSee Integration\n\u2192\nZoho CRM\nCRM\nSee Integration\n\u2192\nZoomInfo\nLead Generation\nSee Integration\n\u2192\nStart with one channel.\nAdd the others when you're ready.\nA test API key is yours immediately. Production unlocks when you add a payment method and verify a sender.\nGet started\nView Docs\nStart with one channel.\nAdd the others when you're ready.\nA test API key is yours immediately. Production unlocks when you add a payment method and verify a sender.\nGet started\nRead docs\nUsing Claude Code, Cursor, or Codex? Copy a setup prompt and your agent installs the Bird CLI and skills for you. Pick yours:\nClaude Code\nCopied!\nCodex\nCopied!\nCursor\nCopied!\nProducts\nEmail\nSMS\nVoice\nWhatsApp\nVerify\nLookup\nRCS\nPush\nRealtime\nResources\nDocumentation\nQuickstart\nAPI Reference\nMCP Server\nKnowledge Base\nIntegrations\nCustomers\nGuides\nChangelog\nBlog\nCareers\nCompany\nAbout\nPricing\nAuthifly \u2014 our verification brand\nLegal\nTerms\nPrivacy\nSocial\n\u00a9 2026 Bird\nAll Systems Operational\nPrivacy settings\nContact support\nEnglish (US)\n@@@@.                                                                       \n                                                                                  +@@@@@@;                                                                      \n                                                                                .@;..:  ;                                                                       \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                           ..@;                                                 \n                                                                                                          @@@+                                                  \n                                                                                                         +@@@:                                                  \n                                                                                                       .@@@+ .                                                  \n                                                                                                      ;*                                                        \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                                                                                                                \n                                                                          U@                                                                 @                  \n                                                                       .+;@@                                                                U                   \n                                        U.                             @@@@@@@                                                                                  \n                                        @@@.                           @@@@@U@                                                                                  \n                                        @@@*U.                         :*@@: *                               :.                                                 \n                                          @@:                            @;                               U@@U                                                  \n                                          ;                             :@                              .@@@@.                                                  \n                                                                        *@                             +@+@@@@                                                  \n                                                                                                      @;  +U                                                    \n                                                                                                                .                                               \n                                                                                        +    U                .*@                                               \n                                                                                         +:  *               .@@@@U                  +                          \n                                                                                           @@*                U@@@@               U;.@.:;                       \n                                                                                            @@@               :@@ U               U@@@@@+                       \n                                                                                             *@@              ;@:                   U@@@:                       \n                                                +:                                           *@U:            ;@@@                  U@@@;                        \n            U*:              .U@U            *@@@@;                                                          .@@U                +@.                            \n             *@@U         :@@@@@;           :@@@@@+                                                                             ;*:                             \n             @@@@:    @@@; :@UU.           .@@U@@:U\nWe use analytics to understand how our site is used and fix errors. No personal data is shared with third parties.\nAccept\nDecline",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/bird/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "MessageBird now Bird and moving into payments?",
+          "url": "https://siliconcanals.com/news/messagebird-robert-vis-on-acquisition-hunt/",
+          "points": 55,
+          "num_comments": 2,
+          "created_at": "2024-01-30T14:33:20Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39190521"
+        },
+        {
+          "title": "Ask HN: What is Cloud Native?",
+          "url": null,
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2018-09-18T14:03:59Z",
+          "hn_url": "https://news.ycombinator.com/item?id=18015388"
+        },
+        {
+          "title": "MessageBird rebrands as Bird, and slashes prices by 90% on SMS to take on Twilio",
+          "url": "https://techcrunch.com/2024/02/01/messagebird-rebrands-as-bird-and-slashes-prices-by-90-on-sms-to-take-on-twilio/",
+          "points": 6,
+          "num_comments": 5,
+          "created_at": "2024-02-01T14:30:16Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39216299"
+        },
+        {
+          "title": "MessageBird rebrands as Bird, and slashes prices by 90% on SMS to take on Twilio",
+          "url": "https://techcrunch.com/2024/02/01/messagebird-rebrands-as-bird-and-slashes-prices-by-90-on-sms-to-take-on-twilio/",
+          "points": 3,
+          "num_comments": 2,
+          "created_at": "2024-02-01T23:22:59Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39222945"
+        },
+        {
+          "title": "MessageBird (YC S16), Twilio rival from Europe, introduces support for chat apps",
+          "url": "https://techcrunch.com/2016/07/08/a-rare-bird-indeed/",
+          "points": 54,
+          "num_comments": 17,
+          "created_at": "2016-07-08T16:36:20Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12056773"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://bird.com/pricing",
+    "changelog": "https://bird.com/changelog",
+    "docs": "https://docs.bird.com",
+    "integrations": "https://bird.com/integrations",
+    "g2": "https://www.g2.com/products/bird/reviews"
+  },
+  "analysis": {
+    "name": "MessageBird (Bird)",
+    "url": "https://bird.com",
+    "tagline": "Communications infrastructure your AI agents operate",
+    "value_proposition": "Unified multi-channel messaging API (email, SMS, WhatsApp, voice, RCS, push) with agent/MCP-native developer tooling and volume-based pricing.",
+    "target_segment": "dev / mid-market",
+    "ideal_customer": "Engineering teams sending transactional and marketing messages across multiple channels who want one API/contract and agent-friendly SDKs",
+    "features": [
+      {
+        "name": "email sending api",
+        "description": "Transactional and marketing email via REST/SDK",
+        "evidence_source": "landing",
+        "evidence_quote": "Send Email. HTML and plain text, React Email supported.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sms sending api",
+        "description": "A2P SMS across 190+ countries via tier-1 carriers",
+        "evidence_source": "landing",
+        "evidence_quote": "Tier-1 carriers, 190+ countries, with the compliance overhead handled for you.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "voice api",
+        "description": "Programmable PSTN and SIP voice with TTS",
+        "evidence_source": "landing",
+        "evidence_quote": "Programmable voice, on PSTN and SIP, with TTS that doesn't sound robotic.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "whatsapp business api",
+        "description": "Official Cloud API with templates and interactive replies",
+        "evidence_source": "landing",
+        "evidence_quote": "Official Cloud API. Templates, interactive buttons, and media",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "verify api",
+        "description": "OTP verification service (Authifly brand)",
+        "evidence_source": "landing",
+        "evidence_quote": "Verify",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "lookup api",
+        "description": "Phone number intelligence lookup",
+        "evidence_source": "landing",
+        "evidence_quote": "Lookup - Phone number intelligence",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rcs messaging",
+        "description": "Rich business messaging via RCS",
+        "evidence_source": "landing",
+        "evidence_quote": "RCS - Rich business messaging",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "push notifications",
+        "description": "Mobile and web push notifications",
+        "evidence_source": "landing",
+        "evidence_quote": "Push - Mobile & web push notifications",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "realtime messaging",
+        "description": "Realtime messaging and events channel",
+        "evidence_source": "landing",
+        "evidence_quote": "Realtime messaging & events",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mcp server",
+        "description": "Model Context Protocol server for AI agents",
+        "evidence_source": "landing",
+        "evidence_quote": "MCP for the agent on your shoulder.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "typescript sdk",
+        "description": "Node.js/TypeScript SDK",
+        "evidence_source": "landing",
+        "evidence_quote": "TypeScript, Python, and Go SDKs.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "python sdk",
+        "description": "Python SDK",
+        "evidence_source": "landing",
+        "evidence_quote": "TypeScript, Python, and Go SDKs.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "go sdk",
+        "description": "Go SDK",
+        "evidence_source": "landing",
+        "evidence_quote": "TypeScript, Python, and Go SDKs.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cli",
+        "description": "Command-line interface for developers",
+        "evidence_source": "landing",
+        "evidence_quote": "REST, curl, or the CLI when you'd rather not.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rest api",
+        "description": "REST API access",
+        "evidence_source": "landing",
+        "evidence_quote": "REST, curl, or the CLI",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "react email support",
+        "description": "Render React Email templates",
+        "evidence_source": "landing",
+        "evidence_quote": "HTML and plain text, React Email supported.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated sending ips",
+        "description": "Direct/dedicated IPs for email sending",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated IPs (add-on)",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "managed ip warm-up",
+        "description": "Automated warm-up for sending IPs",
+        "evidence_source": "landing",
+        "evidence_quote": "Direct sending IPs, managed warm-up",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "isp-aware routing",
+        "description": "Routing optimized per ISP",
+        "evidence_source": "landing",
+        "evidence_quote": "ISP-aware routing",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "spf/dkim/dmarc",
+        "description": "Email authentication handled automatically",
+        "evidence_source": "landing",
+        "evidence_quote": "SPF/DKIM/DMARC handled.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "per-isp delivery breakdown",
+        "description": "Analytics broken down by ISP",
+        "evidence_source": "landing",
+        "evidence_quote": "Per-ISP delivery breakdown",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "per-message audit log",
+        "description": "Detailed per-message audit trail",
+        "evidence_source": "landing",
+        "evidence_quote": "Per-message audit log",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "a2p 10dlc registration",
+        "description": "Files 10DLC brand/campaign registration",
+        "evidence_source": "landing",
+        "evidence_quote": "10DLC application + brand vetting in 48h",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "alpha sender ids",
+        "description": "Alphanumeric sender IDs for SMS",
+        "evidence_source": "landing",
+        "evidence_quote": "A2P 10DLC, alpha sender IDs, DLT entity registration",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dlt entity registration",
+        "description": "India DLT entity registration",
+        "evidence_source": "landing",
+        "evidence_quote": "DLT entity registration \u2014 we file what you have to file.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "smart sms routing",
+        "description": "Route diversity per destination",
+        "evidence_source": "landing",
+        "evidence_quote": "Route diversity per destination",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "voice otp fallback",
+        "description": "Fallback to voice OTP when SMS fails",
+        "evidence_source": "landing",
+        "evidence_quote": "Voice OTP fallback (opt-in per account)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "segment-accurate sms pricing",
+        "description": "Segment-accurate pricing in SMS response",
+        "evidence_source": "landing",
+        "evidence_quote": "Segment-accurate pricing in the response",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "streaming tts",
+        "description": "Streaming TTS in 30+ languages",
+        "evidence_source": "landing",
+        "evidence_quote": "Streaming TTS in 30+ languages",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "declarative ivr flows",
+        "description": "Declarative flow JSON for IVR",
+        "evidence_source": "landing",
+        "evidence_quote": "Declarative flows: say, gather, dial, transfer",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "call recording",
+        "description": "Call recording",
+        "evidence_source": "landing",
+        "evidence_quote": "Recording + live transcript over WebSocket",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "live call transcription",
+        "description": "Live call transcript over WebSocket",
+        "evidence_source": "landing",
+        "evidence_quote": "Recording + live transcript over WebSocket",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pstn termination",
+        "description": "PSTN voice termination",
+        "evidence_source": "landing",
+        "evidence_quote": "PSTN + SIP termination, BYOC supported",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sip termination",
+        "description": "SIP voice termination",
+        "evidence_source": "landing",
+        "evidence_quote": "PSTN + SIP termination, BYOC supported",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "byoc (bring your own carrier)",
+        "description": "Bring your own carrier support",
+        "evidence_source": "landing",
+        "evidence_quote": "PSTN + SIP termination, BYOC supported",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "whatsapp templates",
+        "description": "Pre-approved template messaging",
+        "evidence_source": "landing",
+        "evidence_quote": "Pre-approved templates, session messaging",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "whatsapp session messaging",
+        "description": "Session-based messaging on WhatsApp",
+        "evidence_source": "landing",
+        "evidence_quote": "Template + session messaging",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "whatsapp interactive buttons",
+        "description": "Buttons and lists in WhatsApp",
+        "evidence_source": "landing",
+        "evidence_quote": "Interactive buttons and lists",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "whatsapp delivery receipts",
+        "description": "Delivery and read receipts",
+        "evidence_source": "landing",
+        "evidence_quote": "Delivery + read receipts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Real-time webhook endpoints for events",
+        "evidence_source": "pricing",
+        "evidence_quote": "1 webhook endpoint \u2026 10 webhook endpoints",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "test mode / sandbox",
+        "description": "Simulate delivery states without sending",
+        "evidence_source": "landing",
+        "evidence_quote": "Test mode. Simulate every state \u2014 delivered, bounced, complained, queued",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sandbox sending",
+        "description": "Sandbox sends don't count against limits",
+        "evidence_source": "pricing",
+        "evidence_quote": "Sandbox sends never count against the limit.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "suppression management",
+        "description": "Suppression list management",
+        "evidence_source": "pricing",
+        "evidence_quote": "Authentication, dashboards, suppression, webhooks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "analytics dashboards",
+        "description": "Included analytics dashboards",
+        "evidence_source": "pricing",
+        "evidence_quote": "Authentication, dashboards, suppression, webhooks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sending domain verification",
+        "description": "Multiple sending domains per plan",
+        "evidence_source": "pricing",
+        "evidence_quote": "1 sending domain \u2026 1,000 sending domains",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "30-day retention",
+        "description": "Message history retained for 30 days",
+        "evidence_source": "pricing",
+        "evidence_quote": "30-day retention and a 20 MB message-size limit on every plan",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "marketing campaigns",
+        "description": "Multi-channel marketing campaigns (email, SMS, WhatsApp, push, RCS)",
+        "evidence_source": "docs",
+        "evidence_quote": "Build and send an Email, SMS, WhatsApp, Push or RCS Campaign.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "customer journeys",
+        "description": "Adaptive marketing sequences based on actions",
+        "evidence_source": "docs",
+        "evidence_quote": "Create targeted marketing sequences that adapt to customer actions.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "contacts / crm",
+        "description": "Built-in contact and CRM data model",
+        "evidence_source": "docs",
+        "evidence_quote": "contacts and CRM access",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "lists and segments",
+        "description": "Static lists and dynamic segments",
+        "evidence_source": "docs",
+        "evidence_quote": "creating dynamic segments and static lists.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom events",
+        "description": "Custom event tracking",
+        "evidence_source": "docs",
+        "evidence_quote": "Custom Events",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom objects",
+        "description": "Custom object data model",
+        "evidence_source": "docs",
+        "evidence_quote": "Custom Objects",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email templates",
+        "description": "Prebuilt and custom email templates",
+        "evidence_source": "docs",
+        "evidence_quote": "library of pre-designed templates or design your own from scratch",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "drag-and-drop email builder",
+        "description": "Drag-and-drop template designer",
+        "evidence_source": "docs",
+        "evidence_quote": "Our drag-and-drop email builder is easy to use",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "content blocks",
+        "description": "Reusable content blocks",
+        "evidence_source": "docs",
+        "evidence_quote": "Content Blocks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "media library",
+        "description": "Centralized asset library",
+        "evidence_source": "docs",
+        "evidence_quote": "Media Library",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "translation files",
+        "description": "Localization/translation file support",
+        "evidence_source": "docs",
+        "evidence_quote": "Translation files",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "external data sources",
+        "description": "Connect external data sources",
+        "evidence_source": "docs",
+        "evidence_quote": "External Data Sources",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "lookup tables",
+        "description": "Reference lookup tables in content",
+        "evidence_source": "docs",
+        "evidence_quote": "Lookup Tables",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "discounts",
+        "description": "Discount codes for commerce",
+        "evidence_source": "docs",
+        "evidence_quote": "Discounts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "product catalog",
+        "description": "Product catalog from ecommerce store",
+        "evidence_source": "docs",
+        "evidence_quote": "Products",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "chat widgets",
+        "description": "Embeddable chat widgets",
+        "evidence_source": "docs",
+        "evidence_quote": "Chat widgets",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sign-up forms",
+        "description": "Embeddable sign-up forms",
+        "evidence_source": "docs",
+        "evidence_quote": "Sign-up forms",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "landing pages",
+        "description": "Landing page builder",
+        "evidence_source": "docs",
+        "evidence_quote": "Landing Pages",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "channel analytics",
+        "description": "Analytics by channel",
+        "evidence_source": "docs",
+        "evidence_quote": "Channel analytics",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "campaign reports",
+        "description": "Campaign performance reporting",
+        "evidence_source": "docs",
+        "evidence_quote": "Campaign reports",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom dashboards",
+        "description": "Custom analytics dashboards",
+        "evidence_source": "docs",
+        "evidence_quote": "Custom Dashboards",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "s3 metrics export",
+        "description": "Export metrics to S3",
+        "evidence_source": "docs",
+        "evidence_quote": "Export metrics to S3",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "flows automation",
+        "description": "Automation flows",
+        "evidence_source": "docs",
+        "evidence_quote": "Flows",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "data flows",
+        "description": "Data-integration flows",
+        "evidence_source": "docs",
+        "evidence_quote": "Data Flows",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "approval flows",
+        "description": "Approval workflow flows",
+        "evidence_source": "docs",
+        "evidence_quote": "Approval Flows",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai agents",
+        "description": "AI employee/agent builder",
+        "evidence_source": "docs",
+        "evidence_quote": "Get started with AI employees",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "inbox",
+        "description": "Shared inbox for customer conversations",
+        "evidence_source": "docs",
+        "evidence_quote": "Marketing, Inbox, or CRM role",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bird pay (beta)",
+        "description": "Bird Pay payments product (beta)",
+        "evidence_source": "docs",
+        "evidence_quote": "Bird Pay (Beta)",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "csv contact import",
+        "description": "Import contacts via CSV",
+        "evidence_source": "docs",
+        "evidence_quote": "Import contacts with a CSV file",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "user management / rbac",
+        "description": "Roles, workspaces, permissions",
+        "evidence_source": "changelog",
+        "evidence_quote": "Redesigned organization user management \u2026 role assignments, workspace access",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "role-based access control",
+        "description": "Org and app-level roles (Developer, Marketing, Inbox, CRM)",
+        "evidence_source": "changelog",
+        "evidence_quote": "users need to have either a developer app role or a workspace admin role",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-workspace",
+        "description": "Multiple workspaces per organization",
+        "evidence_source": "changelog",
+        "evidence_quote": "review their workspace memberships",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-language ui",
+        "description": "Native support for 7+ UI languages",
+        "evidence_source": "changelog",
+        "evidence_quote": "The Bird app now supports multiple languages natively.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "tls 1.3 smtp",
+        "description": "TLS 1.3 for SMTP (Momentum on-prem)",
+        "evidence_source": "changelog",
+        "evidence_quote": "TLS v1.3 for SMTP",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "on-prem momentum mta",
+        "description": "Self-hosted Momentum MTA (RHEL x86/ARM)",
+        "evidence_source": "changelog",
+        "evidence_quote": "Momentum 5.2 is now available for download via the MessageSystems customer portal.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "api key management",
+        "description": "Test and production API keys",
+        "evidence_source": "landing",
+        "evidence_quote": "A test API key is yours immediately.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "agent setup prompts",
+        "description": "Copy-paste setup prompts for Claude Code, Cursor, Codex, Windsurf, Copilot",
+        "evidence_source": "landing",
+        "evidence_quote": "Copy a setup prompt and your agent installs the Bird CLI and skills for you",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "framework support",
+        "description": "Support for Express, Next.js, NestJS, Fastify, Nuxt, Hono, Bun, Astro, Koa, Remix",
+        "evidence_source": "landing",
+        "evidence_quote": "Express \u2026 Next.js \u2026 NestJS \u2026 Fastify \u2026 Nuxt \u2026 Hono \u2026 Bun \u2026 Astro \u2026 Koa \u2026 Remix",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "status page",
+        "description": "Public status page",
+        "evidence_source": "landing",
+        "evidence_quote": "All Systems Operational",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "ActiveCampaign",
+      "Airtable",
+      "Airwallex",
+      "Amplitude",
+      "Anthropic",
+      "Asana",
+      "Atlassian Jira",
+      "AWS S3",
+      "Azure OpenAI",
+      "BambooHR",
+      "BigCommerce",
+      "BuiltWith",
+      "Calendly",
+      "Clinicminds",
+      "Cognism",
+      "Contentful",
+      "DeepSeek",
+      "DocuSign",
+      "Easyship",
+      "Fal.ai",
+      "Google Ads",
+      "Google BigQuery",
+      "Google Calendar",
+      "Google Cloud Translation AI",
+      "Google Datastore",
+      "Google Docs",
+      "Google Document AI",
+      "Google Drive",
+      "Google Sheets",
+      "Google Vertex AI",
+      "Groq",
+      "HighLevel",
+      "HubSpot",
+      "HubSpot Data Source",
+      "Klaviyo",
+      "LinkedIn Ads",
+      "LinkedIn Lead Gen Forms",
+      "LoyaltyLion",
+      "Magento 1",
+      "Magento 2",
+      "Meta Ads",
+      "Monday.com",
+      "MongoDB Atlas Data",
+      "NetSuite",
+      "Notion",
+      "OpenAI",
+      "OPERA Cloud",
+      "PagerDuty",
+      "PipeDrive",
+      "PostgREST",
+      "PrestaShop",
+      "Rebrandly",
+      "Salesforce",
+      "Salesforce Custom Object",
+      "serVme",
+      "Shopify",
+      "Shoplazza",
+      "Shopware",
+      "Slack",
+      "SmartSheet",
+      "Smile",
+      "Snapchat Ads",
+      "Snowflake",
+      "Splunk",
+      "Squarespace",
+      "Stripe",
+      "SugarCRM",
+      "Taxi for Email",
+      "TikTok Ads",
+      "Trustpilot",
+      "Typeform",
+      "UltraCart",
+      "Website (Bird SDK)",
+      "Wix",
+      "WooCommerce",
+      "YouTube",
+      "Zendesk Sell",
+      "Zendesk Support",
+      "Zoho CRM",
+      "ZoomInfo"
+    ],
+    "differentiators": [
+      "Priced by volume, not by seat",
+      "One API/contract across email, SMS, voice, WhatsApp, RCS, push",
+      "Agent-native: MCP server + one-click setup prompts for Claude Code/Cursor/Codex/Windsurf/Copilot",
+      "Carries ~40% of world's commercial messages",
+      "Sub-3-second OTP delivery on tier-1 carriers",
+      "Streaming TTS with sub-250ms first-byte audio in 30+ languages",
+      "No runaway bills \u2014 overage capped at 5\u00d7 plan by default",
+      "Managed compliance (10DLC brand vetting in 48h, DLT filing, SPF/DKIM/DMARC)"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-03",
+        "what": "Redesigned organization user management with role assignments and workspace access",
+        "source": "Bird Platform update: Redesigned organization user management"
+      },
+      {
+        "date": "2026-02",
+        "what": "Momentum 5.2 on-prem MTA release \u2014 RHEL 10 support, TLS 1.3 SMTP, DNS config options",
+        "source": "Momentum 5.2 release"
+      },
+      {
+        "date": "2026-01",
+        "what": "Native multi-language UI (PT-PT, PT-BR, NL, FR, DE, ES, RU)",
+        "source": "Bird Platform update: New language support"
+      },
+      {
+        "date": "2026-01",
+        "what": "Contacts/CRM access removed from default permissions; requires Marketing/Inbox/CRM role",
+        "source": "Contacts and CRM access changes"
+      },
+      {
+        "date": "2025-12",
+        "what": "Developer app visibility gated to developer or workspace admin role",
+        "source": "Developer app visibility changes"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "1,000 emails/month, 50/day cap, 1 webhook, 1 sending domain, shared IP, no credit card"
+      },
+      "tiers": [
+        {
+          "name": "Free",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$0",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "1,000 emails/month, 50/day cap, 1 webhook, 1 sending domain, shared IP"
+        },
+        {
+          "name": "Startup",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$15",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "50K-100K emails/mo ($15-$30), 1 webhook, 10 sending domains, shared IP"
+        },
+        {
+          "name": "Growth",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$80",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "100K-2.5M emails/mo ($80-$1,039), 10 webhooks, 1,000 domains, dedicated IPs add-on"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "2.5M+ emails/mo, negotiated per-message rates, multi-year invoiced billing"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Volume-based (not per-seat); dedicated IP $24.95/mo each (Growth only, up to 5); 30-day retention and 20MB message-size limit on all plans; overage capped at 5x plan by default; sends pause at ceiling rather than billing without limit; unused volume doesn't roll over"
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

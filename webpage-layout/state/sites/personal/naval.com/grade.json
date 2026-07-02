@@ -1,0 +1,40 @@
+{
+  "scores": {
+    "typography": 2,
+    "hierarchy": 3,
+    "distinctiveness": 7,
+    "color": 4,
+    "density": 4,
+    "voice": 6
+  },
+  "reasoning": {
+    "typography": "Times New Roman default, Arial Black for headlines \u2014 zero typographic identity. Pure HTML 4.0 browser defaults with no deliberate type system.",
+    "hierarchy": "Weak visual hierarchy. The logo/header image dominates slightly, but text is uniform size. The nav links blend into body text. No clear entry point after the hero image.",
+    "distinctiveness": "Extremely distinctive through sheer anachronism \u2014 this is a time capsule from 1998. The naval ship imagery, technical credentials, and 40-year service claim are specific. Could not swap for another business.",
+    "color": "Blue hyperlinks, some blue headlines, but mostly default black text on white. Not exactly restrained by design \u2014 just default HTML. The logo has red/blue/yellow but no cohesive palette.",
+    "density": "Default browser spacing throughout. Some awkward line breaks and centered alignment create uneven density. Not confident \u2014 just undesigned. The credentials paragraph is dense while other areas float.",
+    "voice": "The structure is actually authentic \u2014 technical certifications, military credentials, specific client types (Navy/Merchant/Work Boats). Not a stencil IA. This is a specialist B2B site showing expertise, not 'Currently/Selected/Testimonials'."
+  },
+  "winning_patterns": [
+    "Absolutely distinctive through unabashed late-90s HTML authenticity",
+    "Specific technical credentials (Intellian VSAT/TYRO, SeaTel certifications) immediately establish expertise",
+    "Hero image of actual military vessel (USS Independence) demonstrates real-world deployment",
+    "40-year service claim prominent and believable given the aesthetic",
+    "Direct contact info (phone, fax, physical address) signals serious B2B operation"
+  ],
+  "anti_patterns": [
+    "HTML 4.0 Transitional DOCTYPE \u2014 ancient semantic structure",
+    "Center-aligned everything with no grid or layout system",
+    "Inline styles and table-based layout remnants",
+    "Unoptimized 611px JPG hero with alt text/title duplication",
+    "Meta keywords stuffing ('navel electronics, navel antenna, naval antenna, NAVEL')",
+    "Animated favicon in 2024",
+    "Zero responsive design considerations despite viewport meta tag",
+    "Blue hyperlinks as only color strategy"
+  ],
+  "one_word_personality": "vintage",
+  "_url": "https://naval.com",
+  "_persona": "personal",
+  "_note": "Investor, philosophical, minimal chrome",
+  "_graded_at": "2026-05-07T19:54:59.650416Z"
+}

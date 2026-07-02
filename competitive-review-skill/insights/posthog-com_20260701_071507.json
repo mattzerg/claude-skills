@@ -1,0 +1,1188 @@
+{
+  "name": "PostHog",
+  "url": "https://posthog.com",
+  "domain": "posthog.com",
+  "scanned_at": "2026-07-01T07:12:40.254985",
+  "sources": {
+    "landing": {
+      "url": "https://posthog.com",
+      "title": "PostHog \u2013 We make dev tools for product engineers",
+      "text": "PostHog \u2013 We make dev tools for product engineers\nProduct OS\nPricing\nDocs\nCommunity\nCompany\nMore\nGet started \u2013 free\n1\nhome.mdx\nProduct OS\nPricing\ncustomers.mdx\ndemo.mov\nDocs\nTalk to a human\nAsk a question\nSign up \u2197\nSwitch to website mode\nWhy PostHog?\nChangelog\nCompany handbook\nStore\nWork here\nTrash\nhome.mdx\nZoom\nFont\nGet started - free\nThe new way to build products\nProduct development used to mean manually writing code, running analysis, diagnosing bugs, and rolling out changes using dozens of tools.\nPostHog is the only platform that acts like a co-pilot for you (and your AI agents) to do it all \u2013\nautonomously\n.\nGet started - free\nInstall with AI\nInstall with AI in a single prompt\nPaste into your terminal or code editor and make AI do the work.\nnpx @posthog/wizard\nLearn more\nMCP\n\u2022\nWatch a demo\n\u2022\nTalk to a human\nUnderstand product usage\nOne place for product data\nDebug & fix issues\nTest & roll out changes\nUnderstand what users are doing\nMeasure engagement, track conversion, and understand usage patterns \u2013 whether it's by person, company, or AI feature.\nHow we analyze data and build products\nhas changed a lot\n. Work smarter with\nPostHog AI\nto get direct answers to questions about your data.\nWeb Analytics\nProduct Analytics\nSession Replay\nFunnels\nHeatmaps\nGraphs & trends\nLifecycle\nUser Paths\nAI Evals\nAI Observability\nWeb Analytics\nProduct Analytics\nSession Replay\nFunnels\nHeatmaps\nGraphs & trends\nLifecycle\nUser Paths\nAI Evals\nAI Observability\nWeb Analytics\nProduct Analytics\nSession Replay\nFunnels\nHeatmaps\nGraphs & trends\nLifecycle\nUser Paths\nAI Evals\nAI Observability\nWeb Analytics\nProduct Analytics\nSession Replay\nFunnels\nHeatmaps\nGraphs & trends\nLifecycle\nUser Paths\nAI Evals\nAI Observability\nWho's using PostHog?\nHere are some of our paying customers. (Yes they actually use us, no it's not just some random engineer who tried us out 2+ years ago.)\nShuffle companies\nVCs love them\nProduct engineers love them\nOpen customers.mdx\nPostHog data stack, built for data teams and loved by product teams\nBuilt-in, Product OS ships with:\nA data warehouse\n120+ sources/destinations\nSQL editor + BI + data viz\nUser activity feed (CDP-lite)\nAPI, webhooks\nWhen you're analyzing how customers use your product, you should be operating from\nthe full set of data\n.\nThis includes customer information that happens\noutside your product\n:\npayments from Stripe\nexceptions in an error tracking tool\ntickets in your support platform\nHaving all the data in one place means you can make more informed decisions about what to build next.\nPostHog's Product OS isn't just analytics \u2013 it's the entire suite of tools built to give you a single source of truth about your customers.\nREADME: PostHog data stack.md\nUsage-based pricing\nOur whole philosophy is that you shouldn't have to worry about pricing.\nAll our paid products are pay-per-use with generous monthly free tiers. In fact, 98% of our customers use PostHog for free.\nWe aim to match the cheapest option at scale \u2013 PostHog should be a no-brainer. You never have to \"jump on a quick call\" with sales.\nHere are some examples of how we charge for most popular products:\n1.\nProduct Analytics\nFree tier:\n1 million events/mo\nPricing:\n$0.00005/event\n2.\nSession Replay\nFree tier:\n5,000 recordings/mo\nPricing:\n$0.005/recording\n3.\nFeature Flags\nFree tier:\n1 million requests/mo\nPricing:\n$0.0001/request\n4.\nManaged warehouse\nFree tier:\n1 million rows/mo\nPricing:\n$0.000015/row\nProduct\nFree tier\nPricing (decreases with volume)\n1\nProduct Analytics\n1 million events/mo\n$0.00005/event\n2\nSession Replay\n5,000 recordings/mo\n$0.005/recording\n3\nFeature Flags\n1 million requests/mo\n$0.0001/request\n4\nManaged warehouse\n1 million rows/mo\n$0.000015/row\nExplore pricing\nWhy PostHog?\nWe're different from most companies for a bunch of reasons:\nTransparency.\nYou can read our\ncompany handbook\n, our\nsales manual\n, and\ncompany strategy\n.\nWe ship fast.\nSee our\nchangelog\n.\nActually\n-technical support.\nOur\nsupport folks\nall have engineering backgrounds.\nRead more about us\nBedtime reading\nStill here? We've got some links that may be mildly interesting to you:\ndemo.mov\nTechnical docs\nAPI\nAsk a question\nSmall teams at PostHog\nShameless CTA\nIf nothing else has sold you on PostHog, hopefully these classic marketing tactics will.\nEco-friendly\nPostHog Cloud\nDigital download*\nNot\nendorsed\nby Kim K\n*PostHog is a web product and cannot be installed by CD.\nWe\ndid\nonce send some customers a floppy disk but it was a Rickroll.\nEco-friendly\nPostHog Cloud\nDigital download*\nSelect your cloud\nUS (Virginia)\nEU (Frankfurt)\nStarts at:\n$0\nFree\n>\n1 left at this price!!\nGet started\nHurry:\n1774 companies signed up\ntoday\n.\nAct now and get $0 off your first order.\n\u00a9 2026 PostHog, Inc.\n\u2022\nAll systems operational\nTerms\nPrivacy\nDPA\nSOC 2\nHIPAA\nLegally-required cookie banner\nPostHog.com doesn't use third-party cookies, only a single in-house cookie.\nNo data is sent to a third party. (\nUrsula von der Leyen\nwould be so proud.)",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://posthog.com/pricing",
+      "title": "PostHog pricing \u2013 Transparent, usage-based, generous free tier",
+      "text": "PostHog pricing \u2013 Transparent, usage-based, generous free tier\nProduct OS\nPricing\nDocs\nCommunity\nCompany\nMore\nGet started \u2013 free\n1\nhome.mdx\nProduct OS\nPricing\ncustomers.mdx\ndemo.mov\nDocs\nTalk to a human\nAsk a question\nSign up \u2197\nSwitch to website mode\nWhy PostHog?\nChangelog\nCompany handbook\nStore\nWork here\nTrash\nPostHog pricing \u2013 Transparent, usage-based, generous free tier\nPostHog Cloud\n*Picture of CD is for illustrative purposes only, not for medicinal consumption.\nPostHog Cloud\nPostHog is designed to grow with you. Our\n10+ products\n(and counting) will take you from idea to product-market fit to IPO and beyond. \ud83d\ude80\nOur generous free tier means\nmore than 90% of companies use PostHog for free.\nOnly add a card if you need more than the free tier limits, advanced features, or want more projects. You still keep the same monthly free volume, even after upgrading.\nFree\nNo credit card required\nCompare plans\nFree\nFree - no credit card required\nPay-as-you-go\nUsage-based pricing\nGenerous\nmonthly free tier\nCommunity support\n1 project, 1-year data retention\nUnlimited team members\nCloud region\nUS (Virginia)\nEU (Frankfurt)\nGet started - free\n1774\ncompanies signed up\ntoday\nFree tier on all plans\n(resets monthly)\n+\nAnalytics\n1M events\nSession replay\n5K recordings\nFeature flags\n1M requests\nExperiments\nBilled with feature flags\nError tracking\n100K exceptions\nSurveys\n1500 responses\nData warehouse\n1M rows + FREE historical\nData pipelines\n10K events + 1M rows\nAI Observability\n100K events\nPostHog AI\n500 credits (worth $5)\nInbox\nBeta\n3 PRs\nWorkflows\n10K messages per channel\nLogs\n50 GB ingested\nFree\nNo credit card required\nGenerous\nmonthly free tier\nCommunity support\n1 project, 1-year data retention\nUnlimited team members\nCloud region\nUS (Virginia)\nEU (Frankfurt)\nGet started - free\n1774\ncompanies signed up\ntoday\nUsage-based pricing\nUsage-based pricing\nIf your usage goes beyond the free tier limits, we offer\nusage-based pricing.\nYou can set a billing limit for each product so you never get an unexpected bill.\nAdd a\ncredit card and also get:\n1 project\n6 projects\n1-year data retention\n7-year data retention\nCommunity support\nEmail support\nPricing calculator\nRates (after the monthly free tier)\nPrices reduce with scale\nExpand all\nProduct Analytics\nFrom\n$0.00005\n/event\nFirst 1 million events\nFree\n1-2 million\n$0.0000500\n/event\n2-15 million\n$0.0000343\n/event\n15-50 million\n$0.0000295\n/event\n50-100 million\n$0.0000218\n/event\n100-250 million\n$0.0000150\n/event\n250 million+\n$0.0000090\n/event\nSession Replay\nMultiple resources\nSession Replay\nFirst 5k recordings\nFree\n5-15k\n$0.0050\n/recording\n15-50k\n$0.0035\n/recording\n50-150k\n$0.0020\n/recording\n150-500k\n$0.0017\n/recording\n500k+\n$0.0015\n/recording\nMobile session replay\nFirst 2.5k mobile recordings\nFree\n2.5-15k\n$0.0100\n/mobile recording\n15-50k\n$0.0070\n/mobile recording\n50-150k\n$0.0040\n/mobile recording\n150-500k\n$0.0034\n/mobile recording\n500k+\n$0.0030\n/mobile recording\nFeature Flags\nFrom\n$0.0001\n/request\nFirst 1 million requests\nFree\n1-2 million\n$0.000100\n/request\n2-10 million\n$0.000045\n/request\n10-50 million\n$0.000025\n/request\n50 million+\n$0.000010\n/request\nSurveys\nFrom\n$0.10\n/response\nFirst 1.5k responses\nFree\n1.5-2k\n$0.100\n/response\n2-10k\n$0.035\n/response\n10-20k\n$0.015\n/response\n20k+\n$0.010\n/response\nManaged warehouse\nMultiple resources\nManaged warehouse\nFirst 1 million rows\nFree\n1-10 million\n$0.000015\n/row\n10-25 million\n$0.000010\n/row\n25-50 million\n$0.000008\n/row\n50-100 million\n$0.000005\n/row\n100-1 billion\n$0.000002\n/row\n1 billion+\n$0.000001\n/row\nData warehouse historical syncs\nUnlimited rows\n$0\n/row\nData pipelines\nMultiple resources\nRealtime destinations\nFirst 10k trigger events\nFree\n10-50k\n$0.000500\n/trigger event\n50-100k\n$0.000300\n/trigger event\n100-1 million\n$0.000150\n/trigger event\n1-10 million\n$0.000100\n/trigger event\n10-100 million\n$0.000050\n/trigger event\n100 million+\n$0.000025\n/trigger event\nBatch exports\nFirst 1 million rows\nFree\n1-10 million\n$0.00001500\n/row\n10-50 million\n$0.00000500\n/row\n50-100 million\n$0.00000250\n/row\n100 million+\n$0.00000125\n/row\nError Tracking\nFrom\n$0.00037\n/exception\nFirst 100k exceptions\nFree\n100-325k\n$0.000370\n/exception\n325-10 million\n$0.000140\n/exception\n10 million+\n$0.000115\n/exception\nWeb Analytics\nBilled with\nProduct analytics\nExperiments\nBilled with\nFeature flags\nPostHog AI\nFrom\n$0.01\n/credit\nFirst 500 credits\nFree\n500+\n$0.01\n/credit\nAI Observability\nFrom\n$0.00006\n/event\nFirst 100k events\nFree\n100k+\n$0.00006\n/event\nLogs\nFrom\n$0.25\n/GB\nFirst 50 GB\nFree\n50-300\n$0.25\n/GB\n300+\n$0.15\n/GB\nWorkflows\nMultiple resources\nEmails\nFirst 10k emails\nFree\n10-50k\n$0.003000\n/email\n50-100k\n$0.001800\n/email\n100-1 million\n$0.001000\n/email\n1-10 million\n$0.000500\n/email\n10-100 million\n$0.000375\n/email\n100 million+\n$0.000250\n/email\nDestinations\nFirst 10k dispatches\nFree\n10-50k\n$0.0007500\n/dispatch\n50-100k\n$0.0004500\n/dispatch\n100-1 million\n$0.0002250\n/dispatch\n1-10 million\n$0.0001500\n/dispatch\n10-100 million\n$0.0000750\n/dispatch\n100 million+\n$0.0000375\n/dispatch\nInbox\nFrom\n$15.00\n/PR\nFirst 3 PR\nFree\n3+\n$15\n/PR\nCompare plans\nJust pick this one!\nYou can upgrade later.\nFree\nNo credit card required\nFree\nGenerous free monthly tier\nUsage capped at free tier limits\nLike, totally free\nAlmost all product features, no credit card required\nCommunity support\nSupport via community forum\n1 project\n1-year data retention\nGet started - free\nPay-as-you-go\nUsage-based pricing after free tier\nStarts at\n$0\n/mo\nGenerous free monthly tier\nPay nothing if below free tier limits\nUsage-based pricing\nSet billing limits per product so you never pay more than expected.\nStandard support\nSupport via email, Slack-based over $2k/mo\n6 projects\n7-year data retention\nGet started - free\nAll plans include:\nUnlimited team members\nNo limits on tracked users\nAPI access\nGoogle, Github, and Gitlab SSO\nBut wait, there's more...\nPlatform packages\nChoose from extra features, like dedicated support, RBAC and SSO enforcement.\nSetup & training\nOur engineers can set everything up for you and train your team.\nIncludes free merch!\nShow full plan comparison\nFree\nPay-as-you-go\nBase price\nFree forever\n$0\nTracked users\nUnlimited\nUnlimited\nTeam members\nUnlimited\nUnlimited\nProjects\n1 project\n6 projects\nAPI access\nSSO via Google, Github, or Gitlab\nCommunity support\nEmail support\n2FA\nShared resource configurations\n1 configuration\n2 configuration\nManaged reverse proxy\n2 proxies\n10 proxies\nThe table above compares\nplatform features\nbetween plans.\nLooking to compare\nproduct features\navailability?\nVisit the product comparison pages:\nProduct analytics\n|\nSession replay\n|\nFeature flags\n|\nExperiments\n|\nSurveys\nGive PostHog a try\nNo need to pick a plan - try our free version and decide if you want advanced features later!\nGet started - free\nYou always need to find ways to improve.\nPostHog is central to how we do that at\nY Combinator\n.\nIt helps us try ideas, measure results, and build better products.\nCat Li\nProduct & Engineering Lead, Y Combinator\nA note from our co-founder\nOur pricing is designed to make you happy\nHere's what you should know about our pricing:\nWe make a profit with every product.\nThis means we don\u2019t have loss-leader products that will go up in pricing later or get retired.\nWe aim to match the cheapest competitor for each product at every scale.\nTell us if we're not!\n(Note: This doesn't include your buddy's two-person startup.)\nThe company in general has significant revenue, over 60,000 customers, runs\ndefault alive\n, and aims to IPO rather than sell. This means\nwe don\u2019t rely on investors to grow, and we\u2019re stable.\nOf course we aren\u2019t perfect, but this goes a long way to avoiding the average dumb vc-backed company stuff in general - like running out of money or selling to a lame bigger company who just kills off our products.\nWe have an open source product too - so if you must, you can self host. It is MIT licensed if you want to use it in a big organization that isn\u2019t ready to move to PostHog Cloud yet.\nIf this makes you happy \u2013 like most people - just start here:\nGet started - free\nNo credit card required\nOr if you need more info,\nread our FAQ\n,\nask a question\n, or\ntalk to a human\n.\nJames Hawkins\nCo-founder\nWhen James isn't thinking about how to cut prices (again), you'll likely find him changing a diaper.\nPricing calculator\nProducts\nProduct Analytics\n$0\nSession Replay\n$0\nFeature Flags\n$0\nSurveys\n$0\nManaged warehouse\n$0\nData pipelines\n$0\nError Tracking\n$0\nPostHog AI\n$0\nAI Observability\n$0\nLogs\n$0\nWorkflows\n$0\nInbox\nBeta\n$0\nEstimate your price\nEvent types, explained\nEvents are billed at different rates based on volume and if you choose to send custom user properties with the event.\nAnonymous events\nAnonymous events\nNo individually-identifiable info, analyzed in aggregate, don't use person profiles\nBy default, events are anonymous, meaning they don't have any personally-identifiable information attached to them.\nThey come with info about the browser and device, visitor's location, and any UTM parameters.\nWith anonymous events, you can:\nSee a Google Analytics-style dashboard\nAccess properties like UTMs, location, referrer, page views\nCreate\naggregate\ninsights in\nProduct analytics\nHow many times users click an element on a page\nGroup visitors by device type or location\nFilter to interactions on a specific page\nTrack anonymous users across sessions\nPricing starts at\n$0.00005\n/event\nFirst 1 million events/mo free\nIdentified events\nIdentified events\nTrack usage of specific, logged in users by using\nperson profiles\n.\nIdentify users by their email address or other unique identifier, and attach custom properties to their person profiles.\nIn addition to anonymous event capabilities, you can:\nMerge anonymous users with their eventual identified user\nLike when they sign up for your product or use different devices - enables analyzing the user's path\nStore custom properties on users\nUse these properties in cohorts, session replay, experiments, and feature flags\nCreate\nuser-specific\ninsights in\nProduct analytics\nHow many times\nspecific users\nclick an element on a page\nGroup\ncohorts of users\nby device type, location, or property\nFilter to interactions on a specific page\nby specific users\nPricing starts at\n$0.000248\n/event\nFirst 1 million events/mo free\nFirst 1,000,000 events free \u2013 every month!\nEvent usage\nexplain event types\nEvents/mo\nProduct analytics\nIdentified events\n0\n1M\n10M\n50M\n250M\n0\nWebsite analytics\nAnonymous events\n0\n1M\n10M\n50M\n250M\n0\nMobile app\n--\nAPI events\n--\nOther events\n--\nProduct add-ons\nGroup analytics\nUse setting\nStarts at\n$0.000071\n/event\n$0\nEvent cost subtotal\nSee how we calculate this\n$0\nPlatform packages\nBoost\nUse setting\n$250\n/mo\n$0\nScale\nUse setting\n$750\n/mo\n$0\nEnterprise\nContact us\nEstimated total\nfor all products & add-ons\n$0\nGenerate calculator URL\nHow our pricing works\nOnly pay for products you use\nGenerous free tier for each product (resets monthly)\nYou can set billing limits per product so you never get a surprise bill\nWe also offer\ndiscounts\nfor startups and non-profits\nEstimating usage\nNot sure what your volume looks like? Add the tracking code to your site and check back in a few days \u2013 no credit card required.\nIf something stupid happens and you get an unexpected bill (like if\nyour side project unexpectedly goes viral\nor you're unhappy), we'll pretty much always refund it!\nWe've also written\nthis handy guide\nto help!\nAdd-ons\nSpecialized functionality are offered as add-ons so you never pay for things you don't need. You can subscribe to them individually inside your PostHog account.\nIdentified events\nGroup analytics\nCompare to similar products\nAmplitude\nMixpanel\nHeap\nPendo\nFullStory\nPostHog\nProduct analytics\nWeb analytics\nAI Observability\nSession replay\nFeature flags\nExperiments\nSurveys\nData warehouse\nGet started - free\nFrequently purchased with...\nThese are some products that pair well with PostHog to help you find product-market fit and maybe even get to an IPO. (In fact, we use them ourselves!)\nSupabase\nPostgres database development platform\nDigital Ocean\nCloud infrastructure for developers\nVercel\nBuild and deploy web experiences\nAshby\nAll-in-one recruiting software for ambitious teams.\nAlgolia\nAI-powered search and discovery\nPricing FAQ\nHow do I know what my volume is?\nTim Glaser\nThe easiest way is to sign up for the Free plan. You'll get an accurate volume projection after just a few days.\nDo I pay anything for stored events?\nSimon Fisher\nNo, you only pay the fee per captured event in a given month (i.e. you only pay when each event is first received). There are no additional costs or fees.\nHow long do you retain data?\nTiina Turban\nData (except recordings, see below) is guaranteed to be retained for 7 years on any paid plan and 1 year on a free plan. After 1 year, data may be moved into cold storage so queries may run more slowly.\nHow long do you retain recordings?\nRick Marron\nRecordings are kept on Clickhouse-based installations for 1 month. For paid customers on PostHog cloud, recordings are kept for 3 months.\nWhat happens after the data retention period elapses?\nMarius Andra\nAny event or user data stored for more than the retention period may be permanently deleted from our systems.\nIs there a free trial on paid plans?\nMichael Matloka\nWe have a generous free tier on every paid plan so you can try out the features before paying any money (though you will need to enter your credit card info). If you have additional needs, such as enterprise features, please get in touch.\nWhat currency are your prices in?\nJames Hawkins\nAll prices are in US Dollars (USD), excluding taxes.\nDo you offer a discount for non-profits?\nEric Duong\nYes in most cases! Create your account, then email sales@posthog.com from the same email address with some basic details on your organization. We will then apply a discount.\nAre there any minimums or annual commitments?\nCameron DeLeone\nNope. We can, however, offer annual commitments (for example, to maintain pricing) if you need them as part of an enterprise agreement.\nHave another pricing-related question?\nAsk in ou",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://posthog.com/changelog",
+      "title": "Changelog - PostHog",
+      "text": "Changelog - PostHog\nProduct OS\nPricing\nDocs\nCommunity\nCompany\nMore\nGet started \u2013 free\n1\nhome.mdx\nProduct OS\nPricing\ncustomers.mdx\ndemo.mov\nDocs\nTalk to a human\nAsk a question\nSign up \u2197\nSwitch to website mode\nWhy PostHog?\nChangelog\nCompany handbook\nStore\nWork here\nTrash\nChangelog - PostHog\nAll categories\nAll teams\nApril 2026 - Week IV\n5 awe-inspiring updates\nMultiple Slack channels for support ticket creation\nConversations Team\nClickHouse as a source for Data Warehouse\nWarehouse Sources Team\nPie charts in the SQL editor\nData Tools Team\nWeekly web analytics summary via MCP\nWeb Analytics Team\nOfficial PostHog VS Code extension\nGrowth Team\nMay 2026 - Week I\n12 groundbreaking updates\nPartial person splitting\nCustomer Analytics Team\nSDK Doctor available as MCP tool\nLink your GitHub account in personal settings\nPostHog Code Team\nTogether AI BYOK provider for LLM analytics\nAI Observability Team\nFilter logs attributes by value\nAPM Team\nResend source for data warehouse\nWarehouse Sources Team\nAzure OpenAI support in LLM analytics\nAI Observability Team\nCreate usage metrics from data warehouse tables\nCustomer Analytics Team\nSlack and webhook alert delivery via MCP\nPostHog Code Team\nCustom product context for session replay AI summaries\nReplay Team\nExplicit MCP mode selection via header or query param\nFailed reports now visible in inbox\nAI Observability Team\nMay 2026 - Week II\n8 revolutionary updates\nGitHub issues as a support channel\nConversations Team\nSQL editor tab for Logs\nAPM Team\nExperiment notebook node refresh\nExperiments Team\nLog capture for React Native\nClient Libraries Team\nRage click support in the iOS SDK\nClient Libraries Team\nMinimum session replay duration in the iOS SDK\nClient Libraries Team\nSurvey popup delay support in the iOS SDK\nClient Libraries Team\nMinimum session replay duration on Android\nClient Libraries Team\nMay 2026 - Week III\n9 show-stopping updates\nCohort edit history and activity log\nFeature Flags Team\nSurvey translations support for iOS SDK\nSurveys Team\nRender Markdown pasted into notebooks\nPlatform Features Team\npganalyze as a signal source\nSelf-Driving Team\nFile download batch export API\nBatch Exports Team\nSurvey translations support for Android SDK\nSurveys Team\nError Tracking queries are much faster and use way less memory\nError Tracking Team\nTest feature flag evaluation with MCP\nFeature Flags Team\nConfigurable default MDE for experiments\nExperiments Team\nMay 2026 - Week IV\n11 spectacular updates\nAdd request context support to posthog-server\nClient Libraries Team\nLinux support for PostHog Code\nPostHog Code Team\nWinsorization for ratio metrics in Experiments\nExperiments Team\nTest feature flag evaluation\nFeature Flags Team\nEvent ingestion filtering\nIngestion Team\nFlutter SDK now supports Session replay minimum duration\nReplay Team\nCustom axis labels for trends charts\nProduct Analytics Team\nLogs capture for Android SDK\nAPM Team\nAuto-attach screen name in iOS SDK\nClient Libraries Team\nAuto-attach screen name to all events on Android\nClient Libraries Team\nPer-pipeline notification settings for data pipeline errors\nPostHog Code Team\nJune 2026 - Week I\n10 legendary updates\nEndpoints is now generally available\nData Modeling Team\nPostHog Wizard supports Error Tracking source maps\nError Tracking Team\nSubscriptions available on free tier\nProduct Analytics Team\nSearch symbol sets by ref, release, and commit\nError Tracking Team\nPath cleaning for funnel breakdowns\nProduct Analytics Team\nMCP tools for Workflows\nWorkflows Team\nBatch workflow MCP tools\nWorkflows Team\nMCP trends line chart now uses shared web UI view\nPer-team rate limits for Error Tracking\nError Tracking Team\nPostHog Slack app in Beta\nPostHog Code Team\nJune 2026 - Week II\n6 mind-blowing updates\nNative crash capture for React Native\nError Tracking Team\nPerson property helpers for posthog-node\nClient Libraries Team\nCorrelated logs in the span inspector\nAPM Team\nFix and explain errors in your AI agent\nError Tracking Team\nEmail template authoring over MCP in workflows\nWorkflows Team\nDefault surveys UI for Android (Jetpack Compose)\nSurveys Team\nJune 2026 - Week III\n12 earth-shattering updates\nLogs API for Flutter\nClient Libraries Team\nShow percentages on lifecycle series\nProduct Analytics Team\nOpt-in back button for multi-question surveys\nSurveys Team\nIssue-based rate limits for Error Tracking\nError Tracking Team\nAttach W3C trace context to Logs\nClient Libraries Team\nPerson & group properties for feature flag evaluation in Flutter SDK\nFeature Flags Team\nSearch and filter the alerts list\nProduct Analytics Team\nSend insights alerts to Discord\nProduct Analytics Team\nAdd before send hook to Go SDK\nClient Libraries Team\nException steps for Android error tracking\nError Tracking Team\nAdd beforeSend hook to web logs\nAPM Team\nDisable remote feature flags and update flags at runtime\nFeature Flags Team\nJune 2026 - Week IV\n11 game-changing updates\nSurveys for Android\nClient Libraries Team\nLogs for mobile\nClient Libraries Team\nSelf-driving\nSelf-Driving Team\nConsole logs now link to person profiles\nClient Libraries Team\nWorkflow emails now emit events\nWorkflows Team\nWorkflows can now wait for an event\nWorkflows Team\nAutomatic exception capture for Next.js SDK\nClient Libraries Team\nSend insight alerts directly to Microsoft Teams\nAnalytics Platform Team\n\"Recent logs\" widget for dashboards\nAnalytics Platform Team\nCapture $device_model on Android Chromium\nClient Libraries Team\ngetAllFeatureFlags() returns every loaded flag in one call\nClient Libraries Team\n2020\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\n2021\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\n2022\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\n2023\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\n2024\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\n2025\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\n2026\nJan\nFeb\nMar\nApr\nMay\nJun\n\u00a9 2026 PostHog, Inc.\n\u2022\nAll systems operational\nTerms\nPrivacy\nDPA\nSOC 2\nHIPAA\nLegally-required cookie banner\nPostHog.com doesn't use third-party cookies, only a single in-house cookie.\nNo data is sent to a third party. (\nUrsula von der Leyen\nwould be so proud.)",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://posthog.com/docs",
+      "title": "Documentation - PostHog",
+      "text": "Documentation - PostHog\nProduct OS\nPricing\nDocs\nCommunity\nCompany\nMore\nGet started \u2013 free\n1\nhome.mdx\nProduct OS\nPricing\ncustomers.mdx\ndemo.mov\nDocs\nTalk to a human\nAsk a question\nSign up \u2197\nSwitch to website mode\nWhy PostHog?\nChangelog\nCompany handbook\nStore\nWork here\nTrash\nDocumentation - PostHog\nPostHog documentation\nAsk AI\nGet started\nNew to PostHog? Pick a starting point.\nInstall PostHog\nSend your first event in minutes.\nUnderstand self-driving\nHow your product learns to drive itself.\nAsk PostHog AI\nGet answers without reading the docs.\nUse PostHog from anywhere\nPick the surface that fits how you work.\nSlack\nAsk questions and ship work from a shared channel.\nWeb\nThe PostHog you know and love, in your browser.\nMCP\nBring PostHog into Claude Code, Cursor, and more.\nTools\nUse every PostHog tool from any surface.\nProduct Analytics\nSession Replay\nFeature Flags\nSurveys\nManaged warehouse\nRealtime destinations\nError Tracking\nCDP\nWeb Analytics\nExperiments\nPostHog AI\nAI Observability\nLogs\nWorkflows\nInbox\nEndpoints\n\u00a9 2026 PostHog, Inc.\n\u2022\nAll systems operational\nTerms\nPrivacy\nDPA\nSOC 2\nHIPAA\nLegally-required cookie banner\nPostHog.com doesn't use third-party cookies, only a single in-house cookie.\nNo data is sent to a third party. (\nUrsula von der Leyen\nwould be so proud.)",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://posthog.com/integrations",
+      "title": "CDP sources & destinations",
+      "text": "CDP sources & destinations\nProduct OS\nPricing\nDocs\nCommunity\nCompany\nMore\nGet started \u2013 free\n1\nhome.mdx\nProduct OS\nPricing\ncustomers.mdx\ndemo.mov\nDocs\nTalk to a human\nAsk a question\nSign up \u2197\nSwitch to website mode\nWhy PostHog?\nChangelog\nCompany handbook\nStore\nWork here\nTrash\nCDP sources & destinations\nPostHog data stack\nOverview\nIs PostHog warehouse native?\nData tools\nManaged DuckDB warehouse\nPostHog AI\nData sources & import (ELT)\nCDP\nData modeling\nSQL editor\nBusiness intelligence (BI)\nReverse ETL & export\nIntegrations\nIntegration library\nPostHog CDP\nIngest, transform, and send data between hundreds of tools\nPostHog's CDP makes it easy to transform events as they arrive, and move them across 50+ destinations you use to run your business \u2013 the context agents act on to make your product self-driving.\nAny event or action in PostHog can update user records or trigger workflows in other products in your stack.\nRealtime event transformations\nOur realtime transformation apps and\nHog functions\nallow you to transform event data before it is saved to your PostHog events store. This means event data can be cleaned and curated at ingestion time, ensuring high data quality from the start.\nApply realtime transformations to incoming event data before it's stored for:\nData enrichment:\nAdd context like GeoIP location, user agent parsing, or company data\nProperty mapping:\nStandardize property names and formats across different sources\nData validation:\nEnsure data quality by validating and cleaning incoming events\nPII scrubbing:\nRemove or hash sensitive information before storage\nEvent filtering:\nDrop unwanted events or filter by specific criteria\nLearn about realtime transformations \u2192\nRealtime event streaming\nStream events to external systems in real-time as they are ingested into PostHog.\nWebhooks:\nSend events to any HTTP endpoint in real-time\nSlack:\nSend events to Slack channels\nSaaS tools:\nSend events to SaaS tools like Braze, Customer.io, and more\nCustom destinations:\nBuild your own destination using our plugin framework\nReal-time streaming is ideal for:\nTriggering immediate actions based on user behavior\nKeeping external systems synchronized with PostHog\nBuilding real-time dashboards and monitoring\nFeeding machine learning models with fresh data\nExplore event destinations \u2192\nWebhooks\nConfigure webhooks to notify external systems when specific events or conditions occur.\nEvent webhooks:\nTrigger on specific user actions or system events\nThreshold alerts:\nSend notifications when metrics exceed limits\nScheduled webhooks:\nRegular updates on key metrics\nCustom payloads:\nFormat data to match your destination's requirements\nCommon webhook use cases:\nSync user properties to CRM systems like Salesforce or HubSpot\nTrigger marketing automation workflows in tools like Braze or Customer.io\nUpdate customer success platforms like Vitally or Gainsight\nSend alerts to Slack, PagerDuty, or monitoring tools\nLearn about webhooks \u2192\nCommon CDP use-cases\nMarketing activation\nSync product usage data to marketing automation tools\nCreate behavioral segments for targeted campaigns\nTrigger personalized emails based on user actions\nSales enablement\nUpdate CRM with product usage insights\nAlert sales teams about high-value user activities\nScore leads based on product engagement\nData science & analytics\nFeed ML models with behavioral data\nExport to data lakes for advanced analysis\nCombine with other data sources in warehouses\nOperations & monitoring\nSend alerts for critical user behaviors\nMonitor system health and usage patterns\nAutomate support ticket creation\nHow does PostHog work with data warehouses?\nPostHog includes an integrated data warehouse that works with other PostHog tools. Your data never needs to travel because you can model and query data in PostHog, or use it across tools such as feature flags, experiments, and more. This eliminates the need to stitch together multiple vendors in complex ETL pipelines, though you can still export data via our CDP if you have specific tooling needs Alternatively, you can connect external warehouses (like Snowflake or BigQuery) as sources to use your warehouse tables inside PostHog.\nLearn more about PostHog's integrated warehouse\nIntegrations library\nExplore our integrations library \u2192\nCommunity questions\nAsk a question\nQuestions about this page?\nAsk PostHog AI\nor\npost a community question\n.\n\u00a9 2026 PostHog, Inc.\n\u2022\nAll systems operational\nTerms\nPrivacy\nDPA\nSOC 2\nHIPAA\nLegally-required cookie banner\nPostHog.com doesn't use third-party cookies, only a single in-house cookie.\nNo data is sent to a third party. (\nUrsula von der Leyen\nwould be so proud.)",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/posthog/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Posthog is closing their Slack community in favor of forum",
+          "url": "https://posthog.com/blog/slack-closure",
+          "points": 396,
+          "num_comments": 216,
+          "created_at": "2024-01-14T04:12:56Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38987383"
+        },
+        {
+          "title": "Launch HN: PostHog (YC W20) \u2013 open-source product analytics",
+          "url": null,
+          "points": 282,
+          "num_comments": 83,
+          "created_at": "2020-02-20T17:27:46Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22376732"
+        },
+        {
+          "title": "Show HN: Laminar \u2013 Open-Source DataDog + PostHog for LLM Apps, Built in Rust",
+          "url": "https://github.com/lmnr-ai/lmnr",
+          "points": 203,
+          "num_comments": 45,
+          "created_at": "2024-09-04T22:52:19Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41451698"
+        },
+        {
+          "title": "Posthog/.cursorrules",
+          "url": "https://github.com/PostHog/posthog/blob/master/.cursorrules",
+          "points": 193,
+          "num_comments": 93,
+          "created_at": "2025-03-09T03:30:52Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43305919"
+        },
+        {
+          "title": "I rewrote PostHog's SQL parser, 70x faster, while barely looking at the code",
+          "url": "https://posthog.com/blog/sql-parser",
+          "points": 154,
+          "num_comments": 72,
+          "created_at": "2026-06-24T18:05:33Z",
+          "hn_url": "https://news.ycombinator.com/item?id=48663544"
+        },
+        {
+          "title": "Posthog \u2013 open-source analytics and UX research tool",
+          "url": "https://github.com/PostHog/posthog",
+          "points": 127,
+          "num_comments": 37,
+          "created_at": "2024-06-03T16:32:21Z",
+          "hn_url": "https://news.ycombinator.com/item?id=40564345"
+        },
+        {
+          "title": "Inside PostHog: SSRF, ClickHouse SQL Escape and Default Postgres Creds to RCE",
+          "url": "https://mdisec.com/inside-posthog-how-ssrf-a-clickhouse-sql-escaping-0day-and-default-postgresql-credentials-formed-an-rce-chain-zdi-25-099-zdi-25-097-zdi-25-096/",
+          "points": 110,
+          "num_comments": 35,
+          "created_at": "2025-12-17T20:50:13Z",
+          "hn_url": "https://news.ycombinator.com/item?id=46305321"
+        },
+        {
+          "title": "Show HN: Phospho \u2013 Text Analytics for LLM Apps (Posthog for Prompts)",
+          "url": "https://github.com/phospho-app/phospho",
+          "points": 59,
+          "num_comments": 10,
+          "created_at": "2024-03-13T15:14:04Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39692249"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://posthog.com/pricing",
+    "changelog": "https://posthog.com/changelog",
+    "docs": "https://posthog.com/docs",
+    "integrations": "https://posthog.com/integrations",
+    "g2": "https://www.g2.com/products/posthog/reviews"
+  },
+  "analysis": {
+    "name": "PostHog",
+    "url": "https://posthog.com",
+    "tagline": "The new way to build products",
+    "value_proposition": "An all-in-one product OS that acts as a co-pilot for engineers and AI agents to build, analyze, debug, and roll out product changes autonomously.",
+    "target_segment": "dev / product engineering teams (startup to mid-market)",
+    "ideal_customer": "product engineers and small engineering teams at startups building software products who want a single source of truth spanning analytics, replays, flags, warehouse, and experiments",
+    "features": [
+      {
+        "name": "product analytics",
+        "description": "Track events, measure engagement, and understand usage patterns",
+        "evidence_source": "landing",
+        "evidence_quote": "Product Analytics ... 1 million events/mo ... $0.00005/event",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "web analytics",
+        "description": "Website traffic and behavior analytics billed with product analytics",
+        "evidence_source": "pricing",
+        "evidence_quote": "Web Analytics Billed with Product analytics",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "session replay",
+        "description": "Record and replay user sessions on web",
+        "evidence_source": "pricing",
+        "evidence_quote": "Session Replay First 5k recordings Free",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile session replay",
+        "description": "Session recording for mobile apps (iOS/Android/Flutter)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Mobile session replay First 2.5k mobile recordings Free",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "feature flags",
+        "description": "Feature flag evaluation and rollout",
+        "evidence_source": "pricing",
+        "evidence_quote": "Feature Flags From $0.0001/request",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "experiments",
+        "description": "A/B testing and experimentation platform",
+        "evidence_source": "pricing",
+        "evidence_quote": "Experiments Billed with Feature flags",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "error tracking",
+        "description": "Exception capture and error tracking",
+        "evidence_source": "pricing",
+        "evidence_quote": "Error Tracking From $0.00037/exception",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "surveys",
+        "description": "In-product user surveys with multi-question support",
+        "evidence_source": "pricing",
+        "evidence_quote": "Surveys From $0.10/response",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "data warehouse",
+        "description": "Managed DuckDB warehouse to store and query data",
+        "evidence_source": "pricing",
+        "evidence_quote": "Managed warehouse 1M rows/mo $0.000015/row",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "data pipelines",
+        "description": "Realtime destinations and batch exports for ETL",
+        "evidence_source": "pricing",
+        "evidence_quote": "Data pipelines 10K events + 1M rows",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai observability",
+        "description": "Observability and analytics for LLM apps",
+        "evidence_source": "pricing",
+        "evidence_quote": "AI Observability From $0.00006/event",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "posthog ai",
+        "description": "AI copilot that answers questions about your data",
+        "evidence_source": "landing",
+        "evidence_quote": "Work smarter with PostHog AI to get direct answers to questions about your data.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "logs",
+        "description": "Log ingestion and search",
+        "evidence_source": "pricing",
+        "evidence_quote": "Logs From $0.25/GB First 50 GB Free",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "workflows",
+        "description": "Automation workflows with email and destinations",
+        "evidence_source": "pricing",
+        "evidence_quote": "Workflows 10K messages per channel",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "inbox",
+        "description": "PR review / inbox feature (Beta)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Inbox Beta 3 PRs",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "endpoints",
+        "description": "GA'd data endpoints for exposing modeled data",
+        "evidence_source": "changelog",
+        "evidence_quote": "Endpoints is now generally available",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cdp",
+        "description": "Customer data platform to ingest, transform, and route events across 50+ destinations",
+        "evidence_source": "integrations",
+        "evidence_quote": "PostHog's CDP makes it easy to transform events... move them across 50+ destinations",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "funnels",
+        "description": "Conversion funnel analysis",
+        "evidence_source": "landing",
+        "evidence_quote": "Funnels",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "heatmaps",
+        "description": "Visual heatmap of user interactions",
+        "evidence_source": "landing",
+        "evidence_quote": "Heatmaps",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "graphs and trends",
+        "description": "Trend charts and graphs",
+        "evidence_source": "landing",
+        "evidence_quote": "Graphs & trends",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "lifecycle analysis",
+        "description": "User lifecycle analytics",
+        "evidence_source": "landing",
+        "evidence_quote": "Lifecycle",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "user paths",
+        "description": "Path analysis showing how users move through product",
+        "evidence_source": "landing",
+        "evidence_quote": "User Paths",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai evals",
+        "description": "Evaluations for AI features",
+        "evidence_source": "landing",
+        "evidence_quote": "AI Evals",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sql editor",
+        "description": "SQL editor with BI and data viz",
+        "evidence_source": "landing",
+        "evidence_quote": "SQL editor + BI + data viz",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "business intelligence",
+        "description": "Built-in BI on top of the warehouse",
+        "evidence_source": "integrations",
+        "evidence_quote": "Business intelligence (BI)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "data modeling",
+        "description": "Model data inside PostHog",
+        "evidence_source": "integrations",
+        "evidence_quote": "Data modeling",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "reverse etl",
+        "description": "Export data back into operational tools",
+        "evidence_source": "integrations",
+        "evidence_quote": "Reverse ETL & export",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "user activity feed",
+        "description": "CDP-lite user activity feed",
+        "evidence_source": "landing",
+        "evidence_quote": "User activity feed (CDP-lite)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "api access",
+        "description": "Public API and webhooks",
+        "evidence_source": "pricing",
+        "evidence_quote": "API access",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Send events to any HTTP endpoint",
+        "evidence_source": "integrations",
+        "evidence_quote": "Webhooks: Send events to any HTTP endpoint in real-time",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "realtime transformations",
+        "description": "Transform event data before storage with Hog functions",
+        "evidence_source": "integrations",
+        "evidence_quote": "Our realtime transformation apps and Hog functions allow you to transform event data",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pii scrubbing",
+        "description": "Remove or hash sensitive information at ingestion",
+        "evidence_source": "integrations",
+        "evidence_quote": "PII scrubbing: Remove or hash sensitive information before storage",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "event filtering",
+        "description": "Drop unwanted events at ingestion",
+        "evidence_source": "changelog",
+        "evidence_quote": "Event ingestion filtering",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "geoip enrichment",
+        "description": "Add GeoIP location context to events",
+        "evidence_source": "integrations",
+        "evidence_quote": "Add context like GeoIP location, user agent parsing, or company data",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cohorts",
+        "description": "Behavioral cohorts with edit history and activity log",
+        "evidence_source": "changelog",
+        "evidence_quote": "Cohort edit history and activity log",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dashboards",
+        "description": "Dashboards with recent logs widget",
+        "evidence_source": "changelog",
+        "evidence_quote": "\"Recent logs\" widget for dashboards",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "insight alerts",
+        "description": "Alerts routed to Slack, Discord, Microsoft Teams",
+        "evidence_source": "changelog",
+        "evidence_quote": "Send insight alerts directly to Microsoft Teams",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "subscriptions",
+        "description": "Scheduled insight subscriptions on free tier",
+        "evidence_source": "changelog",
+        "evidence_quote": "Subscriptions available on free tier",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "notebooks",
+        "description": "Notebooks with Markdown rendering",
+        "evidence_source": "changelog",
+        "evidence_quote": "Render Markdown pasted into notebooks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "self-driving",
+        "description": "Product learns to drive itself using signals",
+        "evidence_source": "docs",
+        "evidence_quote": "Understand self-driving \u2014 How your product learns to drive itself.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mcp integration",
+        "description": "Model Context Protocol tools for Claude Code, Cursor, etc.",
+        "evidence_source": "docs",
+        "evidence_quote": "MCP - Bring PostHog into Claude Code, Cursor, and more.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "posthog code",
+        "description": "Code product with Linux support and Slack app",
+        "evidence_source": "changelog",
+        "evidence_quote": "Linux support for PostHog Code",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "posthog wizard",
+        "description": "AI installer wizard invoked via npx",
+        "evidence_source": "landing",
+        "evidence_quote": "Install with AI in a single prompt ... npx @posthog/wizard",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vs code extension",
+        "description": "Official PostHog VS Code extension",
+        "evidence_source": "changelog",
+        "evidence_quote": "Official PostHog VS Code extension",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "slack app",
+        "description": "PostHog Slack app in beta for ask/ship from a channel",
+        "evidence_source": "changelog",
+        "evidence_quote": "PostHog Slack app in Beta",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "github integration",
+        "description": "Link GitHub account; GitHub issues as a support channel",
+        "evidence_source": "changelog",
+        "evidence_quote": "Link your GitHub account in personal settings",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "github issues support",
+        "description": "Use GitHub issues as a support channel",
+        "evidence_source": "changelog",
+        "evidence_quote": "GitHub issues as a support channel",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multiple slack channels",
+        "description": "Support ticket creation across multiple Slack channels",
+        "evidence_source": "changelog",
+        "evidence_quote": "Multiple Slack channels for support ticket creation",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "llm observability byok",
+        "description": "Bring-your-own-key providers like Together AI and Azure OpenAI",
+        "evidence_source": "changelog",
+        "evidence_quote": "Together AI BYOK provider for LLM analytics",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "azure openai support",
+        "description": "LLM analytics support for Azure OpenAI",
+        "evidence_source": "changelog",
+        "evidence_quote": "Azure OpenAI support in LLM analytics",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai session replay summaries",
+        "description": "Custom product context for session replay AI summaries",
+        "evidence_source": "changelog",
+        "evidence_quote": "Custom product context for session replay AI summaries",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "fix and explain errors",
+        "description": "AI agent that fixes and explains errors",
+        "evidence_source": "changelog",
+        "evidence_quote": "Fix and explain errors in your AI agent",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "clickhouse warehouse source",
+        "description": "ClickHouse as a data warehouse source",
+        "evidence_source": "changelog",
+        "evidence_quote": "ClickHouse as a source for Data Warehouse",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "resend warehouse source",
+        "description": "Resend as a data warehouse source",
+        "evidence_source": "changelog",
+        "evidence_quote": "Resend source for data warehouse",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pganalyze signal source",
+        "description": "pganalyze as a signal source for self-driving",
+        "evidence_source": "changelog",
+        "evidence_quote": "pganalyze as a signal source",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "batch exports",
+        "description": "Batch export API including file download",
+        "evidence_source": "changelog",
+        "evidence_quote": "File download batch export API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "historical syncs",
+        "description": "Free unlimited historical warehouse syncs",
+        "evidence_source": "pricing",
+        "evidence_quote": "Data warehouse historical syncs Unlimited rows $0/row",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "funnel breakdowns path cleaning",
+        "description": "Path cleaning for funnel breakdowns",
+        "evidence_source": "changelog",
+        "evidence_quote": "Path cleaning for funnel breakdowns",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom axis labels",
+        "description": "Custom axis labels for trends charts",
+        "evidence_source": "changelog",
+        "evidence_quote": "Custom axis labels for trends charts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pie charts sql editor",
+        "description": "Pie charts inside the SQL editor",
+        "evidence_source": "changelog",
+        "evidence_quote": "Pie charts in the SQL editor",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "weekly web analytics summary",
+        "description": "Weekly web analytics summary via MCP",
+        "evidence_source": "changelog",
+        "evidence_quote": "Weekly web analytics summary via MCP",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "experiment notebook",
+        "description": "Experiment notebook node refresh",
+        "evidence_source": "changelog",
+        "evidence_quote": "Experiment notebook node refresh",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "winsorization",
+        "description": "Winsorization for ratio metrics in experiments",
+        "evidence_source": "changelog",
+        "evidence_quote": "Winsorization for ratio metrics in Experiments",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "configurable mde",
+        "description": "Configurable default MDE for experiments",
+        "evidence_source": "changelog",
+        "evidence_quote": "Configurable default MDE for experiments",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "survey translations ios",
+        "description": "Survey translation support in iOS SDK",
+        "evidence_source": "changelog",
+        "evidence_quote": "Survey translations support for iOS SDK",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "survey translations android",
+        "description": "Survey translation support in Android SDK",
+        "evidence_source": "changelog",
+        "evidence_quote": "Survey translations support for Android SDK",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "survey back button",
+        "description": "Opt-in back button for multi-question surveys",
+        "evidence_source": "changelog",
+        "evidence_quote": "Opt-in back button for multi-question surveys",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "surveys for android",
+        "description": "Native survey UI for Android (Jetpack Compose)",
+        "evidence_source": "changelog",
+        "evidence_quote": "Default surveys UI for Android (Jetpack Compose)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "react native sdk",
+        "description": "React Native SDK with log capture and native crash capture",
+        "evidence_source": "changelog",
+        "evidence_quote": "Log capture for React Native",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "flutter sdk",
+        "description": "Flutter SDK with logs and session replay support",
+        "evidence_source": "changelog",
+        "evidence_quote": "Logs API for Flutter",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ios sdk",
+        "description": "iOS SDK: rage click, min replay duration, survey delay, auto-screen name",
+        "evidence_source": "changelog",
+        "evidence_quote": "Rage click support in the iOS SDK",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "android sdk",
+        "description": "Android SDK: logs capture, min replay duration, auto-screen name",
+        "evidence_source": "changelog",
+        "evidence_quote": "Minimum session replay duration on Android",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "nextjs sdk",
+        "description": "Automatic exception capture for Next.js SDK",
+        "evidence_source": "changelog",
+        "evidence_quote": "Automatic exception capture for Next.js SDK",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "node sdk",
+        "description": "posthog-node with person property helpers and request context",
+        "evidence_source": "changelog",
+        "evidence_quote": "Person property helpers for posthog-node",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "go sdk",
+        "description": "Go SDK with beforeSend hook",
+        "evidence_source": "changelog",
+        "evidence_quote": "Add before send hook to Go SDK",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rage click detection",
+        "description": "Detect rage clicks in mobile SDK",
+        "evidence_source": "changelog",
+        "evidence_quote": "Rage click support in the iOS SDK",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "issue-based rate limits",
+        "description": "Per-team and per-issue rate limits for error tracking",
+        "evidence_source": "changelog",
+        "evidence_quote": "Issue-based rate limits for Error Tracking",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "source maps",
+        "description": "Error tracking source maps via wizard",
+        "evidence_source": "changelog",
+        "evidence_quote": "PostHog Wizard supports Error Tracking source maps",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "w3c trace context",
+        "description": "Attach W3C trace context to logs",
+        "evidence_source": "changelog",
+        "evidence_quote": "Attach W3C trace context to Logs",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "correlated logs",
+        "description": "Correlated logs in the span inspector",
+        "evidence_source": "changelog",
+        "evidence_quote": "Correlated logs in the span inspector",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "workflow emails",
+        "description": "Workflow emails now emit events",
+        "evidence_source": "changelog",
+        "evidence_quote": "Workflow emails now emit events",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "workflow event waits",
+        "description": "Workflows can wait for an event",
+        "evidence_source": "changelog",
+        "evidence_quote": "Workflows can now wait for an event",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email templates via mcp",
+        "description": "Email template authoring over MCP in workflows",
+        "evidence_source": "changelog",
+        "evidence_quote": "Email template authoring over MCP in workflows",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sso",
+        "description": "Google, GitHub, and GitLab SSO on all plans",
+        "evidence_source": "pricing",
+        "evidence_quote": "Google, Github, and Gitlab SSO",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sso enforcement",
+        "description": "Enforced SSO available in platform packages",
+        "evidence_source": "pricing",
+        "evidence_quote": "Choose from extra features, like dedicated support, RBAC and SSO enforcement",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "rbac",
+        "description": "Role-based access control in platform packages",
+        "evidence_source": "pricing",
+        "evidence_quote": "RBAC and SSO enforcement",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "unlimited team members",
+        "description": "No user-count restrictions on any plan",
+        "evidence_source": "pricing",
+        "evidence_quote": "Unlimited team members",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "data retention",
+        "description": "1-year retention on free / 7-year on paid",
+        "evidence_source": "pricing",
+        "evidence_quote": "1-year data retention ... 7-year data retention",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-project",
+        "description": "1 project free / 6 projects on paid",
+        "evidence_source": "pricing",
+        "evidence_quote": "1 project ... 6 projects",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "soc 2 compliance",
+        "description": "SOC 2 compliance",
+        "evidence_source": "landing",
+        "evidence_quote": "SOC 2",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "hipaa compliance",
+        "description": "HIPAA compliance",
+        "evidence_source": "landing",
+        "evidence_quote": "HIPAA",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "eu data residency",
+        "description": "EU (Frankfurt) cloud region option",
+        "evidence_source": "pricing",
+        "evidence_quote": "Cloud region US (Virginia) EU (Frankfurt)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "open source",
+        "description": "Open source codebase",
+        "evidence_source": "hn",
+        "evidence_quote": "Launch HN: PostHog (YC W20) \u2013 open-source product analytics",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "community support",
+        "description": "Free-plan support via community forum",
+        "evidence_source": "pricing",
+        "evidence_quote": "Community support - Support via community forum",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "email and slack support",
+        "description": "Email support with Slack-based over $2k/mo",
+        "evidence_source": "pricing",
+        "evidence_quote": "Support via email, Slack-based over $2k/mo",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated support",
+        "description": "Dedicated support available in platform packages",
+        "evidence_source": "pricing",
+        "evidence_quote": "Choose from extra features, like dedicated support",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "setup and training",
+        "description": "Engineer-led setup and training package",
+        "evidence_source": "pricing",
+        "evidence_quote": "Setup & training - Our engineers can set everything up for you and train your team",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "billing limits",
+        "description": "Per-product billing caps to avoid surprise bills",
+        "evidence_source": "pricing",
+        "evidence_quote": "You can set a billing limit for each product so you never get an unexpected bill",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "stripe integration",
+        "description": "Ingest payment data from Stripe",
+        "evidence_source": "landing",
+        "evidence_quote": "payments from Stripe",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "salesforce integration",
+        "description": "Sync user properties to Salesforce",
+        "evidence_source": "integrations",
+        "evidence_quote": "Sync user properties to CRM systems like Salesforce or HubSpot",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "hubspot integration",
+        "description": "Sync user properties to HubSpot",
+        "evidence_source": "integrations",
+        "evidence_quote": "Sync user properties to CRM systems like Salesforce or HubSpot",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "braze integration",
+        "description": "Send events to Braze",
+        "evidence_source": "integrations",
+        "evidence_quote": "Send events to SaaS tools like Braze, Customer.io",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "customer.io integration",
+        "description": "Send events to Customer.io",
+        "evidence_source": "integrations",
+        "evidence_quote": "Send events to SaaS tools like Braze, Customer.io, and more",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pagerduty integration",
+        "description": "Send alerts to PagerDuty",
+        "evidence_source": "integrations",
+        "evidence_quote": "Send alerts to Slack, PagerDuty, or monitoring tools",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "snowflake integration",
+        "description": "Connect Snowflake as a warehouse source",
+        "evidence_source": "integrations",
+        "evidence_quote": "connect external warehouses (like Snowflake or BigQuery) as sources",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bigquery integration",
+        "description": "Connect BigQuery as a warehouse source",
+        "evidence_source": "integrations",
+        "evidence_quote": "connect external warehouses (like Snowflake or BigQuery) as sources",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "discord integration",
+        "description": "Send insights alerts to Discord",
+        "evidence_source": "changelog",
+        "evidence_quote": "Send insights alerts to Discord",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "microsoft teams integration",
+        "description": "Send insight alerts to Microsoft Teams",
+        "evidence_source": "changelog",
+        "evidence_quote": "Send insight alerts directly to Microsoft Teams",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "120+ warehouse sources",
+        "description": "120+ sources/destinations for warehouse",
+        "evidence_source": "landing",
+        "evidence_quote": "120+ sources/destinations",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Stripe",
+      "Salesforce",
+      "HubSpot",
+      "Braze",
+      "Customer.io",
+      "Vitally",
+      "Gainsight",
+      "PagerDuty",
+      "Slack",
+      "Discord",
+      "Microsoft Teams",
+      "Snowflake",
+      "BigQuery",
+      "ClickHouse",
+      "Resend",
+      "pganalyze",
+      "Together AI",
+      "Azure OpenAI",
+      "GitHub",
+      "GitLab",
+      "Google",
+      "Cursor",
+      "Claude Code",
+      "VS Code"
+    ],
+    "differentiators": [
+      "All-in-one Product OS (analytics, replay, flags, warehouse, experiments, errors, surveys, logs, workflows, CDP)",
+      "Radical transparency (public handbook, sales manual, strategy)",
+      "Engineering-background support staff",
+      "Usage-based pricing with generous free tier (98% of customers use free)",
+      "Open-source codebase",
+      "Integrated warehouse \u2014 no ETL stitching required",
+      "Never require a sales call",
+      "AI-native install (npx @posthog/wizard) and MCP support for Claude Code / Cursor",
+      "Self-driving product concept"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-06",
+        "what": "Self-driving product launch",
+        "source": "Self-driving - Self-Driving Team"
+      },
+      {
+        "date": "2026-06",
+        "what": "Surveys for Android and Logs for mobile",
+        "source": "Surveys for Android; Logs for mobile"
+      },
+      {
+        "date": "2026-06",
+        "what": "Endpoints GA",
+        "source": "Endpoints is now generally available"
+      },
+      {
+        "date": "2026-06",
+        "what": "PostHog Slack app in Beta",
+        "source": "PostHog Slack app in Beta"
+      },
+      {
+        "date": "2026-06",
+        "what": "Fix and explain errors in your AI agent",
+        "source": "Fix and explain errors in your AI agent"
+      },
+      {
+        "date": "2026-06",
+        "what": "Native crash capture for React Native",
+        "source": "Native crash capture for React Native"
+      },
+      {
+        "date": "2026-05",
+        "what": "Official PostHog VS Code extension",
+        "source": "Official PostHog VS Code extension"
+      },
+      {
+        "date": "2026-05",
+        "what": "GitHub issues as a support channel",
+        "source": "GitHub issues as a support channel"
+      },
+      {
+        "date": "2026-05",
+        "what": "ClickHouse as a source for Data Warehouse",
+        "source": "ClickHouse as a source for Data Warehouse"
+      },
+      {
+        "date": "2026-05",
+        "what": "Together AI and Azure OpenAI BYOK for LLM analytics",
+        "source": "Together AI BYOK provider for LLM analytics; Azure OpenAI support in LLM analytics"
+      },
+      {
+        "date": "2026-05",
+        "what": "Event ingestion filtering",
+        "source": "Event ingestion filtering"
+      },
+      {
+        "date": "2026-04",
+        "what": "Weekly web analytics summary via MCP",
+        "source": "Weekly web analytics summary via MCP"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Open-source product analytics with a well-received Launch HN (282 upvotes)",
+        "Community-shared .cursorrules \u2014 reputation for dev-friendly configuration",
+        "Transparent handbook and technical-depth support"
+      ],
+      "complaints": [
+        "Closing their Slack community in favor of forum was contentious (396 upvotes, 216 comments)",
+        "Security concerns raised in 'SSRF, ClickHouse SQL Escape and Default Postgres Creds to RCE' post",
+        "SQL parser needed a 70x rewrite \u2014 suggests prior performance issues"
+      ],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "1 project, 1-year retention, unlimited team members; 1M events, 5K replays, 1M flag requests, 100K exceptions, 1500 survey responses, 1M warehouse rows, 100K AI obs events, 50GB logs, 3 PRs, 500 PostHog AI credits per month"
+      },
+      "tiers": [
+        {
+          "name": "Free",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$0",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Free tier only, 1 project, 1-year retention, community support, no credit card"
+        },
+        {
+          "name": "Pay-as-you-go",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": "$0",
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Usage-based after free tier, 6 projects, 7-yr retention, email/Slack support >$2k/mo"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Fully usage-based pricing per product (events, recordings, requests, rows, exceptions, responses, GB, credits, PRs) with volume-tier discounts; billing limits per product; platform add-ons for SSO enforcement, RBAC, dedicated support, setup & training; Slack-based support unlocked at >$2k/mo; no per-seat pricing; 98% of customers use it free per marketing claim."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "I rewrote PostHog's SQL parser, 70x faster, while barely looking at the code",
+        "url": "https://posthog.com/blog/sql-parser",
+        "points": 154,
+        "comments": 72,
+        "age_days": 6,
+        "hn_url": "https://news.ycombinator.com/item?id=48663544"
+      },
+      {
+        "title": "Good clarity on AI observability and in simple terms",
+        "url": "https://posthog.com/blog/what-is-ai-observability",
+        "points": 4,
+        "comments": 1,
+        "age_days": 5,
+        "hn_url": "https://news.ycombinator.com/item?id=48673299"
+      },
+      {
+        "title": "Show HN: Morning Report \u2013 daily briefing compiled from Sentry, Linear, Gmail,etc",
+        "url": "https://my-morning-report.vercel.app",
+        "points": 2,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48736812"
+      },
+      {
+        "title": "Show HN: Codex can track external events with respect to internal data",
+        "url": "https://app.getsupers.com/admin/growth",
+        "points": 2,
+        "comments": 0,
+        "age_days": 4,
+        "hn_url": "https://news.ycombinator.com/item?id=48697024"
+      },
+      {
+        "title": "Posthog's marketing budget in 2026 (with actual $ figures)",
+        "url": "https://posthog.com/founders/actual-marketing-budget-2026",
+        "points": 1,
+        "comments": 0,
+        "age_days": 4,
+        "hn_url": "https://news.ycombinator.com/item?id=48691430"
+      }
+    ]
+  }
+}

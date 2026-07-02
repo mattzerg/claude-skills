@@ -1,8 +1,9 @@
 ---
 name: lifecycle-email
-description: Trigger-based lifecycle email automation for Zerg's Phase 3 retention + expansion motion. Reads Zergalytics events (signup, aha-event, pro-upgrade, bundle-upgrade, 14d-inactive, churn-risk-signal) and dispatches matched campaigns via email-drip skill. Three campaign families — `re-engagement` (14-day-inactive nudges), `churn-save` (downgrade-risk save campaigns), `expansion` (post-Pro nudge to Bundle, post-Bundle nudge to Solutions). Pairs with email-drip (transport) + growth-dashboard (reads outcomes onto line #9). Phase 3 build (Day 91-180) — depends on event-stream maturity that doesn't exist Phase 1. USE PROACTIVELY when Matt mentions retention emails, churn-risk save campaigns, expansion nudges, or "the user did X, send Y."
+description: Trigger-based lifecycle email automation for Zerg's Phase 3 retention + expansion motion. Reads Zergalytics events (signup, aha-event, pro-upgrade, bundle-upgrade, 14d-inactive, churn-risk-signal) and dispatches matched campaigns via email-drip skill. Three campaign families — `re-engagement` (14-day-inactive nudges), `churn-save` (downgrade-risk save campaigns), `expansion` (post-Pro nudge to Bundle, post-Bundle nudge to Solutions). Pairs with email-drip (transport) + growth-dashboard (reads outcomes onto line
 allowed-tools: Bash, Read, Write
 ---
+
 
 # Lifecycle Email Skill (v0 stub — Phase 3 build, depends on Phase 2 event maturity)
 
@@ -16,6 +17,14 @@ Plan: `~/.claude/plans/i-am-planning-growth-splendid-bee.md`. The "automation mo
 - ≥200 active accounts (sample size for trigger-based campaigns)
 
 If those preconditions slip, this skill slips with them.
+
+## DEPRECATED-INTEGRATION note (2026-05-28)
+
+The Phase 3B `email-drip` rebuild replaced the prior runtime (`lifecycle send`, `broadcast send`, `validate` verbs) with a Stream A scaffolder whose only verbs are `init`, `scaffold`, `audit`, `list`. There is no `send` / `dispatch` path in `email-drip` today.
+
+That means **the dispatch link this skill describes ("dispatches matched campaigns via email-drip skill") does not yet exist in code**. The conceptual contract still stands — lifecycle-email scans Zergalytics events and hands campaigns off to email-drip for transport — but the transport-side `send` verb will be reimplemented in a future Phase 3 lifecycle-email build (Day 91–180 window), at which point the bash examples below will be re-checked against the then-current `email-drip` runtime.
+
+Until that reimplementation lands, treat every `python3 ~/.claude/skills/lifecycle-email/run.py …` invocation below as design-intent, not callable code.
 
 ## Three campaign families
 

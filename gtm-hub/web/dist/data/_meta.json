@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-06-08T08:24:59Z",
+  "present": [
+    "index.json",
+    "decisions.json",
+    "zergboard-cards.json"
+  ],
+  "missing": [],
+  "types": {
+    "experiment": {
+      "label": "Experiments",
+      "emoji": "\ud83e\uddea"
+    },
+    "content": {
+      "label": "Content",
+      "emoji": "\ud83d\udcdd"
+    },
+    "prospect": {
+      "label": "Solutions",
+      "emoji": "\ud83d\udcbc"
+    },
+    "bd_target": {
+      "label": "BD",
+      "emoji": "\ud83e\udd1d"
+    },
+    "launch": {
+      "label": "Launches",
+      "emoji": "\ud83d\ude80"
+    },
+    "theme": {
+      "label": "Themes",
+      "emoji": "\ud83e\udded"
+    },
+    "metric": {
+      "label": "Metrics",
+      "emoji": "\ud83d\udcca"
+    },
+    "workstream": {
+      "label": "Workstreams",
+      "emoji": "\ud83e\uddf1"
+    }
+  }
+}

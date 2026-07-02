@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 9,
+    "color": 9,
+    "density": 8,
+    "voice": 9
+  },
+  "reasoning": {
+    "typography": "Letter-spaced uppercase wordmark with refined serifs for body text \u2014 shows discipline, though not wildly characterful",
+    "hierarchy": "Single dominant element (wordmark), clean visual silence, though minimal hierarchy to test since there's almost no content",
+    "distinctiveness": "Absolutely distinctive \u2014 dark blue void, centered minimal contact info, no marketing speak. Could not swap for another fund",
+    "color": "Monochromatic dark blue/light blue \u2014 extreme restraint, zero decoration, accent used sparingly for links",
+    "density": "Confident emptiness with tiny centered content block \u2014 anti-density as statement, not timidity",
+    "voice": "Radical departure from fund stencil \u2014 no 'portfolio', no 'team', no 'thesis'. Pure confidence through silence"
+  },
+  "winning_patterns": [
+    "Emptiness as power move \u2014 the vast dark blue field communicates confidence",
+    "Anti-marketing stance \u2014 just addresses and a Twitter link, no persuasion",
+    "Centered minimal vcard pattern \u2014 old-school business card formality",
+    "Monochromatic color discipline \u2014 single blue, no gradients or decoration",
+    "Letter-spaced uppercase logo treatment \u2014 architectural restraint"
+  ],
+  "anti_patterns": [
+    "Border around logo feels slightly decorative/unnecessary",
+    "Copyright year script slightly precious for such a minimal site",
+    "Link underline treatment inconsistent (some links styled differently)",
+    "Could argue the emptiness is style over substance \u2014 no actual information provided"
+  ],
+  "one_word_personality": "austere",
+  "_url": "https://benchmark.com",
+  "_persona": "fund",
+  "_note": "Restrained, partner-driven",
+  "_graded_at": "2026-05-07T19:56:32.243826Z"
+}

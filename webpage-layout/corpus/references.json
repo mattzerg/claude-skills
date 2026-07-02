@@ -1,0 +1,86 @@
+{
+  "personal": {
+    "description": "Operator / investor / designer personal sites. The closest analogues for matteisn.com.",
+    "urls": [
+      {"url": "https://frankchimero.com", "note": "Designer, idiosyncratic structure, custom type"},
+      {"url": "https://jasonsantamaria.com", "note": "Designer, single-font system, careful kerning"},
+      {"url": "https://robinrendle.com", "note": "Bold pull quotes, voice-driven structure"},
+      {"url": "https://elad.com", "note": "Investor, content-led, restrained"},
+      {"url": "https://naval.com", "note": "Investor, philosophical, minimal chrome"},
+      {"url": "https://cdixon.org", "note": "Investor, blog-first, simple"},
+      {"url": "https://paulgraham.com", "note": "Investor, essays, extreme density"},
+      {"url": "https://sahillavingia.com", "note": "Operator-investor (Gumroad)"},
+      {"url": "https://harshjv.com", "note": "Premium personal feel without templates"},
+      {"url": "https://sive.rs", "note": "Derek Sivers — extreme content density, opinionated"},
+      {"url": "https://www.benkuhn.net", "note": "Anthropic ChiefStaff — analytical, essay-driven"},
+      {"url": "https://jvns.ca", "note": "Julia Evans — hand-drawn, distinctive voice"},
+      {"url": "https://cassidoo.co", "note": "Cassidy Williams — colorful + structured"},
+      {"url": "https://blog.pragmaticengineer.com", "note": "Gergely Orosz — newsletter-first"}
+    ]
+  },
+  "fund": {
+    "description": "VC fund sites. Reference for vang.capital.",
+    "urls": [
+      {"url": "https://benchmark.com", "note": "Restrained, partner-driven"},
+      {"url": "https://foundersfund.com", "note": "Bold typography, narrative hero"},
+      {"url": "https://sparkcapital.com", "note": "Restraint over pomp"},
+      {"url": "https://www.usv.com", "note": "Blog-first, fund-second"},
+      {"url": "https://www.generalcatalyst.com", "note": "Premium without busy"},
+      {"url": "https://thrivecap.com", "note": "Image-led, polished"}
+    ]
+  },
+  "advisory": {
+    "description": "Consultancy/agency sites. Reference for vangadvisory.com.",
+    "urls": [
+      {"url": "https://www.pentagram.com", "note": "Case-study-led, premium"},
+      {"url": "https://thoughtbot.com", "note": "Services structure done well"},
+      {"url": "https://work.co", "note": "Black-tie agency feel"},
+      {"url": "https://high-resolution.studio", "note": "Bold but not templated"}
+    ]
+  },
+  "brand_product": {
+    "description": "Brand-strong product sites for visual reference (gradients, type, hero treatments).",
+    "urls": [
+      {"url": "https://linear.app", "note": "Refined product brand"},
+      {"url": "https://stripe.com", "note": "Type-led, restrained"},
+      {"url": "https://vercel.com", "note": "Bold gradients, brand-strong"},
+      {"url": "https://mercury.com", "note": "Editorial confidence, custom type"},
+      {"url": "https://www.anthropic.com", "note": "Editorial, custom serif, restrained"},
+      {"url": "https://openai.com", "note": "Minimal, content-first"},
+      {"url": "https://www.notion.so", "note": "Brand-strong, illustration-led"},
+      {"url": "https://www.figma.com", "note": "Vibrant, playful product brand"},
+      {"url": "https://plaid.com", "note": "Fintech polish"},
+      {"url": "https://resend.com", "note": "Modern dev brand"},
+      {"url": "https://supabase.com", "note": "Open-source dev brand, dark"},
+      {"url": "https://modal.com", "note": "Distinctive type + grid"},
+      {"url": "https://railway.com", "note": "Bold gradients, brand-forward"},
+      {"url": "https://fly.io", "note": "Type-only, opinionated"},
+      {"url": "https://cursor.com", "note": "AI code editor — direct Zerg adjacency"},
+      {"url": "https://codeium.com", "note": "AI dev tools peer"},
+      {"url": "https://www.perplexity.ai", "note": "AI search peer"},
+      {"url": "https://claude.ai", "note": "Anthropic product surface"},
+      {"url": "https://www.cohere.com", "note": "AI infra peer"},
+      {"url": "https://replit.com", "note": "AI dev environment, brand-strong"}
+    ]
+  },
+  "design_forward": {
+    "description": "Bold + colorful sites — gradient meshes, motion, full-bleed bands, dramatic typography. Reference for the 'eye-catching' lift direction; pairs with `recipes/visual-richness.md`.",
+    "urls": [
+      {"url": "https://mercury.com", "note": "Dark hero, neon accent strokes, big-number callouts"},
+      {"url": "https://linear.app", "note": "Gradient meshes, smooth scroll reveals, refined motion"},
+      {"url": "https://vercel.com", "note": "Bold mono typography, gradient hero, motion accents"},
+      {"url": "https://framer.com", "note": "Heavy motion, animated hero, scroll-driven choreography"},
+      {"url": "https://www.ramp.com", "note": "Big numbers, photography, bold full-bleed strips"},
+      {"url": "https://raycast.com", "note": "Color-rich, illustrated screens, gradient meshes"},
+      {"url": "https://www.runwayml.com", "note": "Video-led hero, dramatic dark gradients"},
+      {"url": "https://stripe.com", "note": "Shifting gradients, oversized stat moments"},
+      {"url": "https://www.lovable.dev", "note": "Color-rich, motion-rich AI builder brand"},
+      {"url": "https://www.granola.ai", "note": "Bold gradient hero, animated SVG marks"},
+      {"url": "https://attio.com", "note": "Dark gradient, glass-morph cards, motion"},
+      {"url": "https://www.attio.com", "note": "Dup-fallback for redirect flakiness"},
+      {"url": "https://yacine.work", "note": "Personal-bold blend, dramatic typography"},
+      {"url": "https://karri.io", "note": "Animated hero, color-shifting"},
+      {"url": "https://mariusniveri.com", "note": "Personal-bold blend, full-bleed photo + motion"}
+    ]
+  }
+}

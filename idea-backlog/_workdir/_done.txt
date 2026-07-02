@@ -1,0 +1,776 @@
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/CaseStudies/durable/_archive/v2-harness.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/CaseStudies/durable/migration.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Consulting/Zerg-Solutions.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Consulting/Zerg-Solutions.one-pager-v2-2026-05-07.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Consulting/Zerg-Solutions.one-pager.interview-2026-05-07.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Consulting/Zerg-Solutions.one-pager.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Consulting/Zerg-Solutions.one-pager.review-2026-05-07.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Consulting/cro-audit-2026-05-07.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Consulting/positioning.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Consulting/session-summary.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Consulting/solutions-analytics-dashboard-spec-2026-05-09.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Epoch/Projects/Client Pipeline.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Epoch/Projects/Linear Snapshot.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Epoch/Projects/Product Glossary.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Epoch/Projects/Zergboard Snapshot.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Epoch/Team/Matthew Eisner — Work Log.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Landing/zergwallet/v1-2026-05-03-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/AgentCounter/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/AgentRoster/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/CostCalculator/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/CostCalculator/brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/blog.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/communities.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/hn.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/idan-repost.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/internal-slack.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/linkedin.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/newsletter-pitches.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/outbound-snippet.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/reddit-niche.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/sales-deck.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/video-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/webinar.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/x-thread.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/agents-that-remember/zerg-newsletter.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/blog.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/communities.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/hn.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/idan-repost.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/internal-slack.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/linkedin.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/newsletter-pitches.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/open-decisions.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/outbound-snippet.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/reddit-niche.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/rollout-calendar.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/sales-deck.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/slip-recovery.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/video-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/webinar.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/x-thread.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/zerg-newsletter.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/durable-pattern-tools-launch/zergboard-card-spec.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/blog.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/communities.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/hn.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/idan-repost.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/internal-slack.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/linkedin.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/newsletter-pitches.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/outbound-snippet.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/reddit-niche.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/sales-deck.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/video-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/webinar.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/x-thread.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/sample-post/zerg-newsletter.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Distribution/zerg-solutions-founder-email.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Email/Newsletters/issue-001.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Email/Sequences/welcome-drip/email-1-welcome.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Email/Sequences/welcome-drip/email-2-nudge.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Email/Sequences/welcome-drip/email-3-done-column.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Email/Sequences/welcome-drip/email-4-ai-access.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Email/Sequences/welcome-drip/email-5-how-we-use-it.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Email/Sequences/welcome-drip/email-6-winback.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Email/sent-log.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/HomepageV2/zergai-homepage-v2-proposal.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/IdentityCard/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/InstagramAIProjects/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/InstagramAIProjects/account-setup.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/InstagramAIProjects/backlog.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/InstagramAIProjects/matthew-zerg-positioning.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/InstagramAIProjects/post-template.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/InstagramAIProjects/production-sop.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/InstagramAIProjects/tools/ReceiptGenerator/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/InstagramAIProjects/voice-guide.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/InstagramAIProjects/week-1-script-pack.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/InstagramAIProjects/week-2-script-pack.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/LiveDemo/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/MigrationTool/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PMM/zergalytics-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PMM/zergboard-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PMM/zergcal-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PMM/zergchat-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PMM/zergcrm-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PMM/zergmail-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PMM/zergmeeting-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/asana-vs-zergboard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/calendly-vs-zergcal.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/claude-code-agents-on-zergboard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/distribution-playbook.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/front-vs-zergmail.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/agents-that-remember-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/asana-vs-zergboard-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/calendly-vs-zergcal-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/front-vs-zergmail-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/jira-vs-zergboard-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/linear-vs-zergboard-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/meeting-ends-cards-appear-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/notion-vs-zergboard-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/otter-vs-zergmeeting-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/project-boards-built-for-agents-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/slack-vs-zergchat-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/what-is-agent-native-project-management-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/zerg-and-anthropic-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/zerg-and-cloudflare-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/zerg-and-cursor-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/zerg-and-fly-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/zerg-and-vercel-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/zergboard-launch-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/imagery/zergboard-public-launch-imagery-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/jira-vs-zergboard-pricing-verification.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/jira-vs-zergboard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/linear-vs-zergboard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/notion-vs-zergboard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/otter-vs-zergmeeting.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/publish-blockers-checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/redirect-rules-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/session-handoff-2026-05-08.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/slack-vs-zergchat.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/what-is-agent-native-project-management.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/zerg-and-cloudflare.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/zerg-and-cursor.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/zerg-and-fly.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PSEO/zerg-and-vercel.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/PublicDashboard/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Quiz/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/Outreach/BD/anthropic.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/Outreach/BD/cloudflare.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/Outreach/BD/cursor.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/Outreach/BD/fly.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/Outreach/BD/vercel.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/Outreach/warm-network-solutions-sequence.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/battle-cards.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/discovery-deck-source.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/discovery-script.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/objection-doc.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/SalesEnablement/one-pager.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Templates/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/Tools/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Marketing/audits/solutions-cro-audit-v1-2026-05-07.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/MatthewZerg/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/MatthewZerg/builds/correct-is-not-usable-card/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/MatthewZerg/builds/fake-demo-detector/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/MatthewZerg/builds/flappy-tiny-space-wizard/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/MatthewZerg/builds/receipt-generator/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/MatthewZerg/content/backlog/backlog.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/MatthewZerg/content/scripts/launch-scripts.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/2026-05-03 GoDaddy DNS handoff for Idan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/b2b-conversations.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/b2b-landing-page.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/b2b-process.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/content-topics.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/design-specs.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/design-work-week-of-25-sept.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/din.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/dinari-b2b.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/dinari-to-do.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/dinarisv-planning.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/discord-rules.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/korea-blockchain-week-notes.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/legals.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/market-insights.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/messagesusps-to-test.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/micro-actions.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/plan-for-dex-liquidity.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/prds.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/press-outreach-email.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/product-feedback.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/referral-program.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/solidviolet-b2b.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/solidviolet-marketing.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/sv-core-statementsinfo.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/to-discuss-with-brandon.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/to-discuss-with-jake.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/top-to-do.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari/websiteproduct-mapping.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari-b2b/b2b-messages.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari-b2b/b2b-process.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari-b2b/dinari-b2b.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/dinari-b2b/other-partners.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/13btc-pool.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/1545-east-andrew-johnson-highway-greenville-tennessee.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/44039-177.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/4727-inspection.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/4727-nick-handyman-tasks.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/4727-note.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/4727-shopping-list.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/4727-tax-filing-details.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/4727-to-do.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/4727.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/4727a-message.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/analytics.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/anna-call.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/api-to-sdk.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/arbitrum-stip-kyb.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/arbitrum.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/b2b-acquisition-via-plume.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/b2b-for-gabe.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/b2b-partner-and-other-research.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/b2b-referral-ideas.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/b2b-updates.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/b2c-product-planning.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/base-ideas.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/base-notes.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/bd-message-templates.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/berry-outreach.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/blast.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/blight-ticket-defense.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/boilerplate-messages.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/brian-taxaccounting-notes.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/brian.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/business-ideas.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/bvi-costs.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/call-notes.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/calvin.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/cex.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/chatgpt-job-ai-to-do.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/chicken-tikka.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/coingecko.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/coinmarketcap-prompt.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/coinstore.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/com.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/consulting.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/coral.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/core-ideas.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/crackpot-venture-ideas.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/credible-finance.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/crypto-storage-options-for-dad.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/d-token-economic-flowslevers.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dad-bvi-reimbursement.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dad-letter.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dadfinances-ideas.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/delta-complaint.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-b2b-api-one-pager.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-drip-onboarding.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-for-fintech-businesses.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-fundraising-strategy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-handoff.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-hydra-x-one-pager.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-positioning-feedback.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-project-management.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-sdk-partner-onboarding-process.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-to-do.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinari-triage.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinarisv-priorities-july-2024.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dinarisv-task-planning.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/diversify-your-on-chain-portfolio-into-real-world-assets-with-us-stocks.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/dont-look-now-but-the-table-next-to-us-both-mom-and-daughter.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/fantasy-football-dis-track.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/finance-to-do.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/follow-ups-for-28-may.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/follow-ups.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/for-4727.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/for-anna.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/for-avalanche.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/for-brandon.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/for-cv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/for-one-pagers.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/for-planning.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/gabe-note.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/garrett-marketing-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/genevieve.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/glystn-notes.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/gm.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/gma.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/groceries.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/has-worked-on-my-personal-residence-and-a-multi-unit-rental-i-own.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/health-message.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/hey-josh.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/hi-here-are-my-account-details.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/house-to-do.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/how-about-yall-get-a-fucking-job-no-wonder-why-europe-is-economically.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/idan-actuator-production.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/inveritai.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/jan-4-2026.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/jazzy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/job-huntlondon-outreach.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/jobbio.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/julyaug.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/kevin-b2b-messages.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/kyb-questions.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/lazer-interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/leads-to-process.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/legal-questions.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/lharganlibertytitle.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/list-of-service-offerings-for-eric.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/liz-and-kevin-wedding-gift.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/london.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/main-protocol-token-cspt.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/man.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/marketing-team-planning.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/messages.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/messaging-workbook.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/michigan-sos-drivers-license-docs.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/montagzach-moonshot.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/nolan-call.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/onboarding-prd.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/organizingoutsourcinghelp.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/p.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/pawel-halina-meeting-32620.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/personal-finance-benchmark-items.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/planning-update.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/plume-interviews.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/potential-b2b-leads-q4-2023.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/product-marketing-roadmap.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/rachel-notes.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/real-estate.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/reddit.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/remora.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/rewards-campaigns.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/sbt-tasks-to-backlog.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/sierra-abroad-topicsimportant-items.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/sierra-cv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/sierra-on-trip.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/sierra-planningdiscussion.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/sierra-to-do.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/sierra-wrap-upitems-taken.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/so-now-we-know-they-all-had-just-as-much-sex-as-usbut-is-my-vagine.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/solidviolet-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/solidviolet-tokenlegals.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/spend-requests.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/stanley-security-deposit.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/startup-calls.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/sv-legal-process.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/sv-sale-to-do-22-jun.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/tasks-for-nigerian-kid.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/tech-triageeng-sprint-planning.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/the-art-of-reason-in-2025.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/thought-experiments-ideas.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-discuss-w-calvin.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-discuss-with-anna.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-discuss-with-davis.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-1-dec.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-18-july-2025.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-20-jan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-20-nov.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-31-mar-2026.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-7-july.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-8-nov-weekend.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-before-leaving-fl.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-feb-2026.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-march-2026-in-florida.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-nyc.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do-thanksgiving.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-do.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/to-send-to-eric.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/tokenize-this.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/topics-for-dad-in-bvi.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/unemployment.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/uofm-scholarship.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/urgent-gift-card-to-dos-16-mar.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/what-is-mvp-components.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/whitepapertoken.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/yauchta.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/young.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/notes/zerg-new.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/relayto/best-practices-tutorial-doc.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/sierra/bettering-our-relationship.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/sierra/funnyeasycuteto-share.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/sierra/heavyimportant.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/sierra/how-you-can-help-me.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/sierra/mediumfacts.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/sierra/sierra.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/sierra/stories.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/sierra/topics-to-cover.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/startupbootcamp/highest-funding-raised.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/startupbootcamp/jpmorgan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/startupbootcamp/sew-handles.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/startupbootcamp/sophie-chat.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/touch-surgery/dynamic-links.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/touch-surgery/events-chile-and-row.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/touch-surgery/human-capitalknowledge-economy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/touch-surgery/old-to-do-for-touch-surgery.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/touch-surgery/passwords.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/touch-surgery/pure360.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/touch-surgery/ts-how-to-reward-evangelists.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/touch-surgery/ts-passwords.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/touch-surgery/ux-review-procedures-pages-web.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/weekly-calls/dinari-weekly-updates.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/weekly-calls/to-discuss-w-davis.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/weekly-calls/to-discuss-w-gabe.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/weekly-calls/to-discuss-with-chas.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/weekly-calls/to-discuss-with-garrett.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/weekly-calls/to-discuss-with-simon.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/weekly-calls/to-discuss-with-young.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/weekly-calls/weekly-b2b-calls.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/zerg/zerg-actions-and-operations.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/zerg/zerg-cloud-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/zerg/zerg-connections.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/zerg/zerg-marketing.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/zerg/zerg-notes.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Apple Notes/zerg/zerg-questions.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/business-idea-validatormodellerpitch-creator/biz-ideas.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/career-cv/career.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/content-ingestion/building-a-content-recommendation-knowledge-base.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/content-ingestion/content-archive.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/d4727-llc/d4727-llc-property-management-knowledge-base.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/d4727-llc/project-improvement-suggestions.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/misc/ai-agents-and-their-role-in-the-ai-ecosystem.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/misc/cheapest-skyteam-and-delta-flights-to-europe-from-detroit.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/misc/nudge-agent.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/misc/organizing-notes-for-new-chief-of-staff-role-at-zergepoch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/misc/should-i-claim-my-16k-porch-damage-on-insurance.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/misc/video-summary-request.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/personal-comms-center/crm.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/zerg/ai-solutions-with-forward-deployed-engineers.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/zerg/organizing-zerg-onboarding-notes.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/zerg/scaling-infrastructure-and-marketing-for-zerg.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Claude Imports/zerg/zerg-cloud-product-launch-strategy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Finance Hub.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Interview Prep.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Testimonials.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Notes/Zerg Notes (organized).md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Academy/Academy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Academy/ZergScholar.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Academy/ZergSchool.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Academy/ZergUniversity.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/D4727 Knowledge Base.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zergboard + Zerglytics Deploy Guide.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zergwallet.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/andesite/delivery-engagement.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/andesite/delivery-engagement.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/andesite/session-summary.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/andesite-capture-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/andesite.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/cesiumastro/delivery-engagement.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/cesiumastro/delivery-engagement.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/cesiumastro/session-summary.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/cesiumastro-capture-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/cesiumastro.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/durable/delivery-engagement.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/durable/delivery-engagement.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/durable/session-summary.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/durable-capture-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Case-Studies/durable.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/ada-scorecard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/clay-scorecard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/decagon-scorecard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/gumloop-scorecard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/lindy-scorecard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/parloa-scorecard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/polyai-scorecard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/sierra-scorecard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/warp-scorecard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/accounts/clay.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/accounts/decagon.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/accounts/factory.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/accounts/lindy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/accounts/sierra.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/agent-ops-map.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/buyer-research.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/contact-finding-sop.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/contact-route-verification.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/contact-verification-worksheet.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/conversion-likelihood.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/experiment-logging.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/final-drafts.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/form-route-copy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/form-route-experiment.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/idan-review/agent-ops-outreach-copy-review-2026-05-08.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/linkedin-variants.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/matt-input-worksheet.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/micro-batch-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/no-send-rules.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/operator-variants.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/pre-send-qualification.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/ready-linkedin-queue.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/reply-bridges.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/reply-decision-tree.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/reviews/fakeidan-prose-manual-2026-05-07.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/reviews/fakematt-copyedit-manual-2026-05-07.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/route-search-log.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/route-specific-followups.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/second-wave-targets.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/segment-routing.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/send-decision-checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/sendability-sop.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/sequence.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/today-dashboard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/tracker.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/_inspiration-from-prior-marketing-docs.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/_ship-inventory.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/bd-targets.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/bd-touch-log.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/agent-native-apis.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/agents-that-remember.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/ai-systems-mission-critical.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/alphaevolve.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/rlm.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/svraster.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/vampire-pricing.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/zergalytics-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/zergboard-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/zergcal-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/zergchat-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/zergmail-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/zergmeeting-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/zergsend-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/zergwallet-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/zstack-bundle-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content/zstack-interconnect.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/content-calendar.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/durable-pattern-hacks.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/_template.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-001.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-002.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-003.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-004.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-005.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-006.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-007.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-008.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-009.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-010.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-011.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-012.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-013.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-014.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-015.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-016.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-017.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-018.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-019.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-020.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-021.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-022.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-023.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-024.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-025.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-026.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-027.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-028.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-029.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-030.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-031.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-032.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-033.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-034.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-035.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-036.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-037.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-038.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-039.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-040.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-041.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-042.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-043.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-044.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-045.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-046.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments/exp-047.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/experiments.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/funnels/_runs/solutions-2026-05-07.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/journeys/_format.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/journeys/solutions-buyer.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/journeys/zergboard-icp.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/links.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-06-bolt-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-06-lovable-brief.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-06-lovable-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-bolt-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-bolt-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-clay-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-clay-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-codegen-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-codegen-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-cognition-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-cognition-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-cursor-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-cursor-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-decagon-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-decagon-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-devin-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-devin-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-dust-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-dust-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-factory-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-factory-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-first-wave-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-gumloop-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-gumloop-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-lindy-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-lindy-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-lovable-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-maven-agi-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-maven-agi-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-replit-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-replit-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-sierra-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-sierra-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-tembo-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-tembo-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-v0-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-v0-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-warp-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-warp-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-wordware-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-wordware-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-zencoder-draft-mv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospecting-runs/2026-05-07-zencoder-draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/prospects.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/themes.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/utm-convention.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/weekly/2026-05-05.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/weekly/2026-05-06.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Growth/weekly/2026-05-09.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Integration.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Pricing-Snapshot.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Solutions/agent-ops-audit.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Solutions/agent-ops-audit.one-pager-v1-2026-05-07.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Solutions/zergboard-rollout-sprint.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/ZMsg.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/ZergBox.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/ZergCRM.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/ZergCal.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/ZergChat-Angle.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/ZergChat.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/ZergMail.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/ZergMeeting.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/ZergStack.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/ZergStack.one-pager.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Zergalytics-multitenant-auth-plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Zergalytics.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Zergboard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Zergwallet.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/Zstack.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/audit-sweep-2026-05-07.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/session-summary.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/zergaudience-audience-taxonomy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/zerglytics-deploy-runbook.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/zerglytics-fly-migration-runbook.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/business-idea-validator.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/career-cv.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/content-ingestion.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/d4727-llc.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/idea-backlog.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/inbound-handling.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/personal-comms-center.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/zerg.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Correct-Is-Not-Usable/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Correct-Is-Not-Usable/_index.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Correct-Is-Not-Usable/discussion.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Correct-Is-Not-Usable/hypothesis.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Correct-Is-Not-Usable/paper/draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Correct-Is-Not-Usable/progress.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Correct-Is-Not-Usable/protocol.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Correct-Is-Not-Usable/results.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/README.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/_index.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/configs/judge_rubric.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/configs/open_ended_judging_instructions.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/discussion.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/feedback/fakeidan/draft.fakeidan-prose.2026-05-09.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/feedback/fakematt/draft.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/feedback/fakematt/draft.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/feedback/fakematt/session-summary.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/feedback/feedback-applied-2026-05-09.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/feedback/review-summary.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/hypothesis.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/paper/draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/progress.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/protocol.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Experiments/Prompt-Tone-Cost-Paper/results.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Research/Research Index.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Roadmap/2026-05-03-zergboard-roadmap.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Roadmap/2026-05-03-zergwallet-roadmap.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Roadmap/2026-05-07-zergboard-mcp-public-endpoints.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Tasks/inbox.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/AI Systems Mission-Critical — Anchor Research.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/AI Systems for Mission-Critical Work.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Agent-Native APIs.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergalytics--zergalytics.draft.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergalytics--zergalytics.draft.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergboard--channel-copy-v1.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergboard--channel-copy-v1.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergboard--copyedit-v1.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergboard--copyedit-v1.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergboard--zergboard-public-launch.draft.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergboard--zergboard-public-launch.draft.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergcal--ZergCal_Launch.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergcal--ZergCal_Launch.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergchat--ZergChat_Launch.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergchat--ZergChat_Launch.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergmail--zergmail.draft.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergmail--zergmail.draft.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergmeeting--ZergMeeting_Launch.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergmeeting--ZergMeeting_Launch.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergsend--zergsend.draft.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergsend--zergsend.draft.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergwallet--zergwallet.draft.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zergwallet--zergwallet.draft.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zstack-bundle--Zstack_Bundle_Launch.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/_reviews/zstack-bundle--Zstack_Bundle_Launch.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/durable-pattern-tools-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/session-summary.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergalytics.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergalytics.draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergboard-launch-campaign.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergboard-launch-channel-copy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergboard-public-launch.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergboard-public-launch.draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergboard-public-launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergmail.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergmail.draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergsend.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergsend.draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergwallet.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Launches/zergwallet.draft.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/LinkedIn About 2026-05-05.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Outreach/LP Re-engagement Template.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Published Writing.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Topic Queue.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Vampire Pricing.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/What AI Agents Get Wrong About Failure.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/ZergCal Launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/ZergChat Launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/ZergMeeting Launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Demo v14 Shot List.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Demo v14 — Reviews.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Demo v8 Storyboard.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — Asset Rebuild Plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — Claim Drift Sweep.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — Day-Of Fire Schedule.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — Editor Pitches.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — Reach Expansion Plan.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — Reddit HN Newsletter Drafts.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — SEO and Distribution Surfaces.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — Ship Checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — Slug Reconciliation Memo.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — Team Share Snippets.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch — UTM Links.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Site Copy Changes.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Site Drift Fixes (WEB-39).md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Welcome Drip — Templates.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard Welcome Drip.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard ZTC Companion (How it runs).md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergboard ZTC Companion — Pre-publish Checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergwallet Landing Copy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zergwallet Landing Page Copy.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zstack Bundle Launch.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zstack Interconnect.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zstack Microproduct Pricing (WEB-31).md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/Zstack Welcome Drip — Extensions.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/_reviews/ai-systems-mission-critical--copyedit-v1.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/_reviews/ai-systems-mission-critical--copyedit-v1.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/_thought-piece-template.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/agents-that-remember-copyedit-followup.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/exports/agents-that-remember.idan-applied-v1-2026-05-06.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/exports/agents-that-remember.idan-feedback-applied-v1-2026-05-06.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/exports/fakematt-copyedit/What_AI_Agents_Get_Wrong_About_Failure.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/exports/fakematt-copyedit/What_AI_Agents_Get_Wrong_About_Failure.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/exports/fakematt-copyedit/agents-that-remember.interview.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/exports/fakematt-copyedit/agents-that-remember.review.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Writing/exports/fakematt-copyedit/session-summary.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Zerg/Zerg.checklist.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Zerg/Zerg.one-pager.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Zerg/positioning.md
+/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Zerg/session-summary.md

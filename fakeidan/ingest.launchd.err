@@ -1,0 +1,61 @@
+[ingest] searching PRs with idanbeck activity, last 14d ...
+[ingest] found 44 PRs
+[ingest]   processed 10/44
+[ingest]   processed 20/44
+[ingest]   processed 30/44
+[ingest]   processed 40/44
+[ingest-slack] scanning 7 channels for Idan messages last 14d
+[ingest-slack]   dev: scanned 110 messages
+[ingest-slack]   dev_git: scanned 200 messages
+[ingest-slack]   andesite-internal: scanned 0 messages
+[ingest-slack]   growzth: scanned 127 messages
+[ingest-slack]   math-sci-topics: scanned 0 messages
+[ingest-slack]   lobby: scanned 0 messages
+[ingest-slack]   marketing: scanned 0 messages
+[ingest] searching PRs with idanbeck activity, last 14d ...
+[ingest] found 50 PRs
+[ingest]   processed 10/50
+[ingest]   processed 20/50
+[ingest]   processed 30/50
+[ingest]   processed 40/50
+[ingest]   processed 50/50
+[ingest-slack] scanning 7 channels for Idan messages last 14d
+[ingest-slack]   dev: scanned 110 messages
+[ingest-slack]   dev_git: scanned 200 messages
+[ingest-slack]   andesite-internal: scanned 0 messages
+[ingest-slack]   growzth: scanned 127 messages
+[ingest-slack]   math-sci-topics: scanned 0 messages
+[ingest-slack]   lobby: scanned 0 messages
+[ingest-slack]   marketing: scanned 0 messages
+[ingest] searching PRs with idanbeck activity, last 14d ...
+[ingest] found 41 PRs
+[ingest]   processed 10/41
+[ingest]   processed 20/41
+[ingest]   processed 30/41
+[ingest]   processed 40/41
+[ingest-slack] scanning 7 channels for Idan messages last 14d
+[ingest-slack]   dev: scanned 111 messages
+[ingest-slack]   dev_git: scanned 200 messages
+[ingest-slack]   andesite-internal: scanned 0 messages
+[ingest-slack]   growzth: scanned 127 messages
+[ingest-slack]   math-sci-topics: scanned 0 messages
+[ingest-slack]   lobby: scanned 0 messages
+[ingest-slack]   marketing: scanned 0 messages
+[ingest] cutoff=2026-06-13T10:46:36Z window=14d real-Idan comments=1
+[ingest-slack] scanning 7 channels for Idan messages last 14d
+[ingest-slack]   dev: scanned 112 messages
+[ingest-slack]   dev_git: scanned 200 messages
+[ingest-slack]   andesite-internal: scanned 0 messages
+[ingest-slack]   growzth: scanned 128 messages
+[ingest-slack]   math-sci-topics: scanned 0 messages
+[ingest-slack]   lobby: scanned 0 messages
+[ingest-slack]   marketing: scanned 0 messages
+[ingest] cutoff=2026-06-19T11:23:30Z window=14d real-Idan comments=0
+[ingest-slack] scanning 7 channels for Idan messages last 14d
+[ingest-slack]   dev: scanned 115 messages
+[ingest-slack]   dev_git: scanned 200 messages
+[ingest-slack]   andesite-internal: scanned 0 messages
+[ingest-slack]   growzth: scanned 129 messages
+[ingest-slack]   math-sci-topics: scanned 0 messages
+[ingest-slack]   lobby: scanned 0 messages
+[ingest-slack]   marketing: scanned 0 messages

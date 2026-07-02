@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Scriptwriter"
+  short_description: "Write sharp video scripts and narration."
+  default_prompt: "Use $video-scriptwriter to draft a product launch video script from this brief."

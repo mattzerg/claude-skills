@@ -23,9 +23,9 @@ import sys
 from pathlib import Path
 
 # Override with $ZERG_VAULT for non-author runs (S2 from fakeidan review).
-DEFAULT_VAULT = "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
+DEFAULT_VAULT = "/Users/mattheweisner/Obsidian/Zerg/MattZerg"
 VAULT = Path(os.environ.get("ZERG_VAULT", DEFAULT_VAULT))
-GROWTH_DIR = VAULT / "Projects" / "Zstack" / "Growth"
+GROWTH_DIR = VAULT / "Projects" / "Zerg-Production" / "Growth"
 JOURNEYS_DIR = GROWTH_DIR / "journeys"
 
 VALID_SHIP = ("live", "wip", "planned", "deprecated")

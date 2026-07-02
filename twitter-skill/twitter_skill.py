@@ -38,7 +38,7 @@ import re
 import secrets
 import sys
 import webbrowser
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
 from typing import Optional
@@ -254,7 +254,7 @@ def do_oauth_flow(client_config: dict) -> dict:
 
     # Calculate and store absolute expiry time
     if "expires_in" in tokens:
-        expiry = datetime.utcnow() + timedelta(seconds=tokens["expires_in"])
+        expiry = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(seconds=tokens["expires_in"])
         tokens["expiry"] = expiry.isoformat() + "Z"
 
     # Get user profile info
@@ -303,7 +303,7 @@ def refresh_tokens(client_config: dict, refresh_token: str) -> dict:
     tokens = response.json()
 
     if "expires_in" in tokens:
-        expiry = datetime.utcnow() + timedelta(seconds=tokens["expires_in"])
+        expiry = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(seconds=tokens["expires_in"])
         tokens["expiry"] = expiry.isoformat() + "Z"
 
     return tokens

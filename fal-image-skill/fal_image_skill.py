@@ -41,7 +41,22 @@ ASPECT_RATIO_TO_SIZE = {
 }
 
 
+def _load_zerg_secrets():
+    """Populate os.environ from ~/.config/zerg/secrets.env (gitignored, chmod 600). Fail-open."""
+    p = os.path.expanduser("~/.config/zerg/secrets.env")
+    try:
+        with open(p) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    except Exception:
+        pass
+
+
 def get_api_key():
+    _load_zerg_secrets()
     api_key = os.environ.get("FAL_KEY") or os.environ.get("FAL_API_KEY")
     if api_key:
         return api_key

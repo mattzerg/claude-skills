@@ -61,6 +61,11 @@ def _video_props(video_path: Path) -> dict:
     }
 
 
+def _has_audio_stream(video_path: Path) -> bool:
+    data = _ffprobe_json(video_path)
+    return any(stream.get("codec_type") == "audio" for stream in data.get("streams", []))
+
+
 def _scene_cuts(video_path: Path, threshold: float = 0.04) -> list[float]:
     """Return list of timestamps (seconds) where scene cuts occur.
     Threshold 0.04 catches crash cuts between similar-color frames
@@ -285,6 +290,15 @@ def check_hook_timing(video_path: Path) -> dict:
 
 def check_end_silence(video_path: Path) -> dict:
     p = _video_props(video_path)
+    if not _has_audio_stream(video_path):
+        return {
+            "name": "End-card silence (≥1s in last 3s)",
+            "passed": True,
+            "value": "no audio track (silent-first master)",
+            "expected": "silence on logo, or intentionally no audio track",
+            "fix": None,
+            "source": "product-video-skill doctrine: silent-first masters are valid for site-hero and muted-social variants",
+        }
     silences = _silence_segments(video_path)
     duration = p["duration"]
     # Find any silence overlapping the last 3s

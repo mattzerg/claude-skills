@@ -1,8 +1,9 @@
 ---
 name: growth-dashboard
-description: Generate the weekly Zerg growth dashboard — auto-posts every Monday 7am PT to Matt's Slack DM with the 11 priority lines (activated accounts, paid conversions, activation rate, top sources, active experiments, Solutions pipeline, case-study status, content distribution coverage, email program health, referral metrics, open question of the week). Reads Zergalytics public API + Growth/experiments.md + Zergboard cards (via zergboard-skill) + Stripe webhooks (when revenue live). Writes to MattZerg/Projects/Zstack/Growth/weekly/YYYY-MM-DD.md and posts to Fake Matt → Matt DM. Critical anti-drift guardrail — auto-posts whether or not Matt feels ready; embarrassing line items 3 Mondays in a row = forcing function. USE PROACTIVELY when Matt asks for the weekly review, "where are we", or before any growth meeting / phase gate.
+description: Generate the weekly Zerg growth dashboard — auto-posts every Monday 7am PT to Matt's Slack DM with the 11 priority lines (activated accounts, paid conversions, activation rate, top sources, active experiments, Solutions pipeline, case-study status, content distribution coverage, email program health, referral metrics, open question of the week). Reads Zergalytics public API + Growth/experiments.md + Zergboard cards (via zergboard-skill) + Stripe webhooks (when revenue live). Writes to MattZerg/Projects/Zerg-Production/Growth/weekly/YYYY-MM-DD.md and posts to Fake Matt → Matt DM. Critical anti-drift guardrail — auto-posts whether or not Matt feels ready; embarrassing line items 3 Mondays in a row = forcing function. USE PROACTIVELY when Matt asks for the weekly review, "where are we", or before any growth meeting / phase gate.
 allowed-tools: Bash, Read, Write
 ---
+
 
 # Growth Dashboard Skill (v0 stub — Phase 1 Day 3–7 build)
 
@@ -14,7 +15,7 @@ The measurement spine for the Zerg growth program. Plan: `~/.claude/plans/i-am-p
 
 ## What it produces
 
-A Markdown file at `MattZerg/Projects/Zstack/Growth/weekly/YYYY-MM-DD.md` with these 11 lines, in priority order:
+A Markdown file at `MattZerg/Projects/Zerg-Production/Growth/weekly/YYYY-MM-DD.md` with these 11 lines, in priority order:
 
 1. **Activated accounts this week** (signup + "aha" event)
 2. **Paid conversions** ($1, $9, $19 bundle, Enterprise) with net-new MRR + churn delta
@@ -54,9 +55,20 @@ Flags:
 
 If a data source is unavailable, render the line as `(no data — TODO: <source>)` instead of failing.
 
+### Zergalytics endpoint map (lines 1–4)
+
+| Line | Endpoint | Notes |
+| --- | --- | --- |
+| 1. Activated accounts | `GET /api/v1/stats/<event>?days=7` | Per-event count endpoint. Sums each spec's `line_1_activated_accounts` events (default `<slug>_aha`). Returns `{count, visitors, by_day[]}`. |
+| 2. Paid conversions | `GET /api/v1/stats/<event>?days=7` | Same endpoint; sums each spec's `line_2_paid_conversions` events (default `<slug>_pro_upgrade` + `<slug>_bundle_upgrade`). |
+| 3. Activation rate | `GET /api/site/funnel?domain=<d>&funnel=acquisition&days=7` | Reads first/last `steps[].count`; needs `zerglytics_domain` in the spec. |
+| 4. Top sources | `GET /api/v1/breakdown?event=<slug>_signup&dim=utm_source&top=3&days=7` | Breakdown endpoint with `dim` param. |
+
+The wide dashboard payload at `GET /api/v1/stats` (no event in path) is still used by the Zerglytics UI; the dashboard skill does not call it directly.
+
 ## Output destinations
 
-- **Primary**: `MattZerg/Projects/Zstack/Growth/weekly/YYYY-MM-DD.md`
+- **Primary**: `MattZerg/Projects/Zerg-Production/Growth/weekly/YYYY-MM-DD.md`
 - **Secondary**: Slack DM via `slack-skill` to Fake Matt → Matt DM (channel `D0B0T0ETDR8` per memory)
 - **Tertiary** (Phase 2): Zergboard card on the Growth board with the same content
 

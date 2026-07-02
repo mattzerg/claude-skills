@@ -16,11 +16,21 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from lib.capture import crawl_and_capture
+from lib.critique import DEFAULT_MODEL as CRITIQUE_DEFAULT_MODEL
 from lib.critique import critique_page, validate_findings
+
+# aitr-backed model defaulting for the critique phase (vision-heavy prose review).
+sys.path.insert(0, str(Path.home() / ".claude" / "skills" / "aitr" / "scripts"))
+try:
+    from skill_default import aitr_model_or  # type: ignore
+except ImportError:
+    def aitr_model_or(fallback, **kwargs):  # type: ignore
+        return fallback
 from lib.dedupe import dedupe_findings
 from lib.flows import confirm_flows, from_zstack, merge_flow_lists
 from lib.inconsistency import find_inconsistencies
 from lib.inputs import resolve
+from lib.static_capture import capture_static
 from lib.output import (
     build_principle_lookup,
     build_voice_lookup,
@@ -215,8 +225,12 @@ def main(argv=None) -> int:
             return 1
         print(f"[session] using {session_dir}")
 
-    print(f"[capture] crawling up to {args.max_pages} pages → {run_dir}")
-    captures = crawl_and_capture(target.canonical, run_dir, max_pages=args.max_pages, session_dir=session_dir)
+    if target.kind == "static":
+        print(f"[capture] static assets → {run_dir}")
+        captures = capture_static(target.static_paths or [target.canonical], run_dir)
+    else:
+        print(f"[capture] crawling up to {args.max_pages} pages → {run_dir}")
+        captures = crawl_and_capture(target.canonical, run_dir, max_pages=args.max_pages, session_dir=session_dir)
     print(f"[capture] captured {len(captures)} pages")
     if not captures:
         print("[capture] nothing captured — exiting")
@@ -228,6 +242,16 @@ def main(argv=None) -> int:
     principle_ids = _load_id_set(PRINCIPLES_CITATIONS, "principle_id")
     print(f"[corpus] voice quotes={len(voice_ids)} principles={len(principle_ids)}")
 
+    # Model resolution for the critique phase: aitr pick > lib default (loud fallback).
+    # vision required — critique reasons about screenshots + visual layout.
+    critique_model = aitr_model_or(
+        CRITIQUE_DEFAULT_MODEL,
+        task_kind="prose-review",
+        caller="fakematt-feedback",
+        quality_floor="medium",
+        modality_required="vision",
+    )
+
     all_findings: list[dict] = []
     all_rejected: list[dict] = []
     for cap in captures:
@@ -236,6 +260,7 @@ def main(argv=None) -> int:
         raw = critique_page(
             voice_block, principles_block, payload,
             persona=args.persona, target_kind=args.target_kind,
+            model=critique_model,
         )
         kept, rejected = validate_findings(raw, voice_ids, principle_ids)
         for f in kept:

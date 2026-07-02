@@ -1,8 +1,9 @@
 ---
 name: nano-banana-pro
-description: Generate images using AI. Use when the user asks to create, generate, or make images, pictures, graphics, illustrations, visuals, or artwork. Also use for image editing with reference images.
+description: Generate images using AI (Gemini image models). Second in the image-gen chain — `chatgpt-image-skill` is primary (Idan's stated preference); use this skill when OpenAI is rate-limited or its key is missing, and fall back to `fal-image-skill` when this one is rate-limited. Also use for image editing with reference images.
 allowed-tools: Bash, Read, Write
 ---
+
 
 # Nano Banana Pro - AI Image Generation
 

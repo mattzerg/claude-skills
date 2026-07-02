@@ -1,0 +1,7 @@
+interface:
+  display_name: "Fake Matt Personal"
+  short_description: "Draft personal email in Matt's voice"
+  default_prompt: "Use $fakematt-personal to draft or revise a personal or family email in Matt's voice."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,749 @@
+{
+  "name": "Daily",
+  "url": "https://www.daily.co",
+  "domain": "daily.co",
+  "scanned_at": "2026-06-01T06:26:25.767069",
+  "sources": {
+    "landing": {
+      "url": "https://www.daily.co",
+      "title": "Realtime voice, video, and AI for developers - Daily",
+      "text": "Realtime voice, video, and AI for developers - Daily\nWe use cookies to improve your experience. See our Privacy Policy for details.\nAccept\nDecline\nSign Up\nMenu\n/\nPlatform\nOpen Source\nPipeCat\nPipeCat Flows\nSmart Turn Model\nSmallWebRTC\nPipeCat Cloud\nGemini 2.0 SDKs\nOpenAI Audio Models\nDaily Video\nVideo SDK\nRecording\nPrebuilt\nAudio-Only\nLive Streaming\nSmallWebRTC\n/\nDocs\nPipeCat Cloud\nVideo SDK\nJoin Discord\n/\nMore\nNews\nBlog\nPartners\nSecurity\nCompany\n/\nPricing\nDaily Video\nPipeCat Cloud\nWebRTC Infrastructure\nCustomers\nContact Us\n/\nPlatform\nOpen Source\nPipeCat\nPipeCat Flows\nSmart Turn Model\nSmallWebRTC\nPipeCat Cloud\nGemini 2.0 SDKs\nOpenAI Audio Models\nDaily Video\nVideo SDK\nRecording\nPrebuilt\nAudio-Only\nLive Streaming\nSmallWebRTC\n/\nDocs\nPipeCat Cloud\nVideo SDK\nJoin Discord\n/\nCustomers\n/\nPricing\nDaily Video\nPipeCat Cloud\nWebRTC Infrastructure\n/\nMore\nNews\nBlog\nPartners\nSecurity\nCompany\nContact Us\nSign up\nRealtime voice, video, and AI at global scale\nBuild ultra low latency conversations. Global WebRTC infrastructure and enterprise reliability since 2016. Daily is the team behind Pipecat, the 100% open source framework for conversational AI.\nStart Building\nDocs\n[\nPLATFORM\n]\nPipecat\nPipecat is a vendor-neutral open source orchestration framework for realtime voice and multimodal AI agents.\nStart building\nPipecat Cloud\nDeploy voice AI agents built with Pipecat on Daily's global infrastructure.\nSign up\nDaily Infrastructure\nRun realtime calls on Daily's WebRTC global infrastructure. Deploy Pipecat-built agents on Daily transport. Our platform also supports building and hosting human/human calls.\nPipecat Transport\nMore about video integration\n[\nINFRASTRUCTURE\n]\nScale with Daily's Global Mesh Network\nSince 2016, our infrastructure and WebRTC-native SDKs deliver the best realtime experiences on every network, for every device, everywhere in the world.\n\nDaily's team includes authors of WebRTC standards, video technology pioneers, and engineers with deep experience in codecs, realtime networking, and infrastructure.\nLEARN MORE\n13ms\nMedian first-hop latency\nLowest latency realtime video and audio.\n75+\nGlobal points of presence\nBattle-tested multi-cloud architecture.\n4\u00d7\nBetter video resolution\nCompared to Agora in real-world network tests.\n2\u00d7\nFaster connection times\nOptimized connection establishment and routing.\n[\nENTERPRISE\n]\nEnterprise-grade security\nComprehensive data security, compliance, and uptime SLAs. Daily offers true end-to-end encryption, provides signed HIPAA BAAs, and operates under the EU-US Data Privacy Framework.\nVISIT OUR SECURITY CENTER\n99.99%\nService uptime\nSOC-2\nGDPR\nHIPAA\n[\nContributions\n]\nOpen Source\nDaily is a\nW3C WebRTC Working Group\nmember and maintains\nPipecat\n, an open-source framework for voice and multimodal AI.\nWe also contribute to several open-source projects, including\nMediasoup\nand\nGStreamer\n.\npipecat-ai/pipecat\nPython\n12584\n[\nGet Started\n]\nThe best realtime experiences run on Daily\nGet started for free\nSee our pricing\n\u00a9\n2026\nDAILY\n/\n\\\nNEWS\n/\n\\\nPARTNERS\n/\n\\\nSECURITY\n/\n\\\nPRIVACY\n/\n\\\nTERMS\nCompany logos and trademarks are property of their respective owners. Epic is a registered trademark of Epic Systems Corporation.",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.daily.co/pricing",
+      "title": "Pricing - Daily",
+      "text": "Pricing - Daily\nWe use cookies to improve your experience. See our Privacy Policy for details.\nAccept\nDecline\nSign Up\nMenu\n/\nPlatform\nOpen Source\nPipeCat\nPipeCat Flows\nSmart Turn Model\nSmallWebRTC\nPipeCat Cloud\nGemini 2.0 SDKs\nOpenAI Audio Models\nDaily Video\nVideo SDK\nRecording\nPrebuilt\nAudio-Only\nLive Streaming\nSmallWebRTC\n/\nDocs\nPipeCat Cloud\nVideo SDK\nJoin Discord\n/\nMore\nNews\nBlog\nPartners\nSecurity\nCompany\n/\nPricing\nDaily Video\nPipeCat Cloud\nWebRTC Infrastructure\nCustomers\nContact Us\n/\nPlatform\nOpen Source\nPipeCat\nPipeCat Flows\nSmart Turn Model\nSmallWebRTC\nPipeCat Cloud\nGemini 2.0 SDKs\nOpenAI Audio Models\nDaily Video\nVideo SDK\nRecording\nPrebuilt\nAudio-Only\nLive Streaming\nSmallWebRTC\n/\nDocs\nPipeCat Cloud\nVideo SDK\nJoin Discord\n/\nCustomers\n/\nPricing\nDaily Video\nPipeCat Cloud\nWebRTC Infrastructure\n/\nMore\nNews\nBlog\nPartners\nSecurity\nCompany\nContact Us\nSign up\n[\nPRICING\n]\nScale with Daily's flexible pricing\nView pricing for Daily Video SDK and Pipecat Cloud.\nVideo SDK\nBuild human-to-human video and audio calls.\nStarting with 10,000 free minutes/month\nPipecat Cloud\nDeploy voice AI agents built with Pipecat.\nUsage-based pricing, completely flexible stack\nWebRTC Infrastructure\nLeverage Daily's WebRTC infrastructure\nUsage-based pricing, discounts at scale\n[\nGet Started\n]\nNot sure what you need?\nGet started for free\nTalk to sales\n\u00a9\n2026\nDAILY\n/\n\\\nNEWS\n/\n\\\nPARTNERS\n/\n\\\nSECURITY\n/\n\\\nPRIVACY\n/\n\\\nTERMS",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://www.daily.co/changelog",
+      "title": "Changelog | Daily real-time video and audio API",
+      "text": "Changelog | Daily real-time video and audio API\nWe use cookies to improve your experience. See our Privacy Policy for details.\nAccept\nDecline\nSkip to main content\nDocs\nLog in\nSign up\nClose navigation\nClient SDKs\nPrebuilt\nMobile\nAudio Only\nPipecat & AI\nGuides\nReference Docs\nChangelog\nCommunity\nUpcoming Changes\nDaily.co\nHelp\nShow main navigation\nDocs\nGet started\nGuides\nReference\nBlog\nChangelog\nSearch\n\u2318\nK\nLog in\nSign up\nHome\nChangelog\nChangelog\nDaily supports versions of\ndaily-js\nand\nreact-native-daily-js\nreleased in the past six months.\nWe recommend updating your Daily libraries regularly to access our latest features and to ensure the version you are using is currently supported.\nRecent updates and improvements from our engineering team.\nApril 29 2026\n#077 - 2026-04-29\ndaily-react 0.25.0 adds multiple concurrent recording and streaming instances, daily-python 0.28.0 enables ABR by default and adds screen share custom tracks, plus new SIP dial-in/dial-out event fields and VCS streaming improvements.\nMarch 29 2026\n#076 - 2026-03-29\nSmaller call-machine bundle (~2MB less), VCS layout animations, configurable max API keys, and daily-js 0.81.0 minimum version bump.\nFebruary 24 2026\n#075 - 2026-02-24\nDTMF tone support for SIP calls, raw-tracks recording improvements, Krisp SDK lazy loading, and webhook event ID timestamps.\nJanuary 29 2026\n#074 - 2026-01-29\nRecording dataOutputs for transcripts and chat, cloud-audio-only recording, laptop lid session handling, CPU load detection improvements, and Kamailio call transfer support.\nDecember 19 2025\n#073 - 2025-12-19\nRecording-synchronized transcripts, gapless audio for raw-tracks, CPU warning notifications, and Prebuilt session resume and background effects fixes.\nNovember 20 2025\n#072 - 2025-11-20\nSIP codec negotiation, call transfer fixes, recording enhancements, and Prebuilt breakout room and screen sharing fixes.\nOctober 30 2025\n#071 - 2025-10-30\nNarrower CSP for video backgrounds, audio-only recording property, dynamic SIP dial-in endpoints, and telephony and recording fixes.\nSeptember 23 2025\n#070 - 2025-09-23\nPhone extension support for dial-out, Android 16KB page size compatibility, auto-start recording reliability, and new Picture-in-Picture events.\nAugust 26 2025\n#069 - 2025-08-26\nChrome 140 and Firefox 142 compatibility fixes, pre-join screen sharing, Krisp CPU overload handling, telephony improvements, and Prebuilt accessibility updates.\nJuly 28 2025\n#068 - 2025-07-28\nNew network status callbacks, improved telephony error handling, and platform-wide stability fixes.\nJune 29 2025\n#067 - 2025-06-29\nSIP/PSTN join-time permissions, React Native New Architecture support, recording and telephony improvements.\nMay 31 2025\n#066 - 2025-05-31\nMeeting move aware recording and streaming, new call transfer webhooks, improved telephony features, and platform-wide bug fixes.\nApril 30 2025\n#065 - 2025-04-30\nStability fixes for ejection logic and network states, Python custom audio tracks, enhanced recording webhooks, improved telephony features, and performance diagnostics for slow joins.\nMarch 30 2025\n#064 - 2025-03-30\nNew canReceive permission, dynamic track constraints, revamped network stats, enhanced telephony features (caller ID, SIP fixes), improved platform stability and compatibility (reconnection, ICE, and more), and security updates.\nJanuary 31 2025\n#063 - 2025-01-31\nNew transcription webhooks, better multi-instance recording support, improved telephony features, platform-wide bug fixes, and strengthened SDK reliability.\nNovember 25 2024\n#062 - 2024-11-25\nImproved recording recovery, support for virtual background and custom audio tracks on mobile SDKs, and various platform-wide improvements.\nOctober 17 2024\n#061 - 2024-10-17\nLots of updates in the last 3 months. Live transcriptions, PSTN and SIP, streaming and recording.\nJuly 5, 2024\n#060 - 2024-07-05\ndaily-js improves the precall network test method and adds support for multiple call instances.\nJune 5, 2024\n#059 - 2024-06-05\nDaily\u2019s client SDKs add support for a number of top feature requests as well as continue to add support for phone and SIP use cases.\nMay 1, 2024\n#058 - 2024-05-01\nDaily Adaptive Bitrate comes to daily-ios, daily-android, react-native-daily-js and is now the default setting for daily-js 1:1 calls.\nMarch 19, 2024\n#057 - 2024-03-19\nDaily\u2019s client SDKs add a number of new features including camera zoom and flashlight control on Android, VAD on Python, and two new participant events for webhooks.\nFebruary 22, 2024\n#056 - 2024-02-22\nDaily Prebuilt and daily-js now support Adaptive Bitrate, which automatically optimizes the quality of your calls.\nJanuary 25, 2024\n#055 - 2024-01-25\nThe latest update adds dial-in and dial-out support to Daily\u2019s SDKs\nDecember 22, 2023\n#054 - 2023-12-22\nAll SDKs add native real-time transcription support and background blur and effects are now GA for daily-js.\nDecember 6, 2023\n#053 - 2023-12-06\nA big release with a number of new features and improvements, including daily-ios screen sharing support and daily-android transcription support.\nNovember 9, 2023\n#052 - 2023-11-09\ndaily-python adds support for capturing individual audio tracks from a call and daily-js gets more call metrics improvements.\nOctober 17, 2023\n#051 - 2023-10-17\nThe latest update includes improved call metrics for daily-js and added screen share support for daily-android.\nSeptember 25, 2023\n#050 - 2023-09-25\nThe latest update includes HEVC recordings, new REST APIs, and plenty of internal improvements and bugfixes.\nSeptember 15, 2023\n#049 - 2023-09-15\nClient releases for Web, React Native, iOS, Android, and Daily React!\nAugust 28, 2023\n#048 - 2023-08-28\nThe latest updates include new precall methods and new audio level observer methods.\nJuly 28, 2023\n#047 - 2023-07-28\nRelease highlights for daily-android and daily-ios 0.9.0 and daily-react 0.11.0.\nJuly 25, 2023\n#046 - 2023-07-25\nreact-native-daily-js gets screen sharing support and both react-native-daily-js and daily-js get Advanced Network Controls.\nJune 30, 2023\n#045 - 2023-06-30\nDaily makes improvements to how local devices are accessed via shortcuts.\nJune 7, 2023\n#044 - 2023-06-07\ndaily-js gets new screen sharing controls \ud83d\udee0\ufe0f\nMay 17, 2023\n#043 - 2023-05-17\nDaily\u2019s iOS and Android mobile SDKs are now generally available! Check out the changelog to learn more.\nMay 01, 2023\n#042 - 2023-05-01\nThe latest updates to Daily\u2019s real-time audio and video APIs, including a new API to configure your send settings, improvements to Daily Prebuilt\u2019s breakout features, and lots of bugfixes.\nApril 03, 2023\n#041 - 2023-04-03\nThe latest updates to Daily\u2019s real-time audio and video APIs, including new features like noise cancellation, a CPU load event, breakout rooms in Daily Prebuilt, and a new Integrations API in Daily Prebuilt.\nMarch 15, 2023\n#040 - 2023-03-15\nThe latest updates to Daily\u2019s real-time audio and video APIs\nFebruary 28, 2023\n#039 - 2023-02-28\nThe latest updates to the Daily real-time audio and video API, including several API improvements, performance improvements, and bugfixes.\nFebruary 1, 2023\n#038 - 2023-02-01\nThe latest updates to the Daily real-time audio and video API.\nJanuary 18, 2023\n#037 - 2023-01-18\nThe latest updates to the Daily real-time audio and video API, including new REST API endpoints, improvements to daily-react, and longer streaming durations.\nDecember 23, 2022\n#036 - 2022-12-23\nThe latest updates to the Daily real-time audio and video API.\nDecember 6, 2022\n#035 - 2022-12-06\nThe latest updates to the Daily real-time audio and video API, including the ability to add custom tracks to your Daily call.\nNovember 14, 2022\n#034 - 2022-11-14\nThe latest updates to the Daily real-time audio and video API, including a new Daily React library to build custom video and audio experiences.\nOctober 17, 2022\n#033 - 2022-10-17\nThe latest updates to the Daily real-time audio and video API, including the ability to record individual media tracks to your own AWS S3 bucket.\nOctober 04, 2022\n#032 - 2022-10-04\nThe latest updates to the Daily real-time audio and video API, including new live streaming, recording, and a new REST API endpoint to send app messages.\nSeptember 26, 2022\n#031 - 2022-09-26\nThe latest updates to the Daily real-time audio and video API, including bugfixes and VCS improvements.\nSeptember 15, 2022\n#030 - 2022-09-15\nThe latest updates to the Daily real-time audio and video API, including a new permissions system and bugfixes.\nAugust 22, 2022\n#029 - 2022-08-22\nThe latest updates to the Daily real-time audio and video API, including bugfixes and streaming improvements.\nJuly 29, 2022\n#028 - 2022-07-29\nThe latest updates to the Daily real-time audio and video API, including performance and security improvements.\nJuly 07, 2022\n#027 - 2022-07-07\nThe latest updates to the Daily real-time audio and video API, including improvements to device management methods.\nJune 16, 2022\n#026 - 2022-06-16\nThe latest updates to the Daily real-time audio and video API, including a new pricing structure and improved large meeting support.\nMay 17, 2022\n#025 - 2022-05-17\nThe latest updates to the Daily real-time audio and video API, including new react-native-daily-js support.\nApril 14, 2022\n#024 - 2022-04-14\nThe latest updates to the Daily real-time audio and video API, including several bugfixes.\nMarch 30, 2022\n#023 - 2022-03-30\nIntroducing Daily Prebuilt's (beta) Picture in Picture controls! Plus, lots of configuration and API improvements.\nFeb 15, 2022\n#022 - 2022-02-15\nIntroducing server-side recordings in React Native Daily JS, and virtual backgrounds in Daily JS.\nJan 18, 2022\n#021 - 2022-01-18\nThe latest updates to the Daily real-time audio and video API, including gifs in Daily Prebuilt chat and a new daily-js error type.\nOct 28, 2021\n#020 - 2021-10-28\nThe latest updates to the Daily real-time audio and video API include background blur for Daily Prebuilt and more.\nSep 22, 2021\n#019 - 2021-09-22\nIntroducing beta Deepgram transcription, a show-local-video-changed event, getNetworkTopology() method, and more in the latest updates to the Daily real-time audio and video API.\nAug 17, 2021\n#018 - 2021-08-17\nControl how you receive video and audio tracks on a call, customize the number of participant videos displayed, and more updates to the Daily real-time audio and video WebRTC API.\nAug 03, 2021\n#017 - 2021-08-03\nThe latest improvements, including color theming, to Daily Prebuilt, a ready-to-use video chat app built on WebRTC that developers can plug into their websites and apps.\nJul 07, 2021\n#016 - 2021-07-07\nThe latest improvements to Daily Prebuilt, a ready-to-use video chat app built on WebRTC that developers can plug into their websites and apps.\nMay 28, 2021\n#015 - 2021-05-28\nThe latest engineering updates from the Daily real time video and audio API team.\nMay 13, 2021\n#014 - 2021-05-13\nThe latest engineering updates from the Daily real-time video and audio API team.\nApr 19, 2021\n#013 - 2021-04-19\nThe latest engineering updates from the Daily real-time video and audio API team.\nApr 05, 2021\n#012 - 2021-04-05\nThe latest engineering updates from the Daily real-time video and audio API team.\nMar 09, 2021\n#011 - 2021-03-09\nThe latest engineering updates from the Daily real-time video and audio API team.\nFeb 22, 2021\n#010 - 2021-02-22\nThe latest engineering updates from the Daily real-time video and audio API team.\nJan 08, 2021\n#009 - 2021-01-08\nThe latest engineering updates from the Daily real-time video and audio API team.\nDec 10, 2020\n#008 - 2020-12-10\nThe latest engineering updates from the Daily real-time video and audio API team.\nNov 11, 2020\n#007 - 2020-11-23\nDark mode! Events timeline! ...and so much more. Click to see what we&apos;ve been up to at Daily.\nOct 23, 2020\n#006 - 2020-10-23\nRead about a new /logs endpoint, updated dashboard, and react-native-daily-js in this week&apos;s changelog.\nSep 17, 2020\n#005 - 2020-09-17\nThe latest engineering updates from the Daily real-time video and audio API team.\nAug 11, 2020\n#004 - 2020-08-11\nWe're back after some well deserved time off! The last few weeks have been focused on call scaling, stability and behind-the-scenes work in preparation for bigger features that we&apos;ll soon be sharing.\nAug 03, 2020\n#003 - 2020-08-03\nThe focus of the latest release of the dashboard is providing insight into how you are interacting with the API. If you head to your dashboard, you will now see API logs!\nJul 07, 2020\n#002 - 2020-07-20\nThe latest engineering updates from the Daily real-time video and audio API team.\nJul 17, 2020\n#001 - 2020-07-17\nThe latest engineering updates from the Daily real-time video and audio API team.\nBuilt worldwide\nContact us\nAbout us\nPricing\nJobs",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://docs.daily.co",
+      "title": "Daily | API documentation",
+      "text": "Daily | API documentation\nWe use cookies to improve your experience. See our Privacy Policy for details.\nAccept\nDecline\nSkip to main content\nDocs\nLog in\nSign up\nClose navigation\nClient SDKs\nPrebuilt\nMobile\nAudio Only\nPipecat & AI\nGuides\nReference Docs\nChangelog\nCommunity\nUpcoming Changes\nDaily.co\nHelp\nShow main navigation\nDocs\nGet started\nGuides\nReference\nBlog\nChangelog\nSearch\n\u2318\nK\nLog in\nSign up\nGet started with Daily\nExplore all the ways to build or embed video and audio chat applications with the Daily API.\nDesign custom experiences\nCreate custom video and audio layouts with Daily's Client SDKs.\nGet started\nTry Demo\nEmbed a video chat widget\nAdd video calls to your app or website in minutes with Daily Prebuilt.\nGet started\nTry Demo\nREST API\nProgrammatically create rooms, tokens and more.\nView docs\nAudio-only\nBuild multi-platform audio-only communities with the Daily API.\nGet started\nTry demo\nMobile\nDevelop mobile applications using Daily SDKs.\nGet started\nTry demo\nPipecat & AI\nBuild AI-powered workflows for audio and video calls.\nGet started\nTry demo\nDemos\nAPI\nPrebuilt\nCreate a meeting room\nDemo a POST request to the /rooms endpoint, which creates a meeting room.\nThis demo generates a temporary room that will then be deleted.\nCreate POST request\nRequest\n1\ncurl\n--request\nPOST\n\\\n2\n--url\nhttps://api.daily.co/v1/rooms\n\\\n3\n--header\n'Authorization: Bearer $TOKEN'\n\\\n4\n--header\n'Content-Type: application/json'\n\\\nResponse\n1\n# Click the button to generate a sample response\nTutorials & Guides\nComparing Daily API configs: domain, room, tokens\n13 Jun 2022 \u2014 6 min read\nWebRTC vs WebSockets for voice AI\n28 Nov 2023 \u2014 4 min read\nBuilding a voicemail detection agent with Pipecat & Daily\n30 Jan 2025 \u2014 5 min read\nEnabling SIP/PSTN Dial-in & Dial-out for your Domain\n01 Jun 2025 \u2014 7 min read\nOverview\nGet started\nClient SDKs\nDaily Prebuilt\nAudio-only\nMobile\nREST API\nReference\nOverview\nREST API\ndaily-js\nreact-native-daily-js\ndaily-react\nGuides\nParticipant success\nSetting up calls\nControlling who joins a meeting\nHIPAA compliance\nOther links\nPricing\nBlog\nAI\nBuilt worldwide\nContact us\nAbout us\nPricing\nJobs",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.daily.co/integrations",
+      "title": "Not found - Daily",
+      "text": "Not found - Daily\nWe use cookies to improve your experience. See our Privacy Policy for details.\nAccept\nDecline\nSign Up\nMenu\n/\nPlatform\nOpen Source\nPipeCat\nPipeCat Flows\nSmart Turn Model\nSmallWebRTC\nPipeCat Cloud\nGemini 2.0 SDKs\nOpenAI Audio Models\nDaily Video\nVideo SDK\nRecording\nPrebuilt\nAudio-Only\nLive Streaming\nSmallWebRTC\n/\nDocs\nPipeCat Cloud\nVideo SDK\nJoin Discord\n/\nMore\nNews\nBlog\nPartners\nSecurity\nCompany\n/\nPricing\nDaily Video\nPipeCat Cloud\nWebRTC Infrastructure\nCustomers\nContact Us\n/\nPlatform\nOpen Source\nPipeCat\nPipeCat Flows\nSmart Turn Model\nSmallWebRTC\nPipeCat Cloud\nGemini 2.0 SDKs\nOpenAI Audio Models\nDaily Video\nVideo SDK\nRecording\nPrebuilt\nAudio-Only\nLive Streaming\nSmallWebRTC\n/\nDocs\nPipeCat Cloud\nVideo SDK\nJoin Discord\n/\nCustomers\n/\nPricing\nDaily Video\nPipeCat Cloud\nWebRTC Infrastructure\n/\nMore\nNews\nBlog\nPartners\nSecurity\nCompany\nContact Us\nSign up\nPage not found\nThe page you are looking for does not exist or has been moved.\n\u00a9\n2026\nDAILY\n/\n\\\nNEWS\n/\n\\\nPARTNERS\n/\n\\\nSECURITY\n/\n\\\nPRIVACY\n/\n\\\nTERMS",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/daily-co/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Getting my daily news from a dot matrix printer",
+          "url": "https://aschmelyun.com/blog/getting-my-daily-news-from-a-dot-matrix-printer/",
+          "points": 904,
+          "num_comments": 253,
+          "created_at": "2024-10-04T15:08:42Z",
+          "hn_url": "https://news.ycombinator.com/item?id=41742210"
+        },
+        {
+          "title": "Why We Terminated Daily Stormer",
+          "url": "https://blog.cloudflare.com/why-we-terminated-daily-stormer/",
+          "points": 857,
+          "num_comments": 1526,
+          "created_at": "2017-08-16T22:35:10Z",
+          "hn_url": "https://news.ycombinator.com/item?id=15031922"
+        },
+        {
+          "title": "Show HN: I've been writing daily TILs for a year",
+          "url": "https://github.com/jbranchaud/til",
+          "points": 819,
+          "num_comments": 150,
+          "created_at": "2016-02-09T21:25:51Z",
+          "hn_url": "https://news.ycombinator.com/item?id=11068902"
+        },
+        {
+          "title": "Why we ignore thousands of daily car crashes",
+          "url": "https://www.strongtowns.org/journal/2022/7/5/heres-why-we-respond-in-force-to-one-amtrak-crash-while-ignoring-thousands-of-daily-car-crashes",
+          "points": 798,
+          "num_comments": 979,
+          "created_at": "2022-07-21T18:31:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=32183007"
+        },
+        {
+          "title": "Feds Threatened to Fine Yahoo $250K Daily for Not Complying with NSA's PRISM",
+          "url": "http://www.wired.com/2014/09/feds-yahoo-fine-prism/",
+          "points": 784,
+          "num_comments": 237,
+          "created_at": "2014-09-12T00:01:53Z",
+          "hn_url": "https://news.ycombinator.com/item?id=8305925"
+        },
+        {
+          "title": "An updated daily front page of The New York Times as artwork on your wall",
+          "url": "https://alexanderklopping.medium.com/an-updated-daily-front-page-of-the-new-york-times-as-artwork-on-your-wall-3b28c3261478",
+          "points": 783,
+          "num_comments": 256,
+          "created_at": "2020-11-11T22:23:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25063726"
+        },
+        {
+          "title": "Claude Code daily benchmarks for degradation tracking",
+          "url": "https://marginlab.ai/trackers/claude-code/",
+          "points": 760,
+          "num_comments": 354,
+          "created_at": "2026-01-29T13:59:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=46810282"
+        },
+        {
+          "title": "Ask HN: What programming blogs do you read daily?",
+          "url": null,
+          "points": 716,
+          "num_comments": 116,
+          "created_at": "2011-10-17T13:32:31Z",
+          "hn_url": "https://news.ycombinator.com/item?id=3120380"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.daily.co/pricing",
+    "changelog": "https://www.daily.co/changelog",
+    "docs": "https://docs.daily.co",
+    "integrations": "https://www.daily.co/integrations",
+    "g2": "https://www.g2.com/products/daily-co/reviews"
+  },
+  "analysis": {
+    "name": "Daily",
+    "url": "https://www.daily.co",
+    "tagline": "Realtime voice, video, and AI at global scale",
+    "value_proposition": "Global WebRTC infrastructure and open-source AI agent framework (Pipecat) for developers building ultra-low-latency voice, video, and conversational AI applications.",
+    "target_segment": "dev",
+    "ideal_customer": "Developer teams building real-time voice/video applications and AI voice agents, from startups to enterprises requiring HIPAA/SOC-2 compliance.",
+    "features": [
+      {
+        "name": "video sdk",
+        "description": "Client SDKs for building fully custom video and audio call experiences",
+        "evidence_source": "docs",
+        "evidence_quote": "Create custom video and audio layouts with Daily's Client SDKs.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "prebuilt ui",
+        "description": "Drop-in embeddable video chat widget for adding calls to apps/sites in minutes",
+        "evidence_source": "docs",
+        "evidence_quote": "Add video calls to your app or website in minutes with Daily Prebuilt.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "audio-only calls",
+        "description": "Multi-platform audio-only community and call support without video",
+        "evidence_source": "docs",
+        "evidence_quote": "Build multi-platform audio-only communities with the Daily API.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "live streaming",
+        "description": "Live streaming of calls and content to external destinations",
+        "evidence_source": "landing",
+        "evidence_quote": "Live Streaming",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "recording",
+        "description": "Cloud recording of video and audio calls with composite and raw-tracks options",
+        "evidence_source": "changelog",
+        "evidence_quote": "multiple concurrent recording and streaming instances",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "raw-tracks recording",
+        "description": "Record individual participant audio/video tracks separately for post-processing",
+        "evidence_source": "changelog",
+        "evidence_quote": "raw-tracks recording improvements",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "cloud-audio-only recording",
+        "description": "Record audio-only stream to cloud without capturing video",
+        "evidence_source": "changelog",
+        "evidence_quote": "cloud-audio-only recording",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "hevc recordings",
+        "description": "HEVC (H.265) encoded recordings for better compression quality",
+        "evidence_source": "changelog",
+        "evidence_quote": "HEVC recordings, new REST APIs",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "recording data outputs",
+        "description": "Export transcripts and chat messages alongside recording files",
+        "evidence_source": "changelog",
+        "evidence_quote": "Recording dataOutputs for transcripts and chat",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "recording-synchronized transcripts",
+        "description": "Transcripts time-synchronized to recording playback timestamps",
+        "evidence_source": "changelog",
+        "evidence_quote": "Recording-synchronized transcripts",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "screen sharing",
+        "description": "Screen share support across web, iOS, Android, and React Native including pre-join",
+        "evidence_source": "changelog",
+        "evidence_quote": "pre-join screen sharing",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pipecat open source framework",
+        "description": "Vendor-neutral OSS orchestration framework for realtime voice and multimodal AI agents",
+        "evidence_source": "landing",
+        "evidence_quote": "Pipecat is a vendor-neutral open source orchestration framework for realtime voice and multimodal AI agents.",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "pipecat cloud",
+        "description": "Managed cloud deployment platform for Pipecat-built voice AI agents on Daily's infrastructure",
+        "evidence_source": "landing",
+        "evidence_quote": "Deploy voice AI agents built with Pipecat on Daily's global infrastructure.",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "pipecat flows",
+        "description": "Flow-based orchestration layer for composing Pipecat AI agent pipelines",
+        "evidence_source": "landing",
+        "evidence_quote": "PipeCat Flows",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "smart turn model",
+        "description": "AI turn-taking model for natural back-and-forth voice agent conversations",
+        "evidence_source": "landing",
+        "evidence_quote": "Smart Turn Model",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "smallwebrtc",
+        "description": "Lightweight WebRTC implementation for constrained or embedded environments",
+        "evidence_source": "landing",
+        "evidence_quote": "SmallWebRTC",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "gemini 2.0 sdk integration",
+        "description": "Pre-built SDK integration with Google Gemini 2.0 for voice AI agent pipelines",
+        "evidence_source": "landing",
+        "evidence_quote": "Gemini 2.0 SDKs",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "openai audio model integration",
+        "description": "Pre-built integration with OpenAI audio models for voice AI via Pipecat",
+        "evidence_source": "landing",
+        "evidence_quote": "OpenAI Audio Models",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "sip dial-in",
+        "description": "Phone dial-in to calls via SIP/PSTN with dynamic endpoint configuration",
+        "evidence_source": "changelog",
+        "evidence_quote": "dynamic SIP dial-in endpoints",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sip dial-out",
+        "description": "Outbound phone calling from calls via SIP/PSTN with caller ID support",
+        "evidence_source": "changelog",
+        "evidence_quote": "new SIP dial-in/dial-out event fields",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "call transfer",
+        "description": "SIP/PSTN call transfer with Kamailio support and transfer event webhooks",
+        "evidence_source": "changelog",
+        "evidence_quote": "Kamailio call transfer support",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "dtmf tone support",
+        "description": "DTMF tone sending/receiving for IVR and phone system interactions over SIP",
+        "evidence_source": "changelog",
+        "evidence_quote": "DTMF tone support for SIP calls",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sip codec negotiation",
+        "description": "Audio codec negotiation for SIP call compatibility with third-party systems",
+        "evidence_source": "changelog",
+        "evidence_quote": "SIP codec negotiation",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "phone extension support",
+        "description": "Dial phone extensions during outbound SIP/PSTN calls",
+        "evidence_source": "changelog",
+        "evidence_quote": "Phone extension support for dial-out",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "caller id",
+        "description": "Set outbound caller ID for PSTN dial-out calls",
+        "evidence_source": "changelog",
+        "evidence_quote": "enhanced telephony features (caller ID, SIP fixes)",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "real-time transcription",
+        "description": "Live speech-to-text transcription during calls delivered via webhooks",
+        "evidence_source": "changelog",
+        "evidence_quote": "All SDKs add native real-time transcription support",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "transcription webhooks",
+        "description": "Webhook delivery of transcription events and segments in real time",
+        "evidence_source": "changelog",
+        "evidence_quote": "New transcription webhooks, better multi-instance recording support",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "background blur and effects",
+        "description": "Virtual background images and blur for video calls, GA on web and mobile",
+        "evidence_source": "changelog",
+        "evidence_quote": "background blur and effects are now GA for daily-js",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "noise cancellation",
+        "description": "AI-powered noise cancellation via Krisp SDK with lazy loading and CPU overload handling",
+        "evidence_source": "changelog",
+        "evidence_quote": "Krisp SDK lazy loading",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "adaptive bitrate",
+        "description": "Automatic video quality optimization based on network conditions across all platforms",
+        "evidence_source": "changelog",
+        "evidence_quote": "Daily Adaptive Bitrate comes to daily-ios, daily-android, react-native-daily-js and is now the default",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "end-to-end encryption",
+        "description": "True end-to-end encryption for calls",
+        "evidence_source": "landing",
+        "evidence_quote": "Daily offers true end-to-end encryption",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "hipaa compliance",
+        "description": "Signed HIPAA Business Associate Agreements for healthcare use cases",
+        "evidence_source": "landing",
+        "evidence_quote": "provides signed HIPAA BAAs",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "soc-2 compliance",
+        "description": "SOC-2 compliance certification",
+        "evidence_source": "landing",
+        "evidence_quote": "SOC-2",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "gdpr compliance",
+        "description": "GDPR data protection compliance under the EU-US Data Privacy Framework",
+        "evidence_source": "landing",
+        "evidence_quote": "operates under the EU-US Data Privacy Framework",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rest api",
+        "description": "REST API for programmatically creating and managing rooms, tokens, and domain config",
+        "evidence_source": "docs",
+        "evidence_quote": "Programmatically create rooms, tokens and more.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Event webhooks for call, recording, transcription, and telephony lifecycle events",
+        "evidence_source": "changelog",
+        "evidence_quote": "webhook event ID timestamps",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "meeting tokens",
+        "description": "Signed tokens for controlling per-participant access and permissions per room",
+        "evidence_source": "docs",
+        "evidence_quote": "Comparing Daily API configs: domain, room, tokens",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "participant permissions",
+        "description": "Granular join-time and dynamic participant permissions including canReceive and track constraints",
+        "evidence_source": "changelog",
+        "evidence_quote": "New canReceive permission, dynamic track constraints",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "breakout rooms",
+        "description": "Sub-rooms for splitting participants into separate group discussions",
+        "evidence_source": "changelog",
+        "evidence_quote": "Prebuilt breakout room and screen sharing fixes",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vcs (video component system)",
+        "description": "Layout composition system for streaming with animations and custom visual layouts",
+        "evidence_source": "changelog",
+        "evidence_quote": "VCS layout animations",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "react sdk",
+        "description": "React hooks and components library (daily-react) for building video/audio UI",
+        "evidence_source": "changelog",
+        "evidence_quote": "daily-react 0.25.0 adds multiple concurrent recording and streaming instances",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "react native sdk",
+        "description": "React Native SDK with New Architecture support for cross-platform mobile apps",
+        "evidence_source": "changelog",
+        "evidence_quote": "React Native New Architecture support",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ios sdk",
+        "description": "Native iOS SDK for video and audio calls including screen sharing",
+        "evidence_source": "changelog",
+        "evidence_quote": "daily-ios screen sharing support",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "android sdk",
+        "description": "Native Android SDK with camera zoom, flashlight control, screen sharing, and 16KB page support",
+        "evidence_source": "changelog",
+        "evidence_quote": "camera zoom and flashlight control on Android",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "python sdk",
+        "description": "Python SDK for server-side call bots and AI agents with custom audio/video tracks",
+        "evidence_source": "changelog",
+        "evidence_quote": "daily-python adds support for capturing individual audio tracks from a call",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vad (voice activity detection)",
+        "description": "Voice activity detection for Python SDK and AI agent pipeline integrations",
+        "evidence_source": "changelog",
+        "evidence_quote": "VAD on Python",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "picture-in-picture",
+        "description": "Picture-in-Picture video display mode with JavaScript event callbacks",
+        "evidence_source": "changelog",
+        "evidence_quote": "new Picture-in-Picture events",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "precall network diagnostics",
+        "description": "Pre-call network quality test to assess connection before joining",
+        "evidence_source": "changelog",
+        "evidence_quote": "daily-js improves the precall network test method",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "call quality metrics",
+        "description": "Revamped real-time network stats and call quality diagnostics",
+        "evidence_source": "changelog",
+        "evidence_quote": "revamped network stats",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cpu load detection",
+        "description": "Detect CPU overload conditions and surface warnings to maintain call quality",
+        "evidence_source": "changelog",
+        "evidence_quote": "CPU load detection improvements",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multiple call instances",
+        "description": "Support for multiple simultaneous call instances within the same application",
+        "evidence_source": "changelog",
+        "evidence_quote": "daily-js improves the precall network test method and adds support for multiple call instances",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "session resume",
+        "description": "Automatic resume of interrupted call sessions without re-joining",
+        "evidence_source": "changelog",
+        "evidence_quote": "Prebuilt session resume and background effects fixes",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "global mesh network",
+        "description": "75+ global points of presence with multi-cloud architecture for 13ms median latency",
+        "evidence_source": "landing",
+        "evidence_quote": "75+ Global points of presence. Battle-tested multi-cloud architecture.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "configurable api key limits",
+        "description": "Configure maximum number of API keys per domain/account",
+        "evidence_source": "changelog",
+        "evidence_quote": "configurable max API keys",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "accessibility features",
+        "description": "WCAG accessibility improvements for Prebuilt UI components",
+        "evidence_source": "changelog",
+        "evidence_quote": "Prebuilt accessibility updates",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "voicemail detection agent",
+        "description": "AI-powered voicemail detection for outbound call automation via Pipecat",
+        "evidence_source": "docs",
+        "evidence_quote": "Building a voicemail detection agent with Pipecat & Daily",
+        "tier": "paid",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Krisp (noise cancellation)",
+      "Google Gemini 2.0",
+      "OpenAI Audio Models",
+      "Mediasoup (open source contribution)",
+      "GStreamer (open source contribution)",
+      "Kamailio (SIP server)",
+      "Epic Systems (healthcare)"
+    ],
+    "differentiators": [
+      "13ms median first-hop latency \u2014 lowest latency realtime video and audio",
+      "4x better video resolution compared to Agora in real-world network tests",
+      "2x faster connection times vs. competitors",
+      "Daily created and maintains Pipecat, the 100% open source conversational AI framework",
+      "Vendor-neutral Pipecat framework works with any AI provider (OpenAI, Gemini, etc.)",
+      "W3C WebRTC Working Group member \u2014 team includes authors of WebRTC standards",
+      "True end-to-end encryption",
+      "Enterprise reliability since 2016 \u2014 longest track record in the WebRTC API space",
+      "75+ global points of presence with battle-tested multi-cloud architecture"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-04",
+        "what": "Multiple concurrent recording/streaming in daily-react; ABR default in daily-python; SIP dial-in/dial-out event fields; VCS streaming improvements",
+        "source": "#077 - daily-react 0.25.0 adds multiple concurrent recording and streaming instances, daily-python 0.28.0 enables ABR by default and adds screen share custom tracks"
+      },
+      {
+        "date": "2026-03",
+        "what": "Smaller call-machine bundle (~2MB reduction); VCS layout animations; configurable max API keys",
+        "source": "#076 - Smaller call-machine bundle (~2MB less), VCS layout animations, configurable max API keys"
+      },
+      {
+        "date": "2026-02",
+        "what": "DTMF tone support for SIP calls; raw-tracks recording improvements; Krisp SDK lazy loading; webhook event ID timestamps",
+        "source": "#075 - DTMF tone support for SIP calls, raw-tracks recording improvements, Krisp SDK lazy loading, and webhook event ID timestamps"
+      },
+      {
+        "date": "2026-01",
+        "what": "Recording dataOutputs for transcripts and chat; cloud-audio-only recording; Kamailio call transfer support; laptop lid session handling",
+        "source": "#074 - Recording dataOutputs for transcripts and chat, cloud-audio-only recording, laptop lid session handling, and Kamailio call transfer support"
+      },
+      {
+        "date": "2025-12",
+        "what": "Recording-synchronized transcripts; gapless audio for raw-tracks; CPU warning notifications; Prebuilt session resume",
+        "source": "#073 - Recording-synchronized transcripts, gapless audio for raw-tracks, CPU warning notifications"
+      },
+      {
+        "date": "2025-11",
+        "what": "SIP codec negotiation; Prebuilt breakout room and screen sharing fixes; recording enhancements",
+        "source": "#072 - SIP codec negotiation, call transfer fixes, recording enhancements, and Prebuilt breakout room and screen sharing fixes"
+      },
+      {
+        "date": "2025-10",
+        "what": "Dynamic SIP dial-in endpoints; audio-only recording property; narrower CSP for video backgrounds",
+        "source": "#071 - dynamic SIP dial-in endpoints, and telephony and recording fixes"
+      },
+      {
+        "date": "2025-09",
+        "what": "Phone extension support for dial-out; Android 16KB page size compatibility; Picture-in-Picture events",
+        "source": "#070 - Phone extension support for dial-out, Android 16KB page size compatibility, new Picture-in-Picture events"
+      },
+      {
+        "date": "2025-08",
+        "what": "Pre-join screen sharing; Krisp CPU overload handling; Prebuilt accessibility updates",
+        "source": "#069 - pre-join screen sharing, Krisp CPU overload handling, and Prebuilt accessibility updates"
+      },
+      {
+        "date": "2025-06",
+        "what": "SIP/PSTN join-time permissions; React Native New Architecture support",
+        "source": "#067 - SIP/PSTN join-time permissions, React Native New Architecture support"
+      },
+      {
+        "date": "2025-03",
+        "what": "canReceive permission; dynamic track constraints; revamped network stats; caller ID for telephony",
+        "source": "#064 - New canReceive permission, dynamic track constraints, revamped network stats, enhanced telephony features (caller ID, SIP fixes)"
+      },
+      {
+        "date": "2025-01",
+        "what": "Transcription webhooks; multi-instance recording support; improved telephony",
+        "source": "#063 - New transcription webhooks, better multi-instance recording support"
+      },
+      {
+        "date": "2024-10",
+        "what": "Live transcriptions GA; PSTN and SIP support; streaming and recording improvements",
+        "source": "#061 - Lots of updates in the last 3 months. Live transcriptions, PSTN and SIP, streaming and recording."
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": []
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "10,000 minutes/month (Video SDK)"
+      },
+      "tiers": [
+        {
+          "name": "Video SDK",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Human-to-human video and audio calls; 10,000 free minutes/month included, usage-based beyond"
+        },
+        {
+          "name": "Pipecat Cloud",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Deploy Pipecat voice AI agents; usage-based pricing, completely flexible stack"
+        },
+        {
+          "name": "WebRTC Infrastructure",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Raw WebRTC infrastructure access; usage-based pricing with discounts at scale"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Three separate pricing tracks: Video SDK (minute-based with 10k free/month), Pipecat Cloud (usage-based AI agent hosting), WebRTC Infrastructure (raw usage with volume discounts). Specific per-minute/per-unit rates not disclosed on public pricing page. Enterprise includes HIPAA BAA and E2E encryption."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Daily pill can double survival time for deadliest cancer, trial shows",
+        "url": "https://www.theguardian.com/society/2026/may/31/daily-pill-daraxonrasib-double-survival-time-pancreatic-pancreas-cancer-clinical-trial",
+        "points": 159,
+        "comments": 51,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48346629"
+      },
+      {
+        "title": "Show HN: Breathe CLI \u2013 Paced resonance breathing in the macOS terminal",
+        "url": "https://github.com/marekkowalczyk/breathe-cli",
+        "points": 122,
+        "comments": 38,
+        "age_days": 1,
+        "hn_url": "https://news.ycombinator.com/item?id=48340315"
+      },
+      {
+        "title": "CT gov signs AI law to notify employees",
+        "url": "https://news.bloomberglaw.com/daily-labor-report/connecticuts-lamont-signs-ai-law-with-employer-notice-mandate",
+        "points": 16,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48347137"
+      },
+      {
+        "title": "The DuckDuckGo logo changes depending on search terms",
+        "url": "https://news.ycombinator.com/item?id=48351893",
+        "points": 2,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48351893"
+      },
+      {
+        "title": "Show HN: My tiny project MyTube Newsletter \u2013 daily AI digest of YouTube subs",
+        "url": "https://news.ycombinator.com/item?id=48345189",
+        "points": 2,
+        "comments": 0,
+        "age_days": 0,
+        "hn_url": "https://news.ycombinator.com/item?id=48345189"
+      }
+    ]
+  }
+}

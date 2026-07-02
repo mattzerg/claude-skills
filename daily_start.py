@@ -19,7 +19,7 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
-VAULT = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
+VAULT = Path("/Users/mattheweisner/Obsidian/Zerg/MattZerg")
 SLACK_BRIDGE = Path.home() / ".claude/skills/slack-skill/slack_bridge.py"
 GMAIL_SKILL = Path.home() / ".claude/skills/gmail-skill/gmail_skill.py"
 
@@ -454,7 +454,7 @@ def post_standup(t):
     slack_skill = Path.home() / ".claude/skills/slack-skill/slack_skill.py"
     if slack_skill.exists():
         result = subprocess.run(
-            [sys.executable, str(slack_skill), "send", "#standup", standup_text],
+            [sys.executable, str(slack_skill), "send", "#standup", "-m", standup_text],
             capture_output=True, text=True
         )
         if result.returncode == 0:

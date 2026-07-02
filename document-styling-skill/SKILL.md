@@ -1,6 +1,6 @@
 ---
 name: document-styling-skill
-description: Render markdown documents to branded PDF using Zerg's visual template system. Owns the brand palette, type system, and layout zones (header band, hero, body, optional sidebar/chip strip, footer). Two canonical Zerg themes per the dual-palette routing rule — `zerg-default` (cream paper, Zstack/non-technical audiences) and `zerg-dark` (charcoal paper, Zerg-parent / heavy-technical content). Both pull from the live site (`~/zerg/web/src/pages/index.vue`), NOT `main.css`. Designed for one-pagers but reusable for any single-page or short-document collateral. Pairs with `one-pager-skill` (which scaffolds content) — content lives there, visual treatment lives here. Never auto-publishes; writes PDF + HTML next to source. USE PROACTIVELY when Matt asks for a branded / designed / styled PDF, or wants to swap visual treatment on an existing one-pager / brief.
+description: Render markdown to branded PDF via Zerg's template system. Owns palette + type + layout zones (header / hero / body / sidebar / footer). Two themes per dual-palette rule — `zerg-default` (cream, Zstack/non-technical) and `zerg-dark` (charcoal, Zerg-parent/technical). `single-page` (default) + `multi-page` modes. Pairs with `one-pager-skill` — content lives there, visual treatment lives here. USE PROACTIVELY for branded/designed/styled PDF or visual-treatment swap. Never auto-publishes.
 allowed-tools: Bash, Read, Write
 ---
 
@@ -24,7 +24,7 @@ Per the **dual-palette routing** rule (`feedback_zerg_brand.md`, locked 2026-05-
 
 | Theme | Paper + accent | Type | Vibe | When to use |
 |---|---|---|---|---|
-| **zerg-default** | Cream `#f4f0e7` + burnt-orange `#b3662f` (with `#8a4a1f` for AA-contrast labels on cream) + brand-green `#6FBE31` secondary | Space Grotesk | Matches the live marketing site exactly | Default for **Zstack products + non-technical audiences** (buyers, marketing, ops, sales personas, comparison pages, pricing pages, one-pagers, leave-behinds) |
+| **zerg-default** | Cream `#f4f0e7` + burnt-orange `#b3662f` (with `#8a4a1f` for AA-contrast labels on cream) + brand-green `#6FBE31` secondary | Space Grotesk | Matches the live marketing site exactly | Default for **Zerg products + non-technical audiences** (buyers, marketing, ops, sales personas, comparison pages, pricing pages, one-pagers, leave-behinds) |
 | **zerg-dark** | Charcoal `#111514` paper + cream `#f4f0e7` text + burnt-orange `#d57a32` (bright variant works on dark) + brand-green `#6FBE31` secondary | Space Grotesk | Brand-correct dark — Zerg-parent register | **Zerg parent brand + heavy-technical content** (research posts, integration pages targeting devs, MCP/API docs, architecture explainers, founder-voice / Idan-genre) |
 | **zerg-navy** | White paper + `#1F3A5F` deep navy | Inter | Enterprise-grade, conservative | Investor briefs, enterprise sales contexts where the burnt-orange feels too warm |
 | **zerg-warm** | Warm paper `#FAF9F5` + `#D97757` rust orange | Inter | Editorial, Anthropic-style warmth | Partner briefs, network leave-behinds, anything that should feel less "deck" and more "thoughtful" |
@@ -98,6 +98,18 @@ python3 ~/.claude/skills/document-styling-skill/render.py list
 ```
 
 Prints theme names + accent colors + the markdown frontmatter required.
+
+## Multi-page mode (enterprise document SETS)
+
+For multi-page client deliverables (policies, guides, audit-readiness docs), set `layout: multi-page` + `theme: zerg-navy-multipage` in frontmatter (white paper + deep navy; siblings: `zerg-dark-multipage`). Keep the **whole set on the same theme** — a doc that renders on a different base reads as a formatting break (the recurring "Nick's bar" complaint; see memory `feedback_nick_consulting_doc_bar.md`).
+
+Multi-page render does three things automatically — you should NOT hand-fix these:
+
+- **Page-break hygiene.** `zerg-navy-multipage.css` keeps headings with their body (`break-after: avoid`), and prevents table rows, list items, callouts, and images from splitting across pages (`break-inside: avoid`). To keep a figure glued to its caption / color key, wrap it: `<figure class="keep-together" markdown="1"> … ![alt](img.png) … <figcaption>…</figcaption> </figure>` (md_in_html is on in multi-page). Use `\newpage` for an explicit page break before a major new part. **Render embedded diagrams on a background that matches the page** (white for `zerg-navy-multipage`) — a dark-canvas image (e.g., a Mermaid diagram rendered with `-b "#10141a"`) splits across a page break as a stray black bar and clashes with a white doc; render with `-b white`. Figure images are height-capped (`max-height: 7.5in`) so a tall portrait diagram scales to fit one page instead of overflowing/splitting.
+- **Clickable internal links.** `[TOC]` and every `[text](#anchor)` cross-reference become *actually clickable* in the PDF. Chrome's `--print-to-pdf` emits internal links as named destinations but never writes the `/Names → /Dests` table, so they silently dead-link; `render.py wire_internal_links()` rebuilds that table on every multi-page render. (Verify by opening the PDF; you shouldn't have to do anything.)
+- **Page numbers** ("Page N of M") stamped bottom-center post-render.
+
+Images resolve relative to the **source** markdown's directory, so render in place (omit `--out-dir`) and the PDF embeds the images self-contained; then copy the `.branded.pdf` to a delivery/review folder.
 
 ## Brand system
 

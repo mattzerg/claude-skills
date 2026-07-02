@@ -584,6 +584,24 @@ CSS = r"""
   a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
   hr { border: none; border-top: 1px solid var(--rule); margin: 24pt 0; }
 
+  /* ---------- Page-break discipline: no card/box may cross a page boundary ---------- */
+  .stats-strip,
+  .about-box,
+  .intro-grid .summary,
+  .phases .phase,
+  .architecture,
+  .stack-callout,
+  .pullquote,
+  .results-block li,
+  .cta-box,
+  .related,
+  .related .card,
+  .rq-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  h2, h3 { page-break-after: avoid; break-after: avoid; }
+
   /* Draft watermark */
   .draft-banner {
     background: var(--warn-bg);
@@ -853,6 +871,72 @@ def next_version(out_dir: Path, slug: str) -> str:
     return f"v{highest + 1}"
 
 
+def check_unapplied_feedback(md_path, target_version, force=False):
+    """Refuse to render if reviewer-feedback artifacts next to the draft
+    aren't marked applied. Fixes the May-2026 Durable failure mode where
+    Idan's fakeidan ship-blockers lived only in Slack and the next render
+    pass shipped without them.
+
+    Convention: a feedback file at `<parent>/<slug>.fakeidan-feedback-YYYY-MM-DD.md`
+    (or `.fakematt-feedback-*.md`, `.fakeidan-copyedit-*.md`, `.fakematt-copyedit-*.md`,
+    or `.feedback-*.md`) MUST carry an `applied_in: vN` frontmatter line once its
+    notes are folded into the draft. Render refuses while the line is missing or
+    points at a version older than the one we're rendering.
+
+    Bypass with --force-unapplied-feedback (intentional only).
+    """
+    slug = md_path.stem
+    parent = md_path.parent
+    patterns = [
+        f"{slug}.fakeidan-feedback-*.md",
+        f"{slug}.fakematt-feedback-*.md",
+        f"{slug}.fakeidan-copyedit-*.md",
+        f"{slug}.fakematt-copyedit-*.md",
+        f"{slug}.feedback-*.md",
+    ]
+    candidates = []
+    for p in patterns:
+        candidates.extend(parent.glob(p))
+    candidates = sorted(set(candidates))
+    if not candidates:
+        return
+    unapplied = []
+    for fb in candidates:
+        try:
+            text = fb.read_text(errors="ignore")
+        except Exception:
+            continue
+        m = re.search(r"^applied_in:\s*(\S+)\s*$", text, re.M)
+        if not m:
+            unapplied.append((fb, "missing `applied_in:` frontmatter line"))
+            continue
+        applied = m.group(1).strip()
+        if target_version:
+            try:
+                a_num = int(applied.lstrip("v"))
+                t_num = int(target_version.lstrip("v"))
+                if a_num < t_num:
+                    unapplied.append((fb, f"applied_in: {applied} predates target render version {target_version}"))
+            except ValueError:
+                pass
+    if not unapplied:
+        return
+    lines = ["", "REFUSING TO RENDER: unapplied feedback artifacts next to draft.", ""]
+    for fb, reason in unapplied:
+        lines.append(f"  - {fb.name}")
+        lines.append(f"      {reason}")
+    lines.append("")
+    lines.append("Fix: apply the feedback to the draft, then add to the feedback file's")
+    lines.append(f"frontmatter:  applied_in: {target_version or 'vN'}")
+    lines.append("")
+    lines.append("Override (only when intentionally re-rendering with feedback pending):")
+    lines.append("  --force-unapplied-feedback")
+    lines.append("")
+    print("\n".join(lines), file=sys.stderr)
+    if not force:
+        sys.exit(2)
+
+
 def render(md_path, draft=False, version=None):
     fm, body = parse_md(md_path)
     body = strip_internal_sections(body)
@@ -1019,20 +1103,27 @@ def render(md_path, draft=False, version=None):
 if __name__ == "__main__":
     is_draft = "--draft" in sys.argv
     no_open = "--no-open" in sys.argv
+    force_unapplied = "--force-unapplied-feedback" in sys.argv
     version = None
     if "--version" in sys.argv:
         i = sys.argv.index("--version")
         if i + 1 < len(sys.argv):
             version = sys.argv[i + 1]
     args = [a for i, a in enumerate(sys.argv[1:], start=1)
-            if a not in ("--draft", "--no-open", "--version") and (i == 0 or sys.argv[i - 1] != "--version")]
+            if a not in ("--draft", "--no-open", "--version", "--force-unapplied-feedback")
+            and (i == 0 or sys.argv[i - 1] != "--version")]
     if not args:
-        print("Usage: render_case_study.py <case-study.md> [--draft] [--no-open] [--version vN]", file=sys.stderr)
+        print(
+            "Usage: render_case_study.py <case-study.md> [--draft] [--no-open] "
+            "[--version vN] [--force-unapplied-feedback]",
+            file=sys.stderr,
+        )
         sys.exit(1)
     md_path = Path(args[0])
     if not md_path.exists():
         print(f"MISSING: {md_path}", file=sys.stderr)
         sys.exit(1)
+    check_unapplied_feedback(md_path, version, force=force_unapplied)
     pdf = render(md_path, draft=is_draft, version=version)
     print(pdf)
     if not no_open:

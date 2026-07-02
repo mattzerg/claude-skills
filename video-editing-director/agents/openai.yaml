@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Editing Director"
+  short_description: "Shape edits, pacing, and post notes."
+  default_prompt: "Use $video-editing-director to create an edit plan and revision notes for this footage or storyboard."

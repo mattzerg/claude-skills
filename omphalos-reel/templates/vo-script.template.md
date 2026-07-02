@@ -12,3 +12,9 @@ Format: {{FORMAT}}, target 30-44s spoken (~12-18 words/line). Thesis: {{THESIS}}
 
 Lore deposits: {{TERMS — comma-separated; run lore.py lint after drafting}}
 Clock: {{folk | official | vo | none}} — sign {{N or —}} (per season-1-map.md)
+
+Serial hooks (required reels 5+, per season-1-serial.md §4 — the writing leads, these stay invisible):
+- Open loop: {{the swipe-away question this episode leaves unanswered}}
+- Tease signal (last ~10s): {{the cue that flags what's coming}}
+- Cold-open callback (first ~10s): {{how this episode answers the PREVIOUS episode's open loop}}
+- Part card: PART {{N}} of 13 (composited in post). Craft hard-rules: faces never talk on camera; all readable text/clock/841 composited in post, never generated.

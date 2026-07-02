@@ -46,7 +46,7 @@ sys.path.insert(0, str(Path.home() / ".config" / "zerg"))
 from vault_path import vault_path, vault_write  # noqa: E402
 
 VAULT = Path(os.path.expanduser(
-    "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg"
+    "~/Obsidian/Zerg"
 ))
 VAULT_MIRROR = Path(os.path.expanduser("~/.zerg-vault-mirror"))
 GROWTH = vault_path("Projects/Zerg-Production/Growth")

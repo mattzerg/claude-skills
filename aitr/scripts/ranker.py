@@ -141,7 +141,11 @@ def estimated_cost_usd(model: dict, artifact_size_tokens: int, output_estimate: 
     pricing = model.get("pricing") or {}
     in_rate = float(pricing.get("input_per_mtok") or 0.0)
     out_rate = float(pricing.get("output_per_mtok") or 0.0)
-    return (artifact_size_tokens * in_rate + output_estimate * out_rate) / 1_000_000.0
+    # token_multiplier: tokenizer inflation vs the catalog baseline — the same
+    # content tokenizes to ~N× more tokens (Claude Fable 5 ≈ 1.3). Sticker price
+    # alone understates such models' real cost.
+    multiplier = float(model.get("token_multiplier") or 1.0)
+    return multiplier * (artifact_size_tokens * in_rate + output_estimate * out_rate) / 1_000_000.0
 
 
 def cost_score(cost_usd: float, budget: Optional[float], cheapest_cost: float) -> float:
@@ -174,6 +178,32 @@ def latency_score(model: dict, latency_class: str, budget_seconds: Optional[int]
         # caller demanded fast but model leans slow — penalize hard
         return 0.0
     return max(0.0, min(1.0, base))
+
+
+REFUSAL_RISK_HINTS = {
+    "cyber": ("security", "vuln", "exploit", "cve", "pentest", "malware", "cyber", "injection"),
+    "bio": ("biosecurity", "pathogen", "virology", "biolab", "wet-lab", "biology"),
+}
+REFUSAL_RISK_PENALTY = -0.15
+
+
+def refusal_risk_penalty(model: dict, signal_dict: dict) -> tuple[float, str]:
+    """Penalty when the task looks adjacent to a domain this model's safety
+    classifiers may decline (HTTP 200 + stop_reason "refusal", e.g. Claude
+    Fable 5 on cyber/bio). Keyword match against the signal's free-text notes;
+    keeps gates from routing security-review diffs to a model that may
+    200-refuse mid-gate. Returns (penalty, matched_domain)."""
+    risks = model.get("refusal_risk") or []
+    if not risks:
+        return 0.0, ""
+    notes = str(signal_dict.get("notes") or "").lower()
+    if not notes:
+        return 0.0, ""
+    for domain in risks:
+        for kw in REFUSAL_RISK_HINTS.get(domain, (domain,)):
+            if kw in notes:
+                return REFUSAL_RISK_PENALTY, domain
+    return 0.0, ""
 
 
 # ---- Filtering -------------------------------------------------------------
@@ -268,6 +298,18 @@ def rank(
     w_cap = float(weights.get("capability", 0.5))
     w_cost = float(weights.get("cost", 0.3))
     w_lat = float(weights.get("latency", 0.2))
+    # Flat-rate billing (Max-plan OAuth) makes marginal cost ~$0 — but only for
+    # Anthropic models served through the subscription, so deweight cost only
+    # when the pick is constrained to that provider. Cross-provider candidates
+    # would be metered (OpenRouter), so an unconstrained flat signal keeps its
+    # cost term. Estimated cost still appears in the reason, and the equal-score
+    # tie-break still prefers the cheaper model.
+    flat_anthropic = (
+        signal_dict.get("billing_mode") == "flat"
+        and signal_dict.get("provider_constraint") == "anthropic-only"
+    )
+    if flat_anthropic:
+        w_cost = 0.0
     weights_sum = max(w_cap + w_cost + w_lat, 1e-6)
 
     # Catalog-wide benchmark ranges, for normalizing non-fraction scores (Elo).
@@ -343,8 +385,16 @@ def rank(
             rep_adj = reputation.get(rep_key, 0.0)
             composite = max(0.0, composite + rep_adj)
 
+        # Refusal-risk: down-rank models whose safety classifiers may decline
+        # this task's domain (signal notes keyword match).
+        rr_pen, rr_domain = refusal_risk_penalty(m, signal_dict)
+        if rr_pen:
+            composite = max(0.0, composite + rr_pen)
+
         # Build a one-line reason
         reasons = []
+        if rr_pen:
+            reasons.append(f"refusal-risk penalty ({rr_domain})")
         if feedback_penalty < 0:
             reasons.append(f"feedback penalty {feedback_penalty:.2f}")
         if rep_adj > 0:

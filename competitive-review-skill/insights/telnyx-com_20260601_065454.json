@@ -1,0 +1,603 @@
+{
+  "name": "Telnyx",
+  "url": "https://telnyx.com",
+  "domain": "telnyx.com",
+  "scanned_at": "2026-06-01T06:52:35.064883",
+  "sources": {
+    "landing": {
+      "url": "https://telnyx.com",
+      "title": "Telnyx\u2014Voice AI Agents with Built-In Global Telco Infrastructure",
+      "text": "Telnyx\u2014Voice AI Agents with Built-In Global Telco Infrastructure\nHome\nVoice AI\nVoice API\nInference\nMobile Voice\nSpeech-to-Text\nText-to-speech\nSIP Trunking\nSMS API\nWhatsApp Business API\nView all products\nHealthcare\nFinance\nTravel and Hospitality\nLogistics and Transportation\nContact Center\nInsurance\nRetail and E-Commerce\nSales and Marketing\nServices and Dining\nView all solutions\nVoice AI\nVoice API\nInference\nMobile Voice\nSpeech-to-Text\nText-to-Speech\nSIP Trunking\nSMS API\nGlobal Numbers\nIoT SIM Card\nView all pricing\nOur Network\nMission Control Portal\nCustomer stories\nGlobal coverage\nPartners\nCareers\nEvents\nResource center\nSupport center\nAI Templates\nSETI\nDev Docs\nIntegrations\nProducts\nSolutions\nPricing\nWhy Telnyx\nResources\nDevelopers\nContact us\nLog in\nContact us\nLog in\nSign up\nOpen menu\nInfrastructure for\nreal-time agents\nTelnyx owns the full stack from carrier network to AI inference, so there's nothing between your agent and the person on the other end. No handoffs. No lag. Just voice, messaging, and AI that keeps up.\nEXPLORE THE STACK\nTALK TO AN EXPERT\n14,000+ INDUSTRY-LEADING COMPANIES choose telnyx\nTHE FULL STACK\nYesterday, infrastructure was provisioned via portals and tickets. Today, it's triggered by APIs. Tomorrow, it is autonomous.\nAgent Control Plane and Runtime\nLayers 6\u20139\nAgent Execution & Memory\nIntelligence lives inside the call. We bridge the gap by colocating GPUs with the live communications path.\nLayers 4\u20135\nProgrammatic Identity & Compliance\nVoice follows the user. We unified mobile and fixed identity layers under a single programmable control plane.\nLayers 1\u20133\nOwned Network\nYou cannot optimize what you do not own. Telnyx replaced the public internet with a bare-metal global communications fabric.\nTHE FULL STACK\nYesterday, infrastructure was provisioned via portals and tickets. Today, it\u2019s triggered by APIs. Tomorrow, it is autonomous.\nLayers 1\u20133 | Owned Network\n01\nPhysical network and interconnect\n02\nReal-time transport fabric\n03\nMedia and edge processing\nLayers 4\u20135 | Programmatic Identity & Compliance\n04\nMobile core and identity\n05\nProgrammable control plane\nLayers 6\u20139 | Agent Execution & Memory\n06\nReal-time compute\n07\nAI-native orchestration\n08\nStorage and vertical systems\n09\nObservability, security, & economics\nReady to build?\nCONFIGURE AGENT\nLayers 1\u20133\nLayers 4\u20135\nLayers 6\u20139\nOwned Network\nYou cannot optimize what you do not own. Telnyx replaced the public internet with a bare-metal global communications fabric.\n01\nPhysical network and interconnect\nBare-metal fiber and direct peering across global regions for agent-controlled, deterministic routing.\nNext\nAGENT RUNTIME\nConfigure the environment your agents run in\nChoose the models, voice, and infrastructure your agents will operate on. Once live, agents control the system directly, speaking, routing, and acting without human intervention.\nInference\nVoice Agent Builder\nSpeech to Text\nText to Speech\nGlobal Numbers\nAgent Skills\nCHOOSE MODEL\nMiniMax M2.7\nKimi\nKimi K2.5\nQwen3 235B A22B\nGLM\nGLM 5.1 FP8\nCHAT TO AN AGENT\nUnited States\nAuto-detect\nSEND MESSAGE\nCOMPETITION\nNot retrofitted for agents. Built for them.\nOn most platforms, agents sit on top of UI-first products, constrained by rented infrastructure and manual approval paths. Telnyx is different. We\u2019re the only agent-native platform that owns the primitives, not abstracting over someone else\u2019s foundations.\nFEATURE\nOwns and controls the telephony stack for native calling.\nAvailable\nNot available\nNot available\nNot available\nCo-located edge PoPs and GPUs to power low-latency Voice AI globally.\nAvailable\nNot available\nNot available\nNot available\nAutonomous orchestration that allows for agent-to-agent work.\nAvailable\nAvailable\nAvailable\nAvailable\nBuilt-in programmatic compliance (10DLC/KYC) to ensure it\u2019s enforced before execution.\nAvailable\nNot available\nNot available\nNot available\nOperates a private global network to bypasses the public internet for high-quality audio.\nAvailable\nNot available\nNot available\nNot available\nSOLUTIONS\nTransform workflows across your business.\nAccelerate response times, lower costs, and improve accuracy with AI-driven voice automation.\nEXPLORE OUR AI ASSISTANT\nHealthcare\nReduce appointment no-shows with real-time reminders\nConfirm, reschedule, or cancel appointments automatically, keeping calendars full and staff free from follow-ups.\nLEARN MORE\nabout healthcare solutions\nReduce appointment no-shows with real-time reminders\nConfirm, reschedule, or cancel appointments automatically, keeping calendars full and staff free from follow-ups.\nFinance\nSecure, compliant, and built for financial scale\nResolve customer queries, verifications, and alerts instantly with Voice AI agents.\nLEARN MORE\nabout finance solutions\nAutomotive\nModernize automotive sales, service, and repairs\nDrive real-time, secure customer experiences across the automotive ecosystem, powered by our private global network.\nLEARN MORE\nabout automotive solutions\nRetail and e-commerce\nSimplify returns with always-on assistance\nLet customers initiate returns, track orders, and get refunds via AI agents that solve problems on the first interaction.\nLEARN MORE\nabout retail and eCommerce solutions\nTravel and Hospitality\nDrive more bookings, 24/7/365\nLet travelers check availability, get answers, and book instantly with AI agents, no wait times and no missed opportunities.\nLEARN MORE\nabout travel and hospitality solutions\nSECURITY\nEnterprise security, baked into the SIM\nIn the age of deepfakes and spoofing, the network is your only source of truth. Because Telnyx owns the Mobile Core, we verify identity at the network level, ensuring your AI agents know exactly who is speaking, every time.\nWhere milliseconds matter, Telnyx delivers\nFrom first call to global deployment, Telnyx gives you the stack, scale, and support to launch real-time conversational AI with confidence.\nSTART BUILDING\nCONTACT US\nSUPPORTED LANGUAGES\n40+\nLanguages supported with real-time, multilingual AI transcription.\nMILLISECONDS\n<500\nEnd-to-end latency powered by Telnyx\u2019s telecom edge PoPs and colocated GPUs.\nCOUNTRIES\n30+\nSupported with a licensed carrier footprint, compliance trusted worldwide.\nSocial\nLinkedIn\nTwitter\nFacebook\nCompany\nOur Network\nGlobal Coverage\nRelease Notes\nCareers\nVoice AI\nAI Glossary\nShop\nLegal\nData and Privacy\nReport Abuse\nPrivacy Policy\nCookie Policy\nLaw Enforcement\nAcceptable Use\nTrust Center\nCountry Specific Requirements\nWebsite Terms and Conditions\nTerms and Conditions of Service\nCompare\nElevenLabs\nVapi\nBaseten\nTogether.ai\nTwilio\nBandwidth\nVonage\nAmazon Connect\nAsk AI\n\u00a9 Telnyx LLC\n2026\nISO \u2022 PCI \u2022 HIPAA \u2022 GDPR \u2022 SOC2 Type II\nBy clicking \u201cAccept All Cookies\u201d, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.\nRead more\nAccept all\nCookies settings",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://telnyx.com/pricing",
+      "title": "All Telnyx Products, APIs And Phone Numbers",
+      "text": "All Telnyx Products, APIs And Phone Numbers\nHome\nVoice AI\nVoice API\nInference\nMobile Voice\nSpeech-to-Text\nText-to-speech\nSIP Trunking\nSMS API\nWhatsApp Business API\nView all products\nHealthcare\nFinance\nTravel and Hospitality\nLogistics and Transportation\nContact Center\nInsurance\nRetail and E-Commerce\nSales and Marketing\nServices and Dining\nView all solutions\nVoice AI\nVoice API\nInference\nMobile Voice\nSpeech-to-Text\nText-to-Speech\nSIP Trunking\nSMS API\nGlobal Numbers\nIoT SIM Card\nView all pricing\nOur Network\nMission Control Portal\nCustomer stories\nGlobal coverage\nPartners\nCareers\nEvents\nResource center\nSupport center\nAI Templates\nSETI\nDev Docs\nIntegrations\nProducts\nSolutions\nPricing\nWhy Telnyx\nResources\nDevelopers\nContact us\nLog in\nContact us\nLog in\nSign up\nOpen menu\nPricing\nFlexible, transparent pricing with discounts as you scale.\nPay as you go\nPay only for what you use, when you use it.\nTop up your account through your Mission Control Portal.\nReceive automatic discounts as you scale your calling and messaging volumes.\nAccess free in-house support 24/7 via chat or call.\nVolume-based pricing\nDo more; pay less.\nWork with a dedicated sales representative to set discounted pricing based on your monthly usage.\nReceive specialized support from a personally allotted customer success manager.\nReceive prioritized ticketing privileges and NOC support.\nEnjoy all the benefits at no extra cost\nFree in-house support\nTalk to a telecommunications specialist via chat or call, 24/7/365.\nPortal access\nSet up, manage and monitor your telecommunications easily through your Mission Control Portal.\nAutomatic discounts\nAs your traffic hits higher volume thresholds, we apply discounts automatically.\nJump to category\nCommunications\nMessaging\nMessaging API\nVoice\nSIP Trunking\nVoice API\nConversational AI\nSpeech-to-text\nText-to-speech\nNumbers\nGlobal Numbers\nVideo\nVideo API\nIdentity\nNumber Lookup API\nVerify API\nFax\nFax API\nWhatsApp\nWhatsApp Calling\nIoT\nIoT SIM Card\nMobile Voice\nMobile Voice\nNetworking\nProgrammable Networking\nGlobal Edge Router\nCompute\nCloud Storage\nInference\nSocial\nLinkedIn\nTwitter\nFacebook\nCompany\nOur Network\nGlobal Coverage\nRelease Notes\nCareers\nVoice AI\nAI Glossary\nShop\nLegal\nData and Privacy\nReport Abuse\nPrivacy Policy\nCookie Policy\nLaw Enforcement\nAcceptable Use\nTrust Center\nCountry Specific Requirements\nWebsite Terms and Conditions\nTerms and Conditions of Service\nCompare\nElevenLabs\nVapi\nBaseten\nTogether.ai\nTwilio\nBandwidth\nVonage\nAmazon Connect\nAsk AI\n\u00a9 Telnyx LLC\n2026\nISO \u2022 PCI \u2022 HIPAA \u2022 GDPR \u2022 SOC2 Type II\nBy clicking \u201cAccept All Cookies\u201d, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.\nRead more\nAccept all\nCookies settings",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://telnyx.com/changelog",
+      "title": "Telnyx\u2014Voice AI Agents with Built-In Global Telco Infrastructure",
+      "text": "Telnyx\u2014Voice AI Agents with Built-In Global Telco Infrastructure\nHome\nVoice AI\nVoice API\nInference\nMobile Voice\nSpeech-to-Text\nText-to-speech\nSIP Trunking\nSMS API\nWhatsApp Business API\nView all products\nHealthcare\nFinance\nTravel and Hospitality\nLogistics and Transportation\nContact Center\nInsurance\nRetail and E-Commerce\nSales and Marketing\nServices and Dining\nView all solutions\nVoice AI\nVoice API\nInference\nMobile Voice\nSpeech-to-Text\nText-to-Speech\nSIP Trunking\nSMS API\nGlobal Numbers\nIoT SIM Card\nView all pricing\nOur Network\nMission Control Portal\nCustomer stories\nGlobal coverage\nPartners\nCareers\nEvents\nResource center\nSupport center\nAI Templates\nSETI\nDev Docs\nIntegrations\nProducts\nSolutions\nPricing\nWhy Telnyx\nResources\nDevelopers\nContact us\nLog in\nContact us\nLog in\nSign up\nOpen menu\nError 404\nOops, this page doesn\u2019t exist\nUnless you\u2019re trying to access our 404 page. If you are, then you\u2019re in the right place.\nBack to home\nSocial\nLinkedIn\nTwitter\nFacebook\nCompany\nOur Network\nGlobal Coverage\nRelease Notes\nCareers\nVoice AI\nAI Glossary\nShop\nLegal\nData and Privacy\nReport Abuse\nPrivacy Policy\nCookie Policy\nLaw Enforcement\nAcceptable Use\nTrust Center\nCountry Specific Requirements\nWebsite Terms and Conditions\nTerms and Conditions of Service\nCompare\nElevenLabs\nVapi\nBaseten\nTogether.ai\nTwilio\nBandwidth\nVonage\nAmazon Connect\nAsk AI\n\u00a9 Telnyx LLC 2026\nISO \u2022 PCI \u2022 HIPAA \u2022 GDPR \u2022 SOC2 Type II",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://developers.telnyx.com",
+      "title": "Telnyx",
+      "text": "Telnyx\nSkip to main content\nCheck out our upcoming events and meetups!\nView events \u2192\nTelnyx\nhome page\nSearch...\n\u2318\nK\nAsk Assistant\n\u2318\nI\nContact us\nLogin\nSign Up\nDevelopment\nAI\nCalling\nVoice\nMessaging\nNumbers\nEdge\nWireless\nOther APIs\nTelnyx\nhome page\nSearch...\nNavigation\nIntroduction\nDevelopment\nAccount setup\nGetting Started\nAccount Types & Capabilities\nAccount Management\nAPIs fundamentals\nCreate API Keys\nAuthentication & Security\nRequest & Response\nError Reference\nReliability & Performance\nWebhooks & Events\nData Standards\nServer-side SDKs\nNode.js\nPython\nPHP\nJava\nRuby\nGo\nTelnyx CLI\nOverview\nGetting Started\nScripting & Automation\nCommand Reference\nWorkflows\nTroubleshooting\nLegacy CLI (Deprecated)\nDevelopment Tools\nPostman Setup\nngrok Setup\nNode-RED\nMigration Guides\nCall Control Migration\nMessaging Migration\nTwilio Migration\nGlossary\nAI glossary\nAPIs glossary\nTelecom glossary\n\ud83e\udd16 For AI Agents\nMCP Servers\nAgent Skills\nLlms txt\nLlms txt full\nIntroduction\nCopy page\nTelnyx product guides and tutorials \u2014 AI voice assistants, global SMS/MMS, voice APIs, phone numbers, IoT SIM, and programmable networking, all in one place.\nCopy page\nDocumentation Index\nFetch the complete documentation index at:\nhttps://developers.telnyx.com/llms.txt\nUse this file to discover all available pages before exploring further.\n\u200b\nWhat you\u2019ll find here\nAccount setup\nComplete guide to setting up and managing your Telnyx account, from initial\nsignup to account verification and upgrades.\nAI\nIncorporate AI into your applications with ease.\nReal-time communications\nBuild powerful communication experiences with voice, messaging, video, and\nfax capabilities.\nIoT and networking\nConnect devices globally with IoT SIM cards and build private networks with\nenterprise-grade connectivity solutions.\nCloud storage\nTelnyx Cloud Storage is S3-compatible distributed storage with low cost, low\nlatency, and easy migration from AWS S3.\nReporting\nAccess usage reports and debugging tools for your Telnyx account.\n\u200b\nNeed development resources?\nFor SDK setup, authentication, development tools, and cross-platform guides, check out our\nDevelopment section\n.\n\u200b\nStay in the loop\nSign up for our developer newsletter to get product updates, API tips, and engineering insights.\n*\nCompany Email\nSubscribe\nYou can unsubscribe at any time. Read our\nprivacy policy\nand\nterms and conditions\n.\nWas this page helpful?\nYes\nNo\n\u2318\nI\nOn this page\nWhat you\u2019ll find here\nNeed development resources?\nStay in the loop\nTelnyx\nhome page\ngithub\nlinkedin\nslack\nx\nResources\nSupport center\nSETI\nUpdates\nRelease notes\nCommunity\nLow Latency Club\ngithub\nlinkedin\nslack\nx\nAssistant\nResponses are generated using AI and may contain mistakes.",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://telnyx.com/integrations",
+      "title": "Voice AI Agent Integrations | Telnyx",
+      "text": "Voice AI Agent Integrations | Telnyx\nHome\nVoice AI\nVoice API\nInference\nMobile Voice\nSpeech-to-Text\nText-to-speech\nSIP Trunking\nSMS API\nWhatsApp Business API\nView all products\nHealthcare\nFinance\nTravel and Hospitality\nLogistics and Transportation\nContact Center\nInsurance\nRetail and E-Commerce\nSales and Marketing\nServices and Dining\nView all solutions\nVoice AI\nVoice API\nInference\nMobile Voice\nSpeech-to-Text\nText-to-Speech\nSIP Trunking\nSMS API\nGlobal Numbers\nIoT SIM Card\nView all pricing\nOur Network\nMission Control Portal\nCustomer stories\nGlobal coverage\nPartners\nCareers\nEvents\nResource center\nSupport center\nAI Templates\nSETI\nDev Docs\nIntegrations\nProducts\nSolutions\nPricing\nWhy Telnyx\nResources\nDevelopers\nContact us\nLog in\nContact us\nLog in\nSign up\nOpen menu\nIntegrate with Voice AI Agents\nAutomate and accelerate your workflows with seamless integrations.\nBrowser Integrations\nYour tools. Your workflows. Now powered by Voice AI.\nTelnyx Voice AI Agents enable businesses to automate and scale voice interactions using advanced speech recognition, natural language understanding, and real-time decisioning.\nBy integrating the power of natural voice with CRMs, ITSM tools, and collaboration platforms, teams can optimize workflows, reduce manual effort, and transform everyday workflows into faster resolutions and simpler experiences.\n30\nresults\nin All Integrations\nSearch integrations\nIntegration Type\nAll\nAll\nAccounting and Finance\nCommunication and Collaboration\nCustomer Support\nDesign and UX\nEcommerce and Payments\nEngineering and Product\nFile Storage and Productivity\nHR and Recruiting\nIT Operations\nKnowledge and Documentation\nSales and CRM\nScheduling\nWork Management\nAirtable\nRead and update structured records seamlessly through voice.\nLearn more\nAsana\nCreate tasks and keep projects on track using voice.\nLearn more\nCalendly\nBook meetings and manage availability through natural conversation.\nLearn more\nConfluence\nFind and surface internal knowledge instantly through voice.\nLearn more\nFigma\nAccess design files and project context through voice.\nLearn more\nGithub\nManage issues, pull requests, and code tasks hands-free through voice.\nLearn more\nGong\nBring conversation insights into every voice interaction.\nLearn more\nGreenhouse\nOptimize recruiting with voice-driven updates, scheduling, and candidate workflows.\nLearn more\nHubspot\nBring real-time CRM intelligence into every voice conversation.\nLearn more\nIntercom\nPower seamless customer support and engagement through voice-driven Intercom workflows.\nLearn more\nJira\nCreate, update, and review Jira issues simply by speaking.\nLearn more\nJira Service Management\nCreate and manage service tickets through conversational AI.\nLearn more\nLinear\nTrack issues and project progress simply by speaking.\nLearn more\nMicrosoft Teams\nSend messages and trigger team updates through voice.\nLearn more\nN8n\nTrigger sophisticated automations from any voice interaction.\nLearn more\nNotion\nQuery and update shared knowledge through natural dialogue.\nLearn more\nOneDrive\nRetrieve and manage files securely using voice.\nLearn more\nOutlook\nManage email and scheduling through conversational AI.\nLearn more\nPipedrive\nAccess pipeline and deal data instantly through voice.\nLearn more\nQuickBooks Online\nAccess invoices and payment details through natural conversation.\nLearn more\nSAP SuccessFactors\nAccess employee and HR records securely through voice.\nLearn more\nSabre\nEnable real-time travel search, booking, and itinerary updates via voice.\nLearn more\nSalesforce\nDeliver personalized voice interactions powered by live Salesforce data.\nLearn more\nServiceNow\nAutomate IT service requests and ticket actions through conversational AI.\nLearn more\nSharepoint\nSearch and retrieve enterprise content using voice.\nLearn more\nShopify\nAccess orders and inventory instantly through voice.\nLearn more\nStripe\nRetrieve payment and subscription data through conversational AI.\nLearn more\nUiPath\nTrigger and orchestrate RPA automations directly from natural dialogue.\nLearn more\nZendesk\nResolve and log support tickets with seamless, voice-powered workflows.\nLearn more\nZoho\nSync leads, deals, and customer records from every voice interaction.\nLorem Ipsum\nNo results.\nReset\nWhere milliseconds matter, Telnyx delivers\nFrom first call to global deployment, Telnyx gives you the stack, scale, and support to launch real-time conversational AI with confidence.\nContact us\nSTART BUILDING\nSocial\nLinkedIn\nTwitter\nFacebook\nCompany\nOur Network\nGlobal Coverage\nRelease Notes\nCareers\nVoice AI\nAI Glossary\nShop\nLegal\nData and Privacy\nReport Abuse\nPrivacy Policy\nCookie Policy\nLaw Enforcement\nAcceptable Use\nTrust Center\nCountry Specific Requirements\nWebsite Terms and Conditions\nTerms and Conditions of Service\nCompare\nElevenLabs\nVapi\nBaseten\nTogether.ai\nTwilio\nBandwidth\nVonage\nAmazon Connect\nAsk AI\n\u00a9 Telnyx LLC\n2026\nISO \u2022 PCI \u2022 HIPAA \u2022 GDPR \u2022 SOC2 Type II\nBy clicking \u201cAccept All Cookies\u201d, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.\nRead more\nAccept all\nCookies settings",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/telnyx/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Telnyx package compromised on PyPI",
+          "url": "https://telnyx.com/resources/telnyx-python-sdk-supply-chain-security-notice-march-2026",
+          "points": 133,
+          "num_comments": 135,
+          "created_at": "2026-03-27T08:57:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47540388"
+        },
+        {
+          "title": "Telnyx package compromised on PyPI",
+          "url": "https://www.aikido.dev/blog/telnyx-pypi-compromised-teampcp-canisterworm",
+          "points": 85,
+          "num_comments": 1,
+          "created_at": "2026-03-27T18:13:57Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47546265"
+        },
+        {
+          "title": "Telnyx Python SDK: Supply Chain Security Notice",
+          "url": "https://telnyx.com/resources/telnyx-python-sdk-supply-chain-security-notice-march-2026",
+          "points": 17,
+          "num_comments": 1,
+          "created_at": "2026-03-27T17:58:52Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47546081"
+        },
+        {
+          "title": "Telnyx Knows Nothing",
+          "url": "https://www.fredposner.com/telnyx-knows-nothing/",
+          "points": 12,
+          "num_comments": 4,
+          "created_at": "2025-02-08T08:49:31Z",
+          "hn_url": "https://news.ycombinator.com/item?id=42981529"
+        },
+        {
+          "title": "Catching the LiteLLM and Telnyx supply chain zero-days via semantic analysis",
+          "url": "https://point-wild.github.io/who-touched-my-packages/",
+          "points": 10,
+          "num_comments": 5,
+          "created_at": "2026-03-29T15:49:30Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47564188"
+        },
+        {
+          "title": "The telnyx packages on PyPI have been compromised",
+          "url": "https://lwn.net/Articles/1065059/",
+          "points": 5,
+          "num_comments": 0,
+          "created_at": "2026-03-27T20:17:13Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47547686"
+        },
+        {
+          "title": "Team PCP Strikes again \u2013 `telnyx` on PyPI gets compromised",
+          "url": "https://safedep.io/malicious-telnyx-pypi-compromise/",
+          "points": 5,
+          "num_comments": 0,
+          "created_at": "2026-03-27T12:01:42Z",
+          "hn_url": "https://news.ycombinator.com/item?id=47541663"
+        },
+        {
+          "title": "FCC Proposes $4M+ Fine Against Telnyx for Apparently Illegal Robocall Scheme",
+          "url": "https://www.fcc.gov/document/fcc-proposes-nearly-45m-fine-apparently-illegal-robocall-scheme",
+          "points": 4,
+          "num_comments": 2,
+          "created_at": "2025-02-05T08:01:07Z",
+          "hn_url": "https://news.ycombinator.com/item?id=42945428"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://telnyx.com/pricing",
+    "changelog": null,
+    "docs": "https://developers.telnyx.com",
+    "integrations": "https://telnyx.com/integrations",
+    "g2": "https://www.g2.com/products/telnyx/reviews"
+  },
+  "analysis": {
+    "name": "Telnyx",
+    "url": "https://telnyx.com",
+    "tagline": "Infrastructure for real-time agents",
+    "value_proposition": "Telnyx owns the full stack from carrier network to AI inference, enabling businesses to build low-latency voice AI agents without third-party handoffs or rented infrastructure.",
+    "target_segment": "enterprise / mid-market / dev",
+    "ideal_customer": "Businesses building voice AI agents, contact centers, and real-time communications applications that need owned-infrastructure reliability and global scale",
+    "features": [
+      {
+        "name": "voice ai agents",
+        "description": "Fully autonomous voice agents that handle calls, route, and act without human intervention",
+        "evidence_source": "landing",
+        "evidence_quote": "agents control the system directly, speaking, routing, and acting without human intervention",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "voice agent builder",
+        "description": "UI tool to configure and deploy voice AI agents with chosen models and infrastructure",
+        "evidence_source": "landing",
+        "evidence_quote": "Configure the environment your agents run in. Choose the models, voice, and infrastructure",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "voice api",
+        "description": "Programmable voice API for building custom calling experiences",
+        "evidence_source": "pricing",
+        "evidence_quote": "Voice API",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sip trunking",
+        "description": "SIP trunking service for connecting PBX and telephony infrastructure",
+        "evidence_source": "pricing",
+        "evidence_quote": "SIP Trunking",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "sms api",
+        "description": "Programmable SMS messaging API for application-to-person messaging",
+        "evidence_source": "pricing",
+        "evidence_quote": "Messaging API",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "whatsapp business api",
+        "description": "WhatsApp messaging integration for business communication",
+        "evidence_source": "landing",
+        "evidence_quote": "WhatsApp Business API",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "whatsapp calling",
+        "description": "Voice calling over WhatsApp",
+        "evidence_source": "pricing",
+        "evidence_quote": "WhatsApp Calling",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "speech-to-text",
+        "description": "Real-time AI speech transcription with 40+ language support",
+        "evidence_source": "landing",
+        "evidence_quote": "40+ Languages supported with real-time, multilingual AI transcription",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "text-to-speech",
+        "description": "AI text-to-speech synthesis for voice agent output",
+        "evidence_source": "pricing",
+        "evidence_quote": "Text-to-speech",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "inference",
+        "description": "AI model inference colocated with communications infrastructure for low latency",
+        "evidence_source": "landing",
+        "evidence_quote": "We bridge the gap by colocating GPUs with the live communications path",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "global numbers",
+        "description": "Global phone number provisioning across countries and regions",
+        "evidence_source": "pricing",
+        "evidence_quote": "Global Numbers",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "mobile voice",
+        "description": "Mobile voice product unifying mobile and fixed identity under a programmable control plane",
+        "evidence_source": "landing",
+        "evidence_quote": "Voice follows the user. We unified mobile and fixed identity layers under a single programmable control plane",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "iot sim card",
+        "description": "IoT SIM cards for connecting devices globally",
+        "evidence_source": "pricing",
+        "evidence_quote": "IoT SIM Card",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "video api",
+        "description": "Programmable video API for real-time video communications",
+        "evidence_source": "pricing",
+        "evidence_quote": "Video API",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "number lookup api",
+        "description": "API for looking up phone number metadata and carrier information",
+        "evidence_source": "pricing",
+        "evidence_quote": "Number Lookup API",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "verify api",
+        "description": "Phone number verification and OTP delivery API",
+        "evidence_source": "pricing",
+        "evidence_quote": "Verify API",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "fax api",
+        "description": "Programmable fax sending and receiving API",
+        "evidence_source": "pricing",
+        "evidence_quote": "Fax API",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "programmable networking",
+        "description": "Configurable private network infrastructure for enterprise-grade connectivity",
+        "evidence_source": "pricing",
+        "evidence_quote": "Programmable Networking",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "global edge router",
+        "description": "Global edge routing for deterministic, low-latency traffic routing",
+        "evidence_source": "pricing",
+        "evidence_quote": "Global Edge Router",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "cloud storage",
+        "description": "S3-compatible distributed cloud storage with low cost and low latency",
+        "evidence_source": "docs",
+        "evidence_quote": "Telnyx Cloud Storage is S3-compatible distributed storage with low cost, low latency, and easy migration from AWS S3",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "owned private network",
+        "description": "Bare-metal global communications fabric bypassing public internet for high-quality audio",
+        "evidence_source": "landing",
+        "evidence_quote": "Operates a private global network to bypass the public internet for high-quality audio",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "edge pops with colocated gpus",
+        "description": "Edge points-of-presence with GPUs colocated alongside the communications path for low-latency AI",
+        "evidence_source": "landing",
+        "evidence_quote": "Co-located edge PoPs and GPUs to power low-latency Voice AI globally",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "agent-to-agent orchestration",
+        "description": "Autonomous orchestration enabling agents to delegate tasks to other agents",
+        "evidence_source": "landing",
+        "evidence_quote": "Autonomous orchestration that allows for agent-to-agent work",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "programmatic compliance (10dlc/kyc)",
+        "description": "Built-in 10DLC and KYC compliance enforcement integrated into the execution path",
+        "evidence_source": "landing",
+        "evidence_quote": "Built-in programmatic compliance (10DLC/KYC) to ensure it's enforced before execution",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sim-based identity verification",
+        "description": "Network-level identity verification via the mobile SIM to counter deepfakes and spoofing",
+        "evidence_source": "landing",
+        "evidence_quote": "we verify identity at the network level, ensuring your AI agents know exactly who is speaking",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "mission control portal",
+        "description": "Web portal for setting up, managing, and monitoring all telecommunications services",
+        "evidence_source": "pricing",
+        "evidence_quote": "Set up, manage and monitor your telecommunications easily through your Mission Control Portal",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "agent skills",
+        "description": "Pre-built skill modules that extend agent capabilities with third-party integrations",
+        "evidence_source": "landing",
+        "evidence_quote": "Agent Skills",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "agent control plane",
+        "description": "Control plane for managing and orchestrating AI agent execution and memory",
+        "evidence_source": "landing",
+        "evidence_quote": "Agent Control Plane and Runtime. Intelligence lives inside the call",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "multilingual ai transcription",
+        "description": "Real-time transcription supporting 40+ languages",
+        "evidence_source": "landing",
+        "evidence_quote": "40+ Languages supported with real-time, multilingual AI transcription",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "server-side sdks",
+        "description": "Official SDKs for Node.js, Python, PHP, Java, Ruby, and Go",
+        "evidence_source": "docs",
+        "evidence_quote": "Node.js, Python, PHP, Java, Ruby, Go",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "telnyx cli",
+        "description": "Command-line interface for managing Telnyx resources and automating workflows",
+        "evidence_source": "docs",
+        "evidence_quote": "Telnyx CLI",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mcp servers",
+        "description": "Model Context Protocol servers for AI agent tool integration",
+        "evidence_source": "docs",
+        "evidence_quote": "MCP Servers",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks and events",
+        "description": "Event-driven webhook system for real-time notifications on communication events",
+        "evidence_source": "docs",
+        "evidence_quote": "Webhooks & Events",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "workflows",
+        "description": "Workflow automation tool for building multi-step communication flows",
+        "evidence_source": "docs",
+        "evidence_quote": "Workflows",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "reporting and usage analytics",
+        "description": "Usage reports and debugging tools for all Telnyx services",
+        "evidence_source": "docs",
+        "evidence_quote": "Access usage reports and debugging tools for your Telnyx account",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "automatic volume discounts",
+        "description": "Automatic tiered pricing discounts applied as usage volumes increase",
+        "evidence_source": "pricing",
+        "evidence_quote": "As your traffic hits higher volume thresholds, we apply discounts automatically",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "24/7 support",
+        "description": "Free 24/7 in-house support via chat or call with telecommunications specialists",
+        "evidence_source": "pricing",
+        "evidence_quote": "Talk to a telecommunications specialist via chat or call, 24/7/365",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated customer success manager",
+        "description": "Personally assigned CSM for volume-based pricing customers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Receive specialized support from a personally allotted customer success manager",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "noc support",
+        "description": "Network Operations Center support with prioritized ticketing for enterprise customers",
+        "evidence_source": "pricing",
+        "evidence_quote": "Receive prioritized ticketing privileges and NOC support",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "ai templates",
+        "description": "Pre-built AI agent templates for common use cases",
+        "evidence_source": "landing",
+        "evidence_quote": "AI Templates",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "iso/pci/hipaa/gdpr/soc2 compliance",
+        "description": "Certified compliance with ISO, PCI, HIPAA, GDPR, and SOC2 Type II standards",
+        "evidence_source": "pricing",
+        "evidence_quote": "ISO \u2022 PCI \u2022 HIPAA \u2022 GDPR \u2022 SOC2 Type II",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-model inference support",
+        "description": "Support for multiple LLM providers including MiniMax, Kimi, Qwen3, and GLM",
+        "evidence_source": "landing",
+        "evidence_quote": "MiniMax M2.7, Kimi, Kimi K2.5, Qwen3 235B A22B, GLM 5.1 FP8",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "node-red integration",
+        "description": "Node-RED visual programming tool integration for workflow automation",
+        "evidence_source": "docs",
+        "evidence_quote": "Node-RED",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Airtable",
+      "Asana",
+      "Calendly",
+      "Confluence",
+      "Figma",
+      "GitHub",
+      "Gong",
+      "Greenhouse",
+      "HubSpot",
+      "Intercom",
+      "Jira",
+      "Jira Service Management",
+      "Linear",
+      "Microsoft Teams",
+      "n8n",
+      "Notion",
+      "OneDrive",
+      "Outlook",
+      "Pipedrive",
+      "QuickBooks Online",
+      "SAP SuccessFactors",
+      "Sabre",
+      "Salesforce",
+      "ServiceNow",
+      "SharePoint",
+      "Shopify",
+      "Stripe",
+      "UiPath",
+      "Zendesk",
+      "Zoho",
+      "Node-RED",
+      "Postman",
+      "ngrok"
+    ],
+    "differentiators": [
+      "Owns the full telephony stack end-to-end \u2014 not abstracting over someone else's infrastructure",
+      "Co-located GPUs with live communications path for minimal AI inference latency",
+      "Operates a private global bare-metal network, bypassing the public internet",
+      "SIM-level identity verification to counter deepfakes and spoofing",
+      "Built-in programmatic compliance (10DLC/KYC) enforced before agent execution",
+      "Agent-native platform \u2014 not retrofitted from a UI-first product",
+      "Unified mobile and fixed identity layers under a single programmable control plane"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [
+        "PyPI package compromised in a supply chain attack \u2014 multiple HN threads and security advisories",
+        "FCC proposed $4M+ fine against Telnyx for allegedly illegal robocall scheme",
+        "\"Telnyx Knows Nothing\" \u2014 HN thread suggesting poor support or knowledge gaps (low signal, 12 upvotes)"
+      ],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "self-serve",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Pay As You Go",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Usage-based billing; free 24/7 support; portal access; automatic volume discounts"
+        },
+        {
+          "name": "Volume-Based",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Custom discounted pricing based on monthly usage; dedicated CSM; prioritized NOC support"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Pure usage-based pricing \u2014 no published seat tiers or flat monthly fees. All products (Voice, SMS, AI, Numbers, IoT, Storage, etc.) are priced per-unit with automatic discounts at higher volumes. Volume-based tier requires sales engagement. No free trial or free tier mentioned."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Incident LiteLLM/Telnyx supply-chain attacks, with guidance",
+        "url": "https://blog.pypi.org/posts/2026-04-02-incident-report-litellm-telnyx-supply-chain-attack/",
+        "points": 3,
+        "comments": 0,
+        "age_days": 59,
+        "hn_url": "https://news.ycombinator.com/item?id=47624000"
+      },
+      {
+        "title": "Incident Report: LiteLLM/Telnyx supply-chain attacks, with guidance",
+        "url": "https://blog.pypi.org/posts/2026-04-02-incident-report-litellm-telnyx-supply-chain-attack/",
+        "points": 3,
+        "comments": 0,
+        "age_days": 59,
+        "hn_url": "https://news.ycombinator.com/item?id=47614203"
+      },
+      {
+        "title": "Telnyx now offers WhatsApp Business Calling",
+        "url": "https://telnyx.com/products/whatsapp-calling",
+        "points": 2,
+        "comments": 0,
+        "age_days": 32,
+        "hn_url": "https://news.ycombinator.com/item?id=47959979"
+      },
+      {
+        "title": "Reverse Engineering File Format Steganography Chain of the TeamPCP Attack",
+        "url": "https://husseinmuhaisen.com/blog/reverse-engineering-teampcp-telnyx-file-format-chain/",
+        "points": 2,
+        "comments": 1,
+        "age_days": 51,
+        "hn_url": "https://news.ycombinator.com/item?id=47728650"
+      },
+      {
+        "title": "LiveKit on Telnyx: hosted agents with no session fees, lower speech costs",
+        "url": "https://telnyx.com/release-notes/livekit-on-telnyx-voice-ai-infrastructure",
+        "points": 1,
+        "comments": 0,
+        "age_days": 55,
+        "hn_url": "https://news.ycombinator.com/item?id=47664412"
+      }
+    ]
+  }
+}

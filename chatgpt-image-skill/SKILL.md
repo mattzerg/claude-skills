@@ -4,6 +4,7 @@ description: Generate images using OpenAI's gpt-image-1 model (the API equivalen
 allowed-tools: Bash, Read, Write
 ---
 
+
 # ChatGPT Image (gpt-image-1)
 
 Single-image AI generation via OpenAI. Sibling of `nano-banana-pro`. Used as primary provider in `blog-imagery` for concept/narrative posts where AI imagery (vs coded SVG diagrams) is the right tool.

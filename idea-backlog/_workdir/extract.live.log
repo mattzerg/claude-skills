@@ -1,0 +1,787 @@
+found 776 markdown files; 776 pending; 0 already done
+[  1/776] CaseStudies/durable/_archive/v2-harness.md  ideas=0  cum=0  in=3012  out=9  t=1s
+[  2/776] CaseStudies/durable/migration.md  ideas=4  cum=4  in=6103  out=918  t=19s
+[  3/776] Consulting/Zerg-Solutions.checklist.md  ideas=0  cum=4  in=6938  out=927  t=21s
+[  4/776] Consulting/Zerg-Solutions.one-pager-v2-2026-05-07.md  ideas=5  cum=9  in=8589  out=1861  t=38s
+[  5/776] Consulting/Zerg-Solutions.one-pager.interview-2026-05-07.md  ideas=0  cum=9  in=9316  out=1870  t=39s
+[  6/776] Consulting/Zerg-Solutions.one-pager.md  ideas=3  cum=12  in=10795  out=2443  t=53s
+[  7/776] Consulting/Zerg-Solutions.one-pager.review-2026-05-07.md  ideas=0  cum=12  in=13371  out=2452  t=54s
+[  8/776] Consulting/cro-audit-2026-05-07.md  ideas=14  cum=26  in=17911  out=5273  t=109s
+[  9/776] Consulting/positioning.md  ideas=6  cum=32  in=20505  out=6655  t=141s
+[ 10/776] Consulting/session-summary.md  ideas=0  cum=32  in=22967  out=6664  t=142s
+[ 11/776] Consulting/solutions-analytics-dashboard-spec-2026-05-09.md  ideas=1  cum=33  in=25087  out=6875  t=149s
+[ 12/776] Epoch/Projects/Client Pipeline.md  ideas=2  cum=35  in=26253  out=7236  t=156s
+[ 13/776] Epoch/Projects/Linear Snapshot.md  ideas=10  cum=45  in=28227  out=8986  t=188s
+[ 14/776] Epoch/Projects/Product Glossary.md  ideas=0  cum=45  in=29633  out=10651  t=218s
+[ 15/776] Epoch/Projects/Zergboard Snapshot.md  ideas=12  cum=57  in=32059  out=12507  t=251s
+[ 16/776] Epoch/Team/Matthew Eisner — Work Log.md  ideas=2  cum=59  in=32969  out=12832  t=258s
+[ 17/776] Landing/zergwallet/v1-2026-05-03-brief.md  ideas=4  cum=63  in=35574  out=13760  t=281s
+[ 18/776] Marketing/AgentCounter/README.md  ideas=3  cum=66  in=37340  out=14362  t=293s
+[ 19/776] Marketing/AgentRoster/README.md  ideas=1  cum=67  in=39112  out=14588  t=304s
+[ 20/776] Marketing/CostCalculator/README.md  ideas=1  cum=68  in=40463  out=14811  t=309s
+[ 21/776] Marketing/CostCalculator/brief.md  ideas=1  cum=69  in=42046  out=15054  t=315s
+[ 22/776] Marketing/Distribution/agents-that-remember/blog.md  ideas=0  cum=69  in=43070  out=15063  t=316s
+[ 23/776] Marketing/Distribution/agents-that-remember/checklist.md  ideas=2  cum=71  in=44637  out=15458  t=326s
+[ 24/776] Marketing/Distribution/agents-that-remember/communities.md  ideas=0  cum=71  in=45505  out=15467  t=327s
+[ 25/776] Marketing/Distribution/agents-that-remember/hn.md  ideas=2  cum=73  in=46896  out=15924  t=336s
+[ 26/776] Marketing/Distribution/agents-that-remember/idan-repost.md  ideas=1  cum=74  in=48160  out=16149  t=342s
+[ 27/776] Marketing/Distribution/agents-that-remember/internal-slack.md  ideas=1  cum=75  in=49086  out=16326  t=346s
+[ 28/776] Marketing/Distribution/agents-that-remember/linkedin.md  ideas=0  cum=75  in=50596  out=16335  t=347s
+[ 29/776] Marketing/Distribution/agents-that-remember/newsletter-pitches.md  ideas=2  cum=77  in=52152  out=16751  t=359s
+[ 30/776] Marketing/Distribution/agents-that-remember/outbound-snippet.md  ideas=1  cum=78  in=53140  out=16979  t=365s
+[ 31/776] Marketing/Distribution/agents-that-remember/reddit-niche.md  ideas=2  cum=80  in=54895  out=17405  t=374s
+[ 32/776] Marketing/Distribution/agents-that-remember/sales-deck.md  ideas=0  cum=80  in=55675  out=17414  t=375s
+[ 33/776] Marketing/Distribution/agents-that-remember/video-brief.md  ideas=1  cum=81  in=56788  out=17657  t=380s
+[ 34/776] Marketing/Distribution/agents-that-remember/webinar.md  ideas=2  cum=83  in=57815  out=18044  t=387s
+[ 35/776] Marketing/Distribution/agents-that-remember/x-thread.md  ideas=1  cum=84  in=59143  out=18261  t=392s
+[ 36/776] Marketing/Distribution/agents-that-remember/zerg-newsletter.md  ideas=1  cum=85  in=60197  out=18511  t=398s
+[ 37/776] Marketing/Distribution/durable-pattern-tools-launch/blog.md  ideas=0  cum=85  in=61438  out=18520  t=399s
+[ 38/776] Marketing/Distribution/durable-pattern-tools-launch/checklist.md  ideas=1  cum=86  in=63091  out=18731  t=404s
+[ 39/776] Marketing/Distribution/durable-pattern-tools-launch/communities.md  ideas=0  cum=86  in=64836  out=18740  t=405s
+[ 40/776] Marketing/Distribution/durable-pattern-tools-launch/hn.md  ideas=1  cum=87  in=66048  out=18970  t=410s
+[ 41/776] Marketing/Distribution/durable-pattern-tools-launch/idan-repost.md  ideas=2  cum=89  in=66999  out=19337  t=418s
+[ 42/776] Marketing/Distribution/durable-pattern-tools-launch/internal-slack.md  ideas=0  cum=89  in=67791  out=19346  t=419s
+[ 43/776] Marketing/Distribution/durable-pattern-tools-launch/linkedin.md  ideas=6  cum=95  in=69027  out=20511  t=442s
+[ 44/776] Marketing/Distribution/durable-pattern-tools-launch/newsletter-pitches.md  ideas=3  cum=98  in=70606  out=21059  t=453s
+[ 45/776] Marketing/Distribution/durable-pattern-tools-launch/open-decisions.md  ideas=5  cum=103  in=75433  out=22093  t=480s
+[ 46/776] Marketing/Distribution/durable-pattern-tools-launch/outbound-snippet.md  ideas=3  cum=106  in=76713  out=22619  t=490s
+[ 47/776] Marketing/Distribution/durable-pattern-tools-launch/reddit-niche.md  ideas=5  cum=111  in=78093  out=23625  t=507s
+[ 48/776] Marketing/Distribution/durable-pattern-tools-launch/rollout-calendar.md  ideas=3  cum=114  in=80720  out=24231  t=520s
+[ 49/776] Marketing/Distribution/durable-pattern-tools-launch/sales-deck.md  ideas=0  cum=114  in=82079  out=24469  t=526s
+[ 50/776] Marketing/Distribution/durable-pattern-tools-launch/slip-recovery.md  ideas=0  cum=114  in=83972  out=24478  t=528s
+[ 51/776] Marketing/Distribution/durable-pattern-tools-launch/video-brief.md  ideas=1  cum=115  in=85824  out=24695  t=534s
+[ 52/776] Marketing/Distribution/durable-pattern-tools-launch/webinar.md  ideas=3  cum=118  in=87657  out=25305  t=548s
+[ 53/776] Marketing/Distribution/durable-pattern-tools-launch/x-thread.md  ideas=4  cum=122  in=88890  out=26013  t=562s
+[ 54/776] Marketing/Distribution/durable-pattern-tools-launch/zerg-newsletter.md  ideas=6  cum=128  in=90240  out=27168  t=585s
+[ 55/776] Marketing/Distribution/durable-pattern-tools-launch/zergboard-card-spec.md  ideas=3  cum=131  in=92284  out=27850  t=599s
+[ 56/776] Marketing/Distribution/sample-post/blog.md  ideas=2  cum=133  in=92825  out=28192  t=606s
+[ 57/776] Marketing/Distribution/sample-post/checklist.md  ideas=3  cum=136  in=94350  out=28752  t=618s
+[ 58/776] Marketing/Distribution/sample-post/communities.md  ideas=1  cum=137  in=94890  out=28947  t=622s
+[ 59/776] Marketing/Distribution/sample-post/hn.md  ideas=0  cum=137  in=95435  out=28956  t=623s
+[ 60/776] Marketing/Distribution/sample-post/idan-repost.md  ideas=0  cum=137  in=95997  out=28965  t=624s
+[ 61/776] Marketing/Distribution/sample-post/internal-slack.md  ideas=1  cum=138  in=96546  out=29172  t=629s
+[ 62/776] Marketing/Distribution/sample-post/linkedin.md  ideas=0  cum=138  in=97114  out=29181  t=629s
+[ 63/776] Marketing/Distribution/sample-post/newsletter-pitches.md  ideas=2  cum=140  in=97687  out=29571  t=638s
+[ 64/776] Marketing/Distribution/sample-post/outbound-snippet.md  ideas=0  cum=140  in=98246  out=29580  t=639s
+[ 65/776] Marketing/Distribution/sample-post/reddit-niche.md  ideas=1  cum=141  in=98798  out=29782  t=644s
+[ 66/776] Marketing/Distribution/sample-post/sales-deck.md  ideas=2  cum=143  in=99348  out=30187  t=652s
+[ 67/776] Marketing/Distribution/sample-post/video-brief.md  ideas=0  cum=143  in=99903  out=30196  t=654s
+[ 68/776] Marketing/Distribution/sample-post/webinar.md  ideas=0  cum=143  in=100458  out=30205  t=658s
+[ 69/776] Marketing/Distribution/sample-post/x-thread.md  ideas=0  cum=143  in=101031  out=30214  t=658s
+[ 70/776] Marketing/Distribution/sample-post/zerg-newsletter.md  ideas=0  cum=143  in=101586  out=30223  t=659s
+[ 71/776] Marketing/Distribution/zerg-solutions-founder-email.md  ideas=2  cum=145  in=102702  out=30548  t=667s
+[ 72/776] Marketing/Email/Newsletters/issue-001.md  ideas=3  cum=148  in=103589  out=31078  t=678s
+[ 73/776] Marketing/Email/Sequences/welcome-drip/email-1-welcome.md  ideas=0  cum=148  in=104304  out=31087  t=684s
+[ 74/776] Marketing/Email/Sequences/welcome-drip/email-2-nudge.md  ideas=0  cum=148  in=104986  out=31096  t=685s
+[ 75/776] Marketing/Email/Sequences/welcome-drip/email-3-done-column.md  ideas=0  cum=148  in=105709  out=31100  t=686s
+[ 76/776] Marketing/Email/Sequences/welcome-drip/email-4-ai-access.md  ideas=2  cum=150  in=106504  out=31519  t=695s
+[ 77/776] Marketing/Email/Sequences/welcome-drip/email-5-how-we-use-it.md  ideas=0  cum=150  in=107256  out=31528  t=696s
+[ 78/776] Marketing/Email/Sequences/welcome-drip/email-6-winback.md  ideas=0  cum=150  in=107897  out=31537  t=699s
+[ 79/776] Marketing/Email/sent-log.md  ideas=0  cum=150  in=108484  out=31546  t=700s
+[ 80/776] Marketing/HomepageV2/zergai-homepage-v2-proposal.md  ideas=6  cum=156  in=111707  out=32901  t=734s
+[ 81/776] Marketing/IdentityCard/README.md  ideas=5  cum=161  in=113337  out=33857  t=752s
+[ 82/776] Marketing/InstagramAIProjects/README.md  ideas=4  cum=165  in=114555  out=34696  t=770s
+[ 83/776] Marketing/InstagramAIProjects/account-setup.md  ideas=11  cum=176  in=116334  out=36455  t=801s
+[ 84/776] Marketing/InstagramAIProjects/backlog.md  ideas=25  cum=201  in=120946  out=44053  t=938s
+[ 85/776] Marketing/InstagramAIProjects/matthew-zerg-positioning.md  ideas=9  cum=210  in=122132  out=45408  t=962s
+[ 86/776] Marketing/InstagramAIProjects/post-template.md  ideas=1  cum=211  in=122933  out=45605  t=966s
+[ 87/776] Marketing/InstagramAIProjects/production-sop.md  ideas=3  cum=214  in=124428  out=46123  t=978s
+[ 88/776] Marketing/InstagramAIProjects/tools/ReceiptGenerator/README.md  ideas=0  cum=214  in=125010  out=46132  t=979s
+[ 89/776] Marketing/InstagramAIProjects/voice-guide.md  ideas=2  cum=216  in=126561  out=46518  t=989s
+[ 90/776] Marketing/InstagramAIProjects/week-1-script-pack.md  ideas=7  cum=223  in=128930  out=47715  t=1014s
+[ 91/776] Marketing/InstagramAIProjects/week-2-script-pack.md  ideas=10  cum=233  in=131724  out=49306  t=1045s
+[ 92/776] Marketing/LiveDemo/README.md  ideas=4  cum=237  in=133168  out=50124  t=1061s
+[ 93/776] Marketing/MigrationTool/README.md  ideas=4  cum=241  in=134956  out=50964  t=1079s
+[ 94/776] Marketing/PMM/zergalytics-brief.md  ideas=4  cum=245  in=136906  out=51707  t=1095s
+[ 95/776] Marketing/PMM/zergboard-brief.md  ideas=5  cum=250  in=138786  out=52667  t=1114s
+[ 96/776] Marketing/PMM/zergcal-brief.md  ideas=2  cum=252  in=140163  out=53106  t=1122s
+[ 97/776] Marketing/PMM/zergchat-brief.md  ideas=3  cum=255  in=141574  out=53694  t=1134s
+[ 98/776] Marketing/PMM/zergcrm-brief.md  ideas=5  cum=260  in=143802  out=54807  t=1157s
+[ 99/776] Marketing/PMM/zergmail-brief.md  ideas=4  cum=264  in=145301  out=55585  t=1171s
+[100/776] Marketing/PMM/zergmeeting-brief.md  ideas=3  cum=267  in=146660  out=56220  t=1184s
+[101/776] Marketing/PSEO/asana-vs-zergboard.md  ideas=4  cum=271  in=149308  out=57159  t=1204s
+[102/776] Marketing/PSEO/calendly-vs-zergcal.md  ideas=4  cum=275  in=152437  out=58165  t=1228s
+[103/776] Marketing/PSEO/claude-code-agents-on-zergboard.md  ideas=6  cum=281  in=154873  out=59320  t=1251s
+[104/776] Marketing/PSEO/distribution-playbook.md  ideas=5  cum=286  in=157882  out=60423  t=1274s
+[105/776] Marketing/PSEO/front-vs-zergmail.md  ideas=4  cum=290  in=161131  out=61368  t=1298s
+[106/776] Marketing/PSEO/imagery/agents-that-remember-imagery-plan.md  ideas=0  cum=290  in=162145  out=61377  t=1299s
+[107/776] Marketing/PSEO/imagery/asana-vs-zergboard-imagery-plan.md  ideas=0  cum=290  in=163126  out=61386  t=1300s
+[108/776] Marketing/PSEO/imagery/calendly-vs-zergcal-imagery-plan.md  ideas=0  cum=290  in=163920  out=61395  t=1301s
+[109/776] Marketing/PSEO/imagery/front-vs-zergmail-imagery-plan.md  ideas=0  cum=290  in=164694  out=61404  t=1302s
+[110/776] Marketing/PSEO/imagery/jira-vs-zergboard-imagery-plan.md  ideas=0  cum=290  in=165675  out=61413  t=1303s
+[111/776] Marketing/PSEO/imagery/linear-vs-zergboard-imagery-plan.md  ideas=0  cum=290  in=166676  out=61422  t=1304s
+[112/776] Marketing/PSEO/imagery/meeting-ends-cards-appear-imagery-plan.md  ideas=0  cum=290  in=167742  out=61431  t=1305s
+[113/776] Marketing/PSEO/imagery/notion-vs-zergboard-imagery-plan.md  ideas=0  cum=290  in=168707  out=61440  t=1306s
+[114/776] Marketing/PSEO/imagery/otter-vs-zergmeeting-imagery-plan.md  ideas=0  cum=290  in=169504  out=61449  t=1308s
+[115/776] Marketing/PSEO/imagery/project-boards-built-for-agents-imagery-plan.md  ideas=0  cum=290  in=170433  out=61458  t=1309s
+[116/776] Marketing/PSEO/imagery/slack-vs-zergchat-imagery-plan.md  ideas=0  cum=290  in=171234  out=61467  t=1310s
+[117/776] Marketing/PSEO/imagery/what-is-agent-native-project-management-imagery-plan.md  ideas=0  cum=290  in=172275  out=61476  t=1311s
+[118/776] Marketing/PSEO/imagery/zerg-and-anthropic-imagery-plan.md  ideas=0  cum=290  in=173293  out=61485  t=1312s
+[119/776] Marketing/PSEO/imagery/zerg-and-cloudflare-imagery-plan.md  ideas=0  cum=290  in=174255  out=61494  t=1313s
+[120/776] Marketing/PSEO/imagery/zerg-and-cursor-imagery-plan.md  ideas=0  cum=290  in=175212  out=61503  t=1314s
+[121/776] Marketing/PSEO/imagery/zerg-and-fly-imagery-plan.md  ideas=0  cum=290  in=176148  out=61512  t=1315s
+[122/776] Marketing/PSEO/imagery/zerg-and-vercel-imagery-plan.md  ideas=0  cum=290  in=177094  out=61521  t=1316s
+[123/776] Marketing/PSEO/imagery/zergboard-launch-imagery-plan.md  ideas=0  cum=290  in=178140  out=61530  t=1317s
+[124/776] Marketing/PSEO/imagery/zergboard-public-launch-imagery-plan.md  ideas=0  cum=290  in=179038  out=61539  t=1317s
+[125/776] Marketing/PSEO/jira-vs-zergboard-pricing-verification.md  ideas=0  cum=290  in=180555  out=61548  t=1318s
+[126/776] Marketing/PSEO/jira-vs-zergboard.md  ideas=4  cum=294  in=183557  out=62405  t=1342s
+[127/776] Marketing/PSEO/linear-vs-zergboard.md  ideas=2  cum=296  in=186296  out=62868  t=1361s
+[128/776] Marketing/PSEO/notion-vs-zergboard.md  ideas=4  cum=300  in=189596  out=63652  t=1382s
+[129/776] Marketing/PSEO/otter-vs-zergmeeting.md  ideas=4  cum=304  in=192661  out=64626  t=1406s
+[130/776] Marketing/PSEO/publish-blockers-checklist.md  ideas=2  cum=306  in=197779  out=65003  t=1414s
+[131/776] Marketing/PSEO/redirect-rules-draft.md  ideas=7  cum=313  in=199586  out=66348  t=1439s
+[132/776] Marketing/PSEO/session-handoff-2026-05-08.md  ideas=0  cum=313  in=201298  out=66357  t=1440s
+[133/776] Marketing/PSEO/slack-vs-zergchat.md  ideas=4  cum=317  in=204779  out=67311  t=1463s
+[134/776] Marketing/PSEO/what-is-agent-native-project-management.md  ideas=3  cum=320  in=208024  out=67933  t=1478s
+[135/776] Marketing/PSEO/zerg-and-cloudflare.md  ideas=3  cum=323  in=209693  out=68515  t=1489s
+[136/776] Marketing/PSEO/zerg-and-cursor.md  ideas=5  cum=328  in=211988  out=69389  t=1508s
+[137/776] Marketing/PSEO/zerg-and-fly.md  ideas=3  cum=331  in=213874  out=69999  t=1518s
+[138/776] Marketing/PSEO/zerg-and-vercel.md  ideas=2  cum=333  in=215754  out=70431  t=1528s
+[139/776] Marketing/PublicDashboard/README.md  ideas=4  cum=337  in=217065  out=71188  t=1546s
+[140/776] Marketing/Quiz/README.md  ideas=0  cum=337  in=218546  out=72180  t=1565s
+[141/776] Marketing/SalesEnablement/Outreach/BD/anthropic.md  ideas=3  cum=340  in=219864  out=72746  t=1577s
+[142/776] Marketing/SalesEnablement/Outreach/BD/cloudflare.md  ideas=3  cum=343  in=221049  out=73318  t=1587s
+[143/776] Marketing/SalesEnablement/Outreach/BD/cursor.md  ideas=2  cum=345  in=222213  out=73815  t=1597s
+[144/776] Marketing/SalesEnablement/Outreach/BD/fly.md  ideas=1  cum=346  in=223426  out=74051  t=1603s
+[145/776] Marketing/SalesEnablement/Outreach/BD/vercel.md  ideas=3  cum=349  in=224569  out=74655  t=1616s
+[146/776] Marketing/SalesEnablement/Outreach/warm-network-solutions-sequence.md  ideas=5  cum=354  in=227083  out=75655  t=1637s
+[147/776] Marketing/SalesEnablement/battle-cards.md  ideas=2  cum=356  in=228491  out=76065  t=1646s
+[148/776] Marketing/SalesEnablement/discovery-deck-source.md  ideas=3  cum=359  in=229860  out=76699  t=1659s
+[149/776] Marketing/SalesEnablement/discovery-script.md  ideas=3  cum=362  in=231375  out=77330  t=1674s
+[150/776] Marketing/SalesEnablement/objection-doc.md  ideas=3  cum=365  in=233003  out=77907  t=1687s
+[151/776] Marketing/SalesEnablement/one-pager.md  ideas=2  cum=367  in=234308  out=78308  t=1697s
+[152/776] Marketing/Templates/README.md  ideas=5  cum=372  in=236158  out=79262  t=1717s
+[153/776] Marketing/Tools/README.md  ideas=3  cum=375  in=237546  out=79790  t=1729s
+[154/776] Marketing/audits/solutions-cro-audit-v1-2026-05-07.md  ideas=14  cum=389  in=245759  out=82681  t=1794s
+[155/776] MatthewZerg/README.md  ideas=4  cum=393  in=246706  out=83319  t=1807s
+[156/776] MatthewZerg/builds/correct-is-not-usable-card/README.md  ideas=1  cum=394  in=247234  out=83516  t=1811s
+[157/776] MatthewZerg/builds/fake-demo-detector/README.md  ideas=2  cum=396  in=247803  out=83900  t=1819s
+[158/776] MatthewZerg/builds/flappy-tiny-space-wizard/README.md  ideas=1  cum=397  in=248346  out=84096  t=1823s
+[159/776] MatthewZerg/builds/receipt-generator/README.md  ideas=1  cum=398  in=248924  out=84290  t=1827s
+[160/776] MatthewZerg/content/backlog/backlog.md  ideas=18  cum=416  in=250105  out=87017  t=1871s
+[161/776] MatthewZerg/content/scripts/launch-scripts.md  ideas=4  cum=420  in=251457  out=87740  t=1885s
+[162/776] Notes/2026-05-03 GoDaddy DNS handoff for Idan.md  ideas=0  cum=420  in=253004  out=87749  t=1886s
+[163/776] Notes/Apple Notes/dinari/b2b-conversations.md  ideas=0  cum=420  in=254045  out=87758  t=1888s
+[164/776] Notes/Apple Notes/dinari/b2b-landing-page.md  ideas=0  cum=420  in=254567  out=87767  t=1889s
+[165/776] Notes/Apple Notes/dinari/b2b-process.md  ideas=0  cum=420  in=255149  out=87771  t=1890s
+[166/776] Notes/Apple Notes/dinari/content-topics.md  ideas=1  cum=421  in=255658  out=87975  t=1894s
+[167/776] Notes/Apple Notes/dinari/design-specs.md  ideas=7  cum=428  in=257268  out=89237  t=1919s
+[168/776] Notes/Apple Notes/dinari/design-work-week-of-25-sept.md  ideas=3  cum=431  in=257844  out=89658  t=1927s
+[169/776] Notes/Apple Notes/dinari/din.md  ideas=0  cum=431  in=258317  out=89667  t=1928s
+[170/776] Notes/Apple Notes/dinari/dinari-b2b.md  ideas=8  cum=439  in=261954  out=90987  t=1957s
+[171/776] Notes/Apple Notes/dinari/dinari-to-do.md  ideas=5  cum=444  in=262598  out=91785  t=1971s
+[172/776] Notes/Apple Notes/dinari/dinarisv-planning.md  ideas=6  cum=450  in=263909  out=92717  t=1988s
+[173/776] Notes/Apple Notes/dinari/discord-rules.md  ideas=0  cum=450  in=264668  out=92726  t=1989s
+[174/776] Notes/Apple Notes/dinari/korea-blockchain-week-notes.md  ideas=3  cum=453  in=265446  out=93221  t=2000s
+[175/776] Notes/Apple Notes/dinari/legals.md  ideas=3  cum=456  in=266232  out=93778  t=2011s
+[176/776] Notes/Apple Notes/dinari/market-insights.md  ideas=0  cum=456  in=267488  out=93787  t=2012s
+[177/776] Notes/Apple Notes/dinari/messagesusps-to-test.md  ideas=1  cum=457  in=267991  out=93961  t=2017s
+[178/776] Notes/Apple Notes/dinari/micro-actions.md  ideas=0  cum=457  in=268485  out=93965  t=2018s
+[179/776] Notes/Apple Notes/dinari/plan-for-dex-liquidity.md  ideas=1  cum=458  in=269411  out=94190  t=2023s
+[180/776] Notes/Apple Notes/dinari/prds.md  ideas=4  cum=462  in=270373  out=94911  t=2037s
+[181/776] Notes/Apple Notes/dinari/press-outreach-email.md  ideas=2  cum=464  in=271184  out=95264  t=2328s
+[182/776] Notes/Apple Notes/dinari/product-feedback.md  ideas=0  cum=464  in=271770  out=95273  t=2329s
+[183/776] Notes/Apple Notes/dinari/referral-program.md  ideas=1  cum=465  in=272311  out=95469  t=2334s
+[184/776] Notes/Apple Notes/dinari/solidviolet-b2b.md  ideas=7  cum=472  in=277664  out=96800  t=2362s
+[185/776] Notes/Apple Notes/dinari/solidviolet-marketing.md  ideas=0  cum=472  in=278153  out=96809  t=2363s
+[186/776] Notes/Apple Notes/dinari/sv-core-statementsinfo.md  ideas=3  cum=475  in=278812  out=97310  t=2372s
+[187/776] Notes/Apple Notes/dinari/to-discuss-with-brandon.md  ideas=23  cum=498  in=282097  out=101007  t=2449s
+[188/776] Notes/Apple Notes/dinari/to-discuss-with-jake.md  ideas=29  cum=527  in=289214  out=105883  t=2549s
+[189/776] Notes/Apple Notes/dinari/top-to-do.md  ideas=0  cum=527  in=289791  out=105892  t=2550s
+[190/776] Notes/Apple Notes/dinari/websiteproduct-mapping.md  ideas=5  cum=532  in=290570  out=106613  t=2564s
+[191/776] Notes/Apple Notes/dinari-b2b/b2b-messages.md  ideas=0  cum=532  in=292377  out=106622  t=2565s
+[192/776] Notes/Apple Notes/dinari-b2b/b2b-process.md  ideas=0  cum=532  in=292932  out=106626  t=2566s
+[193/776] Notes/Apple Notes/dinari-b2b/dinari-b2b.md  ideas=0  cum=532  in=293520  out=106635  t=2566s
+[194/776] Notes/Apple Notes/dinari-b2b/other-partners.md  ideas=0  cum=532  in=294067  out=106644  t=2567s
+[195/776] Notes/Apple Notes/notes/13btc-pool.md  ideas=3  cum=535  in=295067  out=107271  t=2581s
+[196/776] Notes/Apple Notes/notes/1545-east-andrew-johnson-highway-greenville-tennessee.md  ideas=0  cum=535  in=295575  out=107280  t=2582s
+[197/776] Notes/Apple Notes/notes/44039-177.md  ideas=0  cum=535  in=296106  out=107284  t=2584s
+[198/776] Notes/Apple Notes/notes/4727-inspection.md  ideas=0  cum=535  in=296620  out=107288  t=2585s
+[199/776] Notes/Apple Notes/notes/4727-nick-handyman-tasks.md  ideas=0  cum=535  in=297140  out=107297  t=2586s
+[200/776] Notes/Apple Notes/notes/4727-note.md  ideas=0  cum=535  in=298020  out=107306  t=2587s
+[201/776] Notes/Apple Notes/notes/4727-shopping-list.md  ideas=0  cum=535  in=298638  out=107315  t=2588s
+[202/776] Notes/Apple Notes/notes/4727-tax-filing-details.md  ideas=0  cum=535  in=299126  out=107319  t=2589s
+[203/776] Notes/Apple Notes/notes/4727-to-do.md  ideas=0  cum=535  in=299682  out=107323  t=2590s
+[204/776] Notes/Apple Notes/notes/4727.md  ideas=0  cum=535  in=300532  out=107327  t=2591s
+[205/776] Notes/Apple Notes/notes/4727a-message.md  ideas=0  cum=535  in=301210  out=107336  t=2592s
+[206/776] Notes/Apple Notes/notes/analytics.md  ideas=1  cum=536  in=301797  out=107537  t=2597s
+[207/776] Notes/Apple Notes/notes/anna-call.md  ideas=0  cum=536  in=302354  out=107541  t=2598s
+[208/776] Notes/Apple Notes/notes/api-to-sdk.md  ideas=0  cum=536  in=303081  out=107550  t=2599s
+[209/776] Notes/Apple Notes/notes/arbitrum-stip-kyb.md  ideas=0  cum=536  in=303909  out=107559  t=2600s
+[210/776] Notes/Apple Notes/notes/arbitrum.md  ideas=0  cum=536  in=304785  out=107568  t=2601s
+[211/776] Notes/Apple Notes/notes/b2b-acquisition-via-plume.md  ideas=6  cum=542  in=305792  out=108696  t=2621s
+[212/776] Notes/Apple Notes/notes/b2b-for-gabe.md  ideas=0  cum=542  in=306295  out=108705  t=2622s
+[213/776] Notes/Apple Notes/notes/b2b-partner-and-other-research.md  ideas=6  cum=548  in=307520  out=109830  t=2641s
+[214/776] Notes/Apple Notes/notes/b2b-referral-ideas.md  ideas=2  cum=550  in=308218  out=110230  t=2649s
+[215/776] Notes/Apple Notes/notes/b2b-updates.md  ideas=13  cum=563  in=313333  out=112478  t=2696s
+[216/776] Notes/Apple Notes/notes/b2c-product-planning.md  ideas=19  cum=582  in=314445  out=115366  t=2747s
+[217/776] Notes/Apple Notes/notes/base-ideas.md  ideas=1  cum=583  in=314990  out=115557  t=2751s
+[218/776] Notes/Apple Notes/notes/base-notes.md  ideas=2  cum=585  in=315584  out=115875  t=2757s
+[219/776] Notes/Apple Notes/notes/bd-message-templates.md  ideas=0  cum=585  in=316357  out=115884  t=2758s
+[220/776] Notes/Apple Notes/notes/berry-outreach.md  ideas=2  cum=587  in=317053  out=116270  t=2765s
+[221/776] Notes/Apple Notes/notes/blast.md  ideas=2  cum=589  in=317635  out=116618  t=2772s
+[222/776] Notes/Apple Notes/notes/blight-ticket-defense.md  ideas=0  cum=589  in=318908  out=116627  t=2773s
+[223/776] Notes/Apple Notes/notes/boilerplate-messages.md  ideas=0  cum=589  in=319982  out=116636  t=2775s
+[224/776] Notes/Apple Notes/notes/brian-taxaccounting-notes.md  ideas=0  cum=589  in=321345  out=116645  t=2776s
+[225/776] Notes/Apple Notes/notes/brian.md  ideas=0  cum=589  in=321864  out=116649  t=2777s
+[226/776] Notes/Apple Notes/notes/business-ideas.md  ideas=11  cum=600  in=322878  out=118361  t=2807s
+[227/776] Notes/Apple Notes/notes/bvi-costs.md  ideas=0  cum=600  in=323387  out=118365  t=2808s
+[228/776] Notes/Apple Notes/notes/call-notes.md  ideas=0  cum=600  in=323883  out=118374  t=2809s
+[229/776] Notes/Apple Notes/notes/calvin.md  ideas=0  cum=600  in=324353  out=118378  t=2810s
+[230/776] Notes/Apple Notes/notes/cex.md  ideas=1  cum=601  in=324856  out=118578  t=2815s
+[231/776] Notes/Apple Notes/notes/chatgpt-job-ai-to-do.md  ideas=0  cum=601  in=325392  out=118587  t=2816s
+[232/776] Notes/Apple Notes/notes/chicken-tikka.md  ideas=0  cum=601  in=325924  out=118596  t=2817s
+[233/776] Notes/Apple Notes/notes/coingecko.md  ideas=0  cum=601  in=326407  out=118605  t=2818s
+[234/776] Notes/Apple Notes/notes/coinmarketcap-prompt.md  ideas=0  cum=601  in=327088  out=118614  t=2819s
+[235/776] Notes/Apple Notes/notes/coinstore.md  ideas=0  cum=601  in=328660  out=118623  t=2820s
+[236/776] Notes/Apple Notes/notes/com.md  ideas=0  cum=601  in=329130  out=118627  t=2821s
+[237/776] Notes/Apple Notes/notes/consulting.md  ideas=0  cum=601  in=330103  out=118636  t=2822s
+[238/776] Notes/Apple Notes/notes/coral.md  ideas=3  cum=604  in=331220  out=119171  t=2834s
+[239/776] Notes/Apple Notes/notes/core-ideas.md  ideas=1  cum=605  in=331698  out=119334  t=2838s
+[240/776] Notes/Apple Notes/notes/crackpot-venture-ideas.md  ideas=5  cum=610  in=332246  out=119998  t=2850s
+[241/776] Notes/Apple Notes/notes/credible-finance.md  ideas=0  cum=610  in=332742  out=120007  t=2851s
+[242/776] Notes/Apple Notes/notes/crypto-storage-options-for-dad.md  ideas=0  cum=610  in=333272  out=120016  t=2853s
+[243/776] Notes/Apple Notes/notes/d-token-economic-flowslevers.md  ideas=1  cum=611  in=333906  out=120216  t=2858s
+[244/776] Notes/Apple Notes/notes/dad-bvi-reimbursement.md  ideas=0  cum=611  in=334450  out=120225  t=2859s
+[245/776] Notes/Apple Notes/notes/dad-letter.md  ideas=0  cum=611  in=335400  out=120234  t=2860s
+[246/776] Notes/Apple Notes/notes/dadfinances-ideas.md  ideas=2  cum=613  in=337154  out=120573  t=2877s
+[247/776] Notes/Apple Notes/notes/delta-complaint.md  ideas=0  cum=613  in=338401  out=120582  t=2878s
+[248/776] Notes/Apple Notes/notes/dinari-b2b-api-one-pager.md  ideas=3  cum=616  in=339243  out=121104  t=2888s
+[249/776] Notes/Apple Notes/notes/dinari-drip-onboarding.md  ideas=2  cum=618  in=340696  out=121524  t=2897s
+[250/776] Notes/Apple Notes/notes/dinari-for-fintech-businesses.md  ideas=1  cum=619  in=341209  out=121722  t=2901s
+[251/776] Notes/Apple Notes/notes/dinari-fundraising-strategy.md  ideas=2  cum=621  in=342423  out=122117  t=2910s
+[252/776] Notes/Apple Notes/notes/dinari-handoff.md  ideas=1  cum=622  in=343067  out=122332  t=2914s
+[253/776] Notes/Apple Notes/notes/dinari-hydra-x-one-pager.md  ideas=2  cum=624  in=343985  out=122749  t=2922s
+[254/776] Notes/Apple Notes/notes/dinari-plan.md  ideas=5  cum=629  in=344723  out=123586  t=2937s
+[255/776] Notes/Apple Notes/notes/dinari-positioning-feedback.md  ideas=2  cum=631  in=345315  out=123934  t=2945s
+[256/776] Notes/Apple Notes/notes/dinari-project-management.md  ideas=0  cum=631  in=345811  out=123938  t=2946s
+[257/776] Notes/Apple Notes/notes/dinari-sdk-partner-onboarding-process.md  ideas=0  cum=631  in=346435  out=123947  t=2947s
+[258/776] Notes/Apple Notes/notes/dinari-to-do.md  ideas=0  cum=631  in=347137  out=123956  t=2947s
+[259/776] Notes/Apple Notes/notes/dinari-triage.md  ideas=0  cum=631  in=347790  out=123965  t=2948s
+[260/776] Notes/Apple Notes/notes/dinarisv-priorities-july-2024.md  ideas=0  cum=631  in=348418  out=123974  t=2949s
+[261/776] Notes/Apple Notes/notes/dinarisv-task-planning.md  ideas=0  cum=631  in=349119  out=123983  t=2950s
+[262/776] Notes/Apple Notes/notes/diversify-your-on-chain-portfolio-into-real-world-assets-with-us-stocks.md  ideas=0  cum=631  in=350041  out=123992  t=2952s
+[263/776] Notes/Apple Notes/notes/dont-look-now-but-the-table-next-to-us-both-mom-and-daughter.md  ideas=0  cum=631  in=350577  out=124001  t=2953s
+[264/776] Notes/Apple Notes/notes/fantasy-football-dis-track.md  ideas=1  cum=632  in=351064  out=124150  t=2957s
+[265/776] Notes/Apple Notes/notes/finance-to-do.md  ideas=0  cum=632  in=351588  out=124159  t=2958s
+[266/776] Notes/Apple Notes/notes/follow-ups-for-28-may.md  ideas=0  cum=632  in=352106  out=124168  t=2960s
+[267/776] Notes/Apple Notes/notes/follow-ups.md  ideas=0  cum=632  in=352620  out=124172  t=2961s
+[268/776] Notes/Apple Notes/notes/for-4727.md  ideas=0  cum=632  in=353134  out=124181  t=2961s
+[269/776] Notes/Apple Notes/notes/for-anna.md  ideas=17  cum=649  in=354593  out=126776  t=3006s
+[270/776] Notes/Apple Notes/notes/for-avalanche.md  ideas=0  cum=649  in=355078  out=126785  t=3007s
+[271/776] Notes/Apple Notes/notes/for-brandon.md  ideas=0  cum=649  in=355612  out=126794  t=3008s
+[272/776] Notes/Apple Notes/notes/for-cv.md  ideas=0  cum=649  in=356106  out=126803  t=3009s
+[273/776] Notes/Apple Notes/notes/for-one-pagers.md  ideas=2  cum=651  in=356807  out=127200  t=3017s
+[274/776] Notes/Apple Notes/notes/for-planning.md  ideas=2  cum=653  in=357312  out=127504  t=3023s
+[275/776] Notes/Apple Notes/notes/gabe-note.md  ideas=0  cum=653  in=358540  out=127513  t=3024s
+[276/776] Notes/Apple Notes/notes/garrett-marketing-plan.md  ideas=0  cum=653  in=359426  out=127522  t=3025s
+[277/776] Notes/Apple Notes/notes/genevieve.md  ideas=0  cum=653  in=359966  out=127531  t=3026s
+[278/776] Notes/Apple Notes/notes/glystn-notes.md  ideas=5  cum=658  in=360633  out=128377  t=3041s
+[279/776] Notes/Apple Notes/notes/gm.md  ideas=0  cum=658  in=361106  out=128386  t=3042s
+[280/776] Notes/Apple Notes/notes/gma.md  ideas=0  cum=658  in=361581  out=128395  t=3042s
+[281/776] Notes/Apple Notes/notes/groceries.md  ideas=0  cum=658  in=362179  out=128399  t=3043s
+[282/776] Notes/Apple Notes/notes/has-worked-on-my-personal-residence-and-a-multi-unit-rental-i-own.md  ideas=0  cum=658  in=362798  out=128403  t=3044s
+[283/776] Notes/Apple Notes/notes/health-message.md  ideas=1  cum=659  in=363534  out=128596  t=3049s
+[284/776] Notes/Apple Notes/notes/hey-josh.md  ideas=0  cum=659  in=365760  out=128605  t=3050s
+[285/776] Notes/Apple Notes/notes/hi-here-are-my-account-details.md  ideas=0  cum=659  in=366293  out=128609  t=3051s
+[286/776] Notes/Apple Notes/notes/house-to-do.md  ideas=0  cum=659  in=366976  out=128613  t=3053s
+[287/776] Notes/Apple Notes/notes/how-about-yall-get-a-fucking-job-no-wonder-why-europe-is-economically.md  ideas=0  cum=659  in=367551  out=128622  t=3054s
+[288/776] Notes/Apple Notes/notes/idan-actuator-production.md  ideas=1  cum=660  in=368232  out=128835  t=3059s
+[289/776] Notes/Apple Notes/notes/inveritai.md  ideas=1  cum=661  in=368732  out=129000  t=3063s
+[290/776] Notes/Apple Notes/notes/jan-4-2026.md  ideas=0  cum=661  in=369282  out=129009  t=3064s
+[291/776] Notes/Apple Notes/notes/jazzy.md  ideas=0  cum=661  in=369866  out=129018  t=3065s
+[292/776] Notes/Apple Notes/notes/job-huntlondon-outreach.md  ideas=0  cum=661  in=370507  out=129022  t=3066s
+[293/776] Notes/Apple Notes/notes/jobbio.md  ideas=0  cum=661  in=371052  out=129031  t=3066s
+[294/776] Notes/Apple Notes/notes/julyaug.md  ideas=0  cum=661  in=371529  out=129040  t=3070s
+[295/776] Notes/Apple Notes/notes/kevin-b2b-messages.md  ideas=2  cum=663  in=372685  out=129477  t=3078s
+[296/776] Notes/Apple Notes/notes/kyb-questions.md  ideas=0  cum=663  in=373437  out=129486  t=3079s
+[297/776] Notes/Apple Notes/notes/lazer-interview.md  ideas=0  cum=663  in=375338  out=129495  t=3080s
+[298/776] Notes/Apple Notes/notes/leads-to-process.md  ideas=0  cum=663  in=376019  out=129504  t=3081s
+[299/776] Notes/Apple Notes/notes/legal-questions.md  ideas=0  cum=663  in=376508  out=129513  t=3082s
+[300/776] Notes/Apple Notes/notes/lharganlibertytitle.md  ideas=0  cum=663  in=377004  out=129522  t=3083s
+[301/776] Notes/Apple Notes/notes/list-of-service-offerings-for-eric.md  ideas=0  cum=663  in=377815  out=129531  t=3084s
+[302/776] Notes/Apple Notes/notes/liz-and-kevin-wedding-gift.md  ideas=0  cum=663  in=378487  out=129540  t=3085s
+[303/776] Notes/Apple Notes/notes/london.md  ideas=2  cum=665  in=380426  out=129863  t=3092s
+[304/776] Notes/Apple Notes/notes/main-protocol-token-cspt.md  ideas=4  cum=669  in=381316  out=130648  t=3106s
+[305/776] Notes/Apple Notes/notes/man.md  ideas=0  cum=669  in=381800  out=130657  t=3109s
+[306/776] Notes/Apple Notes/notes/marketing-team-planning.md  ideas=0  cum=669  in=382331  out=130666  t=3110s
+[307/776] Notes/Apple Notes/notes/messages.md  ideas=0  cum=669  in=382842  out=130675  t=3111s
+[308/776] Notes/Apple Notes/notes/messaging-workbook.md  ideas=2  cum=671  in=384290  out=131075  t=3120s
+[309/776] Notes/Apple Notes/notes/michigan-sos-drivers-license-docs.md  ideas=0  cum=671  in=384849  out=131079  t=3121s
+[310/776] Notes/Apple Notes/notes/montagzach-moonshot.md  ideas=2  cum=673  in=385433  out=131414  t=3128s
+[311/776] Notes/Apple Notes/notes/nolan-call.md  ideas=2  cum=675  in=385957  out=131703  t=3134s
+[312/776] Notes/Apple Notes/notes/onboarding-prd.md  ideas=3  cum=678  in=386971  out=132287  t=3144s
+[313/776] Notes/Apple Notes/notes/organizingoutsourcinghelp.md  ideas=0  cum=678  in=387547  out=132296  t=3145s
+[314/776] Notes/Apple Notes/notes/p.md  ideas=0  cum=678  in=388180  out=132305  t=3146s
+[315/776] Notes/Apple Notes/notes/pawel-halina-meeting-32620.md  ideas=5  cum=683  in=388846  out=133062  t=3161s
+[316/776] Notes/Apple Notes/notes/personal-finance-benchmark-items.md  ideas=0  cum=683  in=389567  out=133071  t=3162s
+[317/776] Notes/Apple Notes/notes/planning-update.md  ideas=2  cum=685  in=390328  out=133414  t=3168s
+[318/776] Notes/Apple Notes/notes/plume-interviews.md  ideas=0  cum=685  in=390986  out=133423  t=3169s
+[319/776] Notes/Apple Notes/notes/potential-b2b-leads-q4-2023.md  ideas=0  cum=685  in=391504  out=133432  t=3170s
+[320/776] Notes/Apple Notes/notes/product-marketing-roadmap.md  ideas=10  cum=695  in=392401  out=134867  t=3196s
+[321/776] Notes/Apple Notes/notes/rachel-notes.md  ideas=0  cum=695  in=393116  out=134876  t=3197s
+[322/776] Notes/Apple Notes/notes/real-estate.md  ideas=0  cum=695  in=393720  out=134885  t=3198s
+[323/776] Notes/Apple Notes/notes/reddit.md  ideas=0  cum=695  in=394206  out=134894  t=3199s
+[324/776] Notes/Apple Notes/notes/remora.md  ideas=0  cum=695  in=394695  out=134903  t=3200s
+[325/776] Notes/Apple Notes/notes/rewards-campaigns.md  ideas=2  cum=697  in=395233  out=135226  t=3207s
+[326/776] Notes/Apple Notes/notes/sbt-tasks-to-backlog.md  ideas=0  cum=697  in=395798  out=135235  t=3208s
+[327/776] Notes/Apple Notes/notes/sierra-abroad-topicsimportant-items.md  ideas=0  cum=697  in=396934  out=135244  t=3209s
+[328/776] Notes/Apple Notes/notes/sierra-cv.md  ideas=0  cum=697  in=397858  out=135253  t=3210s
+[329/776] Notes/Apple Notes/notes/sierra-on-trip.md  ideas=0  cum=697  in=399762  out=135262  t=3211s
+[330/776] Notes/Apple Notes/notes/sierra-planningdiscussion.md  ideas=3  cum=700  in=400335  out=135769  t=3222s
+[331/776] Notes/Apple Notes/notes/sierra-to-do.md  ideas=0  cum=700  in=400980  out=135773  t=3223s
+[332/776] Notes/Apple Notes/notes/sierra-wrap-upitems-taken.md  ideas=0  cum=700  in=402167  out=135782  t=3227s
+[333/776] Notes/Apple Notes/notes/so-now-we-know-they-all-had-just-as-much-sex-as-usbut-is-my-vagine.md  ideas=0  cum=700  in=402779  out=135791  t=3228s
+[334/776] Notes/Apple Notes/notes/solidviolet-launch.md  ideas=0  cum=700  in=404747  out=135800  t=3229s
+[335/776] Notes/Apple Notes/notes/solidviolet-tokenlegals.md  ideas=3  cum=703  in=405760  out=136336  t=3240s
+[336/776] Notes/Apple Notes/notes/spend-requests.md  ideas=3  cum=706  in=406267  out=136727  t=3248s
+[337/776] Notes/Apple Notes/notes/stanley-security-deposit.md  ideas=0  cum=706  in=406989  out=136736  t=3248s
+[338/776] Notes/Apple Notes/notes/startup-calls.md  ideas=0  cum=706  in=407724  out=136745  t=3249s
+[339/776] Notes/Apple Notes/notes/sv-legal-process.md  ideas=3  cum=709  in=408748  out=137312  t=3262s
+[340/776] Notes/Apple Notes/notes/sv-sale-to-do-22-jun.md  ideas=0  cum=709  in=409374  out=137321  t=3264s
+[341/776] Notes/Apple Notes/notes/tasks-for-nigerian-kid.md  ideas=6  cum=715  in=410275  out=138372  t=3282s
+[342/776] Notes/Apple Notes/notes/tech-triageeng-sprint-planning.md  ideas=0  cum=715  in=410797  out=138381  t=3284s
+[343/776] Notes/Apple Notes/notes/the-art-of-reason-in-2025.md  ideas=1  cum=716  in=411382  out=138572  t=3291s
+[344/776] Notes/Apple Notes/notes/thought-experiments-ideas.md  ideas=1  cum=717  in=411968  out=138785  t=3296s
+[345/776] Notes/Apple Notes/notes/to-discuss-w-calvin.md  ideas=4  cum=721  in=415831  out=139449  t=3313s
+[346/776] Notes/Apple Notes/notes/to-discuss-with-anna.md  ideas=0  cum=721  in=416832  out=139458  t=3313s
+[347/776] Notes/Apple Notes/notes/to-discuss-with-davis.md  ideas=8  cum=729  in=417763  out=140599  t=3335s
+[348/776] Notes/Apple Notes/notes/to-do-1-dec.md  ideas=2  cum=731  in=418336  out=140894  t=3341s
+[349/776] Notes/Apple Notes/notes/to-do-18-july-2025.md  ideas=0  cum=731  in=418872  out=140898  t=3342s
+[350/776] Notes/Apple Notes/notes/to-do-20-jan.md  ideas=0  cum=731  in=419466  out=140907  t=3342s
+[351/776] Notes/Apple Notes/notes/to-do-20-nov.md  ideas=0  cum=731  in=419974  out=140916  t=3343s
+[352/776] Notes/Apple Notes/notes/to-do-31-mar-2026.md  ideas=1  cum=732  in=420632  out=141130  t=3347s
+[353/776] Notes/Apple Notes/notes/to-do-7-july.md  ideas=0  cum=732  in=421214  out=141134  t=3348s
+[354/776] Notes/Apple Notes/notes/to-do-8-nov-weekend.md  ideas=0  cum=732  in=421927  out=141143  t=3350s
+[355/776] Notes/Apple Notes/notes/to-do-before-leaving-fl.md  ideas=0  cum=732  in=422495  out=141147  t=3350s
+[356/776] Notes/Apple Notes/notes/to-do-feb-2026.md  ideas=0  cum=732  in=423169  out=141151  t=3351s
+[357/776] Notes/Apple Notes/notes/to-do-march-2026-in-florida.md  ideas=0  cum=732  in=423723  out=141160  t=3352s
+[358/776] Notes/Apple Notes/notes/to-do-nyc.md  ideas=0  cum=732  in=424236  out=141164  t=3353s
+[359/776] Notes/Apple Notes/notes/to-do-thanksgiving.md  ideas=0  cum=732  in=424716  out=141168  t=3358s
+[360/776] Notes/Apple Notes/notes/to-do.md  ideas=0  cum=732  in=425237  out=141177  t=3359s
+[361/776] Notes/Apple Notes/notes/to-send-to-eric.md  ideas=0  cum=732  in=425749  out=141186  t=3360s
+[362/776] Notes/Apple Notes/notes/tokenize-this.md  ideas=2  cum=734  in=426554  out=141607  t=3368s
+[363/776] Notes/Apple Notes/notes/topics-for-dad-in-bvi.md  ideas=0  cum=734  in=427301  out=141616  t=3369s
+[364/776] Notes/Apple Notes/notes/unemployment.md  ideas=0  cum=734  in=428413  out=141625  t=3370s
+[365/776] Notes/Apple Notes/notes/uofm-scholarship.md  ideas=0  cum=734  in=429053  out=141629  t=3371s
+[366/776] Notes/Apple Notes/notes/urgent-gift-card-to-dos-16-mar.md  ideas=5  cum=739  in=430121  out=142490  t=3386s
+[367/776] Notes/Apple Notes/notes/what-is-mvp-components.md  ideas=3  cum=742  in=430659  out=142973  t=3395s
+[368/776] Notes/Apple Notes/notes/whitepapertoken.md  ideas=8  cum=750  in=433489  out=144539  t=3430s
+[369/776] Notes/Apple Notes/notes/yauchta.md  ideas=0  cum=750  in=434045  out=144548  t=3431s
+[370/776] Notes/Apple Notes/notes/young.md  ideas=2  cum=752  in=434540  out=144864  t=3438s
+[371/776] Notes/Apple Notes/notes/zerg-new.md  ideas=15  cum=767  in=437009  out=147357  t=3491s
+[372/776] Notes/Apple Notes/relayto/best-practices-tutorial-doc.md  ideas=3  cum=770  in=438905  out=147856  t=3503s
+[373/776] Notes/Apple Notes/sierra/bettering-our-relationship.md  ideas=0  cum=770  in=439502  out=147865  t=3504s
+[374/776] Notes/Apple Notes/sierra/funnyeasycuteto-share.md  ideas=0  cum=770  in=440199  out=147869  t=3505s
+[375/776] Notes/Apple Notes/sierra/heavyimportant.md  ideas=0  cum=770  in=440725  out=147878  t=3506s
+[376/776] Notes/Apple Notes/sierra/how-you-can-help-me.md  ideas=0  cum=770  in=441308  out=147887  t=3507s
+[377/776] Notes/Apple Notes/sierra/mediumfacts.md  ideas=0  cum=770  in=441851  out=147891  t=3508s
+[378/776] Notes/Apple Notes/sierra/sierra.md  ideas=1  cum=771  in=458129  out=148084  t=3526s
+[379/776] Notes/Apple Notes/sierra/stories.md  ideas=2  cum=773  in=458727  out=148492  t=3535s
+[380/776] Notes/Apple Notes/sierra/topics-to-cover.md  ideas=0  cum=773  in=460357  out=148501  t=3536s
+[381/776] Notes/Apple Notes/startupbootcamp/highest-funding-raised.md  ideas=1  cum=774  in=460891  out=148689  t=3540s
+[382/776] Notes/Apple Notes/startupbootcamp/jpmorgan.md  ideas=0  cum=774  in=461378  out=148698  t=3541s
+[383/776] Notes/Apple Notes/startupbootcamp/sew-handles.md  ideas=0  cum=774  in=461895  out=148702  t=3542s
+[384/776] Notes/Apple Notes/startupbootcamp/sophie-chat.md  ideas=0  cum=774  in=462468  out=148711  t=3543s
+[385/776] Notes/Apple Notes/touch-surgery/dynamic-links.md  ideas=0  cum=774  in=463880  out=148720  t=3544s
+[386/776] Notes/Apple Notes/touch-surgery/events-chile-and-row.md  ideas=0  cum=774  in=464591  out=148729  t=3545s
+[387/776] Notes/Apple Notes/touch-surgery/human-capitalknowledge-economy.md  ideas=2  cum=776  in=465561  out=149140  t=3554s
+[388/776] Notes/Apple Notes/touch-surgery/old-to-do-for-touch-surgery.md  ideas=0  cum=776  in=466247  out=149149  t=3556s
+[389/776] Notes/Apple Notes/touch-surgery/passwords.md  ideas=0  cum=776  in=466746  out=149153  t=3556s
+[390/776] Notes/Apple Notes/touch-surgery/pure360.md  ideas=0  cum=776  in=467233  out=149157  t=3557s
+[391/776] Notes/Apple Notes/touch-surgery/ts-how-to-reward-evangelists.md  ideas=1  cum=777  in=467777  out=149346  t=3563s
+[392/776] Notes/Apple Notes/touch-surgery/ts-passwords.md  ideas=0  cum=777  in=468356  out=149355  t=3564s
+[393/776] Notes/Apple Notes/touch-surgery/ux-review-procedures-pages-web.md  ideas=4  cum=781  in=469175  out=150056  t=3578s
+[394/776] Notes/Apple Notes/weekly-calls/dinari-weekly-updates.md  ideas=24  cum=805  in=477818  out=153991  t=3666s
+[395/776] Notes/Apple Notes/weekly-calls/to-discuss-w-davis.md  ideas=0  cum=805  in=478385  out=153995  t=3667s
+[396/776] Notes/Apple Notes/weekly-calls/to-discuss-w-gabe.md  ideas=49  cum=854  in=501959  out=162379  t=3856s
+[397/776] Notes/Apple Notes/weekly-calls/to-discuss-with-chas.md  ideas=0  cum=854  in=502686  out=162388  t=3857s
+[398/776] Notes/Apple Notes/weekly-calls/to-discuss-with-garrett.md  ideas=4  cum=858  in=503273  out=163046  t=3871s
+[399/776] Notes/Apple Notes/weekly-calls/to-discuss-with-simon.md  ideas=3  cum=861  in=503861  out=163487  t=3881s
+[400/776] Notes/Apple Notes/weekly-calls/to-discuss-with-young.md  ideas=2  cum=863  in=504704  out=163825  t=3887s
+[401/776] Notes/Apple Notes/weekly-calls/weekly-b2b-calls.md  ideas=0  cum=863  in=505194  out=163829  t=3888s
+[402/776] Notes/Apple Notes/zerg/zerg-actions-and-operations.md  ideas=2  cum=865  in=505744  out=164177  t=3895s
+[403/776] Notes/Apple Notes/zerg/zerg-cloud-launch.md  ideas=3  cum=868  in=506477  out=164695  t=3910s
+[404/776] Notes/Apple Notes/zerg/zerg-connections.md  ideas=0  cum=868  in=506994  out=164704  t=3911s
+[405/776] Notes/Apple Notes/zerg/zerg-marketing.md  ideas=4  cum=872  in=507982  out=165381  t=3924s
+[406/776] Notes/Apple Notes/zerg/zerg-notes.md  ideas=36  cum=908  in=516016  out=171859  t=4063s
+[407/776] Notes/Apple Notes/zerg/zerg-questions.md  ideas=0  cum=908  in=516498  out=171863  t=4064s
+[408/776] Notes/Claude Imports/business-idea-validatormodellerpitch-creator/biz-ideas.md  ideas=1  cum=909  in=517097  out=172047  t=4068s
+[409/776] Notes/Claude Imports/career-cv/career.md  ideas=0  cum=909  in=517639  out=172056  t=4071s
+[410/776] Notes/Claude Imports/content-ingestion/building-a-content-recommendation-knowledge-base.md  ideas=1  cum=910  in=518206  out=172207  t=4076s
+[411/776] Notes/Claude Imports/content-ingestion/content-archive.md  ideas=1  cum=911  in=518762  out=172391  t=4080s
+[412/776] Notes/Claude Imports/d4727-llc/d4727-llc-property-management-knowledge-base.md  ideas=0  cum=911  in=519343  out=172400  t=4081s
+[413/776] Notes/Claude Imports/d4727-llc/project-improvement-suggestions.md  ideas=0  cum=911  in=519911  out=172409  t=4082s
+[414/776] Notes/Claude Imports/misc/ai-agents-and-their-role-in-the-ai-ecosystem.md  ideas=1  cum=912  in=520456  out=172570  t=4086s
+[415/776] Notes/Claude Imports/misc/cheapest-skyteam-and-delta-flights-to-europe-from-detroit.md  ideas=0  cum=912  in=521009  out=172579  t=4087s
+[416/776] Notes/Claude Imports/misc/nudge-agent.md  ideas=1  cum=913  in=521534  out=172752  t=4091s
+[417/776] Notes/Claude Imports/misc/organizing-notes-for-new-chief-of-staff-role-at-zergepoch.md  ideas=1  cum=914  in=522088  out=172932  t=4095s
+[418/776] Notes/Claude Imports/misc/should-i-claim-my-16k-porch-damage-on-insurance.md  ideas=0  cum=914  in=522634  out=172941  t=4096s
+[419/776] Notes/Claude Imports/misc/video-summary-request.md  ideas=0  cum=914  in=523162  out=172950  t=4097s
+[420/776] Notes/Claude Imports/personal-comms-center/crm.md  ideas=1  cum=915  in=523723  out=173108  t=4100s
+[421/776] Notes/Claude Imports/zerg/ai-solutions-with-forward-deployed-engineers.md  ideas=1  cum=916  in=524280  out=173266  t=4105s
+[422/776] Notes/Claude Imports/zerg/organizing-zerg-onboarding-notes.md  ideas=0  cum=916  in=524841  out=173275  t=4107s
+[423/776] Notes/Claude Imports/zerg/scaling-infrastructure-and-marketing-for-zerg.md  ideas=2  cum=918  in=525401  out=173563  t=4112s
+[424/776] Notes/Claude Imports/zerg/zerg-cloud-product-launch-strategy.md  ideas=1  cum=919  in=525956  out=173718  t=4116s
+[425/776] Notes/Finance Hub.md  ideas=0  cum=919  in=527150  out=173727  t=4117s
+[426/776] Notes/Interview Prep.md  ideas=0  cum=919  in=528097  out=173736  t=4118s
+[427/776] Notes/Testimonials.md  ideas=0  cum=919  in=529425  out=173745  t=4119s
+[428/776] Notes/Zerg Notes (organized).md  ideas=6  cum=925  in=530382  out=174848  t=4139s
+[429/776] Projects/Academy/Academy.md  ideas=4  cum=929  in=531278  out=175536  t=4151s
+[430/776] Projects/Academy/ZergScholar.md  ideas=3  cum=932  in=532036  out=176016  t=4159s
+[431/776] Projects/Academy/ZergSchool.md  ideas=2  cum=934  in=532788  out=176385  t=4167s
+[432/776] Projects/Academy/ZergUniversity.md  ideas=3  cum=937  in=533540  out=176910  t=4176s
+[433/776] Projects/D4727 Knowledge Base.md  ideas=5  cum=942  in=541270  out=177980  t=4201s
+[434/776] Projects/Zergboard + Zerglytics Deploy Guide.md  ideas=0  cum=942  in=544274  out=177989  t=4203s
+[435/776] Projects/Zergwallet.md  ideas=0  cum=942  in=544878  out=177998  t=4204s
+[436/776] Projects/Zstack/Case-Studies/andesite/delivery-engagement.checklist.md  ideas=2  cum=944  in=545717  out=178357  t=4213s
+[437/776] Projects/Zstack/Case-Studies/andesite/delivery-engagement.md  ideas=4  cum=948  in=548858  out=179145  t=4228s
+[438/776] Projects/Zstack/Case-Studies/andesite/session-summary.md  ideas=0  cum=948  in=549546  out=179154  t=4229s
+[439/776] Projects/Zstack/Case-Studies/andesite-capture-brief.md  ideas=0  cum=948  in=552797  out=179163  t=4230s
+[440/776] Projects/Zstack/Case-Studies/andesite.md  ideas=3  cum=951  in=554049  out=179793  t=4244s
+[441/776] Projects/Zstack/Case-Studies/cesiumastro/delivery-engagement.checklist.md  ideas=2  cum=953  in=554891  out=180159  t=4252s
+[442/776] Projects/Zstack/Case-Studies/cesiumastro/delivery-engagement.md  ideas=3  cum=956  in=557845  out=180784  t=4266s
+[443/776] Projects/Zstack/Case-Studies/cesiumastro/session-summary.md  ideas=0  cum=956  in=558538  out=180793  t=4267s
+[444/776] Projects/Zstack/Case-Studies/cesiumastro-capture-brief.md  ideas=6  cum=962  in=563183  out=182209  t=4298s
+[445/776] Projects/Zstack/Case-Studies/cesiumastro.md  ideas=0  cum=962  in=564009  out=182218  t=4299s
+[446/776] Projects/Zstack/Case-Studies/durable/delivery-engagement.checklist.md  ideas=2  cum=964  in=564845  out=182579  t=4306s
+[447/776] Projects/Zstack/Case-Studies/durable/delivery-engagement.md  ideas=5  cum=969  in=567907  out=183634  t=4329s
+[448/776] Projects/Zstack/Case-Studies/durable/session-summary.md  ideas=0  cum=969  in=568590  out=183643  t=4330s
+[449/776] Projects/Zstack/Case-Studies/durable-capture-brief.md  ideas=4  cum=973  in=571153  out=184476  t=4348s
+[450/776] Projects/Zstack/Case-Studies/durable.md  ideas=2  cum=975  in=572024  out=184915  t=4356s
+[451/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/README.md  ideas=3  cum=978  in=573889  out=185518  t=4372s
+[452/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/ada-scorecard.md  ideas=2  cum=980  in=574665  out=185895  t=4380s
+[453/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/clay-scorecard.md  ideas=1  cum=981  in=575491  out=186097  t=4385s
+[454/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/decagon-scorecard.md  ideas=2  cum=983  in=576294  out=186501  t=4395s
+[455/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/gumloop-scorecard.md  ideas=2  cum=985  in=577095  out=186935  t=4405s
+[456/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/lindy-scorecard.md  ideas=0  cum=985  in=577927  out=186944  t=4406s
+[457/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/parloa-scorecard.md  ideas=0  cum=985  in=578735  out=186953  t=4407s
+[458/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/polyai-scorecard.md  ideas=0  cum=985  in=579549  out=186962  t=4409s
+[459/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/sierra-scorecard.md  ideas=0  cum=985  in=580328  out=186971  t=4410s
+[460/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/account-scorecards/warp-scorecard.md  ideas=1  cum=986  in=581146  out=187180  t=4414s
+[461/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/accounts/clay.md  ideas=0  cum=986  in=582338  out=187189  t=4419s
+[462/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/accounts/decagon.md  ideas=0  cum=986  in=583398  out=187198  t=4420s
+[463/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/accounts/factory.md  ideas=1  cum=987  in=584447  out=187422  t=4425s
+[464/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/accounts/lindy.md  ideas=0  cum=987  in=585632  out=187431  t=4426s
+[465/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/accounts/sierra.md  ideas=1  cum=988  in=586638  out=187621  t=4430s
+[466/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/agent-ops-map.md  ideas=3  cum=991  in=587514  out=188199  t=4442s
+[467/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/buyer-research.md  ideas=3  cum=994  in=589018  out=188893  t=4458s
+[468/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/contact-finding-sop.md  ideas=0  cum=994  in=590270  out=188902  t=4459s
+[469/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/contact-route-verification.md  ideas=0  cum=994  in=592139  out=188911  t=4460s
+[470/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/contact-verification-worksheet.md  ideas=0  cum=994  in=593432  out=188920  t=4462s
+[471/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/conversion-likelihood.md  ideas=1  cum=995  in=594571  out=189139  t=4467s
+[472/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/experiment-logging.md  ideas=3  cum=998  in=595761  out=189715  t=4480s
+[473/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/final-drafts.md  ideas=1  cum=999  in=598126  out=189948  t=4486s
+[474/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/form-route-copy.md  ideas=2  cum=1001  in=599087  out=190337  t=4494s
+[475/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/form-route-experiment.md  ideas=2  cum=1003  in=600164  out=190701  t=4502s
+[476/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/idan-review/agent-ops-outreach-copy-review-2026-05-08.md  ideas=0  cum=1003  in=607839  out=190728  t=4507s
+[477/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/linkedin-variants.md  ideas=1  cum=1004  in=609057  out=190950  t=4512s
+[478/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/matt-input-worksheet.md  ideas=1  cum=1005  in=610343  out=191177  t=4518s
+[479/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/micro-batch-plan.md  ideas=3  cum=1008  in=611657  out=191761  t=4532s
+[480/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/no-send-rules.md  ideas=0  cum=1008  in=612347  out=191770  t=4533s
+[481/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/operator-variants.md  ideas=4  cum=1012  in=613354  out=192505  t=4545s
+[482/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/pre-send-qualification.md  ideas=0  cum=1012  in=614738  out=192514  t=4547s
+[483/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/ready-linkedin-queue.md  ideas=0  cum=1012  in=615657  out=192523  t=4551s
+[484/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/reply-bridges.md  ideas=0  cum=1012  in=616475  out=192532  t=4552s
+[485/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/reply-decision-tree.md  ideas=0  cum=1012  in=617759  out=192541  t=4553s
+[486/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/reviews/fakeidan-prose-manual-2026-05-07.md  ideas=2  cum=1014  in=618919  out=192897  t=4560s
+[487/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/reviews/fakematt-copyedit-manual-2026-05-07.md  ideas=2  cum=1016  in=619964  out=193274  t=4569s
+[488/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/route-search-log.md  ideas=0  cum=1016  in=622045  out=193283  t=4574s
+[489/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/route-specific-followups.md  ideas=0  cum=1016  in=623121  out=193292  t=4575s
+[490/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/second-wave-targets.md  ideas=4  cum=1020  in=624631  out=194046  t=4592s
+[491/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/segment-routing.md  ideas=4  cum=1024  in=625541  out=194782  t=4604s
+[492/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/send-decision-checklist.md  ideas=0  cum=1024  in=626477  out=194791  t=4605s
+[493/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/sendability-sop.md  ideas=1  cum=1025  in=628040  out=195032  t=4611s
+[494/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/sequence.md  ideas=1  cum=1026  in=628936  out=195245  t=4618s
+[495/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/today-dashboard.md  ideas=0  cum=1026  in=630089  out=195254  t=4619s
+[496/776] Projects/Zstack/Growth/Campaigns/agent-ops-audit-first-wave/tracker.md  ideas=0  cum=1026  in=632208  out=195263  t=4658s
+[497/776] Projects/Zstack/Growth/README.md  ideas=7  cum=1033  in=633200  out=196468  t=4682s
+[498/776] Projects/Zstack/Growth/_inspiration-from-prior-marketing-docs.md  ideas=4  cum=1037  in=635754  out=197226  t=4699s
+[499/776] Projects/Zstack/Growth/_ship-inventory.md  ideas=15  cum=1052  in=645235  out=204208  t=4844s
+[500/776] Projects/Zstack/Growth/bd-targets.md  ideas=11  cum=1063  in=647675  out=206032  t=4880s
+[501/776] Projects/Zstack/Growth/bd-touch-log.md  ideas=0  cum=1063  in=648168  out=206041  t=4881s
+[502/776] Projects/Zstack/Growth/content/agent-native-apis.md  ideas=1  cum=1064  in=648848  out=206217  t=4885s
+[503/776] Projects/Zstack/Growth/content/agents-that-remember.md  ideas=0  cum=1064  in=649745  out=206226  t=4890s
+[504/776] Projects/Zstack/Growth/content/ai-systems-mission-critical.md  ideas=0  cum=1064  in=650451  out=206235  t=4891s
+[505/776] Projects/Zstack/Growth/content/alphaevolve.md  ideas=1  cum=1065  in=651132  out=206418  t=4895s
+[506/776] Projects/Zstack/Growth/content/rlm.md  ideas=1  cum=1066  in=651799  out=206609  t=4899s
+[507/776] Projects/Zstack/Growth/content/svraster.md  ideas=0  cum=1066  in=652468  out=206618  t=4900s
+[508/776] Projects/Zstack/Growth/content/vampire-pricing.md  ideas=1  cum=1067  in=653204  out=206824  t=4904s
+[509/776] Projects/Zstack/Growth/content/zergalytics-launch.md  ideas=0  cum=1067  in=653926  out=206833  t=4905s
+[510/776] Projects/Zstack/Growth/content/zergboard-launch.md  ideas=0  cum=1067  in=654673  out=206842  t=4909s
+[511/776] Projects/Zstack/Growth/content/zergcal-launch.md  ideas=0  cum=1067  in=655345  out=206851  t=4911s
+[512/776] Projects/Zstack/Growth/content/zergchat-launch.md  ideas=0  cum=1067  in=656014  out=206860  t=4912s
+[513/776] Projects/Zstack/Growth/content/zergmail-launch.md  ideas=0  cum=1067  in=656724  out=206869  t=4914s
+[514/776] Projects/Zstack/Growth/content/zergmeeting-launch.md  ideas=0  cum=1067  in=657399  out=206878  t=4915s
+[515/776] Projects/Zstack/Growth/content/zergsend-launch.md  ideas=0  cum=1067  in=658109  out=206887  t=4916s
+[516/776] Projects/Zstack/Growth/content/zergwallet-launch.md  ideas=0  cum=1067  in=658826  out=206896  t=4917s
+[517/776] Projects/Zstack/Growth/content/zstack-bundle-launch.md  ideas=1  cum=1068  in=659498  out=207084  t=4922s
+[518/776] Projects/Zstack/Growth/content/zstack-interconnect.md  ideas=0  cum=1068  in=660188  out=207093  t=4923s
+[519/776] Projects/Zstack/Growth/content-calendar.md  ideas=1  cum=1069  in=660788  out=207275  t=4927s
+[520/776] Projects/Zstack/Growth/durable-pattern-hacks.md  ideas=3  cum=1072  in=662744  out=207834  t=4937s
+[521/776] Projects/Zstack/Growth/experiments/_template.md  ideas=0  cum=1072  in=663644  out=207843  t=4938s
+[522/776] Projects/Zstack/Growth/experiments/exp-001.md  ideas=0  cum=1072  in=664384  out=207852  t=4939s
+[523/776] Projects/Zstack/Growth/experiments/exp-002.md  ideas=0  cum=1072  in=665200  out=207861  t=4941s
+[524/776] Projects/Zstack/Growth/experiments/exp-003.md  ideas=0  cum=1072  in=666042  out=207870  t=4942s
+[525/776] Projects/Zstack/Growth/experiments/exp-004.md  ideas=1  cum=1073  in=666906  out=208079  t=4946s
+[526/776] Projects/Zstack/Growth/experiments/exp-005.md  ideas=0  cum=1073  in=667768  out=208088  t=4947s
+[527/776] Projects/Zstack/Growth/experiments/exp-006.md  ideas=3  cum=1076  in=668676  out=208670  t=4959s
+[528/776] Projects/Zstack/Growth/experiments/exp-007.md  ideas=1  cum=1077  in=669534  out=208885  t=4964s
+[529/776] Projects/Zstack/Growth/experiments/exp-008.md  ideas=2  cum=1079  in=670422  out=209272  t=4972s
+[530/776] Projects/Zstack/Growth/experiments/exp-009.md  ideas=1  cum=1080  in=671624  out=209495  t=4978s
+[531/776] Projects/Zstack/Growth/experiments/exp-010.md  ideas=0  cum=1080  in=672529  out=209504  t=4979s
+[532/776] Projects/Zstack/Growth/experiments/exp-011.md  ideas=0  cum=1080  in=673414  out=209513  t=4980s
+[533/776] Projects/Zstack/Growth/experiments/exp-012.md  ideas=2  cum=1082  in=674487  out=209946  t=4989s
+[534/776] Projects/Zstack/Growth/experiments/exp-013.md  ideas=0  cum=1082  in=675358  out=209955  t=4991s
+[535/776] Projects/Zstack/Growth/experiments/exp-014.md  ideas=1  cum=1083  in=676191  out=210144  t=4995s
+[536/776] Projects/Zstack/Growth/experiments/exp-015.md  ideas=1  cum=1084  in=677060  out=210362  t=5001s
+[537/776] Projects/Zstack/Growth/experiments/exp-016.md  ideas=3  cum=1087  in=677984  out=210891  t=5150s
+[538/776] Projects/Zstack/Growth/experiments/exp-017.md  ideas=1  cum=1088  in=678862  out=211108  t=5155s
+[539/776] Projects/Zstack/Growth/experiments/exp-018.md  ideas=1  cum=1089  in=679762  out=211335  t=5159s
+[540/776] Projects/Zstack/Growth/experiments/exp-019.md  ideas=0  cum=1089  in=680617  out=211344  t=5161s
+[541/776] Projects/Zstack/Growth/experiments/exp-020.md  ideas=2  cum=1091  in=681773  out=211777  t=5169s
+[542/776] Projects/Zstack/Growth/experiments/exp-021.md  ideas=0  cum=1091  in=682629  out=211786  t=5170s
+[543/776] Projects/Zstack/Growth/experiments/exp-022.md  ideas=1  cum=1092  in=683666  out=212021  t=5176s
+[544/776] Projects/Zstack/Growth/experiments/exp-023.md  ideas=1  cum=1093  in=684530  out=212194  t=5180s
+[545/776] Projects/Zstack/Growth/experiments/exp-024.md  ideas=1  cum=1094  in=685904  out=212447  t=5186s
+[546/776] Projects/Zstack/Growth/experiments/exp-025.md  ideas=1  cum=1095  in=686917  out=212663  t=5191s
+[547/776] Projects/Zstack/Growth/experiments/exp-026.md  ideas=1  cum=1096  in=687895  out=212880  t=5196s
+[548/776] Projects/Zstack/Growth/experiments/exp-027.md  ideas=1  cum=1097  in=688903  out=213124  t=5201s
+[549/776] Projects/Zstack/Growth/experiments/exp-028.md  ideas=3  cum=1100  in=690404  out=213683  t=5213s
+[550/776] Projects/Zstack/Growth/experiments/exp-029.md  ideas=1  cum=1101  in=691314  out=213898  t=5217s
+[551/776] Projects/Zstack/Growth/experiments/exp-030.md  ideas=1  cum=1102  in=692252  out=214104  t=5222s
+[552/776] Projects/Zstack/Growth/experiments/exp-031.md  ideas=1  cum=1103  in=693188  out=214331  t=5228s
+[553/776] Projects/Zstack/Growth/experiments/exp-032.md  ideas=1  cum=1104  in=694110  out=214545  t=5233s
+[554/776] Projects/Zstack/Growth/experiments/exp-033.md  ideas=1  cum=1105  in=695006  out=214758  t=5237s
+[555/776] Projects/Zstack/Growth/experiments/exp-034.md  ideas=0  cum=1105  in=695818  out=214767  t=5239s
+[556/776] Projects/Zstack/Growth/experiments/exp-035.md  ideas=0  cum=1105  in=696616  out=214776  t=5243s
+[557/776] Projects/Zstack/Growth/experiments/exp-036.md  ideas=0  cum=1105  in=697482  out=214785  t=5244s
+[558/776] Projects/Zstack/Growth/experiments/exp-037.md  ideas=1  cum=1106  in=698317  out=214999  t=5248s
+[559/776] Projects/Zstack/Growth/experiments/exp-038.md  ideas=0  cum=1106  in=699135  out=215008  t=5250s
+[560/776] Projects/Zstack/Growth/experiments/exp-039.md  ideas=0  cum=1106  in=700028  out=215012  t=5251s
+[561/776] Projects/Zstack/Growth/experiments/exp-040.md  ideas=0  cum=1106  in=700970  out=215021  t=5252s
+[562/776] Projects/Zstack/Growth/experiments/exp-041.md  ideas=0  cum=1106  in=701960  out=215030  t=5253s
+[563/776] Projects/Zstack/Growth/experiments/exp-042.md  ideas=0  cum=1106  in=702888  out=215039  t=5254s
+[564/776] Projects/Zstack/Growth/experiments/exp-043.md  ideas=0  cum=1106  in=703790  out=215048  t=5255s
+[565/776] Projects/Zstack/Growth/experiments/exp-044.md  ideas=0  cum=1106  in=704631  out=215057  t=5256s
+[566/776] Projects/Zstack/Growth/experiments/exp-045.md  ideas=0  cum=1106  in=705489  out=215066  t=5257s
+[567/776] Projects/Zstack/Growth/experiments/exp-046.md  ideas=0  cum=1106  in=706353  out=215075  t=5257s
+[568/776] Projects/Zstack/Growth/experiments/exp-047.md  ideas=0  cum=1106  in=707161  out=215084  t=5259s
+[569/776] Projects/Zstack/Growth/experiments.md  ideas=0  cum=1106  in=708859  out=219084  t=5322s
+[570/776] Projects/Zstack/Growth/funnels/_runs/solutions-2026-05-07.md  ideas=0  cum=1106  in=709592  out=219093  t=5323s
+[571/776] Projects/Zstack/Growth/journeys/_format.md  ideas=1  cum=1107  in=710526  out=219284  t=5327s
+[572/776] Projects/Zstack/Growth/journeys/solutions-buyer.md  ideas=9  cum=1116  in=713890  out=221015  t=5363s
+[573/776] Projects/Zstack/Growth/journeys/zergboard-icp.md  ideas=13  cum=1129  in=716502  out=223595  t=5415s
+[574/776] Projects/Zstack/Growth/links.md  ideas=6  cum=1135  in=722532  out=224753  t=5445s
+[575/776] Projects/Zstack/Growth/prospecting-runs/2026-05-06-bolt-draft.md  ideas=0  cum=1135  in=723238  out=224762  t=5446s
+[576/776] Projects/Zstack/Growth/prospecting-runs/2026-05-06-lovable-brief.md  ideas=0  cum=1135  in=723839  out=224771  t=5447s
+[577/776] Projects/Zstack/Growth/prospecting-runs/2026-05-06-lovable-draft.md  ideas=0  cum=1135  in=724534  out=224775  t=5449s
+[578/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-bolt-draft-mv.md  ideas=0  cum=1135  in=725380  out=224784  t=5451s
+[579/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-bolt-draft.md  ideas=0  cum=1135  in=726086  out=224793  t=5451s
+[580/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-clay-draft-mv.md  ideas=0  cum=1135  in=726919  out=224802  t=5452s
+[581/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-clay-draft.md  ideas=1  cum=1136  in=727612  out=225017  t=5457s
+[582/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-codegen-draft-mv.md  ideas=0  cum=1136  in=728432  out=225021  t=5458s
+[583/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-codegen-draft.md  ideas=0  cum=1136  in=729120  out=225030  t=5459s
+[584/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-cognition-draft-mv.md  ideas=0  cum=1136  in=729931  out=225039  t=5460s
+[585/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-cognition-draft.md  ideas=0  cum=1136  in=730613  out=225048  t=5461s
+[586/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-cursor-draft-mv.md  ideas=0  cum=1136  in=731440  out=225052  t=5462s
+[587/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-cursor-draft.md  ideas=0  cum=1136  in=732134  out=225061  t=5463s
+[588/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-decagon-draft-mv.md  ideas=0  cum=1136  in=732944  out=225070  t=5464s
+[589/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-decagon-draft.md  ideas=1  cum=1137  in=733627  out=225272  t=5469s
+[590/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-devin-draft-mv.md  ideas=0  cum=1137  in=734439  out=225276  t=5470s
+[591/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-devin-draft.md  ideas=0  cum=1137  in=735122  out=225285  t=5472s
+[592/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-dust-draft-mv.md  ideas=0  cum=1137  in=735926  out=225294  t=5473s
+[593/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-dust-draft.md  ideas=0  cum=1137  in=736602  out=225298  t=5474s
+[594/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-factory-draft-mv.md  ideas=1  cum=1138  in=737410  out=225502  t=5478s
+[595/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-factory-draft.md  ideas=0  cum=1138  in=738089  out=225511  t=5479s
+[596/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-first-wave-plan.md  ideas=3  cum=1141  in=739206  out=226091  t=5491s
+[597/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-gumloop-draft-mv.md  ideas=0  cum=1141  in=740028  out=226095  t=5492s
+[598/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-gumloop-draft.md  ideas=0  cum=1141  in=740717  out=226104  t=5492s
+[599/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-lindy-draft-mv.md  ideas=0  cum=1141  in=741537  out=226108  t=5494s
+[600/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-lindy-draft.md  ideas=1  cum=1142  in=742223  out=226306  t=5501s
+[601/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-lovable-draft-mv.md  ideas=0  cum=1142  in=743059  out=226310  t=5502s
+[602/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-maven-agi-draft-mv.md  ideas=0  cum=1142  in=743876  out=226319  t=5503s
+[603/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-maven-agi-draft.md  ideas=0  cum=1142  in=744564  out=226328  t=5504s
+[604/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-replit-draft-mv.md  ideas=0  cum=1142  in=745406  out=226337  t=5505s
+[605/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-replit-draft.md  ideas=0  cum=1142  in=746112  out=226346  t=5507s
+[606/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-sierra-draft-mv.md  ideas=1  cum=1143  in=746923  out=226574  t=5512s
+[607/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-sierra-draft.md  ideas=0  cum=1143  in=747606  out=226583  t=5514s
+[608/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-tembo-draft-mv.md  ideas=0  cum=1143  in=748423  out=226592  t=5515s
+[609/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-tembo-draft.md  ideas=1  cum=1144  in=749112  out=226819  t=5520s
+[610/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-v0-draft-mv.md  ideas=0  cum=1144  in=749945  out=226823  t=5521s
+[611/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-v0-draft.md  ideas=1  cum=1145  in=750637  out=227033  t=5525s
+[612/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-warp-draft-mv.md  ideas=0  cum=1145  in=751463  out=227042  t=5527s
+[613/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-warp-draft.md  ideas=1  cum=1146  in=752158  out=227284  t=5531s
+[614/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-wordware-draft-mv.md  ideas=0  cum=1146  in=752983  out=227293  t=5536s
+[615/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-wordware-draft.md  ideas=0  cum=1146  in=753674  out=227302  t=5537s
+[616/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-zencoder-draft-mv.md  ideas=0  cum=1146  in=754505  out=227311  t=5538s
+[617/776] Projects/Zstack/Growth/prospecting-runs/2026-05-07-zencoder-draft.md  ideas=0  cum=1146  in=755203  out=227320  t=5540s
+[618/776] Projects/Zstack/Growth/prospects.md  ideas=0  cum=1146  in=757942  out=227329  t=5541s
+[619/776] Projects/Zstack/Growth/themes.md  ideas=1  cum=1147  in=758642  out=227519  t=5546s
+[620/776] Projects/Zstack/Growth/utm-convention.md  ideas=19  cum=1166  in=760163  out=230290  t=5595s
+[621/776] Projects/Zstack/Growth/weekly/2026-05-05.md  ideas=5  cum=1171  in=761113  out=231175  t=5611s
+[622/776] Projects/Zstack/Growth/weekly/2026-05-06.md  ideas=5  cum=1176  in=762166  out=232063  t=5628s
+[623/776] Projects/Zstack/Growth/weekly/2026-05-09.md  ideas=7  cum=1183  in=763277  out=233224  t=5648s
+[624/776] Projects/Zstack/Integration.md  ideas=3  cum=1186  in=764799  out=233895  t=5662s
+[625/776] Projects/Zstack/Pricing-Snapshot.md  ideas=3  cum=1189  in=768496  out=234528  t=5675s
+[626/776] Projects/Zstack/Solutions/agent-ops-audit.md  ideas=1  cum=1190  in=769209  out=234755  t=5679s
+[627/776] Projects/Zstack/Solutions/agent-ops-audit.one-pager-v1-2026-05-07.md  ideas=1  cum=1191  in=770751  out=234987  t=5685s
+[628/776] Projects/Zstack/Solutions/zergboard-rollout-sprint.md  ideas=5  cum=1196  in=772296  out=235980  t=5705s
+[629/776] Projects/Zstack/ZMsg.md  ideas=1  cum=1197  in=773470  out=236198  t=5712s
+[630/776] Projects/Zstack/ZergBox.md  ideas=2  cum=1199  in=774299  out=236613  t=5720s
+[631/776] Projects/Zstack/ZergCRM.md  ideas=1  cum=1200  in=775418  out=236859  t=5725s
+[632/776] Projects/Zstack/ZergCal.md  ideas=5  cum=1205  in=777012  out=237783  t=5743s
+[633/776] Projects/Zstack/ZergChat-Angle.md  ideas=5  cum=1210  in=779216  out=238859  t=5764s
+[634/776] Projects/Zstack/ZergChat.md  ideas=5  cum=1215  in=780868  out=239871  t=5784s
+[635/776] Projects/Zstack/ZergMail.md  ideas=4  cum=1219  in=782469  out=240760  t=5801s
+[636/776] Projects/Zstack/ZergMeeting.md  ideas=0  cum=1219  in=784062  out=240769  t=5802s
+[637/776] Projects/Zstack/ZergStack.checklist.md  ideas=3  cum=1222  in=784897  out=241326  t=5814s
+[638/776] Projects/Zstack/ZergStack.one-pager.md  ideas=2  cum=1224  in=787393  out=241728  t=5824s
+[639/776] Projects/Zstack/Zergalytics-multitenant-auth-plan.md  ideas=10  cum=1234  in=792887  out=243923  t=5869s
+[640/776] Projects/Zstack/Zergalytics.md  ideas=5  cum=1239  in=794692  out=245030  t=5891s
+[641/776] Projects/Zstack/Zergboard.md  ideas=4  cum=1243  in=796664  out=245778  t=5907s
+[642/776] Projects/Zstack/Zergwallet.md  ideas=7  cum=1250  in=799541  out=247453  t=5944s
+[643/776] Projects/Zstack/Zstack.md  ideas=6  cum=1256  in=801535  out=248706  t=5970s
+[644/776] Projects/Zstack/audit-sweep-2026-05-07.md  ideas=6  cum=1262  in=804664  out=249860  t=6000s
+[645/776] Projects/Zstack/session-summary.md  ideas=1  cum=1263  in=805286  out=250048  t=6004s
+[646/776] Projects/Zstack/zergaudience-audience-taxonomy.md  ideas=0  cum=1263  in=808883  out=250057  t=6005s
+[647/776] Projects/Zstack/zerglytics-deploy-runbook.md  ideas=0  cum=1263  in=811896  out=250066  t=6007s
+[648/776] Projects/Zstack/zerglytics-fly-migration-runbook.md  ideas=0  cum=1263  in=815323  out=250075  t=6008s
+[649/776] Projects/business-idea-validator.md  ideas=1  cum=1264  in=815892  out=250281  t=6012s
+[650/776] Projects/career-cv.md  ideas=0  cum=1264  in=818301  out=250290  t=6013s
+[651/776] Projects/content-ingestion.md  ideas=1  cum=1265  in=819740  out=250517  t=6019s
+[652/776] Projects/d4727-llc.md  ideas=0  cum=1265  in=820647  out=250526  t=6020s
+[653/776] Projects/idea-backlog.md  ideas=11  cum=1276  in=825427  out=252625  t=6070s
+[654/776] Projects/inbound-handling.md  ideas=1  cum=1277  in=826754  out=252857  t=6074s
+[655/776] Projects/personal-comms-center.md  ideas=1  cum=1278  in=827263  out=253010  t=6078s
+[656/776] Projects/zerg.md  ideas=4  cum=1282  in=829032  out=253788  t=6095s
+[657/776] Research/Experiments/Correct-Is-Not-Usable/README.md  ideas=2  cum=1284  in=829917  out=254135  t=6103s
+[658/776] Research/Experiments/Correct-Is-Not-Usable/_index.md  ideas=1  cum=1285  in=830784  out=254392  t=6107s
+[659/776] Research/Experiments/Correct-Is-Not-Usable/discussion.md  ideas=5  cum=1290  in=831812  out=255355  t=6127s
+[660/776] Research/Experiments/Correct-Is-Not-Usable/hypothesis.md  ideas=2  cum=1292  in=832745  out=255755  t=6135s
+[661/776] Research/Experiments/Correct-Is-Not-Usable/paper/draft.md  ideas=4  cum=1296  in=834231  out=256642  t=6168s
+[662/776] Research/Experiments/Correct-Is-Not-Usable/progress.md  ideas=4  cum=1300  in=835180  out=257411  t=6181s
+[663/776] Research/Experiments/Correct-Is-Not-Usable/protocol.md  ideas=3  cum=1303  in=836489  out=258000  t=6192s
+[664/776] Research/Experiments/Correct-Is-Not-Usable/results.md  ideas=3  cum=1306  in=838318  out=258665  t=6206s
+[665/776] Research/Experiments/Prompt-Tone-Cost-Paper/README.md  ideas=1  cum=1307  in=839648  out=258903  t=6212s
+[666/776] Research/Experiments/Prompt-Tone-Cost-Paper/_index.md  ideas=1  cum=1308  in=840536  out=259116  t=6216s
+[667/776] Research/Experiments/Prompt-Tone-Cost-Paper/configs/judge_rubric.md  ideas=1  cum=1309  in=841304  out=259358  t=6221s
+[668/776] Research/Experiments/Prompt-Tone-Cost-Paper/configs/open_ended_judging_instructions.md  ideas=1  cum=1310  in=842001  out=259568  t=6226s
+[669/776] Research/Experiments/Prompt-Tone-Cost-Paper/discussion.md  ideas=2  cum=1312  in=843084  out=260001  t=6235s
+[670/776] Research/Experiments/Prompt-Tone-Cost-Paper/feedback/fakeidan/draft.fakeidan-prose.2026-05-09.md  ideas=5  cum=1317  in=847335  out=261031  t=6258s
+[671/776] Research/Experiments/Prompt-Tone-Cost-Paper/feedback/fakematt/draft.interview.md  ideas=1  cum=1318  in=848072  out=261233  t=6263s
+[672/776] Research/Experiments/Prompt-Tone-Cost-Paper/feedback/fakematt/draft.review.md  ideas=0  cum=1318  in=850861  out=261242  t=6265s
+[673/776] Research/Experiments/Prompt-Tone-Cost-Paper/feedback/fakematt/session-summary.md  ideas=0  cum=1318  in=851470  out=261251  t=6266s
+[674/776] Research/Experiments/Prompt-Tone-Cost-Paper/feedback/feedback-applied-2026-05-09.md  ideas=3  cum=1321  in=852329  out=261800  t=6277s
+[675/776] Research/Experiments/Prompt-Tone-Cost-Paper/feedback/review-summary.md  ideas=1  cum=1322  in=853237  out=262000  t=6282s
+[676/776] Research/Experiments/Prompt-Tone-Cost-Paper/hypothesis.md  ideas=1  cum=1323  in=854177  out=262236  t=6287s
+[677/776] Research/Experiments/Prompt-Tone-Cost-Paper/paper/draft.md  ideas=4  cum=1327  in=856710  out=263074  t=6305s
+[678/776] Research/Experiments/Prompt-Tone-Cost-Paper/progress.md  ideas=3  cum=1330  in=858058  out=263690  t=6316s
+[679/776] Research/Experiments/Prompt-Tone-Cost-Paper/protocol.md  ideas=1  cum=1331  in=859426  out=263906  t=6322s
+[680/776] Research/Experiments/Prompt-Tone-Cost-Paper/results.md  ideas=1  cum=1332  in=861694  out=264125  t=6328s
+[681/776] Research/Research Index.md  ideas=2  cum=1334  in=862342  out=264438  t=6334s
+[682/776] Roadmap/2026-05-03-zergboard-roadmap.md  ideas=10  cum=1344  in=865349  out=266378  t=6377s
+[683/776] Roadmap/2026-05-03-zergwallet-roadmap.md  ideas=9  cum=1353  in=868375  out=268139  t=6413s
+[684/776] Roadmap/2026-05-07-zergboard-mcp-public-endpoints.md  ideas=4  cum=1357  in=871680  out=269019  t=6429s
+[685/776] Tasks/inbox.md  ideas=2  cum=1359  in=876649  out=273509  t=6510s
+[686/776] Writing/AI Systems Mission-Critical — Anchor Research.md  ideas=1  cum=1360  in=879550  out=273735  t=6516s
+[687/776] Writing/AI Systems for Mission-Critical Work.md  ideas=3  cum=1363  in=882908  out=274357  t=6532s
+[688/776] Writing/Agent-Native APIs.md  ideas=6  cum=1369  in=887285  out=275718  t=6562s
+[689/776] Writing/Launches/_reviews/zergalytics--zergalytics.draft.interview.md  ideas=0  cum=1369  in=888082  out=275727  t=6563s
+[690/776] Writing/Launches/_reviews/zergalytics--zergalytics.draft.review.md  ideas=2  cum=1371  in=892854  out=276178  t=6575s
+[691/776] Writing/Launches/_reviews/zergboard--channel-copy-v1.interview.md  ideas=0  cum=1371  in=893739  out=276187  t=6576s
+[692/776] Writing/Launches/_reviews/zergboard--channel-copy-v1.review.md  ideas=0  cum=1371  in=898750  out=276205  t=6578s
+[693/776] Writing/Launches/_reviews/zergboard--copyedit-v1.interview.md  ideas=0  cum=1371  in=899533  out=276214  t=6579s
+[694/776] Writing/Launches/_reviews/zergboard--copyedit-v1.review.md  ideas=0  cum=1371  in=903192  out=276223  t=6582s
+[695/776] Writing/Launches/_reviews/zergboard--zergboard-public-launch.draft.interview.md  ideas=0  cum=1371  in=903879  out=276232  t=6583s
+[696/776] Writing/Launches/_reviews/zergboard--zergboard-public-launch.draft.review.md  ideas=1  cum=1372  in=907958  out=276480  t=6594s
+[697/776] Writing/Launches/_reviews/zergcal--ZergCal_Launch.interview.md  ideas=0  cum=1372  in=908617  out=276489  t=6595s
+[698/776] Writing/Launches/_reviews/zergcal--ZergCal_Launch.review.md  ideas=2  cum=1374  in=911870  out=276935  t=6606s
+[699/776] Writing/Launches/_reviews/zergchat--ZergChat_Launch.interview.md  ideas=1  cum=1375  in=912575  out=277125  t=6610s
+[700/776] Writing/Launches/_reviews/zergchat--ZergChat_Launch.review.md  ideas=5  cum=1380  in=916072  out=278227  t=6636s
+[701/776] Writing/Launches/_reviews/zergmail--zergmail.draft.interview.md  ideas=0  cum=1380  in=917125  out=278236  t=6637s
+[702/776] Writing/Launches/_reviews/zergmail--zergmail.draft.review.md  ideas=3  cum=1383  in=921986  out=278885  t=6655s
+[703/776] Writing/Launches/_reviews/zergmeeting--ZergMeeting_Launch.interview.md  ideas=0  cum=1383  in=922750  out=278894  t=6656s
+[704/776] Writing/Launches/_reviews/zergmeeting--ZergMeeting_Launch.review.md  ideas=2  cum=1385  in=926390  out=279374  t=6668s
+[705/776] Writing/Launches/_reviews/zergsend--zergsend.draft.interview.md  ideas=0  cum=1385  in=927314  out=279383  t=6669s
+[706/776] Writing/Launches/_reviews/zergsend--zergsend.draft.review.md  ideas=6  cum=1391  in=932026  out=280472  t=6695s
+[707/776] Writing/Launches/_reviews/zergwallet--zergwallet.draft.interview.md  ideas=0  cum=1391  in=932919  out=280481  t=6696s
+[708/776] Writing/Launches/_reviews/zergwallet--zergwallet.draft.review.md  ideas=3  cum=1394  in=937343  out=281128  t=6713s
+[709/776] Writing/Launches/_reviews/zstack-bundle--Zstack_Bundle_Launch.interview.md  ideas=0  cum=1394  in=938056  out=281137  t=6714s
+[710/776] Writing/Launches/_reviews/zstack-bundle--Zstack_Bundle_Launch.review.md  ideas=1  cum=1395  in=942950  out=281373  t=6719s
+[711/776] Writing/Launches/durable-pattern-tools-launch.md  ideas=9  cum=1404  in=945207  out=283102  t=6754s
+[712/776] Writing/Launches/session-summary.md  ideas=1  cum=1405  in=945813  out=283282  t=6759s
+[713/776] Writing/Launches/zergalytics.checklist.md  ideas=0  cum=1405  in=946555  out=283291  t=6760s
+[714/776] Writing/Launches/zergalytics.draft.md  ideas=4  cum=1409  in=951603  out=284208  t=6781s
+[715/776] Writing/Launches/zergboard-launch-campaign.md  ideas=7  cum=1416  in=958351  out=285596  t=6815s
+[716/776] Writing/Launches/zergboard-launch-channel-copy.md  ideas=2  cum=1418  in=964038  out=286134  t=6831s
+[717/776] Writing/Launches/zergboard-public-launch.checklist.md  ideas=0  cum=1418  in=964812  out=286143  t=6832s
+[718/776] Writing/Launches/zergboard-public-launch.draft.md  ideas=7  cum=1425  in=970182  out=287668  t=6867s
+[719/776] Writing/Launches/zergboard-public-launch.md  ideas=0  cum=1425  in=973343  out=287677  t=6870s
+[720/776] Writing/Launches/zergmail.checklist.md  ideas=3  cum=1428  in=974077  out=288161  t=6880s
+[721/776] Writing/Launches/zergmail.draft.md  ideas=5  cum=1433  in=978832  out=289225  t=6904s
+[722/776] Writing/Launches/zergsend.checklist.md  ideas=0  cum=1433  in=979566  out=289234  t=6905s
+[723/776] Writing/Launches/zergsend.draft.md  ideas=6  cum=1439  in=984545  out=290495  t=6935s
+[724/776] Writing/Launches/zergwallet.checklist.md  ideas=3  cum=1442  in=985283  out=290986  t=6945s
+[725/776] Writing/Launches/zergwallet.draft.md  ideas=8  cum=1450  in=990590  out=292868  t=6991s
+[726/776] Writing/LinkedIn About 2026-05-05.md  ideas=0  cum=1450  in=992607  out=292877  t=6992s
+[727/776] Writing/Outreach/LP Re-engagement Template.md  ideas=0  cum=1450  in=994392  out=292886  t=6993s
+[728/776] Writing/Published Writing.md  ideas=0  cum=1450  in=995729  out=292895  t=6994s
+[729/776] Writing/Topic Queue.md  ideas=8  cum=1458  in=997121  out=294277  t=7018s
+[730/776] Writing/Vampire Pricing.md  ideas=3  cum=1461  in=1000435  out=294969  t=7037s
+[731/776] Writing/What AI Agents Get Wrong About Failure.md  ideas=4  cum=1465  in=1004327  out=295748  t=7056s
+[732/776] Writing/ZergCal Launch.md  ideas=3  cum=1468  in=1008671  out=296459  t=7074s
+[733/776] Writing/ZergChat Launch.md  ideas=6  cum=1474  in=1013063  out=297745  t=7103s
+[734/776] Writing/ZergMeeting Launch.md  ideas=2  cum=1476  in=1016357  out=298197  t=7114s
+[735/776] Writing/Zergboard Demo v14 Shot List.md  ideas=0  cum=1476  in=1019787  out=298206  t=7115s
+[736/776] Writing/Zergboard Demo v14 — Reviews.md  ideas=2  cum=1478  in=1022192  out=298602  t=7124s
+[737/776] Writing/Zergboard Demo v8 Storyboard.md  ideas=1  cum=1479  in=1024090  out=298808  t=7130s
+[738/776] Writing/Zergboard Launch — Asset Rebuild Plan.md  ideas=3  cum=1482  in=1027151  out=299473  t=7148s
+[739/776] Writing/Zergboard Launch — Claim Drift Sweep.md  ideas=8  cum=1490  in=1032804  out=301113  t=7182s
+[740/776] Writing/Zergboard Launch — Day-Of Fire Schedule.md  ideas=0  cum=1490  in=1034660  out=301122  t=7183s
+[741/776] Writing/Zergboard Launch — Editor Pitches.md  ideas=3  cum=1493  in=1039058  out=301693  t=7198s
+[742/776] Writing/Zergboard Launch — Reach Expansion Plan.md  ideas=10  cum=1503  in=1043804  out=303761  t=7249s
+[743/776] Writing/Zergboard Launch — Reddit HN Newsletter Drafts.md  ideas=0  cum=1503  in=1046725  out=303770  t=7249s
+[744/776] Writing/Zergboard Launch — SEO and Distribution Surfaces.md  ideas=9  cum=1512  in=1051594  out=305499  t=7286s
+[745/776] Writing/Zergboard Launch — Ship Checklist.md  ideas=8  cum=1520  in=1055153  out=307314  t=7326s
+[746/776] Writing/Zergboard Launch — Slug Reconciliation Memo.md  ideas=0  cum=1520  in=1056492  out=307323  t=7327s
+[747/776] Writing/Zergboard Launch — Team Share Snippets.md  ideas=0  cum=1520  in=1059595  out=307332  t=7328s
+[748/776] Writing/Zergboard Launch — UTM Links.md  ideas=2  cum=1522  in=1061701  out=307739  t=7336s
+[749/776] Writing/Zergboard Launch.md  ideas=8  cum=1530  in=1068448  out=309490  t=7377s
+[750/776] Writing/Zergboard Site Copy Changes.md  ideas=0  cum=1530  in=1070407  out=309499  t=7378s
+[751/776] Writing/Zergboard Site Drift Fixes (WEB-39).md  ideas=5  cum=1535  in=1074319  out=310559  t=7399s
+[752/776] Writing/Zergboard Welcome Drip — Templates.md  ideas=7  cum=1542  in=1081905  out=312076  t=7435s
+[753/776] Writing/Zergboard Welcome Drip.md  ideas=9  cum=1551  in=1086505  out=313862  t=7477s
+[754/776] Writing/Zergboard ZTC Companion (How it runs).md  ideas=3  cum=1554  in=1091136  out=314513  t=7493s
+[755/776] Writing/Zergboard ZTC Companion — Pre-publish Checklist.md  ideas=3  cum=1557  in=1091892  out=315007  t=7502s
+[756/776] Writing/Zergwallet Landing Copy.md  ideas=0  cum=1557  in=1094357  out=315016  t=7503s
+[757/776] Writing/Zergwallet Landing Page Copy.md  ideas=1  cum=1558  in=1096718  out=315282  t=7511s
+[758/776] Writing/Zstack Bundle Launch.md  ideas=4  cum=1562  in=1101199  out=316117  t=7530s
+[759/776] Writing/Zstack Interconnect.md  ideas=4  cum=1566  in=1104549  out=317106  t=7554s
+[760/776] Writing/Zstack Microproduct Pricing (WEB-31).md  ideas=9  cum=1575  in=1109007  out=319136  t=7601s
+[761/776] Writing/Zstack Welcome Drip — Extensions.md  ideas=6  cum=1581  in=1111877  out=320330  t=7626s
+[762/776] Writing/_reviews/ai-systems-mission-critical--copyedit-v1.interview.md  ideas=1  cum=1582  in=1112633  out=320561  t=7631s
+[763/776] Writing/_reviews/ai-systems-mission-critical--copyedit-v1.review.md  ideas=0  cum=1582  in=1116036  out=320570  t=7632s
+[764/776] Writing/_thought-piece-template.md  ideas=3  cum=1585  in=1119294  out=321241  t=7647s
+[765/776] Writing/agents-that-remember-copyedit-followup.md  ideas=0  cum=1585  in=1121059  out=321250  t=7648s
+[766/776] Writing/exports/agents-that-remember.idan-applied-v1-2026-05-06.md  ideas=4  cum=1589  in=1122995  out=322026  t=7666s
+[767/776] Writing/exports/agents-that-remember.idan-feedback-applied-v1-2026-05-06.md  ideas=2  cum=1591  in=1125338  out=322475  t=7683s
+[768/776] Writing/exports/fakematt-copyedit/What_AI_Agents_Get_Wrong_About_Failure.interview.md  ideas=0  cum=1591  in=1126100  out=322484  t=7688s
+[769/776] Writing/exports/fakematt-copyedit/What_AI_Agents_Get_Wrong_About_Failure.review.md  ideas=0  cum=1591  in=1128850  out=322493  t=7689s
+[770/776] Writing/exports/fakematt-copyedit/agents-that-remember.interview.md  ideas=0  cum=1591  in=1129527  out=322626  t=7693s
+[771/776] Writing/exports/fakematt-copyedit/agents-that-remember.review.md  ideas=0  cum=1591  in=1131132  out=322635  t=7694s
+[772/776] Writing/exports/fakematt-copyedit/session-summary.md  ideas=0  cum=1591  in=1132001  out=322644  t=7696s
+[773/776] Zerg/Zerg.checklist.md  ideas=0  cum=1591  in=1132832  out=322653  t=7697s
+[774/776] Zerg/Zerg.one-pager.md  ideas=3  cum=1594  in=1134517  out=323344  t=7711s
+[775/776] Zerg/positioning.md  ideas=5  cum=1599  in=1136756  out=324314  t=7732s
+[776/776] Zerg/session-summary.md  ideas=0  cum=1599  in=1137382  out=324323  t=7733s
+
+## 2026-05-09T20:06:10 — extract
+- model: claude-sonnet-4-5
+- files processed: 776
+- raw ideas extracted: 1599
+- input tokens: 1,137,382  output tokens: 324,323
+- est cost: $8.28
+
+raw extracts: /Users/mattheweisner/.claude/skills/idea-backlog/_workdir/raw_extracts.jsonl
+next: dedupe.py

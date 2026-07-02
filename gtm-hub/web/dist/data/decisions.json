@@ -1,0 +1,609 @@
+{
+  "generated_at": "2026-06-08T04:16:53",
+  "count": 67,
+  "decisions": [
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "apex",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/apex.md",
+      "message": "Send proposal: Apex",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "bright-machines",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/bright-machines.md",
+      "message": "Send proposal: Bright Machines",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "castelion",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/castelion.md",
+      "message": "Send proposal: Castelion",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "gecko-robotics",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/gecko-robotics.md",
+      "message": "Send proposal: Gecko Robotics",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "hadrian",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/hadrian.md",
+      "message": "Send proposal: Hadrian",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "hermeus",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/hermeus.md",
+      "message": "Send proposal: Hermeus",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "icon",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/icon.md",
+      "message": "Send proposal: ICON",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "saildrone",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/saildrone.md",
+      "message": "Send proposal: Saildrone",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "stoke-space",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/stoke-space.md",
+      "message": "Send proposal: Stoke Space",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "tractian",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/tractian.md",
+      "message": "Send proposal: Tractian",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "true-anomaly",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/true-anomaly.md",
+      "message": "Send proposal: True Anomaly",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.proposal_due",
+      "priority": 85,
+      "entity_id": "tulip",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/tulip.md",
+      "message": "Send proposal: Tulip",
+      "kind": "decision"
+    },
+    {
+      "rule": "experiment.kill_approaching",
+      "priority": 75,
+      "entity_id": "exp-001",
+      "entity_type": "experiment",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/experiments/exp-001.md",
+      "message": "Decide by 2026-06-13: kill / scale / extend \u2014 exp-001 homepage-hero-ab",
+      "kind": "decision"
+    },
+    {
+      "rule": "experiment.kill_approaching",
+      "priority": 75,
+      "entity_id": "exp-002",
+      "entity_type": "experiment",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/experiments/exp-002.md",
+      "message": "Decide by 2026-06-13: kill / scale / extend \u2014 exp-002 zergboard-signup-cta-ab",
+      "kind": "decision"
+    },
+    {
+      "rule": "experiment.kill_approaching",
+      "priority": 75,
+      "entity_id": "exp-003",
+      "entity_type": "experiment",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/experiments/exp-003.md",
+      "message": "Decide by 2026-06-13: kill / scale / extend \u2014 exp-003 welcome-drip-subject-ab",
+      "kind": "decision"
+    },
+    {
+      "rule": "content.target_near",
+      "priority": 62,
+      "entity_id": "zergcal-launch",
+      "entity_type": "content",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/content/zergcal-launch.md",
+      "message": "Content target in 8d: ZergCal launch (status=drafted)",
+      "kind": "decision"
+    },
+    {
+      "rule": "content.schedule_or_publish",
+      "priority": 55,
+      "entity_id": "agent-native-apis",
+      "entity_type": "content",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/content/agent-native-apis.md",
+      "message": "Schedule/publish: Agents Do Not Want Your Chat Panel",
+      "kind": "decision"
+    },
+    {
+      "rule": "content.schedule_or_publish",
+      "priority": 55,
+      "entity_id": "ai-systems-mission-critical",
+      "entity_type": "content",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/content/ai-systems-mission-critical.md",
+      "message": "Schedule/publish: The Demo Loop Is Not the Deployment Loop",
+      "kind": "decision"
+    },
+    {
+      "rule": "content.schedule_or_publish",
+      "priority": 55,
+      "entity_id": "zstack-bundle-launch",
+      "entity_type": "content",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/content/zstack-bundle-launch.md",
+      "message": "Schedule/publish: Five products, one identity",
+      "kind": "decision"
+    },
+    {
+      "rule": "metric.not_instrumented",
+      "priority": 50,
+      "entity_id": "activated-accounts",
+      "entity_type": "metric",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/metrics/activated-accounts.md",
+      "message": "Instrument Activated accounts (weekly)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "metric.not_instrumented",
+      "priority": 50,
+      "entity_id": "activation-rate",
+      "entity_type": "metric",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/metrics/activation-rate.md",
+      "message": "Instrument Signup \u2192 activation rate",
+      "kind": "backlog"
+    },
+    {
+      "rule": "metric.not_instrumented",
+      "priority": 50,
+      "entity_id": "k-factor",
+      "entity_type": "metric",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/metrics/k-factor.md",
+      "message": "Instrument Product referral K-factor",
+      "kind": "backlog"
+    },
+    {
+      "rule": "metric.not_instrumented",
+      "priority": 50,
+      "entity_id": "paid-conversions",
+      "entity_type": "metric",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/metrics/paid-conversions.md",
+      "message": "Instrument Paid conversions (weekly)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "metric.not_instrumented",
+      "priority": 50,
+      "entity_id": "qpv",
+      "entity_type": "metric",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/metrics/qpv.md",
+      "message": "Instrument Qualified Pipeline Value \u2014 30d trailing",
+      "kind": "backlog"
+    },
+    {
+      "rule": "metric.not_instrumented",
+      "priority": 50,
+      "entity_id": "wapw",
+      "entity_type": "metric",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/metrics/wapw.md",
+      "message": "Instrument Weekly Active Pro Workspaces (WAPW)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "system.workstream_overload",
+      "priority": 45,
+      "entity_id": "system",
+      "entity_type": "system",
+      "entity_path": "",
+      "message": "11 hot workstreams \u2014 focus gap. Demote some to warm.",
+      "kind": "backlog"
+    },
+    {
+      "rule": "bd.stale_touch",
+      "priority": 44,
+      "entity_id": "anthropic-claude-code-mcp",
+      "entity_type": "bd_target",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/bd/anthropic-claude-code-mcp.md",
+      "message": "Re-touch Anthropic (Claude Code, MCP) (last contact 2026-05-10, +29d)",
+      "kind": "decision"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "ada",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/ada.md",
+      "message": "Inbound idle 22d: Ada",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "bolt",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/bolt.md",
+      "message": "Inbound idle 22d: Bolt",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "clay",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/clay.md",
+      "message": "Inbound idle 22d: Clay",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "codegen",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/codegen.md",
+      "message": "Inbound idle 22d: Codegen",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "cognition",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/cognition.md",
+      "message": "Inbound idle 22d: Cognition",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "cursor",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/cursor.md",
+      "message": "Inbound idle 22d: Cursor",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "decagon",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/decagon.md",
+      "message": "Inbound idle 22d: Decagon",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "devin",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/devin.md",
+      "message": "Inbound idle 22d: Devin",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "dust",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/dust.md",
+      "message": "Inbound idle 22d: Dust",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "factory",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/factory.md",
+      "message": "Inbound idle 22d: Factory",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "gumloop",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/gumloop.md",
+      "message": "Inbound idle 22d: Gumloop",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "lindy",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/lindy.md",
+      "message": "Inbound idle 22d: Lindy",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "lovable",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/lovable.md",
+      "message": "Inbound idle 22d: Lovable",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "maven-agi",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/maven-agi.md",
+      "message": "Inbound idle 22d: Maven AGI",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "parloa",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/parloa.md",
+      "message": "Inbound idle 22d: Parloa",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "polyai",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/polyai.md",
+      "message": "Inbound idle 22d: PolyAI",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "replit",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/replit.md",
+      "message": "Inbound idle 22d: Replit",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "sierra",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/sierra.md",
+      "message": "Inbound idle 22d: Sierra",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "tembo",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/tembo.md",
+      "message": "Inbound idle 22d: Tembo",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "v0",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/v0.md",
+      "message": "Inbound idle 22d: v0",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "warp",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/warp.md",
+      "message": "Inbound idle 22d: Warp",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "wordware",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/wordware.md",
+      "message": "Inbound idle 22d: Wordware",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.inbound_stale",
+      "priority": 38,
+      "entity_id": "zencoder",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/zencoder.md",
+      "message": "Inbound idle 22d: Zencoder",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "other",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/other.md",
+      "message": "Resume or demote workstream: Other (uncategorized) (idle 29d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "personal-4727",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/personal-4727.md",
+      "message": "Resume or demote workstream: Personal / 4727 (idle 29d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "personal-finance",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/personal-finance.md",
+      "message": "Resume or demote workstream: Personal / Finance (idle 29d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "personal-games",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/personal-games.md",
+      "message": "Resume or demote workstream: Personal / Games (idle 29d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "personal-health",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/personal-health.md",
+      "message": "Resume or demote workstream: Personal / Health (idle 29d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "personal-network",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/personal-network.md",
+      "message": "Resume or demote workstream: Personal / Network (idle 30d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "personal-research",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/personal-research.md",
+      "message": "Resume or demote workstream: Personal / Research (idle 29d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "zerg-marketing",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/zerg-marketing.md",
+      "message": "Resume or demote workstream: Zerg / Marketing (idle 29d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "zerg-other",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/zerg-other.md",
+      "message": "Resume or demote workstream: Zerg / Other (idle 29d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "zerg-websites",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/zerg-websites.md",
+      "message": "Resume or demote workstream: Zerg / Websites (idle 29d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "workstream.stale_hot",
+      "priority": 35,
+      "entity_id": "zerg-zergboard",
+      "entity_type": "workstream",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/workstreams/zerg-zergboard.md",
+      "message": "Resume or demote workstream: Zerg / Zergboard (idle 29d)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.high_score_inbound",
+      "priority": 29,
+      "entity_id": "decagon",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/decagon.md",
+      "message": "Consider qualifying: Decagon (score 94/100)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.high_score_inbound",
+      "priority": 28,
+      "entity_id": "cognition",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/cognition.md",
+      "message": "Consider qualifying: Cognition (score 93/100)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.high_score_inbound",
+      "priority": 27,
+      "entity_id": "factory",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/factory.md",
+      "message": "Consider qualifying: Factory (score 92/100)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.high_score_inbound",
+      "priority": 26,
+      "entity_id": "cursor",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/cursor.md",
+      "message": "Consider qualifying: Cursor (score 91/100)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.high_score_inbound",
+      "priority": 25,
+      "entity_id": "lovable",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/lovable.md",
+      "message": "Consider qualifying: Lovable (score 90/100)",
+      "kind": "backlog"
+    },
+    {
+      "rule": "prospect.high_score_inbound",
+      "priority": 25,
+      "entity_id": "parloa",
+      "entity_type": "prospect",
+      "entity_path": "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zerg-Production/Growth/prospects/parloa.md",
+      "message": "Consider qualifying: Parloa (score 90/100)",
+      "kind": "backlog"
+    }
+  ]
+}

@@ -27,7 +27,7 @@ from typing import Dict, Optional, Tuple
 
 DEFAULT_DECISIONS_LOG = Path.home() / ".local" / "state" / "zerg" / "aitr" / "decisions.log"
 DEFAULT_FEEDBACK_MIRROR_DIRS = [
-    Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/.llm-feedback"),
+    Path("/Users/mattheweisner/Obsidian/Zerg/MattZerg/.llm-feedback"),
     Path.home() / ".zerg-vault-mirror" / "MattZerg" / ".llm-feedback",
 ]
 

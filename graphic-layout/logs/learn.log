@@ -1,0 +1,133 @@
+[graphic-layout learn] no new corrections
+[graphic-layout learn] no new corrections
+[graphic-layout learn] +4 corrections
+  hero: 4
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 130, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 113, in main
+    new_sha = sha256_file(source)
+  File "/Users/mattheweisner/.claude/skills/graphic-layout/learn.py", line 38, in sha256_file
+    with open(path, "rb") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Projects/Zstack/landing-review-2026-05-13/zstack-landing-v1-desktop-fullpage.png'
+[graphic-layout learn] +11 corrections
+  annotated-screenshot: 9
+  hero: 2
+[graphic-layout learn] no new corrections
+[graphic-layout learn] no new corrections
+[graphic-layout learn] no new corrections
+[graphic-layout learn] no new corrections
+[graphic-layout learn] no new corrections
+[graphic-layout learn] no new corrections

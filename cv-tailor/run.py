@@ -14,7 +14,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-VAULT = Path('/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents')
+VAULT = Path('/Users/mattheweisner/Obsidian')
 CAREER = VAULT / 'Zerg' / 'MattZerg' / 'Career'
 OUT_BASE = Path('/tmp/cv-tailor')
 

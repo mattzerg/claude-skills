@@ -1,0 +1,19 @@
+=== Daily BX Audit — 2026-06-04T12:00:05Z ===
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/research-bx-audit/run.py", line 342, in <module>
+    raise SystemExit(main())
+  File "/Users/mattheweisner/.claude/skills/research-bx-audit/run.py", line 338, in main
+    return args.func(args)
+  File "/Users/mattheweisner/.claude/skills/research-bx-audit/run.py", line 244, in mode_corpus
+    "bibtex_keys": load_bibtex_keys(),
+  File "/Users/mattheweisner/.claude/skills/research-bx-audit/run.py", line 105, in load_bibtex_keys
+    for m in re.finditer(r"@\w+\{([^,\s]+),", LIBRARY_BIB.read_text()):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/_knowledge/behavioral-sciences/_citations/library.bib'
+
+=== Exit code: 0 ===

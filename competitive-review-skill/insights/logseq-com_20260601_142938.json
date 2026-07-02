@@ -1,0 +1,600 @@
+{
+  "name": "Logseq",
+  "url": "https://logseq.com",
+  "domain": "logseq.com",
+  "scanned_at": "2026-06-01T14:26:51.834520",
+  "sources": {
+    "landing": {
+      "url": "https://logseq.com",
+      "title": "Logseq: A privacy-first, open-source knowledge base",
+      "text": "Logseq: A privacy-first, open-source knowledge base\nHome\nDownloads\nForum\n(opens a new window)\nDocs\n(opens a new window)\nGitHub\n(opens a new window)\nBlog\n(opens a new window)\nDownload for MacOS\nIntel chip\nMost common in Macs\nApple silicon\nMacs from November 2020 and later\nConnect your notes,\nincrease understanding.\nNOW\nMeeting with\n\ud83d\udc65 Jessica\nShe mentioned her current read:\n\ud83d\udcd6 Book/Intertwingled\nImage\nJessica\n\ud83d\udc65 Person\n\ud83d\udc64 Jessica Albert\nImage\nIntertwingled\n\ud83d\udcd6 Book\n\ud83d\udc64 Peter Morville\nMy notes on\n\ud83d\udcd6Book / Intertwingled\n:\nDownload for MacOS\nIntel chip\nMost common in Macs\nApple silicon\nMacs from November 2020 and later\nLive Demo\nToday, everyone is a\nknowledge worker.\nLogseq is the open toolbox for\nworkflows that deal with lots of information:\nTask Management\nPDF Annotations\nFlashcards\nWhiteboards\nNEW\n\ud83e\uddd1\u200d\ud83c\udf93\nStudents\n\ud83c\udf93\nAcademics\n\ud83d\udd8b\nWriters\n\ud83d\udcc6\nProject Managers\n\ud83d\udcbb\nDevelopers\nReview notes\nCapture, structure, and review all of your class notes with ease using the\nLinked References\n,\nQueries\n, and\nSearch\nfeatures.\nMemorize facts\nRemember facts and insights using the\nFlashcards\nfeature.\nOutline essays\nOrganize your thoughts and ideas, and quickly turn them into outlines using\nBlock References\n.\nBraindump everything into\n.\nNew ideas will pop up with time.\nNew ideas will pop up with time.\nUsing Logseq helps you organize your thoughts and ideas\nso that you can\ncome up with new outputs more easily.\n\u270d\ufe0f\nBeginner\nGet in the habit of writing\nthoughts down every day.\n1\n2\nTip 1:\nThink in sections, use indentation.\n\ud83d\udd0d\ufe0f\nIntermediate\nAlways find what you\u2019re\nlooking for.\n1\n2\nTip 1:\nUse CMD-K to search with ease.\n\ud83d\udcbc\ufe0f\nExpert\nCreate your own processes.\n1\n2\nTip 1:\nUse queries to generate tables of\nrelevant information.\nA helpful community\nJoin our Discord\n2261\nusers online currently\nJoin our forum\nFeature requests, bugs, discussions\nOverwhelmed and constantly\nafraid of losing your thoughts?\nEveryday you\u2019re bombarded with information.\nYour non-connected notes lead to missing context when\nyou need it.\nThat gets future-you into trouble.\nLogseq helps you\nturn this daily mess into structured information.\nGain clarity\nin your everyday life:\nRelationships\nDaily Plan\nJournaling\nData Control\nCommunicate better.\nStay on top of your\nrelationships, conversations, and meetings.\n\u201cI mostly use it for work: keeping\ndaily notes & meeting notes. It's the best solution I've found to managing my tasks\n(and I only use a fraction of the features there).\u201d\nUser Feedback\nby\noskr\nVia\nDiscord\nA safe space for\nyour thoughts.\nDesigned to store your\ninterests, questions, ideas, favorite quotes, reminders, reading and meeting notes\neasily and future-proof:\nOpen source\nFree forever for personal use\nPrivacy first\nYou own your data locally forever\nMobile apps\nAvailable for iOS & Android\nMarkdown files\nOpen your notes in other tools\nStrong community\n2261 users online currently\nLocalization\nTranslated in many languages\n150+ Plugins\nExtend functionality to your needs\n30+ Themes\nCustomize look and feel\nLogseq Sync\nBETA\nAlways up-to-date notes\nbetween all your devices.\nWith encrypted file syncing, you'll always have your\nnotes\nbacked up and securely available in real-time\non any device.\nWhiteboards\nBETA\nA new canvas\nfor your thoughts.\nPlace any of your thoughts from the knowledge base\nor new ones next to each other on an infinite canvas\nto connect, associate and understand in new ways.\nThink faster,\nthink better!\nBy thinking and writing with Logseq, you'll\ngain confidence in what you know and\nstop worrying about forgetting\nanything\n.\nDownload for MacOS\nIntel chip\nMost common in Macs\nApple silicon\nMacs from November 2020 and later\nLive Demo\nPrivacy\nTerms\nContact Us\n\u00a9 2026 Logseq, Inc.\nReview us on ProductHunt\n(opens a new window)",
+      "source": "playwright"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "url": "https://logseq.com/blog/changelog",
+      "title": "Logseq: A privacy-first, open-source knowledge base",
+      "text": "Logseq: A privacy-first, open-source knowledge base\nHome\nDownloads\nForum\n(opens a new window)\nDocs\n(opens a new window)\nGitHub\n(opens a new window)\nBlog\n(opens a new window)\nDownload for MacOS\nIntel chip\nMost common in Macs\nApple silicon\nMacs from November 2020 and later",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://docs.logseq.com",
+      "title": "contents",
+      "text": "contents\nSkip to main content\nGraph\nContents\ng\nh\nWhiteboards\ng\nw\nFlashcards\ng\nf\nGraph view\ng\ng\nAll pages\nFAVORITES\nChangelog\nvideos\ncontents\n\ud83c\udf1f\nNew to Logseq?\nBasics\nStart here\nHow to create a new graph\nHow to create a Logseq graph using existing Markdown files\nGetting started with the Journals page\nHow to create pages in Logseq\nWhat is indentation and why does it matter?\nLinking\nWhy linking matters\nAliases and external links\nHow to filter linked references\nReferences and Embeds\nThe basics of block references\nThe difference between block embeds and block references\nThe difference between block embeds and page embeds\nExtra\nHow to work with the right-hand sidebar\nHow to sync your Logseq graph across devices\nMiscellaneous\nRoadmap\nChangelog\nVideos\nFAQ\nGlossary\nTestimonials\nAwesome Logseq\n(community extensions and resources)\nFeatures\nBasic Features\nBacklink\nPage and block references\nPage embed\nand\nBlock embed\nProperties\nPage alias\nProductivity\nTasks\nCommands\nand\nAdvanced commands\nQueries\nand\nQuery Builder\nTemplates\nMedia\nPDF highlights\nWhiteboard\nEmbed Media - Audio, Photos, Videos\nDraw\nZotero\nintegration\nTools\nFlashcards\nSlide\nCalculator\nTables\nPublishing\nKnowledge Graph\nCustomization\nUser configuration\nCustom theme\nPlugins\n\ud83d\udc64\nSettings\nDocument formats:\nMarkdown\nand\nOrg Mode\nAdvanced Logseq\n\u2728\nTips and Tricks\nKeyboard shortcuts\nAdvanced Queries\nHiccup\nMigrate to Logseq Beta\nContribute\nMake a\nFeature Request\nCheck us out on Github\nContribute to Our Docs\nCreate a plugin! Start with\nPlugins 101\n\ud83d\udcac\nMessage us on\nDiscord\n(We love feedback!)\nAsk questions in the\nforum\nTweet us\n@logseq\nUnlinked References",
+      "source": "playwright"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/logseq/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Logseq: Privacy-First, Joyful Platform for Knowledge Management",
+          "url": "https://logseq.com/?",
+          "points": 276,
+          "num_comments": 118,
+          "created_at": "2022-10-15T20:55:57Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33218561"
+        },
+        {
+          "title": "Logseq \u2013 privacy-first, open-source knowledge sharing and management platform",
+          "url": "https://github.com/logseq/logseq",
+          "points": 209,
+          "num_comments": 40,
+          "created_at": "2020-11-14T03:58:56Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25090176"
+        },
+        {
+          "title": "After Obsidian and Logseq, I give Dendron a try",
+          "url": "https://nsirap.com/posts/067-after-obsidian-and-logseq-i-try-dendron/",
+          "points": 129,
+          "num_comments": 159,
+          "created_at": "2022-07-27T09:47:11Z",
+          "hn_url": "https://news.ycombinator.com/item?id=32248543"
+        },
+        {
+          "title": "Let's build a decentralized social network together with Logseq",
+          "url": "https://briansunter.com/graph/#/page/logseq-social",
+          "points": 101,
+          "num_comments": 53,
+          "created_at": "2022-06-13T06:27:13Z",
+          "hn_url": "https://news.ycombinator.com/item?id=31721927"
+        },
+        {
+          "title": "SilverBullet \u2013 note-taking Git-friendly alternative to Logseq and Obsidian",
+          "url": "https://silverbullet.md/",
+          "points": 70,
+          "num_comments": 14,
+          "created_at": "2025-02-08T09:24:24Z",
+          "hn_url": "https://news.ycombinator.com/item?id=42981690"
+        },
+        {
+          "title": "Show HN: Logseq \u2013 A roam like open-source plaintext note-taking app",
+          "url": "https://logseq.com/",
+          "points": 65,
+          "num_comments": 20,
+          "created_at": "2020-11-13T15:37:23Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25083333"
+        },
+        {
+          "title": "Logseq Raises $4.1M to Accelerate Growth of the New World Knowledge Graph",
+          "url": "https://blog.logseq.com/logseq-raises-4-1m-to-accelerate-growth-of-the-new-world-knowledge-graph/",
+          "points": 60,
+          "num_comments": 0,
+          "created_at": "2022-05-07T14:38:54Z",
+          "hn_url": "https://news.ycombinator.com/item?id=31294846"
+        },
+        {
+          "title": "Logseq \u2013 adding settings for self-hosted sync",
+          "url": "https://github.com/logseq/logseq/discussions/10733",
+          "points": 35,
+          "num_comments": 17,
+          "created_at": "2024-07-15T14:32:04Z",
+          "hn_url": "https://news.ycombinator.com/item?id=40968212"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": "https://logseq.com/blog/changelog",
+    "docs": "https://docs.logseq.com",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/logseq/reviews"
+  },
+  "analysis": {
+    "name": "Logseq",
+    "url": "https://logseq.com",
+    "tagline": "Connect your notes, increase understanding.",
+    "value_proposition": "A privacy-first, open-source outliner that stores all notes as local plain-text files and links them into a personal knowledge graph.",
+    "target_segment": "consumer / dev / prosumer",
+    "ideal_customer": "Knowledge workers, students, academics, writers, and developers who want full data ownership and a Roam-style outliner without cloud lock-in.",
+    "features": [
+      {
+        "name": "local-first storage",
+        "description": "All notes stored as plain-text files on the user's own device; no mandatory cloud.",
+        "evidence_source": "landing",
+        "evidence_quote": "You own your data locally forever",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "open-source codebase",
+        "description": "Entire application is open-source and free for personal use.",
+        "evidence_source": "landing",
+        "evidence_quote": "Open source / Free forever for personal use",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "markdown support",
+        "description": "Notes are stored as standard Markdown files, readable by other tools.",
+        "evidence_source": "docs",
+        "evidence_quote": "Document formats: Markdown and Org Mode",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "org-mode support",
+        "description": "Alternative document format using Emacs Org Mode syntax.",
+        "evidence_source": "docs",
+        "evidence_quote": "Document formats: Markdown and Org Mode",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "daily journals",
+        "description": "Built-in daily journal page for capturing time-stamped notes and tasks.",
+        "evidence_source": "docs",
+        "evidence_quote": "Getting started with the Journals page",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "backlinks",
+        "description": "Automatic reverse links shown on any page that is referenced elsewhere.",
+        "evidence_source": "docs",
+        "evidence_quote": "Backlink / Page and block references",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "linked references",
+        "description": "Panel showing all pages/blocks that link to the current page.",
+        "evidence_source": "landing",
+        "evidence_quote": "Capture, structure, and review all of your class notes with ease using the Linked References",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "unlinked references",
+        "description": "Surfaces mentions of a page that have not yet been formally linked.",
+        "evidence_source": "docs",
+        "evidence_quote": "Unlinked References",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "block references",
+        "description": "Embed or reference any individual block by ID across the graph.",
+        "evidence_source": "docs",
+        "evidence_quote": "The basics of block references",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "block embeds",
+        "description": "Inline live-rendering of another block's content inside the current page.",
+        "evidence_source": "docs",
+        "evidence_quote": "The difference between block embeds and block references",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "page embeds",
+        "description": "Inline live-rendering of an entire page's content inside another page.",
+        "evidence_source": "docs",
+        "evidence_quote": "The difference between block embeds and page embeds",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "page aliases",
+        "description": "Define alternate names for a page so links to either resolve to the same node.",
+        "evidence_source": "docs",
+        "evidence_quote": "Page alias",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "properties",
+        "description": "Key-value metadata attached to pages or blocks for structured data.",
+        "evidence_source": "docs",
+        "evidence_quote": "Properties",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "task management",
+        "description": "Built-in TODO/DONE task states with priorities and scheduling on any block.",
+        "evidence_source": "landing",
+        "evidence_quote": "Task Management",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "queries",
+        "description": "Datalog-powered queries to surface and aggregate blocks matching any criteria.",
+        "evidence_source": "landing",
+        "evidence_quote": "Use queries to generate tables of relevant information.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "query builder",
+        "description": "Visual UI for constructing queries without writing raw Datalog.",
+        "evidence_source": "docs",
+        "evidence_quote": "Queries and Query Builder",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "advanced queries",
+        "description": "Full Datalog query language for complex cross-graph data retrieval.",
+        "evidence_source": "docs",
+        "evidence_quote": "Advanced Queries",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "templates",
+        "description": "Reusable block/page templates that can be inserted on demand.",
+        "evidence_source": "docs",
+        "evidence_quote": "Templates",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pdf highlights",
+        "description": "Annotate PDFs directly inside Logseq with highlights linked back into the graph.",
+        "evidence_source": "landing",
+        "evidence_quote": "PDF Annotations",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "whiteboards",
+        "description": "Infinite canvas for placing and connecting notes, blocks, and new content spatially.",
+        "evidence_source": "landing",
+        "evidence_quote": "Place any of your thoughts from the knowledge base or new ones next to each other on an infinite canvas",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "flashcards",
+        "description": "Spaced-repetition flashcard system built on graph content for memorization.",
+        "evidence_source": "landing",
+        "evidence_quote": "Remember facts and insights using the Flashcards feature.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "knowledge graph view",
+        "description": "Visual node-link graph showing relationships between all pages in the graph.",
+        "evidence_source": "docs",
+        "evidence_quote": "Graph view",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "plugins",
+        "description": "Community plugin ecosystem (150+) for extending core functionality.",
+        "evidence_source": "landing",
+        "evidence_quote": "150+ Plugins / Extend functionality to your needs",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom themes",
+        "description": "30+ community-built themes to customize the UI look and feel.",
+        "evidence_source": "landing",
+        "evidence_quote": "30+ Themes / Customize look and feel",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "search",
+        "description": "Full-text search across all pages and blocks via CMD-K shortcut.",
+        "evidence_source": "landing",
+        "evidence_quote": "Use CMD-K to search with ease.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "encrypted sync",
+        "description": "End-to-end encrypted cloud sync (Logseq Sync) keeping notes up-to-date across devices.",
+        "evidence_source": "landing",
+        "evidence_quote": "With encrypted file syncing, you'll always have your notes backed up and securely available in real-time",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "self-hosted sync",
+        "description": "Option to configure a self-hosted sync server instead of Logseq's cloud.",
+        "evidence_source": "hn",
+        "evidence_quote": "Logseq \u2013 adding settings for self-hosted sync",
+        "tier": "free",
+        "confidence": "medium"
+      },
+      {
+        "name": "mobile apps",
+        "description": "Native iOS and Android apps for capturing and reading notes on mobile.",
+        "evidence_source": "landing",
+        "evidence_quote": "Mobile apps / Available for iOS & Android",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "slide presentation",
+        "description": "Convert a page's outline into a slide deck presentation.",
+        "evidence_source": "docs",
+        "evidence_quote": "Slide",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "calculator",
+        "description": "Inline calculator blocks for arithmetic within notes.",
+        "evidence_source": "docs",
+        "evidence_quote": "Calculator",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "tables",
+        "description": "Structured table creation within pages.",
+        "evidence_source": "docs",
+        "evidence_quote": "Tables",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "draw",
+        "description": "Embedded freehand drawing/sketching tool within notes.",
+        "evidence_source": "docs",
+        "evidence_quote": "Draw",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "media embeds",
+        "description": "Embed audio, photos, and video files directly in note blocks.",
+        "evidence_source": "docs",
+        "evidence_quote": "Embed Media - Audio, Photos, Videos",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "zotero integration",
+        "description": "Native integration with Zotero reference manager to pull citations and PDFs.",
+        "evidence_source": "docs",
+        "evidence_quote": "Zotero integration",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "publishing",
+        "description": "Publish a Logseq graph or subset of pages as a public website.",
+        "evidence_source": "docs",
+        "evidence_quote": "Publishing",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "keyboard shortcuts",
+        "description": "Comprehensive keyboard shortcut system for navigation and editing.",
+        "evidence_source": "docs",
+        "evidence_quote": "Keyboard shortcuts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "right-hand sidebar",
+        "description": "Persistent sidebar panel for opening linked pages and blocks alongside the main view.",
+        "evidence_source": "docs",
+        "evidence_quote": "How to work with the right-hand sidebar",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "commands",
+        "description": "Slash-command and advanced command palette for inserting content and triggering actions.",
+        "evidence_source": "docs",
+        "evidence_quote": "Commands and Advanced commands",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "hiccup",
+        "description": "Clojure-style Hiccup syntax for writing raw HTML-like structures inside notes.",
+        "evidence_source": "docs",
+        "evidence_quote": "Hiccup",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "localization",
+        "description": "UI translated into many languages by the community.",
+        "evidence_source": "landing",
+        "evidence_quote": "Localization / Translated in many languages",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "indentation / outliner",
+        "description": "Hierarchical block outliner with infinite nesting via indentation.",
+        "evidence_source": "docs",
+        "evidence_quote": "What is indentation and why does it matter?",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "linked references filtering",
+        "description": "Filter the linked references panel by page, tag, or property to narrow context.",
+        "evidence_source": "docs",
+        "evidence_quote": "How to filter linked references",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "plugin api",
+        "description": "Public plugin development API enabling community-built extensions.",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a plugin! Start with Plugins 101",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "existing markdown graph import",
+        "description": "Open an existing folder of Markdown files as a Logseq graph without migration.",
+        "evidence_source": "docs",
+        "evidence_quote": "How to create a Logseq graph using existing Markdown files",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "Zotero"
+    ],
+    "differentiators": [
+      "Privacy-first: all data stored locally as plain-text files, no mandatory cloud",
+      "Open-source codebase \u2014 free forever for personal use",
+      "Markdown/Org Mode files openable in any other tool",
+      "End-to-end encrypted sync (Logseq Sync) with self-hosted option",
+      "Outliner-first structure with bi-directional linking at block granularity",
+      "Raised $4.1M to build a 'new world knowledge graph'"
+    ],
+    "recent_ships": [
+      {
+        "date": "2022",
+        "what": "Whiteboards (BETA) \u2014 infinite canvas for spatial note connections",
+        "source": "landing page label: 'Whiteboards NEW BETA'"
+      },
+      {
+        "date": "2022",
+        "what": "Logseq Sync (BETA) \u2014 encrypted cross-device file syncing",
+        "source": "landing page label: 'Logseq Sync BETA'"
+      },
+      {
+        "date": "2022",
+        "what": "Self-hosted sync settings added",
+        "source": "HN: 'Logseq \u2013 adding settings for self-hosted sync'"
+      },
+      {
+        "date": "2021",
+        "what": "$4.1M seed raise to accelerate the knowledge graph platform",
+        "source": "HN: 'Logseq Raises $4.1M to Accelerate Growth of the New World Knowledge Graph'"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Daily notes and meeting notes workflow: 'I mostly use it for work: keeping daily notes & meeting notes. It's the best solution I've found to managing my tasks' (oskr via Discord)",
+        "Privacy-first local storage praised heavily on HN (276\u2191 on privacy-first announcement post)",
+        "Open-source ethos and community-driven development",
+        "Roam-like outliner with bi-directional links for free"
+      ],
+      "complaints": [
+        "Performance / complexity noted as a friction point compared to alternatives like Obsidian (HN thread: 'After Obsidian and Logseq, I give Dendron a try')",
+        "User notes using only 'a fraction of the features' \u2014 feature surface seen as overwhelming for some",
+        "Sync reliability questions (self-hosted sync settings thread on HN suggests cloud sync needed work)"
+      ],
+      "sources": [
+        "hn",
+        "landing (Discord user quote)"
+      ]
+    },
+    "pricing": {
+      "model": "open-source",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "unlimited local graphs; personal use; no seat or storage cap"
+      },
+      "tiers": [
+        {
+          "name": "Personal (Free)",
+          "price_per_seat_per_month": "$0",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Full desktop + mobile app, all core features, local storage, open-source forever"
+        },
+        {
+          "name": "Logseq Sync",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Encrypted cross-device sync (BETA); price not publicly disclosed in scraped sources"
+        }
+      ],
+      "enterprise": "null",
+      "notes": "Pricing page was not scraped; Logseq Sync is in BETA and pricing details are unknown from available sources. Core app is free/open-source with no seat limits. A self-hosted sync option exists for users who want to avoid Logseq's cloud entirely."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Logseq Doctor: Heal your flat old Markdown files before importing them to Logseq",
+        "url": "https://github.com/andreoliwa/logseq-doctor",
+        "points": 27,
+        "comments": 3,
+        "age_days": 6,
+        "hn_url": "https://news.ycombinator.com/item?id=48275462"
+      },
+      {
+        "title": "Logseq is splitting into two versions",
+        "url": "https://logseq.io/page/b2ad9ce1-9cb7-4436-8083-54cb4516d324/df4dc09d-0a12-4c87-904e-22a9bf4c350a",
+        "points": 7,
+        "comments": 0,
+        "age_days": 33,
+        "hn_url": "https://news.ycombinator.com/item?id=47941811"
+      },
+      {
+        "title": "Show HN: Slatewave \u2013 a single color palette across terminals, editors, and apps",
+        "url": "https://getslatewave.com/",
+        "points": 4,
+        "comments": 1,
+        "age_days": 35,
+        "hn_url": "https://news.ycombinator.com/item?id=47923457"
+      },
+      {
+        "title": "1,350 Days with Logseq",
+        "url": "https://ianreppel.org/goodbye-logseq/",
+        "points": 2,
+        "comments": 0,
+        "age_days": 35,
+        "hn_url": "https://news.ycombinator.com/item?id=47913542"
+      },
+      {
+        "title": "FileOutliner: The Git-Native Markdown Outliner",
+        "url": "https://news.ycombinator.com/item?id=47503949",
+        "points": 2,
+        "comments": 0,
+        "age_days": 69,
+        "hn_url": "https://news.ycombinator.com/item?id=47503949"
+      }
+    ]
+  }
+}

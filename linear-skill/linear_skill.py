@@ -20,6 +20,7 @@ Usage:
 
 import argparse
 import json
+import os
 import sys
 import urllib.request
 import urllib.error
@@ -45,6 +46,20 @@ PRIORITY_MAP = {
 PRIORITY_REVERSE = {v: k for k, v in PRIORITY_MAP.items()}
 
 
+def _load_zerg_secrets():
+    """Populate os.environ from ~/.config/zerg/secrets.env (gitignored, chmod 600). Fail-open."""
+    p = os.path.expanduser("~/.config/zerg/secrets.env")
+    try:
+        with open(p) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    except Exception:
+        pass
+
+
 def load_config() -> Dict:
     """Load API key from config."""
     if not CONFIG_FILE.exists():
@@ -66,8 +81,9 @@ def load_config() -> Dict:
 
 def graphql_request(query: str, variables: Optional[Dict] = None) -> Dict:
     """Make a GraphQL request to Linear API."""
+    _load_zerg_secrets()
     config = load_config()
-    api_key = config.get("api_key")
+    api_key = config.get("api_key") or os.environ.get("LINEAR_API_KEY")
 
     if not api_key:
         print(json.dumps({"error": "No API key in config"}))

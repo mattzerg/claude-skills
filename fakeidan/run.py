@@ -29,7 +29,6 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import os
-import subprocess
 import sys
 from pathlib import Path
 
@@ -53,37 +52,96 @@ os.environ.pop("FAKEIDAN_SYSTEM_PYTHON", None)
 # Reuse the existing Claude CLI subprocess wrapper from feedback-corpus.
 sys.path.insert(0, str(Path.home() / ".claude" / "feedback-corpus"))
 try:
-    from lib.claude import call_claude  # type: ignore
+    from lib.claude import call_claude, ClaudeAuthError  # type: ignore
 except ImportError:
     print("ERROR: ~/.claude/feedback-corpus/lib/claude.py not found.", file=sys.stderr)
     sys.exit(2)
 
 
 DEFAULT_MODEL = os.environ.get("FAKEIDAN_MODEL", "claude-sonnet-4-6")
+DEFAULT_QUICK_MODEL = os.environ.get("FAKEIDAN_QUICK_MODEL", DEFAULT_MODEL)
 _AITR_SCRIPTS = Path.home() / ".claude" / "skills" / "aitr" / "scripts"
 
 
-def _routed_default_model(mode: str) -> str:
+# aitr decision id for the routed pick this run — set by _routed_default_model,
+# consumed by _record_routing_outcome after the review completes/fails so the
+# router's reputation loop learns from real outcomes.
+_AITR_DECISION_ID: str | None = None
+
+
+def _routed_default_model(mode: str, *, quick: bool = False) -> str:
+    global _AITR_DECISION_ID
+    if quick:
+        return DEFAULT_QUICK_MODEL
     # fakeidan is the Idan-bar review gate → high-stakes. code mode reviews code;
     # other modes review prose. FAKEIDAN_MODEL env still wins via DEFAULT_MODEL.
     if str(_AITR_SCRIPTS) not in sys.path:
         sys.path.insert(0, str(_AITR_SCRIPTS))
     try:
-        from skill_default import aitr_model_or
-        return aitr_model_or(
+        from skill_default import aitr_pick_or
+        model, decision_id = aitr_pick_or(
             DEFAULT_MODEL,
             task_kind="code-review" if mode == "code" else "prose-review",
             caller="fakeidan",
             quality_floor="high-stakes",
         )
+        _AITR_DECISION_ID = decision_id
+        return model
     except ImportError:
         return DEFAULT_MODEL
+
+
+def _record_routing_outcome(outcome: str, note: str) -> None:
+    """Best-effort: report how the aitr-picked model performed. No-op when the
+    model wasn't aitr-routed (explicit --model / env / quick / fallback)."""
+    if not _AITR_DECISION_ID:
+        return
+    try:
+        from skill_default import record_outcome
+        record_outcome(_AITR_DECISION_ID, outcome, source="fakeidan", note=note)
+    except ImportError:
+        pass
 DEFAULT_TIMEOUT = int(os.environ.get("FAKEIDAN_TIMEOUT", "360"))
 QUICK_ARTIFACT_CHARS = int(os.environ.get("FAKEIDAN_QUICK_ARTIFACT_CHARS", "160000"))
+MAX_ARTIFACT_CHARS = int(os.environ.get("FAKEIDAN_MAX_ARTIFACT_CHARS", "400000"))
 DEFAULT_OUT = Path("/tmp/fakeidan")
+REVIEWABLE_SUFFIXES = {
+    ".bash",
+    ".c",
+    ".cpp",
+    ".css",
+    ".go",
+    ".h",
+    ".html",
+    ".java",
+    ".js",
+    ".json",
+    ".jsx",
+    ".kt",
+    ".md",
+    ".py",
+    ".rb",
+    ".rs",
+    ".sh",
+    ".sql",
+    ".swift",
+    ".toml",
+    ".ts",
+    ".tsx",
+    ".txt",
+    ".vue",
+    ".xml",
+    ".yaml",
+    ".yml",
+}
 
 ANCHOR_PATH = Path.home() / ".claude/skills/fakeidan/anchors/idan_review_voice.md"
-MEMORY_DIR = Path.home() / ".claude/projects/-Users-mattheweisner-Library-Mobile-Documents-iCloud-md-obsidian-Documents-Zerg/memory"
+# Resolve memory via the canonical vault resolver, NOT a hardcoded iCloud-project
+# symlink — a broken symlink must not silently strand the Idan-bar memory.
+sys.path.insert(0, str(Path.home() / ".config" / "zerg" / "lib"))
+from vault_path import vault_root  # noqa: E402
+VAULT_ROOT = vault_root()
+MEMORY_DIR = VAULT_ROOT / "claude-memory"
 PR_BAR_MEMORY = MEMORY_DIR / "feedback_idan_pr_review_bar.md"
 ZERG_VOICE_MEMORY = MEMORY_DIR / "feedback_zerg_voice_no_self_deprecation.md"
 BESPOKE_ENGAGEMENT_MEMORY = MEMORY_DIR / "feedback_idan_bespoke_engagement_model.md"
@@ -103,10 +161,7 @@ PHASE45_CODE_COMPOSITES = [
 ]
 
 PRODUCT_VIDEO_SKILL_DIR = Path.home() / ".claude/skills/product-video-skill"
-VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
-)
-ARTIFACT_QUALITY_RUBRIC = VAULT_ROOT / "_style" / "artifact_quality_rubric.md"
+ARTIFACT_QUALITY_RUBRIC = VAULT_ROOT / "_style" / "artifact_quality_rubric.md"  # VAULT_ROOT set above
 
 # Live corpora (Phase 6.A + 6.B) — Idan's real voice + concerns, refreshed by:
 #   ~/.claude/skills/slack-skill/slack_corpus.py update   (daily 6:30am)
@@ -169,6 +224,20 @@ without loading the full long-form memory corpus.
   rollout gates, and user-impacting behavior.
 """
 
+QUICK_CODE_COMPOSITES = """# QUICK CODE COMPOSITE CONTRACT
+
+Quick mode is latency-bounded, so use this compact contract instead of loading
+the full Phase 4+5 composite files. Full mode still loads the source composites.
+
+- `composite_walked_diff_lede`: open with "Walked the [N-file / M-LOC] [project] — [verdict]", then name the strongest signal and concrete residual risk.
+- `composite_quick_scorecard`: include a scorecard table, an "What's especially good" section, and "Asks before merge".
+- `composite_pr_and_ship_gates`: structural asks are `A*`, polish asks are `B*`, informational follow-ups are `N*`; cap structural blockers at three.
+- `composite_praise_pattern`: praise must name a function/file/pattern, quote concrete evidence when available, and state the discipline worth propagating.
+- `composite_post_merge_followup`: every `N*` ask needs "Track for" and "Lands in" detail.
+- `composite_adversarial_review`: when the artifact touches auth, webhooks, URL fetch, user-input parsers, IPC/MCP, cookies/sessions, secrets, or quota logic, include attack-class coverage and residual risk.
+- `composite_matt_pr_response_format`: make asks mechanically answerable by the author; avoid vague "consider" feedback.
+"""
+
 
 def compact_quick_anchor(mode: str) -> str:
     missing = []
@@ -189,16 +258,15 @@ def compact_quick_anchor(mode: str) -> str:
         parts = [QUICK_ANCHORS, mode_note]
     if rubric:
         parts.append(rubric)
-    # Phase 4+5 — even in quick mode, mode=code MUST get the structural
-    # composites. SKILL.md declares them mandatory; this is the enforcement
-    # for the slim-prompt path.
     if mode == "code":
-        for label, fname in PHASE45_CODE_COMPOSITES:
-            path = MEMORY_DIR / fname
-            if path.exists():
-                parts.append(f"# {label}\n\n{path.read_text()}")
-            else:
-                parts.append(f"# {label} — MISSING: {path}. Flag in output as canon-incomplete self-finding.")
+        parts.append(QUICK_CODE_COMPOSITES)
+        if os.environ.get("FAKEIDAN_QUICK_FULL_COMPOSITES") == "1":
+            for label, fname in PHASE45_CODE_COMPOSITES:
+                path = MEMORY_DIR / fname
+                if path.exists():
+                    parts.append(f"# {label}\n\n{path.read_text()}")
+                else:
+                    parts.append(f"# {label} — MISSING: {path}. Flag in output as canon-incomplete self-finding.")
     return "\n\n".join(parts)
 
 
@@ -210,9 +278,19 @@ def load_live_corpus_signal(days: int = 30, max_samples: int = 8) -> str:
     import json
     import re
     cutoff = dt.datetime.now() - dt.timedelta(days=days)
-    cutoff_iso = cutoff.isoformat()
     cutoff_unix = cutoff.timestamp()
     fake_idan = re.compile(r"\[fake idan\]", re.I)
+
+    def parse_iso_timestamp(raw: str) -> dt.datetime | None:
+        if not raw:
+            return None
+        try:
+            parsed = dt.datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+        if parsed.tzinfo is not None:
+            parsed = parsed.astimezone().replace(tzinfo=None)
+        return parsed
 
     sections: list[str] = []
 
@@ -253,7 +331,8 @@ def load_live_corpus_signal(days: int = 30, max_samples: int = 8) -> str:
                 if r.get("author") != IDAN_GITHUB:
                     continue
                 ts = r.get("ts") or ""
-                if ts < cutoff_iso:
+                parsed_ts = parse_iso_timestamp(ts)
+                if parsed_ts is None or parsed_ts < cutoff:
                     continue
                 snippet = r.get("snippet", "")
                 if not snippet or fake_idan.search(snippet):
@@ -306,6 +385,9 @@ def load_anchors(mode: str, quick: bool = False) -> str:
 
     if PR_BAR_MEMORY.exists():
         parts.append(f"# IDAN PR REVIEW BAR (memory — concrete code/architecture patterns)\n\n{PR_BAR_MEMORY.read_text()}")
+    else:
+        sys.stderr.write(f"[fakeidan] WARNING: Idan PR-bar memory missing at {PR_BAR_MEMORY} — "
+                         "review proceeds on the anchor only (the bar's concrete patterns are absent).\n")
 
     # Phase 4+5 composites — REQUIRED for mode=code. Inject EVERY one so the
     # model self-grades against them before emitting. SKILL.md declares these
@@ -351,15 +433,19 @@ def load_anchors(mode: str, quick: bool = False) -> str:
 
 
 def truncate_artifact_text(text: str, *, label: str, quick: bool) -> str:
-    if not quick or len(text) <= QUICK_ARTIFACT_CHARS:
+    limit = QUICK_ARTIFACT_CHARS if quick else MAX_ARTIFACT_CHARS
+    if len(text) <= limit:
         return text
 
-    omitted = len(text) - QUICK_ARTIFACT_CHARS
+    omitted = len(text) - limit
+    mode_label = "quick-mode" if quick else "max-size"
     return (
-        text[:QUICK_ARTIFACT_CHARS]
+        text[:limit]
         + "\n\n"
-        + f"[fakeidan quick-mode truncation: omitted {omitted} trailing chars from {label}. "
-        + "If the missing tail is relevant, rerun without --quick or raise FAKEIDAN_QUICK_ARTIFACT_CHARS.]\n"
+        + f"[fakeidan {mode_label} truncation: omitted {omitted} trailing chars from {label}. "
+        + "If the missing tail is relevant, review a narrower artifact or raise "
+        + ("FAKEIDAN_QUICK_ARTIFACT_CHARS" if quick else "FAKEIDAN_MAX_ARTIFACT_CHARS")
+        + ".]\n"
     )
 
 
@@ -402,7 +488,7 @@ def review_artifact(
         # Concatenate all .md / .txt / .py / .js / .ts files in dir
         chunks = []
         for f in sorted(artifact_path.rglob("*")):
-            if f.suffix.lower() in {".md", ".txt", ".py", ".js", ".ts", ".tsx", ".jsx", ".vue"}:
+            if f.suffix.lower() in REVIEWABLE_SUFFIXES:
                 chunks.append(f"### {f.relative_to(artifact_path)}\n\n```\n{f.read_text()}\n```\n")
         artifact_text = "\n".join(chunks)
         artifact_label = f"{artifact_path.name} (directory)"
@@ -437,7 +523,9 @@ def review_artifact(
     # before re-flagging the same issues.
     try:
         import sys as _sys
-        _sys.path.insert(0, str(Path.home() / ".config" / "zerg" / "lib"))
+        zerg_lib = str(Path.home() / ".config" / "zerg" / "lib")
+        if zerg_lib not in _sys.path:
+            _sys.path.insert(0, zerg_lib)
         import article_lock as _al  # type: ignore
         slug = _al.file_path_to_slug(str(artifact_path))
         if slug:
@@ -459,23 +547,31 @@ def main():
     ap.add_argument("--out-dir", default=str(DEFAULT_OUT),
                     help=f"Output directory (default: {DEFAULT_OUT})")
     ap.add_argument("--model", default=None,
-                    help=f"Claude model (default: routed via aitr; fallback {DEFAULT_MODEL})")
+                    help=f"Claude model (default: quick={DEFAULT_QUICK_MODEL}; otherwise routed via aitr, fallback {DEFAULT_MODEL})")
     ap.add_argument("--quick", action="store_true",
                     help="Skip large mode-specific catalogs to save tokens")
     ap.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT,
                     help=f"Seconds to wait for each Claude review call (default: {DEFAULT_TIMEOUT})")
     args = ap.parse_args()
     if args.model is None:
-        args.model = _routed_default_model(args.mode)
+        args.model = _routed_default_model(args.mode, quick=args.quick)
 
     out_dir = Path(args.out_dir)
     written = []
-    for art in args.artifact:
-        path = Path(art).expanduser().resolve()
-        out = review_artifact(
-            path, mode=args.mode, out_dir=out_dir, model=args.model, quick=args.quick, timeout=args.timeout,
-        )
-        written.append(out)
+    try:
+        for art in args.artifact:
+            path = Path(art).expanduser().resolve()
+            out = review_artifact(
+                path, mode=args.mode, out_dir=out_dir, model=args.model, quick=args.quick, timeout=args.timeout,
+            )
+            written.append(out)
+    except ClaudeAuthError:
+        # Auth/env problem — not the picked model's fault; record nothing.
+        raise
+    except Exception as exc:
+        _record_routing_outcome("bad", f"review failed ({args.mode}): {type(exc).__name__}: {str(exc)[:100]}")
+        raise
+    _record_routing_outcome("good", f"{len(written)} review(s) delivered ({args.mode})")
 
     print(f"\n=== Done. {len(written)} review(s) written to {out_dir} ===")
     for p in written:

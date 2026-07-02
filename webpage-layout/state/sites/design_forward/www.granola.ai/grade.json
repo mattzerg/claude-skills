@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 7,
+    "hierarchy": 6,
+    "distinctiveness": 4,
+    "color": 5,
+    "density": 5,
+    "voice": 4
+  },
+  "reasoning": {
+    "typography": "Large serif display type with decent character, but body copy and UI fall into generic Inter territory. The slab-serif headline has presence but isn't pushed far enough to be memorable.",
+    "hierarchy": "Hero headline dominates adequately, but below-the-fold the hierarchy flattens. Social proof logos compete for attention rather than supporting the narrative. Cookie modal murders the first impression.",
+    "distinctiveness": "Generic SaaS landing page structure \u2014 could easily be Otter.ai, Fathom, or any meeting tool. The 'AI notepad' angle is the only specific detail; remove it and this is a template.",
+    "color": "Monotone gray/beige base with olive-green accent is restrained, but the accent appears >5% (CTA button, tags, branding). Lacks color discipline \u2014 feels like safe, algorithmic restraint rather than purposeful palette.",
+    "density": "Uniform padding throughout. Hero section has appropriate breathing room, but lower sections feel equally spaced regardless of content importance. No rhythm or intentional density shifts.",
+    "voice": "Standard SaaS IA: hero \u2192 social proof \u2192 features. The copy has slight personality ('makes them awesome'), but structure is pure stencil. No evidence of storytelling or narrative arc that reflects actual product experience."
+  },
+  "winning_patterns": [
+    "Large serif headline has actual typographic presence vs. default geometric sans",
+    "Restrained color palette avoids the rainbow gradient plague",
+    "Product screenshots show actual interface rather than abstract illustrations"
+  ],
+  "anti_patterns": [
+    "Cookie modal obliterates first impression \u2014 immediate trust violation",
+    "Generic logo parade social proof section identical to 10,000 other SaaS sites",
+    "Uniform padding system creates monotonous rhythm with no hierarchy",
+    "Could swap 'Granola' for any competitor name and structure would still work perfectly",
+    "'Currently / Selected / Testimonials / CTA' structure is paint-by-numbers",
+    "Olive-green accent feels algorithm-selected for 'calm productivity' rather than distinctive"
+  ],
+  "one_word_personality": "inoffensive",
+  "_url": "https://www.granola.ai",
+  "_persona": "design_forward",
+  "_note": "Bold gradient hero, animated SVG marks",
+  "_graded_at": "2026-05-08T21:45:10.894338Z"
+}

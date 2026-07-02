@@ -1,0 +1,529 @@
+{
+  "name": "AWS End User Messaging (Pinpoint SMS)",
+  "url": "https://aws.amazon.com/end-user-messaging/",
+  "domain": "aws.amazon.com",
+  "scanned_at": "2026-07-01T05:44:19.821003",
+  "sources": {
+    "landing": {
+      "url": "https://aws.amazon.com/end-user-messaging/",
+      "title": "SMS, MMS & WhatsApp Messaging Service \u2013 AWS End User Messaging \u2013 Amazon Web Services",
+      "text": "SMS, MMS & WhatsApp Messaging Service \u2013 AWS End User Messaging \u2013 Amazon Web Services\nSelect your cookie preferences\nWe use essential cookies and similar tools that are necessary to provide our site and services. We use performance cookies to collect anonymous statistics, so we can understand how customers use our site and make improvements. Essential cookies cannot be deactivated, but you can choose \u201cCustomize\u201d or \u201cDecline\u201d to decline performance cookies.\nIf you agree, AWS and approved third parties will also use cookies to provide useful site features, remember your preferences, and display relevant content, including relevant advertising. To accept or decline all non-essential cookies, choose \u201cAccept\u201d or \u201cDecline.\u201d To make more detailed choices, choose \u201cCustomize.\u201d\nAccept\nDecline\nCustomize\nCustomize cookie preferences\nWe use cookies and similar tools (collectively, \"cookies\") for the following purposes.\nEssential\nEssential cookies are necessary to provide our site and services and cannot be deactivated. They are usually set in response to your actions on the site, such as setting your privacy preferences, signing in, or filling in forms.\nAllowed\nPerformance\nPerformance cookies provide anonymous statistics about how customers navigate our site so we can improve site experience and performance. Approved third parties may perform analytics on our behalf, but they cannot use the data for their own purposes.\nAllowed\nFunctional\nFunctional cookies help us provide useful site features, remember your preferences, and display relevant content. Approved third parties may set these cookies to provide certain site features. If you do not allow these cookies, then some or all of these services may not function properly.\nAllowed\nAdvertising\nAdvertising cookies may be set through our site by us or our advertising partners and help us deliver relevant marketing content. If you do not allow these cookies, you will experience less relevant advertising.\nAllowed\nBlocking some types of cookies may impact your experience of our sites. You may review and change your choices at any time by selecting Cookie preferences in the footer of this site. We and selected third-parties use cookies or similar technologies as specified in the\nAWS Cookie Notice\n.\nCancel\nSave preferences\nYour privacy choices\nWe and our advertising partners (\u201cwe\u201d) may use information we collect from or about you to show you ads on other websites and online services. Under certain laws, this activity is referred to as \u201ccross-context behavioral advertising\u201d or \u201ctargeted advertising.\u201d\nTo opt out of our use of cookies or similar technologies to engage in these activities, select \u201cOpt out of cross-context behavioral ads\u201d and \u201cSave preferences\u201d below. If you clear your browser cookies or visit this site from a different device or browser, you will need to make your selection again. For more information about cookies and how we use them, read our\nCookie Notice\n.\nAllow cross-context behavioral ads\nOpt out of cross-context behavioral ads\nTo opt out of the use of other identifiers, such as contact information, for these activities, fill out the form\nhere\n.\nFor more information about how AWS handles your information, read the\nAWS Privacy Notice\n.\nCancel\nSave preferences\nUnable to save cookie preferences\nWe will only store essential cookies at this time, because we were unable to save your cookie preferences.\nIf you want to change your cookie preferences, try again later using the link in the AWS console footer, or contact support if the problem persists.\nDismiss\nSkip to main content\nFilter: All\nEnglish\nContact us\nAWS Marketplace\nSupport\nMy account\nre:Invent\nDiscover AWS\nProducts\nSolutions\nPricing\nResources\nSearch\nFilter: All\nSign in to console\nCreate account\nAWS End User Messaging\nOverview\nChannels\nFeatures\nPricing\nGetting Started\nResources\nFAQs\nMore\nProducts\nBusiness Applications\nAWS End User Messaging\nSMS, RCS, MMS, and WhatsApp Conversations, built on AWS\nMessaging channels that plug directly into your infrastructure for a better builder experience and faster time to value\nGet Started\nWhat is AWS End User Messaging?\nAWS End User Messaging empowers developers to integrate scalable and reliable messaging capabilities into their applications. Whether it's time-sensitive alerts, one-time passwords, or two-way communications, AWS End User Messaging helps ensure your messages reach their local or global destination across multiple channels like SMS, MMS, WhatsApp, push, and text to voice. AWS End User Messaging helps unlock the full potential of your messaging strategy by connecting your applications directly to your end-users across the channels they use and trust.\nConversational Experiences\nBuild AI-powered conversations where customers interact naturally with your business through SMS, RCS, or WhatsApp. Connect inbound messages to your Lambda functions and Bedrock for intelligent responses, creating complete application interfaces right in messaging apps customers already use. With RCS and WhatsApp, your AI agents assist customers and complete transactions under your verified brand identity \u2014 so customers know they're engaging with your business.\nBuild conversational AI\nPromotions\nReach your audience instantly with product launches, limited-time offers, and event invitations through SMS, MMS, RCS, and WhatsApp \u2014 with rich media content that drives engagement. Verified brand identity on RCS and WhatsApp helps ensure your promotional messages are recognized as legitimate, reducing spam concerns.\nExplore promotional channels\nNotifications\nKeep customers informed with order confirmations, shipping updates, appointment reminders, and account alerts. For one-time passwords, Notify gets you sending in minutes \u2014 no phone number registration, no carrier approval, just call the API. Built-in fraud protection stops anomalous traffic to prevent unexpected costs, and pre-approved templates mean you can safely deploy two-factor authentication without weeks of setup.\nGet started with Notify\nBenefits of AWS End User Messaging\nSend Messages at Scale\nAWS End User Messaging provides the global scale, resiliency, and flexibility required to deliver SMS, RCS, WhatsApp, push, and voice messaging capabilities in your web, mobile, and business applications. Trust that your messages are delivered to the geographies that matter most to your business.\nReduce Spam Concerns with Verified Identity\nBuild confidence with end users through multiple layers of protection. RCS and WhatsApp provide verified brand identities \u2014 your logo, name, and verified badge where the verified checkmark next to your brand name helps reduce customers suspecting your valid messages are spam or phishing. SMS Protect validates phone numbers and detects fraud before you send, identifying anomalous traffic to prevent unexpected costs.\nGet Started Fast, Scale on Your Terms\nNotify lets you start sending OTP messages in minutes \u2014 no phone number registration required, no carrier approval, just call the API and send. When you're ready to grow and need your own phone number or brand identity, our AI-powered registration reviewer gives you faster feedback on your submissions so you can get through the registration process sooner. Start fast with Notify, then scale to dedicated numbers, verified brands, and full messaging capabilities on your terms.\nMessaging Channels in AWS\nAWS End User Messaging brings messaging channels into the AWS ecosystem where your core applications live. Inbound messages flow to SNS, EventBridge, or Kinesis, enabling seamless connections to your applications and services. Your messaging channels and applications live in the same place \u2014 in AWS \u2014 creating a better builder experience with tightly coupled, real-time interactions, less complexity, and faster time to value.\nShow more\nChannels and Features\nGetting started\nSMS\nReliable text messaging that reaches every phone\nLearn more\nGetting started\nRCS\nVerified business messages (works on Apple and Google phones)\nLearn more\nGetting started\nWhatsApp\nRich, interactive messages to 2B users\nLearn more\nGetting started\nPush\nReal-time notifications in your apps\nLearn more\nGetting started\nNotify\nLaunch OTP in minutes \u2014 no carrier approval, no phone number registration\nLearn more\nGetting started\nSMS Protect\nIdentify anomalous traffic, stop fraud to prevent unexpected costs\nLearn more\nReady to get started?\nBuild messaging experiences with AWS End User Messaging\nGetting started\nGet started\nLearn more\nDocumentation\nView documentation\nLearn more\nCreate an AWS account\nLearn\nWhat Is AWS?\nWhat Is Cloud Computing?\nWhat Is Agentic AI?\nCloud Computing Concepts Hub\nAWS Cloud Security\nWhat's New\nBlogs\nPress Releases\nResources\nGetting Started\nTraining\nAWS Trust Center\nAWS Solutions Library\nArchitecture Center\nProduct and Technical FAQs\nAnalyst Reports\nAWS Partners\nDevelopers\nBuilder Center\nSDKs & Tools\n.NET on AWS\nPython on AWS\nJava on AWS\nPHP on AWS\nJavaScript on AWS\nHelp\nContact Us\nFile a Support Ticket\nAWS re:Post\nKnowledge Center\nAWS Support Overview\nAWS Accessibility\nLegal\nEvent Code of Conduct\nEvent Terms & Conditions\nEnglish\nBack to top\nAmazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability or other legally protected status. Veterans, military spouses, and people with disabilities are encouraged to apply.\nx\nfacebook\nlinkedin\ninstagram\ntwitch\nyoutube\npodcasts\nemail\nPrivacy\nSite terms\nYour Privacy Choices\nCalifornia Consumer Privacy Act (CCPA) Opt-Out Icon\nCookie Preferences\n\u00a9 2026, Amazon Web Services, Inc. or its affiliates. All rights reserved.\nHi, I can connect you with an AWS representative or answer questions you have on AWS.\nNeed more info? Highlight any text to get an explanation generated with AWS generative AI.\n2",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://aws.amazon.com/end-user-messaging/pricing/",
+      "title": "AWS End User Messaging Pricing",
+      "text": "AWS End User Messaging Pricing\nSelect your cookie preferences\nWe use essential cookies and similar tools that are necessary to provide our site and services. We use performance cookies to collect anonymous statistics, so we can understand how customers use our site and make improvements. Essential cookies cannot be deactivated, but you can choose \u201cCustomize\u201d or \u201cDecline\u201d to decline performance cookies.\nIf you agree, AWS and approved third parties will also use cookies to provide useful site features, remember your preferences, and display relevant content, including relevant advertising. To accept or decline all non-essential cookies, choose \u201cAccept\u201d or \u201cDecline.\u201d To make more detailed choices, choose \u201cCustomize.\u201d\nAccept\nDecline\nCustomize\nCustomize cookie preferences\nWe use cookies and similar tools (collectively, \"cookies\") for the following purposes.\nEssential\nEssential cookies are necessary to provide our site and services and cannot be deactivated. They are usually set in response to your actions on the site, such as setting your privacy preferences, signing in, or filling in forms.\nAllowed\nPerformance\nPerformance cookies provide anonymous statistics about how customers navigate our site so we can improve site experience and performance. Approved third parties may perform analytics on our behalf, but they cannot use the data for their own purposes.\nAllowed\nFunctional\nFunctional cookies help us provide useful site features, remember your preferences, and display relevant content. Approved third parties may set these cookies to provide certain site features. If you do not allow these cookies, then some or all of these services may not function properly.\nAllowed\nAdvertising\nAdvertising cookies may be set through our site by us or our advertising partners and help us deliver relevant marketing content. If you do not allow these cookies, you will experience less relevant advertising.\nAllowed\nBlocking some types of cookies may impact your experience of our sites. You may review and change your choices at any time by selecting Cookie preferences in the footer of this site. We and selected third-parties use cookies or similar technologies as specified in the\nAWS Cookie Notice\n.\nCancel\nSave preferences\nYour privacy choices\nWe and our advertising partners (\u201cwe\u201d) may use information we collect from or about you to show you ads on other websites and online services. Under certain laws, this activity is referred to as \u201ccross-context behavioral advertising\u201d or \u201ctargeted advertising.\u201d\nTo opt out of our use of cookies or similar technologies to engage in these activities, select \u201cOpt out of cross-context behavioral ads\u201d and \u201cSave preferences\u201d below. If you clear your browser cookies or visit this site from a different device or browser, you will need to make your selection again. For more information about cookies and how we use them, read our\nCookie Notice\n.\nAllow cross-context behavioral ads\nOpt out of cross-context behavioral ads\nTo opt out of the use of other identifiers, such as contact information, for these activities, fill out the form\nhere\n.\nFor more information about how AWS handles your information, read the\nAWS Privacy Notice\n.\nCancel\nSave preferences\nUnable to save cookie preferences\nWe will only store essential cookies at this time, because we were unable to save your cookie preferences.\nIf you want to change your cookie preferences, try again later using the link in the AWS console footer, or contact support if the problem persists.\nDismiss\nSkip to main content\nFilter: All\nEnglish\nContact us\nAWS Marketplace\nSupport\nMy account\nre:Invent\nDiscover AWS\nProducts\nSolutions\nPricing\nResources\nSearch\nFilter: All\nSign in to console\nCreate account\nFeedback\nAWS End User Messaging\nOverview\nChannels\nFeatures\nPricing\nGetting Started\nResources\nFAQs\nMore\nAWS\nAWS End User Messaging\nPricing\nAWS End User Messaging Pricing\nRCS\nSMS\nWhatsApp\nPush Notifications\nVoice\nNotify\nRCS agents\nPhone Numbers\nPhone Number Validate\nRCS\nSend verified, branded messages with pay-as-you-go pricing based on destination country. RCS messages are charged only upon delivery, with pricing that varies by message type and country.\nUnited States RCS Messaging\nIn the US, RCS messages are classified as Rich or Rich Media based on content. Rich messages are billed per 160-byte (UTF-8) segment. Rich Media messages are billed at a flat rate per message. Each message has two cost components: a transport fee and a carrier fee. Businesses are only charged when a message is successfully delivered.\nMeter\nAWS fee\nCarrier fee\nRich RCS (outbound)\n$0.00700 per segment\n$0.00494 per segment\nRich Media RCS (outbound)\n$0.02000 per message\n$0.00949 per message\nInbound Rich RCS\n$0.00700 per segment\n$0.00218 per segment\nInbound Rich Media RCS\n$0.02000 per message\n$0.00737 per message\nRich RCS includes:\n\u2022 Text (billed per 160-character segment)\n\u2022 Suggested replies\n\u2022 Suggested action: Dial a phone number\u2022 Suggested action: Open URL (full browser)\nRich Media RCS includes:\n\u2022 Rich cards or carousels\n\u2022 Media file attachments (images, video, audio)\n\u2022 Suggested action: Open URL in a webview\n\u2022 Suggested action: View location or Share location\n\u2022 Suggested action: Create calendar event\nMessage classification is automatic based on content. Suggested replies, Dial, and Open URL can be added to any message type without changing its classification. Any media, rich card, carousel, or advanced action upgrades the message to Rich Media.\nInternational RCS Messaging\nOutside the US, RCS messages are billed per message or per conversation. Messages up to 160 characters are billed as RCS Basic. Messages over 160 characters, or containing rich cards, file attachments, carousels, or any suggestion added to any message type are billed as RCS Single. Businesses are only charged when a message is successfully delivered.\nCountry\nISO\nRCS Basic (per message)\nRCS Single (per message)\nRCS Conversation (per session)\nAustria\nAT\n$0.0652\n$0.0677\n$0.1200\nBrazil\nBR\n$0.0300\n$0.0463\n$0.0820\nCanada\nCA\n$0.0083\n$0.0100\n$0.1200\nColombia\nCO\n$0.0509\n$0.0699\n$0.4483\nCzech Republic\nCZ\n$0.0661\n$0.6609\n$0.1041\nDenmark\nDK\n$0.0514\n$0.1000\n$0.1230\nDominican Republic\nDO\n$0.0741\n$0.1260\n$0.0778\nFrance\nFR\n$0.0730\n$0.1014\n$0.1850\nGermany\nDE\n$0.0900\n$0.1190\n$0.1462\nGuatemala\nGT\n$0.2169\n$0.2169\n$0.5839\nItaly\nIT\n$0.0553\n$0.1036\n$0.1264\nMexico\nMX\n$0.1000\n$0.1039\n$0.1125\nNetherlands\nNL\n$0.1100\n$0.1173\n$0.1564\nNigeria\nNG\n$0.1662\n$0.2019\n$0.4250\nNorway\nNO\n$0.0670\n$0.1043\n$0.2500\nPeru\nPE\n$0.1458\n$0.3126\n$0.1502\nPoland\nPL\n$0.0322\n$0.0577\n$0.0639\nSingapore\nSG\n$0.0392\n$0.0746\n$0.6500\nSlovakia\nSK\n$0.0595\n$0.0822\n$0.1800\nSpain\nES\n$0.0500\n$0.1134\n$0.1249\nSweden\nSE\n$0.0726\n$0.1062\n$0.1574\nUnited Kingdom\nGB\n$0.0520\n$0.0731\n$0.1800\nAll prices are in USD. Outbound and inbound prices are the same for international RCS messaging.\nRCS Conversation Pricing\nConversational pricing requires:\n\u2022 The RCS agent must be registered as a Conversational agent at the time of creation\n\u2022 The business must both send and receive a message to/from its end user within a 24-hour window\n\u2022 Once both conditions are met, all subsequent messages within the 24-hour window are included in the conversational rate\nIf either condition is not met, messages are billed individually as Basic or Single. For full conversation session rules, refer to the AWS End User Messaging RCS developer documentation.\nRCS pricing per country (CSV)\nSMS\nSend text messages globally with pay-as-you-go pricing based on destination country, protect SMS from artificially inflated traffic, and deliver multimedia experiences in the United States and Canada.\nSMS\nSMS Protect\nMMS\nSMS\nSMS\nThe price for sending SMS messages varies between countries and regions, and in some cases, between carriers in the same country or region. These prices change regularly.\nCarrier fees will vary based on the type of number sending the message. See\nFAQs\nfor more information on carrier fees.\nTo qualify for the local route price, you must comply with India specific regulations. The default route to India is via International Long Distance Operator (ILDO) routes. For more information please refer to\nAWS End User Messaging\n.\nFor international sends (e.g., sending messages from a different country phone number than the destination country number), the cost per message will be charged based on the destination country price.\nMessages sent to Canada via a toll-free number will be charged $0.00581 per message fee and $0.00705 carrier fee.\nUse the following pricing tool to see the prices for sending and receiving messages for each carrier in a country or region.\u00a0\u00a0You can download outbound SMS prices per country via CSV below.\nEnter your country / region:\nOutbound\nInbound\nAll Networks\n10DLC\nLong Code\nShort Code\nToll-free\nBase Price\n$0.007\n$0.007\n$0.007\n$0.007\nCarrier Fee\n$0.00302\n$0.00302\n$0.00289\n$0.003\nNetwork\nInbound SMS\nAll Networks\n$0.0075\nSMS pricing per country (CSV)\nSMS Protect\nSMS Protect\nGeneral information:\nSMS Protect fees are incremental to standard SMSmessage charges\nMessages using \"allow\" or \"block\" configurations have no additional charges\nMessages using \"monitor\" or \"filter\" configurations incur an additional per message charge for Protect\nSMS Protect is available in all countries where AWS End User Messaging supports SMS\nSMS Protect Configuration\nPrice\nMonitor\n$0.01\nFilter\n$0.01\nAllow\nNo charge\nBlock\nNo charge\nNote: When using \"filter\" configuration, you are only charged the standard SMS fee for messages that are delivered (messages identified as AIT are blocked and not charged SMS fees).\nMMS\nMMS\nGeneral Information\nThe price for sending MMS messages can vary between countries. These prices are subject to change.\nCarrier fees can vary between countries. See\nFAQs\nfor more information on carrier fees.\nUse the following pricing table to see applicable prices for sending MMS messages.\nUnited States (Outbound)\nAll Networks\n10DLC\nToll-free\nShort Code\nBase Price\n$0.02\n$0.02\n$0.02\nCarrier Fee\n$0.01\n$0.01\n$0.01\nCanada (Outbound)\nAll Networks\nLong Code\nToll-free\nShort Code\nBase Price\n$0.02\nn/a\n$0.02\nCarrier Fee\n$0.01\nn/a\n$0.01\nWhatsApp\nWhatsApp\nAWS charges two fees for each WhatsApp message:\n1.\u00a0\u00a0AWS message fee: $0.005 per outbound message globally (except India Authentication and Utility messages at $0.002), and $0.001 per inbound message globally.\n2.\u00a0Meta message fee: price varies for each country and message type.\nThe Meta message fee is set by Meta and subject to change by Meta. We will make reasonable efforts to notify you of increases to the Meta message fee.\nWe implement Meta's volume-tiered pricing for Meta message fee. The volume-tiered prices, tier thresholds, and discounts are set by Meta, and subject to change by Meta. Volume tiers on ongoing monthly usage are determined solely by Meta. AWS applies the volume tiers to ongoing usage as and when Meta informs us of tier changes. For more information about tier thresholds and current rates, see\nMeta's WhatsApp Business Platform pricing documentation\n.\nAWS charges the Meta message fee using the rates in Meta's INR rate card, including for volume-tiered pricing. AWS will charge the Meta message fee in USD by applying the INR to USD exchange rate as of 4/1/2026. On the first day of each quarter, AWS may update the USD price it charges for the Meta message fee to reflect changes to the INR to USD exchange rate.\nMessage types are:\nMarketing\n\u2014 Enables you to achieve a wide range of goals, from generating awareness to driving sales and retargeting customers. Examples include new product, service, or feature announcements, targeted promotions/offers, and cart abandonment reminders.\nUtility\n\u2014 Enables you to follow-up on user actions or requests. Examples include opt-in confirmation, order/delivery management (e.g., delivery update), account updates, alerts (payment reminder), and feedback surveys.\nAuthentication\n\u2014\u00a0 Enables you authenticate users with one-time passcodes, potentially at multiple steps in the login process (e.g., account verification, account recovery, integrity challenges). Authentication also includes the Authentication-International message type that applies to countries with international sending rates. See\nhttps://developers.facebook.com/docs/whatsapp/pricing/authentication-international-rates\nto see if these international rates apply to your business.\nService\n\u2014\u00a0Enables you to resolve customer inquiries.\nMeta message fee at list price and at volume tiers, effective April 1, 2026 are below.\nAWS WhatsApp Meta Fee CSV\nAWS WhatsApp Meta Fee Volume Tiers CSV\nPush Notifications\nPush notifications\nYou pay $0 for the first 1,000,000 push notifications that you send each month, and $0.000001 for each push notification that you send after that.\nVoice\nVoice (outbound only)\nThe price for sending voice messages varies between countries, and occasionally between carriers within the same country or region. These prices are subject to change.\nTo send voice messages using AWS End User Messaging, you must obtain at least one dedicated, voice-enabled long code. You can lease local phone numbers in a variety of countries directly through the AWS End User Messaging console. A long code is a standard telephone number that your message is sent from.\nNote: Pricing differs for voice-enabled long codes vs. SMS-enabled long codes. You can\u2019t use voice-enabled long codes to send SMS messages unless the phone number also has SMS enabled. SMS-enabled long codes are not available in all countries, and are often more expensive than voice-enabled long codes.\nAfrica\nCentral Africa\nCountry or region\nOutbound price per minute (USD)\nAngola\n0.208\nAngola - Mobile\n0.784\nCameroon\n0.3\nCameroon - Mobile\n0.974\nCentral African Republic\n1.703\nCentral African Republic - Mobile\n2.221\nChad\n0.838\nChad - Mobile\n1.483\nCongo\n1.803\nCongo - Mobile\n1.237\nCongo (DR)\n0.938\nCongo (DR) - Mobile\n0.857\nEquatorial Guinea\n1.163\nEquatorial Guinea - Mobile\n1.25\nGabon Rep. - Mobile - Airtel\n1.223\nGabon Rep. - Mobile - Liberties\n1.073\nGabon Rep. - Mobile ",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://docs.aws.amazon.com/sms-voice/latest/userguide/document-history.html",
+      "title": "What is AWS End User Messaging SMS? - AWS End User Messaging SMS",
+      "text": "What is AWS End User Messaging SMS? - AWS End User Messaging SMS\nSelect your cookie preferences\nWe use essential cookies and similar tools that are necessary to provide our site and services. We use performance cookies to collect anonymous statistics, so we can understand how customers use our site and make improvements. Essential cookies cannot be deactivated, but you can choose \u201cCustomize\u201d or \u201cDecline\u201d to decline performance cookies.\nIf you agree, AWS and approved third parties will also use cookies to provide useful site features, remember your preferences, and display relevant content, including relevant advertising. To accept or decline all non-essential cookies, choose \u201cAccept\u201d or \u201cDecline.\u201d To make more detailed choices, choose \u201cCustomize.\u201d\nAccept\nDecline\nCustomize\nCustomize cookie preferences\nWe use cookies and similar tools (collectively, \"cookies\") for the following purposes.\nEssential\nEssential cookies are necessary to provide our site and services and cannot be deactivated. They are usually set in response to your actions on the site, such as setting your privacy preferences, signing in, or filling in forms.\nPerformance\nPerformance cookies provide anonymous statistics about how customers navigate our site so we can improve site experience and performance. Approved third parties may perform analytics on our behalf, but they cannot use the data for their own purposes.\nAllowed\nFunctional\nFunctional cookies help us provide useful site features, remember your preferences, and display relevant content. Approved third parties may set these cookies to provide certain site features. If you do not allow these cookies, then some or all of these services may not function properly.\nAllowed\nAdvertising\nAdvertising cookies may be set through our site by us or our advertising partners and help us deliver relevant marketing content. If you do not allow these cookies, you will experience less relevant advertising.\nAllowed\nBlocking some types of cookies may impact your experience of our sites. You may review and change your choices at any time by selecting Cookie preferences in the footer of this site. We and selected third-parties use cookies or similar technologies as specified in the\nAWS Cookie Notice\n.\nCancel\nSave preferences\nUnable to save cookie preferences\nWe will only store essential cookies at this time, because we were unable to save your cookie preferences.\nIf you want to change your cookie preferences, try again later using the link in the AWS console footer, or contact support if the problem persists.\nDismiss\nSkip to main content\nEnglish\nPreferences\nContact Us\nFeedback\nGet started\nService guides\nDeveloper tools\nAI resources\nCreate an AWS Account\nAWS End User Messaging SMS\nUser Guide\nWhat is AWS End User Messaging SMS?\nHow does SMS messaging work\nAWS End User Messaging SMS concepts\nSetting up AWS End User Messaging SMS\nWorking with AWS SDKs\nGetting started\nFirst time user tutorial\nAdd a verified destination phone number\nSMS/MMS and Voice sandbox\nMessage part preview\nSimulator phone numbers\nSet a spending limit\nBest Practices\nMessaging limits and restrictions\nSMS character limits\nMMS file types, size and character limits\nRCS limits and restrictions\nMessage Parts per Second (MPS) limits\nChoosing an origination ID\nRCS messaging\nWhat is RCS?\nSupported countries for RCS\nGetting started with RCS\nManaging RCS agents\nTesting RCS messages\nRCS to SMS fallback using phone pools\nSending RCS messages\nRich RCS messages\nText messages\nFile messages\nRich cards\nCarousels\nSuggestions\nMessage expiration\nPer-message fallback\nMessage events\nInbound media\nBest practices\nConsole rich messaging\nReceiving inbound RCS messages\nLaunching RCS in countries\nStandard country launch registration\nLaunching RCS in Austria\nLaunching RCS in Brazil\nLaunching RCS in Canada\nLaunching RCS in France\nLaunching RCS in Germany\nLaunching RCS in Mexico\nLaunching RCS in the Netherlands\nLaunching RCS in Peru\nLaunching RCS in Singapore\nLaunching RCS in Spain\nLaunching RCS in the United Kingdom\nLaunching RCS in the United States\nRCS country launch compliance guide\nRegistration fields\nAgent description\nLaunch video\nOpt-in and privacy\nISV registration\nUse case and checklist\nDenial reasons\nRCS CloudWatch metrics and monitoring\nRCS billing and pricing model\nPhone pools\nCreate a phone pool\nAdd a phone number or sender ID\nView all phone pools\nDelete a phone pool\nChange a pool''s opt-out list\nUpdate shared routes\nUsing phone pool deletion protection\nManage tags for phone pools\nList shared phone pools\nManaging AWS RCS Agents in pools\nPhone numbers\nSMS and MMS country capabilities and limitations\nSupported countries and regions for SMS\nSupported countries and regions for MMS\nSupported countries and regions for voice\nRequest a phone number\nRequesting short codes\nRequesting long codes\nView a phone number status and capabilities\nChange a phone number's capabilities\nRelease a phone number\nChange a phone number's opt-out list\nUsing deletion protection\nManage tags a for phone number\nList shared phone numbers\nSender IDs\nRequest a sender ID\nRequest a sender ID through Support\nRelease a sender ID\nManage tags a for sender ID\nList shared sender IDs\nRegistrations\nEstimated registration times\nManage registrations\nCreate a new registration using the console\nCreate a registration using the AWS CLI\nCheck a registration's status\nChange a registration's name\nEdit a registration\nDiscard a registration's current version\nDelete a registration\nView a registration associated resources\nGen-AI Feedback on Registrations\nUnderstanding rejection reasons\nGet more information on registration issues\nRegistration forms\nAustralia sender ID registration\nAustralia sender ID registration form\nBelarus sender ID registration\nChina SMS template registration form\nEgypt sender ID registration\nFinland sender ID registration\nIndia sender ID registration\nInternational and local routes\nRegister with TRAI and create Telemarketer chains\nIndia sender ID registration\nSpecify the Entity and Template ID values to send messages\nUnderstanding template matching issues\nIndonesia sender ID registration\nIreland sender ID registration\nJordan sender ID registration\nKazakhstan sender ID registration\nKenya sender ID registration\nKuwait sender ID registration\nPhilippines sender ID registration\nQatar sender ID registration\nRussia sender ID registration\nSaudi Arabia sender ID registration\nSingapore sender ID registration\nSingapore Unique Entity Number (UEN)\nSingapore sender ID registration form\nRegister a Sender ID with Singapore Network Information Centre (SGNIC)\nSingapore sender ID registration frequently asked questions\nSpain sender ID registration\nSri Lanka sender ID registration\nThailand sender ID registration\nTurkey sender ID registration\nUnited Arab Emirates sender ID registration\nUnited Kingdom sender ID registration\nUnited Kingdom registration form\nVietnam sender ID registration\nZambia sender ID registration\nDedicated number registration forms\nAustralia\nAustria\nChile\nDenmark\nFinland\nGermany\nHong Kong\nHungary\nIndia\nItaly\nNetherlands\nNorway\nPoland\nPortugal\nSpain\nSweden\nUnited Kingdom\nUnited States 10DLC registration\n10DLC registration process\n10DLC brand registration form\nResend a 10DLC brand email authentication\n10DLC brand vetting form\n10DLC campaign registration form\nAssociating a long code with a 10DLC campaign\n10DLC cross-account access\nUnited States Toll-free number registration\nUS toll-free number registration form\nToll-free number registration rejection reasons\nToll-free number frequently asked questions\nTFN business verification\nUnited States Short Code registration\nPrepare for submission\nBrand vetting\nUnited States Short Code registration form\nRegistration support\nOpt-in requirements checklist\nReview criteria\nRejection troubleshooting\nVertical guides\nLenders\nInsurance\nReal estate\nHealthcare\nLead generation\nHiring\nOpt-in examples\nMarketing\nTransactional\nMixed use-case\nWidget / ISV\nQR code\nInbound keyword\nVerbal script\nAge gate\nTwo-way SMS messaging\nSet up two-way SMS messaging for a phone number\nSet up two-way SMS messaging for a phone pool\nIAM policies for Amazon SNS topics\nTopic policies for Amazon SNS topics\nIAM policies for Connect Customer\nExample two-way SMS message payload\nKeywords\nRequired opt-out keywords\nKeyword actions\nAdd a keyword to a phone number\nView the keywords used by a phone number\nEdit a keyword used by a phone number\nDelete a keyword from a phone number\nAdd a keyword to a phone pool\nView keywords used by a phone pool\nEdit a keyword in a phone pool\nDelete a keyword from a phone pool\nConfiguration sets\nCreate a configuration set\nEdit a configuration set\nView all configuration sets\nDelete a configuration set\nManage tags for a configuration set\nEdit a configuration set protect configuration\nEvent destinations\nEvent types\nExample event data\nSet up Amazon CloudWatch event destination\nIAM policy for Amazon CloudWatch\nCreate an Amazon CloudWatch event destination\nEdit an Amazon CloudWatch event destination\nDelete an Amazon CloudWatch event destination\nSet up Amazon Data Firehose event destination\nIAM policy for Amazon Data Firehose\nCreate an Amazon Data Firehose event destination\nEdit an Amazon Data Firehose event destination\nDelete an Amazon Data Firehose event destination\nSet up an Amazon SNS event destination\nAmazon SNS access policy\nCreate an Amazon SNS event destination\nEdit an Amazon SNS event destination\nDelete an Amazon SNS event destination\nOpt-Out lists\nRequired opt-out list keywords\nSelf managed opt-outs\nSet up self managed opt-outs\nCreate an opt-out list\nView origination identities\nView the details of an opt-out list\nAdd a destination phone number to an opt-out list\nSearch for a destination phone number\nRemove a destination phone number\nDelete an opt-out list\nManage tags for an opt-out list\nList shared opt-out lists\nMessage feedback\nEnable message feedback for a configuration set\nSend a message with message feedback\nChange a message feedback status record\nFraud Protection\nProtect configuration\nCreate a protect configuration\nChange country rules\nChange association\nDelete a protect configuration\nSet up deletion protection\nRename a protect configuration\nManage tags for a protect configuration\nCountry rule modes\nView protect metrics\nPhone number override rules\nHow phone number override rules are processed\nCreate a phone number override rule\nQuery phone number override rule\nEdit a phone number override rule\nDelete a phone number override rule\nDashboard metrics\nSending an SMS or voice message\nSending an MMS message\nNotify\nGetting started with Notify\nManaging Notify configurations\nWorking with Notify templates\nNotify tiers\nSending messages with Notify\nUsing dedicated numbers with Notify\nNotify supported countries\nNotify spend limits\nNotify quotas and limits\nNotify mobile carrier prerequisites\nCarrier lookup\nWorking with shared resources\nUnderstanding SMS billing and usage reports\nTag AWS End User Messaging SMS resources for billing\nRequesting support\nRequesting a spending quota change\nSecurity\nData protection\nIdentity and access management\nHow AWS End User Messaging SMS works with IAM\nIdentity-based policy examples\nAWS managed policies\nUsing service-linked roles\nTroubleshooting\nAWS End User Messaging SMS policy actions\nCompliance validation\nResilience\nInfrastructure Security\nConfiguration and vulnerability analysis in AWS End User Messaging SMS\nCross-service confused deputy prevention\nSecurity best practices\nSMS protocol security considerations\nSMS protocol security best practices\nMonitoring\nMonitoring with CloudWatch\nCreate CloudWatch Alarms\nMonitoring spending\nCloudTrail logs\nUsing EventBridge\nAWS PrivateLink\nQuotas\nDocument history\nDocumentation\n...\nAWS End User Messaging SMS\nUser Guide\nDocumentation\nAWS End User Messaging SMS\nUser Guide\nWhat is AWS End User Messaging SMS?\nPDF\nRSS\nMarkdown\nFocus mode\nWhat is AWS End User Messaging SMS? - AWS End User Messaging SMS\nDocumentation\nAWS End User Messaging SMS\nUser Guide\nAre you a first-time AWS End User Messaging SMS user?\nFeatures of AWS End User Messaging SMS\nAccessing AWS End User Messaging SMS\nRegional availability\nNote\nThe SMS, MMS, and voice (text to speech) features of Amazon Pinpoint are now called AWS End User\n   Messaging.\nAWS End User Messaging SMS\nis an application-to-person (A2P) SMS, MMS, RCS, and voice messaging service which\n  provides the global scale, resiliency, and flexibility required to deliver messaging in any\n  web, mobile, or business applications. SMS messages are used for their most important and urgent\n  communications as SMS proves to be the most effective and ubiquitous communication channel\n  available. Customers prioritize time critical and must-deliver use-cases such as one-time password\n  (OTP) login and authentication, marketing messages, citizen outreach, delivery status updates, or\n  appointment reminders to name a few.\nMultimedia messaging service (MMS) is an extension of SMS that provides the ability to send media\n  messages to a mobile phone which includes image, audio, text, or video files. You can use MMS to\n  improve engagement through a variety of branding, workflow, and marketing use cases.\nRich Communication Services (RCS) for business provides verified brand identity, delivery receipts, and\n  improved messaging performance for your messages. AWS End User Messaging SMS supports sending text messages via RCS with\n  automatic SMS fallback when RCS is unavailable. You create an AWS RCS Agent to represent your\n  brand, and use phone pools to enable seamless RCS-to-SMS fallback. For more information, see\nRCS messaging\n.\nThe information in this user guide is intended for all AWS End User Messaging SMS users, including\n  marketers, business users, and developers. This guide contains information that's especially\n  helpful for users who mainly interact with AWS End User Messaging SMS by using the AWS Management Console.\nNote\nAWS End User Messaging SMS uses the\npinpoint-sms-voice-v2\nAPI namespace.\nThere are several other documen",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://docs.aws.amazon.com/sms-voice/latest/userguide/what-is-service.html",
+      "title": "What is AWS End User Messaging SMS? - AWS End User Messaging SMS",
+      "text": "What is AWS End User Messaging SMS? - AWS End User Messaging SMS\nSelect your cookie preferences\nWe use essential cookies and similar tools that are necessary to provide our site and services. We use performance cookies to collect anonymous statistics, so we can understand how customers use our site and make improvements. Essential cookies cannot be deactivated, but you can choose \u201cCustomize\u201d or \u201cDecline\u201d to decline performance cookies.\nIf you agree, AWS and approved third parties will also use cookies to provide useful site features, remember your preferences, and display relevant content, including relevant advertising. To accept or decline all non-essential cookies, choose \u201cAccept\u201d or \u201cDecline.\u201d To make more detailed choices, choose \u201cCustomize.\u201d\nAccept\nDecline\nCustomize\nCustomize cookie preferences\nWe use cookies and similar tools (collectively, \"cookies\") for the following purposes.\nEssential\nEssential cookies are necessary to provide our site and services and cannot be deactivated. They are usually set in response to your actions on the site, such as setting your privacy preferences, signing in, or filling in forms.\nPerformance\nPerformance cookies provide anonymous statistics about how customers navigate our site so we can improve site experience and performance. Approved third parties may perform analytics on our behalf, but they cannot use the data for their own purposes.\nAllowed\nFunctional\nFunctional cookies help us provide useful site features, remember your preferences, and display relevant content. Approved third parties may set these cookies to provide certain site features. If you do not allow these cookies, then some or all of these services may not function properly.\nAllowed\nAdvertising\nAdvertising cookies may be set through our site by us or our advertising partners and help us deliver relevant marketing content. If you do not allow these cookies, you will experience less relevant advertising.\nAllowed\nBlocking some types of cookies may impact your experience of our sites. You may review and change your choices at any time by selecting Cookie preferences in the footer of this site. We and selected third-parties use cookies or similar technologies as specified in the\nAWS Cookie Notice\n.\nCancel\nSave preferences\nUnable to save cookie preferences\nWe will only store essential cookies at this time, because we were unable to save your cookie preferences.\nIf you want to change your cookie preferences, try again later using the link in the AWS console footer, or contact support if the problem persists.\nDismiss\nSkip to main content\nEnglish\nPreferences\nContact Us\nFeedback\nGet started\nService guides\nDeveloper tools\nAI resources\nCreate an AWS Account\nAWS End User Messaging SMS\nUser Guide\nWhat is AWS End User Messaging SMS?\nHow does SMS messaging work\nAWS End User Messaging SMS concepts\nSetting up AWS End User Messaging SMS\nWorking with AWS SDKs\nGetting started\nFirst time user tutorial\nAdd a verified destination phone number\nSMS/MMS and Voice sandbox\nMessage part preview\nSimulator phone numbers\nSet a spending limit\nBest Practices\nMessaging limits and restrictions\nSMS character limits\nMMS file types, size and character limits\nRCS limits and restrictions\nMessage Parts per Second (MPS) limits\nChoosing an origination ID\nRCS messaging\nWhat is RCS?\nSupported countries for RCS\nGetting started with RCS\nManaging RCS agents\nTesting RCS messages\nRCS to SMS fallback using phone pools\nSending RCS messages\nRich RCS messages\nText messages\nFile messages\nRich cards\nCarousels\nSuggestions\nMessage expiration\nPer-message fallback\nMessage events\nInbound media\nBest practices\nConsole rich messaging\nReceiving inbound RCS messages\nLaunching RCS in countries\nStandard country launch registration\nLaunching RCS in Austria\nLaunching RCS in Brazil\nLaunching RCS in Canada\nLaunching RCS in France\nLaunching RCS in Germany\nLaunching RCS in Mexico\nLaunching RCS in the Netherlands\nLaunching RCS in Peru\nLaunching RCS in Singapore\nLaunching RCS in Spain\nLaunching RCS in the United Kingdom\nLaunching RCS in the United States\nRCS country launch compliance guide\nRegistration fields\nAgent description\nLaunch video\nOpt-in and privacy\nISV registration\nUse case and checklist\nDenial reasons\nRCS CloudWatch metrics and monitoring\nRCS billing and pricing model\nPhone pools\nCreate a phone pool\nAdd a phone number or sender ID\nView all phone pools\nDelete a phone pool\nChange a pool''s opt-out list\nUpdate shared routes\nUsing phone pool deletion protection\nManage tags for phone pools\nList shared phone pools\nManaging AWS RCS Agents in pools\nPhone numbers\nSMS and MMS country capabilities and limitations\nSupported countries and regions for SMS\nSupported countries and regions for MMS\nSupported countries and regions for voice\nRequest a phone number\nRequesting short codes\nRequesting long codes\nView a phone number status and capabilities\nChange a phone number's capabilities\nRelease a phone number\nChange a phone number's opt-out list\nUsing deletion protection\nManage tags a for phone number\nList shared phone numbers\nSender IDs\nRequest a sender ID\nRequest a sender ID through Support\nRelease a sender ID\nManage tags a for sender ID\nList shared sender IDs\nRegistrations\nEstimated registration times\nManage registrations\nCreate a new registration using the console\nCreate a registration using the AWS CLI\nCheck a registration's status\nChange a registration's name\nEdit a registration\nDiscard a registration's current version\nDelete a registration\nView a registration associated resources\nGen-AI Feedback on Registrations\nUnderstanding rejection reasons\nGet more information on registration issues\nRegistration forms\nAustralia sender ID registration\nAustralia sender ID registration form\nBelarus sender ID registration\nChina SMS template registration form\nEgypt sender ID registration\nFinland sender ID registration\nIndia sender ID registration\nInternational and local routes\nRegister with TRAI and create Telemarketer chains\nIndia sender ID registration\nSpecify the Entity and Template ID values to send messages\nUnderstanding template matching issues\nIndonesia sender ID registration\nIreland sender ID registration\nJordan sender ID registration\nKazakhstan sender ID registration\nKenya sender ID registration\nKuwait sender ID registration\nPhilippines sender ID registration\nQatar sender ID registration\nRussia sender ID registration\nSaudi Arabia sender ID registration\nSingapore sender ID registration\nSingapore Unique Entity Number (UEN)\nSingapore sender ID registration form\nRegister a Sender ID with Singapore Network Information Centre (SGNIC)\nSingapore sender ID registration frequently asked questions\nSpain sender ID registration\nSri Lanka sender ID registration\nThailand sender ID registration\nTurkey sender ID registration\nUnited Arab Emirates sender ID registration\nUnited Kingdom sender ID registration\nUnited Kingdom registration form\nVietnam sender ID registration\nZambia sender ID registration\nDedicated number registration forms\nAustralia\nAustria\nChile\nDenmark\nFinland\nGermany\nHong Kong\nHungary\nIndia\nItaly\nNetherlands\nNorway\nPoland\nPortugal\nSpain\nSweden\nUnited Kingdom\nUnited States 10DLC registration\n10DLC registration process\n10DLC brand registration form\nResend a 10DLC brand email authentication\n10DLC brand vetting form\n10DLC campaign registration form\nAssociating a long code with a 10DLC campaign\n10DLC cross-account access\nUnited States Toll-free number registration\nUS toll-free number registration form\nToll-free number registration rejection reasons\nToll-free number frequently asked questions\nTFN business verification\nUnited States Short Code registration\nPrepare for submission\nBrand vetting\nUnited States Short Code registration form\nRegistration support\nOpt-in requirements checklist\nReview criteria\nRejection troubleshooting\nVertical guides\nLenders\nInsurance\nReal estate\nHealthcare\nLead generation\nHiring\nOpt-in examples\nMarketing\nTransactional\nMixed use-case\nWidget / ISV\nQR code\nInbound keyword\nVerbal script\nAge gate\nTwo-way SMS messaging\nSet up two-way SMS messaging for a phone number\nSet up two-way SMS messaging for a phone pool\nIAM policies for Amazon SNS topics\nTopic policies for Amazon SNS topics\nIAM policies for Connect Customer\nExample two-way SMS message payload\nKeywords\nRequired opt-out keywords\nKeyword actions\nAdd a keyword to a phone number\nView the keywords used by a phone number\nEdit a keyword used by a phone number\nDelete a keyword from a phone number\nAdd a keyword to a phone pool\nView keywords used by a phone pool\nEdit a keyword in a phone pool\nDelete a keyword from a phone pool\nConfiguration sets\nCreate a configuration set\nEdit a configuration set\nView all configuration sets\nDelete a configuration set\nManage tags for a configuration set\nEdit a configuration set protect configuration\nEvent destinations\nEvent types\nExample event data\nSet up Amazon CloudWatch event destination\nIAM policy for Amazon CloudWatch\nCreate an Amazon CloudWatch event destination\nEdit an Amazon CloudWatch event destination\nDelete an Amazon CloudWatch event destination\nSet up Amazon Data Firehose event destination\nIAM policy for Amazon Data Firehose\nCreate an Amazon Data Firehose event destination\nEdit an Amazon Data Firehose event destination\nDelete an Amazon Data Firehose event destination\nSet up an Amazon SNS event destination\nAmazon SNS access policy\nCreate an Amazon SNS event destination\nEdit an Amazon SNS event destination\nDelete an Amazon SNS event destination\nOpt-Out lists\nRequired opt-out list keywords\nSelf managed opt-outs\nSet up self managed opt-outs\nCreate an opt-out list\nView origination identities\nView the details of an opt-out list\nAdd a destination phone number to an opt-out list\nSearch for a destination phone number\nRemove a destination phone number\nDelete an opt-out list\nManage tags for an opt-out list\nList shared opt-out lists\nMessage feedback\nEnable message feedback for a configuration set\nSend a message with message feedback\nChange a message feedback status record\nFraud Protection\nProtect configuration\nCreate a protect configuration\nChange country rules\nChange association\nDelete a protect configuration\nSet up deletion protection\nRename a protect configuration\nManage tags for a protect configuration\nCountry rule modes\nView protect metrics\nPhone number override rules\nHow phone number override rules are processed\nCreate a phone number override rule\nQuery phone number override rule\nEdit a phone number override rule\nDelete a phone number override rule\nDashboard metrics\nSending an SMS or voice message\nSending an MMS message\nNotify\nGetting started with Notify\nManaging Notify configurations\nWorking with Notify templates\nNotify tiers\nSending messages with Notify\nUsing dedicated numbers with Notify\nNotify supported countries\nNotify spend limits\nNotify quotas and limits\nNotify mobile carrier prerequisites\nCarrier lookup\nWorking with shared resources\nUnderstanding SMS billing and usage reports\nTag AWS End User Messaging SMS resources for billing\nRequesting support\nRequesting a spending quota change\nSecurity\nData protection\nIdentity and access management\nHow AWS End User Messaging SMS works with IAM\nIdentity-based policy examples\nAWS managed policies\nUsing service-linked roles\nTroubleshooting\nAWS End User Messaging SMS policy actions\nCompliance validation\nResilience\nInfrastructure Security\nConfiguration and vulnerability analysis in AWS End User Messaging SMS\nCross-service confused deputy prevention\nSecurity best practices\nSMS protocol security considerations\nSMS protocol security best practices\nMonitoring\nMonitoring with CloudWatch\nCreate CloudWatch Alarms\nMonitoring spending\nCloudTrail logs\nUsing EventBridge\nAWS PrivateLink\nQuotas\nDocument history\nDocumentation\n...\nAWS End User Messaging SMS\nUser Guide\nDocumentation\nAWS End User Messaging SMS\nUser Guide\nWhat is AWS End User Messaging SMS?\nPDF\nRSS\nMarkdown\nFocus mode\nWhat is AWS End User Messaging SMS? - AWS End User Messaging SMS\nDocumentation\nAWS End User Messaging SMS\nUser Guide\nAre you a first-time AWS End User Messaging SMS user?\nFeatures of AWS End User Messaging SMS\nAccessing AWS End User Messaging SMS\nRegional availability\nNote\nThe SMS, MMS, and voice (text to speech) features of Amazon Pinpoint are now called AWS End User\n   Messaging.\nAWS End User Messaging SMS\nis an application-to-person (A2P) SMS, MMS, RCS, and voice messaging service which\n  provides the global scale, resiliency, and flexibility required to deliver messaging in any\n  web, mobile, or business applications. SMS messages are used for their most important and urgent\n  communications as SMS proves to be the most effective and ubiquitous communication channel\n  available. Customers prioritize time critical and must-deliver use-cases such as one-time password\n  (OTP) login and authentication, marketing messages, citizen outreach, delivery status updates, or\n  appointment reminders to name a few.\nMultimedia messaging service (MMS) is an extension of SMS that provides the ability to send media\n  messages to a mobile phone which includes image, audio, text, or video files. You can use MMS to\n  improve engagement through a variety of branding, workflow, and marketing use cases.\nRich Communication Services (RCS) for business provides verified brand identity, delivery receipts, and\n  improved messaging performance for your messages. AWS End User Messaging SMS supports sending text messages via RCS with\n  automatic SMS fallback when RCS is unavailable. You create an AWS RCS Agent to represent your\n  brand, and use phone pools to enable seamless RCS-to-SMS fallback. For more information, see\nRCS messaging\n.\nThe information in this user guide is intended for all AWS End User Messaging SMS users, including\n  marketers, business users, and developers. This guide contains information that's especially\n  helpful for users who mainly interact with AWS End User Messaging SMS by using the AWS Management Console.\nNote\nAWS End User Messaging SMS uses the\npinpoint-sms-voice-v2\nAPI namespace.\nThere are several other documen",
+      "source": "playwright"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/amazon-pinpoint/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": []
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://aws.amazon.com/end-user-messaging/pricing/",
+    "changelog": "https://docs.aws.amazon.com/sms-voice/latest/userguide/document-history.html",
+    "docs": "https://docs.aws.amazon.com/sms-voice/latest/userguide/what-is-service.html",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/amazon-pinpoint/reviews"
+  },
+  "analysis": {
+    "name": "AWS End User Messaging (Pinpoint SMS)",
+    "url": "https://aws.amazon.com/end-user-messaging/",
+    "tagline": "SMS, RCS, MMS, and WhatsApp Conversations, built on AWS",
+    "value_proposition": "Scalable, reliable messaging channels (SMS, MMS, RCS, WhatsApp, push, voice) that plug directly into AWS infrastructure for developers.",
+    "target_segment": "enterprise / dev",
+    "ideal_customer": "AWS-native developers and enterprises building transactional, promotional, and conversational messaging into their applications",
+    "features": [
+      {
+        "name": "sms messaging",
+        "description": "Send and receive SMS text messages globally",
+        "evidence_source": "landing",
+        "evidence_quote": "messages reach their local or global destination across multiple channels like SMS",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mms messaging",
+        "description": "Send multimedia messages with images/video",
+        "evidence_source": "landing",
+        "evidence_quote": "SMS, MMS, RCS, and WhatsApp \u2014 with rich media content",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rcs messaging",
+        "description": "Rich Communication Services with branded, verified messaging",
+        "evidence_source": "landing",
+        "evidence_quote": "Verified brand identity on RCS and WhatsApp",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "whatsapp messaging",
+        "description": "Send/receive WhatsApp Business messages",
+        "evidence_source": "landing",
+        "evidence_quote": "SMS, RCS, MMS, and WhatsApp Conversations",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "push notifications",
+        "description": "Mobile push notifications channel",
+        "evidence_source": "pricing",
+        "evidence_quote": "RCS | SMS | WhatsApp | Push Notifications | Voice | Notify",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "voice messaging",
+        "description": "Text-to-voice outbound calling channel",
+        "evidence_source": "landing",
+        "evidence_quote": "push, and text to voice",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "two-way messaging",
+        "description": "Inbound message handling for conversational flows",
+        "evidence_source": "landing",
+        "evidence_quote": "time-sensitive alerts, one-time passwords, or two-way communications",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "one-time passwords",
+        "description": "OTP delivery via Notify API without number registration",
+        "evidence_source": "landing",
+        "evidence_quote": "For one-time passwords, Notify gets you sending in minutes \u2014 no phone number registration",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "two-factor authentication",
+        "description": "Pre-approved templates for 2FA deployment",
+        "evidence_source": "landing",
+        "evidence_quote": "pre-approved templates mean you can safely deploy two-factor authentication",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "conversational ai",
+        "description": "AI-powered conversations via Lambda + Bedrock integration",
+        "evidence_source": "landing",
+        "evidence_quote": "Connect inbound messages to your Lambda functions and Bedrock for intelligent responses",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "verified brand identity",
+        "description": "Verified sender identity on RCS and WhatsApp",
+        "evidence_source": "landing",
+        "evidence_quote": "Verified brand identity on RCS and WhatsApp helps ensure your promotional messages are recognized as legitimate",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rich cards",
+        "description": "Rich card message formats for RCS",
+        "evidence_source": "docs",
+        "evidence_quote": "Rich cards | Carousels | Suggestions",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "carousels",
+        "description": "Carousel message format for RCS",
+        "evidence_source": "docs",
+        "evidence_quote": "Rich cards | Carousels",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "suggested replies",
+        "description": "Suggested reply buttons for RCS",
+        "evidence_source": "pricing",
+        "evidence_quote": "Suggested replies",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "suggested actions",
+        "description": "Dial, open URL, view/share location, calendar event actions",
+        "evidence_source": "pricing",
+        "evidence_quote": "Suggested action: Dial a phone number \u2022 Suggested action: Open URL",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "message expiration",
+        "description": "Time-limited message delivery",
+        "evidence_source": "docs",
+        "evidence_quote": "Message expiration",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "per-message fallback",
+        "description": "Fallback from RCS to SMS per message",
+        "evidence_source": "docs",
+        "evidence_quote": "Per-message fallback",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rcs to sms fallback",
+        "description": "Automatic fallback using phone pools",
+        "evidence_source": "docs",
+        "evidence_quote": "RCS to SMS fallback using phone pools",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "inbound media",
+        "description": "Receive media attachments from users",
+        "evidence_source": "docs",
+        "evidence_quote": "Inbound media",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "phone pools",
+        "description": "Group phone numbers into pools for routing",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a phone pool | Add a phone number or sender ID",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "short codes",
+        "description": "Dedicated short code phone numbers",
+        "evidence_source": "docs",
+        "evidence_quote": "Requesting short codes",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "long codes",
+        "description": "Dedicated long code phone numbers",
+        "evidence_source": "docs",
+        "evidence_quote": "Requesting long codes",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sender ids",
+        "description": "Alphanumeric sender ID support",
+        "evidence_source": "docs",
+        "evidence_quote": "Request a sender ID | Release a sender ID",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "toll-free numbers",
+        "description": "Toll-free number capabilities",
+        "evidence_source": "docs",
+        "evidence_quote": "Request a phone number | View a phone number status and capabilities",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "phone number validation",
+        "description": "Validate phone numbers before sending",
+        "evidence_source": "pricing",
+        "evidence_quote": "Phone Number Validate",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "opt-out management",
+        "description": "Manage opt-out lists per phone/pool",
+        "evidence_source": "docs",
+        "evidence_quote": "Change a phone number's opt-out list",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "deletion protection",
+        "description": "Protect phone numbers/pools from accidental deletion",
+        "evidence_source": "docs",
+        "evidence_quote": "Using phone pool deletion protection",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "resource tagging",
+        "description": "Tag phone numbers, pools, sender IDs",
+        "evidence_source": "docs",
+        "evidence_quote": "Manage tags for phone pools",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "resource sharing",
+        "description": "Share phone numbers/pools/sender IDs across accounts",
+        "evidence_source": "docs",
+        "evidence_quote": "List shared phone pools | List shared phone numbers | List shared sender IDs",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sandbox environment",
+        "description": "SMS/MMS/Voice sandbox for testing",
+        "evidence_source": "docs",
+        "evidence_quote": "SMS/MMS and Voice sandbox",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "simulator phone numbers",
+        "description": "Test phone numbers for development",
+        "evidence_source": "docs",
+        "evidence_quote": "Simulator phone numbers",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "spending limits",
+        "description": "Set account spending caps",
+        "evidence_source": "docs",
+        "evidence_quote": "Set a spending limit",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "fraud protection",
+        "description": "Built-in anomaly detection to prevent unexpected costs",
+        "evidence_source": "landing",
+        "evidence_quote": "Built-in fraud protection stops anomalous traffic to prevent unexpected costs",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "message templates",
+        "description": "Pre-approved reusable message templates",
+        "evidence_source": "landing",
+        "evidence_quote": "pre-approved templates mean you can safely deploy two-factor authentication",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "cloudwatch metrics",
+        "description": "Integration with CloudWatch for monitoring",
+        "evidence_source": "docs",
+        "evidence_quote": "RCS CloudWatch metrics and monitoring",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "message events",
+        "description": "Delivery and status event streaming",
+        "evidence_source": "docs",
+        "evidence_quote": "Message events",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "country registrations",
+        "description": "Region-specific sender/template registrations",
+        "evidence_source": "docs",
+        "evidence_quote": "Australia sender ID registration | India sender ID registration",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "gen-ai registration feedback",
+        "description": "AI-assisted feedback on registration submissions",
+        "evidence_source": "docs",
+        "evidence_quote": "Gen-AI Feedback on Registrations",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "aws sdk support",
+        "description": "Native AWS SDK integration in multiple languages",
+        "evidence_source": "docs",
+        "evidence_quote": "Working with AWS SDKs",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "aws cli support",
+        "description": "Full AWS CLI support",
+        "evidence_source": "docs",
+        "evidence_quote": "Create a registration using the AWS CLI",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "message part preview",
+        "description": "Preview message segmentation before send",
+        "evidence_source": "docs",
+        "evidence_quote": "Message part preview",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "notify api",
+        "description": "Simplified API for OTP without number registration",
+        "evidence_source": "landing",
+        "evidence_quote": "Notify gets you sending in minutes \u2014 no phone number registration, no carrier approval",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pay-as-you-go pricing",
+        "description": "Usage-based billing with no upfront commitment",
+        "evidence_source": "pricing",
+        "evidence_quote": "pay-as-you-go pricing based on destination country",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "international messaging",
+        "description": "Global message delivery across supported countries",
+        "evidence_source": "docs",
+        "evidence_quote": "Supported countries and regions for SMS",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "tcr registration",
+        "description": "US 10DLC/TCR carrier registration support",
+        "evidence_source": "docs",
+        "evidence_quote": "International and local routes | Register with TRAI",
+        "tier": "all",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "AWS Lambda",
+      "Amazon Bedrock",
+      "Amazon CloudWatch",
+      "AWS CLI",
+      "AWS SDKs",
+      "AWS IAM"
+    ],
+    "differentiators": [
+      "Native AWS infrastructure integration (Lambda, Bedrock, CloudWatch)",
+      "Notify API for OTP without number registration or carrier approval",
+      "Built-in fraud protection to prevent runaway costs",
+      "Verified brand identity on RCS and WhatsApp",
+      "Pay-as-you-go pricing charged only on successful delivery",
+      "Gen-AI feedback on carrier registrations"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026",
+        "what": "RCS messaging with rich cards, carousels, suggestions across 12+ countries",
+        "source": "docs: Launching RCS in Austria, Brazil, Canada, France, Germany, Mexico, Netherlands, Peru, Singapore, Spain, UK, US"
+      },
+      {
+        "date": "2026",
+        "what": "Notify API for simplified OTP delivery",
+        "source": "landing: Notify gets you sending in minutes \u2014 no phone number registration"
+      },
+      {
+        "date": "2026",
+        "what": "Gen-AI feedback on registrations",
+        "source": "docs: Gen-AI Feedback on Registrations"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [],
+      "sources": [
+        "g2"
+      ]
+    },
+    "pricing": {
+      "model": "self-serve",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "SMS/MMS and Voice sandbox for testing with simulator phone numbers"
+      },
+      "tiers": [
+        {
+          "name": "Rich RCS (US outbound)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "$0.00700 AWS fee + $0.00494 carrier fee per 160-byte segment"
+        },
+        {
+          "name": "Rich Media RCS (US outbound)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "$0.02000 AWS fee + $0.00949 carrier fee per message"
+        },
+        {
+          "name": "Inbound Rich RCS (US)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "$0.00700 AWS fee + $0.00218 carrier fee per segment"
+        },
+        {
+          "name": "Inbound Rich Media RCS (US)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "$0.02000 AWS fee + $0.00737 carrier fee per message"
+        },
+        {
+          "name": "RCS Basic (International)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Per-message pricing varies by country (e.g. AT $0.0652, BR $0.0300)"
+        },
+        {
+          "name": "RCS Single (International)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Per-message pricing for >160 char or rich content (e.g. AT $0.0677, BR $0.0463)"
+        },
+        {
+          "name": "RCS Conversation (International)",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Per-session pricing (e.g. AT $0.1200, BR $0.0820)"
+        }
+      ],
+      "enterprise": null,
+      "notes": "Pure usage-based pricing across RCS, SMS, WhatsApp, Push, Voice, Notify, phone numbers, and validation. Charged only on successful delivery. Prices vary by destination country and message type. Two-component pricing (AWS fee + carrier fee) for US RCS. No seat-based tiers; no free monthly allotment beyond sandbox. G2 reviews page returned no content."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

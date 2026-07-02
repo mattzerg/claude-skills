@@ -1,8 +1,9 @@
 ---
 name: one-pager-skill
-description: Scaffold or review a single-page sales/marketing collateral sheet — a one-pager — for Zerg, Zerg Solutions (consulting), ZergStack, an individual microproduct, or a custom client brief. Three variants — `company` (multi-use leave-behind, RELAYTO/Hoy Health hybrid), `consulting` (services prospects, Algorand/Pento/Quit Genius brief shape Matt authored at Vang), `product` (product prospect overview w/ pricing + integration story). Anchored on `MattZerg/_style/one_pager_style.md` + a 10-exemplar Drive corpus. Two modes — `scaffold` (generate a draft skeleton from a brief) and `review` (audit a draft for missing beats, voice drift, anti-patterns). Output is professional/structured with citations to the rule or pattern; never auto-posts. USE PROACTIVELY when Matt asks for a one-pager / sell sheet / leave-behind / fact sheet / company overview / services brief, OR before any one-pager leaves the vault.
+description: Scaffold or review a one-page sales/marketing sheet — for Zerg, Zerg Solutions, ZergStack, microproduct, or client brief. Three variants — `company` (multi-use leave-behind), `consulting` (Vang Algorand/Pento/Quit Genius brief shape), `product` (prospect overview w/ pricing). Two modes — `scaffold` and `review`. Anchored on `_style/one_pager_style.md` + 10-exemplar corpus. USE PROACTIVELY for sell sheet / leave-behind / fact sheet / services brief, OR before any one-pager leaves the vault. Never auto-posts.
 allowed-tools: Bash, Read, Write
 ---
+
 
 # One-Pager Skill
 
@@ -43,7 +44,7 @@ The brief is a free-text description. Examples:
 
 Flags:
 - `--out-dir DIR` — default: `/tmp/one-pager/`
-- `--vault` — write directly to the vault (default: `/tmp/one-pager/`). Routes by variant: `company`→`MattZerg/Zerg/`, `consulting`→`MattZerg/Consulting/`, `product`→`MattZerg/Projects/Zstack/` (override with `--vault-dir DIR`).
+- `--vault` — write directly to the vault (default: `/tmp/one-pager/`). Routes by variant: `company`→`MattZerg/Zerg/`, `consulting`→`MattZerg/Consulting/`, `product`→`MattZerg/Projects/Zerg-Production/Zstack/` (override with `--vault-dir DIR`).
 - `--vault-dir DIR` — explicit vault destination, overrides the variant routing
 - `--slug SLUG` — file slug (default: derived from brief)
 - `--audience X` — `enterprise-sales` | `reseller-enablement` | `services-prospect` | `product-prospect` | `network-leave-behind` | `investor` (default per variant)
@@ -86,10 +87,15 @@ Per draft, writes:
 1. `MattZerg/_style/one_pager_style.md` — primary genre guide (variant-specific beat sequences, voice rules, anti-patterns, pre-publish test, page-fit rules)
 2. `MattZerg/_style/writing_style.md` — sentence-level voice + AI tells (loaded for context; copyedit-skill is the primary catcher)
 3. `~/.claude/skills/one-pager-skill/corpus/one-pager-corpus.md` — 10 Drive exemplar analysis (Hoy Health B2B/B2C, Joi, Econometrics, Intercept TeleMed, RELAYTO, Algorand, Quit Genius, Pento, eHubCo)
+4. `/Users/mattheweisner/Obsidian/Zerg/MattZerg/_style/feedback_patterns_catalog.md` — cross-genre pattern catalog. Cross-reference the **prose** section during scaffold + review; cite findings by pattern slug alongside the one_pager_style.md rule.
+- **Catalog patterns to cite by slug** (Section A Universal / process): honest-scoping
+- **Catalog patterns to cite by slug** (Section C Prose / writing): cross-format-repetition, pulp-caption-discipline, em-dash-budget
+- **Catalog patterns to cite by slug** (Section E CRO / marketing, ia-ordering cross-cited from Section B): ia-ordering, single-cta, missing-cta, shipped-vs-roadmap-visibility, capability-claim-unverified
+- **Catalog patterns to cite by slug** (Section I Launch / deck): deferred-with-reason
 4. **Variant-specific positioning** (loaded only when relevant):
    - `company` → `MattZerg/Zerg/positioning.md` (if exists)
    - `consulting` → `MattZerg/Consulting/positioning.md` (if exists)
-   - `product` → `MattZerg/Projects/Zstack/Zstack.md` + `Pricing-Snapshot.md` + `Integration.md`
+   - `product` → `MattZerg/Projects/Zerg-Production/Zstack/Zstack.md` + `Pricing-Snapshot.md` + `Integration.md`
 
 ## What this skill is NOT
 
@@ -105,3 +111,9 @@ Per draft, writes:
 - **Vault writes require explicit `--vault` flag.** Default output goes to `/tmp/one-pager/`.
 - **Doesn't modify the source draft.** Reviews land in a separate file; scaffolds get a fresh slug.
 - **No memory writes.** Reads anchors; doesn't write to memory.
+
+## Cross-genre review rules (memory anchors)
+
+The review pass should apply these universal rules in addition to the skill's genre-specific corpus:
+
+- **Honest scoping** — see `feedback_honest_scoping_universal.md`. Cover/intro/dek must reconcile with body content; name what's NOT included as explicitly as what IS. Cover-vs-body mismatch is a ship-blocker, not a polish item.

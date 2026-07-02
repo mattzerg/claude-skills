@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zerg GTM Hub</title>
+<style>
+  :root {
+    /* Zerg brand — cream paper (Zstack/operator audience), per feedback_zerg_brand.md */
+    --bg: #f4f0e7;
+    --ink: #111514;
+    --muted: #6b6157;
+    --accent: #3a3a3a;
+    --rule: #d9cfbe;
+    --warn: #c25b1c;
+    --good: #2f7a3a;
+    --pill: #ebe2cf;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+  }
+  header { padding: 28px 32px 12px; border-bottom: 1px solid var(--rule); }
+  h1 { margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.01em; }
+  .subtitle { color: var(--muted); font-size: 14px; margin-top: 4px; }
+  main { padding: 24px 32px; max-width: 1200px; margin: 0 auto; }
+  section { margin-bottom: 36px; }
+  h2 { font-size: 18px; font-weight: 600; margin: 0 0 12px; }
+  .decisions ol { list-style: none; padding: 0; margin: 0; }
+  .decisions li {
+    padding: 14px 18px; margin-bottom: 10px;
+    background: white; border: 1px solid var(--rule); border-radius: 6px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .decisions .priority { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; min-width: 36px; }
+  .decisions .message { flex: 1; font-size: 15px; }
+  .decisions .pill { font-size: 11px; background: var(--pill); color: var(--accent); padding: 2px 8px; border-radius: 99px; text-transform: lowercase; }
+  .decisions .sibling { color: var(--muted); font-size: 12px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+  .stat-card { background: white; border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; transition: border-color 120ms ease, transform 120ms ease; }
+  .stat-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .stat-card .count { font-size: 26px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .stat-card .label { font-size: 13px; color: var(--muted); margin-top: 2px; }
+  .stat-card .breakdown { font-size: 11px; color: var(--muted); margin-top: 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+  tr:hover td { background: rgba(255,255,255,0.5); }
+  .status-running, .status-outreach, .status-drafted, .status-scheduled, .status-engaged, .status-qualified { color: var(--good); }
+  .status-killed, .status-cancelled, .status-paused, .status-lost { color: var(--warn); }
+  .badge-card { color: var(--accent); font-family: ui-monospace, monospace; font-size: 11px; background: var(--pill); padding: 1px 6px; border-radius: 3px; position: relative; cursor: help; }
+  .badge-card .card-pop {
+    display: none; position: absolute; left: 0; bottom: calc(100% + 6px); z-index: 10;
+    width: 280px; background: white; border: 1px solid var(--rule); border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12); padding: 10px 12px;
+    font-family: 'Space Grotesk', -apple-system, sans-serif; color: var(--ink);
+    text-transform: none; letter-spacing: normal;
+  }
+  .badge-card:hover .card-pop { display: block; }
+  .badge-card .card-pop .pop-title { font-size: 13px; font-weight: 600; line-height: 1.35; margin-bottom: 6px; }
+  .badge-card .card-pop .pop-meta { font-size: 11px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
+  .badge-card .card-pop .pop-meta .pop-state { color: var(--accent); font-weight: 500; }
+  .filters { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .filters button {
+    background: white; border: 1px solid var(--rule); padding: 6px 12px;
+    font-family: inherit; font-size: 12px; color: var(--ink);
+    border-radius: 4px; cursor: pointer;
+  }
+  .filters button.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  footer { padding: 24px 32px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--rule); }
+  code { font-family: ui-monospace, monospace; font-size: 12px; background: var(--pill); padding: 1px 6px; border-radius: 3px; }
+  .empty { color: var(--muted); font-style: italic; padding: 8px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Zerg GTM Hub</h1>
+  <div class="subtitle" id="subtitle">Loading…</div>
+</header>
+<main>
+  <section class="decisions">
+    <h2>▶ Decisions needed</h2>
+    <ol id="decisions-list"></ol>
+  </section>
+
+  <section>
+    <h2>📊 Where we are</h2>
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section>
+    <h2 id="entity-section-title">🧪 Entities</h2>
+    <div class="filters" id="type-filters"></div>
+    <table>
+      <thead>
+        <tr><th>ID</th><th>Title</th><th>Status</th><th>Owner</th><th>Last touch</th><th>Card</th></tr>
+      </thead>
+      <tbody id="entity-rows"></tbody>
+    </table>
+  </section>
+</main>
+<footer>
+  Source of truth: <code>MattZerg/Projects/Zerg-Production/Growth/</code> · Skill: <code>gtm-hub</code> · Refreshed <span id="refresh-ts">—</span>
+</footer>
+
+<script>
+const DATA_URL_INDEX = './data/index.json';
+const DATA_URL_DECISIONS = './data/decisions.json';
+const DATA_URL_CARDS = './data/zergboard-cards.json';
+const DATA_URL_META = './data/_meta.json';
+
+// TYPE_LABEL is hydrated from _meta.json at load() time so adding a new entity
+// type doesn't require editing this file — edit build.py's DEFAULT_TYPES (or
+// drop a vault-side _meta/types.json override) and the UI picks it up on next
+// build. This default is a fallback for when _meta.json is missing or stale.
+let TYPE_LABEL = {
+  experiment: '🧪 Experiments', content: '📝 Content', prospect: '💼 Solutions',
+  bd_target: '🤝 BD', launch: '🚀 Launches', theme: '🧭 Themes',
+  metric: '📊 Metrics', workstream: '🧱 Workstreams',
+};
+
+function applyTypesFromMeta(meta) {
+  if (!meta || !meta.types) return;
+  const next = {};
+  for (const [t, info] of Object.entries(meta.types)) {
+    if (info && typeof info === 'object') {
+      next[t] = `${info.emoji || '🔹'} ${info.label || t}`;
+    }
+  }
+  if (Object.keys(next).length) TYPE_LABEL = next;
+  // Pick up any types appearing in entities that aren't in the map at all,
+  // so a brand-new type isn't invisible. Auto-derives "🔹 Title-case".
+  (allEntities || []).forEach(e => {
+    if (e.type && !TYPE_LABEL[e.type]) {
+      const titled = e.type.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      TYPE_LABEL[e.type] = `🔹 ${titled}`;
+    }
+  });
+}
+
+let allEntities = [], allDecisions = [], cardsById = {};
+// Remember the last-selected entity type across reloads so the Hub opens to
+// whatever you were last looking at instead of always reverting to experiments.
+let activeType = (typeof localStorage !== 'undefined' && localStorage.getItem('gtm-hub.activeType')) || 'experiment';
+
+function diversify(decisions, limit) {
+  const byRule = {};
+  decisions.forEach(d => { byRule[d.rule] = (byRule[d.rule] || 0) + 1; });
+  const seen = new Set();
+  const out = [];
+  for (const d of decisions) {
+    if (seen.has(d.rule)) continue;
+    seen.add(d.rule);
+    out.push({ d, siblings: byRule[d.rule] - 1 });
+    if (out.length >= limit) break;
+  }
+  return out;
+}
+
+function renderDecisions() {
+  const list = document.getElementById('decisions-list');
+  list.innerHTML = '';
+  if (!allDecisions.length) {
+    list.innerHTML = '<li class="empty">No decisions queued. 🟢</li>';
+    return;
+  }
+  const visible = diversify(allDecisions, 5);
+  visible.forEach(({ d, siblings }, i) => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <span class="priority">${d.priority}</span>
+      <span class="message">${escape(d.message)}</span>
+      <span class="pill">${escape(d.rule)}</span>
+      ${siblings ? `<span class="sibling">+${siblings} more</span>` : ''}
+    `;
+    list.appendChild(li);
+  });
+}
+
+function renderStats() {
+  const stats = document.getElementById('stats');
+  const counts = {};
+  allEntities.forEach(e => {
+    const t = e.type;
+    counts[t] = counts[t] || { total: 0, statuses: {} };
+    counts[t].total++;
+    const s = e.status || '—';
+    counts[t].statuses[s] = (counts[t].statuses[s] || 0) + 1;
+  });
+  stats.innerHTML = '';
+  Object.entries(TYPE_LABEL).forEach(([t, label]) => {
+    const c = counts[t] || { total: 0, statuses: {} };
+    const card = document.createElement('div');
+    card.className = 'stat-card';
+    const top = Object.entries(c.statuses).sort((a,b)=>b[1]-a[1]).slice(0,3)
+      .map(([s,n]) => `${n} ${s}`).join(' · ');
+    card.innerHTML = `
+      <div class="count">${c.total}</div>
+      <div class="label">${label}</div>
+      <div class="breakdown">${top || '—'}</div>
+    `;
+    card.style.cursor = 'pointer';
+    card.onclick = () => { activeType = t; renderFiltersAndTable(); };
+    stats.appendChild(card);
+  });
+}
+
+function renderFiltersAndTable() {
+  try { localStorage.setItem('gtm-hub.activeType', activeType); } catch {}
+  const filters = document.getElementById('type-filters');
+  filters.innerHTML = '';
+  Object.entries(TYPE_LABEL).forEach(([t, label]) => {
+    const btn = document.createElement('button');
+    btn.textContent = label;
+    if (t === activeType) btn.className = 'active';
+    btn.onclick = () => { activeType = t; renderFiltersAndTable(); };
+    filters.appendChild(btn);
+  });
+  document.getElementById('entity-section-title').textContent = TYPE_LABEL[activeType] || activeType;
+  const tbody = document.getElementById('entity-rows');
+  tbody.innerHTML = '';
+  const rows = allEntities.filter(e => e.type === activeType)
+    .sort((a, b) => (b.last_touch || '').localeCompare(a.last_touch || ''));
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="6" class="empty">No entities of this type.</td></tr>';
+    return;
+  }
+  rows.forEach(e => {
+    const tr = document.createElement('tr');
+    const cardId = e.zergboard_card;
+    const card = cardId ? cardsById[cardId] : null;
+    const cardLabel = card ? (card.external_id || cardId.slice(0, 8)) : '';
+    // Hover-popover surfaces card detail without taking up table space.
+    // Data is already loaded — just a render-time projection of what we have.
+    let cardCell = '';
+    if (cardLabel && card) {
+      const meta = [];
+      if (card.column) meta.push(`<span class="pop-state">${escape(card.column)}</span>`);
+      if (card.board_name) meta.push(escape(card.board_name));
+      if (card.priority) meta.push(`p:${escape(card.priority)}`);
+      if (card.due_at) meta.push(`due ${escape(card.due_at.slice(0, 10))}`);
+      cardCell = `<span class="badge-card">${escape(cardLabel)}<span class="card-pop">` +
+        `<div class="pop-title">${escape(card.title || '(no title)')}</div>` +
+        `<div class="pop-meta">${meta.join(' · ')}</div>` +
+        `</span></span>`;
+    } else if (cardLabel) {
+      cardCell = `<span class="badge-card">${escape(cardLabel)}</span>`;
+    }
+    tr.innerHTML = `
+      <td><code>${escape(e.id)}</code></td>
+      <td>${escape((e.title || '').slice(0, 70))}</td>
+      <td class="status-${e.status}">${escape(e.status || '—')}</td>
+      <td>${escape(e.owner || '—')}</td>
+      <td>${escape(e.last_touch || '—')}</td>
+      <td>${cardCell}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function escape(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  })[c]);
+}
+
+async function load() {
+  try {
+    const [idx, dec, cards, meta] = await Promise.all([
+      fetch(DATA_URL_INDEX).then(r => r.json()),
+      fetch(DATA_URL_DECISIONS).then(r => r.json()),
+      fetch(DATA_URL_CARDS).then(r => r.json()).catch(() => ({ cards: [] })),
+      fetch(DATA_URL_META).then(r => r.json()).catch(() => null),
+    ]);
+    allEntities = idx.entities || [];
+    allDecisions = dec.decisions || [];
+    cardsById = {};
+    (cards.cards || []).forEach(c => cardsById[c.id] = c);
+    applyTypesFromMeta(meta);
+    const baseLine = `${allEntities.length} entities · ${allDecisions.length} decisions queued · generated ${idx.generated_at || '?'}`;
+    // Surface missing data sources at build time so an empty section isn't
+    // ambiguous between "no rows" and "source file wasn't present."
+    const missing = (meta && meta.missing) || [];
+    const missingNote = missing.length
+      ? ` · ⚠️ missing at build: ${missing.join(', ')}`
+      : '';
+    document.getElementById('subtitle').textContent = baseLine + missingNote;
+    document.getElementById('refresh-ts').textContent = new Date().toLocaleString();
+    renderDecisions();
+    renderStats();
+    renderFiltersAndTable();
+  } catch (e) {
+    const subtitle = document.getElementById('subtitle');
+    subtitle.textContent = '';
+    const msg = document.createElement('span');
+    msg.textContent = `error loading: ${e.message} · `;
+    const retry = document.createElement('button');
+    retry.textContent = 'retry';
+    retry.style.cssText = 'background:white;border:1px solid var(--rule);padding:2px 10px;font-family:inherit;font-size:12px;color:var(--ink);border-radius:4px;cursor:pointer;margin-left:4px;';
+    retry.onclick = () => { subtitle.textContent = 'Loading…'; load(); };
+    const hint = document.createElement('span');
+    hint.textContent = ' (open DevTools console for details)';
+    hint.style.color = 'var(--muted)';
+    hint.style.fontSize = '12px';
+    subtitle.appendChild(msg);
+    subtitle.appendChild(retry);
+    subtitle.appendChild(hint);
+  }
+}
+
+load();
+</script>
+</body>
+</html>

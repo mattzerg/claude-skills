@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Editor"
+  short_description: "Audit and maintain Codex skills"
+  default_prompt: "Use $skill-editor to audit and improve this existing Codex skill."

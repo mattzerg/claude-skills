@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  LaunchAgent — Detroit hub sourcing pipeline.
+
+  Fires Sunday 6pm PT + Wednesday 6am PT to scrape RA, 19hz, venue IGs,
+  and refresh the queue/.
+
+  Install:
+    cp ~/.claude/skills/instagram-skill/com.matt.detroit-hub-sourcing.plist \
+       ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.matt.detroit-hub-sourcing.plist
+
+  Uninstall:
+    launchctl unload ~/Library/LaunchAgents/com.matt.detroit-hub-sourcing.plist
+    rm ~/Library/LaunchAgents/com.matt.detroit-hub-sourcing.plist
+
+  Per memory: launchd > cron for time-anchored jobs (cron skips during sleep).
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.matt.detroit-hub-sourcing</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>-u</string>
+        <string>/Users/mattheweisner/.claude/skills/instagram-skill/sourcing_pipeline.py</string>
+        <string>--account</string>
+        <string>matteisn</string>
+        <string>--source</string>
+        <string>19hz</string>
+        <string>--days</string>
+        <string>14</string>
+        <string>--write-queue</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <array>
+        <!-- Sunday 6pm PT -->
+        <dict>
+            <key>Weekday</key>
+            <integer>0</integer>
+            <key>Hour</key>
+            <integer>18</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+        <!-- Wednesday 6am PT -->
+        <dict>
+            <key>Weekday</key>
+            <integer>3</integer>
+            <key>Hour</key>
+            <integer>6</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>TZ</key>
+        <string>America/Los_Angeles</string>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/mattheweisner/.claude/skills/instagram-skill/logs/sourcing-out.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/mattheweisner/.claude/skills/instagram-skill/logs/sourcing-err.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/mattheweisner/.claude/skills/instagram-skill</string>
+</dict>
+</plist>

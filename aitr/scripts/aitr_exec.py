@@ -82,7 +82,9 @@ def resolve_openrouter_key() -> Optional[str]:
 def _load_slug_map() -> dict:
     if SLUG_MAP_PATH.exists():
         try:
-            return json.loads(SLUG_MAP_PATH.read_text())
+            raw = json.loads(SLUG_MAP_PATH.read_text())
+            # Underscore keys are documentation (_doc), not mappings.
+            return {k: v for k, v in raw.items() if not k.startswith("_")}
         except (OSError, json.JSONDecodeError):
             return {}
     return {}

@@ -1,0 +1,10 @@
+[sweep] account=matthew@zergai.com query='in:sent after:2024/01/01' resume_token=None
+[sweep] no nextPageToken — fully drained
+
+[sweep] DONE for matthew@zergai.com
+  fetched this run: 25
+  kept: 14
+  skipped: 11
+  skip breakdown:
+    11× sent-to-self
+  total processed (cumulative): 26

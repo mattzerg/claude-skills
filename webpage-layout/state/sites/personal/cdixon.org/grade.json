@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "typography": 8,
+    "hierarchy": 7,
+    "distinctiveness": 6,
+    "color": 9,
+    "density": 8,
+    "voice": 7
+  },
+  "reasoning": {
+    "typography": "IBM Plex Sans/Serif is a strong, confident choice with personality beyond Inter. The monospace date stamps create intentional rhythm. System shows discipline but isn't groundbreaking.",
+    "hierarchy": "Clear dominance of the chronological list, good date/title pairing. Navigation is appropriately subdued. Could push headline scale further but fundamentally sound.",
+    "distinctiveness": "The dark minimal aesthetic with chronological spine feels personal-blog-specific, but the structure itself (reverse-chron archive) could apply to many writers. The 'retro-80s' easter egg adds character.",
+    "color": "Exceptional restraint. Near-monochrome with subtle warm grays on black. No decorative color pollution. Accent appears only in hover states. Disciplined.",
+    "density": "Confident use of vertical space. Generous line-height in list, not afraid of emptiness. The minimal chrome and centered column show restraint. Balanced without feeling sparse.",
+    "voice": "Navigation is clean 'Selected/Archive/About/Subscribe' which is somewhat stencil, but the content-first chronological presentation and the tagline 'programming, philosophy, history, internet, startups' establishes voice. Structure serves essays well."
+  },
+  "winning_patterns": [
+    "Severe color restraint \u2014 nearly monochrome palette with warm undertones",
+    "Date stamps as left-aligned tabular numerals create clear scan rhythm",
+    "Confident negative space around centered content column",
+    "Typography pairing (IBM Plex) has more character than default system fonts",
+    "Content-first: no hero graphics, testimonials, or marketing fluff"
+  ],
+  "anti_patterns": [
+    "Navigation structure is still the 'Selected/Archive/About' stencil pattern",
+    "Could push typographic scale/contrast further to create more drama",
+    "The list format is safe \u2014 no experimentation with layout or entry points",
+    "Tagline in italics feels like a default styling choice",
+    "No visual hook beyond minimalism \u2014 relies entirely on content titles"
+  ],
+  "one_word_personality": "monastic",
+  "_url": "https://cdixon.org",
+  "_persona": "personal",
+  "_note": "Investor, blog-first, simple",
+  "_graded_at": "2026-05-07T19:55:19.893041Z"
+}

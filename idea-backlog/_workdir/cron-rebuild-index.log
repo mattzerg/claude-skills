@@ -1,0 +1,1797 @@
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 73, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 60, in main
+    save_index(rows)
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 144, in save_index
+    INDEX_JSON.write_text(json.dumps(rows, indent=2, ensure_ascii=False))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1275, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors) as f:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/_meta/index.json'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 73, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 41, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 73, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 41, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 73, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 41, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 112, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 73, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 88, in iter_all_ideas
+    for p in cdir.rglob("*.md"):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1180, in rglob
+    for p in selector.select_from(self):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 601, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 548, in _select_from
+    with scandir(parent_path) as scandir_it:
+InterruptedError: [Errno 4] Interrupted system call: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas/zerg-product'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+Traceback (most recent call last):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 114, in <module>
+    sys.exit(main())
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py", line 75, in main
+    for p in iter_all_ideas(include_inbox=True, include_archive=args.include_archive):
+  File "/Users/mattheweisner/.claude/skills/idea-backlog/scripts/_lib/idea_io.py", line 91, in iter_all_ideas
+    for cdir in IDEAS_ROOT.iterdir():
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1150, in iterdir
+    for name in self._accessor.listdir(self):
+PermissionError: [Errno 1] Operation not permitted: '/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg/Ideas'
+index rebuilt: 0 ideas
+  by status:
+index rebuilt: 942 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 124
+    raw: 5
+index rebuilt: 942 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 124
+    raw: 5
+index rebuilt: 942 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 124
+    raw: 5
+index rebuilt: 942 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 124
+    raw: 5
+index rebuilt: 942 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 124
+    raw: 5
+index rebuilt: 942 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 124
+    raw: 5
+index rebuilt: 942 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 124
+    raw: 5
+index rebuilt: 951 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 133
+    raw: 5
+index rebuilt: 951 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 133
+    raw: 5
+index rebuilt: 951 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 133
+    raw: 5
+index rebuilt: 951 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 133
+    raw: 5
+index rebuilt: 951 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 133
+    raw: 5
+index rebuilt: 951 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 133
+    raw: 5
+index rebuilt: 951 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 133
+    raw: 5
+index rebuilt: 951 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 133
+    raw: 5
+index rebuilt: 951 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 133
+    raw: 5
+index rebuilt: 956 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 138
+    raw: 5
+index rebuilt: 956 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 138
+    raw: 5
+index rebuilt: 956 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 138
+    raw: 5
+index rebuilt: 962 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 144
+    raw: 5
+index rebuilt: 962 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 144
+    raw: 5
+index rebuilt: 964 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 146
+    raw: 5
+index rebuilt: 964 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 146
+    raw: 5
+index rebuilt: 972 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 154
+    raw: 5
+index rebuilt: 972 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 154
+    raw: 5
+index rebuilt: 974 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 156
+    raw: 5
+index rebuilt: 974 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 156
+    raw: 5
+index rebuilt: 974 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 156
+    raw: 5
+index rebuilt: 974 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 156
+    raw: 5
+index rebuilt: 974 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 156
+    raw: 5
+index rebuilt: 981 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 163
+    raw: 5
+index rebuilt: 981 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    killed: 3
+    open: 163
+    raw: 5
+index rebuilt: 983 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 163
+    raw: 5
+index rebuilt: 983 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 163
+    raw: 5
+index rebuilt: 983 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 163
+    raw: 5
+index rebuilt: 997 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 174
+    raw: 8
+index rebuilt: 997 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 174
+    raw: 8
+index rebuilt: 997 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 174
+    raw: 8
+index rebuilt: 997 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 174
+    raw: 8
+index rebuilt: 997 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 174
+    raw: 8
+index rebuilt: 1008 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 185
+    raw: 8
+index rebuilt: 1008 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 185
+    raw: 8
+index rebuilt: 1008 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 185
+    raw: 8
+index rebuilt: 1008 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 185
+    raw: 8
+index rebuilt: 1008 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 185
+    raw: 8
+index rebuilt: 1008 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 185
+    raw: 8
+index rebuilt: 1015 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 192
+    raw: 8
+index rebuilt: 1017 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 194
+    raw: 8
+index rebuilt: 1017 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 194
+    raw: 8
+index rebuilt: 1017 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 194
+    raw: 8
+index rebuilt: 1017 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 194
+    raw: 8
+index rebuilt: 1024 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 201
+    raw: 8
+index rebuilt: 1024 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 201
+    raw: 8
+index rebuilt: 1024 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 201
+    raw: 8
+index rebuilt: 1024 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 201
+    raw: 8
+index rebuilt: 1024 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 201
+    raw: 8
+index rebuilt: 1024 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 201
+    raw: 8
+index rebuilt: 1032 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 209
+    raw: 8
+index rebuilt: 1035 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 212
+    raw: 8
+index rebuilt: 1036 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 213
+    raw: 8
+index rebuilt: 1043 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 220
+    raw: 8
+index rebuilt: 1043 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 220
+    raw: 8
+index rebuilt: 1050 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 227
+    raw: 8
+index rebuilt: 1050 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 227
+    raw: 8
+index rebuilt: 1050 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 227
+    raw: 8
+index rebuilt: 1055 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 232
+    raw: 8
+index rebuilt: 1055 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 232
+    raw: 8
+index rebuilt: 1055 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 232
+    raw: 8
+index rebuilt: 1055 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 232
+    raw: 8
+index rebuilt: 1063 ideas
+  by status:
+    active: 807
+    active-reframe: 1
+    back-burner: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 240
+    raw: 8
+index rebuilt: 1065 ideas
+  by status:
+    active: 809
+    active-reframe: 1
+    back-burner: 1
+    done: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 239
+    raw: 8
+index rebuilt: 1101 ideas
+  by status:
+    active: 809
+    active-reframe: 1
+    back-burner: 1
+    done: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 246
+    raw: 37
+index rebuilt: 1102 ideas
+  by status:
+    active: 809
+    active-reframe: 1
+    back-burner: 1
+    done: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 247
+    raw: 37
+index rebuilt: 1102 ideas
+  by status:
+    active: 809
+    active-reframe: 1
+    back-burner: 1
+    done: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 247
+    raw: 37
+index rebuilt: 1108 ideas
+  by status:
+    active: 809
+    active-reframe: 1
+    back-burner: 1
+    done: 1
+    ideating: 1
+    inbox: 2
+    killed: 3
+    open: 253
+    raw: 37

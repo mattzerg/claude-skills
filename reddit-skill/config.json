@@ -1,0 +1,18 @@
+{
+  "_comment": "Template only. NO credentials live here. Login happens via the visible-browser flow (reddit_skill.py login --account <label>). This file only declares accounts and points to optional Keychain entries for out-of-band password retrieval — the script does NOT read Keychain in v1.",
+  "_schema_version": 1,
+  "accounts": {
+    "_example_matteisn": {
+      "label": "matteisn",
+      "reddit_username_hint": "u/<your-handle>",
+      "keychain_account": "matteisn-reddit",
+      "keychain_service": "reddit.com",
+      "notes": "Personal account. Used for r/SaaS, r/startups distribution when launch needs it."
+    }
+  },
+  "defaults": {
+    "headless_reads": true,
+    "visible_writes": true,
+    "login_timeout_seconds": 300
+  }
+}

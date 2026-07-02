@@ -1,0 +1,22 @@
+{
+  "eval_id": 2,
+  "eval_name": "lane-discipline",
+  "prompt": "Here are the raw observations from the functionality walkthrough of Meridian Aerospace's vendor-pay app (handoff next Friday). Some of it might be design stuff, I'm not sure. Write the findings report — this is the functionality lane. Save it as a markdown file in the outputs directory.",
+  "assertions": [
+    "The missing $1,750 line on INV-3318 (UI shows 2 lines, API/DB have 3) is reported as a confirmed finding with the layer identified as render/UI (since API and DB agree and the header is correct)",
+    "The paid invoice INV-3301 still counted in Hartwell Supply's outstanding balance ($14,760 vs correct $9,840) is reported as a confirmed finding with High or Critical severity",
+    "The Net-45 vs Net-15 due date extraction error on INV-3340 is reported as a confirmed finding with the layer identified as ingestion/extraction",
+    "The 'Invalid Date' render on the payment run screen is reported as a confirmed finding (null not handled)",
+    "The case-sensitive search (lowercase 'hartwell' returns 0 results) is reported as a confirmed finding",
+    "The orange approve button color observation is NOT in the confirmed functionality findings list (excluded entirely or explicitly routed to the UX/design lane)",
+    "The below-the-fold contact email observation is NOT in the confirmed functionality findings list (excluded or routed to UX lane)",
+    "The blank empty-state on Credit Memos is NOT reported as a functionality defect (the data being empty is correct; styling concerns routed to UX at most)",
+    "The INV-3310 shipping amount ($1,062.50 = $1,000 + $62.50 shipping) is treated as refuted / not-a-bug, ideally listed in a refuted/inconclusive section with the shipping explanation",
+    "The NetSuite export is marked as blocked/not exercised with the read-only/external-write reason — not silently omitted",
+    "The approval routing thresholds are marked as not exercisable (0 routing rules configured) — not silently omitted",
+    "The Pell Industrial duplicate detection is reported as working correctly (true duplicate), not as a defect",
+    "Every confirmed finding includes proof/evidence, reproduction steps, and a layer-at-fault attribution",
+    "The report includes a coverage matrix and a separate refuted/inconclusive section",
+    "The report includes a 'top fixes first' / quick-wins prioritization or severity-ordered summary"
+  ]
+}

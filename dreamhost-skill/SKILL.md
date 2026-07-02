@@ -4,6 +4,7 @@ description: Manage DreamHost DNS records. Use when the user asks to manage DNS 
 allowed-tools: Bash, Read
 ---
 
+
 # DreamHost Skill - DNS Management
 
 Manage DNS records via the DreamHost API. Add, remove, and update A/AAAA/CNAME/TXT records, check propagation.

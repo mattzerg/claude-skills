@@ -1,0 +1,36 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 5,
+    "distinctiveness": 3,
+    "color": 6,
+    "density": 7,
+    "voice": 4
+  },
+  "reasoning": {
+    "typography": "Standard sans-serif system with no character. Generic weight distribution, pedestrian hierarchy. Could be any SaaS product. Zero typographic identity beyond 'we picked a safe font'.",
+    "hierarchy": "Hero headline dominates appropriately, product screenshot has reasonable visual weight. But below the fold it collapses into typical feature-grid sameness. One-thing-per-screen discipline breaks down quickly.",
+    "distinctiveness": "Complete stencil. 'Meet the [product category]' headline template, benefit bullets, logo parade, demo CTA. Swap 'Notion' for any B2B SaaS and nothing breaks. The mascot illustrations are the only personality attempt.",
+    "color": "Navy + bright blue CTA shows some restraint. Accent orange on icons is disciplined. Background gradient is tasteful. Better than average \u2014 actual palette discipline vs. rainbow vomit.",
+    "density": "Confident use of space in hero area. Product screenshot has dense content that shows real use. Better than the typical 'hero image + three feature cards with acres of padding' syndrome.",
+    "voice": "Structure is pure SaaS stencil: Hero/Social Proof/Features/CTA. 'Meet the night shift' attempts personality but IA is completely conventional. Currently/Selected/Testimonials pattern in different clothes."
+  },
+  "winning_patterns": [
+    "Product screenshot shows actual dense UI with real content/tasks \u2014 demonstrates rather than decorates",
+    "Color palette has restraint \u2014 navy base with controlled accent usage",
+    "Confident content density in the product preview area",
+    "Mascot illustrations attempt to inject personality into standard template"
+  ],
+  "anti_patterns": [
+    "Complete headline stencil: 'Meet the [X]' is LinkedIn/Notion/every-rebrand clich\u00e9",
+    "Logo parade social proof is pure commodity signaling",
+    "Zero typographic identity \u2014 could be any product using system sans",
+    "IA is stencil B2B SaaS despite personality attempts in copy",
+    "Feature section below hero collapses into generic three-column grid pattern"
+  ],
+  "one_word_personality": "safe",
+  "_url": "https://www.notion.so",
+  "_persona": "brand_product",
+  "_note": "Brand-strong, illustration-led",
+  "_graded_at": "2026-05-07T23:28:00.232097Z"
+}

@@ -25,9 +25,24 @@ from googleapiclient.discovery import build
 import warnings
 warnings.filterwarnings("ignore")
 
-VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
-)
+def _vault_root() -> Path:
+    """Prefer the live Obsidian vault (canonical); fall back to legacy iCloud or the
+    TCC mirror. Pre-2026-06-30 this hardcoded the iCloud path, which became a near-
+    empty shell after the vault moved to ~/Obsidian/Zerg — so corpus appends landed
+    in the shell while canonical went stale. See _audit-2026-06-30-nobody-reads-code.md §4."""
+    canonical = Path.home() / "Obsidian" / "Zerg" / "MattZerg"
+    icloud = Path("/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg")
+    mirror = Path.home() / ".zerg-vault-mirror" / "MattZerg"
+    for cand in (canonical, icloud, mirror):
+        try:
+            if cand.exists() and any(cand.iterdir()):
+                return cand
+        except (PermissionError, OSError):
+            continue
+    return canonical
+
+
+VAULT_ROOT = _vault_root()
 CORPUS = VAULT_ROOT / "_style" / "personal_voice_corpus.md"
 TIER_MAP = Path.home() / ".claude" / "skills" / "fakematt-email" / "tier_map.json"
 TOKENS = Path.home() / ".claude" / "skills" / "gmail-skill" / "tokens"

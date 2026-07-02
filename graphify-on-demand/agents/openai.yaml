@@ -1,0 +1,4 @@
+display_name: Graphify On Demand
+short_description: Build safe temporary Graphify code graphs without installing hooks.
+default_prompt: Use Graphify on demand to inspect this repo's architecture, keeping outputs contained and avoiding hook installs.
+

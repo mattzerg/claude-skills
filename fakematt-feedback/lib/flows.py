@@ -11,31 +11,37 @@ import sys
 from pathlib import Path
 
 VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
+    "/Users/mattheweisner/Obsidian/Zerg/MattZerg"
 )
-ZSTACK_DIR = VAULT_ROOT / "Projects" / "Zstack"
+ZSTACK_DIR = VAULT_ROOT / "Projects" / "Zerg-Production" / "Zstack"
 
 
 # ----- spec-driven -----
 
 
 def from_zstack(product_hint: str) -> list[str]:
-    """Parse Projects/Zstack/<product>.md for declared flows.
+    """Parse Projects/Zerg-Production/Zstack/<product>.md for declared flows.
 
     Recognized markers: '## Flows', '## User journeys', '## User flows',
     'Flow:' inline tags. Returns ordered flow names.
     """
     if not product_hint:
         return []
-    spec = ZSTACK_DIR / f"{product_hint}.md"
-    if not spec.exists():
-        # case-insensitive
-        for p in ZSTACK_DIR.glob("*.md"):
+    # Search layered Projects/ tree, then legacy Zstack flat layout.
+    _proj = VAULT_ROOT / "Projects"
+    _dirs = [_proj / "Zerg-Production", _proj / "Zerg-Development", ZSTACK_DIR]
+    spec = None
+    for d in _dirs:
+        if not d.exists():
+            continue
+        for p in list(d.glob("*.md")) + list(d.glob("*/*.md")):
             if p.stem.lower() == product_hint.lower():
                 spec = p
                 break
-        else:
-            return []
+        if spec:
+            break
+    if spec is None:
+        return []
     text = spec.read_text(encoding="utf-8", errors="ignore")
     flows: list[str] = []
     capturing = False

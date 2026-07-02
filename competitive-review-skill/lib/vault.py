@@ -10,9 +10,9 @@ from pathlib import Path
 from typing import Optional
 
 VAULT_ROOT = Path(
-    "/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg"
+    "/Users/mattheweisner/Obsidian/Zerg/MattZerg"
 )
-ZSTACK_DIR = VAULT_ROOT / "Projects" / "Zstack"
+ZSTACK_DIR = VAULT_ROOT / "Projects" / "Zerg-Production" / "Zstack"
 COMPETITIVE_DIR = VAULT_ROOT / "Competitive"
 CONVERSATIONS_DIR = VAULT_ROOT / "Conversations" / "Claude"
 
@@ -51,14 +51,16 @@ def parse_frontmatter(text: str) -> tuple[dict, str]:
 
 
 def read_product_spec(product: str) -> Optional[dict]:
-    """Find product spec note (case-insensitive). Searches MattZerg/Projects/Zstack/<Product>.md
-    first, then MattZerg/Projects/<Product>.md. Return {path, frontmatter, body, live_url}."""
+    """Find product spec note (case-insensitive). Searches the layered Projects/
+    tree in priority order: Zerg-Production/<P>/<P>.md, Zerg-Development/<P>/<P>.md,
+    legacy Zstack/<P>.md, then Projects/<P>.md. Return {path, frontmatter, body, live_url}."""
     target = product.lower()
-    search_dirs = [ZSTACK_DIR, VAULT_ROOT / "Projects"]
+    _proj = VAULT_ROOT / "Projects"
+    search_dirs = [_proj / "Zerg-Production", _proj / "Zerg-Development", ZSTACK_DIR, _proj]
     for d in search_dirs:
         if not d.exists():
             continue
-        for path in d.glob("*.md"):
+        for path in list(d.glob("*.md")) + list(d.glob("*/*.md")):
             if path.stem.lower() == target:
                 text = path.read_text(encoding="utf-8")
                 fm, body = parse_frontmatter(text)

@@ -35,17 +35,19 @@ CODEX_SKILLS = HOME / ".codex" / "skills"
 ZERG_ROOT = Path(
     os.environ.get(
         "ZERG_ROOT",
-        str(HOME / "Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg"),
+        str(HOME / "Obsidian/Zerg"),
     )
 )
 TASKS_INBOX = ZERG_ROOT / "MattZerg/Tasks/inbox.md"
 INTAKE_DIR = ZERG_ROOT / "MattZerg/Tasks/fakematt-intake"
 IDEAS_DIR = ZERG_ROOT / "MattZerg/Ideas"
 REPLY_QUEUE_DIR = INTAKE_DIR / "reply-queue"
-MEMORY_DIR = (
-    HOME
-    / ".claude/projects/-Users-mattheweisner-Library-Mobile-Documents-iCloud-md-obsidian-Documents-Zerg/memory"
-)
+# Canonical work-lane memory (post 2026-06-30 iCloud->Obsidian migration). The old
+# ~/.claude/projects/<iCloud-slug>/memory is now just a symlink to this dir — depend on
+# the canonical location directly so a stale-project-dir/symlink cleanup can't break memory.
+_CANON_MEMORY = HOME / "Obsidian/Zerg/MattZerg/claude-memory"
+_LEGACY_MEMORY = HOME / ".claude/projects/-Users-mattheweisner-Library-Mobile-Documents-iCloud-md-obsidian-Documents-Zerg/memory"
+MEMORY_DIR = _CANON_MEMORY if _CANON_MEMORY.exists() else _LEGACY_MEMORY
 MEMORY_INDEX = MEMORY_DIR / "MEMORY.md"
 STATE_PATH = Path(os.environ.get("FAKEMATT_OPERATOR_STATE", str(INTAKE_DIR / "state.json"))).expanduser()
 EVENTS_PATH = Path(
@@ -1434,7 +1436,8 @@ def post_to_slack(text: str) -> tuple[bool, str]:
         return False, "slack_sdk not installed"
     try:
         cfg = json.loads(SLACK_CONFIG.read_text())
-        token = cfg["default"]["token"]
+        import sys as _zs, pathlib as _zp; _zs.path.insert(0, str(_zp.Path.home()/".config"/"zerg")); from slack_token import slack_token
+        token = slack_token()
         WebClient(token=token).chat_postMessage(channel=FM_DM_CHANNEL, text=text, mrkdwn=True)
         return True, "posted"
     except Exception as exc:

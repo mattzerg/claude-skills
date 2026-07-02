@@ -1,3 +1,9 @@
+---
+name: film-maker-skill
+description: Orchestrate AI film production across images, audio, video generation,
+  and FFmpeg assembly.
+---
+
 # Film Maker Skill
 
 Orchestrate AI film production using Nano Banana (images), Eleven Labs (audio), FAL (video), and FFmpeg (assembly).
@@ -17,6 +23,18 @@ Script/Idea
     ↓
 [ffmpeg] → Assemble final film
 ```
+
+## Premium vs Generic — measured design bar
+
+AI-generated film looks generic by default. Hold the output to the same measured bar as live-captured product video. Before generating frames or animating, read `~/.claude/skills/product-video-skill/techniques.md` and the craft catalogs; these are the levers that separate premium from stock:
+
+- **Motion is one direction at one rate per shot** (techniques.md §9: no double-zoom). Set the FAL/Kling/Luma camera move to a single `linear_push_in`-style drift (1.00→1.04 over 2–3s) or a `slow_orbit` (15–25°, 1.8–2.4s) — never a frantic multi-axis move. `techniques.md §2`.
+- **Cut cadence matches format, not the model's default** — title-card launch ~6s MSL, founder/demo intercut ~2.8s. `video-shot-sequencer/references/sequence-techniques.md §2`.
+- **No whoosh transitions, hard-cut default; end card holds 2.5–4s in silence with music-out** — the single most consistent technique across real launches. `video-editing-director/references/edit-techniques.md §2,§4`.
+- **Frame composition: one focal subject, legible first frame, ≥24pt on-screen text with scrim not shadow.** `video-storyboarder/references/storyboard-techniques.md §1–3`.
+- **Style-keyword consistency across every generated frame** so the film reads as one piece, not a montage of unrelated stills.
+- **VO at 2.3–2.7 words/sec** when scripting Eleven Labs narration; ≤8-word hook. `video-scriptwriter/references/script-techniques.md §1–2`.
+- Score the assembled film against `_style/video_quality_rubric.md` (Edit + Review sections) before calling it done. Matt's taste layer (`_style/video_feedback_corpus.md`) overrides generic convention — and **never let AI voice synthesis cosplay Matt's voice** (`voice-cosplay-guard`).
 
 ## Prerequisites
 

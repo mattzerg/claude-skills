@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body { font-family: -apple-system, sans-serif; width: 280px; padding: 12px; }
+      h1 { font-size: 14px; margin: 0 0 8px; }
+      .status { padding: 6px 8px; border-radius: 4px; background: #efe; color: #060; font-size: 12px; }
+      .meta { font-size: 11px; color: #666; margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <h1>🛡️ ZergGuard URL Shield</h1>
+    <div class="status">Active — blocking known-bad domains.</div>
+    <div class="meta" id="meta">IOC list: loading…</div>
+    <script>
+      chrome.storage.local.get("zergguard_iocs", (s) => {
+        const n = s.zergguard_iocs?.domains?.length ?? 0;
+        document.getElementById("meta").textContent =
+          `IOC list: ${n} domains. Last refresh: ${s.zergguard_iocs?.fetched_at ?? "—"}`;
+      });
+    </script>
+  </body>
+</html>

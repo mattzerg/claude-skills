@@ -1,564 +1,623 @@
 #!/usr/bin/env python3
-"""
-Reddit Skill - Post, comment, and browse Reddit.
+"""Reddit Skill — Playwright-driven Reddit channel skill.
+
+Drives a logged-in Chromium session per account. The Reddit Data API is gated
+for non-enterprise access as of 2026-05-09, so this skill automates the web UI
+through a persistent Playwright context.
+
+Sibling of twitter-skill / linkedin-skill / slack-skill. Same conventions:
+subcommand verbs, JSON output, account abstraction, confirmation-before-write.
 
 Usage:
-    python reddit_skill.py me [--account NAME]
-    python reddit_skill.py frontpage [--limit N] [--sort hot|new|top]
-    python reddit_skill.py subreddit NAME [--limit N] [--sort hot|new|top|rising]
-    python reddit_skill.py post SUBREDDIT --title "..." [--text "..."|--url "..."|--image PATH]
-    python reddit_skill.py comment THING_ID --text "..."
-    python reddit_skill.py reply COMMENT_ID --text "..."
-    python reddit_skill.py vote THING_ID --dir up|down|none
-    python reddit_skill.py save THING_ID
-    python reddit_skill.py unsave THING_ID
-    python reddit_skill.py submissions [USERNAME] [--limit N] [--sort new|hot|top]
-    python reddit_skill.py comments [USERNAME] [--limit N]
-    python reddit_skill.py search "query" [--subreddit NAME] [--limit N]
-    python reddit_skill.py inbox [--limit N]
-    python reddit_skill.py subscriptions [--limit N]
-    python reddit_skill.py accounts
-    python reddit_skill.py login [--account NAME]
-    python reddit_skill.py logout [--account NAME]
+    python3 reddit_skill.py accounts
+    python3 reddit_skill.py login [--account LABEL]
+    python3 reddit_skill.py logout [--account LABEL]
+    python3 reddit_skill.py me [--account LABEL]
+    python3 reddit_skill.py subreddit NAME [--sort hot|new|top|rising] [--limit N] [--account LABEL]
+    python3 reddit_skill.py search QUERY [--subreddit NAME] [--limit N] [--account LABEL]
+    python3 reddit_skill.py post SUBREDDIT --title "..." [--body "..."|--url "..."] [--account LABEL]
+    python3 reddit_skill.py comment POST_URL --body "..." [--account LABEL]
+
+All commands print a single JSON object. Errors use:
+    {"ok": false, "verb": ..., "error": "<code>", "message": "<human>"}
+
+DO NOT log in or post without explicit user confirmation (see SKILL.md).
+DO NOT submit Zerg-domain URLs without UTM params (utm-attribution skill).
 """
+from __future__ import annotations
 
 import argparse
-import base64
 import json
 import os
 import re
-import secrets
 import sys
-import webbrowser
-from datetime import datetime, timedelta
-from http.server import HTTPServer, BaseHTTPRequestHandler
+import time
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
-from urllib.parse import urlencode, parse_qs, urlparse
+from urllib.parse import urlparse, parse_qs
 
-try:
-    import requests
-except ImportError:
-    print("Error: requests not installed. Run: pip install requests")
-    sys.exit(1)
+# ---------------------------------------------------------------------------
+# Paths and constants
+# ---------------------------------------------------------------------------
 
 SKILL_DIR = Path(__file__).parent
-TOKENS_DIR = SKILL_DIR / "tokens"
-CREDENTIALS_FILE = SKILL_DIR / "credentials.json"
+STATE_DIR = SKILL_DIR / "state"
+CONFIG_FILE = SKILL_DIR / "config.json"
+SELECTORS_FILE = SKILL_DIR / "selectors.json"
 
-REDDIT_AUTH_URL = "https://www.reddit.com/api/v1/authorize"
-REDDIT_TOKEN_URL = "https://www.reddit.com/api/v1/access_token"
-REDDIT_API_BASE = "https://oauth.reddit.com"
+STATE_DIR.mkdir(parents=True, exist_ok=True)
 
-USER_AGENT = "claude-code-reddit-skill/1.0"
+REDDIT_BASE = "https://www.reddit.com"
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
+LOGIN_URL = f"{REDDIT_BASE}/login/"
+LOGIN_POLL_INTERVAL_S = 2
+LOGIN_TIMEOUT_S = 300  # 5 min
 
-SCOPES = [
-    "identity", "read", "submit", "vote", "save",
-    "subscribe", "mysubreddits", "privatemessages", "history"
-]
+# Zerg domains that require UTM enforcement. Kept in sync with utm-attribution.
+ZERG_DOMAINS = {
+    "zergai.com", "www.zergai.com",
+    "zergboard.ai", "www.zergboard.ai",
+    "zerglytics.fly.dev",
+    "zergboard-preview.pages.dev",
+}
+ZERG_DOMAIN_SUFFIXES = (".zergai.com",)
 
-TOKENS_DIR.mkdir(parents=True, exist_ok=True)
+URL_RE = re.compile(r"https?://[^\s)\]]+", re.IGNORECASE)
 
 
-def get_client_config() -> dict:
-    if CREDENTIALS_FILE.exists():
-        with open(CREDENTIALS_FILE) as f:
-            return json.load(f)
+# ---------------------------------------------------------------------------
+# Output envelope
+# ---------------------------------------------------------------------------
 
-    print("\n" + "=" * 60)
-    print("FIRST-TIME SETUP REQUIRED")
-    print("=" * 60)
-    print("\nTo use Reddit Skill, create a Reddit app:\n")
-    print("1. Go to: https://www.reddit.com/prefs/apps")
-    print("2. Scroll down and click 'create another app...'")
-    print("3. Fill in:")
-    print("   - Name: Claude Reddit Skill")
-    print("   - Type: 'script' (for personal use) or 'web app'")
-    print("   - Redirect URI: http://localhost:9996")
-    print("4. Note the client ID (under app name) and secret")
-    print("5. Create credentials.json:")
-    print(f"   {CREDENTIALS_FILE}")
-    print('   {"client_id": "YOUR_ID", "client_secret": "YOUR_SECRET"}')
-    print("\nThen run this command again.")
-    print("=" * 60 + "\n")
+def emit(payload: dict) -> None:
+    """Print a single JSON object to stdout, then exit non-zero if not ok."""
+    print(json.dumps(payload, indent=2, default=str))
+    sys.exit(0 if payload.get("ok") else 1)
 
+
+def err(verb: str, code: str, message: str, **extra) -> None:
+    payload = {"ok": False, "verb": verb, "error": code, "message": message}
+    payload.update(extra)
+    emit(payload)
+
+
+def ok(verb: str, **data) -> None:
+    payload = {"ok": True, "verb": verb}
+    payload.update(data)
+    emit(payload)
+
+
+# ---------------------------------------------------------------------------
+# Account state
+# ---------------------------------------------------------------------------
+
+def safe_label(label: str) -> str:
+    return "".join(c if c.isalnum() or c in "-_" else "_" for c in label)
+
+
+def account_dir(label: str) -> Path:
+    return STATE_DIR / safe_label(label)
+
+
+def storage_state_path(label: str) -> Path:
+    return account_dir(label) / "storage_state.json"
+
+
+def meta_path(label: str) -> Path:
+    return account_dir(label) / "meta.json"
+
+
+def list_accounts() -> list[dict]:
+    out = []
+    if not STATE_DIR.exists():
+        return out
+    for child in sorted(STATE_DIR.iterdir()):
+        if not child.is_dir():
+            continue
+        ss = child / "storage_state.json"
+        mt = child / "meta.json"
+        meta = {}
+        if mt.exists():
+            try:
+                meta = json.loads(mt.read_text())
+            except Exception:
+                meta = {}
+        out.append({
+            "label": child.name,
+            "username": meta.get("username"),
+            "has_session": ss.exists(),
+            "last_login": meta.get("last_login"),
+            "stale": _is_stale(meta.get("last_login")),
+        })
+    return out
+
+
+def _is_stale(iso: Optional[str]) -> bool:
+    if not iso:
+        return True
     try:
-        if input("Open Reddit apps page? [Y/n]: ").strip().lower() != "n":
-            webbrowser.open("https://www.reddit.com/prefs/apps")
-    except:
+        last = datetime.fromisoformat(iso)
+    except Exception:
+        return True
+    return (datetime.now(timezone.utc) - last).days > 30
+
+
+def resolve_account(verb: str, requested: Optional[str]) -> str:
+    """Resolve which account label to use; error envelope if ambiguous/absent."""
+    accounts = list_accounts()
+    if requested:
+        return requested
+    authed = [a for a in accounts if a["has_session"]]
+    if len(authed) == 1:
+        return authed[0]["label"]
+    if not authed:
+        err(verb, "no_session",
+            "No accounts authenticated. Run: reddit_skill.py login --account <label>")
+    err(verb, "ambiguous_account",
+        f"Multiple accounts available — pass --account. Found: {[a['label'] for a in authed]}")
+
+
+# ---------------------------------------------------------------------------
+# UTM enforcement
+# ---------------------------------------------------------------------------
+
+def is_zerg_url(url: str) -> bool:
+    host = urlparse(url).netloc.lower()
+    if not host:
+        return False
+    if host in ZERG_DOMAINS:
+        return True
+    return any(host.endswith(s) for s in ZERG_DOMAIN_SUFFIXES)
+
+
+def has_utm(url: str) -> bool:
+    qs = parse_qs(urlparse(url).query)
+    return bool(qs.get("utm_source"))
+
+
+def check_utm_compliance(verb: str, *fields: str) -> None:
+    """Hard-fail if any Zerg URL in any field lacks utm_source.
+
+    Non-Zerg URLs are allowed through unchanged.
+    """
+    offenders = []
+    for field in fields:
+        if not field:
+            continue
+        for url in URL_RE.findall(field):
+            # strip trailing punctuation that regex caught
+            url = url.rstrip(".,;:!?")
+            if is_zerg_url(url) and not has_utm(url):
+                offenders.append(url)
+    if offenders:
+        err(
+            verb, "missing_utm",
+            "Zerg URL(s) detected without utm_source. Route through utm-attribution skill first.",
+            offenders=offenders,
+            hint="python3 ~/.claude/skills/utm-attribution/run.py build --destination ... --source reddit --medium community --campaign <slug>",
+        )
+
+
+# ---------------------------------------------------------------------------
+# Playwright lazy import
+# ---------------------------------------------------------------------------
+
+def require_playwright(verb: str):
+    try:
+        from playwright.sync_api import sync_playwright  # noqa: F401
+        return sync_playwright
+    except ImportError:
+        err(verb, "playwright_not_installed",
+            "Playwright not installed. Run: pip install playwright && playwright install chromium")
+
+
+# ---------------------------------------------------------------------------
+# Selectors (drift resilience)
+# ---------------------------------------------------------------------------
+
+DEFAULT_SELECTORS = {
+    "submit_title": "textarea[name=title], faceplate-textarea-input[name=title] textarea",
+    "submit_body": "div[contenteditable=true], textarea[name=text]",
+    "submit_url": "input[name=url]",
+    "submit_button": "button[type=submit]",
+    "comment_box": "div[contenteditable=true][slot=rte]",
+    "comment_submit": "button:has-text('Comment')",
+    "post_card": "shreddit-post, article",
+    "post_title": "a[slot=title], h3",
+    "search_result": "shreddit-post, article",
+    "login_done_url_excludes": "/login",
+}
+
+
+def load_selectors() -> dict:
+    if SELECTORS_FILE.exists():
+        try:
+            user = json.loads(SELECTORS_FILE.read_text())
+            merged = {**DEFAULT_SELECTORS, **user}
+            return merged
+        except Exception:
+            pass
+    return DEFAULT_SELECTORS
+
+
+# ---------------------------------------------------------------------------
+# Browser context helpers
+# ---------------------------------------------------------------------------
+
+def open_context(verb: str, label: str, *, headless: bool, require_session: bool):
+    """Return (playwright, browser, context, page). Caller closes."""
+    sync_playwright = require_playwright(verb)
+    ss = storage_state_path(label)
+    if require_session and not ss.exists():
+        err(verb, "no_session",
+            f"No saved session for account '{label}'. Run: reddit_skill.py login --account {label}")
+
+    p = sync_playwright().start()
+    browser = p.chromium.launch(
+        headless=headless,
+        args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
+    )
+    context_kwargs = {
+        "viewport": {"width": 1280, "height": 900},
+        "user_agent": USER_AGENT,
+    }
+    if ss.exists():
+        context_kwargs["storage_state"] = str(ss)
+    context = browser.new_context(**context_kwargs)
+    page = context.new_page()
+    return p, browser, context, page
+
+
+def save_state(context, label: str, username: Optional[str] = None) -> None:
+    account_dir(label).mkdir(parents=True, exist_ok=True)
+    context.storage_state(path=str(storage_state_path(label)))
+    meta = {}
+    if meta_path(label).exists():
+        try:
+            meta = json.loads(meta_path(label).read_text())
+        except Exception:
+            meta = {}
+    meta["last_login"] = datetime.now(timezone.utc).isoformat()
+    if username:
+        meta["username"] = username
+    meta["label"] = label
+    meta_path(label).write_text(json.dumps(meta, indent=2))
+    try:
+        os.chmod(storage_state_path(label), 0o600)
+        os.chmod(meta_path(label), 0o600)
+    except Exception:
         pass
-    sys.exit(1)
 
 
-class OAuthHandler(BaseHTTPRequestHandler):
-    def log_message(self, *args): pass
+# ---------------------------------------------------------------------------
+# Verbs
+# ---------------------------------------------------------------------------
 
-    def do_GET(self):
-        query = parse_qs(urlparse(self.path).query)
-        if "code" in query:
-            self.server.auth_code = query["code"][0]
-            self.send_response(200)
-            self.send_header("Content-type", "text/html")
-            self.end_headers()
-            self.wfile.write(b"<html><body><h1>Success!</h1><p>Close this window.</p></body></html>")
-        elif "error" in query:
-            self.server.auth_error = query.get("error", ["Unknown"])[0]
-            self.send_response(400)
-            self.end_headers()
-        else:
-            self.send_response(400)
-            self.end_headers()
+def verb_accounts(args) -> None:
+    accounts = list_accounts()
+    note = None
+    if not accounts:
+        note = "No accounts authenticated. Run: reddit_skill.py login --account <label>"
+    ok("accounts", accounts=accounts, note=note)
 
 
-def do_oauth_flow(config: dict) -> dict:
-    client_id = config["client_id"]
-    client_secret = config["client_secret"]
-    port = 9996
-    redirect_uri = f"http://localhost:{port}"
-    state = secrets.token_urlsafe(32)
+def verb_login(args) -> None:
+    label = args.account or "default"
+    require_playwright("login")
+    print(f"Launching visible Chromium for account '{label}'...", file=sys.stderr)
+    print("Log in manually. The script will detect post-login redirect and save state.",
+          file=sys.stderr)
+    print(f"Timeout: {LOGIN_TIMEOUT_S}s. Press Ctrl-C to abort.", file=sys.stderr)
 
-    auth_params = {
-        "client_id": client_id,
-        "response_type": "code",
-        "state": state,
-        "redirect_uri": redirect_uri,
-        "duration": "permanent",
-        "scope": " ".join(SCOPES),
-    }
-
-    auth_url = f"{REDDIT_AUTH_URL}?{urlencode(auth_params)}"
-
-    server = HTTPServer(("localhost", port), OAuthHandler)
-    server.auth_code = None
-    server.auth_error = None
-    server.timeout = 120
-
-    print(f"\nOpening browser for Reddit authentication...")
-    print(f"If browser doesn't open, visit:\n{auth_url}\n")
-    webbrowser.open(auth_url)
-
-    while server.auth_code is None and server.auth_error is None:
-        server.handle_request()
-
-    if server.auth_error:
-        print(f"Auth error: {server.auth_error}")
-        sys.exit(1)
-
-    # Exchange code for token
-    auth = base64.b64encode(f"{client_id}:{client_secret}".encode()).decode()
-    response = requests.post(
-        REDDIT_TOKEN_URL,
-        data={
-            "grant_type": "authorization_code",
-            "code": server.auth_code,
-            "redirect_uri": redirect_uri,
-        },
-        headers={
-            "Authorization": f"Basic {auth}",
-            "User-Agent": USER_AGENT,
-        },
+    p, browser, context, page = open_context(
+        "login", label, headless=False, require_session=False,
     )
-
-    if response.status_code != 200:
-        print(f"Token error: {response.text}")
-        sys.exit(1)
-
-    tokens = response.json()
-    if "expires_in" in tokens:
-        tokens["expiry"] = (datetime.utcnow() + timedelta(seconds=tokens["expires_in"])).isoformat() + "Z"
-
-    # Get username
-    headers = {"Authorization": f"Bearer {tokens['access_token']}", "User-Agent": USER_AGENT}
-    me = requests.get(f"{REDDIT_API_BASE}/api/v1/me", headers=headers)
-    if me.status_code == 200:
-        tokens["username"] = me.json().get("name")
-
-    return tokens
-
-
-def refresh_tokens(config: dict, refresh_token: str) -> Optional[dict]:
-    auth = base64.b64encode(f"{config['client_id']}:{config['client_secret']}".encode()).decode()
-    response = requests.post(
-        REDDIT_TOKEN_URL,
-        data={"grant_type": "refresh_token", "refresh_token": refresh_token},
-        headers={"Authorization": f"Basic {auth}", "User-Agent": USER_AGENT},
-    )
-    if response.status_code != 200:
-        return None
-    tokens = response.json()
-    tokens["refresh_token"] = refresh_token  # Reddit doesn't return new refresh token
-    if "expires_in" in tokens:
-        tokens["expiry"] = (datetime.utcnow() + timedelta(seconds=tokens["expires_in"])).isoformat() + "Z"
-    return tokens
-
-
-def get_token_path(account: Optional[str] = None) -> Path:
-    if account:
-        return TOKENS_DIR / f"token_{re.sub(r'[^w.-]', '_', account.lower())}.json"
-    tokens = list(TOKENS_DIR.glob("token_*.json"))
-    return tokens[0] if tokens else TOKENS_DIR / "token_default.json"
-
-
-def get_credentials(account: Optional[str] = None) -> dict:
-    config = get_client_config()
-    token_path = get_token_path(account)
-
-    if token_path.exists():
-        with open(token_path) as f:
-            tokens = json.load(f)
-
-        if "expiry" in tokens:
-            expiry = datetime.fromisoformat(tokens["expiry"].replace("Z", "+00:00"))
-            if datetime.now(expiry.tzinfo) >= expiry and "refresh_token" in tokens:
-                new_tokens = refresh_tokens(config, tokens["refresh_token"])
-                if new_tokens:
-                    new_tokens["username"] = tokens.get("username")
-                    tokens = new_tokens
-                    with open(token_path, "w") as f:
-                        json.dump(tokens, f, indent=2)
-
-        return tokens
-
-    print("Not authenticated. Run 'login' first.")
-    sys.exit(1)
-
-
-def api_request(method: str, endpoint: str, account: Optional[str] = None, data: dict = None, params: dict = None) -> dict:
-    tokens = get_credentials(account)
-    headers = {"Authorization": f"Bearer {tokens['access_token']}", "User-Agent": USER_AGENT}
-    url = f"{REDDIT_API_BASE}{endpoint}"
-
-    if method == "GET":
-        r = requests.get(url, headers=headers, params=params)
-    elif method == "POST":
-        r = requests.post(url, headers=headers, data=data)
-    else:
-        raise ValueError(f"Unsupported method: {method}")
-
-    if r.status_code >= 400:
-        return {"error": True, "status": r.status_code, "details": r.text}
-
     try:
-        return r.json()
-    except:
-        return {"success": True}
+        page.goto(LOGIN_URL, wait_until="domcontentloaded")
+        deadline = time.time() + LOGIN_TIMEOUT_S
+        while time.time() < deadline:
+            current = page.url
+            if "/login" not in current and "reddit.com" in current:
+                break
+            time.sleep(LOGIN_POLL_INTERVAL_S)
+        else:
+            err("login", "login_timeout",
+                f"Did not detect post-login redirect within {LOGIN_TIMEOUT_S}s.")
+
+        username = None
+        try:
+            page.goto(f"{REDDIT_BASE}/api/me.json", wait_until="domcontentloaded")
+            body = page.evaluate("() => document.body.innerText")
+            data = json.loads(body)
+            username = data.get("name") or (data.get("data") or {}).get("name")
+        except Exception:
+            pass
+
+        save_state(context, label, username=username)
+        ok("login", account=label, username=username,
+           state_path=str(storage_state_path(label)))
+    finally:
+        try:
+            context.close(); browser.close(); p.stop()
+        except Exception:
+            pass
 
 
-def format_post(p: dict) -> dict:
-    d = p.get("data", p)
-    return {
-        "id": d.get("id"),
-        "name": d.get("name"),
-        "title": d.get("title"),
-        "author": d.get("author"),
-        "subreddit": d.get("subreddit"),
-        "score": d.get("score"),
-        "num_comments": d.get("num_comments"),
-        "url": d.get("url"),
-        "selftext": d.get("selftext", "")[:500],
-        "created_utc": d.get("created_utc"),
-        "permalink": f"https://reddit.com{d.get('permalink', '')}",
+def verb_logout(args) -> None:
+    label = args.account
+    if not label:
+        err("logout", "missing_account", "Pass --account <label>")
+    d = account_dir(label)
+    if not d.exists():
+        err("logout", "not_found", f"No saved state for account '{label}'.")
+    import shutil
+    shutil.rmtree(d)
+    ok("logout", account=label, note="Local session deleted. Revoke on Reddit side separately if needed.")
+
+
+def verb_me(args) -> None:
+    label = resolve_account("me", args.account)
+    p, browser, context, page = open_context(
+        "me", label, headless=True, require_session=True,
+    )
+    try:
+        page.goto(f"{REDDIT_BASE}/api/me.json", wait_until="domcontentloaded")
+        body = page.evaluate("() => document.body.innerText")
+        data = json.loads(body)
+        if not data or not (data.get("name") or (data.get("data") or {}).get("name")):
+            err("me", "session_expired",
+                f"Session for '{label}' appears expired. Re-run: login --account {label}")
+        # persist any cookie refresh
+        save_state(context, label, username=(data.get("name") or (data.get("data") or {}).get("name")))
+        ok("me", account=label, profile=data)
+    finally:
+        try:
+            context.close(); browser.close(); p.stop()
+        except Exception:
+            pass
+
+
+def _extract_post_cards(page, limit: int) -> list[dict]:
+    """Best-effort post-card extraction. Selectors live in selectors.json."""
+    sel = load_selectors()
+    js = """
+    (sel) => {
+      const cards = Array.from(document.querySelectorAll(sel.post_card)).slice(0, sel.limit);
+      return cards.map(c => {
+        const link = c.querySelector('a[slot=title], a[data-click-id=body], a[href*="/comments/"]');
+        const title = (c.querySelector(sel.post_title) || link || c).innerText || '';
+        const href = link ? link.getAttribute('href') : null;
+        return {
+          title: title.trim().slice(0, 300),
+          url: href ? (href.startsWith('http') ? href : 'https://www.reddit.com' + href) : null,
+        };
+      });
     }
+    """
+    try:
+        return page.evaluate(js, {"post_card": sel["post_card"], "post_title": sel["post_title"], "limit": limit})
+    except Exception:
+        return []
 
 
-def format_comment(c: dict) -> dict:
-    d = c.get("data", c)
-    return {
-        "id": d.get("id"),
-        "name": d.get("name"),
-        "author": d.get("author"),
-        "body": d.get("body", "")[:500],
-        "score": d.get("score"),
-        "created_utc": d.get("created_utc"),
-        "link_id": d.get("link_id"),
-        "parent_id": d.get("parent_id"),
-    }
+def verb_subreddit(args) -> None:
+    label = resolve_account("subreddit", args.account)
+    sub = args.name.lstrip("r/").strip("/")
+    sort = args.sort or "hot"
+    limit = args.limit or 25
+    p, browser, context, page = open_context(
+        "subreddit", label, headless=True, require_session=True,
+    )
+    try:
+        url = f"{REDDIT_BASE}/r/{sub}/{sort}/"
+        page.goto(url, wait_until="domcontentloaded")
+        page.wait_for_timeout(1500)
+        posts = _extract_post_cards(page, limit)
+        ok("subreddit", account=label, subreddit=sub, sort=sort,
+           url=url, count=len(posts), posts=posts)
+    finally:
+        try:
+            context.close(); browser.close(); p.stop()
+        except Exception:
+            pass
 
 
-# Commands
-
-def cmd_accounts(args):
-    accounts = []
-    for f in TOKENS_DIR.glob("token_*.json"):
-        with open(f) as tf:
-            data = json.load(tf)
-            accounts.append({"name": f.stem.replace("token_", ""), "username": data.get("username")})
-    print(json.dumps({"accounts": accounts}, indent=2))
-
-
-def cmd_login(args):
-    config = get_client_config()
-    tokens = do_oauth_flow(config)
-    account = args.account or tokens.get("username", "default")
-    with open(get_token_path(account), "w") as f:
-        json.dump(tokens, f, indent=2)
-    print(json.dumps({"success": True, "username": tokens.get("username"), "account": account}, indent=2))
-
-
-def cmd_logout(args):
-    p = get_token_path(args.account)
-    if p.exists():
-        p.unlink()
-        print(json.dumps({"success": True}))
-    else:
-        print(json.dumps({"error": "Account not found"}))
-
-
-def cmd_me(args):
-    result = api_request("GET", "/api/v1/me", args.account)
-    if result.get("error"):
-        print(json.dumps(result, indent=2))
-    else:
-        print(json.dumps({
-            "username": result.get("name"),
-            "karma": result.get("total_karma"),
-            "comment_karma": result.get("comment_karma"),
-            "link_karma": result.get("link_karma"),
-            "created_utc": result.get("created_utc"),
-        }, indent=2))
-
-
-def cmd_frontpage(args):
-    params = {"limit": args.limit}
-    result = api_request("GET", f"/{args.sort}", args.account, params=params)
-    if result.get("error"):
-        print(json.dumps(result, indent=2))
-    else:
-        posts = [format_post(p) for p in result.get("data", {}).get("children", [])]
-        print(json.dumps({"posts": posts, "count": len(posts)}, indent=2))
-
-
-def cmd_subreddit(args):
-    params = {"limit": args.limit}
-    result = api_request("GET", f"/r/{args.name}/{args.sort}", args.account, params=params)
-    if result.get("error"):
-        print(json.dumps(result, indent=2))
-    else:
-        posts = [format_post(p) for p in result.get("data", {}).get("children", [])]
-        print(json.dumps({"subreddit": args.name, "posts": posts, "count": len(posts)}, indent=2))
-
-
-def cmd_post(args):
-    data = {
-        "sr": args.subreddit,
-        "title": args.title,
-        "kind": "self",
-    }
-    if args.text:
-        data["kind"] = "self"
-        data["text"] = args.text
-    elif args.url:
-        data["kind"] = "link"
-        data["url"] = args.url
-
-    result = api_request("POST", "/api/submit", args.account, data=data)
-    if result.get("error"):
-        print(json.dumps(result, indent=2))
-    else:
-        print(json.dumps({"success": True, "url": result.get("json", {}).get("data", {}).get("url")}, indent=2))
-
-
-def cmd_comment(args):
-    data = {"thing_id": args.thing_id, "text": args.text}
-    result = api_request("POST", "/api/comment", args.account, data=data)
-    print(json.dumps(result if result.get("error") else {"success": True}, indent=2))
-
-
-def cmd_reply(args):
-    data = {"thing_id": f"t1_{args.comment_id}", "text": args.text}
-    result = api_request("POST", "/api/comment", args.account, data=data)
-    print(json.dumps(result if result.get("error") else {"success": True}, indent=2))
-
-
-def cmd_vote(args):
-    dir_map = {"up": 1, "down": -1, "none": 0}
-    data = {"id": args.thing_id, "dir": dir_map.get(args.dir, 0)}
-    result = api_request("POST", "/api/vote", args.account, data=data)
-    print(json.dumps({"success": True, "vote": args.dir} if not result.get("error") else result, indent=2))
-
-
-def cmd_save(args):
-    result = api_request("POST", "/api/save", args.account, data={"id": args.thing_id})
-    print(json.dumps({"success": True} if not result.get("error") else result, indent=2))
-
-
-def cmd_unsave(args):
-    result = api_request("POST", "/api/unsave", args.account, data={"id": args.thing_id})
-    print(json.dumps({"success": True} if not result.get("error") else result, indent=2))
-
-
-def cmd_submissions(args):
-    user = args.username or get_credentials(args.account).get("username", "me")
-    params = {"limit": args.limit, "sort": args.sort}
-    result = api_request("GET", f"/user/{user}/submitted", args.account, params=params)
-    if result.get("error"):
-        print(json.dumps(result, indent=2))
-    else:
-        posts = [format_post(p) for p in result.get("data", {}).get("children", [])]
-        print(json.dumps({"user": user, "posts": posts}, indent=2))
-
-
-def cmd_comments_list(args):
-    user = args.username or get_credentials(args.account).get("username", "me")
-    params = {"limit": args.limit}
-    result = api_request("GET", f"/user/{user}/comments", args.account, params=params)
-    if result.get("error"):
-        print(json.dumps(result, indent=2))
-    else:
-        comments = [format_comment(c) for c in result.get("data", {}).get("children", [])]
-        print(json.dumps({"user": user, "comments": comments}, indent=2))
-
-
-def cmd_search(args):
-    params = {"q": args.query, "limit": args.limit, "type": "link"}
-    endpoint = f"/r/{args.subreddit}/search" if args.subreddit else "/search"
+def verb_search(args) -> None:
+    label = resolve_account("search", args.account)
+    q = args.query
+    limit = args.limit or 25
     if args.subreddit:
-        params["restrict_sr"] = "on"
-    result = api_request("GET", endpoint, args.account, params=params)
-    if result.get("error"):
-        print(json.dumps(result, indent=2))
+        url = f"{REDDIT_BASE}/r/{args.subreddit.lstrip('r/').strip('/')}/search/?q={q}&restrict_sr=1"
     else:
-        posts = [format_post(p) for p in result.get("data", {}).get("children", [])]
-        print(json.dumps({"query": args.query, "posts": posts}, indent=2))
+        url = f"{REDDIT_BASE}/search/?q={q}"
+    p, browser, context, page = open_context(
+        "search", label, headless=True, require_session=True,
+    )
+    try:
+        page.goto(url, wait_until="domcontentloaded")
+        page.wait_for_timeout(1500)
+        posts = _extract_post_cards(page, limit)
+        ok("search", account=label, query=q, subreddit=args.subreddit,
+           url=url, count=len(posts), posts=posts)
+    finally:
+        try:
+            context.close(); browser.close(); p.stop()
+        except Exception:
+            pass
 
 
-def cmd_inbox(args):
-    params = {"limit": args.limit}
-    result = api_request("GET", "/message/inbox", args.account, params=params)
-    if result.get("error"):
-        print(json.dumps(result, indent=2))
-    else:
-        messages = [{
-            "id": m["data"]["id"],
-            "author": m["data"].get("author"),
-            "subject": m["data"].get("subject"),
-            "body": m["data"].get("body", "")[:500],
-            "created_utc": m["data"].get("created_utc"),
-            "new": m["data"].get("new"),
-        } for m in result.get("data", {}).get("children", [])]
-        print(json.dumps({"messages": messages}, indent=2))
+def verb_post(args) -> None:
+    if not args.body and not args.url:
+        err("post", "missing_content", "Pass --body or --url.")
+    if args.body and args.url:
+        err("post", "ambiguous_content", "Pass exactly one of --body or --url.")
+    check_utm_compliance("post", args.title or "", args.body or "", args.url or "")
+
+    label = resolve_account("post", args.account)
+    sub = args.subreddit.lstrip("r/").strip("/")
+    sel = load_selectors()
+
+    p, browser, context, page = open_context(
+        "post", label, headless=False, require_session=True,
+    )
+    try:
+        page.goto(f"{REDDIT_BASE}/r/{sub}/submit", wait_until="domcontentloaded")
+        page.wait_for_timeout(1500)
+
+        # Title
+        try:
+            page.fill(sel["submit_title"], args.title, timeout=10_000)
+        except Exception as e:
+            err("post", "title_selector_failed",
+                f"Could not fill title. Selector drift? Update selectors.json. Detail: {e}")
+
+        # Body or URL
+        if args.url:
+            try:
+                # Click link tab if present
+                try:
+                    page.click("button:has-text('Link')", timeout=2000)
+                except Exception:
+                    pass
+                page.fill(sel["submit_url"], args.url, timeout=10_000)
+            except Exception as e:
+                err("post", "url_selector_failed", f"Could not fill URL field. Detail: {e}")
+        else:
+            try:
+                page.fill(sel["submit_body"], args.body, timeout=10_000)
+            except Exception as e:
+                err("post", "body_selector_failed", f"Could not fill body field. Detail: {e}")
+
+        # DRY RUN BY DEFAULT — only submit if --confirm-submit
+        if not args.confirm_submit:
+            ok("post", account=label, subreddit=sub, dry_run=True,
+               note="Form filled. Re-run with --confirm-submit to actually submit.",
+               title=args.title)
+            return
+
+        try:
+            page.click(sel["submit_button"], timeout=10_000)
+            page.wait_for_load_state("networkidle", timeout=30_000)
+        except Exception as e:
+            err("post", "submit_failed", f"Submit click failed. Detail: {e}")
+
+        # save fresh state
+        save_state(context, label)
+        ok("post", account=label, subreddit=sub, submitted=True,
+           url=page.url, title=args.title)
+    finally:
+        try:
+            context.close(); browser.close(); p.stop()
+        except Exception:
+            pass
 
 
-def cmd_subscriptions(args):
-    params = {"limit": args.limit}
-    result = api_request("GET", "/subreddits/mine/subscriber", args.account, params=params)
-    if result.get("error"):
-        print(json.dumps(result, indent=2))
-    else:
-        subs = [{
-            "name": s["data"]["display_name"],
-            "title": s["data"].get("title"),
-            "subscribers": s["data"].get("subscribers"),
-            "url": s["data"].get("url"),
-        } for s in result.get("data", {}).get("children", [])]
-        print(json.dumps({"subscriptions": subs}, indent=2))
+def verb_comment(args) -> None:
+    check_utm_compliance("comment", args.body or "")
+    label = resolve_account("comment", args.account)
+    sel = load_selectors()
+
+    p, browser, context, page = open_context(
+        "comment", label, headless=False, require_session=True,
+    )
+    try:
+        page.goto(args.post_url, wait_until="domcontentloaded")
+        page.wait_for_timeout(2000)
+
+        try:
+            page.click(sel["comment_box"], timeout=10_000)
+            page.keyboard.type(args.body)
+        except Exception as e:
+            err("comment", "comment_box_failed",
+                f"Could not enter comment text. Detail: {e}")
+
+        if not args.confirm_submit:
+            ok("comment", account=label, post_url=args.post_url, dry_run=True,
+               note="Comment drafted in box. Re-run with --confirm-submit to actually post.")
+            return
+
+        try:
+            page.click(sel["comment_submit"], timeout=10_000)
+            page.wait_for_load_state("networkidle", timeout=30_000)
+        except Exception as e:
+            err("comment", "submit_failed", f"Submit click failed. Detail: {e}")
+
+        save_state(context, label)
+        ok("comment", account=label, post_url=args.post_url, submitted=True)
+    finally:
+        try:
+            context.close(); browser.close(); p.stop()
+        except Exception:
+            pass
 
 
-def add_account_arg(p):
-    p.add_argument("--account", "-a", help="Account to use")
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
+
+def build_parser() -> argparse.ArgumentParser:
+    p = argparse.ArgumentParser(
+        prog="reddit_skill.py",
+        description="Reddit channel skill (Playwright-driven). See SKILL.md.",
+    )
+    sub = p.add_subparsers(dest="verb", required=True)
+
+    a = sub.add_parser("accounts", help="List authenticated accounts")
+    a.set_defaults(func=verb_accounts)
+
+    l = sub.add_parser("login", help="Open visible Chromium to log in manually")
+    l.add_argument("--account", help="Account label (default: 'default')")
+    l.set_defaults(func=verb_login)
+
+    o = sub.add_parser("logout", help="Delete local session state for an account")
+    o.add_argument("--account", required=True)
+    o.set_defaults(func=verb_logout)
+
+    m = sub.add_parser("me", help="Current user info via /api/me.json")
+    m.add_argument("--account")
+    m.set_defaults(func=verb_me)
+
+    s = sub.add_parser("subreddit", help="Read subreddit listing")
+    s.add_argument("name", help="Subreddit name, with or without r/ prefix")
+    s.add_argument("--sort", choices=["hot", "new", "top", "rising"], default="hot")
+    s.add_argument("--limit", type=int, default=25)
+    s.add_argument("--account")
+    s.set_defaults(func=verb_subreddit)
+
+    sr = sub.add_parser("search", help="Search Reddit (optionally scoped to subreddit)")
+    sr.add_argument("query")
+    sr.add_argument("--subreddit", help="Restrict to this subreddit")
+    sr.add_argument("--limit", type=int, default=25)
+    sr.add_argument("--account")
+    sr.set_defaults(func=verb_search)
+
+    po = sub.add_parser("post", help="Submit a post (DRY-RUN unless --confirm-submit)")
+    po.add_argument("subreddit")
+    po.add_argument("--title", required=True)
+    po.add_argument("--body", help="Self-text body")
+    po.add_argument("--url", help="Link URL (for link posts)")
+    po.add_argument("--confirm-submit", action="store_true",
+                    help="REQUIRED to actually submit. Without it, fills form and stops.")
+    po.add_argument("--account")
+    po.set_defaults(func=verb_post)
+
+    co = sub.add_parser("comment", help="Comment on a post (DRY-RUN unless --confirm-submit)")
+    co.add_argument("post_url")
+    co.add_argument("--body", required=True)
+    co.add_argument("--confirm-submit", action="store_true")
+    co.add_argument("--account")
+    co.set_defaults(func=verb_comment)
+
+    return p
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Reddit Skill")
-    subs = parser.add_subparsers(dest="command")
-
-    subs.add_parser("accounts").set_defaults(func=cmd_accounts)
-
-    login = subs.add_parser("login")
-    login.add_argument("--account", "-a")
-    login.set_defaults(func=cmd_login)
-
-    logout = subs.add_parser("logout")
-    logout.add_argument("--account", "-a")
-    logout.set_defaults(func=cmd_logout)
-
-    me = subs.add_parser("me")
-    add_account_arg(me)
-    me.set_defaults(func=cmd_me)
-
-    fp = subs.add_parser("frontpage")
-    fp.add_argument("--limit", "-l", type=int, default=25)
-    fp.add_argument("--sort", "-s", choices=["hot", "new", "top"], default="hot")
-    add_account_arg(fp)
-    fp.set_defaults(func=cmd_frontpage)
-
-    sr = subs.add_parser("subreddit")
-    sr.add_argument("name")
-    sr.add_argument("--limit", "-l", type=int, default=25)
-    sr.add_argument("--sort", "-s", choices=["hot", "new", "top", "rising"], default="hot")
-    add_account_arg(sr)
-    sr.set_defaults(func=cmd_subreddit)
-
-    post = subs.add_parser("post")
-    post.add_argument("subreddit")
-    post.add_argument("--title", "-t", required=True)
-    post.add_argument("--text")
-    post.add_argument("--url")
-    add_account_arg(post)
-    post.set_defaults(func=cmd_post)
-
-    comment = subs.add_parser("comment")
-    comment.add_argument("thing_id")
-    comment.add_argument("--text", "-t", required=True)
-    add_account_arg(comment)
-    comment.set_defaults(func=cmd_comment)
-
-    reply = subs.add_parser("reply")
-    reply.add_argument("comment_id")
-    reply.add_argument("--text", "-t", required=True)
-    add_account_arg(reply)
-    reply.set_defaults(func=cmd_reply)
-
-    vote = subs.add_parser("vote")
-    vote.add_argument("thing_id")
-    vote.add_argument("--dir", "-d", choices=["up", "down", "none"], required=True)
-    add_account_arg(vote)
-    vote.set_defaults(func=cmd_vote)
-
-    save = subs.add_parser("save")
-    save.add_argument("thing_id")
-    add_account_arg(save)
-    save.set_defaults(func=cmd_save)
-
-    unsave = subs.add_parser("unsave")
-    unsave.add_argument("thing_id")
-    add_account_arg(unsave)
-    unsave.set_defaults(func=cmd_unsave)
-
-    submissions = subs.add_parser("submissions")
-    submissions.add_argument("username", nargs="?")
-    submissions.add_argument("--limit", "-l", type=int, default=25)
-    submissions.add_argument("--sort", "-s", choices=["new", "hot", "top"], default="new")
-    add_account_arg(submissions)
-    submissions.set_defaults(func=cmd_submissions)
-
-    comments_p = subs.add_parser("comments")
-    comments_p.add_argument("username", nargs="?")
-    comments_p.add_argument("--limit", "-l", type=int, default=25)
-    add_account_arg(comments_p)
-    comments_p.set_defaults(func=cmd_comments_list)
-
-    search = subs.add_parser("search")
-    search.add_argument("query")
-    search.add_argument("--subreddit", "-r")
-    search.add_argument("--limit", "-l", type=int, default=25)
-    add_account_arg(search)
-    search.set_defaults(func=cmd_search)
-
-    inbox = subs.add_parser("inbox")
-    inbox.add_argument("--limit", "-l", type=int, default=25)
-    add_account_arg(inbox)
-    inbox.set_defaults(func=cmd_inbox)
-
-    subscriptions = subs.add_parser("subscriptions")
-    subscriptions.add_argument("--limit", "-l", type=int, default=100)
-    add_account_arg(subscriptions)
-    subscriptions.set_defaults(func=cmd_subscriptions)
-
+def main() -> None:
+    parser = build_parser()
     args = parser.parse_args()
-    if not args.command:
-        parser.print_help()
-        sys.exit(1)
     args.func(args)
 
 

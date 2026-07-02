@@ -4,9 +4,10 @@ description: Read, search, and send Slack messages. Use when the user asks to ch
 allowed-tools: Bash, Read
 ---
 
+
 # Slack Skill - Messaging & Channels
 
-Read, search, and send Slack messages. Access channels and DMs.
+Read, search, and send Slack messages. Access channels, DMs, and Slack-hosted files when the app has file scopes.
 
 ## CRITICAL: Message Sending Confirmation Required
 
@@ -46,6 +47,7 @@ When the user asks to send a Slack message:
    - `mpim:history` - Read group DM messages
    - `mpim:read` - List group DMs
    - `users:read` - List users
+   - `files:read` - Read and download Slack-hosted files from file IDs / private file URLs
    - `reactions:write` - Add/remove emoji reactions
    - `search:read` - Search messages (optional)
 
@@ -111,6 +113,25 @@ python3 ~/.claude/skills/slack-skill/slack_skill.py send CHANNEL --message "Your
 ```bash
 python3 ~/.claude/skills/slack-skill/slack_skill.py search "query" [--limit N] [--workspace NAME]
 ```
+
+Slack may reject message search for bot tokens in some workspaces with `not_allowed_token_type`.
+When the user provides a Slack file URL, prefer direct file download by file ID instead of search.
+
+### Download File
+
+Slack private file URLs usually contain the file ID after the workspace/team segment, for example:
+
+```text
+https://files.slack.com/files-pri/T...-F.../image.png
+```
+
+Use the `F...` value as `FILE_ID`:
+
+```bash
+python3 ~/.claude/skills/slack-skill/slack_skill.py download FILE_ID -o /tmp/slack-file.png [--workspace NAME]
+```
+
+This requires the Slack app's bot token to have `files:read`, followed by reinstalling the app to the workspace and saving the refreshed token if Slack rotates it.
 
 ### Get Thread
 

@@ -1,0 +1,38 @@
+{
+  "scores": {
+    "typography": 3,
+    "hierarchy": 4,
+    "distinctiveness": 8,
+    "color": 5,
+    "density": 7,
+    "voice": 9
+  },
+  "reasoning": {
+    "typography": "Basic Verdana system font with no typographic character \u2014 pure 1998 HTML default, zero type design discipline",
+    "hierarchy": "Minimal hierarchy \u2014 content is flat text links with slight emphasis from colored boxes, but nothing visually dominates",
+    "distinctiveness": "Unmistakably Paul Graham \u2014 the brutalist nav bar, orange announcement boxes, pedestrian crossing + statue photo are signature elements impossible to swap",
+    "color": "Limited palette (orange/yellow boxes, gray nav) shows restraint, but the colors lack sophistication and the background texture is dated decorative noise",
+    "density": "Confident density \u2014 tightly packed nav, minimal padding, no fear of whitespace-as-luxury \u2014 this is information-first layout from the blogging era",
+    "voice": "Perfect structural fit \u2014 anti-corporate, hacker aesthetic, chronological essay index matches PG's 'substance over style' ethos completely"
+  },
+  "winning_patterns": [
+    "Extreme structural honesty \u2014 navigation is literal image map, no design theater",
+    "Distinctive personality through deliberate anti-design (pedestrian crossing photo is iconic)",
+    "Dense information architecture that respects reader intelligence",
+    "Orange callout boxes that actually highlight without decorative excess",
+    "Voice/content perfect alignment \u2014 site IS the message about hacker values"
+  ],
+  "anti_patterns": [
+    "Verdana with no type system \u2014 readable but characterless",
+    "Background texture pattern is visual noise from 1990s web design",
+    "Image map navigation is accessibility nightmare and maintenance burden",
+    "Zero responsive design \u2014 fixed width table layout",
+    "Flat hierarchy makes everything equal weight \u2014 no visual entry point",
+    "HTML table layout is structurally obsolete (though thematically on-brand)"
+  ],
+  "one_word_personality": "hacker",
+  "_url": "https://paulgraham.com",
+  "_persona": "personal",
+  "_note": "Investor, essays, extreme density",
+  "_graded_at": "2026-05-07T19:55:39.397466Z"
+}

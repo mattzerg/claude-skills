@@ -1,0 +1,3 @@
+display_name: GitHub PR Identity
+short_description: Routes PRs through matteisn or mattzerg based on authorship.
+default_prompt: Before opening or preparing a PR, verify whether this is Matt-led or AI-led work and use the correct GitHub account.

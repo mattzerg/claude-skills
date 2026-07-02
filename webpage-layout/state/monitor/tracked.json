@@ -1,0 +1,94 @@
+[
+  {
+    "url": "https://matteisn.com",
+    "persona": "personal",
+    "baseline_avg": 8.833333333333334,
+    "baseline_scores": {
+      "typography": 8,
+      "hierarchy": 9,
+      "distinctiveness": 9,
+      "color": 8,
+      "density": 9,
+      "voice": 10
+    },
+    "last_audited": "2026-05-08T21:07:55.176271Z",
+    "last_avg": 8.833333333333334,
+    "last_scores": {
+      "typography": 8,
+      "hierarchy": 9,
+      "distinctiveness": 9,
+      "color": 9,
+      "density": 8,
+      "voice": 10
+    }
+  },
+  {
+    "url": "https://vang.capital",
+    "persona": "fund",
+    "baseline_avg": 8.833333333333334,
+    "baseline_scores": {
+      "typography": 8,
+      "hierarchy": 9,
+      "distinctiveness": 9,
+      "color": 9,
+      "density": 8,
+      "voice": 10
+    },
+    "last_audited": "2026-05-08T21:08:17.913184Z",
+    "last_avg": 8.333333333333334,
+    "last_scores": {
+      "typography": 8,
+      "hierarchy": 9,
+      "distinctiveness": 9,
+      "color": 8,
+      "density": 7,
+      "voice": 9
+    }
+  },
+  {
+    "url": "https://vangadvisory.com",
+    "persona": "advisory",
+    "baseline_avg": 8.333333333333334,
+    "baseline_scores": {
+      "typography": 8,
+      "hierarchy": 9,
+      "distinctiveness": 9,
+      "color": 7,
+      "density": 8,
+      "voice": 9
+    },
+    "last_audited": "2026-05-08T21:08:39.609487Z",
+    "last_avg": 8.333333333333334,
+    "last_scores": {
+      "typography": 8,
+      "hierarchy": 9,
+      "distinctiveness": 9,
+      "color": 8,
+      "density": 7,
+      "voice": 9
+    }
+  },
+  {
+    "url": "https://zergai.com",
+    "persona": "brand_product",
+    "baseline_avg": 8.666666666666666,
+    "baseline_scores": {
+      "typography": 8,
+      "hierarchy": 9,
+      "distinctiveness": 9,
+      "color": 9,
+      "density": 8,
+      "voice": 9
+    },
+    "last_audited": "2026-05-08T21:09:00.749289Z",
+    "last_avg": 8.333333333333334,
+    "last_scores": {
+      "typography": 8,
+      "hierarchy": 9,
+      "distinctiveness": 9,
+      "color": 8,
+      "density": 7,
+      "voice": 9
+    }
+  }
+]

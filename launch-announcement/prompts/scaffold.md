@@ -27,7 +27,7 @@ created: <today YYYY-MM-DD>
 updated: <today YYYY-MM-DD>
 tags: writing, content, launch, [PRODUCT-TAG]
 status: scaffold
-related_product: "[[Projects/Zstack/[Product]|[Product]]]"
+related_product: "[[Projects/Zerg-Production/Zstack/[Product]|[Product]]]"
 target_word_count: <N>
 audience: <audience>
 cta_kind: <cta>

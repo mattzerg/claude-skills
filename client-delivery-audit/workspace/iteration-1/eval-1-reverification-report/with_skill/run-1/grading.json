@@ -1,0 +1,125 @@
+{
+  "expectations": [
+    {
+      "text": "The report contains a re-verification section that addresses ALL 5 prior findings by ID (ORD-01, ORD-02, ORD-03, FUL-01, FUL-02) \u2014 none silently dropped",
+      "passed": true,
+      "evidence": "Section 4 'RE-VERIFICATION OF PRIOR RUN' contains a table with all five prior finding IDs explicitly: ORD-01 (Fixed), ORD-02 (Fixed), FUL-01 (Still broken), ORD-03 (Fixed), FUL-02 (Blocked \u2014 unknown). None are silently dropped."
+    },
+    {
+      "text": "ORD-01 (discount drop) is marked Fixed/resolved with the evidence that all three layers now agree on $1,564.00",
+      "passed": true,
+      "evidence": "Section 4 row for ORD-01: '\u2705 Fixed \u2014 UI header = $1,564.00; API /api/orders/ORD-2241 total:1564.00 with lines [1200, 640, -276]; DB SUM(amount) WHERE order_id='ord_8821f' = 1564.00. All three layers agree.' Directly grounds the claim in the fixture evidence."
+    },
+    {
+      "text": "ORD-02 (cancelled orders in Open Orders KPI) is marked Fixed/resolved, correctly handling that the count changed from 11 to 12 due to a new order (not flagging the different number as a failure)",
+      "passed": true,
+      "evidence": "Section 4 row for ORD-02: '\u2705 Fixed \u2014 Tile = 12; DB COUNT(*) WHERE status NOT IN ('cancelled','fulfilled') = 12 (one new order since last run; 3 cancelled correctly excluded); API /api/orders/stats {open:12}. Matches.' The report explicitly explains the count moved from 11 to 12 due to a new order and does not flag this as a defect."
+    },
+    {
+      "text": "ORD-03 (date filter timezone) is marked Fixed/resolved with evidence",
+      "passed": true,
+      "evidence": "Section 4 row for ORD-03: '\u2705 Fixed \u2014 ?from=2026-05-28&to=2026-05-28 returns 5; DB created_at::date AT TIME ZONE 'America/New_York' = '2026-05-28' = 5; an 11pm ET order is now included correctly across 3 tested dates.' Clear fixed verdict with supporting evidence."
+    },
+    {
+      "text": "FUL-01 (shipment delivered vs in-transit) is marked STILL BROKEN / not fixed \u2014 not marked as resolved",
+      "passed": true,
+      "evidence": "Section 4 row for FUL-01: '\u274c Still broken \u2014 UI/DB still status='delivered', delivered_at='2026-05-23'; carrier page 2026-06-01 09:00 ET = \"Out for delivery\". 6 new webhook events since 05-25 all written delivered regardless of event type.' Also a full confirmed finding in Section 5."
+    },
+    {
+      "text": "FUL-02 (tracking number whitespace) is marked blocked/not-verifiable because the fulfillment detail screen now 500s \u2014 it is NOT marked as fixed and NOT silently dropped",
+      "passed": true,
+      "evidence": "Section 4 row for FUL-02: '\ud83d\udeab Blocked \u2014 unknown \u2014 Could not re-verify: the fulfillment detail screen now 500s on every shipment (FUL-03) before the tracking number renders. Listed so it is not silently dropped \u2014 re-check once FUL-03 is fixed.' The coverage matrix also shows '\ud83d\udeab Blocked' for tracking-number whitespace with the same explanation."
+    },
+    {
+      "text": "The fulfillment detail screen 500 error (all 28 shipments) is reported as a NEW confirmed finding with High or Critical severity",
+      "passed": true,
+      "evidence": "Section 5 FUL-03: 'Fulfillment \u00b7 CRITICAL \u00b7 Fulfillment detail screen 500s on all 28 shipments \u2014 the entire detail view is unreachable'. The finding is explicitly marked CRITICAL, appears in the confirmed findings section, and the summary table lists it as the sole Critical finding (FUL-03). The report also states it is 'New in v7a91d03'."
+    },
+    {
+      "text": "The negative available credit (\u2212$2,300.00, customer over limit) is NOT reported as a confirmed defect \u2014 it is treated as correct behavior, refuted, or at most a low-severity display/UX consideration",
+      "passed": true,
+      "evidence": "Section 6 (Refuted / Inconclusive): 'Customer credit balance shows negative \"\u2212$2,300.00\" (CUST-014). Raised as a possible math defect. Refuted: credit_limit = 10,000.00, SUM(open order totals) = 12,300.00, and 10,000 \u2212 12,300 = \u22122,300.00 \u2014 the arithmetic is correct and the customer is genuinely over their credit limit... Whether a bare negative reads clearly... is a UX/presentation question, not a functionality defect \u2014 routed to the UX lane, not reported here.' It is explicitly NOT in the confirmed findings list."
+    },
+    {
+      "text": "The June payments $0.00 observation is NOT reported as a defect (correctly identified as accurate for June 1)",
+      "passed": true,
+      "evidence": "Section 6: 'Payments \"Total received this month\" = $0.00 (June). Raised as a possible aggregate bug. Refuted: DB SUM(amount) FROM payments WHERE received_at >= '2026-06-01' returns 0 rows \u2014 no June payments exist yet (run date is June 1). $0.00 is the correct aggregate over an empty set. No defect.' Correctly refuted and not listed as a confirmed finding."
+    },
+    {
+      "text": "The report includes a severity summary (counts by severity)",
+      "passed": true,
+      "evidence": "Section 1 'SUMMARY' contains a table: 'Critical \u2014 1 (FUL-03), High \u2014 1 (FUL-01), Medium \u2014 0, Low \u2014 0'. The YAML frontmatter also echoes: total_findings:2, critical:1, high:1, medium:0, low:0."
+    },
+    {
+      "text": "The report includes a coverage matrix or explicit coverage statement showing what was checked vs blocked",
+      "passed": true,
+      "evidence": "Section 3 'COVERAGE MATRIX (no silent gaps)' provides separate tables for Orders and Fulfillment showing each item's status: \u2705 Covered or \ud83d\udeab Blocked, with explicit notes. The summary paragraph in Section 1 also lists all screens covered."
+    },
+    {
+      "text": "Each confirmed finding includes evidence/proof, repro steps, and the layer at fault",
+      "passed": true,
+      "evidence": "FUL-03 in Section 5 includes: Expected/Actual with proof (API returns valid JSON, render 500s), Layer at fault (render layer), Repro steps (navigate to any /fulfillment/SHP-* and observe 500; hit API to confirm). FUL-01 includes: Expected/Actual with proof (carrier page pulled at specific time), Layer at fault (ingestion \u2014 webhook handler), Repro steps (open SHP-0092, compare to carrier tracking page, inspect webhook log). Both confirmed findings satisfy all three sub-requirements."
+    }
+  ],
+  "summary": {
+    "passed": 12,
+    "failed": 0,
+    "total": 12,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": 35839,
+    "executor_duration_seconds": 91.3,
+    "total_duration_seconds": 91.3
+  },
+  "claims": [
+    {
+      "claim": "All 3 layers (UI, API, DB) now agree on $1,564.00 for ORD-2241",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Grounded directly in the fixture file acme-portal-new-build-observations.md: UI shows $1,564.00, API returns {total:1564.00, lines:[1200,640,-276]}, DB SUM = 1564.00."
+    },
+    {
+      "claim": "6 new carrier webhook events since 2026-05-25 were all written as delivered regardless of event type",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture acme-portal-new-build-observations.md: 'Webhook log: 6 new carrier events since 05-25, all written as status='delivered' regardless of event type.'"
+    },
+    {
+      "claim": "The fulfillment detail screen 500 error affects all 28 shipments",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture: 'Every URL /fulfillment/SHP-* returns HTTP 500... Affects all 28 shipments.' Report accurately restates this."
+    },
+    {
+      "claim": "The API returns valid JSON for fulfillment detail \u2014 isolating the defect to the render layer",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture: 'API /api/fulfillment/SHP-0088 returns valid JSON. So the list works, the detail render crashes.' Report correctly attributes the defect to the render layer."
+    },
+    {
+      "claim": "\u2212$2,300.00 credit balance is arithmetically correct (customer over limit)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Fixture: 'credit_limit = 10000.00, SUM(open order totals) = 12300.00. So the math 10000 \u2212 12300 = \u22122300 is arithmetically correct.' Report correctly refutes this as a defect."
+    },
+    {
+      "claim": "FUL-03 is described as 'New in v7a91d03' (a regression)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "The new-build observations show the detail screen 500s, while the prior findings (v4f82c1a) contain FUL-02 which required navigating to a fulfillment detail screen \u2014 implying it worked before. The report correctly categorizes FUL-03 as a regression."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No assertion checks the quality of the refutation write-up itself \u2014 a report that simply said 'negative credit is fine' with no math would technically pass assertions 8 and 9. Consider adding: 'The refutation of the negative credit and $0 payments includes the DB/arithmetic evidence from the observations file, not just a bare conclusion.'"
+      },
+      {
+        "assertion": "Each confirmed finding includes evidence/proof, repro steps, and the layer at fault",
+        "reason": "Assertion 12 lumps three sub-requirements (evidence, repro steps, layer at fault) into one pass/fail \u2014 a report that had evidence and layer-at-fault but omitted repro steps would still need to fail, but it's hard to surface which sub-requirement failed without checking each. Splitting into three separate assertions would make failures more actionable."
+      }
+    ],
+    "overall": "Assertions are well-targeted and discriminating. Every assertion required genuine analysis of the fixture content \u2014 none would trivially pass for a generic or hallucinated report. The two suggestions above are refinements, not gaps."
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brand Check"
+  short_description: "Review brand usage across visual assets."
+  default_prompt: "Use -check to review graphics, swag, slides, pages, or collateral against the brand guide and logo usage rules."

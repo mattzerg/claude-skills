@@ -1,26 +1,42 @@
 ---
 name: careful
-version: 0.1.0
 description: |
-  Safety guardrails for destructive commands. Warns before rm -rf, DROP TABLE,
-  force-push, git reset --hard, kubectl delete, and similar destructive operations.
-  User can override each warning. Use when touching prod, debugging live systems,
-  or working in a shared environment. Use when asked to "be careful", "safety mode",
-  "prod mode", or "careful mode". (gstack)
-triggers:
-  - be careful
-  - warn before destructive
-  - safety mode
+  Safety guardrails for destructive shell commands. Warns + requires confirmation
+  before `rm -rf`, `DROP TABLE`, `git push --force`, `git reset --hard`, `kubectl
+  delete`, and similar destructive operations. Each warning is overrideable.
+  USE PROACTIVELY whenever Matt says "be careful", "safety mode", "prod mode",
+  or "careful mode", or is operating against production data, shared infra, or
+  a live system. Pairs with `freeze` (scope edits to a single directory).
 allowed-tools:
   - Bash
   - Read
-hooks:
-  PreToolUse:
-    - matcher: "Bash"
-      hooks:
-        - type: command
-          command: "bash ${CLAUDE_SKILL_DIR}/bin/check-careful.sh"
-          statusMessage: "Checking for destructive commands..."
+---
+
+## Skill Metadata (non-frontmatter)
+
+The fields below were previously declared in YAML frontmatter under custom keys
+(`version`, `triggers`, `hooks`). The Anthropic skill validator only accepts
+`name | description | license | allowed-tools | metadata | compatibility`, so
+they live here for human reference. Hook wiring belongs in `~/.claude/settings.json`
+under `PreToolUse`; declaring it in SKILL.md frontmatter is not parsed by Claude
+Code.
+
+- version: 0.1.0
+- triggers:
+  - be careful
+  - warn before destructive
+  - safety mode
+
+### Legacy hook declaration (not parsed — see settings.json)
+
+```yaml
+PreToolUse:
+  - matcher: "Bash"
+    hooks:
+      - type: command
+        command: "bash ${CLAUDE_SKILL_DIR}/bin/check-careful.sh"
+        statusMessage: "Checking for destructive commands..."
+```
 ---
 <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
 <!-- Regenerate: bun run gen:skill-docs -->

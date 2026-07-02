@@ -1,0 +1,35 @@
+{
+  "scores": {
+    "typography": 4,
+    "hierarchy": 5,
+    "distinctiveness": 3,
+    "color": 6,
+    "density": 5,
+    "voice": 3
+  },
+  "reasoning": {
+    "typography": "Generic sans-serif with no character \u2014 split green/white headline feels gimmicky rather than systematic, body copy is standard fintech neutral",
+    "hierarchy": "Hero headline dominates adequately but splits focus with Franklin portrait and scattered logos below \u2014 no single clear action hierarchy",
+    "distinctiveness": "Financial services blue gradient + 'revolutionary' + 'fast, safe, smart' = could be any fintech API platform. The Franklin engraving is the only memorable element",
+    "color": "Blue-to-cyan gradient with green accent and mint section break shows some restraint, but the gradient itself is busy and the green CTAs are predictable fintech",
+    "density": "Comfortable but generic spacing \u2014 hero has breathing room but follows standard padding rhythm without spatial personality or content-driven variation",
+    "voice": "Structure is pure B2B SaaS stencil: hero value prop \u2192 logo trust bar \u2192 product feature \u2192 CTA. IA doesn't reflect what makes Plaid actually different beyond 'data connections'"
+  },
+  "winning_patterns": [
+    "Franklin portrait engraving treatment creates actual visual memorability",
+    "Gradient background with line-art texture adds dimensionality beyond flat color",
+    "Green accent color usage is relatively disciplined in CTAs"
+  ],
+  "anti_patterns": [
+    "'Revolutionary financial products' headline could be any API company circa 2020",
+    "Logo parade of customers (Monzo/Affirm/Robinhood) is generic trust signaling",
+    "Event promo card floating in hero competes for attention without clear priority",
+    "Generic dual-CTA pattern ('Talk to team' + 'Start building') lacks conviction",
+    "Blue gradient fintech aesthetic is category table stakes, not brand distinction"
+  ],
+  "one_word_personality": "generic",
+  "_url": "https://plaid.com",
+  "_persona": "brand_product",
+  "_note": "Fintech polish",
+  "_graded_at": "2026-05-07T23:28:45.030884Z"
+}

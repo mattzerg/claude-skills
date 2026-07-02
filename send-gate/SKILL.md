@@ -4,6 +4,7 @@ description: Lightweight pre-flight check before sending an email via gmail-skil
 allowed-tools: Bash, Read
 ---
 
+
 # Send Gate
 
 Lightweight wrapper around `gmail-skill send`. Catches the few catastrophic email mistakes (AI-template anti-patterns, register mismatch with a Tier A recipient) without adding ceremony to every send.

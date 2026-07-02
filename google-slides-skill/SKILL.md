@@ -4,6 +4,7 @@ description: Create and manage Google Slides presentations. Use when the user as
 allowed-tools: Bash, Read
 ---
 
+
 # Google Slides Skill
 
 Create, edit, and export Google Slides presentations.

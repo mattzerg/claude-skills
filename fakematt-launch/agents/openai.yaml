@@ -1,0 +1,7 @@
+interface:
+  display_name: "Fake Matt Launch"
+  short_description: "Build a launch package in Matt's voice"
+  default_prompt: "Use $fakematt-launch to draft a launch package with copy, assets, and rollout structure."
+
+policy:
+  allow_implicit_invocation: true

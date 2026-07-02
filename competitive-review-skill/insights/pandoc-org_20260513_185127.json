@@ -1,0 +1,1109 @@
+{
+  "name": "Pandoc",
+  "url": "https://pandoc.org",
+  "domain": "pandoc.org",
+  "scanned_at": "2026-05-13T18:48:33.467851",
+  "sources": {
+    "landing": {
+      "url": "https://pandoc.org",
+      "title": "Pandoc - index",
+      "text": "Pandoc - index\nPlease help Ukraine!\nSponsor\nPandoc\na universal document converter\nAbout\nInstalling\nDemos\nDocumentation\nGetting started\nUser's Guide\nUser's Guide (PDF)\nContributing\nFAQ\nPress\nFilters\nLua filters\nCustom readers\nCustom writers\npandoc-server\nMaking an ebook\nEmacs Org mode support\nJATS support\nTypst property attributes\nUsing the Pandoc API\nAPI documentation\nHelp\nExtras\nReleases\nSearch\nIf you need to convert files from one markup format into\n      another, pandoc is your swiss-army knife. Pandoc can convert\n      between the following formats:\n(\u2190 = conversion from; \u2192 = conversion to; \u2194\ufe0e = conversion from\n      and to)\nLightweight markup formats\n\u2194\ufe0e\nMarkdown\n(including\nCommonMark\nand\nGitHub-flavored\n      Markdown\n)\n\u2194\ufe0e\nreStructuredText\n\u2194\ufe0e\nAsciiDoc\n\u2194\ufe0e Emacs\nOrg-Mode\n\u2194\ufe0e Emacs\nMuse\n\u2194\ufe0e\nTextile\n\u2192\nMarkua\n\u2190\ntxt2tags\n\u2194\ufe0e\ndjot\n\u2192\nBBCode\nHTML formats\n\u2194\ufe0e (X)HTML 4\n\u2194\ufe0e HTML5\n\u2192 Chunked HTML\nEbooks\n\u2194\ufe0e\nEPUB\nversion\n      2 or 3\n\u2194\ufe0e\nFictionBook2\nDocumentation formats\n\u2192\nGNU\n      TexInfo\n\u2190\npod\n\u2194\ufe0e\nHaddock\n      markup\n\u2192\nVimdoc\nRoff formats\n\u2194\ufe0e\nroff\n      man\n\u2192\nroff\n      ms\n\u2190\nmdoc\nTeX formats\n\u2194\ufe0e\nLaTeX\n\u2192\nConTeXt\nXML formats\n\u2194\ufe0e\nDocBook\nversion 4 or\n      5\n\u2194\ufe0e\nJATS\n\u2190\nBITS\n\u2192\nTEI\n      Simple\n\u2192\nOpenDocument XML\nOutline formats\n\u2194\ufe0e\nOPML\nBibliography formats\n\u2194\ufe0e\nBibTeX\n\u2194\ufe0e\nBibLaTeX\n\u2194\ufe0e\nCSL\n      JSON\n\u2194\ufe0e CSL YAML\n\u2190\nRIS\n\u2190\nEndNote\n      XML\nWord processor formats\n\u2194\ufe0e Microsoft Word\ndocx\n\u2194\ufe0e Rich Text Format\nRTF\n\u2194\ufe0e OpenOffice/LibreOffice\nODT\nInteractive notebook formats\n\u2194\ufe0e Jupyter notebook (\nipynb\n)\nPage layout formats\n\u2192\nInDesign\n      ICML\n\u2194\ufe0e\nTypst\nWiki markup formats\n\u2194\ufe0e\nMediaWiki\n      markup\n\u2194\ufe0e\nDokuWiki\n      markup\n\u2190\nTikiWiki\n      markup\n\u2190\nTWiki\n      markup\n\u2190\nVimwiki markup\n\u2192\nXWiki\n      markup\n\u2192\nZimWiki\n      markup\n\u2194\ufe0e\nJira\n      wiki markup\n\u2190\nCreole\nSlide show formats\n\u2192\nLaTeX Beamer\n\u2194\ufe0e Microsoft\nPowerPoint\n\u2192\nSlidy\n\u2192\nreveal.js\n\u2192\nSlideous\n\u2192\nS5\n\u2192\nDZSlides\nData formats\n\u2190\nCSV\ntables\n\u2190\nTSV\ntables\n\u2190 Microsoft\nExcel\nspreadsheets\nTerminal output\n\u2192\nANSI\n-formatted\n      text\nSerialization formats\n\u2194\ufe0e Haskell AST\n\u2194\ufe0e JSON representation of AST\n\u2194\ufe0e XML representation of AST\nCustom formats\n\u2194\ufe0e\ncustom readers\nand\nwriters\ncan be written in\nLua\nPDF\n\u2192 via\npdflatex\n,\nlualatex\n,\nxelatex\n,\nlatexmk\n,\ntectonic\n,\nwkhtmltopdf\n,\nweasyprint\n,\nprince\n,\npagedjs-cli\n,\ncontext\n, or\npdfroff\n.\nPandoc understands a number of useful markdown syntax\n      extensions, including document metadata (title, author, date);\n      footnotes; tables; definition lists; superscript and subscript;\n      strikeout; enhanced ordered lists (start number and numbering\n      style are significant); running example lists; delimited code\n      blocks with syntax highlighting; smart quotes, dashes, and\n      ellipses; markdown inside HTML blocks; and inline LaTeX. If strict\n      markdown compatibility is desired, all of these extensions can be\n      turned off.\nLaTeX math (and even macros) can be used in markdown documents.\n      Several different methods of rendering math in HTML are provided,\n      including MathJax and translation to MathML. LaTeX math is\n      converted (as needed by the output format) to unicode, native Word\n      equation objects, MathML, or roff eqn.\nPandoc includes a powerful system for automatic citations and\n      bibliographies. This means that you can write a citation like\n[see @doe99, pp. 33-35; also @smith04, ch. 1]\nand pandoc will convert it into a properly formatted citation\n      using any of hundreds of\nCSL\nstyles (including\n      footnote styles, numerical styles, and author-date styles), and\n      add a properly formatted bibliography at the end of the document.\n      The bibliographic data may be in\nBibTeX\n,\nBibLaTeX\n,\nCSL\n      JSON\n, or CSL YAML format. Citations work in every output\n      format.\nThere are many ways to customize pandoc to fit your needs,\n      including a template system and a powerful system for writing\n      filters.\nPandoc includes a Haskell library and a standalone command-line\n      program. The library includes separate modules for each input and\n      output format, so adding a new input or output format just\n      requires adding a new module.\nPandoc is free software, released under the\nGPL\n. Copyright\n      2006\u20132025\nJohn\n      MacFarlane\n.\nCode signing policy\n\u00d7\nSearch results",
+      "source": "playwright"
+    },
+    "pricing": {
+      "error": "no content",
+      "url": null
+    },
+    "changelog": {
+      "url": "https://pandoc.org/releases.html",
+      "title": "Pandoc - Releases",
+      "text": "Pandoc - Releases\nPlease help Ukraine!\nSponsor\nPandoc\na universal document converter\nAbout\nInstalling\nDemos\nDocumentation\nGetting started\nUser's Guide\nUser's Guide (PDF)\nContributing\nFAQ\nPress\nFilters\nLua filters\nCustom readers\nCustom writers\npandoc-server\nMaking an ebook\nEmacs Org mode support\nJATS support\nTypst property attributes\nUsing the Pandoc API\nAPI documentation\nHelp\nExtras\nReleases\nSearch\nReleases\nFor binary releases, see\nhttps://github.com/jgm/pandoc/releases\n.\nWant to know when a new release is available? Subscribe to\npandoc-announce\n,\n      a low-volume mailing list that is just for announcements of new\n      releases.\nNote that pandoc uses the\nHaskell Package Versioning\n      Policy\n. Version numbers should be understood as\nEPOCH.MAJOR.MINOR.PATCH\n.\nCode signing policy\nRevision history for pandoc\npandoc 3.9.0.2 (2026-03-19)\nTypst template: fix regression introduced in 3.9.0.1 (\n#11538\n).\npandoc 3.9.0.1 (2026-03-17)\nWASM GUI:\nDon\u2019t block everything while pandoc.wasm loads.\nFix bug with Unicode filenames (\n#11447\n).\nCatch errors loading pandoc.\nDocx reader:\nRecognize media inside textboxes (\n#11053\n,\n      Raymond Berger).\nProperly handle media stored with packaged-rooted paths such\n      as\n/media\n(\n#11518\n).\n      This can be produced by the online version of Word. With this\n      change, media stored at an absolute path will be stored with its\n      original name and not given a SHA1-based name.\nPreserve non-textbox content when unwrapping textboxes (\n#11510\n,\n#6893\n,\n#11412\n,\n#5394\n,\n#9633\n). Treat\n      text inside a textbox containing an image as a figure\n      caption.\nTypst reader:\nHandle bibliography command (\n#11460\n). If\n      this is present, a bibliography section is added to the document\n      and the bibliography paths are added to\nbibliography\nin the metadata. This sets things up for using\n--citeproc\n.\nTextile reader:\nHandle block content in cells (\n#11455\n).\nDocx reader:\nSupport\nw:gridBefore\ntable row property (\n#11464\n, Jan\n      Tojnar).\nLaTeX reader:\nSupport\n\\footnotemark\nand\n\\footnotetext\n(\n#11450\n).\n      These commands allow separating the footnote mark from its\n      content, useful in tables, minipages, and other contexts where\n      \\footnote cannot be used directly.\nSupport supertabular environment (\n#11523\n,\n      bodigrim).\nODT Reader:\nFix relative linked images (\n#11369\n,\n      Tuong Nguyen Manh).\nRecognize\nPreformatted_20_Text\nstyle Jan Tojnar\n      This is used by LibreOffice, and we will switch to that as\n      well.\nAdd block smushing logic (Jan Tojnar).\nSupport Preformatted Text style (\n#4841\n, Jan\n      Tojnar).\nMarkdown reader:\nFix bug with\nlists_without_preceding_blankline\n(\n#11534\n).\nTypst writer:\nDon\u2019t add a carriage return after\n\\\nfor hard\n      break (\n#11446\n).\n      They are not necessary. Note that they can still be included if\n      you use\n--wrap=preserve\nand add a newline in your\n      source document.\nImprove handling of data: URIs in images. Instead of using an\n      SVG with a link containing the data URI (the solution of\n#10460\n), we\n      can now simply produce a\nbytes\nobject with the\n      requisite bytes. Typst figures out the format automatically.\nFix escaping of quotes (\n#11463\n).\nInclude alt attributes on images (mcanouil).\nProperly escape\n.\nafter bracketed argument (\n#11511\n).\nDocx writer:\nDon\u2019t depend on\nextractTarget\nfrom Docx\n      reader.\nFix section breaks with\n--top-level-division\n(\n#11482\n,\n#10578\n).\nEPUB writer:\nAdd cover metadata for EPUB3 (\n#11479\n).\n      This allows file managers to show cover thumbnails for EPUB3 files\n      as well.\nUpdate allowed values for EPUB3 metadata\nidentifier.scheme\n(\n#11481\n,\n      Pascal Wagler).\nODT writer:\nRename inline source class to match LibreOffice (\n#3390\n, Jan\n      Tojnar). Rename the text style we use to represent\nCode\ninlines from\nSource_20_Text\nto\nSource_Text\n. This is the same name LibreOffice Writer\n      uses so it will be recognized by the Character Styles section of\n      the Styles menu.\nRemove font size from inline source class (Jan Tojnar). This\n      matches what LibreOffice Writer is doing. Also fixes literals\n      inside headings being too small.\nModernize\nPreformatted Text\n&\nSource Text\nstyles (Jan Tojnar). Presumably,\nfont-family-generic\nand\nfont-pitch\nwill\n      allow to find a replacement on systems that do not have\nCourier New\n.\nMarkdown writer:\nFix rendering of alerts (\n#11479\n). We\n      only properly handled the case where the alert started with a\n      paragraph, but it can start with a list or other block type.\nEscape literal\n&\nthat would trigger entity\n      (\n#11490\n).\nHTML writer:\nFor revealjs, default\nscrollProgress\nto\nauto\n(Christophe Dervieux).\nPPTX writer:\nRegister content type for embedded fonts (\n#11492\n).\nMediaWiki writer:\nUse appropriate syntax for external images (\n#11494\n).\n      Note that they will only be rendered as images if an option\n$wgAllowExternalImages\nis enabled in the MediaWiki\n      instance.\nICML writer:\nSupport for image object styles (\n#11498\n,\n      massifrg). This change allows users to style images in InDesign\n      bysetting the\nobject-style\nattribute in a pandoc\n      Image, which is mapped to the AppliedObjectStyle attribute in the\n      Rectangle element around an Image element in the resulting\n      ICML.\nJATS writer:\nImprove representation of Divs (Albert Krewinkel). The writer\n      now checks if the element used to represent (non-special) Divs has\n      any\n<boxed-text>\nspecific attributes. If it\n      does, the writer keeps wrapping the Div contents in a\n<boxed-text>\n, as it did before. Otherwise, the\n      writer falls back to the more appropriate\n<p>\nelement or simply unwraps the Div if the wrapping element wouldn\u2019t\n      have any attributes. The new behavior gives better semantic\n      results in most cases, as\n<boxed-text>\nshould\n      be used for text that \u201cis outside the flow of the narrative text\u201d,\n      which doesn\u2019t apply to most divs. \u201cSpecial\u201d divs, like those used\n      to mark sections, are not affected by this change.\nText.Pandoc.Writers.GridTable:\nNormalize tables (\n#8102\n).\n      Previously, if an invalid table was passed to\ntoTable\n, an array index error could be raised.\n      Normalizing the table forces it into a shape that won\u2019t allow this\n      error.\nLua subsystem (Albert Krewinkel):\nAdd new function\npandoc.types.Sources\n(\n#11441\n).\nLaTeX template: properly handle keywords with commas. These\n      need to be put in an\n\\xmpquote{..}\ncommand. Closes\n#11528\n.\nHTML styles template: avoid duplicate code selector.\n      Consolidate two clauses. Closes\n#11484\n.\nRevealjs template: fix type rendering of scroll-view\n      options (Christophe Dervieux,\n#11486\n).\nTypst template:\nUse both place and block for title (Gordon Woodhull).\n      Otherwise the title will be confined to the left column\nPut title block in a conditional (\n#11529\n).\n      This avoids an empty block for documents that lack metadata\n      information. The empty block causes problems if\n#set page\nis used, as it will cause a page\n      break.\nBeamer template: add\nlogooption\nvariable (\n#11452\n,\n      Sidney Mau).\nText.Pandoc.ImageSize:\nCorrectly handle percentage width, height on SVG (\n#11530\n).\n      Previously we were getting image size of 0 when a percentage was\n      specified for width or height on SVG. With this change, we simply\n      ignore these percentages (becaues ImageSize doesn\u2019t know the size\n      of the containing element).\nRe-add\n-threaded\nto compile options in\n      pandoc-cli.\nUse released djot, asciidoc, texmath, typst.\nAllow crypton 1.1, tls 2.2, http-client-tls 0.4.\nRequire auto-update >= 0.2.6 to fix server on macOS (\n#11488\n).\npandoc-cli.cabal: bump base min bound to 4.18 (same as\n      pandoc).\nMANUAL.txt:\nNote that JSON may be used in YAML metadata blocks (\n#11525\n).\nUpdate link for ICML in manual.\nFix outdated OPML spec URL in MANUAL.txt (\n#11504\n,\n      Peter Briggs).\npandoc 3.9 (2026-02-03)\nAdd support for compiling pandoc to WASM. (To build,\nmake pandoc.wasm\n.) A stanza in\ncabal.project\ncontains the necessary build\n      modifications. We owe this almost entirely to TerrorJack, who\n      created the original proof of context and came up with the\n      necessary build flags and patches to some dependencies.\npandoc.wasm\nhas almost all the power of regular\n      pandoc. The main limitations is that it operates in a WASM sandbox\n      and thus cannot use HTTP to fetch resources and cannot run system\n      commands. As a result, JSON filters cannot be used,\n--embed-resources\nworks only with resources that have\n      been explicitly provided in the WASM sandbox, and PDFs cannot be\n      produced (since that requires running external commands). However,\n      Lua filters can be used, as long as they do not run system\n      commands.\nA JavaScript bridge module,\nwasm/pandoc.js\n, is\n      provided; this handles the setup necessary to run\npandoc.wasm\nin a browser.\nIn addition, a full-featured GUI interface is provided in the\nwasm\nsubdirectory.\nmake serve\nfrom that\n      directory and it will run locally, or visit\nhttps://pandoc.org/app\n. Note that once the\n      relevant code has been downloaded by the browser, it runs entirely\n      in the browser, and the conversions never touch a server. The GUI\n      was developed in interaction with Claude Code. This app includes a\n      WASM version of Typst and can produce PDF output via\n      Typst.\nDefaults files may now be either JSON or YAML (though a\n.yaml\nextension will still be assumed if the file has\n      no extension). The structure of a JSON defaults file is isomorphic\n      to that of a YAML defaults file.\nVariable expansion now works even for the\ndefaults\nfield of defaults files (\n#8024\n, Jacob\n      Larkin).\n--extract-media\nwill now create a zip archive\n      containing the media (instead of a directory) if the path provided\n      has a\n.zip\nextension.\nProcessing with\n--citeproc\nis now affected by\n      a\nreset-citation-positions\nclass on headings. When\n      the\nreset-citation-positions\nclass is added to a\n      top-level heading,\n--citeproc\nwill reset position\n      information at that point in the document. This is needed in order\n      to ensure that the first citation in a chapter to a work that has\n      been cited in a previous chapter will not be in abbreviated\n      form.\nRST reader:\nFix definition lists where term ends with\n-\n(\n#11323\n).\n      This reverts some old code giving special treatment to lines\n      ending in hyphens; I don\u2019t understand why it was there, because\n      rst2html does not seem to do this.\nHTML reader:\nRevert an earlier change that caused style tags in the body to\n      be ignored (\n#10643\n,\n#11246\n).\nParse inline style elements as RawInline (\n#10643\n,\n#11246\n).\nMarkdown reader:\nFix parsing of inline math (\n$...$\n) (\n#11311\n,\n      benniekiss). Do not allow blank lines before closing\n$\ndelimiter. This brings the parser in line with the\n      documentation.\nAllow superscripted spans (\n#11409\n).\n      These were being parsed as inline notes. Now we disallow an inline\n      note followed by attributes, as this is almost certainly meant to\n      be a span.\nSupport\nalerts\nextension for pandoc markdown (\n#9716\n). It is\n      not enabled by default.\nMediaWiki reader:\nAdd behavior switches support (\n#11354\n,\n      Anton Melnikov). They add a field to metadata without producing\n      any text.\nHandle non-recognized tags as plain text (\n#11299\n).\nBetter handling of inline tags (\n#11299\n).\n<mark>\n,\n<var>\n,\n<samp>\n, and\n<kbd>\nnow\n      produce Code or Span elements with classes, which can be handled\n      by multiple output formats, instead of simply being parsed as raw\n      HTML tags.\nRTF reader:\nEnsure a new paragraph on\n\\pard\n(\n#11361\n,\n      Tuong Nguyen Manh). New paragraphs may start with\n\\pard\nalone without an explicit paragraph break with\n\\par\npreceding it.\nImprove hyperlink parsing more (\n#10942\n,\n      Tuong Nguyen Manh). Both the field instruction and its result may\n      be ungrouped.\nFix bug where list items were incorporated into a following\n      table (\n#11364\n).\nODT reader:\nAdd table row and column spans (\n#11366\n,\n      Tuong Nguyen Manh). Parse the number-rows-spanned and\n      number-columns-spanned attributes to create Cells for the\n      Table.\nDocBook reader:\nSupport \u201crole\u201d attribute (\n#11255\n, Yann\n      Trividic). The\nrole\nattribute is parsed and added to\n      Pandoc AST elements, using a wrapper Div if needed.\nOmit empty title when not required (\n#11422\n).\n      This affects example and sidebar elements.\nFix adding wrong metadata (\n#11300\n,\n      Tuong Nguyen Manh). Now keep track of the current element stack to\n      only add metadata if inside an appropriate parent element.\nDocBook/JATS reader:\nDon\u2019t export surrounding space from inline elements (\n#11398\n).\n      Previously we would export leading and trailing space inside\n      elements like emphasis or ulink so they appeared outside the\n      resulting pandoc Inline (Emph or Link). This is not really\n      motivated; DocBook and XML in general treats leading and trailing\n      whitespace in this context as significant.\nDocx reader:\nHandle tables without\ntblGrid\n(\n#11380\n).\nLook inside v:rect as well as v:shape (\n#11412\n).\nLaTeX reader:\nHandle more quote macros from fontspec and ngerman babel (\n#6120\n).\nOrg reader:\nDon\u2019t include \u2018example\u2019 class when parsing org example blocks\n      (\n#11339\n).\n      These are just unmarked code blocks.\nTexinfo writer:\nImprove handling of certain code blocks (\n#11312\n).\n      MediaWiki, for example, will parse a code block containing\n      formatting as a sequence of Code elements separated by LineBreaks.\n      For this we now use a texinfo example block.\nTypst writer:\nEscape hyphens when needed (\n#11334\n).\nHTML writer:\nInclude all classes on highlighted code elements (\n#11423\n).\n      Previously, only the language class was included, and the others\n      were dropped.\nSlide formats: Make\n. . .\npause work in nested\n      blocks (\n#7201\n,\n#7582\n).\nFor revealjs, add i",
+      "source": "playwright"
+    },
+    "docs": {
+      "url": "https://pandoc.org/MANUAL.html",
+      "title": "Pandoc - Pandoc User\u2019s Guide",
+      "text": "Pandoc - Pandoc User\u2019s Guide\nPlease help Ukraine!\nSponsor\nPandoc\na universal document converter\nAbout\nInstalling\nDemos\nDocumentation\nGetting started\nUser's Guide\nUser's Guide (PDF)\nContributing\nFAQ\nPress\nFilters\nLua filters\nCustom readers\nCustom writers\npandoc-server\nMaking an ebook\nEmacs Org mode support\nJATS support\nTypst property attributes\nUsing the Pandoc API\nAPI documentation\nHelp\nExtras\nReleases\nSearch\nPandoc User\u2019s Guide\nSynopsis\npandoc\n[\noptions\n]\n      [\ninput-file\n]\u2026\nDescription\nPandoc is a\nHaskell\nlibrary for converting from one markup format to another, and a\n      command-line tool that uses this library.\nPandoc can convert between numerous markup and word processing\n      formats, including, but not limited to, various flavors of\nMarkdown\n,\nHTML\n,\nLaTeX\nand\nWord\n      docx\n. For the full lists of input and output formats, see the\n--from\nand\n--to\noptions below\n. Pandoc can also produce\nPDF\noutput: see\ncreating a PDF\n, below.\nPandoc\u2019s enhanced version of Markdown includes syntax for\ntables\n,\ndefinition\n      lists\n,\nmetadata blocks\n,\nfootnotes\n,\ncitations\n,\nmath\n, and\n      much more. See below under\nPandoc\u2019s\n      Markdown\n.\nPandoc has a modular design: it consists of a set of readers,\n      which parse text in a given format and produce a native\n      representation of the document (an\nabstract syntax tree\nor AST), and a set of writers, which convert this native\n      representation into a target format. Thus, adding an input or\n      output format requires only adding a reader or writer. Users can\n      also run custom\npandoc\n      filters\nto modify the intermediate AST.\nBecause pandoc\u2019s intermediate representation of a document is\n      less expressive than many of the formats it converts between, one\n      should not expect perfect conversions between every format and\n      every other. Pandoc attempts to preserve the structural elements\n      of a document, but not formatting details such as margin size. And\n      some document elements, such as complex tables, may not fit into\n      pandoc\u2019s simple document model. While conversions from pandoc\u2019s\n      Markdown to all formats aspire to be perfect, conversions from\n      formats more expressive than pandoc\u2019s Markdown can be expected to\n      be lossy.\nUsing pandoc\nIf no\ninput-files\nare specified, input is read from\nstdin\n. Output goes to\nstdout\nby default. For\n      output to a file, use the\n-o\n/\n--output\noption:\npandoc -o output.html input.txt\nBy default, pandoc produces a document fragment. To produce a\n      standalone document (e.g.\u00a0a valid HTML file including\n<head>\nand\n<body>\n), use the\n-s\nor\n--standalone\nflag:\npandoc -s -o output.html input.txt\nFor more information on how standalone documents are produced,\n      see\nTemplates\nbelow.\nIf multiple input files are given, pandoc will concatenate them\n      all (with blank lines between them) before parsing. (Use\n--file-scope\nto parse files\n      individually.)\nSpecifying formats\nThe format of the input and output can be specified explicitly\n      using command-line options. The input format can be specified\n      using the\n-f/--from\noption, the output\n      format using the\n-t/--to\noption. Thus, to convert\nhello.txt\nfrom Markdown to LaTeX, you could type:\npandoc -f markdown -t latex hello.txt\nTo convert\nhello.html\nfrom HTML to Markdown:\npandoc -f html -t markdown hello.html\nSupported input and output formats are listed below under\nOptions\n(see\n-f\nfor input formats and\n-t\nfor output\n      formats). You can also use\npandoc --list-input-formats\nand\npandoc --list-output-formats\nto print lists of\n      supported formats.\nIf the input or output format is not specified explicitly,\n      pandoc will attempt to guess it from the extensions of the\n      filenames. Thus, for example,\npandoc -o hello.tex hello.txt\nwill convert\nhello.txt\nfrom Markdown to LaTeX. If\n      no output file is specified (so that output goes to\nstdout\n), or if the output file\u2019s extension is unknown,\n      the output format will default to HTML. If no input file is\n      specified (so that input comes from\nstdin\n), or if the\n      input files\u2019 extensions are unknown, the input format will be\n      assumed to be Markdown.\nCharacter encoding\nPandoc uses the UTF-8 character encoding for both input and\n      output. If your local character encoding is not UTF-8, you should\n      pipe input and output through\niconv\n:\niconv -t utf-8 input.txt | pandoc | iconv -f utf-8\nNote that in some output formats (such as HTML, LaTeX, ConTeXt,\n      RTF, OPML, DocBook, and Texinfo), information about the character\n      encoding is included in the document header, which will only be\n      included if you use the\n-s/--standalone\noption.\nCreating a PDF\nTo produce a PDF, specify an output file with a\n.pdf\nextension:\npandoc test.txt -o test.pdf\nBy default, pandoc will use LaTeX to create the PDF, which\n      requires that a LaTeX engine be installed (see\n--pdf-engine\nbelow).\n      Alternatively, pandoc can use ConTeXt, roff ms, or HTML as an\n      intermediate format. To do this, specify an output file with a\n.pdf\nextension, as before, but add the\n--pdf-engine\noption or\n-t context\n,\n-t html\n, or\n-t ms\nto the\n      command line. The tool used to generate the PDF from the\n      intermediate format may be specified using\n--pdf-engine\n.\nYou can control the PDF style using variables, depending on the\n      intermediate format used: see\nvariables for LaTeX\n,\nvariables for ConTeXt\n,\nvariables for\nwkhtmltopdf\n,\nvariables for ms\n. When HTML is used\n      as an intermediate format, the output can be styled using\n--css\n.\nTo debug the PDF creation, it can be useful to look at the\n      intermediate representation: instead of\n-o test.pdf\n, use for example\n-s -o test.tex\nto output the\n      generated LaTeX. You can then test it with\npdflatex test.tex\n.\nWhen using LaTeX, the following packages need to be available\n      (they are included with all recent versions of\nTeX Live\n):\namsfonts\n,\namsmath\n,\nlm\n,\nunicode-math\n,\niftex\n,\nlistings\n(if\n      the\n--listings\noption is used),\nfancyvrb\n,\nlongtable\n,\nbooktabs\n,\nmultirow\n(if the document contains a table with cells that cross multiple\n      rows),\ngraphicx\n(if\n      the document contains images),\nbookmark\n,\nxcolor\n,\nsoul\n,\ngeometry\n(with the\ngeometry\nvariable set),\nsetspace\n(with\nlinestretch\n), and\nbabel\n(with\nlang\n). If\nCJKmainfont\nis set,\nxeCJK\nis needed\n      if\nxelatex\nis used, else\nluatexja\nis\n      needed if\nlualatex\nis used.\nframed\nis\n      required if code is highlighted in a scheme that use a colored\n      background. The use of\nxelatex\nor\nlualatex\nas the PDF engine requires\nfontspec\n.\nlualatex\nuses\nselnolig\nand\nlua-ul\n.\nxelatex\nuses\nbidi\n(with the\ndir\nvariable set). If the\nmathspec\nvariable is set,\nxelatex\nwill use\nmathspec\ninstead of\nunicode-math\n.\n      The\ncsquotes\npackage will be used for\ntypography\nif\n      the\ncsquotes\nvariable or metadata field is set to a\n      true value. The\nnatbib\n,\nbiblatex\n,\nbibtex\n, and\nbiber\npackages\n      can optionally be used for\ncitation\n      rendering\n. If math with\n\\cancel\n,\n\\bcancel\n, or\n\\xcancel\nis used, the\ncancel\npackage\n      is needed. The following packages will be used to improve output\n      quality if present, but pandoc does not require them to be\n      present:\nupquote\n(for\n      straight quotes in verbatim environments),\nmicrotype\n(for better spacing adjustments),\nparskip\n(for\n      better inter-paragraph spaces),\nxurl\n(for better\n      line breaks in URLs), and\nfootnotehyper\nor\nfootnote\n(to\n      allow footnotes in tables).\nReading from the Web\nInstead of an input file, an absolute URI may be given. In this\n      case pandoc will fetch the content using HTTP:\npandoc -f html -t markdown https://www.fsf.org\nIt is possible to supply a custom User-Agent string or other\n      header when requesting a document from a URL:\npandoc -f html -t markdown --request-header User-Agent:\"Mozilla/5.0\" \\\n  https://www.fsf.org\nOptions\nGeneral options\n-f\nFORMAT\n,\n-r\nFORMAT\n,\n--from=\nFORMAT\n,\n--read=\nFORMAT\nSpecify input format.\nFORMAT\ncan be:\nasciidoc\n(\nAsciiDoc\nmarkup)\nbibtex\n(\nBibTeX\nbibliography)\nbiblatex\n(\nBibLaTeX\nbibliography)\nbits\n(\nBITS\nXML,\n      alias for\njats\n)\ncommonmark\n(\nCommonMark\nMarkdown)\ncommonmark_x\n(\nCommonMark\nMarkdown with\n      extensions)\ncreole\n(\nCreole\n      1.0\n)\ncsljson\n(\nCSL\n      JSON\nbibliography)\ncsv\n(\nCSV\ntable)\ntsv\n(\nTSV\ntable)\ndjot\n(\nDjot\n      markup\n)\ndocbook\n(\nDocBook\n)\ndocx\n(\nWord\n      docx\n)\ndokuwiki\n(\nDokuWiki markup\n)\nendnotexml\n(\nEndNote\n      XML bibliography\n)\nepub\n(\nEPUB\n)\nfb2\n(\nFictionBook2\ne-book)\ngfm\n(\nGitHub-Flavored\n      Markdown\n), or the deprecated and less accurate\nmarkdown_github\n; use\nmarkdown_github\nonly if\n      you need extensions not supported in\ngfm\n.\nhaddock\n(\nHaddock\n      markup\n)\nhtml\n(\nHTML\n)\nipynb\n(\nJupyter\n      notebook\n)\njats\n(\nJATS\nXML)\njira\n(\nJira\n/Confluence\n      wiki markup)\njson\n(JSON version of native AST)\nlatex\n(\nLaTeX\n)\nmarkdown\n(\nPandoc\u2019s\n      Markdown\n)\nmarkdown_mmd\n(\nMultiMarkdown\n)\nmarkdown_phpextra\n(\nPHP\n      Markdown Extra\n)\nmarkdown_strict\n(original unextended\nMarkdown\n)\nmediawiki\n(\nMediaWiki\n      markup\n)\nman\n(\nroff\n      man\n)\nmdoc\n(\nmdoc\nmanual page\n      markup)\nmuse\n(\nMuse\n)\nnative\n(native Haskell)\nodt\n(\nOpenDocument\n      text document\n)\nopml\n(\nOPML\n)\norg\n(\nEmacs Org\n      mode\n)\npod\n(Perl\u2019s\nPlain Old\n      Documentation\n)\npptx\n(\nPowerPoint\n)\nris\n(\nRIS\nbibliography)\nrtf\n(\nRich Text\n      Format\n)\nrst\n(\nreStructuredText\n)\nt2t\n(\ntxt2tags\n)\ntextile\n(\nTextile\n)\ntikiwiki\n(\nTikiWiki\n      markup\n)\ntwiki\n(\nTWiki\n      markup\n)\ntypst\n(\ntypst\n)\nvimwiki\n(\nVimwiki\n)\nxlsx\n(\nExcel\n      spreadsheet\n)\nxml\n(XML version of native AST)\nthe path of a custom Lua reader, see\nCustom readers and writers\nbelow\nExtensions can be individually enabled or disabled by appending\n+EXTENSION\nor\n-EXTENSION\nto the format\n      name. See\nExtensions\nbelow, for a list\n      of extensions and their names. See\n--list-input-formats\nand\n--list-extensions\n, below.\n-t\nFORMAT\n,\n-w\nFORMAT\n,\n--to=\nFORMAT\n,\n--write=\nFORMAT\nSpecify output format.\nFORMAT\ncan be:\nansi\n(text with\nANSI escape\n      codes\n, for terminal viewing)\nasciidoc\n(modern\nAsciiDoc\nas interpreted by\nAsciiDoctor\n)\nasciidoc_legacy\n(\nAsciiDoc\nas interpreted by\nasciidoc-py\n).\nasciidoctor\n(deprecated synonym for\nasciidoc\n)\nbbcode\nBBCode\nbbcode_fluxbb\nBBCode\n      (FluxBB)\nbbcode_phpbb\nBBCode\n      (phpBB)\nbbcode_steam\nBBCode\n      (Steam)\nbbcode_hubzilla\nBBCode\n      (Hubzilla)\nbbcode_xenforo\nBBCode\n      (xenForo)\nbeamer\n(\nLaTeX beamer\nslide\n      show)\nbibtex\n(\nBibTeX\nbibliography)\nbiblatex\n(\nBibLaTeX\nbibliography)\nchunkedhtml\n(zip archive of multiple linked HTML\n      files)\ncommonmark\n(\nCommonMark\nMarkdown)\ncommonmark_x\n(\nCommonMark\nMarkdown with\n      extensions)\ncontext\n(\nConTeXt\n)\ncsljson\n(\nCSL\n      JSON\nbibliography)\ndjot\n(\nDjot\n      markup\n)\ndocbook\nor\ndocbook4\n(\nDocBook\n4)\ndocbook5\n(DocBook 5)\ndocx\n(\nWord\n      docx\n)\ndokuwiki\n(\nDokuWiki markup\n)\nepub\nor\nepub3\n(\nEPUB\nv3 book)\nepub2\n(EPUB v2)\nfb2\n(\nFictionBook2\ne-book)\ngfm\n(\nGitHub-Flavored\n      Markdown\n), or the deprecated and less accurate\nmarkdown_github\n; use\nmarkdown_github\nonly if\n      you need extensions not supported in\ngfm\n.\nhaddock\n(\nHaddock\n      markup\n)\nhtml\nor\nhtml5\n(\nHTML\n, i.e.\nHTML5\n/XHTML\npolyglot\n      markup\n)\nhtml4\n(\nXHTML\n1.0\n      Transitional)\nicml\n(\nInDesign\n      ICML\n)\nipynb\n(\nJupyter\n      notebook\n)\njats_archiving\n(\nJATS\nXML, Archiving and\n      Interchange Tag Set)\njats_articleauthoring\n(\nJATS\nXML, Article Authoring\n      Tag Set)\njats_publishing\n(\nJATS\nXML, Journal Publishing\n      Tag Set)\njats\n(alias for\njats_archiving\n)\njira\n(\nJira\n/Confluence\n      wiki markup)\njson\n(JSON version of native AST)\nlatex\n(\nLaTeX\n)\nman\n(\nroff\n      man\n)\nmarkdown\n(\nPandoc\u2019s\n      Markdown\n)\nmarkdown_mmd\n(\nMultiMarkdown\n)\nmarkdown_phpextra\n(\nPHP\n      Markdown Extra\n)\nmarkdown_strict\n(original unextended\nMarkdown\n)\nmarkua\n(\nMarkua\n)\nmediawiki\n(\nMediaWiki\n      markup\n)\nms\n(\nroff\n      ms\n)\nmuse\n(\nMuse\n)\nnative\n(native Haskell)\nodt\n(\nOpenDocument\n      text document\n)\nopml\n(\nOPML\n)\nopendocument\n(\nOpenDocument\n      XML\n)\norg\n(\nEmacs Org\n      mode\n)\npdf\n(\nPDF\n)\nplain\n(plain text)\npptx\n(\nPowerPoint\nslide show)\nrst\n(\nreStructuredText\n)\nrtf\n(\nRich Text\n      Format\n)\ntexinfo\n(\nGNU Texinfo\n)\ntextile\n(\nTextile\n)\nslideous\n(\nSlideous\nHTML\n      and JavaScript slide show)\nslidy\n(\nSlidy\nHTML and\n      JavaScript slide show)\ndzslides\n(\nDZSlides\nHTML5 +\n      JavaScript slide show)\nrevealjs\n(\nreveal.js\nHTML5 + JavaScript\n      slide show)\ns5\n(\nS5\nHTML and\n      JavaScript slide show)\ntei\n(\nTEI Simple\n)\ntypst\n(\ntypst\n)\nvimdoc\n(\nVimdoc\n)\nxml\n(XML version of native AST)\nxwiki\n(\nXWiki\n      markup\n)\nzimwiki\n(\nZimWiki\n      markup\n)\nthe path of a custom Lua writer, see\nCustom readers and writers\nbelow\nNote that\nodt\n,\ndocx\n,\nepub\n, and\npdf\noutput will not be\n      directed to\nstdout\nunless forced with\n-o -\n.\nExtensions can be individually enabled or disabled by appending\n+EXTENSION\nor\n-EXTENSION\nto the format\n      name. See\nExtensions\nbelow, for a list\n      of extensions and their names. See\n--list-output-formats\nand\n--list-extensions\n, below.\n-o\nFILE\n,\n--output=\nFILE\nWrite output to\nFILE\ninstead of\nstdout\n. If\nFILE\nis\n-\n, output will go to\nstdout\n, even if a non-textual format (\ndocx\n,\nodt\n,\nepub2\n,\nepub3\n) is\n      specified. If the output format is\nchunkedhtml\nand\nFILE\nhas no extension, then instead of producing a\n.zip\nfile pandoc will create a directory\nFILE\nand unpack the zip archive there (unless\nFILE\nalready exists, in which case an error will be\n      raised).\n--data-dir=\nDIRECTORY\nSpecify the user data directory to search for pandoc data\n      files. If this option is not specified, the default user data\n      directory will be used. On *nix and macOS systems this will be the\npandoc\nsubdirectory of the XDG data directory (by\n      default,\n$HOME/.local/share\n, overridable by setting\n      the\nXDG_DATA_HOME\nenvironment variable). If that\n      directory does not exist and\n$HOME/.pandoc\nexists, it\n      will be used (f",
+      "source": "playwright"
+    },
+    "integrations": {
+      "error": "no content",
+      "url": null
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/pandoc/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Pandoc",
+          "url": "https://pandoc.org/",
+          "points": 1016,
+          "num_comments": 204,
+          "created_at": "2018-08-27T22:32:51Z",
+          "hn_url": "https://news.ycombinator.com/item?id=17855104"
+        },
+        {
+          "title": "Pandoc",
+          "url": "https://pandoc.org",
+          "points": 824,
+          "num_comments": 292,
+          "created_at": "2024-01-28T09:41:43Z",
+          "hn_url": "https://news.ycombinator.com/item?id=39164002"
+        },
+        {
+          "title": "Pandoc \u2013 A universal document converter",
+          "url": "https://pandoc.org/",
+          "points": 756,
+          "num_comments": 168,
+          "created_at": "2020-10-24T22:41:57Z",
+          "hn_url": "https://news.ycombinator.com/item?id=24882480"
+        },
+        {
+          "title": "Pandoc 3.0",
+          "url": "https://pandoc.org/releases.html",
+          "points": 504,
+          "num_comments": 72,
+          "created_at": "2023-01-19T08:45:36Z",
+          "hn_url": "https://news.ycombinator.com/item?id=34438115"
+        },
+        {
+          "title": "Writing a Book with Pandoc, Make, and Vim",
+          "url": "https://keleshev.com/my-book-writing-setup/",
+          "points": 423,
+          "num_comments": 60,
+          "created_at": "2020-04-13T09:33:51Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22854332"
+        },
+        {
+          "title": "Djot: A light markup language by the creator of Pandoc and CommonMark",
+          "url": "https://github.com/jgm/djot",
+          "points": 276,
+          "num_comments": 94,
+          "created_at": "2022-12-05T16:24:31Z",
+          "hn_url": "https://news.ycombinator.com/item?id=33867636"
+        },
+        {
+          "title": "I self-published a paperback and eBook using LaTeX and Pandoc",
+          "url": "http://theroadchoseme.com/how-i-self-published-a-professional-paperback-and-ebook-using-latex-and-pandoc/?1",
+          "points": 258,
+          "num_comments": 81,
+          "created_at": "2021-03-09T02:10:05Z",
+          "hn_url": "https://news.ycombinator.com/item?id=26394564"
+        },
+        {
+          "title": "Quarto: A scientific and technical publishing system built on Pandoc",
+          "url": "https://quarto.org/",
+          "points": 234,
+          "num_comments": 33,
+          "created_at": "2022-01-23T01:44:50Z",
+          "hn_url": "https://news.ycombinator.com/item?id=30042831"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": [
+        {
+          "title": "Selfhosted Simple File Converter, PDF OCR and Whisper Transcription",
+          "subreddit": "selfhosted",
+          "score": 380,
+          "num_comments": 38,
+          "permalink": "https://reddit.com/r/selfhosted/comments/1nlezmf/selfhosted_simple_file_converter_pdf_ocr_and/",
+          "selftext": "**Update**: *the latest V0.2 release includes an /api/v1/process route with webhook callback for automation aswell as TTS via Kokoro and Piper!*\n\n\nI wasn't quite satisfied with the existing self-hosted file converters, as I found many had a clunky UI or lacked support for custom commands. It felt cumbersome to run three separate services for daily tasks like converting markdown with Pandoc or transcribing a voice memo.\n\nTo solve this, I built a simple web app to serve as a personal, self-hosted "
+        },
+        {
+          "title": "Sunwet: Organize anything",
+          "subreddit": "selfhosted",
+          "score": 98,
+          "num_comments": 40,
+          "permalink": "https://reddit.com/r/selfhosted/comments/1rht61q/sunwet_organize_anything/",
+          "selftext": "Hello! I've been working on this for a couple years and I think it's finally reached a \"okay maybe it's complete enough that other people can use it and I can take a break\" point. I've been dog fooding it for maybe 6mo now.\n\nI think the readme has a lot of accessible info including an actual description, but to add on: I wanted one piece of software to organize everything. No plex, uhh tachiyomi?, that other thing that's kind of like plex but for audio, obsidian, the other thing, that dropboxy t"
+        },
+        {
+          "title": "PDF3MD: Open-Source, Self-Hosted PDF to Markdown Utility",
+          "subreddit": "selfhosted",
+          "score": 88,
+          "num_comments": 17,
+          "permalink": "https://reddit.com/r/selfhosted/comments/1kxebft/pdf3md_opensource_selfhosted_pdf_to_markdown/",
+          "selftext": "Hey r/selfhosted,\n\nReposting as the last post had a broken link.\n\nI wanted to share a project I've been working on: **PDF3MD**.\n\nI originally built this for my own use \u2013 I'm constantly feeding documents into LLMs, and I needed a reliable way to extract clean Markdown from PDFs first. It's now reached a point where I feel it's polished enough to share with the community, hoping others might find it useful too!\n\nPDF3MD is a web application designed to help you convert PDF documents into clean Mark"
+        },
+        {
+          "title": "I watched Claude Opus 4.5 handle my tenant correspondence end-to-end. This is the AGI moment people talk about",
+          "subreddit": "ClaudeAI",
+          "score": 397,
+          "num_comments": 138,
+          "permalink": "https://reddit.com/r/ClaudeAI/comments/1q7ff1n/i_watched_claude_opus_45_handle_my_tenant/",
+          "selftext": "I manage a rental property remotely. Today my brain kind of broke.\n\nI asked Claude to help with some tenant emails. But instead of just drafting a response, it went full autonomous:\n\n1. Searched my inbox for the tenant's emails\n2. Read the full thread to get context\n3. Opened the rental contract (I keep it as Markdown)\n4. Modified the 2 clauses my tenant was asking about\n5. Converted it to PDF with Pandoc\n6. Sent the updated contract back as an attachment\n\nI was just... watching. No prompting ea"
+        },
+        {
+          "title": "A PSA from your friendly neighborhood data archive engineer: Please archive your works and works you love offline, and when you do, please use HTML!",
+          "subreddit": "AO3",
+          "score": 240,
+          "num_comments": 42,
+          "permalink": "https://reddit.com/r/AO3/comments/1o4b8zg/a_psa_from_your_friendly_neighborhood_data/",
+          "selftext": "**TL;DR: Archiving works offline is great. Use HTML to do so; in my opinion, it's the superior format for a number of reasons. I explain why in this too-long post (someone smack me and tell me to go use this energy on my WIP).**\n\n----\n\nSaving copies of your works and works that you love for offline storage is fantastic! Taking data that you care about into your own hands is important, and sneakernets, personal archives, archives with your friends (**not rehosting other people's content for the p"
+        },
+        {
+          "title": "Announcing Kreuzberg v4",
+          "subreddit": "Python",
+          "score": 184,
+          "num_comments": 24,
+          "permalink": "https://reddit.com/r/Python/comments/1q9spbw/announcing_kreuzberg_v4/",
+          "selftext": "Hi Peeps,\n\nI'm excited to announce [Kreuzberg](https://github.com/kreuzberg-dev/kreuzberg) v4.0.0. \n\n## What is Kreuzberg:\n\nKreuzberg is a document intelligence library that extracts structured data from 56+ formats, including PDFs, Office docs, HTML, emails, images and many more. Built for RAG/LLM pipelines with OCR, semantic chunking, embeddings, and metadata extraction. \n\nThe new v4 is a ground-up rewrite in Rust with a bindings for 9 other languages! \n\n## What changed:\n\n- **Rust core**: Sign"
+        },
+        {
+          "title": "Agentic multipane markdown editor inspired by Zed (Open Source)",
+          "subreddit": "ZedEditor",
+          "score": 185,
+          "num_comments": 43,
+          "permalink": "https://reddit.com/r/ZedEditor/comments/1t3nbgi/agentic_multipane_markdown_editor_inspired_by_zed/",
+          "selftext": "I'll keep it short guys, because this is not promotion. I've been a fan of Zed since a few months ago, so much, that you guys inspired me to write an agentic markdown workspace with all of the goodies from your editor, like inline review, edited files buffer, multi-pane experience, etc... It has markdown editor, based on CodeMirror, excalidraw support, pdfs, images and CSV files. Also 47 coding language support, but not meant to code (you can do it if you want). I needed something like zed but f"
+        },
+        {
+          "title": "About learning LaTeX (a rant)",
+          "subreddit": "LaTeX",
+          "score": 141,
+          "num_comments": 68,
+          "permalink": "https://reddit.com/r/LaTeX/comments/1o0bzr5/about_learning_latex_a_rant/",
+          "selftext": "TLDR: I'm a grumpy middle aged man ranting about learning LaTeX.\n\nFell free to quote (pun intended) me as you wish, not too much verbatim (I did it again, sorry). And remember that I'm grumpy... \"and old!\" like my kids like to remember me every time thay can.\n\n\nI'm seeing lots of post in the recent times (two per week almost, sometimes more, sometimes less) about how LaTeX is difficult to learn and that there is a new tool on the block that will make it easier for you to create beautiful documen"
+        }
+      ]
+    }
+  },
+  "resolved_urls": {
+    "pricing": null,
+    "changelog": "https://pandoc.org/releases.html",
+    "docs": "https://pandoc.org/MANUAL.html",
+    "integrations": null,
+    "g2": "https://www.g2.com/products/pandoc/reviews"
+  },
+  "analysis": {
+    "name": "Pandoc",
+    "url": "https://pandoc.org",
+    "tagline": "a universal document converter",
+    "value_proposition": "Convert files between virtually any markup or word-processing format via a single command-line tool or Haskell library.",
+    "target_segment": "dev",
+    "ideal_customer": "Developers, academics, and technical writers who need to convert documents between many markup formats programmatically or via CLI.",
+    "features": [
+      {
+        "name": "markdown conversion",
+        "description": "Bidirectional conversion for CommonMark, GitHub-Flavored Markdown, and Pandoc-extended Markdown.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Markdown (including CommonMark and GitHub-flavored Markdown)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "html conversion",
+        "description": "Bidirectional conversion for (X)HTML 4 and HTML5; write-only chunked HTML.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e (X)HTML 4 \u2194\ufe0e HTML5 \u2192 Chunked HTML",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "latex conversion",
+        "description": "Bidirectional conversion to/from LaTeX; supports macros and math.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e LaTeX \u2192 ConTeXt",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "docx conversion",
+        "description": "Bidirectional conversion with Microsoft Word .docx format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Microsoft Word docx",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "odt conversion",
+        "description": "Bidirectional conversion with OpenOffice/LibreOffice ODT format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e OpenOffice/LibreOffice ODT",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rtf conversion",
+        "description": "Bidirectional conversion with Rich Text Format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Rich Text Format RTF",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "epub creation and reading",
+        "description": "Bidirectional conversion for EPUB version 2 and 3 ebooks.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e EPUB version 2 or 3",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pdf output",
+        "description": "Generate PDFs via multiple engines: pdflatex, lualatex, xelatex, wkhtmltopdf, weasyprint, prince, pagedjs-cli, context, pdfroff, tectonic.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 via pdflatex, lualatex, xelatex, latexmk, tectonic, wkhtmltopdf, weasyprint, prince, pagedjs-cli",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "restructuredtext conversion",
+        "description": "Bidirectional conversion with reStructuredText.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e reStructuredText",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "asciidoc conversion",
+        "description": "Bidirectional conversion with AsciiDoc.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e AsciiDoc",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "org-mode conversion",
+        "description": "Bidirectional conversion with Emacs Org-Mode.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Emacs Org-Mode",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "textile conversion",
+        "description": "Bidirectional conversion with Textile markup.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Textile",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "djot conversion",
+        "description": "Bidirectional conversion with Djot, a light markup language created by the author of Pandoc.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e djot",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "typst conversion",
+        "description": "Bidirectional conversion with Typst typesetting format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Typst",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "jupyter notebook conversion",
+        "description": "Bidirectional conversion with Jupyter notebook (.ipynb) format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Jupyter notebook (ipynb)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "powerpoint output",
+        "description": "Convert documents to Microsoft PowerPoint presentations.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Microsoft PowerPoint",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "reveal.js slide output",
+        "description": "Generate interactive HTML slideshows with reveal.js.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 reveal.js",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "latex beamer slide output",
+        "description": "Generate LaTeX Beamer presentations.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 LaTeX Beamer",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "slidy slide output",
+        "description": "Generate Slidy HTML slideshows.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 Slidy",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "s5 slide output",
+        "description": "Generate S5 HTML slideshows.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 S5",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dzslides slide output",
+        "description": "Generate DZSlides HTML5 presentations.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 DZSlides",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "slideous slide output",
+        "description": "Generate Slideous HTML slideshows.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 Slideous",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mediawiki markup conversion",
+        "description": "Bidirectional conversion with MediaWiki markup.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e MediaWiki markup",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dokuwiki markup conversion",
+        "description": "Bidirectional conversion with DokuWiki markup.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e DokuWiki markup",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "jira wiki markup conversion",
+        "description": "Bidirectional conversion with Jira wiki markup.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Jira wiki markup",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "xwiki markup output",
+        "description": "Convert to XWiki markup format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 XWiki markup",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "zimwiki markup output",
+        "description": "Convert to ZimWiki markup format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 ZimWiki markup",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "docbook conversion",
+        "description": "Bidirectional conversion with DocBook version 4 and 5.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e DocBook version 4 or 5",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "jats conversion",
+        "description": "Bidirectional conversion with JATS XML (Journal Article Tag Suite).",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e JATS",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "opml conversion",
+        "description": "Bidirectional conversion with OPML outline format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e OPML",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "fictionbook2 conversion",
+        "description": "Bidirectional conversion with FictionBook2 ebook format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e FictionBook2",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bibtex conversion",
+        "description": "Bidirectional conversion with BibTeX bibliography format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e BibTeX",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "biblatex conversion",
+        "description": "Bidirectional conversion with BibLaTeX bibliography format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e BibLaTeX",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "csl json/yaml conversion",
+        "description": "Bidirectional conversion with CSL JSON and CSL YAML bibliography formats.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e CSL JSON \u2194\ufe0e CSL YAML",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ris bibliography input",
+        "description": "Read RIS bibliography format as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 RIS",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "endnote xml input",
+        "description": "Read EndNote XML bibliography format as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 EndNote XML",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "roff man page conversion",
+        "description": "Bidirectional conversion with roff man page format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e roff man",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "roff ms output",
+        "description": "Convert to roff ms format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 roff ms",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "icml output",
+        "description": "Convert to Adobe InDesign ICML page layout format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 InDesign ICML",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "texinfo output",
+        "description": "Convert to GNU TexInfo documentation format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 GNU TexInfo",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "haddock markup conversion",
+        "description": "Bidirectional conversion with Haskell Haddock documentation markup.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Haddock markup",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vimdoc output",
+        "description": "Convert to Vim documentation format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 Vimdoc",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "tei simple output",
+        "description": "Convert to TEI Simple XML format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 TEI Simple",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "opendocument xml output",
+        "description": "Convert to OpenDocument XML format.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 OpenDocument XML",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ansi terminal output",
+        "description": "Render documents as ANSI-formatted terminal text.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 ANSI-formatted text",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bbcode output",
+        "description": "Convert to BBCode markup.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 BBCode",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "markua output",
+        "description": "Convert to Markua format (used by Leanpub).",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2192 Markua",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "csv/tsv table input",
+        "description": "Read CSV and TSV table data as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 CSV tables \u2190 TSV tables",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "excel spreadsheet input",
+        "description": "Read Microsoft Excel spreadsheets as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 Microsoft Excel spreadsheets",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ast serialization",
+        "description": "Bidirectional access to Pandoc's internal AST as JSON, XML, or Haskell representation.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Haskell AST \u2194\ufe0e JSON representation of AST \u2194\ufe0e XML representation of AST",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "citation and bibliography system",
+        "description": "Automatic citations and bibliographies using hundreds of CSL styles (footnote, numerical, author-date); works in all output formats.",
+        "evidence_source": "landing",
+        "evidence_quote": "pandoc will convert it into a properly formatted citation using any of hundreds of CSL styles",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "lua filters",
+        "description": "Programmable filters written in Lua to transform the document AST between reading and writing.",
+        "evidence_source": "landing",
+        "evidence_quote": "a powerful system for writing filters",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "custom readers and writers",
+        "description": "Write custom input readers and output writers in Lua for unsupported formats.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e custom readers and writers can be written in Lua",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "template system",
+        "description": "Customizable templates for controlling standalone document output structure and styling.",
+        "evidence_source": "landing",
+        "evidence_quote": "there are many ways to customize pandoc to fit your needs, including a template system",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "math rendering",
+        "description": "Render LaTeX math in HTML via MathJax, MathML, unicode, Word equation objects, or roff eqn.",
+        "evidence_source": "landing",
+        "evidence_quote": "Several different methods of rendering math in HTML are provided, including MathJax and translation to MathML.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "latex math and macros in markdown",
+        "description": "LaTeX math expressions and macros can be used inline in Markdown documents.",
+        "evidence_source": "landing",
+        "evidence_quote": "LaTeX math (and even macros) can be used in markdown documents.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "syntax highlighting",
+        "description": "Delimited code blocks with automatic syntax highlighting for numerous languages.",
+        "evidence_source": "landing",
+        "evidence_quote": "delimited code blocks with syntax highlighting",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "markdown extensions",
+        "description": "Extended Markdown with tables, definition lists, footnotes, superscript/subscript, strikeout, metadata blocks, enhanced ordered lists, and running example lists.",
+        "evidence_source": "landing",
+        "evidence_quote": "Pandoc's enhanced version of Markdown includes syntax for tables, definition lists, metadata blocks, footnotes, citations, math",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "smart punctuation",
+        "description": "Automatic conversion of straight quotes, dashes, and ellipses to typographically correct smart versions.",
+        "evidence_source": "landing",
+        "evidence_quote": "smart quotes, dashes, and ellipses",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "haskell library api",
+        "description": "Embeddable Haskell library with separate modules per format for programmatic integration.",
+        "evidence_source": "landing",
+        "evidence_quote": "Pandoc includes a Haskell library and a standalone command-line program.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "command-line interface",
+        "description": "Standalone CLI tool for scripting and automation of document conversion.",
+        "evidence_source": "docs",
+        "evidence_quote": "a command-line tool that uses this library",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pandoc-server",
+        "description": "HTTP server mode exposing Pandoc as a conversion API endpoint.",
+        "evidence_source": "landing",
+        "evidence_quote": "pandoc-server",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "wasm gui",
+        "description": "WebAssembly-based browser GUI for running Pandoc client-side without installation.",
+        "evidence_source": "changelog",
+        "evidence_quote": "WASM GUI: Don't block everything while pandoc.wasm loads.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "stdin/stdout piping",
+        "description": "Reads from stdin and writes to stdout by default, enabling shell pipeline composition.",
+        "evidence_source": "docs",
+        "evidence_quote": "If no input-files are specified, input is read from stdin. Output goes to stdout by default.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multiple input file concatenation",
+        "description": "Concatenates multiple input files before parsing, or parses them individually with --file-scope.",
+        "evidence_source": "docs",
+        "evidence_quote": "If multiple input files are given, pandoc will concatenate them all (with blank lines between them) before parsing.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "format auto-detection",
+        "description": "Automatically detects input and output formats from file extensions when not specified explicitly.",
+        "evidence_source": "docs",
+        "evidence_quote": "If the input or output format is not specified explicitly, pandoc will attempt to guess it from the extensions",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "standalone document output",
+        "description": "Produce complete standalone documents with proper headers/metadata using --standalone flag.",
+        "evidence_source": "docs",
+        "evidence_quote": "To produce a standalone document (e.g. a valid HTML file including <head> and <body>), use the -s or --standalone flag",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "utf-8 character encoding",
+        "description": "Full UTF-8 support for both input and output; encoding info embedded in document headers.",
+        "evidence_source": "docs",
+        "evidence_quote": "Pandoc uses the UTF-8 character encoding for both input and output.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pdf engine selection",
+        "description": "Choose the PDF rendering engine (LaTeX, ConTeXt, HTML via wkhtmltopdf/weasyprint/prince, roff ms) via --pdf-engine flag.",
+        "evidence_source": "docs",
+        "evidence_quote": "pandoc can use ConTeXt, roff ms, or HTML as an intermediate format... The tool used to generate the PDF from the intermediate format may be specified using --pdf-engine.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "css styling for html output",
+        "description": "Apply custom CSS stylesheets to HTML and HTML-based PDF output.",
+        "evidence_source": "docs",
+        "evidence_quote": "When HTML is used as an intermediate format, the output can be styled using --css.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "modular ast architecture",
+        "description": "Converts all formats through an intermediate AST, allowing readers and writers to be developed independently.",
+        "evidence_source": "docs",
+        "evidence_quote": "it consists of a set of readers, which parse text in a given format and produce a native representation of the document (an abstract syntax tree or AST)",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "epub3 cover metadata",
+        "description": "EPUB3 output includes cover metadata so file managers can display cover thumbnails.",
+        "evidence_source": "changelog",
+        "evidence_quote": "EPUB writer: Add cover metadata for EPUB3. This allows file managers to show cover thumbnails for EPUB3 files.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "typst bibliography support",
+        "description": "Typst reader handles bibliography commands, enabling --citeproc integration for Typst input.",
+        "evidence_source": "changelog",
+        "evidence_quote": "Typst reader: Handle bibliography command. If this is present, a bibliography section is added to the document",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "docx textbox and media handling",
+        "description": "Docx reader recognizes media inside textboxes, handles absolute media paths, and treats image-containing textboxes as figure captions.",
+        "evidence_source": "changelog",
+        "evidence_quote": "Recognize media inside textboxes... Treat text inside a textbox containing an image as a figure caption.",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "icml image object styles",
+        "description": "ICML writer supports per-image object-style attribute mapping to InDesign AppliedObjectStyle.",
+        "evidence_source": "changelog",
+        "evidence_quote": "ICML writer: Support for image object styles. This change allows users to style images in InDesign by setting the object-style attribute",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "reveal.js scroll progress",
+        "description": "HTML revealjs output defaults scrollProgress to auto for better presentation UX.",
+        "evidence_source": "changelog",
+        "evidence_quote": "For revealjs, default scrollProgress to auto",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ebook creation workflow",
+        "description": "Dedicated guide and support for creating complete ebooks including EPUB structure, metadata, and cover images.",
+        "evidence_source": "landing",
+        "evidence_quote": "Making an ebook",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "emacs org mode support",
+        "description": "Extended support for Emacs Org-Mode including dedicated documentation for edge cases.",
+        "evidence_source": "landing",
+        "evidence_quote": "Emacs Org mode support",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "jats support",
+        "description": "Extended JATS XML support for academic journal article publishing.",
+        "evidence_source": "landing",
+        "evidence_quote": "JATS support",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "typst property attributes",
+        "description": "Support for Typst-specific property attributes passthrough in conversion.",
+        "evidence_source": "landing",
+        "evidence_quote": "Typst property attributes",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "markdown inside html blocks",
+        "description": "Markdown can be written inside HTML blocks and will be parsed correctly.",
+        "evidence_source": "landing",
+        "evidence_quote": "markdown inside HTML blocks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "bits xml input",
+        "description": "Read BITS (Book Interchange Tag Suite) XML as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 BITS",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pod input",
+        "description": "Read Perl Plain Old Documentation (POD) as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 pod",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "txt2tags input",
+        "description": "Read txt2tags markup as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 txt2tags",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "tikiwiki input",
+        "description": "Read TikiWiki markup as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 TikiWiki markup",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "twiki input",
+        "description": "Read TWiki markup as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 TWiki markup",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "vimwiki input",
+        "description": "Read Vimwiki markup as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 Vimwiki markup",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "creole input",
+        "description": "Read Creole wiki markup as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 Creole",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mdoc input",
+        "description": "Read mdoc man page format as input.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2190 mdoc",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "emacs muse conversion",
+        "description": "Bidirectional conversion with Emacs Muse markup.",
+        "evidence_source": "landing",
+        "evidence_quote": "\u2194\ufe0e Emacs Muse",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [
+      "MathJax",
+      "pdflatex",
+      "lualatex",
+      "xelatex",
+      "latexmk",
+      "tectonic",
+      "wkhtmltopdf",
+      "weasyprint",
+      "Prince",
+      "pagedjs-cli",
+      "pdfroff",
+      "ConTeXt",
+      "reveal.js",
+      "Jupyter",
+      "Microsoft Word",
+      "LibreOffice/OpenOffice",
+      "Adobe InDesign (ICML)",
+      "MediaWiki",
+      "LaTeX / TeX Live",
+      "Zotero (via CSL)",
+      "MathML"
+    ],
+    "differentiators": [
+      "Supports 40+ input and output formats \u2014 the widest format coverage of any document converter",
+      "Lua scripting for fully custom readers, writers, and AST filters without recompiling",
+      "Single unified AST allows lossless round-tripping for any format pair within Pandoc's document model",
+      "Free and open-source (GPL); no seats, no tiers, no SaaS dependency",
+      "Embeddable as a Haskell library for programmatic integration into larger toolchains",
+      "Hundreds of CSL citation styles supported natively in all output formats",
+      "WebAssembly build runs entirely in-browser with no server",
+      "HTTP server mode (pandoc-server) exposes conversion as a local API"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026-03",
+        "what": "WASM GUI: non-blocking load, Unicode filename fix, better error handling",
+        "source": "WASM GUI: Don't block everything while pandoc.wasm loads. Fix bug with Unicode filenames."
+      },
+      {
+        "date": "2026-03",
+        "what": "Docx reader: media inside textboxes, absolute media paths, figure captions from textboxes",
+        "source": "Recognize media inside textboxes... Treat text inside a textbox containing an image as a figure caption."
+      },
+      {
+        "date": "2026-03",
+        "what": "Typst reader: bibliography command support enabling --citeproc",
+        "source": "Typst reader: Handle bibliography command. bibliography section added to document."
+      },
+      {
+        "date": "2026-03",
+        "what": "EPUB writer: cover metadata for EPUB3 enabling file manager thumbnails",
+        "source": "EPUB writer: Add cover metadata for EPUB3. This allows file managers to show cover thumbnails."
+      },
+      {
+        "date": "2026-03",
+        "what": "ODT writer: inline source style renamed to match LibreOffice; modernized Preformatted Text styles",
+        "source": "ODT writer: Rename inline source class to match LibreOffice... Modernize Preformatted Text & Source Text styles."
+      },
+      {
+        "date": "2026-03",
+        "what": "Docx writer: fixed section breaks with --top-level-division",
+        "source": "Docx writer: Fix section breaks with --top-level-division."
+      },
+      {
+        "date": "2026-03",
+        "what": "ICML writer: support for image object styles mapped to InDesign AppliedObjectStyle",
+        "source": "ICML writer: Support for image object styles. Allows users to style images in InDesign."
+      },
+      {
+        "date": "2026-03",
+        "what": "JATS writer: improved semantic representation of Divs using <p> instead of <boxed-text> where appropriate",
+        "source": "JATS writer: Improve representation of Divs. The writer now checks if the element has any boxed-text specific attributes."
+      },
+      {
+        "date": "2026-03",
+        "what": "LaTeX reader: support for \\footnotemark and \\footnotetext commands",
+        "source": "LaTeX reader: Support \\footnotemark and \\footnotetext. Useful in tables, minipages, and contexts where \\footnote cannot be used."
+      },
+      {
+        "date": "2026-03",
+        "what": "LaTeX reader: support for supertabular environment",
+        "source": "Support supertabular environment"
+      },
+      {
+        "date": "2026-03",
+        "what": "Typst writer: improved data: URI handling for images using Typst bytes object",
+        "source": "Improve handling of data: URIs in images... produce a bytes object with the requisite bytes. Typst figures out the format automatically."
+      },
+      {
+        "date": "2026-03",
+        "what": "PPTX writer: register content type for embedded fonts",
+        "source": "PPTX writer: Register content type for embedded fonts."
+      },
+      {
+        "date": "2026-03",
+        "what": "Docx reader: support for w:gridBefore table row property",
+        "source": "Docx reader: Support w:gridBefore table row property."
+      },
+      {
+        "date": "2026-03",
+        "what": "ODT reader: fixed relative linked images, added block smushing logic, support for Preformatted Text style",
+        "source": "ODT Reader: Fix relative linked images... Add block smushing logic... Support Preformatted Text style."
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "Versatility as a 'swiss-army knife' for format conversion \u2014 repeatedly cited in HN discussions",
+        "Scientific and technical publishing workflows via Quarto (built on Pandoc) \u2014 234\u2191 HN thread",
+        "Practical book writing: 'Writing a Book with Pandoc, Make, and Vim' (423\u2191 HN), 'I self-published a paperback and eBook using LaTeX and Pandoc' (258\u2191 HN)",
+        "Wide adoption in academic/technical writing communities for Markdown-to-PDF and Markdown-to-Word pipelines",
+        "Cited as the canonical tool for offline archiving of HTML documents (r/AO3 thread)"
+      ],
+      "complaints": [
+        "Lossy conversions: 'one should not expect perfect conversions between every format' \u2014 complex tables and rich formatting degrade",
+        "Dependency on external LaTeX installations for PDF output adds friction for new users",
+        "No native GUI beyond the limited WASM web interface \u2014 primarily CLI-driven"
+      ],
+      "sources": [
+        "hn",
+        "reddit"
+      ]
+    },
+    "pricing": {
+      "model": "open-source",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Free / Open Source",
+          "price_per_seat_per_month": "$0",
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Full feature set; GPL-licensed; no seat or usage limits"
+        }
+      ],
+      "enterprise": "null",
+      "notes": "Pandoc is fully free and open-source under the GPL. No paid tiers, no SaaS offering. Funded via GitHub Sponsors. Copyright 2006\u20132025 John MacFarlane."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Pandoc: A Workhorse for Document Conversion",
+        "url": "https://lwn.net/Articles/1064692/",
+        "points": 8,
+        "comments": 0,
+        "age_days": 42,
+        "hn_url": "https://news.ycombinator.com/item?id=47601864"
+      },
+      {
+        "title": "Show HN: Markdown-to-Book \u2013 Convert Markdown to KDP Ready PDFs and EPUBs",
+        "url": "https://github.com/vpuna/markdown-to-book",
+        "points": 6,
+        "comments": 5,
+        "age_days": 68,
+        "hn_url": "https://news.ycombinator.com/item?id=47273448"
+      },
+      {
+        "title": "Show HN: Text2troff \u2013 automatically converts plain text to TROFF format",
+        "url": "https://github.com/jazzfan2/text2troff",
+        "points": 2,
+        "comments": 0,
+        "age_days": 49,
+        "hn_url": "https://news.ycombinator.com/item?id=47523131"
+      },
+      {
+        "title": "Show HN: Draft2final \u2013 CLI converts Markdown into manuscript and screenplay PDFs",
+        "url": "https://www.draft2final.app/",
+        "points": 2,
+        "comments": 0,
+        "age_days": 64,
+        "hn_url": "https://news.ycombinator.com/item?id=47320788"
+      },
+      {
+        "title": "Show HN: Markdown specs that don't compile (Pandoc and SQLite for typed docs)",
+        "url": "https://github.com/SpecIR/SpecCompiler",
+        "points": 2,
+        "comments": 0,
+        "age_days": 77,
+        "hn_url": "https://news.ycombinator.com/item?id=47150515"
+      }
+    ],
+    "github": {
+      "repo": "jgm/pandoc",
+      "stars": 44101,
+      "forks": 3849,
+      "open_issues": 1074,
+      "last_commit_days_ago": 0,
+      "language": "Haskell",
+      "description": "Universal markup converter",
+      "homepage": "https://pandoc.org"
+    }
+  }
+}

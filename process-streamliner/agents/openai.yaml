@@ -1,0 +1,7 @@
+interface:
+  display_name: "Process Streamliner"
+  short_description: "Redesign messy workflows into clean ops"
+  default_prompt: "Use $process-streamliner to audit and redesign a repeated workflow with SOP and automation opportunities."
+
+policy:
+  allow_implicit_invocation: true

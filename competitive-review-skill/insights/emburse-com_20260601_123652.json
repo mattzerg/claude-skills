@@ -1,0 +1,436 @@
+{
+  "name": "Emburse",
+  "url": "https://www.emburse.com",
+  "domain": "emburse.com",
+  "scanned_at": "2026-06-01T12:34:59.913998",
+  "sources": {
+    "landing": {
+      "url": "https://www.emburse.com",
+      "title": "Travel and expense management software solutions",
+      "text": "Travel and expense management software solutions\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you\u2019ve provided to them or that they\u2019ve collected from your use of their services.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nPreferences\nStatistics\nMarketing\nShow details\nDetails\nNecessary\n47\nNecessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.\nAmazon\n2\nLearn more about this provider\nalgoliasearch-client-js\nNecessary in order to optimize the website's search-bar function. The cookie ensures accurate and fast search results.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ntestcookie\nThis cookie determines whether the browser accepts cookies.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nCalendly\n7\nLearn more about this provider\n_calendly_session\nIf consent is given by the visitor, this cookie allows the website to add events into the visitor's calendar.\nMaximum Storage Duration\n: 21 days\nType\n: HTTP Cookie\nreferrer_user_id\nNecessary for the website's booking functionality.\nMaximum Storage Duration\n: 14 days\nType\n: HTTP Cookie\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nEyeota\n1\nLearn more about this provider\nSERVERID\nThis cookie is used to assign the visitor to a specific server - this function is necessary for the functionality of the website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nGoconsensus\n2\nLearn more about this provider\ncache-sprite-plyr\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncsrf-token\nEnsures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nGoogle\n1\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nUsed to check if the user's browser supports cookies.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nHubSpot\n1\nLearn more about this provider\ncookietest\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nLinkedIn\n2\nLearn more about this provider\nbcookie\nUsed in order to detect spam and improve the website's security.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nli_gc\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nStripe\n3\nLearn more about this provider\n__stripe_mid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__stripe_sid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nm\nPending\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\napp.qualified.com\njs.qualified.com\n2\n__cflb\u00a0[x2]\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\ncalendly.com\ng2.com\nhsadspixel.net\nhs-banner.com\nhubspotusercontent-na1.net\nhubspotvideo.com\ninfo.emburse.com\nvimeo.com\nwww.captio.net\n17\n__cf_bm\u00a0[x17]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\ncalendly.com\nvimeo.com\nzoominfo.com\n3\n_cfuvid\u00a0[x3]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ncdn.cookielaw.org\n1\nOptanonConsent\nDetermines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nexpense.certify.com\n2\nAWSALB\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nAWSALBCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\ninfo.emburse.com\n1\nBIGipServer#\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ninfo.emburse.com\nconsent.cookiebot.com\n2\nCookieConsent\u00a0[x2]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nPreferences\n10\nPreference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.\nBizible\n1\nLearn more about this provider\n_biz_flagsA\nThis cookie serves multiple purposes; it determines whether the user has submitted any forms, performed cross-domain migration or has made any tracking opt-out choices.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nCalendly\n1\nLearn more about this provider\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nHubSpot\n1\nLearn more about this provider\nmessagesUtk\nStores a unique ID string for each chat-box session. This allows the website-support to see previous issues and reconnect with the previous supporter.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLinkedIn\n1\nLearn more about this provider\nlidc\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nfast.wistia.net\nwww.emburse.com\n2\nwistia-video-progress-#\u00a0[x2]\nContains a timestamp for the website\u2019s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ng2.com\n1\n_g2_session_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.emburse.com\n2\nadroll#adroll\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: Persistent\nType\n: IndexedDB\nloglevel\nMaintains settings and outputs when using the Developer Tools Console on current session.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.g2.com\n1\nevents_distinct_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStatistics\n29\nStatistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.\nCalendly\n1\nLearn more about this provider\nuserleap.ids\nThis cookie is set to make split-tests on the website, which optimizes the website's relevance towards the visitor \u2013 the cookie can also be set to improve the visitor's experience on a website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nHotjar\n5\nLearn more about this provider\n_hjSession_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_hjSessionUser_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_hjTLDTest\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nhjActiveViewportIds\nThis cookie contains an ID string on the current session. This contains non-personal information on what subpages the visitor enters \u2013 this information is used to optimize the visitor's experience.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhjViewportId\nSaves the user's screen size in order to adjust the size of images on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nHubSpot\n4\nLearn more about this provider\n__hssc\nIdentifies if the cookie data needs to be updated in the visitor's browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__hssrc\nUsed to recognise the visitor's browser upon reentry on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n__hstc\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nhubspotutk\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nNew Relic\n1\nLearn more about this provider\nNRBA_SESSION\nCollects data on the user\u2019s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nPubMatic\n1\nLearn more about this provider\nPugT\nUsed to determine the number of times the cookies have been updated in the visitor's browser. Used to optimize the website's server efficiency.\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\nStackAdapt\n2\nLearn more about this provider\nsa-user-id-v4\u00a0[x2]\nPending\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nVimeo\n1\nLearn more about this provider\nvuid\nCollects data on the user's visits to the website, such as which pages have been read.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\napp.teamwalnut.com\n1\n_dd_s\nRegisters the website's speed and performance. This function can be used in context with statistics and load-balancing.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\napp.teamwalnut.com\nassets.calendly.com\n4\najs_anonymous_id\u00a0[x2]\nThis cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ndd_cookie_test_#\u00a0[x2]\nRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\napp.teamwalnut.com\ncdn.segment.io\n3\najs_anonymous_id\u00a0[x3]\nThis cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nfast.wistia.net\nwww.emburse.com\n2\nwistia\u00a0[x2]\nUsed by the website to track the visitor's use of video-content - The cookie roots from Wistia, which provides video-software to websites.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\njs.qualified.com\n1\n__q_domainTest\nUsed in context with Account-Based-Marketing (ABM). The cookie registers data such as IP-addresses, time spent on the website and page requests for the visit. This is used for retargeting of multiple users rooting from the same IP-addresses. ABM usually facilitates B2B marketing purposes.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.emburse.com\n3\nziwsSession\nCollects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nziwsSessionId\nCollects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nhs-cta-interactions#cta\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Persistent\nType\n: IndexedDB\nMarketing\n99\nMarketing cookies are used t",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.emburse.com/pricing",
+      "title": "",
+      "text": "Emburse Assurance is here\n. Keep expenses compliant from the start with AI.\nLearn More\nSolutions\nTravel & Expense\nExpense Management\nFlexible solutions with proactive controls and insights\nTravel Management\nCompliance through convenience with automated savings\nSee all T&E solutions\nPayments & Invoice\nPayments\nImprove cash flow while eliminating repetitive tasks\nAP Automation\nSimplify and streamline payment and purchasing\nInsights & Analytics\nAnalytics\nManage cash flow while anticipating future spend\nAudit\nIdentify and reduce wasteful spending\nEmburse AI platform\nCategories\nBy industry\nBy product\nBy integration\nSee all solutions\nLearn\nResources\nBlog\nContent hub\nCase Studies\nCustomer Success\nEvents & Webinars\nSupport\nAcademy\nEmburse Champions\nPartners\nExplore partnerships\nCompany\nCompany\nAbout Emburse\nMission\nLeadership\nPartners\nCareers\nAwards\nContact Us\nNews & Press\nNews releases\nLogin\nGet Started\nGet Started\n404\nPage not found\nSorry, but we can\u2019t seem to find the page you are looking for.\nBack to homepage\nSolutions\nExpense Management\nTravel Management\nPayments\nAP Automation\nAnalytics\nAudit\nProducts\nAssurance\nBook Enterprise\nBook Professional\nCaptio\nCards\nExpense Enterprise\nExpense Professional\nGo\nInvoice Enterprise\nInvoice Professional\nPay Enterprise\nReshop\nSpend\nProduct Add-ons\nAI Audit\nAnalytics Pro\nTravel Analytics\nTravel Audit\nLearn\nBlog\nContent Hub\nAcademy\nEvents & Webinars\nEmburse Champions\nCase Studies\nCustomer Training\nOther Resources\nAI Innovations\nIntegration Directory\nPartner Programs\nPay or Manage Invoice\nRFP, RFQ, or RFIs\nCompany\nAbout\nAwards\nCareers\nLeadership\nMission\nNews Releases\nPress Coverage\nContact\nContact Us\nSupport\nGet Support\nSales\nhi@emburse.com\nMedia\nmedia@emburse.com\n+1 877 EMBURSE\n\u00a9 2026 Emburse, Inc. All rights reserved.\nPrivacy Statement\nTrust Center",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://www.emburse.com/changelog",
+      "title": "",
+      "text": "Emburse Assurance is here\n. Keep expenses compliant from the start with AI.\nLearn More\nSolutions\nTravel & Expense\nExpense Management\nFlexible solutions with proactive controls and insights\nTravel Management\nCompliance through convenience with automated savings\nSee all T&E solutions\nPayments & Invoice\nPayments\nImprove cash flow while eliminating repetitive tasks\nAP Automation\nSimplify and streamline payment and purchasing\nInsights & Analytics\nAnalytics\nManage cash flow while anticipating future spend\nAudit\nIdentify and reduce wasteful spending\nEmburse AI platform\nCategories\nBy industry\nBy product\nBy integration\nSee all solutions\nLearn\nResources\nBlog\nContent hub\nCase Studies\nCustomer Success\nEvents & Webinars\nSupport\nAcademy\nEmburse Champions\nPartners\nExplore partnerships\nCompany\nCompany\nAbout Emburse\nMission\nLeadership\nPartners\nCareers\nAwards\nContact Us\nNews & Press\nNews releases\nLogin\nGet Started\nGet Started\n404\nPage not found\nSorry, but we can\u2019t seem to find the page you are looking for.\nBack to homepage\nSolutions\nExpense Management\nTravel Management\nPayments\nAP Automation\nAnalytics\nAudit\nProducts\nAssurance\nBook Enterprise\nBook Professional\nCaptio\nCards\nExpense Enterprise\nExpense Professional\nGo\nInvoice Enterprise\nInvoice Professional\nPay Enterprise\nReshop\nSpend\nProduct Add-ons\nAI Audit\nAnalytics Pro\nTravel Analytics\nTravel Audit\nLearn\nBlog\nContent Hub\nAcademy\nEvents & Webinars\nEmburse Champions\nCase Studies\nCustomer Training\nOther Resources\nAI Innovations\nIntegration Directory\nPartner Programs\nPay or Manage Invoice\nRFP, RFQ, or RFIs\nCompany\nAbout\nAwards\nCareers\nLeadership\nMission\nNews Releases\nPress Coverage\nContact\nContact Us\nSupport\nGet Support\nSales\nhi@emburse.com\nMedia\nmedia@emburse.com\n+1 877 EMBURSE\n\u00a9 2026 Emburse, Inc. All rights reserved.\nPrivacy Statement\nTrust Center",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://help.emburse.com",
+      "title": "Emburse Help Centers",
+      "text": "Emburse Help Centers\nSkip to main content\nEmburse Help Centers\nWhich Emburse product do you need help with?\nEmburse Enterprise\nEmburse Professional\nEmburse Spend\nEmburse Book\nEmburse Captio\nEmburse Analytics\nEmburse Cards\nEmburse Travel Analytics\nEmburse Go\nEmburse Nexonia\nSpringAhead\nEmburse Tallie\nEmburse\nEmburse Academy\nEmburse Billing Help Center\n\u00a9 2026 Emburse, Inc. All rights reserved.",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.emburse.com/integrations",
+      "title": "Integrations - Emburse Spend - Emburse",
+      "text": "Integrations - Emburse Spend - Emburse\nConsent\nDetails\n[#IABV2SETTINGS#]\nAbout\nThis website uses cookies\nWe use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you\u2019ve provided to them or that they\u2019ve collected from your use of their services.\n[#GPC_BANNER_ICON#]\n[#GPC_TOAST_TEXT#]\nConsent Selection\nNecessary\nPreferences\nStatistics\nMarketing\nShow details\nDetails\nNecessary\n47\nNecessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.\nAmazon\n2\nLearn more about this provider\nalgoliasearch-client-js\nNecessary in order to optimize the website's search-bar function. The cookie ensures accurate and fast search results.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ntestcookie\nThis cookie determines whether the browser accepts cookies.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nCalendly\n7\nLearn more about this provider\n_calendly_session\nIf consent is given by the visitor, this cookie allows the website to add events into the visitor's calendar.\nMaximum Storage Duration\n: 21 days\nType\n: HTTP Cookie\nreferrer_user_id\nNecessary for the website's booking functionality.\nMaximum Storage Duration\n: 14 days\nType\n: HTTP Cookie\nrc::a\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nrc::c\nThis cookie is used to distinguish between humans and bots.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_ab\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\n_mf\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nid\nPending\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nEyeota\n1\nLearn more about this provider\nSERVERID\nThis cookie is used to assign the visitor to a specific server - this function is necessary for the functionality of the website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nGoconsensus\n2\nLearn more about this provider\ncache-sprite-plyr\nThis cookie is necessary for the cache function. A cache is used by the website to optimize the response time between the visitor and the website. The cache is usually stored on the visitor\u2019s browser.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ncsrf-token\nEnsures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nGoogle\n1\nLearn more about this provider\nSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.\ntest_cookie\nUsed to check if the user's browser supports cookies.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nHubSpot\n1\nLearn more about this provider\ncookietest\nThis cookie is used to determine if the visitor has accepted the cookie consent box.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nLinkedIn\n2\nLearn more about this provider\nbcookie\nUsed in order to detect spam and improve the website's security.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nli_gc\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nStripe\n3\nLearn more about this provider\n__stripe_mid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n__stripe_sid\nThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nm\nPending\nMaximum Storage Duration\n: 400 days\nType\n: HTTP Cookie\napp.qualified.com\njs.qualified.com\n2\n__cflb\u00a0[x2]\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\ncalendly.com\ng2.com\nhsadspixel.net\nhs-banner.com\nhubspotusercontent-na1.net\nhubspotvideo.com\ninfo.emburse.com\nvimeo.com\nwww.captio.net\n17\n__cf_bm\u00a0[x17]\nThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\ncalendly.com\nvimeo.com\nzoominfo.com\n3\n_cfuvid\u00a0[x3]\nThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ncdn.cookielaw.org\n1\nOptanonConsent\nDetermines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nexpense.certify.com\n2\nAWSALB\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\nAWSALBCORS\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 7 days\nType\n: HTTP Cookie\ninfo.emburse.com\n1\nBIGipServer#\nUsed to distribute traffic to the website on several servers in order to optimise response times.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\ninfo.emburse.com\nconsent.cookiebot.com\n2\nCookieConsent\u00a0[x2]\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nPreferences\n10\nPreference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.\nBizible\n1\nLearn more about this provider\n_biz_flagsA\nThis cookie serves multiple purposes; it determines whether the user has submitted any forms, performed cross-domain migration or has made any tracking opt-out choices.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nCalendly\n1\nLearn more about this provider\n1\nThis cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nHubSpot\n1\nLearn more about this provider\nmessagesUtk\nStores a unique ID string for each chat-box session. This allows the website-support to see previous issues and reconnect with the previous supporter.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nLinkedIn\n1\nLearn more about this provider\nlidc\nRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\nfast.wistia.net\nwww.emburse.com\n2\nwistia-video-progress-#\u00a0[x2]\nContains a timestamp for the website\u2019s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ng2.com\n1\n_g2_session_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.emburse.com\n2\nadroll#adroll\nStores the user's cookie consent state for the current domain\nMaximum Storage Duration\n: Persistent\nType\n: IndexedDB\nloglevel\nMaintains settings and outputs when using the Developer Tools Console on current session.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nwww.g2.com\n1\nevents_distinct_id\nUsed to embed customer reviews onto the site from third-party review sites.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nStatistics\n29\nStatistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.\nCalendly\n1\nLearn more about this provider\nuserleap.ids\nThis cookie is set to make split-tests on the website, which optimizes the website's relevance towards the visitor \u2013 the cookie can also be set to improve the visitor's experience on a website.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nHotjar\n5\nLearn more about this provider\n_hjSession_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n_hjSessionUser_#\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\n_hjTLDTest\nRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nhjActiveViewportIds\nThis cookie contains an ID string on the current session. This contains non-personal information on what subpages the visitor enters \u2013 this information is used to optimize the visitor's experience.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nhjViewportId\nSaves the user's screen size in order to adjust the size of images on the website.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nHubSpot\n4\nLearn more about this provider\n__hssc\nIdentifies if the cookie data needs to be updated in the visitor's browser.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\n__hssrc\nUsed to recognise the visitor's browser upon reentry on the website.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\n__hstc\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nhubspotutk\nSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.\nMaximum Storage Duration\n: 180 days\nType\n: HTTP Cookie\nNew Relic\n1\nLearn more about this provider\nNRBA_SESSION\nCollects data on the user\u2019s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\nPubMatic\n1\nLearn more about this provider\nPugT\nUsed to determine the number of times the cookies have been updated in the visitor's browser. Used to optimize the website's server efficiency.\nMaximum Storage Duration\n: 30 days\nType\n: HTTP Cookie\nStackAdapt\n2\nLearn more about this provider\nsa-user-id-v4\u00a0[x2]\nPending\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nVimeo\n1\nLearn more about this provider\nvuid\nCollects data on the user's visits to the website, such as which pages have been read.\nMaximum Storage Duration\n: 2 years\nType\n: HTTP Cookie\napp.teamwalnut.com\n1\n_dd_s\nRegisters the website's speed and performance. This function can be used in context with statistics and load-balancing.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\napp.teamwalnut.com\nassets.calendly.com\n4\najs_anonymous_id\u00a0[x2]\nThis cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\ndd_cookie_test_#\u00a0[x2]\nRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.\nMaximum Storage Duration\n: 1 day\nType\n: HTTP Cookie\napp.teamwalnut.com\ncdn.segment.io\n3\najs_anonymous_id\u00a0[x3]\nThis cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.\nMaximum Storage Duration\n: 1 year\nType\n: HTTP Cookie\nfast.wistia.net\nwww.emburse.com\n2\nwistia\u00a0[x2]\nUsed by the website to track the visitor's use of video-content - The cookie roots from Wistia, which provides video-software to websites.\nMaximum Storage Duration\n: Persistent\nType\n: HTML Local Storage\njs.qualified.com\n1\n__q_domainTest\nUsed in context with Account-Based-Marketing (ABM). The cookie registers data such as IP-addresses, time spent on the website and page requests for the visit. This is used for retargeting of multiple users rooting from the same IP-addresses. ABM usually facilitates B2B marketing purposes.\nMaximum Storage Duration\n: Session\nType\n: HTTP Cookie\nwww.emburse.com\n3\nziwsSession\nCollects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nziwsSessionId\nCollects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Session\nType\n: HTML Local Storage\nhs-cta-interactions#cta\nCollects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.\nMaximum Storage Duration\n: Persistent\nType\n: IndexedDB\nMarketing\n99\nMarketing cookies are used to track vi",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/emburse/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Show HN: Emburse \u2013 Employee Debit Cards with Oversight",
+          "url": "https://www.emburse.com/",
+          "points": 37,
+          "num_comments": 7,
+          "created_at": "2016-01-05T21:11:04Z",
+          "hn_url": "https://news.ycombinator.com/item?id=10846079"
+        },
+        {
+          "title": "Emburse looks to give developers ways to easily issue prepaid debit cards",
+          "url": "https://techcrunch.com/2016/10/06/emburse-looks-to-give-third-party-developers-ways-to-easily-issue-prepaid-debit-cards/?ncid=rss&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Techcrunch+%28TechCrunch%29",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2016-10-06T19:37:26Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12655396"
+        },
+        {
+          "title": "Emburse is amazing (employee credit cards)",
+          "url": "http://advice.interviewed.com/emburse-is-amazing/",
+          "points": 3,
+          "num_comments": 0,
+          "created_at": "2016-02-10T20:57:30Z",
+          "hn_url": "https://news.ycombinator.com/item?id=11075918"
+        },
+        {
+          "title": "Easily issue prepaid debit cards to anyone",
+          "url": "https://techcrunch.com/2016/10/06/emburse-looks-to-give-third-party-developers-ways-to-easily-issue-prepaid-debit-cards/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2016-10-06T18:48:52Z",
+          "hn_url": "https://news.ycombinator.com/item?id=12654979"
+        },
+        {
+          "title": "Emurse is shutting down",
+          "url": "http://help.aol.com/help/microsites/search.do?cmd=displayKC&docType=kc&externalId=83529&sliceId=1&docTypeID=DT_AOLFAQS_1_1&dialogID=2030266315&stateId=10%202030272816&radios=False#1",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2012-06-30T16:45:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=4182056"
+        },
+        {
+          "title": "Ask HN: Ways to transfer money among users?",
+          "url": "",
+          "points": 9,
+          "num_comments": 1,
+          "created_at": "2009-06-02T07:13:55Z",
+          "hn_url": "https://news.ycombinator.com/item?id=637475"
+        },
+        {
+          "title": "AOL: Low-Stress Career That Pay Wells =  Software Engineering",
+          "url": "http://blog.emurse.com/2010/06/15/3-low-stress-careers-that-pay-well/",
+          "points": 1,
+          "num_comments": 1,
+          "created_at": "2010-06-20T00:55:28Z",
+          "hn_url": "https://news.ycombinator.com/item?id=1445616"
+        },
+        {
+          "title": "Tell HN: iOS 17.4 Breaks Web Inspectors in BrowserStack",
+          "url": null,
+          "points": 9,
+          "num_comments": 2,
+          "created_at": "2024-04-23T17:13:12Z",
+          "hn_url": "https://news.ycombinator.com/item?id=40134383"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.emburse.com/pricing",
+    "changelog": null,
+    "docs": "https://help.emburse.com",
+    "integrations": "https://www.emburse.com/integrations",
+    "g2": "https://www.g2.com/products/emburse/reviews"
+  },
+  "analysis": {
+    "name": "Emburse",
+    "url": "https://www.emburse.com",
+    "tagline": "Travel and expense management software solutions",
+    "value_proposition": "End-to-end travel and expense, payments, and AP automation platform with AI-powered compliance controls for mid-market and enterprise.",
+    "target_segment": "enterprise / mid-market",
+    "ideal_customer": "Finance and AP teams at mid-market to enterprise companies needing integrated T&E, corporate cards, invoice, and payments in one platform.",
+    "features": [
+      {
+        "name": "expense management",
+        "description": "Flexible expense reporting with proactive controls and spend insights",
+        "evidence_source": "landing",
+        "evidence_quote": "Expense Management \u2013 Flexible solutions with proactive controls and insights",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "travel management",
+        "description": "Managed travel booking with automated policy compliance and savings",
+        "evidence_source": "landing",
+        "evidence_quote": "Travel Management \u2013 Compliance through convenience with automated savings",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "payments",
+        "description": "Cash flow improvement through elimination of repetitive payment tasks",
+        "evidence_source": "landing",
+        "evidence_quote": "Payments \u2013 Improve cash flow while eliminating repetitive tasks",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "ap automation",
+        "description": "Automated accounts payable, purchasing, and invoice processing",
+        "evidence_source": "landing",
+        "evidence_quote": "AP Automation \u2013 Simplify and streamline payment and purchasing",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "analytics",
+        "description": "Spend analytics for cash flow management and future spend forecasting",
+        "evidence_source": "landing",
+        "evidence_quote": "Analytics \u2013 Manage cash flow while anticipating future spend",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "audit",
+        "description": "Spend auditing to identify and reduce wasteful or non-compliant expenditure",
+        "evidence_source": "landing",
+        "evidence_quote": "Audit \u2013 Identify and reduce wasteful spending",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "ai compliance (assurance)",
+        "description": "AI-powered pre-spend compliance controls to keep expenses compliant from submission",
+        "evidence_source": "pricing",
+        "evidence_quote": "Emburse Assurance is here. Keep expenses compliant from the start with AI.",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "corporate cards",
+        "description": "Physical and virtual corporate card issuance and management",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Cards",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "prepaid debit card issuance",
+        "description": "Issue prepaid debit cards to employees with spend oversight and controls",
+        "evidence_source": "hn",
+        "evidence_quote": "Show HN: Emburse \u2013 Employee Debit Cards with Oversight",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "travel booking (enterprise)",
+        "description": "Enterprise-grade managed travel booking product",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Book Enterprise",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "travel booking (professional)",
+        "description": "Professional-tier managed travel booking product",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Book Professional",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "expense reporting (enterprise)",
+        "description": "Enterprise expense reporting and reimbursement product",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Expense Enterprise",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "expense reporting (professional)",
+        "description": "Professional-tier expense reporting product",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Expense Professional",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "invoice management (enterprise)",
+        "description": "Enterprise invoice processing and management",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Invoice Enterprise",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "invoice management (professional)",
+        "description": "Professional-tier invoice processing product",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Invoice Professional",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "spend management",
+        "description": "Spend visibility and control across the organization",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Spend",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "payment processing (enterprise)",
+        "description": "Enterprise-grade outbound payment execution",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Pay Enterprise",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "travel price reshop",
+        "description": "Automated reshop of booked travel to find cheaper fares post-booking",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Reshop",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "mobile expense (go)",
+        "description": "Mobile-first expense capture and submission product",
+        "evidence_source": "docs",
+        "evidence_quote": "Emburse Go",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "captio (regional expense)",
+        "description": "Expense management product for Spanish/European market (Captio brand)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Products: Captio",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "ai audit add-on",
+        "description": "AI-powered add-on for automated spend audit and anomaly detection",
+        "evidence_source": "pricing",
+        "evidence_quote": "Product Add-ons: AI Audit",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "analytics pro add-on",
+        "description": "Advanced analytics add-on with deeper spend reporting capabilities",
+        "evidence_source": "pricing",
+        "evidence_quote": "Product Add-ons: Analytics Pro",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "travel analytics add-on",
+        "description": "Travel-specific analytics and reporting add-on",
+        "evidence_source": "pricing",
+        "evidence_quote": "Product Add-ons: Travel Analytics",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "travel audit add-on",
+        "description": "Dedicated travel spend audit and compliance add-on",
+        "evidence_source": "pricing",
+        "evidence_quote": "Product Add-ons: Travel Audit",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "time tracking (springahead)",
+        "description": "Time and expense tracking via acquired SpringAhead product",
+        "evidence_source": "docs",
+        "evidence_quote": "SpringAhead",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "nexonia expense",
+        "description": "Highly configurable expense management via acquired Nexonia product",
+        "evidence_source": "docs",
+        "evidence_quote": "Emburse Nexonia",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "tallie expense",
+        "description": "SMB-focused expense management via acquired Tallie product",
+        "evidence_source": "docs",
+        "evidence_quote": "Emburse Tallie",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "ai platform",
+        "description": "Underlying AI layer powering compliance, audit, and analytics across products",
+        "evidence_source": "landing",
+        "evidence_quote": "Emburse AI platform",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "developer card issuance api",
+        "description": "API for developers to programmatically issue prepaid debit cards",
+        "evidence_source": "hn",
+        "evidence_quote": "Emburse looks to give developers ways to easily issue prepaid debit cards",
+        "tier": "paid",
+        "confidence": "low"
+      },
+      {
+        "name": "integration directory",
+        "description": "Curated directory of third-party integrations supported across Emburse products",
+        "evidence_source": "pricing",
+        "evidence_quote": "Integration Directory",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "emburse academy",
+        "description": "Customer training and product education portal",
+        "evidence_source": "docs",
+        "evidence_quote": "Emburse Academy",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "trust center",
+        "description": "Security, compliance, and trust documentation hub",
+        "evidence_source": "pricing",
+        "evidence_quote": "Trust Center",
+        "tier": "all",
+        "confidence": "high"
+      }
+    ],
+    "integrations": [],
+    "differentiators": [
+      "AI-powered pre-spend compliance via Emburse Assurance ('Keep expenses compliant from the start with AI')",
+      "Broad product portfolio spanning T&E, cards, AP, invoicing, payments, and analytics under one platform",
+      "Travel price reshop (Reshop product) for automated post-booking savings",
+      "Multi-brand product family (Certify, Chrome River, Nexonia, Tallie, Captio, SpringAhead) enabling market segment coverage"
+    ],
+    "recent_ships": [],
+    "user_sentiment": {
+      "praised": [
+        "Employee credit card management: 'Emburse is amazing (employee credit cards)'",
+        "Ease of issuing prepaid debit cards to employees with oversight controls"
+      ],
+      "complaints": [],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "contact-sales",
+      "currency": "USD",
+      "free_tier": {
+        "available": false,
+        "limits": null
+      },
+      "tiers": [
+        {
+          "name": "Professional",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Mid-market tier across Expense, Book, Invoice product lines"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "Enterprise tier across Expense, Book, Invoice, Pay product lines"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Pricing page returned 404; no public pricing visible. Product catalog shows Professional and Enterprise tiers across most product lines. Add-ons (AI Audit, Analytics Pro, Travel Analytics, Travel Audit) are separately purchasable. Multiple legacy brand products (Nexonia, Tallie, Captio, SpringAhead) likely have separate pricing structures."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

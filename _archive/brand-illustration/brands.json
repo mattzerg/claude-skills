@@ -1,0 +1,164 @@
+{
+  "matteisn": {
+    "site": "matteisn.com",
+    "owner": "Matthew Eisner",
+    "register": "editorial-personal",
+    "palette": {
+      "primary": "#273a96",
+      "primary_name": "Eisner navy",
+      "accent": "#0fbbbb",
+      "accent_name": "teal",
+      "accent_aa": "#0e7490",
+      "paper": "#fcfcfd",
+      "paper_name": "near-white paper"
+    },
+    "typography": {
+      "headline": "Fraunces serif (italic for emphasis)",
+      "body": "Open Sans",
+      "secondary": "Montserrat (eyebrow / labels, uppercase tracking)"
+    },
+    "voice_tells": [
+      "operator-investor — both hands on the wheel",
+      "12-year career arc across SaaS / fintech / crypto",
+      "vang sailing-rope metaphor: hold things in tension, capture what wind there is",
+      "specific numbers: $0→$60m TVL, 15× downloads, 60+ engagements"
+    ],
+    "anti_patterns": [
+      "no generic stock dots-on-dark growth-chart imagery",
+      "no Inter+Fraunces SaaS-stencil pairing",
+      "no animated blobs",
+      "no $/X/Y stat strip in a navy gradient box"
+    ],
+    "asset_path": "~/matteisn-site/assets/illustrations/",
+    "style_guidance": "Editorial magazine feel. Restrained palette: navy + teal + paper. Specific over generic. Sailing/maritime metaphor (vang = boom rope) is core. Hand-drawn or geometric vector — never photorealistic 3D. If photographic, real moments not stock."
+  },
+  "vang-capital": {
+    "site": "vang.capital",
+    "owner": "Vang Capital (Matthew Eisner)",
+    "register": "fund / pre-seed VC",
+    "palette": {
+      "primary": "#0a1641",
+      "primary_name": "Vang deep navy",
+      "accent": "#4b04af",
+      "accent_name": "Vang purple",
+      "accent_soft": "#8a5cd6",
+      "secondary": "#0ea5a5",
+      "secondary_name": "teal",
+      "paper": "#ffffff"
+    },
+    "typography": {
+      "headline": "Montserrat (heavy 600/700, tight tracking)",
+      "body": "Open Sans",
+      "secondary": "Fraunces (italic accents only)"
+    },
+    "voice_tells": [
+      "pre-seed bets on data-centric companies",
+      "the dataset itself is the moat",
+      "32 portfolio companies, ~50% est. annual return",
+      "crypto-native since 2013"
+    ],
+    "anti_patterns": [
+      "no consumer-fintech imagery (this is institutional)",
+      "no generic abstract-tech stock illustration",
+      "no portfolio-grid logo wall as illustration"
+    ],
+    "asset_path": "~/vang-capital-site/assets/illustrations/",
+    "style_guidance": "Geometric / vector / line-art. Sailing-rope (boom + sheet line) motif as signature mark. Navy + purple gradient — never solid purple. Triangles, lines, dots evoking sail-shape and tension. Restrained, premium, institutional feel."
+  },
+  "vang-advisory": {
+    "site": "vangadvisory.com",
+    "owner": "Vang Advisory (Matthew Eisner)",
+    "register": "consultancy / advisory",
+    "palette": {
+      "primary": "#0a1641",
+      "primary_name": "Vang deep navy",
+      "accent": "#4b04af",
+      "accent_name": "Vang purple",
+      "accent_soft": "#8a5cd6",
+      "secondary": "#0ea5a5",
+      "paper": "#ffffff"
+    },
+    "typography": {
+      "headline": "Montserrat (heavy 600/700)",
+      "body": "Open Sans",
+      "secondary": "Fraunces (italic accents)"
+    },
+    "voice_tells": [
+      "growth, GTM, program design",
+      "for early-stage companies and the people who fund them",
+      "85+ engagements across 6 continents",
+      "operator-bench, never offshored"
+    ],
+    "anti_patterns": [
+      "no McKinsey-style stock business imagery",
+      "no generic team-photo carousels",
+      "no abstract-success ladders / rocketships"
+    ],
+    "asset_path": "~/vang-advisory-site/assets/illustrations/",
+    "style_guidance": "Same Vang geometric language as vang-capital. Differs by emphasis — service / craft / process visuals (vs vang-capital's portfolio / outcome visuals). Diagrammatic, schematic, technical-blueprint feel."
+  },
+  "zerg-default": {
+    "site": "zergai.com",
+    "owner": "Zerg AI",
+    "register": "Zstack / non-technical / Zerg-product",
+    "palette": {
+      "primary": "#111514",
+      "primary_name": "charcoal",
+      "accent": "#b3662f",
+      "accent_name": "burnt-orange",
+      "accent_aa": "#8a4a1f",
+      "secondary": "#6FBE31",
+      "secondary_name": "Zerg green",
+      "paper": "#f4f0e7",
+      "paper_name": "cream paper"
+    },
+    "typography": {
+      "headline": "Space Grotesk",
+      "body": "Space Grotesk",
+      "code": "JetBrains Mono"
+    },
+    "voice_tells": [
+      "Zerg builds AI systems for mission-critical work",
+      "model / build / validate / keep watching",
+      "we embed with teams"
+    ],
+    "anti_patterns": [
+      "NO 'AI lab' or 'AI-native software stack' framing",
+      "NO 'consulting' or 'consultancy' — Zerg is product + service",
+      "no Tailwind defaults #F4A261 / #1FC78D — those were scrubbed",
+      "no generic neural-network visualization"
+    ],
+    "asset_path": "~/zerg/web/src/public/images/illustrations/",
+    "style_guidance": "Cream paper warmth + charcoal text + burnt-orange accent. Industrial / process / blueprint feel — wires, signals, instrumentation, terminal aesthetics. Zerg as the 'operating loop' — MAP/BUILD/PROVE/RUN as a recurring pattern. Mission-critical infrastructure register, not consumer app."
+  },
+  "zerg-dark": {
+    "site": "zergai.com (dark variant)",
+    "owner": "Zerg AI",
+    "register": "Zerg-parent / heavy-technical content",
+    "palette": {
+      "primary": "#f4f0e7",
+      "primary_name": "cream (now foreground on dark)",
+      "accent": "#d57a32",
+      "accent_name": "burnt-orange (bright variant for dark bg)",
+      "secondary": "#6FBE31",
+      "paper": "#111514",
+      "paper_name": "charcoal"
+    },
+    "typography": {
+      "headline": "Space Grotesk",
+      "body": "Space Grotesk",
+      "code": "JetBrains Mono"
+    },
+    "voice_tells": [
+      "Zerg builds AI systems for mission-critical work",
+      "validation against the environment",
+      "operating loop, live"
+    ],
+    "anti_patterns": [
+      "same as zerg-default — never 'AI lab', never 'consultancy'",
+      "no neon-on-black hacker aesthetic"
+    ],
+    "asset_path": "~/zerg/web/src/public/images/illustrations/",
+    "style_guidance": "Charcoal paper, cream foreground, brighter burnt-orange accent. For research / engineering / technical-deep content where the dark-mode register is appropriate. Same operating-loop motif language as zerg-default."
+  }
+}

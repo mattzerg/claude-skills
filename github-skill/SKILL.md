@@ -1,8 +1,9 @@
 ---
 name: github-skill
-description: Read and manage GitHub PRs, issues, and notifications. Use when the user asks to check PRs, view code reviews, find review requests, or check CI status. Helps inform daily standups and code review workflows.
+description: 'Read and manage live GitHub PRs, issues, reviews, CI status, and notifications. Use when the user asks to check PRs, view code reviews, find review requests, inspect issues, or check CI. Use github-pr-identity before branch publication, push, PR creation, or review-request attribution decisions. Use pr-gate instead of raw gh pr create when opening a PR.'
 allowed-tools: Bash, Read
 ---
+
 
 # GitHub Skill - PRs & Code Review
 

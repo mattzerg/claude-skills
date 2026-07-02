@@ -1,0 +1,553 @@
+{
+  "name": "ClickSend",
+  "url": "https://www.clicksend.com",
+  "domain": "clicksend.com",
+  "scanned_at": "2026-07-01T05:45:57.575610",
+  "sources": {
+    "landing": {
+      "url": "https://www.clicksend.com",
+      "title": "ClickSend | Business SMS and MMS via Web, Integration or API",
+      "text": "ClickSend | Business SMS and MMS via Web, Integration or API\nLogin\nSign Up\nProducts\nBusiness SMS\nSend and receive SMS messages.\nBulk SMS\nEmail to SMS\nSMS API\nSMS Marketing\nAI Messaging\nBusiness MMS\nSend and receive MMS messages.\nRich Messaging\nGet early access to RCS messaging.\nIntegrations\nDevelopers\nPricing\nResources\nSolutions\nSee how our products can solve common business needs.\nIndustries\nSee how your industry is using our SMS gateway.\nHelp Guides\nView our simple guides, tips and help docs.\nBlog\nStay up to date with insightful and comprehensive content.\nVideos\nView helpful and resourceful video content.\nContact Us\nChat to our amazing sales and support staff.\nEnglish - Global\nEnglish - Global\nEnglish - AU\nEnglish - GB\nEnglish - NZ\nEnglish - PH\nEnglish - US\nBrasil - BR\nDeutsch - DE\nEspa\u00f1ol - ES\nFran\u00e7ais - FR\nItaliano - IT\nNorsk - NO\nSvenska - SE\nWould you prefer the\nEnglish - US\nversion?\nLogin\nSign Up\nWould you prefer the\nEnglish - US\nversion?\nBusiness Communications.\nSolved.\nCommunicate with your customers and staff like never before via SMS and MMS.\nFrom single to scale by web app or API.\nGet sending for free\nBook a demo\nOr if you're a developer\nread our API docs.\nSimple, Reliable  Messaging Products  for Every Business\nAt ClickSend we create messaging products that are easy to use and highly integratable providing choice and context for your business communications. Our products are used by some of the biggest brands and smartest developers\n                around\n                the\n                world\n                Whether it\u2019s transactional SMS messages at scale via API or seasonal marketing campaigns using SMS and MMS, ClickSend helps you get and stay closer to your customers and staff.\nBusiness SMS\nBusiness MMS\nRich Messaging\nBusiness SMS\nSend, Receive & Track SMS\nMessages Worldwide\nSend, Receive & Track SMS Messages Worldwide\nSend and receive text messages \n                            around\n                            the\n                            \n                            around the globe. From a few to a few million via dashboard or API always through direct routes.\nSMS marketing\nSMS broadcasts\nAlerts and notifications\nGet Sending\nRead API Docs\nBusiness MMS\nMMS Messaging Service\nMMS Messaging Service\nSometimes you need more than words and our MMS messaging service enables you to add multimedia content to your business messages.\nAccess up to 1,600 characters\nInclude images and sound\nTrack your MMS campaigns\nGet Sending\nRead API Docs\nRich Messaging\nRich Messaging\nRich Messaging\nCreate and send rich multimedia experiences or engage in real-time conversations by RCS or Messaging Apps. Be an early adopter with us at ClickSend.\nRich Communication Service\nFacebook Messenger\nWhatsApp Business\nRegister your interest\nTrusted by Thousands of Businesses, People and Integration Partners\nVia a Simple,\nEasy-to-Use Dashboard\nOne Dashboard,\nUnlimited Possibilities\nWith ClickSend\u2019s user friendly dashboard it\u2019s easy to send SMS and MMS campaigns in just a few clicks.\nVisit Dashboard\nThrough Trusted APIs\nOr Through Trusted APIs\nNodeJS\nPython\nJava\nC#\nPHP\nRuby\nSwift\nvar\napi\n=\nrequire\n(\n'./api.js'\n)\n;\nvar\nsmsApi\n=\nnew\napi\n.\nSMSApi\n(\n\"USERNAME\"\n,\n\"API_KEY\"\n)\n;\nvar\nsmsMessage\n=\nnew\napi\n.\nSmsMessage\n(\n)\n;\nsmsMessage\n.\nsource\n=\n\"sdk\"\n;\nsmsMessage\n.\nto\n=\n\"+0451111111\"\n;\nsmsMessage\n.\nbody\n=\n\"test message\"\n;\nvar\nsmsCollection\n=\nnew\napi\n.\nSmsMessageCollection\n(\n)\n;\nsmsCollection\n.\nmessages\n=\n[\nsmsMessage\n]\n;\nsmsApi\n.\nsmsSendPost\n(\nsmsCollection\n)\n.\nthen\n(\nfunction\n(\nresponse\n)\n{\nconsole\n.\nlog\n(\nresponse\n.\nbody\n)\n;\n}\n)\n.\ncatch\n(\nfunction\n(\nerr\n)\n{\nconsole\n.\nerror\n(\nerr\n.\nbody\n)\n;\n}\n)\n;\nfrom\n__future__\nimport\nprint_function\nimport\nclicksend_client\nfrom\nclicksend_client\nimport\nSmsMessage\nfrom\nclicksend_client\n.\nrest\nimport\nApiException\n# Configure HTTP basic authorization: BasicAuth\nconfiguration\n=\nclicksend_client\n.\nConfiguration\n(\n)\nconfiguration\n.\nusername\n=\n'USERNAME'\nconfiguration\n.\npassword\n=\n'API_KEY'\n# create an instance of the API class\napi_instance\n=\nclicksend_client\n.\nSMSApi\n(\nclicksend_client\n.\nApiClient\n(\nconfiguration\n)\n)\n# If you want to explicitly set from, add the key _from to the message.\nsms_message\n=\nSmsMessage\n(\nsource\n=\n\"php\"\n,\nbody\n=\n\"Jelly liquorice marshmallow candy carrot cake 4Eyffjs1vL.\"\n,\nto\n=\n\"+61411111111\"\n,\nschedule\n=\n1436874701\n)\nsms_messages\n=\nclicksend_client\n.\nSmsMessageCollection\n(\nmessages\n=\n[\nsms_message\n]\n)\ntry\n:\n# Send sms message(s)\napi_response\n=\napi_instance\n.\nsms_send_post\n(\nsms_messages\n)\nprint\n(\napi_response\n)\nexcept\nApiException\nas\ne\n:\nprint\n(\n\"Exception when calling SMSApi->sms_send_post: %s\\n\"\n%\ne\n)\npackage\nClickSend\n;\nimport\njava\n.\nutil\n.\nArrays\n;\nimport\njava\n.\nutil\n.\nList\n;\nimport\nClickSend\n.\nApi\n.\nSmsApi\n;\nimport\nClickSend\n.\nModel\n.\nSmsMessage\n;\nimport\nClickSend\n.\nModel\n.\nSmsMessageCollection\n;\npublic\nclass\nsend_sms\n{\npublic\nstatic\nvoid\nmain\n(\nString\n[\n]\nargs\n)\n{\nApiClient\ndefaultClient\n=\nnew\nApiClient\n(\n)\n;\ndefaultClient\n.\nsetUsername\n(\n\"USERNAME\"\n)\n;\ndefaultClient\n.\nsetPassword\n(\n\"API_KEY\"\n)\n;\nSmsApi\napiInstance\n=\nnew\nSmsApi\n(\ndefaultClient\n)\n;\nSmsMessage\nsmsMessage\n=\nnew\nSmsMessage\n(\n)\n;\nsmsMessage\n.\nbody\n(\n\"body\"\n)\n;\nsmsMessage\n.\nto\n(\n\"to\"\n)\n;\nsmsMessage\n.\nsource\n(\n\"source\"\n)\n;\nList\n<\nSmsMessage\n>\nsmsMessageList\n=\nArrays\n.\nasList\n(\nsmsMessage\n)\n;\n// SmsMessageCollection | SmsMessageCollection model\nSmsMessageCollection\nsmsMessages\n=\nnew\nSmsMessageCollection\n(\n)\n;\nsmsMessages\n.\nmessages\n(\nsmsMessageList\n)\n;\ntry\n{\nString\nresult\n=\napiInstance\n.\nsmsSendPost\n(\nsmsMessages\n)\n;\nSystem\n.\nout\n.\nprintln\n(\nresult\n)\n;\n}\ncatch\n(\nApiException\ne\n)\n{\nSystem\n.\nerr\n.\nprintln\n(\n\"Exception when calling SmsApi#smsSendPost\"\n)\n;\ne\n.\nprintStackTrace\n(\n)\n;\n}\n}\n}\nusing\nIO\n.\nClickSend\n.\nClickSend\n.\nApi\n;\nusing\nIO\n.\nClickSend\n.\nClient\n;\nusing\nIO\n.\nClickSend\n.\nClickSend\n.\nModel\n;\nvar\nconfiguration\n=\nnew\nConfiguration\n(\n)\n{\nUsername\n=\nUSERNAME\n,\nPassword\n=\nAPI_KEY\n}\n;\nvar\nsmsApi\n=\nnew\nSMSApi\n(\nconfiguration\n)\n;\nvar\nlistOfSms\n=\nnew\nList\n<\nSmsMessage\n>\n{\nnew\nSmsMessage\n(\nto\n:\n\"+61411111111\"\n,\nbody\n:\n\"test message\"\n,\nsource\n:\n\"sdk\"\n)\n}\n;\nvar\nsmsCollection\n=\nnew\nSmsMessageCollection\n(\nlistOfSms\n)\n;\nvar\nresponse\n=\nsmsApi\n.\nSmsSendPost\n(\nsmsCollection\n)\n;\n<?php\nrequire_once\n(\n__DIR__\n.\n'/vendor/autoload.php'\n)\n;\n// Configure HTTP basic authorization: BasicAuth\n$config\n=\nClickSend\n\\\nConfiguration\n::\ngetDefaultConfiguration\n(\n)\n->\nsetUsername\n(\n'USERNAME'\n)\n->\nsetPassword\n(\n'API_KEY'\n)\n;\n$apiInstance\n=\nnew\nClickSend\n\\\nApi\n\\\nSMSApi\n(\nnew\nGuzzleHttp\n\\\nClient\n(\n)\n,\n$config\n)\n;\n$msg\n=\nnew\n\\\nClickSend\n\\\nModel\n\\\nSmsMessage\n(\n)\n;\n$msg\n->\nsetBody\n(\n\"test body\"\n)\n;\n$msg\n->\nsetTo\n(\n\"0451111111\"\n)\n;\n$msg\n->\nsetSource\n(\n\"sdk\"\n)\n;\n// \\ClickSend\\Model\\SmsMessageCollection | SmsMessageCollection model\n$sms_messages\n=\nnew\n\\\nClickSend\n\\\nModel\n\\\nSmsMessageCollection\n(\n)\n;\n$sms_messages\n->\nsetMessages\n(\n[\n$msg\n]\n)\n;\ntry\n{\n$result\n=\n$apiInstance\n->\nsmsSendPost\n(\n$sms_messages\n)\n;\nprint_r\n(\n$result\n)\n;\n}\ncatch\n(\nException\n$e\n)\n{\necho\n'Exception when calling SMSApi->smsSendPost: '\n,\n$e\n->\ngetMessage\n(\n)\n,\nPHP_EOL\n;\n}\n?>\n# load the gem\nrequire\n'clicksend_client'\nrequire\n'json'\n# setup authorization\nClickSendClient\n.\nconfigure\ndo\n|\nconfig\n|\n# Configure HTTP basic authorization: BasicAuth\nconfig\n.\nusername\n=\n'USERNAME'\nconfig\n.\npassword\n=\n'API_KEY'\nend\napi_instance\n=\nClickSendClient\n::\nSMSApi\n.\nnew\n# SmsMessageCollection | SmsMessageCollection model\nsms_messages\n=\nClickSendClient\n::\nSmsMessageCollection\n.\nnew\nsms_messages\n.\nmessages\n=\n[\nClickSendClient\n::\nSmsMessage\n.\nnew\n(\n\"to\"\n:\n\"+61411111111\"\n,\n\"source\"\n:\n\"sdk\"\n,\n\"body\"\n:\n\"body\"\n)\n,\nClickSendClient\n::\nSmsMessage\n.\nnew\n(\n\"to\"\n:\n\"+61422222222\"\n,\n\"source\"\n:\n\"sdk\"\n,\n\"body\"\n:\n\"body\"\n)\n]\nbegin\n# Send sms message(s)\nresult\n=\napi_instance\n.\nsms_send_post\n(\nsms_messages\n)\np\nJSON\n.\nparse\n(\nresult\n)\nrescue\nClickSendClient\n::\nApiError\n=>\ne\n    puts\n\"Exception when calling SMSApi->sms_send_post:\n#{\ne\n.\nresponse_body\n}\n\"\nend\nimport\nAlamofire\nif\nlet\nauthHeader\n=\nRequest\n.\nauthorizationHeader\n(\nuser\n:\n\"USERNAME\"\n,\npassword\n:\n\"PASSWORD\"\n)\n{\nClickSendClientAPI\n.\ncustomHeaders\n=\n[\nauthHeader\n.\nkey\n:\nauthHeader\n.\nvalue\n]\n}\nlet\nmessage1\n=\nSmsMessage\n(\nbody\n:\n\"Chocolate bar icing icing oat cake carrot cake jelly cotton MWEvciEPIr.\"\n,\nto\n:\n\"+0451111111\"\n,\nsource\n:\n\"swift\"\n)\nlet\nmessage2\n=\nSmsMessage\n(\nbody\n:\n\"Chocolate bar icing icing oat cake carrot cake jelly cotton MWEvciEPIr.\"\n,\nsource\n:\n\"swift\"\n,\nlistId\n:\n1234\n)\nlet\nsmsCollection\n=\nSmsMessageCollection\n(\nmessages\n:\n[\nmessage1\n,\nmessage2\n]\n)\nSMSAPI\n.\nsmsSendPost\n(\nsmsMessages\n:\nsmsCollection\n)\n{\n(\ndataString\n,\nerror\n)\nin\nguard\nlet\ndataString\n=\ndataString\nelse\n{\nprint\n(\nerror\n!\n)\nreturn\n}\nif\nlet\ndata\n=\ndataString\n.\ndata\n(\nusing\n:\nString\n.\nEncoding\n.\nutf8\n)\n{\ndo\n{\nif\nlet\ndictonary\n=\ntry\n(\nJSONSerialization\n.\njsonObject\n(\nwith\n:\ndata\n,\noptions\n:\n[\n]\n)\nas\n?\nNSDictionary\n)\n{\nprint\n(\ndictonary\n)\n}\nelse\n{\nprint\n(\n\"bad json\"\n)\n}\n}\ncatch\nlet\nerror\nas\nNSError\n{\nprint\n(\nerror\n)\n}\n}\n}\nWorld Class APIs,\nWorld Class Documentation,\nLoved by Developers\nIncorporate\nUse SMS and MMS in your software. Build powerful apps using the fastest and most reliable cloud communication APIs.\nRead API Docs\nAnd with Hundreds of Integration Partners\nOr via Hundreds of Integration Partners\nAutomate Your Business\nCommunications\nClickSend integrates with all the business apps you know and love plus a whole lot more. It\u2019s easy to automate repetitive tasks and even build a business communications stack with no code.\nWith our own ClickSend marketplace, you can integrate with hundreds of the world\u2019s most popular business apps.\nVisit Marketplace\nWe Power Billions Of Messages \n            Around\n            the\n            World\nWhy Businesses Love ClickSend\nGlobal 24/7 Support\nOur chat is staffed by real humans 24 hours a day, 365 days a year and always will be.\nSecurity and reliability\nThe ClickSend platform is built on enterprise-level security and provides a 99.95% Uptime SLA guarantee.\nLightning fast delivery\nClickSend lives and breathes high performance direct routes. Your messages get delivered on time.\nGet Sending with ClickSend\nJoin over 90,000 customers sending billions of messages around  the world.\nGet Started For Free\nGet Started For Free\nEnglish (World)\nClickSend\nLevel 8, 150 Lonsdale Street Melbourne VIC 3000\nCompany\nAbout\nCareers\nWhy Choose ClickSend\nPartnership program\nAffiliate program\nProducts\nSMS\nMMS\nRich Messaging\nPricing\nSMS/MMS Pricing\nRich Messaging Pricing\nAPI & Docs\nBlog\nAPI Docs\nDeveloper Portal\nSecurity\nTrust Centre\nKnowledge base\nContact Us\nSupport\nService Status\nLegal / GDPR\nPrivacy & Legal\n\u00a9 2026 ClickSend\n1",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.clicksend.com/pricing",
+      "title": "Pricing to Send Bulk SMS and More Within  - ClickSend",
+      "text": "Pricing to Send Bulk SMS and More Within  - ClickSend\nLogin\nSign Up\nProducts\nBusiness SMS\nSend and receive SMS messages.\nBulk SMS\nEmail to SMS\nSMS API\nSMS Marketing\nAI Messaging\nBusiness MMS\nSend and receive MMS messages.\nRich Messaging\nGet early access to RCS messaging.\nIntegrations\nDevelopers\nPricing\nResources\nSolutions\nSee how our products can solve common business needs.\nIndustries\nSee how your industry is using our SMS gateway.\nHelp Guides\nView our simple guides, tips and help docs.\nBlog\nStay up to date with insightful and comprehensive content.\nVideos\nView helpful and resourceful video content.\nContact Us\nChat to our amazing sales and support staff.\nEnglish - Global\nEnglish - Global\nEnglish - AU\nEnglish - GB\nEnglish - NZ\nEnglish - PH\nEnglish - US\nBrasil - BR\nDeutsch - DE\nEspa\u00f1ol - ES\nFran\u00e7ais - FR\nItaliano - IT\nNorsk - NO\nSvenska - SE\nWould you prefer the\nEnglish - US\nversion?\nLogin\nSign Up\nWould you prefer the\nEnglish - US\nversion?\n\ud83c\udf89 New year, new customer promo \ud83c\udf89\n50% extra, free on first top-up\nT&Cs apply\n\ud83c\udf89 UK new customer offer \ud83c\udf89\n25% off your first top-up*\n*25% discount applies to selected top-up amounts only. Available to new UK customers. Limited time offer,\nT&Cs apply\nSend and save on\nSMS pricing\nThe more you send, the more you save per SMS. Simply top up your balance and pay only for what you send. No subscriptions, inbound SMS are free, and you\u2019ll enjoy 24/7 support. You\u2019re always in control, and we\u2019re always here for you.\nPrices for:\nShow prices for:\n$\nUSD\nAUD\nCAD\nCHF\nEUR\nGBP\nHKD\nINR\nJPY\nNOK\nNZD\nRUB\nSEK\nSGD\nUSD\nHow many messages do you plan on sending?\nEstimate your volume and find your SMS rate\n-\n250\n10,000\n100,000\n200,000\nBoost\n$0.0271\n/SMS\nWhen you top-up from:\n$20\nGreat for small businesses getting started with SMS or running one-off campaigns.\nFree trial\nGrowth\nSave 28%\n$0.0193\n/SMS\nWhen you top-up from:\n$100\nDesigned for businesses who are growing their SMS efforts and need a bit more firepower.\nFree trial\nScale\nSave 53%\n$0.0126\n/SMS\nWhen you top-up from:\n$1,000\nIdeal if you're automating your messages or sending regularly at higher volumes.\nFree trial\nEnterprise\nSave 66%\n$0.0092\n/SMS\nWhen you top-up from:\n$2,000\nUnlock our best value per message. It's perfect for large-scale, high-frequency sending.\nFree trial\nBig sender?\nBulk SMS discounts available.\nSpeak to the sales team\nAdditional carrier fees apply. Learn more\nhere\n.\nHow many messages do you plan on sending?\n250 - 2,500\nBoost\n$0.0271\n/SMS\nWhen you top-up from:\n$20\nGreat for small businesses getting started with SMS or running one-off campaigns.\nTry for free\nGrowth\n$0.0193\n/SMS\nWhen you top-up from:\n$100\nDesigned for businesses who are growing their SMS efforts and need a bit more firepower.\nFree trial\nScale\n$0.0126\n/SMS\nWhen you top-up from:\n$1,000\nIdeal if you\u2019re automating your messages or sending regularly at higher volumes.\nFree trial\nEnterprise\n$0.0092\n/SMS\nWhen you top-up from:\n$2,000\nUnlock our best value per message. It\u2019s perfect for large-scale, high-frequency sending.\nTry for free\nBig sender?\nBulk SMS discounts available.\nSpeak to the sales team\nAdditional carrier fees apply. Learn more\nhere\n.\nMMS pricing\nShow off. Add pictures, animations or audio files to your messages to win attention and grow engagement.\n$0.0365\n/MMS\nTry for free\nNumbers and pricing in\nthe United States of America\nChoose what type of number you want to use.\nDedicated numbers\nDedicated number fees\nNumber\nMonthly fee\nSetup fee\nInbound SMS\nDedicated Number\n$3.45 / month\nUnavailable\nFree\nDedicated Shortcode\n$999.78 / month\n$999.78\nFree\nIncluded in every single credit top up\nFree 24/7 support\nWe're always here to support you.\nAutomated SMS\nSend from websites or apps.\nTwo-way texting\nTalk to customers via SMS.\nUnlimited users\nYou\u2019ll never pay for extra seats.\nPay-as-you-go\nNot another subscription.\nVolume discounts\nSend more to spend less.\nSchedule texts\nSend at the right time, every time.\nSegment contacts\nUse contact list to segment.\nFree Inbound Messaging\nReplies are always free.\nStart free trial\nGet the full pricing breakdown\nAll taxes, fees and details are listed below.\nCredit top ups\nSMS\nMMS\nVoice\nEmail\nFax\nPost\nCredit amount\nApprox SMS\n$20\n738\n$100\n5,181\n$500\n25,906\n$1,000\n79,365\n$2,000\n217,391\n$3,000\n326,086\n$5,500\n597,826\nCredit amount\nApprox SMS\nTopup bonus\nCredit amount\nApprox SMS\nTopup bonus\nPricing is in US Dollars excluding taxes.\nAdditional carrier fees apply. Learn more\nhere\n.\nWe're Still Working On MMS Pricing For This Country\nPlease contact us to discuss.\nContact Us\nCredit amount\nApprox MMS\n$20\n547\n$50\n1,369\n$100\n2,739\n$200\n5,479\n$500\n13,698\n$5,000\n136,986\n$10,000\n273,972\nOutbound\n$0.0365 /MMS\nInbound\nAlways Free\nDedicated Number\n$3.45 /month\nNo Setup Fees\nPricing is in US Dollars excluding taxes.\nAdditional carrier fees apply. Learn more\nhere\nGet Started for Free\nOutbound - Text to Speech\nVoice isn't available to new customers \u2014 we're all-in on SMS now.\nAlready using Voice? Don't stress \u2014 nothing changes.\nNew here? Try SMS instead \u2014 it's faster and more reliable.\nWe're Still Working On Voice Pricing For This Country\nPlease contact us to discuss.\nContact Us\nCredit amount\nApprox Voice\n$0.0141\nCalling Mobile\n$0.0141\nCalling Landline\nPricing is in US Dollars excluding taxes.\nGet Started for Free\nEmail isn't available to new customers \u2014 we're all-in on SMS now.\nAlready using ClickSend Email? All good \u2014 nothing changes.\nNew here? Try\nMailgun\n\u2014 one of the best email platforms in the world.\nWe're Still Working On Email Pricing For This Country\nPlease contact us to discuss.\nContact Us\nOutbound\nCredit amount\nApprox Email\n$0.0069\nUnder 25k\n$0.0055\n25k or more\n$0.0041\n200k or more\n$0.0028\n5Mil or more\nContact Us\nover 10Mil\nPricing is in US Dollars excluding taxes.\nInbound\nAlways free\nUnlimited contacts. No monthly fees. Only pay for what you use.\nGet Started for Free\nFax has finally retired \u2014 it's no longer available to new customers.\nAlready using Fax? All good \u2014 keep sending.\nNew here? Sinch has got you covered with a\nspeedy fax API.\nWe're Still Working On Fax Pricing For This Country\nPlease contact us to discuss.\nContact Us\nOutbound\n$0.03310 /Page\nInbound\nAlways Free\nDedicated Number\n$4.14 /month\nNo Setup Fees\nFaxes sent to toll-free/shared cost numbers are charged at twice the normal rate.\nPricing is in US Dollars excluding taxes.\nGet Started for Free\nPost has left the building \u2014 it's no longer available to new customers.\nIf you're already using Post, you're all good \u2014 nothing changes.\nNew customers: Try SMS instead for instant delivery and better reach.\nWe're Still Working On Post Pricing For This Country\nPlease contact us to discuss.\nContact Us\nLetters\nPostcards\nBlack & White\nColour\nSingle Sided\nDouble Sided\nRegular\nPriority\n1\nPage\n$\n1.01\nEach\nIncludes all printing and postage\nShow Breakdown\nStandard Letter\nSent in a standard envelope\n$0.86540 /Letter\nPlus\n-\nPlus\n$0.142 /Page\nPlus\n-\nPlus\n-\nPricing is in US Dollars excluding taxes.\nGet Started for Free\nSMS & MMS carrier fees\nTo keep billing simple, we charge a flat average rate based on major carrier pricing.\nCarrier fees ( TFN, 10DLC and Shortcode )\nSMS\n$0.0040\nMMS\n$0.0085\nCarrier fees ( TFN, 10DLC and Shortcode )\nSMS\n$0.0040\nMMS\n$0.0085\nPlease read our T&Cs\nPrivacy policy\nEnglish (World)\nClickSend\nLevel 8, 150 Lonsdale Street Melbourne VIC 3000\nCompany\nAbout\nCareers\nWhy Choose ClickSend\nPartnership program\nAffiliate program\nProducts\nSMS\nMMS\nRich Messaging\nPricing\nSMS/MMS Pricing\nRich Messaging Pricing\nAPI & Docs\nBlog\nAPI Docs\nDeveloper Portal\nSecurity\nTrust Centre\nKnowledge base\nContact Us\nSupport\nService Status\nLegal / GDPR\nPrivacy & Legal\n\u00a9 2026 ClickSend\n1",
+      "source": "playwright"
+    },
+    "changelog": {
+      "url": "https://www.clicksend.com/changelog",
+      "title": "Page Not Found",
+      "text": "Page Not Found\nLogin\nSign Up\nProducts\nBusiness SMS\nSend and receive SMS messages.\nBulk SMS\nEmail to SMS\nSMS API\nSMS Marketing\nAI Messaging\nBusiness MMS\nSend and receive MMS messages.\nRich Messaging\nGet early access to RCS messaging.\nIntegrations\nDevelopers\nPricing\nResources\nSolutions\nSee how our products can solve common business needs.\nIndustries\nSee how your industry is using our SMS gateway.\nHelp Guides\nView our simple guides, tips and help docs.\nBlog\nStay up to date with insightful and comprehensive content.\nVideos\nView helpful and resourceful video content.\nContact Us\nChat to our amazing sales and support staff.\nEnglish - Global\nSearch\nEnglish - Global\nEnglish - AU\nEnglish - GB\nEnglish - NZ\nEnglish - PH\nEnglish - US\nBrasil - BR\nDeutsch - DE\nEspa\u00f1ol - ES\nFran\u00e7ais - FR\nItaliano - IT\nNorsk - NO\nSvenska - SE\nWould you prefer the\nEnglish - US\nversion?\nLogin\nSign Up\nWould you prefer the\nEnglish - US\nversion?\n404 Not Found\nWe can't seem to find the thing you were looking for.\nIf you typed the address, double-check the spelling.\nGo Back\nVisit Homepage\nNeed Help?\nHaving some issues or just need someone to talk to? Feel free to contact us.\nTalk to Support\nEnglish (World)\nClickSend\nLevel 8, 150 Lonsdale Street Melbourne VIC 3000\nCompany\nAbout\nCareers\nWhy Choose ClickSend\nPartnership program\nAffiliate program\nProducts\nSMS\nMMS\nRich Messaging\nPricing\nSMS/MMS Pricing\nRich Messaging Pricing\nAPI & Docs\nBlog\nAPI Docs\nDeveloper Portal\nSecurity\nTrust Centre\nKnowledge base\nContact Us\nSupport\nService Status\nLegal / GDPR\nPrivacy & Legal\n\u00a9 2026 ClickSend\n1",
+      "source": "playwright",
+      "fallback_path": "/changelog"
+    },
+    "docs": {
+      "url": "https://developers.clicksend.com",
+      "title": "ClickSend Documentation and Developer Tools",
+      "text": "ClickSend Documentation and Developer Tools\nProducts\nDevelopers\nIntegrations\nResources\nPricing\nContact\nProducts\nDevelopers\nIntegrations\nResources\nPricing\nContact\nLogin\nSign up\nConnect with us\nLogin\nSign up\nClickSend Documentation and API\nStart building\nwith a\nbattle-tested\nmessaging API\nPick your language and jump-in with our\nSMS Quickstart Guides\n.\nFull API Reference\nPick your language and jump-in with our\nSMS Quickstart Guides\n.\nOne powerful API, unlimited options\nSMS\nText customers around the globe. Most developers send their first message in minutes.\u00a0With rock-solid reliability, support and compliance \u2014 you can breathe easy.\nSMS Quickstart Guide\nView in API Docs\nMMS\nSend images and videos over text via a trusted API. Reliable and global with fast calls, no stress and no fuss.\nView in API Docs\nLearn about MMS\nMCP Server\nConnect your AI assistant to ClickSend via MCP and get it to handle sends, stats and contact management for you \u2013 no extra code required.\nView help guide\nVisit our Github\nGlobal reach for\nworldwide businesses\nSend SMS and MMS communications globally via direct routes. With 99.95% uptime, fast calls and high throughput, our API is built to scale.\n100M\nSMS per month\n190+\ncountries globally\n30s\navg. support time\n99.95%\nuptime guarantee\n5m\navg. time to send\n10\ncoding languages\nTest our API with Postman\nHead over to our Postman guide and start testing our API. You\u2019ll get free test credit* when you create an account. Get started on us.\nStart Testing\nCreate An Account\n*Free test credit is valid for new accounts only. Free credit is equivalent to $2 AUD.\nZapier\nMake\nPower Automate\nIntegrately\nBubble.io\nSalesforce\nIFTTT\nMagento\nSearch over\n200+\nintegrations\nSync ClickSend with your favourite tools and apps. We\u2019ve shipped the code so you don\u2019t have to.\nExplore Our Integrations\nBusiness communications. Solved.\n\u00a9 2026 ClickSend\nSMS\nMMS\nAbout Us\nAbout Us\nCareers\nSecurity + Compliance\nPrivacy & Legal\nDevelopers\nFull API Reference\nSMS Quickstart\nSDKs + Libraries\nService Status\nResources\nOur Blog\nKnowledge Base\nIntegrations\nContact\nSales\nSupport\n\u00a9 2026 ClickSend\n1",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.clicksend.com/integrations",
+      "title": "Page Not Found",
+      "text": "Page Not Found\nLogin\nSign Up\nProducts\nBusiness SMS\nSend and receive SMS messages.\nBulk SMS\nEmail to SMS\nSMS API\nSMS Marketing\nAI Messaging\nBusiness MMS\nSend and receive MMS messages.\nRich Messaging\nGet early access to RCS messaging.\nIntegrations\nDevelopers\nPricing\nResources\nSolutions\nSee how our products can solve common business needs.\nIndustries\nSee how your industry is using our SMS gateway.\nHelp Guides\nView our simple guides, tips and help docs.\nBlog\nStay up to date with insightful and comprehensive content.\nVideos\nView helpful and resourceful video content.\nContact Us\nChat to our amazing sales and support staff.\nEnglish - Global\nSearch\nEnglish - Global\nEnglish - AU\nEnglish - GB\nEnglish - NZ\nEnglish - PH\nEnglish - US\nBrasil - BR\nDeutsch - DE\nEspa\u00f1ol - ES\nFran\u00e7ais - FR\nItaliano - IT\nNorsk - NO\nSvenska - SE\nWould you prefer the\nEnglish - US\nversion?\nLogin\nSign Up\nWould you prefer the\nEnglish - US\nversion?\n404 Not Found\nWe can't seem to find the thing you were looking for.\nIf you typed the address, double-check the spelling.\nGo Back\nVisit Homepage\nNeed Help?\nHaving some issues or just need someone to talk to? Feel free to contact us.\nTalk to Support\nEnglish (World)\nClickSend\nLevel 8, 150 Lonsdale Street Melbourne VIC 3000\nCompany\nAbout\nCareers\nWhy Choose ClickSend\nPartnership program\nAffiliate program\nProducts\nSMS\nMMS\nRich Messaging\nPricing\nSMS/MMS Pricing\nRich Messaging Pricing\nAPI & Docs\nBlog\nAPI Docs\nDeveloper Portal\nSecurity\nTrust Centre\nKnowledge base\nContact Us\nSupport\nService Status\nLegal / GDPR\nPrivacy & Legal\n\u00a9 2026 ClickSend\n1",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/clicksend/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "Show HN: One-click send links to your personal newsletter (Chrome extension)",
+          "url": "https://chrome.google.com/webstore/detail/itemsy/hgldjebdmbnjjijfpdjoghabodcfohlb",
+          "points": 15,
+          "num_comments": 3,
+          "created_at": "2019-10-21T23:57:09Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21318927"
+        },
+        {
+          "title": "Show HN: InvoicePad Click, Send and Get Paid \u2013 Payments Simplified",
+          "url": "https://invoicepad.co",
+          "points": 4,
+          "num_comments": 0,
+          "created_at": "2023-12-20T17:12:35Z",
+          "hn_url": "https://news.ycombinator.com/item?id=38710940"
+        },
+        {
+          "title": "Clicksend has a joke on a song about domestic abuse on their website",
+          "url": "https://www.clicksend.com/us/sms/",
+          "points": 1,
+          "num_comments": 4,
+          "created_at": "2019-12-09T21:06:02Z",
+          "hn_url": "https://news.ycombinator.com/item?id=21746579"
+        },
+        {
+          "title": "Show HN: ClickSend - Stream files to Android via WiFi with two clicks",
+          "url": "https://play.google.com/store/apps/details?id=com.timtips.clicksend",
+          "points": 1,
+          "num_comments": 1,
+          "created_at": "2013-07-23T10:35:44Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6089176"
+        },
+        {
+          "title": "InstaContext: Chrome Extension for Right Click Send to Instapaper",
+          "url": "http://poweredbydietcoke.tumblr.com/post/62399611689/instacontext-a-chrome-extension-for-right-click-send",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2013-09-27T17:46:43Z",
+          "hn_url": "https://news.ycombinator.com/item?id=6458369"
+        },
+        {
+          "title": "Reamaze and ClickSend SMS/MMS Support",
+          "url": "http://blog.reamaze.com/2017/01/06/reamaze-and-clicksend-smsmms/",
+          "points": 1,
+          "num_comments": 0,
+          "created_at": "2017-01-09T21:40:42Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13360056"
+        },
+        {
+          "title": "Show HN: P2P file transfer using WebRTC",
+          "url": "https://taonexus.com/p2pfilesharing/p2pfilesharing",
+          "points": 9,
+          "num_comments": 8,
+          "created_at": "2024-11-02T14:49:53Z",
+          "hn_url": "https://news.ycombinator.com/item?id=42026715"
+        },
+        {
+          "title": "Facebook Marketplace: How a single button and textbox ruins the service",
+          "url": null,
+          "points": 6,
+          "num_comments": 11,
+          "created_at": "2025-03-06T17:07:04Z",
+          "hn_url": "https://news.ycombinator.com/item?id=43282531"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.clicksend.com/pricing",
+    "changelog": null,
+    "docs": "https://developers.clicksend.com",
+    "integrations": "https://www.clicksend.com/integrations",
+    "g2": "https://www.g2.com/products/clicksend/reviews"
+  },
+  "analysis": {
+    "name": "ClickSend",
+    "url": "https://www.clicksend.com",
+    "tagline": "Business Communications. Solved.",
+    "value_proposition": "Simple, reliable business SMS and MMS messaging via web dashboard or API, from single messages to enterprise scale.",
+    "target_segment": "SMB / mid-market / dev",
+    "ideal_customer": "Businesses and developers who need reliable transactional or marketing SMS/MMS at any scale, paying only for what they send",
+    "features": [
+      {
+        "name": "bulk sms",
+        "description": "Send high-volume SMS campaigns worldwide from dashboard or API",
+        "evidence_source": "landing",
+        "evidence_quote": "From a few to a few million via dashboard or API always through direct routes",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "email to sms",
+        "description": "Send SMS messages by sending an email",
+        "evidence_source": "landing",
+        "evidence_quote": "Email to SMS",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sms api",
+        "description": "REST API for programmatic SMS sending",
+        "evidence_source": "docs",
+        "evidence_quote": "Start building with a battle-tested messaging API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "sms marketing",
+        "description": "SMS marketing campaigns and broadcasts",
+        "evidence_source": "landing",
+        "evidence_quote": "SMS marketing / SMS broadcasts",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "ai messaging",
+        "description": "AI-assisted messaging feature",
+        "evidence_source": "landing",
+        "evidence_quote": "AI Messaging",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "business mms",
+        "description": "Send and receive multimedia messages (images, sound, up to 1600 chars)",
+        "evidence_source": "landing",
+        "evidence_quote": "MMS messaging service enables you to add multimedia content",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "rich messaging (rcs)",
+        "description": "Early-access RCS rich communication service",
+        "evidence_source": "landing",
+        "evidence_quote": "Get early access to RCS messaging",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "facebook messenger",
+        "description": "Messaging via Facebook Messenger channel",
+        "evidence_source": "landing",
+        "evidence_quote": "Facebook Messenger",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "whatsapp business",
+        "description": "Messaging via WhatsApp Business channel",
+        "evidence_source": "landing",
+        "evidence_quote": "WhatsApp Business",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "two-way sms",
+        "description": "Inbound reply handling for conversational SMS",
+        "evidence_source": "pricing",
+        "evidence_quote": "Two-way texting / Talk to customers via SMS",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "free inbound sms",
+        "description": "Replies and inbound messages are always free",
+        "evidence_source": "pricing",
+        "evidence_quote": "Free Inbound Messaging / Replies are always free",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "scheduled sms",
+        "description": "Schedule messages to send at chosen times",
+        "evidence_source": "pricing",
+        "evidence_quote": "Schedule texts / Send at the right time, every time",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "contact segmentation",
+        "description": "Segment contact lists for targeted sends",
+        "evidence_source": "pricing",
+        "evidence_quote": "Segment contacts / Use contact list to segment",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "unlimited users",
+        "description": "No per-seat charges \u2014 unlimited team members",
+        "evidence_source": "pricing",
+        "evidence_quote": "Unlimited users / You'll never pay for extra seats",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "pay-as-you-go billing",
+        "description": "Top-up credit model with no subscription",
+        "evidence_source": "pricing",
+        "evidence_quote": "Pay-as-you-go / Not another subscription",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "volume discounts",
+        "description": "Per-message rate drops as top-up amount grows",
+        "evidence_source": "pricing",
+        "evidence_quote": "Volume discounts / Send more to spend less",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated virtual number",
+        "description": "Dedicated inbound number for $3.45/month",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated Number $3.45 / month",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "dedicated shortcode",
+        "description": "Dedicated SMS shortcode",
+        "evidence_source": "pricing",
+        "evidence_quote": "Dedicated Shortcode $999.78 / month",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "delivery tracking",
+        "description": "Track SMS/MMS delivery and campaign performance",
+        "evidence_source": "landing",
+        "evidence_quote": "Send, Receive & Track SMS Messages Worldwide",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "web dashboard",
+        "description": "User-friendly web app for sending campaigns in a few clicks",
+        "evidence_source": "landing",
+        "evidence_quote": "With ClickSend's user friendly dashboard it's easy to send SMS and MMS campaigns in just a few clicks",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "24/7 support",
+        "description": "Round-the-clock human support included on every top-up",
+        "evidence_source": "pricing",
+        "evidence_quote": "Free 24/7 support / We're always here to support you",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "global coverage",
+        "description": "Direct-route delivery to 190+ countries",
+        "evidence_source": "docs",
+        "evidence_quote": "190+ countries globally",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "high throughput",
+        "description": "100M SMS per month capacity with 5m avg time to send",
+        "evidence_source": "docs",
+        "evidence_quote": "100M SMS per month",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "uptime sla",
+        "description": "99.95% uptime guarantee",
+        "evidence_source": "docs",
+        "evidence_quote": "99.95% uptime guarantee",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-language sdks",
+        "description": "Official SDKs in 10 languages (NodeJS, Python, Java, C#, PHP, Ruby, Swift, etc.)",
+        "evidence_source": "landing",
+        "evidence_quote": "10 coding languages",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "postman collection",
+        "description": "Postman collection for API testing with free test credit",
+        "evidence_source": "docs",
+        "evidence_quote": "Head over to our Postman guide and start testing our API",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "mcp server",
+        "description": "Model Context Protocol server to connect AI assistants to ClickSend",
+        "evidence_source": "docs",
+        "evidence_quote": "Connect your AI assistant to ClickSend via MCP",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "transactional sms",
+        "description": "Automated/transactional SMS from apps and websites",
+        "evidence_source": "pricing",
+        "evidence_quote": "Automated SMS / Send from websites or apps",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "multi-currency billing",
+        "description": "Billing in 15+ currencies (USD, AUD, CAD, EUR, GBP, etc.)",
+        "evidence_source": "pricing",
+        "evidence_quote": "AUD CAD CHF EUR GBP HKD INR JPY NOK NZD RUB SEK SGD USD",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "voice / text-to-speech (legacy)",
+        "description": "Outbound text-to-speech voice calls (closed to new customers)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Voice isn't available to new customers \u2014 we're all-in on SMS now",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "transactional email (legacy)",
+        "description": "Email sending API (closed to new customers, Mailgun recommended)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Email isn't available to new customers \u2014 we're all-in on SMS now",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "fax (legacy)",
+        "description": "Fax sending (retired for new customers)",
+        "evidence_source": "pricing",
+        "evidence_quote": "Fax has finally retired \u2014 it's no longer available to new customers",
+        "tier": "paid",
+        "confidence": "high"
+      },
+      {
+        "name": "direct mail / post",
+        "description": "Physical letter and postcard sending",
+        "evidence_source": "pricing",
+        "evidence_quote": "Post",
+        "tier": "paid",
+        "confidence": "medium"
+      },
+      {
+        "name": "free trial credit",
+        "description": "$2 AUD free test credit for new accounts",
+        "evidence_source": "docs",
+        "evidence_quote": "Free test credit is valid for new accounts only. Free credit is equivalent to $2 AUD",
+        "tier": "free",
+        "confidence": "high"
+      },
+      {
+        "name": "industry solutions",
+        "description": "Pre-packaged use cases by industry/vertical",
+        "evidence_source": "landing",
+        "evidence_quote": "See how your industry is using our SMS gateway",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "partnership program",
+        "description": "Reseller/partnership program",
+        "evidence_source": "landing",
+        "evidence_quote": "Partnership program",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "affiliate program",
+        "description": "Affiliate referral program",
+        "evidence_source": "landing",
+        "evidence_quote": "Affiliate program",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "trust center",
+        "description": "Security and compliance trust center",
+        "evidence_source": "landing",
+        "evidence_quote": "Trust Centre",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "service status page",
+        "description": "Public status page for uptime/incidents",
+        "evidence_source": "landing",
+        "evidence_quote": "Service Status",
+        "tier": "all",
+        "confidence": "medium"
+      },
+      {
+        "name": "knowledge base",
+        "description": "Self-serve help guides and knowledge base",
+        "evidence_source": "landing",
+        "evidence_quote": "View our simple guides, tips and help docs",
+        "tier": "all",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Zapier",
+      "Make",
+      "Power Automate",
+      "Integrately",
+      "Bubble.io",
+      "Salesforce",
+      "IFTTT",
+      "Magento",
+      "Reamaze"
+    ],
+    "differentiators": [
+      "No subscription \u2014 pure pay-as-you-go top-up model",
+      "Unlimited users with no per-seat fees",
+      "Free inbound SMS (replies always free)",
+      "24/7 human support included",
+      "Direct routes to 190+ countries with 99.95% uptime",
+      "200+ pre-built integrations",
+      "SDKs in 10 languages",
+      "MCP server for AI assistants"
+    ],
+    "recent_ships": [
+      {
+        "date": "2026",
+        "what": "MCP Server for connecting AI assistants to ClickSend",
+        "source": "Connect your AI assistant to ClickSend via MCP and get it to handle sends, stats and contact management for you"
+      },
+      {
+        "date": "2026",
+        "what": "Voice product closed to new customers",
+        "source": "Voice isn't available to new customers \u2014 we're all-in on SMS now"
+      },
+      {
+        "date": "2026",
+        "what": "Email product closed to new customers (Mailgun recommended)",
+        "source": "Email isn't available to new customers \u2014 we're all-in on SMS now"
+      },
+      {
+        "date": "2026",
+        "what": "Fax product retired for new customers",
+        "source": "Fax has finally retired \u2014 it's no longer available to new customers"
+      },
+      {
+        "date": "2026",
+        "what": "Rich Messaging / RCS early access",
+        "source": "Get early access to RCS messaging"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [],
+      "complaints": [
+        "HN post flagged a ClickSend website joke referencing a song about domestic abuse as inappropriate"
+      ],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "self-serve",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "$2 AUD free test credit for new accounts only"
+      },
+      "tiers": [
+        {
+          "name": "Boost",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "$0.0271/SMS, top-up from $20 \u2014 small businesses & one-off campaigns"
+        },
+        {
+          "name": "Growth",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "$0.0193/SMS (save 28%), top-up from $100 \u2014 growing SMS efforts"
+        },
+        {
+          "name": "Scale",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "$0.0126/SMS (save 53%), top-up from $1,000 \u2014 automated/regular high volume"
+        },
+        {
+          "name": "Enterprise",
+          "price_per_seat_per_month": null,
+          "price_flat_per_month": null,
+          "yearly_discount_pct": null,
+          "headline_inclusions": "$0.0092/SMS (save 66%), top-up from $2,000 \u2014 large-scale high-frequency sending"
+        }
+      ],
+      "enterprise": "contact-sales",
+      "notes": "Pure pay-as-you-go credit top-up model \u2014 no monthly subscription. Per-SMS rate scales with top-up size (4 published tiers Boost/Growth/Scale/Enterprise, plus bulk discounts via sales). MMS flat $0.0365/msg. Dedicated number $3.45/mo, dedicated shortcode $999.78/mo + $999.78 setup. Inbound SMS always free. Additional carrier fees apply. Billing available in 15+ currencies. New-customer promos: 50% extra free on first top-up (global), 25% off first top-up (UK)."
+    }
+  },
+  "news": {
+    "recent_hn": []
+  }
+}

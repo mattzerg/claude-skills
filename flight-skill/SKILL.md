@@ -4,6 +4,7 @@ description: Look up live flight status, track connecting flights, and check air
 allowed-tools: Bash, Read
 ---
 
+
 # Flight Skill - Live Flight Tracking
 
 Track flights in real-time using FlightRadar24 data. No API key required.

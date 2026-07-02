@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ZergGuard Options</title>
+  </head>
+  <body>
+    <h1>ZergGuard URL Shield Options</h1>
+    <p>This extension pulls its IOC list from a local source. Configure where:</p>
+    <label>Local IOC URL: <input id="url" type="text" style="width:400px"></label>
+    <button id="save">Save</button>
+    <script>
+      chrome.storage.local.get("ioc_source_url", (s) => {
+        document.getElementById("url").value = s.ioc_source_url || "http://127.0.0.1:54321/ioc.json";
+      });
+      document.getElementById("save").addEventListener("click", () => {
+        chrome.storage.local.set({ ioc_source_url: document.getElementById("url").value });
+      });
+    </script>
+  </body>
+</html>

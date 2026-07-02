@@ -1,8 +1,9 @@
 ---
 name: linear-skill
-description: Read and manage Linear issues, projects, and cycles. Use when the user asks to check Linear, view issues, find tasks, check sprint status, or manage work items. Helps inform daily standups and work planning.
+description: 'Read and manage live Linear issues, projects, teams, and cycles. Use when the user asks to check Linear, view issues, find tasks, check sprint/cycle status, create or update issues, or manage work items. Helps inform daily standups and work planning.'
 allowed-tools: Bash, Read
 ---
+
 
 # Linear Skill - Issue & Project Management
 

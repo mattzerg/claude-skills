@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.matteisn.idea-backlog.rebuild-index</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/opt/homebrew/bin/python3</string>
+		<string>/Users/mattheweisner/.claude/skills/idea-backlog/scripts/rebuild_index.py</string>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>/Users/mattheweisner/.claude/skills/idea-backlog/_workdir/cron-rebuild-index.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/mattheweisner/.claude/skills/idea-backlog/_workdir/cron-rebuild-index.log</string>
+	<key>StartInterval</key>
+	<integer>14400</integer>
+</dict>
+</plist>

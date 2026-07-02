@@ -305,7 +305,7 @@ def main():
     # Read spec
     spec = vault.read_product_spec(args.product)
     if not spec:
-        print(f"Error: no product spec found at MattZerg/Projects/Zstack/{args.product}.md", file=sys.stderr)
+        print(f"Error: no product spec found at MattZerg/Projects/Zerg-Production/Zstack/{args.product}.md", file=sys.stderr)
         sys.exit(1)
 
     # Scrape live

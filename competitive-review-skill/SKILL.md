@@ -1,8 +1,9 @@
 ---
 name: competitive-review-skill
-description: Run a structured competitive review of a product category against a Zerg product. Scrapes competitors across landing/pricing/changelog/docs/G2/Reddit, builds a feature matrix, classifies gaps into 4 buckets (table stakes / differentiator parity / whitespace / we-have-they-don't), reconciles spec-vs-live drift, and emits an Obsidian competitive note + positioning brief + landing-page-skill handoff JSON + proposed Zergboard cards. USE PROACTIVELY when the user mentions reviewing or comparing a product category, asks "what does <competitor> do" or "how do other <X> handle Y", talks about building a feature/product where competitor context would help, says "alternatives to" / "competitive landscape" / "what's the <category> ecosystem", or mentions a known competitor in product context. Always confirm the candidate competitor list with the user before scraping; always confirm proposed Zergboard cards before creating them.
+description: Structured competitive review of a category against a Zerg product. Scrapes competitor landing/pricing/changelog/docs/G2/Reddit, builds feature matrix, classifies gaps (table-stakes / parity / whitespace / we-have-they-don't), emits Obsidian note + positioning brief + landing-page-skill handoff + proposed Zergboard cards. USE PROACTIVELY when user mentions a competitor in product context, asks "what does <X> do", "alternatives to", or "competitive landscape". Confirm competitor list before scraping; confirm cards before creating.
 allowed-tools: Bash, Read, Write
 ---
+
 
 # Competitive Review Skill
 
@@ -25,7 +26,7 @@ When in doubt, suggest running it — Matt can decline.
 1. **discover** — find candidate competitors for the category, merge with any user-supplied seeds, present list. **STOP, await confirmation.** User can add/remove.
 2. **priors** — auto-detect prior competitive audits in `MattZerg/Conversations/Claude/` matching category or competitors; summarize as priors.
 3. **scan** — for each confirmed competitor, scrape 6 source types (landing, pricing, changelog, docs/integrations, G2/Capterra, Reddit/HN). Save raw JSON to `insights/`.
-4. **compare** — read `MattZerg/Projects/Zstack/<Product>.md` AND scrape its live URL. Reconcile into Us(spec)+Us(live) columns. Build feature matrix. Classify each gap into 4 buckets.
+4. **compare** — read `MattZerg/Projects/Zerg-Production/Zstack/<Product>.md` AND scrape its live URL. Reconcile into Us(spec)+Us(live) columns. Build feature matrix. Classify each gap into 4 buckets.
 5. **rank** — present top-10 gaps; ask user to tag strategic fit (1–5) and rough cost (S/M/L). Compute `freq × fit ÷ cost`, sort.
 6. **drift** — diff Us(spec) vs Us(live); list mismatches.
 7. **report** — write all outputs to `MattZerg/Competitive/<category>/`. Emit `landing-page-skill/insights/competitive_<category>_<ts>.json` handoff.
@@ -35,19 +36,19 @@ When in doubt, suggest running it — Matt can decline.
 ## Default invocation
 
 ```bash
-python3 ~/.claude/skills/competitive-review-skill/competitive_review.py \
+/usr/bin/python3 ~/.claude/skills/competitive-review-skill/competitive_review.py \
   <category-slug> --product <ZergProduct> [seed1.com seed2.com ...]
 ```
 
 Walks all phases. Each phase script callable independently for re-runs:
 
 ```bash
-python3 ~/.claude/skills/competitive-review-skill/discover.py <category> [seeds...]
-python3 ~/.claude/skills/competitive-review-skill/scan.py <competitor-url>
-python3 ~/.claude/skills/competitive-review-skill/compare.py <category> --product <ZergProduct>
-python3 ~/.claude/skills/competitive-review-skill/rank.py <category>
-python3 ~/.claude/skills/competitive-review-skill/report.py <category> --product <ZergProduct>
-python3 ~/.claude/skills/competitive-review-skill/cards.py <category> [--board UUID]
+/usr/bin/python3 ~/.claude/skills/competitive-review-skill/discover.py <category> [seeds...]
+/usr/bin/python3 ~/.claude/skills/competitive-review-skill/scan.py <competitor-url>
+/usr/bin/python3 ~/.claude/skills/competitive-review-skill/compare.py <category> --product <ZergProduct>
+/usr/bin/python3 ~/.claude/skills/competitive-review-skill/rank.py <category>
+/usr/bin/python3 ~/.claude/skills/competitive-review-skill/report.py <category> --product <ZergProduct>
+/usr/bin/python3 ~/.claude/skills/competitive-review-skill/cards.py <category> [--board UUID]
 ```
 
 ## Output
@@ -69,8 +70,8 @@ Plus:
 
 ## Conventions
 
-- Vault root: `/Users/mattheweisner/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zerg/MattZerg`
-- Product specs: `Projects/Zstack/<Product>.md` (frontmatter has `fly_app` → live URL is `https://<fly_app>.fly.dev`)
+- Vault root: `~/Obsidian/Zerg/MattZerg`
+- Product specs: `Projects/Zerg-Production/Zstack/<Product>.md` (frontmatter has `fly_app` → live URL is `https://<fly_app>.fly.dev`)
 - Marketing board UUID: `7bf7ab2a-ac70-4b29-85bf-74a6db6a0760` (fallback for gap cards if product lacks own board)
 - Website board UUID: `8ef863c1-765f-493e-8622-2e65b4d2ca61`
 - Zergboard cards: prefix titles with bracketed lane (`[Content]`, `[Launches]`, `[Channels]`, `[Brand & Site]`, `[Pipeline]`, `[Measurement]`, `[Infra]`, `[Tools]`)

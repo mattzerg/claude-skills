@@ -1,0 +1,348 @@
+{
+  "name": "Webex",
+  "url": "https://www.webex.com",
+  "domain": "ebex.com",
+  "scanned_at": "2026-06-01T04:14:53.551216",
+  "sources": {
+    "landing": {
+      "url": "https://www.webex.com",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.webex.com/\" on this server.\nReference #18.afed2117.1780301694.5aca42f\nhttps://errors.edgesuite.net/18.afed2117.1780301694.5aca42f",
+      "source": "playwright"
+    },
+    "pricing": {
+      "url": "https://www.webex.com/pricing/index.html",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.webex.com/pricing/index.html\" on this server.\nReference #18.afed2117.1780301711.5ace029\nhttps://errors.edgesuite.net/18.afed2117.1780301711.5ace029",
+      "source": "playwright"
+    },
+    "changelog": {
+      "error": "no content",
+      "url": null
+    },
+    "docs": {
+      "url": "https://developer.webex.com/docs",
+      "title": "Getting started with Webex | Webex for Developers",
+      "text": "Getting started with Webex | Webex for Developers\nDocumentation\nCreate\nMCP\nBlog\nSupport\nResources\nLog in\nSign up\nGetting started with Webex\nExplore documentation, sample code, tutorials, and more to help you build custom Webex apps.\nMost popular\nNew\nAgentic Apps\nWebex supports agentic architectures through Model Context Protocol (MCP) servers and Agent-to-Agent (A2A) servers, enabling you to build intelligent, autonomous applications that can interact with Webex services.\nGet Started with Agentic Apps\nWebex MCP Server Guide\nWebex MCP Servers\nNew\nContact Center\nWebex Contact Center lets you build, enhance and customize CX solutions with a rich and extensible set of APIs.\nGet Started with the APIs\nGet Started with the Search API\nContact Center Vidcasts\nInstant Connect\nUse Instant Connect to make one-click calls, without the need for the Webex App or login credentials!\nWhat is Instant Connect?\nCreate Meeting Links\nHelp Center\nMessaging\nGet up and running in no time with a walk-through of the most popular Webex API: Messaging.\nMessaging API Overview\nSending Messages with the Browser\nEmbedded Apps\nAccess your app directly in Webex with the Embedded Apps Framework.\nDeveloper Quick Start\nEmbedded App Learning Lab\nAPI Reference\nCalling\nFind out everything you need to know about Webex Calling workflows.\nCalling APIs Overview\nWebex Calling Overview\nCalling Vidcasts\nBots\nBots can be added to messaging spaces or engage in 1:1 chat, or post notifications from external systems.\nWhat's a Bot?\nCreating a Chat Bot\nChatbot in 15 Minutes\nWebhooks\nUse webhooks to notify your apps when specific activities occur in Webex.\nWhat are Webhooks?\nExperiment with Webhooks\nAuthentication\nBefore you do anything with the Webex API, you\u2019ll need to authenticate your session.\nRun a Webex OAuth Integration Locally\nLogin with Webex\nUsing a Personal Token\nMeetings\nFind out how to leverage integrated audio, video, and content sharing with highly secure web meetings.\nWebex Meetings APIs\nAccessing Meeting Resources\nMeeting API Vidcasts\nDevices\nLearn how to control Webex devices using xAPI in a variety of scenarios.\nRoomOS Articles\nDevice Developer\u2019s Guide\nWorkspace Integrations\nAdministration\nManage, monitor and audit your Webex applications.\nAdministration API Overview\nWebex Compliance\nWebex basics\nLearn about Webex\nFind our high level details, including what you can do with Webex.\nPlatform Introduction\nHands-on Webex\nIn this tutorial, you\u2019ll learn about the different Webex application types and experiment with the Webex REST API.\nIntroduction to Webex Apps\nNew\nThe Webex REST API\nLearn about the various features particular to the Webex REST API.\nWebex REST API Guide\nREST API Vidcasts\nBlogs, videos, and more\nHow-to Blogs\nOur evangelists dive into various popular Webex development topics including detailed steps and examples.\nBuild an OAuth Integration\nUsing Websockets with the JS SDK\nA Webex Chatbot in 15 minutes\nDeveloper Stories\nLearn what Webex-based solutions our partners are building.\nBuilding the Vivoh OnTime App\nWord of the Hour Bot\nDevelop Stories from Cisco Live 2022\nVideos\nComprehensive videos covering many popular Webex development topics.\nCreate a Meeting\nSubmitting the the Webex App Hub\nHow an Integration Receives a Message\nWebinars\nChoose from upcoming as well as previously recorded webinars covering all facets of Webex app development.\nBrowse all webinars\nOpen source\nCheck out our open source projects including examples, SDKs, and developer tools.\nOfficial SDKs, Widgets, and Tools\nSample Code and Applications\nCommunity Supported Projects\nConnect\nSupport\nDeveloper Community\nDeveloper Events\nContact Sales\nHandy Links\nWebex Ambassadors\nWebex App Hub\nResources\nOpen Source Bot Starter Kits\nDownload Webex\nDevNet Learning Labs\nTerms of Service\nPrivacy Policy\nCookie Policy\nTrademarks\n\u00a9\n2026 Cisco and/or its affiliates. All rights reserved.\nBy continuing to use our website, you acknowledge the use of cookies.\nPrivacy Statement\nChange Settings\nConsent Manager\nYour opt out preference signal is honored.\nConsent Manager\nYour Privacy\nStrictly Necessary Cookies\nPerformance Cookies\nTargeting Cookies\nFunctional Cookies\nYour Privacy\nWhen you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. From the list on left, please choose whether this site may use Performance and/or Targeting Cookies. By selecting Strictly Necessary Cookies only, you are requesting Cisco not to sell or share your personal data. Note, blocking some types of cookies may impact your experience on the site and the services we are able to offer.\nStrictly Necessary Cookies\nAlways Active\nThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. \u00a0 \u00a0You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.\nCookies Details\nPerformance Cookies\nPerformance Cookies\nThese cookies provide metrics related to the performance and usability of our site. They are primarily focused on gathering information about how you interact with our site, including: page load times, response times, error messages, and allowing a replay of a visitor\u2019s interactions with our site, which enables us to review and analyze visitor behavior, helping to improve site usability and functionality. These cookies also allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. If you do not allow these cookies we will not know when you have visited our site and will not be able to monitor its performance.\nCookies Details\nTargeting Cookies\nTargeting Cookies\nThese cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. \u00a0 \u00a0They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.\nCookies Details\nFunctional Cookies\nFunctional Cookies\nThese cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.\nCookies Details\nBack Button\nCookie List\nFilter Button\nConsent\nLeg.Interest\ncheckbox label\nlabel\ncheckbox label\nlabel\ncheckbox label\nlabel\nClear\ncheckbox label\nlabel\nApply\nCancel\nSave Settings\nAllow All",
+      "source": "playwright"
+    },
+    "integrations": {
+      "url": "https://www.webex.com/integrations-and-bots.html",
+      "title": "Access Denied",
+      "text": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://www.webex.com/integrations-and-bots.html\" on this server.\nReference #18.afed2117.1780301733.5ad277a\nhttps://errors.edgesuite.net/18.afed2117.1780301733.5ad277a",
+      "source": "playwright"
+    },
+    "g2": {
+      "url": "https://www.g2.com/products/webex/reviews",
+      "title": "g2.com",
+      "text": "g2.com",
+      "source": "playwright"
+    },
+    "hn": {
+      "hits": [
+        {
+          "title": "uBlock Origin Maintainer on Chrome vs. Firefox WebExtensions",
+          "url": "https://discourse.mozilla.org/t/support-ublock-origin/6746/451",
+          "points": 776,
+          "num_comments": 324,
+          "created_at": "2017-08-09T20:46:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14973424"
+        },
+        {
+          "title": "Tell HN: Cisco WebEx on OS X uses the same pre-installer tricks as Zoom",
+          "url": null,
+          "points": 673,
+          "num_comments": 180,
+          "created_at": "2020-04-08T18:29:39Z",
+          "hn_url": "https://news.ycombinator.com/item?id=22815583"
+        },
+        {
+          "title": "Show HN: Fed up with WebEx, so we built a way to screen share in under 20 sec.",
+          "url": "http://www.screenleap.com/",
+          "points": 402,
+          "num_comments": 130,
+          "created_at": "2012-02-01T20:36:32Z",
+          "hn_url": "https://news.ycombinator.com/item?id=3539792"
+        },
+        {
+          "title": "Firefox 54: E10S-Multi, WebExtension APIs, CSS Clip-Path",
+          "url": "https://hacks.mozilla.org/2017/06/firefox-54-e10s-webextension-apis-css-clip-path/",
+          "points": 335,
+          "num_comments": 167,
+          "created_at": "2017-06-13T19:00:24Z",
+          "hn_url": "https://news.ycombinator.com/item?id=14547559"
+        },
+        {
+          "title": "Cisco: Magic WebEx URL Allows Arbitrary Remote Command Execution",
+          "url": "https://bugs.chromium.org/p/project-zero/issues/detail?id=1096",
+          "points": 273,
+          "num_comments": 64,
+          "created_at": "2017-01-23T21:24:34Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13466187"
+        },
+        {
+          "title": "Firefox 57 as the first release where only WebExtensions will be supported",
+          "url": "https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/",
+          "points": 209,
+          "num_comments": 323,
+          "created_at": "2017-02-18T15:33:11Z",
+          "hn_url": "https://news.ycombinator.com/item?id=13675097"
+        },
+        {
+          "title": "Safari is adopting an extensions API similar to Firefox\u2019s WebExtensions",
+          "url": "https://hacks.mozilla.org/2020/06/welcoming-safari-to-the-webextensions-community/",
+          "points": 207,
+          "num_comments": 140,
+          "created_at": "2020-06-23T15:00:26Z",
+          "hn_url": "https://news.ycombinator.com/item?id=23614754"
+        },
+        {
+          "title": "Safari 14 added WebExtensions support, so where are the extensions?",
+          "url": "https://sixcolors.com/post/2021/01/safari-14-added-webextensions-support-so-where-are-the-extensions/",
+          "points": 200,
+          "num_comments": 216,
+          "created_at": "2021-01-17T22:05:50Z",
+          "hn_url": "https://news.ycombinator.com/item?id=25815566"
+        }
+      ]
+    },
+    "reddit": {
+      "hits": []
+    }
+  },
+  "resolved_urls": {
+    "pricing": "https://www.webex.com/pricing/index.html",
+    "changelog": null,
+    "docs": "https://developer.webex.com/docs",
+    "integrations": "https://www.webex.com/integrations-and-bots.html",
+    "g2": "https://www.g2.com/products/webex/reviews"
+  },
+  "analysis": {
+    "name": "Webex",
+    "url": "https://www.webex.com",
+    "tagline": "unavailable \u2014 landing page returned 403",
+    "value_proposition": "Enterprise collaboration platform by Cisco offering meetings, messaging, calling, and contact center with an extensible API surface for custom integrations.",
+    "target_segment": "enterprise",
+    "ideal_customer": "Large enterprises and IT-governed organizations requiring secure video conferencing, cloud calling, and contact center with deep integration capabilities.",
+    "features": [
+      {
+        "name": "messaging api",
+        "description": "REST API for sending and receiving messages in spaces and 1:1 conversations",
+        "evidence_source": "docs",
+        "evidence_quote": "Get up and running in no time with a walk-through of the most popular Webex API: Messaging.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "meetings api",
+        "description": "Integrated audio, video, and content sharing via programmable secure web meetings",
+        "evidence_source": "docs",
+        "evidence_quote": "leverage integrated audio, video, and content sharing with highly secure web meetings.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "webex calling",
+        "description": "Cloud calling service with full API access for calling workflows",
+        "evidence_source": "docs",
+        "evidence_quote": "Find out everything you need to know about Webex Calling workflows.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "contact center apis",
+        "description": "APIs to build, enhance, and customize CX solutions with extensible contact center capabilities",
+        "evidence_source": "docs",
+        "evidence_quote": "Webex Contact Center lets you build, enhance and customize CX solutions with a rich and extensible set of APIs.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "webhooks",
+        "description": "Event-driven notifications to external apps when specific activities occur in Webex",
+        "evidence_source": "docs",
+        "evidence_quote": "Use webhooks to notify your apps when specific activities occur in Webex.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "bots",
+        "description": "Programmable bots for messaging spaces, 1:1 chat, or external system notifications",
+        "evidence_source": "docs",
+        "evidence_quote": "Bots can be added to messaging spaces or engage in 1:1 chat, or post notifications from external systems.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "embedded apps framework",
+        "description": "SDK to embed third-party or custom apps directly within the Webex client",
+        "evidence_source": "docs",
+        "evidence_quote": "Access your app directly in Webex with the Embedded Apps Framework.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "device management (xapi)",
+        "description": "Control and configure Webex room devices using xAPI across multiple scenarios",
+        "evidence_source": "docs",
+        "evidence_quote": "Learn how to control Webex devices using xAPI in a variety of scenarios.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "workspace integrations",
+        "description": "Integrations scoped to Webex workspaces for device and room management",
+        "evidence_source": "docs",
+        "evidence_quote": "Workspace Integrations",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "administration api",
+        "description": "APIs to manage, monitor, and audit Webex applications and users",
+        "evidence_source": "docs",
+        "evidence_quote": "Manage, monitor and audit your Webex applications.",
+        "tier": "enterprise",
+        "confidence": "high"
+      },
+      {
+        "name": "compliance tools",
+        "description": "Compliance features for regulated industries accessible via admin APIs",
+        "evidence_source": "docs",
+        "evidence_quote": "Webex Compliance",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "oauth / sso",
+        "description": "OAuth 2.0-based authentication and integration login flows",
+        "evidence_source": "docs",
+        "evidence_quote": "Run a Webex OAuth Integration Locally",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "rest api",
+        "description": "Comprehensive REST API covering all major Webex platform capabilities",
+        "evidence_source": "docs",
+        "evidence_quote": "Learn about the various features particular to the Webex REST API.",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "instant connect",
+        "description": "One-click calls without requiring the Webex app or login credentials",
+        "evidence_source": "docs",
+        "evidence_quote": "Use Instant Connect to make one-click calls, without the need for the Webex App or login credentials!",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "mcp server support",
+        "description": "Model Context Protocol server support for building agentic apps that interact with Webex services",
+        "evidence_source": "docs",
+        "evidence_quote": "Webex supports agentic architectures through Model Context Protocol (MCP) servers",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "agent-to-agent (a2a)",
+        "description": "A2A server support enabling autonomous agent-to-agent communication within Webex",
+        "evidence_source": "docs",
+        "evidence_quote": "Agent-to-Agent (A2A) servers, enabling you to build intelligent, autonomous applications",
+        "tier": "unknown",
+        "confidence": "high"
+      },
+      {
+        "name": "contact center search api",
+        "description": "Search API within Webex Contact Center for querying CX data",
+        "evidence_source": "docs",
+        "evidence_quote": "Get Started with the Search API",
+        "tier": "enterprise",
+        "confidence": "medium"
+      },
+      {
+        "name": "screen sharing",
+        "description": "In-meeting screen sharing; historically reported as slow or friction-heavy by users",
+        "evidence_source": "hn",
+        "evidence_quote": "Fed up with WebEx, so we built a way to screen share in under 20 sec.",
+        "tier": "unknown",
+        "confidence": "medium"
+      },
+      {
+        "name": "open source sdks",
+        "description": "Official SDKs, widgets, tools, and sample applications available as open source",
+        "evidence_source": "docs",
+        "evidence_quote": "Official SDKs, Widgets, and Tools",
+        "tier": "all",
+        "confidence": "high"
+      },
+      {
+        "name": "app hub / marketplace",
+        "description": "Webex App Hub for discovering and submitting third-party integrations",
+        "evidence_source": "docs",
+        "evidence_quote": "Submitting the the Webex App Hub",
+        "tier": "unknown",
+        "confidence": "medium"
+      }
+    ],
+    "integrations": [
+      "Webex App Hub (marketplace \u2014 specific partners not accessible due to blocked integrations page)"
+    ],
+    "differentiators": [
+      "Agent-to-Agent (A2A) server support for autonomous agentic app architectures",
+      "Model Context Protocol (MCP) server support \u2014 explicitly marketed as 'New'",
+      "Instant Connect: one-click calls with no app install or login required",
+      "Cisco-backed enterprise security and compliance infrastructure",
+      "xAPI device control for Cisco room hardware"
+    ],
+    "recent_ships": [
+      {
+        "date": "2025-2026",
+        "what": "Agentic Apps platform: MCP server support and Agent-to-Agent (A2A) servers",
+        "source": "Webex supports agentic architectures through Model Context Protocol (MCP) servers and Agent-to-Agent (A2A) servers"
+      },
+      {
+        "date": "2025-2026",
+        "what": "Contact Center Search API",
+        "source": "Get Started with the Search API (listed under Contact Center, marked as notable)"
+      }
+    ],
+    "user_sentiment": {
+      "praised": [
+        "No direct praise quotes available \u2014 G2 page returned no content and landing was blocked"
+      ],
+      "complaints": [
+        "Screen sharing perceived as slow/friction-heavy: 'Fed up with WebEx, so we built a way to screen share in under 20 sec.'",
+        "Invasive installer behavior on macOS: 'Cisco WebEx on OS X uses the same pre-installer tricks as Zoom'",
+        "Historical remote code execution vulnerability via crafted URL: 'Magic WebEx URL Allows Arbitrary Remote Command Execution'"
+      ],
+      "sources": [
+        "hn"
+      ]
+    },
+    "pricing": {
+      "model": "freemium",
+      "currency": "USD",
+      "free_tier": {
+        "available": true,
+        "limits": "pricing page blocked \u2014 exact caps unavailable"
+      },
+      "tiers": [],
+      "enterprise": "contact-sales",
+      "notes": "Pricing page returned 403 \u2014 no tier data could be extracted. Webex is known to offer Free, Starter, Business, and Enterprise tiers but these could not be confirmed from source scrape."
+    }
+  },
+  "news": {
+    "recent_hn": [
+      {
+        "title": "Show HN: AfterTheCall \u2013 AI summaries and action items for client calls",
+        "url": "https://news.ycombinator.com/item?id=47454893",
+        "points": 3,
+        "comments": 0,
+        "age_days": 72,
+        "hn_url": "https://news.ycombinator.com/item?id=47454893"
+      }
+    ]
+  }
+}

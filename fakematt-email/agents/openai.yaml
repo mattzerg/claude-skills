@@ -1,0 +1,7 @@
+interface:
+  display_name: "Fake Matt Email"
+  short_description: "Draft professional email in Matt's voice"
+  default_prompt: "Use $fakematt-email to draft or revise a professional email in Matt's voice."
+
+policy:
+  allow_implicit_invocation: true
